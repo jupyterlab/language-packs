@@ -1,2 +1,3 @@
-# jupyterlab-locales
-Language packs for JupyterLab ecosystem
+# Jupyterlab Language Packs
+
+Jupyterlab language packs.
