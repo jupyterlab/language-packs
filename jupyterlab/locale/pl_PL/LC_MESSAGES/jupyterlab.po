@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2020-08-13 22:12\n"
+"PO-Revision-Date: 2020-08-14 06:02\n"
 
 msgid ""
 msgstr ""
@@ -219,7 +219,7 @@ msgstr "CodeMirror"
 #: /packages/codemirror-extension/schema/commands.json:40
 msgctxt "schema"
 msgid "Value is boolean or string, e.g. 'pointer'"
-msgstr ""
+msgstr "Wartość jest typem logicznym lub stringiem, np. 'wskaźnik'"
 
 #: /packages/codemirror-extension/schema/commands.json:45
 msgid "Ctrl-C"
@@ -334,7 +334,7 @@ msgstr "Częstotliwość autozapisu (sek.)"
 #: /packages/docmanager-extension/schema/plugin.json:29
 msgctxt "schema"
 msgid "Length of save interval in seconds"
-msgstr ""
+msgstr "Długość przerwy między zapisami w sekundach"
 
 #: /packages/docmanager-extension/schema/plugin.json:3
 msgctxt "schema"
@@ -372,7 +372,7 @@ msgstr ""
 #: /packages/extensionmanager-extension/schema/plugin.json:15
 msgctxt "schema"
 msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
-msgstr ""
+msgstr "Czy użytkownik rozumie, że rozszerzenia zarządzane przez ten interfejs uruchamiają dowolny kod, który może być niebezpieczny"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:4 packages/extensionmanager-extension/src/index.ts:103 packages/extensionmanager-extension/src/index.ts:54
 msgid "Extension Manager"
@@ -395,7 +395,7 @@ msgstr ""
 
 #: /packages/filebrowser-extension/schema/browser.json:21
 msgid "Navigate to current directory"
-msgstr ""
+msgstr "Przejdź do bieżącego katalogu"
 
 #: /packages/filebrowser-extension/schema/browser.json:22
 msgctxt "schema"
@@ -493,7 +493,7 @@ msgstr "Ustawienia konsoli logów."
 
 #: /packages/logconsole-extension/schema/plugin.json:9
 msgid "Log entry count limit"
-msgstr ""
+msgstr "Limit liczby wpisów w dzienniku logów"
 
 #: /packages/mainmenu-extension/schema/plugin.json:2
 msgctxt "schema"
@@ -777,15 +777,15 @@ msgstr ""
 
 #: packages/application-extension/src/index.tsx:203 packages/extensionmanager/src/build-helper.tsx:44
 msgid "Save and Reload"
-msgstr ""
+msgstr "Zapisz i załaduj ponownie"
 
 #: packages/application-extension/src/index.tsx:216 packages/extensionmanager/src/build-helper.tsx:57
 msgid "Save Failed"
-msgstr ""
+msgstr "Zapisywanie nie powiodło się"
 
 #: packages/application-extension/src/index.tsx:225 packages/extensionmanager/src/build-helper.tsx:67
 msgid "Build Failed"
-msgstr ""
+msgstr "Nie udało się zbudować"
 
 #: packages/application-extension/src/index.tsx:243
 msgid "JupyterLab build is suggested:"
@@ -819,7 +819,7 @@ msgstr ""
 
 #: packages/application-extension/src/index.tsx:566 packages/documentsearch-extension/src/index.ts:214 packages/documentsearch-extension/src/index.ts:218 packages/documentsearch-extension/src/index.ts:222 packages/logconsole-extension/src/index.tsx:268 packages/mainmenu-extension/src/index.ts:219 packages/mainmenu-extension/src/index.ts:223 packages/mainmenu-extension/src/index.ts:234 packages/statusbar-extension/src/index.ts:82
 msgid "Main Area"
-msgstr ""
+msgstr "Główny obszar"
 
 #: packages/application-extension/src/index.tsx:570
 msgid "Shift+Right Click for Browser Menu"
@@ -827,11 +827,11 @@ msgstr "Shift+Prawy przycisk myszy aby otworzyć menu przeglądarki"
 
 #: packages/application-extension/src/index.tsx:660
 msgid "Activate Next Tab"
-msgstr ""
+msgstr "Aktywuj następną kartę"
 
 #: packages/application-extension/src/index.tsx:667
 msgid "Activate Previous Tab"
-msgstr ""
+msgstr "Aktywuj poprzednią kartę"
 
 #: packages/application-extension/src/index.tsx:674
 msgid "Activate Next Tab Bar"
@@ -859,11 +859,11 @@ msgstr "Zamknij karty na prawo"
 
 #: packages/application-extension/src/index.tsx:763
 msgid "Show Left Sidebar"
-msgstr ""
+msgstr "Pokaż lewy pasek boczny"
 
 #: packages/application-extension/src/index.tsx:779
 msgid "Show Right Sidebar"
-msgstr ""
+msgstr "Pokaż prawy pasek boczny"
 
 #: packages/application-extension/src/index.tsx:795
 msgid "Presentation Mode"
@@ -879,13 +879,15 @@ msgstr ""
 
 #: packages/application/src/connectionlost.ts:22
 msgid "Server Connection Error"
-msgstr ""
+msgstr "Błąd połączenia z serwerem"
 
 #: packages/application/src/connectionlost.ts:23
 msgid "A connection to the Jupyter server could not be established.\n"
 "JupyterLab will continue trying to reconnect.\n"
 "Check your network connection or Jupyter server configuration.\n"
-msgstr ""
+msgstr "Nie można nawiązać połączenia z serwerem Jupyter.\n"
+"JupyterLab będzie kontynuował próby ponownego połączenia.\n"
+"Sprawdź połączenie sieciowe lub konfigurację serwera Jupyter.\n"
 
 #: packages/apputils-extension/src/index.ts:201
 msgid "Loading..."
@@ -926,11 +928,11 @@ msgstr "SZUKAJ"
 
 #: packages/apputils-extension/src/palette.ts:163 packages/apputils-extension/src/palette.ts:99
 msgid "Commands"
-msgstr ""
+msgstr "Polecenia"
 
 #: packages/apputils-extension/src/palette.ts:97
 msgid "Commands (%1)"
-msgstr ""
+msgstr "Polecenia (%1)"
 
 #: packages/apputils-extension/src/themesplugins.ts:111
 msgid "Theme Scrollbars"
@@ -1756,7 +1758,9 @@ msgstr ""
 msgid "This package has indicated that it needs a corresponding server\n"
 "extension. Please contact your Administrator to update the server with\n"
 "one of the following commands:"
-msgstr ""
+msgstr "Ten pakiet wskazał, że wymaga odpowiedniego rozszerzenia serwera. \n"
+"Skontaktuj się z administratorem, aby zaktualizować serwer za pomocą\n"
+"jednej z poniższych komend:"
 
 #: packages/extensionmanager/src/companions.tsx:155
 msgid "This package has indicated that it needs a corresponding package for the kernel."
@@ -1770,7 +1774,9 @@ msgstr ""
 msgid "This package has indicated that it needs a corresponding kernel\n"
 "package. Please contact your Administrator to update the server with\n"
 "one of the following commands:"
-msgstr ""
+msgstr "Ten pakiet wskazał, że potrzebuje odpowiedniego pakietu jądra. \n"
+"Skontaktuj się z administratorem, aby zaktualizować serwer za pomocą\n"
+"jednej z następujących komend:"
 
 #: packages/extensionmanager/src/companions.tsx:198
 msgid "You should make sure that the indicated packages are installed before\n"
@@ -1925,11 +1931,11 @@ msgstr ""
 
 #: packages/filebrowser-extension/src/index.ts:511 packages/fileeditor-extension/src/commands.ts:753
 msgid "Copy"
-msgstr ""
+msgstr "Kopiuj"
 
 #: packages/filebrowser-extension/src/index.ts:524 packages/fileeditor-extension/src/commands.ts:712
 msgid "Cut"
-msgstr ""
+msgstr "Wytnij"
 
 #: packages/filebrowser-extension/src/index.ts:548
 msgid "Duplicate"
@@ -1973,7 +1979,7 @@ msgstr ""
 
 #: packages/filebrowser-extension/src/index.ts:741 packages/fileeditor-extension/src/commands.ts:787
 msgid "Paste"
-msgstr ""
+msgstr "Wklej"
 
 #: packages/filebrowser-extension/src/index.ts:754 packages/filebrowser/src/browser.ts:96
 msgid "New Folder"
@@ -1985,7 +1991,7 @@ msgstr ""
 
 #: packages/filebrowser-extension/src/index.ts:784 packages/fileeditor-extension/src/commands.ts:892
 msgid "New Markdown File"
-msgstr ""
+msgstr "Nowy plik Markdown"
 
 #: packages/filebrowser-extension/src/index.ts:817
 msgid "Copy Path"
@@ -2157,11 +2163,11 @@ msgstr ""
 
 #: packages/fileeditor-extension/src/commands.ts:1025
 msgid "Increase Font Size"
-msgstr ""
+msgstr "Zwiększ rozmiar czcionki"
 
 #: packages/fileeditor-extension/src/commands.ts:1028
 msgid "Decrease Font Size"
-msgstr ""
+msgstr "Zmniejsz Rozmiar Czcionki"
 
 #: packages/fileeditor-extension/src/commands.ts:1084
 msgid "Text Editor Indentation"
@@ -2169,14 +2175,14 @@ msgstr ""
 
 #: packages/fileeditor-extension/src/commands.ts:1088 packages/fileeditor-extension/src/commands.ts:970 packages/fileeditor-extension/src/index.ts:101
 msgid "Indent with Tab"
-msgstr ""
+msgstr "Wcinaj tabulatorami"
 
 #: packages/fileeditor-extension/src/commands.ts:1097 packages/fileeditor-extension/src/commands.ts:979 packages/fileeditor-extension/src/index.ts:108
 msgid "Spaces: %1"
 msgid_plural "Spaces: %1"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Spacja: %1"
+msgstr[1] "Spacje: %1"
+msgstr[2] "Spacje: %1"
 msgstr[3] ""
 
 #: packages/fileeditor-extension/src/commands.ts:1106
@@ -2189,11 +2195,11 @@ msgstr ""
 
 #: packages/fileeditor-extension/src/commands.ts:1200
 msgid "Editor"
-msgstr ""
+msgstr "Edytor"
 
 #: packages/fileeditor-extension/src/commands.ts:1218 packages/fileeditor-extension/src/commands.ts:517
 msgid "Run Code"
-msgstr ""
+msgstr "Uruchom kod"
 
 #: packages/fileeditor-extension/src/commands.ts:1219 packages/fileeditor-extension/src/commands.ts:562
 msgid "Run All Code"
@@ -2850,7 +2856,7 @@ msgstr ""
 
 #: packages/notebook-extension/src/index.ts:1654
 msgid "Enter Command Mode"
-msgstr ""
+msgstr "Przejdź do trybu poleceń"
 
 #: packages/notebook-extension/src/index.ts:1665
 msgid "Enter Edit Mode"
