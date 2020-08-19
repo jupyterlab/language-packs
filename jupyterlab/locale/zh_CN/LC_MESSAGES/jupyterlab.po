@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-08-15 06:12\n"
+"PO-Revision-Date: 2020-08-19 13:57\n"
 
 msgid ""
 msgstr ""
@@ -57,7 +57,8 @@ msgstr "行宽"
 #: /examples/federated/md_package/./schema/plugin.json:49 /packages/markdownviewer-extension/schema/plugin.json:49
 msgid "The text line width expressed in CSS ch units.\n"
 "If `null`, lines fit the viewport width."
-msgstr ""
+msgstr "以CSS ch 单位表示的文本行宽。\n"
+"如果为，`null` 则会拓展到符合视图宽度。"
 
 #: /examples/federated/md_package/./schema/plugin.json:5 /packages/markdownviewer-extension/schema/plugin.json:5
 msgid "Markdown viewer settings."
@@ -65,14 +66,17 @@ msgstr "Markdown 查看器设置。"
 
 #: /examples/federated/md_package/./schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:54
 msgid "Hide Front Matter"
-msgstr ""
+msgstr "隐藏前缀"
 
 #: /examples/federated/md_package/./schema/plugin.json:55 /packages/markdownviewer-extension/schema/plugin.json:55
 msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr ""
+msgstr "是否隐藏YAML前缀。\n"
+"必须将YAML 前端放置在文档的顶部，\n"
+"起始于三个破折线(---)，结束于一行\n"
+"三个破折线(---) 或三个点(...)……。"
 
 #: /examples/federated/md_package/./schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:60
 msgid "Render Timeout"
@@ -85,7 +89,7 @@ msgstr "渲染超时时间（毫秒）。"
 #: /packages/application-extension/schema/main.json:2
 msgctxt "schema"
 msgid "Application "
-msgstr ""
+msgstr "应用程序 "
 
 #: /packages/application-extension/schema/main.json:3
 msgctxt "schema"
@@ -96,7 +100,8 @@ msgstr "JupyterLab 主要应用程序设置。"
 msgctxt "schema"
 msgid "Overrides for where to show sidebar items\n"
 "e.g., {\"tab-manager\": \"right\"}"
-msgstr ""
+msgstr "覆盖侧边栏项目\n"
+"例如{\"tab-manager\": \"right\"}"
 
 #: /packages/application-extension/schema/sidebar.json:3
 msgctxt "schema"
@@ -110,11 +115,11 @@ msgstr "侧边栏布局设置。"
 
 #: /packages/application-extension/schema/sidebar.json:8
 msgid "Overrides"
-msgstr ""
+msgstr "覆盖"
 
 #: /packages/apputils-extension/schema/palette.json:2 packages/apputils-extension/src/palette.ts:36
 msgid "Command Palette"
-msgstr ""
+msgstr "快捷命令面板"
 
 #: /packages/apputils-extension/schema/palette.json:3
 msgctxt "schema"
@@ -160,17 +165,17 @@ msgstr "主题管理器设置。"
 
 #: /packages/apputils-extension/schema/themes.json:42
 msgid "Theme CSS Overrides"
-msgstr ""
+msgstr "主题CSS 覆盖"
 
 #: /packages/apputils-extension/schema/themes.json:43
 msgctxt "schema"
 msgid "Override theme CSS variables by setting key-value pairs here"
-msgstr ""
+msgstr "在此设定键值对以覆盖主题 CSS 变量"
 
 #: /packages/codemirror-extension/schema/commands.json:10
 msgctxt "schema"
 msgid "Configures the keymap to use"
-msgstr ""
+msgstr "配置快捷键映射"
 
 #: /packages/codemirror-extension/schema/commands.json:16
 msgctxt "schema"
@@ -235,37 +240,37 @@ msgstr ""
 
 #: /packages/codemirror-extension/schema/commands.json:9
 msgid "Key Map"
-msgstr ""
+msgstr "键位映射"
 
 #: /packages/completer-extension/schema/consoles.json:2
 msgctxt "schema"
 msgid "Console Completer"
-msgstr ""
+msgstr "控制台补全器"
 
 #: /packages/completer-extension/schema/consoles.json:3
 msgctxt "schema"
 msgid "Console completer settings."
-msgstr ""
+msgstr "控制台补全设置"
 
 #: /packages/completer-extension/schema/files.json:2
 msgctxt "schema"
 msgid "File Editor Completer"
-msgstr ""
+msgstr "文件编辑器补全"
 
 #: /packages/completer-extension/schema/files.json:3
 msgctxt "schema"
 msgid "File editor completer settings."
-msgstr ""
+msgstr "文件编辑器补全设置。"
 
 #: /packages/completer-extension/schema/notebooks.json:2
 msgctxt "schema"
 msgid "Notebook Completer"
-msgstr ""
+msgstr "Notebook 自动补全"
 
 #: /packages/completer-extension/schema/notebooks.json:3
 msgctxt "schema"
 msgid "Notebook completer settings."
-msgstr ""
+msgstr "Notebook 自动补全设置"
 
 #: /packages/console-extension/schema/tracker.json:2
 msgctxt "schema"
@@ -275,7 +280,7 @@ msgstr "代码控制台"
 #: /packages/console-extension/schema/tracker.json:3
 msgctxt "schema"
 msgid "Code Console settings."
-msgstr ""
+msgstr "代码控制台设置。"
 
 #: /packages/console-extension/schema/tracker.json:35
 msgid "Interaction mode"
@@ -313,20 +318,20 @@ msgstr ""
 
 #: /packages/debugger-extension/schema/main.json:5 packages/debugger-extension/src/index.ts:492
 msgid "Debugger"
-msgstr ""
+msgstr "调试器"
 
 #: /packages/docmanager-extension/schema/plugin.json:22 packages/docmanager-extension/src/index.ts:694
 msgid "Autosave Documents"
-msgstr ""
+msgstr "自动保存文档"
 
 #: /packages/docmanager-extension/schema/plugin.json:23
 msgctxt "schema"
 msgid "Whether to autosave documents"
-msgstr ""
+msgstr "是否自动保存文档"
 
 #: /packages/docmanager-extension/schema/plugin.json:28
 msgid "Autosave Interval"
-msgstr ""
+msgstr "自动保存间隔"
 
 #: /packages/docmanager-extension/schema/plugin.json:29
 msgctxt "schema"
@@ -382,13 +387,14 @@ msgstr ""
 
 #: /packages/extensionmanager-extension/schema/plugin.json:8
 msgid "Enabled Status"
-msgstr ""
+msgstr "启用状态"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:9
 msgctxt "schema"
 msgid "Enables extension manager (requires Node.js/npm).\n"
 "WARNING: installing untrusted extensions may be unsafe."
-msgstr ""
+msgstr "启用扩展管理器 (需要 Node.js/npm).\n"
+"警告: 安装不信任的扩展可能不安全。"
 
 #: /packages/filebrowser-extension/schema/browser.json:21
 msgid "Navigate to current directory"
@@ -410,7 +416,7 @@ msgstr ""
 
 #: /packages/filebrowser-extension/schema/browser.json:4 packages/filebrowser-extension/src/index.ts:355
 msgid "File Browser"
-msgstr ""
+msgstr "文件管理器"
 
 #: /packages/filebrowser-extension/schema/browser.json:5
 msgctxt "schema"
@@ -577,7 +583,7 @@ msgstr ""
 #: /packages/settingeditor-extension/schema/plugin.json:2
 msgctxt "schema"
 msgid "Setting Editor"
-msgstr ""
+msgstr "密钥串编辑器"
 
 #: /packages/settingeditor-extension/schema/plugin.json:3
 msgctxt "schema"
@@ -587,22 +593,22 @@ msgstr ""
 #: /packages/shortcuts-extension/schema/shortcuts.json:11
 msgctxt "schema"
 msgid "The list of keyboard shortcuts."
-msgstr ""
+msgstr "键盘快捷键列表。"
 
 #: /packages/shortcuts-extension/schema/shortcuts.json:5
 msgctxt "schema"
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "快捷键"
 
 #: /packages/shortcuts-extension/schema/shortcuts.json:6
 msgctxt "schema"
 msgid "Keyboard shortcut settings."
-msgstr ""
+msgstr "键盘快捷键设置。"
 
 #: /packages/statusbar-extension/schema/plugin.json:10
 msgctxt "schema"
 msgid "Whether to show status bar or not"
-msgstr ""
+msgstr "是否显示状态栏"
 
 #: /packages/statusbar-extension/schema/plugin.json:4
 msgctxt "schema"
@@ -625,7 +631,7 @@ msgstr "字体集"
 #: /packages/terminal-extension/schema/plugin.json:35
 msgctxt "schema"
 msgid "The font family used to render text."
-msgstr ""
+msgstr "用来渲染文本的字体。"
 
 #: /packages/terminal-extension/schema/plugin.json:4 packages/terminal-extension/src/index.ts:328 packages/terminal-extension/src/index.ts:87 packages/terminal/src/widget.ts:76
 msgid "Terminal"
@@ -638,7 +644,7 @@ msgstr "字体大小"
 #: /packages/terminal-extension/schema/plugin.json:41
 msgctxt "schema"
 msgid "The font size used to render text."
-msgstr ""
+msgstr "用于渲染文本的字体大小。"
 
 #: /packages/terminal-extension/schema/plugin.json:46
 msgid "Line height"
@@ -652,12 +658,12 @@ msgstr "渲染文本时所使用的行高。"
 #: /packages/terminal-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Terminal settings."
-msgstr ""
+msgstr "终端设置。"
 
 #: /packages/terminal-extension/schema/plugin.json:53
 msgctxt "schema"
 msgid "The theme for the terminal."
-msgstr ""
+msgstr "终端主题。"
 
 #: /packages/terminal-extension/schema/plugin.json:58
 msgid "Screen Reader Mode"
@@ -766,15 +772,15 @@ msgstr ""
 
 #: packages/application-extension/src/index.tsx:195 packages/extensionmanager/src/build-helper.tsx:36
 msgid "You will lose any unsaved changes."
-msgstr ""
+msgstr "您将丢失任何未保存的更改。"
 
 #: packages/application-extension/src/index.tsx:200 packages/extensionmanager/src/build-helper.tsx:41
 msgid "Reload Without Saving"
-msgstr ""
+msgstr "重新加载且不保存当前更改"
 
 #: packages/application-extension/src/index.tsx:203 packages/extensionmanager/src/build-helper.tsx:44
 msgid "Save and Reload"
-msgstr ""
+msgstr "保存并重新加载"
 
 #: packages/application-extension/src/index.tsx:216 packages/extensionmanager/src/build-helper.tsx:57
 msgid "Save Failed"
@@ -786,7 +792,7 @@ msgstr "编译失败"
 
 #: packages/application-extension/src/index.tsx:243
 msgid "JupyterLab build is suggested:"
-msgstr ""
+msgstr "建议进行Jupyterlab Build来重新构建"
 
 #: packages/application-extension/src/index.tsx:250
 msgid "Build Recommended"
@@ -799,23 +805,23 @@ msgstr "编译"
 #: packages/application-extension/src/index.tsx:260
 msgid "Are you sure you want to exit JupyterLab?\n\n"
 "Any unsaved changes will be lost."
-msgstr ""
+msgstr "您确定要退出登录吗? 所有未保存的操作都会丢失。"
 
 #: packages/application-extension/src/index.tsx:424
 msgid "The path: %1 was not found. JupyterLab redirected to: %2"
-msgstr ""
+msgstr "路径： %1 未找到。JupyterLab 将会重定向到： %2"
 
 #: packages/application-extension/src/index.tsx:433
 msgid "Path Not Found"
-msgstr ""
+msgstr "未找到路径"
 
 #: packages/application-extension/src/index.tsx:519
 msgid "Switch Sidebar Side"
-msgstr ""
+msgstr "侧边栏位置切换"
 
 #: packages/application-extension/src/index.tsx:566 packages/documentsearch-extension/src/index.ts:214 packages/documentsearch-extension/src/index.ts:218 packages/documentsearch-extension/src/index.ts:222 packages/logconsole-extension/src/index.tsx:268 packages/mainmenu-extension/src/index.ts:219 packages/mainmenu-extension/src/index.ts:223 packages/mainmenu-extension/src/index.ts:234 packages/statusbar-extension/src/index.ts:82
 msgid "Main Area"
-msgstr ""
+msgstr "主工作区"
 
 #: packages/application-extension/src/index.tsx:570
 msgid "Shift+Right Click for Browser Menu"
@@ -843,11 +849,11 @@ msgstr "关闭标签页"
 
 #: packages/application-extension/src/index.tsx:713
 msgid "Close All Tabs"
-msgstr ""
+msgstr "关闭所有标签"
 
 #: packages/application-extension/src/index.tsx:720
 msgid "Close All Other Tabs"
-msgstr ""
+msgstr "关闭全部其它标签"
 
 #: packages/application-extension/src/index.tsx:745
 msgid "Close Tabs to Right"
