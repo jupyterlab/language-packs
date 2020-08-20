@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-08-20 11:37\n"
+"PO-Revision-Date: 2020-08-20 12:33\n"
 
 msgid ""
 msgstr ""
@@ -1021,7 +1021,7 @@ msgstr "您想要重新启动当前内核吗？所有变量都将丢失。"
 
 #: packages/apputils/src/sessioncontext.tsx:1325
 msgid "Select kernel for: \"%1\""
-msgstr ""
+msgstr "为 “%1” 选择内核："
 
 #: packages/apputils/src/sessioncontext.tsx:1457
 msgid "Start Preferred Kernel"
@@ -1057,19 +1057,19 @@ msgstr ""
 
 #: packages/apputils/src/sessioncontext.tsx:1611
 msgid "Kernel Id: %1"
-msgstr ""
+msgstr "内核 ID: %1"
 
 #: packages/apputils/src/sessioncontext.tsx:954
 msgid "Error Starting Kernel"
-msgstr ""
+msgstr "启动内核时出错"
 
 #: packages/apputils/src/thememanager.ts:366
 msgid "Neither theme %1 nor default %2 loaded."
-msgstr ""
+msgstr "主题 %1 及默认 %2 均未加载。"
 
 #: packages/apputils/src/thememanager.ts:443
 msgid "Error Loading Theme"
-msgstr ""
+msgstr "加载主题时出错"
 
 #: packages/apputils/src/thememanager.ts:445 packages/docmanager-extension/src/index.ts:685 packages/extensionmanager/src/companions.tsx:220 packages/extensionmanager/src/dialog.tsx:41
 msgid "OK"
@@ -1077,19 +1077,19 @@ msgstr "确定"
 
 #: packages/apputils/src/toolbar.tsx:385
 msgid "Interrupt the kernel"
-msgstr ""
+msgstr "中断内核"
 
 #: packages/apputils/src/toolbar.tsx:407
 msgid "Restart the kernel"
-msgstr ""
+msgstr "重启内核"
 
 #: packages/apputils/src/toolbar.tsx:745
 msgid "Switch kernel"
-msgstr ""
+msgstr "切换内核"
 
 #: packages/apputils/src/toolbar.tsx:783 packages/apputils/src/toolbar.tsx:792
 msgid "Kernel %1"
-msgstr ""
+msgstr "内核 %1"
 
 #: packages/celltags/src/addwidget.ts:159 packages/celltags/src/addwidget.ts:31
 msgid "Add Tag"
@@ -1097,7 +1097,7 @@ msgstr "添加标签"
 
 #: packages/celltags/src/tool.ts:193
 msgid "Tags in Notebook"
-msgstr ""
+msgstr "笔记本中的标签"
 
 #: packages/codeeditor/src/jsoneditor.ts:313 packages/codeeditor/src/jsoneditor.ts:80
 msgid "No data!"
@@ -1318,20 +1318,22 @@ msgstr ""
 #: packages/console/src/panel.ts:320
 msgid "\n"
 "Connected: %1"
-msgstr ""
+msgstr "\n"
+"已连接: %1"
 
 #: packages/console/src/panel.ts:327
 msgid "\n"
 "Last Execution: %1"
-msgstr ""
+msgstr "\n"
+"上次执行: %1"
 
 #: packages/console/src/panel.ts:69
 msgid "Console %1"
-msgstr ""
+msgstr "控制台 %1"
 
 #: packages/csvviewer-extension/src/index.ts:79
 msgid "Go to Line"
-msgstr ""
+msgstr "跳转到行"
 
 #: packages/csvviewer/src/toolbar.ts:128
 msgid "tab"
@@ -1347,11 +1349,11 @@ msgstr ""
 
 #: packages/csvviewer/src/toolbar.ts:136
 msgid "Delimiter: "
-msgstr ""
+msgstr "分隔符: "
 
 #: packages/debugger-extension/src/index.ts:289 packages/debugger-extension/src/index.ts:290
 msgid "Inspect Variable"
-msgstr ""
+msgstr "检查变量"
 
 #: packages/debugger-extension/src/index.ts:379 packages/debugger-extension/src/index.ts:380
 msgid "Continue"
@@ -1375,7 +1377,7 @@ msgstr "步出"
 
 #: packages/debugger/src/handler.ts:56 packages/debugger/src/handler.ts:63
 msgid "Enable / Disable Debugger"
-msgstr ""
+msgstr "启用/禁用调试器"
 
 #: packages/debugger/src/panels/breakpoints/header.ts:23
 msgid "Breakpoints"
@@ -1383,7 +1385,7 @@ msgstr "断点"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:45
 msgid "Remove All Breakpoints"
-msgstr ""
+msgstr "移除所有断点"
 
 #: packages/debugger/src/panels/callstack/header.ts:23
 msgid "Callstack"
@@ -1417,11 +1419,21 @@ msgid "Overrides for the default viewers for file types.\n"
 "%1\n\n"
 "Available file types:\n"
 "%2"
-msgstr ""
+msgstr "覆盖文件类型对应的默认查看器。\n"
+"请指定从文件类型到查看器名称的映射， 例如：\n\n"
+"defaultViewers: {\n"
+"  markdown: \"Markdown Preview\"\n"
+"}\n\n"
+"如果您指定了不存在的文件类型或查看器， 或者如果查看器无法\n"
+"打开指定的文件类型，覆盖将不会生效。\n\n"
+"可用的查看器：\n"
+"%1\n\n"
+"可用的文件类型：\n"
+"%2"
 
 #: packages/docmanager-extension/src/index.ts:394 packages/filebrowser-extension/src/index.ts:643 packages/filebrowser-extension/src/index.ts:928 packages/htmlviewer-extension/src/index.tsx:132
 msgid "File Operations"
-msgstr ""
+msgstr "文件操作"
 
 #: packages/docmanager-extension/src/index.ts:435 packages/logconsole-extension/src/index.tsx:407
 msgid "Error"
@@ -1433,15 +1445,15 @@ msgstr "在新的浏览器标签页中打开"
 
 #: packages/docmanager-extension/src/index.ts:496 packages/docmanager-extension/src/index.ts:518
 msgid "Reload %1 from Disk"
-msgstr ""
+msgstr "从磁盘重新加载 %1"
 
 #: packages/docmanager-extension/src/index.ts:500
 msgid "Reload contents from disk"
-msgstr ""
+msgstr "从磁盘重新加载内容"
 
 #: packages/docmanager-extension/src/index.ts:511
 msgid "Cannot Reload"
-msgstr ""
+msgstr "无法重载"
 
 #: packages/docmanager-extension/src/index.ts:512 packages/docmanager-extension/src/index.ts:557 packages/docmanager-extension/src/index.ts:603 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:684
 msgid "No context found for current widget!"
@@ -1453,7 +1465,7 @@ msgstr "确认"
 
 #: packages/docmanager-extension/src/index.ts:519
 msgid "Are you sure you want to reload the %1 from the disk?"
-msgstr ""
+msgstr "您确定要从磁盘重新加载 %1 吗？"
 
 #: packages/docmanager-extension/src/index.ts:525
 msgid "Reload"
@@ -1465,15 +1477,15 @@ msgstr ""
 
 #: packages/docmanager-extension/src/index.ts:546
 msgid "Revert contents to previous checkpoint"
-msgstr ""
+msgstr "恢复内容到前一个检查点"
 
 #: packages/docmanager-extension/src/index.ts:556
 msgid "Cannot Revert"
-msgstr ""
+msgstr "无法恢复"
 
 #: packages/docmanager-extension/src/index.ts:571
 msgid "Revert %1 to checkpoint"
-msgstr ""
+msgstr "将 %1 恢复到检查点"
 
 #: packages/docmanager-extension/src/index.ts:575 packages/docregistry/src/context.ts:720 packages/docregistry/src/context.ts:736
 msgid "Revert"
@@ -1481,11 +1493,11 @@ msgstr "复原"
 
 #: packages/docmanager-extension/src/index.ts:593
 msgid "Save %1"
-msgstr ""
+msgstr "保存 %1"
 
 #: packages/docmanager-extension/src/index.ts:594
 msgid "Save and create checkpoint"
-msgstr ""
+msgstr "保存并创建检查点"
 
 #: packages/docmanager-extension/src/index.ts:602 packages/docmanager-extension/src/index.ts:609 packages/docmanager-extension/src/index.ts:663 packages/notebook/src/default-toolbar.tsx:67
 msgid "Cannot Save"
@@ -1493,7 +1505,7 @@ msgstr "无法保存"
 
 #: packages/docmanager-extension/src/index.ts:610 packages/notebook/src/default-toolbar.tsx:68
 msgid "Document is read-only"
-msgstr ""
+msgstr "文档为只读状态"
 
 #: packages/docmanager-extension/src/index.ts:630
 msgid "Save All"
@@ -1501,11 +1513,11 @@ msgstr "保存全部"
 
 #: packages/docmanager-extension/src/index.ts:631
 msgid "Save all open documents"
-msgstr ""
+msgstr "保存全部打开的文档"
 
 #: packages/docmanager-extension/src/index.ts:654
 msgid "Save %1 As…"
-msgstr ""
+msgstr "将 %1 另存为…"
 
 #: packages/docmanager-extension/src/index.ts:655
 msgid "Save with new path"
@@ -1517,11 +1529,11 @@ msgstr "下载"
 
 #: packages/docmanager-extension/src/index.ts:675
 msgid "Download the file to your computer"
-msgstr ""
+msgstr "将文件下载到您的计算机"
 
 #: packages/docmanager-extension/src/index.ts:683
 msgid "Cannot Download"
-msgstr ""
+msgstr "无法下载"
 
 #: packages/docmanager-extension/src/index.ts:768
 msgid "New View for %1"
@@ -1529,19 +1541,19 @@ msgstr "%1 的新视图"
 
 #: packages/docmanager-extension/src/index.ts:788
 msgid "Rename %1…"
-msgstr ""
+msgstr "重命名 %1…"
 
 #: packages/docmanager-extension/src/index.ts:801
 msgid "Delete %1"
-msgstr ""
+msgstr "删除 %1"
 
 #: packages/docmanager-extension/src/index.ts:811 packages/docmanager-extension/src/index.ts:815 packages/filebrowser-extension/src/index.ts:498 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/listing.ts:418
 msgid "Delete"
-msgstr ""
+msgstr "删除"
 
 #: packages/docmanager-extension/src/index.ts:812
 msgid "Are you sure you want to delete %1"
-msgstr ""
+msgstr "您确定要删除 %1 吗？"
 
 #: packages/docmanager-extension/src/index.ts:829
 msgid "Show in File Browser"
@@ -1549,23 +1561,23 @@ msgstr "在文件浏览器中显示"
 
 #: packages/docmanager-extension/src/index.ts:916
 msgid "Are you sure you want to revert the %1 to the latest checkpoint? "
-msgstr ""
+msgstr "您确定要将 %1 还原到上一检查点吗？ "
 
 #: packages/docmanager-extension/src/index.ts:922
 msgid "This cannot be undone."
-msgstr ""
+msgstr "此操作不可撤销。"
 
 #: packages/docmanager-extension/src/index.ts:929
 msgid "The checkpoint was last updated at: "
-msgstr ""
+msgstr "检查点最后一次更新于: "
 
 #: packages/docmanager/src/dialogs.ts:115
 msgid "Overwrite file?"
-msgstr ""
+msgstr "覆盖文件？"
 
 #: packages/docmanager/src/dialogs.ts:116
 msgid "\"%1\" already exists, overwrite?"
-msgstr ""
+msgstr "文件 \"%1\" 已存在，是否覆盖？"
 
 #: packages/docmanager/src/dialogs.ts:119 packages/docregistry/src/context.ts:722 packages/docregistry/src/context.ts:732 packages/docregistry/src/context.ts:754 packages/docregistry/src/context.ts:765
 msgid "Overwrite"
@@ -1593,28 +1605,29 @@ msgstr "重命名错误"
 
 #: packages/docmanager/src/dialogs.ts:69 packages/filebrowser/src/listing.ts:1449
 msgid "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\""
-msgstr ""
+msgstr "\"%1\" 不是一个有效的文件名。文件名必须具有非零长度，且不包含 \"/\"、\"\\\" 或 \":\""
 
 #: packages/docmanager/src/savingstatus.tsx:50
 msgid "Saving %1"
-msgstr ""
+msgstr "正在保存 %1"
 
 #: packages/docmanager/src/widgetmanager.ts:278
 msgid "Name: %1\n"
 "Path: %2\n"
-msgstr ""
+msgstr "名称: %1\n"
+"路径: %2\n"
 
 #: packages/docmanager/src/widgetmanager.ts:284
 msgid "Read-only"
-msgstr ""
+msgstr "只读"
 
 #: packages/docmanager/src/widgetmanager.ts:287
 msgid "Last Saved: %1\n"
-msgstr ""
+msgstr "上次保存: %1\n"
 
 #: packages/docmanager/src/widgetmanager.ts:288
 msgid "Last Checkpoint: %1"
-msgstr ""
+msgstr "上一检查点: %1"
 
 #: packages/docmanager/src/widgetmanager.ts:376
 msgid "Save as"
@@ -1622,11 +1635,11 @@ msgstr "另存为"
 
 #: packages/docmanager/src/widgetmanager.ts:378
 msgid "Save your work"
-msgstr ""
+msgstr "保存您的工作"
 
 #: packages/docmanager/src/widgetmanager.ts:379
 msgid "Save changes in \"%1\" before closing?"
-msgstr ""
+msgstr "关闭前是否要保存对 \"%1\" 的修改？"
 
 #: packages/docmanager/src/widgetmanager.ts:382
 msgid "Discard"
@@ -1634,11 +1647,11 @@ msgstr "丢弃"
 
 #: packages/docregistry/src/context.ts:557
 msgid "File Save Error for %1"
-msgstr ""
+msgstr "保存文件 %1 时出错"
 
 #: packages/docregistry/src/context.ts:620
 msgid "File Load Error for %1"
-msgstr ""
+msgstr "加载文件 %1 时出错"
 
 #: packages/docregistry/src/context.ts:714
 msgid "\"%1\" has changed on disk since the last time it was opened or saved.\n"
@@ -1928,7 +1941,7 @@ msgstr ""
 
 #: packages/filebrowser-extension/src/index.ts:468
 msgid "Copy Shareable Link"
-msgstr ""
+msgstr "复制共享链接"
 
 #: packages/filebrowser-extension/src/index.ts:511 packages/fileeditor-extension/src/commands.ts:753
 msgid "Copy"
@@ -1944,15 +1957,15 @@ msgstr "创建副本"
 
 #: packages/filebrowser-extension/src/index.ts:588
 msgid "Open from Path…"
-msgstr ""
+msgstr "从路径打开…"
 
 #: packages/filebrowser-extension/src/index.ts:588 packages/filebrowser-extension/src/index.ts:590
 msgid "Open %1"
-msgstr ""
+msgstr "打开 %1"
 
 #: packages/filebrowser-extension/src/index.ts:590
 msgid "Open from path"
-msgstr ""
+msgstr "从路径打开"
 
 #: packages/filebrowser-extension/src/index.ts:599
 msgid "Path"
@@ -1960,27 +1973,27 @@ msgstr "路径"
 
 #: packages/filebrowser-extension/src/index.ts:601
 msgid "Open Path"
-msgstr ""
+msgstr "打开路径"
 
 #: packages/filebrowser-extension/src/index.ts:602 packages/filebrowser-extension/src/index.ts:687
 msgid "Open"
-msgstr ""
+msgstr "打开"
 
 #: packages/filebrowser-extension/src/index.ts:633
 msgid "Could not find path: %1"
-msgstr ""
+msgstr "找不到路径 %1"
 
 #: packages/filebrowser-extension/src/index.ts:635
 msgid "Cannot open"
-msgstr ""
+msgstr "无法打开"
 
 #: packages/filebrowser-extension/src/index.ts:728
 msgid "Copy Download Link"
-msgstr ""
+msgstr "复制下载链接"
 
 #: packages/filebrowser-extension/src/index.ts:741 packages/fileeditor-extension/src/commands.ts:787
 msgid "Paste"
-msgstr ""
+msgstr "粘贴"
 
 #: packages/filebrowser-extension/src/index.ts:754 packages/filebrowser/src/browser.ts:96
 msgid "New Folder"
@@ -2000,11 +2013,11 @@ msgstr "复制路径"
 
 #: packages/filebrowser-extension/src/index.ts:859 packages/mainmenu-extension/src/index.ts:569
 msgid "Shut Down Kernel"
-msgstr ""
+msgstr "关闭内核"
 
 #: packages/filebrowser-extension/src/index.ts:878
 msgid "Show Active File in File Browser"
-msgstr ""
+msgstr "在文件浏览器中显示活动文件"
 
 #: packages/filebrowser-extension/src/index.ts:892
 msgid "Toggle Last Modified Column"
@@ -2012,45 +2025,45 @@ msgstr ""
 
 #: packages/filebrowser-extension/src/index.ts:914
 msgid "Search on File Names"
-msgstr ""
+msgstr "搜索文件名"
 
 #: packages/filebrowser/src/browser.ts:105
 msgid "Refresh File List"
-msgstr ""
+msgstr "刷新文件列表"
 
 #: packages/filebrowser/src/browser.ts:121 packages/filebrowser/src/browser.ts:330
 msgid "Filter files by name"
-msgstr ""
+msgstr "按文件名过滤"
 
 #: packages/filebrowser/src/browser.ts:301
 msgid "Directory not found"
-msgstr ""
+msgstr "找不到目录"
 
 #: packages/filebrowser/src/browser.ts:302 packages/filebrowser/src/model.ts:304
 msgid "Directory not found: \"%1\""
-msgstr ""
+msgstr "找不到目录: \"%1\""
 
 #: packages/filebrowser/src/crumbs.ts:173
 msgid "Open Error"
-msgstr ""
+msgstr "打开出错"
 
 #: packages/filebrowser/src/crumbs.ts:281
 msgid "Move Error"
-msgstr ""
+msgstr "移动出错"
 
 #: packages/filebrowser/src/listing.ts:1199
 msgctxt "showErrorMessage"
 msgid "Error while copying/moving files"
-msgstr ""
+msgstr "复制或移动文件时出错"
 
 #: packages/filebrowser/src/listing.ts:1416
 msgctxt "showErrorMessage"
 msgid "Delete Failed"
-msgstr ""
+msgstr "删除失败"
 
 #: packages/filebrowser/src/listing.ts:1447
 msgid "showErrorMessage"
-msgstr ""
+msgstr "显示错误消息"
 
 #: packages/filebrowser/src/listing.ts:1778
 msgid "Name"
@@ -2058,7 +2071,7 @@ msgstr ""
 
 #: packages/filebrowser/src/listing.ts:1779
 msgid "Last Modified"
-msgstr ""
+msgstr "修改时间"
 
 #: packages/filebrowser/src/listing.ts:1919
 msgid "Name: %1"
@@ -2067,7 +2080,8 @@ msgstr ""
 #: packages/filebrowser/src/listing.ts:1923
 msgid "\n"
 "Size: %1"
-msgstr ""
+msgstr "\n"
+"大小: %1"
 
 #: packages/filebrowser/src/listing.ts:1931
 msgid "\n"
