@@ -36,7 +36,7 @@ def get_description():
 
 setup(
     name="jupyterlab-language-pack-zh-CN",
-    version="0.0.1",
+    version=get_version(),
     description="Jupyterlab Chinese (Simplified, China) Language Pack",
     long_description=get_description(),
     long_description_content_type="text/markdown",
