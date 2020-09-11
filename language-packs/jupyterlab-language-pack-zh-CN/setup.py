@@ -46,9 +46,9 @@ setup(
     author_email="jupyter@googlegroups.com",
     license="BSD-3-Clause",
     platforms="Linux, Mac OS X, Windows",
-    packages=find_packages(exclude=["contrib", "docs", "tests*"]),
+    packages=find_packages(),
     include_package_data=True,
     entry_points={
-        "jupyterlab.languagepack": ["zh_CN = jupyterlab_language_pack_zh_CN",]
+        "jupyterlab.languagepack": ["zh_CN = jupyterlab_language_pack_zh_CN"]
     },
 )
