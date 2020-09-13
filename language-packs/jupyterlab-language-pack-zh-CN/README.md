@@ -1,6 +1,8 @@
 # JupyterLab Chinese (Simplified, China) Language Pack
 
-Chinese (Simplified, China) language pack for JupyterLab.
+[![Crowdin](https://badges.crowdin.net/jupyterlab/localized.svg)](https://crowdin.com/project/jupyterlab)
+
+Chinese (Simplified, China) language pack for [JupyterLab](https://github.com/jupyterlab/jupyterlab).
 
 ## Install
 

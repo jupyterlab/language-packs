@@ -2,7 +2,19 @@ commit_message: '[ci skip] New %language% translation from Crowdin'
 append_commit_message: false
 files:
   - source: /jupyterlab/locale/jupyterlab.pot
-    translation: /jupyterlab/locale/%locale_with_underscore%/LC_MESSAGES/%file_name%.po
+    translation: /jupyterlab/locale/%%two_letters_code%%/LC_MESSAGES/%file_name%.po
+    languages_mapping:
+      two_letters_code:
+        es-ES: es
+        pt-BR: pt_BR
+        zh-CN: zh_CN
+        zh-TW: zh_TW
   # Example for extensions
   - source: /extensions/jupyterlab-git/locale/jupyterlab_git.pot
-    translation: /extensions/jupyterlab-git/locale/%locale_with_underscore%/LC_MESSAGES/%file_name%.po
+    translation: /extensions/jupyterlab-git/locale/%%two_letters_code%%/LC_MESSAGES/%file_name%.po
+    languages_mapping:
+      two_letters_code:
+        es-ES: es
+        pt-BR: pt_BR
+        zh-CN: zh_CN
+        zh-TW: zh_TW
