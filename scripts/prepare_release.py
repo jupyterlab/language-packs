@@ -41,7 +41,7 @@ def bumbversion(path, release=False):
 def prepare_jupyterlab_lp_release():
     """
     """
-    for locale in os.listdir(JLAB_LOCALE_DIR):
+    for locale in sorted(os.listdir(JLAB_LOCALE_DIR)):
         if os.path.isdir(os.path.join(JLAB_LOCALE_DIR, locale)):
             po_dir = os.path.join(JLAB_LOCALE_DIR, locale, LC_MESSAGES_FOLDER)
             for fname in os.listdir(po_dir):
@@ -54,9 +54,9 @@ def prepare_jupyterlab_lp_release():
                         api.compile_language_pack(REPO_ROOT, "jupyterlab", [locale])
                         locale_name = locale.replace("_", "-")
                         package_dir = os.path.join(LANG_PACKS_DIR, f"jupyterlab-language-pack-{locale_name}")
-                        bumbversion(package_dir, release=True)
-                        bumbversion(package_dir, release=False)
-                        print(package_dir)
+                        # bumbversion(package_dir, release=True)
+                        # bumbversion(package_dir, release=False)
+                        # print(package_dir)
                         break
                     else:
                         print(locale, f"{percent_translated}%")
