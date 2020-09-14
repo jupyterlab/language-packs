@@ -4,7 +4,7 @@ import sys
 
 # Constants
 HERE = os.path.abspath(os.path.dirname(__file__))
-REPO_ROOT = os.path.dirname(HERE)
+REPO_ROOT = os.path.dirname(os.path.dirname(HERE))
 LANG_PACKS_DIR = os.path.join(REPO_ROOT, "language-packs")
 
 

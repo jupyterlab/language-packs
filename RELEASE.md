@@ -3,15 +3,26 @@
 The process below describes the procedure for JupyterLab package, but the same applies
 for JupyterLab extensions.
 
+## Environment
+
+Create an environment with the dependencies on `requirements/release.txt`.
+
+```bash
+conda create -n language-packs nodejs python -c conda-forge -y -q
+conda activate language-packs
+pip install -r requirements/release.txt
+```
+
+Also make sure you have `gettext-extract` available globally from NPM.
+
+```bash
+npm install gettext-extract -g
+```
+
 ## Update Catalogs
 
 The first step when preparing a release is to make sure a beta or release candidate for JupyterLab
 exists which should mean no new strings are expected to change in the code base.
-
-```python
-# TODO: A script could be run to get the latest tags/releases of all the packages and provide
-# suggestions on updating the repository-map.yml
-```
 
 With this information update the `repository-map.yml` file to point to the latest version for
 which translation strings are going to be scrapped from the codebase.
@@ -19,9 +30,7 @@ which translation strings are going to be scrapped from the codebase.
 Update the current catalog for JupyterLab and JupyterLab extensions.
 
 ```python
-# TODO: either use jupyterlab-translate command directly or add a command to automate this
-# even further using the `repository-map.yml`, to clone repos and do the updates.
-# The automation will greatly simplify work but it may take some time.
+python scripts/update_catalogs.py
 ```
 
 Push the changes to Github, Crowdin will update the loaded catalogs and expose and new strings to

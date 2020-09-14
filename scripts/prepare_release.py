@@ -24,9 +24,10 @@ from jupyterlab_translate import api
 # Constants
 HERE = os.path.abspath(os.path.dirname(__file__))
 REPO_ROOT = os.path.dirname(HERE)
-LANG_PACKS_DIR = os.path.join(REPO_ROOT, "language-packs")
-JLAB_LOCALE_DIR = os.path.join(REPO_ROOT, "jupyterlab", "locale")
-JLAB_EXT_DIR = os.path.join(REPO_ROOT, "jupyterlab_extensions")
+LANG_PACKS_PATH = os.path.join(REPO_ROOT, "language-packs")
+JLAB_LOCALE_PATH = os.path.join(REPO_ROOT, "jupyterlab", "locale")
+JLAB_EXT_PATH = os.path.join(REPO_ROOT, "extensions")
+LOCALE_FOLDER = "locale"
 LC_MESSAGES_FOLDER = "LC_MESSAGES"
 BUMP_CONFIG = ".bumpversion.cfg"
 
@@ -60,7 +61,7 @@ def save_hash(package_dir, hash_value):
 
 def create_hash(po_file_path):
     hasher = hashlib.sha256()
-    with open(po_file_path, "rb") as fh:
+    with open(po_file_path, "r") as fh:
         data = fh.read()
     
     hasher.update(data)
@@ -95,17 +96,23 @@ def bumbversion(path, release=False):
 def prepare_jupyterlab_lp_release():
     """
     """
-    
-    for locale in sorted(os.listdir(JLAB_LOCALE_DIR)):
-        if os.path.isdir(os.path.join(JLAB_LOCALE_DIR, locale)):
-            po_dir = os.path.join(JLAB_LOCALE_DIR, locale, LC_MESSAGES_FOLDER)
+    extensions = []
+    for pkg_name in sorted(os.listdir(JLAB_EXT_PATH)):
+        extension_path = os.path.join(JLAB_EXT_PATH, pakg_name)
+        if os.path.isdir(extension_path):
+            extensions.append(pkg_name)
+
+    # TODO: Generalize for extensions
+    for locale in sorted(os.listdir(JLAB_LOCALE_PATH)):
+        if os.path.isdir(os.path.join(JLAB_LOCALE_PATH, locale)):
+            po_dir = os.path.join(JLAB_LOCALE_PATH, locale, LC_MESSAGES_FOLDER)
             for fname in os.listdir(po_dir):
                 if fname.endswith(".po"):
                     po_file_path = os.path.join(po_dir, fname)
                     po = polib.pofile(po_file_path)
                     percent_translated = po.percent_translated()
                     locale_name = locale.replace("_", "-")
-                    package_dir = os.path.join(LANG_PACKS_DIR, f"jupyterlab-language-pack-{locale_name}")
+                    package_dir = os.path.join(LANG_PACKS_PATH, f"jupyterlab-language-pack-{locale_name}")
                     if percent_translated == 100:
                         if is_updated_translation(po_file_path, package_dir):
                             print(locale, f"{percent_translated}%", "compiling, commiting and tagging...")
@@ -122,10 +129,6 @@ def prepare_jupyterlab_lp_release():
                         break
                     else:
                         print(locale, f"{percent_translated}%")
-
-
-def prepare_jupyterlab_ext_lp_release():
-    pass
 
 
 if __name__ == "__main__":
