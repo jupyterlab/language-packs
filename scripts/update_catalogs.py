@@ -69,7 +69,7 @@ def update_crowdin_config():
     files = crowdin_data["files"]
     packages = [
         {
-            "source": "/jupyterlab/locale/jupyterab.pot",
+            "source": "/jupyterlab/locale/jupyterlab.pot",
             "translation": (
                 f"/jupyterlab/locale/%locale_with_underscore%"
                 f"/LC_MESSAGES/%file_name%.po"
@@ -80,9 +80,9 @@ def update_crowdin_config():
         if pkg_name != "jupyterlab":
             pkg_name_norm = pkg_name.replace("-", "_")
             packages.append({
-                "source": f"/extensions/{pkg_name}/locale/{pkg_name_norm}.pot",
+                "source": f"/extensions/{pkg_name_norm}/locale/{pkg_name_norm}.pot",
                 "translation": (
-                    f"/extensions/{pkg_name}/locale"
+                    f"/extensions/{pkg_name_norm}/locale"
                     f"/%locale_with_underscore%/LC_MESSAGES/%file_name%.po"
                 ),
             })
