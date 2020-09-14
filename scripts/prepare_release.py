@@ -98,9 +98,13 @@ def prepare_jupyterlab_lp_release():
     """
     extensions = []
     for pkg_name in sorted(os.listdir(JLAB_EXT_PATH)):
-        extension_path = os.path.join(JLAB_EXT_PATH, pakg_name)
+        extension_path = os.path.join(JLAB_EXT_PATH, pkg_name)
         if os.path.isdir(extension_path):
             extensions.append(pkg_name)
+
+    print(extensions)
+
+    return
 
     # TODO: Generalize for extensions
     for locale in sorted(os.listdir(JLAB_LOCALE_PATH)):
