@@ -20,9 +20,9 @@ jobs:
         python -m pip install --upgrade -r requirements/release.txt
     - name: Prepare env variables
       run: |
-        export CURRENT_TAG=`python scripts/parse_ref.py`
+        export CURRENT_TAG=`python .github/scripts/parse_ref.py`
         echo ::set-env name=CURRENT_TAG::$CURRENT_TAG
-        export CURRENT_LOCALE_DIR=`python scripts/parse_release.py`
+        export CURRENT_LOCALE_DIR=`python .github/scripts/parse_release.py`
         echo ::set-env name=CURRENT_LOCALE_DIR::$CURRENT_LOCALE_DIR
     - name: Build release artefacts
       run: |

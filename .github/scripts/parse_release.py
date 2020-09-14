@@ -14,19 +14,22 @@ def parse_release(current_tag):
 
     Example
     -------
-    >>> parse_release("zh-CN-v0.0.1")
+    >>> parse_release("zh-CN@v0.0.1")
     "REPO_ROOT/language-packs/jupyterlab-language-pack-zh-CN"
     """
     if current_tag is None:
         raise Exception("CURRENT_TAG not defined!")
 
-    if current_tag.count("-") != 2:
+    if current_tag.count("-") != 1:
+        raise Exception(f"CURRENT_TAG '{current_tag}' not valid!")
+
+    if "@" not in current_tag:
         raise Exception(f"CURRENT_TAG '{current_tag}' not valid!")
 
     if "dev" in current_tag:
         raise Exception(f"CURRENT_TAG '{current_tag}' should not end with `.devN`!")
 
-    locale = current_tag.split("-v")[0]
+    locale, version = current_tag.split("@")
     folder_path = os.path.join(LANG_PACKS_DIR, f"jupyterlab-language-pack-{locale}")
     sys.stdout.write(f'{folder_path}')
 

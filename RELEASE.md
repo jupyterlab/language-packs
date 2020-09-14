@@ -8,7 +8,24 @@ for JupyterLab extensions.
 The first step when preparing a release is to make sure a beta or release candidate for JupyterLab
 exists which should mean no new strings are expected to change in the code base.
 
+```python
+# TODO: A script could be run to get the latest tags/releases of all the packages and provide
+# suggestions on updating the repository-map.yml
+```
+
+With this information update the `repository-map.yml` file to point to the latest version for
+which translation strings are going to be scrapped from the codebase.
+
 Update the current catalog for JupyterLab and JupyterLab extensions.
+
+```python
+# TODO: either use jupyterlab-translate command directly or add a command to automate this
+# even further using the `repository-map.yml`, to clone repos and do the updates.
+# The automation will greatly simplify work but it may take some time.
+```
+
+Push the changes to Github, Crowdin will update the loaded catalogs and expose and new strings to
+translators.
 
 ## Wait for translations
 
@@ -18,7 +35,7 @@ Give some time to authors to update the new translations in the version.
 
 Crowdin integration is currently set with the [JupyterLab-Bot](https://github.com/jupyterlab-bot).
 
-Before merging the PR make sure to squash to a single commit.
+Before merging the PR make sure to squash to a single commit to keep git history clean.
 
 If there are conflicts in the PR, close it and delete the branch, and wait for a new one
 to be regenerated, which should be conflict free.
@@ -26,16 +43,15 @@ to be regenerated, which should be conflict free.
 ## Prepare packages
 
 Run the `prepare_release.py` script to check which packages have 100% translation and bumb versions
-accordingly. This script will print some information, bump package version and add commits and tags.
+accordingly. This script will print some information, bump package versions and add commits and tags.
 
 ## Push commits and tags
 
-Assuming there is a remote pointing to the upstream repository called repository, run:
+Assuming there is a remote pointing to the upstream repository called `upstream`, run:
 
 ```bash
 git push upstream --tags
 git push upstream master
 ```
 
-This will trigger Github workflows on CI and make the corresponding releases and publication to
-PyPI for the created tags.
+This will trigger Github workflows on CI and make the corresponding releases on Github and PyPI.
