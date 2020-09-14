@@ -70,7 +70,7 @@ def update_crowdin_config():
     packages = [
         {
             "source": "/jupyterlab/locale/jupyterab.pot",
-            "traslation": (
+            "translation": (
                 f"/jupyterlab/locale/%locale_with_underscore%"
                 f"/LC_MESSAGES/%file_name%.po"
             ),
