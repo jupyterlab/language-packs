@@ -16,6 +16,7 @@ import os
 
 # Third party imports
 import polib
+import subprocess
 from jupyterlab_translate import api
 
 # Constants
@@ -25,6 +26,16 @@ LANG_PACKS_DIR = os.path.join(REPO_ROOT, "language-packs")
 JLAB_LOCALE_DIR = os.path.join(REPO_ROOT, "jupyterlab", "locale")
 JLAB_EXT_DIR = os.path.join(REPO_ROOT, "jupyterlab_extensions")
 LC_MESSAGES_FOLDER = "LC_MESSAGES"
+
+
+def bumbversion(path, release=False):
+    if release:
+        cmd_args = ["bump2version", "release", "--verbose", "--tag"]
+    else:
+        cmd_args = ["bump2version", "patch", "--verbose"]
+
+    p = subprocess.Popen(cmd_args, cwd=path)
+    p.communicate()
 
 
 def prepare_jupyterlab_lp_release():
@@ -41,6 +52,11 @@ def prepare_jupyterlab_lp_release():
                     if percent_translated == 100:
                         print(locale, f"{percent_translated}%", "compiling...")
                         api.compile_language_pack(REPO_ROOT, "jupyterlab", [locale])
+                        locale_name = locale.replace("_", "-")
+                        package_dir = os.path.join(LANG_PACKS_DIR, f"jupyterlab-language-pack-{locale_name}")
+                        bumbversion(package_dir, release=True)
+                        bumbversion(package_dir, release=False)
+                        print(package_dir)
                         break
                     else:
                         print(locale, f"{percent_translated}%")
