@@ -15,8 +15,10 @@ This script will:
 import os
 import subprocess
 import sys
+import time
 
 # Third party imports
+import click
 import jupyterlab_translate.api as api
 import yaml
 
@@ -122,6 +124,7 @@ def update_catalog(package_name, version):
 
 
 if __name__ == "__main__":
+    start_run_time = time.time()
     args = sys.argv[1:]
     data = load_repo_map()
     packages = []
@@ -140,7 +143,15 @@ if __name__ == "__main__":
         sys.exit(0)
     
     for package_name in packages:
+        click.echo(click.style(f"\n\nUpdating catalog for \"{package_name}\"\n\n", fg="cyan"))
         url = data[package_name]["url"]
         version = data[package_name]["current-version-tag"]
         update_repo(package_name, url, version)
         update_catalog(package_name, version)
+
+    delta = round(time.time() - start_run_time, 0)
+    click.echo(
+        click.style(
+            f'\n\n\nCatalogs updated in {delta} seconds\n', fg="green"
+        )
+    )
