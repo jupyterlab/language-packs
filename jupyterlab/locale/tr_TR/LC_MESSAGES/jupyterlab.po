@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-09-23 21:13\n"
+"PO-Revision-Date: 2020-09-23 22:16\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -984,7 +984,7 @@ msgstr "JupyterLab Teması"
 
 #: packages/apputils-extension/src/themesplugins.ts:178 packages/apputils-extension/src/themesplugins.ts:254
 msgid "Increase Code Font Size"
-msgstr "Kodun Yazı Tipi Boyutunu Artırın"
+msgstr "Kodun Yazı Tipi Boyutunu Büyüt"
 
 #: packages/apputils-extension/src/themesplugins.ts:185 packages/apputils-extension/src/themesplugins.ts:262
 msgid "Decrease Code Font Size"
@@ -992,7 +992,7 @@ msgstr "Kodun Yazı Tipi Boyutunu Azaltın"
 
 #: packages/apputils-extension/src/themesplugins.ts:195 packages/apputils-extension/src/themesplugins.ts:271
 msgid "Increase Content Font Size"
-msgstr "İçerik Yazı Boyutunu Arttır"
+msgstr "İçerik Yazı Boyutunu Büyüt"
 
 #: packages/apputils-extension/src/themesplugins.ts:202 packages/apputils-extension/src/themesplugins.ts:279
 msgid "Decrease Content Font Size"
@@ -1375,7 +1375,7 @@ msgstr "sekme"
 
 #: packages/csvviewer/src/toolbar.ts:129
 msgid "pipe"
-msgstr "boru"
+msgstr "veriyolu"
 
 #: packages/csvviewer/src/toolbar.ts:130
 msgid "hash"
@@ -1457,16 +1457,15 @@ msgid "Overrides for the default viewers for file types.\n"
 "%1\n\n"
 "Available file types:\n"
 "%2"
-msgstr "Dosya türleri için varsayılan görüntüleyiciler için geçersiz kılmalar.\n"
-"Dosya türü adından belge görüntüleyici adına bir eşleme belirtin, örneğin:\n\n"
-"varsayılan Görüntüleyenler: {\n"
-"   işaretleme: \"Önizlemeyi İşaretle\"\n"
+msgstr "Dosya tipleri için varsayılan görüntüleyicileri ezmek için. Dosya tipi adı için dosya görüntüleyici adını haritada belirtilmeli. Örneğin:\n\n"
+"defaultViewers: {\n"
+" markdown: \"Markdown preview\"\n"
 "}\n\n"
-"Var olmayan dosya türlerini veya görüntüleyenleri belirtirseniz veya bir görüntüleyici belirli bir dosya türünü açamazsa, geçersiz kılma çalışmaz.\n\n"
-"Mevcut izleyiciler:\n"
-"% 1\n\n"
-"Mevcut dosya türleri:\n"
-"% 2"
+"Eğer var olmayan bir dosya tipi yada görüntüleyicisi belirttiyseniz veya dosya görüntüleyici belirtilen dosya tipini açamıyorsa, ezme işlemi işe yaramayacaktır.\n\n"
+"Erişilebilir görüntüleyiciler:\n"
+"%1\n"
+"Erişilebilir dosya tipleri:\n"
+"%2"
 
 #: packages/docmanager-extension/src/index.ts:394 packages/filebrowser-extension/src/index.ts:643 packages/filebrowser-extension/src/index.ts:928 packages/htmlviewer-extension/src/index.tsx:132
 msgid "File Operations"
@@ -1514,7 +1513,7 @@ msgstr "% 1'i Kontrol Noktasına geri döndür"
 
 #: packages/docmanager-extension/src/index.ts:546
 msgid "Revert contents to previous checkpoint"
-msgstr "İçerik geçmiş kontrol noktasına döndürülüyor"
+msgstr "İçeriği önceki kontrol noktasına geri döndür"
 
 #: packages/docmanager-extension/src/index.ts:556
 msgid "Cannot Revert"
@@ -1598,7 +1597,7 @@ msgstr "Dosya Tarayıcısında Göster"
 
 #: packages/docmanager-extension/src/index.ts:916
 msgid "Are you sure you want to revert the %1 to the latest checkpoint? "
-msgstr "%1’i en son kontrol noktası olarak yeniden yazmak istediğine emin misin? "
+msgstr "%1’i en son kontrol noktasına döndürmek istediğine emin misin? "
 
 #: packages/docmanager-extension/src/index.ts:922
 msgid "This cannot be undone."
@@ -1843,7 +1842,7 @@ msgstr "<code>%1</code> paketi aşağıdaki çekirdekler için gereklidir:"
 msgid "This package has indicated that it needs a corresponding kernel\n"
 "package. Please contact your Administrator to update the server with\n"
 "one of the following commands:"
-msgstr "Bu paketin kendisine karşılık gelen bir sunucu paketine ihtiyacı var. Sunucuyu güncellemek için şu komutlardan birisi ile yöneticiniz ile iletişime geçin:"
+msgstr "Bu paket, karşılık gelen bir çekirdek paketine ihtiyacı olduğunu belirtti. Sunucuyu aşağıdaki komutlardan biriyle güncellemek için lütfen Yöneticinizle bağlantı kurun:"
 
 #: packages/extensionmanager/src/companions.tsx:198
 msgid "You should make sure that the indicated packages are installed before\n"
@@ -2258,7 +2257,7 @@ msgstr "Metin editörü"
 
 #: packages/fileeditor-extension/src/commands.ts:1025
 msgid "Increase Font Size"
-msgstr "Yazı Boyutunu Artır"
+msgstr "Yazı Tipi Boyutunu Büyüt"
 
 #: packages/fileeditor-extension/src/commands.ts:1028
 msgid "Decrease Font Size"
@@ -2280,7 +2279,7 @@ msgstr[1] "Boşluklar: %1"
 
 #: packages/fileeditor-extension/src/commands.ts:1106
 msgid "Increase Text Editor Font Size"
-msgstr "Metin Düzenleyicisi Yazı Tipi Boyutunu Artırın"
+msgstr "Metin Düzenleyicisi Yazı Tipi Boyutunu Büyüt"
 
 #: packages/fileeditor-extension/src/commands.ts:1110
 msgid "Decrease Text Editor Font Size"
@@ -2797,7 +2796,7 @@ msgstr "Önceki Sekmeyi Aktifleştir"
 
 #: packages/markdownviewer-extension/src/index.ts:142
 msgid "Markdown Preview"
-msgstr "Markdown Önizlemesi"
+msgstr "Markdown Önizleme"
 
 #: packages/markdownviewer-extension/src/index.ts:177
 msgid "Show Markdown Editor"
@@ -3025,11 +3024,11 @@ msgstr "Tümü Kodları Daralt"
 
 #: packages/notebook-extension/src/index.ts:1903
 msgid "Expand All Code"
-msgstr "Tümü Kodları Genişlet"
+msgstr "Tüm Kodları Göster"
 
 #: packages/notebook-extension/src/index.ts:1914
 msgid "Collapse Selected Outputs"
-msgstr "Seçilen Çıktıları Daralt"
+msgstr "Seçilen Çıktıları Kapat"
 
 #: packages/notebook-extension/src/index.ts:1925
 msgid "Expand Selected Outputs"
@@ -3037,11 +3036,11 @@ msgstr "Seçilen Çıktıları Genişlet"
 
 #: packages/notebook-extension/src/index.ts:1936
 msgid "Collapse All Outputs"
-msgstr "Tümü Çıktıları Daralt"
+msgstr "Tüm Çıktıları Kapat"
 
 #: packages/notebook-extension/src/index.ts:1947
 msgid "Expand All Outputs"
-msgstr "Tümü Çıktıları Genişlet"
+msgstr "Tüm Çıktıları Göster"
 
 #: packages/notebook-extension/src/index.ts:1958
 msgid "Enable Scrolling for Outputs"
@@ -3113,7 +3112,7 @@ msgstr "PDF"
 
 #: packages/notebook-extension/src/index.ts:2515
 msgid "ReStructured Text"
-msgstr "Yeniden Yapılandırılmış Metin"
+msgstr "ReStructured Text"
 
 #: packages/notebook-extension/src/index.ts:2516
 msgid "Executable Script"
@@ -3521,7 +3520,7 @@ msgstr "Mevcut terminal oturumunu yenile"
 
 #: packages/terminal-extension/src/index.ts:403
 msgid "Increase Terminal Font Size"
-msgstr "Kullanıcı Arayüzü Yazı Boyutunu Artır"
+msgstr "Kullanıcı Arayüzü Yazı Boyutunu Büyüt"
 
 #: packages/terminal-extension/src/index.ts:417
 msgid "Decrease Terminal Font Size"
