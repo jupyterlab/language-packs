@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-09-24 06:42\n"
+"PO-Revision-Date: 2020-09-24 07:56\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -58,7 +58,7 @@ msgctxt "schema"
 msgid "The text line width expressed in CSS ch units.\n"
 "If `null`, lines fit the viewport width."
 msgstr "CSS ch birimleriyle ifade edilen metin satırı genişliği.\n"
-"\"Boş\" ise, çizgiler görüntü alanı genişliğine sığar."
+"\"Null\" ise, çizgiler görüntü alanı genişliğine sığar."
 
 #: /examples/federated/md_package/./schema/plugin.json:5 /packages/markdownviewer-extension/schema/plugin.json:5
 msgctxt "schema"
@@ -67,7 +67,7 @@ msgstr "Markdown görüntüleme ayarları."
 
 #: /examples/federated/md_package/./schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:54
 msgid "Hide Front Matter"
-msgstr "Ön Bölümleri Gizle"
+msgstr "Ön Kısmı Gizle"
 
 #: /examples/federated/md_package/./schema/plugin.json:55 /packages/markdownviewer-extension/schema/plugin.json:55
 msgctxt "schema"
@@ -75,7 +75,7 @@ msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr "YAML ön maddesi gizlenip/gizlenmeme durum aşağıdaki yöntemlerle belirlenir. \n"
+msgstr "YAML ön kısmının gizlenip/gizlenmeme durumu aşağıdaki yöntemlerle belirlenir. \n"
 "YAML, belgenin üst kısmına yerleştirilmiş olmalıdır, üç çizgi (---) ile başlamalıdır. Bitiş kısmı ise üç çizgi(---) ya da üç nokta (...) ile bitirilmelidir."
 
 #: /examples/federated/md_package/./schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:60
@@ -101,7 +101,8 @@ msgstr "Ana JupyterLab uygulama seçenekleri."
 msgctxt "schema"
 msgid "Overrides for where to show sidebar items\n"
 "e.g., {\"tab-manager\": \"right\"}"
-msgstr "Sidebar itemlerinin nerede görüneceğini belirler, üstüne yazar"
+msgstr "Kenar çubuğu öğelerinin nerede görüneceğini belirler\n"
+"örn: {\"sekme yönetimi\": \"sağ\"}"
 
 #: /packages/application-extension/schema/sidebar.json:3
 msgctxt "schema"
