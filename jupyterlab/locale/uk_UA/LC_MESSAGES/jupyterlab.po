@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-09-25 10:44\n"
+"PO-Revision-Date: 2020-09-25 11:45\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -76,16 +76,19 @@ msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr ""
+msgstr "Визначає, чи приховувати титульні сторінки YAML.\n"
+"Титульні сторінки YAML розміщуються на початку документа,\n"
+"починаються рядком із трьох дефісів (---) і закінчуються рядком із\n"
+"трьох дефісів (---) або трьох крапок (...)."
 
 #: /examples/federated/md_package/./schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:60
 msgid "Render Timeout"
-msgstr ""
+msgstr "Час очікування обробки"
 
 #: /examples/federated/md_package/./schema/plugin.json:61 /packages/markdownviewer-extension/schema/plugin.json:61
 msgctxt "schema"
 msgid "The render timeout in milliseconds."
-msgstr ""
+msgstr "Час очікування обробки в мілісекундах."
 
 #: /packages/application-extension/schema/main.json:2
 msgctxt "schema"
@@ -121,7 +124,7 @@ msgstr "Перевизначення"
 #: /packages/apputils-extension/schema/palette.json:2
 msgctxt "schema"
 msgid "Command Palette"
-msgstr ""
+msgstr "Палітра команд"
 
 #: /packages/apputils-extension/schema/palette.json:3
 msgctxt "schema"
@@ -178,7 +181,7 @@ msgstr "Перевизначіть змінні теми CSS шляхом вст
 #: /packages/codemirror-extension/schema/commands.json:10
 msgctxt "schema"
 msgid "Configures the keymap to use"
-msgstr ""
+msgstr "Налаштовує потрібну розкладку клавіатури"
 
 #: /packages/codemirror-extension/schema/commands.json:15 /packages/terminal-extension/schema/plugin.json:52 packages/apputils-extension/src/themesplugins.ts:238
 msgid "Theme"
@@ -202,7 +205,7 @@ msgstr "Прокручувати крізь кінець текстового д
 
 #: /packages/codemirror-extension/schema/commands.json:27
 msgid "Style Active Line"
-msgstr ""
+msgstr "Стилізувати активний рядок"
 
 #: /packages/codemirror-extension/schema/commands.json:28
 msgctxt "schema"
@@ -298,7 +301,8 @@ msgstr "Режим взаємодії"
 msgctxt "schema"
 msgid "Whether the console interaction mimics the notebook\n"
 "or terminal keyboard shortcuts."
-msgstr ""
+msgstr "Визначає, чи взаємодія з консоллю імітує натискання\n"
+"сполучення клавіш на ноутбуці або терміналі."
 
 #: /packages/console-extension/schema/tracker.json:42 packages/console-extension/src/foreign.ts:85
 msgid "Show All Kernel Activity"
@@ -308,186 +312,190 @@ msgstr "Відобразити всю активність ядра"
 msgctxt "schema"
 msgid "Whether the console defaults to showing all\n"
 "kernel activity or just kernel activity originating from itself."
-msgstr ""
+msgstr "Визначає, які операції ядра відображає консоль за умовчанням:\n"
+"усі чи лише ті, які походять із нього."
 
 #: /packages/debugger-extension/schema/main.json:3
 msgctxt "schema"
 msgid "Debugger settings"
-msgstr ""
+msgstr "Параметри налагоджувача"
 
 #: /packages/debugger-extension/schema/main.json:34
 msgid "Variable filter"
-msgstr ""
+msgstr "Фільтр змінних"
 
 #: /packages/debugger-extension/schema/main.json:35
 msgctxt "schema"
 msgid "Variables to filter out in the tree and table viewers"
-msgstr ""
+msgstr "Змінні, за якими можна фільтрувати дані в поданнях дерева й таблиці"
 
 #: /packages/debugger-extension/schema/main.json:5
 msgctxt "schema"
 msgid "Debugger"
-msgstr ""
+msgstr "Налагоджувач"
 
 #: /packages/docmanager-extension/schema/plugin.json:22 packages/docmanager-extension/src/index.ts:694
 msgid "Autosave Documents"
-msgstr ""
+msgstr "Автозбереження документів"
 
 #: /packages/docmanager-extension/schema/plugin.json:23
 msgctxt "schema"
 msgid "Whether to autosave documents"
-msgstr ""
+msgstr "Чи зберігати документи автоматично"
 
 #: /packages/docmanager-extension/schema/plugin.json:28
 msgid "Autosave Interval"
-msgstr ""
+msgstr "Інтервал автозбереження"
 
 #: /packages/docmanager-extension/schema/plugin.json:29
 msgctxt "schema"
 msgid "Length of save interval in seconds"
-msgstr ""
+msgstr "Довжина інтервалу збереження в секундах"
 
 #: /packages/docmanager-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Document Manager settings."
-msgstr ""
+msgstr "Параметри Диспетчера документів."
 
 #: /packages/docmanager-extension/schema/plugin.json:34
 msgid "Default Viewers"
-msgstr ""
+msgstr "Стандартні засоби перегляду"
 
 #: /packages/docmanager-extension/schema/plugin.json:36
 msgctxt "schema"
 msgid "Overrides for the default viewers for file types"
-msgstr ""
+msgstr "Перевизначає параметри стандартних засобів перегляду певних типів файлів"
 
 #: /packages/docmanager-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Document Manager"
-msgstr ""
+msgstr "Диспетчер документів"
 
 #: /packages/documentsearch-extension/schema/plugin.json:2
 msgctxt "schema"
 msgid "Document Search"
-msgstr ""
+msgstr "Пошук документів"
 
 #: /packages/documentsearch-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Document search plugin."
-msgstr ""
+msgstr "Плагін пошуку документів."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:14
 msgid "Disclaimed Status"
-msgstr ""
+msgstr "Статус «Застережено»"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:15
 msgctxt "schema"
 msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
-msgstr ""
+msgstr "Указує, чи усвідомлює користувач те, що розширення, якими він керує в цьому інтерфейсі, запускають довільний код, який може бути небезпечний"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:4
 msgctxt "schema"
 msgid "Extension Manager"
-msgstr ""
+msgstr "Диспетчер розширень"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Extension manager settings."
-msgstr ""
+msgstr "Параметри диспетчера розширень."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:8
 msgid "Enabled Status"
-msgstr ""
+msgstr "Статус «Увімкнено»"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:9
 msgctxt "schema"
 msgid "Enables extension manager (requires Node.js/npm).\n"
 "WARNING: installing untrusted extensions may be unsafe."
-msgstr ""
+msgstr "Активує диспетчер розширень (потрібен Node.js/npm).\n"
+"УВАГА! Установлювати ненадійні розширення може бути небезпечно."
 
 #: /packages/filebrowser-extension/schema/browser.json:21
 msgid "Navigate to current directory"
-msgstr ""
+msgstr "Переходити до поточного каталогу"
 
 #: /packages/filebrowser-extension/schema/browser.json:22
 msgctxt "schema"
 msgid "Whether to automatically navigate to a document's current directory"
-msgstr ""
+msgstr "Указує, чи переходити автоматично до поточного каталогу документа"
 
 #: /packages/filebrowser-extension/schema/browser.json:27
 msgid "Filter on file name with a fuzzy search"
-msgstr ""
+msgstr "Фільтрувати за назвою файлу з використанням неточного пошуку"
 
 #: /packages/filebrowser-extension/schema/browser.json:28
 msgctxt "schema"
 msgid "Whether to apply fuzzy algorithm while filtering on file names"
-msgstr ""
+msgstr "Указує, чи застосовувати алгоритм часткових збігів під час фільтрування за назвою файлу"
 
 #: /packages/filebrowser-extension/schema/browser.json:4
 msgctxt "schema"
 msgid "File Browser"
-msgstr ""
+msgstr "Оглядач файлів"
 
 #: /packages/filebrowser-extension/schema/browser.json:5
 msgctxt "schema"
 msgid "File Browser settings."
-msgstr ""
+msgstr "Параметри оглядача файлів."
 
 #: /packages/fileeditor-extension/schema/plugin.json:4
 msgctxt "schema"
 msgid "Text Editor"
-msgstr ""
+msgstr "Текстовий редактор"
 
 #: /packages/fileeditor-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Text editor settings."
-msgstr ""
+msgstr "Параметри текстового редактора."
 
 #: /packages/fileeditor-extension/schema/plugin.json:61
 msgid "Editor Configuration"
-msgstr ""
+msgstr "Конфігурація редактора"
 
 #: /packages/fileeditor-extension/schema/plugin.json:62
 msgctxt "schema"
 msgid "The configuration for all text editors.\n"
 "If `fontFamily`, `fontSize` or `lineHeight` are `null`,\n"
 "values from current theme are used."
-msgstr ""
+msgstr "Конфігурація всіх текстових редакторів.\n"
+"Якщо для параметрів fontFamily, fontSize або lineHeight установлено значення «null»,\n"
+"використовуються значення поточної теми."
 
 #: /packages/imageviewer-extension/schema/plugin.json:2
 msgctxt "schema"
 msgid "Image Viewer"
-msgstr ""
+msgstr "Засіб перегляду зображень"
 
 #: /packages/imageviewer-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Image viewer settings."
-msgstr ""
+msgstr "Параметри засобу перегляду зображень."
 
 #: /packages/inspector-extension/schema/inspector.json:2
 msgctxt "schema"
 msgid "Inspector"
-msgstr ""
+msgstr "Інспектор"
 
 #: /packages/inspector-extension/schema/inspector.json:3
 msgctxt "schema"
 msgid "Inspector settings."
-msgstr ""
+msgstr "Параметри інспектора."
 
 #: /packages/launcher-extension/schema/plugin.json:2
 msgctxt "schema"
 msgid "Launcher"
-msgstr ""
+msgstr "Запускач"
 
 #: /packages/launcher-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Launcher settings."
-msgstr ""
+msgstr "Параметри запускача."
 
 #: /packages/logconsole-extension/schema/plugin.json:10
 msgctxt "schema"
 msgid "Maximum number of log entries to store in memory"
-msgstr ""
+msgstr "Максимальна кількість записів журналу, що можуть зберігатися в пам’яті"
 
 #: /packages/logconsole-extension/schema/plugin.json:15
 msgid "Status Bar Item flash"
@@ -715,204 +723,205 @@ msgstr ""
 #: /packages/terminal-extension/schema/plugin.json:77
 msgctxt "schema"
 msgid "Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available"
-msgstr ""
+msgstr "Активує можливість вставлення за допомогою клавіш Ctrl+V. Можна заборонити виконувати команду вставлення за допомогою клавіш Ctrl+V, наприклад, у редакторі vi. Цей параметр не діє в macOS, де застосовується сполучення клавіш Cmd+V"
 
 #: /packages/terminal-extension/schema/plugin.json:82
 msgid "Treat option as meta key on macOS"
-msgstr ""
+msgstr "Вважати клавішу Option метаклавішею в macOS"
 
 #: /packages/terminal-extension/schema/plugin.json:83
 msgctxt "schema"
 msgid "Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word"
-msgstr ""
+msgstr "Клавіша Option у macOS може слугувати метаклавішею. Це дає змогу переміщувати курсор на одне слово за допомогою такого сполучення, як Option+F"
 
 #: /packages/tooltip-extension/schema/consoles.json:2
 msgctxt "schema"
 msgid "Console Tooltips"
-msgstr ""
+msgstr "Підказки консолі"
 
 #: /packages/tooltip-extension/schema/consoles.json:3
 msgctxt "schema"
 msgid "Console tooltip settings."
-msgstr ""
+msgstr "Параметри підказок консолі."
 
 #: /packages/tooltip-extension/schema/files.json:2
 msgctxt "schema"
 msgid "File Editor Tooltips"
-msgstr ""
+msgstr "Підказки Редактора файлів"
 
 #: /packages/tooltip-extension/schema/files.json:3
 msgctxt "schema"
 msgid "File editor tooltip settings."
-msgstr ""
+msgstr "Параметри підказок Редактора файлів."
 
 #: /packages/tooltip-extension/schema/notebooks.json:2
 msgctxt "schema"
 msgid "Notebook Tooltips"
-msgstr ""
+msgstr "Підказки Блокнота"
 
 #: /packages/tooltip-extension/schema/notebooks.json:3
 msgctxt "schema"
 msgid "Notebook tooltip settings."
-msgstr ""
+msgstr "Параметри підказок Блокнота."
 
 #: /packages/translation-extension/schema/plugin.json:10
 msgid "Language locale"
-msgstr ""
+msgstr "Мова користувача"
 
 #: /packages/translation-extension/schema/plugin.json:11
 msgctxt "schema"
 msgid "Set the interface display language. Examples: 'es_CO', 'fr'."
-msgstr ""
+msgstr "Установіть мову інтерфейсу користувача. Наприклад, «es_CO», «fr»."
 
 #: /packages/translation-extension/schema/plugin.json:16
 msgid "Localized strings prefix"
-msgstr ""
+msgstr "Префікс локалізованих рядків"
 
 #: /packages/translation-extension/schema/plugin.json:17
 msgctxt "schema"
 msgid "Add a prefix to localized strings."
-msgstr ""
+msgstr "Додавайте префікс до локалізованих рядків."
 
 #: /packages/translation-extension/schema/plugin.json:22
 msgid "Display localized strings prefix"
-msgstr ""
+msgstr "Показувати префікс локалізованих рядків"
 
 #: /packages/translation-extension/schema/plugin.json:23
 msgctxt "schema"
 msgid "Display the `stringsPrefix` on localized strings."
-msgstr ""
+msgstr "Показуйте префікс «stringsPrefix» у локалізованих рядках."
 
 #: /packages/translation-extension/schema/plugin.json:4
 msgctxt "schema"
 msgid "Language"
-msgstr ""
+msgstr "Мова"
 
 #: /packages/translation-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Language settings."
-msgstr ""
+msgstr "Параметри мови."
 
 #: packages/application-extension/src/index.tsx:143
 msgid "Error Registering Plugins"
-msgstr ""
+msgstr "Плагіни реєстрації помилок"
 
 #: packages/application-extension/src/index.tsx:190 packages/extensionmanager/src/build-helper.tsx:31
 msgid "Build Complete"
-msgstr ""
+msgstr "Складання завершено"
 
 #: packages/application-extension/src/index.tsx:193 packages/extensionmanager/src/build-helper.tsx:34
 msgid "Build successfully completed, reload page?"
-msgstr ""
+msgstr "Складання завершено. Оновити сторінку?"
 
 #: packages/application-extension/src/index.tsx:195 packages/extensionmanager/src/build-helper.tsx:36
 msgid "You will lose any unsaved changes."
-msgstr ""
+msgstr "Ти втратите всі незбережені зміни."
 
 #: packages/application-extension/src/index.tsx:200 packages/extensionmanager/src/build-helper.tsx:41
 msgid "Reload Without Saving"
-msgstr ""
+msgstr "Оновити, не зберігаючи зміни"
 
 #: packages/application-extension/src/index.tsx:203 packages/extensionmanager/src/build-helper.tsx:44
 msgid "Save and Reload"
-msgstr ""
+msgstr "Зберегти й оновити"
 
 #: packages/application-extension/src/index.tsx:216 packages/extensionmanager/src/build-helper.tsx:57
 msgid "Save Failed"
-msgstr ""
+msgstr "Не вдалося зберегти"
 
 #: packages/application-extension/src/index.tsx:225 packages/extensionmanager/src/build-helper.tsx:67
 msgid "Build Failed"
-msgstr ""
+msgstr "Складання не завершено"
 
 #: packages/application-extension/src/index.tsx:243
 msgid "JupyterLab build is suggested:"
-msgstr ""
+msgstr "Запропоновано складання JupyterLab:"
 
 #: packages/application-extension/src/index.tsx:250
 msgid "Build Recommended"
-msgstr ""
+msgstr "Запропоновано складання"
 
 #: packages/application-extension/src/index.tsx:254
 msgid "Build"
-msgstr ""
+msgstr "Складання"
 
 #: packages/application-extension/src/index.tsx:260
 msgid "Are you sure you want to exit JupyterLab?\n\n"
 "Any unsaved changes will be lost."
-msgstr ""
+msgstr "Справді вийти з JupyterLab?\n\n"
+"Усі незбережені зміни буде втрачено."
 
 #: packages/application-extension/src/index.tsx:424
 msgid "The path: %1 was not found. JupyterLab redirected to: %2"
-msgstr ""
+msgstr "Шлях %1 не знайдено. JupyterLab переспрямовано на адресу %2"
 
 #: packages/application-extension/src/index.tsx:433
 msgid "Path Not Found"
-msgstr ""
+msgstr "Шлях не знайдено"
 
 #: packages/application-extension/src/index.tsx:519
 msgid "Switch Sidebar Side"
-msgstr ""
+msgstr "Перемкнути бокову панель"
 
 #: packages/application-extension/src/index.tsx:566 packages/documentsearch-extension/src/index.ts:214 packages/documentsearch-extension/src/index.ts:218 packages/documentsearch-extension/src/index.ts:222 packages/logconsole-extension/src/index.tsx:266 packages/mainmenu-extension/src/index.ts:219 packages/mainmenu-extension/src/index.ts:223 packages/mainmenu-extension/src/index.ts:234 packages/statusbar-extension/src/index.ts:82
 msgid "Main Area"
-msgstr ""
+msgstr "Основна область"
 
 #: packages/application-extension/src/index.tsx:570
 msgid "Shift+Right Click for Browser Menu"
-msgstr ""
+msgstr "Відкривати меню браузера за допомогою Shift + права клавіша миші "
 
 #: packages/application-extension/src/index.tsx:660
 msgid "Activate Next Tab"
-msgstr ""
+msgstr "Активувати наступну вкладку"
 
 #: packages/application-extension/src/index.tsx:667
 msgid "Activate Previous Tab"
-msgstr ""
+msgstr "Активувати попередню вкладку"
 
 #: packages/application-extension/src/index.tsx:674
 msgid "Activate Next Tab Bar"
-msgstr ""
+msgstr "Активувати наступну панель вкладок"
 
 #: packages/application-extension/src/index.tsx:681
 msgid "Activate Previous Tab Bar"
-msgstr ""
+msgstr "Активувати попередню панель вкладок"
 
 #: packages/application-extension/src/index.tsx:694
 msgid "Close Tab"
-msgstr ""
+msgstr "Закрити вкладку"
 
 #: packages/application-extension/src/index.tsx:713
 msgid "Close All Tabs"
-msgstr ""
+msgstr "Закрити всі вкладки"
 
 #: packages/application-extension/src/index.tsx:720
 msgid "Close All Other Tabs"
-msgstr ""
+msgstr "Закрити решту вкладок"
 
 #: packages/application-extension/src/index.tsx:745
 msgid "Close Tabs to Right"
-msgstr ""
+msgstr "Закрити вкладки праворуч"
 
 #: packages/application-extension/src/index.tsx:763
 msgid "Show Left Sidebar"
-msgstr ""
+msgstr "Закрити ліву бокову панель"
 
 #: packages/application-extension/src/index.tsx:779
 msgid "Show Right Sidebar"
-msgstr ""
+msgstr "Закрити праву бокову панель"
 
 #: packages/application-extension/src/index.tsx:795
 msgid "Presentation Mode"
-msgstr ""
+msgstr "Режим презентації"
 
 #: packages/application-extension/src/index.tsx:819
 msgid "Single-Document Mode"
-msgstr ""
+msgstr "Режим одного документа"
 
 #: packages/application-extension/src/index.tsx:933
 msgid "Property Inspector"
-msgstr ""
+msgstr "Інспектор властивостей"
 
 #: packages/application/src/connectionlost.ts:22
 msgid "Server Connection Error"
