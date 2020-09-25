@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-09-24 07:56\n"
+"PO-Revision-Date: 2020-09-25 14:08\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -22,7 +22,7 @@ msgstr "Yazı Tipi Ailesi"
 msgctxt "schema"
 msgid "The font family used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr "Markdown oluşturmak için kullanılan yazı tipi. Eğer \"Null' ise, mevcut temanın değeri kullanılır."
+msgstr "Markdown oluşturmak için kullanılan yazı tipi ailesi. Eğer \"null' ise, mevcut temanın değeri kullanılır."
 
 #: /examples/federated/md_package/./schema/plugin.json:36 /packages/markdownviewer-extension/schema/plugin.json:36
 msgid "Font Size"
@@ -37,7 +37,7 @@ msgstr "Markdown oluşturmak için kullanılan yazı tipinin piksel cinsinden bo
 #: /examples/federated/md_package/./schema/plugin.json:4 /packages/markdownviewer-extension/schema/plugin.json:4
 msgctxt "schema"
 msgid "Markdown Viewer"
-msgstr "Markdown görüntüleyici"
+msgstr "Markdown Görüntüleyici"
 
 #: /examples/federated/md_package/./schema/plugin.json:42 /packages/markdownviewer-extension/schema/plugin.json:42
 msgid "Line Height"
@@ -47,7 +47,8 @@ msgstr "Satır Yüksekliği"
 msgctxt "schema"
 msgid "The line height used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr "Markdown oluşturmak için kullanılan satır yüksekliği. Eğer 'null' değeri var ise, mevcut tema kullanılır."
+msgstr "Markdown oluşturmak için kullanılan satır yüksekliği.\n"
+"Eğer 'null' ise, mevcut temanın değeri kullanılır."
 
 #: /examples/federated/md_package/./schema/plugin.json:48 /packages/markdownviewer-extension/schema/plugin.json:48
 msgid "Line Width"
@@ -67,7 +68,7 @@ msgstr "Markdown görüntüleme ayarları."
 
 #: /examples/federated/md_package/./schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:54
 msgid "Hide Front Matter"
-msgstr "Ön Kısmı Gizle"
+msgstr "Ön Bölümleri Gizle"
 
 #: /examples/federated/md_package/./schema/plugin.json:55 /packages/markdownviewer-extension/schema/plugin.json:55
 msgctxt "schema"
@@ -75,8 +76,8 @@ msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr "YAML ön kısmının gizlenip/gizlenmeme durumu aşağıdaki yöntemlerle belirlenir. \n"
-"YAML, belgenin üst kısmına yerleştirilmiş olmalıdır, üç çizgi (---) ile başlamalıdır. Bitiş kısmı ise üç çizgi(---) ya da üç nokta (...) ile bitirilmelidir."
+msgstr "YAML ön bölümünün gizlenip/gizlenmeme durumunu.\n"
+"YAML ön bölümü, belgenin üst kısmına yerleştirilmiş olmalıdır, üç çizgi (---) satırı ile başlamalı ve üç çizgi (---) ya da üç nokta (...) satırı ile bitirilmelidir."
 
 #: /examples/federated/md_package/./schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:60
 msgid "Render Timeout"
@@ -1582,7 +1583,7 @@ msgstr "%1'i yeniden adlandır..."
 
 #: packages/docmanager-extension/src/index.ts:801
 msgid "Delete %1"
-msgstr "Sil %1"
+msgstr "%1'i Sil"
 
 #: packages/docmanager-extension/src/index.ts:811 packages/docmanager-extension/src/index.ts:815 packages/filebrowser-extension/src/index.ts:498 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/listing.ts:418
 msgid "Delete"
@@ -1606,7 +1607,7 @@ msgstr "Bu işlem geri alınamaz."
 
 #: packages/docmanager-extension/src/index.ts:929
 msgid "The checkpoint was last updated at: "
-msgstr "Kontrol noktası en son burada güncellendi: "
+msgstr "Kontrol noktasının son güncellendiği yer: "
 
 #: packages/docmanager/src/dialogs.ts:115
 msgid "Overwrite file?"
