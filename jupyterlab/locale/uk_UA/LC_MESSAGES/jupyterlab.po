@@ -12,17 +12,18 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-09-26 14:18\n"
+"PO-Revision-Date: 2020-09-26 15:17\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
-msgstr "Шрифт"
+msgstr "Сімейство шрифтів"
 
 #: /examples/federated/md_package/./schema/plugin.json:31 /packages/markdownviewer-extension/schema/plugin.json:31
 msgctxt "schema"
 msgid "The font family used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr "Сімейство шрифтів, що використовується для відображення розмітки. Якщо значення дорівнює `null`, використовується значення з поточної теми."
+msgstr "Сімейство шрифтів для відрисовки розмітки.\n"
+"Якщо встановлено значення null, використовується значення з поточної теми."
 
 #: /examples/federated/md_package/./schema/plugin.json:36 /packages/markdownviewer-extension/schema/plugin.json:36
 msgid "Font Size"
@@ -32,7 +33,8 @@ msgstr "Розмір шрифту"
 msgctxt "schema"
 msgid "The size in pixel of the font used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr "Розмір шрифту в пікселях, що використовується для відображення розмітки. Якщо значення дорівнює `null`, використовується значення з поточної теми."
+msgstr "Розмір шрифту в пікселях для відрисовки розмітки.\n"
+"Якщо встановлено значення null, використовується значення з поточної теми."
 
 #: /examples/federated/md_package/./schema/plugin.json:4 /packages/markdownviewer-extension/schema/plugin.json:4
 msgctxt "schema"
@@ -47,8 +49,8 @@ msgstr "Висота рядка"
 msgctxt "schema"
 msgid "The line height used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr "Висота рядка для відображення розмітки.\n"
-"Якщо значення дорівнює `null`, використовується значення з поточної теми."
+msgstr "Висота рядка для відрисовки розмітки.\n"
+"Якщо встановлено значення null, використовується значення з поточної теми."
 
 #: /examples/federated/md_package/./schema/plugin.json:48 /packages/markdownviewer-extension/schema/plugin.json:48
 msgid "Line Width"
@@ -59,7 +61,7 @@ msgctxt "schema"
 msgid "The text line width expressed in CSS ch units.\n"
 "If `null`, lines fit the viewport width."
 msgstr "Ширина текстового рядка в одиницях «ch» CSS.\n"
-"Якщо «null», текст повністю заповнює вікно."
+"Якщо встановлено значення «null», текст повністю заповнює вікно."
 
 #: /examples/federated/md_package/./schema/plugin.json:5 /packages/markdownviewer-extension/schema/plugin.json:5
 msgctxt "schema"
@@ -83,12 +85,12 @@ msgstr "Визначає, чи приховувати титульні стор�
 
 #: /examples/federated/md_package/./schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:60
 msgid "Render Timeout"
-msgstr "Час очікування обробки"
+msgstr "Час очікування відрисовки"
 
 #: /examples/federated/md_package/./schema/plugin.json:61 /packages/markdownviewer-extension/schema/plugin.json:61
 msgctxt "schema"
 msgid "The render timeout in milliseconds."
-msgstr "Час очікування обробки в мілісекундах."
+msgstr "Час очікування відрисовки в мілісекундах."
 
 #: /packages/application-extension/schema/main.json:2
 msgctxt "schema"
@@ -104,7 +106,7 @@ msgstr "Основні налаштування програми JupyterLab."
 msgctxt "schema"
 msgid "Overrides for where to show sidebar items\n"
 "e.g., {\"tab-manager\": \"right\"}"
-msgstr "Перевизначає, де показати елементи бічної панелі\n"
+msgstr "Перевизначає місце відображення елементів бічної панелі,\n"
 "напр. {\"tab-manager\": \"right\"}"
 
 #: /packages/application-extension/schema/sidebar.json:3
@@ -148,7 +150,7 @@ msgstr "Тема"
 
 #: /packages/apputils-extension/schema/themes.json:31
 msgid "Selected Theme"
-msgstr "Обрана тема"
+msgstr "Вибрана тема"
 
 #: /packages/apputils-extension/schema/themes.json:32
 msgctxt "schema"
@@ -157,17 +159,17 @@ msgstr "Візуальна тема застосована на рівні пр�
 
 #: /packages/apputils-extension/schema/themes.json:37
 msgid "Scrollbar Theming"
-msgstr "Теми смуги прокрутки"
+msgstr "Теми смуги прокручування"
 
 #: /packages/apputils-extension/schema/themes.json:38
 msgctxt "schema"
 msgid "Enable/disable styling of the application scrollbars"
-msgstr "Увімкнути/вимкнути стилі смуг прокрутки"
+msgstr "Увімкнути/вимкнути стилі смуг прокручування"
 
 #: /packages/apputils-extension/schema/themes.json:4
 msgctxt "schema"
 msgid "Theme manager settings."
-msgstr "Налаштування менеджера тем."
+msgstr "Налаштування диспетчера тем."
 
 #: /packages/apputils-extension/schema/themes.json:42
 msgid "Theme CSS Overrides"
@@ -176,7 +178,7 @@ msgstr "Перевизначення теми CSS"
 #: /packages/apputils-extension/schema/themes.json:43
 msgctxt "schema"
 msgid "Override theme CSS variables by setting key-value pairs here"
-msgstr "Перевизначіть змінні теми CSS шляхом встановлення пар ключ-значення"
+msgstr "Перевизначте змінні теми CSS встановленням пар ключ-значення"
 
 #: /packages/codemirror-extension/schema/commands.json:10
 msgctxt "schema"
@@ -191,17 +193,17 @@ msgstr "Тема"
 msgctxt "schema"
 msgid "CSS file defining the corresponding\n"
 ".cm-s-[name] styles is loaded"
-msgstr "CSS файл визначення відповідного\n"
-".cm-s-[name] стилю завантажено"
+msgstr "CSS файл визначення відповідних\n"
+"стилів .cm-s-[name] завантажено"
 
 #: /packages/codemirror-extension/schema/commands.json:21
 msgid "Scroll behavior"
-msgstr "Поведінка прокрутки"
+msgstr "Поведінка прокручування"
 
 #: /packages/codemirror-extension/schema/commands.json:22
 msgctxt "schema"
 msgid "Whether to scroll past the end of text document"
-msgstr "Прокручувати крізь кінець текстового документа"
+msgstr "Визначає, чи прокручувати після кінця текстового документа"
 
 #: /packages/codemirror-extension/schema/commands.json:27
 msgid "Style Active Line"
@@ -210,16 +212,16 @@ msgstr "Стилізувати активний рядок"
 #: /packages/codemirror-extension/schema/commands.json:28
 msgctxt "schema"
 msgid "Value is boolean, or { nonEmpty: boolean }"
-msgstr "Значення булеве або { nonEmpty: boolean }"
+msgstr "Значення логічне або { nonEmpty: boolean }"
 
 #: /packages/codemirror-extension/schema/commands.json:33
 msgid "Style Selected Text"
-msgstr "Стилізувати виділений текст"
+msgstr "Стилізувати вибраний текст"
 
 #: /packages/codemirror-extension/schema/commands.json:34
 msgctxt "schema"
 msgid "Value is boolean"
-msgstr "Булеве значення"
+msgstr "Логічне значення"
 
 #: /packages/codemirror-extension/schema/commands.json:39
 msgid "Selection Pointer"
@@ -266,22 +268,22 @@ msgstr "Налаштування консольного доповнювача."
 #: /packages/completer-extension/schema/files.json:2
 msgctxt "schema"
 msgid "File Editor Completer"
-msgstr "Доповнювач редактора файлів"
+msgstr "Завершувач редактора файлів"
 
 #: /packages/completer-extension/schema/files.json:3
 msgctxt "schema"
 msgid "File editor completer settings."
-msgstr "Налаштування доповнювача редактора файлів."
+msgstr "Налаштування завершувача редактора файлів."
 
 #: /packages/completer-extension/schema/notebooks.json:2
 msgctxt "schema"
 msgid "Notebook Completer"
-msgstr ""
+msgstr "Завершувач блокнотів"
 
 #: /packages/completer-extension/schema/notebooks.json:3
 msgctxt "schema"
 msgid "Notebook completer settings."
-msgstr ""
+msgstr "Налаштування завершувача блокнотів."
 
 #: /packages/console-extension/schema/tracker.json:2
 msgctxt "schema"
@@ -302,7 +304,7 @@ msgctxt "schema"
 msgid "Whether the console interaction mimics the notebook\n"
 "or terminal keyboard shortcuts."
 msgstr "Визначає, чи взаємодія з консоллю імітує натискання\n"
-"сполучення клавіш на ноутбуці або терміналі."
+"сполучення клавіш блокнота або терміналу."
 
 #: /packages/console-extension/schema/tracker.json:42 packages/console-extension/src/foreign.ts:85
 msgid "Show All Kernel Activity"
@@ -318,7 +320,7 @@ msgstr "Визначає, які операції ядра відображає 
 #: /packages/debugger-extension/schema/main.json:3
 msgctxt "schema"
 msgid "Debugger settings"
-msgstr "Параметри налагоджувача"
+msgstr "Налаштування налагоджувача"
 
 #: /packages/debugger-extension/schema/main.json:34
 msgid "Variable filter"
@@ -327,7 +329,7 @@ msgstr "Фільтр змінних"
 #: /packages/debugger-extension/schema/main.json:35
 msgctxt "schema"
 msgid "Variables to filter out in the tree and table viewers"
-msgstr "Змінні, за якими можна фільтрувати дані в поданнях дерева й таблиці"
+msgstr "Змінні, за якими можна фільтрувати дані в переглядачах дерева й таблиці"
 
 #: /packages/debugger-extension/schema/main.json:5
 msgctxt "schema"
@@ -341,7 +343,7 @@ msgstr "Автозбереження документів"
 #: /packages/docmanager-extension/schema/plugin.json:23
 msgctxt "schema"
 msgid "Whether to autosave documents"
-msgstr "Чи зберігати документи автоматично"
+msgstr "Визначає, чи зберігати документи автоматично"
 
 #: /packages/docmanager-extension/schema/plugin.json:28
 msgid "Autosave Interval"
@@ -355,16 +357,16 @@ msgstr "Довжина інтервалу збереження в секунда
 #: /packages/docmanager-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Document Manager settings."
-msgstr "Параметри Диспетчера документів."
+msgstr "Налаштування Диспетчера документів."
 
 #: /packages/docmanager-extension/schema/plugin.json:34
 msgid "Default Viewers"
-msgstr "Стандартні засоби перегляду"
+msgstr "Стандартні переглядачі"
 
 #: /packages/docmanager-extension/schema/plugin.json:36
 msgctxt "schema"
 msgid "Overrides for the default viewers for file types"
-msgstr "Перевизначає параметри стандартних засобів перегляду певних типів файлів"
+msgstr "Перевизначає параметри стандартних переглядачів певних типів файлів"
 
 #: /packages/docmanager-extension/schema/plugin.json:5
 msgctxt "schema"
@@ -388,7 +390,7 @@ msgstr "Статус «Застережено»"
 #: /packages/extensionmanager-extension/schema/plugin.json:15
 msgctxt "schema"
 msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
-msgstr "Указує, чи усвідомлює користувач те, що розширення, якими він керує в цьому інтерфейсі, запускають довільний код, який може бути небезпечний"
+msgstr "Визначає, чи усвідомлює користувач те, що розширення, якими він керує в цьому інтерфейсі, запускають довільний код, який може бути небезпечний"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:4
 msgctxt "schema"
@@ -398,7 +400,7 @@ msgstr "Диспетчер розширень"
 #: /packages/extensionmanager-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Extension manager settings."
-msgstr "Параметри диспетчера розширень."
+msgstr "Налаштування диспетчера розширень."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:8
 msgid "Enabled Status"
@@ -418,7 +420,7 @@ msgstr "Переходити до поточного каталогу"
 #: /packages/filebrowser-extension/schema/browser.json:22
 msgctxt "schema"
 msgid "Whether to automatically navigate to a document's current directory"
-msgstr "Указує, чи переходити автоматично до поточного каталогу документа"
+msgstr "Визначає, чи переходити автоматично до поточного каталогу документа"
 
 #: /packages/filebrowser-extension/schema/browser.json:27
 msgid "Filter on file name with a fuzzy search"
@@ -427,17 +429,17 @@ msgstr "Фільтрувати за назвою файлу з використ�
 #: /packages/filebrowser-extension/schema/browser.json:28
 msgctxt "schema"
 msgid "Whether to apply fuzzy algorithm while filtering on file names"
-msgstr "Указує, чи застосовувати алгоритм часткових збігів під час фільтрування за назвою файлу"
+msgstr "Визначає, чи застосовувати алгоритм часткових збігів під час фільтрування за назвою файлу"
 
 #: /packages/filebrowser-extension/schema/browser.json:4
 msgctxt "schema"
 msgid "File Browser"
-msgstr "Оглядач файлів"
+msgstr "Переглядач файлів"
 
 #: /packages/filebrowser-extension/schema/browser.json:5
 msgctxt "schema"
 msgid "File Browser settings."
-msgstr "Параметри оглядача файлів."
+msgstr "Налаштування переглядача файлів."
 
 #: /packages/fileeditor-extension/schema/plugin.json:4
 msgctxt "schema"
@@ -447,7 +449,7 @@ msgstr "Текстовий редактор"
 #: /packages/fileeditor-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Text editor settings."
-msgstr "Параметри текстового редактора."
+msgstr "Налаштування текстового редактора."
 
 #: /packages/fileeditor-extension/schema/plugin.json:61
 msgid "Editor Configuration"
@@ -459,18 +461,18 @@ msgid "The configuration for all text editors.\n"
 "If `fontFamily`, `fontSize` or `lineHeight` are `null`,\n"
 "values from current theme are used."
 msgstr "Конфігурація всіх текстових редакторів.\n"
-"Якщо для параметрів fontFamily, fontSize або lineHeight установлено значення «null»,\n"
+"Якщо для параметрів fontFamily, fontSize або lineHeight установлено значення null,\n"
 "використовуються значення поточної теми."
 
 #: /packages/imageviewer-extension/schema/plugin.json:2
 msgctxt "schema"
 msgid "Image Viewer"
-msgstr "Засіб перегляду зображень"
+msgstr "Переглядач зображень"
 
 #: /packages/imageviewer-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Image viewer settings."
-msgstr "Параметри засобу перегляду зображень."
+msgstr "Налаштування переглядача зображень."
 
 #: /packages/inspector-extension/schema/inspector.json:2
 msgctxt "schema"
@@ -480,7 +482,7 @@ msgstr "Інспектор"
 #: /packages/inspector-extension/schema/inspector.json:3
 msgctxt "schema"
 msgid "Inspector settings."
-msgstr "Параметри інспектора."
+msgstr "Налаштування інспектора."
 
 #: /packages/launcher-extension/schema/plugin.json:2
 msgctxt "schema"
@@ -490,7 +492,7 @@ msgstr "Запускач"
 #: /packages/launcher-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Launcher settings."
-msgstr "Параметри запускача."
+msgstr "Налаштування запускача."
 
 #: /packages/logconsole-extension/schema/plugin.json:10
 msgctxt "schema"
@@ -499,12 +501,12 @@ msgstr "Максимальна кількість записів журналу,
 
 #: /packages/logconsole-extension/schema/plugin.json:15
 msgid "Status Bar Item flash"
-msgstr ""
+msgstr "Підсвічування елементів у рядку стану"
 
 #: /packages/logconsole-extension/schema/plugin.json:16
 msgctxt "schema"
 msgid "Whether to flash on new log message or not"
-msgstr ""
+msgstr "Визначає, чи підсвічувати нові повідомлення журналу"
 
 #: /packages/logconsole-extension/schema/plugin.json:4
 msgctxt "schema"
@@ -514,7 +516,7 @@ msgstr "Консоль журналу"
 #: /packages/logconsole-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Log Console settings."
-msgstr "Параметри Консолі журналу."
+msgstr "Налаштування консолі журналу."
 
 #: /packages/logconsole-extension/schema/plugin.json:9
 msgid "Log entry count limit"
@@ -528,7 +530,7 @@ msgstr "Головне меню"
 #: /packages/mainmenu-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Main JupyterLab menu settings."
-msgstr "Параметри головного меню JupyterLab."
+msgstr "Налаштування головного меню JupyterLab."
 
 #: /packages/notebook-extension/schema/tracker.json:221
 msgctxt "schema"
@@ -538,7 +540,7 @@ msgstr "Блокнтот"
 #: /packages/notebook-extension/schema/tracker.json:222
 msgctxt "schema"
 msgid "Notebook settings."
-msgstr "Параметри блокнота."
+msgstr "Налаштування блокнота."
 
 #: /packages/notebook-extension/schema/tracker.json:281
 msgid "Code Cell Configuration"
@@ -551,12 +553,12 @@ msgstr "Конфігурація для всіх клітинок коду."
 
 #: /packages/notebook-extension/schema/tracker.json:302
 msgid "Default cell type"
-msgstr "Тип клітинки за умовчанням"
+msgstr "Стандартний тип клітинки"
 
 #: /packages/notebook-extension/schema/tracker.json:303
 msgctxt "schema"
 msgid "The default type (markdown, code, or raw) for new cells"
-msgstr "Тип за умовчанням (розмітка, код або необроблені дані) для нових клітинок"
+msgstr "Стандартний тип (розмітка, код або неформатовані дані) для нових клітинок"
 
 #: /packages/notebook-extension/schema/tracker.json:309
 msgid "Shut down kernel"
@@ -565,7 +567,7 @@ msgstr "Завершити роботу ядра"
 #: /packages/notebook-extension/schema/tracker.json:310
 msgctxt "schema"
 msgid "Whether to shut down or not the kernel when closing a notebook."
-msgstr "Указує, чи завершувати роботу ядра в разі закриття блокнота."
+msgstr "Визначає, чи завершувати роботу ядра в разі закриття блокнота."
 
 #: /packages/notebook-extension/schema/tracker.json:315
 msgid "Markdown Cell Configuration"
@@ -578,12 +580,12 @@ msgstr "Конфігурація всіх клітинок розмітки."
 
 #: /packages/notebook-extension/schema/tracker.json:336
 msgid "Raw Cell Configuration"
-msgstr "Конфігурація клітинок необроблених даних"
+msgstr "Конфігурація клітинок неформатованих даних"
 
 #: /packages/notebook-extension/schema/tracker.json:337
 msgctxt "schema"
 msgid "The configuration for all raw cells."
-msgstr "Конфігурація всіх клітинок необроблених даних."
+msgstr "Конфігурація всіх клітинок неформатованих даних."
 
 #: /packages/notebook-extension/schema/tracker.json:357
 msgid "Scroll past last cell"
@@ -592,7 +594,7 @@ msgstr "Прокручувати після останньої клітинки"
 #: /packages/notebook-extension/schema/tracker.json:358
 msgctxt "schema"
 msgid "Whether to be able to scroll so the last cell is at the top of the panel"
-msgstr "Указує, чи можна прокручувати так, щоб остання клітинка відображалася вгорі панелі"
+msgstr "Визначає, чи можна прокручувати так, щоб остання клітинка відображалася вгорі панелі"
 
 #: /packages/notebook-extension/schema/tracker.json:363
 msgid "Recording timing"
@@ -601,7 +603,7 @@ msgstr "Хронометраж записування"
 #: /packages/notebook-extension/schema/tracker.json:364
 msgctxt "schema"
 msgid "Should timing data be recorded in cell metadata"
-msgstr "Указує, чи записувати хронометричні дані в метадані клітинок"
+msgstr "Визначає, чи записувати хронометричні дані в метадані клітинок"
 
 #: /packages/settingeditor-extension/schema/plugin.json:2
 msgctxt "schema"
@@ -611,7 +613,7 @@ msgstr "Редактор налаштувань"
 #: /packages/settingeditor-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Setting editor settings."
-msgstr "Налаштування параметрів редактора."
+msgstr "Параметри редактора налаштувань."
 
 #: /packages/shortcuts-extension/schema/shortcuts.json:11
 msgctxt "schema"
@@ -631,7 +633,7 @@ msgstr "Налаштування сполучень клавіш."
 #: /packages/statusbar-extension/schema/plugin.json:10
 msgctxt "schema"
 msgid "Whether to show status bar or not"
-msgstr "Указує, чи показувати рядок стану"
+msgstr "Визначає, чи показувати рядок стану"
 
 #: /packages/statusbar-extension/schema/plugin.json:4
 msgctxt "schema"
@@ -654,7 +656,7 @@ msgstr "Сімейство шрифтів"
 #: /packages/terminal-extension/schema/plugin.json:35
 msgctxt "schema"
 msgid "The font family used to render text."
-msgstr "Сімейство шрифтів, що слугує для відтворення тексту."
+msgstr "Сімейство шрифтів для відрисовки тексту."
 
 #: /packages/terminal-extension/schema/plugin.json:4
 msgctxt "schema"
@@ -663,12 +665,12 @@ msgstr "Термінал"
 
 #: /packages/terminal-extension/schema/plugin.json:40
 msgid "Font size"
-msgstr "Розмір шрифтів"
+msgstr "Розмір шрифту"
 
 #: /packages/terminal-extension/schema/plugin.json:41
 msgctxt "schema"
 msgid "The font size used to render text."
-msgstr "Розмір шрифту, що слугує для відтворення тексту."
+msgstr "Розмір шрифту для відрисовки тексту."
 
 #: /packages/terminal-extension/schema/plugin.json:46
 msgid "Line height"
@@ -677,7 +679,7 @@ msgstr "Висота рядка"
 #: /packages/terminal-extension/schema/plugin.json:47
 msgctxt "schema"
 msgid "The line height used to render text."
-msgstr "Висота рядка, що слугує для відтворення тексту."
+msgstr "Висота рядка для відрисовки тексту."
 
 #: /packages/terminal-extension/schema/plugin.json:5
 msgctxt "schema"
@@ -700,7 +702,7 @@ msgstr "Додати елементи спеціальних можливост�
 
 #: /packages/terminal-extension/schema/plugin.json:64
 msgid "Scrollback Buffer"
-msgstr "Дані на екрані"
+msgstr "Буфер прокручування"
 
 #: /packages/terminal-extension/schema/plugin.json:65
 msgctxt "schema"
@@ -742,27 +744,27 @@ msgstr "Підказки консолі"
 #: /packages/tooltip-extension/schema/consoles.json:3
 msgctxt "schema"
 msgid "Console tooltip settings."
-msgstr "Параметри підказок консолі."
+msgstr "Налаштування підказок консолі."
 
 #: /packages/tooltip-extension/schema/files.json:2
 msgctxt "schema"
 msgid "File Editor Tooltips"
-msgstr "Підказки Редактора файлів"
+msgstr "Підказки редактора файлів"
 
 #: /packages/tooltip-extension/schema/files.json:3
 msgctxt "schema"
 msgid "File editor tooltip settings."
-msgstr "Параметри підказок Редактора файлів."
+msgstr "Налаштування підказок редактора файлів."
 
 #: /packages/tooltip-extension/schema/notebooks.json:2
 msgctxt "schema"
 msgid "Notebook Tooltips"
-msgstr "Підказки Блокнота"
+msgstr "Підказки блокнота"
 
 #: /packages/tooltip-extension/schema/notebooks.json:3
 msgctxt "schema"
 msgid "Notebook tooltip settings."
-msgstr "Параметри підказок Блокнота."
+msgstr "Налаштування підказок блокнота."
 
 #: /packages/translation-extension/schema/plugin.json:10
 msgid "Language locale"
@@ -789,7 +791,7 @@ msgstr "Показувати префікс локалізованих рядк�
 #: /packages/translation-extension/schema/plugin.json:23
 msgctxt "schema"
 msgid "Display the `stringsPrefix` on localized strings."
-msgstr "Показуйте префікс «stringsPrefix» у локалізованих рядках."
+msgstr "Відображайте префікс «stringsPrefix» у локалізованих рядках."
 
 #: /packages/translation-extension/schema/plugin.json:4
 msgctxt "schema"
@@ -799,7 +801,7 @@ msgstr "Мова"
 #: /packages/translation-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Language settings."
-msgstr "Параметри мови."
+msgstr "Налаштування мови."
 
 #: packages/application-extension/src/index.tsx:143
 msgid "Error Registering Plugins"
@@ -815,7 +817,7 @@ msgstr "Складання завершено. Оновити сторінку?"
 
 #: packages/application-extension/src/index.tsx:195 packages/extensionmanager/src/build-helper.tsx:36
 msgid "You will lose any unsaved changes."
-msgstr "Ти втратите всі незбережені зміни."
+msgstr "Ви втратите всі незбережені зміни."
 
 #: packages/application-extension/src/index.tsx:200 packages/extensionmanager/src/build-helper.tsx:41
 msgid "Reload Without Saving"
@@ -942,7 +944,8 @@ msgstr "Завантаження..."
 #: packages/apputils-extension/src/index.ts:202
 msgid "The loading screen is taking a long time. \n"
 "Would you like to clear the workspace or keep waiting?"
-msgstr ""
+msgstr "Завантаження екрана триває довго. \n"
+"Очистити робочу область чи очікувати далі?"
 
 #: packages/apputils-extension/src/index.ts:205
 msgid "Keep Waiting"
@@ -1170,7 +1173,7 @@ msgstr "codemirror"
 
 #: packages/codemirror-extension/src/index.ts:285
 msgid "Sublime Text"
-msgstr ""
+msgstr "Sublime Text"
 
 #: packages/codemirror-extension/src/index.ts:299
 msgid "Find..."
@@ -3066,87 +3069,87 @@ msgstr "Згорнути вибрані результати"
 
 #: packages/notebook-extension/src/index.ts:1925
 msgid "Expand Selected Outputs"
-msgstr ""
+msgstr "Розгорнути вибрані результати"
 
 #: packages/notebook-extension/src/index.ts:1936
 msgid "Collapse All Outputs"
-msgstr ""
+msgstr "Згорнути всі результати"
 
 #: packages/notebook-extension/src/index.ts:1947
 msgid "Expand All Outputs"
-msgstr ""
+msgstr "Розгорнути всі результати"
 
 #: packages/notebook-extension/src/index.ts:1958
 msgid "Enable Scrolling for Outputs"
-msgstr ""
+msgstr "Увімкнути прокручування результатів"
 
 #: packages/notebook-extension/src/index.ts:1969
 msgid "Disable Scrolling for Outputs"
-msgstr ""
+msgstr "Вимкнути прокручування результатів"
 
 #: packages/notebook-extension/src/index.ts:1980
 msgid "Select current running or last run cell"
-msgstr ""
+msgstr "Вибрати клітинку, яку запущено зараз або востаннє"
 
 #: packages/notebook-extension/src/index.ts:1991
 msgid "Replace Selection in Notebook Cell"
-msgstr ""
+msgstr "Замінити виділений фрагмент у клітинці блокнота"
 
 #: packages/notebook-extension/src/index.ts:2012 packages/notebook-extension/src/index.ts:2190
 msgid "Notebook Operations"
-msgstr ""
+msgstr "Дії з блокнотом"
 
 #: packages/notebook-extension/src/index.ts:2045
 msgid "Notebook Cell Operations"
-msgstr ""
+msgstr "Дії з клітинкою блокнота"
 
 #: packages/notebook-extension/src/index.ts:2126
 msgid "Clear Output"
-msgstr ""
+msgstr "Очистити результати"
 
 #: packages/notebook-extension/src/index.ts:2145
 msgid "Close and Shutdown Notebook"
-msgstr ""
+msgstr "Закрити й завершити роботу блокнота"
 
 #: packages/notebook-extension/src/index.ts:2149
 msgid "Shut down the Notebook?"
-msgstr ""
+msgstr "Завершити роботу блокнота?"
 
 #: packages/notebook-extension/src/index.ts:2164
 msgid "Export Notebook As…"
-msgstr ""
+msgstr "Експортувати блокнот як…"
 
 #: packages/notebook-extension/src/index.ts:2282 packages/notebook-extension/src/index.ts:981
 msgid "Run Selected Cells"
-msgstr ""
+msgstr "Запустити вибрані клітинки"
 
 #: packages/notebook-extension/src/index.ts:2425
 msgid "For Notebook: %1"
-msgstr ""
+msgstr "Для блокнота: %1"
 
 #: packages/notebook-extension/src/index.ts:2426
 msgid "For Notebook:"
-msgstr ""
+msgstr "Для блокнота:"
 
 #: packages/notebook-extension/src/index.ts:2511
 msgid "HTML"
-msgstr ""
+msgstr "HTML"
 
 #: packages/notebook-extension/src/index.ts:2512
 msgid "LaTeX"
-msgstr ""
+msgstr "LaTeX"
 
 #: packages/notebook-extension/src/index.ts:2513 packages/notebook/src/default-toolbar.tsx:344
 msgid "Markdown"
-msgstr ""
+msgstr "Розмітка"
 
 #: packages/notebook-extension/src/index.ts:2514 packages/notebook-extension/src/index.ts:468
 msgid "PDF"
-msgstr ""
+msgstr "PDF"
 
 #: packages/notebook-extension/src/index.ts:2515
 msgid "ReStructured Text"
-msgstr ""
+msgstr "reStructuredText"
 
 #: packages/notebook-extension/src/index.ts:2516
 msgid "Executable Script"
@@ -3166,7 +3169,7 @@ msgstr "Скрипт"
 
 #: packages/notebook-extension/src/index.ts:472
 msgid "Custom"
-msgstr ""
+msgstr "Власний"
 
 #: packages/notebook-extension/src/index.ts:494
 msgid "Notebook Tools"
@@ -3304,31 +3307,31 @@ msgstr "Тип слайду"
 
 #: packages/notebook/src/notebooktools.ts:887
 msgid "Slide"
-msgstr ""
+msgstr "Слайд"
 
 #: packages/notebook/src/notebooktools.ts:888
 msgid "Sub-Slide"
-msgstr ""
+msgstr "Вкладений слайд"
 
 #: packages/notebook/src/notebooktools.ts:889
 msgid "Fragment"
-msgstr ""
+msgstr "Фрагмент"
 
 #: packages/notebook/src/notebooktools.ts:89
 msgid "Advanced Tools"
-msgstr ""
+msgstr "Додаткові інструменти"
 
 #: packages/notebook/src/notebooktools.ts:890
 msgid "Skip"
-msgstr ""
+msgstr "Пропустити"
 
 #: packages/notebook/src/notebooktools.ts:891
 msgid "Notes"
-msgstr ""
+msgstr "Нотатки"
 
 #: packages/notebook/src/notebooktools.ts:929
 msgid "Raw NBConvert Format"
-msgstr ""
+msgstr "Необроблений формат NBConvert"
 
 #: packages/notebook/src/panel.ts:203
 msgid "Kernel Restarting"
