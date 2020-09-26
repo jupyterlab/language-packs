@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2020-09-26 10:12\n"
+"PO-Revision-Date: 2020-09-26 11:11\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -3332,108 +3332,109 @@ msgstr ""
 
 #: packages/notebook/src/panel.ts:203
 msgid "Kernel Restarting"
-msgstr ""
+msgstr "Перезапуск ядра"
 
 #: packages/notebook/src/panel.ts:204
 msgid "The kernel for %1 appears to have died. It will restart automatically."
-msgstr ""
+msgstr "Схоже, що ядро %1 недоступне. Воно перезапуститься автоматично."
 
 #: packages/notebook/src/truststatus.tsx:26
 msgid "Notebook trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Блокнот надійний: %1 із %2 клітинок надійні."
 
 #: packages/notebook/src/truststatus.tsx:35
 msgid "Active cell trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Активна клітинка надійна: %1 із %2 клітинок надійні."
 
 #: packages/notebook/src/truststatus.tsx:44
 msgid "Notebook not trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Блокнот не надійний: %1 із %2 клітинок надійні."
 
 #: packages/property-inspector/src/index.ts:172
 msgid "No properties to inspect."
-msgstr ""
+msgstr "Немає властивостей, які можна перевірити."
 
 #: packages/rendermime-extension/src/index.ts:54
 msgid "Handle Local Link"
-msgstr ""
+msgstr "Обробка локального посилання"
 
 #: packages/rendermime/src/renderers.ts:74
 msgid "This HTML output contains inline scripts. Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
-msgstr ""
+msgstr "Цей HTML-результат містить вбудовні скрипти. Справді запустити довільний Javascript у цьому сеансі JupyterLab?"
 
 #: packages/rendermime/src/widgets.ts:421
 msgid "JavaScript output is disabled in JupyterLab"
-msgstr ""
+msgstr "Результати JavaScript вимкнено в JupyterLab"
 
 #: packages/running-extension/src/index.ts:136
 msgid "Path: %1\n"
 "Kernel: %2"
-msgstr ""
+msgstr "Шлях: %1\n"
+"Ядро: %2"
 
 #: packages/running-extension/src/index.ts:56
 msgid "Running Terminals and Kernels"
-msgstr ""
+msgstr "Запущені термінали та ядра"
 
 #: packages/running-extension/src/index.ts:91
 msgid "Kernels"
-msgstr ""
+msgstr "Ядра"
 
 #: packages/running/src/index.tsx:141 packages/running/src/index.tsx:198
 msgid "SHUT DOWN"
-msgstr ""
+msgstr "ЗАВЕРШИТИ РОБОТУ"
 
 #: packages/running/src/index.tsx:215
 msgid "Shut Down All…"
-msgstr ""
+msgstr "Завершити роботу всіх…"
 
 #: packages/running/src/index.tsx:237
 msgid "Refresh List"
-msgstr ""
+msgstr "Оновити список"
 
 #: packages/settingeditor-extension/src/index.ts:147
 msgid "Advanced Settings Editor"
-msgstr ""
+msgstr "Редактор додаткових налаштувань"
 
 #: packages/settingeditor-extension/src/index.ts:161
 msgid "Revert User Settings"
-msgstr ""
+msgstr "Відновити налаштування користувача"
 
 #: packages/settingeditor-extension/src/index.ts:168
 msgid "Save User Settings"
-msgstr ""
+msgstr "Зберегти налаштування користувача"
 
 #: packages/settingeditor/src/inspector.ts:40
 msgid "Any errors will be listed here"
-msgstr ""
+msgstr "Тут буде перелічено всі помилки"
 
 #: packages/settingeditor/src/inspector.ts:97
 msgid "No errors found"
-msgstr ""
+msgstr "Немає помилок"
 
 #: packages/settingeditor/src/plugineditor.ts:145
 msgid "You have unsaved changes."
-msgstr ""
+msgstr "У вас є незбережені зміни."
 
 #: packages/settingeditor/src/plugineditor.ts:146
 msgid "Do you want to leave without saving?"
-msgstr ""
+msgstr "Вийти без зберігання?"
 
 #: packages/settingeditor/src/plugineditor.ts:269
 msgid "Your changes were not saved."
-msgstr ""
+msgstr "Ваші зміни не збережено."
 
 #: packages/settingeditor/src/raweditor.ts:387
 msgid "System Defaults"
-msgstr ""
+msgstr "Налаштування за умовчанням"
 
 #: packages/settingeditor/src/raweditor.ts:428
 msgid "User Preferences"
-msgstr ""
+msgstr "Користувацькі налаштування"
 
 #: packages/settingeditor/src/settingeditor.tsx:464
 msgid "Select a plugin from the list to view and edit its preferences."
-msgstr ""
+msgstr "Виберіть плагін зі списку, щоб переглянути та змінити його налаштування."
 
 #: packages/shortcuts-extension/src/index.ts:82
 msgid "Note: To disable a system default shortcut,\n"
@@ -3450,99 +3451,112 @@ msgid "Note: To disable a system default shortcut,\n"
 "List of commands followed by keyboard shortcuts:\n"
 "%1\n\n"
 "List of keyboard shortcuts:"
-msgstr ""
+msgstr "Зверніть увагу: щоб вимкнути стандартне системне сполучення клавіш,\n"
+"скопіюйте його в Користувацькі налаштування та додайте\n"
+"ключ «disabled», наприклад:\n"
+"{\n"
+"    \"command\": \"application:activate-next-tab\",\n"
+"    \"keys\": [\n"
+"        \"Ctrl Shift ]\"\n"
+"    ],\n"
+"    \"selector\": \"body\",\n"
+"    \"disabled\": true\n"
+"}\n\n"
+"Список команд, за якими слідують сполучення клавіш:\n"
+"%1\n\n"
+"Список сполучень клавіш:"
 
 #: packages/statusbar-extension/src/index.ts:86
 msgid "Show Status Bar"
-msgstr ""
+msgstr "Показати рядок стану"
 
 #: packages/statusbar/src/defaults/kernelStatus.tsx:128
 msgid "No Kernel!"
-msgstr ""
+msgstr "Немає ядра!"
 
 #: packages/statusbar/src/defaults/kernelStatus.tsx:38
 msgid "Change kernel for %1"
-msgstr ""
+msgstr "Замінити ядро для %1"
 
 #: packages/statusbar/src/defaults/lineCol.tsx:140
 msgid "Go to line number between 1 and %1"
-msgstr ""
+msgstr "Перейти до рядка з номером від 1 до %1"
 
 #: packages/statusbar/src/defaults/lineCol.tsx:238
 msgid "Ln %1, Col %2"
-msgstr ""
+msgstr "Рядок %1, стовпець %2"
 
 #: packages/statusbar/src/defaults/lineCol.tsx:239
 msgid "Go to line number…"
-msgstr ""
+msgstr "Перейти до номера рядка…"
 
 #: packages/statusbar/src/defaults/memoryUsage.tsx:46
 msgid "Mem: %1 %2"
-msgstr ""
+msgstr "Пам’ять: %1 %2"
 
 #: packages/statusbar/src/defaults/memoryUsage.tsx:52
 msgid "Mem: %1 / %2 %3"
-msgstr ""
+msgstr "Пам’ять: %1 / %2 %3"
 
 #: packages/statusbar/src/defaults/memoryUsage.tsx:61 packages/statusbar/src/defaults/memoryUsage.tsx:66
 msgid "Current mem usage"
-msgstr ""
+msgstr "Поточне використання пам’яті"
 
 #: packages/statusbar/src/defaults/runningSessions.tsx:116
 msgid "%1 Terminals, %2 Kernel sessions"
-msgstr ""
+msgstr "Терміналів: %1; сеансів ядра: %2"
 
 #: packages/tabmanager-extension/src/index.ts:39
 msgid "Open Tabs"
-msgstr ""
+msgstr "Відкриті вкладки"
 
 #: packages/terminal-extension/src/index.ts:175
 msgid "Terminal Theme"
-msgstr ""
+msgstr "Тема терміналу"
 
 #: packages/terminal-extension/src/index.ts:180 packages/terminal-extension/src/index.ts:236
 msgid "Inherit"
-msgstr ""
+msgstr "Успадкувати"
 
 #: packages/terminal-extension/src/index.ts:188 packages/terminal-extension/src/index.ts:243
 msgid "Light"
-msgstr ""
+msgstr "Світла"
 
 #: packages/terminal-extension/src/index.ts:194 packages/terminal-extension/src/index.ts:248
 msgid "Dark"
-msgstr ""
+msgstr "Темна"
 
 #: packages/terminal-extension/src/index.ts:213
 msgid "Shutdown Terminal"
-msgstr ""
+msgstr "Завершити роботу термінала"
 
 #: packages/terminal-extension/src/index.ts:287
 msgid "Terminals"
-msgstr ""
+msgstr "Термінали"
 
 #: packages/terminal-extension/src/index.ts:332
 msgid "New Terminal"
-msgstr ""
+msgstr "Новий термінал"
 
 #: packages/terminal-extension/src/index.ts:332 packages/terminal-extension/src/index.ts:87 packages/terminal/src/widget.ts:76
 msgid "Terminal"
-msgstr ""
+msgstr "Термінал"
 
 #: packages/terminal-extension/src/index.ts:333
 msgid "Start a new terminal session"
-msgstr ""
+msgstr "Почати новий сеанс терміналу"
 
 #: packages/terminal-extension/src/index.ts:382
 msgid "Refresh Terminal"
-msgstr ""
+msgstr "Оновити термінал"
 
 #: packages/terminal-extension/src/index.ts:383
 msgid "Refresh the current terminal session"
-msgstr ""
+msgstr "Оновити цей сеанс терміналу"
 
 #: packages/terminal-extension/src/index.ts:403
 msgid "Increase Terminal Font Size"
-msgstr ""
+msgstr "Збільшити розмір шрифту терміналу"
 
 #: packages/terminal-extension/src/index.ts:417
 msgid "Decrease Terminal Font Size"
