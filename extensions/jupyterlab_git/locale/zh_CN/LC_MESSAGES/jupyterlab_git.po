@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 28\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2020-09-29 09:26\n"
+"PO-Revision-Date: 2020-09-29 10:29\n"
 
 #: /schema/plugin.json:10
 msgid "Suspend user interaction until commands finish"
@@ -48,7 +48,7 @@ msgstr "显示 Git 状态更新信息"
 #: /schema/plugin.json:29
 msgctxt "schema"
 msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
-msgstr ""
+msgstr "是否在 JupyterLab 状态栏显示 Git 扩展的状态更新信息。如果设置为 true，本扩展将在 JupyterLab 状态栏显示状态的更新信息，例如当拉取和推送更改、切换分支和轮询更改时。根据扩展的活动频度，有些用户觉得状态更新信息会让人分散注意力。如果是这种情况，将本选项设置为 false，这有助于减少可视化噪声。"
 
 #: /schema/plugin.json:34
 msgid "Show diff on double click"
@@ -57,7 +57,7 @@ msgstr "双击以显示差异"
 #: /schema/plugin.json:35
 msgctxt "schema"
 msgid "If true, doubling clicking a file in the list of changed files will open a diff."
-msgstr ""
+msgstr "如果设置为 true，双击已更改文件列表中的某个文件，显示新旧版本的差异。"
 
 #: /schema/plugin.json:4
 msgctxt "schema"
@@ -66,7 +66,7 @@ msgstr "Git"
 
 #: /schema/plugin.json:40
 msgid "History count"
-msgstr ""
+msgstr "历史计数"
 
 #: /schema/plugin.json:41
 msgctxt "schema"
@@ -80,7 +80,7 @@ msgstr "刷新间隔"
 #: /schema/plugin.json:47
 msgctxt "schema"
 msgid "Number of milliseconds between polling the file system for changes."
-msgstr ""
+msgstr "为了找出已经更改的文件，需要定时轮询文件系统。本选项是轮询间隔的设置，单位是毫秒。"
 
 #: /schema/plugin.json:5
 msgctxt "schema"
@@ -89,10 +89,10 @@ msgstr "jupyterlab-git 设置"
 
 #: /schema/plugin.json:52
 msgid "Simple staging flag"
-msgstr ""
+msgstr "简单的暂存标志"
 
 #: /schema/plugin.json:53
 msgctxt "schema"
 msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
-msgstr ""
+msgstr "如果设置为 true，使用简化的暂存概念。只显示已经更改的文件 (默认显示暂存的、更改的和不再跟踪的文件)，所有已经更改的文件将被自动暂存。"
 
