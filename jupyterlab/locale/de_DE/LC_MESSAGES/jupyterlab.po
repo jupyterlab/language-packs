@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2020-11-04 17:09\n"
+"PO-Revision-Date: 2020-11-04 18:14\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -60,16 +60,17 @@ msgstr "Zeilenbreite"
 msgctxt "schema"
 msgid "The text line width expressed in CSS ch units.\n"
 "If `null`, lines fit the viewport width."
-msgstr ""
+msgstr "Die in CSS-ch Einheiten ausgedrückte Zeilenbreite.\n"
+"Wenn `null`, passen die Zeilen zur Breite des Viewports."
 
 #: /examples/federated/md_package/./schema/plugin.json:5 /packages/markdownviewer-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Markdown viewer settings."
-msgstr ""
+msgstr "Markdown Viewer Einstellungen."
 
 #: /examples/federated/md_package/./schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:54
 msgid "Hide Front Matter"
-msgstr ""
+msgstr "Titelei ausblenden"
 
 #: /examples/federated/md_package/./schema/plugin.json:55 /packages/markdownviewer-extension/schema/plugin.json:55
 msgctxt "schema"
@@ -86,7 +87,7 @@ msgstr ""
 #: /examples/federated/md_package/./schema/plugin.json:61 /packages/markdownviewer-extension/schema/plugin.json:61
 msgctxt "schema"
 msgid "The render timeout in milliseconds."
-msgstr ""
+msgstr "Das Render-Timeout in Millisekunden."
 
 #: /packages/application-extension/schema/main.json:2
 msgctxt "schema"
@@ -96,23 +97,24 @@ msgstr "Anwendung "
 #: /packages/application-extension/schema/main.json:3
 msgctxt "schema"
 msgid "Main JupyterLab application settings."
-msgstr ""
+msgstr "Haupteinstellungen der JupyterLab Anwendung."
 
 #: /packages/application-extension/schema/sidebar.json:0
 msgctxt "schema"
 msgid "Overrides for where to show sidebar items\n"
 "e.g., {\"tab-manager\": \"right\"}"
-msgstr ""
+msgstr "Überschreibt wo Seitenleistenelemente angezeigt werden sollen\n"
+"z.B. {\"Tab-Manager\": \"right\"}"
 
 #: /packages/application-extension/schema/sidebar.json:3
 msgctxt "schema"
 msgid "Sidebar"
-msgstr ""
+msgstr "Seitenleiste"
 
 #: /packages/application-extension/schema/sidebar.json:4
 msgctxt "schema"
 msgid "Sidebar layout settings."
-msgstr ""
+msgstr "Seitenleisten-Layouteinstellungen."
 
 #: /packages/application-extension/schema/sidebar.json:8
 msgid "Overrides"
@@ -121,7 +123,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/palette.json:2
 msgctxt "schema"
 msgid "Command Palette"
-msgstr ""
+msgstr "Befehlspalette"
 
 #: /packages/apputils-extension/schema/palette.json:3
 msgctxt "schema"
@@ -131,7 +133,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/print.json:2
 msgctxt "schema"
 msgid "Print"
-msgstr ""
+msgstr "Drucken"
 
 #: /packages/apputils-extension/schema/print.json:3
 msgctxt "schema"
@@ -141,11 +143,11 @@ msgstr "Druckeinstellungen."
 #: /packages/apputils-extension/schema/themes.json:2
 msgctxt "schema"
 msgid "Theme"
-msgstr ""
+msgstr "Design"
 
 #: /packages/apputils-extension/schema/themes.json:31
 msgid "Selected Theme"
-msgstr ""
+msgstr "Ausgewähltes Design"
 
 #: /packages/apputils-extension/schema/themes.json:32
 msgctxt "schema"
@@ -164,7 +166,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/themes.json:4
 msgctxt "schema"
 msgid "Theme manager settings."
-msgstr ""
+msgstr "Design-Manager-Einstellungen."
 
 #: /packages/apputils-extension/schema/themes.json:42
 msgid "Theme CSS Overrides"
@@ -197,7 +199,7 @@ msgstr "Scrollverhalten"
 #: /packages/codemirror-extension/schema/commands.json:22
 msgctxt "schema"
 msgid "Whether to scroll past the end of text document"
-msgstr ""
+msgstr "Scrollen nach dem Ende des Textdokuments"
 
 #: /packages/codemirror-extension/schema/commands.json:27
 msgid "Style Active Line"
@@ -206,7 +208,7 @@ msgstr ""
 #: /packages/codemirror-extension/schema/commands.json:28
 msgctxt "schema"
 msgid "Value is boolean, or { nonEmpty: boolean }"
-msgstr ""
+msgstr "Wert ist boolisch, oder { nonEmpty: boolean }"
 
 #: /packages/codemirror-extension/schema/commands.json:33
 msgid "Style Selected Text"
@@ -219,12 +221,12 @@ msgstr "Wert ist boolesch"
 
 #: /packages/codemirror-extension/schema/commands.json:39
 msgid "Selection Pointer"
-msgstr ""
+msgstr "Auswahlzeiger"
 
 #: /packages/codemirror-extension/schema/commands.json:4
 msgctxt "schema"
 msgid "CodeMirror"
-msgstr ""
+msgstr "CodeMirror"
 
 #: /packages/codemirror-extension/schema/commands.json:40
 msgctxt "schema"
@@ -247,12 +249,12 @@ msgstr "Texteditor-Einstellungen für alle CodeMirror-Editoren."
 
 #: /packages/codemirror-extension/schema/commands.json:9
 msgid "Key Map"
-msgstr ""
+msgstr "Tastaturbelegung"
 
 #: /packages/completer-extension/schema/consoles.json:2
 msgctxt "schema"
 msgid "Console Completer"
-msgstr ""
+msgstr "Konsolenvervollständigung"
 
 #: /packages/completer-extension/schema/consoles.json:3
 msgctxt "schema"
@@ -312,7 +314,7 @@ msgstr ""
 #: /packages/debugger-extension/schema/main.json:3
 msgctxt "schema"
 msgid "Debugger settings"
-msgstr ""
+msgstr "Debugger-Einstellungen"
 
 #: /packages/debugger-extension/schema/main.json:34
 msgid "Variable filter"
@@ -335,7 +337,7 @@ msgstr "Dokumente automatisch speichern"
 #: /packages/docmanager-extension/schema/plugin.json:23
 msgctxt "schema"
 msgid "Whether to autosave documents"
-msgstr ""
+msgstr "Ob Dokumente automatisch gespeichert werden"
 
 #: /packages/docmanager-extension/schema/plugin.json:28
 msgid "Autosave Interval"
@@ -344,7 +346,7 @@ msgstr "Intervall für automatisches Speichern"
 #: /packages/docmanager-extension/schema/plugin.json:29
 msgctxt "schema"
 msgid "Length of save interval in seconds"
-msgstr ""
+msgstr "Länge des Speicherintervalls in Sekunden"
 
 #: /packages/docmanager-extension/schema/plugin.json:3
 msgctxt "schema"
@@ -1985,15 +1987,15 @@ msgstr ""
 
 #: packages/filebrowser-extension/src/index.ts:511 packages/fileeditor-extension/src/commands.ts:753
 msgid "Copy"
-msgstr ""
+msgstr "Kopieren"
 
 #: packages/filebrowser-extension/src/index.ts:524 packages/fileeditor-extension/src/commands.ts:712
 msgid "Cut"
-msgstr ""
+msgstr "Ausschneiden"
 
 #: packages/filebrowser-extension/src/index.ts:548
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplizieren"
 
 #: packages/filebrowser-extension/src/index.ts:588
 msgid "Open from Path…"
@@ -2009,11 +2011,11 @@ msgstr ""
 
 #: packages/filebrowser-extension/src/index.ts:599
 msgid "Path"
-msgstr ""
+msgstr "Pfad"
 
 #: packages/filebrowser-extension/src/index.ts:601
 msgid "Open Path"
-msgstr ""
+msgstr "Pfad öffnen"
 
 #: packages/filebrowser-extension/src/index.ts:602 packages/filebrowser-extension/src/index.ts:687
 msgid "Open"
@@ -2033,23 +2035,23 @@ msgstr ""
 
 #: packages/filebrowser-extension/src/index.ts:741 packages/fileeditor-extension/src/commands.ts:787
 msgid "Paste"
-msgstr ""
+msgstr "Einfügen"
 
 #: packages/filebrowser-extension/src/index.ts:754 packages/filebrowser/src/browser.ts:96
 msgid "New Folder"
-msgstr ""
+msgstr "Neuer Ordner"
 
 #: packages/filebrowser-extension/src/index.ts:769
 msgid "New File"
-msgstr ""
+msgstr "Neue Datei"
 
 #: packages/filebrowser-extension/src/index.ts:784 packages/fileeditor-extension/src/commands.ts:892
 msgid "New Markdown File"
-msgstr ""
+msgstr "Neue Markdown-Datei"
 
 #: packages/filebrowser-extension/src/index.ts:817
 msgid "Copy Path"
-msgstr ""
+msgstr "Pfad kopieren"
 
 #: packages/filebrowser-extension/src/index.ts:859 packages/mainmenu-extension/src/index.ts:569
 msgid "Shut Down Kernel"
@@ -2057,7 +2059,7 @@ msgstr "Kernel herunterfahren"
 
 #: packages/filebrowser-extension/src/index.ts:878
 msgid "Show Active File in File Browser"
-msgstr ""
+msgstr "Aktive Datei im Dateibrowser anzeigen"
 
 #: packages/filebrowser-extension/src/index.ts:892
 msgid "Toggle Last Modified Column"
@@ -2065,19 +2067,19 @@ msgstr ""
 
 #: packages/filebrowser-extension/src/index.ts:914
 msgid "Search on File Names"
-msgstr ""
+msgstr "Suche nach Dateinamen"
 
 #: packages/filebrowser/src/browser.ts:105
 msgid "Refresh File List"
-msgstr ""
+msgstr "Dateiliste aktualisieren"
 
 #: packages/filebrowser/src/browser.ts:121 packages/filebrowser/src/browser.ts:330
 msgid "Filter files by name"
-msgstr ""
+msgstr "Dateien nach Namen filtern"
 
 #: packages/filebrowser/src/browser.ts:301
 msgid "Directory not found"
-msgstr ""
+msgstr "Verzeichnis nicht gefunden"
 
 #: packages/filebrowser/src/browser.ts:302 packages/filebrowser/src/model.ts:304
 msgid "Directory not found: \"%1\""
@@ -2161,11 +2163,11 @@ msgstr[1] ""
 #: packages/filebrowser/src/listing.ts:384
 msgctxt "showErrorMessage"
 msgid "Paste Error"
-msgstr ""
+msgstr "Fehler beim Einfügen"
 
 #: packages/filebrowser/src/listing.ts:404
 msgid "Are you sure you want to permanently delete: %1?"
-msgstr ""
+msgstr "Sind Sie sicher, dass Sie %1 endgültig löschen möchten?"
 
 #: packages/filebrowser/src/listing.ts:408
 msgid "Are you sure you want to permanently delete the %1 selected item?"
@@ -2181,7 +2183,7 @@ msgstr ""
 #: packages/filebrowser/src/listing.ts:488
 msgctxt "showErrorMessage"
 msgid "Shut down kernel"
-msgstr ""
+msgstr "Kernel herunterfahren"
 
 #: packages/filebrowser/src/listing.ts:831
 msgid "%1\n"
@@ -2191,11 +2193,11 @@ msgstr ""
 #: packages/filebrowser/src/listing.ts:976
 msgctxt "showErrorMessage"
 msgid "Open directory"
-msgstr ""
+msgstr "Verzeichnis öffnen"
 
 #: packages/filebrowser/src/model.ts:100
 msgid "Files still uploading"
-msgstr ""
+msgstr "Dateien werden noch hochgeladen"
 
 #: packages/filebrowser/src/model.ts:408
 msgid "Cannot upload file (>%1 MB). %2"
@@ -2211,24 +2213,24 @@ msgstr ""
 
 #: packages/filebrowser/src/model.ts:444
 msgid "Upload"
-msgstr ""
+msgstr "Hochladen"
 
 #: packages/filebrowser/src/upload.ts:112
 msgid "Upload Files"
-msgstr ""
+msgstr "Dateien hochladen"
 
 #: packages/filebrowser/src/upload.ts:52
 msgctxt "showErrorMessage"
 msgid "Upload Error"
-msgstr ""
+msgstr "Upload fehlgeschlagen"
 
 #: packages/filebrowser/src/uploadstatus.tsx:100
 msgid "Complete!"
-msgstr ""
+msgstr "Fertig!"
 
 #: packages/filebrowser/src/uploadstatus.tsx:41
 msgid "Uploading…"
-msgstr ""
+msgstr "Lade hoch…"
 
 #: packages/fileeditor-extension/src/commands.ts:1007 packages/fileeditor-extension/src/commands.ts:1022 packages/fileeditor-extension/src/commands.ts:966 packages/fileeditor-extension/src/commands.ts:992
 msgid "Text Editor"
@@ -2236,11 +2238,11 @@ msgstr ""
 
 #: packages/fileeditor-extension/src/commands.ts:1025
 msgid "Increase Font Size"
-msgstr ""
+msgstr "Schriftgröße vergrößern"
 
 #: packages/fileeditor-extension/src/commands.ts:1028
 msgid "Decrease Font Size"
-msgstr ""
+msgstr "Schriftgröße verkleinern"
 
 #: packages/fileeditor-extension/src/commands.ts:1084
 msgid "Text Editor Indentation"
@@ -2270,11 +2272,11 @@ msgstr ""
 
 #: packages/fileeditor-extension/src/commands.ts:1218 packages/fileeditor-extension/src/commands.ts:517
 msgid "Run Code"
-msgstr ""
+msgstr "Code ausführen"
 
 #: packages/fileeditor-extension/src/commands.ts:1219 packages/fileeditor-extension/src/commands.ts:562
 msgid "Run All Code"
-msgstr ""
+msgstr "Gesamten Code ausführen"
 
 #: packages/fileeditor-extension/src/commands.ts:1221
 msgid "Restart Kernel and Run All Code"
@@ -2282,11 +2284,11 @@ msgstr ""
 
 #: packages/fileeditor-extension/src/commands.ts:293
 msgid "Line Numbers"
-msgstr ""
+msgstr "Zeilennummern"
 
 #: packages/fileeditor-extension/src/commands.ts:323
 msgid "Word Wrap"
-msgstr ""
+msgstr "Zeilenumbruch"
 
 #: packages/fileeditor-extension/src/commands.ts:374 packages/mainmenu-extension/src/index.ts:647
 msgid "Match Brackets"
@@ -2354,19 +2356,19 @@ msgstr ""
 
 #: packages/help-extension/src/index.tsx:104
 msgid "JupyterLab Reference"
-msgstr ""
+msgstr "JupyterLab Referenz"
 
 #: packages/help-extension/src/index.tsx:108
 msgid "JupyterLab FAQ"
-msgstr ""
+msgstr "JupyterLab FAQ"
 
 #: packages/help-extension/src/index.tsx:113
 msgid "Jupyter Reference"
-msgstr ""
+msgstr "JupyterLab Referenz"
 
 #: packages/help-extension/src/index.tsx:117
 msgid "Markdown Reference"
-msgstr ""
+msgstr "Markdown Referenz"
 
 #: packages/help-extension/src/index.tsx:240
 msgid "About the %1 Kernel"
@@ -2751,11 +2753,11 @@ msgstr ""
 
 #: packages/mainmenu-extension/src/index.ts:734
 msgid "Run All"
-msgstr ""
+msgstr "Alle ausführen"
 
 #: packages/mainmenu-extension/src/index.ts:754
 msgid "Restart Kernel and Run All"
-msgstr ""
+msgstr "Kernel neu starten und alle ausführen"
 
 #: packages/mainmenu-extension/src/index.ts:795 packages/settingeditor-extension/src/index.ts:141 packages/settingeditor-extension/src/index.ts:151
 msgid "Settings"
@@ -2771,7 +2773,7 @@ msgstr "Zuletzt benutzten Tab aktivieren"
 
 #: packages/markdownviewer-extension/src/index.ts:142
 msgid "Markdown Preview"
-msgstr ""
+msgstr "Markdown Vorschau"
 
 #: packages/markdownviewer-extension/src/index.ts:177
 msgid "Show Markdown Editor"
@@ -2831,7 +2833,7 @@ msgstr "Kernel neu starten und alle Zellen ausführen…"
 
 #: packages/notebook-extension/src/index.ts:1355 packages/notebook-extension/src/index.ts:2128
 msgid "Clear All Outputs"
-msgstr ""
+msgstr "Alle Ausgaben löschen"
 
 #: packages/notebook-extension/src/index.ts:1366
 msgid "Clear Outputs"
@@ -3043,7 +3045,7 @@ msgstr "Notebook Zellen Operationen"
 
 #: packages/notebook-extension/src/index.ts:2126
 msgid "Clear Output"
-msgstr ""
+msgstr "Ausgaben löschen"
 
 #: packages/notebook-extension/src/index.ts:2145
 msgid "Close and Shutdown Notebook"
@@ -3255,11 +3257,11 @@ msgstr ""
 
 #: packages/notebook/src/notebooktools.ts:890
 msgid "Skip"
-msgstr ""
+msgstr "Überspringen"
 
 #: packages/notebook/src/notebooktools.ts:891
 msgid "Notes"
-msgstr ""
+msgstr "Notizen"
 
 #: packages/notebook/src/notebooktools.ts:929
 msgid "Raw NBConvert Format"
