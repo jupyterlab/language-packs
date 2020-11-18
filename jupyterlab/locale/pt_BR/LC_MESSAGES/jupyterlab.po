@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2020-11-18 14:22\n"
+"PO-Revision-Date: 2020-11-18 15:44\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -120,7 +120,7 @@ msgstr "Configurações de layout da barra lateral."
 
 #: /packages/application-extension/schema/sidebar.json:8
 msgid "Overrides"
-msgstr "Sobre-escrever"
+msgstr "Substituir"
 
 #: /packages/apputils-extension/schema/palette.json:2
 msgctxt "schema"
@@ -1469,7 +1469,16 @@ msgid "Overrides for the default viewers for file types.\n"
 "%1\n\n"
 "Available file types:\n"
 "%2"
-msgstr ""
+msgstr "Substitui para o padrão de visualização por tipos de arquivo.\n"
+"Especifica um mapeamento pelo nome do tipo de arquivo para o nome do documento de visualização, por exemplo:\n\n"
+"visualizadorPadrao: {\n"
+"  markdown: \"Pré visualização de Markdown\"\n"
+"}\n\n"
+"Se você especificar um tipo de arquivo ou visualização inexistente, ou se um visualizador não pode abrir um tipo de arquivo, a substituição não funcionará.\n\n"
+"Visualizadores acessíveis:\n"
+"%1\n\n"
+"Tipos de arquivo acessíveis:\n"
+"%2"
 
 #: packages/docmanager-extension/src/index.ts:394 packages/filebrowser-extension/src/index.ts:643 packages/filebrowser-extension/src/index.ts:928 packages/htmlviewer-extension/src/index.tsx:132
 msgid "File Operations"
@@ -1864,15 +1873,15 @@ msgstr "Você deve garantir que os pacotes indicados estão instalados antes de\
 
 #: packages/extensionmanager/src/companions.tsx:208
 msgid "Kernel and Server Companions"
-msgstr ""
+msgstr "Kernel e Opções de Servidor"
 
 #: packages/extensionmanager/src/companions.tsx:210
 msgid "Kernel Companions"
-msgstr ""
+msgstr "Opções do Kernel"
 
 #: packages/extensionmanager/src/companions.tsx:212
 msgid "Server Companion"
-msgstr ""
+msgstr "Opções do Servidor"
 
 #: packages/extensionmanager/src/companions.tsx:221
 msgid "Install the JupyterLab extension."
@@ -1990,7 +1999,7 @@ msgstr "Resultados da busca"
 
 #: packages/extensionmanager/src/widget.tsx:870
 msgid "Discover"
-msgstr ""
+msgstr "Descobrir"
 
 #: packages/filebrowser-extension/src/index.ts:1043
 msgid "Open With"
@@ -1998,11 +2007,11 @@ msgstr "Abrir com"
 
 #: packages/filebrowser-extension/src/index.ts:1183
 msgid "No browser for path"
-msgstr ""
+msgstr "Nenhum navegador para a trajeto"
 
 #: packages/filebrowser-extension/src/index.ts:285 packages/filebrowser-extension/src/index.ts:873 packages/launcher-extension/src/index.ts:56
 msgid "New Launcher"
-msgstr ""
+msgstr "Novo iniciador"
 
 #: packages/filebrowser-extension/src/index.ts:353
 msgid "File Browser (%1)"
@@ -2026,11 +2035,11 @@ msgstr "Recortar"
 
 #: packages/filebrowser-extension/src/index.ts:548
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplicar"
 
 #: packages/filebrowser-extension/src/index.ts:588
 msgid "Open from Path…"
-msgstr ""
+msgstr "Abrir do Caminho…"
 
 #: packages/filebrowser-extension/src/index.ts:588 packages/filebrowser-extension/src/index.ts:590
 msgid "Open %1"
@@ -2094,11 +2103,11 @@ msgstr "Mostrar arquivo ativo no navegador de arquivos"
 
 #: packages/filebrowser-extension/src/index.ts:892
 msgid "Toggle Last Modified Column"
-msgstr ""
+msgstr "Alternar Última Coluna Modificada"
 
 #: packages/filebrowser-extension/src/index.ts:914
 msgid "Search on File Names"
-msgstr ""
+msgstr "Pesquisar pelo nome do arquivo"
 
 #: packages/filebrowser/src/browser.ts:105
 msgid "Refresh File List"
@@ -2136,17 +2145,17 @@ msgstr "Falha ao excluir"
 
 #: packages/filebrowser/src/listing.ts:1447
 msgid "showErrorMessage"
-msgstr ""
+msgstr "mostrarMensagemDeErro"
 
 #: packages/filebrowser/src/listing.ts:1449
 msgctxt "showErrorMessage"
 msgid "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\""
-msgstr ""
+msgstr "\"%1\" não é um nome válido para um arquivo. Nomes devem ter um comprimento maior que zero e não podem incluir \"/\", \"\\\", ou \":\""
 
 #: packages/filebrowser/src/listing.ts:1473
 msgctxt "showErrorMessage"
 msgid "Rename Error"
-msgstr ""
+msgstr "Erro ao renomear"
 
 #: packages/filebrowser/src/listing.ts:1778
 msgid "Name"
@@ -2193,8 +2202,8 @@ msgstr "\n"
 #: packages/filebrowser/src/listing.ts:2019
 msgid "%1 Item"
 msgid_plural "%1 Items"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 Item"
+msgstr[1] "%1 itens"
 
 #: packages/filebrowser/src/listing.ts:384
 msgctxt "showErrorMessage"
@@ -2254,7 +2263,7 @@ msgstr "Carregar arquivo"
 
 #: packages/filebrowser/src/upload.ts:112
 msgid "Upload Files"
-msgstr ""
+msgstr "Fazer Upload de Arquivos"
 
 #: packages/filebrowser/src/upload.ts:52
 msgctxt "showErrorMessage"
@@ -2325,7 +2334,7 @@ msgstr "Números de linhas"
 
 #: packages/fileeditor-extension/src/commands.ts:323
 msgid "Word Wrap"
-msgstr ""
+msgstr "Quebra de Linha"
 
 #: packages/fileeditor-extension/src/commands.ts:374 packages/mainmenu-extension/src/index.ts:647
 msgid "Match Brackets"
@@ -2333,7 +2342,7 @@ msgstr "Correspondência de parênteses"
 
 #: packages/fileeditor-extension/src/commands.ts:398
 msgid "Auto Close Brackets for Text Editor"
-msgstr ""
+msgstr "Fechar parênteses automaticamente para o Editor de Texto"
 
 #: packages/fileeditor-extension/src/commands.ts:422
 msgid "Replace Selection in Editor"
@@ -2341,7 +2350,7 @@ msgstr "Substituir seleção no editor"
 
 #: packages/fileeditor-extension/src/commands.ts:446
 msgid "Create Console for Editor"
-msgstr ""
+msgstr "Criar Console para Editor"
 
 #: packages/fileeditor-extension/src/commands.ts:594
 msgid "Show Markdown Preview"
@@ -2377,7 +2386,7 @@ msgstr "Criar um novo arquivo Markdown"
 
 #: packages/fileeditor-extension/src/commands.ts:924 packages/fileeditor-extension/src/commands.ts:938 packages/launcher/src/index.tsx:156 packages/launcher/src/index.tsx:166 packages/launcher/src/index.tsx:439 packages/terminal-extension/src/index.ts:256
 msgid "Other"
-msgstr ""
+msgstr "Outros"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:62
 msgid "Spaces"
@@ -2433,7 +2442,7 @@ msgstr "SOBRE PROJECT JUPYTER"
 
 #: packages/help-extension/src/index.tsx:336
 msgid "© 2015-2020 Project Jupyter Contributors"
-msgstr ""
+msgstr "© Contribuidores do Projeto Jupyter - 2015-2020"
 
 #: packages/help-extension/src/index.tsx:383
 msgid "Launch Classic Notebook"
@@ -2464,11 +2473,14 @@ msgid "Whether the HTML file is trusted.\n"
 "Trusting the file allows scripts to run in it,\n"
 "which may result in security risks.\n"
 "Only enable for files you trust."
-msgstr ""
+msgstr "Se o arquivo HTML é confiável.\n"
+"Confiar no arquivo permite que sejam executados scripts no mesmo,\n"
+"o que pode resultar em riscos de segurança.\n"
+"Somente habilite para arquivos confiáveis."
 
 #: packages/htmlviewer/src/index.tsx:298
 msgid "Distrust HTML"
-msgstr ""
+msgstr "Desconfiar do HTML"
 
 #: packages/htmlviewer/src/index.tsx:299
 msgid "Trust HTML"
@@ -2494,7 +2506,7 @@ msgstr "Reinicie o servidor"
 
 #: packages/hub-extension/src/index.ts:69
 msgid "Request that the Hub restart this server"
-msgstr ""
+msgstr "Solicitar que o Hub reinicie este servidor"
 
 #: packages/hub-extension/src/index.ts:76
 msgid "Hub Control Panel"
@@ -2514,7 +2526,7 @@ msgstr "Sair do Hub"
 
 #: packages/hub-extension/src/index.ts:99
 msgid "Hub"
-msgstr ""
+msgstr "Hub"
 
 #: packages/imageviewer-extension/src/index.ts:158
 msgid "Image Viewer"
@@ -2530,7 +2542,7 @@ msgstr "Menos zoom"
 
 #: packages/imageviewer-extension/src/index.ts:211
 msgid "Reset Image"
-msgstr ""
+msgstr "Resetar a imagem"
 
 #: packages/imageviewer-extension/src/index.ts:217
 msgid "Rotate Clockwise"
@@ -2558,7 +2570,7 @@ msgstr "Exibir ajuda contextual"
 
 #: packages/inspector-extension/src/index.ts:88
 msgid "Live updating code documentation from the active kernel"
-msgstr ""
+msgstr "Documentação de código ao vivo atualizada a partir do kernel ativo"
 
 #: packages/inspector/src/inspector.ts:54
 msgid "Click on a function to see documentation."
@@ -2566,7 +2578,7 @@ msgstr "Clique em uma função para ver a documentação."
 
 #: packages/javascript-extension/src/index.ts:37
 msgid "Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
-msgstr ""
+msgstr "Você tem certeza que deseja executar Javascript arbitrário em sua sessão de JupyterLab?"
 
 #: packages/javascript-extension/src/index.ts:41 packages/mainmenu-extension/src/index.ts:716 packages/rendermime/src/renderers.ts:78
 msgid "Run"
@@ -2583,7 +2595,7 @@ msgstr "Iniciador"
 #: packages/launcher/src/index.tsx:413
 msgctxt "Error"
 msgid "Launcher Error"
-msgstr ""
+msgstr "Erro na inicialização"
 
 #: packages/logconsole-extension/src/index.tsx:160 packages/logconsole/src/widget.ts:399
 msgid "Log Console"
@@ -2619,11 +2631,11 @@ msgstr "Crítico"
 
 #: packages/logconsole-extension/src/index.tsx:407
 msgid "Info"
-msgstr ""
+msgstr "Informações"
 
 #: packages/logconsole-extension/src/index.tsx:408
 msgid "Debug"
-msgstr ""
+msgstr "Debug"
 
 #: packages/logconsole-extension/src/status.tsx:36
 msgid "%1 new messages, %2 log entries for %3"
@@ -2679,11 +2691,11 @@ msgstr "Abrir o menu de ajuda"
 
 #: packages/mainmenu-extension/src/index.ts:207
 msgid "Open First Menu"
-msgstr ""
+msgstr "Abrir o primeiro menu"
 
 #: packages/mainmenu-extension/src/index.ts:229
 msgid "Kernel Operations"
-msgstr ""
+msgstr "Opções do Kernel"
 
 #: packages/mainmenu-extension/src/index.ts:254
 msgid "Edit"
@@ -2691,11 +2703,11 @@ msgstr "Editar"
 
 #: packages/mainmenu-extension/src/index.ts:280
 msgid "Clear"
-msgstr ""
+msgstr "Limpar"
 
 #: packages/mainmenu-extension/src/index.ts:296
 msgid "Clear All"
-msgstr ""
+msgstr "Limpar tudo"
 
 #: packages/mainmenu-extension/src/index.ts:315
 msgid "Go to Line…"
@@ -2715,7 +2727,7 @@ msgstr "Fechar e desligar"
 
 #: packages/mainmenu-extension/src/index.ts:376
 msgid "New Console for Activity"
-msgstr ""
+msgstr "Novo Console para Atividade"
 
 #: packages/mainmenu-extension/src/index.ts:387 packages/mainmenu-extension/src/index.ts:395
 msgid "Shut Down"
@@ -2743,11 +2755,11 @@ msgstr "Para usar o JupyterLab novamente, você precisará reiniciá-lo."
 
 #: packages/mainmenu-extension/src/index.ts:422
 msgid "Server stopped"
-msgstr ""
+msgstr "Servidor parou"
 
 #: packages/mainmenu-extension/src/index.ts:441
 msgid "Log out of JupyterLab"
-msgstr ""
+msgstr "Sair do JupyterLab"
 
 #: packages/mainmenu-extension/src/index.ts:515
 msgid "Kernel"
@@ -2755,27 +2767,27 @@ msgstr "Kernel"
 
 #: packages/mainmenu-extension/src/index.ts:540
 msgid "Restart Kernel and Clear…"
-msgstr ""
+msgstr "Reiniciar o kernel e limpar…"
 
 #: packages/mainmenu-extension/src/index.ts:575
 msgid "Shut Down All Kernels…"
-msgstr ""
+msgstr "Desligar todos os Kernels…"
 
 #: packages/mainmenu-extension/src/index.ts:581 packages/running/src/index.tsx:194
 msgid "Shut Down All?"
-msgstr ""
+msgstr "Desligar todos?"
 
 #: packages/mainmenu-extension/src/index.ts:582
 msgid "Shut down all kernels?"
-msgstr ""
+msgstr "Desligar todos os Kernels?"
 
 #: packages/mainmenu-extension/src/index.ts:585
 msgid "Shut Down All"
-msgstr ""
+msgstr "Desligar todos"
 
 #: packages/mainmenu-extension/src/index.ts:625
 msgid "View"
-msgstr ""
+msgstr "Ver"
 
 #: packages/mainmenu-extension/src/index.ts:628
 msgid "Show Line Numbers"
@@ -2783,7 +2795,7 @@ msgstr "Mostrar números de linhas"
 
 #: packages/mainmenu-extension/src/index.ts:666
 msgid "Wrap Words"
-msgstr ""
+msgstr "Ajuste de palavras"
 
 #: packages/mainmenu-extension/src/index.ts:726
 msgid "Run Selected"
@@ -2795,7 +2807,7 @@ msgstr "Executar todos"
 
 #: packages/mainmenu-extension/src/index.ts:754
 msgid "Restart Kernel and Run All"
-msgstr ""
+msgstr "Reiniciar o kernel e executar tudo"
 
 #: packages/mainmenu-extension/src/index.ts:795 packages/settingeditor-extension/src/index.ts:141 packages/settingeditor-extension/src/index.ts:151
 msgid "Settings"
@@ -2807,7 +2819,7 @@ msgstr "Abas"
 
 #: packages/mainmenu-extension/src/index.ts:846
 msgid "Activate Previously Used Tab"
-msgstr ""
+msgstr "Ativar a aba usada anteriormente"
 
 #: packages/markdownviewer-extension/src/index.ts:142
 msgid "Markdown Preview"
@@ -2819,11 +2831,11 @@ msgstr "Mostrar o editor de Markdown"
 
 #: packages/notebook-extension/src/index.ts:1007
 msgid "Run Selected Cells and Insert Below"
-msgstr ""
+msgstr "Executar Células Selecionadas e Inserir Abaixo"
 
 #: packages/notebook-extension/src/index.ts:1020
 msgid "Run Selected Text or Current Line in Console"
-msgstr ""
+msgstr "Executar Texto Selecionado ou Linha Atual no Console"
 
 #: packages/notebook-extension/src/index.ts:1140 packages/notebook-extension/src/index.ts:2283
 msgid "Run All Cells"
@@ -2855,39 +2867,39 @@ msgstr "Confiar no Notebook"
 
 #: packages/notebook-extension/src/index.ts:1258
 msgid "Export Notebook: %1"
-msgstr ""
+msgstr "Exportar Notebook: %1"
 
 #: packages/notebook-extension/src/index.ts:1293 packages/notebook-extension/src/index.ts:2217
 msgid "Restart Kernel and Clear All Outputs…"
-msgstr ""
+msgstr "Reiniciar o Kernel e limpar todas as saídas…"
 
 #: packages/notebook-extension/src/index.ts:1308
 msgid "Restart Kernel and Run up to Selected Cell…"
-msgstr ""
+msgstr "Reinicie o kernel e execute até a Célula Selecionada…"
 
 #: packages/notebook-extension/src/index.ts:1335 packages/notebook-extension/src/index.ts:2285
 msgid "Restart Kernel and Run All Cells…"
-msgstr ""
+msgstr "Reiniciar o kernel e executar tudo…"
 
 #: packages/notebook-extension/src/index.ts:1355 packages/notebook-extension/src/index.ts:2128
 msgid "Clear All Outputs"
-msgstr ""
+msgstr "Remover todas as saídas"
 
 #: packages/notebook-extension/src/index.ts:1366
 msgid "Clear Outputs"
-msgstr ""
+msgstr "Limpar saídas"
 
 #: packages/notebook-extension/src/index.ts:1394
 msgid "Change to Code Cell Type"
-msgstr ""
+msgstr "Mudar para Código Tipo de Célula"
 
 #: packages/notebook-extension/src/index.ts:1405
 msgid "Change to Markdown Cell Type"
-msgstr ""
+msgstr "Mudar para Tipo de Célula Markdown"
 
 #: packages/notebook-extension/src/index.ts:1416
 msgid "Change to Raw Cell Type"
-msgstr ""
+msgstr "Mudar para Tipo de Célula Bruta"
 
 #: packages/notebook-extension/src/index.ts:1427
 msgid "Cut Cells"
@@ -2959,7 +2971,7 @@ msgstr "Selecionar todas as células"
 
 #: packages/notebook-extension/src/index.ts:1614
 msgid "Deselect All Cells"
-msgstr ""
+msgstr "Desmarcar Todas as Células"
 
 #: packages/notebook-extension/src/index.ts:1625
 msgid "Move Cells Up"
@@ -2971,11 +2983,11 @@ msgstr "Mover células para baixo"
 
 #: packages/notebook-extension/src/index.ts:1647
 msgid "Toggle All Line Numbers"
-msgstr ""
+msgstr "Alternar Todos os Números Alinhados"
 
 #: packages/notebook-extension/src/index.ts:1658
 msgid "Enter Command Mode"
-msgstr ""
+msgstr "Digitar Modo de Comando"
 
 #: packages/notebook-extension/src/index.ts:1669
 msgid "Enter Edit Mode"
@@ -2995,11 +3007,11 @@ msgstr "Reconectar ao kernel"
 
 #: packages/notebook-extension/src/index.ts:1733
 msgid "Create New View for Output"
-msgstr ""
+msgstr "Criar nova exibição para a saída"
 
 #: packages/notebook-extension/src/index.ts:1787 packages/notebook-extension/src/index.ts:2238
 msgid "New Console for Notebook"
-msgstr ""
+msgstr "Novo Console para Notebook"
 
 #: packages/notebook-extension/src/index.ts:1804
 msgid "Change to Heading 1"
@@ -3027,59 +3039,59 @@ msgstr "Mudar para Título 6"
 
 #: packages/notebook-extension/src/index.ts:1870
 msgid "Collapse Selected Code"
-msgstr ""
+msgstr "Recolher Código Selecionado"
 
 #: packages/notebook-extension/src/index.ts:1881
 msgid "Expand Selected Code"
-msgstr ""
+msgstr "Expandir Código Selecionado"
 
 #: packages/notebook-extension/src/index.ts:1892
 msgid "Collapse All Code"
-msgstr ""
+msgstr "Recolher todo o código"
 
 #: packages/notebook-extension/src/index.ts:1903
 msgid "Expand All Code"
-msgstr ""
+msgstr "Expandir todo o código"
 
 #: packages/notebook-extension/src/index.ts:1914
 msgid "Collapse Selected Outputs"
-msgstr ""
+msgstr "Recolher as Saídas selecionadas"
 
 #: packages/notebook-extension/src/index.ts:1925
 msgid "Expand Selected Outputs"
-msgstr ""
+msgstr "Expandir as Saídas Selecionadas"
 
 #: packages/notebook-extension/src/index.ts:1936
 msgid "Collapse All Outputs"
-msgstr ""
+msgstr "Recolher todas as Saídas"
 
 #: packages/notebook-extension/src/index.ts:1947
 msgid "Expand All Outputs"
-msgstr ""
+msgstr "Expandir todas as Saídas"
 
 #: packages/notebook-extension/src/index.ts:1958
 msgid "Enable Scrolling for Outputs"
-msgstr ""
+msgstr "Habilitar rolagem para saídas"
 
 #: packages/notebook-extension/src/index.ts:1969
 msgid "Disable Scrolling for Outputs"
-msgstr ""
+msgstr "Desativar rolagem para saídas"
 
 #: packages/notebook-extension/src/index.ts:1980
 msgid "Select current running or last run cell"
-msgstr ""
+msgstr "Selecionar célula em execução ou a última executada"
 
 #: packages/notebook-extension/src/index.ts:1991
 msgid "Replace Selection in Notebook Cell"
-msgstr ""
+msgstr "Substituir Seleção na Célula do Notebook"
 
 #: packages/notebook-extension/src/index.ts:2012 packages/notebook-extension/src/index.ts:2190
 msgid "Notebook Operations"
-msgstr ""
+msgstr "Opções do Notebook"
 
 #: packages/notebook-extension/src/index.ts:2045
 msgid "Notebook Cell Operations"
-msgstr ""
+msgstr "Opções das células do Notebook"
 
 #: packages/notebook-extension/src/index.ts:2126
 msgid "Clear Output"
@@ -3087,7 +3099,7 @@ msgstr "Limpar saída"
 
 #: packages/notebook-extension/src/index.ts:2145
 msgid "Close and Shutdown Notebook"
-msgstr ""
+msgstr "Fechar e Desligar o Notebook"
 
 #: packages/notebook-extension/src/index.ts:2149
 msgid "Shut down the Notebook?"
@@ -3131,7 +3143,7 @@ msgstr "ReStructured Text"
 
 #: packages/notebook-extension/src/index.ts:2516
 msgid "Executable Script"
-msgstr ""
+msgstr "Script Executável"
 
 #: packages/notebook-extension/src/index.ts:2517
 msgid "Reveal.js Slides"
@@ -3147,7 +3159,7 @@ msgstr "Script"
 
 #: packages/notebook-extension/src/index.ts:472
 msgid "Custom"
-msgstr ""
+msgstr "Personalizado"
 
 #: packages/notebook-extension/src/index.ts:494
 msgid "Notebook Tools"
@@ -3163,19 +3175,19 @@ msgstr "Criar um novo caderno"
 
 #: packages/notebook-extension/src/index.ts:994
 msgid "Run Selected Cells and Don't Advance"
-msgstr ""
+msgstr "Executar Células Selecionadas e Não Avançar"
 
 #: packages/notebook/src/actions.tsx:1387
 msgid "A trusted Jupyter notebook may execute hidden malicious code when you openit."
-msgstr ""
+msgstr "Um notebook Jupyter de confiança pode executar códigos maliciosos de forma oculta quando aberto."
 
 #: packages/notebook/src/actions.tsx:1391
 msgid "Selecting trust will re-render this notebook in a trusted state."
-msgstr ""
+msgstr "Selecionar confiança irá renderizar este Notebook novamente em um estado confiável."
 
 #: packages/notebook/src/actions.tsx:1395
 msgid "For more information, see the <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>"
-msgstr ""
+msgstr "Para obter mais informações, consulte <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>"
 
 #: packages/notebook/src/actions.tsx:1397
 msgid "Jupyter security documentation"
@@ -3183,7 +3195,7 @@ msgstr "Documentação de segurança Jupyter"
 
 #: packages/notebook/src/actions.tsx:1404
 msgid "Notebook is already trusted"
-msgstr ""
+msgstr "Este Notebook já é confiável"
 
 #: packages/notebook/src/actions.tsx:1411
 msgid "Trust this notebook?"
@@ -3191,11 +3203,11 @@ msgstr "Confiar neste caderno?"
 
 #: packages/notebook/src/actions.tsx:1599
 msgid "Kernel Terminating"
-msgstr ""
+msgstr "Terminando o kernel"
 
 #: packages/notebook/src/actions.tsx:1600
 msgid "The kernel for %1 appears to be terminating. You can not run any cell for now."
-msgstr ""
+msgstr "O Kernel para %1 parece estar terminando. Você não pode executar nenhuma célula por enquanto."
 
 #: packages/notebook/src/default-toolbar.tsx:116
 msgid "Insert a cell below"
@@ -3231,7 +3243,7 @@ msgstr "Código"
 
 #: packages/notebook/src/default-toolbar.tsx:345
 msgid "Raw"
-msgstr ""
+msgstr "Bruto"
 
 #: packages/notebook/src/default-toolbar.tsx:85
 msgid "Save the notebook contents and create checkpoint"
@@ -3243,7 +3255,10 @@ msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "The next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n"
 "'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\n"
 "close the notebook without saving it."
-msgstr ""
+msgstr "Este Notebook foi convertido desde um formato de notebook mais antigo (v%1)\n"
+"para o formato de Notebook atual(v%2).\n"
+"A próxima vez que salvar este Notebook, o formato atual (vthis._nbformat) será usado.\n"
+"Versões antigas do Jupyter podem não ser capazes de ler o novo formato. Para preservar o formato de versão original, feche o Notebook sem salvá-lo."
 
 #: packages/notebook/src/model.ts:273
 msgid "This notebook has been converted from an newer notebook format (v%1)\n"
@@ -3251,7 +3266,10 @@ msgid "This notebook has been converted from an newer notebook format (v%1)\n"
 "The next time you save this notebook, the current notebook format (v%2) will be used.\n"
 "Some features of the original notebook may not be available.' To preserve the original format version,\n"
 "close the notebook without saving it."
-msgstr ""
+msgstr "Este Notebook foi convertido desde um formato de notebook mais novo (v%1)\n"
+"para o formato de Notebook atual (v%2).\n"
+"A próxima vez que salvar este Notebook, o formato atual (v%2) será usado.\n"
+"Algumas funcionalidades do Notebook original podem não funcionar. Para preservar o formato de versão original, feche o Notebook sem salvá-lo."
 
 #: packages/notebook/src/model.ts:284
 msgid "Notebook converted"
@@ -3303,7 +3321,7 @@ msgstr "Notas"
 
 #: packages/notebook/src/notebooktools.ts:929
 msgid "Raw NBConvert Format"
-msgstr ""
+msgstr "Formato de conversão Raw NBConverter"
 
 #: packages/notebook/src/panel.ts:203
 msgid "Kernel Restarting"
@@ -3315,15 +3333,15 @@ msgstr "O Kernel para %1 aparentemente morreu. Será reiniciado automaticamente.
 
 #: packages/notebook/src/truststatus.tsx:26
 msgid "Notebook trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Notebook confiável: %1 de %2 células confiáveis."
 
 #: packages/notebook/src/truststatus.tsx:35
 msgid "Active cell trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Célula ativa confiável: %1 de %2 células confiáveis."
 
 #: packages/notebook/src/truststatus.tsx:44
 msgid "Notebook not trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Notebook não confiável: %1 de %2 células confiáveis."
 
 #: packages/property-inspector/src/index.ts:172
 msgid "No properties to inspect."
@@ -3331,24 +3349,25 @@ msgstr "Sem propriedades para inspecionar."
 
 #: packages/rendermime-extension/src/index.ts:54
 msgid "Handle Local Link"
-msgstr ""
+msgstr "Manipular Link Local"
 
 #: packages/rendermime/src/renderers.ts:74
 msgid "This HTML output contains inline scripts. Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
-msgstr ""
+msgstr "Esta saída HTML contém scripts embutidos. Tem certeza que deseja executar Javascript arbitrário dentro da sua sessão em JupyterLab?"
 
 #: packages/rendermime/src/widgets.ts:421
 msgid "JavaScript output is disabled in JupyterLab"
-msgstr ""
+msgstr "Saída JavaScript está desativada no JupyterLab"
 
 #: packages/running-extension/src/index.ts:136
 msgid "Path: %1\n"
 "Kernel: %2"
-msgstr ""
+msgstr "Caminho: %1\n"
+"Kernel: %2"
 
 #: packages/running-extension/src/index.ts:56
 msgid "Running Terminals and Kernels"
-msgstr ""
+msgstr "Executando Terminais e Kernels"
 
 #: packages/running-extension/src/index.ts:91
 msgid "Kernels"
@@ -3425,7 +3444,18 @@ msgid "Note: To disable a system default shortcut,\n"
 "List of commands followed by keyboard shortcuts:\n"
 "%1\n\n"
 "List of keyboard shortcuts:"
-msgstr ""
+msgstr "Nota: Para desabilitar um atalho padrão do sistema, copie-o para Preferências do Usuário e adicione a chave \"disabled\", por exemplo:\n"
+"{\n"
+"    \"command\": \"application:activate-next-tab\",\n"
+"    \"keys\": [\n"
+"        \"Ctrl Shift ]\"\n"
+"    ],\n"
+"    \"selector\": \"body\",\n"
+"    \"disabled\": true\n"
+"}\n\n"
+"Lista de comandos seguidos por seus atalhos de teclado:\n"
+"%1\n\n"
+"Lista de atalhos de teclado:"
 
 #: packages/statusbar-extension/src/index.ts:86
 msgid "Show Status Bar"
@@ -3441,11 +3471,11 @@ msgstr "Alterar o kernel para %1"
 
 #: packages/statusbar/src/defaults/lineCol.tsx:140
 msgid "Go to line number between 1 and %1"
-msgstr ""
+msgstr "Vá para o número da linha entre 1 e %1"
 
 #: packages/statusbar/src/defaults/lineCol.tsx:238
 msgid "Ln %1, Col %2"
-msgstr ""
+msgstr "Linha %1, Coluna %2"
 
 #: packages/statusbar/src/defaults/lineCol.tsx:239
 msgid "Go to line number…"
@@ -3561,11 +3591,11 @@ msgstr "Limpar filtros"
 
 #: packages/toc/src/generators/notebook/toolbar_generator.tsx:180 packages/toc/src/generators/notebook/toolbar_generator.tsx:181
 msgid "Toggle Code Cells"
-msgstr ""
+msgstr "Alternar Células de Código"
 
 #: packages/toc/src/generators/notebook/toolbar_generator.tsx:196 packages/toc/src/generators/notebook/toolbar_generator.tsx:197
 msgid "Toggle Markdown Text Cells"
-msgstr ""
+msgstr "Ativar/desativar células de texto em Markdown"
 
 #: packages/toc/src/generators/notebook/toolbar_generator.tsx:228 packages/toc/src/generators/notebook/toolbar_generator.tsx:229
 msgid "Show Tags Menu"
