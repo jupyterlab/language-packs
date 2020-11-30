@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2020-11-30 16:41\n"
+"PO-Revision-Date: 2020-11-30 17:38\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -70,7 +70,7 @@ msgstr "Paramètres du visualiseur Markdown."
 
 #: /examples/federated/md_package/./schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:54
 msgid "Hide Front Matter"
-msgstr "Cacher le Preambule"
+msgstr "Cacher le Préambule"
 
 #: /examples/federated/md_package/./schema/plugin.json:55 /packages/markdownviewer-extension/schema/plugin.json:55
 msgctxt "schema"
@@ -258,22 +258,22 @@ msgstr "Carte des touches"
 #: /packages/completer-extension/schema/consoles.json:2
 msgctxt "schema"
 msgid "Console Completer"
-msgstr ""
+msgstr "Compléteur de console"
 
 #: /packages/completer-extension/schema/consoles.json:3
 msgctxt "schema"
 msgid "Console completer settings."
-msgstr ""
+msgstr "Paramètres de compléteur de la console."
 
 #: /packages/completer-extension/schema/files.json:2
 msgctxt "schema"
 msgid "File Editor Completer"
-msgstr ""
+msgstr "Compléteur de l'éditeur de fichiers"
 
 #: /packages/completer-extension/schema/files.json:3
 msgctxt "schema"
 msgid "File editor completer settings."
-msgstr ""
+msgstr "Paramètres du compléteur de l'éditeur de fichiers."
 
 #: /packages/completer-extension/schema/notebooks.json:2
 msgctxt "schema"
@@ -283,7 +283,7 @@ msgstr "Completer du Notebook"
 #: /packages/completer-extension/schema/notebooks.json:3
 msgctxt "schema"
 msgid "Notebook completer settings."
-msgstr ""
+msgstr "Paramètres de compléteur du notebook."
 
 #: /packages/console-extension/schema/tracker.json:2
 msgctxt "schema"
@@ -303,7 +303,8 @@ msgstr "Mode d'interaction"
 msgctxt "schema"
 msgid "Whether the console interaction mimics the notebook\n"
 "or terminal keyboard shortcuts."
-msgstr ""
+msgstr "Si l'interaction avec la console imite le notebook\n"
+"ou les raccourcis clavier du terminal."
 
 #: /packages/console-extension/schema/tracker.json:42 packages/console-extension/src/foreign.ts:85
 msgid "Show All Kernel Activity"
@@ -384,7 +385,7 @@ msgstr "Plugin de recherche de documents."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:14
 msgid "Disclaimed Status"
-msgstr ""
+msgstr "Statut de renonciation"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:15
 msgctxt "schema"
@@ -728,12 +729,12 @@ msgstr "Activer le collage avec Ctrl+V. Cela peut être désactivé pour utilise
 
 #: /packages/terminal-extension/schema/plugin.json:82
 msgid "Treat option as meta key on macOS"
-msgstr ""
+msgstr "Traiter l'option comme touche de combinaison sur macOS"
 
 #: /packages/terminal-extension/schema/plugin.json:83
 msgctxt "schema"
 msgid "Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word"
-msgstr ""
+msgstr "La touche \"option\" sur macOS peut être utilisée comme touche de combinaison. Cela permet d'utiliser des raccourcis tels que \"option + f\" pour avancer le curseur d'un mot"
 
 #: /packages/tooltip-extension/schema/consoles.json:2
 msgctxt "schema"
@@ -1256,11 +1257,11 @@ msgstr "emacs"
 
 #: packages/codemirror/src/editor.ts:1110
 msgid "Code Editor out of Sync"
-msgstr ""
+msgstr "Éditeur de code désynchronisé"
 
 #: packages/codemirror/src/editor.ts:1111
 msgid "Please open your browser JavaScript console for bug report instructions"
-msgstr ""
+msgstr "Veuillez ouvrir la console JavaScript de votre navigateur pour les instructions de rapport de bogue"
 
 #: packages/codemirror/src/syntaxstatus.tsx:75
 msgid "Change text editor syntax highlighting"
@@ -1416,11 +1417,11 @@ msgstr "Suivant"
 
 #: packages/debugger-extension/src/index.ts:423 packages/debugger-extension/src/index.ts:424
 msgid "Step In"
-msgstr ""
+msgstr "Entrer"
 
 #: packages/debugger-extension/src/index.ts:435 packages/debugger-extension/src/index.ts:436
 msgid "Step Out"
-msgstr ""
+msgstr "Sortir"
 
 #: packages/debugger-extension/src/index.ts:498
 msgid "Debugger"
@@ -1440,7 +1441,7 @@ msgstr "Supprimer tous les points d’arrêt"
 
 #: packages/debugger/src/panels/callstack/header.ts:23
 msgid "Callstack"
-msgstr ""
+msgstr "Callstack"
 
 #: packages/debugger/src/panels/sources/header.tsx:32
 msgid "Source"
@@ -1470,7 +1471,17 @@ msgid "Overrides for the default viewers for file types.\n"
 "%1\n\n"
 "Available file types:\n"
 "%2"
-msgstr ""
+msgstr "Remplace les afficheurs par défaut pour les types de fichiers.\n"
+"Spécifiez un mappage du nom du type de fichier au nom de la visionneuse du document, par exemple :\n\n"
+"defaultViewers: {\n"
+"  markdown: \"Markdown Preview\"\n"
+"}\n\n"
+"Si vous spécifiez des types de fichiers ou des visualisateurs inexistants, ou si une visionneuse ne peut pas\n"
+"ouvrir un type de fichier donné, la substitution ne fonctionnera pas.\n\n"
+"Visualisateurs disponibles :\n"
+"%1\n\n"
+"Types de fichiers disponibles :\n"
+"%2"
 
 #: packages/docmanager-extension/src/index.ts:394 packages/filebrowser-extension/src/index.ts:643 packages/filebrowser-extension/src/index.ts:928 packages/htmlviewer-extension/src/index.tsx:132
 msgid "File Operations"
@@ -2243,7 +2254,7 @@ msgstr "Impossible de charger le fichier (>%1 Mo). %2"
 
 #: packages/filebrowser/src/model.ts:437
 msgid "Large file size warning"
-msgstr ""
+msgstr "Avertissement sur la taille du fichier volumineux"
 
 #: packages/filebrowser/src/model.ts:438
 msgid "The file size is %1 MB. Do you still want to upload it?"
@@ -2255,7 +2266,7 @@ msgstr "Téléverser"
 
 #: packages/filebrowser/src/upload.ts:112
 msgid "Upload Files"
-msgstr ""
+msgstr "Charger des fichiers"
 
 #: packages/filebrowser/src/upload.ts:52
 msgctxt "showErrorMessage"
@@ -2293,8 +2304,8 @@ msgstr "Indenter avec des tabulations"
 #: packages/fileeditor-extension/src/commands.ts:1097 packages/fileeditor-extension/src/commands.ts:979 packages/fileeditor-extension/src/index.ts:108
 msgid "Spaces: %1"
 msgid_plural "Spaces: %1"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Espaces : %1"
+msgstr[1] "Espaces : %1"
 
 #: packages/fileeditor-extension/src/commands.ts:1106
 msgid "Increase Text Editor Font Size"
@@ -2326,11 +2337,11 @@ msgstr "Numéros de ligne"
 
 #: packages/fileeditor-extension/src/commands.ts:323
 msgid "Word Wrap"
-msgstr ""
+msgstr "Retour à la ligne"
 
 #: packages/fileeditor-extension/src/commands.ts:374 packages/mainmenu-extension/src/index.ts:647
 msgid "Match Brackets"
-msgstr ""
+msgstr "Mettre en évidence les parenthèses correspondantes"
 
 #: packages/fileeditor-extension/src/commands.ts:398
 msgid "Auto Close Brackets for Text Editor"
@@ -2386,59 +2397,59 @@ msgstr "Espaces"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:63
 msgid "Tab Size"
-msgstr ""
+msgstr "Taille des onglets"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:68
 msgid "Change Tab indentation…"
-msgstr ""
+msgstr "Modifier l'indentation des onglets…"
 
 #: packages/help-extension/src/index.tsx:104
 msgid "JupyterLab Reference"
-msgstr ""
+msgstr "Référence JupyterLab"
 
 #: packages/help-extension/src/index.tsx:108
 msgid "JupyterLab FAQ"
-msgstr ""
+msgstr "FAQ JupyterLab"
 
 #: packages/help-extension/src/index.tsx:113
 msgid "Jupyter Reference"
-msgstr ""
+msgstr "Référence JupyterLab"
 
 #: packages/help-extension/src/index.tsx:117
 msgid "Markdown Reference"
-msgstr ""
+msgstr "Référence Markdown"
 
 #: packages/help-extension/src/index.tsx:240
 msgid "About the %1 Kernel"
-msgstr ""
+msgstr "A propos du noyau %1"
 
 #: packages/help-extension/src/index.tsx:260 packages/help-extension/src/index.tsx:351 packages/hub-extension/src/index.ts:160 packages/mainmenu-extension/src/index.ts:584
 msgid "Dismiss"
-msgstr ""
+msgstr "Passer"
 
 #: packages/help-extension/src/index.tsx:291
 msgid "About %1"
-msgstr ""
+msgstr "À propos de %1"
 
 #: packages/help-extension/src/index.tsx:294
 msgid "Version %1"
-msgstr ""
+msgstr "Version %1"
 
 #: packages/help-extension/src/index.tsx:322
 msgid "CONTRIBUTOR LIST"
-msgstr ""
+msgstr "LISTE DES CONTRIBUTEURS"
 
 #: packages/help-extension/src/index.tsx:330
 msgid "ABOUT PROJECT JUPYTER"
-msgstr ""
+msgstr "A PROPOS DU PROJET JUPYTER"
 
 #: packages/help-extension/src/index.tsx:336
 msgid "© 2015-2020 Project Jupyter Contributors"
-msgstr ""
+msgstr "© Contributeurs du projet Jupyter 2015-2020"
 
 #: packages/help-extension/src/index.tsx:383
 msgid "Launch Classic Notebook"
-msgstr ""
+msgstr "Lancer un notebook classique"
 
 #: packages/help-extension/src/index.tsx:97 packages/mainmenu-extension/src/index.ts:900
 msgid "Help"
@@ -2458,7 +2469,7 @@ msgstr "Visionneuse HTML"
 
 #: packages/htmlviewer/src/index.tsx:104
 msgid "Rerender HTML Document"
-msgstr ""
+msgstr "Réexécuter un rendu du document HTML"
 
 #: packages/htmlviewer/src/index.tsx:292
 msgid "Whether the HTML file is trusted.\n"
@@ -2562,7 +2573,7 @@ msgstr "Afficher l'aide contextuelle"
 
 #: packages/inspector-extension/src/index.ts:88
 msgid "Live updating code documentation from the active kernel"
-msgstr ""
+msgstr "Documentation du code de mise à jour en direct depuis le noyau actif"
 
 #: packages/inspector/src/inspector.ts:54
 msgid "Click on a function to see documentation."
@@ -2855,11 +2866,11 @@ msgstr "Arrêter le notebook?"
 
 #: packages/notebook-extension/src/index.ts:1244
 msgid "Trust Notebook"
-msgstr ""
+msgstr "Faire confiance au notebook"
 
 #: packages/notebook-extension/src/index.ts:1258
 msgid "Export Notebook: %1"
-msgstr ""
+msgstr "Exporter le notebook: %1"
 
 #: packages/notebook-extension/src/index.ts:1293 packages/notebook-extension/src/index.ts:2217
 msgid "Restart Kernel and Clear All Outputs…"
@@ -3003,7 +3014,7 @@ msgstr "Créer une nouvelle vue pour la sortie"
 
 #: packages/notebook-extension/src/index.ts:1787 packages/notebook-extension/src/index.ts:2238
 msgid "New Console for Notebook"
-msgstr ""
+msgstr "Nouvelle console pour le notebook"
 
 #: packages/notebook-extension/src/index.ts:1804
 msgid "Change to Heading 1"
@@ -3075,15 +3086,15 @@ msgstr "Sélectionnez la cellule en cours d'exécution ou la dernière exécutio
 
 #: packages/notebook-extension/src/index.ts:1991
 msgid "Replace Selection in Notebook Cell"
-msgstr ""
+msgstr "Remplacer la sélection dans la cellule du notebook"
 
 #: packages/notebook-extension/src/index.ts:2012 packages/notebook-extension/src/index.ts:2190
 msgid "Notebook Operations"
-msgstr ""
+msgstr "Opérations du notebook"
 
 #: packages/notebook-extension/src/index.ts:2045
 msgid "Notebook Cell Operations"
-msgstr ""
+msgstr "Opérations des cellules du notebook"
 
 #: packages/notebook-extension/src/index.ts:2126
 msgid "Clear Output"
@@ -3091,15 +3102,15 @@ msgstr "Effacer la sortie"
 
 #: packages/notebook-extension/src/index.ts:2145
 msgid "Close and Shutdown Notebook"
-msgstr ""
+msgstr "Fermer et arrêter le notebook"
 
 #: packages/notebook-extension/src/index.ts:2149
 msgid "Shut down the Notebook?"
-msgstr ""
+msgstr "Arrêter le notebook?"
 
 #: packages/notebook-extension/src/index.ts:2164
 msgid "Export Notebook As…"
-msgstr ""
+msgstr "Exporter le notebook sous…"
 
 #: packages/notebook-extension/src/index.ts:2282 packages/notebook-extension/src/index.ts:981
 msgid "Run Selected Cells"
@@ -3107,11 +3118,11 @@ msgstr "Exécuter les cellules sélectionnées"
 
 #: packages/notebook-extension/src/index.ts:2425
 msgid "For Notebook: %1"
-msgstr ""
+msgstr "Pour le notebook: %1"
 
 #: packages/notebook-extension/src/index.ts:2426
 msgid "For Notebook:"
-msgstr ""
+msgstr "Pour le notebook:"
 
 #: packages/notebook-extension/src/index.ts:2511
 msgid "HTML"
@@ -3155,15 +3166,15 @@ msgstr "Personnalisé"
 
 #: packages/notebook-extension/src/index.ts:494
 msgid "Notebook Tools"
-msgstr ""
+msgstr "Outils du notebook"
 
 #: packages/notebook-extension/src/index.ts:738
 msgid "New Notebook"
-msgstr ""
+msgstr "Nouveau notebook"
 
 #: packages/notebook-extension/src/index.ts:742
 msgid "Create a new notebook"
-msgstr ""
+msgstr "Créer un nouveau notebook"
 
 #: packages/notebook-extension/src/index.ts:994
 msgid "Run Selected Cells and Don't Advance"
@@ -3171,11 +3182,11 @@ msgstr "Exécuter les cellules sélectionnées et ne pas avancer"
 
 #: packages/notebook/src/actions.tsx:1387
 msgid "A trusted Jupyter notebook may execute hidden malicious code when you openit."
-msgstr ""
+msgstr "Un notebook Jupyter de confiance pourrait exécuter du code malveillant lorsque vous l'ouvrez."
 
 #: packages/notebook/src/actions.tsx:1391
 msgid "Selecting trust will re-render this notebook in a trusted state."
-msgstr ""
+msgstr "En sélectionnant la confiance, ce notebook sera rendu à nouveau dans un état de confiance."
 
 #: packages/notebook/src/actions.tsx:1395
 msgid "For more information, see the <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>"
@@ -3187,11 +3198,11 @@ msgstr "Documentation de sécurité Jupyter"
 
 #: packages/notebook/src/actions.tsx:1404
 msgid "Notebook is already trusted"
-msgstr ""
+msgstr "Le notebook est déjà de confiance"
 
 #: packages/notebook/src/actions.tsx:1411
 msgid "Trust this notebook?"
-msgstr ""
+msgstr "Faire confiance au notebook?"
 
 #: packages/notebook/src/actions.tsx:1599
 msgid "Kernel Terminating"
@@ -3199,19 +3210,19 @@ msgstr "Fermeture du noyau"
 
 #: packages/notebook/src/actions.tsx:1600
 msgid "The kernel for %1 appears to be terminating. You can not run any cell for now."
-msgstr ""
+msgstr "Le noyau pour %1 semble être en train de se fermer. Vous ne pouvez pas exécuter de cellule pour le moment."
 
 #: packages/notebook/src/default-toolbar.tsx:116
 msgid "Insert a cell below"
-msgstr ""
+msgstr "Insérer une cellule en-dessous"
 
 #: packages/notebook/src/default-toolbar.tsx:133
 msgid "Cut the selected cells"
-msgstr ""
+msgstr "Couper les cellules sélectionnées"
 
 #: packages/notebook/src/default-toolbar.tsx:150
 msgid "Copy the selected cells"
-msgstr ""
+msgstr "Copier les cellules sélectionnées"
 
 #: packages/notebook/src/default-toolbar.tsx:167
 msgid "Paste cells from the clipboard"
@@ -3223,7 +3234,7 @@ msgstr "Exécuter les cellules sélectionnées et avancer"
 
 #: packages/notebook/src/default-toolbar.tsx:208
 msgid "Restart the kernel, then re-run the whole notebook"
-msgstr ""
+msgstr "Redémarrez le noyau, puis réexécutez tout le notebook"
 
 #: packages/notebook/src/default-toolbar.tsx:340
 msgid "Cell type"
@@ -3239,7 +3250,7 @@ msgstr "Brut"
 
 #: packages/notebook/src/default-toolbar.tsx:85
 msgid "Save the notebook contents and create checkpoint"
-msgstr ""
+msgstr "Enregistrer le contenu du notebook et créer un point de contrôle"
 
 #: packages/notebook/src/model.ts:263
 msgid "This notebook has been converted from an older notebook format (v%1)\n"
@@ -3247,7 +3258,11 @@ msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "The next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n"
 "'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\n"
 "close the notebook without saving it."
-msgstr ""
+msgstr "Ce notebook a été converti d'un ancien format de notebook (v%1)\n"
+"au format actuel (v%2).\n"
+"La prochaine fois que vous sauverez ce notebook, le format actuel du notebook (vthis._nbformat) sera utilisé.\n"
+"'Anciennes versions de Jupyter peuvent ne pas être en mesure de lire le nouveau format.' Pour préserver la version originale,\n"
+"fermez le notebook sans le sauvegarder."
 
 #: packages/notebook/src/model.ts:273
 msgid "This notebook has been converted from an newer notebook format (v%1)\n"
@@ -3255,11 +3270,15 @@ msgid "This notebook has been converted from an newer notebook format (v%1)\n"
 "The next time you save this notebook, the current notebook format (v%2) will be used.\n"
 "Some features of the original notebook may not be available.' To preserve the original format version,\n"
 "close the notebook without saving it."
-msgstr ""
+msgstr "Ce notebook a été converti d'un format de notebook plus récent (v%1)\n"
+"que le format actuel (v%2).\n"
+"La prochaine fois que vous sauverez ce notebook, le format actuel du notebook (v%2) sera utilisé.\n"
+"'Certaines fonctionnalités du notebook original peuvent ne pas être disponibles.' Pour préserver la version originale,\n"
+"fermez le notebook sans le sauvegarder."
 
 #: packages/notebook/src/model.ts:284
 msgid "Notebook converted"
-msgstr ""
+msgstr "Notebook converti"
 
 #: packages/notebook/src/modestatus.tsx:29
 msgid "Mode: %1"
@@ -3267,11 +3286,11 @@ msgstr "Mode : %1"
 
 #: packages/notebook/src/modestatus.tsx:74
 msgid "Notebook is in %1 mode"
-msgstr ""
+msgstr "Le notebook est en mode %1"
 
 #: packages/notebook/src/notebooktools.ts:587
 msgid "Notebook Metadata"
-msgstr ""
+msgstr "Métadonnées du notebook"
 
 #: packages/notebook/src/notebooktools.ts:620
 msgid "Cell Metadata"
@@ -3307,27 +3326,27 @@ msgstr "Remarques"
 
 #: packages/notebook/src/notebooktools.ts:929
 msgid "Raw NBConvert Format"
-msgstr ""
+msgstr "Format brut NBConvert"
 
 #: packages/notebook/src/panel.ts:203
 msgid "Kernel Restarting"
-msgstr ""
+msgstr "Redémarrage en cours du noyau"
 
 #: packages/notebook/src/panel.ts:204
 msgid "The kernel for %1 appears to have died. It will restart automatically."
-msgstr ""
+msgstr "Le noyau pour %1 semble être mort. Il va redémarrer automatiquement."
 
 #: packages/notebook/src/truststatus.tsx:26
 msgid "Notebook trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Notebook de confiance : %1 sur %2 cellules fiables."
 
 #: packages/notebook/src/truststatus.tsx:35
 msgid "Active cell trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Cellules actives de confiance: %1 sur %2 cellules fiables."
 
 #: packages/notebook/src/truststatus.tsx:44
 msgid "Notebook not trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Notebook non fiable: %1 sur %2 cellules fiables."
 
 #: packages/property-inspector/src/index.ts:172
 msgid "No properties to inspect."
@@ -3335,15 +3354,15 @@ msgstr "Aucune propriété à inspecter."
 
 #: packages/rendermime-extension/src/index.ts:54
 msgid "Handle Local Link"
-msgstr ""
+msgstr "Gérer le lien local"
 
 #: packages/rendermime/src/renderers.ts:74
 msgid "This HTML output contains inline scripts. Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
-msgstr ""
+msgstr "Cette sortie HTML contient des scripts en ligne. Êtes-vous sûr de vouloir exécuter JavaScript arbitraire au cours de votre session JupyterLab?"
 
 #: packages/rendermime/src/widgets.ts:421
 msgid "JavaScript output is disabled in JupyterLab"
-msgstr ""
+msgstr "La sortie JavaScript est désactivée dans JupyterLab"
 
 #: packages/running-extension/src/index.ts:136
 msgid "Path: %1\n"
@@ -3430,7 +3449,20 @@ msgid "Note: To disable a system default shortcut,\n"
 "List of commands followed by keyboard shortcuts:\n"
 "%1\n\n"
 "List of keyboard shortcuts:"
-msgstr ""
+msgstr "Remarque : Pour désactiver un raccourci par défaut du système,\n"
+"copiez-le dans les préférences utilisateur et ajoutez le paramètre\n"
+"\"disabled\", par exemple:\n"
+"{\n"
+"    \"command\": \"application:activate-next-tab\",\n"
+"    \"keys\": [\n"
+"        \"Ctrl Shift ]\"\n"
+"    ],\n"
+"    \"selector\": \"body\",\n"
+"    \"disabled\" : true\n"
+"}\n\n"
+"Liste des commandes suivies des raccourcis clavier :\n"
+"%1\n\n"
+"Liste des raccourcis clavier :"
 
 #: packages/statusbar-extension/src/index.ts:86
 msgid "Show Status Bar"
@@ -3474,7 +3506,7 @@ msgstr "%1 terminaux, %2 sessions de noyau"
 
 #: packages/tabmanager-extension/src/index.ts:39
 msgid "Open Tabs"
-msgstr ""
+msgstr "Onglets ouverts"
 
 #: packages/terminal-extension/src/index.ts:175
 msgid "Terminal Theme"
@@ -3558,7 +3590,7 @@ msgstr "Activer/désactiver la numérotation automatique"
 
 #: packages/toc/src/generators/notebook/tagstool/index.tsx:186
 msgid "No Tags Available"
-msgstr ""
+msgstr "Pas de balise disponible"
 
 #: packages/toc/src/generators/notebook/tagstool/index.tsx:193
 msgid "Clear Filters"
@@ -3574,7 +3606,7 @@ msgstr "Activer/désactiver les cellules de texte Markdown"
 
 #: packages/toc/src/generators/notebook/toolbar_generator.tsx:228 packages/toc/src/generators/notebook/toolbar_generator.tsx:229
 msgid "Show Tags Menu"
-msgstr ""
+msgstr "Afficher le menu des balises"
 
 #: packages/translation-extension/src/index.ts:106
 msgid "Language"
