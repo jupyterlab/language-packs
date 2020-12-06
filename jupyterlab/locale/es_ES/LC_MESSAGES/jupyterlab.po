@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2020-12-03 02:15\n"
+"PO-Revision-Date: 2020-12-06 14:54\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -78,7 +78,10 @@ msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr ""
+msgstr "¿Ocultar la parte delantera YAML?\n"
+"La parte delantera de YAML debe colocarse en la parte superior del documento,\n"
+"iniciando con una línea de tres guiones (---) y terminando con  una línea de\n"
+"tres guiones (---) o tres puntos (...)."
 
 #: /examples/federated/md_package/./schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:60
 msgid "Render Timeout"
@@ -1466,7 +1469,17 @@ msgid "Overrides for the default viewers for file types.\n"
 "%1\n\n"
 "Available file types:\n"
 "%2"
-msgstr ""
+msgstr "Reemplazo de los visores predeterminados para tipos de archivo.\n"
+"Especifique un mapeo del nombre del tipo de archivo al nombre del visor del documento, por ejemplo:\n\n"
+"defaultViewers: {\n"
+"   markdown: \"Vista previa de Markdown\"\n"
+"}\n\n"
+"Si especifica tipos de archivos o visores que no existen, o si un visor no puede\n"
+"abre un tipo de archivo determinado, la anulación no funcionará.\n\n"
+"Visores disponibles\n"
+"%1\n\n"
+"Tipos de archivo disponibles:\n"
+"%2"
 
 #: packages/docmanager-extension/src/index.ts:394 packages/filebrowser-extension/src/index.ts:643 packages/filebrowser-extension/src/index.ts:928 packages/htmlviewer-extension/src/index.tsx:132
 msgid "File Operations"
@@ -1886,7 +1899,7 @@ msgstr "Error de instalación de la extensión"
 
 #: packages/extensionmanager/src/widget.tsx:132
 msgid "A build is needed to include the latest changes"
-msgstr ""
+msgstr "Se necesita una versión para incluir los cambios más recientes"
 
 #: packages/extensionmanager/src/widget.tsx:135
 msgid "Rebuild"
@@ -2129,7 +2142,7 @@ msgstr "Error al eliminar"
 
 #: packages/filebrowser/src/listing.ts:1447
 msgid "showErrorMessage"
-msgstr ""
+msgstr "showErrorMessage"
 
 #: packages/filebrowser/src/listing.ts:1449
 msgctxt "showErrorMessage"
@@ -2490,15 +2503,15 @@ msgstr "Reiniciar Servidor"
 
 #: packages/hub-extension/src/index.ts:69
 msgid "Request that the Hub restart this server"
-msgstr ""
+msgstr "Solicite que el Hub reinicie este servidor"
 
 #: packages/hub-extension/src/index.ts:76
 msgid "Hub Control Panel"
-msgstr ""
+msgstr "Panel de control"
 
 #: packages/hub-extension/src/index.ts:77
 msgid "Open the Hub control panel in a new browser tab"
-msgstr ""
+msgstr "Abrir el panel de control de Hub en una nueva pestaña del navegador"
 
 #: packages/hub-extension/src/index.ts:84 packages/mainmenu-extension/src/index.ts:440
 msgid "Log Out"
@@ -3063,7 +3076,7 @@ msgstr "Deshabilitar el desplazamiento para los resultados"
 
 #: packages/notebook-extension/src/index.ts:1980
 msgid "Select current running or last run cell"
-msgstr ""
+msgstr "Seleccione la última celda de ejecución o la actual"
 
 #: packages/notebook-extension/src/index.ts:1991
 msgid "Replace Selection in Notebook Cell"
@@ -3227,7 +3240,7 @@ msgstr "Código"
 
 #: packages/notebook/src/default-toolbar.tsx:345
 msgid "Raw"
-msgstr ""
+msgstr "Raw"
 
 #: packages/notebook/src/default-toolbar.tsx:85
 msgid "Save the notebook contents and create checkpoint"
@@ -3305,7 +3318,7 @@ msgstr "Notas"
 
 #: packages/notebook/src/notebooktools.ts:929
 msgid "Raw NBConvert Format"
-msgstr ""
+msgstr "Formato NBConvert Raw"
 
 #: packages/notebook/src/panel.ts:203
 msgid "Kernel Restarting"
@@ -3313,19 +3326,19 @@ msgstr "Reinicio del Kernel"
 
 #: packages/notebook/src/panel.ts:204
 msgid "The kernel for %1 appears to have died. It will restart automatically."
-msgstr ""
+msgstr "El núcleo para %1 parece haber muerto. Se reiniciará automáticamente."
 
 #: packages/notebook/src/truststatus.tsx:26
 msgid "Notebook trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Cuadernos de confianza: %1 de %2 celdas de confianza."
 
 #: packages/notebook/src/truststatus.tsx:35
 msgid "Active cell trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Celda activa confiada: %1 de %2 celdas de confianza."
 
 #: packages/notebook/src/truststatus.tsx:44
 msgid "Notebook not trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Cuaderno no confiado: %1 de %2 celdas de confianza."
 
 #: packages/property-inspector/src/index.ts:172
 msgid "No properties to inspect."
@@ -3333,11 +3346,11 @@ msgstr "No hay propiedades para inspeccionar."
 
 #: packages/rendermime-extension/src/index.ts:54
 msgid "Handle Local Link"
-msgstr ""
+msgstr "Manejar Enlace Local"
 
 #: packages/rendermime/src/renderers.ts:74
 msgid "This HTML output contains inline scripts. Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
-msgstr ""
+msgstr "Esta salida de HTML contiene scripts en línea. ¿Está seguro que desea ejecutar Javascript arbitrario en su sesión de JupyterLab?"
 
 #: packages/rendermime/src/widgets.ts:421
 msgid "JavaScript output is disabled in JupyterLab"
