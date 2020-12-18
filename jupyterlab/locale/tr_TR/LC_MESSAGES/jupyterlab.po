@@ -1,7 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jupyterlab\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: jupyterlab\n"
 "X-Crowdin-Project-ID: 409874\n"
@@ -10,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2020-09-14 02:31\n"
+"PO-Revision-Date: 2020-09-25 22:15\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -20,7 +22,7 @@ msgstr "Yazı Tipi Ailesi"
 msgctxt "schema"
 msgid "The font family used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr ""
+msgstr "Markdown oluşturmak için kullanılan yazı tipi ailesi. Eğer \"null' ise, mevcut temanın değeri kullanılır."
 
 #: /examples/federated/md_package/./schema/plugin.json:36 /packages/markdownviewer-extension/schema/plugin.json:36
 msgid "Font Size"
@@ -30,12 +32,12 @@ msgstr "Yazı Boyutu"
 msgctxt "schema"
 msgid "The size in pixel of the font used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr ""
+msgstr "Markdown oluşturmak için kullanılan yazı tipinin piksel cinsinden boyutu. Eğer değer \"null\" ise, mevcut tema kullanılır."
 
 #: /examples/federated/md_package/./schema/plugin.json:4 /packages/markdownviewer-extension/schema/plugin.json:4
 msgctxt "schema"
 msgid "Markdown Viewer"
-msgstr ""
+msgstr "Markdown Görüntüleyici"
 
 #: /examples/federated/md_package/./schema/plugin.json:42 /packages/markdownviewer-extension/schema/plugin.json:42
 msgid "Line Height"
@@ -45,7 +47,8 @@ msgstr "Satır Yüksekliği"
 msgctxt "schema"
 msgid "The line height used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr ""
+msgstr "Markdown oluşturmak için kullanılan satır yüksekliği.\n"
+"Eğer 'null' ise, mevcut temanın değeri kullanılır."
 
 #: /examples/federated/md_package/./schema/plugin.json:48 /packages/markdownviewer-extension/schema/plugin.json:48
 msgid "Line Width"
@@ -55,16 +58,17 @@ msgstr "Satır Genişliği"
 msgctxt "schema"
 msgid "The text line width expressed in CSS ch units.\n"
 "If `null`, lines fit the viewport width."
-msgstr ""
+msgstr "CSS ch birimleriyle ifade edilen metin satırı genişliği.\n"
+"\"Null\" ise, çizgiler görüntü alanı genişliğine sığar."
 
 #: /examples/federated/md_package/./schema/plugin.json:5 /packages/markdownviewer-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Markdown viewer settings."
-msgstr ""
+msgstr "Markdown görüntüleme ayarları."
 
 #: /examples/federated/md_package/./schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:54
 msgid "Hide Front Matter"
-msgstr ""
+msgstr "Ön Bölümleri Gizle"
 
 #: /examples/federated/md_package/./schema/plugin.json:55 /packages/markdownviewer-extension/schema/plugin.json:55
 msgctxt "schema"
@@ -72,16 +76,17 @@ msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr ""
+msgstr "YAML ön bölümünün gizlenip/gizlenmeme durumunu.\n"
+"YAML ön bölümü, belgenin üst kısmına yerleştirilmiş olmalıdır, üç çizgi (---) satırı ile başlamalı ve üç çizgi (---) ya da üç nokta (...) satırı ile bitirilmelidir."
 
 #: /examples/federated/md_package/./schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:60
 msgid "Render Timeout"
-msgstr ""
+msgstr "Zaman Aşımını İşle"
 
 #: /examples/federated/md_package/./schema/plugin.json:61 /packages/markdownviewer-extension/schema/plugin.json:61
 msgctxt "schema"
 msgid "The render timeout in milliseconds."
-msgstr ""
+msgstr "Render zaman aşımı milisaniye cinsindendir."
 
 #: /packages/application-extension/schema/main.json:2
 msgctxt "schema"
@@ -97,7 +102,8 @@ msgstr "Ana JupyterLab uygulama seçenekleri."
 msgctxt "schema"
 msgid "Overrides for where to show sidebar items\n"
 "e.g., {\"tab-manager\": \"right\"}"
-msgstr ""
+msgstr "Kenar çubuğu öğelerinin nerede görüneceğini belirler\n"
+"örn: {\"sekme yönetimi\": \"sağ\"}"
 
 #: /packages/application-extension/schema/sidebar.json:3
 msgctxt "schema"
@@ -107,16 +113,16 @@ msgstr "Kenar Çubuğu"
 #: /packages/application-extension/schema/sidebar.json:4
 msgctxt "schema"
 msgid "Sidebar layout settings."
-msgstr ""
+msgstr "Kenar çubuğu yerleşim ayarları."
 
 #: /packages/application-extension/schema/sidebar.json:8
 msgid "Overrides"
-msgstr "Üzerine yazmak"
+msgstr "Geçersiz Kılınanlar"
 
 #: /packages/apputils-extension/schema/palette.json:2
 msgctxt "schema"
 msgid "Command Palette"
-msgstr ""
+msgstr "Komut Paleti"
 
 #: /packages/apputils-extension/schema/palette.json:3
 msgctxt "schema"
@@ -131,30 +137,30 @@ msgstr "Yazdır"
 #: /packages/apputils-extension/schema/print.json:3
 msgctxt "schema"
 msgid "Print settings."
-msgstr "Baskı ayarları."
+msgstr "Yazdırma ayarları."
 
 #: /packages/apputils-extension/schema/themes.json:2
 msgctxt "schema"
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: /packages/apputils-extension/schema/themes.json:31
 msgid "Selected Theme"
-msgstr "Seçilmiş tema"
+msgstr "Seçilen tema"
 
 #: /packages/apputils-extension/schema/themes.json:32
 msgctxt "schema"
 msgid "Application-level visual styling theme"
-msgstr ""
+msgstr "Uygulama seviyesinde görsel stil teması"
 
 #: /packages/apputils-extension/schema/themes.json:37
 msgid "Scrollbar Theming"
-msgstr ""
+msgstr "Hide Front Matter"
 
 #: /packages/apputils-extension/schema/themes.json:38
 msgctxt "schema"
 msgid "Enable/disable styling of the application scrollbars"
-msgstr ""
+msgstr "Uygulama kaydırma çubuğunun stilini aktif et / pasif yap"
 
 #: /packages/apputils-extension/schema/themes.json:4
 msgctxt "schema"
@@ -163,17 +169,17 @@ msgstr "Tema yönetici ayarları."
 
 #: /packages/apputils-extension/schema/themes.json:42
 msgid "Theme CSS Overrides"
-msgstr ""
+msgstr "Ön Konuyu Gizle"
 
 #: /packages/apputils-extension/schema/themes.json:43
 msgctxt "schema"
 msgid "Override theme CSS variables by setting key-value pairs here"
-msgstr ""
+msgstr "Tema CSS değişkenlerini, anahtar-değer çiftleri ayarlayarak buradan etkisiz kılın"
 
 #: /packages/codemirror-extension/schema/commands.json:10
 msgctxt "schema"
 msgid "Configures the keymap to use"
-msgstr ""
+msgstr "Klavye yollarını yapılandırır"
 
 #: /packages/codemirror-extension/schema/commands.json:15 /packages/terminal-extension/schema/plugin.json:52 packages/apputils-extension/src/themesplugins.ts:238
 msgid "Theme"
@@ -183,25 +189,25 @@ msgstr "Tema"
 msgctxt "schema"
 msgid "CSS file defining the corresponding\n"
 ".cm-s-[name] styles is loaded"
-msgstr ""
+msgstr "Karşılık gelen stilleri tanımlayan CSS dosyası .cm-s[name] şeklinde yüklenir"
 
 #: /packages/codemirror-extension/schema/commands.json:21
 msgid "Scroll behavior"
-msgstr ""
+msgstr "Kaydırma davranışı"
 
 #: /packages/codemirror-extension/schema/commands.json:22
 msgctxt "schema"
 msgid "Whether to scroll past the end of text document"
-msgstr ""
+msgstr "/paketler/codemirror-uzantısı/şema/komutlar. json: 22 şema"
 
 #: /packages/codemirror-extension/schema/commands.json:27
 msgid "Style Active Line"
-msgstr ""
+msgstr "Aktif Satır Stili"
 
 #: /packages/codemirror-extension/schema/commands.json:28
 msgctxt "schema"
 msgid "Value is boolean, or { nonEmpty: boolean }"
-msgstr ""
+msgstr "Bool bir değer, veya { nonEmpty: boolean }"
 
 #: /packages/codemirror-extension/schema/commands.json:33
 msgid "Style Selected Text"
@@ -210,7 +216,7 @@ msgstr "Seçili yazıyı düzenle"
 #: /packages/codemirror-extension/schema/commands.json:34
 msgctxt "schema"
 msgid "Value is boolean"
-msgstr ""
+msgstr "Değer 0 ya da 1 olabilir"
 
 #: /packages/codemirror-extension/schema/commands.json:39
 msgid "Selection Pointer"
@@ -219,12 +225,12 @@ msgstr "Seçim işaretçisi"
 #: /packages/codemirror-extension/schema/commands.json:4
 msgctxt "schema"
 msgid "CodeMirror"
-msgstr ""
+msgstr "Codemirror"
 
 #: /packages/codemirror-extension/schema/commands.json:40
 msgctxt "schema"
 msgid "Value is boolean or string, e.g. 'pointer'"
-msgstr ""
+msgstr "Değer boolean veya string türünde. Örnek 'pointer'"
 
 #: /packages/codemirror-extension/schema/commands.json:45
 msgid "Ctrl-C"
@@ -233,16 +239,16 @@ msgstr "Ctrl-C"
 #: /packages/codemirror-extension/schema/commands.json:46
 msgctxt "schema"
 msgid "When enabled, which is the default, doing copy or cut when there is no selection will copy or cut the whole lines that have cursors on them."
-msgstr ""
+msgstr "Varsayılan ayar etkinleştirildiğinde, kursorün yandığı tüm satır, seçime gerek kalmadan kesilip / kopyalanabilir."
 
 #: /packages/codemirror-extension/schema/commands.json:5
 msgctxt "schema"
 msgid "Text editor settings for all CodeMirror editors."
-msgstr ""
+msgstr "Tüm CodeMirror editörleri için metin düzenleme ayarları."
 
 #: /packages/codemirror-extension/schema/commands.json:9
 msgid "Key Map"
-msgstr ""
+msgstr "Harita anahtarı"
 
 #: /packages/completer-extension/schema/consoles.json:2
 msgctxt "schema"
@@ -262,17 +268,17 @@ msgstr "Dosya Editörü Tamamlayıcı"
 #: /packages/completer-extension/schema/files.json:3
 msgctxt "schema"
 msgid "File editor completer settings."
-msgstr ""
+msgstr "Dosya düzenleyicisinin tamamlayıcı ayarları."
 
 #: /packages/completer-extension/schema/notebooks.json:2
 msgctxt "schema"
 msgid "Notebook Completer"
-msgstr ""
+msgstr "Dizüstü Bilgisayar Tamamlayıcı"
 
 #: /packages/completer-extension/schema/notebooks.json:3
 msgctxt "schema"
 msgid "Notebook completer settings."
-msgstr ""
+msgstr "Dizüstü bilgisayar tamamlayıcı ayarları."
 
 #: /packages/console-extension/schema/tracker.json:2
 msgctxt "schema"
@@ -292,36 +298,36 @@ msgstr "Etkileşim modu"
 msgctxt "schema"
 msgid "Whether the console interaction mimics the notebook\n"
 "or terminal keyboard shortcuts."
-msgstr ""
+msgstr "Konsol etkileşiminin dizüstü bilgisayarı veya terminal klavye kısayollarını taklit edip etmediği."
 
 #: /packages/console-extension/schema/tracker.json:42 packages/console-extension/src/foreign.ts:85
 msgid "Show All Kernel Activity"
-msgstr ""
+msgstr "Tüm çekirdek aktivitesini göster"
 
 #: /packages/console-extension/schema/tracker.json:43
 msgctxt "schema"
 msgid "Whether the console defaults to showing all\n"
 "kernel activity or just kernel activity originating from itself."
-msgstr ""
+msgstr "Konsol varsayılan olarak tüm çekirdek etkinliğini veya kendisinden kaynaklanan çekirdek etkinliğini göstermeyi kabul eder."
 
 #: /packages/debugger-extension/schema/main.json:3
 msgctxt "schema"
 msgid "Debugger settings"
-msgstr ""
+msgstr "Hata ayıklayıcı ayarları"
 
 #: /packages/debugger-extension/schema/main.json:34
 msgid "Variable filter"
-msgstr ""
+msgstr "Değişken filtresi"
 
 #: /packages/debugger-extension/schema/main.json:35
 msgctxt "schema"
 msgid "Variables to filter out in the tree and table viewers"
-msgstr ""
+msgstr "Ağaç ve tablo görünümlerinde filtrelenecek değişkenler"
 
 #: /packages/debugger-extension/schema/main.json:5
 msgctxt "schema"
 msgid "Debugger"
-msgstr ""
+msgstr "Hata Ayıklayıcı"
 
 #: /packages/docmanager-extension/schema/plugin.json:22 packages/docmanager-extension/src/index.ts:694
 msgid "Autosave Documents"
@@ -330,30 +336,30 @@ msgstr "Otomatik Belge Kaydetme"
 #: /packages/docmanager-extension/schema/plugin.json:23
 msgctxt "schema"
 msgid "Whether to autosave documents"
-msgstr ""
+msgstr "Dökümanları otomatik kaydetmek için"
 
 #: /packages/docmanager-extension/schema/plugin.json:28
 msgid "Autosave Interval"
-msgstr ""
+msgstr "Otomatik kaydetme aralığı"
 
 #: /packages/docmanager-extension/schema/plugin.json:29
 msgctxt "schema"
 msgid "Length of save interval in seconds"
-msgstr ""
+msgstr "Saniye cinsinden kaydetme aralığının uzunluğu"
 
 #: /packages/docmanager-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Document Manager settings."
-msgstr ""
+msgstr "Dosya Yöneticisi ayarları."
 
 #: /packages/docmanager-extension/schema/plugin.json:34
 msgid "Default Viewers"
-msgstr ""
+msgstr "Varsayılan Görüntüleyicileri"
 
 #: /packages/docmanager-extension/schema/plugin.json:36
 msgctxt "schema"
 msgid "Overrides for the default viewers for file types"
-msgstr ""
+msgstr "Sıradan görüntüleyenler için dosya tiplerinin üstüne yazar"
 
 #: /packages/docmanager-extension/schema/plugin.json:5
 msgctxt "schema"
@@ -368,21 +374,21 @@ msgstr "Döküman Ara"
 #: /packages/documentsearch-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Document search plugin."
-msgstr ""
+msgstr "Belge arama eklentisi."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:14
 msgid "Disclaimed Status"
-msgstr ""
+msgstr "Belge arama eklentisi "
 
 #: /packages/extensionmanager-extension/schema/plugin.json:15
 msgctxt "schema"
 msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
-msgstr ""
+msgstr "Kullanıcının bu arayüz aracılığıyla yönetilen uzantıların tehlikeli olabilecek rastgele kod çalıştırdığını anlayıp anlamadığı"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:4
 msgctxt "schema"
 msgid "Extension Manager"
-msgstr ""
+msgstr "Uzantı Yöneticisi"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:5
 msgctxt "schema"
@@ -397,30 +403,30 @@ msgstr "Etkinleştirilmiş durum"
 msgctxt "schema"
 msgid "Enables extension manager (requires Node.js/npm).\n"
 "WARNING: installing untrusted extensions may be unsafe."
-msgstr ""
+msgstr "Uzantı yöneticisini etkinleştirir ( Node.js/npm gerektirir). UYARI: Güvenilmeyen uzantıları yüklemek tehlikeli olabilir."
 
 #: /packages/filebrowser-extension/schema/browser.json:21
 msgid "Navigate to current directory"
-msgstr ""
+msgstr "Mevcut dizine girin"
 
 #: /packages/filebrowser-extension/schema/browser.json:22
 msgctxt "schema"
 msgid "Whether to automatically navigate to a document's current directory"
-msgstr ""
+msgstr "Bir belgenin geçerli dizinine otomatik olarak gidilip gidilmeyeceği"
 
 #: /packages/filebrowser-extension/schema/browser.json:27
 msgid "Filter on file name with a fuzzy search"
-msgstr ""
+msgstr "Dosya isimlerini bulanık arama ile filtrele"
 
 #: /packages/filebrowser-extension/schema/browser.json:28
 msgctxt "schema"
 msgid "Whether to apply fuzzy algorithm while filtering on file names"
-msgstr ""
+msgstr "Dosya isimlerini filtreleme sırasında bulanık algoritma uygulanıp uygulanmayacağı"
 
 #: /packages/filebrowser-extension/schema/browser.json:4
 msgctxt "schema"
 msgid "File Browser"
-msgstr ""
+msgstr "Dosya Gözatıcı"
 
 #: /packages/filebrowser-extension/schema/browser.json:5
 msgctxt "schema"
@@ -430,7 +436,7 @@ msgstr "Dosya tarayıcı ayarları."
 #: /packages/fileeditor-extension/schema/plugin.json:4
 msgctxt "schema"
 msgid "Text Editor"
-msgstr ""
+msgstr "Metin Düzenleyici"
 
 #: /packages/fileeditor-extension/schema/plugin.json:5
 msgctxt "schema"
@@ -439,72 +445,73 @@ msgstr "Metin editörü ayarları."
 
 #: /packages/fileeditor-extension/schema/plugin.json:61
 msgid "Editor Configuration"
-msgstr ""
+msgstr "Editör Yapılandırması"
 
 #: /packages/fileeditor-extension/schema/plugin.json:62
 msgctxt "schema"
 msgid "The configuration for all text editors.\n"
 "If `fontFamily`, `fontSize` or `lineHeight` are `null`,\n"
 "values from current theme are used."
-msgstr ""
+msgstr "Tüm metin editörleri için düzenleme.\n"
+"Eğer `fontFamily`, `fontSize` veya `lineHeight`, `null` değer almış ise, mevcut temanın değerleri kullanılır."
 
 #: /packages/imageviewer-extension/schema/plugin.json:2
 msgctxt "schema"
 msgid "Image Viewer"
-msgstr ""
+msgstr "Resim Görüntüleyici"
 
 #: /packages/imageviewer-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Image viewer settings."
-msgstr ""
+msgstr "Resim görüntüleyici ayarları."
 
 #: /packages/inspector-extension/schema/inspector.json:2
 msgctxt "schema"
 msgid "Inspector"
-msgstr ""
+msgstr "Gözlemci"
 
 #: /packages/inspector-extension/schema/inspector.json:3
 msgctxt "schema"
 msgid "Inspector settings."
-msgstr ""
+msgstr "Gözlemci Ayarları."
 
 #: /packages/launcher-extension/schema/plugin.json:2
 msgctxt "schema"
 msgid "Launcher"
-msgstr ""
+msgstr "Başlatıcı"
 
 #: /packages/launcher-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Launcher settings."
-msgstr ""
+msgstr "Başlatıcı Ayarları."
 
 #: /packages/logconsole-extension/schema/plugin.json:10
 msgctxt "schema"
 msgid "Maximum number of log entries to store in memory"
-msgstr ""
+msgstr "Hafızada saklanacak maksimum giriş sayısı"
 
 #: /packages/logconsole-extension/schema/plugin.json:15
 msgid "Status Bar Item flash"
-msgstr ""
+msgstr "Durum çubuğu ögesi yanıp söner"
 
 #: /packages/logconsole-extension/schema/plugin.json:16
 msgctxt "schema"
 msgid "Whether to flash on new log message or not"
-msgstr ""
+msgstr "Yeni mesaj için yanıp sönsün"
 
 #: /packages/logconsole-extension/schema/plugin.json:4
 msgctxt "schema"
 msgid "Log Console"
-msgstr ""
+msgstr "Günlük konsolu"
 
 #: /packages/logconsole-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Log Console settings."
-msgstr ""
+msgstr "Günlük konsolu ayarları."
 
 #: /packages/logconsole-extension/schema/plugin.json:9
 msgid "Log entry count limit"
-msgstr ""
+msgstr "Günlük girdisi sayaç limiti"
 
 #: /packages/mainmenu-extension/schema/plugin.json:2
 msgctxt "schema"
@@ -519,105 +526,105 @@ msgstr "Ana JupyterLab menüsü ayarları."
 #: /packages/notebook-extension/schema/tracker.json:221
 msgctxt "schema"
 msgid "Notebook"
-msgstr ""
+msgstr "Not Defteri"
 
 #: /packages/notebook-extension/schema/tracker.json:222
 msgctxt "schema"
 msgid "Notebook settings."
-msgstr ""
+msgstr "Not defteri ayarları."
 
 #: /packages/notebook-extension/schema/tracker.json:281
 msgid "Code Cell Configuration"
-msgstr ""
+msgstr "Kod Bloğu Biçimlendirmesi"
 
 #: /packages/notebook-extension/schema/tracker.json:282
 msgctxt "schema"
 msgid "The configuration for all code cells."
-msgstr ""
+msgstr "Tüm kod blokları için biçimlendirme."
 
 #: /packages/notebook-extension/schema/tracker.json:302
 msgid "Default cell type"
-msgstr ""
+msgstr "Varsayılan hücre tipi"
 
 #: /packages/notebook-extension/schema/tracker.json:303
 msgctxt "schema"
 msgid "The default type (markdown, code, or raw) for new cells"
-msgstr ""
+msgstr "Yeni hücreler için varsayılan tip (markdown, kod yada raw)"
 
 #: /packages/notebook-extension/schema/tracker.json:309
 msgid "Shut down kernel"
-msgstr ""
+msgstr "Çekirdeği kapat"
 
 #: /packages/notebook-extension/schema/tracker.json:310
 msgctxt "schema"
 msgid "Whether to shut down or not the kernel when closing a notebook."
-msgstr ""
+msgstr "Çekirdek kapatılırken notebookun kapatılıp kapatılmayacağı."
 
 #: /packages/notebook-extension/schema/tracker.json:315
 msgid "Markdown Cell Configuration"
-msgstr ""
+msgstr "Markdown Hücre Yapılandırması"
 
 #: /packages/notebook-extension/schema/tracker.json:316
 msgctxt "schema"
 msgid "The configuration for all markdown cells."
-msgstr ""
+msgstr "Bütün markdown hücreleri için düzenleme."
 
 #: /packages/notebook-extension/schema/tracker.json:336
 msgid "Raw Cell Configuration"
-msgstr ""
+msgstr "Ham Hücre Konfigürasyonu"
 
 #: /packages/notebook-extension/schema/tracker.json:337
 msgctxt "schema"
 msgid "The configuration for all raw cells."
-msgstr ""
+msgstr "Tüm ham hücreler için konfigürasyon."
 
 #: /packages/notebook-extension/schema/tracker.json:357
 msgid "Scroll past last cell"
-msgstr ""
+msgstr "Son hücreyi kaydır"
 
 #: /packages/notebook-extension/schema/tracker.json:358
 msgctxt "schema"
 msgid "Whether to be able to scroll so the last cell is at the top of the panel"
-msgstr ""
+msgstr "Son hücre en üstte kalacak şekilde kaydırabilmek için"
 
 #: /packages/notebook-extension/schema/tracker.json:363
 msgid "Recording timing"
-msgstr ""
+msgstr "Kaydetme zamanlayıcısı"
 
 #: /packages/notebook-extension/schema/tracker.json:364
 msgctxt "schema"
 msgid "Should timing data be recorded in cell metadata"
-msgstr ""
+msgstr "Zamanlama verisi, hücre metadata içine kaydedilsin mi"
 
 #: /packages/settingeditor-extension/schema/plugin.json:2
 msgctxt "schema"
 msgid "Setting Editor"
-msgstr ""
+msgstr "Ayar Düzenleyicisi"
 
 #: /packages/settingeditor-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Setting editor settings."
-msgstr ""
+msgstr "Düzenleyici ayarlarının yapılması."
 
 #: /packages/shortcuts-extension/schema/shortcuts.json:11
 msgctxt "schema"
 msgid "The list of keyboard shortcuts."
-msgstr ""
+msgstr "Kılavye kısayollarının ayarlayın."
 
 #: /packages/shortcuts-extension/schema/shortcuts.json:5
 msgctxt "schema"
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Klavye kısayolları"
 
 #: /packages/shortcuts-extension/schema/shortcuts.json:6
 msgctxt "schema"
 msgid "Keyboard shortcut settings."
-msgstr ""
+msgstr "Klavye kısayol ayarları."
 
 #: /packages/statusbar-extension/schema/plugin.json:10
 msgctxt "schema"
 msgid "Whether to show status bar or not"
-msgstr ""
+msgstr "Durum çubuğunu göster veya gösterme"
 
 #: /packages/statusbar-extension/schema/plugin.json:4
 msgctxt "schema"
@@ -631,7 +638,7 @@ msgstr "Durum Çubuğu ayarları."
 
 #: /packages/statusbar-extension/schema/plugin.json:9
 msgid "Status Bar Visibility"
-msgstr ""
+msgstr "Durum Çubuğu Görünürlüğü"
 
 #: /packages/terminal-extension/schema/plugin.json:34
 msgid "Font family"
@@ -640,12 +647,12 @@ msgstr "Yazı tipi ailesi"
 #: /packages/terminal-extension/schema/plugin.json:35
 msgctxt "schema"
 msgid "The font family used to render text."
-msgstr ""
+msgstr "Metin oluşturmak için kullanılan yazı tipi."
 
 #: /packages/terminal-extension/schema/plugin.json:4
 msgctxt "schema"
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: /packages/terminal-extension/schema/plugin.json:40
 msgid "Font size"
@@ -654,7 +661,7 @@ msgstr "Yazı Boyutu"
 #: /packages/terminal-extension/schema/plugin.json:41
 msgctxt "schema"
 msgid "The font size used to render text."
-msgstr ""
+msgstr "Metni oluşturmak için kullanılan yazı tipi boyutu."
 
 #: /packages/terminal-extension/schema/plugin.json:46
 msgid "Line height"
@@ -663,62 +670,62 @@ msgstr "Satır yüksekliği"
 #: /packages/terminal-extension/schema/plugin.json:47
 msgctxt "schema"
 msgid "The line height used to render text."
-msgstr ""
+msgstr "Metin oluşturmak için kullanılan satır yüksekliği."
 
 #: /packages/terminal-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Terminal settings."
-msgstr ""
+msgstr "Terminal Ayarları."
 
 #: /packages/terminal-extension/schema/plugin.json:53
 msgctxt "schema"
 msgid "The theme for the terminal."
-msgstr ""
+msgstr "Terminal için tema."
 
 #: /packages/terminal-extension/schema/plugin.json:58
 msgid "Screen Reader Mode"
-msgstr ""
+msgstr "Ekran Okuyucu Mod"
 
 #: /packages/terminal-extension/schema/plugin.json:59
 msgctxt "schema"
 msgid "Add accessibility elements for use with screen readers."
-msgstr ""
+msgstr "Ekran okuyucularla kullanmak için erişilebilirlik öğeleri ekleyin."
 
 #: /packages/terminal-extension/schema/plugin.json:64
 msgid "Scrollback Buffer"
-msgstr ""
+msgstr "Geri Kaydırma Arabelleği"
 
 #: /packages/terminal-extension/schema/plugin.json:65
 msgctxt "schema"
 msgid "The amount of scrollback beyond initial viewport"
-msgstr ""
+msgstr "İlk görüntü alanının ötesinde geri kaydırma miktarı"
 
 #: /packages/terminal-extension/schema/plugin.json:70
 msgid "Shut down on close"
-msgstr ""
+msgstr "Kapanışta oturumu sonlandır"
 
 #: /packages/terminal-extension/schema/plugin.json:71
 msgctxt "schema"
 msgid "Shut down the session when closing the terminal."
-msgstr ""
+msgstr "Terminali kapatınca oturumu sonlandır."
 
 #: /packages/terminal-extension/schema/plugin.json:76
 msgid "Paste with Ctrl+V"
-msgstr ""
+msgstr "Ctrl+V ile Yapıştır"
 
 #: /packages/terminal-extension/schema/plugin.json:77
 msgctxt "schema"
 msgid "Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available"
-msgstr ""
+msgstr "Ctrl + V ile yapıştırmayı etkinleştirin. Bu, örneğin vi düzenleyicide Ctrl + V kullanmak için devre dışı bırakılabilir. Bu ayarın, Cmd + V'nin mevcut olduğu macOS üzerinde hiçbir etkisi yoktur"
 
 #: /packages/terminal-extension/schema/plugin.json:82
 msgid "Treat option as meta key on macOS"
-msgstr ""
+msgstr "Seçeneği macOS'da meta anahtar olarak ele alın"
 
 #: /packages/terminal-extension/schema/plugin.json:83
 msgctxt "schema"
 msgid "Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word"
-msgstr ""
+msgstr "MacOS'taki option tuşu meta key olarak kullanılabilir. Bu bazı kısayolların kullanımına olanak sağlar. (Ör. İmleci bir kelime ileri hareket ettirmek için: option tuşu + f)"
 
 #: /packages/tooltip-extension/schema/consoles.json:2
 msgctxt "schema"
@@ -728,218 +735,238 @@ msgstr "Konsol İpuçları"
 #: /packages/tooltip-extension/schema/consoles.json:3
 msgctxt "schema"
 msgid "Console tooltip settings."
-msgstr ""
+msgstr "Konsol ipucu ayarları."
 
 #: /packages/tooltip-extension/schema/files.json:2
 msgctxt "schema"
 msgid "File Editor Tooltips"
-msgstr ""
+msgstr "Dosya Düzenleyici İpuçları"
 
 #: /packages/tooltip-extension/schema/files.json:3
 msgctxt "schema"
 msgid "File editor tooltip settings."
-msgstr ""
+msgstr "Dosya düzenleyici ipucu ayarları."
 
 #: /packages/tooltip-extension/schema/notebooks.json:2
 msgctxt "schema"
 msgid "Notebook Tooltips"
-msgstr ""
+msgstr "Not Defteri İpuçları"
 
 #: /packages/tooltip-extension/schema/notebooks.json:3
 msgctxt "schema"
 msgid "Notebook tooltip settings."
-msgstr ""
+msgstr "Not defteri ipucu ayarları."
 
 #: /packages/translation-extension/schema/plugin.json:10
 msgid "Language locale"
-msgstr ""
+msgstr "Yerel Lisan"
 
 #: /packages/translation-extension/schema/plugin.json:11
 msgctxt "schema"
 msgid "Set the interface display language. Examples: 'es_CO', 'fr'."
-msgstr ""
+msgstr "Arayüz görüntüleme dilini ayarlayın. Örnekler: 'es_CO', 'fr'."
+
+#: /packages/translation-extension/schema/plugin.json:16
+msgid "Localized strings prefix"
+msgstr "Yerelleştirilmiş dizeler öneki"
+
+#: /packages/translation-extension/schema/plugin.json:17
+msgctxt "schema"
+msgid "Add a prefix to localized strings."
+msgstr "Yerelleştirilmiş dizelere bir önek ekleyin."
+
+#: /packages/translation-extension/schema/plugin.json:22
+msgid "Display localized strings prefix"
+msgstr "Yerelleştirilmiş dizeler önekini göster"
+
+#: /packages/translation-extension/schema/plugin.json:23
+msgctxt "schema"
+msgid "Display the `stringsPrefix` on localized strings."
+msgstr "Yerelleştirilmiş dizelerde \"dizeler önekini\" görüntüler."
 
 #: /packages/translation-extension/schema/plugin.json:4
 msgctxt "schema"
 msgid "Language"
-msgstr ""
+msgstr "Dil"
 
 #: /packages/translation-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Language settings."
-msgstr ""
+msgstr "Dil ayarları."
 
 #: packages/application-extension/src/index.tsx:143
 msgid "Error Registering Plugins"
-msgstr ""
+msgstr "Eklentileri Kaydederken Hata Oluştu"
 
 #: packages/application-extension/src/index.tsx:190 packages/extensionmanager/src/build-helper.tsx:31
 msgid "Build Complete"
-msgstr ""
+msgstr "Derleme Tamamlandı"
 
 #: packages/application-extension/src/index.tsx:193 packages/extensionmanager/src/build-helper.tsx:34
 msgid "Build successfully completed, reload page?"
-msgstr ""
+msgstr "Derleme başarıyla sonuçlandırıldı, sayfa yenilensin mi?"
 
 #: packages/application-extension/src/index.tsx:195 packages/extensionmanager/src/build-helper.tsx:36
 msgid "You will lose any unsaved changes."
-msgstr ""
+msgstr "Kaydedilmemiş tüm değişiklikleri kaybedeceksiniz."
 
 #: packages/application-extension/src/index.tsx:200 packages/extensionmanager/src/build-helper.tsx:41
 msgid "Reload Without Saving"
-msgstr ""
+msgstr "Kaydetmeden Yenile"
 
 #: packages/application-extension/src/index.tsx:203 packages/extensionmanager/src/build-helper.tsx:44
 msgid "Save and Reload"
-msgstr ""
+msgstr "Kaydet & Tekrar Yükle"
 
 #: packages/application-extension/src/index.tsx:216 packages/extensionmanager/src/build-helper.tsx:57
 msgid "Save Failed"
-msgstr ""
+msgstr "Kaydetme Başarısız"
 
 #: packages/application-extension/src/index.tsx:225 packages/extensionmanager/src/build-helper.tsx:67
 msgid "Build Failed"
-msgstr ""
+msgstr "Derleme tamamlanamadı"
 
 #: packages/application-extension/src/index.tsx:243
 msgid "JupyterLab build is suggested:"
-msgstr ""
+msgstr "JupyterLab yapı hakkında şunu önerdi:"
 
 #: packages/application-extension/src/index.tsx:250
 msgid "Build Recommended"
-msgstr ""
+msgstr "Önerilen yapı"
 
 #: packages/application-extension/src/index.tsx:254
 msgid "Build"
-msgstr ""
+msgstr "Derleme"
 
 #: packages/application-extension/src/index.tsx:260
 msgid "Are you sure you want to exit JupyterLab?\n\n"
 "Any unsaved changes will be lost."
-msgstr ""
+msgstr "JupyterLab'den çıkmak istediğinize emin misiniz?\n"
+"Kaydedilmeyen değişiklikler kaybolacaktır."
 
 #: packages/application-extension/src/index.tsx:424
 msgid "The path: %1 was not found. JupyterLab redirected to: %2"
-msgstr ""
+msgstr "Belirtilen Yol: %1 bulunamadı. JupyterLab %2 ye yönlendirildi"
 
 #: packages/application-extension/src/index.tsx:433
 msgid "Path Not Found"
-msgstr ""
+msgstr "Hedef yolu bulunamadı"
 
 #: packages/application-extension/src/index.tsx:519
 msgid "Switch Sidebar Side"
-msgstr ""
+msgstr "Kenar Çubuğunu Değiştir"
 
-#: packages/application-extension/src/index.tsx:566 packages/documentsearch-extension/src/index.ts:214 packages/documentsearch-extension/src/index.ts:218 packages/documentsearch-extension/src/index.ts:222 packages/logconsole-extension/src/index.tsx:268 packages/mainmenu-extension/src/index.ts:219 packages/mainmenu-extension/src/index.ts:223 packages/mainmenu-extension/src/index.ts:234 packages/statusbar-extension/src/index.ts:82
+#: packages/application-extension/src/index.tsx:566 packages/documentsearch-extension/src/index.ts:214 packages/documentsearch-extension/src/index.ts:218 packages/documentsearch-extension/src/index.ts:222 packages/logconsole-extension/src/index.tsx:266 packages/mainmenu-extension/src/index.ts:219 packages/mainmenu-extension/src/index.ts:223 packages/mainmenu-extension/src/index.ts:234 packages/statusbar-extension/src/index.ts:82
 msgid "Main Area"
-msgstr ""
+msgstr "Ana alan"
 
 #: packages/application-extension/src/index.tsx:570
 msgid "Shift+Right Click for Browser Menu"
-msgstr ""
+msgstr "Tarayıcı menüsü için Shift+Sağ tık kombinasyonu"
 
 #: packages/application-extension/src/index.tsx:660
 msgid "Activate Next Tab"
-msgstr ""
+msgstr "Sonraki Sekmeyi Etkinleştir"
 
 #: packages/application-extension/src/index.tsx:667
 msgid "Activate Previous Tab"
-msgstr ""
+msgstr "Önceki Sekmeyi Etkinleştir"
 
 #: packages/application-extension/src/index.tsx:674
 msgid "Activate Next Tab Bar"
-msgstr ""
+msgstr "Sonraki Sekme Çubuğunu Etkinleştir"
 
 #: packages/application-extension/src/index.tsx:681
 msgid "Activate Previous Tab Bar"
-msgstr ""
+msgstr "Önceki Sekme Çubuğunu Etkinleştir"
 
 #: packages/application-extension/src/index.tsx:694
 msgid "Close Tab"
-msgstr ""
+msgstr "Sekmeyi Kapat"
 
 #: packages/application-extension/src/index.tsx:713
 msgid "Close All Tabs"
-msgstr ""
+msgstr "Tüm Sekmeleri Kapat"
 
 #: packages/application-extension/src/index.tsx:720
 msgid "Close All Other Tabs"
-msgstr ""
+msgstr "Diğer Sekmeleri Kapat"
 
 #: packages/application-extension/src/index.tsx:745
 msgid "Close Tabs to Right"
-msgstr ""
+msgstr "Sağındaki Sekmeleri Kapat"
 
 #: packages/application-extension/src/index.tsx:763
 msgid "Show Left Sidebar"
-msgstr ""
+msgstr "Sol kenar çubuğunu göster"
 
 #: packages/application-extension/src/index.tsx:779
 msgid "Show Right Sidebar"
-msgstr ""
+msgstr "Sağ kenar çubuğunu göster"
 
 #: packages/application-extension/src/index.tsx:795
 msgid "Presentation Mode"
-msgstr ""
+msgstr "Sunum Modu"
 
 #: packages/application-extension/src/index.tsx:819
 msgid "Single-Document Mode"
-msgstr ""
+msgstr "Tekil-Döküman Modu"
 
 #: packages/application-extension/src/index.tsx:933
 msgid "Property Inspector"
-msgstr ""
+msgstr "Özellik Denetleyicisi"
 
 #: packages/application/src/connectionlost.ts:22
 msgid "Server Connection Error"
-msgstr ""
+msgstr "Sunucu Bağlantı Hatası"
 
 #: packages/application/src/connectionlost.ts:23
 msgid "A connection to the Jupyter server could not be established.\n"
 "JupyterLab will continue trying to reconnect.\n"
 "Check your network connection or Jupyter server configuration.\n"
-msgstr ""
+msgstr "Jupyter server ile bağlantı sağlanamadı. JupyterLab, tekrardan bağlanmaya çalışıyor. İnternet bağlantınızı veya Jupyter serverını kontrol ediniz.\n"
 
 #: packages/apputils-extension/src/index.ts:201
 msgid "Loading..."
-msgstr ""
+msgstr "Yükleniyor..."
 
 #: packages/apputils-extension/src/index.ts:202
 msgid "The loading screen is taking a long time. \n"
 "Would you like to clear the workspace or keep waiting?"
-msgstr ""
+msgstr "Ekranı yüklemek uzun zaman alıyor.\n"
+"Çalışma alanını temizleme yada beklemeye devam etmek mi istersin?"
 
 #: packages/apputils-extension/src/index.ts:205
 msgid "Keep Waiting"
-msgstr ""
+msgstr "Beklemeye devam et"
 
 #: packages/apputils-extension/src/index.ts:206
 msgid "Clear Workspace"
-msgstr ""
+msgstr "Çalışma Alanını Temizle"
 
 #: packages/apputils-extension/src/index.ts:271
 msgid "Print..."
-msgstr ""
+msgstr "Yazdır..."
 
 #: packages/apputils-extension/src/index.ts:396
 msgid "Reset Application State"
-msgstr ""
+msgstr "Uygulama verisini sıfırla"
 
 #: packages/apputils-extension/src/index.ts:493
 msgid "Run First Enabled Command"
-msgstr ""
+msgstr "Aktif olan ilk komutu çalıştır"
 
 #: packages/apputils-extension/src/palette.ts:111
 msgid "Activate Command Palette"
-msgstr ""
+msgstr "Komut Paletini Etkinleştir"
 
 #: packages/apputils-extension/src/palette.ts:114 packages/extensionmanager/src/widget.tsx:671
 msgid "SEARCH"
-msgstr ""
+msgstr "Arama"
 
 #: packages/apputils-extension/src/palette.ts:163 packages/apputils-extension/src/palette.ts:99
 msgid "Commands"
-msgstr ""
+msgstr "Komutlar"
 
 #: packages/apputils-extension/src/palette.ts:36
 msgid "Command Palette"
@@ -947,381 +974,442 @@ msgstr "Komut paleti"
 
 #: packages/apputils-extension/src/palette.ts:97
 msgid "Commands (%1)"
-msgstr ""
+msgstr "Komutlar (%1)"
 
 #: packages/apputils-extension/src/themesplugins.ts:111
 msgid "Theme Scrollbars"
-msgstr ""
+msgstr "Tema Kaydırma Çubukları"
 
 #: packages/apputils-extension/src/themesplugins.ts:157
 msgid "JupyterLab Theme"
-msgstr ""
+msgstr "JupyterLab Teması"
 
 #: packages/apputils-extension/src/themesplugins.ts:178 packages/apputils-extension/src/themesplugins.ts:254
 msgid "Increase Code Font Size"
-msgstr ""
+msgstr "Kodun Yazı Tipi Boyutunu Büyüt"
 
 #: packages/apputils-extension/src/themesplugins.ts:185 packages/apputils-extension/src/themesplugins.ts:262
 msgid "Decrease Code Font Size"
-msgstr ""
+msgstr "Kodun Yazı Tipi Boyutunu Azaltın"
 
 #: packages/apputils-extension/src/themesplugins.ts:195 packages/apputils-extension/src/themesplugins.ts:271
 msgid "Increase Content Font Size"
-msgstr ""
+msgstr "İçerik Yazı Boyutunu Büyüt"
 
 #: packages/apputils-extension/src/themesplugins.ts:202 packages/apputils-extension/src/themesplugins.ts:279
 msgid "Decrease Content Font Size"
-msgstr ""
+msgstr "İçerik Yazı Boyutunu Azalt"
 
 #: packages/apputils-extension/src/themesplugins.ts:212 packages/apputils-extension/src/themesplugins.ts:288
 msgid "Increase UI Font Size"
-msgstr ""
+msgstr "Kullanıcı Ara yüz Yazı Boyutunu Artır"
 
 #: packages/apputils-extension/src/themesplugins.ts:219 packages/apputils-extension/src/themesplugins.ts:296
 msgid "Decrease UI Font Size"
-msgstr ""
+msgstr "Kullanıcı Arayüzü Yazı Boyutunu Küçült"
 
 #: packages/apputils-extension/src/themesplugins.ts:97
 msgid "Use Theme: %1"
-msgstr ""
+msgstr "Temayı Kullan: %1"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:105
 msgid "Save Current Workspace"
-msgstr ""
+msgstr "Mevcut Çalışma Alanını Kaydet"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:216
+#: packages/apputils-extension/src/workspacesplugin.ts:213
 msgid "Workspace loader"
-msgstr ""
+msgstr "Çalışma Alanını Yükle"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:289 packages/apputils-extension/src/workspacesplugin.ts:295 packages/docmanager/src/widgetmanager.ts:375 packages/docregistry/src/context.ts:879 packages/docregistry/src/context.ts:886
+#: packages/apputils-extension/src/workspacesplugin.ts:286 packages/apputils-extension/src/workspacesplugin.ts:292 packages/docmanager/src/widgetmanager.ts:378 packages/docregistry/src/context.ts:879 packages/docregistry/src/context.ts:886
 msgid "Save"
-msgstr ""
+msgstr "Kaydet"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:291 packages/apputils-extension/src/workspacesplugin.ts:91
+#: packages/apputils-extension/src/workspacesplugin.ts:288 packages/apputils-extension/src/workspacesplugin.ts:91
 msgid "Save Current Workspace As..."
-msgstr ""
+msgstr "Mevcut Çalışma Alanını Farklı Kaydet..."
 
-#: packages/apputils-extension/src/workspacesplugin.ts:293 packages/docmanager-extension/src/index.ts:524 packages/docmanager-extension/src/index.ts:574 packages/docmanager-extension/src/index.ts:814 packages/docmanager/src/dialogs.ts:118 packages/docmanager/src/dialogs.ts:58 packages/docmanager/src/widgetmanager.ts:381 packages/extensionmanager/src/companions.tsx:218 packages/filebrowser/src/listing.ts:417 packages/filebrowser/src/model.ts:443 packages/filebrowser/src/opendialog.ts:83 packages/notebook/src/actions.tsx:1413 packages/running/src/index.tsx:197 packages/settingeditor/src/plugineditor.ts:148 packages/translation-extension/src/index.ts:175
+#: packages/apputils-extension/src/workspacesplugin.ts:290 packages/apputils/src/sessioncontext.tsx:1204 packages/docmanager-extension/src/index.ts:524 packages/docmanager-extension/src/index.ts:574 packages/docmanager-extension/src/index.ts:814 packages/docmanager/src/dialogs.ts:118 packages/docmanager/src/dialogs.ts:58 packages/docmanager/src/widgetmanager.ts:384 packages/extensionmanager/src/companions.tsx:218 packages/filebrowser/src/listing.ts:417 packages/filebrowser/src/model.ts:443 packages/filebrowser/src/opendialog.ts:83 packages/notebook/src/actions.tsx:1413 packages/running/src/index.tsx:197 packages/settingeditor/src/plugineditor.ts:148 packages/translation-extension/src/index.ts:144
 msgid "Cancel"
-msgstr ""
+msgstr "İptal"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:74
 msgid "JupyterLab workspace File"
-msgstr ""
+msgstr "JupyterLab çalışma alanı Dosyası"
+
+#: packages/apputils/src/sessioncontext.tsx:1205 packages/apputils/src/sessioncontext.tsx:1206 packages/apputils/src/sessioncontext.tsx:1226 packages/apputils/src/sessioncontext.tsx:1590 packages/apputils/src/sessioncontext.tsx:488 packages/apputils/src/sessioncontext.tsx:489 packages/apputils/src/sessioncontext.tsx:509 packages/apputils/src/sessioncontext.tsx:518 packages/apputils/src/sessioncontext.tsx:544 packages/apputils/src/sessioncontext.tsx:669
+msgid "No Kernel"
+msgstr "Çekirdek Yok"
+
+#: packages/apputils/src/sessioncontext.tsx:1210 packages/filebrowser/src/opendialog.ts:85
+msgid "Select"
+msgstr "Seç"
+
+#: packages/apputils/src/sessioncontext.tsx:1214
+msgid "Select Kernel"
+msgstr "Çekirdek Seç"
+
+#: packages/apputils/src/sessioncontext.tsx:1270
+msgid "Restart Kernel?"
+msgstr "Çekirdeği Yeniden Başlat?"
+
+#: packages/apputils/src/sessioncontext.tsx:1271
+msgid "Do you want to restart the current kernel? All variables will be lost."
+msgstr "Mevcut çekirdeği yeniden başlatmak ister misiniz? Tüm değişkenler kaybolacaktır."
+
+#: packages/apputils/src/sessioncontext.tsx:1325
+msgid "Select kernel for:"
+msgstr "Bunun için çekirdek seç:"
+
+#: packages/apputils/src/sessioncontext.tsx:1459
+msgid "Start Preferred Kernel"
+msgstr "Tercih Edilen Çekirdeği Başlat"
+
+#: packages/apputils/src/sessioncontext.tsx:1474
+msgid "Start Other Kernel"
+msgstr "Diğer Çekirdeği Başlat"
+
+#: packages/apputils/src/sessioncontext.tsx:1523
+msgid "Use Kernel from Preferred Session"
+msgstr "Tercih Edilen Oturumdaki Çekirdeği Kullan"
+
+#: packages/apputils/src/sessioncontext.tsx:1538
+msgid "Use Kernel from Other Session"
+msgstr "Diğer Oturumdaki Çekirdeği Kullan"
+
+#: packages/apputils/src/sessioncontext.tsx:1612
+msgid "Path:"
+msgstr "Yol:"
+
+#: packages/apputils/src/sessioncontext.tsx:1613
+msgid "Name:"
+msgstr "Adı:"
+
+#: packages/apputils/src/sessioncontext.tsx:1614
+msgid "Kernel Name:"
+msgstr "Çekirdek İsmi:"
+
+#: packages/apputils/src/sessioncontext.tsx:1615
+msgid "Kernel Id:"
+msgstr "Çekirdek Kimliği:"
+
+#: packages/apputils/src/sessioncontext.tsx:953
+msgid "Error Starting Kernel"
+msgstr "Çekirdek Başlatma Hatası"
 
 #: packages/apputils/src/thememanager.ts:366
 msgid "Neither theme %1 nor default %2 loaded."
-msgstr ""
+msgstr "Ne tema %1 ne de varsayılan %2 yüklenmedi."
 
 #: packages/apputils/src/thememanager.ts:443
 msgid "Error Loading Theme"
-msgstr ""
+msgstr "Tema Yükleme Hatası"
 
 #: packages/apputils/src/thememanager.ts:445 packages/docmanager-extension/src/index.ts:685 packages/extensionmanager/src/companions.tsx:220 packages/extensionmanager/src/dialog.tsx:41
 msgid "OK"
-msgstr ""
+msgstr "Tamam"
 
 #: packages/apputils/src/toolbar.tsx:385
 msgid "Interrupt the kernel"
-msgstr ""
+msgstr "Çekirdeği Duraklat"
 
 #: packages/apputils/src/toolbar.tsx:407
 msgid "Restart the kernel"
-msgstr ""
+msgstr "Çekirdeği Yeniden Başlat"
 
 #: packages/apputils/src/toolbar.tsx:745
 msgid "Switch kernel"
-msgstr ""
+msgstr "Çekirdek Değiştir"
 
 #: packages/apputils/src/toolbar.tsx:783 packages/apputils/src/toolbar.tsx:792
 msgid "Kernel %1"
-msgstr ""
+msgstr "Çekirdek %1"
 
 #: packages/celltags/src/addwidget.ts:159 packages/celltags/src/addwidget.ts:31
 msgid "Add Tag"
-msgstr ""
+msgstr "Etiket Ekle"
 
 #: packages/celltags/src/tool.ts:193
 msgid "Tags in Notebook"
-msgstr ""
+msgstr "Defterdeki Etiketler"
 
 #: packages/codeeditor/src/jsoneditor.ts:313 packages/codeeditor/src/jsoneditor.ts:80
 msgid "No data!"
-msgstr ""
+msgstr "Veri bulunamadı!"
 
 #: packages/codeeditor/src/jsoneditor.ts:60
 msgid "Revert changes to data"
-msgstr ""
+msgstr "Verideki değişiklikleri geri al"
 
 #: packages/codeeditor/src/jsoneditor.ts:65
 msgid "Commit changes to data"
-msgstr ""
+msgstr "Veriye değişiklikleri uygula"
 
 #: packages/codemirror-extension/src/index.ts:258
 msgid "Text Editor Theme"
-msgstr ""
+msgstr "Metin Editörü Teması"
 
 #: packages/codemirror-extension/src/index.ts:259
 msgid "Text Editor Key Map"
-msgstr ""
+msgstr "Metin editörü anahtar haritası"
 
 #: packages/codemirror-extension/src/index.ts:260
 msgid "Text Editor Syntax Highlighting"
-msgstr ""
+msgstr "Metin Düzenleyicisinin Sözdizimi Vurgulaması"
 
 #: packages/codemirror-extension/src/index.ts:265
 msgid "codemirror"
-msgstr ""
+msgstr "codemirror"
 
 #: packages/codemirror-extension/src/index.ts:285
 msgid "Sublime Text"
-msgstr ""
+msgstr "Sublime Text"
 
 #: packages/codemirror-extension/src/index.ts:299
 msgid "Find..."
-msgstr ""
+msgstr "Bul..."
 
 #: packages/codemirror-extension/src/index.ts:312
 msgid "Go to Line..."
-msgstr ""
+msgstr "Satıra git..."
 
 #: packages/codemirror-extension/src/index.ts:368
 msgid "jupyter"
-msgstr ""
+msgstr "jupyter"
 
-#: packages/codemirror-extension/src/index.ts:369 packages/codemirror-extension/src/index.ts:392 packages/docregistry/src/registry.ts:1271
+#: packages/codemirror-extension/src/index.ts:369 packages/codemirror-extension/src/index.ts:392 packages/docregistry/src/registry.ts:1267
 msgid "default"
-msgstr ""
+msgstr "Varsayılan"
 
 #: packages/codemirror-extension/src/index.ts:370
 msgid "abcdef"
-msgstr ""
+msgstr "abcdef"
 
 #: packages/codemirror-extension/src/index.ts:371
 msgid "base16-dark"
-msgstr ""
+msgstr "base16-dark"
 
 #: packages/codemirror-extension/src/index.ts:372
 msgid "base16-light"
-msgstr ""
+msgstr "base16-light"
 
 #: packages/codemirror-extension/src/index.ts:373
 msgid "hopscotch"
-msgstr ""
+msgstr "Rastgele atlama"
 
 #: packages/codemirror-extension/src/index.ts:374
 msgid "material"
-msgstr ""
+msgstr "malzeme"
 
 #: packages/codemirror-extension/src/index.ts:375
 msgid "mbo"
-msgstr ""
+msgstr "mbo"
 
 #: packages/codemirror-extension/src/index.ts:376
 msgid "mdn-like"
-msgstr ""
+msgstr "mdn-like"
 
 #: packages/codemirror-extension/src/index.ts:377
 msgid "seti"
-msgstr ""
+msgstr "seti"
 
 #: packages/codemirror-extension/src/index.ts:378
 msgid "solarized dark"
-msgstr ""
+msgstr "solarize karanlık"
 
 #: packages/codemirror-extension/src/index.ts:379
 msgid "solarized light"
-msgstr ""
+msgstr "solarize ışık"
 
 #: packages/codemirror-extension/src/index.ts:380
 msgid "the-matrix"
-msgstr ""
+msgstr "matrix"
 
 #: packages/codemirror-extension/src/index.ts:381
 msgid "xq-light"
-msgstr ""
+msgstr "xq-light"
 
 #: packages/codemirror-extension/src/index.ts:382
 msgid "zenburn"
-msgstr ""
+msgstr "Zenburn"
 
 #: packages/codemirror-extension/src/index.ts:393
 msgid "sublime"
-msgstr ""
+msgstr "sublime"
 
 #: packages/codemirror-extension/src/index.ts:394
 msgid "vim"
-msgstr ""
+msgstr "vim"
 
 #: packages/codemirror-extension/src/index.ts:395
 msgid "emacs"
-msgstr ""
-
-#: packages/codemirror/src/editor.ts:1109
-msgid "Code Editor out of Sync"
-msgstr ""
+msgstr "emacs"
 
 #: packages/codemirror/src/editor.ts:1110
+msgid "Code Editor out of Sync"
+msgstr "Editoru Senkronizasyonu Hariç"
+
+#: packages/codemirror/src/editor.ts:1111
 msgid "Please open your browser JavaScript console for bug report instructions"
-msgstr ""
+msgstr "Hata raporu talimatları için lütfen tarayıcınızın JavaScript konsolunu açın"
 
 #: packages/codemirror/src/syntaxstatus.tsx:75
 msgid "Change text editor syntax highlighting"
-msgstr ""
+msgstr "Metin düzenleyici sözdizimi vurgulamasını değiştir"
 
-#: packages/console-extension/src/foreign.ts:71 packages/console-extension/src/index.ts:166 packages/console-extension/src/index.ts:216 packages/console-extension/src/index.ts:374 packages/console/src/panel.ts:332 packages/launcher/src/index.tsx:155 packages/launcher/src/index.tsx:160
+#: packages/console-extension/src/foreign.ts:71 packages/console-extension/src/index.ts:166 packages/console-extension/src/index.ts:216 packages/console-extension/src/index.ts:374 packages/console/src/panel.ts:333 packages/launcher/src/index.tsx:155 packages/launcher/src/index.tsx:160
 msgid "Console"
-msgstr ""
+msgstr "Konsol"
 
 #: packages/console-extension/src/index.ts:363
 msgid "New Console"
-msgstr ""
+msgstr "Yeni Konsol"
 
 #: packages/console-extension/src/index.ts:397
 msgid "Clear Console Cells"
-msgstr ""
+msgstr "Konsol Hücrelerini Temizle"
 
 #: packages/console-extension/src/index.ts:409
 msgid "Run Cell (unforced)"
-msgstr ""
+msgstr "Hücreyi çalıştır (zorlamadan)"
 
 #: packages/console-extension/src/index.ts:421
 msgid "Run Cell (forced)"
-msgstr ""
+msgstr "Hücreyi çalıştır (zorla)"
 
 #: packages/console-extension/src/index.ts:433
 msgid "Insert Line Break"
-msgstr ""
+msgstr "Satır Sonu Ekle"
 
 #: packages/console-extension/src/index.ts:445
 msgid "Replace Selection in Console"
-msgstr ""
+msgstr "Konsoldaki Seçimi Değiştir"
 
-#: packages/console-extension/src/index.ts:458 packages/mainmenu-extension/src/index.ts:518 packages/notebook-extension/src/index.ts:1374
+#: packages/console-extension/src/index.ts:458 packages/mainmenu-extension/src/index.ts:518 packages/notebook-extension/src/index.ts:1377
 msgid "Interrupt Kernel"
-msgstr ""
+msgstr "Çekirdeği Duraklat"
 
-#: packages/console-extension/src/index.ts:473 packages/mainmenu-extension/src/index.ts:528 packages/notebook-extension/src/index.ts:1205
+#: packages/console-extension/src/index.ts:473 packages/mainmenu-extension/src/index.ts:528 packages/notebook-extension/src/index.ts:1208
 msgid "Restart Kernel…"
-msgstr ""
+msgstr "Çekirdeği Yeniden Başlat…"
 
 #: packages/console-extension/src/index.ts:488
 msgid "Close and Shut Down…"
-msgstr ""
+msgstr "Kapat ve bitir"
 
 #: packages/console-extension/src/index.ts:495
 msgid "Shut down the console?"
-msgstr ""
+msgstr "Konsolu sona erdir?"
 
-#: packages/console-extension/src/index.ts:496 packages/console-extension/src/index.ts:578 packages/notebook-extension/src/index.ts:1228 packages/notebook-extension/src/index.ts:2147
+#: packages/console-extension/src/index.ts:496 packages/console-extension/src/index.ts:578 packages/notebook-extension/src/index.ts:1231 packages/notebook-extension/src/index.ts:2150
 msgid "Are you sure you want to close \"%1\"?"
-msgstr ""
+msgstr "Kapatmak istediğine emin misin \"%1\"?"
 
-#: packages/console-extension/src/index.ts:536 packages/mainmenu-extension/src/index.ts:563 packages/notebook-extension/src/index.ts:1699
+#: packages/console-extension/src/index.ts:536 packages/mainmenu-extension/src/index.ts:563 packages/notebook-extension/src/index.ts:1702
 msgid "Change Kernel…"
-msgstr ""
+msgstr "Kerneli Değiştir"
 
 #: packages/console-extension/src/index.ts:574
 msgid "Shutdown Console"
-msgstr ""
+msgstr "Konsolu sona erdir"
 
 #: packages/console-extension/src/index.ts:577
 msgid "Shut down the Console?"
-msgstr ""
+msgstr "Konsolu sona erdir?"
 
 #: packages/console-extension/src/index.ts:599
 msgid "Restart Kernel and Clear Console"
-msgstr ""
+msgstr "Kerneli yeniden başlat ve konsolu temizle"
 
 #: packages/console-extension/src/index.ts:630
 msgid "Run Cell"
-msgstr ""
+msgstr "Hücreyi Çalıştır"
 
 #: packages/console-extension/src/index.ts:637
 msgid "Clear Console Cell"
-msgstr ""
+msgstr "Konsol Hücresini Temizle"
 
 #: packages/console-extension/src/index.ts:650
 msgid "Execute with Shift+Enter"
-msgstr ""
+msgstr "Shift+ Enter tuşlarıyla Yürüt"
 
 #: packages/console-extension/src/index.ts:651
 msgid "Execute with Enter"
-msgstr ""
+msgstr "Enter tuşuyla yürüt"
 
 #: packages/console-extension/src/index.ts:673
 msgid "Console Run Keystroke"
-msgstr ""
-
-#: packages/console/src/panel.ts:315
-msgid "Name: %1\n"
-msgstr ""
+msgstr "Konsol çalıştırma düğmesi"
 
 #: packages/console/src/panel.ts:316
-msgid "Directory: %1\n"
-msgstr ""
+msgid "Name: %1\n"
+msgstr "İsim: %1\n"
 
 #: packages/console/src/panel.ts:317
-msgid "Kernel: %1"
-msgstr ""
+msgid "Directory: %1\n"
+msgstr "Dizin: %1\n"
 
-#: packages/console/src/panel.ts:320
+#: packages/console/src/panel.ts:318
+msgid "Kernel: %1"
+msgstr "Çekirdek: %1"
+
+#: packages/console/src/panel.ts:321
 msgid "\n"
 "Connected: %1"
-msgstr ""
+msgstr "\n"
+"Bağlanıldı: %1"
 
-#: packages/console/src/panel.ts:327
+#: packages/console/src/panel.ts:328
 msgid "\n"
 "Last Execution: %1"
-msgstr ""
+msgstr "son yürütme: %1"
 
 #: packages/console/src/panel.ts:69
 msgid "Console %1"
-msgstr ""
+msgstr "Konsol %1"
 
 #: packages/csvviewer-extension/src/index.ts:79
 msgid "Go to Line"
-msgstr ""
+msgstr "Satıra git"
 
 #: packages/csvviewer/src/toolbar.ts:128
 msgid "tab"
-msgstr ""
+msgstr "sekme"
 
 #: packages/csvviewer/src/toolbar.ts:129
 msgid "pipe"
-msgstr ""
+msgstr "veriyolu"
 
 #: packages/csvviewer/src/toolbar.ts:130
 msgid "hash"
-msgstr ""
+msgstr "hash"
 
 #: packages/csvviewer/src/toolbar.ts:136
 msgid "Delimiter: "
-msgstr ""
+msgstr "Ayraç: "
 
 #: packages/debugger-extension/src/index.ts:289 packages/debugger-extension/src/index.ts:290
 msgid "Inspect Variable"
-msgstr ""
+msgstr "Değişkeni incelemek"
 
 #: packages/debugger-extension/src/index.ts:385 packages/debugger-extension/src/index.ts:386
 msgid "Continue"
-msgstr ""
+msgstr "Devam Et"
 
 #: packages/debugger-extension/src/index.ts:398 packages/debugger-extension/src/index.ts:399
 msgid "Terminate"
-msgstr ""
+msgstr "Sonlandır"
 
 #: packages/debugger-extension/src/index.ts:411 packages/debugger-extension/src/index.ts:412
 msgid "Next"
-msgstr ""
+msgstr "İleri"
 
 #: packages/debugger-extension/src/index.ts:423 packages/debugger-extension/src/index.ts:424
 msgid "Step In"
-msgstr ""
+msgstr "İçeri Girmek"
 
 #: packages/debugger-extension/src/index.ts:435 packages/debugger-extension/src/index.ts:436
 msgid "Step Out"
-msgstr ""
+msgstr "Dışarı Çıkmak"
 
 #: packages/debugger-extension/src/index.ts:498
 msgid "Debugger"
@@ -1329,35 +1417,35 @@ msgstr "Hata Ayıklayıcı"
 
 #: packages/debugger/src/handler.ts:56 packages/debugger/src/handler.ts:63
 msgid "Enable / Disable Debugger"
-msgstr ""
+msgstr "Hata Ayıklayıcıyı Etkinleştir / Devredışı Bırak"
 
 #: packages/debugger/src/panels/breakpoints/header.ts:23
 msgid "Breakpoints"
-msgstr ""
+msgstr "Kesme Noktaları"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:45
 msgid "Remove All Breakpoints"
-msgstr ""
+msgstr "Tüm kesme noktalarını kaldır"
 
 #: packages/debugger/src/panels/callstack/header.ts:23
 msgid "Callstack"
-msgstr ""
+msgstr "Çağrı yığını"
 
 #: packages/debugger/src/panels/sources/header.tsx:32
 msgid "Source"
-msgstr ""
+msgstr "Kaynak"
 
 #: packages/debugger/src/panels/sources/index.ts:48
 msgid "Open in the Main Area"
-msgstr ""
+msgstr "Ana Ortamda açık"
 
 #: packages/debugger/src/panels/variables/header.ts:23
 msgid "Variables"
-msgstr ""
+msgstr "Değişkenler"
 
 #: packages/debugger/src/panels/variables/index.ts:58
 msgid "Table / Tree View"
-msgstr ""
+msgstr "Tablo / Ağaç Görünümü"
 
 #: packages/docmanager-extension/src/index.ts:231
 msgid "Overrides for the default viewers for file types.\n"
@@ -1371,326 +1459,340 @@ msgid "Overrides for the default viewers for file types.\n"
 "%1\n\n"
 "Available file types:\n"
 "%2"
-msgstr ""
+msgstr "Dosya tipleri için varsayılan görüntüleyicileri ezmek için. Dosya tipi adı için dosya görüntüleyici adını haritada belirtilmeli. Örneğin:\n\n"
+"defaultViewers: {\n"
+" markdown: \"Markdown preview\"\n"
+"}\n\n"
+"Eğer var olmayan bir dosya tipi yada görüntüleyicisi belirttiyseniz veya dosya görüntüleyici belirtilen dosya tipini açamıyorsa, ezme işlemi işe yaramayacaktır.\n\n"
+"Erişilebilir görüntüleyiciler:\n"
+"%1\n"
+"Erişilebilir dosya tipleri:\n"
+"%2"
 
 #: packages/docmanager-extension/src/index.ts:394 packages/filebrowser-extension/src/index.ts:643 packages/filebrowser-extension/src/index.ts:928 packages/htmlviewer-extension/src/index.tsx:132
 msgid "File Operations"
-msgstr ""
+msgstr "Dosya işlemleri"
 
-#: packages/docmanager-extension/src/index.ts:435 packages/logconsole-extension/src/index.tsx:407
+#: packages/docmanager-extension/src/index.ts:435 packages/logconsole-extension/src/index.tsx:405
 msgid "Error"
-msgstr ""
+msgstr "Hata"
 
 #: packages/docmanager-extension/src/index.ts:491 packages/filebrowser-extension/src/index.ts:710
 msgid "Open in New Browser Tab"
-msgstr ""
+msgstr "Yeni Tarayıcı Penceresinde Aç"
 
 #: packages/docmanager-extension/src/index.ts:496 packages/docmanager-extension/src/index.ts:518
 msgid "Reload %1 from Disk"
-msgstr ""
+msgstr "Disk'ten geri yükle"
 
 #: packages/docmanager-extension/src/index.ts:500
 msgid "Reload contents from disk"
-msgstr ""
+msgstr "İçerikleri diskten geri yükle"
 
 #: packages/docmanager-extension/src/index.ts:511
 msgid "Cannot Reload"
-msgstr ""
+msgstr "Yüklenilemiyor"
 
 #: packages/docmanager-extension/src/index.ts:512 packages/docmanager-extension/src/index.ts:557 packages/docmanager-extension/src/index.ts:603 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:684
 msgid "No context found for current widget!"
-msgstr ""
+msgstr "Geçerli widget için içerik bulunamadı!"
 
-#: packages/docmanager-extension/src/index.ts:513 packages/docmanager-extension/src/index.ts:558 packages/docmanager-extension/src/index.ts:604 packages/docmanager-extension/src/index.ts:611 packages/docmanager-extension/src/index.ts:665 packages/notebook/src/actions.tsx:1405 packages/notebook/src/actions.tsx:1414 packages/notebook/src/actions.tsx:1604 packages/notebook/src/default-toolbar.tsx:69 packages/notebook/src/model.ts:286 packages/notebook/src/panel.ts:213 packages/settingeditor/src/plugineditor.ts:149 packages/settingeditor/src/plugineditor.ts:271 packages/translation-extension/src/index.ts:176
+#: packages/docmanager-extension/src/index.ts:513 packages/docmanager-extension/src/index.ts:558 packages/docmanager-extension/src/index.ts:604 packages/docmanager-extension/src/index.ts:611 packages/docmanager-extension/src/index.ts:665 packages/notebook/src/actions.tsx:1405 packages/notebook/src/actions.tsx:1414 packages/notebook/src/actions.tsx:1604 packages/notebook/src/default-toolbar.tsx:69 packages/notebook/src/model.ts:286 packages/notebook/src/panel.ts:208 packages/settingeditor/src/plugineditor.ts:149 packages/settingeditor/src/plugineditor.ts:271 packages/translation-extension/src/index.ts:145
 msgid "Ok"
-msgstr ""
+msgstr "Tamam"
 
 #: packages/docmanager-extension/src/index.ts:519
 msgid "Are you sure you want to reload the %1 from the disk?"
-msgstr ""
+msgstr "% 1'i diskten yeniden yüklemek istediğinizden emin misiniz?"
 
 #: packages/docmanager-extension/src/index.ts:525
 msgid "Reload"
-msgstr ""
+msgstr "Yeniden Yükle"
 
 #: packages/docmanager-extension/src/index.ts:542
 msgid "Revert %1 to Checkpoint"
-msgstr ""
+msgstr "% 1'i Kontrol Noktasına geri döndür"
 
 #: packages/docmanager-extension/src/index.ts:546
 msgid "Revert contents to previous checkpoint"
-msgstr ""
+msgstr "İçeriği önceki kontrol noktasına geri döndür"
 
 #: packages/docmanager-extension/src/index.ts:556
 msgid "Cannot Revert"
-msgstr ""
+msgstr "Geri alınamıyor"
 
 #: packages/docmanager-extension/src/index.ts:571
 msgid "Revert %1 to checkpoint"
-msgstr ""
+msgstr "%1'i Kontrol Noktasına geri döndür"
 
 #: packages/docmanager-extension/src/index.ts:575 packages/docregistry/src/context.ts:720 packages/docregistry/src/context.ts:736
 msgid "Revert"
-msgstr ""
+msgstr "Geri Al"
 
 #: packages/docmanager-extension/src/index.ts:593
 msgid "Save %1"
-msgstr ""
+msgstr "Kaydet %1"
 
 #: packages/docmanager-extension/src/index.ts:594
 msgid "Save and create checkpoint"
-msgstr ""
+msgstr "Kaydet ve denetim noktası oluştur"
 
 #: packages/docmanager-extension/src/index.ts:602 packages/docmanager-extension/src/index.ts:609 packages/docmanager-extension/src/index.ts:663 packages/notebook/src/default-toolbar.tsx:67
 msgid "Cannot Save"
-msgstr ""
+msgstr "Kaydedilemiyor"
 
 #: packages/docmanager-extension/src/index.ts:610 packages/notebook/src/default-toolbar.tsx:68
 msgid "Document is read-only"
-msgstr ""
+msgstr "Belge salt okunur"
 
 #: packages/docmanager-extension/src/index.ts:630
 msgid "Save All"
-msgstr ""
+msgstr "Tümünü Kaydet"
 
 #: packages/docmanager-extension/src/index.ts:631
 msgid "Save all open documents"
-msgstr ""
+msgstr "Açık tüm dosyaları kaydet"
 
 #: packages/docmanager-extension/src/index.ts:654
 msgid "Save %1 As…"
-msgstr ""
+msgstr "Farklı Kaydet…"
 
 #: packages/docmanager-extension/src/index.ts:655
 msgid "Save with new path"
-msgstr ""
+msgstr "Yeni yolu kaydet"
 
 #: packages/docmanager-extension/src/index.ts:674 packages/filebrowser-extension/src/index.ts:536
 msgid "Download"
-msgstr ""
+msgstr "İndir"
 
 #: packages/docmanager-extension/src/index.ts:675
 msgid "Download the file to your computer"
-msgstr ""
+msgstr "Dosyayı bilgisayarınıza indirin"
 
 #: packages/docmanager-extension/src/index.ts:683
 msgid "Cannot Download"
-msgstr ""
+msgstr "İndirilemiyor"
 
 #: packages/docmanager-extension/src/index.ts:768
 msgid "New View for %1"
-msgstr ""
+msgstr "%1 için Yeni Görünüm"
 
 #: packages/docmanager-extension/src/index.ts:788
 msgid "Rename %1…"
-msgstr ""
+msgstr "%1'i yeniden adlandır..."
 
 #: packages/docmanager-extension/src/index.ts:801
 msgid "Delete %1"
-msgstr ""
+msgstr "%1'i Sil"
 
 #: packages/docmanager-extension/src/index.ts:811 packages/docmanager-extension/src/index.ts:815 packages/filebrowser-extension/src/index.ts:498 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/listing.ts:418
 msgid "Delete"
-msgstr ""
+msgstr "Sil"
 
 #: packages/docmanager-extension/src/index.ts:812
 msgid "Are you sure you want to delete %1"
-msgstr ""
+msgstr "%1'i silmek istediğinize emin misiniz"
 
 #: packages/docmanager-extension/src/index.ts:829
 msgid "Show in File Browser"
-msgstr ""
+msgstr "Dosya Tarayıcısında Göster"
 
 #: packages/docmanager-extension/src/index.ts:916
 msgid "Are you sure you want to revert the %1 to the latest checkpoint? "
-msgstr ""
+msgstr "%1’i en son kontrol noktasına döndürmek istediğine emin misin? "
 
 #: packages/docmanager-extension/src/index.ts:922
 msgid "This cannot be undone."
-msgstr ""
+msgstr "Bu işlem geri alınamaz."
 
 #: packages/docmanager-extension/src/index.ts:929
 msgid "The checkpoint was last updated at: "
-msgstr ""
+msgstr "Kontrol noktasının son güncellendiği yer: "
 
 #: packages/docmanager/src/dialogs.ts:115
 msgid "Overwrite file?"
-msgstr ""
+msgstr "Dosyanın üzerine yazılsın mı?"
 
 #: packages/docmanager/src/dialogs.ts:116
 msgid "\"%1\" already exists, overwrite?"
-msgstr ""
+msgstr "\"%1\" zaten var, üzerine yazılsın mı?"
 
 #: packages/docmanager/src/dialogs.ts:119 packages/docregistry/src/context.ts:722 packages/docregistry/src/context.ts:732 packages/docregistry/src/context.ts:754 packages/docregistry/src/context.ts:765
 msgid "Overwrite"
-msgstr ""
+msgstr "Üzerine yaz"
 
 #: packages/docmanager/src/dialogs.ts:183
 msgid "File Path"
-msgstr ""
+msgstr "Dosya Yolu"
 
 #: packages/docmanager/src/dialogs.ts:188
 msgid "New Name"
-msgstr ""
+msgstr "Yeni adı"
 
 #: packages/docmanager/src/dialogs.ts:54
 msgid "Rename File"
-msgstr ""
+msgstr "Dosyayı Yeniden Adlandır"
 
 #: packages/docmanager/src/dialogs.ts:59 packages/filebrowser-extension/src/index.ts:796
 msgid "Rename"
-msgstr ""
+msgstr "Yeniden Adlandır"
 
 #: packages/docmanager/src/dialogs.ts:67
 msgid "Rename Error"
-msgstr ""
+msgstr "Yeniden Adlandırma Hatası"
 
 #: packages/docmanager/src/dialogs.ts:69
 msgid "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\""
-msgstr ""
+msgstr "\"%1\" dosyalar için uygun bir isim değil. Dosya isimlerinin uzunluğu sıfırdan büyük olmalı ve \"/\", \"\\\", ya da \":\" simgelerini içermemeli"
 
 #: packages/docmanager/src/savingstatus.tsx:50
 msgid "Saving %1"
-msgstr ""
+msgstr "%1 Kaydediliyor"
 
 #: packages/docmanager/src/widgetmanager.ts:278
 msgid "Name: %1\n"
 "Path: %2\n"
-msgstr ""
+msgstr "İsim: %1\n"
+"Yol: %2\n"
 
 #: packages/docmanager/src/widgetmanager.ts:284
 msgid "Read-only"
-msgstr ""
+msgstr "Salt-okunur"
 
 #: packages/docmanager/src/widgetmanager.ts:287
 msgid "Last Saved: %1\n"
-msgstr ""
+msgstr "Son Kayıt: %1\n"
 
 #: packages/docmanager/src/widgetmanager.ts:288
 msgid "Last Checkpoint: %1"
-msgstr ""
-
-#: packages/docmanager/src/widgetmanager.ts:376
-msgid "Save as"
-msgstr ""
-
-#: packages/docmanager/src/widgetmanager.ts:378
-msgid "Save your work"
-msgstr ""
+msgstr "Son Kontrol Noktası: %1"
 
 #: packages/docmanager/src/widgetmanager.ts:379
-msgid "Save changes in \"%1\" before closing?"
-msgstr ""
+msgid "Save as"
+msgstr "Farklı kaydet"
+
+#: packages/docmanager/src/widgetmanager.ts:381
+msgid "Save your work"
+msgstr "İşinizi Kaydedin"
 
 #: packages/docmanager/src/widgetmanager.ts:382
+msgid "Save changes in \"%1\" before closing?"
+msgstr "Kapatmadan \"%1\"'deki değişiklikler kaydedilsin mi?"
+
+#: packages/docmanager/src/widgetmanager.ts:385
 msgid "Discard"
-msgstr ""
+msgstr "Göz ardı et"
 
 #: packages/docregistry/src/context.ts:557
 msgid "File Save Error for %1"
-msgstr ""
+msgstr "%1 İçin Dosya Kaydetme Hatası"
 
 #: packages/docregistry/src/context.ts:620
 msgid "File Load Error for %1"
-msgstr ""
+msgstr "%1 İçin Dosya Yükleme Hatası"
 
 #: packages/docregistry/src/context.ts:714
 msgid "\"%1\" has changed on disk since the last time it was opened or saved.\n"
 "Do you want to overwrite the file on disk with the version open here, \n"
 "or load the version on disk (revert)?"
-msgstr ""
+msgstr "%1 en son açıldığından ya da kaydedildiğinden beri değiştirildi.\n"
+"Dosyayı buradaki açık haliyle üzerine yazmak mı, yoksa diskteki halini geri yüklemek mi istersiniz?"
 
 #: packages/docregistry/src/context.ts:725
 msgid "File Changed"
-msgstr ""
+msgstr "Dosya Değiştirildi"
 
 #: packages/docregistry/src/context.ts:749
 msgid "\"%1\" already exists. Do you want to replace it?"
-msgstr ""
+msgstr "\"%1\" zaten mevcut. Varolan dosyayı değiştirmek istiyor musunuz?"
 
 #: packages/docregistry/src/context.ts:757
 msgid "File Overwrite?"
-msgstr ""
+msgstr "Dosyanın üzerine yazılsın mı?"
 
 #: packages/docregistry/src/context.ts:881
 msgid "Save File As.."
-msgstr ""
+msgstr "Dosyayı Farklı Kaydet.."
 
 #: packages/docregistry/src/mimedocument.ts:182 packages/docregistry/src/mimedocument.ts:78 packages/markdownviewer/src/widget.ts:210
 msgid "Renderer Failure: %1"
-msgstr ""
+msgstr "İşleyici Hatası: %1"
 
-#: packages/docregistry/src/registry.ts:1294
+#: packages/docregistry/src/registry.ts:1290
 msgid "Text"
-msgstr ""
+msgstr "Metin"
 
-#: packages/docregistry/src/registry.ts:1317 packages/launcher/src/index.tsx:154 packages/launcher/src/index.tsx:159 packages/notebook-extension/src/index.ts:468 packages/notebook-extension/src/index.ts:737 packages/notebook-extension/src/index.ts:778
+#: packages/docregistry/src/registry.ts:1313 packages/launcher/src/index.tsx:154 packages/launcher/src/index.tsx:159 packages/notebook-extension/src/index.ts:471 packages/notebook-extension/src/index.ts:740 packages/notebook-extension/src/index.ts:781
 msgid "Notebook"
-msgstr ""
+msgstr "Not Defteri"
 
-#: packages/docregistry/src/registry.ts:1342
+#: packages/docregistry/src/registry.ts:1338
 msgid "Directory"
-msgstr ""
+msgstr "Dizin"
 
-#: packages/docregistry/src/registry.ts:1369 packages/fileeditor-extension/src/commands.ts:893
+#: packages/docregistry/src/registry.ts:1365 packages/fileeditor-extension/src/commands.ts:893
 msgid "Markdown File"
-msgstr ""
+msgstr "Markdown Dosyası"
 
-#: packages/docregistry/src/registry.ts:1376
+#: packages/docregistry/src/registry.ts:1372
+msgid "PDF File"
+msgstr "PDF Dosyası"
+
+#: packages/docregistry/src/registry.ts:1379
 msgid "Python File"
-msgstr ""
+msgstr "Python dosyası"
 
-#: packages/docregistry/src/registry.ts:1383
+#: packages/docregistry/src/registry.ts:1386
 msgid "JSON File"
-msgstr ""
+msgstr "JSON dosyası"
 
-#: packages/docregistry/src/registry.ts:1390
+#: packages/docregistry/src/registry.ts:1393
 msgid "CSV File"
-msgstr ""
+msgstr "CSV Dosyası"
 
-#: packages/docregistry/src/registry.ts:1397
+#: packages/docregistry/src/registry.ts:1400
 msgid "TSV File"
-msgstr ""
+msgstr "TSV Dosyası"
 
-#: packages/docregistry/src/registry.ts:1404
+#: packages/docregistry/src/registry.ts:1407
 msgid "R File"
-msgstr ""
+msgstr "R Dosyası"
 
-#: packages/docregistry/src/registry.ts:1411
+#: packages/docregistry/src/registry.ts:1414
 msgid "YAML File"
-msgstr ""
+msgstr "YAML Dosyası"
 
-#: packages/docregistry/src/registry.ts:1418 packages/docregistry/src/registry.ts:1426 packages/docregistry/src/registry.ts:1434 packages/docregistry/src/registry.ts:1442 packages/docregistry/src/registry.ts:1450 packages/docregistry/src/registry.ts:1458
+#: packages/docregistry/src/registry.ts:1421 packages/docregistry/src/registry.ts:1429 packages/docregistry/src/registry.ts:1437 packages/docregistry/src/registry.ts:1445 packages/docregistry/src/registry.ts:1453 packages/docregistry/src/registry.ts:1461
 msgid "Image"
-msgstr ""
+msgstr "Resim"
 
 #: packages/documentsearch-extension/src/index.ts:140
 msgid "Find…"
-msgstr ""
+msgstr "Bul…"
 
 #: packages/documentsearch-extension/src/index.ts:151
 msgid "Find and Replace…"
-msgstr ""
+msgstr "Bul ve Değiştir..."
 
 #: packages/documentsearch-extension/src/index.ts:163
 msgid "Find Next"
-msgstr ""
+msgstr "Sonrakini Bul"
 
 #: packages/documentsearch-extension/src/index.ts:187
 msgid "Find Previous"
-msgstr ""
+msgstr "Öncekini Bul"
 
 #: packages/documentsearch/src/searchoverlay.tsx:125
 msgid "Find"
-msgstr ""
+msgstr "Bul"
 
 #: packages/documentsearch/src/searchoverlay.tsx:174 packages/documentsearch/src/searchoverlay.tsx:192
 msgid "Replace"
-msgstr ""
+msgstr "Değiştir"
 
 #: packages/documentsearch/src/searchoverlay.tsx:204
 msgid "Replace All"
-msgstr ""
+msgstr "Tümünü Değiştir"
 
 #: packages/extensionmanager-extension/src/index.ts:103 packages/extensionmanager-extension/src/index.ts:54
 msgid "Extension Manager"
@@ -1698,7 +1800,7 @@ msgstr "Eklenti yöneticisi"
 
 #: packages/extensionmanager-extension/src/index.ts:133
 msgid "Enable Extension Manager?"
-msgstr ""
+msgstr "Eklenti Yöneticisi Etkinleştirilsin mi ?"
 
 #: packages/extensionmanager-extension/src/index.ts:134
 msgid "Thanks for trying out JupyterLab's extension manager.\n"
@@ -1707,186 +1809,189 @@ msgid "Thanks for trying out JupyterLab's extension manager.\n"
 "However, we cannot vouch for every extension,\n"
 "and some may introduce security risks.\n"
 "Do you want to continue?"
-msgstr ""
+msgstr "JupyterLab'ın uzantı yöneticisini denediğiniz için teşekkürler. JupyterLab geliştirme ekibi, güçlü bir\n"
+"üçüncü taraf uzantı topluluğuna sahip olduğu için heyecanlı; ancak, her uzantı için kefil olamıyoruz,\n"
+"ve bazıları güvenlik riskleri oluşturabilir.\n"
+"Devam etmek istiyor musun?"
 
 #: packages/extensionmanager-extension/src/index.ts:141 packages/extensionmanager/src/widget.tsx:320 packages/extensionmanager/src/widget.tsx:727
 msgid "Disable"
-msgstr ""
+msgstr "Devre dışı bırak"
 
 #: packages/extensionmanager-extension/src/index.ts:142 packages/extensionmanager/src/widget.tsx:329 packages/extensionmanager/src/widget.tsx:742
 msgid "Enable"
-msgstr ""
+msgstr "Etkinleştir"
 
 #: packages/extensionmanager-extension/src/index.ts:93
 msgid "Enable Extension Manager"
-msgstr ""
+msgstr "Eklenti Yöneticisini Etkinleştir"
 
 #: packages/extensionmanager/src/companions.tsx:139
 msgid "This package has indicated that it needs a corresponding server\n"
 "extension. Please contact your Administrator to update the server with\n"
 "one of the following commands:"
-msgstr ""
+msgstr "Bu paketin kendisine karşılık gelen bir sunucu eklentisine ihtiyacı var. Sunucuyu güncellemek için şu komutlardan birisi ile yöneticiniz ile iletişime geçin:"
 
 #: packages/extensionmanager/src/companions.tsx:155
 msgid "This package has indicated that it needs a corresponding package for the kernel."
-msgstr ""
+msgstr "Bu paket, çekirdeğe karşılık gelen bir pakete ihtiyacı olduğunu belirtti."
 
 #: packages/extensionmanager/src/companions.tsx:163
 msgid "The package <code>%1</code>, is required by the following kernels:"
-msgstr ""
+msgstr "<code>%1</code> paketi aşağıdaki çekirdekler için gereklidir:"
 
 #: packages/extensionmanager/src/companions.tsx:180
 msgid "This package has indicated that it needs a corresponding kernel\n"
 "package. Please contact your Administrator to update the server with\n"
 "one of the following commands:"
-msgstr ""
+msgstr "Bu paket, karşılık gelen bir çekirdek paketine ihtiyacı olduğunu belirtti. Sunucuyu aşağıdaki komutlardan biriyle güncellemek için lütfen Yöneticinizle bağlantı kurun:"
 
 #: packages/extensionmanager/src/companions.tsx:198
 msgid "You should make sure that the indicated packages are installed before\n"
 "trying to use the extension. Do you want to continue with the extension\n"
 "installation?"
-msgstr ""
+msgstr "Kullanılmak istenilen uzantıdan önce belirtilen paketlerin yüklü olduğundan emin olunuz. Uzantıları yüklemeye devam etmek ister misiniz?"
 
 #: packages/extensionmanager/src/companions.tsx:208
 msgid "Kernel and Server Companions"
-msgstr ""
+msgstr "Çekirdek ve sunucu arkadaşlığı/birlikteliği"
 
 #: packages/extensionmanager/src/companions.tsx:210
 msgid "Kernel Companions"
-msgstr ""
+msgstr "Çekirdek Yardımcıları"
 
 #: packages/extensionmanager/src/companions.tsx:212
 msgid "Server Companion"
-msgstr ""
+msgstr "Sunucu Yardımcısı"
 
 #: packages/extensionmanager/src/companions.tsx:221
 msgid "Install the JupyterLab extension."
-msgstr ""
+msgstr "JupyterLab uzantısını yükle."
 
 #: packages/extensionmanager/src/dialog.tsx:25
 msgid "An error occurred installing <code>%1</code>."
-msgstr ""
+msgstr "<code>%1</code> kodunu yüklerken bir hata oluştu."
 
 #: packages/extensionmanager/src/dialog.tsx:31
 msgid "Error message:"
-msgstr ""
+msgstr "Hata mesajı:"
 
 #: packages/extensionmanager/src/dialog.tsx:39
 msgid "Extension Installation Error"
-msgstr ""
+msgstr "Eklenti yükleme başarısız oldu"
 
 #: packages/extensionmanager/src/widget.tsx:132
 msgid "A build is needed to include the latest changes"
-msgstr ""
+msgstr "Derleme son değişiklikleri içermeli"
 
 #: packages/extensionmanager/src/widget.tsx:135
 msgid "Rebuild"
-msgstr ""
+msgstr "Yeniden oluştur"
 
 #: packages/extensionmanager/src/widget.tsx:138
 msgid "Ignore"
-msgstr ""
+msgstr "Yoksay"
 
 #: packages/extensionmanager/src/widget.tsx:190
 msgid "%1 (Developed by Project Jupyter)"
-msgstr ""
+msgstr "%1 (Project Jupyter Tarafından Geliştirildi)"
 
 #: packages/extensionmanager/src/widget.tsx:240
 msgid "%1 extension has been blockedExtensions since install. Please uninstall immediately and contact your blockedExtensions administrator."
-msgstr ""
+msgstr "%1 uzantısı yükleme yapıldığından beri blockedExtensions. Uzantıyı derhal siliniz ve blockedExtensions admininizle iletişim kurunuz."
 
 #: packages/extensionmanager/src/widget.tsx:256
 msgid "%1 extension has been removed from the allowedExtensions since installation. Please uninstall immediately and contact your allowedExtensions administrator."
-msgstr ""
+msgstr "%1 uzantısı, kurulumdan bu yana izin verilen uzantılardan kaldırıldı. Lütfen hemen kaldırın ve izin verilen uzantılar yöneticinize başvurun."
 
 #: packages/extensionmanager/src/widget.tsx:290
 msgid "Install"
-msgstr ""
+msgstr "Yükle"
 
 #: packages/extensionmanager/src/widget.tsx:302
 msgid "Update"
-msgstr ""
+msgstr "Güncelle"
 
 #: packages/extensionmanager/src/widget.tsx:311
 msgid "Uninstall"
-msgstr ""
+msgstr "Sil"
 
 #: packages/extensionmanager/src/widget.tsx:420
 msgid "No entries"
-msgstr ""
+msgstr "Girdi yok"
 
 #: packages/extensionmanager/src/widget.tsx:651
 msgid "The extension manager is disabled. Please contact your system\n"
 "administrator to verify the listings configuration."
-msgstr ""
+msgstr "Eklenti yöneticisi devre dışı bırakıldı. Listings ayarlarını doğrulamak için lütfen sistem yöneticinizle iletişim kurun."
 
 #: packages/extensionmanager/src/widget.tsx:661
 msgid "Read more in the JupyterLab documentation."
-msgstr ""
+msgstr "JupyterLab dokümantasyonunda daha fazlasını oku."
 
-#: packages/extensionmanager/src/widget.tsx:705 packages/logconsole-extension/src/index.tsx:408
+#: packages/extensionmanager/src/widget.tsx:705 packages/logconsole-extension/src/index.tsx:406
 msgid "Warning"
-msgstr ""
+msgstr "Uyarı"
 
 #: packages/extensionmanager/src/widget.tsx:709
 msgid "The JupyterLab development team is excited to have a robust\n"
 "third-party extension community. However, we do not review\n"
 "third-party extensions, and some extensions may introduce security\n"
 "risks or contain malicious code that runs on your machine."
-msgstr ""
+msgstr "JupyterLab geliştirici takımı kuvvetli bir 3. parti eklenti topluluğu olduğu için çok heyecanlı. Ancak, 3. parti eklentileri kontrol etmiyoruz, ve bazı eklentiler güvenlik eksiklikleri barındırabilir ve içinde bilgisayarınıza zarar verecek kod taşıyabilir."
 
 #: packages/extensionmanager/src/widget.tsx:752
 msgid "Updating extensions list"
-msgstr ""
+msgstr "Eklenti Listesi Güncelleniyor"
 
 #: packages/extensionmanager/src/widget.tsx:759
 msgid "Error communicating with server extension. Consult the documentation\n"
 "            for how to ensure that it is enabled."
-msgstr ""
+msgstr "Sunucu eklentisiyle iletişime geçerken sorun yaşandı. Etkinleştirme işleminden nasıl emin olabileceğiniz konusunda dökumantasyona başvurun."
 
 #: packages/extensionmanager/src/widget.tsx:764
 msgid "Reason given:"
-msgstr ""
+msgstr "Sebebi: "
 
 #: packages/extensionmanager/src/widget.tsx:772
 msgid "The server has some missing requirements for installing extensions."
-msgstr ""
+msgstr "Serverda uzantıları yüklemek için eksik gereksinimler mevcut."
 
 #: packages/extensionmanager/src/widget.tsx:777
 msgid "Details:"
-msgstr ""
+msgstr "Ayrıntılar:"
 
 #: packages/extensionmanager/src/widget.tsx:816
 msgid "Installed"
-msgstr ""
+msgstr "Yüklendi"
 
 #: packages/extensionmanager/src/widget.tsx:824
 msgid "Refresh extension list"
-msgstr ""
+msgstr "Uzantı listesini yenile"
 
 #: packages/extensionmanager/src/widget.tsx:869
 msgid "Search Results"
-msgstr ""
+msgstr "Arama Sonuçları"
 
 #: packages/extensionmanager/src/widget.tsx:870
 msgid "Discover"
-msgstr ""
+msgstr "Keşfet"
 
 #: packages/filebrowser-extension/src/index.ts:1043
 msgid "Open With"
-msgstr ""
+msgstr "Birlikte Aç"
 
 #: packages/filebrowser-extension/src/index.ts:1183
 msgid "No browser for path"
-msgstr ""
+msgstr "Bu yol için bir tarayıcı yok"
 
 #: packages/filebrowser-extension/src/index.ts:285 packages/filebrowser-extension/src/index.ts:873 packages/launcher-extension/src/index.ts:56
 msgid "New Launcher"
-msgstr ""
+msgstr "Yeni Launcher"
 
 #: packages/filebrowser-extension/src/index.ts:353
 msgid "File Browser (%1)"
-msgstr ""
+msgstr "Dosya Tarayıcı (%1)"
 
 #: packages/filebrowser-extension/src/index.ts:355
 msgid "File Browser"
@@ -1894,258 +1999,259 @@ msgstr "Dosya tarayıcısı"
 
 #: packages/filebrowser-extension/src/index.ts:468
 msgid "Copy Shareable Link"
-msgstr ""
+msgstr "Paylaşılabilir linki kopyala"
 
 #: packages/filebrowser-extension/src/index.ts:511 packages/fileeditor-extension/src/commands.ts:753
 msgid "Copy"
-msgstr ""
+msgstr "Kopyala"
 
 #: packages/filebrowser-extension/src/index.ts:524 packages/fileeditor-extension/src/commands.ts:712
 msgid "Cut"
-msgstr ""
+msgstr "Kes"
 
 #: packages/filebrowser-extension/src/index.ts:548
 msgid "Duplicate"
-msgstr ""
+msgstr "Çoğalt"
 
 #: packages/filebrowser-extension/src/index.ts:588
 msgid "Open from Path…"
-msgstr ""
+msgstr "Yoldan aç..."
 
 #: packages/filebrowser-extension/src/index.ts:588 packages/filebrowser-extension/src/index.ts:590
 msgid "Open %1"
-msgstr ""
+msgstr "Aç %1"
 
 #: packages/filebrowser-extension/src/index.ts:590
 msgid "Open from path"
-msgstr ""
+msgstr "Yoldan Aç"
 
 #: packages/filebrowser-extension/src/index.ts:599
 msgid "Path"
-msgstr ""
+msgstr "Dosya Yolu"
 
 #: packages/filebrowser-extension/src/index.ts:601
 msgid "Open Path"
-msgstr ""
+msgstr "Yolu aç"
 
 #: packages/filebrowser-extension/src/index.ts:602 packages/filebrowser-extension/src/index.ts:687
 msgid "Open"
-msgstr ""
+msgstr "Aç"
 
 #: packages/filebrowser-extension/src/index.ts:633
 msgid "Could not find path: %1"
-msgstr ""
+msgstr "Yol bulunamadı %1"
 
 #: packages/filebrowser-extension/src/index.ts:635
 msgid "Cannot open"
-msgstr ""
+msgstr "Açılamaz"
 
 #: packages/filebrowser-extension/src/index.ts:728
 msgid "Copy Download Link"
-msgstr ""
+msgstr "İndirme Bağlantısını Kopyala"
 
 #: packages/filebrowser-extension/src/index.ts:741 packages/fileeditor-extension/src/commands.ts:787
 msgid "Paste"
-msgstr ""
+msgstr "Yapıştır"
 
 #: packages/filebrowser-extension/src/index.ts:754 packages/filebrowser/src/browser.ts:96
 msgid "New Folder"
-msgstr ""
+msgstr "Yeni Klasör"
 
 #: packages/filebrowser-extension/src/index.ts:769
 msgid "New File"
-msgstr ""
+msgstr "Yeni Dosya"
 
 #: packages/filebrowser-extension/src/index.ts:784 packages/fileeditor-extension/src/commands.ts:892
 msgid "New Markdown File"
-msgstr ""
+msgstr "Yeni Markdown Dosyası"
 
 #: packages/filebrowser-extension/src/index.ts:817
 msgid "Copy Path"
-msgstr ""
+msgstr "Yolu Kopyala"
 
 #: packages/filebrowser-extension/src/index.ts:859 packages/mainmenu-extension/src/index.ts:569
 msgid "Shut Down Kernel"
-msgstr ""
+msgstr "Çekirdeği kapat"
 
 #: packages/filebrowser-extension/src/index.ts:878
 msgid "Show Active File in File Browser"
-msgstr ""
+msgstr "Aktif Dosyayı Dosya Tarayıcısında Göster"
 
 #: packages/filebrowser-extension/src/index.ts:892
 msgid "Toggle Last Modified Column"
-msgstr ""
+msgstr "Son Değiştirilen Kolona Geç"
 
 #: packages/filebrowser-extension/src/index.ts:914
 msgid "Search on File Names"
-msgstr ""
+msgstr "Dosya İsmi ile Ara"
 
 #: packages/filebrowser/src/browser.ts:105
 msgid "Refresh File List"
-msgstr ""
+msgstr "Dosya listesini yenile"
 
 #: packages/filebrowser/src/browser.ts:121 packages/filebrowser/src/browser.ts:330
 msgid "Filter files by name"
-msgstr ""
+msgstr "Dosyaları isme göre filtrele"
 
 #: packages/filebrowser/src/browser.ts:301
 msgid "Directory not found"
-msgstr ""
+msgstr "Dizin bulunamadı"
 
 #: packages/filebrowser/src/browser.ts:302 packages/filebrowser/src/model.ts:304
 msgid "Directory not found: \"%1\""
-msgstr ""
+msgstr "Konum bulunamadı: \"%1\""
 
 #: packages/filebrowser/src/crumbs.ts:173
 msgid "Open Error"
-msgstr ""
+msgstr "Açma Hatası"
 
 #: packages/filebrowser/src/crumbs.ts:281
 msgid "Move Error"
-msgstr ""
+msgstr "Taşıma Hatası"
 
 #: packages/filebrowser/src/listing.ts:1199
 msgctxt "showErrorMessage"
 msgid "Error while copying/moving files"
-msgstr ""
+msgstr "Dosyalar kopyalanırken veya taşınırken hata oluştu"
 
 #: packages/filebrowser/src/listing.ts:1416
 msgctxt "showErrorMessage"
 msgid "Delete Failed"
-msgstr ""
+msgstr "Silinemedi"
 
 #: packages/filebrowser/src/listing.ts:1447
 msgid "showErrorMessage"
-msgstr ""
+msgstr "hataMesajıGöster"
 
 #: packages/filebrowser/src/listing.ts:1449
 msgctxt "showErrorMessage"
 msgid "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\""
-msgstr ""
+msgstr "\"%1\" bir dosya için geçerli bir ad değil. İsimler en az bir karakterden oluşmalı ve \"/\", \"\\\", ve ya \":\" içermemeli"
 
 #: packages/filebrowser/src/listing.ts:1473
 msgctxt "showErrorMessage"
 msgid "Rename Error"
-msgstr ""
+msgstr "Yeniden Adlandırma Hatası"
 
 #: packages/filebrowser/src/listing.ts:1778
 msgid "Name"
-msgstr ""
+msgstr "Ad"
 
 #: packages/filebrowser/src/listing.ts:1779
 msgid "Last Modified"
-msgstr ""
+msgstr "Son Değiştirme Tarihi"
 
 #: packages/filebrowser/src/listing.ts:1919
 msgid "Name: %1"
-msgstr ""
+msgstr "İsim: %1"
 
 #: packages/filebrowser/src/listing.ts:1923
 msgid "\n"
 "Size: %1"
-msgstr ""
+msgstr "\n"
+"Boyut: %1"
 
 #: packages/filebrowser/src/listing.ts:1931
 msgid "\n"
 "Path: %1"
-msgstr ""
+msgstr "\n"
+"Yol: %1"
 
 #: packages/filebrowser/src/listing.ts:1938
 msgid "\n"
 "Created: %1"
-msgstr ""
+msgstr "%1 oluşturuldu"
 
 #: packages/filebrowser/src/listing.ts:1944
 msgid "\n"
 "Modified: %1"
-msgstr ""
+msgstr "\n"
+"Değiştirilen %1"
 
 #: packages/filebrowser/src/listing.ts:1949
 msgid "\n"
 "Writable: %1"
-msgstr ""
+msgstr "\n"
+"Yazılabilir: %1"
 
 #: packages/filebrowser/src/listing.ts:2019
 msgid "%1 Item"
 msgid_plural "%1 Items"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 öge"
+msgstr[1] "%1 ögeler"
 
 #: packages/filebrowser/src/listing.ts:384
 msgctxt "showErrorMessage"
 msgid "Paste Error"
-msgstr ""
+msgstr "Yapıştırma hatası"
 
 #: packages/filebrowser/src/listing.ts:404
 msgid "Are you sure you want to permanently delete: %1?"
-msgstr ""
+msgstr "Kalıcı olarak silmek istediğinizden emin misiniz?: %1"
 
 #: packages/filebrowser/src/listing.ts:408
 msgid "Are you sure you want to permanently delete the %1 selected item?"
 msgid_plural "Are you sure you want to permanently delete the %1 selected items?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 seçili kısmı tamamen silmek istediğinize emin misiniz?"
+msgstr[1] "%1 seçili kısımları tamamen silmek istediğinize emin misiniz?"
 
 #: packages/filebrowser/src/listing.ts:448
 msgctxt "showErrorMessage"
 msgid "Duplicate file"
-msgstr ""
+msgstr "Yinelenen Dosya"
 
 #: packages/filebrowser/src/listing.ts:488
 msgctxt "showErrorMessage"
 msgid "Shut down kernel"
-msgstr ""
+msgstr "Çekirdeği kapat"
 
 #: packages/filebrowser/src/listing.ts:831
 msgid "%1\n"
 "Kernel: %2"
-msgstr ""
+msgstr "%1\n"
+"Çekirdek: %2"
 
 #: packages/filebrowser/src/listing.ts:976
 msgctxt "showErrorMessage"
 msgid "Open directory"
-msgstr ""
+msgstr "Dizini aç"
 
 #: packages/filebrowser/src/model.ts:100
 msgid "Files still uploading"
-msgstr ""
+msgstr "Dosyalar hala yükleniyor"
 
 #: packages/filebrowser/src/model.ts:408
 msgid "Cannot upload file (>%1 MB). %2"
-msgstr ""
+msgstr "Dosya yüklenemiyor (>%1 MB). %2"
 
 #: packages/filebrowser/src/model.ts:437
 msgid "Large file size warning"
-msgstr ""
+msgstr "Büyük dosya boyutu uyarısı"
 
 #: packages/filebrowser/src/model.ts:438
 msgid "The file size is %1 MB. Do you still want to upload it?"
-msgstr ""
+msgstr "Dosyanızın boyutu %1 MB. Hala yüklemek istiyor musunuz?"
 
 #: packages/filebrowser/src/model.ts:444
 msgid "Upload"
-msgstr ""
+msgstr "Karşıya Yükle"
 
-#: packages/filebrowser/src/opendialog.ts:85
-msgid "Select"
-msgstr ""
-
-#: packages/filebrowser/src/upload.ts:113
+#: packages/filebrowser/src/upload.ts:112
 msgid "Upload Files"
-msgstr ""
+msgstr "Dosyaları Yükle"
 
-#: packages/filebrowser/src/upload.ts:53
+#: packages/filebrowser/src/upload.ts:52
 msgctxt "showErrorMessage"
 msgid "Upload Error"
-msgstr ""
+msgstr "Yükleme Hatası"
 
 #: packages/filebrowser/src/uploadstatus.tsx:100
 msgid "Complete!"
-msgstr ""
+msgstr "Tamamlandı!"
 
 #: packages/filebrowser/src/uploadstatus.tsx:41
 msgid "Uploading…"
-msgstr ""
+msgstr "Yükleniyor…"
 
 #: packages/fileeditor-extension/src/commands.ts:1007 packages/fileeditor-extension/src/commands.ts:1022 packages/fileeditor-extension/src/commands.ts:966 packages/fileeditor-extension/src/commands.ts:992
 msgid "Text Editor"
@@ -2153,966 +2259,970 @@ msgstr "Metin editörü"
 
 #: packages/fileeditor-extension/src/commands.ts:1025
 msgid "Increase Font Size"
-msgstr ""
+msgstr "Yazı Tipi Boyutunu Büyüt"
 
 #: packages/fileeditor-extension/src/commands.ts:1028
 msgid "Decrease Font Size"
-msgstr ""
+msgstr "Yazı Boyutunu Düşür"
 
 #: packages/fileeditor-extension/src/commands.ts:1084
 msgid "Text Editor Indentation"
-msgstr ""
+msgstr "Metin Düzenleyici Girintisi"
 
 #: packages/fileeditor-extension/src/commands.ts:1088 packages/fileeditor-extension/src/commands.ts:970 packages/fileeditor-extension/src/index.ts:101
 msgid "Indent with Tab"
-msgstr ""
+msgstr "Tab ile boşluk bırak"
 
 #: packages/fileeditor-extension/src/commands.ts:1097 packages/fileeditor-extension/src/commands.ts:979 packages/fileeditor-extension/src/index.ts:108
 msgid "Spaces: %1"
 msgid_plural "Spaces: %1"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Boşluklar: %1"
+msgstr[1] "Boşluklar: %1"
 
 #: packages/fileeditor-extension/src/commands.ts:1106
 msgid "Increase Text Editor Font Size"
-msgstr ""
+msgstr "Metin Düzenleyicisi Yazı Tipi Boyutunu Büyüt"
 
 #: packages/fileeditor-extension/src/commands.ts:1110
 msgid "Decrease Text Editor Font Size"
-msgstr ""
+msgstr "Metin Düzenleyicisi Yazı Tipi Boyutunu Düşürün"
 
 #: packages/fileeditor-extension/src/commands.ts:1200
 msgid "Editor"
-msgstr ""
+msgstr "Düzenleyici"
 
 #: packages/fileeditor-extension/src/commands.ts:1218 packages/fileeditor-extension/src/commands.ts:517
 msgid "Run Code"
-msgstr ""
+msgstr "Kodu Çalıştır"
 
 #: packages/fileeditor-extension/src/commands.ts:1219 packages/fileeditor-extension/src/commands.ts:562
 msgid "Run All Code"
-msgstr ""
+msgstr "Tüm Kodu Çalıştır"
 
 #: packages/fileeditor-extension/src/commands.ts:1221
 msgid "Restart Kernel and Run All Code"
-msgstr ""
+msgstr "Çekirdeği Baştan Başlat ve Hepsini Çalıştır"
 
 #: packages/fileeditor-extension/src/commands.ts:293
 msgid "Line Numbers"
-msgstr ""
+msgstr "Satır Numaraları"
 
 #: packages/fileeditor-extension/src/commands.ts:323
 msgid "Word Wrap"
-msgstr ""
+msgstr "Sözcük Kaydırma"
 
 #: packages/fileeditor-extension/src/commands.ts:374 packages/mainmenu-extension/src/index.ts:647
 msgid "Match Brackets"
-msgstr ""
+msgstr "Parantezleri Eşleştir"
 
 #: packages/fileeditor-extension/src/commands.ts:398
 msgid "Auto Close Brackets for Text Editor"
-msgstr ""
+msgstr "Metin Düzenleyicisinde Parantezleri Otomatik Kapat"
 
 #: packages/fileeditor-extension/src/commands.ts:422
 msgid "Replace Selection in Editor"
-msgstr ""
+msgstr "Editörde seçimi değiştir"
 
 #: packages/fileeditor-extension/src/commands.ts:446
 msgid "Create Console for Editor"
-msgstr ""
+msgstr "Editör İçin Konsol Yarat"
 
 #: packages/fileeditor-extension/src/commands.ts:594
 msgid "Show Markdown Preview"
-msgstr ""
+msgstr "Markdown Önizlemesini Göster"
 
 #: packages/fileeditor-extension/src/commands.ts:632 packages/mainmenu-extension/src/index.ts:258
 msgid "Undo"
-msgstr ""
+msgstr "Geri Al"
 
 #: packages/fileeditor-extension/src/commands.ts:670 packages/mainmenu-extension/src/index.ts:263
 msgid "Redo"
-msgstr ""
+msgstr "Yeniden yap"
 
 #: packages/fileeditor-extension/src/commands.ts:812
 msgid "Select All"
-msgstr ""
+msgstr "Tümünü Seç"
 
 #: packages/fileeditor-extension/src/commands.ts:871
 msgid "New Text File"
-msgstr ""
+msgstr "Yeni Metin Dosyası"
 
 #: packages/fileeditor-extension/src/commands.ts:871
 msgid "Text File"
-msgstr ""
+msgstr "Metin Dosyası"
 
 #: packages/fileeditor-extension/src/commands.ts:872
 msgid "Create a new text file"
-msgstr ""
+msgstr "Yeni bir Metin dosyası oluştur"
 
 #: packages/fileeditor-extension/src/commands.ts:894
 msgid "Create a new markdown file"
-msgstr ""
+msgstr "Yeni Markdown dosyası oluştur"
 
-#: packages/fileeditor-extension/src/commands.ts:924 packages/fileeditor-extension/src/commands.ts:938 packages/launcher/src/index.tsx:156 packages/launcher/src/index.tsx:166 packages/launcher/src/index.tsx:439 packages/terminal-extension/src/index.ts:252
+#: packages/fileeditor-extension/src/commands.ts:924 packages/fileeditor-extension/src/commands.ts:938 packages/launcher/src/index.tsx:156 packages/launcher/src/index.tsx:166 packages/launcher/src/index.tsx:439 packages/terminal-extension/src/index.ts:256
 msgid "Other"
-msgstr ""
+msgstr "Diğer"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:62
 msgid "Spaces"
-msgstr ""
+msgstr "Alanlar"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:63
 msgid "Tab Size"
-msgstr ""
+msgstr "Sekme Boyutu"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:68
 msgid "Change Tab indentation…"
-msgstr ""
+msgstr "Sekme girintisini değiştir..."
 
 #: packages/help-extension/src/index.tsx:104
 msgid "JupyterLab Reference"
-msgstr ""
+msgstr "JupyterLab Dökümantasyonu"
 
 #: packages/help-extension/src/index.tsx:108
 msgid "JupyterLab FAQ"
-msgstr ""
+msgstr "JupyterLab SSS"
 
 #: packages/help-extension/src/index.tsx:113
 msgid "Jupyter Reference"
-msgstr ""
+msgstr "Jupyter Dökümantasyonu"
 
 #: packages/help-extension/src/index.tsx:117
 msgid "Markdown Reference"
-msgstr ""
+msgstr "Markdown Dökumantasyonu"
 
 #: packages/help-extension/src/index.tsx:240
 msgid "About the %1 Kernel"
-msgstr ""
+msgstr "%1 çekirdeği hakkında"
 
 #: packages/help-extension/src/index.tsx:260 packages/help-extension/src/index.tsx:351 packages/hub-extension/src/index.ts:160 packages/mainmenu-extension/src/index.ts:584
 msgid "Dismiss"
-msgstr ""
+msgstr "Reddet"
 
 #: packages/help-extension/src/index.tsx:291
 msgid "About %1"
-msgstr ""
+msgstr "%1 Hakkında"
 
 #: packages/help-extension/src/index.tsx:294
 msgid "Version %1"
-msgstr ""
+msgstr "Versiyon %1"
 
 #: packages/help-extension/src/index.tsx:322
 msgid "CONTRIBUTOR LIST"
-msgstr ""
+msgstr "Katkıda Bulunanlar Listesi"
 
 #: packages/help-extension/src/index.tsx:330
 msgid "ABOUT PROJECT JUPYTER"
-msgstr ""
+msgstr "JUPYTER PROJESİ HAKKINDA"
 
 #: packages/help-extension/src/index.tsx:336
 msgid "© 2015-2020 Project Jupyter Contributors"
-msgstr ""
+msgstr "© 2015-2020 Jupyter Geliştiricileri"
 
 #: packages/help-extension/src/index.tsx:383
 msgid "Launch Classic Notebook"
-msgstr ""
+msgstr "Klasik Not Defterini Çalıştır"
 
 #: packages/help-extension/src/index.tsx:97 packages/mainmenu-extension/src/index.ts:900
 msgid "Help"
-msgstr ""
+msgstr "Yardım"
 
 #: packages/htmlviewer-extension/src/index.tsx:111
 msgid "Trust HTML File"
-msgstr ""
+msgstr "HTML dosyasına güven"
 
 #: packages/htmlviewer-extension/src/index.tsx:60
 msgid "HTML File"
-msgstr ""
+msgstr "HTML Dosyası"
 
 #: packages/htmlviewer-extension/src/index.tsx:69
 msgid "HTML Viewer"
-msgstr ""
+msgstr "HTML Görüntüleyici"
 
-#: packages/htmlviewer/src/index.tsx:103
+#: packages/htmlviewer/src/index.tsx:104
 msgid "Rerender HTML Document"
-msgstr ""
+msgstr "HTML Belgesini Tekrar Oluştur"
 
-#: packages/htmlviewer/src/index.tsx:291
+#: packages/htmlviewer/src/index.tsx:292
 msgid "Whether the HTML file is trusted.\n"
 "Trusting the file allows scripts to run in it,\n"
 "which may result in security risks.\n"
 "Only enable for files you trust."
-msgstr ""
-
-#: packages/htmlviewer/src/index.tsx:297
-msgid "Distrust HTML"
-msgstr ""
+msgstr "HTML dosyası güvenilir mi değil mi.\n"
+"Dosyaya güvenmek onun script çalıştırmasına izin verir,\n"
+"bu da bir güvenlik açığı ortaya çıkarabilir.\n"
+"Sadece güvendiğiniz dosyaları açın."
 
 #: packages/htmlviewer/src/index.tsx:298
+msgid "Distrust HTML"
+msgstr "HTML'e Güvenme"
+
+#: packages/htmlviewer/src/index.tsx:299
 msgid "Trust HTML"
-msgstr ""
+msgstr "HTML'e Güven"
 
 #: packages/hub-extension/src/index.ts:153
 msgid "Server Not Running"
-msgstr ""
+msgstr "Sunucu Çalışmıyor"
 
 #: packages/hub-extension/src/index.ts:154
 msgid "Your server at %1 is not running.\n"
 "Would you like to restart it?"
-msgstr ""
+msgstr "%1'deki sunucunuz çalışmıyor.\n"
+"Yeniden başlatmak ister misiniz?"
 
 #: packages/hub-extension/src/index.ts:159
 msgid "Restart"
-msgstr ""
+msgstr "Yeniden başlat"
 
 #: packages/hub-extension/src/index.ts:68
 msgid "Restart Server"
-msgstr ""
+msgstr "Sunucuyu yeniden başlat"
 
 #: packages/hub-extension/src/index.ts:69
 msgid "Request that the Hub restart this server"
-msgstr ""
+msgstr "Merkezden bu sunucuyu çalıştırmak için izin iste"
 
 #: packages/hub-extension/src/index.ts:76
 msgid "Hub Control Panel"
-msgstr ""
+msgstr "Merkez Kontrol paneli"
 
 #: packages/hub-extension/src/index.ts:77
 msgid "Open the Hub control panel in a new browser tab"
-msgstr ""
+msgstr "Merkez control panelini yeni bir tarayıcı sekmesinde aç"
 
 #: packages/hub-extension/src/index.ts:84 packages/mainmenu-extension/src/index.ts:440
 msgid "Log Out"
-msgstr ""
+msgstr "Çıkış Yap"
 
 #: packages/hub-extension/src/index.ts:85
 msgid "Log out of the Hub"
-msgstr ""
+msgstr "Merkezden çıkış yap"
 
 #: packages/hub-extension/src/index.ts:99
 msgid "Hub"
-msgstr ""
+msgstr "Merkez"
 
 #: packages/imageviewer-extension/src/index.ts:158
 msgid "Image Viewer"
-msgstr ""
+msgstr "Resim Görüntüleyici"
 
 #: packages/imageviewer-extension/src/index.ts:199
 msgid "Zoom In"
-msgstr ""
+msgstr "Yakınlaştır"
 
 #: packages/imageviewer-extension/src/index.ts:205
 msgid "Zoom Out"
-msgstr ""
+msgstr "Uzaklaştır"
 
 #: packages/imageviewer-extension/src/index.ts:211
 msgid "Reset Image"
-msgstr ""
+msgstr "Resmi sıfırla"
 
 #: packages/imageviewer-extension/src/index.ts:217
 msgid "Rotate Clockwise"
-msgstr ""
+msgstr "Saat Yönünde Döndür"
 
 #: packages/imageviewer-extension/src/index.ts:223
 msgid "Rotate Counterclockwise"
-msgstr ""
+msgstr "Saat Yönünün Tersine Döndür"
 
 #: packages/imageviewer-extension/src/index.ts:229
 msgid "Flip image horizontally"
-msgstr ""
+msgstr "Resmi Yatay Döndür"
 
 #: packages/imageviewer-extension/src/index.ts:235
 msgid "Flip image vertically"
-msgstr ""
+msgstr "Resmi Dikey Döndür"
 
 #: packages/imageviewer-extension/src/index.ts:241
 msgid "Invert Colors"
-msgstr ""
+msgstr "Renkleri Ters Çevir"
 
 #: packages/inspector-extension/src/index.ts:60
 msgid "Show Contextual Help"
-msgstr ""
+msgstr "Bağlamsal Yardımı Göster"
 
 #: packages/inspector-extension/src/index.ts:88
 msgid "Live updating code documentation from the active kernel"
-msgstr ""
+msgstr "Aktif çekirdekten canlı olarak güncellenen kod dökümantasyonu"
 
-#: packages/inspector/src/inspector.ts:53
+#: packages/inspector/src/inspector.ts:54
 msgid "Click on a function to see documentation."
-msgstr ""
+msgstr "Dökümantasyonu görüntülemek için bir fonksiyonun üzerine tıklayın."
 
 #: packages/javascript-extension/src/index.ts:37
 msgid "Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
-msgstr ""
+msgstr "Jupyterlab oturumunuzda keyfi Javascript çalıştırmak istediğinizden emin misiniz?"
 
 #: packages/javascript-extension/src/index.ts:41 packages/mainmenu-extension/src/index.ts:716 packages/rendermime/src/renderers.ts:78
 msgid "Run"
-msgstr ""
+msgstr "Çalıştır"
 
 #: packages/json-extension/src/component.tsx:67
 msgid "Filter..."
-msgstr ""
+msgstr "Filtrele..."
 
 #: packages/launcher-extension/src/index.ts:73 packages/launcher-extension/src/index.ts:95
 msgid "Launcher"
-msgstr ""
+msgstr "Başlatıcı"
 
 #: packages/launcher/src/index.tsx:413
 msgctxt "Error"
 msgid "Launcher Error"
-msgstr ""
+msgstr "Başlatıcı Hatası"
 
-#: packages/logconsole-extension/src/index.tsx:162 packages/logconsole/src/widget.ts:399
+#: packages/logconsole-extension/src/index.tsx:160 packages/logconsole/src/widget.ts:399
 msgid "Log Console"
-msgstr ""
+msgstr "Kayıt Konsolu"
 
-#: packages/logconsole-extension/src/index.tsx:210
+#: packages/logconsole-extension/src/index.tsx:208
 msgid "Show Log Console"
-msgstr ""
+msgstr "Kayıt Konsolunu Göster"
 
-#: packages/logconsole-extension/src/index.tsx:230
+#: packages/logconsole-extension/src/index.tsx:228
 msgid "Add Checkpoint"
-msgstr ""
+msgstr "Kontrol Noktası Ekle"
 
-#: packages/logconsole-extension/src/index.tsx:239
+#: packages/logconsole-extension/src/index.tsx:237
 msgid "Clear Log"
-msgstr ""
+msgstr "Log Temizle"
 
-#: packages/logconsole-extension/src/index.tsx:255
+#: packages/logconsole-extension/src/index.tsx:253
 msgid "Set Log Level to %1"
-msgstr ""
+msgstr "Kayıt Seviyesini %1'e Ayarla"
 
-#: packages/logconsole-extension/src/index.tsx:392
+#: packages/logconsole-extension/src/index.tsx:390
 msgid "Log Level:"
-msgstr ""
+msgstr "Kayıt Düzeyi:"
 
-#: packages/logconsole-extension/src/index.tsx:400
+#: packages/logconsole-extension/src/index.tsx:398
 msgid "Log level"
-msgstr ""
+msgstr "Kayıt düzeyi"
 
-#: packages/logconsole-extension/src/index.tsx:406
+#: packages/logconsole-extension/src/index.tsx:404
 msgid "Critical"
-msgstr ""
+msgstr "Kritik"
 
-#: packages/logconsole-extension/src/index.tsx:409
+#: packages/logconsole-extension/src/index.tsx:407
 msgid "Info"
-msgstr ""
+msgstr "Bilgi"
 
-#: packages/logconsole-extension/src/index.tsx:410
+#: packages/logconsole-extension/src/index.tsx:408
 msgid "Debug"
-msgstr ""
+msgstr "Hata ayıklama"
 
 #: packages/logconsole-extension/src/status.tsx:36
 msgid "%1 new messages, %2 log entries for %3"
-msgstr ""
+msgstr "%1 yeni mesaj, %3 için %2 tane kayıt girisi"
 
 #: packages/logconsole-extension/src/status.tsx:43
 msgid "%1 log entries for %2"
-msgstr ""
+msgstr "%1 için %2 tane kayıt girisi"
 
 #: packages/logconsole/src/widget.ts:400
 msgid "Log: %1"
-msgstr ""
+msgstr "Kayıt: %1"
 
 #: packages/logconsole/src/widget.ts:407
 msgid "No source selected."
-msgstr ""
+msgstr "Kaynak seçilmedi."
 
 #: packages/logconsole/src/widget.ts:412
 msgid "No log messages."
-msgstr ""
+msgstr "Kayıt mesajı yok."
 
 #: packages/mainmenu-extension/src/index.ts:175
 msgid "Open Edit Menu"
-msgstr ""
+msgstr "Düzenle Menüsünü Aç"
 
 #: packages/mainmenu-extension/src/index.ts:179
 msgid "Open File Menu"
-msgstr ""
+msgstr "Dosya Menüsünü Aç"
 
 #: packages/mainmenu-extension/src/index.ts:183
 msgid "Open Kernel Menu"
-msgstr ""
+msgstr "Çekirdek Menüsünü Aç"
 
 #: packages/mainmenu-extension/src/index.ts:187
 msgid "Open Run Menu"
-msgstr ""
+msgstr "Çalıştır Menüsünü Aç"
 
 #: packages/mainmenu-extension/src/index.ts:191
 msgid "Open View Menu"
-msgstr ""
+msgstr "Görüntü  Menüsünü Aç"
 
 #: packages/mainmenu-extension/src/index.ts:195
 msgid "Open Settings Menu"
-msgstr ""
+msgstr "Ayarlar Menüsünü Aç"
 
 #: packages/mainmenu-extension/src/index.ts:199
 msgid "Open Tabs Menu"
-msgstr ""
+msgstr "Sekmeler Menüsünü Aç"
 
 #: packages/mainmenu-extension/src/index.ts:203
 msgid "Open Help Menu"
-msgstr ""
+msgstr "Yardım Menüsünü Aç"
 
 #: packages/mainmenu-extension/src/index.ts:207
 msgid "Open First Menu"
-msgstr ""
+msgstr "İlk Menüyü Aç"
 
 #: packages/mainmenu-extension/src/index.ts:229
 msgid "Kernel Operations"
-msgstr ""
+msgstr "Kernel İşlemleri"
 
 #: packages/mainmenu-extension/src/index.ts:254
 msgid "Edit"
-msgstr ""
+msgstr "Düzenle"
 
 #: packages/mainmenu-extension/src/index.ts:280
 msgid "Clear"
-msgstr ""
+msgstr "Temizle"
 
 #: packages/mainmenu-extension/src/index.ts:296
 msgid "Clear All"
-msgstr ""
+msgstr "Tümünü temizle"
 
 #: packages/mainmenu-extension/src/index.ts:315
 msgid "Go to Line…"
-msgstr ""
+msgstr "Satıra git..."
 
 #: packages/mainmenu-extension/src/index.ts:332
 msgid "File"
-msgstr ""
+msgstr "Dosya"
 
 #: packages/mainmenu-extension/src/index.ts:333
 msgid "New"
-msgstr ""
+msgstr "Yeni"
 
 #: packages/mainmenu-extension/src/index.ts:346
 msgid "Close and Shutdown"
-msgstr ""
+msgstr "Kapat ve çalışmayı durdur"
 
 #: packages/mainmenu-extension/src/index.ts:376
 msgid "New Console for Activity"
-msgstr ""
+msgstr "Aktivite için Yeni Konsol"
 
 #: packages/mainmenu-extension/src/index.ts:387 packages/mainmenu-extension/src/index.ts:395
 msgid "Shut Down"
-msgstr ""
+msgstr "Çalışmayı durdur"
 
 #: packages/mainmenu-extension/src/index.ts:388
 msgid "Shut down JupyterLab"
-msgstr ""
+msgstr "JupyterLab’ı kapat"
 
 #: packages/mainmenu-extension/src/index.ts:391
 msgid "Shutdown confirmation"
-msgstr ""
+msgstr "Kapatma onayı"
 
 #: packages/mainmenu-extension/src/index.ts:392
 msgid "Please confirm you want to shut down JupyterLab."
-msgstr ""
+msgstr "Lütfen Jupyterlab’ı kapatmak istediğinizi onaylayınız."
 
 #: packages/mainmenu-extension/src/index.ts:411
 msgid "You have shut down the Jupyter server. You can now close this tab."
-msgstr ""
+msgstr "Jupyter sunucusunu kapattınız. Şimdi bu sekmeyi kapatabilirsiniz."
 
 #: packages/mainmenu-extension/src/index.ts:415
 msgid "To use JupyterLab again, you will need to relaunch it."
-msgstr ""
+msgstr "JupyterLab'i tekrar kullanmak için yeniden çalıştırmanız gerekir."
 
 #: packages/mainmenu-extension/src/index.ts:422
 msgid "Server stopped"
-msgstr ""
+msgstr "Sunucu durduruldu"
 
 #: packages/mainmenu-extension/src/index.ts:441
 msgid "Log out of JupyterLab"
-msgstr ""
+msgstr "JupyterLab’dan çıkış yap"
 
 #: packages/mainmenu-extension/src/index.ts:515
 msgid "Kernel"
-msgstr ""
+msgstr "Çekirdek "
 
 #: packages/mainmenu-extension/src/index.ts:540
 msgid "Restart Kernel and Clear…"
-msgstr ""
+msgstr "Kerneli yeniden başlat ve konsolu temizle"
 
 #: packages/mainmenu-extension/src/index.ts:575
 msgid "Shut Down All Kernels…"
-msgstr ""
+msgstr "Bütün Çekirdekleri Kapat…"
 
 #: packages/mainmenu-extension/src/index.ts:581 packages/running/src/index.tsx:194
 msgid "Shut Down All?"
-msgstr ""
+msgstr "Tümünü Kapat?"
 
 #: packages/mainmenu-extension/src/index.ts:582
 msgid "Shut down all kernels?"
-msgstr ""
+msgstr "Bütün çekirdekler kapatılsın mı?"
 
 #: packages/mainmenu-extension/src/index.ts:585
 msgid "Shut Down All"
-msgstr ""
+msgstr "Tümünü Kapat"
 
 #: packages/mainmenu-extension/src/index.ts:625
 msgid "View"
-msgstr ""
+msgstr "Görünüm"
 
 #: packages/mainmenu-extension/src/index.ts:628
 msgid "Show Line Numbers"
-msgstr ""
+msgstr "Satır Numaralarını Göster"
 
 #: packages/mainmenu-extension/src/index.ts:666
 msgid "Wrap Words"
-msgstr ""
+msgstr "Kelimeleri kaydırmak"
 
 #: packages/mainmenu-extension/src/index.ts:726
 msgid "Run Selected"
-msgstr ""
+msgstr "Seçili Hücreyi Çalıştır"
 
 #: packages/mainmenu-extension/src/index.ts:734
 msgid "Run All"
-msgstr ""
+msgstr "Tümünü Çalıştır"
 
 #: packages/mainmenu-extension/src/index.ts:754
 msgid "Restart Kernel and Run All"
-msgstr ""
+msgstr "Çekirdeği Baştan Başlat ve Tümünü Çalıştır"
 
 #: packages/mainmenu-extension/src/index.ts:795 packages/settingeditor-extension/src/index.ts:141 packages/settingeditor-extension/src/index.ts:151
 msgid "Settings"
-msgstr ""
+msgstr "Ayarlar"
 
 #: packages/mainmenu-extension/src/index.ts:809
 msgid "Tabs"
-msgstr ""
+msgstr "Sekmeler"
 
 #: packages/mainmenu-extension/src/index.ts:846
 msgid "Activate Previously Used Tab"
-msgstr ""
+msgstr "Önceki Sekmeyi Aktifleştir"
 
 #: packages/markdownviewer-extension/src/index.ts:142
 msgid "Markdown Preview"
-msgstr ""
+msgstr "Markdown Önizleme"
 
 #: packages/markdownviewer-extension/src/index.ts:177
 msgid "Show Markdown Editor"
-msgstr ""
+msgstr "Markdown Editörünü Göster"
 
-#: packages/notebook-extension/src/index.ts:1004
+#: packages/notebook-extension/src/index.ts:1007
 msgid "Run Selected Cells and Insert Below"
-msgstr ""
+msgstr "Seçilen Hücreyi Çalıştır ve Aşağıya hücre ekle"
 
-#: packages/notebook-extension/src/index.ts:1017
+#: packages/notebook-extension/src/index.ts:1020
 msgid "Run Selected Text or Current Line in Console"
-msgstr ""
+msgstr "Konsolda Seçili metni veya hücreyi çalıştır"
 
-#: packages/notebook-extension/src/index.ts:1137 packages/notebook-extension/src/index.ts:2280
+#: packages/notebook-extension/src/index.ts:1140 packages/notebook-extension/src/index.ts:2283
 msgid "Run All Cells"
-msgstr ""
+msgstr "Tüm Hücreleri Çalıştır"
 
-#: packages/notebook-extension/src/index.ts:1150
+#: packages/notebook-extension/src/index.ts:1153
 msgid "Run All Above Selected Cell"
-msgstr ""
+msgstr "Bütün seçilen hücreleri çalıştır."
 
-#: packages/notebook-extension/src/index.ts:1170
+#: packages/notebook-extension/src/index.ts:1173
 msgid "Run Selected Cell and All Below"
-msgstr ""
+msgstr "Seçilen ve altındaki tüm hücreleri çalıştır"
 
-#: packages/notebook-extension/src/index.ts:1191
+#: packages/notebook-extension/src/index.ts:1194
 msgid "Render All Markdown Cells"
-msgstr ""
+msgstr "İşaretlenmiş Hücreleri Render Et"
 
-#: packages/notebook-extension/src/index.ts:1216
+#: packages/notebook-extension/src/index.ts:1219
 msgid "Close and Shut Down"
-msgstr ""
+msgstr "Kapat ve çalışmayı durdur"
 
-#: packages/notebook-extension/src/index.ts:1227
+#: packages/notebook-extension/src/index.ts:1230
 msgid "Shut down the notebook?"
-msgstr ""
+msgstr "Notebook kapatılsın mı?"
 
-#: packages/notebook-extension/src/index.ts:1241
+#: packages/notebook-extension/src/index.ts:1244
 msgid "Trust Notebook"
-msgstr ""
+msgstr "Notebook Güvenli"
 
-#: packages/notebook-extension/src/index.ts:1255
+#: packages/notebook-extension/src/index.ts:1258
 msgid "Export Notebook: %1"
-msgstr ""
+msgstr "Notebooku Çıkart: %1"
 
-#: packages/notebook-extension/src/index.ts:1290 packages/notebook-extension/src/index.ts:2214
+#: packages/notebook-extension/src/index.ts:1293 packages/notebook-extension/src/index.ts:2217
 msgid "Restart Kernel and Clear All Outputs…"
-msgstr ""
+msgstr "Kerneli yeniden başlat ve bütün çıktıları temizle."
 
-#: packages/notebook-extension/src/index.ts:1305
+#: packages/notebook-extension/src/index.ts:1308
 msgid "Restart Kernel and Run up to Selected Cell…"
-msgstr ""
+msgstr "Çekirdeği Yeniden Başlat ve Seçilen Hücreye Kadar Çalıştır..."
 
-#: packages/notebook-extension/src/index.ts:1332 packages/notebook-extension/src/index.ts:2282
+#: packages/notebook-extension/src/index.ts:1335 packages/notebook-extension/src/index.ts:2285
 msgid "Restart Kernel and Run All Cells…"
-msgstr ""
+msgstr "Çekirdeği Yeniden Başlatın ve Tüm Hücreleri Çalıştırın…"
 
-#: packages/notebook-extension/src/index.ts:1352 packages/notebook-extension/src/index.ts:2125
+#: packages/notebook-extension/src/index.ts:1355 packages/notebook-extension/src/index.ts:2128
 msgid "Clear All Outputs"
-msgstr ""
+msgstr "Tüm Çıktıları Temizle"
 
-#: packages/notebook-extension/src/index.ts:1363
+#: packages/notebook-extension/src/index.ts:1366
 msgid "Clear Outputs"
-msgstr ""
+msgstr "Çıktıyı temizle"
 
-#: packages/notebook-extension/src/index.ts:1391
+#: packages/notebook-extension/src/index.ts:1394
 msgid "Change to Code Cell Type"
-msgstr ""
+msgstr "Kod Hücre Türüne Geçiş"
 
-#: packages/notebook-extension/src/index.ts:1402
+#: packages/notebook-extension/src/index.ts:1405
 msgid "Change to Markdown Cell Type"
-msgstr ""
+msgstr "Markdown Hücre Türüne Geçiş"
 
-#: packages/notebook-extension/src/index.ts:1413
+#: packages/notebook-extension/src/index.ts:1416
 msgid "Change to Raw Cell Type"
-msgstr ""
+msgstr "Ham Hücre Tipini Değiştir"
 
-#: packages/notebook-extension/src/index.ts:1424
+#: packages/notebook-extension/src/index.ts:1427
 msgid "Cut Cells"
-msgstr ""
+msgstr "Hücreyi Kes"
 
-#: packages/notebook-extension/src/index.ts:1435
+#: packages/notebook-extension/src/index.ts:1438
 msgid "Copy Cells"
-msgstr ""
+msgstr "Hücreyi yapıştır"
 
-#: packages/notebook-extension/src/index.ts:1446
+#: packages/notebook-extension/src/index.ts:1449
 msgid "Paste Cells Below"
-msgstr ""
+msgstr "Hücreleri Aşağı Yapıştır"
 
-#: packages/notebook-extension/src/index.ts:1457
+#: packages/notebook-extension/src/index.ts:1460
 msgid "Paste Cells Above"
-msgstr ""
+msgstr "Hücreleri Yukarı Yapıştır"
 
-#: packages/notebook-extension/src/index.ts:1468
+#: packages/notebook-extension/src/index.ts:1471
 msgid "Paste Cells and Replace"
-msgstr ""
+msgstr "Hücreleri Yapıştır ve Değiştir"
 
-#: packages/notebook-extension/src/index.ts:1479
+#: packages/notebook-extension/src/index.ts:1482
 msgid "Delete Cells"
-msgstr ""
+msgstr "Hücreleri Sil"
 
-#: packages/notebook-extension/src/index.ts:1490
+#: packages/notebook-extension/src/index.ts:1493
 msgid "Split Cell"
-msgstr ""
+msgstr "Hücreleri Böl"
 
-#: packages/notebook-extension/src/index.ts:1501
+#: packages/notebook-extension/src/index.ts:1504
 msgid "Merge Selected Cells"
-msgstr ""
+msgstr "Seçilen hücreleri birleştir"
 
-#: packages/notebook-extension/src/index.ts:1512
+#: packages/notebook-extension/src/index.ts:1515
 msgid "Insert Cell Above"
-msgstr ""
+msgstr "Yukarıya Hücre Ekle"
 
-#: packages/notebook-extension/src/index.ts:1523
+#: packages/notebook-extension/src/index.ts:1526
 msgid "Insert Cell Below"
-msgstr ""
+msgstr "Aşağıya Hücre Ekle"
 
-#: packages/notebook-extension/src/index.ts:1534
+#: packages/notebook-extension/src/index.ts:1537
 msgid "Select Cell Above"
-msgstr ""
+msgstr "Yukarıdaki Hücreyi Seçin"
 
-#: packages/notebook-extension/src/index.ts:1545
+#: packages/notebook-extension/src/index.ts:1548
 msgid "Select Cell Below"
-msgstr ""
+msgstr "Aşağıdaki Hücreyi Seçin"
 
-#: packages/notebook-extension/src/index.ts:1556
+#: packages/notebook-extension/src/index.ts:1559
 msgid "Extend Selection Above"
-msgstr ""
+msgstr "Seçimi Yukarı Genişlet"
 
-#: packages/notebook-extension/src/index.ts:1567
+#: packages/notebook-extension/src/index.ts:1570
 msgid "Extend Selection to Top"
-msgstr ""
+msgstr "Seçimi Tepeye Genişlet"
 
-#: packages/notebook-extension/src/index.ts:1578
+#: packages/notebook-extension/src/index.ts:1581
 msgid "Extend Selection Below"
-msgstr ""
+msgstr "Seçimi Aşağı Genişlet"
 
-#: packages/notebook-extension/src/index.ts:1589
+#: packages/notebook-extension/src/index.ts:1592
 msgid "Extend Selection to Bottom"
-msgstr ""
+msgstr "Seçimi En Alta Genişlet"
 
-#: packages/notebook-extension/src/index.ts:1600
+#: packages/notebook-extension/src/index.ts:1603
 msgid "Select All Cells"
-msgstr ""
+msgstr "Tüm Hücreleri Seç"
 
-#: packages/notebook-extension/src/index.ts:1611
+#: packages/notebook-extension/src/index.ts:1614
 msgid "Deselect All Cells"
-msgstr ""
+msgstr "Tüm Hücrelerin Seçimini Kaldır"
 
-#: packages/notebook-extension/src/index.ts:1622
+#: packages/notebook-extension/src/index.ts:1625
 msgid "Move Cells Up"
-msgstr ""
+msgstr "Hücreleri Yukarı Taşı"
 
-#: packages/notebook-extension/src/index.ts:1633
+#: packages/notebook-extension/src/index.ts:1636
 msgid "Move Cells Down"
-msgstr ""
+msgstr "Hücreleri Aşağı Taşı"
 
-#: packages/notebook-extension/src/index.ts:1644
+#: packages/notebook-extension/src/index.ts:1647
 msgid "Toggle All Line Numbers"
-msgstr ""
+msgstr "Tüm Satır Numaralarını Değiştir"
 
-#: packages/notebook-extension/src/index.ts:1655
+#: packages/notebook-extension/src/index.ts:1658
 msgid "Enter Command Mode"
-msgstr ""
+msgstr "Komut Moduna Geçin"
 
-#: packages/notebook-extension/src/index.ts:1666
+#: packages/notebook-extension/src/index.ts:1669
 msgid "Enter Edit Mode"
-msgstr ""
+msgstr "Düzenleme Moduna Geçin"
 
-#: packages/notebook-extension/src/index.ts:1677
+#: packages/notebook-extension/src/index.ts:1680
 msgid "Undo Cell Operation"
-msgstr ""
+msgstr "Hücre İşlemini Geri Al"
 
-#: packages/notebook-extension/src/index.ts:1688
+#: packages/notebook-extension/src/index.ts:1691
 msgid "Redo Cell Operation"
-msgstr ""
+msgstr "Hücre İşlemini Tekrar Yap"
 
-#: packages/notebook-extension/src/index.ts:1713
+#: packages/notebook-extension/src/index.ts:1716
 msgid "Reconnect To Kernel"
-msgstr ""
+msgstr "Sunucuya Yeniden Bağlan"
 
-#: packages/notebook-extension/src/index.ts:1730
+#: packages/notebook-extension/src/index.ts:1733
 msgid "Create New View for Output"
-msgstr ""
+msgstr "Çıktı için yeni görünüm oluştur"
 
-#: packages/notebook-extension/src/index.ts:1784 packages/notebook-extension/src/index.ts:2235
+#: packages/notebook-extension/src/index.ts:1787 packages/notebook-extension/src/index.ts:2238
 msgid "New Console for Notebook"
-msgstr ""
+msgstr "Not defteri için yeni konsol"
 
-#: packages/notebook-extension/src/index.ts:1801
+#: packages/notebook-extension/src/index.ts:1804
 msgid "Change to Heading 1"
-msgstr ""
+msgstr "1. Seviye Başlığa Dönüştür"
 
-#: packages/notebook-extension/src/index.ts:1812
+#: packages/notebook-extension/src/index.ts:1815
 msgid "Change to Heading 2"
-msgstr ""
+msgstr "2. Seviye Başlığa Dönüştür"
 
-#: packages/notebook-extension/src/index.ts:1823
+#: packages/notebook-extension/src/index.ts:1826
 msgid "Change to Heading 3"
-msgstr ""
+msgstr "3. Seviye Başlığa Dönüştür"
 
-#: packages/notebook-extension/src/index.ts:1834
+#: packages/notebook-extension/src/index.ts:1837
 msgid "Change to Heading 4"
-msgstr ""
+msgstr "4. Seviye Başlığa Dönüştür"
 
-#: packages/notebook-extension/src/index.ts:1845
+#: packages/notebook-extension/src/index.ts:1848
 msgid "Change to Heading 5"
-msgstr ""
+msgstr "5. Seviye Başlığa Dönüştür"
 
-#: packages/notebook-extension/src/index.ts:1856
+#: packages/notebook-extension/src/index.ts:1859
 msgid "Change to Heading 6"
-msgstr ""
+msgstr "6. Seviye Başlığa Dönüştür"
 
-#: packages/notebook-extension/src/index.ts:1867
+#: packages/notebook-extension/src/index.ts:1870
 msgid "Collapse Selected Code"
-msgstr ""
+msgstr "Seçili Kodu Daralt"
 
-#: packages/notebook-extension/src/index.ts:1878
+#: packages/notebook-extension/src/index.ts:1881
 msgid "Expand Selected Code"
-msgstr ""
+msgstr "Seçili Kodu Genişlet"
 
-#: packages/notebook-extension/src/index.ts:1889
+#: packages/notebook-extension/src/index.ts:1892
 msgid "Collapse All Code"
-msgstr ""
+msgstr "Tümü Kodları Daralt"
 
-#: packages/notebook-extension/src/index.ts:1900
+#: packages/notebook-extension/src/index.ts:1903
 msgid "Expand All Code"
-msgstr ""
+msgstr "Tüm Kodları Göster"
 
-#: packages/notebook-extension/src/index.ts:1911
+#: packages/notebook-extension/src/index.ts:1914
 msgid "Collapse Selected Outputs"
-msgstr ""
+msgstr "Seçilen Çıktıları Kapat"
 
-#: packages/notebook-extension/src/index.ts:1922
+#: packages/notebook-extension/src/index.ts:1925
 msgid "Expand Selected Outputs"
-msgstr ""
+msgstr "Seçilen Çıktıları Genişlet"
 
-#: packages/notebook-extension/src/index.ts:1933
+#: packages/notebook-extension/src/index.ts:1936
 msgid "Collapse All Outputs"
-msgstr ""
+msgstr "Tüm Çıktıları Kapat"
 
-#: packages/notebook-extension/src/index.ts:1944
+#: packages/notebook-extension/src/index.ts:1947
 msgid "Expand All Outputs"
-msgstr ""
+msgstr "Tüm Çıktıları Göster"
 
-#: packages/notebook-extension/src/index.ts:1955
+#: packages/notebook-extension/src/index.ts:1958
 msgid "Enable Scrolling for Outputs"
-msgstr ""
+msgstr "Çıkışlar için kaydırmayı etkinleştir"
 
-#: packages/notebook-extension/src/index.ts:1966
+#: packages/notebook-extension/src/index.ts:1969
 msgid "Disable Scrolling for Outputs"
-msgstr ""
+msgstr "Çıktılar İçin Kaydırmayı Devre Dışı Bırak"
 
-#: packages/notebook-extension/src/index.ts:1977
+#: packages/notebook-extension/src/index.ts:1980
 msgid "Select current running or last run cell"
-msgstr ""
+msgstr "Şu anda çalışan veya en son çalışmış olan hücreyi seç"
 
-#: packages/notebook-extension/src/index.ts:1988
+#: packages/notebook-extension/src/index.ts:1991
 msgid "Replace Selection in Notebook Cell"
-msgstr ""
+msgstr "Not defteri hücresindeki seçimi değiştir"
 
-#: packages/notebook-extension/src/index.ts:2009 packages/notebook-extension/src/index.ts:2187
+#: packages/notebook-extension/src/index.ts:2012 packages/notebook-extension/src/index.ts:2190
 msgid "Notebook Operations"
-msgstr ""
+msgstr "Not defteri işlemleri"
 
-#: packages/notebook-extension/src/index.ts:2042
+#: packages/notebook-extension/src/index.ts:2045
 msgid "Notebook Cell Operations"
-msgstr ""
+msgstr "Not Defteri Hücre İşlemleri"
 
-#: packages/notebook-extension/src/index.ts:2123
+#: packages/notebook-extension/src/index.ts:2126
 msgid "Clear Output"
-msgstr ""
+msgstr "Çıktıyı temizle"
 
-#: packages/notebook-extension/src/index.ts:2142
+#: packages/notebook-extension/src/index.ts:2145
 msgid "Close and Shutdown Notebook"
-msgstr ""
+msgstr "Not Defterini Kapat"
 
-#: packages/notebook-extension/src/index.ts:2146
+#: packages/notebook-extension/src/index.ts:2149
 msgid "Shut down the Notebook?"
-msgstr ""
+msgstr "Notebook Kapatılsın Mı?"
 
-#: packages/notebook-extension/src/index.ts:2161
+#: packages/notebook-extension/src/index.ts:2164
 msgid "Export Notebook As…"
-msgstr ""
+msgstr "Not Defterini Farklı Dışa Aktar…"
 
-#: packages/notebook-extension/src/index.ts:2279 packages/notebook-extension/src/index.ts:978
+#: packages/notebook-extension/src/index.ts:2282 packages/notebook-extension/src/index.ts:981
 msgid "Run Selected Cells"
-msgstr ""
+msgstr "Seçilen Hücreleri Çalıştır"
 
-#: packages/notebook-extension/src/index.ts:2422
+#: packages/notebook-extension/src/index.ts:2425
 msgid "For Notebook: %1"
-msgstr ""
+msgstr "Not Defteri için: %1"
 
-#: packages/notebook-extension/src/index.ts:2423
+#: packages/notebook-extension/src/index.ts:2426
 msgid "For Notebook:"
-msgstr ""
+msgstr "Not Defteri İçin:"
 
-#: packages/notebook-extension/src/index.ts:2508
+#: packages/notebook-extension/src/index.ts:2511
 msgid "HTML"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2509
-msgid "LaTeX"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2510 packages/notebook/src/default-toolbar.tsx:344
-msgid "Markdown"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2511 packages/notebook-extension/src/index.ts:465
-msgid "PDF"
-msgstr ""
+msgstr "HTML"
 
 #: packages/notebook-extension/src/index.ts:2512
+msgid "LaTeX"
+msgstr "LaTeX"
+
+#: packages/notebook-extension/src/index.ts:2513 packages/notebook/src/default-toolbar.tsx:344
+msgid "Markdown"
+msgstr "Markdown"
+
+#: packages/notebook-extension/src/index.ts:2514 packages/notebook-extension/src/index.ts:468
+msgid "PDF"
+msgstr "PDF"
+
+#: packages/notebook-extension/src/index.ts:2515
 msgid "ReStructured Text"
-msgstr ""
+msgstr "ReStructured Text"
 
-#: packages/notebook-extension/src/index.ts:2513
+#: packages/notebook-extension/src/index.ts:2516
 msgid "Executable Script"
-msgstr ""
+msgstr "Çalıştırılabilir Komut Dosyası"
 
-#: packages/notebook-extension/src/index.ts:2514
+#: packages/notebook-extension/src/index.ts:2517
 msgid "Reveal.js Slides"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:466
-msgid "Slides"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:467
-msgid "Script"
-msgstr ""
+msgstr "Reveal.js Slaytları"
 
 #: packages/notebook-extension/src/index.ts:469
+msgid "Slides"
+msgstr "Slaytlar"
+
+#: packages/notebook-extension/src/index.ts:470
+msgid "Script"
+msgstr "Komut dizisi"
+
+#: packages/notebook-extension/src/index.ts:472
 msgid "Custom"
-msgstr ""
+msgstr "Özel"
 
-#: packages/notebook-extension/src/index.ts:491
+#: packages/notebook-extension/src/index.ts:494
 msgid "Notebook Tools"
-msgstr ""
+msgstr "Not Defteri Araçları"
 
-#: packages/notebook-extension/src/index.ts:735
+#: packages/notebook-extension/src/index.ts:738
 msgid "New Notebook"
-msgstr ""
+msgstr "Yeni Not Defteri"
 
-#: packages/notebook-extension/src/index.ts:739
+#: packages/notebook-extension/src/index.ts:742
 msgid "Create a new notebook"
-msgstr ""
+msgstr "Yeni bir not defteri oluştur"
 
-#: packages/notebook-extension/src/index.ts:991
+#: packages/notebook-extension/src/index.ts:994
 msgid "Run Selected Cells and Don't Advance"
-msgstr ""
+msgstr "Sadece seçilen hücreleri çalıştır"
 
 #: packages/notebook/src/actions.tsx:1387
 msgid "A trusted Jupyter notebook may execute hidden malicious code when you openit."
-msgstr ""
+msgstr "Güvenilen \"Jupyter notebook\" açıldığı takdirde gizli ve kötü amaçlı bir kod parçasını çalıştırabilir."
 
 #: packages/notebook/src/actions.tsx:1391
 msgid "Selecting trust will re-render this notebook in a trusted state."
-msgstr ""
+msgstr "Güven seçeneğinin seçilmesi, bu not defterinin durumunu güvenilir olarak güncelleyecektir."
 
 #: packages/notebook/src/actions.tsx:1395
-msgid "For more information, see the <a href=\"https://jupyter-notebook.readthedocs.io/en/stable/security.html\">%1</a>"
-msgstr ""
+msgid "For more information, see the <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>"
+msgstr "Daha fazla bilgi için, linke göz atın <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>"
 
 #: packages/notebook/src/actions.tsx:1397
 msgid "Jupyter security documentation"
-msgstr ""
+msgstr "Jupyter güvenlik belgeleri"
 
 #: packages/notebook/src/actions.tsx:1404
 msgid "Notebook is already trusted"
-msgstr ""
+msgstr "Notebook a önceden güvenilmişti"
 
 #: packages/notebook/src/actions.tsx:1411
 msgid "Trust this notebook?"
-msgstr ""
+msgstr "Bu not defterine güvenilsin mi?"
 
 #: packages/notebook/src/actions.tsx:1599
 msgid "Kernel Terminating"
-msgstr ""
+msgstr "Çekirdek Sonlandırma"
 
 #: packages/notebook/src/actions.tsx:1600
 msgid "The kernel for %1 appears to be terminating. You can not run any cell for now."
-msgstr ""
+msgstr " %1 için çekirdek sonlandırılıyor görünüyor. Hiçbir hücreyi çalıştıramazsınız."
 
 #: packages/notebook/src/default-toolbar.tsx:116
 msgid "Insert a cell below"
-msgstr ""
+msgstr "Aşağıya hücre ekle"
 
 #: packages/notebook/src/default-toolbar.tsx:133
 msgid "Cut the selected cells"
-msgstr ""
+msgstr "Seçili hücreleri kes"
 
 #: packages/notebook/src/default-toolbar.tsx:150
 msgid "Copy the selected cells"
-msgstr ""
+msgstr "Seçili hücreleri kopyala"
 
 #: packages/notebook/src/default-toolbar.tsx:167
 msgid "Paste cells from the clipboard"
-msgstr ""
+msgstr "Panodan hücreleri yapıştır"
 
 #: packages/notebook/src/default-toolbar.tsx:184
 msgid "Run the selected cells and advance"
-msgstr ""
+msgstr "Seçili hücreleri çalıştır ve ilerle"
 
 #: packages/notebook/src/default-toolbar.tsx:208
 msgid "Restart the kernel, then re-run the whole notebook"
-msgstr ""
+msgstr "Çekirdeği tekrar başlat ve not defterini baştan çalıştır"
 
 #: packages/notebook/src/default-toolbar.tsx:340
 msgid "Cell type"
-msgstr ""
+msgstr "Hücre tipi"
 
 #: packages/notebook/src/default-toolbar.tsx:343
 msgid "Code"
-msgstr ""
+msgstr "Kod"
 
 #: packages/notebook/src/default-toolbar.tsx:345
 msgid "Raw"
-msgstr ""
+msgstr "İşlenmemiş"
 
 #: packages/notebook/src/default-toolbar.tsx:85
 msgid "Save the notebook contents and create checkpoint"
-msgstr ""
+msgstr "Not defterini kaydet ve kontrol noktası oluştur"
 
 #: packages/notebook/src/model.ts:263
 msgid "This notebook has been converted from an older notebook format (v%1)\n"
@@ -3120,7 +3230,10 @@ msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "The next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n"
 "'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\n"
 "close the notebook without saving it."
-msgstr ""
+msgstr "Bu not defteri daha eski bir not defteri formatından (v%1) \n"
+"geçerli not defteri formatına (v%2) dönüştürüldü.\n"
+"Not defterini sonraki kaydedişinizde şu an geçerli not defteri formatı kullanılacak. (vthis._nbformat)\n"
+"'Jupyter'in eski versiyonları yeni formatı okuyamayabilir.' Orijinal formatı korumak için not defterini kaydetmeden kapatın."
 
 #: packages/notebook/src/model.ts:273
 msgid "This notebook has been converted from an newer notebook format (v%1)\n"
@@ -3128,164 +3241,169 @@ msgid "This notebook has been converted from an newer notebook format (v%1)\n"
 "The next time you save this notebook, the current notebook format (v%2) will be used.\n"
 "Some features of the original notebook may not be available.' To preserve the original format version,\n"
 "close the notebook without saving it."
-msgstr ""
+msgstr "Bu not defteri daha yeni bir not defteri biçiminden dönüştürüldü (v %1)\n"
+"geçerli not defteri biçimine (v %2).\n"
+"Bu not defterini bir sonraki kaydettiğinizde, geçerli not defteri biçimi (v %2) kullanılacaktır.\n"
+"Orijinal dizüstü bilgisayarın bazı özellikleri mevcut olmayabilir.'Orijinal format sürümünü korumak için,\n"
+"not defterini kaydetmeden kapatın."
 
 #: packages/notebook/src/model.ts:284
 msgid "Notebook converted"
-msgstr ""
+msgstr "Not Defteri dönüştürüldü"
 
 #: packages/notebook/src/modestatus.tsx:29
 msgid "Mode: %1"
-msgstr ""
+msgstr "Mod: %1"
 
 #: packages/notebook/src/modestatus.tsx:74
 msgid "Notebook is in %1 mode"
-msgstr ""
+msgstr "Defter %1 modunda"
 
 #: packages/notebook/src/notebooktools.ts:587
 msgid "Notebook Metadata"
-msgstr ""
+msgstr "Not defteri meta verisi"
 
 #: packages/notebook/src/notebooktools.ts:620
 msgid "Cell Metadata"
-msgstr ""
+msgstr "Hücre meta verisi"
 
 #: packages/notebook/src/notebooktools.ts:884
 msgid "Slide Type"
-msgstr ""
+msgstr "Slayt Türü"
 
 #: packages/notebook/src/notebooktools.ts:887
 msgid "Slide"
-msgstr ""
+msgstr "Slayt"
 
 #: packages/notebook/src/notebooktools.ts:888
 msgid "Sub-Slide"
-msgstr ""
+msgstr "Alt Slayt"
 
 #: packages/notebook/src/notebooktools.ts:889
 msgid "Fragment"
-msgstr ""
+msgstr "Bölüm"
 
 #: packages/notebook/src/notebooktools.ts:89
 msgid "Advanced Tools"
-msgstr ""
+msgstr "Gelişmiş Araçlar"
 
 #: packages/notebook/src/notebooktools.ts:890
 msgid "Skip"
-msgstr ""
+msgstr "Geç"
 
 #: packages/notebook/src/notebooktools.ts:891
 msgid "Notes"
-msgstr ""
+msgstr "Notlar"
 
 #: packages/notebook/src/notebooktools.ts:929
 msgid "Raw NBConvert Format"
-msgstr ""
+msgstr "Raw NBConvert Format"
 
-#: packages/notebook/src/panel.ts:208
+#: packages/notebook/src/panel.ts:203
 msgid "Kernel Restarting"
-msgstr ""
+msgstr "Kernel Yeniden Başlatılıyor"
 
-#: packages/notebook/src/panel.ts:209
+#: packages/notebook/src/panel.ts:204
 msgid "The kernel for %1 appears to have died. It will restart automatically."
-msgstr ""
+msgstr "Kernel %1 görünüşe göre kapandı. Otomatik olarak yeniden başlatılacak."
 
 #: packages/notebook/src/truststatus.tsx:26
 msgid "Notebook trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Not defteri güvenilir: %2 hücrenin %1'i güvenilir."
 
 #: packages/notebook/src/truststatus.tsx:35
 msgid "Active cell trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Güvenilir aktif hücre: %2 hücreden %1'i güvenilir."
 
 #: packages/notebook/src/truststatus.tsx:44
 msgid "Notebook not trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Not defteri güvenilir değil: %2 hücreden %1'i güvenilir."
 
-#: packages/property-inspector/src/index.ts:171
+#: packages/property-inspector/src/index.ts:172
 msgid "No properties to inspect."
-msgstr ""
+msgstr "İncelenecek özellikler yok."
 
 #: packages/rendermime-extension/src/index.ts:54
 msgid "Handle Local Link"
-msgstr ""
+msgstr "Yerel Bağlantıyı Yönet"
 
 #: packages/rendermime/src/renderers.ts:74
 msgid "This HTML output contains inline scripts. Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
-msgstr ""
+msgstr "Bu HTML çıktısı komut dosyaları içeriyor. JupyterLab oturumunuzda bilinmeyen bir Javascript'i çalıştırmak istediğinizden emin misiniz?"
 
-#: packages/rendermime/src/widgets.ts:420
+#: packages/rendermime/src/widgets.ts:421
 msgid "JavaScript output is disabled in JupyterLab"
-msgstr ""
+msgstr "JupyterLab'te JavaScript çıktısı devre dışı bırakıldı"
 
 #: packages/running-extension/src/index.ts:136
 msgid "Path: %1\n"
 "Kernel: %2"
-msgstr ""
+msgstr "Dosya yolu: %1\n"
+"Çekirdek: %2"
 
 #: packages/running-extension/src/index.ts:56
 msgid "Running Terminals and Kernels"
-msgstr ""
+msgstr "Çalışan Terminaller ve Çekirdekler"
 
 #: packages/running-extension/src/index.ts:91
 msgid "Kernels"
-msgstr ""
+msgstr "Çekirdekler"
 
 #: packages/running/src/index.tsx:141 packages/running/src/index.tsx:198
 msgid "SHUT DOWN"
-msgstr ""
+msgstr "KAPAT"
 
 #: packages/running/src/index.tsx:215
 msgid "Shut Down All…"
-msgstr ""
+msgstr "Tümünü Kapat…"
 
 #: packages/running/src/index.tsx:237
 msgid "Refresh List"
-msgstr ""
+msgstr "Listeyi Yenile"
 
 #: packages/settingeditor-extension/src/index.ts:147
 msgid "Advanced Settings Editor"
-msgstr ""
+msgstr "Gelişmiş Ayarlar Editorü"
 
 #: packages/settingeditor-extension/src/index.ts:161
 msgid "Revert User Settings"
-msgstr ""
+msgstr "Kullanıcı Ayalarını Geri Getir"
 
 #: packages/settingeditor-extension/src/index.ts:168
 msgid "Save User Settings"
-msgstr ""
+msgstr "Kullanıcı Ayarlarını Kaydet"
 
 #: packages/settingeditor/src/inspector.ts:40
 msgid "Any errors will be listed here"
-msgstr ""
+msgstr "Tüm hatalar burada listelenecek"
 
 #: packages/settingeditor/src/inspector.ts:97
 msgid "No errors found"
-msgstr ""
+msgstr "Hata bulunamadı"
 
 #: packages/settingeditor/src/plugineditor.ts:145
 msgid "You have unsaved changes."
-msgstr ""
+msgstr "Kaydedilmemiş değişiklikler var."
 
 #: packages/settingeditor/src/plugineditor.ts:146
 msgid "Do you want to leave without saving?"
-msgstr ""
+msgstr "Kaydetmeden çıkmak istiyor musunuz?"
 
 #: packages/settingeditor/src/plugineditor.ts:269
 msgid "Your changes were not saved."
-msgstr ""
+msgstr "Değişiklikleriniz kaydedilmedi."
 
 #: packages/settingeditor/src/raweditor.ts:387
 msgid "System Defaults"
-msgstr ""
+msgstr "Sistem Varsayılanı"
 
 #: packages/settingeditor/src/raweditor.ts:428
 msgid "User Preferences"
-msgstr ""
+msgstr "Kullanıcı Tercihleri"
 
 #: packages/settingeditor/src/settingeditor.tsx:464
 msgid "Select a plugin from the list to view and edit its preferences."
-msgstr ""
+msgstr "Listeden bir eklenti seçin ve ayarlarını düzenleyin."
 
 #: packages/shortcuts-extension/src/index.ts:82
 msgid "Note: To disable a system default shortcut,\n"
@@ -3302,161 +3420,172 @@ msgid "Note: To disable a system default shortcut,\n"
 "List of commands followed by keyboard shortcuts:\n"
 "%1\n\n"
 "List of keyboard shortcuts:"
-msgstr ""
+msgstr "Not: Varsayılan sistem kısayolunu devre dışı bırakmak için, Kullanıcı Tercihleri'ne kopyalayın ve \"disabled\" anahtarını ekleyin, örneğin:\n"
+"{\n"
+"    \"command\": \"application:activate-next-tab\",\n"
+"    \"keys\": [\n"
+"        \"Ctrl Shift ]\"\n"
+"    ],\n"
+"    \"selector\": \"body\",\n"
+"    \"disabled\": true\n"
+"}\n\n"
+"Komut listesi ve ardından klavye kısayolları:\n"
+"%1\n\n"
+"Klavye kısayolları listesi:"
 
 #: packages/statusbar-extension/src/index.ts:86
 msgid "Show Status Bar"
-msgstr ""
+msgstr "Durum Çubuğunu Göster"
 
 #: packages/statusbar/src/defaults/kernelStatus.tsx:128
 msgid "No Kernel!"
-msgstr ""
+msgstr "Çekirdek yapı bulunamadı"
 
 #: packages/statusbar/src/defaults/kernelStatus.tsx:38
 msgid "Change kernel for %1"
-msgstr ""
+msgstr "%1 için çekirdeği değiştir"
 
 #: packages/statusbar/src/defaults/lineCol.tsx:140
 msgid "Go to line number between 1 and %1"
-msgstr ""
+msgstr "Satır 1 ve %1 arasına git"
 
 #: packages/statusbar/src/defaults/lineCol.tsx:238
 msgid "Ln %1, Col %2"
-msgstr ""
+msgstr "Satır %1, Kolon %2"
 
 #: packages/statusbar/src/defaults/lineCol.tsx:239
 msgid "Go to line number…"
-msgstr ""
+msgstr "Satır numarasına git…"
 
 #: packages/statusbar/src/defaults/memoryUsage.tsx:46
 msgid "Mem: %1 %2"
-msgstr ""
+msgstr "Mem: %1 %2"
 
 #: packages/statusbar/src/defaults/memoryUsage.tsx:52
 msgid "Mem: %1 / %2 %3"
-msgstr ""
+msgstr "Mem: %1 / %2 %3"
 
 #: packages/statusbar/src/defaults/memoryUsage.tsx:61 packages/statusbar/src/defaults/memoryUsage.tsx:66
 msgid "Current mem usage"
-msgstr ""
+msgstr "Güncel Bellek Kullanımı"
 
 #: packages/statusbar/src/defaults/runningSessions.tsx:116
 msgid "%1 Terminals, %2 Kernel sessions"
-msgstr ""
+msgstr "%1 Terminalleri, %2 Çekirdek oturumları"
 
 #: packages/tabmanager-extension/src/index.ts:39
 msgid "Open Tabs"
-msgstr ""
+msgstr "Açılan Sekmeler"
 
 #: packages/terminal-extension/src/index.ts:175
 msgid "Terminal Theme"
-msgstr ""
+msgstr "Terminal Teması"
 
-#: packages/terminal-extension/src/index.ts:180 packages/terminal-extension/src/index.ts:232
+#: packages/terminal-extension/src/index.ts:180 packages/terminal-extension/src/index.ts:236
 msgid "Inherit"
-msgstr ""
+msgstr "Devral"
 
-#: packages/terminal-extension/src/index.ts:186 packages/terminal-extension/src/index.ts:239
+#: packages/terminal-extension/src/index.ts:188 packages/terminal-extension/src/index.ts:243
 msgid "Light"
-msgstr ""
+msgstr "Açık"
 
-#: packages/terminal-extension/src/index.ts:190 packages/terminal-extension/src/index.ts:244
+#: packages/terminal-extension/src/index.ts:194 packages/terminal-extension/src/index.ts:248
 msgid "Dark"
-msgstr ""
+msgstr "Koyu"
 
-#: packages/terminal-extension/src/index.ts:209
+#: packages/terminal-extension/src/index.ts:213
 msgid "Shutdown Terminal"
-msgstr ""
+msgstr "Terminali Kapat"
 
-#: packages/terminal-extension/src/index.ts:283
+#: packages/terminal-extension/src/index.ts:287
 msgid "Terminals"
-msgstr ""
+msgstr "Terminaller"
 
-#: packages/terminal-extension/src/index.ts:328
+#: packages/terminal-extension/src/index.ts:332
 msgid "New Terminal"
-msgstr ""
+msgstr "Yeni terminal"
 
-#: packages/terminal-extension/src/index.ts:328 packages/terminal-extension/src/index.ts:87 packages/terminal/src/widget.ts:76
+#: packages/terminal-extension/src/index.ts:332 packages/terminal-extension/src/index.ts:87 packages/terminal/src/widget.ts:76
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
-#: packages/terminal-extension/src/index.ts:329
+#: packages/terminal-extension/src/index.ts:333
 msgid "Start a new terminal session"
-msgstr ""
+msgstr "Yeni bir terminal oturumu başlatın"
 
-#: packages/terminal-extension/src/index.ts:378
+#: packages/terminal-extension/src/index.ts:382
 msgid "Refresh Terminal"
-msgstr ""
+msgstr "Terminali Yenile"
 
-#: packages/terminal-extension/src/index.ts:379
+#: packages/terminal-extension/src/index.ts:383
 msgid "Refresh the current terminal session"
-msgstr ""
+msgstr "Mevcut terminal oturumunu yenile"
 
-#: packages/terminal-extension/src/index.ts:399
+#: packages/terminal-extension/src/index.ts:403
 msgid "Increase Terminal Font Size"
-msgstr ""
+msgstr "Kullanıcı Arayüzü Yazı Boyutunu Büyüt"
 
-#: packages/terminal-extension/src/index.ts:413
+#: packages/terminal-extension/src/index.ts:417
 msgid "Decrease Terminal Font Size"
-msgstr ""
+msgstr "Kullanıcı Arayüzü Yazı Boyutunu Küçült"
 
-#: packages/terminal-extension/src/index.ts:430
+#: packages/terminal-extension/src/index.ts:434
 msgid "Use Terminal Theme: %1"
-msgstr ""
+msgstr "Terminal Temasını Kullan: %1"
 
-#: packages/terminal-extension/src/index.ts:433
+#: packages/terminal-extension/src/index.ts:437
 msgid "Set the terminal theme"
-msgstr ""
+msgstr "Terminal temasını ayarla"
 
 #: packages/terminal/src/widget.ts:97
 msgid "Terminal %1"
-msgstr ""
+msgstr "Terminal %1"
 
 #: packages/theme-dark-extension/src/index.ts:28
 msgid "JupyterLab Dark"
-msgstr ""
+msgstr "JupyterLab Koyu"
 
 #: packages/theme-light-extension/src/index.ts:28
 msgid "JupyterLab Light"
-msgstr ""
+msgstr "JupyterLab Açık"
 
 #: packages/toc-extension/src/index.ts:63 packages/toc/src/toc.tsx:113
 msgid "Table of Contents"
-msgstr ""
+msgstr "İçindekiler Tablosu"
 
 #: packages/toc/src/generators/markdown/toolbar_generator.tsx:64 packages/toc/src/generators/markdown/toolbar_generator.tsx:65 packages/toc/src/generators/notebook/toolbar_generator.tsx:212 packages/toc/src/generators/notebook/toolbar_generator.tsx:213
 msgid "Toggle Auto-Numbering"
-msgstr ""
+msgstr "Otomatik Numaralandırmaya Geçiş Yap"
 
 #: packages/toc/src/generators/notebook/tagstool/index.tsx:186
 msgid "No Tags Available"
-msgstr ""
+msgstr "Etiket mevcut değil"
 
 #: packages/toc/src/generators/notebook/tagstool/index.tsx:193
 msgid "Clear Filters"
-msgstr ""
+msgstr "Filtreleri Temizle"
 
 #: packages/toc/src/generators/notebook/toolbar_generator.tsx:180 packages/toc/src/generators/notebook/toolbar_generator.tsx:181
 msgid "Toggle Code Cells"
-msgstr ""
+msgstr "Kod Hücrelerini Değiştir"
 
 #: packages/toc/src/generators/notebook/toolbar_generator.tsx:196 packages/toc/src/generators/notebook/toolbar_generator.tsx:197
 msgid "Toggle Markdown Text Cells"
-msgstr ""
+msgstr "Markdown Metin Hücrelerini Aç / Kapat"
 
 #: packages/toc/src/generators/notebook/toolbar_generator.tsx:228 packages/toc/src/generators/notebook/toolbar_generator.tsx:229
 msgid "Show Tags Menu"
-msgstr ""
+msgstr "Etiketler Menüsünü Göster"
 
-#: packages/translation-extension/src/index.ts:137
+#: packages/translation-extension/src/index.ts:106
 msgid "Language"
-msgstr ""
+msgstr "Dil"
 
-#: packages/translation-extension/src/index.ts:172
+#: packages/translation-extension/src/index.ts:141
 msgid "Change interface language?"
-msgstr ""
+msgstr "Kullanıcı Arayüz Dilini Değiştir?"
 
-#: packages/translation-extension/src/index.ts:173
+#: packages/translation-extension/src/index.ts:142
 msgid "Are you sure you want to refresh?"
-msgstr ""
+msgstr "Yenilemek istediğinize emin misiniz?"
 
