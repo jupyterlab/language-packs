@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Hebrew\n"
 "Language: he_IL\n"
-"PO-Revision-Date: 2020-12-18 09:57\n"
+"PO-Revision-Date: 2020-12-19 10:34\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -314,7 +314,8 @@ msgstr "הצגת כל פעילות הליבה"
 msgctxt "schema"
 msgid "Whether the console defaults to showing all\n"
 "kernel activity or just kernel activity originating from itself."
-msgstr ""
+msgstr "האם המסוף יוחזר כבררת מחדל להצגת כל פעילות\n"
+"הליבה או רק את פעילות הליבה שהוא המקור שלה."
 
 #: /packages/debugger-extension/schema/main.json:3
 msgctxt "schema"
@@ -1348,7 +1349,7 @@ msgstr "להפעיל עם Enter"
 
 #: packages/console-extension/src/index.ts:673
 msgid "Console Run Keystroke"
-msgstr ""
+msgstr "מקשים להרצת מסוף"
 
 #: packages/console/src/panel.ts:316
 msgid "Name: %1\n"
@@ -1384,15 +1385,15 @@ msgstr "מעבר לשורה"
 
 #: packages/csvviewer/src/toolbar.ts:128
 msgid "tab"
-msgstr ""
+msgstr "tab"
 
 #: packages/csvviewer/src/toolbar.ts:129
 msgid "pipe"
-msgstr ""
+msgstr "pipe"
 
 #: packages/csvviewer/src/toolbar.ts:130
 msgid "hash"
-msgstr ""
+msgstr "hash"
 
 #: packages/csvviewer/src/toolbar.ts:136
 msgid "Delimiter: "
@@ -1470,7 +1471,17 @@ msgid "Overrides for the default viewers for file types.\n"
 "%1\n\n"
 "Available file types:\n"
 "%2"
-msgstr ""
+msgstr "עוקף את מציגי בררת המחדל לסוגי קבצים.\n"
+"לציין מיפוי משם סוג קובץ לשם מציג מסמכים, למשל:\n\n"
+"defaultViewers: {‎\n"
+"‎  markdown: \"Markdown Preview\"‎\n"
+"‎}‎\n\n"
+"אם ציינת סוגי קבצים שאינם קיימים, או אם למציג אין אפשרות\n"
+"לפתוח סוג קובץ מסוים, המעקף לא יעבוד.\n\n"
+"מציגים זמינים:\n"
+"%1\n\n"
+"סוגי קבצים זמינים:\n"
+"%2"
 
 #: packages/docmanager-extension/src/index.ts:394 packages/filebrowser-extension/src/index.ts:643 packages/filebrowser-extension/src/index.ts:928 packages/htmlviewer-extension/src/index.tsx:132
 msgid "File Operations"
@@ -1910,11 +1921,11 @@ msgstr "%1 (מפותח על ידי מיזם Jupyter)"
 
 #: packages/extensionmanager/src/widget.tsx:240
 msgid "%1 extension has been blockedExtensions since install. Please uninstall immediately and contact your blockedExtensions administrator."
-msgstr ""
+msgstr "ההרחבה %1 blockedExtensions מאז ההתקנה. נא להסיר מיידית וליצור קשר עם הנהלת blockedExtensions."
 
 #: packages/extensionmanager/src/widget.tsx:256
 msgid "%1 extension has been removed from the allowedExtensions since installation. Please uninstall immediately and contact your allowedExtensions administrator."
-msgstr ""
+msgstr "ההרחבה %1 הוסרה מתוך allowedExtensions מאז ההתקנה. נא להסיר מיידית וליצור קשר עם הנהלת allowedExtensions."
 
 #: packages/extensionmanager/src/widget.tsx:290
 msgid "Install"
