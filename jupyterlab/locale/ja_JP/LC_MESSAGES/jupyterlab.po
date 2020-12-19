@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2020-12-18 23:15\n"
+"PO-Revision-Date: 2020-12-19 00:27\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -22,7 +22,8 @@ msgstr "フォントの種類"
 msgctxt "schema"
 msgid "The font family used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr ""
+msgstr "マークダウンのレンダリングに使用されるフォントファミリ。\n"
+"`null`の場合、現在のテーマの値が使用される。"
 
 #: /examples/federated/md_package/./schema/plugin.json:36 /packages/markdownviewer-extension/schema/plugin.json:36
 msgid "Font Size"
@@ -32,12 +33,13 @@ msgstr "文字サイズ"
 msgctxt "schema"
 msgid "The size in pixel of the font used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr ""
+msgstr "マークダウンのレンダリングに使用されるフォントのピクセル単位のサイズ。\n"
+"`null`の場合、現在のテーマの値が使用される。"
 
 #: /examples/federated/md_package/./schema/plugin.json:4 /packages/markdownviewer-extension/schema/plugin.json:4
 msgctxt "schema"
 msgid "Markdown Viewer"
-msgstr ""
+msgstr "Markdown ビューア"
 
 #: /examples/federated/md_package/./schema/plugin.json:42 /packages/markdownviewer-extension/schema/plugin.json:42
 msgid "Line Height"
@@ -47,7 +49,8 @@ msgstr "行の高さ"
 msgctxt "schema"
 msgid "The line height used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr ""
+msgstr "マークダウンのレンダリングに使用される行の高さ。\n"
+"`null`の場合、現在のテーマの値が使用される。"
 
 #: /examples/federated/md_package/./schema/plugin.json:48 /packages/markdownviewer-extension/schema/plugin.json:48
 msgid "Line Width"
@@ -57,12 +60,13 @@ msgstr "線の太さ"
 msgctxt "schema"
 msgid "The text line width expressed in CSS ch units.\n"
 "If `null`, lines fit the viewport width."
-msgstr ""
+msgstr "CSS の ch 単位で表されるテキスト行の幅。\n"
+"`null` の場合、行はビューポートの幅に合わせられる。"
 
 #: /examples/federated/md_package/./schema/plugin.json:5 /packages/markdownviewer-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Markdown viewer settings."
-msgstr ""
+msgstr "Markdown ビューアの設定。"
 
 #: /examples/federated/md_package/./schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:54
 msgid "Hide Front Matter"
@@ -78,17 +82,17 @@ msgstr ""
 
 #: /examples/federated/md_package/./schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:60
 msgid "Render Timeout"
-msgstr ""
+msgstr "レンダリングのタイムアウト"
 
 #: /examples/federated/md_package/./schema/plugin.json:61 /packages/markdownviewer-extension/schema/plugin.json:61
 msgctxt "schema"
 msgid "The render timeout in milliseconds."
-msgstr ""
+msgstr "ミリ秒単位でのレンダリングのタイムアウト時間"
 
 #: /packages/application-extension/schema/main.json:2
 msgctxt "schema"
 msgid "Application "
-msgstr ""
+msgstr "アプリケーション"
 
 #: /packages/application-extension/schema/main.json:3
 msgctxt "schema"
@@ -109,7 +113,7 @@ msgstr "サイドバー"
 #: /packages/application-extension/schema/sidebar.json:4
 msgctxt "schema"
 msgid "Sidebar layout settings."
-msgstr ""
+msgstr "サイドバーのレイアウト設定。"
 
 #: /packages/application-extension/schema/sidebar.json:8
 msgid "Overrides"
@@ -118,12 +122,12 @@ msgstr ""
 #: /packages/apputils-extension/schema/palette.json:2
 msgctxt "schema"
 msgid "Command Palette"
-msgstr ""
+msgstr "コマンドパレット"
 
 #: /packages/apputils-extension/schema/palette.json:3
 msgctxt "schema"
 msgid "Command palette settings."
-msgstr ""
+msgstr "コマンドパレットの設定。"
 
 #: /packages/apputils-extension/schema/print.json:2
 msgctxt "schema"
@@ -133,7 +137,7 @@ msgstr "印刷"
 #: /packages/apputils-extension/schema/print.json:3
 msgctxt "schema"
 msgid "Print settings."
-msgstr ""
+msgstr "印刷設定。"
 
 #: /packages/apputils-extension/schema/themes.json:2
 msgctxt "schema"
@@ -142,7 +146,7 @@ msgstr "テーマ"
 
 #: /packages/apputils-extension/schema/themes.json:31
 msgid "Selected Theme"
-msgstr ""
+msgstr "選択されたテーマ"
 
 #: /packages/apputils-extension/schema/themes.json:32
 msgctxt "schema"
@@ -212,7 +216,7 @@ msgstr ""
 #: /packages/codemirror-extension/schema/commands.json:34
 msgctxt "schema"
 msgid "Value is boolean"
-msgstr ""
+msgstr "値は真偽値です"
 
 #: /packages/codemirror-extension/schema/commands.json:39
 msgid "Selection Pointer"
@@ -230,7 +234,7 @@ msgstr ""
 
 #: /packages/codemirror-extension/schema/commands.json:45
 msgid "Ctrl-C"
-msgstr ""
+msgstr "Ctrl-C"
 
 #: /packages/codemirror-extension/schema/commands.json:46
 msgctxt "schema"
@@ -244,7 +248,7 @@ msgstr ""
 
 #: /packages/codemirror-extension/schema/commands.json:9
 msgid "Key Map"
-msgstr ""
+msgstr "キーマップ"
 
 #: /packages/completer-extension/schema/consoles.json:2
 msgctxt "schema"
@@ -298,7 +302,7 @@ msgstr ""
 
 #: /packages/console-extension/schema/tracker.json:42 packages/console-extension/src/foreign.ts:85
 msgid "Show All Kernel Activity"
-msgstr ""
+msgstr "すべてのカーネルのアクティビティを表示"
 
 #: /packages/console-extension/schema/tracker.json:43
 msgctxt "schema"
@@ -309,7 +313,7 @@ msgstr ""
 #: /packages/debugger-extension/schema/main.json:3
 msgctxt "schema"
 msgid "Debugger settings"
-msgstr ""
+msgstr "デバッガ設定"
 
 #: /packages/debugger-extension/schema/main.json:34
 msgid "Variable filter"
@@ -323,25 +327,25 @@ msgstr ""
 #: /packages/debugger-extension/schema/main.json:5
 msgctxt "schema"
 msgid "Debugger"
-msgstr ""
+msgstr "デバッガ"
 
 #: /packages/docmanager-extension/schema/plugin.json:22 packages/docmanager-extension/src/index.ts:694
 msgid "Autosave Documents"
-msgstr ""
+msgstr "ドキュメントの自動保存"
 
 #: /packages/docmanager-extension/schema/plugin.json:23
 msgctxt "schema"
 msgid "Whether to autosave documents"
-msgstr ""
+msgstr "ドキュメントを自動保存するかどうか"
 
 #: /packages/docmanager-extension/schema/plugin.json:28
 msgid "Autosave Interval"
-msgstr ""
+msgstr "自動保存の間隔"
 
 #: /packages/docmanager-extension/schema/plugin.json:29
 msgctxt "schema"
 msgid "Length of save interval in seconds"
-msgstr ""
+msgstr "保存間隔の長さ (秒)"
 
 #: /packages/docmanager-extension/schema/plugin.json:3
 msgctxt "schema"
