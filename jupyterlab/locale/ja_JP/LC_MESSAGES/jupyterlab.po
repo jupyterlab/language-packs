@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2020-12-21 00:08\n"
+"PO-Revision-Date: 2020-12-21 01:05\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -1461,151 +1461,160 @@ msgid "Overrides for the default viewers for file types.\n"
 "%1\n\n"
 "Available file types:\n"
 "%2"
-msgstr ""
+msgstr "各ファイルタイプに対するデフォルトのビューワー設定を上書きします。\n"
+"ドキュメントのファイルタイプ名称に対応するビューワー名を指定してください。例えば:\n\n"
+"defaultViewers: {\n"
+"  markdown: \"Markdown Preview\"\n"
+"}\n\n"
+"もし存在しないファイルタイプやビューワーを指定したり、ビューワーが指定されたファイルタイプを開けない場合は、この上書き設定は動作しません。\n\n"
+"利用可能なビューワー:\n"
+"%1\n\n"
+"利用可能なファイルタイプ:\n"
+"%2"
 
 #: packages/docmanager-extension/src/index.ts:394 packages/filebrowser-extension/src/index.ts:643 packages/filebrowser-extension/src/index.ts:928 packages/htmlviewer-extension/src/index.tsx:132
 msgid "File Operations"
-msgstr ""
+msgstr "ファイル操作"
 
 #: packages/docmanager-extension/src/index.ts:435 packages/logconsole-extension/src/index.tsx:405
 msgid "Error"
-msgstr ""
+msgstr "エラー"
 
 #: packages/docmanager-extension/src/index.ts:491 packages/filebrowser-extension/src/index.ts:710
 msgid "Open in New Browser Tab"
-msgstr ""
+msgstr "新規ブラウザタブで開く"
 
 #: packages/docmanager-extension/src/index.ts:496 packages/docmanager-extension/src/index.ts:518
 msgid "Reload %1 from Disk"
-msgstr ""
+msgstr "ディスクから %1 を再読み込み"
 
 #: packages/docmanager-extension/src/index.ts:500
 msgid "Reload contents from disk"
-msgstr ""
+msgstr "ディスクから内容を再読み込み"
 
 #: packages/docmanager-extension/src/index.ts:511
 msgid "Cannot Reload"
-msgstr ""
+msgstr "再読み込みできません"
 
 #: packages/docmanager-extension/src/index.ts:512 packages/docmanager-extension/src/index.ts:557 packages/docmanager-extension/src/index.ts:603 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:684
 msgid "No context found for current widget!"
-msgstr ""
+msgstr "現在のウィジェットにコンテキストが見つかりませんでした!"
 
 #: packages/docmanager-extension/src/index.ts:513 packages/docmanager-extension/src/index.ts:558 packages/docmanager-extension/src/index.ts:604 packages/docmanager-extension/src/index.ts:611 packages/docmanager-extension/src/index.ts:665 packages/notebook/src/actions.tsx:1405 packages/notebook/src/actions.tsx:1414 packages/notebook/src/actions.tsx:1604 packages/notebook/src/default-toolbar.tsx:69 packages/notebook/src/model.ts:286 packages/notebook/src/panel.ts:208 packages/settingeditor/src/plugineditor.ts:149 packages/settingeditor/src/plugineditor.ts:271 packages/translation-extension/src/index.ts:145
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: packages/docmanager-extension/src/index.ts:519
 msgid "Are you sure you want to reload the %1 from the disk?"
-msgstr ""
+msgstr "ディスクから %1 を再読み込みしてもよろしいですか?"
 
 #: packages/docmanager-extension/src/index.ts:525
 msgid "Reload"
-msgstr ""
+msgstr "再読込"
 
 #: packages/docmanager-extension/src/index.ts:542
 msgid "Revert %1 to Checkpoint"
-msgstr ""
+msgstr "%1 をチェックポイントに戻す"
 
 #: packages/docmanager-extension/src/index.ts:546
 msgid "Revert contents to previous checkpoint"
-msgstr ""
+msgstr "内容を前のチェックポイントに戻す"
 
 #: packages/docmanager-extension/src/index.ts:556
 msgid "Cannot Revert"
-msgstr ""
+msgstr "元に戻すことができません"
 
 #: packages/docmanager-extension/src/index.ts:571
 msgid "Revert %1 to checkpoint"
-msgstr ""
+msgstr "%1 をチェックポイントに戻す"
 
 #: packages/docmanager-extension/src/index.ts:575 packages/docregistry/src/context.ts:720 packages/docregistry/src/context.ts:736
 msgid "Revert"
-msgstr ""
+msgstr "元に戻す"
 
 #: packages/docmanager-extension/src/index.ts:593
 msgid "Save %1"
-msgstr ""
+msgstr "%1 を保存"
 
 #: packages/docmanager-extension/src/index.ts:594
 msgid "Save and create checkpoint"
-msgstr ""
+msgstr "保存してチェックポイントを作成"
 
 #: packages/docmanager-extension/src/index.ts:602 packages/docmanager-extension/src/index.ts:609 packages/docmanager-extension/src/index.ts:663 packages/notebook/src/default-toolbar.tsx:67
 msgid "Cannot Save"
-msgstr ""
+msgstr "保存できません"
 
 #: packages/docmanager-extension/src/index.ts:610 packages/notebook/src/default-toolbar.tsx:68
 msgid "Document is read-only"
-msgstr ""
+msgstr "ドキュメントは読み取り専用です"
 
 #: packages/docmanager-extension/src/index.ts:630
 msgid "Save All"
-msgstr ""
+msgstr "すべて保存"
 
 #: packages/docmanager-extension/src/index.ts:631
 msgid "Save all open documents"
-msgstr ""
+msgstr "開いているすべてのドキュメントを保存"
 
 #: packages/docmanager-extension/src/index.ts:654
 msgid "Save %1 As…"
-msgstr ""
+msgstr "%1 を別名で保存…"
 
 #: packages/docmanager-extension/src/index.ts:655
 msgid "Save with new path"
-msgstr ""
+msgstr "新しいパスに保存"
 
 #: packages/docmanager-extension/src/index.ts:674 packages/filebrowser-extension/src/index.ts:536
 msgid "Download"
-msgstr ""
+msgstr "ダウンロード"
 
 #: packages/docmanager-extension/src/index.ts:675
 msgid "Download the file to your computer"
-msgstr ""
+msgstr "ファイルをあなたのコンピュータにダウンロード"
 
 #: packages/docmanager-extension/src/index.ts:683
 msgid "Cannot Download"
-msgstr ""
+msgstr "ダウンロードできません"
 
 #: packages/docmanager-extension/src/index.ts:768
 msgid "New View for %1"
-msgstr ""
+msgstr "%1 の新しいビュー"
 
 #: packages/docmanager-extension/src/index.ts:788
 msgid "Rename %1…"
-msgstr ""
+msgstr "%1の名前を変更…"
 
 #: packages/docmanager-extension/src/index.ts:801
 msgid "Delete %1"
-msgstr ""
+msgstr "%1 を削除"
 
 #: packages/docmanager-extension/src/index.ts:811 packages/docmanager-extension/src/index.ts:815 packages/filebrowser-extension/src/index.ts:498 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/listing.ts:418
 msgid "Delete"
-msgstr ""
+msgstr "削除"
 
 #: packages/docmanager-extension/src/index.ts:812
 msgid "Are you sure you want to delete %1"
-msgstr ""
+msgstr "%1 を削除してもよろしいですか?"
 
 #: packages/docmanager-extension/src/index.ts:829
 msgid "Show in File Browser"
-msgstr ""
+msgstr "ファイルブラウザで表示"
 
 #: packages/docmanager-extension/src/index.ts:916
 msgid "Are you sure you want to revert the %1 to the latest checkpoint? "
-msgstr ""
+msgstr "%1 を最新のチェックポイントに戻してもよろしいですか? "
 
 #: packages/docmanager-extension/src/index.ts:922
 msgid "This cannot be undone."
-msgstr ""
+msgstr "この操作は元に戻すことができません。"
 
 #: packages/docmanager-extension/src/index.ts:929
 msgid "The checkpoint was last updated at: "
-msgstr ""
+msgstr "チェックポイントの最終更新日時: "
 
 #: packages/docmanager/src/dialogs.ts:115
 msgid "Overwrite file?"
-msgstr ""
+msgstr "ファイルを上書きしますか?"
 
 #: packages/docmanager/src/dialogs.ts:116
 msgid "\"%1\" already exists, overwrite?"
@@ -1613,27 +1622,27 @@ msgstr "\"%1\" は既に存在します。上書きしますか?"
 
 #: packages/docmanager/src/dialogs.ts:119 packages/docregistry/src/context.ts:722 packages/docregistry/src/context.ts:732 packages/docregistry/src/context.ts:754 packages/docregistry/src/context.ts:765
 msgid "Overwrite"
-msgstr ""
+msgstr "上書き"
 
 #: packages/docmanager/src/dialogs.ts:183
 msgid "File Path"
-msgstr ""
+msgstr "ファイルパス"
 
 #: packages/docmanager/src/dialogs.ts:188
 msgid "New Name"
-msgstr ""
+msgstr "新規名称"
 
 #: packages/docmanager/src/dialogs.ts:54
 msgid "Rename File"
-msgstr ""
+msgstr "ファイル名を変更"
 
 #: packages/docmanager/src/dialogs.ts:59 packages/filebrowser-extension/src/index.ts:796
 msgid "Rename"
-msgstr ""
+msgstr "名前を変更"
 
 #: packages/docmanager/src/dialogs.ts:67
 msgid "Rename Error"
-msgstr ""
+msgstr "名称変更エラー"
 
 #: packages/docmanager/src/dialogs.ts:69
 msgid "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\""
