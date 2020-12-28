@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2020-12-27 23:05\n"
+"PO-Revision-Date: 2020-12-28 00:08\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -2548,7 +2548,7 @@ msgstr ""
 
 #: packages/inspector/src/inspector.ts:54
 msgid "Click on a function to see documentation."
-msgstr ""
+msgstr "ドキュメントを見るには関数をクリックしてください。"
 
 #: packages/javascript-extension/src/index.ts:37
 msgid "Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
@@ -3153,11 +3153,11 @@ msgstr "選択したセルを実行し、次に進まない"
 
 #: packages/notebook/src/actions.tsx:1387
 msgid "A trusted Jupyter notebook may execute hidden malicious code when you openit."
-msgstr ""
+msgstr "信頼されたJupyterノートブックは、開く際に隠れた悪意のあるコードを実行するかもしれません。"
 
 #: packages/notebook/src/actions.tsx:1391
 msgid "Selecting trust will re-render this notebook in a trusted state."
-msgstr ""
+msgstr "\"信頼\"を選択すると、このノートブックは信頼された状態で再レンダリングされます。"
 
 #: packages/notebook/src/actions.tsx:1395
 msgid "For more information, see the <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>"
@@ -3229,7 +3229,9 @@ msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "The next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n"
 "'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\n"
 "close the notebook without saving it."
-msgstr ""
+msgstr "Notebookは過去のnotebookフォーマット(v%1) から現在のnotebookフォーマット(v%2) へ変換されました。\n"
+"このnotebookを次回保存する際は、現在のnotebookフォーマット(vthis._nbformat) が使用されます。\n"
+"以前のバージョンのJupyterは新しいフォーマットを開けない可能性があります。以前のnotebookの状態を保存したい場合は、notebookを保存せずに閉じてください。"
 
 #: packages/notebook/src/model.ts:273
 msgid "This notebook has been converted from an newer notebook format (v%1)\n"
@@ -3237,19 +3239,21 @@ msgid "This notebook has been converted from an newer notebook format (v%1)\n"
 "The next time you save this notebook, the current notebook format (v%2) will be used.\n"
 "Some features of the original notebook may not be available.' To preserve the original format version,\n"
 "close the notebook without saving it."
-msgstr ""
+msgstr "Notebookは新しいnotebookフォーマット(v%1) から現在のnotebookフォーマット(v%2) へ変換されました。\n"
+"このnotebookを次回保存する際は、現在のnotebookフォーマット(v%2) が使用されます。\n"
+"以前のnotebookの機能が使えなくなる可能性があります。以前のnotebookの状態を保存したい場合は、notebookを保存せずに閉じてください。"
 
 #: packages/notebook/src/model.ts:284
 msgid "Notebook converted"
-msgstr ""
+msgstr "Notebookは変換されました"
 
 #: packages/notebook/src/modestatus.tsx:29
 msgid "Mode: %1"
-msgstr ""
+msgstr "モード: %1"
 
 #: packages/notebook/src/modestatus.tsx:74
 msgid "Notebook is in %1 mode"
-msgstr ""
+msgstr "Notebookは %1 モードです"
 
 #: packages/notebook/src/notebooktools.ts:587
 msgid "Notebook Metadata"
@@ -3301,23 +3305,23 @@ msgstr "%1 のカーネルが予期せず終了しました。自動的に再起
 
 #: packages/notebook/src/truststatus.tsx:26
 msgid "Notebook trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Notebookは信頼されています: %2 のセルの内 %1 のセルが信頼されています。"
 
 #: packages/notebook/src/truststatus.tsx:35
 msgid "Active cell trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "アクティブなセルは信頼されています: %2 のセルの内 %1 のセルが信頼されています。"
 
 #: packages/notebook/src/truststatus.tsx:44
 msgid "Notebook not trusted: %1 of %2 cells trusted."
-msgstr ""
+msgstr "Notebookは信頼されていません: %2 のセルの内 %1 のセルが信頼されています。"
 
 #: packages/property-inspector/src/index.ts:172
 msgid "No properties to inspect."
-msgstr ""
+msgstr "チェックするプロパティがありません。"
 
 #: packages/rendermime-extension/src/index.ts:54
 msgid "Handle Local Link"
-msgstr ""
+msgstr "ローカルリンクの処理"
 
 #: packages/rendermime/src/renderers.ts:74
 msgid "This HTML output contains inline scripts. Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
@@ -3412,7 +3416,18 @@ msgid "Note: To disable a system default shortcut,\n"
 "List of commands followed by keyboard shortcuts:\n"
 "%1\n\n"
 "List of keyboard shortcuts:"
-msgstr ""
+msgstr "注意: デフォルトのショートカットを無効にしたい場合、この部分をユーザ設定にペーストして\"disabled\"キーを加えてください。例えば:\n"
+"{\n"
+"    \"command\": \"application:activate-next-tab\",\n"
+"    \"keys\": [\n"
+"        \"Ctrl Shift ]\"\n"
+"    ],\n"
+"    \"selector\": \"body\",\n"
+"    \"disabled\": true\n"
+"}\n\n"
+"コマンドのリストです。この後にキーボードショートカットが記載されます:\n"
+"%1\n\n"
+"キーボードショートカットのリストです:"
 
 #: packages/statusbar-extension/src/index.ts:86
 msgid "Show Status Bar"
