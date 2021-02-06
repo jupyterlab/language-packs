@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 28\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2021-02-06 03:20\n"
+"PO-Revision-Date: 2021-02-06 04:19\n"
 
 #: /schema/plugin.json:10
 msgid "Suspend user interaction until commands finish"
@@ -21,7 +21,7 @@ msgstr "コマンドが終了するまでユーザーの操作を中断する"
 #: /schema/plugin.json:11
 msgctxt "schema"
 msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
-msgstr ""
+msgstr "Git コマンド (例: コミット、プル、リセット、リバート) が実行を終了するまで、JupyterLab ユーザーの操作を停止します。 true に設定する事で、データの損失、コンフリクト、および Git 履歴の破損などの競合状態が発生する可能性を軽減できます。 低速ネットワークを使用していない限り、UI 操作の停止は標準的なワークフローに影響することはありません。false に設定した場合は、複数の 同時進行の Git 操作をトリガーすることが可能です。"
 
 #: /schema/plugin.json:16
 msgid "Cancel pull merge conflict"
@@ -30,11 +30,11 @@ msgstr "プル リクエストのマージのコンフリクトをキャンセ�
 #: /schema/plugin.json:17
 msgctxt "schema"
 msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
-msgstr ""
+msgstr "true の場合、リモートリポジトリから変更を取得および統合する際にマージにコンフリクトが発生した場合、マージはキャンセルされ、作業ツリーには変更は適用されません。"
 
 #: /schema/plugin.json:22
 msgid "Disable branch with changes"
-msgstr ""
+msgstr "変更のあるブランチを無効にする"
 
 #: /schema/plugin.json:23
 msgctxt "schema"
@@ -48,7 +48,7 @@ msgstr "Git ステータスの更新を表示"
 #: /schema/plugin.json:29
 msgctxt "schema"
 msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
-msgstr ""
+msgstr "JupyterLabステータスバーに Git extension のステータスの最新情報を表示します。 true の場合、変更のプルおよびプッシュ、ブランチの切り替え、変更のポーリングなどを行う際に JupyterLab のステータスバーに、extension のステータスの最新情報を表示します。Extension のアクティビティのレベルが高く、ステータスの更新が目障りな場合は false に設定する事で、視覚的なノイズを減らす事が出来ます。"
 
 #: /schema/plugin.json:34
 msgid "Show diff on double click"
@@ -66,7 +66,7 @@ msgstr "Git"
 
 #: /schema/plugin.json:40
 msgid "History count"
-msgstr ""
+msgstr "履歴カウント"
 
 #: /schema/plugin.json:41
 msgctxt "schema"
@@ -80,7 +80,7 @@ msgstr "更新間隔"
 #: /schema/plugin.json:47
 msgctxt "schema"
 msgid "Number of milliseconds between polling the file system for changes."
-msgstr ""
+msgstr "ファイル システムを変更するポーリングの間のミリ秒数。"
 
 #: /schema/plugin.json:5
 msgctxt "schema"
@@ -89,10 +89,10 @@ msgstr "jupyterlab-git の設定。"
 
 #: /schema/plugin.json:52
 msgid "Simple staging flag"
-msgstr ""
+msgstr "簡易ステージング フラグ"
 
 #: /schema/plugin.json:53
 msgctxt "schema"
 msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
-msgstr ""
+msgstr "true の場合、簡略化されたステージングを使用します。従来の staged / changed / untracked の代わりに、変更のあるファイルのみが表示され、変更のあるファイルはすべて自動的に staged 状態になります。"
 
