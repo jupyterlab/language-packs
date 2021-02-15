@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2021-02-15 11:24\n"
+"PO-Revision-Date: 2021-02-15 12:35\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -78,7 +78,7 @@ msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr "YAML front matter を非表示にするか否か。\n"
+msgstr "YAML front matter を非表示にするか否かを示します。\n"
 "YAML front matter はドキュメントの最上部に位置し、ダッシュ記号3つ (---) の行で始まり、ダッシュ記号3つ (---) またはピリオド記号3つ (...) の行で終わる必要があります。"
 
 #: /examples/federated/md_package/./schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:60
@@ -222,7 +222,7 @@ msgstr "値は真偽値です"
 
 #: /packages/codemirror-extension/schema/commands.json:39
 msgid "Selection Pointer"
-msgstr ""
+msgstr "選択範囲ポインター"
 
 #: /packages/codemirror-extension/schema/commands.json:4
 msgctxt "schema"
@@ -300,7 +300,7 @@ msgstr "インタラクションモード"
 msgctxt "schema"
 msgid "Whether the console interaction mimics the notebook\n"
 "or terminal keyboard shortcuts."
-msgstr ""
+msgstr "コンソール上の操作がノートブックまたはターミナルのキーボード ショートカットに倣っているかを示します。"
 
 #: /packages/console-extension/schema/tracker.json:42 packages/console-extension/src/foreign.ts:85
 msgid "Show All Kernel Activity"
@@ -386,7 +386,7 @@ msgstr "\"Disclaimed\" ステータス"
 #: /packages/extensionmanager-extension/schema/plugin.json:15
 msgctxt "schema"
 msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
-msgstr ""
+msgstr "当インターフェイス上にて管理されているエクステンションが危険性のある任意コードを実行する可能性がある旨の免責事項にユーザーが同意しているかを示します。"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:4
 msgctxt "schema"
@@ -502,7 +502,7 @@ msgstr "ステータスバー アイテムのフラッシュ"
 #: /packages/logconsole-extension/schema/plugin.json:16
 msgctxt "schema"
 msgid "Whether to flash on new log message or not"
-msgstr "新規ログ メッセージ時にフラッシュするか否か"
+msgstr "新規ログ メッセージ時にフラッシュするか否かを示します。"
 
 #: /packages/logconsole-extension/schema/plugin.json:4
 msgctxt "schema"
@@ -585,12 +585,12 @@ msgstr "すべてのrawセルの構成。"
 
 #: /packages/notebook-extension/schema/tracker.json:357
 msgid "Scroll past last cell"
-msgstr "最後のセルまでスクロール"
+msgstr "最後のセル以降までスクロール可"
 
 #: /packages/notebook-extension/schema/tracker.json:358
 msgctxt "schema"
 msgid "Whether to be able to scroll so the last cell is at the top of the panel"
-msgstr ""
+msgstr "最後のセルがパネルの上部に表示されるまでスクロールが可能かを示します。"
 
 #: /packages/notebook-extension/schema/tracker.json:363
 msgid "Recording timing"
@@ -599,7 +599,7 @@ msgstr "タイミングの記録"
 #: /packages/notebook-extension/schema/tracker.json:364
 msgctxt "schema"
 msgid "Should timing data be recorded in cell metadata"
-msgstr "セルのメタデータにタイミング データを記録するか否か"
+msgstr "セルのメタデータにタイミング データを記録するか否かを示します。"
 
 #: /packages/settingeditor-extension/schema/plugin.json:2
 msgctxt "schema"
@@ -703,7 +703,7 @@ msgstr "スクロールバック バッファ"
 #: /packages/terminal-extension/schema/plugin.json:65
 msgctxt "schema"
 msgid "The amount of scrollback beyond initial viewport"
-msgstr ""
+msgstr "最初のビューポート以前にスクロールバックが可能な値を示します。"
 
 #: /packages/terminal-extension/schema/plugin.json:70
 msgid "Shut down on close"
@@ -959,7 +959,7 @@ msgstr "アプリケーションの状態をリセット"
 
 #: packages/apputils-extension/src/index.ts:493
 msgid "Run First Enabled Command"
-msgstr ""
+msgstr "最初の有効化されたコマンドを実行"
 
 #: packages/apputils-extension/src/palette.ts:111
 msgid "Activate Command Palette"
@@ -983,7 +983,7 @@ msgstr "コマンド (%1)"
 
 #: packages/apputils-extension/src/themesplugins.ts:111
 msgid "Theme Scrollbars"
-msgstr ""
+msgstr "テーマのスクロールバー"
 
 #: packages/apputils-extension/src/themesplugins.ts:157
 msgid "JupyterLab Theme"
@@ -1860,15 +1860,15 @@ msgstr "この拡張機能を使うにはあらかじめ指定されたパッケ
 
 #: packages/extensionmanager/src/companions.tsx:208
 msgid "Kernel and Server Companions"
-msgstr ""
+msgstr "カーネルおよびサーバー コンパニオン"
 
 #: packages/extensionmanager/src/companions.tsx:210
 msgid "Kernel Companions"
-msgstr ""
+msgstr "カーネル コンパニオン"
 
 #: packages/extensionmanager/src/companions.tsx:212
 msgid "Server Companion"
-msgstr ""
+msgstr "サーバー コンパニオン"
 
 #: packages/extensionmanager/src/companions.tsx:221
 msgid "Install the JupyterLab extension."
@@ -2086,7 +2086,7 @@ msgstr "ファイルブラウザでアクティブなファイルを表示"
 
 #: packages/filebrowser-extension/src/index.ts:892
 msgid "Toggle Last Modified Column"
-msgstr ""
+msgstr "最終更新列の切り替え"
 
 #: packages/filebrowser-extension/src/index.ts:914
 msgid "Search on File Names"
@@ -2547,7 +2547,7 @@ msgstr "コンテキストヘルプを表示"
 
 #: packages/inspector-extension/src/index.ts:88
 msgid "Live updating code documentation from the active kernel"
-msgstr ""
+msgstr "アクティブなカーネルからコードドキュメントをライブ更新する"
 
 #: packages/inspector/src/inspector.ts:54
 msgid "Click on a function to see documentation."
