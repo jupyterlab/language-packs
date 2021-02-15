@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2021-01-05 08:55\n"
+"PO-Revision-Date: 2021-02-15 11:24\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -70,7 +70,7 @@ msgstr "Markdown ビューアの設定。"
 
 #: /examples/federated/md_package/./schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:54
 msgid "Hide Front Matter"
-msgstr ""
+msgstr "Front Matter の非表示"
 
 #: /examples/federated/md_package/./schema/plugin.json:55 /packages/markdownviewer-extension/schema/plugin.json:55
 msgctxt "schema"
@@ -78,7 +78,8 @@ msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr ""
+msgstr "YAML front matter を非表示にするか否か。\n"
+"YAML front matter はドキュメントの最上部に位置し、ダッシュ記号3つ (---) の行で始まり、ダッシュ記号3つ (---) またはピリオド記号3つ (...) の行で終わる必要があります。"
 
 #: /examples/federated/md_package/./schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:60
 msgid "Render Timeout"
@@ -380,7 +381,7 @@ msgstr "ドキュメント検索プラグイン。"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:14
 msgid "Disclaimed Status"
-msgstr ""
+msgstr "\"Disclaimed\" ステータス"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:15
 msgctxt "schema"
@@ -496,12 +497,12 @@ msgstr "メモリ内に保存するログエントリの最大数"
 
 #: /packages/logconsole-extension/schema/plugin.json:15
 msgid "Status Bar Item flash"
-msgstr ""
+msgstr "ステータスバー アイテムのフラッシュ"
 
 #: /packages/logconsole-extension/schema/plugin.json:16
 msgctxt "schema"
 msgid "Whether to flash on new log message or not"
-msgstr ""
+msgstr "新規ログ メッセージ時にフラッシュするか否か"
 
 #: /packages/logconsole-extension/schema/plugin.json:4
 msgctxt "schema"
@@ -593,12 +594,12 @@ msgstr ""
 
 #: /packages/notebook-extension/schema/tracker.json:363
 msgid "Recording timing"
-msgstr ""
+msgstr "タイミングの記録"
 
 #: /packages/notebook-extension/schema/tracker.json:364
 msgctxt "schema"
 msgid "Should timing data be recorded in cell metadata"
-msgstr ""
+msgstr "セルのメタデータにタイミング データを記録するか否か"
 
 #: /packages/settingeditor-extension/schema/plugin.json:2
 msgctxt "schema"
@@ -2184,7 +2185,7 @@ msgstr "\n"
 #: packages/filebrowser/src/listing.ts:2019
 msgid "%1 Item"
 msgid_plural "%1 Items"
-msgstr[0] ""
+msgstr[0] "%1 項目"
 
 #: packages/filebrowser/src/listing.ts:384
 msgctxt "showErrorMessage"
@@ -2281,7 +2282,7 @@ msgstr "タブによるインデント"
 #: packages/fileeditor-extension/src/commands.ts:1097 packages/fileeditor-extension/src/commands.ts:979 packages/fileeditor-extension/src/index.ts:108
 msgid "Spaces: %1"
 msgid_plural "Spaces: %1"
-msgstr[0] ""
+msgstr[0] "スペース: %1"
 
 #: packages/fileeditor-extension/src/commands.ts:1106
 msgid "Increase Text Editor Font Size"
@@ -2317,19 +2318,19 @@ msgstr "文字列折り返し"
 
 #: packages/fileeditor-extension/src/commands.ts:374 packages/mainmenu-extension/src/index.ts:647
 msgid "Match Brackets"
-msgstr ""
+msgstr "括弧を一致させる"
 
 #: packages/fileeditor-extension/src/commands.ts:398
 msgid "Auto Close Brackets for Text Editor"
-msgstr ""
+msgstr "テキストエディターにて括弧を自動的に閉じる"
 
 #: packages/fileeditor-extension/src/commands.ts:422
 msgid "Replace Selection in Editor"
-msgstr ""
+msgstr "エディターにて選択範囲を置換する"
 
 #: packages/fileeditor-extension/src/commands.ts:446
 msgid "Create Console for Editor"
-msgstr ""
+msgstr "エディターのコンソールを作成"
 
 #: packages/fileeditor-extension/src/commands.ts:594
 msgid "Show Markdown Preview"
@@ -2627,7 +2628,7 @@ msgstr "ログ: %1"
 
 #: packages/logconsole/src/widget.ts:407
 msgid "No source selected."
-msgstr ""
+msgstr "ソースが選択されていません。"
 
 #: packages/logconsole/src/widget.ts:412
 msgid "No log messages."
@@ -2703,7 +2704,7 @@ msgstr "閉じてシャットダウン"
 
 #: packages/mainmenu-extension/src/index.ts:376
 msgid "New Console for Activity"
-msgstr ""
+msgstr "アクティビティの新規コンソール"
 
 #: packages/mainmenu-extension/src/index.ts:387 packages/mainmenu-extension/src/index.ts:395
 msgid "Shut Down"
@@ -3059,7 +3060,7 @@ msgstr "現在実行中または最後の実行セルを選択"
 
 #: packages/notebook-extension/src/index.ts:1991
 msgid "Replace Selection in Notebook Cell"
-msgstr ""
+msgstr "ノートブックセルの選択範囲を置換する"
 
 #: packages/notebook-extension/src/index.ts:2012 packages/notebook-extension/src/index.ts:2190
 msgid "Notebook Operations"
