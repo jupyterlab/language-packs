@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 28\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2021-02-22 01:13\n"
+"PO-Revision-Date: 2021-02-22 02:14\n"
 
 #: /schema/plugin.json:10
 msgid "Suspend user interaction until commands finish"
@@ -21,7 +21,7 @@ msgstr "Приостановить взаимодействие с пользо�
 #: /schema/plugin.json:11
 msgctxt "schema"
 msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
-msgstr ""
+msgstr "Приостановить взаимодействие с пользователем JupyterLab, пока команды Git (например commit, pull, reset, revert) не закончат выполнение. Установка значения истина (true) помогает не допустить потенциальные состояния гонки, приводящие к потере данных, конфликтам и сбою истории Git. Приостановка взаимодействия с интерфейсом не мешает работе за исключением медленного соединения. Установка значения ложь (false) позволит действиям выполнять несколько одновременных Git операций."
 
 #: /schema/plugin.json:16
 msgid "Cancel pull merge conflict"
@@ -30,20 +30,20 @@ msgstr "Отменить конфликт слияния"
 #: /schema/plugin.json:17
 msgctxt "schema"
 msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
-msgstr ""
+msgstr "Если установлено значение истина (true), то при извлечении и интеграции изменений из удаленного репозитория, конфликтующее слияние будет отменено, а рабочее дерево оставлено нетронутым."
 
 #: /schema/plugin.json:22
 msgid "Disable branch with changes"
-msgstr ""
+msgstr "Отключить ветку с изменениями"
 
 #: /schema/plugin.json:23
 msgctxt "schema"
 msgid "Disable all branch operations (new, switch) when there are changed/staged files"
-msgstr ""
+msgstr "Отключить все операции ветки (new, switch) если есть измененные/индексированные файлы"
 
 #: /schema/plugin.json:28
 msgid "Display Git status updates"
-msgstr ""
+msgstr "Отображать обновления статуса Git"
 
 #: /schema/plugin.json:29
 msgctxt "schema"
@@ -52,7 +52,7 @@ msgstr ""
 
 #: /schema/plugin.json:34
 msgid "Show diff on double click"
-msgstr ""
+msgstr "Показать diff при двойном щелчке"
 
 #: /schema/plugin.json:35
 msgctxt "schema"
@@ -62,25 +62,25 @@ msgstr ""
 #: /schema/plugin.json:4
 msgctxt "schema"
 msgid "Git"
-msgstr "Гит"
+msgstr "Git"
 
 #: /schema/plugin.json:40
 msgid "History count"
-msgstr ""
+msgstr "Размер истории"
 
 #: /schema/plugin.json:41
 msgctxt "schema"
 msgid "Number of (most recent) commits shown in the history log"
-msgstr ""
+msgstr "Количество недавних коммитов отображаемых в истории"
 
 #: /schema/plugin.json:46
 msgid "Refresh interval"
-msgstr "Период обновления"
+msgstr "Частота обновления"
 
 #: /schema/plugin.json:47
 msgctxt "schema"
 msgid "Number of milliseconds between polling the file system for changes."
-msgstr ""
+msgstr "Количество миллисекунд между опросом файловой системы на предмет изменений."
 
 #: /schema/plugin.json:5
 msgctxt "schema"
