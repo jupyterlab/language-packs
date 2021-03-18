@@ -12,43 +12,43 @@ msgstr ""
 "X-Crowdin-File-ID: 28\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2020-11-30 17:38\n"
+"PO-Revision-Date: 2021-03-16 20:37\n"
 
 #: /schema/plugin.json:10
 msgid "Suspend user interaction until commands finish"
-msgstr "Suspendre l'interaction utilisateur jusqu'à la fin des commandes"
+msgstr "Suspendre l'interaction de l'utilisateur jusqu'à la fin des commandes"
 
 #: /schema/plugin.json:11
 msgctxt "schema"
 msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
-msgstr "Suspendre l'interaction utilisateur de JupyterLab jusqu'à ce que les commandes Git (par exemple, commit, pull, reset, revert) soient exécutées. Définir ceci comme vrai permet d'atténuer les conditions potentielles menant à des pertes de données, des conflits et une histoire de Git cassée. À moins d'exécuter un réseau lent, la suspension de l'interface utilisateur ne devrait pas interférer avec les flux de travail standard. Définir cette valeur à false permet aux actions de déclencher plusieurs actions simultanées Git."
+msgstr "Suspendre l'interaction utilisateur de JupyterLab jusqu'à ce que les commandes Git (par exemple, commit, pull, reset, revert) soient exécutées. Définir ceci comme vrai permet d'atténuer les conditions potentielles menant à des pertes de données, des conflits et une histoire de Git cassée. À moins d'exécuter un réseau lent, la suspension de l'interface utilisateur ne devrait pas interférer avec les flux de travail standard. Définir cette valeur à false permet aux actions de déclencher plusieurs actions Git simultanées."
 
 #: /schema/plugin.json:16
 msgid "Cancel pull merge conflict"
-msgstr ""
+msgstr "Annuler le conflit de fusion de pull"
 
 #: /schema/plugin.json:17
 msgctxt "schema"
 msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
-msgstr ""
+msgstr "Si vrai, lors de la récupération et de l'intégration des changements depuis un dépôt distant, une fusion en conflit est annulée et l'arborescence de travail reste intacte."
 
 #: /schema/plugin.json:22
 msgid "Disable branch with changes"
-msgstr "Désactiver les branches avec des changements"
+msgstr "Désactiver la branche avec les changements"
 
 #: /schema/plugin.json:23
 msgctxt "schema"
 msgid "Disable all branch operations (new, switch) when there are changed/staged files"
-msgstr ""
+msgstr "Désactiver toutes les opérations de la branche (nouvelle, changée) quand il y a des fichiers modifiés/indexés"
 
 #: /schema/plugin.json:28
 msgid "Display Git status updates"
-msgstr ""
+msgstr "Afficher les mises à jour du statut de Git"
 
 #: /schema/plugin.json:29
 msgctxt "schema"
 msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
-msgstr ""
+msgstr "Afficher les mises à jour d'état de l'extension Git dans la barre d'état de JupyterLab. Si activé, l'extension affiche les mises à jour d'état dans la barre d'état de JupyterLab, comme lors du tirage et de la poussée des changements, du changement de branches, et du sondage. Selon le niveau d'activité de l'extension, certains utilisateurs peuvent trouver les mises à jour de statut. Dans ce cas, régler ceci à faux devrait réduire le bruit visuel."
 
 #: /schema/plugin.json:34
 msgid "Show diff on double click"
@@ -57,7 +57,7 @@ msgstr "Afficher le diff lors d'un double-clic"
 #: /schema/plugin.json:35
 msgctxt "schema"
 msgid "If true, doubling clicking a file in the list of changed files will open a diff."
-msgstr "Si vrai, double cliquer sur un fichier dans la liste des fichiers modifiés ouvrira un diff."
+msgstr "Si vrai, un double clic sur un fichier dans la liste des fichiers modifiés ouvrira un diff."
 
 #: /schema/plugin.json:4
 msgctxt "schema"
@@ -89,10 +89,957 @@ msgstr "paramètres jupyterlab-git."
 
 #: /schema/plugin.json:52
 msgid "Simple staging flag"
-msgstr ""
+msgstr "L'option d'indexation simple"
 
 #: /schema/plugin.json:53
 msgctxt "schema"
 msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
-msgstr ""
+msgstr "Si vrai, utilisez un concept simplifié d'indexation. Seuls les fichiers avec des modifications sont affichés (au lieu d'afficher les fichiers indexés/modifiés/non suivis), et tous les fichiers avec des modifications seront automatiquement indexés"
 
+#: /src/components/Toolbar.tsx:203
+msgid " (ahead by %1 commits)"
+msgstr " (en avance de %1 commits)"
+
+#: /src/components/Toolbar.tsx:176
+msgid " (behind by %1 commits)"
+msgstr " (en arrière par %1 commits)"
+
+#: /src/components/GitPanel.tsx:436
+msgid " a Git repository. To use Git, navigate to a local repository, initialize a repository here, or clone an existing repository."
+msgstr " un dépôt Git. Pour utiliser Git, accédez à un dépôt local, initialisez un nouveau dépôt ici ou clonez un dépôt existant."
+
+#: /src/commandsAndMenu.tsx:818
+msgid " Help "
+msgstr " Aide "
+
+#: /src/components/SinglePastCommitInfo.tsx:187
+msgid "# Deletions"
+msgstr "# Suppressions"
+
+#: /src/components/SinglePastCommitInfo.tsx:176
+msgid "# Files Changed"
+msgstr "# Fichiers Modifiés"
+
+#: /src/components/SinglePastCommitInfo.tsx:180
+msgid "# Insertions"
+msgstr "# Insertions"
+
+#: /src/components/Alert.tsx:148
+msgid "(missing message)"
+msgstr "(message manquant)"
+
+#: /src/commandsAndMenu.tsx:249
+msgid "Add a Git remote repository"
+msgstr "Ajouter un dépôt Git distant"
+
+#: /src/commandsAndMenu.tsx:263
+msgid "Add a remote repository"
+msgstr "Ajouter un Dépôt distant"
+
+#: /src/commandsAndMenu.tsx:248
+msgid "Add Remote Repository"
+msgstr "Ajouter un Dépôt Distant"
+
+#: /src/components/diff/mergeview.ts:1634
+msgid "Added"
+msgstr "Ajouté"
+
+#: /src/widgets/StatusWidget.ts:142
+msgid "adding files..."
+msgstr "ajoutant les fichiers..."
+
+#: /src/components/ResetRevertDialog.tsx:145
+msgid "All changes after commit %1 will be gone forever (hard reset). Are you sure?"
+msgstr "Toutes les modifications après la validation (commit) %1 seront définitivement supprimées (hard reset). Êtes-vous sûr?"
+
+#: /src/commandsAndMenu.tsx:739
+msgid "Are you sure you want to ignore all %1 files within this git repository?"
+msgstr "Êtes-vous sûr de vouloir ignorer tous les fichiers %1 de ce dépôt Git?"
+
+#: /src/commandsAndMenu.tsx:612
+msgid "Are you sure you want to permanently delete"
+msgstr "Êtes-vous sûr de vouloir supprimer définitivement"
+
+#: /src/components/BranchMenu.tsx:336
+msgid "Are you sure you want to permanently delete the branch "
+msgstr "Êtes-vous sûr de vouloir supprimer définitivement la branche "
+
+#: /src/commandsAndMenu.tsx:654
+msgid "Are you sure you want to permanently discard changes to "
+msgstr "Êtes-vous sûr de vouloir supprimer définitivement les modifications apportées à "
+
+#: /src/components/FileList.tsx:180
+msgid "Are you sure you want to permanently discard changes to all files? This action cannot be undone."
+msgstr "Êtes-vous sûr de vouloir supprimer les modifications apportées à tous les fichiers de manière définitive? Cette action ne peut pas être annulée."
+
+#: /src/components/NewBranchDialog.tsx:450
+msgid "Branch created."
+msgstr "La branche a été créée."
+
+#: /src/components/Toolbar.tsx:316
+msgid "Branches"
+msgstr "Branches"
+
+#: /src/commandsAndMenu.tsx:184
+#: /src/commandsAndMenu.tsx:297
+#: /src/commandsAndMenu.tsx:618
+#: /src/commandsAndMenu.tsx:661
+#: /src/components/BranchMenu.tsx:344
+#: /src/components/FileList.tsx:183
+#: /src/components/FileList.tsx:208
+#: /src/components/NewBranchDialog.tsx:209
+msgid "Cancel"
+msgstr "Annuler"
+
+#: /src/components/ResetRevertDialog.tsx:179
+msgid "Cancel changes"
+msgstr "Annuler vos changements"
+
+#: /schema/plugin.json:16
+msgid "Cancel pull merge conflict"
+msgstr "Annuler le conflit de fusion de pull"
+
+#: /src/components/SinglePastCommitInfo.tsx:198
+#: /src/components/FileList.tsx:519
+#: /src/components/FileList.tsx:729
+msgid "Changed"
+msgstr "Modifié(s)"
+
+#: /src/components/diff/mergeview.ts:566
+msgid "Changes"
+msgstr "Modifications"
+
+#: /src/widgets/StatusWidget.ts:111
+msgid "checking out..."
+msgstr "extraire..."
+
+#: /src/components/TagMenu.tsx:307
+msgid "Checking tag out..."
+msgstr "Extraction de l'étiquette..."
+
+#: /src/components/TagMenu.tsx:299
+msgid "Checkout tags is disabled"
+msgstr "Extraction des étiquettes sont désactivées"
+
+#: /src/components/TagMenu.tsx:248
+msgid "Checkout to tag: %1"
+msgstr "Extrayez l'étiquette: %1"
+
+#: /src/components/TagMenu.tsx:197
+#: /src/components/BranchMenu.tsx:201
+msgid "Clear the current filter"
+msgstr "Effacer le filtre actuel"
+
+#: /src/commandsAndMenu.tsx:298
+msgid "CLONE"
+msgstr "CLONER"
+
+#: /src/commandsAndMenu.tsx:293
+msgid "Clone a repo"
+msgstr "Cloner un Dépôt"
+
+#: /src/commandsAndMenu.tsx:288
+#: /src/components/GitPanel.tsx:458
+msgid "Clone a Repository"
+msgstr "Cloner un Dépôt"
+
+#: /src/commandsAndMenu.tsx:289
+msgid "Clone a repository from a URL"
+msgstr "Cloner un dépôt à partir d'un URL"
+
+#: /src/widgets/StatusWidget.ts:114
+msgid "cloning repository..."
+msgstr "cloner le dépôt..."
+
+#: /src/commandsAndMenu.tsx:305
+msgid "Cloning..."
+msgstr "Clonage en cours..."
+
+#: /src/components/ResetRevertDialog.tsx:132
+#: src/components/NewBranchDialog.tsx:157
+msgid "Close this dialog"
+msgstr "Fermer cette boîte de dialogue"
+
+#: /src/components/NewBranchDialog.tsx:207
+msgid "Close this dialog without creating a new branch"
+msgstr "Fermez cette boîte de dialogue sans créer de nouvelle branche"
+
+#: /src/components/CommitBox:94
+msgid "Commit"
+msgstr "Commit"
+
+#: /src/components/GitPanel.tsx:257
+msgid "Committed changes."
+msgstr "Changements commits."
+
+#: /src/widgets/StatusWidget.ts:117
+msgid "committing changes..."
+msgstr "commit des modifications..."
+
+#: /src/components/GitPanel.tsx:250
+msgid "Committing changes..."
+msgstr "Commit des modifications..."
+
+#: /src/components/FileItem.tsx:23
+msgid "Copied"
+msgstr "Copié"
+
+#: /src/components/NewBranchDialog.tsx:154
+msgid "Create a Branch"
+msgstr "Créer une Branche"
+
+#: /src/components/BranchMenu.tsx:211
+#: /src/components/NewBranchDialog.tsx:215
+msgid "Create a new branch"
+msgstr "Créer une nouvelle branche"
+
+#: /src/components/NewBranchDialog.tsx:310
+msgid "Create a new branch based on: %1"
+msgstr "Créer une nouvelle branche basée sur: %1"
+
+#: /src/commandsAndMenu.tsx:176
+msgid "Create an empty Git repository or reinitialize an existing one"
+msgstr "Créer un référentiel Git vide ou réinitialiser un référentiel existant"
+
+#: /src/components/NewBranchDialog.tsx:216
+msgid "Create Branch"
+msgstr "Créer la Branche"
+
+#: /src/components/NewBranchDialog.tsx:176
+msgid "Create branch based on..."
+msgstr "Créer une branche basée sur..."
+
+#: /src/components/BranchMenu.tsx:366
+msgid "Creating a new branch is disabled"
+msgstr "La création d'une nouvelle branche est désactivée"
+
+#: /src/components/NewBranchDialog.tsx:433
+msgid "Creating branch..."
+msgstr "Creation de la branche..."
+
+#: /src/components/NewBranchDialog:304
+msgid "current"
+msgstr "actuel"
+
+#: /src/components/Toolbar.tsx:278
+msgid "Current Branch"
+msgstr "Branche Actuelle"
+
+#: /src/components/Toolbar.tsx:245
+msgid "Current Repository"
+msgstr "Dépôt Actuel"
+
+#: /src/components/Toolbar.tsx:237
+msgid "Current repository: %1"
+msgstr "Dépôt actuel: %1"
+
+#: /src/commandsAndMenu.tsx:598
+#: /src/commandsAndMenu.tsx:619
+#: /src/components/BranchMenu.tsx:345
+msgid "Delete"
+msgstr "Supprimer"
+
+#: /src/components/BranchMenu.tsx:332
+msgid "Delete branch"
+msgstr "Supprimer cette branche"
+
+#: /src/commandsAndMenu.tsx:608
+msgid "Delete File"
+msgstr "Supprimer le Fichier"
+
+#: /src/components/BranchMenu.tsx:275
+msgid "Delete this branch locally"
+msgstr "Supprimer cette branche localement"
+
+#: /src/commandsAndMenu.tsx:600
+msgid "Delete this file"
+msgstr "Supprimer ce fichier"
+
+#: /src/components/FileItem.tsx:21
+msgid "Deleted"
+msgstr "Supprimé"
+
+#: /src/commandsAndMenu.tsx:629
+msgid "Deleting %1 failed."
+msgstr "La suppression de %1 a échoué."
+
+#: /src/components/CommitBox.tsx:119
+msgid "Description (optional)"
+msgstr "Description (optionnelle)"
+
+#: /src/components/Alert.tsx:120
+msgid "Detailed message"
+msgstr "Message détaillé"
+
+#: /src/components/Alert.tsx:128
+msgid "Details"
+msgstr "Détails"
+
+#: /src/commandsAndMenu.tsx:450
+msgid "Diff"
+msgstr "Diff"
+
+#: /src/commandsAndMenu.tsx:512
+msgid "Diff is not supported for %1 files."
+msgstr "Diff n'est pas pris en charge pour les fichiers %1."
+
+#: /src/commandsAndMenu.tsx:510
+msgid "Diff Not Supported"
+msgstr "Diff n'est pas pris en charge"
+
+#: /src/commandsAndMenu.tsx:452
+msgid "Diff selected file"
+msgstr "Voir le diff du fichier sélectionné"
+
+#: /src/components/FileList.tsx:750
+msgid "Diff this file"
+msgstr "Diff ce fichier"
+
+#: /src/components/CommitBox.tsx:93
+msgid "Disabled: No commit message summary"
+msgstr "Désactivé: aucun résumé du message de validation"
+
+#: /src/components/CommitBox.tsx:91
+msgid "Disabled: No files are staged for commit"
+msgstr "Désactivé: aucun fichier n'est indexé pour faire un commit"
+
+#: /src/commandsAndMenu.tsx:640
+#: /src/commandsAndMenu.tsx:662
+#: /src/components/FileList.tsx:184
+#: /src/components/FileList.tsx:209
+msgid "Discard"
+msgstr "Abandonner"
+
+#: /src/components/FileList.tsx:506
+#: /src/components/FileList.tsx:725
+msgid "Discard All Changes"
+msgstr "Supprimer Toutes les Modifications"
+
+#: /src/components/FileList.tsx:178
+#: /src/components/FileList.tsx:203
+msgid "Discard all changes"
+msgstr "Supprimer toutes les modifications"
+
+#: /src/components/FileList.tsx:217
+msgid "Discard all changes failed."
+msgstr "La suppression de toutes les modifications a échoué."
+
+#: /src/components/FileList.tsx:192
+msgid "Discard all unstaged changes failed."
+msgstr "Échec de la suppression de toutes les modifications non-indexées."
+
+#: /src/commandsAndMenu.tsx:650
+#: /src/components/FileList.tsx:458
+#: /src/components/FileList.tsx:656
+#: /src/components/FileList.tsx:682
+msgid "Discard changes"
+msgstr "Annuler les modifications"
+
+#: /src/components/SinglePastCommitInfo.tsx:211
+msgid "Discard changes introduced *after* this commit (hard reset)"
+msgstr "Annuler les modifications introduites * après * cette validation (hard reset)"
+
+#: /src/commandsAndMenu.tsx:642
+msgid "Discard recent changes of selected file"
+msgstr "Annuler les modifications récentes du fichier sélectionné"
+
+#: /src/widgets/StatusWidget.ts:138
+msgid "discarding changes..."
+msgstr "supprimer les changements..."
+
+#: /src/components/Alert.tsx:106
+#: /src/components/TagMenu.tsx:65
+#: /src/components/BranchMenu.tsx:69
+msgid "Dismiss"
+msgstr "Ignorer"
+
+#: /src/index.ts:124
+#: /src/commandsAndMenu.tsx:630
+#: /src/commandsAndMenu.tsx:685
+#: /src/components/Alert.tsx:123
+msgid "DISMISS"
+msgstr "IGNORER"
+
+#: /src/commandsAndMenu.tsx:182
+msgid "Do you really want to make this directory a Git Repo?"
+msgstr "Êtes-vous sûr de vouloir faire de ce répertoire un dépôt Git?"
+
+#: /src/commandsAndMenu.tsx:239
+msgid "Double click opens diff"
+msgstr "Ouvrir les Différences (Diff) avec un Double-Clic"
+
+#: /src/commandsAndMenu.tsx:204
+msgid "Encountered an error when initializing the repository. Error: "
+msgstr "Une erreur s'est produite lors de l'initialisation du dépôt. Erreur: "
+
+#: /src/commandsAndMenu.tsx:368
+msgid "Encountered an error when pushing changes. Error: "
+msgstr "Une erreur s'est produite lors du poussage des modifications. Erreur: "
+
+#: /src/components/NewBranchDialog.tsx:174
+msgid "Enter a branch name"
+msgstr "Entrer un nom pour la branche"
+
+#: /src/components/ResetRevertDialog.tsx:166
+msgid "Enter a commit message description"
+msgstr "Entrez une description du message de validation"
+
+#: /src/components/ResetRevertDialog.tsx:156
+msgid "Enter a commit message summary (a single line, preferably less than 50 characters)"
+msgstr "Entrez un résumé du message de validation (une seule ligne, préférablement moins de 50 caractères)"
+
+#: /src/commandsAndMenu.tsx:1057
+#: /src/widgets/CredentialsBox.tsx:14
+msgid "Enter credentials for remote repository"
+msgstr "Entrez vos informations d’authentification pour le dépôt distant"
+
+#: /src/widgets/GitCloneForm.ts:30
+msgid "Enter the Clone URI of the repository"
+msgstr "Entrez l'URI du dépôt à cloner"
+
+#: /src/components/Alert.tsx:105
+msgid "Error"
+msgstr "Erreur"
+
+#: /src/components/SinglePastCommitInfo.tsx:170
+msgid "Error loading commit data"
+msgstr "Erreur lors du chargement des données du commit"
+
+#: /src/commandsAndMenu.tsx:278
+msgid "Error when adding remote repository"
+msgstr "Erreur produite lors de l'ajout d'un dépôt distant"
+
+#: /src/components/TagMenu.tsx:159
+msgid "Fail to get the tags."
+msgstr "Impossible d'obtenir les étiquettes."
+
+#: /src/commandsAndMenu.tsx:326
+msgid "Failed to clone"
+msgstr "Clonage a échoué"
+
+#: /src/components/GitPanel.tsx:237
+msgid "Failed to commit changes."
+msgstr "Commit des modifications a échoué."
+
+#: /src/components/NewBranchDialog.tsx:443
+msgid "Failed to create branch."
+msgstr "Création de la branche a échoué."
+
+#: /src/components/ResetRevertDialog.tsx:257
+msgid "Failed to discard changes."
+msgstr "Échec de l'annulation des modifications."
+
+#: /src/commandsAndMenu.tsx:209
+msgid "Failed to initialize the Git repository"
+msgstr "L'initialisation du dépôt Git a échoué"
+
+#: /src/index.ts:118
+msgid "Failed to load the jupyterlab-git server extension"
+msgstr "Échec du chargement de l'extension de serveur jupyterlab-git"
+
+#: /src/commandsAndMenu.tsx:407
+msgid "Failed to pull"
+msgstr "Tirage a échoué"
+
+#: /src/commandsAndMenu.tsx:372
+msgid "Failed to push"
+msgstr "Poussage a échoué"
+
+#: /src/components/Toolbar.tsx:414
+msgid "Failed to refresh."
+msgstr "L'actualisation a échoué."
+
+#: /src/components/ResetRevertDialog.tsx:284
+msgid "Failed to revert changes."
+msgstr "Échec de l'inversion des modifications."
+
+#: /src/components/GitPanel.tsx:520
+msgid "Failed to set your identity. "
+msgstr "Échoué à définir votre identité. "
+
+#: /src/components/BranchMenu.tsx:74
+msgid "Failed to switch branch."
+msgstr "Échec du changement de branche."
+
+#: /src/components/TagMenu.tsx:191
+#: /src/components/BranchMenu.tsx:195
+#: /src/components/NewBranchDialog.tsx:184
+msgid "Filter"
+msgstr "Filtrer"
+
+#: /src/components/TagMenu.tsx:192
+#: /src/components/BranchMenu.tsx:196
+#: /src/components/NewBranchDialog.tsx:185
+msgid "Filter branch menu"
+msgstr "Filtrer le menu de la branche"
+
+#: /src/index.ts:91
+msgid "git command not found - please ensure you have Git > 2 installed"
+msgstr "Commande git est introuvable - veuillez vous assurer que Git > 2 est installé"
+
+#: /src/index.ts:98
+msgid "git command version must be > 2; got %1."
+msgstr "la version de la commande git doit être > 2; obtenu% 1."
+
+#: /src/commandsAndMenu.tsx:1047
+msgid "Git credentials required"
+msgstr "Informations d'identification Git requises"
+
+#: /src/commandsAndMenu.tsx:787
+msgid "Git Documentation"
+msgstr "Documentation Git"
+
+#: /src/commandsAndMenu.tsx:161
+msgid "Git Interface"
+msgstr "Interface Git"
+
+#: /src/commandsAndMenu.tsx:198
+msgid "Git repository initialized."
+msgstr "Dépôt Git initialisé."
+
+#: /src/server.ts:28
+msgid "Git server extension is unavailable. Please ensure you have installed the JupyterLab Git server extension by running: pip install --upgrade jupyterlab-git. To confirm that the server extension is installed, run: jupyter server extension list."
+msgstr "L'extension de serveur Git n'est pas disponible. Veuillez vous assurer que vous avez installé l'extension de serveur JupyterLab Git en exécutant: pip install --upgrade jupyterlab-git. Pour confirmer que l'extension de serveur est installée, exécutez: jupyter server extension list."
+
+#: /src/commandsAndMenu.tsx:162
+msgid "Go to Git user interface"
+msgstr "Aller à l'interface utilisateur de Git"
+
+#: /src/components/GitPanel:356
+msgid "History"
+msgstr "L'historique"
+
+#: /src/widgets/StatusWidget.ts:108
+msgid "idle"
+msgstr "inactif"
+
+#: /src/commandsAndMenu.tsx:751
+#: /src/commandsAndMenu.tsx:754
+msgid "Ignore"
+msgstr "Ignorer"
+
+#: /src/commandsAndMenu.tsx:727
+msgid "Ignore %1 extension (add to .gitignore)"
+msgstr "Ignorer l'extension %1 (ajouter à .gitignore)"
+
+#: /src/commandsAndMenu.tsx:722
+msgid "Ignore %1 extensions (add to .gitignore)"
+msgstr "Ignorer les extensions %1 (ajouter à .gitignore)"
+       
+#: /src/commandsAndMenu.tsx:737
+msgid "Ignore file extension"
+msgstr "Ignorer cette extension de fichier"
+
+#: /src/commandsAndMenu.tsx:696
+#: /src/commandsAndMenu.tsx:700
+msgid "Ignore this file (add to .gitignore)"
+msgstr "Ignorer ce fichier (ajouter à .gitignore)"
+
+#: /src/commandsAndMenu.tsx:727
+msgid "Ignore this file extension (add to .gitignore)"
+msgstr "Ignorer cette extension de fichier (ajouter à .gitignore)"
+
+#: /src/components/FileItem.tsx:26
+msgid "Ignored"
+msgstr "Ignoré"
+
+#: /src/commandsAndMenu.tsx:1051
+msgid "Incorrect username or password."
+msgstr "Nom d’utilisateur ou mot de passe incorrect."
+
+#: /src/commandsAndMenu.tsx:174
+#: /src/commandsAndMenu.tsx:181
+#: /src/components/GitPanel.tsx:449
+msgid "Initialize a Repository"
+msgstr "Initialiser un Dépôt"
+
+#: /src/widgets/StatusWidget.ts:123
+msgid "initializing repository..."
+msgstr "initialisation du dépôt..."
+
+#: /src/commandsAndMenu.tsx:191
+msgid "Initializing..."
+msgstr "Initialisation..."
+
+#: /src/components/GitPanel.tsx:430
+msgid "is not"
+msgstr "n'est pas"
+
+#: /src/components/Toolbar.tsx:272
+msgid "Manage branches and tags"
+msgstr "Gérer les branches et étiquettes"
+
+#: /src/components/FileItem.tsx:19
+msgid "Modified"
+msgstr "Modifié"
+
+#: /src/components/NewBranchDialog.tsx:167
+msgid "Name"
+msgstr "Nom"
+
+#: /src/components/BranchMenu.tsx:212
+msgid "New Branch"
+msgstr "Nouvelle Branche"
+
+#: /src/components/Toolbar.tsx:180
+#: /src/components/Toolbar.tsx:208
+msgid "No remote repository defined"
+msgstr "Aucun dépôt distant défini"
+
+#: /src/commandsAndMenu.tsx:254
+msgid "Not in a Git repository. Unable to add a remote."
+msgstr "Pas dans un dépôt Git. Impossible d'ajouter un dépôt distant."
+
+#: /src/commandsAndMenu.tsx:417
+msgid "Open"
+msgstr "Ouvrir"
+
+#: /src/commandsAndMenu.tsx:337
+#: /src/commandsAndMenu.tsx:338
+msgid "Open .gitignore"
+msgstr "Ouvrir .gitignore"
+
+#: /src/commandsAndMenu.tsx:134
+msgid "Open a New Terminal to the Git Repository"
+msgstr "Ouvrez un Nouveau Terminal dans le Dépôt Git"
+
+#: /src/commandsAndMenu.tsx:428
+msgid "Open File Failed"
+msgstr "L'ouverture du fichier a échoué"
+
+#: /src/commandsAndMenu.tsx:133
+msgid "Open Git Repository in Terminal"
+msgstr "Ouvrir Dépôt Git dans un Terminal"
+
+#: /src/commandsAndMenu.tsx:419
+msgid "Open selected file"
+msgstr "ouvrir le fichier sélectionné"
+
+#: /src/components/GitPanel.tsx:443
+msgid "Open the FileBrowser"
+msgstr "Ouvrir le FileBrowser"
+
+#: /src/components/FileList.tsx:364
+#: /src/components/FileList.tsx:451
+#: /src/components/FileList.tsx:550
+#: /src/components/FileList.tsx:636
+#: /src/components/FileList.tsx:649
+#: /src/components/FileList.tsx:675
+msgid "Open this file"
+msgstr "Ouvrir ce fichier"
+
+#: /src/components/TagMenu.tsx:60
+msgid "Please commit, stash, or discard your changes before you checkout tags."
+msgstr "Veuillez valider, remiser ou annuler (commit, stash, or discard) vos modifications avant d'extraire des étiquettes."
+
+#: /src/components/BranchMenu.tsx:64
+msgid "Please commit, stash, or discard your changes before you switch branches."
+msgstr "Veuillez valider, remiser ou annuler vos modifications avant de changer de branche."
+
+#: /src/components/Toolbar.tsx:207
+msgid "Publish branch"
+msgstr "Publier la branche"
+
+#: /src/commandsAndMenu.tsx:382
+msgid "Pull from Remote"
+msgstr "Tirer Depuis un Dépôt Distant"
+
+#: /src/components/Toolbar.tsx:173
+msgid "Pull latest changes"
+msgstr "Tirer les dernières modifications"
+
+#: /src/commandsAndMenu.tsx:383
+msgid "Pull latest code from remote repository"
+msgstr "Tirer le dernier code du dépôt distant"
+
+#: /src/widgets/StatusWidget.ts:126
+msgid "pulling changes..."
+msgstr "tirer les modifications..."
+
+#: /src/commandsAndMenu.tsx:388
+msgid "Pulling..."
+msgstr "Tirage en cours..."
+
+#: /src/commandsAndMenu.tsx:348
+msgid "Push code to remote repository"
+msgstr "Pousser le code vers le dépôt distant"
+
+#: /src/components/Toolbar.tsx:200
+msgid "Push committed changes"
+msgstr "Pousser les modifications commits"
+
+#: /src/commandsAndMenu.tsx:347
+msgid "Push to Remote"
+msgstr "Pousser Vers un Dépôt Distant"
+
+#: /src/widgets/StatusWidget.ts:129
+msgid "pushing changes..."
+msgstr "pousser les modifications..."
+
+#: /src/commandsAndMenu.tsx:353
+msgid "Pushing..."
+msgstr "Poussage en cours..."
+
+#: /src/components/Toolbar.tsx:218
+msgid "Refresh the repository to detect local and remote changes"
+msgstr "Actualisez le dépôt pour détecter les modifications locales et distantes"
+
+#: /src/widgets/StatusWidget.ts:132
+msgid "refreshing..."
+msgstr "rafraîchissement..."
+
+#: /src/components/Toolbar.tsx:401
+msgid "Refreshing..."
+msgstr "rafraîchissement..."
+
+#: /src/commandsAndMenu.tsx:264
+msgid "Remote Git repository URL"
+msgstr "URL du dépôt Git distant"
+
+#: /src/components/FileItem.tsx:22
+msgid "Renamed"
+msgstr "Renommé"
+
+#: /src/components/ResetRevertDialog.tsx:128
+msgid "Reset Changes"
+msgstr "Réinitialiser les modifications"
+
+#: /src/widgets/StatusWidget.ts:135
+msgid "resetting changes..."
+msgstr "réinitialiser les changements..."
+
+#: /src/components/ResetRevertDialog.tsx:316
+msgid "Revert '%1'"
+msgstr "Inverser %1"
+
+#: /src/components/ResetRevertDialog.tsx:127
+msgid "Revert Changes"
+msgstr "Inverser les Changements"
+
+#: /src/components/SinglePastCommitInfo.tsx:203
+msgid "Revert changes introduced by this commit"
+msgstr "Inverser les modifications apportées par ce commit"
+
+#: /src/components/ResetRevertDialog.tsx:273
+msgid "Reverting changes..."
+msgstr "inversion des changements..."
+
+#: /src/widgets/StatusWidget.ts:120
+msgid "reverting changes..."
+msgstr "annuler les modifications..."
+
+#: /src/commandsAndMenu.tsx:783
+msgid "Set Up Remotes"
+msgstr "Mise en Place d'un Dépôt"
+
+#: /src/components/Alert.tsx:110
+msgid "SHOW"
+msgstr "Afficher"
+
+#: /src/commandsAndMenu.tsx:230
+msgid "Simple staging"
+msgstr "Indexation Simple"
+
+#: /src/commandsAndMenu.tsx:538
+msgid "Stage"
+msgstr "Indexer"
+
+#: /src/components/FileList.tsx:513
+msgid "Stage all changes"
+msgstr "Indexer toutes modifications"
+
+#: /src/commandsAndMenu.tsx:540
+msgid "Stage the changes of selected file"
+msgstr "Indexer les modifications du fichier sélectionné"
+
+#: /src/components/FileList.tsx:466
+msgid "Stage this change"
+msgstr "Indexer ce changement"
+
+#: /src/components/diff/NBDiffHeader.tsx:39
+msgid "Staged"
+msgstr "Indexé(s)"
+
+#: /src/components/GitPanel.tsx:216
+msgid "Staging files..."
+msgstr "Indexation des fichiers..."
+
+#: /src/commandsAndMenu.tsx:555
+msgid "Start tracking selected file"
+msgstr "Commencer à suivre le fichier sélectionné"
+
+#: /src/components/ResetRevertDialog.tsx:187
+msgid "Submit changes"
+msgstr "Soumettre vos changements"
+
+#: /src/commandsAndMenu.tsx:315
+msgid "Successfully cloned"
+msgstr "Clonage a réussi"
+
+#: /src/components/ResetRevertDialog.tsx:252
+msgid "Successfully discarded changes."
+msgstr "Modifications supprimées avec succès."
+
+#: /src/commandsAndMenu.tsx:397
+msgid "Successfully pulled"
+msgstr "Tirage a réussi"
+
+#: /src/commandsAndMenu.tsx:362
+msgid "Successfully pushed"
+msgstr "Poussage a réussi"
+
+#: /src/components/Toolbar.tsx:408
+msgid "Successfully refreshed."
+msgstr "L'actualisation a réussi."
+
+#: /src/components/ResetRevertDialog.tsx:279
+msgid "Successfully reverted changes."
+msgstr "Modifications inversées avec succès."
+
+#: /src/components/CommitBox.tsx:100
+msgid "Summary (%1 to commit)"
+msgstr "Résumé (%1 pour valider)"
+
+#: /src/components/BranchMenu.tsx:261
+msgid "Switch to branch: %1"
+msgstr "Passer à la branche: %1"
+
+#: /src/components/BranchMenu.tsx:427
+msgid "Switched branch."
+msgstr "Branche changée."
+
+#: /src/components/BranchMenu.tsx:416
+msgid "Switching branch..."
+msgstr "Changement de branche..."
+
+#: /src/components/BranchMenu.tsx:405
+msgid "Switching branches is disabled"
+msgstr "Le changement de branche est désactivé"
+
+#: /src/components/TagMenu.tsx:318
+msgid "Tag checkout."
+msgstr "Extraction d'étiquette."
+
+#: /src/components/Toolbar.tsx:326
+msgid "Tags"
+msgstr "Étiquettes"
+
+#: /src/components/BranchMenu.tsx:149
+msgid "The current branch contains files with uncommitted changes. Please commit or discard these changes before switching to or creating another branch."
+msgstr "La branche actuelle contient des fichiers avec des modifications non validées (commits). Veuillez valider ou annuler ces modifications avant de créer ou de passer à une autre branche."
+
+#: /src/components/NewBranchDialog.tsx:40
+msgid "The current branch. Pick this if you want to build on work done in this branch."
+msgstr "La branche actuelle. Choisissez cette option si vous souhaitez vous appuyer sur le travail effectué dans cette branche."
+
+#: /src/components/NewBranchDialog.tsx:42
+msgid "The default branch. Pick this if you want to start fresh from the default branch."
+msgstr "La branche par défaut. Choisissez ceci si vous voulez repartir de la branche par défaut."
+
+#: /src/components/TagMenu.tsx:23
+msgid "The repository contains files with uncommitted changes. Please commit or discard these changes before switching to a tag."
+msgstr "Le dépôt contient des fichiers avec des modifications non validées. Veuillez valider ou annuler ces modifications avant de changer à une étiquette."
+
+#: /src/index.ts:106
+msgid "The versions of the JupyterLab Git server frontend and backend do not match. The @jupyterlab/git frontend extension has version: %1 while the python package has version %2. Please install identical version of jupyterlab-git Python package and the @jupyterlab/git extension. Try running: pip install --upgrade jupyterlab-git"
+msgstr "Les versions du frontend et du backend du serveur JupyterLab Git ne correspondent pas. L'extension frontend @jupyterlab/git contient la version: %1 tandis que le paquetage Python contient la version %2. Veuillez installer une version identique du paquetage Python jupyterlab-git et l'extension@jupyterlab/git. Essayez d'exécuter: pip install --upgrade jupyterlab-git"
+
+#: /src/components/ResetRevertDialog.tsx:142
+msgid "These changes will be reverted. Only commit if you're sure you're okay losing these changes."
+msgstr "Ces modifications seront inversées. Ne pas commettre que si vous êtes sûr de vouloir perdre ces modifications."
+
+#: /src/commandsAndMenu.tsx:612
+msgid "This action cannot be undone."
+msgstr "Cette action ne peut pas être annulée."
+
+#: /src/commandsAndMenu.tsx:429
+msgid "This file has been deleted!"
+msgstr "Ce fichier a été supprimé!"
+
+#: /src/components/ResetRevertDialog.tsx:326
+msgid "This reverts commit %1"
+msgstr "Cela inverse le commit %1"
+
+#: /src/commandsAndMenu.tsx:553
+msgid "Track"
+msgstr "Suivre"
+
+#: /src/components/FileList.tsx:598
+msgid "Track all untracked files"
+msgstr "Suivre tous les fichiers non suivis"
+
+#: /src/components/FileList.tsx:560
+msgid "Track this file"
+msgstr "Suivre ce fichier"
+
+#: /src/components/TagMenu.tsx:47
+msgid "Unable to checkout tag"
+msgstr "Impossible d'extraire l'étiquette"
+
+#: /src/components/BranchMenu.tsx:51
+msgid "Unable to switch branch"
+msgstr "Impossible de changer de branche"
+
+#: /src/commandsAndMenu.ts:568
+msgid "Unstage"
+msgstr "Désindexer"
+
+#: /src/components/FileList.tsx:409
+msgid "Unstage all changes"
+msgstr "Désindexer toutes modifications"
+
+#: /src/commandsAndMenu.tsx:570
+msgid "Unstage the changes of selected file"
+msgstr "Désindexer les modifications du fichier sélectionné"
+
+#: /src/components/FileList.tsx:371
+msgid "Unstage this change"
+msgstr "Désindexer ce changement"
+
+#: /src/components/FileItem.tsx:25
+msgid "Untracked"
+msgstr "Non suivi(s)"
+
+#: /src/components/FileItem.tsx:24
+msgid "Updated"
+msgstr "Mise à jour"
+
+#: /src/components/Toolbar.tsx:315
+msgid "View branches"
+msgstr "Voir les branches"
+
+#: /src/components/GitPanel.tsx:345
+msgid "View changed files"
+msgstr "Afficher les fichiers modifiés"
+
+#: /src/components/GitPanel.tsx:355
+msgid "View commit history"
+msgstr "Afficher l'historique des commits"
+
+#: /src/components/SinglePastCommitInfo.tsx:274
+msgid "View file changes"
+msgstr "Afficher les modifications apportées aux fichiers"
+
+#: /src/components/Toolbars.tsx:325
+msgid "View tags"
+msgstr "Voir les étiquettes"
+
+#: /src/components/GitPanel.tsx:496
+msgid "Who is committing?"
+msgstr "Qui fait le commit?"
+
+#: /src/widgets/StatusWidget.ts:144
+msgid "working..."
+msgstr "travail en cours..."
+
+#: /src/commandsAndMenu.tsx:185
+msgid "Yes"
+msgstr "Oui"
+
+#: /src/components/GitPanel.tsx:433
+msgid "You are not currently in"
+msgstr "Vous n'êtes pas actuellement dans"
+
+#: /src/components/TagMenu.tsx:52
+msgid "Your changes to the following files would be overwritten by switching:"
+msgstr "Vos modifications apportées aux fichiers suivants seraient écrasées:"
