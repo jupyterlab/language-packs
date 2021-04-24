@@ -12,25 +12,25 @@ msgstr ""
 "X-Crowdin-File-ID: 28\n"
 "Language-Team: Arabic\n"
 "Language: ar_SA\n"
-"PO-Revision-Date: 2020-12-11 05:05\n"
+"PO-Revision-Date: 2021-04-21 11:29\n"
 
 #: /schema/plugin.json:10
 msgid "Suspend user interaction until commands finish"
-msgstr "تعليق تفاعل المستخدم حتى الانتهاء من الأوامر"
+msgstr "تعليق تفاعل المستخدم حتى تنتهي الأوامر"
 
 #: /schema/plugin.json:11
 msgctxt "schema"
 msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
-msgstr ""
+msgstr "تعليق تفاعل مستخدم JupyterLab حتى تنتهي أوامر Git (على سبيل المثال، الالتزام، السحب، إعادة الضبط، الرجوع) من التنفيذ. ويساعد تحديد هذا الأمر على \"صحيح\" على التخفيف من الظروف العرقية المحتملة التي تؤدي إلى فقدان البيانات، تضاربات ، و سجل Git مكسور. ما لم يتم تشغيل شبكة بطيئة، يجب ألا يتدخل تعليق واجهة المستخدم في سير العمل القياسية. إن تعيين هذا الخيار إلى \"خطأ\" يسمح بالإجراءات لتفعيل العديد من إجراءات Git المتزامنة."
 
 #: /schema/plugin.json:16
 msgid "Cancel pull merge conflict"
-msgstr "الغاء دمج السحب"
+msgstr "إلغاء تضارب اندماج السحب"
 
 #: /schema/plugin.json:17
 msgctxt "schema"
 msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
-msgstr ""
+msgstr "إذا كان \"صحيحا\"، عند جلب ودمج التغييرات من المستودع عن بعد، يتم إلغاء الدمج المتضارب وتبقى الشجرة العاملة كما هي."
 
 #: /schema/plugin.json:22
 msgid "Disable branch with changes"
@@ -39,7 +39,7 @@ msgstr "تعطيل الفرع مع التغيرات"
 #: /schema/plugin.json:23
 msgctxt "schema"
 msgid "Disable all branch operations (new, switch) when there are changed/staged files"
-msgstr ""
+msgstr "تعطيل جميع عمليات التفرع (تجديد، تبديل) عندما تكون هناك ملفات متغيرة/مهيأة"
 
 #: /schema/plugin.json:28
 msgid "Display Git status updates"
@@ -48,7 +48,7 @@ msgstr "عرض حالة التحديثات ل Git"
 #: /schema/plugin.json:29
 msgctxt "schema"
 msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
-msgstr ""
+msgstr "عرض تحديثات Git في شريط حالة JupyterLab. إذا كان صحيحاً، يعرض الملحق تحديثات الحالة في شريط حالة JupyterLab ، مثل عند السحب ودفع التغييرات، تبديل الفروع، والاستفتاء للتغييرات. تبعاً لمستوى نشاط الإضافة، قد يجد بعض المستخدمين تحديثات الحالة مشتتة. وفي هذه الحالة، فإن تبديل هذه القيمه إلى false ينبغي أن يقلل من الضوضاء البصرية."
 
 #: /schema/plugin.json:34
 msgid "Show diff on double click"
@@ -57,7 +57,7 @@ msgstr "إظهار الاختلافات عند الضغط مرتين"
 #: /schema/plugin.json:35
 msgctxt "schema"
 msgid "If true, doubling clicking a file in the list of changed files will open a diff."
-msgstr ""
+msgstr "إذا كان صحيحاً، فإن النقر المزدوج فوق ملف في قائمة الملفات المتغيرة سوف يفتح فتحاً مختلفاً."
 
 #: /schema/plugin.json:4
 msgctxt "schema"
@@ -66,12 +66,12 @@ msgstr "Git"
 
 #: /schema/plugin.json:40
 msgid "History count"
-msgstr ""
+msgstr "عدد السجلات"
 
 #: /schema/plugin.json:41
 msgctxt "schema"
 msgid "Number of (most recent) commits shown in the history log"
-msgstr ""
+msgstr "عدد (الأحدث عهدا) الالتزامات المبينة في سجل التاريخ"
 
 #: /schema/plugin.json:46
 msgid "Refresh interval"
@@ -80,12 +80,12 @@ msgstr "الفاصل الزمني للتحديث"
 #: /schema/plugin.json:47
 msgctxt "schema"
 msgid "Number of milliseconds between polling the file system for changes."
-msgstr ""
+msgstr "عدد المللي ثانية بين التصويت لنظام الملفات للتغييرات."
 
 #: /schema/plugin.json:5
 msgctxt "schema"
 msgid "jupyterlab-git settings."
-msgstr ""
+msgstr "إعدادات jupyterlab-git."
 
 #: /schema/plugin.json:52
 msgid "Simple staging flag"
@@ -94,5 +94,5 @@ msgstr "علامة التجهيز البسيطة"
 #: /schema/plugin.json:53
 msgctxt "schema"
 msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
-msgstr ""
+msgstr "إذا كان صحيحاً، استخدم مفهوماً مبسطاً للتجهيز التدريجي. فقط الملفات مع التغييرات تظهر (بدلاً من إظهار مقدّم/تغيير/غير متعقب)، وسيتم تلقائياً تجهيز جميع الملفات مع التغييرات"
 

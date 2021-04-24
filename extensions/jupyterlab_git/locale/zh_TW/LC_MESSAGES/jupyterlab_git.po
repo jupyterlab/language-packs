@@ -12,16 +12,17 @@ msgstr ""
 "X-Crowdin-File-ID: 28\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2020-09-14 21:49\n"
+"PO-Revision-Date: 2021-04-21 10:26\n"
 
 #: /schema/plugin.json:10
 msgid "Suspend user interaction until commands finish"
-msgstr ""
+msgstr "暫停用戶操作直到指令完成"
 
 #: /schema/plugin.json:11
 msgctxt "schema"
 msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
-msgstr ""
+msgstr "暫停 JupyterLab 用戶操作直到 Git 指令(e.g., commit, pull, reset, revert)執行完成。\n"
+"設為 true 可幫助緩解可能導致資料遺失、衝突和損毀 git 歷史紀錄的潛在競爭情況。除非在緩慢的網路中執行，UI 暫停不應干擾標準作業流程。設為 false 允許觸發數個併發 git 操作。"
 
 #: /schema/plugin.json:16
 msgid "Cancel pull merge conflict"
@@ -39,11 +40,11 @@ msgstr ""
 #: /schema/plugin.json:23
 msgctxt "schema"
 msgid "Disable all branch operations (new, switch) when there are changed/staged files"
-msgstr ""
+msgstr "當有變更/暫存檔案時禁止所有分支操作(新增，切換)"
 
 #: /schema/plugin.json:28
 msgid "Display Git status updates"
-msgstr ""
+msgstr "顯示Git狀態更新"
 
 #: /schema/plugin.json:29
 msgctxt "schema"
@@ -52,30 +53,30 @@ msgstr ""
 
 #: /schema/plugin.json:34
 msgid "Show diff on double click"
-msgstr ""
+msgstr "雙擊時顯示diff"
 
 #: /schema/plugin.json:35
 msgctxt "schema"
 msgid "If true, doubling clicking a file in the list of changed files will open a diff."
-msgstr ""
+msgstr "若為 true, 雙擊已變更檔案列表中的檔案將開啟一個diff。"
 
 #: /schema/plugin.json:4
 msgctxt "schema"
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: /schema/plugin.json:40
 msgid "History count"
-msgstr ""
+msgstr "歷史計數"
 
 #: /schema/plugin.json:41
 msgctxt "schema"
 msgid "Number of (most recent) commits shown in the history log"
-msgstr ""
+msgstr "顯示在歷史紀錄的(最新) commits 數量"
 
 #: /schema/plugin.json:46
 msgid "Refresh interval"
-msgstr ""
+msgstr "重整間隔"
 
 #: /schema/plugin.json:47
 msgctxt "schema"
@@ -85,7 +86,7 @@ msgstr ""
 #: /schema/plugin.json:5
 msgctxt "schema"
 msgid "jupyterlab-git settings."
-msgstr ""
+msgstr "jupyterlab-git 設定。"
 
 #: /schema/plugin.json:52
 msgid "Simple staging flag"

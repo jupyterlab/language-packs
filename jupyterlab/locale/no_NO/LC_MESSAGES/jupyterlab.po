@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Norwegian\n"
 "Language: no_NO\n"
-"PO-Revision-Date: 2020-10-09 11:09\n"
+"PO-Revision-Date: 2021-01-05 21:49\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -22,7 +22,8 @@ msgstr "Skrifttype"
 msgctxt "schema"
 msgid "The font family used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr ""
+msgstr "Skriftfamilien som brukes for markdown.\n"
+"Hvis `null`, brukes verdi fra gjeldende stilprofil."
 
 #: /examples/federated/md_package/./schema/plugin.json:36 /packages/markdownviewer-extension/schema/plugin.json:36
 msgid "Font Size"
@@ -32,12 +33,13 @@ msgstr "Skriftstørrelse"
 msgctxt "schema"
 msgid "The size in pixel of the font used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr ""
+msgstr "Skriftstørrelsen, i piksler, av skriften som brukes for markdown.\n"
+"Hvis `null`, brukes verdi fra gjeldende stilprofil."
 
 #: /examples/federated/md_package/./schema/plugin.json:4 /packages/markdownviewer-extension/schema/plugin.json:4
 msgctxt "schema"
 msgid "Markdown Viewer"
-msgstr ""
+msgstr "Visning av Markdown"
 
 #: /examples/federated/md_package/./schema/plugin.json:42 /packages/markdownviewer-extension/schema/plugin.json:42
 msgid "Line Height"
@@ -47,7 +49,8 @@ msgstr "Linjehøyde"
 msgctxt "schema"
 msgid "The line height used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr ""
+msgstr "Linjehøyde som brukes for markdown.\n"
+"Hvis `null`, brukes verdi fra gjeldende stilprofil."
 
 #: /examples/federated/md_package/./schema/plugin.json:48 /packages/markdownviewer-extension/schema/plugin.json:48
 msgid "Line Width"
@@ -62,11 +65,11 @@ msgstr ""
 #: /examples/federated/md_package/./schema/plugin.json:5 /packages/markdownviewer-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Markdown viewer settings."
-msgstr ""
+msgstr "Innstillinger for visning av Markdown."
 
 #: /examples/federated/md_package/./schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:54
 msgid "Hide Front Matter"
-msgstr ""
+msgstr "Skjul innledende tekst"
 
 #: /examples/federated/md_package/./schema/plugin.json:55 /packages/markdownviewer-extension/schema/plugin.json:55
 msgctxt "schema"
@@ -74,7 +77,9 @@ msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr ""
+msgstr "Om innledende YAML skal skjules.\n"
+"YAML må plasseres i toppen av dokumentet,\n"
+"begynne med en linje av tre bindestreker (---) og avsluttes med en linje av tre bindestreker (---) eller tre punktum (...)."
 
 #: /examples/federated/md_package/./schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:60
 msgid "Render Timeout"
@@ -83,7 +88,7 @@ msgstr "Tidsbegrensning for visning"
 #: /examples/federated/md_package/./schema/plugin.json:61 /packages/markdownviewer-extension/schema/plugin.json:61
 msgctxt "schema"
 msgid "The render timeout in milliseconds."
-msgstr ""
+msgstr "Tidsbegrensning for visning i millisekund."
 
 #: /packages/application-extension/schema/main.json:2
 msgctxt "schema"
@@ -119,7 +124,7 @@ msgstr "Overstyringer"
 #: /packages/apputils-extension/schema/palette.json:2
 msgctxt "schema"
 msgid "Command Palette"
-msgstr ""
+msgstr "Kommandoutvalg"
 
 #: /packages/apputils-extension/schema/palette.json:3
 msgctxt "schema"
@@ -139,7 +144,7 @@ msgstr "Utskriftsinnstillinger."
 #: /packages/apputils-extension/schema/themes.json:2
 msgctxt "schema"
 msgid "Theme"
-msgstr ""
+msgstr "Stilprofil"
 
 #: /packages/apputils-extension/schema/themes.json:31
 msgid "Selected Theme"
@@ -162,21 +167,21 @@ msgstr "Aktiver/deaktiver stilprofil for rullefelt"
 #: /packages/apputils-extension/schema/themes.json:4
 msgctxt "schema"
 msgid "Theme manager settings."
-msgstr ""
+msgstr "Innstillinger for stilprofil."
 
 #: /packages/apputils-extension/schema/themes.json:42
 msgid "Theme CSS Overrides"
-msgstr ""
+msgstr "Endring av CSS i stilprofil"
 
 #: /packages/apputils-extension/schema/themes.json:43
 msgctxt "schema"
 msgid "Override theme CSS variables by setting key-value pairs here"
-msgstr ""
+msgstr "Endre CSS variable i stilprofil ved å sette nøkkelord og verdi her"
 
 #: /packages/codemirror-extension/schema/commands.json:10
 msgctxt "schema"
 msgid "Configures the keymap to use"
-msgstr ""
+msgstr "Konfigurer tastaturet som skal brukes"
 
 #: /packages/codemirror-extension/schema/commands.json:15 /packages/terminal-extension/schema/plugin.json:52 packages/apputils-extension/src/themesplugins.ts:238
 msgid "Theme"
@@ -186,29 +191,29 @@ msgstr "Stilprofil"
 msgctxt "schema"
 msgid "CSS file defining the corresponding\n"
 ".cm-s-[name] styles is loaded"
-msgstr ""
+msgstr "CSS-fil som definerer tilsvarende .cm-s-[name] er lastet"
 
 #: /packages/codemirror-extension/schema/commands.json:21
 msgid "Scroll behavior"
-msgstr ""
+msgstr "Rulleadferd"
 
 #: /packages/codemirror-extension/schema/commands.json:22
 msgctxt "schema"
 msgid "Whether to scroll past the end of text document"
-msgstr ""
+msgstr "Om det er mulig å rulle forbi enden av et tekstdokument"
 
 #: /packages/codemirror-extension/schema/commands.json:27
 msgid "Style Active Line"
-msgstr ""
+msgstr "Stil for aktiv linje"
 
 #: /packages/codemirror-extension/schema/commands.json:28
 msgctxt "schema"
 msgid "Value is boolean, or { nonEmpty: boolean }"
-msgstr ""
+msgstr "Verdien er boolsk, eller { nonEmpty: boolean }"
 
 #: /packages/codemirror-extension/schema/commands.json:33
 msgid "Style Selected Text"
-msgstr ""
+msgstr "Stil for markert tekst"
 
 #: /packages/codemirror-extension/schema/commands.json:34
 msgctxt "schema"
@@ -245,7 +250,7 @@ msgstr ""
 
 #: /packages/codemirror-extension/schema/commands.json:9
 msgid "Key Map"
-msgstr ""
+msgstr "Tastatur-layout"
 
 #: /packages/completer-extension/schema/consoles.json:2
 msgctxt "schema"
@@ -260,57 +265,57 @@ msgstr "Instillinger for fullfører i konsoller."
 #: /packages/completer-extension/schema/files.json:2
 msgctxt "schema"
 msgid "File Editor Completer"
-msgstr ""
+msgstr "Fullfører for fil-verktøy"
 
 #: /packages/completer-extension/schema/files.json:3
 msgctxt "schema"
 msgid "File editor completer settings."
-msgstr ""
+msgstr "Innstillinger for fullfører i fil-verktøy."
 
 #: /packages/completer-extension/schema/notebooks.json:2
 msgctxt "schema"
 msgid "Notebook Completer"
-msgstr ""
+msgstr "Fullfører for notatblokk"
 
 #: /packages/completer-extension/schema/notebooks.json:3
 msgctxt "schema"
 msgid "Notebook completer settings."
-msgstr ""
+msgstr "Innstillinger for fullfører i notatblokk."
 
 #: /packages/console-extension/schema/tracker.json:2
 msgctxt "schema"
 msgid "Code Console"
-msgstr ""
+msgstr "Kommandolinje for kode"
 
 #: /packages/console-extension/schema/tracker.json:3
 msgctxt "schema"
 msgid "Code Console settings."
-msgstr ""
+msgstr "Innstillinger til kommandolinje for kode."
 
 #: /packages/console-extension/schema/tracker.json:35
 msgid "Interaction mode"
-msgstr ""
+msgstr "Interaktiv modus"
 
 #: /packages/console-extension/schema/tracker.json:36
 msgctxt "schema"
 msgid "Whether the console interaction mimics the notebook\n"
 "or terminal keyboard shortcuts."
-msgstr ""
+msgstr "Om interaksjon i kommandolinjen etterligner en notatbok eller hurtigtaster i terminalen."
 
 #: /packages/console-extension/schema/tracker.json:42 packages/console-extension/src/foreign.ts:85
 msgid "Show All Kernel Activity"
-msgstr ""
+msgstr "Vis all kjerneaktivitet"
 
 #: /packages/console-extension/schema/tracker.json:43
 msgctxt "schema"
 msgid "Whether the console defaults to showing all\n"
 "kernel activity or just kernel activity originating from itself."
-msgstr ""
+msgstr "Om konsollet som standard viser all kjerneaktivitet eller kun kjerneaktivitet relatert til seg selv."
 
 #: /packages/debugger-extension/schema/main.json:3
 msgctxt "schema"
 msgid "Debugger settings"
-msgstr ""
+msgstr "Innstillinger for feilsøker"
 
 #: /packages/debugger-extension/schema/main.json:34
 msgid "Variable filter"
@@ -319,49 +324,49 @@ msgstr "Variabel filter"
 #: /packages/debugger-extension/schema/main.json:35
 msgctxt "schema"
 msgid "Variables to filter out in the tree and table viewers"
-msgstr ""
+msgstr "Variabler som skal filtreres ut i tre- og tabellvisninger"
 
 #: /packages/debugger-extension/schema/main.json:5
 msgctxt "schema"
 msgid "Debugger"
-msgstr ""
+msgstr "Feilsøker"
 
 #: /packages/docmanager-extension/schema/plugin.json:22 packages/docmanager-extension/src/index.ts:694
 msgid "Autosave Documents"
-msgstr ""
+msgstr "Automatisk lagring av dokumenter"
 
 #: /packages/docmanager-extension/schema/plugin.json:23
 msgctxt "schema"
 msgid "Whether to autosave documents"
-msgstr ""
+msgstr "Om dokumenter skal lagres automatisk"
 
 #: /packages/docmanager-extension/schema/plugin.json:28
 msgid "Autosave Interval"
-msgstr ""
+msgstr "Intervall for automatisk lagring"
 
 #: /packages/docmanager-extension/schema/plugin.json:29
 msgctxt "schema"
 msgid "Length of save interval in seconds"
-msgstr ""
+msgstr "Intervall for automatisk lagring i sekunder"
 
 #: /packages/docmanager-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Document Manager settings."
-msgstr ""
+msgstr "Innstillinger for dokumenthåndtering."
 
 #: /packages/docmanager-extension/schema/plugin.json:34
 msgid "Default Viewers"
-msgstr ""
+msgstr "Standard fremviser"
 
 #: /packages/docmanager-extension/schema/plugin.json:36
 msgctxt "schema"
 msgid "Overrides for the default viewers for file types"
-msgstr ""
+msgstr "Overstyrer standard fremviser for filtyper"
 
 #: /packages/docmanager-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Document Manager"
-msgstr ""
+msgstr "Administrasjon av dokumenter"
 
 #: /packages/documentsearch-extension/schema/plugin.json:2
 msgctxt "schema"
@@ -371,7 +376,7 @@ msgstr "Søk i dokument"
 #: /packages/documentsearch-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Document search plugin."
-msgstr ""
+msgstr "Utvidelse for søk i dokumenter."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:14
 msgid "Disclaimed Status"
@@ -380,12 +385,12 @@ msgstr ""
 #: /packages/extensionmanager-extension/schema/plugin.json:15
 msgctxt "schema"
 msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
-msgstr ""
+msgstr "Om brukeren har akseptert at utvidelser administrert igjennom dette brukergrensesnittet fritt kan kjøre kode, hvilket kan være farlig"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:4
 msgctxt "schema"
 msgid "Extension Manager"
-msgstr ""
+msgstr "Behandle utvidelser"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:5
 msgctxt "schema"
@@ -394,41 +399,42 @@ msgstr ""
 
 #: /packages/extensionmanager-extension/schema/plugin.json:8
 msgid "Enabled Status"
-msgstr ""
+msgstr "Aktivert status"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:9
 msgctxt "schema"
 msgid "Enables extension manager (requires Node.js/npm).\n"
 "WARNING: installing untrusted extensions may be unsafe."
-msgstr ""
+msgstr "Aktiverer administrasjon av utvidelser (krever Node.js/npm).\n"
+"NB: installasjon av upålitelige tillegg kan være skadelig."
 
 #: /packages/filebrowser-extension/schema/browser.json:21
 msgid "Navigate to current directory"
-msgstr ""
+msgstr "Naviger til gjeldende mappe"
 
 #: /packages/filebrowser-extension/schema/browser.json:22
 msgctxt "schema"
 msgid "Whether to automatically navigate to a document's current directory"
-msgstr ""
+msgstr "Om automatisk navigering til et dokuments mappe er aktivert"
 
 #: /packages/filebrowser-extension/schema/browser.json:27
 msgid "Filter on file name with a fuzzy search"
-msgstr ""
+msgstr "Filter for filnavn"
 
 #: /packages/filebrowser-extension/schema/browser.json:28
 msgctxt "schema"
 msgid "Whether to apply fuzzy algorithm while filtering on file names"
-msgstr ""
+msgstr "Om fuzzy-algoritme skal benyttes når filnavn filtreres"
 
 #: /packages/filebrowser-extension/schema/browser.json:4
 msgctxt "schema"
 msgid "File Browser"
-msgstr ""
+msgstr "Filutforsker"
 
 #: /packages/filebrowser-extension/schema/browser.json:5
 msgctxt "schema"
 msgid "File Browser settings."
-msgstr ""
+msgstr "Innstillinger for filutforsker."
 
 #: /packages/fileeditor-extension/schema/plugin.json:4
 msgctxt "schema"
@@ -442,7 +448,7 @@ msgstr "Innstillinger for tekstbehandler."
 
 #: /packages/fileeditor-extension/schema/plugin.json:61
 msgid "Editor Configuration"
-msgstr ""
+msgstr "Konfigurasjon av tekstverktøy"
 
 #: /packages/fileeditor-extension/schema/plugin.json:62
 msgctxt "schema"
@@ -524,70 +530,70 @@ msgstr "Hoverinstillinger for menyer."
 #: /packages/notebook-extension/schema/tracker.json:221
 msgctxt "schema"
 msgid "Notebook"
-msgstr ""
+msgstr "Notisblokk"
 
 #: /packages/notebook-extension/schema/tracker.json:222
 msgctxt "schema"
 msgid "Notebook settings."
-msgstr ""
+msgstr "Innstillinger for notisbok."
 
 #: /packages/notebook-extension/schema/tracker.json:281
 msgid "Code Cell Configuration"
-msgstr ""
+msgstr "Konfigurasjon av kodecelle"
 
 #: /packages/notebook-extension/schema/tracker.json:282
 msgctxt "schema"
 msgid "The configuration for all code cells."
-msgstr ""
+msgstr "Konfigurasjonen for alle kodeceller."
 
 #: /packages/notebook-extension/schema/tracker.json:302
 msgid "Default cell type"
-msgstr ""
+msgstr "Standard celletype"
 
 #: /packages/notebook-extension/schema/tracker.json:303
 msgctxt "schema"
 msgid "The default type (markdown, code, or raw) for new cells"
-msgstr ""
+msgstr "Standard type (Markdown, kode eller ren tekst) for nye celler"
 
 #: /packages/notebook-extension/schema/tracker.json:309
 msgid "Shut down kernel"
-msgstr ""
+msgstr "Skru av kjernen"
 
 #: /packages/notebook-extension/schema/tracker.json:310
 msgctxt "schema"
 msgid "Whether to shut down or not the kernel when closing a notebook."
-msgstr ""
+msgstr "Om kjernen skal avsluttes eller ikke når notisboken lukkes."
 
 #: /packages/notebook-extension/schema/tracker.json:315
 msgid "Markdown Cell Configuration"
-msgstr ""
+msgstr "Konfigurasjon av Markdown-celler"
 
 #: /packages/notebook-extension/schema/tracker.json:316
 msgctxt "schema"
 msgid "The configuration for all markdown cells."
-msgstr ""
+msgstr "Konfigurasjonen for alle Markdown-celler."
 
 #: /packages/notebook-extension/schema/tracker.json:336
 msgid "Raw Cell Configuration"
-msgstr ""
+msgstr "Innstillinger for celler med ren tekst"
 
 #: /packages/notebook-extension/schema/tracker.json:337
 msgctxt "schema"
 msgid "The configuration for all raw cells."
-msgstr ""
+msgstr "Innstillinger for alle celler med ren tekst."
 
 #: /packages/notebook-extension/schema/tracker.json:357
 msgid "Scroll past last cell"
-msgstr ""
+msgstr "Rull forbi siste celle"
 
 #: /packages/notebook-extension/schema/tracker.json:358
 msgctxt "schema"
 msgid "Whether to be able to scroll so the last cell is at the top of the panel"
-msgstr ""
+msgstr "Om det skal være mulig å rulle slik at siste celle er på toppen av panelet"
 
 #: /packages/notebook-extension/schema/tracker.json:363
 msgid "Recording timing"
-msgstr ""
+msgstr "Tar opp tidsforbruk"
 
 #: /packages/notebook-extension/schema/tracker.json:364
 msgctxt "schema"
