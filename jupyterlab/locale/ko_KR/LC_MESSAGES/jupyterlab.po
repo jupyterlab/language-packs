@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2021-02-21 03:34\n"
+"PO-Revision-Date: 2021-04-24 01:20\n"
 
 #: /examples/federated/md_package/./schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
 msgid "Font Family"
@@ -116,6 +116,15 @@ msgstr ""
 msgid "Overrides"
 msgstr ""
 
+#: /packages/apputils-extension/schema/palette.json:13
+msgid "Modal Command Palette"
+msgstr ""
+
+#: /packages/apputils-extension/schema/palette.json:14
+msgctxt "schema"
+msgid "Whether the command palette should be modal or in the left panel."
+msgstr ""
+
 #: /packages/apputils-extension/schema/palette.json:2
 msgctxt "schema"
 msgid "Command Palette"
@@ -141,34 +150,34 @@ msgctxt "schema"
 msgid "Theme"
 msgstr "테마"
 
-#: /packages/apputils-extension/schema/themes.json:31
-msgid "Selected Theme"
-msgstr "선택한 테마"
-
-#: /packages/apputils-extension/schema/themes.json:32
-msgctxt "schema"
-msgid "Application-level visual styling theme"
-msgstr ""
-
-#: /packages/apputils-extension/schema/themes.json:37
-msgid "Scrollbar Theming"
-msgstr "스크롤바에 테마 적용"
-
-#: /packages/apputils-extension/schema/themes.json:38
-msgctxt "schema"
-msgid "Enable/disable styling of the application scrollbars"
-msgstr "어플리케이션의 스크롤바에 테마 적용 여부 선택"
-
 #: /packages/apputils-extension/schema/themes.json:4
 msgctxt "schema"
 msgid "Theme manager settings."
 msgstr ""
 
-#: /packages/apputils-extension/schema/themes.json:42
+#: /packages/apputils-extension/schema/themes.json:45
+msgid "Selected Theme"
+msgstr "선택한 테마"
+
+#: /packages/apputils-extension/schema/themes.json:46
+msgctxt "schema"
+msgid "Application-level visual styling theme"
+msgstr ""
+
+#: /packages/apputils-extension/schema/themes.json:51
+msgid "Scrollbar Theming"
+msgstr "스크롤바에 테마 적용"
+
+#: /packages/apputils-extension/schema/themes.json:52
+msgctxt "schema"
+msgid "Enable/disable styling of the application scrollbars"
+msgstr "어플리케이션의 스크롤바에 테마 적용 여부 선택"
+
+#: /packages/apputils-extension/schema/themes.json:56
 msgid "Theme CSS Overrides"
 msgstr ""
 
-#: /packages/apputils-extension/schema/themes.json:43
+#: /packages/apputils-extension/schema/themes.json:57
 msgctxt "schema"
 msgid "Override theme CSS variables by setting key-value pairs here"
 msgstr ""
@@ -178,7 +187,7 @@ msgctxt "schema"
 msgid "Configures the keymap to use"
 msgstr ""
 
-#: /packages/codemirror-extension/schema/commands.json:15 /packages/terminal-extension/schema/plugin.json:52 packages/apputils-extension/src/themesplugins.ts:238
+#: /packages/codemirror-extension/schema/commands.json:15 /packages/terminal-extension/schema/plugin.json:52 packages/apputils-extension/src/themesplugins.ts:246
 msgid "Theme"
 msgstr "테마"
 
@@ -312,21 +321,21 @@ msgctxt "schema"
 msgid "Debugger settings"
 msgstr ""
 
-#: /packages/debugger-extension/schema/main.json:34
-msgid "Variable filter"
-msgstr ""
-
-#: /packages/debugger-extension/schema/main.json:35
-msgctxt "schema"
-msgid "Variables to filter out in the tree and table viewers"
-msgstr ""
-
 #: /packages/debugger-extension/schema/main.json:5
 msgctxt "schema"
 msgid "Debugger"
 msgstr ""
 
-#: /packages/docmanager-extension/schema/plugin.json:22 packages/docmanager-extension/src/index.ts:694
+#: /packages/debugger-extension/schema/main.json:59
+msgid "Variable filter"
+msgstr ""
+
+#: /packages/debugger-extension/schema/main.json:60
+msgctxt "schema"
+msgid "Variables to filter out in the tree and table viewers"
+msgstr ""
+
+#: /packages/docmanager-extension/schema/plugin.json:22 packages/docmanager-extension/src/index.ts:725
 msgid "Autosave Documents"
 msgstr ""
 
@@ -380,6 +389,33 @@ msgstr ""
 #: /packages/extensionmanager-extension/schema/plugin.json:15
 msgctxt "schema"
 msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:20
+msgid "NPM Registry"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:21
+msgctxt "schema"
+msgid "The URI of the NPM registry to use for searching for jupyterlab extensions"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:26
+msgid "NPM CDN"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:27
+msgctxt "schema"
+msgid "The URI of the CDN to use for fetching full package data"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:32
+msgid "Enable CDN"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:33
+msgctxt "schema"
+msgid "Enables using the CDN to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry"
 msgstr ""
 
 #: /packages/extensionmanager-extension/schema/plugin.json:4
@@ -519,77 +555,86 @@ msgctxt "schema"
 msgid "Main JupyterLab menu settings."
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:221
+#: /packages/notebook-extension/schema/tracker.json:231
 msgctxt "schema"
 msgid "Notebook"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:222
+#: /packages/notebook-extension/schema/tracker.json:232
 msgctxt "schema"
 msgid "Notebook settings."
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:281
+#: /packages/notebook-extension/schema/tracker.json:291
 msgid "Code Cell Configuration"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:282
+#: /packages/notebook-extension/schema/tracker.json:292
 msgctxt "schema"
 msgid "The configuration for all code cells."
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:302
+#: /packages/notebook-extension/schema/tracker.json:312
 msgid "Default cell type"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:303
+#: /packages/notebook-extension/schema/tracker.json:313
 msgctxt "schema"
 msgid "The default type (markdown, code, or raw) for new cells"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:309
+#: /packages/notebook-extension/schema/tracker.json:319
 msgid "Shut down kernel"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:310
+#: /packages/notebook-extension/schema/tracker.json:320
 msgctxt "schema"
 msgid "Whether to shut down or not the kernel when closing a notebook."
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:315
+#: /packages/notebook-extension/schema/tracker.json:325
 msgid "Markdown Cell Configuration"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:316
+#: /packages/notebook-extension/schema/tracker.json:326
 msgctxt "schema"
 msgid "The configuration for all markdown cells."
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:336
+#: /packages/notebook-extension/schema/tracker.json:346
 msgid "Raw Cell Configuration"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:337
+#: /packages/notebook-extension/schema/tracker.json:347
 msgctxt "schema"
 msgid "The configuration for all raw cells."
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:357
+#: /packages/notebook-extension/schema/tracker.json:367
 msgid "Scroll past last cell"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:358
+#: /packages/notebook-extension/schema/tracker.json:368
 msgctxt "schema"
 msgid "Whether to be able to scroll so the last cell is at the top of the panel"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:363
+#: /packages/notebook-extension/schema/tracker.json:373
 msgid "Recording timing"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:364
+#: /packages/notebook-extension/schema/tracker.json:374
 msgctxt "schema"
 msgid "Should timing data be recorded in cell metadata"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:379
+msgid "The maximum number of output cells to to be rendered in the output area. Set to 0 to have the complete display."
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:380
+msgctxt "schema"
+msgid "Defines the maximum number of output cells to to to be rendered in the output area for cells with many outputs. The output area will have a head and a tail, and the outputs between will be trimmed and not displayed unless the user clicks on the information message."
 msgstr ""
 
 #: /packages/settingeditor-extension/schema/plugin.json:2
@@ -790,124 +835,124 @@ msgctxt "schema"
 msgid "Language settings."
 msgstr "언어 설정"
 
-#: packages/application-extension/src/index.tsx:143
+#: packages/application-extension/src/index.tsx:112 packages/apputils-extension/src/index.ts:316 packages/documentsearch-extension/src/index.ts:218 packages/documentsearch-extension/src/index.ts:222 packages/documentsearch-extension/src/index.ts:226 packages/logconsole-extension/src/index.tsx:270 packages/mainmenu-extension/src/index.ts:218 packages/mainmenu-extension/src/index.ts:222 packages/mainmenu-extension/src/index.ts:233 packages/statusbar-extension/src/index.ts:89
+msgid "Main Area"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:116
+msgid "Shift+Right Click for Browser Menu"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:213
+msgid "Close Tab"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:232
+msgid "Close All Other Tabs"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:257
+msgid "Close Tabs to Right"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:277
+msgid "Activate Next Tab"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:284
+msgid "Activate Previous Tab"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:291
+msgid "Activate Next Tab Bar"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:298
+msgid "Activate Previous Tab Bar"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:305
+msgid "Close All Tabs"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:312
+msgid "Show Left Sidebar"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:328
+msgid "Show Right Sidebar"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:344
+msgid "Presentation Mode"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:368 packages/statusbar-extension/src/index.ts:379
+msgid "Simple Interface"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:449
 msgid "Error Registering Plugins"
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:190 packages/extensionmanager/src/build-helper.tsx:31
+#: packages/application-extension/src/index.tsx:494 packages/extensionmanager/src/build-helper.tsx:31
 msgid "Build Complete"
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:193 packages/extensionmanager/src/build-helper.tsx:34
+#: packages/application-extension/src/index.tsx:497 packages/extensionmanager/src/build-helper.tsx:34
 msgid "Build successfully completed, reload page?"
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:195 packages/extensionmanager/src/build-helper.tsx:36
+#: packages/application-extension/src/index.tsx:499 packages/extensionmanager/src/build-helper.tsx:36
 msgid "You will lose any unsaved changes."
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:200 packages/extensionmanager/src/build-helper.tsx:41
+#: packages/application-extension/src/index.tsx:504 packages/extensionmanager/src/build-helper.tsx:41
 msgid "Reload Without Saving"
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:203 packages/extensionmanager/src/build-helper.tsx:44
+#: packages/application-extension/src/index.tsx:507 packages/extensionmanager/src/build-helper.tsx:44
 msgid "Save and Reload"
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:216 packages/extensionmanager/src/build-helper.tsx:57
+#: packages/application-extension/src/index.tsx:520 packages/extensionmanager/src/build-helper.tsx:57
 msgid "Save Failed"
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:225 packages/extensionmanager/src/build-helper.tsx:67
+#: packages/application-extension/src/index.tsx:529 packages/extensionmanager/src/build-helper.tsx:67
 msgid "Build Failed"
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:243
+#: packages/application-extension/src/index.tsx:547
 msgid "JupyterLab build is suggested:"
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:250
+#: packages/application-extension/src/index.tsx:554
 msgid "Build Recommended"
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:254
+#: packages/application-extension/src/index.tsx:558
 msgid "Build"
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:260
+#: packages/application-extension/src/index.tsx:564
 msgid "Are you sure you want to exit JupyterLab?\n\n"
 "Any unsaved changes will be lost."
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:424
+#: packages/application-extension/src/index.tsx:726
 msgid "The path: %1 was not found. JupyterLab redirected to: %2"
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:433
+#: packages/application-extension/src/index.tsx:735
 msgid "Path Not Found"
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:519
+#: packages/application-extension/src/index.tsx:821
 msgid "Switch Sidebar Side"
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:566 packages/documentsearch-extension/src/index.ts:214 packages/documentsearch-extension/src/index.ts:218 packages/documentsearch-extension/src/index.ts:222 packages/logconsole-extension/src/index.tsx:266 packages/mainmenu-extension/src/index.ts:219 packages/mainmenu-extension/src/index.ts:223 packages/mainmenu-extension/src/index.ts:234 packages/statusbar-extension/src/index.ts:82
-msgid "Main Area"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:570
-msgid "Shift+Right Click for Browser Menu"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:660
-msgid "Activate Next Tab"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:667
-msgid "Activate Previous Tab"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:674
-msgid "Activate Next Tab Bar"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:681
-msgid "Activate Previous Tab Bar"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:694
-msgid "Close Tab"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:713
-msgid "Close All Tabs"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:720
-msgid "Close All Other Tabs"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:745
-msgid "Close Tabs to Right"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:763
-msgid "Show Left Sidebar"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:779
-msgid "Show Right Sidebar"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:795
-msgid "Presentation Mode"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:819
-msgid "Single-Document Mode"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:933
+#: packages/application-extension/src/index.tsx:946
 msgid "Property Inspector"
 msgstr ""
 
@@ -921,88 +966,112 @@ msgid "A connection to the Jupyter server could not be established.\n"
 "Check your network connection or Jupyter server configuration.\n"
 msgstr ""
 
-#: packages/apputils-extension/src/index.ts:201
+#: packages/application/src/shell.ts:210
+msgid "main"
+msgstr ""
+
+#: packages/application/src/shell.ts:236 packages/application/src/shell.ts:240
+msgid "main sidebar"
+msgstr ""
+
+#: packages/application/src/shell.ts:249 packages/application/src/shell.ts:253
+msgid "alternate sidebar"
+msgstr ""
+
+#: packages/apputils-extension/src/index.ts:218
 msgid "Loading..."
 msgstr ""
 
-#: packages/apputils-extension/src/index.ts:202
-msgid "The loading screen is taking a long time. \n"
+#: packages/apputils-extension/src/index.ts:219
+msgid "The loading screen is taking a long time.\n"
 "Would you like to clear the workspace or keep waiting?"
 msgstr ""
 
-#: packages/apputils-extension/src/index.ts:205
+#: packages/apputils-extension/src/index.ts:222
 msgid "Keep Waiting"
 msgstr ""
 
-#: packages/apputils-extension/src/index.ts:206
+#: packages/apputils-extension/src/index.ts:223
 msgid "Clear Workspace"
 msgstr ""
 
-#: packages/apputils-extension/src/index.ts:271
-msgid "Print..."
+#: packages/apputils-extension/src/index.ts:288
+msgid "Print…"
 msgstr ""
 
-#: packages/apputils-extension/src/index.ts:396
+#: packages/apputils-extension/src/index.ts:318
+msgid "Show Header Above Content"
+msgstr ""
+
+#: packages/apputils-extension/src/index.ts:479
 msgid "Reset Application State"
 msgstr ""
 
-#: packages/apputils-extension/src/index.ts:493
+#: packages/apputils-extension/src/index.ts:570
 msgid "Run First Enabled Command"
 msgstr ""
 
-#: packages/apputils-extension/src/palette.ts:111
-msgid "Activate Command Palette"
+#: packages/apputils-extension/src/palette.ts:109
+msgid "Command Palette Section"
 msgstr ""
 
-#: packages/apputils-extension/src/palette.ts:114 packages/extensionmanager/src/widget.tsx:671
-msgid "SEARCH"
-msgstr ""
-
-#: packages/apputils-extension/src/palette.ts:163 packages/apputils-extension/src/palette.ts:99
-msgid "Commands"
-msgstr ""
-
-#: packages/apputils-extension/src/palette.ts:36
-msgid "Command Palette"
-msgstr "명령어 팔레트"
-
-#: packages/apputils-extension/src/palette.ts:97
+#: packages/apputils-extension/src/palette.ts:150
 msgid "Commands (%1)"
 msgstr ""
 
-#: packages/apputils-extension/src/themesplugins.ts:111
+#: packages/apputils-extension/src/palette.ts:152 packages/apputils-extension/src/palette.ts:217
+msgid "Commands"
+msgstr ""
+
+#: packages/apputils-extension/src/palette.ts:168
+msgid "Activate Command Palette"
+msgstr ""
+
+#: packages/apputils-extension/src/palette.ts:171 packages/extensionmanager/src/widget.tsx:744
+msgid "SEARCH"
+msgstr ""
+
+#: packages/apputils-extension/src/palette.ts:50
+msgid "Command Palette"
+msgstr "명령어 팔레트"
+
+#: packages/apputils-extension/src/themesplugins.ts:110
 msgid "Theme Scrollbars"
 msgstr ""
 
-#: packages/apputils-extension/src/themesplugins.ts:157
+#: packages/apputils-extension/src/themesplugins.ts:117
+msgid "waiting for fonts"
+msgstr ""
+
+#: packages/apputils-extension/src/themesplugins.ts:165
 msgid "JupyterLab Theme"
 msgstr ""
 
-#: packages/apputils-extension/src/themesplugins.ts:178 packages/apputils-extension/src/themesplugins.ts:254
+#: packages/apputils-extension/src/themesplugins.ts:186 packages/apputils-extension/src/themesplugins.ts:262
 msgid "Increase Code Font Size"
 msgstr ""
 
-#: packages/apputils-extension/src/themesplugins.ts:185 packages/apputils-extension/src/themesplugins.ts:262
+#: packages/apputils-extension/src/themesplugins.ts:193 packages/apputils-extension/src/themesplugins.ts:270
 msgid "Decrease Code Font Size"
 msgstr ""
 
-#: packages/apputils-extension/src/themesplugins.ts:195 packages/apputils-extension/src/themesplugins.ts:271
+#: packages/apputils-extension/src/themesplugins.ts:203 packages/apputils-extension/src/themesplugins.ts:279
 msgid "Increase Content Font Size"
 msgstr ""
 
-#: packages/apputils-extension/src/themesplugins.ts:202 packages/apputils-extension/src/themesplugins.ts:279
+#: packages/apputils-extension/src/themesplugins.ts:210 packages/apputils-extension/src/themesplugins.ts:287
 msgid "Decrease Content Font Size"
 msgstr ""
 
-#: packages/apputils-extension/src/themesplugins.ts:212 packages/apputils-extension/src/themesplugins.ts:288
+#: packages/apputils-extension/src/themesplugins.ts:220 packages/apputils-extension/src/themesplugins.ts:296
 msgid "Increase UI Font Size"
 msgstr ""
 
-#: packages/apputils-extension/src/themesplugins.ts:219 packages/apputils-extension/src/themesplugins.ts:296
+#: packages/apputils-extension/src/themesplugins.ts:227 packages/apputils-extension/src/themesplugins.ts:304
 msgid "Decrease UI Font Size"
 msgstr ""
 
-#: packages/apputils-extension/src/themesplugins.ts:97
+#: packages/apputils-extension/src/themesplugins.ts:96
 msgid "Use Theme: %1"
 msgstr ""
 
@@ -1014,20 +1083,32 @@ msgstr ""
 msgid "Workspace loader"
 msgstr ""
 
-#: packages/apputils-extension/src/workspacesplugin.ts:286 packages/apputils-extension/src/workspacesplugin.ts:292 packages/docmanager/src/widgetmanager.ts:378 packages/docregistry/src/context.ts:879 packages/docregistry/src/context.ts:886
+#: packages/apputils-extension/src/workspacesplugin.ts:286 packages/apputils-extension/src/workspacesplugin.ts:292 packages/docmanager/src/widgetmanager.ts:381 packages/docregistry/src/context.ts:879 packages/docregistry/src/context.ts:886
 msgid "Save"
 msgstr ""
 
-#: packages/apputils-extension/src/workspacesplugin.ts:288 packages/apputils-extension/src/workspacesplugin.ts:91
+#: packages/apputils-extension/src/workspacesplugin.ts:288
 msgid "Save Current Workspace As..."
 msgstr ""
 
-#: packages/apputils-extension/src/workspacesplugin.ts:290 packages/apputils/src/sessioncontext.tsx:1204 packages/docmanager-extension/src/index.ts:524 packages/docmanager-extension/src/index.ts:574 packages/docmanager-extension/src/index.ts:814 packages/docmanager/src/dialogs.ts:118 packages/docmanager/src/dialogs.ts:58 packages/docmanager/src/widgetmanager.ts:384 packages/extensionmanager/src/companions.tsx:218 packages/filebrowser/src/listing.ts:417 packages/filebrowser/src/model.ts:443 packages/filebrowser/src/opendialog.ts:83 packages/notebook/src/actions.tsx:1413 packages/running/src/index.tsx:197 packages/settingeditor/src/plugineditor.ts:148 packages/translation-extension/src/index.ts:144
+#: packages/apputils-extension/src/workspacesplugin.ts:290 packages/apputils/src/sessioncontext.tsx:1204 packages/debugger-extension/src/index.ts:481 packages/docmanager-extension/src/index.ts:575 packages/docmanager-extension/src/index.ts:625 packages/docmanager-extension/src/index.ts:848 packages/docmanager/src/dialogs.ts:118 packages/docmanager/src/dialogs.ts:58 packages/docmanager/src/widgetmanager.ts:387 packages/extensionmanager/src/companions.tsx:218 packages/filebrowser/src/listing.ts:422 packages/filebrowser/src/model.ts:451 packages/filebrowser/src/opendialog.ts:83 packages/notebook/src/actions.tsx:1432 packages/running/src/index.tsx:238 packages/settingeditor/src/plugineditor.ts:148 packages/translation-extension/src/index.ts:144
 msgid "Cancel"
 msgstr ""
 
 #: packages/apputils-extension/src/workspacesplugin.ts:74
 msgid "JupyterLab workspace File"
+msgstr ""
+
+#: packages/apputils-extension/src/workspacesplugin.ts:91
+msgid "Save Current Workspace As…"
+msgstr ""
+
+#: packages/apputils/src/mainareawidget.ts:43
+msgid "notebook content"
+msgstr ""
+
+#: packages/apputils/src/mainareawidget.ts:46
+msgid "notebook actions"
 msgstr ""
 
 #: packages/apputils/src/sessioncontext.tsx:1205 packages/apputils/src/sessioncontext.tsx:1206 packages/apputils/src/sessioncontext.tsx:1226 packages/apputils/src/sessioncontext.tsx:1590 packages/apputils/src/sessioncontext.tsx:488 packages/apputils/src/sessioncontext.tsx:489 packages/apputils/src/sessioncontext.tsx:509 packages/apputils/src/sessioncontext.tsx:518 packages/apputils/src/sessioncontext.tsx:544 packages/apputils/src/sessioncontext.tsx:669
@@ -1090,31 +1171,31 @@ msgstr ""
 msgid "Error Starting Kernel"
 msgstr ""
 
-#: packages/apputils/src/thememanager.ts:366
+#: packages/apputils/src/thememanager.ts:371
 msgid "Neither theme %1 nor default %2 loaded."
 msgstr ""
 
-#: packages/apputils/src/thememanager.ts:443
+#: packages/apputils/src/thememanager.ts:448
 msgid "Error Loading Theme"
 msgstr ""
 
-#: packages/apputils/src/thememanager.ts:445 packages/docmanager-extension/src/index.ts:685 packages/extensionmanager/src/companions.tsx:220 packages/extensionmanager/src/dialog.tsx:41
+#: packages/apputils/src/thememanager.ts:450 packages/docmanager-extension/src/index.ts:372 packages/extensionmanager/src/companions.tsx:220 packages/extensionmanager/src/dialog.tsx:41 packages/extensionmanager/src/widget.tsx:356 packages/extensionmanager/src/widget.tsx:357
 msgid "OK"
 msgstr ""
 
-#: packages/apputils/src/toolbar.tsx:385
+#: packages/apputils/src/toolbar.tsx:386
 msgid "Interrupt the kernel"
 msgstr ""
 
-#: packages/apputils/src/toolbar.tsx:407
+#: packages/apputils/src/toolbar.tsx:408
 msgid "Restart the kernel"
 msgstr ""
 
-#: packages/apputils/src/toolbar.tsx:745
+#: packages/apputils/src/toolbar.tsx:746
 msgid "Switch kernel"
 msgstr ""
 
-#: packages/apputils/src/toolbar.tsx:783 packages/apputils/src/toolbar.tsx:792
+#: packages/apputils/src/toolbar.tsx:786
 msgid "Kernel %1"
 msgstr ""
 
@@ -1122,8 +1203,8 @@ msgstr ""
 msgid "Add Tag"
 msgstr ""
 
-#: packages/celltags/src/tool.ts:193
-msgid "Tags in Notebook"
+#: packages/celltags/src/tool.ts:198
+msgid "Cell Tags"
 msgstr ""
 
 #: packages/codeeditor/src/jsoneditor.ts:313 packages/codeeditor/src/jsoneditor.ts:80
@@ -1138,111 +1219,111 @@ msgstr ""
 msgid "Commit changes to data"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:258
+#: packages/codemirror-extension/src/index.ts:301
 msgid "Text Editor Theme"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:259
+#: packages/codemirror-extension/src/index.ts:302
 msgid "Text Editor Key Map"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:260
+#: packages/codemirror-extension/src/index.ts:303
 msgid "Text Editor Syntax Highlighting"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:265
+#: packages/codemirror-extension/src/index.ts:308
 msgid "codemirror"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:285
+#: packages/codemirror-extension/src/index.ts:328
 msgid "Sublime Text"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:299
+#: packages/codemirror-extension/src/index.ts:342
 msgid "Find..."
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:312
+#: packages/codemirror-extension/src/index.ts:355
 msgid "Go to Line..."
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:368
+#: packages/codemirror-extension/src/index.ts:411
 msgid "jupyter"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:369 packages/codemirror-extension/src/index.ts:392 packages/docregistry/src/registry.ts:1267
+#: packages/codemirror-extension/src/index.ts:412 packages/codemirror-extension/src/index.ts:435 packages/docregistry/src/registry.ts:1261
 msgid "default"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:370
+#: packages/codemirror-extension/src/index.ts:413
 msgid "abcdef"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:371
+#: packages/codemirror-extension/src/index.ts:414
 msgid "base16-dark"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:372
+#: packages/codemirror-extension/src/index.ts:415
 msgid "base16-light"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:373
+#: packages/codemirror-extension/src/index.ts:416
 msgid "hopscotch"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:374
+#: packages/codemirror-extension/src/index.ts:417
 msgid "material"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:375
+#: packages/codemirror-extension/src/index.ts:418
 msgid "mbo"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:376
+#: packages/codemirror-extension/src/index.ts:419
 msgid "mdn-like"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:377
+#: packages/codemirror-extension/src/index.ts:420
 msgid "seti"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:378
+#: packages/codemirror-extension/src/index.ts:421
 msgid "solarized dark"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:379
+#: packages/codemirror-extension/src/index.ts:422
 msgid "solarized light"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:380
+#: packages/codemirror-extension/src/index.ts:423
 msgid "the-matrix"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:381
+#: packages/codemirror-extension/src/index.ts:424
 msgid "xq-light"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:382
+#: packages/codemirror-extension/src/index.ts:425
 msgid "zenburn"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:393
+#: packages/codemirror-extension/src/index.ts:436
 msgid "sublime"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:394
+#: packages/codemirror-extension/src/index.ts:437
 msgid "vim"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:395
+#: packages/codemirror-extension/src/index.ts:438
 msgid "emacs"
 msgstr ""
 
-#: packages/codemirror/src/editor.ts:1110
+#: packages/codemirror/src/editor.ts:1099
 msgid "Code Editor out of Sync"
 msgstr ""
 
-#: packages/codemirror/src/editor.ts:1111
+#: packages/codemirror/src/editor.ts:1100
 msgid "Please open your browser JavaScript console for bug report instructions"
 msgstr ""
 
@@ -1250,87 +1331,87 @@ msgstr ""
 msgid "Change text editor syntax highlighting"
 msgstr ""
 
-#: packages/console-extension/src/foreign.ts:71 packages/console-extension/src/index.ts:166 packages/console-extension/src/index.ts:216 packages/console-extension/src/index.ts:374 packages/console/src/panel.ts:333 packages/launcher/src/index.tsx:155 packages/launcher/src/index.tsx:160
+#: packages/console-extension/src/foreign.ts:71 packages/console-extension/src/index.ts:170 packages/console-extension/src/index.ts:222 packages/console-extension/src/index.ts:380 packages/console/src/panel.ts:333 packages/launcher/src/index.tsx:159 packages/launcher/src/index.tsx:164
 msgid "Console"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:363
+#: packages/console-extension/src/index.ts:369
 msgid "New Console"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:397
+#: packages/console-extension/src/index.ts:404
 msgid "Clear Console Cells"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:409
+#: packages/console-extension/src/index.ts:416
 msgid "Run Cell (unforced)"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:421
+#: packages/console-extension/src/index.ts:428
 msgid "Run Cell (forced)"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:433
+#: packages/console-extension/src/index.ts:440
 msgid "Insert Line Break"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:445
+#: packages/console-extension/src/index.ts:452
 msgid "Replace Selection in Console"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:458 packages/mainmenu-extension/src/index.ts:518 packages/notebook-extension/src/index.ts:1377
+#: packages/console-extension/src/index.ts:465 packages/mainmenu-extension/src/index.ts:516 packages/notebook-extension/src/index.ts:1561
 msgid "Interrupt Kernel"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:473 packages/mainmenu-extension/src/index.ts:528 packages/notebook-extension/src/index.ts:1208
+#: packages/console-extension/src/index.ts:480 packages/mainmenu-extension/src/index.ts:536 packages/notebook-extension/src/index.ts:1433
 msgid "Restart Kernel…"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:488
+#: packages/console-extension/src/index.ts:495
 msgid "Close and Shut Down…"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:495
+#: packages/console-extension/src/index.ts:502
 msgid "Shut down the console?"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:496 packages/console-extension/src/index.ts:578 packages/notebook-extension/src/index.ts:1231 packages/notebook-extension/src/index.ts:2150
+#: packages/console-extension/src/index.ts:503 packages/console-extension/src/index.ts:585 packages/notebook-extension/src/index.ts:1456 packages/notebook-extension/src/index.ts:2284
 msgid "Are you sure you want to close \"%1\"?"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:536 packages/mainmenu-extension/src/index.ts:563 packages/notebook-extension/src/index.ts:1702
+#: packages/console-extension/src/index.ts:543 packages/mainmenu-extension/src/index.ts:571 packages/notebook-extension/src/index.ts:1908
 msgid "Change Kernel…"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:574
+#: packages/console-extension/src/index.ts:581
 msgid "Shutdown Console"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:577
+#: packages/console-extension/src/index.ts:584
 msgid "Shut down the Console?"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:599
+#: packages/console-extension/src/index.ts:606
 msgid "Restart Kernel and Clear Console"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:630
+#: packages/console-extension/src/index.ts:637
 msgid "Run Cell"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:637
+#: packages/console-extension/src/index.ts:644
 msgid "Clear Console Cell"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:650
+#: packages/console-extension/src/index.ts:657
 msgid "Execute with Shift+Enter"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:651
+#: packages/console-extension/src/index.ts:658
 msgid "Execute with Enter"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:673
+#: packages/console-extension/src/index.ts:680
 msgid "Console Run Keystroke"
 msgstr ""
 
@@ -1360,7 +1441,7 @@ msgstr ""
 msgid "Console %1"
 msgstr ""
 
-#: packages/csvviewer-extension/src/index.ts:79
+#: packages/csvviewer-extension/src/index.ts:83
 msgid "Go to Line"
 msgstr ""
 
@@ -1380,39 +1461,51 @@ msgstr ""
 msgid "Delimiter: "
 msgstr ""
 
-#: packages/debugger-extension/src/index.ts:289 packages/debugger-extension/src/index.ts:290
+#: packages/debugger-extension/src/index.ts:302 packages/debugger-extension/src/index.ts:303
 msgid "Inspect Variable"
 msgstr ""
 
-#: packages/debugger-extension/src/index.ts:385 packages/debugger-extension/src/index.ts:386
+#: packages/debugger-extension/src/index.ts:470 packages/debugger-extension/src/index.ts:471 packages/debugger-extension/src/index.ts:479
+msgid "Evaluate Code"
+msgstr ""
+
+#: packages/debugger-extension/src/index.ts:480
+msgid "Evaluate"
+msgstr ""
+
+#: packages/debugger-extension/src/index.ts:507 packages/debugger-extension/src/index.ts:508
 msgid "Continue"
 msgstr ""
 
-#: packages/debugger-extension/src/index.ts:398 packages/debugger-extension/src/index.ts:399
+#: packages/debugger-extension/src/index.ts:520 packages/debugger-extension/src/index.ts:521
 msgid "Terminate"
 msgstr ""
 
-#: packages/debugger-extension/src/index.ts:411 packages/debugger-extension/src/index.ts:412
+#: packages/debugger-extension/src/index.ts:533 packages/debugger-extension/src/index.ts:534
 msgid "Next"
 msgstr ""
 
-#: packages/debugger-extension/src/index.ts:423 packages/debugger-extension/src/index.ts:424
+#: packages/debugger-extension/src/index.ts:545 packages/debugger-extension/src/index.ts:546
 msgid "Step In"
 msgstr ""
 
-#: packages/debugger-extension/src/index.ts:435 packages/debugger-extension/src/index.ts:436
+#: packages/debugger-extension/src/index.ts:557 packages/debugger-extension/src/index.ts:558
 msgid "Step Out"
 msgstr ""
 
-#: packages/debugger-extension/src/index.ts:498
+#: packages/debugger-extension/src/index.ts:584
+msgid "Debugger section"
+msgstr ""
+
+#: packages/debugger-extension/src/index.ts:589
 msgid "Debugger"
 msgstr "디버거"
 
-#: packages/debugger/src/handler.ts:56 packages/debugger/src/handler.ts:63
+#: packages/debugger/src/handler.ts:54 packages/debugger/src/handler.ts:80
 msgid "Enable / Disable Debugger"
 msgstr ""
 
-#: packages/debugger/src/panels/breakpoints/header.ts:23
+#: packages/debugger/src/panels/breakpoints/header.ts:25
 msgid "Breakpoints"
 msgstr ""
 
@@ -1420,11 +1513,11 @@ msgstr ""
 msgid "Remove All Breakpoints"
 msgstr ""
 
-#: packages/debugger/src/panels/callstack/header.ts:23
+#: packages/debugger/src/panels/callstack/header.ts:25
 msgid "Callstack"
 msgstr ""
 
-#: packages/debugger/src/panels/sources/header.tsx:32
+#: packages/debugger/src/panels/sources/header.tsx:34
 msgid "Source"
 msgstr ""
 
@@ -1432,15 +1525,23 @@ msgstr ""
 msgid "Open in the Main Area"
 msgstr ""
 
-#: packages/debugger/src/panels/variables/header.ts:23
+#: packages/debugger/src/panels/variables/header.ts:25
 msgid "Variables"
 msgstr ""
 
-#: packages/debugger/src/panels/variables/index.ts:58
-msgid "Table / Tree View"
+#: packages/debugger/src/panels/variables/index.ts:73
+msgid "Tree View"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:231
+#: packages/debugger/src/panels/variables/index.ts:80
+msgid "Table View"
+msgstr ""
+
+#: packages/debugger/src/panels/variables/scope.tsx:53
+msgid "Scope"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:235
 msgid "Overrides for the default viewers for file types.\n"
 "Specify a mapping from file type name to document viewer name, for example:\n\n"
 "defaultViewers: {\n"
@@ -1454,143 +1555,143 @@ msgid "Overrides for the default viewers for file types.\n"
 "%2"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:394 packages/filebrowser-extension/src/index.ts:643 packages/filebrowser-extension/src/index.ts:928 packages/htmlviewer-extension/src/index.tsx:132
-msgid "File Operations"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:435 packages/logconsole-extension/src/index.tsx:405
-msgid "Error"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:491 packages/filebrowser-extension/src/index.ts:710
-msgid "Open in New Browser Tab"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:496 packages/docmanager-extension/src/index.ts:518
-msgid "Reload %1 from Disk"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:500
-msgid "Reload contents from disk"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:511
-msgid "Cannot Reload"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:512 packages/docmanager-extension/src/index.ts:557 packages/docmanager-extension/src/index.ts:603 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:684
-msgid "No context found for current widget!"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:513 packages/docmanager-extension/src/index.ts:558 packages/docmanager-extension/src/index.ts:604 packages/docmanager-extension/src/index.ts:611 packages/docmanager-extension/src/index.ts:665 packages/notebook/src/actions.tsx:1405 packages/notebook/src/actions.tsx:1414 packages/notebook/src/actions.tsx:1604 packages/notebook/src/default-toolbar.tsx:69 packages/notebook/src/model.ts:286 packages/notebook/src/panel.ts:208 packages/settingeditor/src/plugineditor.ts:149 packages/settingeditor/src/plugineditor.ts:271 packages/translation-extension/src/index.ts:145
-msgid "Ok"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:519
-msgid "Are you sure you want to reload the %1 from the disk?"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:525
-msgid "Reload"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:542
-msgid "Revert %1 to Checkpoint"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:546
-msgid "Revert contents to previous checkpoint"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:556
-msgid "Cannot Revert"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:571
-msgid "Revert %1 to checkpoint"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:575 packages/docregistry/src/context.ts:720 packages/docregistry/src/context.ts:736
-msgid "Revert"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:593
-msgid "Save %1"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:594
-msgid "Save and create checkpoint"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:602 packages/docmanager-extension/src/index.ts:609 packages/docmanager-extension/src/index.ts:663 packages/notebook/src/default-toolbar.tsx:67
-msgid "Cannot Save"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:610 packages/notebook/src/default-toolbar.tsx:68
-msgid "Document is read-only"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:630
-msgid "Save All"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:631
-msgid "Save all open documents"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:654
-msgid "Save %1 As…"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:655
-msgid "Save with new path"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:674 packages/filebrowser-extension/src/index.ts:536
+#: packages/docmanager-extension/src/index.ts:361 packages/filebrowser-extension/src/index.ts:333
 msgid "Download"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:675
+#: packages/docmanager-extension/src/index.ts:362
 msgid "Download the file to your computer"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:683
+#: packages/docmanager-extension/src/index.ts:370
 msgid "Cannot Download"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:768
+#: packages/docmanager-extension/src/index.ts:371 packages/docmanager-extension/src/index.ts:563 packages/docmanager-extension/src/index.ts:608 packages/docmanager-extension/src/index.ts:654 packages/docmanager-extension/src/index.ts:715
+msgid "No context found for current widget!"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:380 packages/docmanager-extension/src/index.ts:445 packages/filebrowser-extension/src/index.ts:739 packages/filebrowser-extension/src/index.ts:978 packages/htmlviewer-extension/src/index.tsx:136
+msgid "File Operations"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:486 packages/logconsole-extension/src/index.tsx:409
+msgid "Error"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:542 packages/filebrowser-extension/src/index.ts:806
+msgid "Open in New Browser Tab"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:547 packages/docmanager-extension/src/index.ts:569
+msgid "Reload %1 from Disk"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:551
+msgid "Reload contents from disk"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:562
+msgid "Cannot Reload"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:564 packages/docmanager-extension/src/index.ts:609 packages/docmanager-extension/src/index.ts:655 packages/docmanager-extension/src/index.ts:662 packages/docmanager-extension/src/index.ts:716 packages/notebook/src/actions.tsx:1424 packages/notebook/src/actions.tsx:1433 packages/notebook/src/actions.tsx:1623 packages/notebook/src/default-toolbar.tsx:69 packages/notebook/src/model.ts:295 packages/notebook/src/panel.ts:208 packages/settingeditor/src/plugineditor.ts:149 packages/settingeditor/src/plugineditor.ts:271 packages/translation-extension/src/index.ts:145
+msgid "Ok"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:570
+msgid "Are you sure you want to reload the %1 from the disk?"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:576
+msgid "Reload"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:593
+msgid "Revert %1 to Checkpoint"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:597
+msgid "Revert contents to previous checkpoint"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:607
+msgid "Cannot Revert"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:622
+msgid "Revert %1 to checkpoint"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:626 packages/docregistry/src/context.ts:720 packages/docregistry/src/context.ts:736
+msgid "Revert"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:644
+msgid "Save %1"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:645
+msgid "Save and create checkpoint"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:653 packages/docmanager-extension/src/index.ts:660 packages/docmanager-extension/src/index.ts:714 packages/notebook/src/default-toolbar.tsx:67
+msgid "Cannot Save"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:661 packages/notebook/src/default-toolbar.tsx:68
+msgid "Document is read-only"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:681
+msgid "Save All"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:682
+msgid "Save all open documents"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:705
+msgid "Save %1 As…"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:706
+msgid "Save with new path"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:797
 msgid "New View for %1"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:788
-msgid "Rename %1…"
+#: packages/docmanager-extension/src/index.ts:821
+msgid "Rename%1…"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:801
+#: packages/docmanager-extension/src/index.ts:835
 msgid "Delete %1"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:811 packages/docmanager-extension/src/index.ts:815 packages/filebrowser-extension/src/index.ts:498 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/listing.ts:418
+#: packages/docmanager-extension/src/index.ts:845 packages/docmanager-extension/src/index.ts:849 packages/filebrowser-extension/src/index.ts:615 packages/filebrowser/src/listing.ts:419 packages/filebrowser/src/listing.ts:423
 msgid "Delete"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:812
+#: packages/docmanager-extension/src/index.ts:846
 msgid "Are you sure you want to delete %1"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:829
+#: packages/docmanager-extension/src/index.ts:863
 msgid "Show in File Browser"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:916
+#: packages/docmanager-extension/src/index.ts:950
 msgid "Are you sure you want to revert the %1 to the latest checkpoint? "
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:922
+#: packages/docmanager-extension/src/index.ts:956
 msgid "This cannot be undone."
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:929
+#: packages/docmanager-extension/src/index.ts:963
 msgid "The checkpoint was last updated at: "
 msgstr ""
 
@@ -1618,7 +1719,7 @@ msgstr ""
 msgid "Rename File"
 msgstr ""
 
-#: packages/docmanager/src/dialogs.ts:59 packages/filebrowser-extension/src/index.ts:796
+#: packages/docmanager/src/dialogs.ts:59 packages/filebrowser-extension/src/index.ts:874
 msgid "Rename"
 msgstr ""
 
@@ -1634,36 +1735,36 @@ msgstr ""
 msgid "Saving %1"
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:278
+#: packages/docmanager/src/widgetmanager.ts:281
 msgid "Name: %1\n"
 "Path: %2\n"
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:284
+#: packages/docmanager/src/widgetmanager.ts:287
 msgid "Read-only"
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:287
+#: packages/docmanager/src/widgetmanager.ts:290
 msgid "Last Saved: %1\n"
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:288
+#: packages/docmanager/src/widgetmanager.ts:291
 msgid "Last Checkpoint: %1"
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:379
+#: packages/docmanager/src/widgetmanager.ts:382
 msgid "Save as"
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:381
+#: packages/docmanager/src/widgetmanager.ts:384
 msgid "Save your work"
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:382
+#: packages/docmanager/src/widgetmanager.ts:385
 msgid "Save changes in \"%1\" before closing?"
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:385
+#: packages/docmanager/src/widgetmanager.ts:388
 msgid "Discard"
 msgstr ""
 
@@ -1701,67 +1802,67 @@ msgstr ""
 msgid "Renderer Failure: %1"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1290
+#: packages/docregistry/src/registry.ts:1284
 msgid "Text"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1313 packages/launcher/src/index.tsx:154 packages/launcher/src/index.tsx:159 packages/notebook-extension/src/index.ts:471 packages/notebook-extension/src/index.ts:740 packages/notebook-extension/src/index.ts:781
+#: packages/docregistry/src/registry.ts:1307 packages/launcher/src/index.tsx:158 packages/launcher/src/index.tsx:163 packages/notebook-extension/src/index.ts:1095 packages/notebook-extension/src/index.ts:1136 packages/notebook-extension/src/index.ts:611
 msgid "Notebook"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1338
+#: packages/docregistry/src/registry.ts:1332
 msgid "Directory"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1365 packages/fileeditor-extension/src/commands.ts:893
+#: packages/docregistry/src/registry.ts:1359 packages/fileeditor-extension/src/commands.ts:927
 msgid "Markdown File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1372
+#: packages/docregistry/src/registry.ts:1366
 msgid "PDF File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1379
+#: packages/docregistry/src/registry.ts:1373 packages/fileeditor-extension/src/index.ts:200
 msgid "Python File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1386
+#: packages/docregistry/src/registry.ts:1380
 msgid "JSON File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1393
+#: packages/docregistry/src/registry.ts:1387
 msgid "CSV File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1400
+#: packages/docregistry/src/registry.ts:1394
 msgid "TSV File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1407
+#: packages/docregistry/src/registry.ts:1401 packages/fileeditor-extension/src/index.ts:224
 msgid "R File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1414
+#: packages/docregistry/src/registry.ts:1408
 msgid "YAML File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1421 packages/docregistry/src/registry.ts:1429 packages/docregistry/src/registry.ts:1437 packages/docregistry/src/registry.ts:1445 packages/docregistry/src/registry.ts:1453 packages/docregistry/src/registry.ts:1461
+#: packages/docregistry/src/registry.ts:1415 packages/docregistry/src/registry.ts:1423 packages/docregistry/src/registry.ts:1431 packages/docregistry/src/registry.ts:1439 packages/docregistry/src/registry.ts:1447 packages/docregistry/src/registry.ts:1455
 msgid "Image"
 msgstr ""
 
-#: packages/documentsearch-extension/src/index.ts:140
+#: packages/documentsearch-extension/src/index.ts:144
 msgid "Find…"
 msgstr ""
 
-#: packages/documentsearch-extension/src/index.ts:151
+#: packages/documentsearch-extension/src/index.ts:155
 msgid "Find and Replace…"
 msgstr ""
 
-#: packages/documentsearch-extension/src/index.ts:163
+#: packages/documentsearch-extension/src/index.ts:167
 msgid "Find Next"
 msgstr ""
 
-#: packages/documentsearch-extension/src/index.ts:187
+#: packages/documentsearch-extension/src/index.ts:191
 msgid "Find Previous"
 msgstr ""
 
@@ -1777,15 +1878,19 @@ msgstr ""
 msgid "Replace All"
 msgstr ""
 
-#: packages/extensionmanager-extension/src/index.ts:103 packages/extensionmanager-extension/src/index.ts:54
+#: packages/extensionmanager-extension/src/index.ts:109
+msgid "Enable Extension Manager"
+msgstr ""
+
+#: packages/extensionmanager-extension/src/index.ts:119 packages/extensionmanager-extension/src/index.ts:58
 msgid "Extension Manager"
 msgstr ""
 
-#: packages/extensionmanager-extension/src/index.ts:133
+#: packages/extensionmanager-extension/src/index.ts:149
 msgid "Enable Extension Manager?"
 msgstr ""
 
-#: packages/extensionmanager-extension/src/index.ts:134
+#: packages/extensionmanager-extension/src/index.ts:150
 msgid "Thanks for trying out JupyterLab's extension manager.\n"
 "The JupyterLab development team is excited to have a robust\n"
 "third-party extension community.\n"
@@ -1794,16 +1899,16 @@ msgid "Thanks for trying out JupyterLab's extension manager.\n"
 "Do you want to continue?"
 msgstr ""
 
-#: packages/extensionmanager-extension/src/index.ts:141 packages/extensionmanager/src/widget.tsx:320 packages/extensionmanager/src/widget.tsx:727
+#: packages/extensionmanager-extension/src/index.ts:157 packages/extensionmanager/src/widget.tsx:331 packages/extensionmanager/src/widget.tsx:800
 msgid "Disable"
 msgstr ""
 
-#: packages/extensionmanager-extension/src/index.ts:142 packages/extensionmanager/src/widget.tsx:329 packages/extensionmanager/src/widget.tsx:742
+#: packages/extensionmanager-extension/src/index.ts:158 packages/extensionmanager/src/widget.tsx:340 packages/extensionmanager/src/widget.tsx:815
 msgid "Enable"
 msgstr ""
 
-#: packages/extensionmanager-extension/src/index.ts:93
-msgid "Enable Extension Manager"
+#: packages/extensionmanager-extension/src/index.ts:70 packages/extensionmanager-extension/src/index.ts:91
+msgid "Extension Manager section"
 msgstr ""
 
 #: packages/extensionmanager/src/companions.tsx:139
@@ -1860,225 +1965,247 @@ msgstr ""
 msgid "Extension Installation Error"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:132
+#: packages/extensionmanager/src/widget.tsx:137
 msgid "A build is needed to include the latest changes"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:135
+#: packages/extensionmanager/src/widget.tsx:140
 msgid "Rebuild"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:138
+#: packages/extensionmanager/src/widget.tsx:143
 msgid "Ignore"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:190
+#: packages/extensionmanager/src/widget.tsx:195
 msgid "%1 (Developed by Project Jupyter)"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:240
+#: packages/extensionmanager/src/widget.tsx:249
 msgid "%1 extension has been blockedExtensions since install. Please uninstall immediately and contact your blockedExtensions administrator."
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:256
+#: packages/extensionmanager/src/widget.tsx:265
 msgid "%1 extension has been removed from the allowedExtensions since installation. Please uninstall immediately and contact your allowedExtensions administrator."
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:290
+#: packages/extensionmanager/src/widget.tsx:300
 msgid "Install"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:302
+#: packages/extensionmanager/src/widget.tsx:313
 msgid "Update"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:311
+#: packages/extensionmanager/src/widget.tsx:322
 msgid "Uninstall"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:420
+#: packages/extensionmanager/src/widget.tsx:367
+msgid "About"
+msgstr ""
+
+#: packages/extensionmanager/src/widget.tsx:386
+msgid "This is a prebuilt extension. To uninstall it, please\n"
+"    apply following instructions."
+msgstr ""
+
+#: packages/extensionmanager/src/widget.tsx:396
+msgid "This is a prebuilt extension. To uninstall it, please\n"
+"    read the user guide on:"
+msgstr ""
+
+#: packages/extensionmanager/src/widget.tsx:493
 msgid "No entries"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:651
+#: packages/extensionmanager/src/widget.tsx:724
 msgid "The extension manager is disabled. Please contact your system\n"
 "administrator to verify the listings configuration."
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:661
+#: packages/extensionmanager/src/widget.tsx:734
 msgid "Read more in the JupyterLab documentation."
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:705 packages/logconsole-extension/src/index.tsx:406
+#: packages/extensionmanager/src/widget.tsx:778 packages/logconsole-extension/src/index.tsx:410
 msgid "Warning"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:709
+#: packages/extensionmanager/src/widget.tsx:782
 msgid "The JupyterLab development team is excited to have a robust\n"
 "third-party extension community. However, we do not review\n"
 "third-party extensions, and some extensions may introduce security\n"
 "risks or contain malicious code that runs on your machine."
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:752
+#: packages/extensionmanager/src/widget.tsx:825
 msgid "Updating extensions list"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:759
+#: packages/extensionmanager/src/widget.tsx:832
 msgid "Error communicating with server extension. Consult the documentation\n"
 "            for how to ensure that it is enabled."
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:764
+#: packages/extensionmanager/src/widget.tsx:837
 msgid "Reason given:"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:772
+#: packages/extensionmanager/src/widget.tsx:845
 msgid "The server has some missing requirements for installing extensions."
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:777
+#: packages/extensionmanager/src/widget.tsx:850
 msgid "Details:"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:816
+#: packages/extensionmanager/src/widget.tsx:889
 msgid "Installed"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:824
+#: packages/extensionmanager/src/widget.tsx:897
 msgid "Refresh extension list"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:869
+#: packages/extensionmanager/src/widget.tsx:942
 msgid "Search Results"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:870
+#: packages/extensionmanager/src/widget.tsx:943
 msgid "Discover"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1043
+#: packages/filebrowser-extension/src/index.ts:1093
 msgid "Open With"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1183
+#: packages/filebrowser-extension/src/index.ts:1223
 msgid "No browser for path"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:285 packages/filebrowser-extension/src/index.ts:873 packages/launcher-extension/src/index.ts:56
-msgid "New Launcher"
+#: packages/filebrowser-extension/src/index.ts:171
+msgid "File Browser Section"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:353
+#: packages/filebrowser-extension/src/index.ts:201
 msgid "File Browser (%1)"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:355
+#: packages/filebrowser-extension/src/index.ts:203
 msgid "File Browser"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:468
-msgid "Copy Shareable Link"
-msgstr ""
-
-#: packages/filebrowser-extension/src/index.ts:511 packages/fileeditor-extension/src/commands.ts:753
-msgid "Copy"
-msgstr ""
-
-#: packages/filebrowser-extension/src/index.ts:524 packages/fileeditor-extension/src/commands.ts:712
-msgid "Cut"
-msgstr ""
-
-#: packages/filebrowser-extension/src/index.ts:548
-msgid "Duplicate"
-msgstr ""
-
-#: packages/filebrowser-extension/src/index.ts:588
-msgid "Open from Path…"
-msgstr ""
-
-#: packages/filebrowser-extension/src/index.ts:588 packages/filebrowser-extension/src/index.ts:590
-msgid "Open %1"
-msgstr ""
-
-#: packages/filebrowser-extension/src/index.ts:590
-msgid "Open from path"
-msgstr ""
-
-#: packages/filebrowser-extension/src/index.ts:599
-msgid "Path"
-msgstr ""
-
-#: packages/filebrowser-extension/src/index.ts:601
-msgid "Open Path"
-msgstr ""
-
-#: packages/filebrowser-extension/src/index.ts:602 packages/filebrowser-extension/src/index.ts:687
-msgid "Open"
-msgstr ""
-
-#: packages/filebrowser-extension/src/index.ts:633
-msgid "Could not find path: %1"
-msgstr ""
-
-#: packages/filebrowser-extension/src/index.ts:635
-msgid "Cannot open"
-msgstr ""
-
-#: packages/filebrowser-extension/src/index.ts:728
+#: packages/filebrowser-extension/src/index.ts:350
 msgid "Copy Download Link"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:741 packages/fileeditor-extension/src/commands.ts:787
+#: packages/filebrowser-extension/src/index.ts:518
+msgid "Copy Shareable Link"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:584 packages/filebrowser-extension/src/index.ts:921 packages/launcher-extension/src/index.ts:60
+msgid "New Launcher"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:628 packages/fileeditor-extension/src/commands.ts:771
+msgid "Copy"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:641 packages/fileeditor-extension/src/commands.ts:730
+msgid "Cut"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:653
+msgid "Duplicate"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:684
+msgid "Open from Path…"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:684 packages/filebrowser-extension/src/index.ts:686
+msgid "Open %1"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:686
+msgid "Open from path"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:695
+msgid "Path"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:697
+msgid "Open Path"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:698 packages/filebrowser-extension/src/index.ts:783
+msgid "Open"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:729
+msgid "Could not find path: %1"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:731
+msgid "Cannot open"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:819 packages/fileeditor-extension/src/commands.ts:805
 msgid "Paste"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:754 packages/filebrowser/src/browser.ts:96
+#: packages/filebrowser-extension/src/index.ts:832 packages/filebrowser/src/browser.ts:102
 msgid "New Folder"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:769
+#: packages/filebrowser-extension/src/index.ts:847
 msgid "New File"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:784 packages/fileeditor-extension/src/commands.ts:892
+#: packages/filebrowser-extension/src/index.ts:862 packages/fileeditor-extension/src/commands.ts:926
 msgid "New Markdown File"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:817
+#: packages/filebrowser-extension/src/index.ts:895
 msgid "Copy Path"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:859 packages/mainmenu-extension/src/index.ts:569
+#: packages/filebrowser-extension/src/index.ts:907 packages/mainmenu-extension/src/index.ts:577
 msgid "Shut Down Kernel"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:878
+#: packages/filebrowser-extension/src/index.ts:927
 msgid "Show Active File in File Browser"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:892
+#: packages/filebrowser-extension/src/index.ts:942
 msgid "Toggle Last Modified Column"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:914
+#: packages/filebrowser-extension/src/index.ts:964
 msgid "Search on File Names"
 msgstr ""
 
-#: packages/filebrowser/src/browser.ts:105
+#: packages/filebrowser/src/browser.ts:111
 msgid "Refresh File List"
 msgstr ""
 
-#: packages/filebrowser/src/browser.ts:121 packages/filebrowser/src/browser.ts:330
+#: packages/filebrowser/src/browser.ts:127 packages/filebrowser/src/browser.ts:181
 msgid "Filter files by name"
 msgstr ""
 
-#: packages/filebrowser/src/browser.ts:301
+#: packages/filebrowser/src/browser.ts:348
 msgid "Directory not found"
 msgstr ""
 
-#: packages/filebrowser/src/browser.ts:302 packages/filebrowser/src/model.ts:304
+#: packages/filebrowser/src/browser.ts:349 packages/filebrowser/src/model.ts:304
 msgid "Directory not found: \"%1\""
+msgstr ""
+
+#: packages/filebrowser/src/browser.ts:93
+msgid "file browser"
 msgstr ""
 
 #: packages/filebrowser/src/crumbs.ts:173
@@ -2089,102 +2216,102 @@ msgstr ""
 msgid "Move Error"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1199
+#: packages/filebrowser/src/listing.ts:1202
 msgctxt "showErrorMessage"
 msgid "Error while copying/moving files"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1416
+#: packages/filebrowser/src/listing.ts:1419
 msgctxt "showErrorMessage"
 msgid "Delete Failed"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1447
+#: packages/filebrowser/src/listing.ts:1450
 msgid "showErrorMessage"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1449
+#: packages/filebrowser/src/listing.ts:1452
 msgctxt "showErrorMessage"
 msgid "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\""
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1473
+#: packages/filebrowser/src/listing.ts:1476
 msgctxt "showErrorMessage"
 msgid "Rename Error"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1778
+#: packages/filebrowser/src/listing.ts:1781
 msgid "Name"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1779
+#: packages/filebrowser/src/listing.ts:1783
 msgid "Last Modified"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1919
+#: packages/filebrowser/src/listing.ts:1926
 msgid "Name: %1"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1923
+#: packages/filebrowser/src/listing.ts:1930
 msgid "\n"
 "Size: %1"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1931
+#: packages/filebrowser/src/listing.ts:1938
 msgid "\n"
 "Path: %1"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1938
+#: packages/filebrowser/src/listing.ts:1945
 msgid "\n"
 "Created: %1"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1944
+#: packages/filebrowser/src/listing.ts:1951
 msgid "\n"
 "Modified: %1"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1949
+#: packages/filebrowser/src/listing.ts:1956
 msgid "\n"
 "Writable: %1"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:2019
+#: packages/filebrowser/src/listing.ts:2026
 msgid "%1 Item"
 msgid_plural "%1 Items"
 msgstr[0] ""
 
-#: packages/filebrowser/src/listing.ts:384
+#: packages/filebrowser/src/listing.ts:389
 msgctxt "showErrorMessage"
 msgid "Paste Error"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:404
+#: packages/filebrowser/src/listing.ts:409
 msgid "Are you sure you want to permanently delete: %1?"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:408
+#: packages/filebrowser/src/listing.ts:413
 msgid "Are you sure you want to permanently delete the %1 selected item?"
 msgid_plural "Are you sure you want to permanently delete the %1 selected items?"
 msgstr[0] ""
 
-#: packages/filebrowser/src/listing.ts:448
+#: packages/filebrowser/src/listing.ts:453
 msgctxt "showErrorMessage"
 msgid "Duplicate file"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:488
+#: packages/filebrowser/src/listing.ts:493
 msgctxt "showErrorMessage"
 msgid "Shut down kernel"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:831
+#: packages/filebrowser/src/listing.ts:836
 msgid "%1\n"
 "Kernel: %2"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:976
+#: packages/filebrowser/src/listing.ts:981
 msgctxt "showErrorMessage"
 msgid "Open directory"
 msgstr ""
@@ -2193,19 +2320,19 @@ msgstr ""
 msgid "Files still uploading"
 msgstr ""
 
-#: packages/filebrowser/src/model.ts:408
+#: packages/filebrowser/src/model.ts:416
 msgid "Cannot upload file (>%1 MB). %2"
 msgstr ""
 
-#: packages/filebrowser/src/model.ts:437
+#: packages/filebrowser/src/model.ts:445
 msgid "Large file size warning"
 msgstr ""
 
-#: packages/filebrowser/src/model.ts:438
+#: packages/filebrowser/src/model.ts:446
 msgid "The file size is %1 MB. Do you still want to upload it?"
 msgstr ""
 
-#: packages/filebrowser/src/model.ts:444
+#: packages/filebrowser/src/model.ts:452
 msgid "Upload"
 msgstr ""
 
@@ -2226,113 +2353,137 @@ msgstr ""
 msgid "Uploading…"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:1007 packages/fileeditor-extension/src/commands.ts:1022 packages/fileeditor-extension/src/commands.ts:966 packages/fileeditor-extension/src/commands.ts:992
+#: packages/fileeditor-extension/src/commands.ts:1018 packages/fileeditor-extension/src/commands.ts:1044 packages/fileeditor-extension/src/commands.ts:1059 packages/fileeditor-extension/src/commands.ts:1074 packages/fileeditor-extension/src/commands.ts:1092
 msgid "Text Editor"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:1025
-msgid "Increase Font Size"
-msgstr ""
-
-#: packages/fileeditor-extension/src/commands.ts:1028
-msgid "Decrease Font Size"
-msgstr ""
-
-#: packages/fileeditor-extension/src/commands.ts:1084
-msgid "Text Editor Indentation"
-msgstr ""
-
-#: packages/fileeditor-extension/src/commands.ts:1088 packages/fileeditor-extension/src/commands.ts:970 packages/fileeditor-extension/src/index.ts:101
+#: packages/fileeditor-extension/src/commands.ts:1022 packages/fileeditor-extension/src/commands.ts:1158 packages/fileeditor-extension/src/index.ts:105
 msgid "Indent with Tab"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:1097 packages/fileeditor-extension/src/commands.ts:979 packages/fileeditor-extension/src/index.ts:108
+#: packages/fileeditor-extension/src/commands.ts:1031 packages/fileeditor-extension/src/commands.ts:1167 packages/fileeditor-extension/src/index.ts:112
 msgid "Spaces: %1"
 msgid_plural "Spaces: %1"
 msgstr[0] ""
 
-#: packages/fileeditor-extension/src/commands.ts:1106
+#: packages/fileeditor-extension/src/commands.ts:1077
+msgid "Increase Font Size"
+msgstr ""
+
+#: packages/fileeditor-extension/src/commands.ts:1080
+msgid "Decrease Font Size"
+msgstr ""
+
+#: packages/fileeditor-extension/src/commands.ts:1154
+msgid "Text Editor Indentation"
+msgstr ""
+
+#: packages/fileeditor-extension/src/commands.ts:1176
 msgid "Increase Text Editor Font Size"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:1110
+#: packages/fileeditor-extension/src/commands.ts:1180
 msgid "Decrease Text Editor Font Size"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:1200
-msgid "Editor"
-msgstr ""
-
-#: packages/fileeditor-extension/src/commands.ts:1218 packages/fileeditor-extension/src/commands.ts:517
-msgid "Run Code"
-msgstr ""
-
-#: packages/fileeditor-extension/src/commands.ts:1219 packages/fileeditor-extension/src/commands.ts:562
-msgid "Run All Code"
-msgstr ""
-
-#: packages/fileeditor-extension/src/commands.ts:1221
-msgid "Restart Kernel and Run All Code"
-msgstr ""
-
-#: packages/fileeditor-extension/src/commands.ts:293
-msgid "Line Numbers"
-msgstr ""
-
-#: packages/fileeditor-extension/src/commands.ts:323
-msgid "Word Wrap"
-msgstr ""
-
-#: packages/fileeditor-extension/src/commands.ts:374 packages/mainmenu-extension/src/index.ts:647
-msgid "Match Brackets"
-msgstr ""
-
-#: packages/fileeditor-extension/src/commands.ts:398
-msgid "Auto Close Brackets for Text Editor"
-msgstr ""
-
-#: packages/fileeditor-extension/src/commands.ts:422
-msgid "Replace Selection in Editor"
-msgstr ""
-
-#: packages/fileeditor-extension/src/commands.ts:446
+#: packages/fileeditor-extension/src/commands.ts:1285 packages/fileeditor-extension/src/commands.ts:463
 msgid "Create Console for Editor"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:594
+#: packages/fileeditor-extension/src/commands.ts:1303 packages/fileeditor-extension/src/commands.ts:534
+msgid "Run Code"
+msgstr ""
+
+#: packages/fileeditor-extension/src/commands.ts:1304 packages/fileeditor-extension/src/commands.ts:579
+msgid "Run All Code"
+msgstr ""
+
+#: packages/fileeditor-extension/src/commands.ts:1306
+msgid "Restart Kernel and Run All Code"
+msgstr ""
+
+#: packages/fileeditor-extension/src/commands.ts:309
+msgid "Line Numbers"
+msgstr ""
+
+#: packages/fileeditor-extension/src/commands.ts:339
+msgid "Word Wrap"
+msgstr ""
+
+#: packages/fileeditor-extension/src/commands.ts:390 packages/mainmenu-extension/src/index.ts:656
+msgid "Match Brackets"
+msgstr ""
+
+#: packages/fileeditor-extension/src/commands.ts:414
+msgid "Auto Close Brackets for Text Editor"
+msgstr ""
+
+#: packages/fileeditor-extension/src/commands.ts:438
+msgid "Replace Selection in Editor"
+msgstr ""
+
+#: packages/fileeditor-extension/src/commands.ts:612
 msgid "Show Markdown Preview"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:632 packages/mainmenu-extension/src/index.ts:258
+#: packages/fileeditor-extension/src/commands.ts:650 packages/mainmenu-extension/src/index.ts:256
 msgid "Undo"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:670 packages/mainmenu-extension/src/index.ts:263
+#: packages/fileeditor-extension/src/commands.ts:688 packages/mainmenu-extension/src/index.ts:261
 msgid "Redo"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:812
+#: packages/fileeditor-extension/src/commands.ts:830
 msgid "Select All"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:871
+#: packages/fileeditor-extension/src/commands.ts:892
 msgid "New Text File"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:871
+#: packages/fileeditor-extension/src/commands.ts:894
 msgid "Text File"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:872
+#: packages/fileeditor-extension/src/commands.ts:897
 msgid "Create a new text file"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:894
+#: packages/fileeditor-extension/src/commands.ts:928
 msgid "Create a new markdown file"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:924 packages/fileeditor-extension/src/commands.ts:938 packages/launcher/src/index.tsx:156 packages/launcher/src/index.tsx:166 packages/launcher/src/index.tsx:439 packages/terminal-extension/src/index.ts:256
+#: packages/fileeditor-extension/src/commands.ts:958 packages/fileeditor-extension/src/commands.ts:972 packages/fileeditor-extension/src/commands.ts:988 packages/launcher/src/index.tsx:160 packages/launcher/src/index.tsx:170 packages/launcher/src/index.tsx:443 packages/terminal-extension/src/index.ts:260
 msgid "Other"
+msgstr ""
+
+#: packages/fileeditor-extension/src/index.ts:201
+msgid "New Python File"
+msgstr ""
+
+#: packages/fileeditor-extension/src/index.ts:202
+msgid "Create a new Python file"
+msgstr ""
+
+#: packages/fileeditor-extension/src/index.ts:212
+msgid "Julia File"
+msgstr ""
+
+#: packages/fileeditor-extension/src/index.ts:213
+msgid "New Julia File"
+msgstr ""
+
+#: packages/fileeditor-extension/src/index.ts:214
+msgid "Create a new Julia file"
+msgstr ""
+
+#: packages/fileeditor-extension/src/index.ts:225
+msgid "New R File"
+msgstr ""
+
+#: packages/fileeditor-extension/src/index.ts:226
+msgid "Create a new R file"
 msgstr ""
 
 #: packages/fileeditor/src/tabspacestatus.tsx:62
@@ -2347,171 +2498,175 @@ msgstr ""
 msgid "Change Tab indentation…"
 msgstr ""
 
-#: packages/help-extension/src/index.tsx:104
-msgid "JupyterLab Reference"
-msgstr ""
-
-#: packages/help-extension/src/index.tsx:108
-msgid "JupyterLab FAQ"
-msgstr ""
-
-#: packages/help-extension/src/index.tsx:113
-msgid "Jupyter Reference"
-msgstr ""
-
-#: packages/help-extension/src/index.tsx:117
-msgid "Markdown Reference"
-msgstr ""
-
-#: packages/help-extension/src/index.tsx:240
-msgid "About the %1 Kernel"
-msgstr ""
-
-#: packages/help-extension/src/index.tsx:260 packages/help-extension/src/index.tsx:351 packages/hub-extension/src/index.ts:160 packages/mainmenu-extension/src/index.ts:584
-msgid "Dismiss"
-msgstr ""
-
-#: packages/help-extension/src/index.tsx:291
-msgid "About %1"
-msgstr ""
-
-#: packages/help-extension/src/index.tsx:294
-msgid "Version %1"
-msgstr ""
-
-#: packages/help-extension/src/index.tsx:322
+#: packages/help-extension/src/index.tsx:118
 msgid "CONTRIBUTOR LIST"
 msgstr ""
 
-#: packages/help-extension/src/index.tsx:330
+#: packages/help-extension/src/index.tsx:126
 msgid "ABOUT PROJECT JUPYTER"
 msgstr ""
 
-#: packages/help-extension/src/index.tsx:336
-msgid "© 2015-2020 Project Jupyter Contributors"
+#: packages/help-extension/src/index.tsx:132
+msgid "© 2015-2021 Project Jupyter Contributors"
 msgstr ""
 
-#: packages/help-extension/src/index.tsx:383
-msgid "Launch Classic Notebook"
+#: packages/help-extension/src/index.tsx:147 packages/help-extension/src/index.tsx:385 packages/hub-extension/src/index.ts:164 packages/mainmenu-extension/src/index.ts:592
+msgid "Dismiss"
 msgstr ""
 
-#: packages/help-extension/src/index.tsx:97 packages/mainmenu-extension/src/index.ts:900
+#: packages/help-extension/src/index.tsx:182 packages/help-extension/src/index.tsx:220 packages/help-extension/src/index.tsx:84 packages/mainmenu-extension/src/index.ts:909
 msgid "Help"
 msgstr ""
 
-#: packages/htmlviewer-extension/src/index.tsx:111
+#: packages/help-extension/src/index.tsx:185
+msgid "Launch Classic Notebook"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:227
+msgid "JupyterLab Reference"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:231
+msgid "JupyterLab FAQ"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:236
+msgid "Jupyter Reference"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:240
+msgid "Jupyter Forum"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:244
+msgid "Markdown Reference"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:365
+msgid "About the %1 Kernel"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:87
+msgid "About %1"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:90
+msgid "Version %1"
+msgstr ""
+
+#: packages/htmlviewer-extension/src/index.tsx:115
 msgid "Trust HTML File"
 msgstr ""
 
-#: packages/htmlviewer-extension/src/index.tsx:60
+#: packages/htmlviewer-extension/src/index.tsx:64
 msgid "HTML File"
 msgstr ""
 
-#: packages/htmlviewer-extension/src/index.tsx:69
+#: packages/htmlviewer-extension/src/index.tsx:73
 msgid "HTML Viewer"
 msgstr ""
 
-#: packages/htmlviewer/src/index.tsx:104
+#: packages/htmlviewer/src/index.tsx:108
 msgid "Rerender HTML Document"
 msgstr ""
 
-#: packages/htmlviewer/src/index.tsx:292
+#: packages/htmlviewer/src/index.tsx:296
 msgid "Whether the HTML file is trusted.\n"
 "Trusting the file allows scripts to run in it,\n"
 "which may result in security risks.\n"
 "Only enable for files you trust."
 msgstr ""
 
-#: packages/htmlviewer/src/index.tsx:298
+#: packages/htmlviewer/src/index.tsx:302
 msgid "Distrust HTML"
 msgstr ""
 
-#: packages/htmlviewer/src/index.tsx:299
+#: packages/htmlviewer/src/index.tsx:303
 msgid "Trust HTML"
 msgstr ""
 
-#: packages/hub-extension/src/index.ts:153
-msgid "Server Not Running"
+#: packages/hub-extension/src/index.ts:103
+msgid "Hub"
 msgstr ""
 
-#: packages/hub-extension/src/index.ts:154
+#: packages/hub-extension/src/index.ts:157
+msgid "Server unavailable or unreachable"
+msgstr ""
+
+#: packages/hub-extension/src/index.ts:158
 msgid "Your server at %1 is not running.\n"
 "Would you like to restart it?"
 msgstr ""
 
-#: packages/hub-extension/src/index.ts:159
+#: packages/hub-extension/src/index.ts:163
 msgid "Restart"
 msgstr ""
 
-#: packages/hub-extension/src/index.ts:68
+#: packages/hub-extension/src/index.ts:72
 msgid "Restart Server"
 msgstr ""
 
-#: packages/hub-extension/src/index.ts:69
+#: packages/hub-extension/src/index.ts:73
 msgid "Request that the Hub restart this server"
 msgstr ""
 
-#: packages/hub-extension/src/index.ts:76
+#: packages/hub-extension/src/index.ts:80
 msgid "Hub Control Panel"
 msgstr ""
 
-#: packages/hub-extension/src/index.ts:77
+#: packages/hub-extension/src/index.ts:81
 msgid "Open the Hub control panel in a new browser tab"
 msgstr ""
 
-#: packages/hub-extension/src/index.ts:84 packages/mainmenu-extension/src/index.ts:440
+#: packages/hub-extension/src/index.ts:88 packages/mainmenu-extension/src/index.ts:438
 msgid "Log Out"
 msgstr ""
 
-#: packages/hub-extension/src/index.ts:85
+#: packages/hub-extension/src/index.ts:89
 msgid "Log out of the Hub"
 msgstr ""
 
-#: packages/hub-extension/src/index.ts:99
-msgid "Hub"
-msgstr ""
-
-#: packages/imageviewer-extension/src/index.ts:158
+#: packages/imageviewer-extension/src/index.ts:162
 msgid "Image Viewer"
 msgstr ""
 
-#: packages/imageviewer-extension/src/index.ts:199
+#: packages/imageviewer-extension/src/index.ts:203
 msgid "Zoom In"
 msgstr ""
 
-#: packages/imageviewer-extension/src/index.ts:205
+#: packages/imageviewer-extension/src/index.ts:209
 msgid "Zoom Out"
 msgstr ""
 
-#: packages/imageviewer-extension/src/index.ts:211
+#: packages/imageviewer-extension/src/index.ts:215
 msgid "Reset Image"
 msgstr ""
 
-#: packages/imageviewer-extension/src/index.ts:217
+#: packages/imageviewer-extension/src/index.ts:221
 msgid "Rotate Clockwise"
 msgstr ""
 
-#: packages/imageviewer-extension/src/index.ts:223
+#: packages/imageviewer-extension/src/index.ts:227
 msgid "Rotate Counterclockwise"
 msgstr ""
 
-#: packages/imageviewer-extension/src/index.ts:229
+#: packages/imageviewer-extension/src/index.ts:233
 msgid "Flip image horizontally"
 msgstr ""
 
-#: packages/imageviewer-extension/src/index.ts:235
+#: packages/imageviewer-extension/src/index.ts:239
 msgid "Flip image vertically"
 msgstr ""
 
-#: packages/imageviewer-extension/src/index.ts:241
+#: packages/imageviewer-extension/src/index.ts:245
 msgid "Invert Colors"
 msgstr ""
 
-#: packages/inspector-extension/src/index.ts:60
+#: packages/inspector-extension/src/index.ts:64
 msgid "Show Contextual Help"
 msgstr ""
 
-#: packages/inspector-extension/src/index.ts:88
+#: packages/inspector-extension/src/index.ts:93
 msgid "Live updating code documentation from the active kernel"
 msgstr ""
 
@@ -2519,64 +2674,64 @@ msgstr ""
 msgid "Click on a function to see documentation."
 msgstr ""
 
-#: packages/javascript-extension/src/index.ts:37
+#: packages/javascript-extension/src/index.ts:41
 msgid "Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
 msgstr ""
 
-#: packages/javascript-extension/src/index.ts:41 packages/mainmenu-extension/src/index.ts:716 packages/rendermime/src/renderers.ts:78
+#: packages/javascript-extension/src/index.ts:45 packages/mainmenu-extension/src/index.ts:726 packages/rendermime/src/renderers.ts:78
 msgid "Run"
 msgstr ""
 
-#: packages/json-extension/src/component.tsx:67
-msgid "Filter..."
+#: packages/json-extension/src/component.tsx:68
+msgid "Filter…"
 msgstr ""
 
-#: packages/launcher-extension/src/index.ts:73 packages/launcher-extension/src/index.ts:95
+#: packages/launcher-extension/src/index.ts:101 packages/launcher-extension/src/index.ts:77
 msgid "Launcher"
 msgstr ""
 
-#: packages/launcher/src/index.tsx:413
+#: packages/launcher/src/index.tsx:417
 msgctxt "Error"
 msgid "Launcher Error"
 msgstr ""
 
-#: packages/logconsole-extension/src/index.tsx:160 packages/logconsole/src/widget.ts:399
+#: packages/logconsole-extension/src/index.tsx:164 packages/logconsole/src/widget.ts:399
 msgid "Log Console"
 msgstr ""
 
-#: packages/logconsole-extension/src/index.tsx:208
+#: packages/logconsole-extension/src/index.tsx:212
 msgid "Show Log Console"
 msgstr ""
 
-#: packages/logconsole-extension/src/index.tsx:228
+#: packages/logconsole-extension/src/index.tsx:232
 msgid "Add Checkpoint"
 msgstr "체크포인트 추가"
 
-#: packages/logconsole-extension/src/index.tsx:237
+#: packages/logconsole-extension/src/index.tsx:241
 msgid "Clear Log"
 msgstr ""
 
-#: packages/logconsole-extension/src/index.tsx:253
+#: packages/logconsole-extension/src/index.tsx:257
 msgid "Set Log Level to %1"
 msgstr ""
 
-#: packages/logconsole-extension/src/index.tsx:390
+#: packages/logconsole-extension/src/index.tsx:394
 msgid "Log Level:"
 msgstr ""
 
-#: packages/logconsole-extension/src/index.tsx:398
+#: packages/logconsole-extension/src/index.tsx:402
 msgid "Log level"
 msgstr ""
 
-#: packages/logconsole-extension/src/index.tsx:404
+#: packages/logconsole-extension/src/index.tsx:408
 msgid "Critical"
 msgstr "심각"
 
-#: packages/logconsole-extension/src/index.tsx:407
+#: packages/logconsole-extension/src/index.tsx:411
 msgid "Info"
 msgstr "정보"
 
-#: packages/logconsole-extension/src/index.tsx:408
+#: packages/logconsole-extension/src/index.tsx:412
 msgid "Debug"
 msgstr "디버그"
 
@@ -2600,555 +2755,567 @@ msgstr ""
 msgid "No log messages."
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:175
-msgid "Open Edit Menu"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:179
-msgid "Open File Menu"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:183
-msgid "Open Kernel Menu"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:187
-msgid "Open Run Menu"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:191
-msgid "Open View Menu"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:195
-msgid "Open Settings Menu"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:199
-msgid "Open Tabs Menu"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:203
-msgid "Open Help Menu"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:207
-msgid "Open First Menu"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:229
-msgid "Kernel Operations"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:254
-msgid "Edit"
-msgstr "편집"
-
-#: packages/mainmenu-extension/src/index.ts:280
-msgid "Clear"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:296
-msgid "Clear All"
-msgstr "모두 지우기"
-
-#: packages/mainmenu-extension/src/index.ts:315
-msgid "Go to Line…"
-msgstr "라인으로 가기"
-
-#: packages/mainmenu-extension/src/index.ts:332
-msgid "File"
-msgstr "파일"
-
-#: packages/mainmenu-extension/src/index.ts:333
-msgid "New"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:346
-msgid "Close and Shutdown"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:376
-msgid "New Console for Activity"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:387 packages/mainmenu-extension/src/index.ts:395
-msgid "Shut Down"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:388
-msgid "Shut down JupyterLab"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:391
-msgid "Shutdown confirmation"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:392
-msgid "Please confirm you want to shut down JupyterLab."
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:411
-msgid "You have shut down the Jupyter server. You can now close this tab."
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:415
-msgid "To use JupyterLab again, you will need to relaunch it."
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:422
-msgid "Server stopped"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:441
-msgid "Log out of JupyterLab"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:515
-msgid "Kernel"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:540
-msgid "Restart Kernel and Clear…"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:575
-msgid "Shut Down All Kernels…"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:581 packages/running/src/index.tsx:194
-msgid "Shut Down All?"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:582
-msgid "Shut down all kernels?"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:585
-msgid "Shut Down All"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:625
-msgid "View"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:628
-msgid "Show Line Numbers"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:666
-msgid "Wrap Words"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:726
-msgid "Run Selected"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:734
-msgid "Run All"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:754
-msgid "Restart Kernel and Run All"
-msgstr ""
-
-#: packages/mainmenu-extension/src/index.ts:795 packages/settingeditor-extension/src/index.ts:141 packages/settingeditor-extension/src/index.ts:151
-msgid "Settings"
-msgstr "설정"
-
-#: packages/mainmenu-extension/src/index.ts:809
+#: packages/mainmenu-extension/src/index.ts:160
 msgid "Tabs"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:846
+#: packages/mainmenu-extension/src/index.ts:174
+msgid "Open Edit Menu"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:178
+msgid "Open File Menu"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:182
+msgid "Open Kernel Menu"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:186
+msgid "Open Run Menu"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:190
+msgid "Open View Menu"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:194
+msgid "Open Settings Menu"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:198
+msgid "Open Tabs Menu"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:202
+msgid "Open Help Menu"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:206
+msgid "Open First Menu"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:228
+msgid "Kernel Operations"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:252
+msgid "Edit"
+msgstr "편집"
+
+#: packages/mainmenu-extension/src/index.ts:278
+msgid "Clear"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:294
+msgid "Clear All"
+msgstr "모두 지우기"
+
+#: packages/mainmenu-extension/src/index.ts:313
+msgid "Go to Line…"
+msgstr "라인으로 가기"
+
+#: packages/mainmenu-extension/src/index.ts:330
+msgid "File"
+msgstr "파일"
+
+#: packages/mainmenu-extension/src/index.ts:331
+msgid "New"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:344
+msgid "Close and Shutdown"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:374
+msgid "New Console for Activity"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:385 packages/mainmenu-extension/src/index.ts:393 packages/running-extension/src/kernels.ts:45 packages/running/src/index.tsx:148 packages/terminal-extension/src/index.ts:297
+msgid "Shut Down"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:386
+msgid "Shut down JupyterLab"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:389
+msgid "Shutdown confirmation"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:390
+msgid "Please confirm you want to shut down JupyterLab."
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:409
+msgid "You have shut down the Jupyter server. You can now close this tab."
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:413
+msgid "To use JupyterLab again, you will need to relaunch it."
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:420
+msgid "Server stopped"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:439
+msgid "Log out of JupyterLab"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:513
+msgid "Kernel"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:526
+msgid "Reconnect to Kernel"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:548
+msgid "Restart Kernel and Clear…"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:583
+msgid "Shut Down All Kernels…"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:589
+msgid "Shut Down All?"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:590
+msgid "Shut down all kernels?"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:593 packages/running-extension/src/kernels.ts:46 packages/running/src/index.tsx:228 packages/terminal-extension/src/index.ts:298
+msgid "Shut Down All"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:634
+msgid "View"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:637
+msgid "Show Line Numbers"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:675
+msgid "Wrap Words"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:736
+msgid "Run Selected"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:744
+msgid "Run All"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:764
+msgid "Restart Kernel and Run All"
+msgstr ""
+
+#: packages/mainmenu-extension/src/index.ts:805 packages/settingeditor-extension/src/index.ts:145 packages/settingeditor-extension/src/index.ts:155
+msgid "Settings"
+msgstr "설정"
+
+#: packages/mainmenu-extension/src/index.ts:855
 msgid "Activate Previously Used Tab"
 msgstr ""
 
-#: packages/markdownviewer-extension/src/index.ts:142
+#: packages/markdownviewer-extension/src/index.ts:143
 msgid "Markdown Preview"
 msgstr ""
 
-#: packages/markdownviewer-extension/src/index.ts:177
+#: packages/markdownviewer-extension/src/index.ts:178
 msgid "Show Markdown Editor"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:1007
-msgid "Run Selected Cells and Insert Below"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1020
-msgid "Run Selected Text or Current Line in Console"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1140 packages/notebook-extension/src/index.ts:2283
-msgid "Run All Cells"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1153
-msgid "Run All Above Selected Cell"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1173
-msgid "Run Selected Cell and All Below"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1194
-msgid "Render All Markdown Cells"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1219
-msgid "Close and Shut Down"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1230
-msgid "Shut down the notebook?"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1244
-msgid "Trust Notebook"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1258
-msgid "Export Notebook: %1"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1293 packages/notebook-extension/src/index.ts:2217
-msgid "Restart Kernel and Clear All Outputs…"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1308
-msgid "Restart Kernel and Run up to Selected Cell…"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1335 packages/notebook-extension/src/index.ts:2285
-msgid "Restart Kernel and Run All Cells…"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1355 packages/notebook-extension/src/index.ts:2128
-msgid "Clear All Outputs"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1366
-msgid "Clear Outputs"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1394
-msgid "Change to Code Cell Type"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1405
-msgid "Change to Markdown Cell Type"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1416
-msgid "Change to Raw Cell Type"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1427
-msgid "Cut Cells"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1438
-msgid "Copy Cells"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1449
-msgid "Paste Cells Below"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1460
-msgid "Paste Cells Above"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1471
-msgid "Paste Cells and Replace"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1482
-msgid "Delete Cells"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1493
-msgid "Split Cell"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1504
-msgid "Merge Selected Cells"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1515
-msgid "Insert Cell Above"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1526
-msgid "Insert Cell Below"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1537
-msgid "Select Cell Above"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1548
-msgid "Select Cell Below"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1559
-msgid "Extend Selection Above"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1570
-msgid "Extend Selection to Top"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1581
-msgid "Extend Selection Below"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1592
-msgid "Extend Selection to Bottom"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1603
-msgid "Select All Cells"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1614
-msgid "Deselect All Cells"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1625
-msgid "Move Cells Up"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1636
-msgid "Move Cells Down"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1647
-msgid "Toggle All Line Numbers"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1658
-msgid "Enter Command Mode"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1669
-msgid "Enter Edit Mode"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1680
-msgid "Undo Cell Operation"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1691
-msgid "Redo Cell Operation"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1716
-msgid "Reconnect To Kernel"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1733
-msgid "Create New View for Output"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1787 packages/notebook-extension/src/index.ts:2238
-msgid "New Console for Notebook"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1804
-msgid "Change to Heading 1"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1815
-msgid "Change to Heading 2"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1826
-msgid "Change to Heading 3"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1837
-msgid "Change to Heading 4"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1848
-msgid "Change to Heading 5"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1859
-msgid "Change to Heading 6"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1870
-msgid "Collapse Selected Code"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1881
-msgid "Expand Selected Code"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1892
-msgid "Collapse All Code"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1903
-msgid "Expand All Code"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1914
-msgid "Collapse Selected Outputs"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1925
-msgid "Expand Selected Outputs"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1936
-msgid "Collapse All Outputs"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1947
-msgid "Expand All Outputs"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1958
-msgid "Enable Scrolling for Outputs"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1969
-msgid "Disable Scrolling for Outputs"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1980
-msgid "Select current running or last run cell"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1991
-msgid "Replace Selection in Notebook Cell"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2012 packages/notebook-extension/src/index.ts:2190
-msgid "Notebook Operations"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2045
-msgid "Notebook Cell Operations"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2126
-msgid "Clear Output"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2145
-msgid "Close and Shutdown Notebook"
-msgstr "노트북을 종료하고 닫기"
-
-#: packages/notebook-extension/src/index.ts:2149
-msgid "Shut down the Notebook?"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2164
-msgid "Export Notebook As…"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2282 packages/notebook-extension/src/index.ts:981
-msgid "Run Selected Cells"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2425
-msgid "For Notebook: %1"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2426
-msgid "For Notebook:"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2511
-msgid "HTML"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2512
-msgid "LaTeX"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2513 packages/notebook/src/default-toolbar.tsx:344
-msgid "Markdown"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2514 packages/notebook-extension/src/index.ts:468
-msgid "PDF"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2515
-msgid "ReStructured Text"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2516
-msgid "Executable Script"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2517
-msgid "Reveal.js Slides"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:469
-msgid "Slides"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:470
-msgid "Script"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:472
-msgid "Custom"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:494
-msgid "Notebook Tools"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:738
+#: packages/notebook-extension/src/index.ts:1093
 msgid "New Notebook"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:742
+#: packages/notebook-extension/src/index.ts:1097
 msgid "Create a new notebook"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:994
+#: packages/notebook-extension/src/index.ts:1326 packages/notebook-extension/src/index.ts:2379
+msgid "Run Selected Cells"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1339
 msgid "Run Selected Cells and Don't Advance"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1387
+#: packages/notebook-extension/src/index.ts:1352
+msgid "Run Selected Cells and Insert Below"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1365 packages/notebook-extension/src/index.ts:2380
+msgid "Run All Cells"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1378
+msgid "Run All Above Selected Cell"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1398
+msgid "Run Selected Cell and All Below"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1419
+msgid "Render All Markdown Cells"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1444
+msgid "Close and Shut Down"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1455
+msgid "Shut down the notebook?"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1469
+msgid "Trust Notebook"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1480 packages/notebook-extension/src/index.ts:2314
+msgid "Restart Kernel and Clear All Outputs…"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1495
+msgid "Restart Kernel and Run up to Selected Cell…"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1519 packages/notebook-extension/src/index.ts:2382
+msgid "Restart Kernel and Run All Cells…"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1539 packages/notebook-extension/src/index.ts:2262
+msgid "Clear All Outputs"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1550
+msgid "Clear Outputs"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1578
+msgid "Change to Code Cell Type"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1589
+msgid "Change to Markdown Cell Type"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1600
+msgid "Change to Raw Cell Type"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1611
+msgid "Cut Cells"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1622
+msgid "Copy Cells"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1633
+msgid "Paste Cells Below"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1644
+msgid "Paste Cells Above"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1655
+msgid "Paste Cells and Replace"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1666
+msgid "Delete Cells"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1677
+msgid "Split Cell"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1688
+msgid "Merge Selected Cells"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1699
+msgid "Merge Cell Above"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1710
+msgid "Merge Cell Below"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1721
+msgid "Insert Cell Above"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1732
+msgid "Insert Cell Below"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1743
+msgid "Select Cell Above"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1754
+msgid "Select Cell Below"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1765
+msgid "Extend Selection Above"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1776
+msgid "Extend Selection to Top"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1787
+msgid "Extend Selection Below"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1798
+msgid "Extend Selection to Bottom"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1809
+msgid "Select All Cells"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1820
+msgid "Deselect All Cells"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1831
+msgid "Move Cells Up"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1842
+msgid "Move Cells Down"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1853
+msgid "Toggle All Line Numbers"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1864
+msgid "Enter Command Mode"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1875
+msgid "Enter Edit Mode"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1886
+msgid "Undo Cell Operation"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1897
+msgid "Redo Cell Operation"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1922
+msgid "Reconnect To Kernel"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1939
+msgid "Change to Heading 1"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1950
+msgid "Change to Heading 2"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1961
+msgid "Change to Heading 3"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1972
+msgid "Change to Heading 4"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1983
+msgid "Change to Heading 5"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1994
+msgid "Change to Heading 6"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2005
+msgid "Collapse Selected Code"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2016
+msgid "Expand Selected Code"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2027
+msgid "Collapse All Code"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2038
+msgid "Expand All Code"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2049
+msgid "Collapse Selected Outputs"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2060
+msgid "Expand Selected Outputs"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2071
+msgid "Collapse All Outputs"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2082
+msgid "Expand All Outputs"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2093
+msgid "Enable Scrolling for Outputs"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2104
+msgid "Disable Scrolling for Outputs"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2115
+msgid "Select current running or last run cell"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2126
+msgid "Replace Selection in Notebook Cell"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2146 packages/notebook-extension/src/index.ts:431
+msgid "Notebook Operations"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2179
+msgid "Notebook Cell Operations"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2260
+msgid "Clear Output"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2279
+msgid "Close and Shutdown Notebook"
+msgstr "노트북을 종료하고 닫기"
+
+#: packages/notebook-extension/src/index.ts:2283
+msgid "Shut down the Notebook?"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2335 packages/notebook-extension/src/index.ts:798
+msgid "New Console for Notebook"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2557
+msgid "HTML"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2558
+msgid "LaTeX"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2559 packages/notebook/src/default-toolbar.tsx:344
+msgid "Markdown"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2560 packages/notebook-extension/src/index.ts:608
+msgid "PDF"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2561
+msgid "ReStructured Text"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2562
+msgid "Executable Script"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2563
+msgid "Reveal.js Slides"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2581
+msgid "For Notebook: %1"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2582
+msgid "For Notebook:"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:368
+msgid "Export Notebook: %1"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:405
+msgid "Export Notebook As…"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:609
+msgid "Slides"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:610
+msgid "Script"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:612
+msgid "Custom"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:634
+msgid "Notebook Tools"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:729
+msgid "Create New View for Output"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:816
+msgid "Run Selected Text or Current Line in Console"
+msgstr ""
+
+#: packages/notebook/src/actions.tsx:1406
 msgid "A trusted Jupyter notebook may execute hidden malicious code when you openit."
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1391
+#: packages/notebook/src/actions.tsx:1410
 msgid "Selecting trust will re-render this notebook in a trusted state."
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1395
+#: packages/notebook/src/actions.tsx:1414
 msgid "For more information, see the <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1397
+#: packages/notebook/src/actions.tsx:1416
 msgid "Jupyter security documentation"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1404
+#: packages/notebook/src/actions.tsx:1423
 msgid "Notebook is already trusted"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1411
+#: packages/notebook/src/actions.tsx:1430
 msgid "Trust this notebook?"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1599
+#: packages/notebook/src/actions.tsx:1618
 msgid "Kernel Terminating"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1600
+#: packages/notebook/src/actions.tsx:1619
 msgid "The kernel for %1 appears to be terminating. You can not run any cell for now."
 msgstr ""
 
@@ -3192,7 +3359,7 @@ msgstr ""
 msgid "Save the notebook contents and create checkpoint"
 msgstr ""
 
-#: packages/notebook/src/model.ts:263
+#: packages/notebook/src/model.ts:272
 msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "to the current notebook format (v%2).\n"
 "The next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n"
@@ -3200,7 +3367,7 @@ msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "close the notebook without saving it."
 msgstr ""
 
-#: packages/notebook/src/model.ts:273
+#: packages/notebook/src/model.ts:282
 msgid "This notebook has been converted from an newer notebook format (v%1)\n"
 "to the current notebook format (v%2).\n"
 "The next time you save this notebook, the current notebook format (v%2) will be used.\n"
@@ -3208,7 +3375,7 @@ msgid "This notebook has been converted from an newer notebook format (v%1)\n"
 "close the notebook without saving it."
 msgstr ""
 
-#: packages/notebook/src/model.ts:284
+#: packages/notebook/src/model.ts:293
 msgid "Notebook converted"
 msgstr ""
 
@@ -3280,11 +3447,11 @@ msgstr ""
 msgid "Notebook not trusted: %1 of %2 cells trusted."
 msgstr ""
 
-#: packages/property-inspector/src/index.ts:172
+#: packages/property-inspector/src/index.ts:176
 msgid "No properties to inspect."
 msgstr ""
 
-#: packages/rendermime-extension/src/index.ts:54
+#: packages/rendermime-extension/src/index.ts:60
 msgid "Handle Local Link"
 msgstr ""
 
@@ -3296,40 +3463,56 @@ msgstr ""
 msgid "JavaScript output is disabled in JupyterLab"
 msgstr ""
 
-#: packages/running-extension/src/index.ts:136
+#: packages/running-extension/src/index.ts:59
+msgid "Running Terminals and Kernels"
+msgstr ""
+
+#: packages/running-extension/src/index.ts:62
+msgid "Running Sessions section"
+msgstr ""
+
+#: packages/running-extension/src/kernels.ts:36
+msgid "Kernels"
+msgstr "커널"
+
+#: packages/running-extension/src/kernels.ts:47
+msgid "Are you sure you want to permanently shut down all running kernels?"
+msgstr ""
+
+#: packages/running-extension/src/kernels.ts:86
 msgid "Path: %1\n"
 "Kernel: %2"
 msgstr ""
 
-#: packages/running-extension/src/index.ts:56
-msgid "Running Terminals and Kernels"
+#: packages/running-extension/src/opentabs.ts:78
+msgid "Open Tabs"
 msgstr ""
 
-#: packages/running-extension/src/index.ts:91
-msgid "Kernels"
-msgstr "커널"
-
-#: packages/running/src/index.tsx:141 packages/running/src/index.tsx:198
-msgid "SHUT DOWN"
+#: packages/running-extension/src/opentabs.ts:94
+msgid "Close"
 msgstr ""
 
-#: packages/running/src/index.tsx:215
-msgid "Shut Down All…"
+#: packages/running-extension/src/opentabs.ts:95
+msgid "Close All"
 msgstr ""
 
-#: packages/running/src/index.tsx:237
+#: packages/running-extension/src/opentabs.ts:96
+msgid "Are you sure you want to close all open tabs?"
+msgstr ""
+
+#: packages/running/src/index.tsx:294
 msgid "Refresh List"
 msgstr ""
 
-#: packages/settingeditor-extension/src/index.ts:147
+#: packages/settingeditor-extension/src/index.ts:151
 msgid "Advanced Settings Editor"
 msgstr ""
 
-#: packages/settingeditor-extension/src/index.ts:161
+#: packages/settingeditor-extension/src/index.ts:165
 msgid "Revert User Settings"
 msgstr ""
 
-#: packages/settingeditor-extension/src/index.ts:168
+#: packages/settingeditor-extension/src/index.ts:172
 msgid "Save User Settings"
 msgstr ""
 
@@ -3365,7 +3548,7 @@ msgstr ""
 msgid "Select a plugin from the list to view and edit its preferences."
 msgstr ""
 
-#: packages/shortcuts-extension/src/index.ts:82
+#: packages/shortcuts-extension/src/index.ts:87
 msgid "Note: To disable a system default shortcut,\n"
 "copy it to User Preferences and add the\n"
 "\"disabled\" key, for example:\n"
@@ -3382,7 +3565,15 @@ msgid "Note: To disable a system default shortcut,\n"
 "List of keyboard shortcuts:"
 msgstr ""
 
-#: packages/statusbar-extension/src/index.ts:86
+#: packages/statusbar-extension/src/index.ts:377
+msgid "Simple Interface (%1)"
+msgstr ""
+
+#: packages/statusbar-extension/src/index.ts:387
+msgid "Simple"
+msgstr ""
+
+#: packages/statusbar-extension/src/index.ts:93
 msgid "Show Status Bar"
 msgstr ""
 
@@ -3406,83 +3597,71 @@ msgstr ""
 msgid "Go to line number…"
 msgstr ""
 
-#: packages/statusbar/src/defaults/memoryUsage.tsx:46
-msgid "Mem: %1 %2"
-msgstr ""
-
-#: packages/statusbar/src/defaults/memoryUsage.tsx:52
-msgid "Mem: %1 / %2 %3"
-msgstr ""
-
-#: packages/statusbar/src/defaults/memoryUsage.tsx:61 packages/statusbar/src/defaults/memoryUsage.tsx:66
-msgid "Current mem usage"
-msgstr ""
-
 #: packages/statusbar/src/defaults/runningSessions.tsx:116
 msgid "%1 Terminals, %2 Kernel sessions"
 msgstr ""
 
-#: packages/tabmanager-extension/src/index.ts:39
-msgid "Open Tabs"
-msgstr ""
-
-#: packages/terminal-extension/src/index.ts:175
+#: packages/terminal-extension/src/index.ts:179
 msgid "Terminal Theme"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:180 packages/terminal-extension/src/index.ts:236
+#: packages/terminal-extension/src/index.ts:184 packages/terminal-extension/src/index.ts:240
 msgid "Inherit"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:188 packages/terminal-extension/src/index.ts:243
+#: packages/terminal-extension/src/index.ts:192 packages/terminal-extension/src/index.ts:247
 msgid "Light"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:194 packages/terminal-extension/src/index.ts:248
+#: packages/terminal-extension/src/index.ts:198 packages/terminal-extension/src/index.ts:252
 msgid "Dark"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:213
+#: packages/terminal-extension/src/index.ts:217
 msgid "Shutdown Terminal"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:287
+#: packages/terminal-extension/src/index.ts:291
 msgid "Terminals"
 msgstr "터미널"
 
-#: packages/terminal-extension/src/index.ts:332
+#: packages/terminal-extension/src/index.ts:299
+msgid "Are you sure you want to permanently shut down all running terminals?"
+msgstr ""
+
+#: packages/terminal-extension/src/index.ts:341
 msgid "New Terminal"
 msgstr "새 터미널"
 
-#: packages/terminal-extension/src/index.ts:332 packages/terminal-extension/src/index.ts:87 packages/terminal/src/widget.ts:76
+#: packages/terminal-extension/src/index.ts:341 packages/terminal-extension/src/index.ts:91 packages/terminal/src/widget.ts:76
 msgid "Terminal"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:333
+#: packages/terminal-extension/src/index.ts:342
 msgid "Start a new terminal session"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:382
+#: packages/terminal-extension/src/index.ts:391
 msgid "Refresh Terminal"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:383
+#: packages/terminal-extension/src/index.ts:392
 msgid "Refresh the current terminal session"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:403
+#: packages/terminal-extension/src/index.ts:412
 msgid "Increase Terminal Font Size"
 msgstr "터미널 글자 크기 크게"
 
-#: packages/terminal-extension/src/index.ts:417
+#: packages/terminal-extension/src/index.ts:426
 msgid "Decrease Terminal Font Size"
 msgstr "터미널 글자 크기 작게"
 
-#: packages/terminal-extension/src/index.ts:434
+#: packages/terminal-extension/src/index.ts:443
 msgid "Use Terminal Theme: %1"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:437
+#: packages/terminal-extension/src/index.ts:446
 msgid "Set the terminal theme"
 msgstr ""
 
@@ -3490,17 +3669,21 @@ msgstr ""
 msgid "Terminal %1"
 msgstr ""
 
-#: packages/theme-dark-extension/src/index.ts:28
+#: packages/theme-dark-extension/src/index.ts:32
 msgid "JupyterLab Dark"
 msgstr ""
 
-#: packages/theme-light-extension/src/index.ts:28
+#: packages/theme-light-extension/src/index.ts:32
 msgid "JupyterLab Light"
 msgstr ""
 
-#: packages/toc-extension/src/index.ts:63 packages/toc/src/toc.tsx:113
+#: packages/toc-extension/src/index.ts:67 packages/toc/src/toc.tsx:113
 msgid "Table of Contents"
 msgstr "차례"
+
+#: packages/toc-extension/src/index.ts:70
+msgid "Table of Contents section"
+msgstr ""
 
 #: packages/toc/src/generators/markdown/toolbar_generator.tsx:64 packages/toc/src/generators/markdown/toolbar_generator.tsx:65 packages/toc/src/generators/notebook/toolbar_generator.tsx:212 packages/toc/src/generators/notebook/toolbar_generator.tsx:213
 msgid "Toggle Auto-Numbering"
