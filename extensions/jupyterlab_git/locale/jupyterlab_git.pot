@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: jupyterlab_git 0.21.1\n"
+"Project-Id-Version: jupyterlab_git VERSION\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -66,12 +66,12 @@ msgid "Number of (most recent) commits shown in the history log"
 msgstr ""
 
 #: /schema/plugin.json:46
-msgid "Refresh interval"
+msgid "Refresh if the Git tab is hidden"
 msgstr ""
 
 #: /schema/plugin.json:47
 msgctxt "schema"
-msgid "Number of milliseconds between polling the file system for changes."
+msgid "Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance."
 msgstr ""
 
 #: /schema/plugin.json:5
@@ -80,10 +80,28 @@ msgid "jupyterlab-git settings."
 msgstr ""
 
 #: /schema/plugin.json:52
-msgid "Simple staging flag"
+msgid "Refresh interval"
 msgstr ""
 
 #: /schema/plugin.json:53
 msgctxt "schema"
+msgid "Number of milliseconds between polling the file system for changes."
+msgstr ""
+
+#: /schema/plugin.json:58
+msgid "Simple staging flag"
+msgstr ""
+
+#: /schema/plugin.json:59
+msgctxt "schema"
 msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
+msgstr ""
+
+#: /schema/plugin.json:64
+msgid "Trigger push on commit"
+msgstr ""
+
+#: /schema/plugin.json:65
+msgctxt "schema"
+msgid "Whether to trigger or not a push for each commit."
 msgstr ""
