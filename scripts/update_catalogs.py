@@ -68,7 +68,7 @@ def update_crowdin_config():
     """
     data = load_repo_map()
     crowdin_data = load_crowdin()
-    files = crowdin_data["files"]
+    # _files = crowdin_data["files"]
     packages = [
         {
             "source": "/jupyterlab/locale/jupyterlab.pot",
@@ -112,6 +112,11 @@ def update_repo(package_name, url, version):
     args = ["git", "checkout", version]
     p = subprocess.Popen(args, cwd=clone_path)
     p.communicate()
+
+    if version in ["master", "main"]:
+        args = ["git", "pull", "origin", version]
+        p = subprocess.Popen(args, cwd=clone_path)
+        p.communicate()
 
 
 def update_catalog(package_name, version):
