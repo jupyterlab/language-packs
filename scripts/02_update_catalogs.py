@@ -1,3 +1,6 @@
+# Copyright (c) Jupyter Development Team.
+# Distributed under the terms of the Modified BSD License.
+
 """
 This script will update the catalogs using the information from the
 `repository-map.yml` file.
@@ -31,7 +34,7 @@ REPO_MAP_FILE = "repository-map.yml"
 CROWDIN_FILE = "crowdin.yml"
 
 
-def load_repo_map():
+def load_repo_map() -> dict:
     """
     Load yaml file with mapping of package names to repo url and version.
     """
@@ -42,7 +45,7 @@ def load_repo_map():
     return data
 
 
-def save_crowdin(data):
+def save_crowdin(data: dict):
     """
     Save crowdin `data`.
     """
@@ -51,7 +54,7 @@ def save_crowdin(data):
         fh.write(yaml.safe_dump(data))
 
 
-def load_crowdin():
+def load_crowdin() -> dict:
     """
     Load crowdin data.
     """
@@ -93,7 +96,7 @@ def update_crowdin_config():
     save_crowdin(crowdin_data)
 
 
-def update_repo(package_name, url, version):
+def update_repo(package_name: str, url: str, version: str):
     """
     Clone or update repo for given package and checkout `version` reference.
     """
@@ -119,7 +122,7 @@ def update_repo(package_name, url, version):
         p.communicate()
 
 
-def update_catalog(package_name, version):
+def update_catalog(package_name: str, version: str):
     """
     Create or update pot catalogs for package_name and version using
     `jupyterlab-translate`.
