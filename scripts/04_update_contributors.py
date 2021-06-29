@@ -123,7 +123,7 @@ def format_data(data: dict, language: str = None):
     for row in csv.reader(lines, delimiter=','):
         name_or_username = row[0]
         languages = [part.strip() for part in row[1].split(";")]
-        words  = int(row[2])
+        words = int(row[2])
 
         try:
             name_or_username = ast.literal_eval(name_or_username)
