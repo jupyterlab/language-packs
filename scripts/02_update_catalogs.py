@@ -67,7 +67,7 @@ def load_crowdin() -> dict:
 
 def update_crowdin_config():
     """
-    Update crowdin configuration to match `reposiory-map.yml`.
+    Update crowdin configuration to match `repository-map.yml`.
     """
     data = load_repo_map()
     crowdin_data = load_crowdin()
@@ -102,30 +102,29 @@ def update_repo(package_name: str, url: str, version: str):
     """
     repos_path = os.path.join(REPO_ROOT, REPOSITORIES_FOLDER)
     clone_path = os.path.join(repos_path, package_name)
+    os.makedirs(repos_path, exist_ok=True)
 
     if not os.path.isdir(clone_path):
-        args = ["git", "clone", url + ".git", package_name]
-        p = subprocess.Popen(args, cwd=repos_path)
-        p.communicate()
+        args = ["git", "clone", "--depth", "1", url + ".git", package_name, "--branch", version]
+        subprocess.run(args, cwd=repos_path, check=True)
     else:
-        args = ["git", "fetch", "origin"]
-        p = subprocess.Popen(args, cwd=repos_path)
-        p.communicate()
+        args = ["git", "fetch", "--depth", "1", "origin", version]
+        subprocess.run(args, cwd=repos_path, check=True)
 
     args = ["git", "checkout", version]
-    p = subprocess.Popen(args, cwd=clone_path)
-    p.communicate()
+    subprocess.run(args, cwd=clone_path, check=True)
 
     if version in ["master", "main"]:
         args = ["git", "pull", "origin", version]
-        p = subprocess.Popen(args, cwd=clone_path)
-        p.communicate()
+        subprocess.run(args, cwd=clone_path, check=True)
 
 
 def update_catalog(package_name: str, version: str):
     """
     Create or update pot catalogs for package_name and version using
     `jupyterlab-translate`.
+
+    TODO: version is ignored
     """
     package_repo_dir = os.path.join(REPO_ROOT, REPOSITORIES_FOLDER, package_name)
     api.extract_language_pack(package_repo_dir, REPO_ROOT, package_name)
