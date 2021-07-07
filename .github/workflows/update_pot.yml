@@ -1,6 +1,5 @@
 on:
   push:
-  pull_request:
 
 jobs:
   update_pot:
@@ -19,9 +18,11 @@ jobs:
       - name: Update po templates
         run: |
           python scripts/02_update_catalogs.py
+      - name: Set branch name
+        run: echo "BRANCH_NAME=pot-update-$(git rev-parse --short HEAD)" >> $GITHUB_ENV
       - name: Create a new branch
         run: |
-          git checkout -b pot-update-$(git rev-parse --short HEAD)
+          git checkout -b "${{ env.BRANCH_NAME }}"
       - name: Set up git identity
         run: |
           git config user.name "JupyterLab Language Packs Bot"
@@ -32,7 +33,7 @@ jobs:
           git commit -m "Update pot files"
       - name: Push the changes
         run: |
-          git push -u
+          git push --set-upstream origin "${{ env.BRANCH_NAME }}"
       - name: Create a PR
         run: |
           hub pull-request -m "Update pot files"
