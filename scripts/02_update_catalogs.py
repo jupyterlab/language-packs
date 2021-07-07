@@ -105,11 +105,11 @@ def update_repo(package_name: str, url: str, version: str):
     os.makedirs(repos_path, exist_ok=True)
 
     if not os.path.isdir(clone_path):
-        args = ["git", "clone", "--depth", "1", url + ".git", package_name, "--branch", version]
+        args = ["git", "clone", url + ".git", package_name]
         subprocess.run(args, cwd=repos_path, check=True)
-    else:
-        args = ["git", "fetch", "--depth", "1", "origin", version]
-        subprocess.run(args, cwd=repos_path, check=True)
+
+    args = ["git", "fetch", "--tags"]
+    subprocess.run(args, cwd=clone_path, check=True)
 
     args = ["git", "checkout", version]
     subprocess.run(args, cwd=clone_path, check=True)
