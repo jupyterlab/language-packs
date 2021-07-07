@@ -1,5 +1,8 @@
 on:
   push:
+    paths:
+      - repository-map.yml
+    workflow_dispatch:
 
 jobs:
   update_pot:
@@ -26,7 +29,7 @@ jobs:
       - name: Set up git identity
         run: |
           git config user.name "JupyterLab Language Packs Bot"
-          git config --global user.email 'krassowski@users.noreply.github.com'
+          git config user.email 'jupyterlab-bot@users.noreply.github.com'
       - name: Commit changes
         run: |
           git add *.pot
@@ -36,7 +39,7 @@ jobs:
           git push --set-upstream origin "${{ env.BRANCH_NAME }}"
       - name: Create a PR
         run: |
-          hub pull-request -m "Update pot files"
+          hub pull-request -m "Update pot files" -m "New changes to pot files were detected."
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
