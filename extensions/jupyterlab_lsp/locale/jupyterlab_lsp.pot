@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: jupyterlab_lsp VERSION\n"
+"Project-Id-Version: jupyterlab_lsp 3.8.0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -53,12 +53,8 @@ msgid "The time to wait for the kernel completions suggestions in milliseconds. 
 msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/completion.json:45
-msgid "Wait for kernel if busy"
-msgstr ""
-
-#: /packages/jupyterlab-lsp/schema/completion.json:48
 msgctxt "schema"
-msgid "Should an attempt to get the kernel response (with timeout as specified by kernelResponseTimeout) be made if kernel is busy? If you often write code in notebook while computations are running for long time (e.g. training models), turning this off might give you faster response times."
+msgid "The sources from which to exclude completion from. Possible values include 'Kernel', 'LSP'."
 msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/completion.json:5
@@ -67,55 +63,64 @@ msgid "LSP Completion settings."
 msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/completion.json:51
-msgid "Completer theme"
+msgid "Wait for kernel if busy"
 msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/completion.json:54
 msgctxt "schema"
-msgid "The identifier of a completer theme with icons which indicate the kind of completion. Set to null to disable icons. Search for 'completer themes' in the command palette for a command displaying available themes."
+msgid "Should an attempt to get the kernel response (with timeout as specified by kernelResponseTimeout) be made if kernel is busy? If you often write code in notebook while computations are running for long time (e.g. training models), turning this off might give you faster response times."
 msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/completion.json:57
-msgid "Prioritize completions from kernel"
+msgid "Completer theme"
 msgstr ""
 
-#: /packages/jupyterlab-lsp/schema/completion.json:59
+#: /packages/jupyterlab-lsp/schema/completion.json:60
 msgctxt "schema"
-msgid "In case of ties when sorting completions, should the kernel completions receive higher priority than the language server completions?"
+msgid "The identifier of a completer theme with icons which indicate the kind of completion. Set to null to disable icons. Search for 'completer themes' in the command palette for a command displaying available themes."
 msgstr ""
 
-#: /packages/jupyterlab-lsp/schema/completion.json:62
-msgid "Case-sensitive filtering"
+#: /packages/jupyterlab-lsp/schema/completion.json:63
+msgid "Prioritize completions from kernel"
 msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/completion.json:65
 msgctxt "schema"
-msgid "Should completion filtering be case-sensitive?"
+msgid "In case of ties when sorting completions, should the kernel completions receive higher priority than the language server completions?"
 msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/completion.json:68
-msgid "Include perfect matches"
+msgid "Case-sensitive filtering"
 msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/completion.json:71
 msgctxt "schema"
-msgid "Should perfect matches be included in the completion suggestions list?"
+msgid "Should completion filtering be case-sensitive?"
 msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/completion.json:74
+msgid "Include perfect matches"
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/completion.json:77
+msgctxt "schema"
+msgid "Should perfect matches be included in the completion suggestions list?"
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/completion.json:80
 msgid "Text to display next to completion label"
 msgstr ""
 
-#: /packages/jupyterlab-lsp/schema/completion.json:78
+#: /packages/jupyterlab-lsp/schema/completion.json:84
 msgctxt "schema"
 msgid "What to display next to the completion label, one of: 'detail', 'type', 'source', 'auto'. The default 'auto' will display whichever information is available."
 msgstr ""
 
-#: /packages/jupyterlab-lsp/schema/completion.json:81
+#: /packages/jupyterlab-lsp/schema/completion.json:87
 msgid "Mapping of custom kernel types to valid completion kind names"
 msgstr ""
 
-#: /packages/jupyterlab-lsp/schema/completion.json:82
+#: /packages/jupyterlab-lsp/schema/completion.json:88
 msgctxt "schema"
 msgid "Mapping used for icon selection. The kernel types (keys) are case-insensitive. Accepted values are the names of CompletionItemKind and 'Kernel' literal. The defaults aim to provide good initial experience for Julia, Python and R kernels."
 msgstr ""
@@ -241,36 +246,54 @@ msgctxt "schema"
 msgid "Language-server specific configuration, keyed by implementation, e.g: \n\npyls: {\n  serverSettings: {\n    pyls: {\n      plugins: {\n        pydocstyle: {\n          enabled: true\n        },\n        pyflakes: {\n          enabled: false\n        },\n        flake8: {\n          enabled: true\n        }\n      }\n    }\n  }\n}\n\nAlternatively, using VSCode's naming convention:\n\npyls: {\n  serverSettings: {\n    \"pyls.plugins.pydocstyle.enabled\": true,\n    \"pyls.plugins.pyflakes.enabled\": false,\n    \"pyls.plugins.flake8.enabled\": true\n  }\n}"
 msgstr ""
 
-#: /packages/jupyterlab-lsp/schema/plugin.json:25
+#: /packages/jupyterlab-lsp/schema/plugin.json:0
+msgctxt "schema"
+msgid "Whether to ask server to send logs with execution trace (for debugging). To see these messages, set loggingLevel to debug or log. Accepted values are: \"off\", \"messages\", \"verbose\". Servers are allowed to ignore this request."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/plugin.json:32
 msgctxt "schema"
 msgid "Language Server"
 msgstr ""
 
-#: /packages/jupyterlab-lsp/schema/plugin.json:25
+#: /packages/jupyterlab-lsp/schema/plugin.json:32
 msgid "Language Server"
-msgstr ""
-
-#: /packages/jupyterlab-lsp/schema/plugin.json:38
-msgid "Logging console type"
-msgstr ""
-
-#: /packages/jupyterlab-lsp/schema/plugin.json:42
-msgctxt "schema"
-msgid "The console to use for debugging problems with this extension. Allowed values are: browser, floating."
-msgstr ""
-
-#: /packages/jupyterlab-lsp/schema/plugin.json:45
-msgid "Logging console verbosity level"
-msgstr ""
-
-#: /packages/jupyterlab-lsp/schema/plugin.json:49
-msgctxt "schema"
-msgid "The verbosity of the console for debugging problems with this extension. Allowed values are: debug, log, warn, error."
 msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:5
 msgctxt "schema"
 msgid "Language Server Protocol settings."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/plugin.json:51
+msgid "Logging console type"
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/plugin.json:55
+msgctxt "schema"
+msgid "The console to use for debugging problems with this extension. Allowed values are: browser, floating."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/plugin.json:58
+msgid "Logging console verbosity level"
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/plugin.json:62
+msgctxt "schema"
+msgid "The verbosity of the console for debugging problems with this extension. Allowed values are: debug, log, warn, error."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/plugin.json:65
+msgid "Log all LSP communication with the LSP servers"
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/plugin.json:68
+msgctxt "schema"
+msgid "Whether all messages sent to and received from LSP servers should be logged into the console. To see these messages, set loggingLevel to debug or log. Note: Only messages handled by the new API will be shown."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/plugin.json:71
+msgid "Ask servers to send trace notifications"
 msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/rename.json:4
@@ -302,45 +325,49 @@ msgstr ""
 msgid "Threshold of foreign code coverage for changing the mode in an editor"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:226
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236
 msgid ""
 "Failed to load language server spec finder `{}`: \n"
 "{}"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:248
+msgid "Skipping non-installed server: `{}`"
+msgstr ""
+
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254
 msgid ""
-"Failed to fetch commands from language server spec finder`{}`:\n"
+"Failed to fetch commands from language server spec finder `{}`:\n"
 "{}"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:249
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267
 msgid ""
-"Failed to validate commands from language server spec finder`{}`:\n"
+"Failed to validate commands from language server spec finder `{}`:\n"
 "{}"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:40
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:41
 msgid "extra language server specs, keyed by implementation, from conf.d"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:45
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46
 msgid "a dict of language server specs, keyed by implementation"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:51
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:52
 msgid "try to find known language servers in sys.prefix (and elsewhere)"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:192
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:193
 msgid "path to nodejs executable"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:194
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:195
 msgid "absolute paths in which to seek node_modules"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:199
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:200
 msgid "additional absolute paths to seek node_modules first"
 msgstr ""
 
@@ -356,8 +383,46 @@ msgstr ""
 msgid "Includes dedicated dark mode icons set"
 msgstr ""
 
-#: packages/completion-theme/src/index.ts:186
+#: packages/completion-theme/src/index.ts:189
 msgid "Display the completer themes"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:150
+msgid "Troubleshooting"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:154
+msgid "In case of issues with installation feel welcome to ask a question on GitHub."
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:158
+msgid "Installation"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:168
+msgid "No installation instructions were provided with this specification."
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:183
+msgid "No language server for %1 detected"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:192
+msgid "There is %1 language server you can easily install that supports %2."
+msgid_plural "There are %1 language servers you can easily install that supports %2."
+msgstr[0] ""
+msgstr[1] ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:211
+msgid "We do not have an auto-detection ready for a language servers supporting %1 yet."
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:217
+msgid "You may contribute a specification for auto-detection as described in our "
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:225
+msgid "documentation"
 msgstr ""
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/index.ts:42
