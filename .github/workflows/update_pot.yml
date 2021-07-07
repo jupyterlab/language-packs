@@ -37,3 +37,7 @@ jobs:
       - name: Create a PR
         run: |
           hub pull-request -m "Update pot files"
+        env:
+          GITHUB_USER: ${{ secrets.GITHUB_USER }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
