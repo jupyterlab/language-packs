@@ -21,8 +21,10 @@ jobs:
       - name: Update po templates
         run: |
           python scripts/02_update_catalogs.py
-      - name: Set branch name
-        run: echo "BRANCH_NAME=pot-update-$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+      - name: Set branch name and get hash
+        run: |
+          echo "BRANCH_NAME=pot-update-$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+          echo "COMMIT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
       - name: Create a new branch
         run: |
           git checkout -b "${{ env.BRANCH_NAME }}"
@@ -39,7 +41,7 @@ jobs:
           git push --set-upstream origin "${{ env.BRANCH_NAME }}"
       - name: Create a PR
         run: |
-          hub pull-request -m "Update pot files" -m "New changes to pot files were detected."
+          hub pull-request -m "Update pot files" -m "New changes to pot files were detected in ${{ env.COMMIT_SHA }} commit."
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
