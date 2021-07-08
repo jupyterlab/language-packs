@@ -6,7 +6,7 @@ Jupyterlab language packs.
 
 ## Install
 
-To install a specific language pack please see the [available packs](https://github.com/jupyterlab/language-packs/tree/master/).
+To install a specific language pack please see the [available packs](https://github.com/jupyterlab/language-packs/tree/master/language-packs).
 
 ## Adding a new extension
 
@@ -28,7 +28,7 @@ jupyterlab-git:
   url: https://github.com/jupyterlab/jupyterlab-git
 ```
 
-After the PR is merged, the catalog for the new extension will be available on [Crowdin](https://crowdin.com/project/jupyterlab).
+After the PR is merged, our bot will create/update the `.pot` files in a subsequent PR. Once merged, the catalog for the new extension will be available on [Crowdin](https://crowdin.com/project/jupyterlab).
 
 When translations are completed for a given set of packages a new language pack for the given language will be released as python packages via [PyPI](https://pypi.org/) and conda packages via [conda-forge](https://conda-forge.org/).
 
