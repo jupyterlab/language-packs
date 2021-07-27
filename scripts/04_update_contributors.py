@@ -173,6 +173,7 @@ def get_contributors_report(project_id: int = 409874, locale: Optional[str]=None
         The formated string for the contributors file.
     """
     data = get_project_data()
+    print(get_languages(data))
     if locale:
         language_id = get_languages(data)[locale]["id"]
     else:
