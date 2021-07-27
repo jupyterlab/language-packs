@@ -8,11 +8,11 @@ msgstr ""
 "X-Crowdin-Project: jupyterlab\n"
 "X-Crowdin-Project-ID: 409874\n"
 "X-Crowdin-Language: nl\n"
-"X-Crowdin-File: /master/extensions/jupyterlab_git/locale/jupyterlab_git.pot\n"
-"X-Crowdin-File-ID: 28\n"
+"X-Crowdin-File: /[jupyterlab.language-packs] master/extensions/jupyterlab_git/locale/jupyterlab_git.pot\n"
+"X-Crowdin-File-ID: 52\n"
 "Language-Team: Dutch\n"
 "Language: nl_NL\n"
-"PO-Revision-Date: 2020-09-14 21:48\n"
+"PO-Revision-Date: 2021-07-07 22:06\n"
 
 #: /schema/plugin.json:10
 msgid "Suspend user interaction until commands finish"
@@ -74,12 +74,12 @@ msgid "Number of (most recent) commits shown in the history log"
 msgstr ""
 
 #: /schema/plugin.json:46
-msgid "Refresh interval"
+msgid "Refresh if the Git tab is hidden"
 msgstr ""
 
 #: /schema/plugin.json:47
 msgctxt "schema"
-msgid "Number of milliseconds between polling the file system for changes."
+msgid "Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance."
 msgstr ""
 
 #: /schema/plugin.json:5
@@ -88,11 +88,479 @@ msgid "jupyterlab-git settings."
 msgstr ""
 
 #: /schema/plugin.json:52
-msgid "Simple staging flag"
+msgid "Refresh interval"
 msgstr ""
 
 #: /schema/plugin.json:53
 msgctxt "schema"
+msgid "Number of milliseconds between polling the file system for changes."
+msgstr ""
+
+#: /schema/plugin.json:58
+msgid "Simple staging flag"
+msgstr ""
+
+#: /schema/plugin.json:59
+msgctxt "schema"
 msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
+msgstr ""
+
+#: /schema/plugin.json:64
+msgid "Trigger push on commit"
+msgstr ""
+
+#: /schema/plugin.json:65
+msgctxt "schema"
+msgid "Whether to trigger or not a push for each commit."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:117
+msgid "Commit from the Commit Box"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:118
+msgid "Submit the commit using the summary and description from commit box"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1180
+msgid "Git credentials required"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1183 src/widgets/CredentialsBox.tsx:15
+msgid "Enter credentials for remote repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1184
+msgid "Incorrect username or password."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:129
+msgid "Open Git Repository in Terminal"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:130
+msgid "Open a New Terminal to the Git Repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:161
+msgid "Git Interface"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:162
+msgid "Go to Git user interface"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:174 src/commandsAndMenu.tsx:181
+msgid "Initialize a Repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:175
+msgid "Create an empty Git repository or reinitialize an existing one"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:182
+msgid "Do you really want to make this directory a Git Repo?"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:297 src/commandsAndMenu.tsx:751 src/commandsAndMenu.tsx:794
+msgid "Cancel"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:185
+msgid "Yes"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:191
+msgid "Initializing..."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:198
+msgid "Git repository initialized."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:203
+msgid "Encountered an error when initializing the repository. Error: "
+msgstr ""
+
+#: src/commandsAndMenu.tsx:209
+msgid "Failed to initialize the Git repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:230
+msgid "Simple staging"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:239
+msgid "Double click opens diff"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:248
+msgid "Add Remote Repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:249
+msgid "Add a Git remote repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:254
+msgid "Not in a Git repository. Unable to add a remote."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:263
+msgid "Add a remote repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:264
+msgid "Remote Git repository URL"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:278
+msgid "Error when adding remote repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:288
+msgid "Clone a Repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:289
+msgid "Clone a repository from a URL"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:293
+msgid "Clone a repo"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:298
+msgid "CLONE"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:305
+msgid "Cloning..."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:315
+msgid "Successfully cloned"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:326
+msgid "Failed to clone"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:337 src/commandsAndMenu.tsx:338
+msgid "Open .gitignore"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:347
+msgid "Push to Remote"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:348
+msgid "Push code to remote repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:353
+msgid "Pushing..."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:362
+msgid "Successfully pushed"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:368
+msgid "Encountered an error when pushing changes. Error: "
+msgstr ""
+
+#: src/commandsAndMenu.tsx:372
+msgid "Failed to push"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:382
+msgid "Pull from Remote"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:383
+msgid "Pull latest code from remote repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:388
+msgid "Pulling..."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:397
+msgid "Successfully pulled"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:407
+msgid "Failed to pull"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:423
+msgid "Show Diff"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:424
+msgid "Display a file diff."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:470
+msgid "Refresh"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:475
+msgid "Refresh diff widget"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:498
+msgid "Diff Not Supported"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:499
+msgid "Diff is not supported for %1 files."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:513
+msgid "Open"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:515
+msgid "Open selected file"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:516
+msgid "Open selected files"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:524
+msgid "Open File Failed"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:525
+msgid "This file has been deleted!"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:546
+msgid "Diff"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:548
+msgid "Diff selected file"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:549
+msgid "Diff selected files"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:659
+msgid "Add"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:661
+msgid "Stage or track the changes to selected file"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:662
+msgid "Stage or track the changes of selected files"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:674
+msgid "Stage"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:676
+msgid "Stage the changes of selected file"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:677
+msgid "Stage the changes of selected files"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:689
+msgid "Track"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:691
+msgid "Start tracking selected file"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:692
+msgid "Start tracking selected files"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:704
+msgid "Unstage"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:706
+msgid "Unstage the changes of selected file"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:707
+msgid "Unstage the changes of selected files"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:730 src/commandsAndMenu.tsx:752
+msgid "Delete"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:732
+msgid "Delete this file"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:733
+msgid "Delete these files"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:740
+msgid "Delete Files"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:743
+msgid "Are you sure you want to permanently delete the following files?               This action cannot be undone."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:762
+msgid "Deleting %1 failed."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:763 src/commandsAndMenu.tsx:818 src/index.ts:128
+msgid "DISMISS"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:773 src/commandsAndMenu.tsx:795
+msgid "Discard"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:775
+msgid "Discard recent changes of selected file"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:776
+msgid "Discard recent changes of selected files"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:783
+msgid "Discard changes"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:786
+msgid "Are you sure you want to permanently discard changes to the following files?               This action cannot be undone."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:816
+msgid "Discard changes for %1 failed."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:829 src/commandsAndMenu.tsx:833
+msgid "Ignore this file (add to .gitignore)"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:830 src/commandsAndMenu.tsx:834
+msgid "Ignore these files (add to .gitignore)"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:852
+msgid "Ignore %2 extension (add to .gitignore)"
+msgid_plural "Ignore %2 extensions (add to .gitignore)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/commandsAndMenu.tsx:860
+msgid "Ignore this file extension (add to .gitignore)"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:861
+msgid "Ignore these files extension (add to .gitignore)"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:870
+msgid "Ignore file extension"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:871
+msgid "Are you sure you want to ignore all %1 files within this git repository?"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:877 src/commandsAndMenu.tsx:880
+msgid "Ignore"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:897
+msgid "No actions available"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:916
+msgid "Set Up Remotes"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:920
+msgid "Git Documentation"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:951
+msgid " Help "
+msgstr ""
+
+#: src/components/BranchMenu.tsx:51
+msgid "Unable to switch branch"
+msgstr ""
+
+#: src/components/BranchMenu.tsx:55 src/components/TagMenu.tsx:49
+msgid "Your changes to the following files would be overwritten by switching:"
+msgstr ""
+
+#: src/components/BranchMenu.tsx:63
+msgid "Please commit, stash, or discard your changes before you switch branches."
+msgstr ""
+
+#: src/components/BranchMenu.tsx:69 src/components/TagMenu.tsx:63
+msgid "Dismiss"
+msgstr ""
+
+#: src/components/BranchMenu.tsx:74
+msgid "Failed to switch branch."
+msgstr ""
+
+#: src/components/TagMenu.tsx:45
+msgid "Unable to checkout tag"
+msgstr ""
+
+#: src/components/TagMenu.tsx:57
+msgid "Please commit, stash, or discard your changes before you checkout tags."
+msgstr ""
+
+#: src/components/TagMenu.tsx:68
+msgid "Failed to checkout tag."
+msgstr ""
+
+#: src/index.ts:102
+msgid "git command version must be > 2; got %1."
+msgstr ""
+
+#: src/index.ts:109
+msgid "The versions of the JupyterLab Git server frontend and backend do not match. The @jupyterlab/git frontend extension has version: %1 while the python package has version %2. Please install identical version of jupyterlab-git Python package and the @jupyterlab/git extension. Try running: pip install --upgrade jupyterlab-git"
+msgstr ""
+
+#: src/index.ts:126
+msgid "Failed to load the jupyterlab-git server extension"
+msgstr ""
+
+#: src/index.ts:94
+msgid "git command not found - please ensure you have Git > 2 installed"
+msgstr ""
+
+#: src/server.ts:27
+msgid "Git server extension is unavailable. Please ensure you have installed the JupyterLab Git server extension by running: pip install --upgrade jupyterlab-git. To confirm that the server extension is installed, run: jupyter server extension list."
+msgstr ""
+
+#: src/widgets/CredentialsBox.tsx:37
+msgid "username"
+msgstr ""
+
+#: src/widgets/CredentialsBox.tsx:38
+msgid "password / personal access token"
+msgstr ""
+
+#: src/widgets/GitCloneForm.ts:30
+msgid "Enter the Clone URI of the repository"
 msgstr ""
 
