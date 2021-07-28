@@ -6,6 +6,10 @@ on:
       - repository-map.yml
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   update_pot:
     runs-on: ubuntu-latest
