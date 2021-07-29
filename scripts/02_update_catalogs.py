@@ -15,10 +15,10 @@ This script will:
 """
 
 # Standard library imports
-import os
 import subprocess
 import sys
 import time
+from pathlib import Path
 
 # Third party imports
 import click
@@ -26,8 +26,8 @@ import jupyterlab_translate.api as api
 import yaml
 
 # Constants
-HERE = os.path.abspath(os.path.dirname(__file__))
-REPO_ROOT = os.path.dirname(HERE)
+HERE = Path(__file__).parent.resolve()
+REPO_ROOT = HERE.parent
 REPOSITORIES_FOLDER = "repos"
 LANGUAGE_PACKS_FOLDER = "language-packs"
 REPO_MAP_FILE = "repository-map.yml"
@@ -38,31 +38,26 @@ def load_repo_map() -> dict:
     """
     Load yaml file with mapping of package names to repo url and version.
     """
-    fpath = os.path.join(REPO_ROOT, REPO_MAP_FILE)
-    with open(fpath, "r") as fh:
-        data = yaml.safe_load(fh.read())
+    fpath = REPO_ROOT / REPO_MAP_FILE
 
-    return data
+    return yaml.safe_load(fpath.read_text())
 
 
-def save_crowdin(data: dict):
+def save_crowdin(data: dict) -> None:
     """
     Save crowdin `data`.
     """
-    fpath = os.path.join(REPO_ROOT, CROWDIN_FILE)
-    with open(fpath, "w") as fh:
-        fh.write(yaml.safe_dump(data))
+    fpath = REPO_ROOT / CROWDIN_FILE
+    fpath.write_text(yaml.safe_dump(data))
 
 
 def load_crowdin() -> dict:
     """
     Load crowdin data.
     """
-    fpath = os.path.join(REPO_ROOT, CROWDIN_FILE)
-    with open(fpath, "r") as fh:
-        data = yaml.safe_load(fh.read())
+    fpath = REPO_ROOT / CROWDIN_FILE
 
-    return data
+    return yaml.safe_load(fpath.read_text())
 
 
 def update_crowdin_config():
@@ -84,13 +79,15 @@ def update_crowdin_config():
     for pkg_name in sorted(data):
         if pkg_name != "jupyterlab":
             pkg_name_norm = pkg_name.replace("-", "_")
-            packages.append({
-                "source": f"/extensions/{pkg_name_norm}/locale/{pkg_name_norm}.pot",
-                "translation": (
-                    f"/extensions/{pkg_name_norm}/locale"
-                    f"/%locale_with_underscore%/LC_MESSAGES/%file_name%.po"
-                ),
-            })
+            packages.append(
+                {
+                    "source": f"/extensions/{pkg_name_norm}/locale/{pkg_name_norm}.pot",
+                    "translation": (
+                        f"/extensions/{pkg_name_norm}/locale"
+                        f"/%locale_with_underscore%/LC_MESSAGES/%file_name%.po"
+                    ),
+                }
+            )
 
     crowdin_data["files"] = packages
     save_crowdin(crowdin_data)
@@ -100,23 +97,23 @@ def update_repo(package_name: str, url: str, version: str):
     """
     Clone or update repo for given package and checkout `version` reference.
     """
-    repos_path = os.path.join(REPO_ROOT, REPOSITORIES_FOLDER)
-    clone_path = os.path.join(repos_path, package_name)
-    os.makedirs(repos_path, exist_ok=True)
+    repos_path = REPO_ROOT / REPOSITORIES_FOLDER
+    clone_path = repos_path / package_name
+    repos_path.mkdir(parents=True, exist_ok=True)
 
-    if not os.path.isdir(clone_path):
+    if not clone_path.is_dir():
         args = ["git", "clone", url + ".git", package_name]
-        subprocess.run(args, cwd=repos_path, check=True)
+        subprocess.check_call(args, cwd=repos_path)
 
     args = ["git", "fetch", "--tags"]
-    subprocess.run(args, cwd=clone_path, check=True)
+    subprocess.check_call(args, cwd=clone_path)
 
     args = ["git", "checkout", version]
-    subprocess.run(args, cwd=clone_path, check=True)
+    subprocess.check_call(args, cwd=clone_path)
 
     if version in ["master", "main"]:
         args = ["git", "pull", "origin", version]
-        subprocess.run(args, cwd=clone_path, check=True)
+        subprocess.check_call(args, cwd=clone_path)
 
 
 def update_catalog(package_name: str, version: str):
@@ -126,7 +123,7 @@ def update_catalog(package_name: str, version: str):
 
     TODO: version is ignored
     """
-    package_repo_dir = os.path.join(REPO_ROOT, REPOSITORIES_FOLDER, package_name)
+    package_repo_dir = REPO_ROOT / REPOSITORIES_FOLDER / package_name
     api.extract_language_pack(package_repo_dir, REPO_ROOT, package_name)
 
 
@@ -148,17 +145,15 @@ if __name__ == "__main__":
         packages = sorted(data.keys())
     else:
         sys.exit(0)
-    
+
     for package_name in packages:
-        click.echo(click.style(f"\n\nUpdating catalog for \"{package_name}\"\n\n", fg="cyan"))
+        click.echo(
+            click.style(f'\n\nUpdating catalog for "{package_name}"\n\n', fg="cyan")
+        )
         url = data[package_name]["url"]
         version = data[package_name]["current-version-tag"]
         update_repo(package_name, url, version)
         update_catalog(package_name, version)
 
     delta = round(time.time() - start_run_time, 0)
-    click.echo(
-        click.style(
-            f'\n\n\nCatalogs updated in {delta} seconds\n', fg="green"
-        )
-    )
+    click.echo(click.style(f"\n\n\nCatalogs updated in {delta} seconds\n", fg="green"))

@@ -30,7 +30,7 @@ which translation strings are going to be scrapped from the codebase.
 Update the current catalog for JupyterLab and JupyterLab extensions.
 
 ```python
-python scripts/update_catalogs.py
+python scripts/02_update_catalogs.py
 ```
 
 Push the changes to Github, Crowdin will update the loaded catalogs and expose and new strings to
@@ -51,7 +51,7 @@ to be regenerated, which should be conflict free.
 
 ## Prepare packages
 
-Run the `prepare_release.py` script to check which packages have 100% translation and bumb versions
+Run the `05_prepare_release.py` script to check which packages have 100% translation and bump versions
 accordingly. This script will print some information, bump package versions and add commits and tags.
 
 ## Push commits and tags
