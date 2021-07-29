@@ -3,7 +3,7 @@
         "domain": "jupyterlab",
         "language": "zh-CN",
         "plural_forms": "nplurals=1; plural=0;",
-        "version": "3.0.0b4"
+        "version": "jupyterlab"
     },
     "\nConnected: %1": [
         "\n\u5df2\u8fde\u63a5: %1"
@@ -75,6 +75,9 @@
     "ABOUT PROJECT JUPYTER": [
         "\u5173\u4e8e JUPYTER \u9879\u76ee"
     ],
+    "About": [
+        "\u5173\u4e8e"
+    ],
     "About %1": [
         "\u5173\u4e8e %1"
     ],
@@ -126,6 +129,9 @@
     "Are you sure you want to close \"%1\"?": [
         "\u60a8\u786e\u5b9a\u8981\u5173\u95ed\u201c%1\u201d\u5417\uff1f"
     ],
+    "Are you sure you want to close all open tabs?": [
+        "\u60a8\u786e\u5b9a\u8981\u5173\u95ed\u6240\u6709\u6253\u5f00\u7684\u6807\u7b7e\u9875\u5417\uff1f"
+    ],
     "Are you sure you want to delete %1": [
         "\u60a8\u786e\u5b9a\u8981\u5220\u9664 %1 \u5417\uff1f"
     ],
@@ -137,7 +143,13 @@
         "\u60a8\u786e\u5b9e\u8981\u6c38\u4e45\u5220\u9664 %1 \u4e2a\u9009\u5b9a\u7684\u9879\u76ee\u5417?"
     ],
     "Are you sure you want to permanently delete: %1?": [
-        "\u4f60\u786e\u5b9a\u8981\u6c38\u4e45\u5220\u9664: \u201c%1\u201d \u5417?"
+        "\u4f60\u786e\u5b9a\u8981\u5220\u9664: \u201c%1\u201d \u5417?"
+    ],
+    "Are you sure you want to permanently shut down all running kernels?": [
+        "\u60a8\u786e\u5b9a\u8981\u6c38\u4e45\u5173\u95ed\u6240\u6709\u6b63\u5728\u8fd0\u884c\u7684\u5185\u6838\u5417\uff1f"
+    ],
+    "Are you sure you want to permanently shut down all running terminals?": [
+        "\u60a8\u786e\u5b9a\u8981\u6c38\u4e45\u5173\u95ed\u6240\u6709\u6b63\u5728\u8fd0\u884c\u7684\u7ec8\u7aef\u5417\uff1f"
     ],
     "Are you sure you want to refresh?": [
         "\u60a8\u786e\u5b9a\u8981\u5237\u65b0\u5417\uff1f"
@@ -207,6 +219,9 @@
     ],
     "Cell Metadata": [
         "\u5355\u5143\u683c\u5143\u6570\u636e"
+    ],
+    "Cell Tags": [
+        "\u5355\u5143\u683c\u6807\u7b7e"
     ],
     "Cell type": [
         "\u5355\u5143\u683c\u7c7b\u578b"
@@ -285,6 +300,12 @@
     ],
     "Click on a function to see documentation.": [
         "\u70b9\u51fb\u51fd\u6570\u67e5\u770b\u6587\u6863\u3002"
+    ],
+    "Close": [
+        "\u5173\u95ed"
+    ],
+    "Close All": [
+        "\u5173\u95ed\u5168\u90e8"
     ],
     "Close All Other Tabs": [
         "\u5173\u95ed\u5168\u90e8\u5176\u5b83\u6807\u7b7e"
@@ -400,9 +421,6 @@
     "Ctrl-C": [
         "Ctrl+C"
     ],
-    "Current mem usage": [
-        "\u5f53\u524d\u5185\u5b58\u4f7f\u7528\u60c5\u51b5"
-    ],
     "Custom": [
         "\u81ea\u5b9a\u4e49"
     ],
@@ -446,7 +464,7 @@
         "\u9ed8\u8ba4\u67e5\u770b\u5668"
     ],
     "Default cell type": [
-        "\u9ed8\u8ba4\u7684\u5355\u5143\u683c\u7c7b\u578b"
+        "\u5355\u5143\u683c\u9ed8\u8ba4\u7c7b\u578b"
     ],
     "Delete": [
         "\u5220\u9664"
@@ -496,11 +514,17 @@
     "Dismiss": [
         "\u5ffd\u7565"
     ],
+    "Display localized strings prefix": [
+        "\u663e\u793a\u672c\u5730\u5316\u5b57\u7b26\u4e32\u524d\u7f00"
+    ],
     "Distrust HTML": [
         "\u4e0d\u4fe1\u4efb\u7684HTML"
     ],
     "Do you want to leave without saving?": [
         "\u9875\u9762\u672a\u4fdd\u5b58\uff0c\u786e\u5b9a\u79bb\u5f00\uff1f"
+    ],
+    "Do you want to restart the current kernel? All variables will be lost.": [
+        "\u60a8\u60f3\u8981\u91cd\u65b0\u542f\u52a8\u5f53\u524d\u5185\u6838\u5417\uff1f\u6240\u6709\u53d8\u91cf\u90fd\u5c06\u4e22\u5931\u3002"
     ],
     "Document is read-only": [
         "\u6587\u6863\u4e3a\u53ea\u8bfb\u72b6\u6001"
@@ -558,6 +582,9 @@
     ],
     "Error Registering Plugins": [
         "\u6ce8\u518c\u63d2\u4ef6\u65f6\u51fa\u9519"
+    ],
+    "Error Starting Kernel": [
+        "\u542f\u52a8\u5185\u6838\u65f6\u51fa\u9519"
     ],
     "Error communicating with server extension. Consult the documentation\n            for how to ensure that it is enabled.": [
         "\u4e0e\u670d\u52a1\u5668\u6269\u5c55\u901a\u4fe1\u51fa\u9519\u3002\u8bf7\u53c2\u8003\u6587\u6863\n            \u4ee5\u786e\u4fdd\u5b83\u5df2\u542f\u7528\u3002"
@@ -691,8 +718,8 @@
     "For Notebook: %1": [
         "\u5bf9 Notebook: %1"
     ],
-    "For more information, see the <a href=\"https://jupyter-notebook.readthedocs.io/en/stable/security.html\">%1</a>": [
-        "\u6b32\u4e86\u89e3\u66f4\u591a\u4fe1\u606f\uff0c\u8bf7\u53c2\u9605 <a href=\"https://jupyter-notebook.readthedocs.io/en/stable/security.html\">%1</a>"
+    "For more information, see the <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>": [
+        "\u6b32\u4e86\u89e3\u66f4\u591a\u4fe1\u606f\uff0c\u8bf7\u53c2\u9605 <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>"
     ],
     "Fragment": [
         "\u7247\u6bb5"
@@ -853,6 +880,12 @@
     "Kernel Companions": [
         "\u5185\u6838\u4f34\u4fa3"
     ],
+    "Kernel Id:": [
+        "\u5185\u6838 ID:"
+    ],
+    "Kernel Name:": [
+        "\u5185\u6838\u540d\u79f0:"
+    ],
     "Kernel Operations": [
         "\u5185\u6838\u64cd\u4f5c"
     ],
@@ -925,6 +958,9 @@
     "Loading...": [
         "\u52a0\u8f7d\u4e2d..."
     ],
+    "Localized strings prefix": [
+        "\u672c\u5730\u5316\u5b57\u7b26\u4e32\u524d\u7f00"
+    ],
     "Log Console": [
         "\u65e5\u5fd7\u63a7\u5236\u53f0"
     ],
@@ -970,14 +1006,11 @@
     "Match Brackets": [
         "\u9ad8\u4eae\u663e\u793a\u62ec\u53f7\u5bf9"
     ],
-    "Mem: %1 %2": [
-        "\u5185\u5b58\uff1a%1 %2"
-    ],
-    "Mem: %1 / %2 %3": [
-        "\u5185\u5b58: %1 / %2 %3"
-    ],
     "Merge Selected Cells": [
         "\u5408\u5e76\u6240\u9009\u5355\u5143\u683c"
+    ],
+    "Modal Command Palette": [
+        "\u547d\u4ee4\u9762\u677f"
     ],
     "Mode: %1": [
         "\u6a21\u5f0f\uff1a%1"
@@ -993,6 +1026,9 @@
     ],
     "Name": [
         "\u540d\u79f0"
+    ],
+    "Name:": [
+        "\u540d\u79f0:"
     ],
     "Name: %1": [
         "\u540d\u79f0\uff1a%1"
@@ -1051,11 +1087,14 @@
     "Next": [
         "\u4e0b\u4e00\u6b65"
     ],
+    "No Kernel": [
+        "\u65e0\u5185\u6838"
+    ],
     "No Kernel!": [
         "\u65e0\u5185\u6838!"
     ],
     "No Tags Available": [
-        "\u6ca1\u6709\u53ef\u7528\u6807\u7b7e"
+        "\u65e0\u53ef\u7528\u6807\u7b7e"
     ],
     "No browser for path": [
         "\u8def\u5f84\u6ca1\u6709\u6d4f\u89c8\u5668"
@@ -1085,7 +1124,7 @@
         "\u6ce8\u610f\uff0c\u8981\u7981\u7528\u7cfb\u7edf\u9ed8\u8ba4\u7684\u5feb\u6377\u952e\n\u8bf7\u590d\u5236\u5b83\u5230\u7528\u6237\u559c\u597d\u8bbe\u7f6e\u5e76\u6dfb\u52a0\n\"disabled\" \u952e, \u6bd4\u5982:\n{\n    \"command\": \"application:activate-next-tab\",\n    \"keys\": [\n        \"Ctrl Shift ]\"\n    ],\n    \"selector\": \"body\",\n    \"disabled\": true\n}\n\n\u6709\u5feb\u6377\u952e\u7684\u547d\u4ee4\u5217\u8868:\n%1\n\n\u5feb\u6377\u952e\u5217\u8868:"
     ],
     "Notebook": [
-        "Notebook"
+        "\u7b14\u8bb0\u672c"
     ],
     "Notebook Cell Operations": [
         "Notebook\u5355\u5143\u683c\u64cd\u4f5c"
@@ -1201,6 +1240,9 @@
     "PDF": [
         "PDF"
     ],
+    "PDF File": [
+        "PDF\u6587\u4ef6"
+    ],
     "Paste": [
         "\u7c98\u8d34"
     ],
@@ -1224,6 +1266,9 @@
     ],
     "Path Not Found": [
         "\u672a\u627e\u5230\u8def\u5f84"
+    ],
+    "Path:": [
+        "\u8def\u5f84:"
     ],
     "Path: %1\nKernel: %2": [
         "\u8def\u5f84: %1\n\u5185\u6838: %2"
@@ -1274,6 +1319,9 @@
         "\u91cd\u5efa"
     ],
     "Reconnect To Kernel": [
+        "\u91cd\u65b0\u8fde\u63a5\u5230\u5185\u6838"
+    ],
+    "Reconnect to Kernel": [
         "\u91cd\u65b0\u8fde\u63a5\u5230\u5185\u6838"
     ],
     "Recording timing": [
@@ -1387,6 +1435,9 @@
     "Restart Kernel and Run up to Selected Cell\u2026": [
         "\u91cd\u65b0\u542f\u52a8\u5185\u6838\u5e76\u8fd0\u884c\u5230\u6240\u9009\u5355\u5143\u683c\u2026"
     ],
+    "Restart Kernel?": [
+        "\u91cd\u542f\u5185\u6838?"
+    ],
     "Restart Kernel\u2026": [
         "\u91cd\u542f\u5185\u6838\u2026"
     ],
@@ -1483,9 +1534,6 @@
     "SEARCH": [
         "\u641c\u7d22"
     ],
-    "SHUT DOWN": [
-        "\u7ec8\u6b62"
-    ],
     "Save": [
         "\u4fdd\u5b58"
     ],
@@ -1540,6 +1588,9 @@
     "Saving %1": [
         "\u6b63\u5728\u4fdd\u5b58 %1"
     ],
+    "Scope": [
+        "\u8303\u56f4"
+    ],
     "Screen Reader Mode": [
         "\u5c4f\u5e55\u9605\u8bfb\u5668\u6a21\u5f0f"
     ],
@@ -1579,11 +1630,17 @@
     "Select Cell Below": [
         "\u9009\u62e9\u4e0b\u65b9\u5355\u5143\u683c"
     ],
+    "Select Kernel": [
+        "\u9009\u62e9\u5185\u6838"
+    ],
     "Select a plugin from the list to view and edit its preferences.": [
         "\u4ece\u5217\u8868\u4e2d\u9009\u62e9\u4e00\u4e2a\u63d2\u4ef6\u6765\u67e5\u770b\u548c\u7f16\u8f91\u5176\u9009\u9879\u3002"
     ],
     "Select current running or last run cell": [
         "\u9009\u62e9\u6b63\u5728\u8fd0\u884c\u6216\u6700\u540e\u8fd0\u884c\u7684\u5355\u5143\u683c"
+    ],
+    "Select kernel for:": [
+        "\u9009\u62e9\u5185\u6838:"
     ],
     "Selected Theme": [
         "\u9009\u5b9a\u7684\u4e3b\u9898"
@@ -1600,11 +1657,11 @@
     "Server Connection Error": [
         "\u670d\u52a1\u5668\u8fde\u63a5\u9519\u8bef"
     ],
-    "Server Not Running": [
-        "\u670d\u52a1\u5668\u672a\u8fd0\u884c"
-    ],
     "Server stopped": [
         "\u670d\u52a1\u8fdb\u7a0b\u5df2\u7ec8\u6b62"
+    ],
+    "Server unavailable or unreachable": [
+        "\u670d\u52a1\u5668\u4e0d\u53ef\u7528\u6216\u65e0\u6cd5\u8bbf\u95ee"
     ],
     "Set Log Level to %1": [
         "\u5c06\u65e5\u5fd7\u7ea7\u522b\u8bbe\u4e3a %1"
@@ -1666,9 +1723,6 @@
     "Shut Down All?": [
         "\u5173\u95ed\u6240\u6709\u529f\u80fd\u5417\uff1f"
     ],
-    "Shut Down All\u2026": [
-        "\u7ec8\u6b62\u6240\u6709"
-    ],
     "Shut Down Kernel": [
         "\u5173\u95ed\u5185\u6838"
     ],
@@ -1705,8 +1759,14 @@
     "Shutdown confirmation": [
         "\u5173\u95ed\u670d\u52a1\u786e\u8ba4"
     ],
-    "Single-Document Mode": [
-        "\u5355\u6587\u6863\u6a21\u5f0f"
+    "Simple": [
+        "\u7b80\u6613\u7684"
+    ],
+    "Simple Interface": [
+        "\u7b80\u6613\u754c\u9762"
+    ],
+    "Simple Interface (%1)": [
+        "\u7b80\u6613\u754c\u9762\uff08%1\uff09"
     ],
     "Skip": [
         "\u8df3\u8fc7"
@@ -1732,6 +1792,12 @@
     ],
     "Split Cell": [
         "\u62c6\u5206\u5355\u5143\u683c"
+    ],
+    "Start Other Kernel": [
+        "\u542f\u52a8\u5176\u4ed6\u5185\u6838"
+    ],
+    "Start Preferred Kernel": [
+        "\u542f\u52a8\u9996\u9009\u5185\u6838\u3002"
     ],
     "Start a new terminal session": [
         "\u5f00\u59cb\u4e00\u4e2a\u65b0\u7ec8\u7aef\u4f1a\u8bdd"
@@ -1776,16 +1842,16 @@
         "\u5236\u8868\u7b26\u5927\u5c0f"
     ],
     "Table / Tree View": [
-        "\u8868\u683c/\u6811\u89c6\u56fe"
+        "\u8868\u683c / \u6811\u72b6\u89c6\u56fe"
+    ],
+    "Table View": [
+        "\u8868\u683c\u89c6\u56fe"
     ],
     "Table of Contents": [
         "\u76ee\u5f55"
     ],
     "Tabs": [
         "\u6807\u7b7e\u9875"
-    ],
-    "Tags in Notebook": [
-        "\u7b14\u8bb0\u672c\u4e2d\u7684\u6807\u7b7e"
     ],
     "Terminal": [
         "\u7ec8\u7aef"
@@ -1845,7 +1911,7 @@
         "%1 \u7684\u5185\u6838\u4f3c\u4e4e\u5df2\u7ecf\u6b7b\u4ea1\u3002\u5b83\u5c06\u81ea\u52a8\u91cd\u542f\u3002"
     ],
     "The loading screen is taking a long time. \nWould you like to clear the workspace or keep waiting?": [
-        "\u52a0\u8f7d\u5c4f\u5e55\u82b1\u8d39\u4e86\u5f88\u957f\u65f6\u95f4\u3002 \n\u60a8\u60f3\u8981\u6e05\u9664\u5de5\u4f5c\u533a\u8fd8\u662f\u7ee7\u7eed\u7b49\u5f85\uff1f"
+        "\u52a0\u8f7d\u5c4f\u5e55\u82b1\u8d39\u4e86\u8f83\u957f\u65f6\u95f4\u3002 \n\u60a8\u662f\u5426\u8981\u6e05\u9664\u5de5\u4f5c\u533a\u6216\u662f\u7ee7\u7eed\u7b49\u5f85\uff1f"
     ],
     "The package <code>%1</code>, is required by the following kernels:": [
         "\u5305 <code>%1</code> \u662f\u4e0b\u5217\u5185\u6838\u5fc5\u9700\u7684:"
@@ -1860,7 +1926,7 @@
         "\u4e3b\u9898"
     ],
     "Theme CSS Overrides": [
-        "\u4e3b\u9898CSS \u8986\u76d6"
+        "\u4e3b\u9898 CSS \u8986\u76d6\u5199\u5165"
     ],
     "Theme Scrollbars": [
         "\u4e3b\u9898\u6eda\u52a8\u6761"
@@ -1870,6 +1936,12 @@
     ],
     "This cannot be undone.": [
         "\u6b64\u64cd\u4f5c\u4e0d\u53ef\u64a4\u9500\u3002"
+    ],
+    "This is a prebuilt extension. To uninstall it, please\n    apply following instructions.": [
+        "\u8fd9\u662f\u4e00\u4e2a\u9884\u6784\u5efa\u6269\u5c55\u3002\u8981\u5378\u8f7d\u5b83\uff0c\u8bf7\n    \u4f7f\u7528\u4e0b\u5217\u8bf4\u660e\u3002"
+    ],
+    "This is a prebuilt extension. To uninstall it, please\n    read the user guide on:": [
+        "\u8fd9\u662f\u4e00\u4e2a\u9884\u8bbe\u6269\u5c55\u3002\u8981\u5378\u8f7d\u5b83\uff0c\u8bf7\n    \u9605\u8bfb\u4ee5\u4e0b\u7528\u6237\u6307\u5357\uff1a"
     ],
     "This notebook has been converted from an newer notebook format (v%1)\nto the current notebook format (v%2).\nThe next time you save this notebook, the current notebook format (v%2) will be used.\nSome features of the original notebook may not be available.' To preserve the original format version,\nclose the notebook without saving it.": [
         "\u6b64\u7b14\u8bb0\u672c\u5df2\u4ece\u8f83\u65b0\u7684\u7b14\u8bb0\u672c\u683c\u5f0f (v%1)\n\u8f6c\u6362\u4e3a\u5f53\u524d\u7b14\u8bb0\u672c\u683c\u5f0f (v%2)\u3002\n\u4e0b\u6b21\u4fdd\u5b58\u7b14\u8bb0\u672c\u65f6\uff0c\u5f53\u524d\u7b14\u8bb0\u672c\u683c\u5f0f (v%2) \u5c06\u88ab\u4f7f\u7528\u3002\n\u539f\u7b14\u8bb0\u672c\u7684\u67d0\u4e9b\u529f\u80fd\u53ef\u80fd\u4e0d\u53ef\u7528\u3002' \u8981\u4fdd\u7559\u539f\u59cb\u683c\u5f0f\u7248\u672c\uff0c\n\u5173\u95ed\u7b14\u8bb0\u672c\u800c\u4e0d\u4fdd\u5b58\u5b83\u3002"
@@ -1893,19 +1965,22 @@
         "\u5207\u6362\u6240\u6709\u884c\u53f7"
     ],
     "Toggle Auto-Numbering": [
-        "\u5207\u6362\u81ea\u52a8\u7f16\u53f7"
+        "\u5207\u6362\u81f3\u81ea\u52a8\u7f16\u53f7"
     ],
     "Toggle Code Cells": [
-        "\u5207\u6362\u4ee3\u7801\u5355\u5143\u683c"
+        "\u5207\u6362\u81f3\u4ee3\u7801\u5355\u5143\u683c"
     ],
     "Toggle Last Modified Column": [
         "\u5207\u6362\u663e\u793a\u6700\u8fd1\u4fee\u6539\u5217"
     ],
     "Toggle Markdown Text Cells": [
-        "\u5207\u6362Markdown \u6587\u672c\u5355\u5143\u683c"
+        "\u5207\u6362\u81f3Markdown \u6587\u672c\u5355\u5143\u683c"
     ],
     "Treat option as meta key on macOS": [
         "\u5728 macOS \u4e0a\u5c06Option\u952e\u89c6\u4f5cMeta\u952e"
+    ],
+    "Tree View": [
+        "\u6811\u72b6\u89c6\u56fe"
     ],
     "Trust HTML": [
         "\u4fe1\u4efb\u7684HTML"
@@ -1942,6 +2017,12 @@
     ],
     "Uploading\u2026": [
         "\u6b63\u5728\u4e0a\u4f20\u2026"
+    ],
+    "Use Kernel from Other Session": [
+        "\u4f7f\u7528\u6765\u81ea\u5176\u4ed6\u4f1a\u8bdd\u7684\u5185\u6838"
+    ],
+    "Use Kernel from Preferred Session": [
+        "\u4f7f\u7528\u9996\u9009\u4f1a\u8bdd\u7684\u5185\u6838"
     ],
     "Use Terminal Theme: %1": [
         "\u4f7f\u7528\u7ec8\u7aef\u4e3b\u9898: %1"
@@ -2045,6 +2126,9 @@
     "pipe": [
         "\u7ba1\u9053"
     ],
+    "schema\u0004Add a prefix to localized strings.": [
+        "\u5411\u672c\u5730\u5316\u5b57\u7b26\u4e32\u6dfb\u52a0\u524d\u7f00\u3002"
+    ],
     "schema\u0004Add accessibility elements for use with screen readers.": [
         "\u6dfb\u52a0\u7528\u4e8e\u5c4f\u5e55\u9605\u8bfb\u5668\u7684\u8f85\u52a9\u5143\u7d20\u3002"
     ],
@@ -2093,6 +2177,9 @@
     "schema\u0004Debugger settings": [
         "\u8c03\u8bd5\u5668\u8bbe\u7f6e"
     ],
+    "schema\u0004Display the `stringsPrefix` on localized strings.": [
+        "\u5728\u672c\u5730\u5316\u5b57\u7b26\u4e32\u4e0a\u663e\u793a `stringsPrefix` \u3002"
+    ],
     "schema\u0004Document Manager": [
         "\u6587\u6863\u7ba1\u7406\u5668"
     ],
@@ -2109,13 +2196,13 @@
         "\u542f\u7528 Ctrl+V \u7c98\u8d34\u3002\u5728 vi \u7f16\u8f91\u5668\u4e2d\u4f7f\u7528 Ctrl+V \u65f6\u53ef\u7981\u7528\u6b64\u9879\u3002 \u6b64\u8bbe\u7f6e\u5bf9 macOS\u6ca1\u6709\u4efb\u4f55\u5f71\u54cd\uff0c\u56e0\u4e3amacOS\u4e2d\u4f7f\u7528Cmd+V"
     ],
     "schema\u0004Enable/disable styling of the application scrollbars": [
-        "\u542f\u7528/\u7981\u7528\u6eda\u52a8\u6761\u6837\u5f0f"
+        "\u542f\u7528/\u7981\u7528\u5e94\u7528\u7a0b\u5e8f\u6eda\u52a8\u6761\u6837\u5f0f"
     ],
     "schema\u0004Enables extension manager (requires Node.js/npm).\nWARNING: installing untrusted extensions may be unsafe.": [
         "\u542f\u7528\u6269\u5c55\u7ba1\u7406\u5668 (\u9700\u8981 Node.js/npm).\n\u8b66\u544a: \u5b89\u88c5\u4e0d\u4fe1\u4efb\u7684\u6269\u5c55\u53ef\u80fd\u4e0d\u5b89\u5168\u3002"
     ],
     "schema\u0004Extension Manager": [
-        "\u6269\u5c55\u7ba1\u7406\u5668"
+        "\u6269\u5c55\u7a0b\u5e8f\u7ba1\u7406\u5668"
     ],
     "schema\u0004Extension manager settings.": [
         "\u6269\u5c55\u7ba1\u7406\u5668\u8bbe\u7f6e\u3002"
@@ -2190,13 +2277,13 @@
         "Markdown \u67e5\u770b\u5668"
     ],
     "schema\u0004Markdown viewer settings.": [
-        "Markdown\u67e5\u770b\u5668\u8bbe\u7f6e\u3002"
+        "Markdown \u67e5\u770b\u5668\u8bbe\u7f6e\u3002"
     ],
     "schema\u0004Maximum number of log entries to store in memory": [
         "\u5b58\u50a8\u5728\u5185\u5b58\u4e2d\u7684\u65e5\u5fd7\u6761\u76ee\u7684\u6700\u5927\u6570\u91cf"
     ],
     "schema\u0004Notebook": [
-        "Notebook"
+        "\u7b14\u8bb0\u672c"
     ],
     "schema\u0004Notebook Completer": [
         "Notebook \u81ea\u52a8\u8865\u5168"
@@ -2223,7 +2310,7 @@
         "\u8986\u76d6\u6307\u5b9a\u6587\u4ef6\u7c7b\u578b\u7684\u9ed8\u8ba4\u67e5\u770b\u5668"
     ],
     "schema\u0004Overrides for where to show sidebar items\ne.g., {\"tab-manager\": \"right\"}": [
-        "\u8986\u76d6\u4fa7\u8fb9\u680f\u9879\u76ee\u663e\u793a\u4f4d\u7f6e\n\u4f8b\u5982{\"tab-manager\": \"right\"}"
+        "\u8986\u76d6\u4fa7\u8fb9\u680f\u9879\u76ee\u663e\u793a\u4f4d\u7f6e\n\u4f8b\u5982 {\"tab-manager\": \"right\"}"
     ],
     "schema\u0004Print": [
         "\u6253\u5370"
@@ -2277,7 +2364,7 @@
         "\u56de\u6eda\u91cf\u8d85\u8fc7\u4e86\u521d\u59cb\u89c6\u53e3"
     ],
     "schema\u0004The configuration for all code cells.": [
-        "\u6240\u6709\u4ee3\u7801\u5355\u5143\u683c\u7684\u914d\u7f6e."
+        "\u914d\u7f6e\u6240\u6709\u4ee3\u7801\u5355\u5143\u683c."
     ],
     "schema\u0004The configuration for all markdown cells.": [
         "\u6240\u6709Markdown\u5355\u5143\u683c\u7684\u914d\u7f6e\u3002"
@@ -2289,10 +2376,10 @@
         "\u6240\u6709\u6587\u672c\u7f16\u8f91\u5668\u7684\u914d\u7f6e\u3002\n\u5982\u679c `fontFamily`, `fontSize` \u6216 `lineHight` \u4e3a `null`\uff0c\n\u5c06\u4f7f\u7528\u5f53\u524d\u4e3b\u9898\u914d\u7f6e\u3002"
     ],
     "schema\u0004The default type (markdown, code, or raw) for new cells": [
-        "\u65b0\u5355\u5143\u683c\u7684\u9ed8\u8ba4\u7c7b\u578b (markdown, \u4ee3\u7801\u6216 \u539f\u59cb)"
+        "\u65b0\u5355\u5143\u683c\u9ed8\u8ba4\u7c7b\u578b (markdown, \u4ee3\u7801\u6216 \u539f\u59cb)"
     ],
     "schema\u0004The font family used to render markdown.\nIf `null`, value from current theme is used.": [
-        "\u7528\u4e8e\u6e32\u67d3Markdown\u7684\u5b57\u4f53\u96c6\u3002\n\u5982\u679c\u503c\u4e3a `null`\uff0c\u5219\u6cbf\u7528\u5f53\u524d\u4e3b\u9898\u7684\u503c\u3002"
+        "\u7528\u4e8e\u6e32\u67d3 Markdown \u7684\u5b57\u4f53\u96c6\u3002\n\u5982\u679c\u503c\u4e3a `null`\uff0c\u5219\u6cbf\u7528\u5f53\u524d\u4e3b\u9898\u7684\u503c\u3002"
     ],
     "schema\u0004The font family used to render text.": [
         "\u7528\u6765\u6e32\u67d3\u6587\u672c\u7684\u5b57\u4f53\u3002"
@@ -2310,13 +2397,13 @@
         "\u952e\u76d8\u5feb\u6377\u952e\u5217\u8868\u3002"
     ],
     "schema\u0004The render timeout in milliseconds.": [
-        "\u6e32\u67d3\u8d85\u65f6\u65f6\u95f4\uff08\u6beb\u79d2\uff09\u3002"
+        "\u6e32\u67d3\u8d85\u65f6\uff08\u6beb\u79d2\uff09\u3002"
     ],
     "schema\u0004The size in pixel of the font used to render markdown.\nIf `null`, value from current theme is used.": [
-        "\u7528\u6765\u6e32\u67d3Markdown\u7684\u5b57\u4f53\u7684\u50cf\u7d20\u5927\u5c0f\u3002\n\u5982\u679c\u503c\u4e3a `null`\uff0c\u5219\u6cbf\u7528\u5f53\u524d\u4e3b\u9898\u7684\u503c\u3002"
+        "\u7528\u6765\u6e32\u67d3 Markdown \u7684\u5b57\u4f53\u7684\u50cf\u7d20\u5927\u5c0f\u3002\n\u5982\u679c\u503c\u4e3a `null`\uff0c\u5219\u6cbf\u7528\u5f53\u524d\u4e3b\u9898\u7684\u503c\u3002"
     ],
     "schema\u0004The text line width expressed in CSS ch units.\nIf `null`, lines fit the viewport width.": [
-        "\u4ee5CSS\u4e2d\u7684 ch \u5355\u4f4d\u8868\u793a\u7684\u6587\u672c\u884c\u5bbd\u3002\n\u5982\u679c\u4e3a`null`\uff0c \u5219\u7b26\u5408\u89c6\u53e3\u5bbd\u5ea6\u3002"
+        "\u4ee5 CSS \u4e2d\u7684 ch \u5355\u4f4d\u8868\u793a\u7684\u6587\u672c\u884c\u5bbd\u3002\n\u5982\u679c\u4e3a `null`\uff0c \u5219\u7b26\u5408\u89c6\u53e3\u5bbd\u5ea6\u3002"
     ],
     "schema\u0004The theme for the terminal.": [
         "\u7ec8\u7aef\u4e3b\u9898\u3002"
@@ -2341,6 +2428,9 @@
     ],
     "schema\u0004When enabled, which is the default, doing copy or cut when there is no selection will copy or cut the whole lines that have cursors on them.": [
         "\u5f53\u542f\u7528\u65f6\uff08\u6b64\u4e3a\u9ed8\u8ba4\u503c\uff09\uff0c \u5728\u6ca1\u6709\u9009\u53d6\u5185\u5bb9\u7684\u60c5\u51b5\u4e0b\u590d\u5236\u6216\u526a\u5207\u64cd\u4f5c\u5c06\u4f1a\u590d\u5236\u6216\u526a\u5207\u5149\u6807\u6240\u5728\u7684\u6574\u884c\u3002"
+    ],
+    "schema\u0004Whether the command palette should be modal or in the left panel.": [
+        "\u547d\u4ee4\u9762\u677f\u662f\u5426\u5e94\u8be5\u6d6e\u7a97\u662f\u8fd8\u662f\u51fa\u73b0\u5728\u5de6\u4fa7\u3002"
     ],
     "schema\u0004Whether the console defaults to showing all\nkernel activity or just kernel activity originating from itself.": [
         "\u63a7\u5236\u53f0\u662f\u9ed8\u8ba4\u663e\u793a\u6240\u6709\u5185\u6838\u6d3b\u52a8\uff0c\u8fd8\u662f\u4ec5\u663e\u793a\u6e90\u81ea\u5176\u81ea\u8eab\u7684\u5185\u6838\u6d3b\u52a8\u3002"
@@ -2367,7 +2457,7 @@
         "\u6709\u65b0\u65e5\u5fd7\u6d88\u606f\u65f6\u662f\u5426\u95ea\u70c1\uff1f"
     ],
     "schema\u0004Whether to hide YAML front matter.\nThe YAML front matter must be placed at the top of the document,\nstarted by a line of three dashes (---) and ended by a line of\nthree dashes (---) or three points (...).": [
-        "\u662f\u5426\u9690\u85cf YAML \u5934\u90e8\u3002\n\u5fc5\u987b\u5c06YAML \u5934\u90e8\u653e\u7f6e\u5728\u6587\u6863\u7684\u9876\u90e8\uff0c\n\u8d77\u59cb\u4e8e\u4e09\u4e2a\u7834\u6298\u7ebf(---) \u6784\u6210\u7684\u884c\uff0c\u7ed3\u675f\u4e8e\n\u4e09\u4e2a\u7834\u6298\u7ebf(---) \u6216\u4e09\u4e2a\u70b9(...) \u6784\u6210\u7684\u884c"
+        "\u662f\u5426\u9690\u85cf YAML \u5934\u90e8\u3002\nYAML \u5934\u90e8\u5fc5\u987b\u88ab\u653e\u7f6e\u5728\u6587\u6863\u7684\u9876\u90e8\uff0c\n\u8d77\u59cb\u4e8e\u4e09\u4e2a\u7834\u6298\u7ebf\uff08---\uff09\u6784\u6210\u7684\u884c\uff0c\u5e76\u7ed3\u675f\u4e8e\n\u4e09\u4e2a\u7834\u6298\u7ebf\uff08---\uff09\u6216\u4e09\u4e2a\u70b9\uff08...\uff09\u6784\u6210\u7684\u884c\u3002"
     ],
     "schema\u0004Whether to scroll past the end of text document": [
         "\u662f\u5426\u6eda\u52a8\u8d85\u8fc7\u6587\u672c\u6587\u6863\u7684\u672b\u7aef"
@@ -2428,6 +2518,9 @@
     ],
     "vim": [
         "vim"
+    ],
+    "waiting for fonts": [
+        "\u6b63\u5728\u7b49\u5f85\u5b57\u4f53"
     ],
     "xq-light": [
         "xq-light"
