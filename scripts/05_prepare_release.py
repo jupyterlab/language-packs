@@ -173,7 +173,7 @@ def prepare_jupyterlab_lp_release():
                     contributors = package_dir / CONTRIBUTORS
                     contributors.write_text(get_contributors_report(locale=locale_name))
                     # Bump the version
-                    bumpversion(package_dir, release=RELEASE)
+                    # bumpversion(package_dir, release=RELEASE)
             else:
                 print(f"No updates for the language package {locale_name}")
 

@@ -89,8 +89,9 @@ def download_data(project_id=409874, language_id=None):
     eta = result["data"]["eta"]
     if eta is None:
         unit = "none"
-
-    amount, unit = eta.split(" ")
+    else:
+        amount, unit = eta.split(" ")
+        
     if unit == "second":
         wait_time = int(amount) * 2
     else:
