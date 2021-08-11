@@ -40,7 +40,7 @@ jobs:
           git config user.email 'jupyterlab-bot@users.noreply.github.com'
       - name: Commit changes
         run: |
-          git add *.pot
+          git add *.pot crowdin.yml
           git commit -m "Update pot files"
       - name: Push the changes
         run: |
