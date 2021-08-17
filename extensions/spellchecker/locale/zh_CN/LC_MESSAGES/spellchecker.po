@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 103\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-08-17 15:31\n"
+"PO-Revision-Date: 2021-08-17 16:41\n"
 
 #: /schema/plugin.json:0
 msgctxt "schema"
@@ -25,21 +25,29 @@ msgid "A list of online dictionaries to use if installing dictionaries in data p
 "        \"name\": \"polski (Polska)\"\n"
 "    }\n"
 "]"
-msgstr ""
+msgstr "当在 jupyter-server 的数据路径中安装字典不可用或无法获取时，可选用的在线字典列表。例如：\n\n"
+"[\n"
+"    format@@\n"
+"        \"id\": \"pl_PL-online\",\n"
+"        \"aff\": \"http://some-url/pl_PL.aff\",\n"
+"        \"dic\": \"http://some-url/pl_PL.dic\",\n"
+"        \"name\": \"polski (Polska)\"\n"
+"    }\n"
+"]"
 
 #: /schema/plugin.json:4
 msgctxt "schema"
 msgid "Spellchecker"
-msgstr ""
+msgstr "拼写检查器"
 
 #: /schema/plugin.json:5
 msgctxt "schema"
 msgid "Spellchecker settings."
-msgstr ""
+msgstr "拼写检查器设置。"
 
 #: /schema/plugin.json:57
 msgid "Theme"
-msgstr ""
+msgstr "主题"
 
 #: /schema/plugin.json:58
 msgctxt "schema"
@@ -51,72 +59,72 @@ msgstr ""
 
 #: /schema/plugin.json:63
 msgid "Language of the spellchecker"
-msgstr ""
+msgstr "拼写检查器语言"
 
 #: /schema/plugin.json:64
 msgctxt "schema"
 msgid "Dictionary identifier, e.g. en-us"
-msgstr ""
+msgstr "字典标识符，例如 en-us"
 
 #: /schema/plugin.json:69
 msgid "Words to be ignored by the spellchecker"
-msgstr ""
+msgstr "拼写检查器忽略单词"
 
 #: /schema/plugin.json:70
 msgctxt "schema"
 msgid "Case-sensitive list of words to be ignored"
-msgstr ""
+msgstr "要忽略的区分大小写单词"
 
 #: /schema/plugin.json:75
 msgid "MIME types for files/editors for which the spellchecking should be activated"
-msgstr ""
+msgstr "需要激活拼写检查的 MIME 文件/编辑器类型"
 
 #: /schema/plugin.json:76
 msgctxt "schema"
 msgid "List of MIME types. GFM denotes GitHub Flavored Markdown"
-msgstr ""
+msgstr "MIME 类型列表。GFM 表示 GitHub Flavored Markdown"
 
 #: /schema/plugin.json:84
 msgid "Online dictionaries"
-msgstr ""
+msgstr "在线词典"
 
 #: src/index.ts:242
 msgid "Dictionary not loaded"
-msgstr ""
+msgstr "字典未加载"
 
 #: src/index.ts:243
 msgid "Adjust spelling to"
-msgstr ""
+msgstr "调整拼写为"
 
 #: src/index.ts:244
 msgid "No spellcheck suggestions"
-msgstr ""
+msgstr "没有拼写建议"
 
 #: src/index.ts:245
 msgid "Spell Checker"
-msgstr ""
+msgstr "拼写检查器"
 
 #: src/index.ts:374
 msgid "Toggle spellchecker"
-msgstr ""
+msgstr "切换拼写检查器"
 
 #: src/index.ts:473
 msgid "Ignore"
-msgstr ""
+msgstr "忽略"
 
 #: src/index.ts:560
 msgid "Loading dictionary…"
-msgstr ""
+msgstr "正在载入字典…"
 
 #: src/index.ts:630
 msgid "%1 [%2] (online)"
-msgstr ""
+msgstr "%1 [%2]（在线）"
 
 #: src/index.ts:631
 msgid "%1 [%2]"
-msgstr ""
+msgstr "%1 [%2]"
 
 #: src/index.ts:635 src/index.ts:663
 msgid "Choose spellchecker language"
-msgstr ""
+msgstr "选择拼写检查器语言"
 
