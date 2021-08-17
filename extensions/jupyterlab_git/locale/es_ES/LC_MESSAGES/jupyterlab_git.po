@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 97\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2021-08-17 15:32\n"
+"PO-Revision-Date: 2021-08-17 18:07\n"
 
 #: /schema/plugin.json:10
 msgid "Suspend user interaction until commands finish"
@@ -22,6 +22,11 @@ msgstr "Suspender la interacción del usuario hasta que finalicen los comandos"
 msgctxt "schema"
 msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
 msgstr "Suspender la interacción de usuarios de JupyterLab hasta que los comandos de Git (ej., commit, pull, reset, revert) terminen su ejecución. Establecer esto como verdadero ayuda a mitigar potenciales condiciones de carrera que conducen a pérdida de datos, conflictos, y un historial roto de Git. A menos que se ejecute en una red lenta la suspensión de la IU (interfaz de usuario) no debería interferir con los flujos de trabajo estándar. Establecer este valor como falso permite que las acciones desencadenen múltiples acciones de Git simultáneas."
+
+#: /schema/plugin.json:152
+msgctxt "schema"
+msgid "Git"
+msgstr ""
 
 #: /schema/plugin.json:16
 msgid "Cancel pull merge conflict"
@@ -58,11 +63,6 @@ msgstr "Mostrar diferencias al hacer doble clic"
 msgctxt "schema"
 msgid "If true, doubling clicking a file in the list of changed files will open a diff."
 msgstr "Si es verdadero, al hacer doble clic en un archivo en la lista de archivos modificados, abrirá un diff."
-
-#: /schema/plugin.json:4
-msgctxt "schema"
-msgid "Git"
-msgstr ""
 
 #: /schema/plugin.json:40
 msgid "History count"
@@ -122,15 +122,15 @@ msgstr "Confirma desde la Celda de Confirmación"
 msgid "Submit the commit using the summary and description from commit box"
 msgstr "Enviar la confirmación usando el resumen y la descripción de la celda de confirmación"
 
-#: src/commandsAndMenu.tsx:1203
+#: src/commandsAndMenu.tsx:1241
 msgid "Git credentials required"
 msgstr "Se requieren credenciales de Git"
 
-#: src/commandsAndMenu.tsx:1206 src/widgets/CredentialsBox.tsx:15
+#: src/commandsAndMenu.tsx:1244 src/widgets/CredentialsBox.tsx:15
 msgid "Enter credentials for remote repository"
 msgstr "Introducir credenciales para el repositorio remoto"
 
-#: src/commandsAndMenu.tsx:1207
+#: src/commandsAndMenu.tsx:1245
 msgid "Incorrect username or password."
 msgstr "Nombre de usuario o contraseña\n"
 "incorrectos."
@@ -163,7 +163,7 @@ msgstr "Crear un repositorio Git vacío o reinicializar uno existente"
 msgid "Do you really want to make this directory a Git Repo?"
 msgstr "¿Estás seguro de que quieres crear un repositorio Git en este directorio?"
 
-#: src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:799 src/components/BranchMenu.tsx:344 src/components/FileList.tsx:191 src/components/FileList.tsx:216 src/components/NewBranchDialog.tsx:202
+#: src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:820 src/components/BranchMenu.tsx:344 src/components/FileList.tsx:191 src/components/FileList.tsx:216 src/components/NewBranchDialog.tsx:202
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -315,201 +315,201 @@ msgstr "Actualizar"
 msgid "Refresh diff widget"
 msgstr "Actualizar widget de diferencias"
 
-#: src/commandsAndMenu.tsx:503
+#: src/commandsAndMenu.tsx:508
 msgid "Diff Not Supported"
 msgstr "Diff no soportado"
 
-#: src/commandsAndMenu.tsx:504
+#: src/commandsAndMenu.tsx:509
 msgid "Diff is not supported for %1 files."
 msgstr "Diff no es compatible con %1 archivos."
 
-#: src/commandsAndMenu.tsx:518
+#: src/commandsAndMenu.tsx:523
 msgid "Open"
 msgstr "Abrir"
 
-#: src/commandsAndMenu.tsx:520
+#: src/commandsAndMenu.tsx:525
 msgid "Open selected file"
 msgstr "Abrir archivo seleccionado"
 
-#: src/commandsAndMenu.tsx:521
+#: src/commandsAndMenu.tsx:526
 msgid "Open selected files"
 msgstr "Abrir archivos seleccionados"
 
-#: src/commandsAndMenu.tsx:529
+#: src/commandsAndMenu.tsx:534
 msgid "Open File Failed"
 msgstr "Error al abrir archivo"
 
-#: src/commandsAndMenu.tsx:530
+#: src/commandsAndMenu.tsx:535
 msgid "This file has been deleted!"
 msgstr "¡Este archivo ha sido eliminado!"
 
-#: src/commandsAndMenu.tsx:551
+#: src/commandsAndMenu.tsx:556
 msgid "Diff"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:553
+#: src/commandsAndMenu.tsx:558
 msgid "Diff selected file"
 msgstr "Diferencia el archivo seleccionado"
 
-#: src/commandsAndMenu.tsx:554
+#: src/commandsAndMenu.tsx:559
 msgid "Diff selected files"
 msgstr "Diferencia archivos seleccionados"
 
-#: src/commandsAndMenu.tsx:664
+#: src/commandsAndMenu.tsx:685
 msgid "Add"
 msgstr "Agregar"
 
-#: src/commandsAndMenu.tsx:666
+#: src/commandsAndMenu.tsx:687
 msgid "Stage or track the changes to selected file"
 msgstr "Coloca o rastrea los cambios al archivo seleccionado"
 
-#: src/commandsAndMenu.tsx:667
+#: src/commandsAndMenu.tsx:688
 msgid "Stage or track the changes of selected files"
 msgstr "Coloca o rastrea los cambios a los archivos seleccionados"
 
-#: src/commandsAndMenu.tsx:679
+#: src/commandsAndMenu.tsx:700
 msgid "Stage"
 msgstr "Coloca"
 
-#: src/commandsAndMenu.tsx:681
+#: src/commandsAndMenu.tsx:702
 msgid "Stage the changes of selected file"
 msgstr "Coloca los cambios del archivo seleccionado"
 
-#: src/commandsAndMenu.tsx:682
+#: src/commandsAndMenu.tsx:703
 msgid "Stage the changes of selected files"
 msgstr "Coloca los cambios de los archivos seleccionados"
 
-#: src/commandsAndMenu.tsx:694
+#: src/commandsAndMenu.tsx:715
 msgid "Track"
 msgstr "Rastrea"
 
-#: src/commandsAndMenu.tsx:696
+#: src/commandsAndMenu.tsx:717
 msgid "Start tracking selected file"
 msgstr "Iniciar rastreo del archivo seleccionado"
 
-#: src/commandsAndMenu.tsx:697
+#: src/commandsAndMenu.tsx:718
 msgid "Start tracking selected files"
 msgstr "Iniciar rastreo de los archivos seleccionados"
 
-#: src/commandsAndMenu.tsx:709
+#: src/commandsAndMenu.tsx:730
 msgid "Unstage"
 msgstr "Quitar"
 
-#: src/commandsAndMenu.tsx:711
+#: src/commandsAndMenu.tsx:732
 msgid "Unstage the changes of selected file"
 msgstr "Quitar los cambios del archivo seleccionado"
 
-#: src/commandsAndMenu.tsx:712
+#: src/commandsAndMenu.tsx:733
 msgid "Unstage the changes of selected files"
 msgstr "Quitar los cambios de los archivos seleccionados"
 
-#: src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:757 src/components/BranchMenu.tsx:345
+#: src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:778 src/components/BranchMenu.tsx:345
 msgid "Delete"
 msgstr "Eliminar"
 
-#: src/commandsAndMenu.tsx:737
+#: src/commandsAndMenu.tsx:758
 msgid "Delete this file"
 msgstr "Eliminar este archivo"
 
-#: src/commandsAndMenu.tsx:738
+#: src/commandsAndMenu.tsx:759
 msgid "Delete these files"
 msgstr "Eliminar estos archivos"
 
-#: src/commandsAndMenu.tsx:745
+#: src/commandsAndMenu.tsx:766
 msgid "Delete Files"
 msgstr "Eliminar archivos"
 
-#: src/commandsAndMenu.tsx:748
+#: src/commandsAndMenu.tsx:769
 msgid "Are you sure you want to permanently delete the following files?               This action cannot be undone."
 msgstr "¿Está seguro que desea eliminar permanentemente los siguientes archivos? Esta acción no se puede deshacer."
 
-#: src/commandsAndMenu.tsx:767
+#: src/commandsAndMenu.tsx:788
 msgid "Deleting %1 failed."
 msgstr "Eliminación de %1 ha fallado."
 
-#: src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:823 src/components/Alert.tsx:123 src/index.ts:128
+#: src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:844 src/components/Alert.tsx:123 src/index.ts:128
 msgid "DISMISS"
 msgstr "DESCARTAR"
 
-#: src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:800 src/components/FileList.tsx:192 src/components/FileList.tsx:217
+#: src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:821 src/components/FileList.tsx:192 src/components/FileList.tsx:217
 msgid "Discard"
 msgstr "Descartar"
 
-#: src/commandsAndMenu.tsx:780
+#: src/commandsAndMenu.tsx:801
 msgid "Discard recent changes of selected file"
 msgstr "Descartar cambios recientes del archivo seleccionado"
 
-#: src/commandsAndMenu.tsx:781
+#: src/commandsAndMenu.tsx:802
 msgid "Discard recent changes of selected files"
 msgstr "Descartar cambios recientes del archivo seleccionado"
 
-#: src/commandsAndMenu.tsx:788 src/components/FileList.tsx:466 src/components/FileList.tsx:664 src/components/FileList.tsx:690
+#: src/commandsAndMenu.tsx:809 src/components/FileList.tsx:466 src/components/FileList.tsx:664 src/components/FileList.tsx:690
 msgid "Discard changes"
 msgstr "Descartar cambios"
 
-#: src/commandsAndMenu.tsx:791
+#: src/commandsAndMenu.tsx:812
 msgid "Are you sure you want to permanently discard changes to the following files?               This action cannot be undone."
 msgstr "¿Está seguro de que desea descartar permanentemente los cambios en los siguientes archivos? Esta acción no se puede deshacer."
 
-#: src/commandsAndMenu.tsx:821
+#: src/commandsAndMenu.tsx:842
 msgid "Discard changes for %1 failed."
 msgstr "Error al descartar los cambios para %1."
 
-#: src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:838
+#: src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:859
 msgid "Ignore this file (add to .gitignore)"
 msgstr "Ignorar este archivo (añadir a .gitignore)"
 
-#: src/commandsAndMenu.tsx:835 src/commandsAndMenu.tsx:839
+#: src/commandsAndMenu.tsx:856 src/commandsAndMenu.tsx:860
 msgid "Ignore these files (add to .gitignore)"
 msgstr "Ignorar estos archivos (añadir a .gitignore)"
 
-#: src/commandsAndMenu.tsx:857
+#: src/commandsAndMenu.tsx:878
 msgid "Ignore %2 extension (add to .gitignore)"
 msgid_plural "Ignore %2 extensions (add to .gitignore)"
 msgstr[0] "Ignorar la extensión %2 (añadir a .gitignore)"
 msgstr[1] "Ignorar la extensión %2 (agregar a .gitignore)"
 
-#: src/commandsAndMenu.tsx:865
+#: src/commandsAndMenu.tsx:886
 msgid "Ignore this file extension (add to .gitignore)"
 msgstr "Ignorar esta extensión de archivo (agregar a .gitignore)"
 
-#: src/commandsAndMenu.tsx:866
+#: src/commandsAndMenu.tsx:887
 msgid "Ignore these files extension (add to .gitignore)"
 msgstr "Ignorar estas extensiones de archivo (agregar a .gitignore)"
 
-#: src/commandsAndMenu.tsx:875
+#: src/commandsAndMenu.tsx:896
 msgid "Ignore file extension"
 msgstr "Ignorar extensión de archivo"
 
-#: src/commandsAndMenu.tsx:876
+#: src/commandsAndMenu.tsx:897
 msgid "Are you sure you want to ignore all %1 files within this git repository?"
 msgstr "¿Está seguro de que desea ignorar todos los archivos %1 dentro de este repositorio de git?"
 
-#: src/commandsAndMenu.tsx:882 src/commandsAndMenu.tsx:885
+#: src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:906
 msgid "Ignore"
 msgstr "Ignorar"
 
-#: src/commandsAndMenu.tsx:902 src/components/GitPanel.tsx:358
+#: src/commandsAndMenu.tsx:923 src/components/GitPanel.tsx:358
 msgid "History"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:903
+#: src/commandsAndMenu.tsx:924
 msgid "View the history of this file"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:921
+#: src/commandsAndMenu.tsx:942
 msgid "No actions available"
 msgstr "No hay acciones disponibles"
 
-#: src/commandsAndMenu.tsx:940
+#: src/commandsAndMenu.tsx:961
 msgid "Set Up Remotes"
 msgstr "Configurar Remotos"
 
-#: src/commandsAndMenu.tsx:944
+#: src/commandsAndMenu.tsx:965
 msgid "Git Documentation"
 msgstr "Documentación de Git"
 
-#: src/commandsAndMenu.tsx:978
+#: src/commandsAndMenu.tsx:999
 msgid " Help "
 msgstr " Ayuda "
 
