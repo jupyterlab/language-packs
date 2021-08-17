@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 103\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2021-08-17 15:31\n"
+"PO-Revision-Date: 2021-08-17 16:41\n"
 
 #: /schema/plugin.json:0
 msgctxt "schema"
@@ -25,7 +25,15 @@ msgid "A list of online dictionaries to use if installing dictionaries in data p
 "        \"name\": \"polski (Polska)\"\n"
 "    }\n"
 "]"
-msgstr ""
+msgstr "Lista słowników online, które mają być używane, jeśli instalacja słowników w ścieżce danych jupyter-server jest niemożliwa lub niepożądana. Na przykład:\n\n"
+"[\n"
+"    {\n"
+"        \"id\": \"pl_PL-online\",\n"
+"        \"aff\": \"http://some-url/pl_PL.aff\",\n"
+"        \"dic\": \"http://some-url/pl_PL.dic\",\n"
+"        \"name\": \"polski (Polska)\"\n"
+"    }\n"
+"]"
 
 #: /schema/plugin.json:4
 msgctxt "schema"
@@ -39,7 +47,7 @@ msgstr ""
 
 #: /schema/plugin.json:57
 msgid "Theme"
-msgstr ""
+msgstr "Motyw"
 
 #: /schema/plugin.json:58
 msgctxt "schema"
@@ -47,16 +55,19 @@ msgid "Theme for decorating misspelt words, one of:\n"
 "  - 'background-box': fills the background of the misspelt word;\n"
 "  - 'wavy-underline': underline with wavelets (note: Chrome has a bug which prevents rendering of wavelets under some very short words)\n"
 "  - 'dotted-underline': underline with dotted style"
-msgstr ""
+msgstr "Motyw do dekoracji błędnych słów, jeden z:\n"
+"  - 'background-box': wypełnia tło nieprawidłowego słowa;\n"
+"  - 'wavy-underline': podkreślenie falami (uwaga: Chrome ma błąd, który zapobiega renderowaniu fal pod bardzo krótkimi słowami)\n"
+"  - 'dotted-underline': podkreślenie z kropkowanym stylem"
 
 #: /schema/plugin.json:63
 msgid "Language of the spellchecker"
-msgstr ""
+msgstr "Język sprawdzania pisowni"
 
 #: /schema/plugin.json:64
 msgctxt "schema"
 msgid "Dictionary identifier, e.g. en-us"
-msgstr ""
+msgstr "Identyfikator słownika, np. en-us"
 
 #: /schema/plugin.json:69
 msgid "Words to be ignored by the spellchecker"
@@ -69,28 +80,28 @@ msgstr ""
 
 #: /schema/plugin.json:75
 msgid "MIME types for files/editors for which the spellchecking should be activated"
-msgstr ""
+msgstr "Typy MIME dla plików/edytorów, dla których należy aktywować sprawdzanie pisowni"
 
 #: /schema/plugin.json:76
 msgctxt "schema"
 msgid "List of MIME types. GFM denotes GitHub Flavored Markdown"
-msgstr ""
+msgstr "Lista typów MIME. GFM oznacza GitHub Flavored Markdown"
 
 #: /schema/plugin.json:84
 msgid "Online dictionaries"
-msgstr ""
+msgstr "Słowniki online"
 
 #: src/index.ts:242
 msgid "Dictionary not loaded"
-msgstr ""
+msgstr "Słownik nie jest załadowany"
 
 #: src/index.ts:243
 msgid "Adjust spelling to"
-msgstr ""
+msgstr "Popraw na"
 
 #: src/index.ts:244
 msgid "No spellcheck suggestions"
-msgstr ""
+msgstr "Brak podpowiedzi"
 
 #: src/index.ts:245
 msgid "Spell Checker"
@@ -102,21 +113,21 @@ msgstr ""
 
 #: src/index.ts:473
 msgid "Ignore"
-msgstr ""
+msgstr "Zignoruj"
 
 #: src/index.ts:560
 msgid "Loading dictionary…"
-msgstr ""
+msgstr "Ładowanie słownika…"
 
 #: src/index.ts:630
 msgid "%1 [%2] (online)"
-msgstr ""
+msgstr "%1 [%2] (online)"
 
 #: src/index.ts:631
 msgid "%1 [%2]"
-msgstr ""
+msgstr "%1 [%2]"
 
 #: src/index.ts:635 src/index.ts:663
 msgid "Choose spellchecker language"
-msgstr ""
+msgstr "Wybierz język sprawdzania pisowni"
 
