@@ -12,242 +12,242 @@ msgstr ""
 "X-Crowdin-File-ID: 99\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-08-17 15:31\n"
+"PO-Revision-Date: 2021-08-17 18:06\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:12
 msgctxt "schema"
 msgid "Whether to show documentation box next to the completion suggestions."
-msgstr ""
+msgstr "是否在补全建议旁边显示文档框。"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:15
 msgid "Continuous hinting"
-msgstr ""
+msgstr "连续提示"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:18
 msgctxt "schema"
 msgid "Whether to enable continuous hinting (Hinterland mode)."
-msgstr ""
+msgstr "是否启用连续提示（Hinterland 模式）。"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:21
 msgid "Suppress invoke continuous hinting in specific code fragments"
-msgstr ""
+msgstr "在特定代码片段中禁用连续提示"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:27
 msgctxt "schema"
 msgid "An array of CodeMirror tokens for which the continuous hinting should be suppressed. The token names vary between languages (modes)."
-msgstr ""
+msgstr "CodeMirror 令牌数组应禁用连续提示。令牌名称因语言（模式）而异。"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:30
 msgid "Suppress invoke via trigger character in specific code fragments"
-msgstr ""
+msgstr "在特定代码片段中禁止通过字符触发调用"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:36
 msgctxt "schema"
 msgid "An array of CodeMirror tokens for which the auto-invoke after entering a trigger (e.g. `.` in Python or `::` in R) character should be suppressed. The token names vary between languages (modes)."
-msgstr ""
+msgstr "一个 CodeMirror 的符号的数组，在输入某个触发器（例如，Python中的 `.` 或 R 中的 `::`）后会被抑制。符号的名字在各个语言（模式）中是不同的。"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:39
 msgid "Kernel completion response timeout"
-msgstr ""
+msgstr "内核补全响应超时"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:4
 msgctxt "schema"
 msgid "Code Completion"
-msgstr ""
+msgstr "代码补全"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:42
 msgctxt "schema"
 msgid "The time to wait for the kernel completions suggestions in milliseconds. Set to 0 to disable kernel completions, or to -1 to wait indefinitely (not recommended)."
-msgstr ""
+msgstr "等待内核进行自动补全建议的以毫秒为单位的时间。设置为 0 将关闭内核的自动补全，或设置为 -1 不限制等待时间（不推荐）。"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:45
 msgctxt "schema"
 msgid "The sources from which to exclude completion from. Possible values include 'Kernel', 'LSP'."
-msgstr ""
+msgstr "自动补全将排除的源代码。可能的值包括「Kernal」、「LSP」。"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:5
 msgctxt "schema"
 msgid "LSP Completion settings."
-msgstr ""
+msgstr "LSP 补全设置。"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:51
 msgid "Wait for kernel if busy"
-msgstr ""
+msgstr "如果内核繁忙，请等待"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:54
 msgctxt "schema"
 msgid "Should an attempt to get the kernel response (with timeout as specified by kernelResponseTimeout) be made if kernel is busy? If you often write code in notebook while computations are running for long time (e.g. training models), turning this off might give you faster response times."
-msgstr ""
+msgstr "如果内核忙，是否尝试获取内核响应（指定 KernelResponseTimeout 为等待时间）？如果您经常在笔记本中写长时间运行的代码（例如，训练模型），关闭这个选项可能会给您更快的响应时间。"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:57
 msgid "Completer theme"
-msgstr ""
+msgstr "补全主题"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:60
 msgctxt "schema"
 msgid "The identifier of a completer theme with icons which indicate the kind of completion. Set to null to disable icons. Search for 'completer themes' in the command palette for a command displaying available themes."
-msgstr ""
+msgstr "自动补全的主题的标识符，这将会使用不同的图标表示不同类型的自动补全。设置为 null 可以不显示图标。在命令面板中搜索 `completer themes` 可以找到一个显示所有可用主题的命令。"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:63
 msgid "Prioritize completions from kernel"
-msgstr ""
+msgstr "优先使用内核补全"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:65
 msgctxt "schema"
 msgid "In case of ties when sorting completions, should the kernel completions receive higher priority than the language server completions?"
-msgstr ""
+msgstr "在进行自动补全排序时，内核的自动完成功能是否优先于语言服务器的自动完成功能？"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:68
 msgid "Case-sensitive filtering"
-msgstr ""
+msgstr "区分大小写过滤"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:71
 msgctxt "schema"
 msgid "Should completion filtering be case-sensitive?"
-msgstr ""
+msgstr "补全筛选是否区分大小写？"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:74
 msgid "Include perfect matches"
-msgstr ""
+msgstr "包含完美匹配"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:77
 msgctxt "schema"
 msgid "Should perfect matches be included in the completion suggestions list?"
-msgstr ""
+msgstr "是否在自动补全建议列表中包含完美匹配？"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:80
 msgid "Text to display next to completion label"
-msgstr ""
+msgstr "在补全标签旁显示的文本"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:84
 msgctxt "schema"
 msgid "What to display next to the completion label, one of: 'detail', 'type', 'source', 'auto'. The default 'auto' will display whichever information is available."
-msgstr ""
+msgstr "在完成标签旁边显示什么，可选的值包括：'detail'，'type'，'source'，'auto'。默认值 'auto' 将显示任何可用的信息。"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:87
 msgid "Mapping of custom kernel types to valid completion kind names"
-msgstr ""
+msgstr "将自定义的内核类型映射到有效的完成类型名。"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:88
 msgctxt "schema"
 msgid "Mapping used for icon selection. The kernel types (keys) are case-insensitive. Accepted values are the names of CompletionItemKind and 'Kernel' literal. The defaults aim to provide good initial experience for Julia, Python and R kernels."
-msgstr ""
+msgstr "用于图标选取的映射。内核类型（键）是大小写不敏感的。可用的值包括 CompletionItemKind 的名字和 'Kernel' 字符串。默认值旨在为 Julia、Python 和 R 内核提供良好的体验。"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:9
 msgid "Show documentation box"
-msgstr ""
+msgstr "显示文档框"
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:13
 msgctxt "schema"
 msgid "Default level of the severity for diagnostics without severity provided by the language server."
-msgstr ""
+msgstr "语言服务器提供的诊断信息未指定显示等级时，缺省的显示等级。"
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:16
 msgid "Diagnostic codes to ignore"
-msgstr ""
+msgstr "要忽略的诊断代码"
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:22
 msgctxt "schema"
 msgid "Codes of diagnostics which should not be shown in the panel nor highlighted in the editor."
-msgstr ""
+msgstr "需要在面板中隐藏且在编辑器中不高亮的诊断代码。"
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:25
 msgid "Diagnostic messages to ignore"
-msgstr ""
+msgstr "要忽略的诊断消息"
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:31
 msgctxt "schema"
 msgid "Regular expressions matching messages of diagnostics which should not be shown in the panel nor highlighted in the editor."
-msgstr ""
+msgstr "需要在面板中隐藏且在编辑器中不高亮的诊断信息，用正则表达式指定。"
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:4
 msgctxt "schema"
 msgid "Code Diagnostics"
-msgstr ""
+msgstr "代码诊断"
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:5
 msgctxt "schema"
 msgid "LSP Diagnostics (linter results) settings."
-msgstr ""
+msgstr "LSP 诊断（检查器结果）选项。"
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:9
 msgid "Default severity level"
-msgstr ""
+msgstr "默认严重等级"
 
 #: /packages/jupyterlab-lsp/schema/highlights.json:12
 msgctxt "schema"
 msgid "Number of milliseconds to delay sending out the highlights request to the language server; you can get better responsiveness adjusting this value, but setting it to zero can actually slow it down as the server might get overwhelmed when moving the cursor."
-msgstr ""
+msgstr "延迟向语言服务器发送高亮请求的毫秒数；通过调整该值可以获得更快的响应，但将其设置为零实际上会导致更慢的响应，因为服务器在移动光标时可能会过载。"
 
 #: /packages/jupyterlab-lsp/schema/highlights.json:15
 msgid "Remove highlights on editor (e.g. cell) blur"
-msgstr ""
+msgstr "编辑器（例如代码单元格）失焦时移除高亮"
 
 #: /packages/jupyterlab-lsp/schema/highlights.json:18
 msgctxt "schema"
 msgid "Whether the highlights should disappear after the focus leaves the editor/cell"
-msgstr ""
+msgstr "焦点离开编辑器/单元格后，高亮是否会消失。"
 
 #: /packages/jupyterlab-lsp/schema/highlights.json:4
 msgctxt "schema"
 msgid "Code Highlights"
-msgstr ""
+msgstr "代码高亮"
 
 #: /packages/jupyterlab-lsp/schema/highlights.json:5
 msgctxt "schema"
 msgid "LSP highlights of the variable under the cursor settings."
-msgstr ""
+msgstr "光标设置中的变量的 LSP 高亮设置。"
 
 #: /packages/jupyterlab-lsp/schema/highlights.json:9
 msgid "Debouncer delay"
-msgstr ""
+msgstr "防抖器延迟"
 
 #: /packages/jupyterlab-lsp/schema/hover.json:13
 msgctxt "schema"
 msgid "Keyboard key which activates the tooltip on hover. The allowed keys are Alt, Control, Shift, and AltGraph. Linux user: Meta key is also supported. Safari users: Meta key is also supported, AltGraph is not supported. To see which physical keys are mapped, visit: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState"
-msgstr ""
+msgstr "悬停时的激活工具提示的键。允许的键值是 Alt、Control、Shift 和 AltGraph。支持 Linux 的 Meta 键。支持 Safari 的 Meta 键，不过不支持 AltGraph。要查看映射的物理密钥，请访问：https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState。"
 
 #: /packages/jupyterlab-lsp/schema/hover.json:16
 msgid "Throttler delay"
-msgstr ""
+msgstr "节流器延迟"
 
 #: /packages/jupyterlab-lsp/schema/hover.json:19
 msgctxt "schema"
 msgid "Number of milliseconds to delay sending out the hover request to the language server; you can get better responsiveness adjusting this value, but setting it to zero can actually slow it down as the server might get overwhelmed when moving the mouse over the code."
-msgstr ""
+msgstr "延迟向语言服务器发送悬停请求的毫秒数；通过调整该值可以获得更快的响应，但将其设置为零实际上会导致更慢的响应，因为服务器在移动光标时可能会过载。"
 
 #: /packages/jupyterlab-lsp/schema/hover.json:22
 msgid "Cache size"
-msgstr ""
+msgstr "缓存大小"
 
 #: /packages/jupyterlab-lsp/schema/hover.json:25
 msgctxt "schema"
 msgid "Up to how many hover responses should be cached at any given time. The cache being is invalidated after any change in the editor."
-msgstr ""
+msgstr "在给定的时间里最多应该缓存多少个悬停响应。在编辑器中的任何更改后，缓存失效。"
 
 #: /packages/jupyterlab-lsp/schema/hover.json:4
 msgctxt "schema"
 msgid "Code Hover"
-msgstr ""
+msgstr "代码悬停"
 
 #: /packages/jupyterlab-lsp/schema/hover.json:5
 msgctxt "schema"
 msgid "LSP Hover over the code tooltip settings."
-msgstr ""
+msgstr "LSP 关于代码工具提示悬停的设置。"
 
 #: /packages/jupyterlab-lsp/schema/hover.json:9 /packages/jupyterlab-lsp/schema/jump_to.json:9
 msgid "Modifier key"
-msgstr ""
+msgstr "修饰键"
 
 #: /packages/jupyterlab-lsp/schema/jump_to.json:13
 msgctxt "schema"
 msgid "Keyboard key which needs to be pressed with click to jump. The allowed keys are Alt, Control, Shift, Accel, and AltGraph. Accel corresponds to Control or Meta (Command on Mac). Linux user: Meta key is also supported. Safari users: Meta key is also supported, AltGraph is not supported. To see which physical keys are mapped, visit: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState"
-msgstr ""
+msgstr "跳转时需要同时按下的键。允许的键值是 Alt、Control、Shift 、Accel 和 AltGraph。Accel 表示 Control 或 Meta（Mac 为 Command）。Linux 用户和 ：支持 Meta 键。Safari 用户：支持 Meta 键但不支持 AltGraph。要查看物理按键的映射，请访问：https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState。"
 
 #: /packages/jupyterlab-lsp/schema/jump_to.json:5 /packages/jupyterlab-lsp/schema/jump_to.json:5
 msgctxt "schema"
 msgid "Code Jump"
-msgstr ""
+msgstr "代码跳转"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:0
 msgctxt "schema"
@@ -277,236 +277,264 @@ msgid "Language-server specific configuration, keyed by implementation, e.g: \n\
 "    \"pyls.plugins.flake8.enabled\": true\n"
 "  }\n"
 "}"
-msgstr ""
+msgstr "语言服务器的设置，按实现分类，例如：\n\n"
+"pyls: {\n"
+"  serverSettings: {\n"
+"    pyls: {\n"
+"      plugins: {\n"
+"        pydocstyle: {\n"
+"          enabled: true\n"
+"        },\n"
+"        pyflakes: {\n"
+"          enabled: false\n"
+"        },\n"
+"        flake8: {\n"
+"          enabled: true\n"
+"        }\n"
+"      }\n"
+"    }\n"
+"  }\n"
+"}\n\n"
+"可选的，使用 VSCode 的名称转换：\n\n"
+"pyls: {\n"
+"  serverSettings: {\n"
+"    \"pyls.plugins.pydocstyle.enabled\": true,\n"
+"    \"pyls.plugins.pyflakes.enabled\": false,\n"
+"    \"pyls.plugins.flake8.enabled\": true\n"
+"  }\n"
+"}"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:0
 msgctxt "schema"
 msgid "Whether to ask server to send logs with execution trace (for debugging). To see these messages, set loggingLevel to debug or log. Accepted values are: \"off\", \"messages\", \"verbose\". Servers are allowed to ignore this request."
-msgstr ""
+msgstr "是否请求服务器发送带有执行跟踪的日志（用于调试）。要查看这些信息，请设置 loggingLevel 为 debug 或 log。接受的值为：off、messages、verbose。服务器允许或略此请求。"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:32
 msgctxt "schema"
 msgid "Language Server"
-msgstr ""
+msgstr "语言服务器"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:32
 msgid "Language Server"
-msgstr ""
+msgstr "语言服务器"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:5
 msgctxt "schema"
 msgid "Language Server Protocol settings."
-msgstr ""
+msgstr "语言服务器协议设置。"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:51
 msgid "Logging console type"
-msgstr ""
+msgstr "记录控制台类型"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:55
 msgctxt "schema"
 msgid "The console to use for debugging problems with this extension. Allowed values are: browser, floating."
-msgstr ""
+msgstr "此扩展用于调试问题的控制台。允许的值为：browser、floating。"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:58
 msgid "Logging console verbosity level"
-msgstr ""
+msgstr "记录控制台详细等级"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:62
 msgctxt "schema"
 msgid "The verbosity of the console for debugging problems with this extension. Allowed values are: debug, log, warn, error."
-msgstr ""
+msgstr "此扩展调试问题的控制台日志等级。允许的值为：debug、log、warn、error。"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:65
 msgid "Log all LSP communication with the LSP servers"
-msgstr ""
+msgstr "记录与 LSP 服务器的所有LSP 通信"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:68
 msgctxt "schema"
 msgid "Whether all messages sent to and received from LSP servers should be logged into the console. To see these messages, set loggingLevel to debug or log. Note: Only messages handled by the new API will be shown."
-msgstr ""
+msgstr "是否所有发送到 LSP 服务器的消息都应该被记录到控制台。想要查看这些信息，请设置 loggingLevel 为 debug 或 log。注意：只有通过新 API 处理的消息会被显示。"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:71
 msgid "Ask servers to send trace notifications"
-msgstr ""
+msgstr "向服务器请求发送追踪通知"
 
 #: /packages/jupyterlab-lsp/schema/rename.json:4
 msgctxt "schema"
 msgid "Code Rename"
-msgstr ""
+msgstr "代码重命名"
 
 #: /packages/jupyterlab-lsp/schema/rename.json:5
 msgctxt "schema"
 msgid "LSP Rename settings."
-msgstr ""
+msgstr "LSP 重命名设置。"
 
 #: /packages/jupyterlab-lsp/schema/syntax_highlighting.json:12
 msgctxt "schema"
 msgid "If a code editor includes a code fragment in another language (for example a %%markdown magic in IPython) with appropriate foreign code extractor defined, and the extend of this code (coverage of the editor) passes the threshold, the syntax highlighting (i.e. the mode) will change to provide highlighting for the language of the foreign code."
-msgstr ""
+msgstr "如果代码编辑器包含另一种语言的代码片段（例如在 IPython 中的 %%markdown 魔法词），定义了适当的陌生代码提取器，并且当这个代码的扩展（编辑器的覆盖范围）超出阈值时，那么语法高亮（比如模式）将会对该陌生代码提供相应的高亮显示。"
 
 #: /packages/jupyterlab-lsp/schema/syntax_highlighting.json:4
 msgctxt "schema"
 msgid "Code Syntax"
-msgstr ""
+msgstr "代码语法"
 
 #: /packages/jupyterlab-lsp/schema/syntax_highlighting.json:5
 msgctxt "schema"
 msgid "LSP code syntax highlighting settings."
-msgstr ""
+msgstr "LSP 代码语法高亮设置。"
 
 #: /packages/jupyterlab-lsp/schema/syntax_highlighting.json:9
 msgid "Threshold of foreign code coverage for changing the mode in an editor"
-msgstr ""
+msgstr "修改编辑器模式的陌生代码覆盖率的阈值"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:238
 msgid "Failed to load language server spec finder `{}`: \n"
 "{}"
-msgstr ""
+msgstr "载入语言服务器规范查找器失败 `{}`：\n"
+"{}"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254
 msgid "Failed to fetch commands from language server spec finder `{}`:\n"
 "{}"
-msgstr ""
+msgstr "从语言服务器规范查找器获取命令失败 `{}`：\n"
+"{}"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267
 msgid "Failed to validate commands from language server spec finder `{}`:\n"
 "{}"
-msgstr ""
+msgstr "从语言服务器规范查找器验证命令失败 `{}`：\n"
+"{}"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:279
 msgid "Skipped non-installed server(s): {}"
-msgstr ""
+msgstr "跳过未安装的服务器：`{}`"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:41
 msgid "extra language server specs, keyed by implementation, from conf.d"
-msgstr ""
+msgstr "额外语言服务器规范，通过实现归类，来自 conf.d"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46
 msgid "a dict of language server specs, keyed by implementation"
-msgstr ""
+msgstr "一种语言服务器规范的字典，由实现归类"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:52
 msgid "try to find known language servers in sys.prefix (and elsewhere)"
-msgstr ""
+msgstr "尝试在 sys.prefix（和其他地方）中查找已知的语言服务器"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/types.py:193
 msgid "path to nodejs executable"
-msgstr ""
+msgstr "nodejs 可执行文件路径"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/types.py:195
 msgid "absolute paths in which to seek node_modules"
-msgstr ""
+msgstr "可寻找 node_modules 的绝对路径"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/types.py:200
 msgid "additional absolute paths to seek node_modules first"
-msgstr ""
+msgstr "额外用于首先寻找 node_modules 的绝对路径"
 
 #: packages/completion-theme/src/about.tsx:47
 msgid " (current)"
-msgstr ""
+msgstr "（当前）"
 
 #: packages/completion-theme/src/about.tsx:54
 msgid "Licence: "
-msgstr ""
+msgstr "许可协议："
 
 #: packages/completion-theme/src/about.tsx:60
 msgid "Includes dedicated dark mode icons set"
-msgstr ""
+msgstr "包括深色模式专用图标组"
 
 #: packages/completion-theme/src/index.ts:189
 msgid "Display the completer themes"
-msgstr ""
+msgstr "显示补全器主题"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:150
 msgid "Troubleshooting"
-msgstr ""
+msgstr "故障排查"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:154
 msgid "In case of issues with installation feel welcome to ask a question on GitHub."
-msgstr ""
+msgstr "如果安装遇到问题，欢迎在 GitHub 上提问。"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:158
 msgid "Installation"
-msgstr ""
+msgstr "安装"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:168
 msgid "No installation instructions were provided with this specification."
-msgstr ""
+msgstr "没有提供此规范的安装说明。"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:183
 msgid "No language server for %1 detected"
-msgstr ""
+msgstr "没有检测到 %1 的语言服务器"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:192
 msgid "There is %1 language server you can easily install that supports %2."
 msgid_plural "There are %1 language servers you can easily install that supports %2."
-msgstr[0] ""
+msgstr[0] "您可以简单地安装支持%2的%1个语言服务器"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:211
 msgid "We do not have an auto-detection ready for a language servers supporting %1 yet."
-msgstr ""
+msgstr "我们还没有支持 %1 自动检测的语言服务器。"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:217
 msgid "You may contribute a specification for auto-detection as described in our "
-msgstr ""
+msgstr "您可以按我们下列描述贡献一个自动检测的规范 "
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:225
 msgid "documentation"
-msgstr ""
+msgstr "文档"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/index.ts:42
 msgid "Show diagnostics panel"
-msgstr ""
+msgstr "显示诊断面板"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:230
 msgid "No issues detected, great job!"
-msgstr ""
+msgstr "没有检测到问题，干得不错！"
 
 #: packages/jupyterlab-lsp/src/features/highlights.ts:39
 msgid "Highlight references"
-msgstr ""
+msgstr "高亮引用"
 
 #: packages/jupyterlab-lsp/src/features/highlights.ts:47
 msgid "Highlight type definition"
-msgstr ""
+msgstr "高亮类型定义"
 
 #: packages/jupyterlab-lsp/src/features/jump_to.ts:129
 msgid "No jump targets found"
-msgstr ""
+msgstr "未找到跳转目标"
 
 #: packages/jupyterlab-lsp/src/features/jump_to.ts:260
 msgid "Jump to definition"
-msgstr ""
+msgstr "跳转到定义"
 
 #: packages/jupyterlab-lsp/src/features/jump_to.ts:270
 msgid "Jump back"
-msgstr ""
+msgstr "跳回"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:103
 msgid "Rename symbol"
-msgstr ""
+msgstr "重命名符号"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:68
 msgid "Rename failed: %1"
-msgstr ""
+msgstr "重命名失败：%1"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:75
 msgid "Rename to"
-msgstr ""
+msgstr "重命名为"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:77
 msgid "Rename"
-msgstr ""
+msgstr "重命名"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:78
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:88
 msgid "Renaming %1 to %2..."
-msgstr ""
+msgstr "重命名 %1 为 %2..."
 
 #: packages/jupyterlab-lsp/src/features/syntax_highlighting.ts:150
 msgid "Syntax highlighting"
-msgstr ""
+msgstr "语法高亮"
 
