@@ -12,24 +12,24 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2021-08-17 15:32\n"
+"PO-Revision-Date: 2021-08-17 20:12\n"
 
-#: /examples/federated/md_package/schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:30
+#: /examples/federated/md_package/schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:38
 msgid "Font Family"
 msgstr "フォントの種類"
 
-#: /examples/federated/md_package/schema/plugin.json:31 /packages/markdownviewer-extension/schema/plugin.json:31
+#: /examples/federated/md_package/schema/plugin.json:31 /packages/markdownviewer-extension/schema/plugin.json:39
 msgctxt "schema"
 msgid "The font family used to render markdown.\n"
 "If `null`, value from current theme is used."
 msgstr "マークダウンのレンダリングに使用されるフォントファミリ。\n"
 "`null`の場合、現在のテーマの値が使用される。"
 
-#: /examples/federated/md_package/schema/plugin.json:36 /packages/markdownviewer-extension/schema/plugin.json:36
+#: /examples/federated/md_package/schema/plugin.json:36 /packages/markdownviewer-extension/schema/plugin.json:44
 msgid "Font Size"
 msgstr "文字サイズ"
 
-#: /examples/federated/md_package/schema/plugin.json:37 /packages/markdownviewer-extension/schema/plugin.json:37
+#: /examples/federated/md_package/schema/plugin.json:37 /packages/markdownviewer-extension/schema/plugin.json:45
 msgctxt "schema"
 msgid "The size in pixel of the font used to render markdown.\n"
 "If `null`, value from current theme is used."
@@ -41,22 +41,22 @@ msgctxt "schema"
 msgid "Markdown Viewer"
 msgstr "Markdown ビューア"
 
-#: /examples/federated/md_package/schema/plugin.json:42 /packages/markdownviewer-extension/schema/plugin.json:42
+#: /examples/federated/md_package/schema/plugin.json:42 /packages/markdownviewer-extension/schema/plugin.json:50
 msgid "Line Height"
 msgstr "行の高さ"
 
-#: /examples/federated/md_package/schema/plugin.json:43 /packages/markdownviewer-extension/schema/plugin.json:43
+#: /examples/federated/md_package/schema/plugin.json:43 /packages/markdownviewer-extension/schema/plugin.json:51
 msgctxt "schema"
 msgid "The line height used to render markdown.\n"
 "If `null`, value from current theme is used."
 msgstr "マークダウンのレンダリングに使用される行の高さ。\n"
 "`null`の場合、現在のテーマの値が使用される。"
 
-#: /examples/federated/md_package/schema/plugin.json:48 /packages/markdownviewer-extension/schema/plugin.json:48
+#: /examples/federated/md_package/schema/plugin.json:48 /packages/markdownviewer-extension/schema/plugin.json:56
 msgid "Line Width"
 msgstr "線の太さ"
 
-#: /examples/federated/md_package/schema/plugin.json:49 /packages/markdownviewer-extension/schema/plugin.json:49
+#: /examples/federated/md_package/schema/plugin.json:49 /packages/markdownviewer-extension/schema/plugin.json:57
 msgctxt "schema"
 msgid "The text line width expressed in CSS ch units.\n"
 "If `null`, lines fit the viewport width."
@@ -68,11 +68,11 @@ msgctxt "schema"
 msgid "Markdown viewer settings."
 msgstr "Markdown ビューアの設定。"
 
-#: /examples/federated/md_package/schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:54
+#: /examples/federated/md_package/schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:62
 msgid "Hide Front Matter"
 msgstr "Front Matter の非表示"
 
-#: /examples/federated/md_package/schema/plugin.json:55 /packages/markdownviewer-extension/schema/plugin.json:55
+#: /examples/federated/md_package/schema/plugin.json:55 /packages/markdownviewer-extension/schema/plugin.json:63
 msgctxt "schema"
 msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
@@ -81,24 +81,55 @@ msgid "Whether to hide YAML front matter.\n"
 msgstr "YAML front matter を非表示にするか否かを示します。\n"
 "YAML front matter はドキュメントの最上部に位置し、ダッシュ記号3つ (---) の行で始まり、ダッシュ記号3つ (---) またはピリオド記号3つ (...) の行で終わる必要があります。"
 
-#: /examples/federated/md_package/schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:60
+#: /examples/federated/md_package/schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:68
 msgid "Render Timeout"
 msgstr "レンダリングのタイムアウト"
 
-#: /examples/federated/md_package/schema/plugin.json:61 /packages/markdownviewer-extension/schema/plugin.json:61
+#: /examples/federated/md_package/schema/plugin.json:61 /packages/markdownviewer-extension/schema/plugin.json:69
 msgctxt "schema"
 msgid "The render timeout in milliseconds."
 msgstr "ミリ秒単位でのレンダリングのタイムアウト時間"
 
-#: /packages/application-extension/schema/main.json:2
+#: /packages/application-extension/schema/commands.json:2
 msgctxt "schema"
-msgid "Application "
-msgstr "アプリケーション"
+msgid "Application Commands"
+msgstr ""
 
-#: /packages/application-extension/schema/main.json:3
+#: /packages/application-extension/schema/commands.json:3
 msgctxt "schema"
-msgid "Main JupyterLab application settings."
-msgstr "主要なJupyterLabアプリケーション設定。"
+msgid "Application commands settings."
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:0
+msgctxt "schema"
+msgid "Note: To disable a context menu item,\n"
+"copy it to User Preferences and add the\n"
+"\"disabled\" key. The following example will disable Download item on files:\n"
+"{\n"
+"  \"contextMenu\": [\n"
+"    {\n"
+"      \"command\": \"filebrowser:download\",\n"
+"      \"selector\": \".jp-DirListing-item[data-isdir=\\\"false\\\"]\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Context menu description:"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:3
+msgctxt "schema"
+msgid "JupyterLab context menu settings."
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:4
+msgctxt "schema"
+msgid "Application Context Menu"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:9
+msgid "The application context menu."
+msgstr ""
 
 #: /packages/application-extension/schema/sidebar.json:0
 msgctxt "schema"
@@ -106,6 +137,10 @@ msgid "Overrides for where to show sidebar items\n"
 "e.g., {\"tab-manager\": \"right\"}"
 msgstr "サイドバー項目を表示する場所を変更する\n"
 "例えば、{\"tab-manager\": \"right\"}"
+
+#: /packages/application-extension/schema/sidebar.json:17
+msgid "Overrides"
+msgstr "変更"
 
 #: /packages/application-extension/schema/sidebar.json:3
 msgctxt "schema"
@@ -117,23 +152,19 @@ msgctxt "schema"
 msgid "Sidebar layout settings."
 msgstr "サイドバーのレイアウト設定。"
 
-#: /packages/application-extension/schema/sidebar.json:8
-msgid "Overrides"
-msgstr "変更"
-
-#: /packages/apputils-extension/schema/palette.json:13
-msgid "Modal Command Palette"
-msgstr ""
-
-#: /packages/apputils-extension/schema/palette.json:14
-msgctxt "schema"
-msgid "Whether the command palette should be modal or in the left panel."
-msgstr ""
-
 #: /packages/apputils-extension/schema/palette.json:2
 msgctxt "schema"
 msgid "Command Palette"
 msgstr "コマンドパレット"
+
+#: /packages/apputils-extension/schema/palette.json:26
+msgid "Modal Command Palette"
+msgstr ""
+
+#: /packages/apputils-extension/schema/palette.json:27
+msgctxt "schema"
+msgid "Whether the command palette should be modal or in the left panel."
+msgstr ""
 
 #: /packages/apputils-extension/schema/palette.json:3
 msgctxt "schema"
@@ -150,116 +181,126 @@ msgctxt "schema"
 msgid "Print settings."
 msgstr "印刷設定。"
 
+#: /packages/apputils-extension/schema/themes.json:107
+msgid "Selected Theme"
+msgstr "選択されたテーマ"
+
+#: /packages/apputils-extension/schema/themes.json:108
+msgctxt "schema"
+msgid "Application-level visual styling theme"
+msgstr "アプリケーションレベルの視覚的スタイルのテーマ"
+
+#: /packages/apputils-extension/schema/themes.json:113
+msgid "Scrollbar Theming"
+msgstr "スクロールバーのテーマ設定"
+
+#: /packages/apputils-extension/schema/themes.json:114
+msgctxt "schema"
+msgid "Enable/disable styling of the application scrollbars"
+msgstr "アプリケーションのスクロールバーのスタイルを有効/無効にする"
+
+#: /packages/apputils-extension/schema/themes.json:118
+msgid "Theme CSS Overrides"
+msgstr "テーマの CSS の上書き"
+
+#: /packages/apputils-extension/schema/themes.json:119
+msgctxt "schema"
+msgid "Override theme CSS variables by setting key-value pairs here"
+msgstr "ここでキーと値のペアを設定してテーマの CSS 変数を上書きします"
+
 #: /packages/apputils-extension/schema/themes.json:2
 msgctxt "schema"
 msgid "Theme"
 msgstr "テーマ"
 
-#: /packages/apputils-extension/schema/themes.json:4
+#: /packages/apputils-extension/schema/themes.json:66
 msgctxt "schema"
 msgid "Theme manager settings."
 msgstr "テーママネージャの設定。"
 
-#: /packages/apputils-extension/schema/themes.json:45
-msgid "Selected Theme"
-msgstr "選択されたテーマ"
-
-#: /packages/apputils-extension/schema/themes.json:46
+#: /packages/apputils-extension/schema/workspaces.json:2
 msgctxt "schema"
-msgid "Application-level visual styling theme"
-msgstr "アプリケーションレベルの視覚的スタイルのテーマ"
+msgid "Workspaces"
+msgstr ""
 
-#: /packages/apputils-extension/schema/themes.json:51
-msgid "Scrollbar Theming"
-msgstr "スクロールバーのテーマ設定"
-
-#: /packages/apputils-extension/schema/themes.json:52
+#: /packages/apputils-extension/schema/workspaces.json:3
 msgctxt "schema"
-msgid "Enable/disable styling of the application scrollbars"
-msgstr "アプリケーションのスクロールバーのスタイルを有効/無効にする"
+msgid "Workspaces settings."
+msgstr ""
 
-#: /packages/apputils-extension/schema/themes.json:56
-msgid "Theme CSS Overrides"
-msgstr "テーマの CSS の上書き"
-
-#: /packages/apputils-extension/schema/themes.json:57
+#: /packages/codemirror-extension/schema/commands.json:172
 msgctxt "schema"
-msgid "Override theme CSS variables by setting key-value pairs here"
-msgstr "ここでキーと値のペアを設定してテーマの CSS 変数を上書きします"
+msgid "CodeMirror"
+msgstr ""
 
-#: /packages/codemirror-extension/schema/commands.json:10
+#: /packages/codemirror-extension/schema/commands.json:173
+msgctxt "schema"
+msgid "Text editor settings for all CodeMirror editors."
+msgstr "すべてのCodeMirrorエディタのテキストエディタの設定。"
+
+#: /packages/codemirror-extension/schema/commands.json:177
+msgid "Key Map"
+msgstr "キーマップ"
+
+#: /packages/codemirror-extension/schema/commands.json:178
 msgctxt "schema"
 msgid "Configures the keymap to use"
 msgstr "使用するキーマップの設定"
 
-#: /packages/codemirror-extension/schema/commands.json:15 /packages/terminal-extension/schema/plugin.json:52 packages/apputils-extension/src/themesplugins.ts:246
+#: /packages/codemirror-extension/schema/commands.json:183 /packages/terminal-extension/schema/plugin.json:132 packages/apputils-extension/src/themesplugins.ts:202
 msgid "Theme"
 msgstr "テーマ"
 
-#: /packages/codemirror-extension/schema/commands.json:16
+#: /packages/codemirror-extension/schema/commands.json:184
 msgctxt "schema"
 msgid "CSS file defining the corresponding\n"
 ".cm-s-[name] styles is loaded"
 msgstr "対応する .cm-s-[name] スタイルを定義する CSS ファイルが読み込まれます"
 
-#: /packages/codemirror-extension/schema/commands.json:21
+#: /packages/codemirror-extension/schema/commands.json:189
 msgid "Scroll behavior"
 msgstr "スクロールの動作"
 
-#: /packages/codemirror-extension/schema/commands.json:22
+#: /packages/codemirror-extension/schema/commands.json:190
 msgctxt "schema"
 msgid "Whether to scroll past the end of text document"
 msgstr "文書ドキュメントの最後までスクロールするか"
 
-#: /packages/codemirror-extension/schema/commands.json:27
+#: /packages/codemirror-extension/schema/commands.json:195
 msgid "Style Active Line"
 msgstr "アクティブ行にスタイル適用"
 
-#: /packages/codemirror-extension/schema/commands.json:28
+#: /packages/codemirror-extension/schema/commands.json:196
 msgctxt "schema"
 msgid "Value is boolean, or { nonEmpty: boolean }"
 msgstr "値は真偽値、または { nonEmpty: boolean }"
 
-#: /packages/codemirror-extension/schema/commands.json:33
+#: /packages/codemirror-extension/schema/commands.json:201
 msgid "Style Selected Text"
 msgstr "選択されたテキストにスタイル適用"
 
-#: /packages/codemirror-extension/schema/commands.json:34
+#: /packages/codemirror-extension/schema/commands.json:202
 msgctxt "schema"
 msgid "Value is boolean"
 msgstr "値は真偽値です"
 
-#: /packages/codemirror-extension/schema/commands.json:39
+#: /packages/codemirror-extension/schema/commands.json:207
 msgid "Selection Pointer"
 msgstr "選択範囲ポインター"
 
-#: /packages/codemirror-extension/schema/commands.json:4
-msgctxt "schema"
-msgid "CodeMirror"
-msgstr ""
-
-#: /packages/codemirror-extension/schema/commands.json:40
+#: /packages/codemirror-extension/schema/commands.json:208
 msgctxt "schema"
 msgid "Value is boolean or string, e.g. 'pointer'"
 msgstr "値は真偽値または文字列です。例: 'pointer'"
 
-#: /packages/codemirror-extension/schema/commands.json:45
+#: /packages/codemirror-extension/schema/commands.json:213
 msgid "Ctrl-C"
 msgstr ""
 
-#: /packages/codemirror-extension/schema/commands.json:46
+#: /packages/codemirror-extension/schema/commands.json:214
 msgctxt "schema"
 msgid "When enabled, which is the default, doing copy or cut when there is no selection will copy or cut the whole lines that have cursors on them."
 msgstr "有効にした場合、何も選択せずコピー、カットをした際はカーソルが置かれている線全体をコピー、カットします。有効がデフォルトです。"
-
-#: /packages/codemirror-extension/schema/commands.json:5
-msgctxt "schema"
-msgid "Text editor settings for all CodeMirror editors."
-msgstr "すべてのCodeMirrorエディタのテキストエディタの設定。"
-
-#: /packages/codemirror-extension/schema/commands.json:9
-msgid "Key Map"
-msgstr "キーマップ"
 
 #: /packages/completer-extension/schema/consoles.json:2
 msgctxt "schema"
@@ -291,6 +332,46 @@ msgctxt "schema"
 msgid "Notebook completer settings."
 msgstr "Notebook入力補完設定。"
 
+#: /packages/console-extension/schema/foreign.json:2
+msgctxt "schema"
+msgid "Code Console Foreign plugin"
+msgstr ""
+
+#: /packages/console-extension/schema/foreign.json:3
+msgctxt "schema"
+msgid "Code Console Foreign plugin settings."
+msgstr ""
+
+#: /packages/console-extension/schema/tracker.json:162
+msgid "Interaction mode"
+msgstr "インタラクションモード"
+
+#: /packages/console-extension/schema/tracker.json:163
+msgctxt "schema"
+msgid "Whether the console interaction mimics the notebook\n"
+"or terminal keyboard shortcuts."
+msgstr "コンソール上の操作がノートブックまたはターミナルのキーボード ショートカットに倣っているかを示します。"
+
+#: /packages/console-extension/schema/tracker.json:169 packages/console-extension/src/foreign.ts:79
+msgid "Show All Kernel Activity"
+msgstr "すべてのカーネルのアクティビティを表示"
+
+#: /packages/console-extension/schema/tracker.json:170
+msgctxt "schema"
+msgid "Whether the console defaults to showing all\n"
+"kernel activity or just kernel activity originating from itself."
+msgstr "コンソールがデフォルトですべての\n"
+"カーネルアクティビティを表示するか、それ自体から発信されるカーネルアクティビティだけを表示するかどうか。"
+
+#: /packages/console-extension/schema/tracker.json:175
+msgid "Prompt Cell Configuration"
+msgstr ""
+
+#: /packages/console-extension/schema/tracker.json:176
+msgctxt "schema"
+msgid "The configuration for all prompt cells."
+msgstr ""
+
 #: /packages/console-extension/schema/tracker.json:2
 msgctxt "schema"
 msgid "Code Console"
@@ -301,77 +382,66 @@ msgctxt "schema"
 msgid "Code Console settings."
 msgstr "コード コンソールの設定。"
 
-#: /packages/console-extension/schema/tracker.json:35
-msgid "Interaction mode"
-msgstr "インタラクションモード"
-
-#: /packages/console-extension/schema/tracker.json:36
-msgctxt "schema"
-msgid "Whether the console interaction mimics the notebook\n"
-"or terminal keyboard shortcuts."
-msgstr "コンソール上の操作がノートブックまたはターミナルのキーボード ショートカットに倣っているかを示します。"
-
-#: /packages/console-extension/schema/tracker.json:42 packages/console-extension/src/foreign.ts:85
-msgid "Show All Kernel Activity"
-msgstr "すべてのカーネルのアクティビティを表示"
-
-#: /packages/console-extension/schema/tracker.json:43
-msgctxt "schema"
-msgid "Whether the console defaults to showing all\n"
-"kernel activity or just kernel activity originating from itself."
-msgstr "コンソールがデフォルトですべての\n"
-"カーネルアクティビティを表示するか、それ自体から発信されるカーネルアクティビティだけを表示するかどうか。"
-
 #: /packages/debugger-extension/schema/main.json:3
 msgctxt "schema"
 msgid "Debugger settings"
 msgstr "デバッガ設定"
-
-#: /packages/debugger-extension/schema/main.json:34
-msgid "Variable filter"
-msgstr "変数フィルタ"
-
-#: /packages/debugger-extension/schema/main.json:35
-msgctxt "schema"
-msgid "Variables to filter out in the tree and table viewers"
-msgstr "ツリービューアーとテーブルビューアーでフィルタリングする変数"
 
 #: /packages/debugger-extension/schema/main.json:5
 msgctxt "schema"
 msgid "Debugger"
 msgstr "デバッガ"
 
-#: /packages/docmanager-extension/schema/plugin.json:22 packages/docmanager-extension/src/index.ts:693
+#: /packages/debugger-extension/schema/main.json:59
+msgid "Variable filter"
+msgstr "変数フィルタ"
+
+#: /packages/debugger-extension/schema/main.json:60
+msgctxt "schema"
+msgid "Variables to filter out in the tree and table viewers"
+msgstr "ツリービューアーとテーブルビューアーでフィルタリングする変数"
+
+#: /packages/docmanager-extension/schema/download.json:2
+msgctxt "schema"
+msgid "Document Manager Download"
+msgstr ""
+
+#: /packages/docmanager-extension/schema/download.json:3
+msgctxt "schema"
+msgid "Document Manager Download settings."
+msgstr ""
+
+#: /packages/docmanager-extension/schema/plugin.json:110 packages/docmanager-extension/src/index.ts:736
 msgid "Autosave Documents"
 msgstr "ドキュメントの自動保存"
 
-#: /packages/docmanager-extension/schema/plugin.json:23
+#: /packages/docmanager-extension/schema/plugin.json:111
 msgctxt "schema"
 msgid "Whether to autosave documents"
 msgstr "ドキュメントを自動保存するかどうか"
 
-#: /packages/docmanager-extension/schema/plugin.json:28
+#: /packages/docmanager-extension/schema/plugin.json:116
 msgid "Autosave Interval"
 msgstr "自動保存の間隔"
 
-#: /packages/docmanager-extension/schema/plugin.json:29
+#: /packages/docmanager-extension/schema/plugin.json:117
 msgctxt "schema"
 msgid "Length of save interval in seconds"
 msgstr "保存間隔の長さ (秒)"
+
+#: /packages/docmanager-extension/schema/plugin.json:122
+msgid "Default Viewers"
+msgstr "デフォルトのビューア"
+
+#: /packages/docmanager-extension/schema/plugin.json:124
+msgctxt "schema"
+msgid "Overrides for the default viewers for file types"
+msgstr "ファイルタイプのデフォルトのビューアを変更する"
 
 #: /packages/docmanager-extension/schema/plugin.json:3
 msgctxt "schema"
 msgid "Document Manager settings."
 msgstr "テーママネージャの設定。"
-
-#: /packages/docmanager-extension/schema/plugin.json:34
-msgid "Default Viewers"
-msgstr "デフォルトのビューア"
-
-#: /packages/docmanager-extension/schema/plugin.json:36
-msgctxt "schema"
-msgid "Overrides for the default viewers for file types"
-msgstr "ファイルタイプのデフォルトのビューアを変更する"
 
 #: /packages/docmanager-extension/schema/plugin.json:5
 msgctxt "schema"
@@ -388,79 +458,145 @@ msgctxt "schema"
 msgid "Document search plugin."
 msgstr "ドキュメント検索プラグイン。"
 
-#: /packages/extensionmanager-extension/schema/plugin.json:14
-msgid "Disclaimed Status"
-msgstr "\"Disclaimed\" ステータス"
-
-#: /packages/extensionmanager-extension/schema/plugin.json:15
-msgctxt "schema"
-msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
-msgstr "当インターフェイス上にて管理されているエクステンションが危険性のある任意コードを実行する可能性がある旨の免責事項にユーザーが同意しているかを示します。"
-
-#: /packages/extensionmanager-extension/schema/plugin.json:4
+#: /packages/extensionmanager-extension/schema/plugin.json:25
 msgctxt "schema"
 msgid "Extension Manager"
 msgstr "拡張機能マネージャ"
 
-#: /packages/extensionmanager-extension/schema/plugin.json:5
+#: /packages/extensionmanager-extension/schema/plugin.json:26
 msgctxt "schema"
 msgid "Extension manager settings."
 msgstr "拡張機能マネージャの設定。"
 
-#: /packages/extensionmanager-extension/schema/plugin.json:8
+#: /packages/extensionmanager-extension/schema/plugin.json:29
 msgid "Enabled Status"
 msgstr "有効化のステータス"
 
-#: /packages/extensionmanager-extension/schema/plugin.json:9
+#: /packages/extensionmanager-extension/schema/plugin.json:30
 msgctxt "schema"
 msgid "Enables extension manager (requires Node.js/npm).\n"
 "WARNING: installing untrusted extensions may be unsafe."
 msgstr "機能拡張マネージャーを有効にします（Node.js/npmが必要です）。\n"
 "警告: 信頼できないエクステンションをインストールすることは安全ではない可能性があります。"
 
-#: /packages/filebrowser-extension/schema/browser.json:21
-msgid "Navigate to current directory"
-msgstr "現在のディレクトリに移動"
+#: /packages/extensionmanager-extension/schema/plugin.json:35
+msgid "Disclaimed Status"
+msgstr "\"Disclaimed\" ステータス"
 
-#: /packages/filebrowser-extension/schema/browser.json:22
+#: /packages/extensionmanager-extension/schema/plugin.json:36
 msgctxt "schema"
-msgid "Whether to automatically navigate to a document's current directory"
-msgstr "ドキュメントの現在のディレクトリに自動的に移動するかどうか"
+msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
+msgstr "当インターフェイス上にて管理されているエクステンションが危険性のある任意コードを実行する可能性がある旨の免責事項にユーザーが同意しているかを示します。"
 
-#: /packages/filebrowser-extension/schema/browser.json:27
-msgid "Filter on file name with a fuzzy search"
-msgstr "曖昧な検索でファイル名をフィルタ"
+#: /packages/extensionmanager-extension/schema/plugin.json:41
+msgid "NPM Registry"
+msgstr ""
 
-#: /packages/filebrowser-extension/schema/browser.json:28
+#: /packages/extensionmanager-extension/schema/plugin.json:42
 msgctxt "schema"
-msgid "Whether to apply fuzzy algorithm while filtering on file names"
-msgstr "ファイル名をフィルタする際にファジィアルゴリズムを適用するかどうか"
+msgid "The URI of the NPM registry to use for searching for jupyterlab extensions"
+msgstr ""
 
-#: /packages/filebrowser-extension/schema/browser.json:4
+#: /packages/extensionmanager-extension/schema/plugin.json:47
+msgid "NPM CDN"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:48
+msgctxt "schema"
+msgid "The URI of the CDN to use for fetching full package data"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:53
+msgid "Enable CDN"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:54
+msgctxt "schema"
+msgid "Enables using the CDN to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry"
+msgstr ""
+
+#: /packages/filebrowser-extension/schema/browser.json:134
 msgctxt "schema"
 msgid "File Browser"
 msgstr "ファイルブラウザ"
 
-#: /packages/filebrowser-extension/schema/browser.json:5
+#: /packages/filebrowser-extension/schema/browser.json:135
 msgctxt "schema"
 msgid "File Browser settings."
 msgstr "ファイルブラウザの設定"
 
-#: /packages/fileeditor-extension/schema/plugin.json:4
+#: /packages/filebrowser-extension/schema/browser.json:186
+msgid "Navigate to current directory"
+msgstr "現在のディレクトリに移動"
+
+#: /packages/filebrowser-extension/schema/browser.json:187
+msgctxt "schema"
+msgid "Whether to automatically navigate to a document's current directory"
+msgstr "ドキュメントの現在のディレクトリに自動的に移動するかどうか"
+
+#: /packages/filebrowser-extension/schema/browser.json:192
+msgid "Filter on file name with a fuzzy search"
+msgstr "曖昧な検索でファイル名をフィルタ"
+
+#: /packages/filebrowser-extension/schema/browser.json:193
+msgctxt "schema"
+msgid "Whether to apply fuzzy algorithm while filtering on file names"
+msgstr "ファイル名をフィルタする際にファジィアルゴリズムを適用するかどうか"
+
+#: /packages/filebrowser-extension/schema/browser.json:198
+msgid "Show last modified column"
+msgstr ""
+
+#: /packages/filebrowser-extension/schema/browser.json:199
+msgctxt "schema"
+msgid "Whether to show the last modified column"
+msgstr ""
+
+#: /packages/filebrowser-extension/schema/download.json:2
+msgctxt "schema"
+msgid "File Browser Download"
+msgstr ""
+
+#: /packages/filebrowser-extension/schema/download.json:3
+msgctxt "schema"
+msgid "File Browser Download settings."
+msgstr ""
+
+#: /packages/filebrowser-extension/schema/open-browser-tab.json:2
+msgctxt "schema"
+msgid "File Browser Open Browser Tab"
+msgstr ""
+
+#: /packages/filebrowser-extension/schema/open-browser-tab.json:3
+msgctxt "schema"
+msgid "File Browser Open Browser Tab settings."
+msgstr ""
+
+#: /packages/filebrowser-extension/schema/open-with.json:2
+msgctxt "schema"
+msgid "File Browser Open With"
+msgstr ""
+
+#: /packages/filebrowser-extension/schema/open-with.json:3
+msgctxt "schema"
+msgid "File Browser Open With settings."
+msgstr ""
+
+#: /packages/fileeditor-extension/schema/plugin.json:143
 msgctxt "schema"
 msgid "Text Editor"
 msgstr "テキストエディタ"
 
-#: /packages/fileeditor-extension/schema/plugin.json:5
+#: /packages/fileeditor-extension/schema/plugin.json:144
 msgctxt "schema"
 msgid "Text editor settings."
 msgstr "テキストエディタの設定"
 
-#: /packages/fileeditor-extension/schema/plugin.json:61
+#: /packages/fileeditor-extension/schema/plugin.json:205
 msgid "Editor Configuration"
 msgstr "エディタ設定"
 
-#: /packages/fileeditor-extension/schema/plugin.json:62
+#: /packages/fileeditor-extension/schema/plugin.json:206
 msgctxt "schema"
 msgid "The configuration for all text editors.\n"
 "If `fontFamily`, `fontSize` or `lineHeight` are `null`,\n"
@@ -468,6 +604,26 @@ msgid "The configuration for all text editors.\n"
 msgstr "全てのテキストエディタの設定。\n"
 "`fontFamily`、`fontSize`、または`lineHeight`が`null`の場合、\n"
 "現在のテーマの値が使用されます。"
+
+#: /packages/help-extension/schema/about.json:19
+msgctxt "schema"
+msgid "Help"
+msgstr ""
+
+#: /packages/help-extension/schema/about.json:20
+msgctxt "schema"
+msgid "Help settings."
+msgstr ""
+
+#: /packages/hub-extension/schema/plugin.json:27
+msgctxt "schema"
+msgid "JupyterHub"
+msgstr ""
+
+#: /packages/hub-extension/schema/plugin.json:28
+msgctxt "schema"
+msgid "JupyterHub settings."
+msgstr ""
 
 #: /packages/imageviewer-extension/schema/plugin.json:2
 msgctxt "schema"
@@ -478,6 +634,16 @@ msgstr "画像ビューア"
 msgctxt "schema"
 msgid "Image viewer settings."
 msgstr "画像ビューアの設定。"
+
+#: /packages/inspector-extension/schema/consoles.json:2 /packages/inspector-extension/schema/notebooks.json:2
+msgctxt "schema"
+msgid "Inspector Notebook"
+msgstr ""
+
+#: /packages/inspector-extension/schema/consoles.json:3 /packages/inspector-extension/schema/notebooks.json:3
+msgctxt "schema"
+msgid "Inspector Notebook settings."
+msgstr ""
 
 #: /packages/inspector-extension/schema/inspector.json:2
 msgctxt "schema"
@@ -499,33 +665,60 @@ msgctxt "schema"
 msgid "Launcher settings."
 msgstr "ランチャーの設定。"
 
-#: /packages/logconsole-extension/schema/plugin.json:10
-msgctxt "schema"
-msgid "Maximum number of log entries to store in memory"
-msgstr "メモリ内に保存するログエントリの最大数"
-
-#: /packages/logconsole-extension/schema/plugin.json:15
-msgid "Status Bar Item flash"
-msgstr "ステータスバー アイテムのフラッシュ"
-
-#: /packages/logconsole-extension/schema/plugin.json:16
-msgctxt "schema"
-msgid "Whether to flash on new log message or not"
-msgstr "新規ログ メッセージ時にフラッシュするか否かを示します。"
-
-#: /packages/logconsole-extension/schema/plugin.json:4
+#: /packages/logconsole-extension/schema/plugin.json:23
 msgctxt "schema"
 msgid "Log Console"
 msgstr "ログコンソール"
 
-#: /packages/logconsole-extension/schema/plugin.json:5
+#: /packages/logconsole-extension/schema/plugin.json:24
 msgctxt "schema"
 msgid "Log Console settings."
 msgstr "ログコンソールの設定。"
 
-#: /packages/logconsole-extension/schema/plugin.json:9
+#: /packages/logconsole-extension/schema/plugin.json:28
 msgid "Log entry count limit"
 msgstr "ログエントリ数の上限"
+
+#: /packages/logconsole-extension/schema/plugin.json:29
+msgctxt "schema"
+msgid "Maximum number of log entries to store in memory"
+msgstr "メモリ内に保存するログエントリの最大数"
+
+#: /packages/logconsole-extension/schema/plugin.json:34
+msgid "Status Bar Item flash"
+msgstr "ステータスバー アイテムのフラッシュ"
+
+#: /packages/logconsole-extension/schema/plugin.json:35
+msgctxt "schema"
+msgid "Whether to flash on new log message or not"
+msgstr "新規ログ メッセージ時にフラッシュするか否かを示します。"
+
+#: /packages/mainmenu-extension/schema/plugin.json:0
+msgctxt "schema"
+msgid "Note: To disable a menu or a menu item,\n"
+"copy it to User Preferences and add the\n"
+"\"disabled\" key. The following example will disable\n"
+"the \"Tabs\" menu and \"Restart Kernel and Run up to Selected Cell\"\n"
+"item:\n"
+"{\n"
+"  \"menus\": [\n"
+"    {\n"
+"      \"id\": \"jp-mainmenu-tabs\",\n"
+"      \"disabled\": true\n"
+"    },\n"
+"    {\n"
+"      \"id\": \"jp-mainmenu-kernel\",\n"
+"      \"items\": [\n"
+"        {\n"
+"          \"command\": \"notebook:restart-and-run-to-selected\",\n"
+"          \"disabled\": true\n"
+"        }\n"
+"      ]\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Menu description:"
+msgstr ""
 
 #: /packages/mainmenu-extension/schema/plugin.json:2
 msgctxt "schema"
@@ -537,78 +730,137 @@ msgctxt "schema"
 msgid "Main JupyterLab menu settings."
 msgstr "メインJupyterLabメニューの設定。"
 
-#: /packages/notebook-extension/schema/tracker.json:221
+#: /packages/mainmenu-extension/schema/plugin.json:314
+msgid "The application menu description."
+msgstr ""
+
+#: /packages/notebook-extension/schema/export.json:27
+msgctxt "schema"
+msgid "Notebook Export"
+msgstr ""
+
+#: /packages/notebook-extension/schema/export.json:28
+msgctxt "schema"
+msgid "Notebook Export settings."
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:579
 msgctxt "schema"
 msgid "Notebook"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:222
+#: /packages/notebook-extension/schema/tracker.json:580
 msgctxt "schema"
 msgid "Notebook settings."
 msgstr "Notebookの設定。"
 
-#: /packages/notebook-extension/schema/tracker.json:281
+#: /packages/notebook-extension/schema/tracker.json:644
 msgid "Code Cell Configuration"
 msgstr "コードセルの設定"
 
-#: /packages/notebook-extension/schema/tracker.json:282
+#: /packages/notebook-extension/schema/tracker.json:645
 msgctxt "schema"
 msgid "The configuration for all code cells."
 msgstr "すべてのコードセルの構成。"
 
-#: /packages/notebook-extension/schema/tracker.json:302
+#: /packages/notebook-extension/schema/tracker.json:666
 msgid "Default cell type"
 msgstr "デフォルトのセルタイプ"
 
-#: /packages/notebook-extension/schema/tracker.json:303
+#: /packages/notebook-extension/schema/tracker.json:667
 msgctxt "schema"
 msgid "The default type (markdown, code, or raw) for new cells"
 msgstr "新規セルのデフォルトタイプ (Markdown、コード、またはraw)"
 
-#: /packages/notebook-extension/schema/tracker.json:309
+#: /packages/notebook-extension/schema/tracker.json:673
 msgid "Shut down kernel"
 msgstr "カーネルをシャットダウンする"
 
-#: /packages/notebook-extension/schema/tracker.json:310
+#: /packages/notebook-extension/schema/tracker.json:674
 msgctxt "schema"
 msgid "Whether to shut down or not the kernel when closing a notebook."
 msgstr "notebookを閉じるときにカーネルをシャットダウンするかどうか。"
 
-#: /packages/notebook-extension/schema/tracker.json:315
+#: /packages/notebook-extension/schema/tracker.json:679
 msgid "Markdown Cell Configuration"
 msgstr "Markdownセルの設定"
 
-#: /packages/notebook-extension/schema/tracker.json:316
+#: /packages/notebook-extension/schema/tracker.json:680
 msgctxt "schema"
 msgid "The configuration for all markdown cells."
 msgstr "すべてのmarkdownセルの構成。"
 
-#: /packages/notebook-extension/schema/tracker.json:336
+#: /packages/notebook-extension/schema/tracker.json:701
 msgid "Raw Cell Configuration"
 msgstr "Rawセルの設定"
 
-#: /packages/notebook-extension/schema/tracker.json:337
+#: /packages/notebook-extension/schema/tracker.json:702
 msgctxt "schema"
 msgid "The configuration for all raw cells."
 msgstr "すべてのrawセルの構成。"
 
-#: /packages/notebook-extension/schema/tracker.json:357
+#: /packages/notebook-extension/schema/tracker.json:723
 msgid "Scroll past last cell"
 msgstr "最後のセル以降までスクロール可"
 
-#: /packages/notebook-extension/schema/tracker.json:358
+#: /packages/notebook-extension/schema/tracker.json:724
 msgctxt "schema"
 msgid "Whether to be able to scroll so the last cell is at the top of the panel"
 msgstr "最後のセルがパネルの上部に表示されるまでスクロールが可能かを示します。"
 
-#: /packages/notebook-extension/schema/tracker.json:363
+#: /packages/notebook-extension/schema/tracker.json:729
 msgid "Recording timing"
 msgstr "タイミングの記録"
 
-#: /packages/notebook-extension/schema/tracker.json:364
+#: /packages/notebook-extension/schema/tracker.json:730
 msgctxt "schema"
 msgid "Should timing data be recorded in cell metadata"
 msgstr "セルのメタデータにタイミング データを記録するか否かを示します。"
+
+#: /packages/notebook-extension/schema/tracker.json:735
+msgid "Number of cells to render directly"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:736
+msgctxt "schema"
+msgid "Define the number of cells to render directly when virtual notebook intersection observer is available"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:741
+msgid "Render cell on browser idle time"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:742
+msgctxt "schema"
+msgid "Defines if the placeholder cells should be rendered when the browser is idle"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:747
+msgid "Observed top margin"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:748
+msgctxt "schema"
+msgid "Defines the observed top margin for the virtual notebook, set a positive number of pixels to render cells above the visible view"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:753
+msgid "Observed bottom margin"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:754
+msgctxt "schema"
+msgid "Defines the observed bottom margin for the virtual notebook, set a positive number of pixels to render cells below the visible view"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:759
+msgid "The maximum number of output cells to to be rendered in the output area. Set to 0 to have the complete display."
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:760
+msgctxt "schema"
+msgid "Defines the maximum number of output cells to to to be rendered in the output area for cells with many outputs. The output area will have a head and a tail, and the outputs between will be trimmed and not displayed unless the user clicks on the information message."
+msgstr ""
 
 #: /packages/settingeditor-extension/schema/plugin.json:2
 msgctxt "schema"
@@ -635,111 +887,148 @@ msgctxt "schema"
 msgid "Keyboard shortcut settings."
 msgstr "キーボードショートカットの設定。"
 
-#: /packages/statusbar-extension/schema/plugin.json:10
-msgctxt "schema"
-msgid "Whether to show status bar or not"
-msgstr "ステータスバーを表示するかどうか"
-
-#: /packages/statusbar-extension/schema/plugin.json:4
+#: /packages/statusbar-extension/schema/plugin.json:25
 msgctxt "schema"
 msgid "Status Bar"
 msgstr "ステータスバー"
 
-#: /packages/statusbar-extension/schema/plugin.json:5
+#: /packages/statusbar-extension/schema/plugin.json:26
 msgctxt "schema"
 msgid "Status Bar settings."
 msgstr "ステータスバーの設定。"
 
-#: /packages/statusbar-extension/schema/plugin.json:9
+#: /packages/statusbar-extension/schema/plugin.json:30
 msgid "Status Bar Visibility"
 msgstr "ステータスバーの表示"
 
-#: /packages/terminal-extension/schema/plugin.json:34
+#: /packages/statusbar-extension/schema/plugin.json:31
+msgctxt "schema"
+msgid "Whether to show status bar or not"
+msgstr "ステータスバーを表示するかどうか"
+
+#: /packages/terminal-extension/schema/plugin.json:114
 msgid "Font family"
 msgstr "フォントの種類"
 
-#: /packages/terminal-extension/schema/plugin.json:35
+#: /packages/terminal-extension/schema/plugin.json:115
 msgctxt "schema"
 msgid "The font family used to render text."
 msgstr "テキストの表示に使用されるフォントファミリー。"
 
-#: /packages/terminal-extension/schema/plugin.json:4
-msgctxt "schema"
-msgid "Terminal"
-msgstr "ターミナル"
-
-#: /packages/terminal-extension/schema/plugin.json:40
+#: /packages/terminal-extension/schema/plugin.json:120
 msgid "Font size"
 msgstr "文字サイズ"
 
-#: /packages/terminal-extension/schema/plugin.json:41
+#: /packages/terminal-extension/schema/plugin.json:121
 msgctxt "schema"
 msgid "The font size used to render text."
 msgstr "テキストの表示に使用されるフォントサイズ。"
 
-#: /packages/terminal-extension/schema/plugin.json:46
+#: /packages/terminal-extension/schema/plugin.json:126
 msgid "Line height"
 msgstr "行の高さ"
 
-#: /packages/terminal-extension/schema/plugin.json:47
+#: /packages/terminal-extension/schema/plugin.json:127
 msgctxt "schema"
 msgid "The line height used to render text."
 msgstr "テキストの描画に使用される行の高さ。"
 
-#: /packages/terminal-extension/schema/plugin.json:5
-msgctxt "schema"
-msgid "Terminal settings."
-msgstr "ターミナルの設定"
-
-#: /packages/terminal-extension/schema/plugin.json:53
+#: /packages/terminal-extension/schema/plugin.json:133
 msgctxt "schema"
 msgid "The theme for the terminal."
 msgstr "ターミナルのテーマ"
 
-#: /packages/terminal-extension/schema/plugin.json:58
+#: /packages/terminal-extension/schema/plugin.json:138
 msgid "Screen Reader Mode"
 msgstr "スクリーンリーダーモード"
 
-#: /packages/terminal-extension/schema/plugin.json:59
+#: /packages/terminal-extension/schema/plugin.json:139
 msgctxt "schema"
 msgid "Add accessibility elements for use with screen readers."
 msgstr "スクリーンリーダーを用いて使用するためのアクセシビリティ要素を追加します。"
 
-#: /packages/terminal-extension/schema/plugin.json:64
+#: /packages/terminal-extension/schema/plugin.json:144
 msgid "Scrollback Buffer"
 msgstr "スクロールバック バッファ"
 
-#: /packages/terminal-extension/schema/plugin.json:65
+#: /packages/terminal-extension/schema/plugin.json:145
 msgctxt "schema"
 msgid "The amount of scrollback beyond initial viewport"
 msgstr "最初のビューポート以前にスクロールバックが可能な値を示します。"
 
-#: /packages/terminal-extension/schema/plugin.json:70
+#: /packages/terminal-extension/schema/plugin.json:150
 msgid "Shut down on close"
 msgstr "閉じる際にシャットダウン"
 
-#: /packages/terminal-extension/schema/plugin.json:71
+#: /packages/terminal-extension/schema/plugin.json:151
 msgctxt "schema"
 msgid "Shut down the session when closing the terminal."
 msgstr "ターミナルを閉じる際にセッションをシャットダウンします。"
 
-#: /packages/terminal-extension/schema/plugin.json:76
+#: /packages/terminal-extension/schema/plugin.json:156
 msgid "Paste with Ctrl+V"
 msgstr "Ctrl+V でペースト"
 
-#: /packages/terminal-extension/schema/plugin.json:77
+#: /packages/terminal-extension/schema/plugin.json:157
 msgctxt "schema"
 msgid "Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available"
 msgstr "Ctrl+V によるペーストを有効にします。例えば、vi エディターで Ctrl+V を使用する場合はこの設定で無効にできます。 この設定は Cmd+V が利用可能な macOS には影響しません。"
 
-#: /packages/terminal-extension/schema/plugin.json:82
+#: /packages/terminal-extension/schema/plugin.json:162
 msgid "Treat option as meta key on macOS"
 msgstr "macOSでオプションキーをメタキーとして扱う"
 
-#: /packages/terminal-extension/schema/plugin.json:83
+#: /packages/terminal-extension/schema/plugin.json:163
 msgctxt "schema"
 msgid "Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word"
 msgstr "MacOSのoptionキーはメタキーとして使用できます。 option + f などのショートカットを使用して、カーソルを1単語前に移動することができます"
+
+#: /packages/terminal-extension/schema/plugin.json:84
+msgctxt "schema"
+msgid "Terminal"
+msgstr "ターミナル"
+
+#: /packages/terminal-extension/schema/plugin.json:85
+msgctxt "schema"
+msgid "Terminal settings."
+msgstr "ターミナルの設定"
+
+#: /packages/toc-extension/schema/plugin.json:14
+msgid "Include cell output in headings"
+msgstr ""
+
+#: /packages/toc-extension/schema/plugin.json:15
+msgctxt "schema"
+msgid "Whether to include cell output in headings"
+msgstr ""
+
+#: /packages/toc-extension/schema/plugin.json:21
+msgid "syncCollapseState"
+msgstr ""
+
+#: /packages/toc-extension/schema/plugin.json:22
+msgctxt "schema"
+msgid "If set to true, when a header is collapsed in the ToC the corresponding section in the notebook is collapsed as well and vice versa."
+msgstr ""
+
+#: /packages/toc-extension/schema/plugin.json:4
+msgctxt "schema"
+msgid "Table of Contents"
+msgstr ""
+
+#: /packages/toc-extension/schema/plugin.json:5
+msgctxt "schema"
+msgid "Table of contents settings."
+msgstr ""
+
+#: /packages/toc-extension/schema/plugin.json:8
+msgid "Enable h1 numbering"
+msgstr ""
+
+#: /packages/toc-extension/schema/plugin.json:9
+msgctxt "schema"
+msgid "Whether to number first level headings"
+msgstr ""
 
 #: /packages/tooltip-extension/schema/consoles.json:2
 msgctxt "schema"
@@ -771,374 +1060,473 @@ msgctxt "schema"
 msgid "Notebook tooltip settings."
 msgstr "Notebookのツールチップの設定。"
 
-#: /packages/translation-extension/schema/plugin.json:10
-msgid "Language locale"
-msgstr "言語のロケール"
-
-#: /packages/translation-extension/schema/plugin.json:11
-msgctxt "schema"
-msgid "Set the interface display language. Examples: 'es_CO', 'fr'."
-msgstr "インターフェイスの表示言語を設定します。例: 'es_CO', 'fr'"
-
-#: /packages/translation-extension/schema/plugin.json:16
-msgid "Localized strings prefix"
-msgstr "ローカライズされた文字列のプレフィックス"
-
-#: /packages/translation-extension/schema/plugin.json:17
-msgctxt "schema"
-msgid "Add a prefix to localized strings."
-msgstr "ローカライズした文字列にプレフィックスを追加します。"
-
-#: /packages/translation-extension/schema/plugin.json:22
-msgid "Display localized strings prefix"
-msgstr "ローカライズされた文字列のプレフィックスを表示"
-
-#: /packages/translation-extension/schema/plugin.json:23
-msgctxt "schema"
-msgid "Display the `stringsPrefix` on localized strings."
-msgstr "ローカライズされた文字列に `stringsPrefix` を表示します。"
-
-#: /packages/translation-extension/schema/plugin.json:4
+#: /packages/translation-extension/schema/plugin.json:29
 msgctxt "schema"
 msgid "Language"
 msgstr "言語"
 
-#: /packages/translation-extension/schema/plugin.json:5
+#: /packages/translation-extension/schema/plugin.json:30
 msgctxt "schema"
 msgid "Language settings."
 msgstr "言語設定。"
 
-#: packages/application-extension/src/index.tsx:147
+#: /packages/translation-extension/schema/plugin.json:35
+msgid "Language locale"
+msgstr "言語のロケール"
+
+#: /packages/translation-extension/schema/plugin.json:36
+msgctxt "schema"
+msgid "Set the interface display language. Examples: 'es_CO', 'fr'."
+msgstr "インターフェイスの表示言語を設定します。例: 'es_CO', 'fr'"
+
+#: /packages/translation-extension/schema/plugin.json:41
+msgid "Localized strings prefix"
+msgstr "ローカライズされた文字列のプレフィックス"
+
+#: /packages/translation-extension/schema/plugin.json:42
+msgctxt "schema"
+msgid "Add a prefix to localized strings."
+msgstr "ローカライズした文字列にプレフィックスを追加します。"
+
+#: /packages/translation-extension/schema/plugin.json:47
+msgid "Display localized strings prefix"
+msgstr "ローカライズされた文字列のプレフィックスを表示"
+
+#: /packages/translation-extension/schema/plugin.json:48
+msgctxt "schema"
+msgid "Display the `stringsPrefix` on localized strings."
+msgstr "ローカライズされた文字列に `stringsPrefix` を表示します。"
+
+#: packages/application-extension/src/index.tsx:106 packages/apputils-extension/src/index.ts:305 packages/documentsearch-extension/src/index.ts:216 packages/documentsearch-extension/src/index.ts:220 packages/documentsearch-extension/src/index.ts:224 packages/logconsole-extension/src/index.tsx:242 packages/mainmenu-extension/src/index.ts:222 packages/mainmenu-extension/src/index.ts:226 packages/mainmenu-extension/src/index.ts:236 packages/statusbar-extension/src/index.ts:74
+msgid "Main Area"
+msgstr "メインエリア"
+
+#: packages/application-extension/src/index.tsx:110
+msgid "Shift+Right Click for Browser Menu"
+msgstr "Shift+右クリックでブラウザメニュー"
+
+#: packages/application-extension/src/index.tsx:1143
+msgid "Switch Sidebar Side"
+msgstr "サイドバーの左右を切り替え"
+
+#: packages/application-extension/src/index.tsx:195
+msgid "Close Tab"
+msgstr "タブを閉じる"
+
+#: packages/application-extension/src/index.tsx:209
+msgid "Close All Other Tabs"
+msgstr "他のすべてのタブを閉じる"
+
+#: packages/application-extension/src/index.tsx:229
+msgid "Close Tabs to Right"
+msgstr "右側のタブをすべて閉じる"
+
+#: packages/application-extension/src/index.tsx:244
+msgid "Activate Next Tab"
+msgstr "右のタブをアクティブにする"
+
+#: packages/application-extension/src/index.tsx:251
+msgid "Activate Previous Tab"
+msgstr "左のタブをアクティブにする"
+
+#: packages/application-extension/src/index.tsx:258
+msgid "Activate Next Tab Bar"
+msgstr "右のタブバーをアクティブにする"
+
+#: packages/application-extension/src/index.tsx:265
+msgid "Activate Previous Tab Bar"
+msgstr "左のタブバーをアクティブにする"
+
+#: packages/application-extension/src/index.tsx:272
+msgid "Close All Tabs"
+msgstr "すべてのタブを閉じる"
+
+#: packages/application-extension/src/index.tsx:279
+msgid "Show Left Sidebar"
+msgstr "左のサイドバーを表示"
+
+#: packages/application-extension/src/index.tsx:295
+msgid "Show Right Sidebar"
+msgstr "右のサイドバーを表示"
+
+#: packages/application-extension/src/index.tsx:311
+msgid "Presentation Mode"
+msgstr "プレゼンテーションモード"
+
+#: packages/application-extension/src/index.tsx:335 packages/statusbar-extension/src/index.ts:361
+msgid "Simple Interface"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:416
 msgid "Error Registering Plugins"
 msgstr "プラグインの登録でエラーが発生"
 
-#: packages/application-extension/src/index.tsx:194 packages/extensionmanager/src/build-helper.tsx:31
+#: packages/application-extension/src/index.tsx:461 packages/extensionmanager/src/build-helper.tsx:27
 msgid "Build Complete"
 msgstr "ビルド完了"
 
-#: packages/application-extension/src/index.tsx:197 packages/extensionmanager/src/build-helper.tsx:34
+#: packages/application-extension/src/index.tsx:464 packages/extensionmanager/src/build-helper.tsx:30
 msgid "Build successfully completed, reload page?"
 msgstr "ビルドが正常に完了しました。ページを再読み込みしますか?"
 
-#: packages/application-extension/src/index.tsx:199 packages/extensionmanager/src/build-helper.tsx:36
+#: packages/application-extension/src/index.tsx:466 packages/extensionmanager/src/build-helper.tsx:32
 msgid "You will lose any unsaved changes."
 msgstr "保存されていない変更は全て失なわれます。"
 
-#: packages/application-extension/src/index.tsx:204 packages/extensionmanager/src/build-helper.tsx:41
+#: packages/application-extension/src/index.tsx:471 packages/extensionmanager/src/build-helper.tsx:37
 msgid "Reload Without Saving"
 msgstr "保存せずに再読み込み"
 
-#: packages/application-extension/src/index.tsx:207 packages/extensionmanager/src/build-helper.tsx:44
+#: packages/application-extension/src/index.tsx:474 packages/extensionmanager/src/build-helper.tsx:40
 msgid "Save and Reload"
 msgstr "保存して再読み込み"
 
-#: packages/application-extension/src/index.tsx:220 packages/extensionmanager/src/build-helper.tsx:57
+#: packages/application-extension/src/index.tsx:487 packages/extensionmanager/src/build-helper.tsx:53
 msgid "Save Failed"
 msgstr "保存に失敗しました"
 
-#: packages/application-extension/src/index.tsx:229 packages/extensionmanager/src/build-helper.tsx:67
+#: packages/application-extension/src/index.tsx:496 packages/extensionmanager/src/build-helper.tsx:63
 msgid "Build Failed"
 msgstr "ビルドに失敗しました"
 
-#: packages/application-extension/src/index.tsx:247
+#: packages/application-extension/src/index.tsx:514
 msgid "JupyterLab build is suggested:"
 msgstr "JupyterLabビルドが提案されています:"
 
-#: packages/application-extension/src/index.tsx:254
+#: packages/application-extension/src/index.tsx:521
 msgid "Build Recommended"
 msgstr "推奨ビルド"
 
-#: packages/application-extension/src/index.tsx:258
+#: packages/application-extension/src/index.tsx:525
 msgid "Build"
 msgstr "ビルド"
 
-#: packages/application-extension/src/index.tsx:264
+#: packages/application-extension/src/index.tsx:588
 msgid "Are you sure you want to exit JupyterLab?\n\n"
 "Any unsaved changes will be lost."
 msgstr "JupyterLabを終了してもよろしいですか？\n\n"
 "保存されていない変更はすべて失われます。"
 
-#: packages/application-extension/src/index.tsx:426
+#: packages/application-extension/src/index.tsx:756
 msgid "The path: %1 was not found. JupyterLab redirected to: %2"
 msgstr "パス: %1 が見つかりませんでした。JupyterLabは %2 にリダイレクトされます。"
 
-#: packages/application-extension/src/index.tsx:435
+#: packages/application-extension/src/index.tsx:765
 msgid "Path Not Found"
 msgstr "パスが見つかりません"
 
-#: packages/application-extension/src/index.tsx:521
-msgid "Switch Sidebar Side"
-msgstr "サイドバーの左右を切り替え"
-
-#: packages/application-extension/src/index.tsx:568 packages/documentsearch-extension/src/index.ts:218 packages/documentsearch-extension/src/index.ts:222 packages/documentsearch-extension/src/index.ts:226 packages/logconsole-extension/src/index.tsx:270 packages/mainmenu-extension/src/index.ts:218 packages/mainmenu-extension/src/index.ts:222 packages/mainmenu-extension/src/index.ts:233 packages/statusbar-extension/src/index.ts:89
-msgid "Main Area"
-msgstr "メインエリア"
-
-#: packages/application-extension/src/index.tsx:572
-msgid "Shift+Right Click for Browser Menu"
-msgstr "Shift+右クリックでブラウザメニュー"
-
-#: packages/application-extension/src/index.tsx:662
-msgid "Activate Next Tab"
-msgstr "右のタブをアクティブにする"
-
-#: packages/application-extension/src/index.tsx:669
-msgid "Activate Previous Tab"
-msgstr "左のタブをアクティブにする"
-
-#: packages/application-extension/src/index.tsx:676
-msgid "Activate Next Tab Bar"
-msgstr "右のタブバーをアクティブにする"
-
-#: packages/application-extension/src/index.tsx:683
-msgid "Activate Previous Tab Bar"
-msgstr "左のタブバーをアクティブにする"
-
-#: packages/application-extension/src/index.tsx:696
-msgid "Close Tab"
-msgstr "タブを閉じる"
-
-#: packages/application-extension/src/index.tsx:715
-msgid "Close All Tabs"
-msgstr "すべてのタブを閉じる"
-
-#: packages/application-extension/src/index.tsx:722
-msgid "Close All Other Tabs"
-msgstr "他のすべてのタブを閉じる"
-
-#: packages/application-extension/src/index.tsx:747
-msgid "Close Tabs to Right"
-msgstr "右側のタブをすべて閉じる"
-
-#: packages/application-extension/src/index.tsx:765
-msgid "Show Left Sidebar"
-msgstr "左のサイドバーを表示"
-
-#: packages/application-extension/src/index.tsx:781
-msgid "Show Right Sidebar"
-msgstr "右のサイドバーを表示"
-
-#: packages/application-extension/src/index.tsx:797
-msgid "Presentation Mode"
-msgstr "プレゼンテーションモード"
-
-#: packages/application-extension/src/index.tsx:821 packages/statusbar-extension/src/index.ts:379
-msgid "Simple Interface"
-msgstr ""
-
-#: packages/application-extension/src/index.tsx:935
+#: packages/application-extension/src/index.tsx:891
 msgid "Property Inspector"
 msgstr "プロパティインスペクタ"
 
-#: packages/application/src/connectionlost.ts:22
+#: packages/application-extension/src/index.tsx:947 packages/mainmenu-extension/src/index.ts:876
+msgid "Information"
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:948
+msgid "Context menu customization has changed. You will need to reload JupyterLab to see the changes."
+msgstr ""
+
+#: packages/application-extension/src/index.tsx:953 packages/docmanager-extension/src/index.ts:585 packages/mainmenu-extension/src/index.ts:882
+msgid "Reload"
+msgstr "再読込"
+
+#: packages/application/src/connectionlost.ts:19
 msgid "Server Connection Error"
 msgstr "サーバー接続のエラー"
 
-#: packages/application/src/connectionlost.ts:23
+#: packages/application/src/connectionlost.ts:20
 msgid "A connection to the Jupyter server could not be established.\n"
 "JupyterLab will continue trying to reconnect.\n"
 "Check your network connection or Jupyter server configuration.\n"
 msgstr "Jupyterサーバへ接続できません。JupyterLabは引き続き接続を試みます。ネットワーク接続とJupyterサーバの設定を確認してください。\n"
 
-#: packages/apputils-extension/src/index.ts:212
-msgid "Loading..."
-msgstr "読み込み中…"
+#: packages/application/src/shell.ts:238
+msgid "main"
+msgstr ""
 
-#: packages/apputils-extension/src/index.ts:213
-msgid "The loading screen is taking a long time. \n"
+#: packages/application/src/shell.ts:270 packages/application/src/shell.ts:274
+msgid "main sidebar"
+msgstr ""
+
+#: packages/application/src/shell.ts:283 packages/application/src/shell.ts:287
+msgid "alternate sidebar"
+msgstr ""
+
+#: packages/apputils-extension/src/index.ts:207
+msgid "Loading…"
+msgstr ""
+
+#: packages/apputils-extension/src/index.ts:208
+msgid "The loading screen is taking a long time.\n"
 "Would you like to clear the workspace or keep waiting?"
-msgstr "画面の読み込みに時間がかかっています。\n"
-"ワークスペースをクリアしますか、それとも待ち続けますか?"
+msgstr ""
 
-#: packages/apputils-extension/src/index.ts:216
+#: packages/apputils-extension/src/index.ts:211
 msgid "Keep Waiting"
 msgstr "お待ちください"
 
-#: packages/apputils-extension/src/index.ts:217
+#: packages/apputils-extension/src/index.ts:212
 msgid "Clear Workspace"
 msgstr "ワークスペースのクリア"
 
-#: packages/apputils-extension/src/index.ts:282
-msgid "Print..."
-msgstr "印刷..."
+#: packages/apputils-extension/src/index.ts:277
+msgid "Print…"
+msgstr ""
 
-#: packages/apputils-extension/src/index.ts:407
+#: packages/apputils-extension/src/index.ts:307
+msgid "Show Header Above Content"
+msgstr ""
+
+#: packages/apputils-extension/src/index.ts:468
 msgid "Reset Application State"
 msgstr "アプリケーションの状態をリセット"
 
-#: packages/apputils-extension/src/index.ts:504
+#: packages/apputils-extension/src/index.ts:559
 msgid "Run First Enabled Command"
 msgstr "最初の有効化されたコマンドを実行"
 
-#: packages/apputils-extension/src/palette.ts:145
+#: packages/apputils-extension/src/index.ts:575
+msgid "Run All Enabled Commands Passed as Args"
+msgstr ""
+
+#: packages/apputils-extension/src/palette.ts:101
+msgid "Command Palette Section"
+msgstr ""
+
+#: packages/apputils-extension/src/palette.ts:142
 msgid "Commands (%1)"
 msgstr "コマンド (%1)"
 
-#: packages/apputils-extension/src/palette.ts:147 packages/apputils-extension/src/palette.ts:212
+#: packages/apputils-extension/src/palette.ts:144 packages/apputils-extension/src/palette.ts:209
 msgid "Commands"
 msgstr "コマンド"
 
-#: packages/apputils-extension/src/palette.ts:163
+#: packages/apputils-extension/src/palette.ts:160
 msgid "Activate Command Palette"
 msgstr "コマンドパレットを有効にする"
 
-#: packages/apputils-extension/src/palette.ts:166 packages/extensionmanager/src/widget.tsx:744
+#: packages/apputils-extension/src/palette.ts:163 packages/extensionmanager/src/widget.tsx:742
 msgid "SEARCH"
 msgstr "検索"
 
-#: packages/apputils-extension/src/palette.ts:50
+#: packages/apputils-extension/src/palette.ts:42
 msgid "Command Palette"
 msgstr "コマンドパレット"
 
-#: packages/apputils-extension/src/themesplugins.ts:110
+#: packages/apputils-extension/src/themesplugins.ts:103
 msgid "Theme Scrollbars"
 msgstr "テーマのスクロールバー"
 
-#: packages/apputils-extension/src/themesplugins.ts:117
+#: packages/apputils-extension/src/themesplugins.ts:110
 msgid "waiting for fonts"
 msgstr ""
 
-#: packages/apputils-extension/src/themesplugins.ts:165
-msgid "JupyterLab Theme"
-msgstr "JupyterLab テーマ"
-
-#: packages/apputils-extension/src/themesplugins.ts:186 packages/apputils-extension/src/themesplugins.ts:262
+#: packages/apputils-extension/src/themesplugins.ts:121
 msgid "Increase Code Font Size"
 msgstr "コードのフォントサイズを大きくする"
 
-#: packages/apputils-extension/src/themesplugins.ts:193 packages/apputils-extension/src/themesplugins.ts:270
-msgid "Decrease Code Font Size"
-msgstr "コードのフォントサイズを小さくする"
-
-#: packages/apputils-extension/src/themesplugins.ts:203 packages/apputils-extension/src/themesplugins.ts:279
+#: packages/apputils-extension/src/themesplugins.ts:123
 msgid "Increase Content Font Size"
 msgstr "内容のフォントサイズを大きくする"
 
-#: packages/apputils-extension/src/themesplugins.ts:210 packages/apputils-extension/src/themesplugins.ts:287
-msgid "Decrease Content Font Size"
-msgstr "内容のフォントサイズを小さくする"
-
-#: packages/apputils-extension/src/themesplugins.ts:220 packages/apputils-extension/src/themesplugins.ts:296
+#: packages/apputils-extension/src/themesplugins.ts:125
 msgid "Increase UI Font Size"
 msgstr "UIのフォントサイズを大きくする"
 
-#: packages/apputils-extension/src/themesplugins.ts:227 packages/apputils-extension/src/themesplugins.ts:304
+#: packages/apputils-extension/src/themesplugins.ts:127 packages/fileeditor-extension/src/commands.ts:304
+msgid "Increase Font Size"
+msgstr "フォントを大きく"
+
+#: packages/apputils-extension/src/themesplugins.ts:137
+msgid "Decrease Code Font Size"
+msgstr "コードのフォントサイズを小さくする"
+
+#: packages/apputils-extension/src/themesplugins.ts:139
+msgid "Decrease Content Font Size"
+msgstr "内容のフォントサイズを小さくする"
+
+#: packages/apputils-extension/src/themesplugins.ts:141
 msgid "Decrease UI Font Size"
 msgstr "UIのフォントサイズを小さくする"
 
-#: packages/apputils-extension/src/themesplugins.ts:96
+#: packages/apputils-extension/src/themesplugins.ts:143 packages/fileeditor-extension/src/commands.ts:308
+msgid "Decrease Font Size"
+msgstr "フォントサイズを小さく"
+
+#: packages/apputils-extension/src/themesplugins.ts:89
 msgid "Use Theme: %1"
 msgstr "テーマを使用: %1"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:105
-msgid "Save Current Workspace"
-msgstr "現在のワークスペースを保存"
-
-#: packages/apputils-extension/src/workspacesplugin.ts:213
+#: packages/apputils-extension/src/workspacesplugin.ts:189
 msgid "Workspace loader"
 msgstr "ワークスペース ローダ"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:286 packages/apputils-extension/src/workspacesplugin.ts:292 packages/docmanager/src/widgetmanager.ts:378 packages/docregistry/src/context.ts:879 packages/docregistry/src/context.ts:886
+#: packages/apputils-extension/src/workspacesplugin.ts:274 packages/apputils-extension/src/workspacesplugin.ts:280 packages/docmanager/src/widgetmanager.ts:371 packages/docregistry/src/context.ts:971 packages/docregistry/src/context.ts:978
 msgid "Save"
 msgstr "保存"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:288 packages/apputils-extension/src/workspacesplugin.ts:91
-msgid "Save Current Workspace As..."
-msgstr "現在のワークスペースを名前を付けて保存..."
+#: packages/apputils-extension/src/workspacesplugin.ts:276 packages/apputils-extension/src/workspacesplugin.ts:82
+msgid "Save Current Workspace As…"
+msgstr ""
 
-#: packages/apputils-extension/src/workspacesplugin.ts:290 packages/apputils/src/sessioncontext.tsx:1204 packages/docmanager-extension/src/index.ts:523 packages/docmanager-extension/src/index.ts:573 packages/docmanager-extension/src/index.ts:813 packages/docmanager/src/dialogs.ts:118 packages/docmanager/src/dialogs.ts:58 packages/docmanager/src/widgetmanager.ts:384 packages/extensionmanager/src/companions.tsx:218 packages/filebrowser/src/listing.ts:422 packages/filebrowser/src/model.ts:451 packages/filebrowser/src/opendialog.ts:83 packages/notebook/src/actions.tsx:1413 packages/running/src/index.tsx:238 packages/settingeditor/src/plugineditor.ts:148 packages/translation-extension/src/index.ts:144
+#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1217 packages/debugger-extension/src/index.ts:469 packages/debugger/src/panels/breakpoints/index.ts:51 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:847 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:448 packages/filebrowser/src/opendialog.ts:81 packages/notebook/src/actions.tsx:1762 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/translation-extension/src/index.ts:132
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:74
+#: packages/apputils-extension/src/workspacesplugin.ts:75
 msgid "JupyterLab workspace File"
 msgstr "JupyterLab ワークスペースファイル"
 
-#: packages/apputils/src/sessioncontext.tsx:1205 packages/apputils/src/sessioncontext.tsx:1206 packages/apputils/src/sessioncontext.tsx:1226 packages/apputils/src/sessioncontext.tsx:1590 packages/apputils/src/sessioncontext.tsx:488 packages/apputils/src/sessioncontext.tsx:489 packages/apputils/src/sessioncontext.tsx:509 packages/apputils/src/sessioncontext.tsx:518 packages/apputils/src/sessioncontext.tsx:544 packages/apputils/src/sessioncontext.tsx:669
-msgid "No Kernel"
-msgstr "カーネルがありません"
+#: packages/apputils-extension/src/workspacesplugin.ts:96
+msgid "Save Current Workspace"
+msgstr "現在のワークスペースを保存"
 
-#: packages/apputils/src/sessioncontext.tsx:1210 packages/filebrowser/src/opendialog.ts:85
+#: packages/apputils/src/mainareawidget.ts:42
+msgid "notebook content"
+msgstr ""
+
+#: packages/apputils/src/mainareawidget.ts:45
+msgid "notebook actions"
+msgstr ""
+
+#: packages/apputils/src/sessioncontext.tsx:1223 packages/filebrowser/src/opendialog.ts:83
 msgid "Select"
 msgstr "選択"
 
-#: packages/apputils/src/sessioncontext.tsx:1214
+#: packages/apputils/src/sessioncontext.tsx:1227
 msgid "Select Kernel"
 msgstr "カーネルを選択"
 
-#: packages/apputils/src/sessioncontext.tsx:1270
+#: packages/apputils/src/sessioncontext.tsx:1280
 msgid "Restart Kernel?"
 msgstr "カーネルを再起動しますか？"
 
-#: packages/apputils/src/sessioncontext.tsx:1271
+#: packages/apputils/src/sessioncontext.tsx:1281
 msgid "Do you want to restart the current kernel? All variables will be lost."
 msgstr "現在のカーネルを再起動しますか？変数はすべて失われます。"
 
-#: packages/apputils/src/sessioncontext.tsx:1325
+#: packages/apputils/src/sessioncontext.tsx:1335
 msgid "Select kernel for:"
 msgstr "次のカーネルを選択:"
 
-#: packages/apputils/src/sessioncontext.tsx:1459
+#: packages/apputils/src/sessioncontext.tsx:1475
 msgid "Start Preferred Kernel"
 msgstr "優先するカーネルを起動"
 
-#: packages/apputils/src/sessioncontext.tsx:1474
+#: packages/apputils/src/sessioncontext.tsx:1490
 msgid "Start Other Kernel"
 msgstr "他のカーネルを起動"
 
-#: packages/apputils/src/sessioncontext.tsx:1523
+#: packages/apputils/src/sessioncontext.tsx:1547
 msgid "Use Kernel from Preferred Session"
 msgstr "優先するセッションのカーネルを使用する"
 
-#: packages/apputils/src/sessioncontext.tsx:1538
+#: packages/apputils/src/sessioncontext.tsx:1562
 msgid "Use Kernel from Other Session"
 msgstr "他のセッションのカーネルを使用する"
 
 #: packages/apputils/src/sessioncontext.tsx:1612
+msgid "Use No Kernel"
+msgstr ""
+
+#: packages/apputils/src/sessioncontext.tsx:1614 packages/apputils/src/sessioncontext.tsx:601 packages/statusbar/src/defaults/kernelStatus.tsx:187
+msgid "No Kernel"
+msgstr "カーネルがありません"
+
+#: packages/apputils/src/sessioncontext.tsx:1636
 msgid "Path:"
 msgstr "パス:"
 
-#: packages/apputils/src/sessioncontext.tsx:1613
+#: packages/apputils/src/sessioncontext.tsx:1637
 msgid "Name:"
 msgstr "名前:"
 
-#: packages/apputils/src/sessioncontext.tsx:1614
+#: packages/apputils/src/sessioncontext.tsx:1638
 msgid "Kernel Name:"
 msgstr "カーネル名:"
 
-#: packages/apputils/src/sessioncontext.tsx:1615
+#: packages/apputils/src/sessioncontext.tsx:1639
 msgid "Kernel Id:"
 msgstr "カーネルID:"
 
-#: packages/apputils/src/sessioncontext.tsx:953
+#: packages/apputils/src/sessioncontext.tsx:967
 msgid "Error Starting Kernel"
 msgstr "カーネルの起動エラー"
 
-#: packages/apputils/src/thememanager.ts:371
+#: packages/apputils/src/thememanager.ts:362
 msgid "Neither theme %1 nor default %2 loaded."
 msgstr "テーマ %1 もデフォルトテーマ %2 も読み込まれていません。"
 
-#: packages/apputils/src/thememanager.ts:448
+#: packages/apputils/src/thememanager.ts:439
 msgid "Error Loading Theme"
 msgstr "テーマの読み込みエラー"
 
-#: packages/apputils/src/thememanager.ts:450 packages/docmanager-extension/src/index.ts:684 packages/extensionmanager/src/companions.tsx:220 packages/extensionmanager/src/dialog.tsx:41 packages/extensionmanager/src/widget.tsx:356 packages/extensionmanager/src/widget.tsx:357
+#: packages/apputils/src/thememanager.ts:441 packages/docmanager-extension/src/index.ts:362 packages/extensionmanager/src/companions.tsx:218 packages/extensionmanager/src/dialog.tsx:39 packages/extensionmanager/src/widget.tsx:354 packages/extensionmanager/src/widget.tsx:355
 msgid "OK"
 msgstr ""
 
-#: packages/apputils/src/toolbar.tsx:386
+#: packages/apputils/src/toolbar.tsx:383
 msgid "Interrupt the kernel"
 msgstr "カーネルを中断"
 
-#: packages/apputils/src/toolbar.tsx:408
+#: packages/apputils/src/toolbar.tsx:405
 msgid "Restart the kernel"
 msgstr "カーネルを再起動"
 
-#: packages/apputils/src/toolbar.tsx:746
+#: packages/apputils/src/toolbar.tsx:749
 msgid "Switch kernel"
 msgstr "カーネルを切り替え"
 
-#: packages/apputils/src/toolbar.tsx:786
+#: packages/apputils/src/toolbar.tsx:771 packages/statusbar/src/defaults/kernelStatus.tsx:124
+msgid "Unknown"
+msgstr ""
+
+#: packages/apputils/src/toolbar.tsx:772 packages/statusbar/src/defaults/kernelStatus.tsx:125
+msgid "Starting"
+msgstr ""
+
+#: packages/apputils/src/toolbar.tsx:773 packages/statusbar/src/defaults/kernelStatus.tsx:126
+msgid "Idle"
+msgstr ""
+
+#: packages/apputils/src/toolbar.tsx:774 packages/statusbar/src/defaults/kernelStatus.tsx:127
+msgid "Busy"
+msgstr ""
+
+#: packages/apputils/src/toolbar.tsx:775 packages/statusbar/src/defaults/kernelStatus.tsx:128
+msgid "Terminating"
+msgstr ""
+
+#: packages/apputils/src/toolbar.tsx:776 packages/statusbar/src/defaults/kernelStatus.tsx:129
+msgid "Restarting"
+msgstr ""
+
+#: packages/apputils/src/toolbar.tsx:777 packages/statusbar/src/defaults/kernelStatus.tsx:130
+msgid "Autorestarting"
+msgstr ""
+
+#: packages/apputils/src/toolbar.tsx:778 packages/statusbar/src/defaults/kernelStatus.tsx:131
+msgid "Dead"
+msgstr ""
+
+#: packages/apputils/src/toolbar.tsx:779 packages/statusbar/src/defaults/kernelStatus.tsx:132
+msgid "Connected"
+msgstr ""
+
+#: packages/apputils/src/toolbar.tsx:780 packages/statusbar/src/defaults/kernelStatus.tsx:133
+msgid "Connecting"
+msgstr ""
+
+#: packages/apputils/src/toolbar.tsx:781 packages/statusbar/src/defaults/kernelStatus.tsx:134
+msgid "Disconnected"
+msgstr ""
+
+#: packages/apputils/src/toolbar.tsx:782 packages/statusbar/src/defaults/kernelStatus.tsx:135
+msgid "Initializing"
+msgstr ""
+
+#: packages/apputils/src/toolbar.tsx:805
 msgid "Kernel %1"
 msgstr "カーネル %1"
 
@@ -1150,239 +1538,155 @@ msgstr "タグの追加"
 msgid "Cell Tags"
 msgstr ""
 
-#: packages/codeeditor/src/jsoneditor.ts:313 packages/codeeditor/src/jsoneditor.ts:80
+#: packages/codeeditor/src/jsoneditor.ts:311 packages/codeeditor/src/jsoneditor.ts:78
 msgid "No data!"
 msgstr "データがありません!"
 
-#: packages/codeeditor/src/jsoneditor.ts:60
+#: packages/codeeditor/src/jsoneditor.ts:58
 msgid "Revert changes to data"
 msgstr "データの変更を元に戻す"
 
-#: packages/codeeditor/src/jsoneditor.ts:65
+#: packages/codeeditor/src/jsoneditor.ts:63
 msgid "Commit changes to data"
 msgstr "データに変更を反映させる"
 
-#: packages/codemirror-extension/src/index.ts:305
-msgid "Text Editor Theme"
-msgstr "テキストエディタのテーマ"
-
-#: packages/codemirror-extension/src/index.ts:306
-msgid "Text Editor Key Map"
-msgstr "テキストエディタのキーマップ"
-
-#: packages/codemirror-extension/src/index.ts:307
-msgid "Text Editor Syntax Highlighting"
-msgstr "テキストエディタのシンタックスハイライト"
-
-#: packages/codemirror-extension/src/index.ts:312
+#: packages/codemirror-extension/src/index.ts:297
 msgid "codemirror"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:332
+#: packages/codemirror-extension/src/index.ts:314
 msgid "Sublime Text"
 msgstr ""
 
-#: packages/codemirror-extension/src/index.ts:346
-msgid "Find..."
-msgstr "検索..."
+#: packages/codemirror-extension/src/index.ts:329 packages/documentsearch-extension/src/index.ts:142
+msgid "Find…"
+msgstr "検索…"
 
-#: packages/codemirror-extension/src/index.ts:359
-msgid "Go to Line..."
+#: packages/codemirror-extension/src/index.ts:342 packages/mainmenu-extension/src/index.ts:307
+msgid "Go to Line…"
 msgstr "行へ移動..."
 
-#: packages/codemirror-extension/src/index.ts:415
-msgid "jupyter"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:416 packages/codemirror-extension/src/index.ts:439 packages/docregistry/src/registry.ts:1261
-msgid "default"
-msgstr "デフォルト"
-
-#: packages/codemirror-extension/src/index.ts:417
-msgid "abcdef"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:418
-msgid "base16-dark"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:419
-msgid "base16-light"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:420
-msgid "hopscotch"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:421
-msgid "material"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:422
-msgid "mbo"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:423
-msgid "mdn-like"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:424
-msgid "seti"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:425
-msgid "solarized dark"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:426
-msgid "solarized light"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:427
-msgid "the-matrix"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:428
-msgid "xq-light"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:429
-msgid "zenburn"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:440
-msgid "sublime"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:441
-msgid "vim"
-msgstr ""
-
-#: packages/codemirror-extension/src/index.ts:442
-msgid "emacs"
-msgstr ""
-
-#: packages/codemirror/src/editor.ts:1079
+#: packages/codemirror/src/editor.ts:1139
 msgid "Code Editor out of Sync"
 msgstr "コードエディタが同期していません"
 
-#: packages/codemirror/src/editor.ts:1080
+#: packages/codemirror/src/editor.ts:1140
 msgid "Please open your browser JavaScript console for bug report instructions"
 msgstr "バグレポートの手順については、ブラウザのJavaScriptコンソールを開いてください"
 
-#: packages/codemirror/src/syntaxstatus.tsx:75
+#: packages/codemirror/src/syntaxstatus.tsx:66
 msgid "Change text editor syntax highlighting"
 msgstr "テキストエディタのシンタックスハイライトを変更"
 
-#: packages/console-extension/src/foreign.ts:71 packages/console-extension/src/index.ts:170 packages/console-extension/src/index.ts:222 packages/console-extension/src/index.ts:380 packages/console/src/panel.ts:333 packages/launcher/src/index.tsx:159 packages/launcher/src/index.tsx:164
+#: packages/console-extension/src/foreign.ts:65 packages/console-extension/src/index.ts:156 packages/console-extension/src/index.ts:208 packages/console-extension/src/index.ts:466 packages/console/src/panel.ts:331 packages/launcher/src/index.tsx:150 packages/launcher/src/index.tsx:155
 msgid "Console"
 msgstr "コンソール"
 
-#: packages/console-extension/src/index.ts:369
+#: packages/console-extension/src/index.ts:401
+msgid "Auto Close Brackets for Code Console Prompt"
+msgstr ""
+
+#: packages/console-extension/src/index.ts:455
 msgid "New Console"
 msgstr "新規コンソール"
 
-#: packages/console-extension/src/index.ts:404
+#: packages/console-extension/src/index.ts:490
 msgid "Clear Console Cells"
 msgstr "コンソールのセルを消去"
 
-#: packages/console-extension/src/index.ts:416
+#: packages/console-extension/src/index.ts:502
 msgid "Run Cell (unforced)"
 msgstr "セルを実行 (未強制)"
 
-#: packages/console-extension/src/index.ts:428
+#: packages/console-extension/src/index.ts:514
 msgid "Run Cell (forced)"
 msgstr "セルの実行 (強制)"
 
-#: packages/console-extension/src/index.ts:440
+#: packages/console-extension/src/index.ts:526
 msgid "Insert Line Break"
 msgstr "改行を挿入"
 
-#: packages/console-extension/src/index.ts:452
+#: packages/console-extension/src/index.ts:538
 msgid "Replace Selection in Console"
 msgstr "コンソールで選択範囲を置き換え"
 
-#: packages/console-extension/src/index.ts:465 packages/mainmenu-extension/src/index.ts:516 packages/notebook-extension/src/index.ts:1381
+#: packages/console-extension/src/index.ts:551 packages/mainmenu-extension/src/index.ts:452 packages/notebook-extension/src/index.ts:1620
 msgid "Interrupt Kernel"
 msgstr "カーネルを中断"
 
-#: packages/console-extension/src/index.ts:480 packages/mainmenu-extension/src/index.ts:536 packages/notebook-extension/src/index.ts:1212
+#: packages/console-extension/src/index.ts:566 packages/mainmenu-extension/src/index.ts:472 packages/notebook-extension/src/index.ts:1492
 msgid "Restart Kernel…"
 msgstr "カーネルを再起動…"
 
-#: packages/console-extension/src/index.ts:495
+#: packages/console-extension/src/index.ts:581
 msgid "Close and Shut Down…"
 msgstr "閉じてシャットダウン…"
 
-#: packages/console-extension/src/index.ts:502
+#: packages/console-extension/src/index.ts:588
 msgid "Shut down the console?"
 msgstr "コンソールをシャットダウンしますか?"
 
-#: packages/console-extension/src/index.ts:503 packages/console-extension/src/index.ts:585 packages/notebook-extension/src/index.ts:1235 packages/notebook-extension/src/index.ts:2154
+#: packages/console-extension/src/index.ts:589 packages/console-extension/src/index.ts:668 packages/notebook-extension/src/index.ts:1515 packages/notebook-extension/src/index.ts:2371
 msgid "Are you sure you want to close \"%1\"?"
 msgstr "\"%1\" を閉じてもよろしいですか?"
 
-#: packages/console-extension/src/index.ts:543 packages/mainmenu-extension/src/index.ts:571 packages/notebook-extension/src/index.ts:1706
+#: packages/console-extension/src/index.ts:629 packages/mainmenu-extension/src/index.ts:507 packages/notebook-extension/src/index.ts:1967
 msgid "Change Kernel…"
 msgstr "カーネルを変更…"
 
-#: packages/console-extension/src/index.ts:581
+#: packages/console-extension/src/index.ts:664
 msgid "Shutdown Console"
 msgstr "コンソールをシャットダウン"
 
-#: packages/console-extension/src/index.ts:584
+#: packages/console-extension/src/index.ts:667
 msgid "Shut down the Console?"
 msgstr "コンソールをシャットダウンしますか?"
 
-#: packages/console-extension/src/index.ts:606
+#: packages/console-extension/src/index.ts:689
 msgid "Restart Kernel and Clear Console"
 msgstr "カーネルを再起動してコンソールをクリア"
 
-#: packages/console-extension/src/index.ts:637
+#: packages/console-extension/src/index.ts:720
 msgid "Run Cell"
 msgstr "セルを実行"
 
-#: packages/console-extension/src/index.ts:644
+#: packages/console-extension/src/index.ts:727
 msgid "Clear Console Cell"
 msgstr "コンソールのセルを消去"
 
-#: packages/console-extension/src/index.ts:657
+#: packages/console-extension/src/index.ts:740
 msgid "Execute with Shift+Enter"
 msgstr "Shift+Enter で実行"
 
-#: packages/console-extension/src/index.ts:658
+#: packages/console-extension/src/index.ts:741
 msgid "Execute with Enter"
 msgstr "Enter で実行"
 
-#: packages/console-extension/src/index.ts:680
-msgid "Console Run Keystroke"
-msgstr "コンソールにおけるキー入力の実行"
-
-#: packages/console/src/panel.ts:316
+#: packages/console/src/panel.ts:314
 msgid "Name: %1\n"
 msgstr "名前: %1\n"
 
-#: packages/console/src/panel.ts:317
+#: packages/console/src/panel.ts:315
 msgid "Directory: %1\n"
 msgstr "ディレクトリ: %1\n"
 
-#: packages/console/src/panel.ts:318
+#: packages/console/src/panel.ts:316
 msgid "Kernel: %1"
 msgstr "カーネル: %1"
 
-#: packages/console/src/panel.ts:321
+#: packages/console/src/panel.ts:319
 msgid "\n"
 "Connected: %1"
 msgstr "\n"
 "接続: %1"
 
-#: packages/console/src/panel.ts:328
+#: packages/console/src/panel.ts:326
 msgid "\n"
 "Last Execution: %1"
 msgstr "\n"
 "最後の実行: %1"
 
-#: packages/console/src/panel.ts:69
+#: packages/console/src/panel.ts:67
 msgid "Console %1"
 msgstr "コンソール %1"
 
@@ -1390,47 +1694,59 @@ msgstr "コンソール %1"
 msgid "Go to Line"
 msgstr "行へ移動"
 
-#: packages/csvviewer/src/toolbar.ts:128
+#: packages/csvviewer/src/toolbar.ts:124
 msgid "tab"
 msgstr "タブ"
 
-#: packages/csvviewer/src/toolbar.ts:129
+#: packages/csvviewer/src/toolbar.ts:125
 msgid "pipe"
 msgstr "パイプ (\"|\")"
 
-#: packages/csvviewer/src/toolbar.ts:130
+#: packages/csvviewer/src/toolbar.ts:126
 msgid "hash"
 msgstr "ハッシュ (\"#\")"
 
-#: packages/csvviewer/src/toolbar.ts:136
+#: packages/csvviewer/src/toolbar.ts:132
 msgid "Delimiter: "
 msgstr "区切り文字: "
 
-#: packages/debugger-extension/src/index.ts:294 packages/debugger-extension/src/index.ts:295
+#: packages/debugger-extension/src/index.ts:290 packages/debugger-extension/src/index.ts:291
 msgid "Inspect Variable"
 msgstr "変数を調べる"
 
-#: packages/debugger-extension/src/index.ts:439 packages/debugger-extension/src/index.ts:440
+#: packages/debugger-extension/src/index.ts:458 packages/debugger-extension/src/index.ts:459 packages/debugger-extension/src/index.ts:467
+msgid "Evaluate Code"
+msgstr ""
+
+#: packages/debugger-extension/src/index.ts:468
+msgid "Evaluate"
+msgstr ""
+
+#: packages/debugger-extension/src/index.ts:495 packages/debugger-extension/src/index.ts:496
 msgid "Continue"
 msgstr "続行"
 
-#: packages/debugger-extension/src/index.ts:452 packages/debugger-extension/src/index.ts:453
+#: packages/debugger-extension/src/index.ts:508 packages/debugger-extension/src/index.ts:509
 msgid "Terminate"
 msgstr "停止"
 
-#: packages/debugger-extension/src/index.ts:465 packages/debugger-extension/src/index.ts:466
+#: packages/debugger-extension/src/index.ts:521 packages/debugger-extension/src/index.ts:522
 msgid "Next"
 msgstr "次へ"
 
-#: packages/debugger-extension/src/index.ts:477 packages/debugger-extension/src/index.ts:478
+#: packages/debugger-extension/src/index.ts:533 packages/debugger-extension/src/index.ts:534
 msgid "Step In"
 msgstr "ステップイン"
 
-#: packages/debugger-extension/src/index.ts:489 packages/debugger-extension/src/index.ts:490
+#: packages/debugger-extension/src/index.ts:545 packages/debugger-extension/src/index.ts:546
 msgid "Step Out"
 msgstr "ステップアウト"
 
-#: packages/debugger-extension/src/index.ts:518
+#: packages/debugger-extension/src/index.ts:572
+msgid "Debugger section"
+msgstr ""
+
+#: packages/debugger-extension/src/index.ts:577
 msgid "Debugger"
 msgstr "デバッガ"
 
@@ -1438,19 +1754,27 @@ msgstr "デバッガ"
 msgid "Enable / Disable Debugger"
 msgstr "デバッガーの有効化/無効化"
 
-#: packages/debugger/src/panels/breakpoints/header.ts:23
+#: packages/debugger/src/panels/breakpoints/header.ts:25
 msgid "Breakpoints"
 msgstr "ブレークポイント"
 
-#: packages/debugger/src/panels/breakpoints/index.ts:45
+#: packages/debugger/src/panels/breakpoints/index.ts:47 packages/debugger/src/panels/breakpoints/index.ts:59
 msgid "Remove All Breakpoints"
 msgstr "すべてのブレークポイントを削除する"
 
-#: packages/debugger/src/panels/callstack/header.ts:23
+#: packages/debugger/src/panels/breakpoints/index.ts:48
+msgid "Are you sure you want to remove all breakpoints?"
+msgstr ""
+
+#: packages/debugger/src/panels/breakpoints/index.ts:50
+msgid "Remove breakpoints"
+msgstr ""
+
+#: packages/debugger/src/panels/callstack/header.ts:25
 msgid "Callstack"
 msgstr "コールスタック"
 
-#: packages/debugger/src/panels/sources/header.tsx:32
+#: packages/debugger/src/panels/sources/header.tsx:34
 msgid "Source"
 msgstr "ソース"
 
@@ -1458,7 +1782,7 @@ msgstr "ソース"
 msgid "Open in the Main Area"
 msgstr "メインエリアで開く"
 
-#: packages/debugger/src/panels/variables/header.ts:23
+#: packages/debugger/src/panels/variables/header.ts:25
 msgid "Variables"
 msgstr "変数"
 
@@ -1474,7 +1798,7 @@ msgstr ""
 msgid "Scope"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:235
+#: packages/docmanager-extension/src/index.ts:226
 msgid "Overrides for the default viewers for file types.\n"
 "Specify a mapping from file type name to document viewer name, for example:\n\n"
 "defaultViewers: {\n"
@@ -1497,339 +1821,351 @@ msgstr "各ファイルタイプに対するデフォルトのビューワー設
 "利用可能なファイルタイプ:\n"
 "%2"
 
-#: packages/docmanager-extension/src/index.ts:393 packages/filebrowser-extension/src/index.ts:636 packages/filebrowser-extension/src/index.ts:921 packages/htmlviewer-extension/src/index.tsx:136
-msgid "File Operations"
-msgstr "ファイル操作"
-
-#: packages/docmanager-extension/src/index.ts:434 packages/logconsole-extension/src/index.tsx:409
-msgid "Error"
-msgstr "エラー"
-
-#: packages/docmanager-extension/src/index.ts:490 packages/filebrowser-extension/src/index.ts:703
-msgid "Open in New Browser Tab"
-msgstr "新規ブラウザタブで開く"
-
-#: packages/docmanager-extension/src/index.ts:495 packages/docmanager-extension/src/index.ts:517
-msgid "Reload %1 from Disk"
-msgstr "ディスクから %1 を再読み込み"
-
-#: packages/docmanager-extension/src/index.ts:499
-msgid "Reload contents from disk"
-msgstr "ディスクから内容を再読み込み"
-
-#: packages/docmanager-extension/src/index.ts:510
-msgid "Cannot Reload"
-msgstr "再読み込みできません"
-
-#: packages/docmanager-extension/src/index.ts:511 packages/docmanager-extension/src/index.ts:556 packages/docmanager-extension/src/index.ts:602 packages/docmanager-extension/src/index.ts:663 packages/docmanager-extension/src/index.ts:683
-msgid "No context found for current widget!"
-msgstr "現在のウィジェットにコンテキストが見つかりませんでした!"
-
-#: packages/docmanager-extension/src/index.ts:512 packages/docmanager-extension/src/index.ts:557 packages/docmanager-extension/src/index.ts:603 packages/docmanager-extension/src/index.ts:610 packages/docmanager-extension/src/index.ts:664 packages/notebook/src/actions.tsx:1405 packages/notebook/src/actions.tsx:1414 packages/notebook/src/actions.tsx:1604 packages/notebook/src/default-toolbar.tsx:69 packages/notebook/src/model.ts:295 packages/notebook/src/panel.ts:208 packages/settingeditor/src/plugineditor.ts:149 packages/settingeditor/src/plugineditor.ts:271 packages/translation-extension/src/index.ts:145
-msgid "Ok"
-msgstr ""
-
-#: packages/docmanager-extension/src/index.ts:518
-msgid "Are you sure you want to reload the %1 from the disk?"
-msgstr "ディスクから %1 を再読み込みしてもよろしいですか?"
-
-#: packages/docmanager-extension/src/index.ts:524
-msgid "Reload"
-msgstr "再読込"
-
-#: packages/docmanager-extension/src/index.ts:541
-msgid "Revert %1 to Checkpoint"
-msgstr "%1 をチェックポイントに戻す"
-
-#: packages/docmanager-extension/src/index.ts:545
-msgid "Revert contents to previous checkpoint"
-msgstr "内容を前のチェックポイントに戻す"
-
-#: packages/docmanager-extension/src/index.ts:555
-msgid "Cannot Revert"
-msgstr "元に戻すことができません"
-
-#: packages/docmanager-extension/src/index.ts:570
-msgid "Revert %1 to checkpoint"
-msgstr "%1 をチェックポイントに戻す"
-
-#: packages/docmanager-extension/src/index.ts:574 packages/docregistry/src/context.ts:720 packages/docregistry/src/context.ts:736
-msgid "Revert"
-msgstr "元に戻す"
-
-#: packages/docmanager-extension/src/index.ts:592
-msgid "Save %1"
-msgstr "%1 を保存"
-
-#: packages/docmanager-extension/src/index.ts:593
-msgid "Save and create checkpoint"
-msgstr "保存してチェックポイントを作成"
-
-#: packages/docmanager-extension/src/index.ts:601 packages/docmanager-extension/src/index.ts:608 packages/docmanager-extension/src/index.ts:662 packages/notebook/src/default-toolbar.tsx:67
-msgid "Cannot Save"
-msgstr "保存できません"
-
-#: packages/docmanager-extension/src/index.ts:609 packages/notebook/src/default-toolbar.tsx:68
-msgid "Document is read-only"
-msgstr "ドキュメントは読み取り専用です"
-
-#: packages/docmanager-extension/src/index.ts:629
-msgid "Save All"
-msgstr "すべて保存"
-
-#: packages/docmanager-extension/src/index.ts:630
-msgid "Save all open documents"
-msgstr "開いているすべてのドキュメントを保存"
-
-#: packages/docmanager-extension/src/index.ts:653
-msgid "Save %1 As…"
-msgstr "%1 を別名で保存…"
-
-#: packages/docmanager-extension/src/index.ts:654
-msgid "Save with new path"
-msgstr "新しいパスに保存"
-
-#: packages/docmanager-extension/src/index.ts:673 packages/filebrowser-extension/src/index.ts:529
+#: packages/docmanager-extension/src/index.ts:351 packages/filebrowser-extension/src/index.ts:318
 msgid "Download"
 msgstr "ダウンロード"
 
-#: packages/docmanager-extension/src/index.ts:674
+#: packages/docmanager-extension/src/index.ts:352
 msgid "Download the file to your computer"
 msgstr "ファイルをあなたのコンピュータにダウンロード"
 
-#: packages/docmanager-extension/src/index.ts:682
+#: packages/docmanager-extension/src/index.ts:360
 msgid "Cannot Download"
 msgstr "ダウンロードできません"
 
-#: packages/docmanager-extension/src/index.ts:767
+#: packages/docmanager-extension/src/index.ts:361 packages/docmanager-extension/src/index.ts:572 packages/docmanager-extension/src/index.ts:617 packages/docmanager-extension/src/index.ts:663 packages/docmanager-extension/src/index.ts:726
+msgid "No context found for current widget!"
+msgstr "現在のウィジェットにコンテキストが見つかりませんでした!"
+
+#: packages/docmanager-extension/src/index.ts:370 packages/docmanager-extension/src/index.ts:477 packages/filebrowser-extension/src/index.ts:1032 packages/filebrowser-extension/src/index.ts:835 packages/htmlviewer-extension/src/index.tsx:131
+msgid "File Operations"
+msgstr "ファイル操作"
+
+#: packages/docmanager-extension/src/index.ts:417 packages/filebrowser-extension/src/index.ts:590
+msgid "Open in New Browser Tab"
+msgstr "新規ブラウザタブで開く"
+
+#: packages/docmanager-extension/src/index.ts:518 packages/filebrowser/src/browser.ts:279 packages/filebrowser/src/browser.ts:309 packages/logconsole-extension/src/index.tsx:381
+msgid "Error"
+msgstr "エラー"
+
+#: packages/docmanager-extension/src/index.ts:556 packages/docmanager-extension/src/index.ts:578
+msgid "Reload %1 from Disk"
+msgstr "ディスクから %1 を再読み込み"
+
+#: packages/docmanager-extension/src/index.ts:560
+msgid "Reload contents from disk"
+msgstr "ディスクから内容を再読み込み"
+
+#: packages/docmanager-extension/src/index.ts:571
+msgid "Cannot Reload"
+msgstr "再読み込みできません"
+
+#: packages/docmanager-extension/src/index.ts:573 packages/docmanager-extension/src/index.ts:618 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:671 packages/docmanager-extension/src/index.ts:727 packages/notebook/src/actions.tsx:1754 packages/notebook/src/actions.tsx:1763 packages/notebook/src/actions.tsx:1981 packages/notebook/src/default-toolbar.tsx:67 packages/notebook/src/model.ts:353 packages/notebook/src/panel.ts:219 packages/settingeditor/src/plugineditor.ts:138 packages/settingeditor/src/plugineditor.ts:260 packages/translation-extension/src/index.ts:133
+msgid "Ok"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:579
+msgid "Are you sure you want to reload the %1 from the disk?"
+msgstr "ディスクから %1 を再読み込みしてもよろしいですか?"
+
+#: packages/docmanager-extension/src/index.ts:602
+msgid "Revert %1 to Checkpoint"
+msgstr "%1 をチェックポイントに戻す"
+
+#: packages/docmanager-extension/src/index.ts:606
+msgid "Revert contents to previous checkpoint"
+msgstr "内容を前のチェックポイントに戻す"
+
+#: packages/docmanager-extension/src/index.ts:616
+msgid "Cannot Revert"
+msgstr "元に戻すことができません"
+
+#: packages/docmanager-extension/src/index.ts:631
+msgid "Revert %1 to checkpoint"
+msgstr "%1 をチェックポイントに戻す"
+
+#: packages/docmanager-extension/src/index.ts:635 packages/docregistry/src/context.ts:799 packages/docregistry/src/context.ts:815
+msgid "Revert"
+msgstr "元に戻す"
+
+#: packages/docmanager-extension/src/index.ts:653
+msgid "Save %1"
+msgstr "%1 を保存"
+
+#: packages/docmanager-extension/src/index.ts:654
+msgid "Save and create checkpoint"
+msgstr "保存してチェックポイントを作成"
+
+#: packages/docmanager-extension/src/index.ts:662 packages/docmanager-extension/src/index.ts:669 packages/docmanager-extension/src/index.ts:725 packages/notebook/src/default-toolbar.tsx:65
+msgid "Cannot Save"
+msgstr "保存できません"
+
+#: packages/docmanager-extension/src/index.ts:670 packages/notebook/src/default-toolbar.tsx:66
+msgid "Document is read-only"
+msgstr "ドキュメントは読み取り専用です"
+
+#: packages/docmanager-extension/src/index.ts:692
+msgid "Save All"
+msgstr "すべて保存"
+
+#: packages/docmanager-extension/src/index.ts:693
+msgid "Save all open documents"
+msgstr "開いているすべてのドキュメントを保存"
+
+#: packages/docmanager-extension/src/index.ts:716
+msgid "Save %1 As…"
+msgstr "%1 を別名で保存…"
+
+#: packages/docmanager-extension/src/index.ts:717
+msgid "Save with new path"
+msgstr "新しいパスに保存"
+
+#: packages/docmanager-extension/src/index.ts:796
 msgid "New View for %1"
 msgstr "%1 の新しいビュー"
 
-#: packages/docmanager-extension/src/index.ts:787
-msgid "Rename %1…"
-msgstr "%1の名前を変更…"
+#: packages/docmanager-extension/src/index.ts:820
+msgid "Rename%1…"
+msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:800
+#: packages/docmanager-extension/src/index.ts:834
 msgid "Delete %1"
 msgstr "%1 を削除"
 
-#: packages/docmanager-extension/src/index.ts:810 packages/docmanager-extension/src/index.ts:814 packages/filebrowser-extension/src/index.ts:491 packages/filebrowser/src/listing.ts:419 packages/filebrowser/src/listing.ts:423
+#: packages/docmanager-extension/src/index.ts:844 packages/docmanager-extension/src/index.ts:848 packages/filebrowser-extension/src/index.ts:687 packages/filebrowser/src/listing.ts:411 packages/filebrowser/src/listing.ts:415
 msgid "Delete"
 msgstr "削除"
 
-#: packages/docmanager-extension/src/index.ts:811
+#: packages/docmanager-extension/src/index.ts:845
 msgid "Are you sure you want to delete %1"
 msgstr "%1 を削除してもよろしいですか?"
 
-#: packages/docmanager-extension/src/index.ts:828
+#: packages/docmanager-extension/src/index.ts:862
 msgid "Show in File Browser"
 msgstr "ファイルブラウザで表示"
 
-#: packages/docmanager-extension/src/index.ts:915
+#: packages/docmanager-extension/src/index.ts:928
 msgid "Are you sure you want to revert the %1 to the latest checkpoint? "
 msgstr "%1 を最新のチェックポイントに戻してもよろしいですか? "
 
-#: packages/docmanager-extension/src/index.ts:921
+#: packages/docmanager-extension/src/index.ts:934
 msgid "This cannot be undone."
 msgstr "この操作は元に戻すことができません。"
 
-#: packages/docmanager-extension/src/index.ts:928
+#: packages/docmanager-extension/src/index.ts:941
 msgid "The checkpoint was last updated at: "
 msgstr "チェックポイントの最終更新日時: "
 
-#: packages/docmanager/src/dialogs.ts:115
+#: packages/docmanager/src/dialogs.ts:109
 msgid "Overwrite file?"
 msgstr "ファイルを上書きしますか?"
 
-#: packages/docmanager/src/dialogs.ts:116
+#: packages/docmanager/src/dialogs.ts:110
 msgid "\"%1\" already exists, overwrite?"
 msgstr "\"%1\" は既に存在します。上書きしますか?"
 
-#: packages/docmanager/src/dialogs.ts:119 packages/docregistry/src/context.ts:722 packages/docregistry/src/context.ts:732 packages/docregistry/src/context.ts:754 packages/docregistry/src/context.ts:765
+#: packages/docmanager/src/dialogs.ts:113 packages/docregistry/src/context.ts:801 packages/docregistry/src/context.ts:811 packages/docregistry/src/context.ts:833 packages/docregistry/src/context.ts:844
 msgid "Overwrite"
 msgstr "上書き"
 
-#: packages/docmanager/src/dialogs.ts:183
+#: packages/docmanager/src/dialogs.ts:177
 msgid "File Path"
 msgstr "ファイルパス"
 
-#: packages/docmanager/src/dialogs.ts:188
+#: packages/docmanager/src/dialogs.ts:182
 msgid "New Name"
 msgstr "新規名称"
 
-#: packages/docmanager/src/dialogs.ts:54
+#: packages/docmanager/src/dialogs.ts:48
 msgid "Rename File"
 msgstr "ファイル名を変更"
 
-#: packages/docmanager/src/dialogs.ts:59 packages/filebrowser-extension/src/index.ts:789
+#: packages/docmanager/src/dialogs.ts:53 packages/filebrowser-extension/src/index.ts:941
 msgid "Rename"
 msgstr "名前を変更"
 
-#: packages/docmanager/src/dialogs.ts:67
+#: packages/docmanager/src/dialogs.ts:61
 msgid "Rename Error"
 msgstr "名称変更エラー"
 
-#: packages/docmanager/src/dialogs.ts:69
+#: packages/docmanager/src/dialogs.ts:63
 msgid "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\""
 msgstr "\"%1\" はファイルの有効な名前ではありません。名前は1文字以上で、\"/\"、\"\\\"、または\":\"を含めることはできません。"
 
-#: packages/docmanager/src/savingstatus.tsx:50
+#: packages/docmanager/src/savingstatus.tsx:44
 msgid "Saving %1"
 msgstr "%1 を保存しています"
 
-#: packages/docmanager/src/widgetmanager.ts:278
+#: packages/docmanager/src/widgetmanager.ts:271
 msgid "Name: %1\n"
 "Path: %2\n"
 msgstr "名前: %1\n"
 "パス: %2\n"
 
-#: packages/docmanager/src/widgetmanager.ts:284
+#: packages/docmanager/src/widgetmanager.ts:277
 msgid "Read-only"
 msgstr "読み取り専用"
 
-#: packages/docmanager/src/widgetmanager.ts:287
+#: packages/docmanager/src/widgetmanager.ts:280
 msgid "Last Saved: %1\n"
 msgstr "最後に保存: %1\n"
 
-#: packages/docmanager/src/widgetmanager.ts:288
+#: packages/docmanager/src/widgetmanager.ts:281
 msgid "Last Checkpoint: %1"
 msgstr "最後のチェックポイント: %1"
 
-#: packages/docmanager/src/widgetmanager.ts:379
+#: packages/docmanager/src/widgetmanager.ts:372
 msgid "Save as"
 msgstr "別名で保存"
 
-#: packages/docmanager/src/widgetmanager.ts:381
+#: packages/docmanager/src/widgetmanager.ts:374
 msgid "Save your work"
 msgstr "作業内容の保存"
 
-#: packages/docmanager/src/widgetmanager.ts:382
+#: packages/docmanager/src/widgetmanager.ts:375
 msgid "Save changes in \"%1\" before closing?"
 msgstr "閉じる前に \"%1\" の変更を保存しますか?"
 
-#: packages/docmanager/src/widgetmanager.ts:385
+#: packages/docmanager/src/widgetmanager.ts:378
 msgid "Discard"
 msgstr "破棄する"
 
-#: packages/docregistry/src/context.ts:557
+#: packages/docregistry/src/context.ts:634
 msgid "File Save Error for %1"
 msgstr "%1 のファイル保存エラー"
 
-#: packages/docregistry/src/context.ts:620
+#: packages/docregistry/src/context.ts:697
 msgid "File Load Error for %1"
 msgstr "%1 のファイル読み込みエラー"
 
-#: packages/docregistry/src/context.ts:714
+#: packages/docregistry/src/context.ts:793
 msgid "\"%1\" has changed on disk since the last time it was opened or saved.\n"
-"Do you want to overwrite the file on disk with the version open here, \n"
+"Do you want to overwrite the file on disk with the version open here,\n"
 "or load the version on disk (revert)?"
-msgstr "\"%1\" は前回開き保存された際から変更が生じています。現在開かれている内容でディスク上のファイルを上書きしますか? もしくは前回保存された状態の内容を開きますか (内容は前回の状態に戻ります)?"
+msgstr ""
 
-#: packages/docregistry/src/context.ts:725
+#: packages/docregistry/src/context.ts:804
 msgid "File Changed"
 msgstr "ファイルが変更されました"
 
-#: packages/docregistry/src/context.ts:749
+#: packages/docregistry/src/context.ts:828
 msgid "\"%1\" already exists. Do you want to replace it?"
 msgstr "\"%1\" は既に存在します。置き換えますか?"
 
-#: packages/docregistry/src/context.ts:757
+#: packages/docregistry/src/context.ts:836
 msgid "File Overwrite?"
 msgstr "ファイルを上書きしますか?"
 
-#: packages/docregistry/src/context.ts:881
+#: packages/docregistry/src/context.ts:973
 msgid "Save File As.."
 msgstr "別名でファイルを保存.."
 
-#: packages/docregistry/src/mimedocument.ts:182 packages/docregistry/src/mimedocument.ts:78 packages/markdownviewer/src/widget.ts:210
+#: packages/docregistry/src/mimedocument.ts:174 packages/docregistry/src/mimedocument.ts:70 packages/markdownviewer/src/widget.ts:201
 msgid "Renderer Failure: %1"
 msgstr "レンダラーの失敗: %1"
 
-#: packages/docregistry/src/registry.ts:1284
+#: packages/docregistry/src/registry.ts:1268
+msgid "default"
+msgstr "デフォルト"
+
+#: packages/docregistry/src/registry.ts:1291
 msgid "Text"
 msgstr "テキスト"
 
-#: packages/docregistry/src/registry.ts:1307 packages/launcher/src/index.tsx:158 packages/launcher/src/index.tsx:163 packages/notebook-extension/src/index.ts:475 packages/notebook-extension/src/index.ts:744 packages/notebook-extension/src/index.ts:785
+#: packages/docregistry/src/registry.ts:1314 packages/launcher/src/index.tsx:149 packages/launcher/src/index.tsx:154 packages/notebook-extension/src/index.ts:1231 packages/notebook-extension/src/index.ts:1272 packages/notebook-extension/src/index.ts:640
 msgid "Notebook"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1332
+#: packages/docregistry/src/registry.ts:1339
 msgid "Directory"
 msgstr "ディレクトリ"
 
-#: packages/docregistry/src/registry.ts:1359 packages/fileeditor-extension/src/commands.ts:893
+#: packages/docregistry/src/registry.ts:1366 packages/fileeditor-extension/src/commands.ts:996
 msgid "Markdown File"
 msgstr "Markdownファイル"
 
-#: packages/docregistry/src/registry.ts:1366
+#: packages/docregistry/src/registry.ts:1373
 msgid "PDF File"
 msgstr "PDFファイル"
 
-#: packages/docregistry/src/registry.ts:1373
+#: packages/docregistry/src/registry.ts:1380 packages/fileeditor-extension/src/index.ts:186
 msgid "Python File"
 msgstr "Pythonファイル"
 
-#: packages/docregistry/src/registry.ts:1380
+#: packages/docregistry/src/registry.ts:1387
 msgid "JSON File"
 msgstr "JSONファイル"
 
-#: packages/docregistry/src/registry.ts:1387
+#: packages/docregistry/src/registry.ts:1394 packages/fileeditor-extension/src/index.ts:198
+msgid "Julia File"
+msgstr ""
+
+#: packages/docregistry/src/registry.ts:1401
 msgid "CSV File"
 msgstr "CSVファイル"
 
-#: packages/docregistry/src/registry.ts:1394
+#: packages/docregistry/src/registry.ts:1408
 msgid "TSV File"
 msgstr "TSVファイル"
 
-#: packages/docregistry/src/registry.ts:1401
+#: packages/docregistry/src/registry.ts:1415 packages/fileeditor-extension/src/index.ts:210
 msgid "R File"
 msgstr "Rファイル"
 
-#: packages/docregistry/src/registry.ts:1408
+#: packages/docregistry/src/registry.ts:1422
 msgid "YAML File"
 msgstr "YAMLファイル"
 
-#: packages/docregistry/src/registry.ts:1415 packages/docregistry/src/registry.ts:1423 packages/docregistry/src/registry.ts:1431 packages/docregistry/src/registry.ts:1439 packages/docregistry/src/registry.ts:1447 packages/docregistry/src/registry.ts:1455
+#: packages/docregistry/src/registry.ts:1429 packages/docregistry/src/registry.ts:1437 packages/docregistry/src/registry.ts:1445 packages/docregistry/src/registry.ts:1453 packages/docregistry/src/registry.ts:1461 packages/docregistry/src/registry.ts:1469
 msgid "Image"
 msgstr "画像"
 
-#: packages/documentsearch-extension/src/index.ts:144
-msgid "Find…"
-msgstr "検索…"
-
-#: packages/documentsearch-extension/src/index.ts:155
+#: packages/documentsearch-extension/src/index.ts:153
 msgid "Find and Replace…"
 msgstr "検索と置換…"
 
-#: packages/documentsearch-extension/src/index.ts:167
+#: packages/documentsearch-extension/src/index.ts:165
 msgid "Find Next"
 msgstr "次を検索"
 
-#: packages/documentsearch-extension/src/index.ts:191
+#: packages/documentsearch-extension/src/index.ts:189
 msgid "Find Previous"
 msgstr "前を検索"
 
-#: packages/documentsearch/src/searchoverlay.tsx:125
+#: packages/documentsearch/src/searchoverlay.tsx:124
 msgid "Find"
 msgstr "検索"
 
-#: packages/documentsearch/src/searchoverlay.tsx:174 packages/documentsearch/src/searchoverlay.tsx:192
+#: packages/documentsearch/src/searchoverlay.tsx:173 packages/documentsearch/src/searchoverlay.tsx:191
 msgid "Replace"
 msgstr "置換"
 
-#: packages/documentsearch/src/searchoverlay.tsx:204
+#: packages/documentsearch/src/searchoverlay.tsx:203
 msgid "Replace All"
 msgstr "すべてを置換"
 
-#: packages/extensionmanager-extension/src/index.ts:109 packages/extensionmanager-extension/src/index.ts:58
+#: packages/documentsearch/src/searchoverlay.tsx:321
+msgid "Search Cell Outputs"
+msgstr ""
+
+#: packages/documentsearch/src/searchoverlay.tsx:338
+msgid "Search Selected Cell(s)"
+msgstr ""
+
+#: packages/extensionmanager-extension/src/index.ts:107
+msgid "Enable Extension Manager"
+msgstr "拡張機能マネージャを有効にする"
+
+#: packages/extensionmanager-extension/src/index.ts:117 packages/extensionmanager-extension/src/index.ts:56
 msgid "Extension Manager"
 msgstr "拡張機能マネージャ"
 
-#: packages/extensionmanager-extension/src/index.ts:139
+#: packages/extensionmanager-extension/src/index.ts:143
 msgid "Enable Extension Manager?"
 msgstr "拡張機能マネージャを有効にしますか?"
 
-#: packages/extensionmanager-extension/src/index.ts:140
+#: packages/extensionmanager-extension/src/index.ts:144
 msgid "Thanks for trying out JupyterLab's extension manager.\n"
 "The JupyterLab development team is excited to have a robust\n"
 "third-party extension community.\n"
@@ -1841,746 +2177,830 @@ msgstr "JupyterLabの拡張機能マネージャをお試しいただきあり�
 "しかし、我々は全ての拡張機能の動作を保証することはできず、場合によってはセキュリティリスクをもたらす可能性もあります。\n"
 "続けますか?"
 
-#: packages/extensionmanager-extension/src/index.ts:147 packages/extensionmanager/src/widget.tsx:331 packages/extensionmanager/src/widget.tsx:800
+#: packages/extensionmanager-extension/src/index.ts:151 packages/extensionmanager/src/widget.tsx:329 packages/extensionmanager/src/widget.tsx:798
 msgid "Disable"
 msgstr "無効にする"
 
-#: packages/extensionmanager-extension/src/index.ts:148 packages/extensionmanager/src/widget.tsx:340 packages/extensionmanager/src/widget.tsx:815
+#: packages/extensionmanager-extension/src/index.ts:152 packages/extensionmanager/src/widget.tsx:338 packages/extensionmanager/src/widget.tsx:813
 msgid "Enable"
 msgstr "有効にする"
 
-#: packages/extensionmanager-extension/src/index.ts:99
-msgid "Enable Extension Manager"
-msgstr "拡張機能マネージャを有効にする"
+#: packages/extensionmanager-extension/src/index.ts:68 packages/extensionmanager-extension/src/index.ts:89
+msgid "Extension Manager section"
+msgstr ""
 
-#: packages/extensionmanager/src/companions.tsx:139
+#: packages/extensionmanager/src/companions.tsx:137
 msgid "This package has indicated that it needs a corresponding server\n"
 "extension. Please contact your Administrator to update the server with\n"
 "one of the following commands:"
 msgstr "このパッケージは対応するサーバ機能拡張が必要であることを示しています。以下のコマンドの中のいずれかでサーバをアップデートするようシステム管理者に問い合わせてください。"
 
-#: packages/extensionmanager/src/companions.tsx:155
+#: packages/extensionmanager/src/companions.tsx:153
 msgid "This package has indicated that it needs a corresponding package for the kernel."
 msgstr "このパッケージは、カーネルに対応するパッケージが必要であることを示しています。"
 
-#: packages/extensionmanager/src/companions.tsx:163
+#: packages/extensionmanager/src/companions.tsx:161
 msgid "The package <code>%1</code>, is required by the following kernels:"
 msgstr "パッケージ <code>%1</code>は以下のカーネルで必要です:"
 
-#: packages/extensionmanager/src/companions.tsx:180
+#: packages/extensionmanager/src/companions.tsx:178
 msgid "This package has indicated that it needs a corresponding kernel\n"
 "package. Please contact your Administrator to update the server with\n"
 "one of the following commands:"
 msgstr "このパッケージは対応するカーネルパッケージが必要であることを示しています。以下のコマンドの中のいずれかでサーバをアップデートするようシステム管理者に問い合わせてください。"
 
-#: packages/extensionmanager/src/companions.tsx:198
+#: packages/extensionmanager/src/companions.tsx:196
 msgid "You should make sure that the indicated packages are installed before\n"
 "trying to use the extension. Do you want to continue with the extension\n"
 "installation?"
 msgstr "この拡張機能を使うにはあらかじめ指定されたパッケージがインストールされている必要があります。拡張機能のインストールを続けますか?"
 
-#: packages/extensionmanager/src/companions.tsx:208
+#: packages/extensionmanager/src/companions.tsx:206
 msgid "Kernel and Server Companions"
 msgstr "カーネルおよびサーバー コンパニオン"
 
-#: packages/extensionmanager/src/companions.tsx:210
+#: packages/extensionmanager/src/companions.tsx:208
 msgid "Kernel Companions"
 msgstr "カーネル コンパニオン"
 
-#: packages/extensionmanager/src/companions.tsx:212
+#: packages/extensionmanager/src/companions.tsx:210
 msgid "Server Companion"
 msgstr "サーバー コンパニオン"
 
-#: packages/extensionmanager/src/companions.tsx:221
+#: packages/extensionmanager/src/companions.tsx:219
 msgid "Install the JupyterLab extension."
 msgstr "JupyterLab 拡張機能をインストールします。"
 
-#: packages/extensionmanager/src/dialog.tsx:25
+#: packages/extensionmanager/src/dialog.tsx:23
 msgid "An error occurred installing <code>%1</code>."
 msgstr "<code>%1</code> のインストール中にエラーが発生しました。"
 
-#: packages/extensionmanager/src/dialog.tsx:31
+#: packages/extensionmanager/src/dialog.tsx:29
 msgid "Error message:"
 msgstr "エラーメッセージ:"
 
-#: packages/extensionmanager/src/dialog.tsx:39
+#: packages/extensionmanager/src/dialog.tsx:37
 msgid "Extension Installation Error"
 msgstr "拡張機能のインストールエラー"
 
-#: packages/extensionmanager/src/widget.tsx:137
+#: packages/extensionmanager/src/widget.tsx:135
 msgid "A build is needed to include the latest changes"
 msgstr "最新の変更を含めるためにビルドが必要です"
 
-#: packages/extensionmanager/src/widget.tsx:140
+#: packages/extensionmanager/src/widget.tsx:138
 msgid "Rebuild"
 msgstr "リビルド"
 
-#: packages/extensionmanager/src/widget.tsx:143
+#: packages/extensionmanager/src/widget.tsx:141
 msgid "Ignore"
 msgstr "無視する"
 
-#: packages/extensionmanager/src/widget.tsx:195
+#: packages/extensionmanager/src/widget.tsx:193
 msgid "%1 (Developed by Project Jupyter)"
 msgstr "%1 (Project Jupyterによって開発)"
 
-#: packages/extensionmanager/src/widget.tsx:249
+#: packages/extensionmanager/src/widget.tsx:247
 msgid "%1 extension has been blockedExtensions since install. Please uninstall immediately and contact your blockedExtensions administrator."
 msgstr "%1 拡張機能はインストール後にblockedExtensionsとなりました。直ちにアンインストールし、blockedExtensionsの管理者に連絡してください。"
 
-#: packages/extensionmanager/src/widget.tsx:265
+#: packages/extensionmanager/src/widget.tsx:263
 msgid "%1 extension has been removed from the allowedExtensions since installation. Please uninstall immediately and contact your allowedExtensions administrator."
 msgstr "%1 拡張機能はインストール後にallowedExtensionsから削除されました。直ちにアンインストールし、allowedExtensionsの管理者に連絡してください。"
 
-#: packages/extensionmanager/src/widget.tsx:300
+#: packages/extensionmanager/src/widget.tsx:298
 msgid "Install"
 msgstr "インストール"
 
-#: packages/extensionmanager/src/widget.tsx:313
+#: packages/extensionmanager/src/widget.tsx:311
 msgid "Update"
 msgstr "アップデート"
 
-#: packages/extensionmanager/src/widget.tsx:322
+#: packages/extensionmanager/src/widget.tsx:320
 msgid "Uninstall"
 msgstr "アンインストール"
 
-#: packages/extensionmanager/src/widget.tsx:367
+#: packages/extensionmanager/src/widget.tsx:365
 msgid "About"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:386
+#: packages/extensionmanager/src/widget.tsx:384
 msgid "This is a prebuilt extension. To uninstall it, please\n"
 "    apply following instructions."
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:396
+#: packages/extensionmanager/src/widget.tsx:394
 msgid "This is a prebuilt extension. To uninstall it, please\n"
 "    read the user guide on:"
 msgstr ""
 
-#: packages/extensionmanager/src/widget.tsx:493
+#: packages/extensionmanager/src/widget.tsx:491
 msgid "No entries"
 msgstr "エントリーがありません"
 
-#: packages/extensionmanager/src/widget.tsx:724
+#: packages/extensionmanager/src/widget.tsx:722
 msgid "The extension manager is disabled. Please contact your system\n"
 "administrator to verify the listings configuration."
 msgstr "拡張機能マネージャーが無効になっています。リスト表示の設定を確認するには、システム\n"
 "管理者に問い合わせてください。"
 
-#: packages/extensionmanager/src/widget.tsx:734
+#: packages/extensionmanager/src/widget.tsx:732
 msgid "Read more in the JupyterLab documentation."
 msgstr "JupyterLabのドキュメントで詳細をご覧ください。"
 
-#: packages/extensionmanager/src/widget.tsx:778 packages/logconsole-extension/src/index.tsx:410
+#: packages/extensionmanager/src/widget.tsx:776 packages/logconsole-extension/src/index.tsx:382
 msgid "Warning"
 msgstr "警告"
 
-#: packages/extensionmanager/src/widget.tsx:782
+#: packages/extensionmanager/src/widget.tsx:780
 msgid "The JupyterLab development team is excited to have a robust\n"
 "third-party extension community. However, we do not review\n"
 "third-party extensions, and some extensions may introduce security\n"
 "risks or contain malicious code that runs on your machine."
 msgstr "JupyterLab開発チームは拡張機能開発をおこなう力強いサードパーティコミュニティの存在を嬉しく思います。しかし、我々はサードパーティの拡張機能をレビューしておらず、場合によってはセキュリティリスクをもたらしたりあなたのマシンで実行される悪意あるコードを含んでいるかもしれません。"
 
-#: packages/extensionmanager/src/widget.tsx:825
+#: packages/extensionmanager/src/widget.tsx:823
 msgid "Updating extensions list"
 msgstr "拡張機能のリストを更新しています"
 
-#: packages/extensionmanager/src/widget.tsx:832
+#: packages/extensionmanager/src/widget.tsx:830
 msgid "Error communicating with server extension. Consult the documentation\n"
 "            for how to ensure that it is enabled."
 msgstr "サーバー拡張機能との通信中にエラーが発生しました。有効にする方法についてはドキュメントを参照してください。"
 
-#: packages/extensionmanager/src/widget.tsx:837
+#: packages/extensionmanager/src/widget.tsx:835
 msgid "Reason given:"
 msgstr "理由:"
 
-#: packages/extensionmanager/src/widget.tsx:845
+#: packages/extensionmanager/src/widget.tsx:843
 msgid "The server has some missing requirements for installing extensions."
 msgstr "サーバにおいて拡張機能をインストールするためのいくつかの要件が不足しています。"
 
-#: packages/extensionmanager/src/widget.tsx:850
+#: packages/extensionmanager/src/widget.tsx:848
 msgid "Details:"
 msgstr "詳細:"
 
-#: packages/extensionmanager/src/widget.tsx:889
+#: packages/extensionmanager/src/widget.tsx:893
 msgid "Installed"
 msgstr "インストール済み"
 
-#: packages/extensionmanager/src/widget.tsx:897
+#: packages/extensionmanager/src/widget.tsx:901
 msgid "Refresh extension list"
 msgstr "拡張機能リストを更新"
 
-#: packages/extensionmanager/src/widget.tsx:942
+#: packages/extensionmanager/src/widget.tsx:946
 msgid "Search Results"
 msgstr "検索結果"
 
-#: packages/extensionmanager/src/widget.tsx:943
+#: packages/extensionmanager/src/widget.tsx:947
 msgid "Discover"
 msgstr "見つける"
 
-#: packages/filebrowser-extension/src/index.ts:1036
-msgid "Open With"
-msgstr "次で開く"
+#: packages/filebrowser-extension/src/index.ts:1009
+msgid "Show Last Modified Column"
+msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1176
-msgid "No browser for path"
-msgstr "パスのブラウザがありません"
-
-#: packages/filebrowser-extension/src/index.ts:277 packages/filebrowser-extension/src/index.ts:866 packages/launcher-extension/src/index.ts:60
-msgid "New Launcher"
-msgstr "新規ランチャー"
-
-#: packages/filebrowser-extension/src/index.ts:345
-msgid "File Browser (%1)"
-msgstr "ファイルブラウザ (%1)"
-
-#: packages/filebrowser-extension/src/index.ts:347
-msgid "File Browser"
-msgstr "ファイルブラウザ"
-
-#: packages/filebrowser-extension/src/index.ts:461
-msgid "Copy Shareable Link"
-msgstr "共有可能なリンクをコピー"
-
-#: packages/filebrowser-extension/src/index.ts:504 packages/fileeditor-extension/src/commands.ts:753
-msgid "Copy"
-msgstr "コピー"
-
-#: packages/filebrowser-extension/src/index.ts:517 packages/fileeditor-extension/src/commands.ts:712
-msgid "Cut"
-msgstr "切り取り"
-
-#: packages/filebrowser-extension/src/index.ts:541
-msgid "Duplicate"
-msgstr "複製"
-
-#: packages/filebrowser-extension/src/index.ts:581
-msgid "Open from Path…"
-msgstr "パスから開く…"
-
-#: packages/filebrowser-extension/src/index.ts:581 packages/filebrowser-extension/src/index.ts:583
-msgid "Open %1"
-msgstr "%1を開く"
-
-#: packages/filebrowser-extension/src/index.ts:583
-msgid "Open from path"
-msgstr "パスから開く"
-
-#: packages/filebrowser-extension/src/index.ts:592
-msgid "Path"
-msgstr "パス"
-
-#: packages/filebrowser-extension/src/index.ts:594
-msgid "Open Path"
-msgstr "パスを開く"
-
-#: packages/filebrowser-extension/src/index.ts:595 packages/filebrowser-extension/src/index.ts:680
-msgid "Open"
-msgstr "開く"
-
-#: packages/filebrowser-extension/src/index.ts:626
-msgid "Could not find path: %1"
-msgstr "パスが見つかりません: %1"
-
-#: packages/filebrowser-extension/src/index.ts:628
-msgid "Cannot open"
-msgstr "開けません"
-
-#: packages/filebrowser-extension/src/index.ts:721
-msgid "Copy Download Link"
-msgstr "ダウンロードのリンクをコピー"
-
-#: packages/filebrowser-extension/src/index.ts:734 packages/fileeditor-extension/src/commands.ts:787
-msgid "Paste"
-msgstr "貼り付け"
-
-#: packages/filebrowser-extension/src/index.ts:747 packages/filebrowser/src/browser.ts:96
-msgid "New Folder"
-msgstr "新規フォルダ"
-
-#: packages/filebrowser-extension/src/index.ts:762
-msgid "New File"
-msgstr "新規ファイル"
-
-#: packages/filebrowser-extension/src/index.ts:777 packages/fileeditor-extension/src/commands.ts:892
-msgid "New Markdown File"
-msgstr "新規Markdownファイル"
-
-#: packages/filebrowser-extension/src/index.ts:810
-msgid "Copy Path"
-msgstr "パスをコピー"
-
-#: packages/filebrowser-extension/src/index.ts:852 packages/mainmenu-extension/src/index.ts:577
-msgid "Shut Down Kernel"
-msgstr "カーネルをシャットダウン"
-
-#: packages/filebrowser-extension/src/index.ts:871
-msgid "Show Active File in File Browser"
-msgstr "ファイルブラウザでアクティブなファイルを表示"
-
-#: packages/filebrowser-extension/src/index.ts:885
-msgid "Toggle Last Modified Column"
-msgstr "最終更新列の切り替え"
-
-#: packages/filebrowser-extension/src/index.ts:907
+#: packages/filebrowser-extension/src/index.ts:1025
 msgid "Search on File Names"
 msgstr "ファイル名で検索"
 
-#: packages/filebrowser/src/browser.ts:105
+#: packages/filebrowser-extension/src/index.ts:1103
+msgid "No browser for path"
+msgstr "パスのブラウザがありません"
+
+#: packages/filebrowser-extension/src/index.ts:153
+msgid "File Browser Section"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:176
+msgid "File Browser (%1)"
+msgstr "ファイルブラウザ (%1)"
+
+#: packages/filebrowser-extension/src/index.ts:178
+msgid "File Browser"
+msgstr "ファイルブラウザ"
+
+#: packages/filebrowser-extension/src/index.ts:335
+msgid "Copy Download Link"
+msgstr "ダウンロードのリンクをコピー"
+
+#: packages/filebrowser-extension/src/index.ts:492
+msgid "Copy Shareable Link"
+msgstr "共有可能なリンクをコピー"
+
+#: packages/filebrowser-extension/src/index.ts:657 packages/filebrowser-extension/src/index.ts:988 packages/launcher-extension/src/index.ts:59
+msgid "New Launcher"
+msgstr "新規ランチャー"
+
+#: packages/filebrowser-extension/src/index.ts:700 packages/fileeditor-extension/src/commands.ts:838
+msgid "Copy"
+msgstr "コピー"
+
+#: packages/filebrowser-extension/src/index.ts:713 packages/fileeditor-extension/src/commands.ts:797
+msgid "Cut"
+msgstr "切り取り"
+
+#: packages/filebrowser-extension/src/index.ts:725
+msgid "Duplicate"
+msgstr "複製"
+
+#: packages/filebrowser-extension/src/index.ts:780
+msgid "Open from Path…"
+msgstr "パスから開く…"
+
+#: packages/filebrowser-extension/src/index.ts:780 packages/filebrowser-extension/src/index.ts:782
+msgid "Open %1"
+msgstr "%1を開く"
+
+#: packages/filebrowser-extension/src/index.ts:782
+msgid "Open from path"
+msgstr "パスから開く"
+
+#: packages/filebrowser-extension/src/index.ts:791
+msgid "Path"
+msgstr "パス"
+
+#: packages/filebrowser-extension/src/index.ts:793
+msgid "Open Path"
+msgstr "パスを開く"
+
+#: packages/filebrowser-extension/src/index.ts:794 packages/filebrowser-extension/src/index.ts:879
+msgid "Open"
+msgstr "開く"
+
+#: packages/filebrowser-extension/src/index.ts:825
+msgid "Could not find path: %1"
+msgstr "パスが見つかりません: %1"
+
+#: packages/filebrowser-extension/src/index.ts:827
+msgid "Cannot open"
+msgstr "開けません"
+
+#: packages/filebrowser-extension/src/index.ts:892 packages/fileeditor-extension/src/commands.ts:872
+msgid "Paste"
+msgstr "貼り付け"
+
+#: packages/filebrowser-extension/src/index.ts:905 packages/filebrowser/src/browser.ts:92
+msgid "New Folder"
+msgstr "新規フォルダ"
+
+#: packages/filebrowser-extension/src/index.ts:917
+msgid "New File"
+msgstr "新規ファイル"
+
+#: packages/filebrowser-extension/src/index.ts:929 packages/fileeditor-extension/src/commands.ts:995
+msgid "New Markdown File"
+msgstr "新規Markdownファイル"
+
+#: packages/filebrowser-extension/src/index.ts:962
+msgid "Copy Path"
+msgstr "パスをコピー"
+
+#: packages/filebrowser-extension/src/index.ts:974 packages/mainmenu-extension/src/index.ts:513
+msgid "Shut Down Kernel"
+msgstr "カーネルをシャットダウン"
+
+#: packages/filebrowser-extension/src/index.ts:994
+msgid "Show Active File in File Browser"
+msgstr "ファイルブラウザでアクティブなファイルを表示"
+
+#: packages/filebrowser/src/browser.ts:101
 msgid "Refresh File List"
 msgstr "ファイル一覧を更新"
 
-#: packages/filebrowser/src/browser.ts:121 packages/filebrowser/src/browser.ts:175
+#: packages/filebrowser/src/browser.ts:117 packages/filebrowser/src/browser.ts:187
 msgid "Filter files by name"
 msgstr "名前でファイルをフィルタ"
 
-#: packages/filebrowser/src/browser.ts:342
+#: packages/filebrowser/src/browser.ts:397
 msgid "Directory not found"
 msgstr "ディレクトリが見つかりません"
 
-#: packages/filebrowser/src/browser.ts:343 packages/filebrowser/src/model.ts:304
+#: packages/filebrowser/src/browser.ts:398 packages/filebrowser/src/model.ts:301
 msgid "Directory not found: \"%1\""
 msgstr "ディレクトリが見つかりません: \"%1\""
 
-#: packages/filebrowser/src/crumbs.ts:173
+#: packages/filebrowser/src/browser.ts:83
+msgid "file browser"
+msgstr ""
+
+#: packages/filebrowser/src/crumbs.ts:163
 msgid "Open Error"
 msgstr "開く際にエラー"
 
-#: packages/filebrowser/src/crumbs.ts:281
+#: packages/filebrowser/src/crumbs.ts:271
 msgid "Move Error"
 msgstr "移動の際にエラー"
 
-#: packages/filebrowser/src/listing.ts:1202
+#: packages/filebrowser/src/listing.ts:1014
+msgctxt "showErrorMessage"
+msgid "Open directory"
+msgstr "ディレクトリを開く"
+
+#: packages/filebrowser/src/listing.ts:1135
+msgid "Error Uploading Folder"
+msgstr ""
+
+#: packages/filebrowser/src/listing.ts:1136
+msgid "Drag and Drop is currently not supported for folders"
+msgstr ""
+
+#: packages/filebrowser/src/listing.ts:1139 packages/running-extension/src/opentabs.ts:87
+msgid "Close"
+msgstr ""
+
+#: packages/filebrowser/src/listing.ts:1255
 msgctxt "showErrorMessage"
 msgid "Error while copying/moving files"
 msgstr "ファイルのコピー/移動中にエラー"
 
-#: packages/filebrowser/src/listing.ts:1419
+#: packages/filebrowser/src/listing.ts:1494
 msgctxt "showErrorMessage"
 msgid "Delete Failed"
 msgstr "削除に失敗"
 
-#: packages/filebrowser/src/listing.ts:1450
+#: packages/filebrowser/src/listing.ts:1526
 msgid "showErrorMessage"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1452
+#: packages/filebrowser/src/listing.ts:1528
 msgctxt "showErrorMessage"
 msgid "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\""
 msgstr "\"%1\" はファイルの有効な名前ではありません。名前は1文字以上で、\"/\"、\"\\\"、または\":\"を含めることはできません。"
 
-#: packages/filebrowser/src/listing.ts:1476
+#: packages/filebrowser/src/listing.ts:1552
 msgctxt "showErrorMessage"
 msgid "Rename Error"
 msgstr "名称変更エラー"
 
-#: packages/filebrowser/src/listing.ts:1781
+#: packages/filebrowser/src/listing.ts:1877
 msgid "Name"
 msgstr "名前"
 
-#: packages/filebrowser/src/listing.ts:1783
+#: packages/filebrowser/src/listing.ts:1879
 msgid "Last Modified"
 msgstr "最終更新"
 
-#: packages/filebrowser/src/listing.ts:1926
+#: packages/filebrowser/src/listing.ts:2050
 msgid "Name: %1"
 msgstr "名前: %1"
 
-#: packages/filebrowser/src/listing.ts:1930
+#: packages/filebrowser/src/listing.ts:2054
 msgid "\n"
 "Size: %1"
 msgstr "\n"
 "サイズ: %1"
 
-#: packages/filebrowser/src/listing.ts:1938
+#: packages/filebrowser/src/listing.ts:2062
 msgid "\n"
 "Path: %1"
 msgstr "\n"
 "パス: %1"
 
-#: packages/filebrowser/src/listing.ts:1945
+#: packages/filebrowser/src/listing.ts:2069
 msgid "\n"
 "Created: %1"
 msgstr "\n"
 "作成: %1"
 
-#: packages/filebrowser/src/listing.ts:1951
+#: packages/filebrowser/src/listing.ts:2075
 msgid "\n"
 "Modified: %1"
 msgstr "\n"
 "修正: %1"
 
-#: packages/filebrowser/src/listing.ts:1956
+#: packages/filebrowser/src/listing.ts:2080
 msgid "\n"
 "Writable: %1"
 msgstr "\n"
 "書き込み可能: %1"
 
-#: packages/filebrowser/src/listing.ts:2026
+#: packages/filebrowser/src/listing.ts:2150
 msgid "%1 Item"
 msgid_plural "%1 Items"
 msgstr[0] "%1 項目"
 
-#: packages/filebrowser/src/listing.ts:389
+#: packages/filebrowser/src/listing.ts:381
 msgctxt "showErrorMessage"
 msgid "Paste Error"
 msgstr "貼り付けのエラー"
 
-#: packages/filebrowser/src/listing.ts:409
+#: packages/filebrowser/src/listing.ts:401
 msgid "Are you sure you want to permanently delete: %1?"
 msgstr "%1を完全に削除してもよろしいですか?"
 
-#: packages/filebrowser/src/listing.ts:413
+#: packages/filebrowser/src/listing.ts:405
 msgid "Are you sure you want to permanently delete the %1 selected item?"
 msgid_plural "Are you sure you want to permanently delete the %1 selected items?"
 msgstr[0] "選択した項目 %1 を完全に削除してもよろしいですか?"
 
-#: packages/filebrowser/src/listing.ts:453
+#: packages/filebrowser/src/listing.ts:447
 msgctxt "showErrorMessage"
 msgid "Duplicate file"
 msgstr "重複したファイル"
 
-#: packages/filebrowser/src/listing.ts:493
+#: packages/filebrowser/src/listing.ts:487
 msgctxt "showErrorMessage"
 msgid "Shut down kernel"
 msgstr "カーネルをシャットダウンします"
 
-#: packages/filebrowser/src/listing.ts:836
+#: packages/filebrowser/src/listing.ts:844
 msgid "%1\n"
 "Kernel: %2"
 msgstr "%1\n"
 "カーネル: %2"
 
-#: packages/filebrowser/src/listing.ts:981
-msgctxt "showErrorMessage"
-msgid "Open directory"
-msgstr "ディレクトリを開く"
-
-#: packages/filebrowser/src/model.ts:100
-msgid "Files still uploading"
-msgstr "ファイルをアップロード中"
-
-#: packages/filebrowser/src/model.ts:416
+#: packages/filebrowser/src/model.ts:413
 msgid "Cannot upload file (>%1 MB). %2"
 msgstr "ファイル (>%1 MB) をアップロードできません。 %2"
 
-#: packages/filebrowser/src/model.ts:445
+#: packages/filebrowser/src/model.ts:442
 msgid "Large file size warning"
 msgstr "大きなファイルサイズの警告"
 
-#: packages/filebrowser/src/model.ts:446
+#: packages/filebrowser/src/model.ts:443
 msgid "The file size is %1 MB. Do you still want to upload it?"
 msgstr "ファイルサイズは %1 MB です。それでもアップロードしますか?"
 
-#: packages/filebrowser/src/model.ts:452
+#: packages/filebrowser/src/model.ts:449
 msgid "Upload"
 msgstr "アップロード"
 
-#: packages/filebrowser/src/upload.ts:112
+#: packages/filebrowser/src/model.ts:90
+msgid "Files still uploading"
+msgstr "ファイルをアップロード中"
+
+#: packages/filebrowser/src/upload.ts:111
 msgid "Upload Files"
 msgstr "ファイルのアップロード"
 
-#: packages/filebrowser/src/upload.ts:52
+#: packages/filebrowser/src/upload.ts:51
 msgctxt "showErrorMessage"
 msgid "Upload Error"
 msgstr "アップロードのエラー"
 
-#: packages/filebrowser/src/uploadstatus.tsx:100
-msgid "Complete!"
-msgstr "完了!"
-
-#: packages/filebrowser/src/uploadstatus.tsx:41
+#: packages/filebrowser/src/uploadstatus.tsx:36
 msgid "Uploading…"
 msgstr "アップロード中…"
 
-#: packages/fileeditor-extension/src/commands.ts:1007 packages/fileeditor-extension/src/commands.ts:1022 packages/fileeditor-extension/src/commands.ts:966 packages/fileeditor-extension/src/commands.ts:992
+#: packages/filebrowser/src/uploadstatus.tsx:95
+msgid "Complete!"
+msgstr "完了!"
+
+#: packages/fileeditor-extension/src/commands.ts:1027 packages/fileeditor-extension/src/commands.ts:1041 packages/fileeditor-extension/src/commands.ts:1057 packages/launcher/src/index.tsx:151 packages/launcher/src/index.tsx:161 packages/launcher/src/index.tsx:434 packages/terminal-extension/src/index.ts:220
+msgid "Other"
+msgstr "その他"
+
+#: packages/fileeditor-extension/src/commands.ts:1087 packages/fileeditor-extension/src/commands.ts:1111 packages/fileeditor-extension/src/commands.ts:1126 packages/fileeditor-extension/src/commands.ts:1141 packages/fileeditor-extension/src/commands.ts:1159
 msgid "Text Editor"
 msgstr "テキストエディタ"
 
-#: packages/fileeditor-extension/src/commands.ts:1025
-msgid "Increase Font Size"
-msgstr "フォントを大きく"
+#: packages/fileeditor-extension/src/commands.ts:1281 packages/fileeditor-extension/src/commands.ts:530
+msgid "Create Console for Editor"
+msgstr "エディターのコンソールを作成"
 
-#: packages/fileeditor-extension/src/commands.ts:1028
-msgid "Decrease Font Size"
-msgstr "フォントサイズを小さく"
+#: packages/fileeditor-extension/src/commands.ts:1299 packages/fileeditor-extension/src/commands.ts:601
+msgid "Run Code"
+msgstr "コードを実行"
 
-#: packages/fileeditor-extension/src/commands.ts:1084
-msgid "Text Editor Indentation"
-msgstr "テキストエディタのインデント"
+#: packages/fileeditor-extension/src/commands.ts:1300 packages/fileeditor-extension/src/commands.ts:646
+msgid "Run All Code"
+msgstr "すべてのコードを実行"
 
-#: packages/fileeditor-extension/src/commands.ts:1088 packages/fileeditor-extension/src/commands.ts:970 packages/fileeditor-extension/src/index.ts:105
-msgid "Indent with Tab"
-msgstr "タブによるインデント"
+#: packages/fileeditor-extension/src/commands.ts:1302
+msgid "Restart Kernel and Run All Code"
+msgstr "カーネルを再起動してすべてのコードを実行"
 
-#: packages/fileeditor-extension/src/commands.ts:1097 packages/fileeditor-extension/src/commands.ts:979 packages/fileeditor-extension/src/index.ts:112
+#: packages/fileeditor-extension/src/commands.ts:303
+msgid "Increase Text Editor Font Size"
+msgstr "テキストエディタのフォントサイズを大きく"
+
+#: packages/fileeditor-extension/src/commands.ts:307
+msgid "Decrease Text Editor Font Size"
+msgstr "テキストエディタのフォントサイズを小さくする"
+
+#: packages/fileeditor-extension/src/commands.ts:335
+msgid "Line Numbers"
+msgstr "行番号"
+
+#: packages/fileeditor-extension/src/commands.ts:365
+msgid "Word Wrap"
+msgstr "文字列折り返し"
+
+#: packages/fileeditor-extension/src/commands.ts:381 packages/fileeditor-extension/src/index.ts:98
 msgid "Spaces: %1"
 msgid_plural "Spaces: %1"
 msgstr[0] "スペース: %1"
 
-#: packages/fileeditor-extension/src/commands.ts:1106
-msgid "Increase Text Editor Font Size"
-msgstr "テキストエディタのフォントサイズを大きく"
+#: packages/fileeditor-extension/src/commands.ts:387 packages/fileeditor-extension/src/index.ts:91
+msgid "Indent with Tab"
+msgstr "タブによるインデント"
 
-#: packages/fileeditor-extension/src/commands.ts:1110
-msgid "Decrease Text Editor Font Size"
-msgstr "テキストエディタのフォントサイズを小さくする"
-
-#: packages/fileeditor-extension/src/commands.ts:1200 packages/fileeditor-extension/src/commands.ts:446
-msgid "Create Console for Editor"
-msgstr "エディターのコンソールを作成"
-
-#: packages/fileeditor-extension/src/commands.ts:1218 packages/fileeditor-extension/src/commands.ts:517
-msgid "Run Code"
-msgstr "コードを実行"
-
-#: packages/fileeditor-extension/src/commands.ts:1219 packages/fileeditor-extension/src/commands.ts:562
-msgid "Run All Code"
-msgstr "すべてのコードを実行"
-
-#: packages/fileeditor-extension/src/commands.ts:1221
-msgid "Restart Kernel and Run All Code"
-msgstr "カーネルを再起動してすべてのコードを実行"
-
-#: packages/fileeditor-extension/src/commands.ts:293
-msgid "Line Numbers"
-msgstr "行番号"
-
-#: packages/fileeditor-extension/src/commands.ts:323
-msgid "Word Wrap"
-msgstr "文字列折り返し"
-
-#: packages/fileeditor-extension/src/commands.ts:374 packages/mainmenu-extension/src/index.ts:656
+#: packages/fileeditor-extension/src/commands.ts:426 packages/mainmenu-extension/src/index.ts:570
 msgid "Match Brackets"
 msgstr "括弧を一致させる"
 
-#: packages/fileeditor-extension/src/commands.ts:398
+#: packages/fileeditor-extension/src/commands.ts:452
 msgid "Auto Close Brackets for Text Editor"
 msgstr "テキストエディターにて括弧を自動的に閉じる"
 
-#: packages/fileeditor-extension/src/commands.ts:422
+#: packages/fileeditor-extension/src/commands.ts:478
+msgid "Auto Close Brackets"
+msgstr ""
+
+#: packages/fileeditor-extension/src/commands.ts:505
 msgid "Replace Selection in Editor"
 msgstr "エディターにて選択範囲を置換する"
 
-#: packages/fileeditor-extension/src/commands.ts:594
+#: packages/fileeditor-extension/src/commands.ts:679
 msgid "Show Markdown Preview"
 msgstr "マークダウンのプレビューを表示"
 
-#: packages/fileeditor-extension/src/commands.ts:632 packages/mainmenu-extension/src/index.ts:256
+#: packages/fileeditor-extension/src/commands.ts:717 packages/mainmenu-extension/src/index.ts:258
 msgid "Undo"
 msgstr "元に戻す"
 
-#: packages/fileeditor-extension/src/commands.ts:670 packages/mainmenu-extension/src/index.ts:261
+#: packages/fileeditor-extension/src/commands.ts:755 packages/mainmenu-extension/src/index.ts:263
 msgid "Redo"
 msgstr "やり直す"
 
-#: packages/fileeditor-extension/src/commands.ts:812
+#: packages/fileeditor-extension/src/commands.ts:897
 msgid "Select All"
 msgstr "すべてを選択"
 
-#: packages/fileeditor-extension/src/commands.ts:871
+#: packages/fileeditor-extension/src/commands.ts:961
 msgid "New Text File"
 msgstr "新規テキストファイル"
 
-#: packages/fileeditor-extension/src/commands.ts:871
+#: packages/fileeditor-extension/src/commands.ts:963
 msgid "Text File"
 msgstr "テキストファイル"
 
-#: packages/fileeditor-extension/src/commands.ts:872
+#: packages/fileeditor-extension/src/commands.ts:966
 msgid "Create a new text file"
 msgstr "新しいテキストファイルを作成"
 
-#: packages/fileeditor-extension/src/commands.ts:894
+#: packages/fileeditor-extension/src/commands.ts:997
 msgid "Create a new markdown file"
 msgstr "新しいmarkdownファイルを作成"
 
-#: packages/fileeditor-extension/src/commands.ts:924 packages/fileeditor-extension/src/commands.ts:938 packages/launcher/src/index.tsx:160 packages/launcher/src/index.tsx:170 packages/launcher/src/index.tsx:443 packages/terminal-extension/src/index.ts:260
-msgid "Other"
-msgstr "その他"
+#: packages/fileeditor-extension/src/index.ts:187
+msgid "New Python File"
+msgstr ""
 
-#: packages/fileeditor/src/tabspacestatus.tsx:62
+#: packages/fileeditor-extension/src/index.ts:188
+msgid "Create a new Python file"
+msgstr ""
+
+#: packages/fileeditor-extension/src/index.ts:199
+msgid "New Julia File"
+msgstr ""
+
+#: packages/fileeditor-extension/src/index.ts:200
+msgid "Create a new Julia file"
+msgstr ""
+
+#: packages/fileeditor-extension/src/index.ts:211
+msgid "New R File"
+msgstr ""
+
+#: packages/fileeditor-extension/src/index.ts:212
+msgid "Create a new R file"
+msgstr ""
+
+#: packages/fileeditor/src/tabspacestatus.tsx:57
 msgid "Spaces"
 msgstr "スペース"
 
-#: packages/fileeditor/src/tabspacestatus.tsx:63
+#: packages/fileeditor/src/tabspacestatus.tsx:58
 msgid "Tab Size"
 msgstr "タブのサイズ"
 
-#: packages/fileeditor/src/tabspacestatus.tsx:68
+#: packages/fileeditor/src/tabspacestatus.tsx:63
 msgid "Change Tab indentation…"
 msgstr "タブのインデントを変更…"
 
-#: packages/help-extension/src/index.tsx:101 packages/mainmenu-extension/src/index.ts:909
-msgid "Help"
-msgstr "ヘルプ"
-
-#: packages/help-extension/src/index.tsx:108
-msgid "JupyterLab Reference"
-msgstr "JupyterLab リファレンス"
-
-#: packages/help-extension/src/index.tsx:112
-msgid "JupyterLab FAQ"
-msgstr ""
-
-#: packages/help-extension/src/index.tsx:117
-msgid "Jupyter Reference"
-msgstr "Jupyter リファレンス"
-
-#: packages/help-extension/src/index.tsx:121
-msgid "Markdown Reference"
-msgstr "Markdown リファレンス"
-
-#: packages/help-extension/src/index.tsx:244
-msgid "About the %1 Kernel"
-msgstr "%1 カーネルについて"
-
-#: packages/help-extension/src/index.tsx:264 packages/help-extension/src/index.tsx:355 packages/hub-extension/src/index.ts:164 packages/mainmenu-extension/src/index.ts:592
-msgid "Dismiss"
-msgstr "閉じる"
-
-#: packages/help-extension/src/index.tsx:295
-msgid "About %1"
-msgstr "%1 について"
-
-#: packages/help-extension/src/index.tsx:298
-msgid "Version %1"
-msgstr "バージョン %1"
-
-#: packages/help-extension/src/index.tsx:326
+#: packages/help-extension/src/index.tsx:124
 msgid "CONTRIBUTOR LIST"
 msgstr "コントリビューターのリスト"
 
-#: packages/help-extension/src/index.tsx:334
+#: packages/help-extension/src/index.tsx:132
 msgid "ABOUT PROJECT JUPYTER"
 msgstr "PROJECT JUPYTER について"
 
-#: packages/help-extension/src/index.tsx:340
-msgid "© 2015-2020 Project Jupyter Contributors"
+#: packages/help-extension/src/index.tsx:138
+msgid "© 2015-2021 Project Jupyter Contributors"
 msgstr ""
 
-#: packages/help-extension/src/index.tsx:387
+#: packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:399 packages/hub-extension/src/index.ts:161 packages/mainmenu-extension/src/index.ts:528
+msgid "Dismiss"
+msgstr "閉じる"
+
+#: packages/help-extension/src/index.tsx:182 packages/help-extension/src/index.tsx:212 packages/help-extension/src/index.tsx:244 packages/help-extension/src/index.tsx:489 packages/help-extension/src/index.tsx:90
+msgid "Help"
+msgstr "ヘルプ"
+
+#: packages/help-extension/src/index.tsx:185
 msgid "Launch Classic Notebook"
 msgstr "Classic Notebook を起動する"
 
-#: packages/htmlviewer-extension/src/index.tsx:115
+#: packages/help-extension/src/index.tsx:215
+msgid "Jupyter Forum"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:251
+msgid "JupyterLab Reference"
+msgstr "JupyterLab リファレンス"
+
+#: packages/help-extension/src/index.tsx:255
+msgid "JupyterLab FAQ"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:260
+msgid "Jupyter Reference"
+msgstr "Jupyter リファレンス"
+
+#: packages/help-extension/src/index.tsx:264
+msgid "Markdown Reference"
+msgstr "Markdown リファレンス"
+
+#: packages/help-extension/src/index.tsx:379
+msgid "About the %1 Kernel"
+msgstr "%1 カーネルについて"
+
+#: packages/help-extension/src/index.tsx:490
+msgid "Download All Licenses as"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:491 packages/help-extension/src/licenses.tsx:438
+msgid "Licenses"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:492
+msgid "Refresh Licenses"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:93
+msgid "About %1"
+msgstr "%1 について"
+
+#: packages/help-extension/src/index.tsx:96
+msgid "Version %1"
+msgstr "バージョン %1"
+
+#: packages/help-extension/src/licenses.tsx:513
+msgid "Filter Licenses By"
+msgstr ""
+
+#: packages/help-extension/src/licenses.tsx:517 packages/help-extension/src/licenses.tsx:643
+msgid "Package"
+msgstr ""
+
+#: packages/help-extension/src/licenses.tsx:521 packages/help-extension/src/licenses.tsx:644
+msgid "Version"
+msgstr ""
+
+#: packages/help-extension/src/licenses.tsx:525 packages/help-extension/src/licenses.tsx:645 packages/help-extension/src/licenses.tsx:712
+msgid "License"
+msgstr ""
+
+#: packages/help-extension/src/licenses.tsx:530
+msgid "Distributions"
+msgstr ""
+
+#: packages/help-extension/src/licenses.tsx:633
+msgid "No Packages found"
+msgstr ""
+
+#: packages/help-extension/src/licenses.tsx:707
+msgid "No Package selected"
+msgstr ""
+
+#: packages/help-extension/src/licenses.tsx:713
+msgid "No License ID found"
+msgstr ""
+
+#: packages/help-extension/src/licenses.tsx:715
+msgid "No License Text found"
+msgstr ""
+
+#: packages/htmlviewer-extension/src/index.tsx:110
 msgid "Trust HTML File"
 msgstr "HTMLファイルを信用する"
 
-#: packages/htmlviewer-extension/src/index.tsx:64
+#: packages/htmlviewer-extension/src/index.tsx:59
 msgid "HTML File"
 msgstr "HTMLファイル"
 
-#: packages/htmlviewer-extension/src/index.tsx:73
+#: packages/htmlviewer-extension/src/index.tsx:68
 msgid "HTML Viewer"
 msgstr "HTML ビューア"
 
-#: packages/htmlviewer/src/index.tsx:108
+#: packages/htmlviewer/src/index.tsx:101
 msgid "Rerender HTML Document"
 msgstr "HTMLドキュメントを再表示"
 
-#: packages/htmlviewer/src/index.tsx:296
+#: packages/htmlviewer/src/index.tsx:289
 msgid "Whether the HTML file is trusted.\n"
 "Trusting the file allows scripts to run in it,\n"
 "which may result in security risks.\n"
 "Only enable for files you trust."
 msgstr "そのHTMLファイルを信用するか否か。該当ファイル内のスクリプト実行を許容するものであり、セキュリティリスクをもたらす可能性があります。ファイルを信用できる時のみ有効にしてください。"
 
-#: packages/htmlviewer/src/index.tsx:302
+#: packages/htmlviewer/src/index.tsx:295
 msgid "Distrust HTML"
 msgstr "HTMLを信用しない"
 
-#: packages/htmlviewer/src/index.tsx:303
+#: packages/htmlviewer/src/index.tsx:296
 msgid "Trust HTML"
 msgstr "HTMLを信用する"
 
-#: packages/hub-extension/src/index.ts:103
-msgid "Hub"
-msgstr ""
-
-#: packages/hub-extension/src/index.ts:157
+#: packages/hub-extension/src/index.ts:154
 msgid "Server unavailable or unreachable"
 msgstr ""
 
-#: packages/hub-extension/src/index.ts:158
+#: packages/hub-extension/src/index.ts:155
 msgid "Your server at %1 is not running.\n"
 "Would you like to restart it?"
 msgstr "%1 のサーバーが動作していません。\n"
 "再起動しますか?"
 
-#: packages/hub-extension/src/index.ts:163
+#: packages/hub-extension/src/index.ts:160
 msgid "Restart"
 msgstr "再起動"
 
-#: packages/hub-extension/src/index.ts:72
+#: packages/hub-extension/src/index.ts:66
 msgid "Restart Server"
 msgstr "サーバーを再起動"
 
-#: packages/hub-extension/src/index.ts:73
+#: packages/hub-extension/src/index.ts:67
 msgid "Request that the Hub restart this server"
 msgstr "ハブがこのサーバーを再起動するようリクエスト"
 
-#: packages/hub-extension/src/index.ts:80
+#: packages/hub-extension/src/index.ts:74
 msgid "Hub Control Panel"
 msgstr "Hub コントロールパネル"
 
-#: packages/hub-extension/src/index.ts:81
+#: packages/hub-extension/src/index.ts:75
 msgid "Open the Hub control panel in a new browser tab"
 msgstr "新しいブラウザタブでHubコントロールパネルを開く"
 
-#: packages/hub-extension/src/index.ts:88 packages/mainmenu-extension/src/index.ts:438
+#: packages/hub-extension/src/index.ts:82 packages/mainmenu-extension/src/index.ts:431
 msgid "Log Out"
 msgstr "ログアウト"
 
-#: packages/hub-extension/src/index.ts:89
+#: packages/hub-extension/src/index.ts:83
 msgid "Log out of the Hub"
 msgstr "Hub からログアウト"
 
-#: packages/imageviewer-extension/src/index.ts:162
+#: packages/hub-extension/src/index.ts:91
+msgid "Hub"
+msgstr ""
+
+#: packages/imageviewer-extension/src/index.ts:158
 msgid "Image Viewer"
 msgstr "画像ビューア"
 
-#: packages/imageviewer-extension/src/index.ts:203
+#: packages/imageviewer-extension/src/index.ts:199
 msgid "Zoom In"
 msgstr "ズームイン"
 
-#: packages/imageviewer-extension/src/index.ts:209
+#: packages/imageviewer-extension/src/index.ts:205
 msgid "Zoom Out"
 msgstr "ズームアウト"
 
-#: packages/imageviewer-extension/src/index.ts:215
+#: packages/imageviewer-extension/src/index.ts:211
 msgid "Reset Image"
 msgstr "画像をリセット"
 
-#: packages/imageviewer-extension/src/index.ts:221
+#: packages/imageviewer-extension/src/index.ts:217
 msgid "Rotate Clockwise"
 msgstr "時計回りに回転"
 
-#: packages/imageviewer-extension/src/index.ts:227
+#: packages/imageviewer-extension/src/index.ts:223
 msgid "Rotate Counterclockwise"
 msgstr "反時計回りに回転"
 
-#: packages/imageviewer-extension/src/index.ts:233
+#: packages/imageviewer-extension/src/index.ts:229
 msgid "Flip image horizontally"
 msgstr "画像を横方向に反転"
 
-#: packages/imageviewer-extension/src/index.ts:239
+#: packages/imageviewer-extension/src/index.ts:235
 msgid "Flip image vertically"
 msgstr "画像を垂直方向に反転"
 
-#: packages/imageviewer-extension/src/index.ts:245
+#: packages/imageviewer-extension/src/index.ts:241
 msgid "Invert Colors"
 msgstr "色を反転"
 
-#: packages/inspector-extension/src/index.ts:64
+#: packages/inspector-extension/src/index.ts:57
 msgid "Show Contextual Help"
 msgstr "コンテキストヘルプを表示"
 
-#: packages/inspector-extension/src/index.ts:93
+#: packages/inspector-extension/src/index.ts:91
 msgid "Live updating code documentation from the active kernel"
 msgstr "アクティブなカーネルからコードドキュメントをライブ更新する"
 
-#: packages/inspector/src/inspector.ts:54
+#: packages/inspector/src/inspector.ts:51
 msgid "Click on a function to see documentation."
 msgstr "ドキュメントを見るには関数をクリックしてください。"
 
@@ -2588,680 +3008,668 @@ msgstr "ドキュメントを見るには関数をクリックしてください
 msgid "Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
 msgstr "JupyterLab セッション内で任意の Javascript を実行してもよろしいですか?"
 
-#: packages/javascript-extension/src/index.ts:45 packages/mainmenu-extension/src/index.ts:726 packages/rendermime/src/renderers.ts:78
+#: packages/javascript-extension/src/index.ts:45 packages/rendermime/src/renderers.ts:70
 msgid "Run"
 msgstr "実行"
 
-#: packages/json-extension/src/component.tsx:67
-msgid "Filter..."
-msgstr "フィルタ..."
+#: packages/json-extension/src/component.tsx:63
+msgid "Filter…"
+msgstr ""
 
-#: packages/launcher-extension/src/index.ts:101 packages/launcher-extension/src/index.ts:77
+#: packages/launcher-extension/src/index.ts:100 packages/launcher-extension/src/index.ts:76
 msgid "Launcher"
 msgstr "ランチャー"
 
-#: packages/launcher/src/index.tsx:417
+#: packages/launcher/src/index.tsx:408
 msgctxt "Error"
 msgid "Launcher Error"
 msgstr "ランチャーのエラー"
 
-#: packages/logconsole-extension/src/index.tsx:164 packages/logconsole/src/widget.ts:399
+#: packages/logconsole-extension/src/index.tsx:142 packages/logconsole/src/widget.ts:389
 msgid "Log Console"
 msgstr "ログコンソール"
 
-#: packages/logconsole-extension/src/index.tsx:212
+#: packages/logconsole-extension/src/index.tsx:191
 msgid "Show Log Console"
 msgstr "ログコンソールを表示"
 
-#: packages/logconsole-extension/src/index.tsx:232
+#: packages/logconsole-extension/src/index.tsx:211
 msgid "Add Checkpoint"
 msgstr "チェックポイントを追加"
 
-#: packages/logconsole-extension/src/index.tsx:241
+#: packages/logconsole-extension/src/index.tsx:220
 msgid "Clear Log"
 msgstr "ログを消去"
 
-#: packages/logconsole-extension/src/index.tsx:257
+#: packages/logconsole-extension/src/index.tsx:236
 msgid "Set Log Level to %1"
 msgstr "ログレベルを %1 に設定"
 
-#: packages/logconsole-extension/src/index.tsx:394
+#: packages/logconsole-extension/src/index.tsx:366
 msgid "Log Level:"
 msgstr "ログレベル:"
 
-#: packages/logconsole-extension/src/index.tsx:402
+#: packages/logconsole-extension/src/index.tsx:374
 msgid "Log level"
 msgstr "ログレベル"
 
-#: packages/logconsole-extension/src/index.tsx:408
+#: packages/logconsole-extension/src/index.tsx:380
 msgid "Critical"
 msgstr "重大"
 
-#: packages/logconsole-extension/src/index.tsx:411
+#: packages/logconsole-extension/src/index.tsx:383
 msgid "Info"
 msgstr "情報"
 
-#: packages/logconsole-extension/src/index.tsx:412
+#: packages/logconsole-extension/src/index.tsx:384
 msgid "Debug"
 msgstr "デバッグ"
 
-#: packages/logconsole-extension/src/status.tsx:36
+#: packages/logconsole-extension/src/status.tsx:30
 msgid "%1 new messages, %2 log entries for %3"
 msgstr "%3 についての %1 件の新しいメッセージ、%2 件のログエントリ"
 
-#: packages/logconsole-extension/src/status.tsx:43
+#: packages/logconsole-extension/src/status.tsx:37
 msgid "%1 log entries for %2"
 msgstr "%2 についての %1 ログエントリ"
 
-#: packages/logconsole/src/widget.ts:400
+#: packages/logconsole/src/widget.ts:390
 msgid "Log: %1"
 msgstr "ログ: %1"
 
-#: packages/logconsole/src/widget.ts:407
+#: packages/logconsole/src/widget.ts:397
 msgid "No source selected."
 msgstr "ソースが選択されていません。"
 
-#: packages/logconsole/src/widget.ts:412
+#: packages/logconsole/src/widget.ts:402
 msgid "No log messages."
 msgstr "ログメッセージはありません。"
 
-#: packages/mainmenu-extension/src/index.ts:160
-msgid "Tabs"
-msgstr "タブ"
-
-#: packages/mainmenu-extension/src/index.ts:174
+#: packages/mainmenu-extension/src/index.ts:179
 msgid "Open Edit Menu"
 msgstr "編集メニューを開く"
 
-#: packages/mainmenu-extension/src/index.ts:178
+#: packages/mainmenu-extension/src/index.ts:183
 msgid "Open File Menu"
 msgstr "ファイルメニューを開く"
 
-#: packages/mainmenu-extension/src/index.ts:182
+#: packages/mainmenu-extension/src/index.ts:187
 msgid "Open Kernel Menu"
 msgstr "カーネルメニューを開く"
 
-#: packages/mainmenu-extension/src/index.ts:186
+#: packages/mainmenu-extension/src/index.ts:191
 msgid "Open Run Menu"
 msgstr "実行メニューを開く"
 
-#: packages/mainmenu-extension/src/index.ts:190
+#: packages/mainmenu-extension/src/index.ts:195
 msgid "Open View Menu"
 msgstr "ビューメニューを開く"
 
-#: packages/mainmenu-extension/src/index.ts:194
+#: packages/mainmenu-extension/src/index.ts:199
 msgid "Open Settings Menu"
 msgstr "設定メニューを開く"
 
-#: packages/mainmenu-extension/src/index.ts:198
+#: packages/mainmenu-extension/src/index.ts:203
 msgid "Open Tabs Menu"
 msgstr "タブメニューを開く"
 
-#: packages/mainmenu-extension/src/index.ts:202
+#: packages/mainmenu-extension/src/index.ts:207
 msgid "Open Help Menu"
 msgstr "ヘルプメニューを開く"
 
-#: packages/mainmenu-extension/src/index.ts:206
+#: packages/mainmenu-extension/src/index.ts:211
 msgid "Open First Menu"
 msgstr "最初のメニューを開く"
 
-#: packages/mainmenu-extension/src/index.ts:228
+#: packages/mainmenu-extension/src/index.ts:231
 msgid "Kernel Operations"
 msgstr "カーネル操作"
 
-#: packages/mainmenu-extension/src/index.ts:252
-msgid "Edit"
-msgstr "編集"
-
-#: packages/mainmenu-extension/src/index.ts:278
+#: packages/mainmenu-extension/src/index.ts:276
 msgid "Clear"
 msgstr "消去"
 
-#: packages/mainmenu-extension/src/index.ts:294
+#: packages/mainmenu-extension/src/index.ts:292
 msgid "Clear All"
 msgstr "すべて消去"
 
-#: packages/mainmenu-extension/src/index.ts:313
-msgid "Go to Line…"
-msgstr "行へ移動..."
-
-#: packages/mainmenu-extension/src/index.ts:330
-msgid "File"
-msgstr "ファイル"
-
-#: packages/mainmenu-extension/src/index.ts:331
-msgid "New"
-msgstr "新規"
-
-#: packages/mainmenu-extension/src/index.ts:344
+#: packages/mainmenu-extension/src/index.ts:335
 msgid "Close and Shutdown"
 msgstr "閉じてシャットダウン"
 
-#: packages/mainmenu-extension/src/index.ts:374
+#: packages/mainmenu-extension/src/index.ts:365
 msgid "New Console for Activity"
 msgstr "アクティビティの新規コンソール"
 
-#: packages/mainmenu-extension/src/index.ts:385 packages/mainmenu-extension/src/index.ts:393 packages/running-extension/src/kernels.ts:45 packages/running/src/index.tsx:148 packages/terminal-extension/src/index.ts:297
+#: packages/mainmenu-extension/src/index.ts:376 packages/mainmenu-extension/src/index.ts:386 packages/running-extension/src/kernels.ts:39 packages/running/src/index.tsx:142 packages/terminal-extension/src/index.ts:251
 msgid "Shut Down"
 msgstr "シャットダウン"
 
-#: packages/mainmenu-extension/src/index.ts:386
+#: packages/mainmenu-extension/src/index.ts:377
 msgid "Shut down JupyterLab"
 msgstr "JupyterLabをシャットダウン"
 
-#: packages/mainmenu-extension/src/index.ts:389
+#: packages/mainmenu-extension/src/index.ts:382
 msgid "Shutdown confirmation"
 msgstr "シャットダウンの確認"
 
-#: packages/mainmenu-extension/src/index.ts:390
+#: packages/mainmenu-extension/src/index.ts:383
 msgid "Please confirm you want to shut down JupyterLab."
 msgstr "JupyterLabをシャットダウンするか確認してください。"
 
-#: packages/mainmenu-extension/src/index.ts:409
+#: packages/mainmenu-extension/src/index.ts:402
 msgid "You have shut down the Jupyter server. You can now close this tab."
 msgstr "Jupyter サーバをシャットダウンしました。このタブを閉じることができます。"
 
-#: packages/mainmenu-extension/src/index.ts:413
+#: packages/mainmenu-extension/src/index.ts:406
 msgid "To use JupyterLab again, you will need to relaunch it."
 msgstr "JupyterLabを再び使用するには、再起動する必要があります。"
 
-#: packages/mainmenu-extension/src/index.ts:420
+#: packages/mainmenu-extension/src/index.ts:413
 msgid "Server stopped"
 msgstr "サーバは停止しました"
 
-#: packages/mainmenu-extension/src/index.ts:439
+#: packages/mainmenu-extension/src/index.ts:432
 msgid "Log out of JupyterLab"
 msgstr "JupyterLabからログアウト"
 
-#: packages/mainmenu-extension/src/index.ts:513
-msgid "Kernel"
-msgstr "カーネル"
-
-#: packages/mainmenu-extension/src/index.ts:526
+#: packages/mainmenu-extension/src/index.ts:462
 msgid "Reconnect to Kernel"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:548
+#: packages/mainmenu-extension/src/index.ts:484
 msgid "Restart Kernel and Clear…"
 msgstr "カーネルを再起動してクリア…"
 
-#: packages/mainmenu-extension/src/index.ts:583
+#: packages/mainmenu-extension/src/index.ts:519
 msgid "Shut Down All Kernels…"
 msgstr "すべてのカーネルをシャットダウン…"
 
-#: packages/mainmenu-extension/src/index.ts:589
+#: packages/mainmenu-extension/src/index.ts:525
 msgid "Shut Down All?"
 msgstr "すべてシャットダウンしますか?"
 
-#: packages/mainmenu-extension/src/index.ts:590
+#: packages/mainmenu-extension/src/index.ts:526
 msgid "Shut down all kernels?"
 msgstr "すべてのカーネルをシャットダウンしますか?"
 
-#: packages/mainmenu-extension/src/index.ts:593 packages/running-extension/src/kernels.ts:46 packages/running/src/index.tsx:228 packages/terminal-extension/src/index.ts:298
+#: packages/mainmenu-extension/src/index.ts:529 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:252
 msgid "Shut Down All"
 msgstr "すべてシャットダウン"
 
-#: packages/mainmenu-extension/src/index.ts:634
-msgid "View"
-msgstr "ビュー"
-
-#: packages/mainmenu-extension/src/index.ts:637
+#: packages/mainmenu-extension/src/index.ts:551
 msgid "Show Line Numbers"
 msgstr "行番号を表示"
 
-#: packages/mainmenu-extension/src/index.ts:675
+#: packages/mainmenu-extension/src/index.ts:589
 msgid "Wrap Words"
 msgstr "文字列の折り返し"
 
-#: packages/mainmenu-extension/src/index.ts:736
+#: packages/mainmenu-extension/src/index.ts:622
 msgid "Run Selected"
 msgstr "選択したものを実行"
 
-#: packages/mainmenu-extension/src/index.ts:744
+#: packages/mainmenu-extension/src/index.ts:630
 msgid "Run All"
 msgstr "すべて実行"
 
-#: packages/mainmenu-extension/src/index.ts:764
+#: packages/mainmenu-extension/src/index.ts:650
 msgid "Restart Kernel and Run All"
 msgstr "カーネルを再起動してすべて実行"
 
-#: packages/mainmenu-extension/src/index.ts:805 packages/settingeditor-extension/src/index.ts:145 packages/settingeditor-extension/src/index.ts:155
-msgid "Settings"
-msgstr "設定"
-
-#: packages/mainmenu-extension/src/index.ts:855
+#: packages/mainmenu-extension/src/index.ts:708
 msgid "Activate Previously Used Tab"
 msgstr "前に使用したタブをアクティブにする"
 
-#: packages/markdownviewer-extension/src/index.ts:146
+#: packages/mainmenu-extension/src/index.ts:877
+msgid "Menu customization has changed. You will need to reload JupyterLab to see the changes."
+msgstr ""
+
+#: packages/markdownviewer-extension/src/index.ts:138
 msgid "Markdown Preview"
 msgstr "Markdown プレビュー"
 
-#: packages/markdownviewer-extension/src/index.ts:181
+#: packages/markdownviewer-extension/src/index.ts:173
 msgid "Show Markdown Editor"
 msgstr "Markdown エディタを表示"
 
-#: packages/notebook-extension/src/index.ts:1011
-msgid "Run Selected Cells and Insert Below"
-msgstr "選択したセルを実行して下に新規セルを挿入"
-
-#: packages/notebook-extension/src/index.ts:1024
-msgid "Run Selected Text or Current Line in Console"
-msgstr "選択したテキストまたは現在の行をコンソールで実行"
-
-#: packages/notebook-extension/src/index.ts:1144 packages/notebook-extension/src/index.ts:2294
-msgid "Run All Cells"
-msgstr "すべてのセルを実行"
-
-#: packages/notebook-extension/src/index.ts:1157
-msgid "Run All Above Selected Cell"
-msgstr "選択したセルの上にあるすべてを実行"
-
-#: packages/notebook-extension/src/index.ts:1177
-msgid "Run Selected Cell and All Below"
-msgstr "選択したセルと下のすべてのセルを実行"
-
-#: packages/notebook-extension/src/index.ts:1198
-msgid "Render All Markdown Cells"
-msgstr "すべてのMarkdownセルをレンダリングする"
-
-#: packages/notebook-extension/src/index.ts:1223
-msgid "Close and Shut Down"
-msgstr "閉じてシャットダウン"
-
-#: packages/notebook-extension/src/index.ts:1234
-msgid "Shut down the notebook?"
-msgstr "Notebookをシャットダウンしますか?"
-
-#: packages/notebook-extension/src/index.ts:1248
-msgid "Trust Notebook"
-msgstr "Notebookを信用する"
-
-#: packages/notebook-extension/src/index.ts:1262
-msgid "Export Notebook: %1"
-msgstr "Notebookをエクスポート: %1"
-
-#: packages/notebook-extension/src/index.ts:1297 packages/notebook-extension/src/index.ts:2228
-msgid "Restart Kernel and Clear All Outputs…"
-msgstr "カーネルを再起動してすべての出力を消去…"
-
-#: packages/notebook-extension/src/index.ts:1312
-msgid "Restart Kernel and Run up to Selected Cell…"
-msgstr "カーネルを再起動して選択したセルまで実行…"
-
-#: packages/notebook-extension/src/index.ts:1339 packages/notebook-extension/src/index.ts:2296
-msgid "Restart Kernel and Run All Cells…"
-msgstr "カーネルを再起動してすべてのセルを実行…"
-
-#: packages/notebook-extension/src/index.ts:1359 packages/notebook-extension/src/index.ts:2132
-msgid "Clear All Outputs"
-msgstr "すべての出力を消去"
-
-#: packages/notebook-extension/src/index.ts:1370
-msgid "Clear Outputs"
-msgstr "出力を消去"
-
-#: packages/notebook-extension/src/index.ts:1398
-msgid "Change to Code Cell Type"
-msgstr "コード形式のセルに変更"
-
-#: packages/notebook-extension/src/index.ts:1409
-msgid "Change to Markdown Cell Type"
-msgstr "Markdown形式のセルに変更"
-
-#: packages/notebook-extension/src/index.ts:1420
-msgid "Change to Raw Cell Type"
-msgstr "Raw形式のセルに変更"
-
-#: packages/notebook-extension/src/index.ts:1431
-msgid "Cut Cells"
-msgstr "セルを切り取り"
-
-#: packages/notebook-extension/src/index.ts:1442
-msgid "Copy Cells"
-msgstr "セルをコピー"
-
-#: packages/notebook-extension/src/index.ts:1453
-msgid "Paste Cells Below"
-msgstr "下にセルを貼り付け"
-
-#: packages/notebook-extension/src/index.ts:1464
-msgid "Paste Cells Above"
-msgstr "上にセルを貼り付け"
-
-#: packages/notebook-extension/src/index.ts:1475
-msgid "Paste Cells and Replace"
-msgstr "セルを貼り付けて置換"
-
-#: packages/notebook-extension/src/index.ts:1486
-msgid "Delete Cells"
-msgstr "セルを削除"
-
-#: packages/notebook-extension/src/index.ts:1497
-msgid "Split Cell"
-msgstr "セルの分割"
-
-#: packages/notebook-extension/src/index.ts:1508
-msgid "Merge Selected Cells"
-msgstr "選択したセルを結合"
-
-#: packages/notebook-extension/src/index.ts:1519
-msgid "Insert Cell Above"
-msgstr "上にセルを挿入"
-
-#: packages/notebook-extension/src/index.ts:1530
-msgid "Insert Cell Below"
-msgstr "下にセルを挿入"
-
-#: packages/notebook-extension/src/index.ts:1541
-msgid "Select Cell Above"
-msgstr "上のセルを選択"
-
-#: packages/notebook-extension/src/index.ts:1552
-msgid "Select Cell Below"
-msgstr "下のセルを選択"
-
-#: packages/notebook-extension/src/index.ts:1563
-msgid "Extend Selection Above"
-msgstr "選択範囲を上に拡張"
-
-#: packages/notebook-extension/src/index.ts:1574
-msgid "Extend Selection to Top"
-msgstr "選択範囲を最上部まで拡張"
-
-#: packages/notebook-extension/src/index.ts:1585
-msgid "Extend Selection Below"
-msgstr "選択範囲を下に拡張"
-
-#: packages/notebook-extension/src/index.ts:1596
-msgid "Extend Selection to Bottom"
-msgstr "選択範囲を最下部まで拡張"
-
-#: packages/notebook-extension/src/index.ts:1607
-msgid "Select All Cells"
-msgstr "すべてのセルを選択"
-
-#: packages/notebook-extension/src/index.ts:1618
-msgid "Deselect All Cells"
-msgstr "すべてのセルの選択を解除"
-
-#: packages/notebook-extension/src/index.ts:1629
-msgid "Move Cells Up"
-msgstr "セルを上に移動"
-
-#: packages/notebook-extension/src/index.ts:1640
-msgid "Move Cells Down"
-msgstr "セルを下に移動"
-
-#: packages/notebook-extension/src/index.ts:1651
-msgid "Toggle All Line Numbers"
-msgstr "すべての行番号表示を切り替える"
-
-#: packages/notebook-extension/src/index.ts:1662
-msgid "Enter Command Mode"
-msgstr "コマンドモードに入る"
-
-#: packages/notebook-extension/src/index.ts:1673
-msgid "Enter Edit Mode"
-msgstr "エディットモードに入る"
-
-#: packages/notebook-extension/src/index.ts:1684
-msgid "Undo Cell Operation"
-msgstr "セル操作を元に戻す"
-
-#: packages/notebook-extension/src/index.ts:1695
-msgid "Redo Cell Operation"
-msgstr "セル操作をやり直す"
-
-#: packages/notebook-extension/src/index.ts:1720
-msgid "Reconnect To Kernel"
-msgstr "カーネルに再接続"
-
-#: packages/notebook-extension/src/index.ts:1737
-msgid "Create New View for Output"
-msgstr "出力用に新しいビューを作成"
-
-#: packages/notebook-extension/src/index.ts:1791 packages/notebook-extension/src/index.ts:2249
-msgid "New Console for Notebook"
-msgstr "Notebook用の新しいコンソール"
-
-#: packages/notebook-extension/src/index.ts:1808
-msgid "Change to Heading 1"
-msgstr "見出し1に変更"
-
-#: packages/notebook-extension/src/index.ts:1819
-msgid "Change to Heading 2"
-msgstr "見出し2に変更"
-
-#: packages/notebook-extension/src/index.ts:1830
-msgid "Change to Heading 3"
-msgstr "見出し3に変更"
-
-#: packages/notebook-extension/src/index.ts:1841
-msgid "Change to Heading 4"
-msgstr "見出し4に変更"
-
-#: packages/notebook-extension/src/index.ts:1852
-msgid "Change to Heading 5"
-msgstr "見出し5に変更"
-
-#: packages/notebook-extension/src/index.ts:1863
-msgid "Change to Heading 6"
-msgstr "見出し6に変更"
-
-#: packages/notebook-extension/src/index.ts:1874
-msgid "Collapse Selected Code"
-msgstr "選択したコードを折りたたむ"
-
-#: packages/notebook-extension/src/index.ts:1885
-msgid "Expand Selected Code"
-msgstr "選択したコードを展開"
-
-#: packages/notebook-extension/src/index.ts:1896
-msgid "Collapse All Code"
-msgstr "すべてのコードを折りたたむ"
-
-#: packages/notebook-extension/src/index.ts:1907
-msgid "Expand All Code"
-msgstr "すべてのコードを展開"
-
-#: packages/notebook-extension/src/index.ts:1918
-msgid "Collapse Selected Outputs"
-msgstr "選択した出力を折りたたむ"
-
-#: packages/notebook-extension/src/index.ts:1929
-msgid "Expand Selected Outputs"
-msgstr "選択した出力を展開"
-
-#: packages/notebook-extension/src/index.ts:1940
-msgid "Collapse All Outputs"
-msgstr "すべての出力を折りたたむ"
-
-#: packages/notebook-extension/src/index.ts:1951
-msgid "Expand All Outputs"
-msgstr "すべての出力を展開"
-
-#: packages/notebook-extension/src/index.ts:1962
-msgid "Enable Scrolling for Outputs"
-msgstr "出力のスクロールを有効にする"
-
-#: packages/notebook-extension/src/index.ts:1973
-msgid "Disable Scrolling for Outputs"
-msgstr "出力のスクロールを無効にする"
-
-#: packages/notebook-extension/src/index.ts:1984
-msgid "Select current running or last run cell"
-msgstr "現在実行中または最後の実行セルを選択"
-
-#: packages/notebook-extension/src/index.ts:1995
-msgid "Replace Selection in Notebook Cell"
-msgstr "ノートブックセルの選択範囲を置換する"
-
-#: packages/notebook-extension/src/index.ts:2016 packages/notebook-extension/src/index.ts:2194
-msgid "Notebook Operations"
-msgstr "Notebookの操作"
-
-#: packages/notebook-extension/src/index.ts:2049
-msgid "Notebook Cell Operations"
-msgstr "Notebookセルの操作"
-
-#: packages/notebook-extension/src/index.ts:2130
-msgid "Clear Output"
-msgstr "出力を消去"
-
-#: packages/notebook-extension/src/index.ts:2149
-msgid "Close and Shutdown Notebook"
-msgstr "Notebookを閉じてシャットダウンする"
-
-#: packages/notebook-extension/src/index.ts:2153
-msgid "Shut down the Notebook?"
-msgstr "Notebookをシャットダウンしますか?"
-
-#: packages/notebook-extension/src/index.ts:2168
-msgid "Export Notebook As…"
-msgstr "Notebookを別名でエクスポート…"
-
-#: packages/notebook-extension/src/index.ts:2293 packages/notebook-extension/src/index.ts:985
-msgid "Run Selected Cells"
-msgstr "選択したセルを実行"
-
-#: packages/notebook-extension/src/index.ts:2436
-msgid "For Notebook: %1"
-msgstr "Notebook: %1"
-
-#: packages/notebook-extension/src/index.ts:2437
-msgid "For Notebook:"
-msgstr "Notebook:"
-
-#: packages/notebook-extension/src/index.ts:2522
-msgid "HTML"
+#: packages/notebook-extension/src/index.ts:1005
+msgid "Copy Output to Clipboard"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:2523
-msgid "LaTeX"
+#: packages/notebook-extension/src/index.ts:1094
+msgid "Auto Close Brackets for All Notebook Cell Types"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:2524 packages/notebook/src/default-toolbar.tsx:344
-msgid "Markdown"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2525 packages/notebook-extension/src/index.ts:472
-msgid "PDF"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2526
-msgid "ReStructured Text"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2527
-msgid "Executable Script"
-msgstr "実行可能なスクリプト"
-
-#: packages/notebook-extension/src/index.ts:2528
-msgid "Reveal.js Slides"
-msgstr "Reveal.js スライド"
-
-#: packages/notebook-extension/src/index.ts:473
-msgid "Slides"
-msgstr "スライド"
-
-#: packages/notebook-extension/src/index.ts:474
-msgid "Script"
-msgstr "スクリプト"
-
-#: packages/notebook-extension/src/index.ts:476
-msgid "Custom"
-msgstr "カスタム"
-
-#: packages/notebook-extension/src/index.ts:498
-msgid "Notebook Tools"
-msgstr "Notebookツール"
-
-#: packages/notebook-extension/src/index.ts:742
+#: packages/notebook-extension/src/index.ts:1229
 msgid "New Notebook"
 msgstr "新しいNotebook"
 
-#: packages/notebook-extension/src/index.ts:746
+#: packages/notebook-extension/src/index.ts:1233
 msgid "Create a new notebook"
 msgstr "新しいnotebookを作成する"
 
-#: packages/notebook-extension/src/index.ts:998
+#: packages/notebook-extension/src/index.ts:1385 packages/notebook-extension/src/index.ts:2445
+msgid "Run Selected Cells"
+msgstr "選択したセルを実行"
+
+#: packages/notebook-extension/src/index.ts:1398
 msgid "Run Selected Cells and Don't Advance"
 msgstr "選択したセルを実行し、次に進まない"
 
-#: packages/notebook/src/actions.tsx:1387
-msgid "A trusted Jupyter notebook may execute hidden malicious code when you openit."
-msgstr "信頼されたJupyterノートブックは、開く際に隠れた悪意のあるコードを実行するかもしれません。"
+#: packages/notebook-extension/src/index.ts:1411
+msgid "Run Selected Cells and Insert Below"
+msgstr "選択したセルを実行して下に新規セルを挿入"
 
-#: packages/notebook/src/actions.tsx:1391
+#: packages/notebook-extension/src/index.ts:1424 packages/notebook-extension/src/index.ts:2446
+msgid "Run All Cells"
+msgstr "すべてのセルを実行"
+
+#: packages/notebook-extension/src/index.ts:1437
+msgid "Run All Above Selected Cell"
+msgstr "選択したセルの上にあるすべてを実行"
+
+#: packages/notebook-extension/src/index.ts:1457
+msgid "Run Selected Cell and All Below"
+msgstr "選択したセルと下のすべてのセルを実行"
+
+#: packages/notebook-extension/src/index.ts:1478
+msgid "Render All Markdown Cells"
+msgstr "すべてのMarkdownセルをレンダリングする"
+
+#: packages/notebook-extension/src/index.ts:1503
+msgid "Close and Shut Down"
+msgstr "閉じてシャットダウン"
+
+#: packages/notebook-extension/src/index.ts:1514
+msgid "Shut down the notebook?"
+msgstr "Notebookをシャットダウンしますか?"
+
+#: packages/notebook-extension/src/index.ts:1528
+msgid "Trust Notebook"
+msgstr "Notebookを信用する"
+
+#: packages/notebook-extension/src/index.ts:1539 packages/notebook-extension/src/index.ts:2401
+msgid "Restart Kernel and Clear All Outputs…"
+msgstr "カーネルを再起動してすべての出力を消去…"
+
+#: packages/notebook-extension/src/index.ts:1554
+msgid "Restart Kernel and Run up to Selected Cell…"
+msgstr "カーネルを再起動して選択したセルまで実行…"
+
+#: packages/notebook-extension/src/index.ts:1578 packages/notebook-extension/src/index.ts:2448
+msgid "Restart Kernel and Run All Cells…"
+msgstr "カーネルを再起動してすべてのセルを実行…"
+
+#: packages/notebook-extension/src/index.ts:1598 packages/notebook-extension/src/index.ts:2352
+msgid "Clear All Outputs"
+msgstr "すべての出力を消去"
+
+#: packages/notebook-extension/src/index.ts:1609
+msgid "Clear Outputs"
+msgstr "出力を消去"
+
+#: packages/notebook-extension/src/index.ts:1637
+msgid "Change to Code Cell Type"
+msgstr "コード形式のセルに変更"
+
+#: packages/notebook-extension/src/index.ts:1648
+msgid "Change to Markdown Cell Type"
+msgstr "Markdown形式のセルに変更"
+
+#: packages/notebook-extension/src/index.ts:1659
+msgid "Change to Raw Cell Type"
+msgstr "Raw形式のセルに変更"
+
+#: packages/notebook-extension/src/index.ts:1670
+msgid "Cut Cells"
+msgstr "セルを切り取り"
+
+#: packages/notebook-extension/src/index.ts:1681
+msgid "Copy Cells"
+msgstr "セルをコピー"
+
+#: packages/notebook-extension/src/index.ts:1692
+msgid "Paste Cells Below"
+msgstr "下にセルを貼り付け"
+
+#: packages/notebook-extension/src/index.ts:1703
+msgid "Paste Cells Above"
+msgstr "上にセルを貼り付け"
+
+#: packages/notebook-extension/src/index.ts:1714
+msgid "Paste Cells and Replace"
+msgstr "セルを貼り付けて置換"
+
+#: packages/notebook-extension/src/index.ts:1725
+msgid "Delete Cells"
+msgstr "セルを削除"
+
+#: packages/notebook-extension/src/index.ts:1736
+msgid "Split Cell"
+msgstr "セルの分割"
+
+#: packages/notebook-extension/src/index.ts:1747
+msgid "Merge Selected Cells"
+msgstr "選択したセルを結合"
+
+#: packages/notebook-extension/src/index.ts:1758
+msgid "Merge Cell Above"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1769
+msgid "Merge Cell Below"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1780
+msgid "Insert Cell Above"
+msgstr "上にセルを挿入"
+
+#: packages/notebook-extension/src/index.ts:1791
+msgid "Insert Cell Below"
+msgstr "下にセルを挿入"
+
+#: packages/notebook-extension/src/index.ts:1802
+msgid "Select Cell Above"
+msgstr "上のセルを選択"
+
+#: packages/notebook-extension/src/index.ts:1813
+msgid "Select Cell Below"
+msgstr "下のセルを選択"
+
+#: packages/notebook-extension/src/index.ts:1824
+msgid "Extend Selection Above"
+msgstr "選択範囲を上に拡張"
+
+#: packages/notebook-extension/src/index.ts:1835
+msgid "Extend Selection to Top"
+msgstr "選択範囲を最上部まで拡張"
+
+#: packages/notebook-extension/src/index.ts:1846
+msgid "Extend Selection Below"
+msgstr "選択範囲を下に拡張"
+
+#: packages/notebook-extension/src/index.ts:1857
+msgid "Extend Selection to Bottom"
+msgstr "選択範囲を最下部まで拡張"
+
+#: packages/notebook-extension/src/index.ts:1868
+msgid "Select All Cells"
+msgstr "すべてのセルを選択"
+
+#: packages/notebook-extension/src/index.ts:1879
+msgid "Deselect All Cells"
+msgstr "すべてのセルの選択を解除"
+
+#: packages/notebook-extension/src/index.ts:1890
+msgid "Move Cells Up"
+msgstr "セルを上に移動"
+
+#: packages/notebook-extension/src/index.ts:1901
+msgid "Move Cells Down"
+msgstr "セルを下に移動"
+
+#: packages/notebook-extension/src/index.ts:1912
+msgid "Toggle All Line Numbers"
+msgstr "すべての行番号表示を切り替える"
+
+#: packages/notebook-extension/src/index.ts:1923
+msgid "Enter Command Mode"
+msgstr "コマンドモードに入る"
+
+#: packages/notebook-extension/src/index.ts:1934
+msgid "Enter Edit Mode"
+msgstr "エディットモードに入る"
+
+#: packages/notebook-extension/src/index.ts:1945
+msgid "Undo Cell Operation"
+msgstr "セル操作を元に戻す"
+
+#: packages/notebook-extension/src/index.ts:1956
+msgid "Redo Cell Operation"
+msgstr "セル操作をやり直す"
+
+#: packages/notebook-extension/src/index.ts:1981
+msgid "Reconnect To Kernel"
+msgstr "カーネルに再接続"
+
+#: packages/notebook-extension/src/index.ts:1998
+msgid "Change to Heading 1"
+msgstr "見出し1に変更"
+
+#: packages/notebook-extension/src/index.ts:2009
+msgid "Change to Heading 2"
+msgstr "見出し2に変更"
+
+#: packages/notebook-extension/src/index.ts:2020
+msgid "Change to Heading 3"
+msgstr "見出し3に変更"
+
+#: packages/notebook-extension/src/index.ts:2031
+msgid "Change to Heading 4"
+msgstr "見出し4に変更"
+
+#: packages/notebook-extension/src/index.ts:2042
+msgid "Change to Heading 5"
+msgstr "見出し5に変更"
+
+#: packages/notebook-extension/src/index.ts:2053
+msgid "Change to Heading 6"
+msgstr "見出し6に変更"
+
+#: packages/notebook-extension/src/index.ts:2064
+msgid "Collapse Selected Code"
+msgstr "選択したコードを折りたたむ"
+
+#: packages/notebook-extension/src/index.ts:2075
+msgid "Expand Selected Code"
+msgstr "選択したコードを展開"
+
+#: packages/notebook-extension/src/index.ts:2086
+msgid "Collapse All Code"
+msgstr "すべてのコードを折りたたむ"
+
+#: packages/notebook-extension/src/index.ts:2097
+msgid "Expand All Code"
+msgstr "すべてのコードを展開"
+
+#: packages/notebook-extension/src/index.ts:2108
+msgid "Collapse Selected Outputs"
+msgstr "選択した出力を折りたたむ"
+
+#: packages/notebook-extension/src/index.ts:2119
+msgid "Expand Selected Outputs"
+msgstr "選択した出力を展開"
+
+#: packages/notebook-extension/src/index.ts:2130
+msgid "Collapse All Outputs"
+msgstr "すべての出力を折りたたむ"
+
+#: packages/notebook-extension/src/index.ts:2141
+msgid "Expand All Outputs"
+msgstr "すべての出力を展開"
+
+#: packages/notebook-extension/src/index.ts:2152
+msgid "Enable Scrolling for Outputs"
+msgstr "出力のスクロールを有効にする"
+
+#: packages/notebook-extension/src/index.ts:2163
+msgid "Disable Scrolling for Outputs"
+msgstr "出力のスクロールを無効にする"
+
+#: packages/notebook-extension/src/index.ts:2174
+msgid "Select current running or last run cell"
+msgstr "現在実行中または最後の実行セルを選択"
+
+#: packages/notebook-extension/src/index.ts:2185
+msgid "Replace Selection in Notebook Cell"
+msgstr "ノートブックセルの選択範囲を置換する"
+
+#: packages/notebook-extension/src/index.ts:2233 packages/notebook-extension/src/index.ts:455
+msgid "Notebook Operations"
+msgstr "Notebookの操作"
+
+#: packages/notebook-extension/src/index.ts:2269
+msgid "Notebook Cell Operations"
+msgstr "Notebookセルの操作"
+
+#: packages/notebook-extension/src/index.ts:2350
+msgid "Clear Output"
+msgstr "出力を消去"
+
+#: packages/notebook-extension/src/index.ts:2366
+msgid "Close and Shutdown Notebook"
+msgstr "Notebookを閉じてシャットダウンする"
+
+#: packages/notebook-extension/src/index.ts:2370
+msgid "Shut down the Notebook?"
+msgstr "Notebookをシャットダウンしますか?"
+
+#: packages/notebook-extension/src/index.ts:2422 packages/notebook-extension/src/index.ts:827
+msgid "New Console for Notebook"
+msgstr "Notebook用の新しいコンソール"
+
+#: packages/notebook-extension/src/index.ts:2578
+msgid "HTML"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2579
+msgid "LaTeX"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2580 packages/notebook/src/default-toolbar.tsx:343
+msgid "Markdown"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2581 packages/notebook-extension/src/index.ts:637
+msgid "PDF"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2582
+msgid "ReStructured Text"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2583
+msgid "Executable Script"
+msgstr "実行可能なスクリプト"
+
+#: packages/notebook-extension/src/index.ts:2584
+msgid "Reveal.js Slides"
+msgstr "Reveal.js スライド"
+
+#: packages/notebook-extension/src/index.ts:2602
+msgid "For Notebook: %1"
+msgstr "Notebook: %1"
+
+#: packages/notebook-extension/src/index.ts:2603
+msgid "For Notebook:"
+msgstr "Notebook:"
+
+#: packages/notebook-extension/src/index.ts:383
+msgid "Export Notebook: %1"
+msgstr "Notebookをエクスポート: %1"
+
+#: packages/notebook-extension/src/index.ts:638
+msgid "Slides"
+msgstr "スライド"
+
+#: packages/notebook-extension/src/index.ts:639
+msgid "Script"
+msgstr "スクリプト"
+
+#: packages/notebook-extension/src/index.ts:641
+msgid "Custom"
+msgstr "カスタム"
+
+#: packages/notebook-extension/src/index.ts:663
+msgid "Notebook Tools"
+msgstr "Notebookツール"
+
+#: packages/notebook-extension/src/index.ts:758
+msgid "Create New View for Output"
+msgstr "出力用に新しいビューを作成"
+
+#: packages/notebook-extension/src/index.ts:845
+msgid "Run Selected Text or Current Line in Console"
+msgstr "選択したテキストまたは現在の行をコンソールで実行"
+
+#: packages/notebook/src/actions.tsx:1732
+msgid "A trusted Jupyter notebook may execute hidden malicious code when you open it."
+msgstr ""
+
+#: packages/notebook/src/actions.tsx:1736
 msgid "Selecting trust will re-render this notebook in a trusted state."
 msgstr "\"信頼\"を選択すると、このノートブックは信頼された状態で再レンダリングされます。"
 
-#: packages/notebook/src/actions.tsx:1395
-msgid "For more information, see the <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>"
-msgstr "詳細については、 <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a> を参照してください。"
+#: packages/notebook/src/actions.tsx:1740
+msgid "For more information, see"
+msgstr ""
 
-#: packages/notebook/src/actions.tsx:1397
-msgid "Jupyter security documentation"
-msgstr "Jupyter セキュリティ文書"
+#: packages/notebook/src/actions.tsx:1746
+msgid "the Jupyter security documentation"
+msgstr ""
 
-#: packages/notebook/src/actions.tsx:1404
+#: packages/notebook/src/actions.tsx:1753
 msgid "Notebook is already trusted"
 msgstr "Notebookは既に信頼されています"
 
-#: packages/notebook/src/actions.tsx:1411
+#: packages/notebook/src/actions.tsx:1760
 msgid "Trust this notebook?"
 msgstr "このnotebookを信頼しますか？"
 
-#: packages/notebook/src/actions.tsx:1599
+#: packages/notebook/src/actions.tsx:1976
 msgid "Kernel Terminating"
 msgstr "カーネル終了中"
 
-#: packages/notebook/src/actions.tsx:1600
+#: packages/notebook/src/actions.tsx:1977
 msgid "The kernel for %1 appears to be terminating. You can not run any cell for now."
 msgstr "%1 のカーネルが終了しているようです。現在どのセルも実行できません。"
 
-#: packages/notebook/src/default-toolbar.tsx:116
+#: packages/notebook/src/default-toolbar.tsx:114
 msgid "Insert a cell below"
 msgstr "下にセルを挿入"
 
-#: packages/notebook/src/default-toolbar.tsx:133
+#: packages/notebook/src/default-toolbar.tsx:131
 msgid "Cut the selected cells"
 msgstr "選択したセルを切り取り"
 
-#: packages/notebook/src/default-toolbar.tsx:150
+#: packages/notebook/src/default-toolbar.tsx:148
 msgid "Copy the selected cells"
 msgstr "選択したセルをコピー"
 
-#: packages/notebook/src/default-toolbar.tsx:167
+#: packages/notebook/src/default-toolbar.tsx:165
 msgid "Paste cells from the clipboard"
 msgstr "クリップボードからセルを貼り付け"
 
-#: packages/notebook/src/default-toolbar.tsx:184
+#: packages/notebook/src/default-toolbar.tsx:182
 msgid "Run the selected cells and advance"
 msgstr "選択したセルを実行して次のセルに進めます"
 
-#: packages/notebook/src/default-toolbar.tsx:208
+#: packages/notebook/src/default-toolbar.tsx:206
 msgid "Restart the kernel, then re-run the whole notebook"
 msgstr "カーネルを再起動し、notebook全体を再実行"
 
-#: packages/notebook/src/default-toolbar.tsx:340
+#: packages/notebook/src/default-toolbar.tsx:338
 msgid "Cell type"
 msgstr "セルの種類"
 
-#: packages/notebook/src/default-toolbar.tsx:343
+#: packages/notebook/src/default-toolbar.tsx:339
+msgid "Select the cell type"
+msgstr ""
+
+#: packages/notebook/src/default-toolbar.tsx:342
 msgid "Code"
 msgstr "コード"
 
-#: packages/notebook/src/default-toolbar.tsx:345
+#: packages/notebook/src/default-toolbar.tsx:344
 msgid "Raw"
 msgstr ""
 
-#: packages/notebook/src/default-toolbar.tsx:85
+#: packages/notebook/src/default-toolbar.tsx:83
 msgid "Save the notebook contents and create checkpoint"
 msgstr "Notebookの内容を保存してチェックポイントを作成"
 
-#: packages/notebook/src/model.ts:272
+#: packages/notebook/src/model.ts:330
 msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "to the current notebook format (v%2).\n"
 "The next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n"
@@ -3271,7 +3679,7 @@ msgstr "Notebookは過去のnotebookフォーマット(v%1) から現在のnoteb
 "このnotebookを次回保存する際は、現在のnotebookフォーマット(vthis._nbformat) が使用されます。\n"
 "以前のバージョンのJupyterは新しいフォーマットを開けない可能性があります。以前のnotebookの状態を保存したい場合は、notebookを保存せずに閉じてください。"
 
-#: packages/notebook/src/model.ts:282
+#: packages/notebook/src/model.ts:340
 msgid "This notebook has been converted from an newer notebook format (v%1)\n"
 "to the current notebook format (v%2).\n"
 "The next time you save this notebook, the current notebook format (v%2) will be used.\n"
@@ -3281,79 +3689,79 @@ msgstr "Notebookは新しいnotebookフォーマット(v%1) から現在のnoteb
 "このnotebookを次回保存する際は、現在のnotebookフォーマット(v%2) が使用されます。\n"
 "以前のnotebookの機能が使えなくなる可能性があります。以前のnotebookの状態を保存したい場合は、notebookを保存せずに閉じてください。"
 
-#: packages/notebook/src/model.ts:293
+#: packages/notebook/src/model.ts:351
 msgid "Notebook converted"
 msgstr "Notebookは変換されました"
 
-#: packages/notebook/src/modestatus.tsx:29
+#: packages/notebook/src/modestatus.tsx:25
 msgid "Mode: %1"
 msgstr "モード: %1"
 
-#: packages/notebook/src/modestatus.tsx:74
+#: packages/notebook/src/modestatus.tsx:70
 msgid "Notebook is in %1 mode"
 msgstr "Notebookは %1 モードです"
 
-#: packages/notebook/src/notebooktools.ts:587
+#: packages/notebook/src/notebooktools.ts:576
 msgid "Notebook Metadata"
 msgstr "Notebookのメタデータ"
 
-#: packages/notebook/src/notebooktools.ts:620
+#: packages/notebook/src/notebooktools.ts:609
 msgid "Cell Metadata"
 msgstr "セルのメタデータ"
 
-#: packages/notebook/src/notebooktools.ts:884
-msgid "Slide Type"
-msgstr "スライドの種類"
-
-#: packages/notebook/src/notebooktools.ts:887
-msgid "Slide"
-msgstr "スライド"
-
-#: packages/notebook/src/notebooktools.ts:888
-msgid "Sub-Slide"
-msgstr "サブスライド"
-
-#: packages/notebook/src/notebooktools.ts:889
-msgid "Fragment"
-msgstr "フラグメント"
-
-#: packages/notebook/src/notebooktools.ts:89
+#: packages/notebook/src/notebooktools.ts:78
 msgid "Advanced Tools"
 msgstr "高度なツール"
 
-#: packages/notebook/src/notebooktools.ts:890
+#: packages/notebook/src/notebooktools.ts:873
+msgid "Slide Type"
+msgstr "スライドの種類"
+
+#: packages/notebook/src/notebooktools.ts:876
+msgid "Slide"
+msgstr "スライド"
+
+#: packages/notebook/src/notebooktools.ts:877
+msgid "Sub-Slide"
+msgstr "サブスライド"
+
+#: packages/notebook/src/notebooktools.ts:878
+msgid "Fragment"
+msgstr "フラグメント"
+
+#: packages/notebook/src/notebooktools.ts:879
 msgid "Skip"
 msgstr "スキップ"
 
-#: packages/notebook/src/notebooktools.ts:891
+#: packages/notebook/src/notebooktools.ts:880
 msgid "Notes"
 msgstr "ノート"
 
-#: packages/notebook/src/notebooktools.ts:929
+#: packages/notebook/src/notebooktools.ts:918
 msgid "Raw NBConvert Format"
 msgstr "Raw NBConvert フォーマット"
 
-#: packages/notebook/src/panel.ts:203
+#: packages/notebook/src/panel.ts:214
 msgid "Kernel Restarting"
 msgstr "カーネル再起動中"
 
-#: packages/notebook/src/panel.ts:204
+#: packages/notebook/src/panel.ts:215
 msgid "The kernel for %1 appears to have died. It will restart automatically."
 msgstr "%1 のカーネルが予期せず終了しました。自動的に再起動します。"
 
-#: packages/notebook/src/truststatus.tsx:26
+#: packages/notebook/src/truststatus.tsx:21
 msgid "Notebook trusted: %1 of %2 cells trusted."
 msgstr "Notebookは信頼されています: %2 のセルの内 %1 のセルが信頼されています。"
 
-#: packages/notebook/src/truststatus.tsx:35
+#: packages/notebook/src/truststatus.tsx:30
 msgid "Active cell trusted: %1 of %2 cells trusted."
 msgstr "アクティブなセルは信頼されています: %2 のセルの内 %1 のセルが信頼されています。"
 
-#: packages/notebook/src/truststatus.tsx:44
+#: packages/notebook/src/truststatus.tsx:39
 msgid "Notebook not trusted: %1 of %2 cells trusted."
 msgstr "Notebookは信頼されていません: %2 のセルの内 %1 のセルが信頼されています。"
 
-#: packages/property-inspector/src/index.ts:176
+#: packages/property-inspector/src/index.ts:170
 msgid "No properties to inspect."
 msgstr "チェックするプロパティがありません。"
 
@@ -3361,51 +3769,55 @@ msgstr "チェックするプロパティがありません。"
 msgid "Handle Local Link"
 msgstr "ローカルリンクの処理"
 
-#: packages/rendermime/src/renderers.ts:74
+#: packages/rendermime/src/renderers.ts:66
 msgid "This HTML output contains inline scripts. Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
 msgstr "このHTML出力にはインラインスクリプトが含まれています。JupyterLabセッション内で任意のJavaScriptを実行してもよろしいですか?"
 
-#: packages/rendermime/src/widgets.ts:421
+#: packages/rendermime/src/widgets.ts:416
 msgid "JavaScript output is disabled in JupyterLab"
 msgstr "JupyterLabではJavaScriptの出力が無効になっています"
 
-#: packages/running-extension/src/index.ts:59
+#: packages/running-extension/src/index.ts:54
 msgid "Running Terminals and Kernels"
 msgstr "ターミナルとカーネルの実行"
 
-#: packages/running-extension/src/kernels.ts:36
+#: packages/running-extension/src/index.ts:57
+msgid "Running Sessions section"
+msgstr ""
+
+#: packages/running-extension/src/kernels.ts:30
 msgid "Kernels"
 msgstr "カーネル"
 
-#: packages/running-extension/src/kernels.ts:47
+#: packages/running-extension/src/kernels.ts:41
 msgid "Are you sure you want to permanently shut down all running kernels?"
 msgstr ""
 
-#: packages/running-extension/src/kernels.ts:86
+#: packages/running-extension/src/kernels.ts:80
 msgid "Path: %1\n"
 "Kernel: %2"
 msgstr "パス: %1\n"
 "カーネル: %2"
 
-#: packages/running-extension/src/opentabs.ts:78
+#: packages/running-extension/src/opentabs.ts:71
 msgid "Open Tabs"
 msgstr "タブを開く"
 
-#: packages/running-extension/src/opentabs.ts:94
-msgid "Close"
-msgstr ""
-
-#: packages/running-extension/src/opentabs.ts:95
+#: packages/running-extension/src/opentabs.ts:88
 msgid "Close All"
 msgstr ""
 
-#: packages/running-extension/src/opentabs.ts:96
+#: packages/running-extension/src/opentabs.ts:89
 msgid "Are you sure you want to close all open tabs?"
 msgstr ""
 
-#: packages/running/src/index.tsx:294
+#: packages/running/src/index.tsx:288
 msgid "Refresh List"
 msgstr "リストを更新"
+
+#: packages/settingeditor-extension/src/index.ts:145 packages/settingeditor-extension/src/index.ts:155
+msgid "Settings"
+msgstr "設定"
 
 #: packages/settingeditor-extension/src/index.ts:151
 msgid "Advanced Settings Editor"
@@ -3419,39 +3831,39 @@ msgstr "ユーザー設定を元に戻す"
 msgid "Save User Settings"
 msgstr "ユーザー設定を保存"
 
-#: packages/settingeditor/src/inspector.ts:40
+#: packages/settingeditor/src/inspector.ts:34
 msgid "Any errors will be listed here"
 msgstr "エラーはここにリストされます"
 
-#: packages/settingeditor/src/inspector.ts:97
+#: packages/settingeditor/src/inspector.ts:91
 msgid "No errors found"
 msgstr "エラーは見つかりませんでした"
 
-#: packages/settingeditor/src/plugineditor.ts:145
+#: packages/settingeditor/src/plugineditor.ts:134
 msgid "You have unsaved changes."
 msgstr "保存していない変更があります。"
 
-#: packages/settingeditor/src/plugineditor.ts:146
+#: packages/settingeditor/src/plugineditor.ts:135
 msgid "Do you want to leave without saving?"
 msgstr "保存せずに終了しますか?"
 
-#: packages/settingeditor/src/plugineditor.ts:269
+#: packages/settingeditor/src/plugineditor.ts:258
 msgid "Your changes were not saved."
 msgstr "変更は保存されませんでした。"
 
-#: packages/settingeditor/src/raweditor.ts:387
+#: packages/settingeditor/src/raweditor.ts:377
 msgid "System Defaults"
 msgstr "システムのデフォルト設定"
 
-#: packages/settingeditor/src/raweditor.ts:428
+#: packages/settingeditor/src/raweditor.ts:418
 msgid "User Preferences"
 msgstr "ユーザー設定"
 
-#: packages/settingeditor/src/settingeditor.tsx:464
+#: packages/settingeditor/src/settingeditor.tsx:449
 msgid "Select a plugin from the list to view and edit its preferences."
 msgstr "リストからプラグインを選択して、その設定を表示および編集します。"
 
-#: packages/shortcuts-extension/src/index.ts:86
+#: packages/shortcuts-extension/src/index.ts:82
 msgid "Note: To disable a system default shortcut,\n"
 "copy it to User Preferences and add the\n"
 "\"disabled\" key, for example:\n"
@@ -3479,155 +3891,159 @@ msgstr "注意: デフォルトのショートカットを無効にしたい場�
 "%1\n\n"
 "キーボードショートカットのリストです:"
 
-#: packages/statusbar-extension/src/index.ts:377
+#: packages/statusbar-extension/src/index.ts:359
 msgid "Simple Interface (%1)"
 msgstr ""
 
-#: packages/statusbar-extension/src/index.ts:387
+#: packages/statusbar-extension/src/index.ts:369
 msgid "Simple"
 msgstr ""
 
-#: packages/statusbar-extension/src/index.ts:93
+#: packages/statusbar-extension/src/index.ts:78
 msgid "Show Status Bar"
 msgstr "ステータスバーを表示"
 
-#: packages/statusbar/src/defaults/kernelStatus.tsx:128
+#: packages/statusbar/src/defaults/kernelStatus.tsx:121
 msgid "No Kernel!"
 msgstr "カーネルがありません!"
 
-#: packages/statusbar/src/defaults/kernelStatus.tsx:38
+#: packages/statusbar/src/defaults/kernelStatus.tsx:31
 msgid "Change kernel for %1"
 msgstr "%1 のカーネルを変更"
 
-#: packages/statusbar/src/defaults/lineCol.tsx:140
+#: packages/statusbar/src/defaults/lineCol.tsx:133
 msgid "Go to line number between 1 and %1"
 msgstr "1 から %1 の行番号に移動"
 
-#: packages/statusbar/src/defaults/lineCol.tsx:238
+#: packages/statusbar/src/defaults/lineCol.tsx:231
 msgid "Ln %1, Col %2"
 msgstr ""
 
-#: packages/statusbar/src/defaults/lineCol.tsx:239
+#: packages/statusbar/src/defaults/lineCol.tsx:232
 msgid "Go to line number…"
 msgstr "行番号に移動…"
 
-#: packages/statusbar/src/defaults/runningSessions.tsx:116
+#: packages/statusbar/src/defaults/runningSessions.tsx:111
 msgid "%1 Terminals, %2 Kernel sessions"
 msgstr "%1 ターミナル, %2 カーネルセッション"
 
-#: packages/terminal-extension/src/index.ts:179
-msgid "Terminal Theme"
-msgstr "ターミナルのテーマ"
-
-#: packages/terminal-extension/src/index.ts:184 packages/terminal-extension/src/index.ts:240
-msgid "Inherit"
-msgstr "継承する"
-
-#: packages/terminal-extension/src/index.ts:192 packages/terminal-extension/src/index.ts:247
-msgid "Light"
-msgstr "ライト"
-
-#: packages/terminal-extension/src/index.ts:198 packages/terminal-extension/src/index.ts:252
-msgid "Dark"
-msgstr "ダーク"
-
-#: packages/terminal-extension/src/index.ts:217
+#: packages/terminal-extension/src/index.ts:177
 msgid "Shutdown Terminal"
 msgstr "ターミナルの終了"
 
-#: packages/terminal-extension/src/index.ts:291
+#: packages/terminal-extension/src/index.ts:200 packages/terminal-extension/src/index.ts:394
+msgid "Inherit"
+msgstr "継承する"
+
+#: packages/terminal-extension/src/index.ts:207 packages/terminal-extension/src/index.ts:395
+msgid "Light"
+msgstr "ライト"
+
+#: packages/terminal-extension/src/index.ts:212 packages/terminal-extension/src/index.ts:396
+msgid "Dark"
+msgstr "ダーク"
+
+#: packages/terminal-extension/src/index.ts:245
 msgid "Terminals"
 msgstr "ターミナル"
 
-#: packages/terminal-extension/src/index.ts:299
+#: packages/terminal-extension/src/index.ts:253
 msgid "Are you sure you want to permanently shut down all running terminals?"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:341
+#: packages/terminal-extension/src/index.ts:295
 msgid "New Terminal"
 msgstr "新規ターミナル"
 
-#: packages/terminal-extension/src/index.ts:341 packages/terminal-extension/src/index.ts:91 packages/terminal/src/widget.ts:76
+#: packages/terminal-extension/src/index.ts:295 packages/terminal-extension/src/index.ts:88 packages/terminal/src/widget.ts:69
 msgid "Terminal"
 msgstr "ターミナル"
 
-#: packages/terminal-extension/src/index.ts:342
+#: packages/terminal-extension/src/index.ts:296
 msgid "Start a new terminal session"
 msgstr "新しいターミナルセッションを開始"
 
-#: packages/terminal-extension/src/index.ts:391
+#: packages/terminal-extension/src/index.ts:345
 msgid "Refresh Terminal"
 msgstr "ターミナルをリフレッシュ"
 
-#: packages/terminal-extension/src/index.ts:392
+#: packages/terminal-extension/src/index.ts:346
 msgid "Refresh the current terminal session"
 msgstr "現在のターミナルセッションをリフレッシュ"
 
-#: packages/terminal-extension/src/index.ts:412
+#: packages/terminal-extension/src/index.ts:366
 msgid "Increase Terminal Font Size"
 msgstr "ターミナルのフォントサイズを大きく"
 
-#: packages/terminal-extension/src/index.ts:426
+#: packages/terminal-extension/src/index.ts:380
 msgid "Decrease Terminal Font Size"
 msgstr "ターミナルのフォントサイズを小さくします"
 
-#: packages/terminal-extension/src/index.ts:443
+#: packages/terminal-extension/src/index.ts:407
 msgid "Use Terminal Theme: %1"
 msgstr "ターミナルのテーマを使用します: %1"
 
-#: packages/terminal-extension/src/index.ts:446
+#: packages/terminal-extension/src/index.ts:410
 msgid "Set the terminal theme"
 msgstr "ターミナルのテーマを設定します"
 
-#: packages/terminal/src/widget.ts:97
+#: packages/terminal/src/widget.ts:90
 msgid "Terminal %1"
 msgstr "ターミナル %1"
 
-#: packages/theme-dark-extension/src/index.ts:32
+#: packages/theme-dark-extension/src/index.ts:30
 msgid "JupyterLab Dark"
 msgstr "JupyterLab ダーク"
 
-#: packages/theme-light-extension/src/index.ts:32
+#: packages/theme-light-extension/src/index.ts:30
 msgid "JupyterLab Light"
 msgstr "JupyterLab ライト"
 
-#: packages/toc-extension/src/index.ts:67 packages/toc/src/toc.tsx:113
+#: packages/toc-extension/src/index.ts:82 packages/toc/src/toc.tsx:125
 msgid "Table of Contents"
 msgstr "目次"
 
-#: packages/toc/src/generators/markdown/toolbar_generator.tsx:64 packages/toc/src/generators/markdown/toolbar_generator.tsx:65 packages/toc/src/generators/notebook/toolbar_generator.tsx:212 packages/toc/src/generators/notebook/toolbar_generator.tsx:213
+#: packages/toc-extension/src/index.ts:85
+msgid "Table of Contents section"
+msgstr ""
+
+#: packages/toc-extension/src/index.ts:93
+msgid "Run Cell(s)"
+msgstr ""
+
+#: packages/toc/src/generators/markdown/toolbar_generator.tsx:64 packages/toc/src/generators/markdown/toolbar_generator.tsx:65 packages/toc/src/generators/notebook/toolbar_generator.tsx:214 packages/toc/src/generators/notebook/toolbar_generator.tsx:215
 msgid "Toggle Auto-Numbering"
 msgstr "自動番号表示の切り替え"
 
-#: packages/toc/src/generators/notebook/tagstool/index.tsx:186
+#: packages/toc/src/generators/notebook/tagstool/index.tsx:217
 msgid "No Tags Available"
 msgstr "タグがありません"
 
-#: packages/toc/src/generators/notebook/tagstool/index.tsx:193
+#: packages/toc/src/generators/notebook/tagstool/index.tsx:224
 msgid "Clear Filters"
 msgstr "フィルタをクリア"
 
-#: packages/toc/src/generators/notebook/toolbar_generator.tsx:180 packages/toc/src/generators/notebook/toolbar_generator.tsx:181
+#: packages/toc/src/generators/notebook/tagstool/index.tsx:255 packages/toc/src/generators/notebook/tagstool/index.tsx:256 packages/toc/src/generators/notebook/tagstool/index.tsx:258 packages/toc/src/generators/notebook/tagstool/index.tsx:266 packages/toc/src/generators/notebook/tagstool/index.tsx:267 packages/toc/src/generators/notebook/tagstool/index.tsx:271
+msgid "Select All Cells With Current Tags"
+msgstr ""
+
+#: packages/toc/src/generators/notebook/toolbar_generator.tsx:182 packages/toc/src/generators/notebook/toolbar_generator.tsx:183
 msgid "Toggle Code Cells"
 msgstr "コードセルの表示切り替え"
 
-#: packages/toc/src/generators/notebook/toolbar_generator.tsx:196 packages/toc/src/generators/notebook/toolbar_generator.tsx:197
+#: packages/toc/src/generators/notebook/toolbar_generator.tsx:198 packages/toc/src/generators/notebook/toolbar_generator.tsx:199
 msgid "Toggle Markdown Text Cells"
 msgstr "Markdownテキストセルの表示切り替え"
 
-#: packages/toc/src/generators/notebook/toolbar_generator.tsx:228 packages/toc/src/generators/notebook/toolbar_generator.tsx:229
+#: packages/toc/src/generators/notebook/toolbar_generator.tsx:230 packages/toc/src/generators/notebook/toolbar_generator.tsx:231
 msgid "Show Tags Menu"
 msgstr "タグメニューを表示"
 
-#: packages/translation-extension/src/index.ts:106
-msgid "Language"
-msgstr "言語"
-
-#: packages/translation-extension/src/index.ts:141
+#: packages/translation-extension/src/index.ts:129
 msgid "Change interface language?"
 msgstr "インターフェイスの言語を変更しますか?"
 
-#: packages/translation-extension/src/index.ts:142
+#: packages/translation-extension/src/index.ts:130
 msgid "Are you sure you want to refresh?"
 msgstr "更新してよろしいですか?"
 
