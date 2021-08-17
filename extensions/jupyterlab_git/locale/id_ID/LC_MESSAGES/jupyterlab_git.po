@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 97\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2021-08-17 15:32\n"
+"PO-Revision-Date: 2021-08-17 18:07\n"
 
 #: /schema/plugin.json:10
 msgid "Suspend user interaction until commands finish"
@@ -22,6 +22,11 @@ msgstr "Tangguhkan interaksi pengguna hingga perintah selesai"
 msgctxt "schema"
 msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
 msgstr "Tangguhkan interaksi pengguna JupyterLab hingga perintah Git (misalnya, commit, pull, reset, revert) selesai dieksekusi. Mengatur ini ke TRUE membantu mengurangi kondisi balapan potensial yang menyebabkan hilangnya data, konflik, dan riwayat Git yang rusak. Kecuali menjalankan jaringan yang lambat, penangguhan UI tidak akan mengganggu alur kerja standar. Mengatur ini ke FALSE memungkinkan tindakan untuk memicu beberapa tindakan Git bersamaan."
+
+#: /schema/plugin.json:152
+msgctxt "schema"
+msgid "Git"
+msgstr ""
 
 #: /schema/plugin.json:16
 msgid "Cancel pull merge conflict"
@@ -58,11 +63,6 @@ msgstr "Tampilkan diff saat klik ganda"
 msgctxt "schema"
 msgid "If true, doubling clicking a file in the list of changed files will open a diff."
 msgstr "Jika TRUE, mengklik ganda sebuah file didalam daftar file yang diubah akan membuka diff."
-
-#: /schema/plugin.json:4
-msgctxt "schema"
-msgid "Git"
-msgstr ""
 
 #: /schema/plugin.json:40
 msgid "History count"
@@ -122,15 +122,15 @@ msgstr "Commit dari Kotak Commit"
 msgid "Submit the commit using the summary and description from commit box"
 msgstr "Serakan commit mengguanakan ringkasan dan deskripsi dari kotak commit"
 
-#: src/commandsAndMenu.tsx:1203
+#: src/commandsAndMenu.tsx:1241
 msgid "Git credentials required"
 msgstr "Dibutuhkan kredensial Git"
 
-#: src/commandsAndMenu.tsx:1206 src/widgets/CredentialsBox.tsx:15
+#: src/commandsAndMenu.tsx:1244 src/widgets/CredentialsBox.tsx:15
 msgid "Enter credentials for remote repository"
 msgstr "Masukkan kredensial untuk repositori jarak jauh"
 
-#: src/commandsAndMenu.tsx:1207
+#: src/commandsAndMenu.tsx:1245
 msgid "Incorrect username or password."
 msgstr "Salah identitas pegguna atau kata sandi."
 
@@ -162,7 +162,7 @@ msgstr "Buat repositori Git kosong atau inisialisasi ulang yang sudah ada"
 msgid "Do you really want to make this directory a Git Repo?"
 msgstr "Apakah Anda yakin ingin membuat direktori ini sebagai Git Repo?"
 
-#: src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:799 src/components/BranchMenu.tsx:344 src/components/FileList.tsx:191 src/components/FileList.tsx:216 src/components/NewBranchDialog.tsx:202
+#: src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:820 src/components/BranchMenu.tsx:344 src/components/FileList.tsx:191 src/components/FileList.tsx:216 src/components/NewBranchDialog.tsx:202
 msgid "Cancel"
 msgstr "Batalkan"
 
@@ -314,200 +314,200 @@ msgstr "Segarkan"
 msgid "Refresh diff widget"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:503
+#: src/commandsAndMenu.tsx:508
 msgid "Diff Not Supported"
 msgstr "Diff Tidak Didukung"
 
-#: src/commandsAndMenu.tsx:504
+#: src/commandsAndMenu.tsx:509
 msgid "Diff is not supported for %1 files."
 msgstr "Diff tidak didukung untuk %1 berkas-berkas."
 
-#: src/commandsAndMenu.tsx:518
+#: src/commandsAndMenu.tsx:523
 msgid "Open"
 msgstr "Buka"
 
-#: src/commandsAndMenu.tsx:520
+#: src/commandsAndMenu.tsx:525
 msgid "Open selected file"
 msgstr "Buka berkas pilihan"
 
-#: src/commandsAndMenu.tsx:521
+#: src/commandsAndMenu.tsx:526
 msgid "Open selected files"
 msgstr "Buka berkas-berkas pilihan"
 
-#: src/commandsAndMenu.tsx:529
+#: src/commandsAndMenu.tsx:534
 msgid "Open File Failed"
 msgstr "Membuka Berkas Gagal"
 
-#: src/commandsAndMenu.tsx:530
+#: src/commandsAndMenu.tsx:535
 msgid "This file has been deleted!"
 msgstr "Berkas ini sudah di hapus!"
 
-#: src/commandsAndMenu.tsx:551
+#: src/commandsAndMenu.tsx:556
 msgid "Diff"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:553
+#: src/commandsAndMenu.tsx:558
 msgid "Diff selected file"
 msgstr "Diff berkas pilihan"
 
-#: src/commandsAndMenu.tsx:554
+#: src/commandsAndMenu.tsx:559
 msgid "Diff selected files"
 msgstr "Diff berkas-berkas pilihan"
 
-#: src/commandsAndMenu.tsx:664
+#: src/commandsAndMenu.tsx:685
 msgid "Add"
 msgstr "Tambah"
 
-#: src/commandsAndMenu.tsx:666
+#: src/commandsAndMenu.tsx:687
 msgid "Stage or track the changes to selected file"
 msgstr "Stage atau telusur perubahan berkas yang di pilih"
 
-#: src/commandsAndMenu.tsx:667
+#: src/commandsAndMenu.tsx:688
 msgid "Stage or track the changes of selected files"
 msgstr "Stage atau telusur perubahan berkas-berkas yang di pilih"
 
-#: src/commandsAndMenu.tsx:679
+#: src/commandsAndMenu.tsx:700
 msgid "Stage"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:681
+#: src/commandsAndMenu.tsx:702
 msgid "Stage the changes of selected file"
 msgstr "Stage perubahan berkas yang di pilih"
 
-#: src/commandsAndMenu.tsx:682
+#: src/commandsAndMenu.tsx:703
 msgid "Stage the changes of selected files"
 msgstr "Stage perubahan berkas-berkas yang di pilih"
 
-#: src/commandsAndMenu.tsx:694
+#: src/commandsAndMenu.tsx:715
 msgid "Track"
 msgstr "Telusur"
 
-#: src/commandsAndMenu.tsx:696
+#: src/commandsAndMenu.tsx:717
 msgid "Start tracking selected file"
 msgstr "Mulai melacak berkas pilihan"
 
-#: src/commandsAndMenu.tsx:697
+#: src/commandsAndMenu.tsx:718
 msgid "Start tracking selected files"
 msgstr "Mulai melacak berkas-berkas pilihan"
 
-#: src/commandsAndMenu.tsx:709
+#: src/commandsAndMenu.tsx:730
 msgid "Unstage"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:711
+#: src/commandsAndMenu.tsx:732
 msgid "Unstage the changes of selected file"
 msgstr "Unstage perubahan berkas yang di pilih"
 
-#: src/commandsAndMenu.tsx:712
+#: src/commandsAndMenu.tsx:733
 msgid "Unstage the changes of selected files"
 msgstr "Unstage perubahan berkas-berkas yang di pilih"
 
-#: src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:757 src/components/BranchMenu.tsx:345
+#: src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:778 src/components/BranchMenu.tsx:345
 msgid "Delete"
 msgstr "Hapus"
 
-#: src/commandsAndMenu.tsx:737
+#: src/commandsAndMenu.tsx:758
 msgid "Delete this file"
 msgstr "Hapus berkas ini"
 
-#: src/commandsAndMenu.tsx:738
+#: src/commandsAndMenu.tsx:759
 msgid "Delete these files"
 msgstr "Hapus berkas-berkas ini"
 
-#: src/commandsAndMenu.tsx:745
+#: src/commandsAndMenu.tsx:766
 msgid "Delete Files"
 msgstr "Hapus Berkas"
 
-#: src/commandsAndMenu.tsx:748
+#: src/commandsAndMenu.tsx:769
 msgid "Are you sure you want to permanently delete the following files?               This action cannot be undone."
 msgstr "Apakah Anda yakin ingin menghapus berkas-berkas berikut secara permanen? Tindakan ini tidak dapat dibatalkan."
 
-#: src/commandsAndMenu.tsx:767
+#: src/commandsAndMenu.tsx:788
 msgid "Deleting %1 failed."
 msgstr "Gagal hapus %1."
 
-#: src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:823 src/components/Alert.tsx:123 src/index.ts:128
+#: src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:844 src/components/Alert.tsx:123 src/index.ts:128
 msgid "DISMISS"
 msgstr "Memberhentikan"
 
-#: src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:800 src/components/FileList.tsx:192 src/components/FileList.tsx:217
+#: src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:821 src/components/FileList.tsx:192 src/components/FileList.tsx:217
 msgid "Discard"
 msgstr "Membuang"
 
-#: src/commandsAndMenu.tsx:780
+#: src/commandsAndMenu.tsx:801
 msgid "Discard recent changes of selected file"
 msgstr "Buang perubahan terbaru dari berkas di pilih"
 
-#: src/commandsAndMenu.tsx:781
+#: src/commandsAndMenu.tsx:802
 msgid "Discard recent changes of selected files"
 msgstr "Buang perubahan terbaru dari berkas tertentu"
 
-#: src/commandsAndMenu.tsx:788 src/components/FileList.tsx:466 src/components/FileList.tsx:664 src/components/FileList.tsx:690
+#: src/commandsAndMenu.tsx:809 src/components/FileList.tsx:466 src/components/FileList.tsx:664 src/components/FileList.tsx:690
 msgid "Discard changes"
 msgstr "Membuang perubahan"
 
-#: src/commandsAndMenu.tsx:791
+#: src/commandsAndMenu.tsx:812
 msgid "Are you sure you want to permanently discard changes to the following files?               This action cannot be undone."
 msgstr "Apakah Anda yakin ingin membuang berkas-berkas yang di rubah secara permanen? Tindakan ini tidak dapat dibatalkan."
 
-#: src/commandsAndMenu.tsx:821
+#: src/commandsAndMenu.tsx:842
 msgid "Discard changes for %1 failed."
 msgstr "Buang perubahan untuk %1 gagal."
 
-#: src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:838
+#: src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:859
 msgid "Ignore this file (add to .gitignore)"
 msgstr "Abaikan berkas ini (tambahkan ke .gitignore)"
 
-#: src/commandsAndMenu.tsx:835 src/commandsAndMenu.tsx:839
+#: src/commandsAndMenu.tsx:856 src/commandsAndMenu.tsx:860
 msgid "Ignore these files (add to .gitignore)"
 msgstr "Abaikan berkas-berkas ini (tambahkan ke .gitignore)"
 
-#: src/commandsAndMenu.tsx:857
+#: src/commandsAndMenu.tsx:878
 msgid "Ignore %2 extension (add to .gitignore)"
 msgid_plural "Ignore %2 extensions (add to .gitignore)"
 msgstr[0] "Abaikan %2 exstensi (tambakan ke .gitignore)"
 
-#: src/commandsAndMenu.tsx:865
+#: src/commandsAndMenu.tsx:886
 msgid "Ignore this file extension (add to .gitignore)"
 msgstr "Abaikan exstensi berkas ini (tambakan ke .gitignore)"
 
-#: src/commandsAndMenu.tsx:866
+#: src/commandsAndMenu.tsx:887
 msgid "Ignore these files extension (add to .gitignore)"
 msgstr "Abaikan exstensi berkas-berkas ini (tambakan ke .gitignore)"
 
-#: src/commandsAndMenu.tsx:875
+#: src/commandsAndMenu.tsx:896
 msgid "Ignore file extension"
 msgstr "Abaikan exstensi berkas"
 
-#: src/commandsAndMenu.tsx:876
+#: src/commandsAndMenu.tsx:897
 msgid "Are you sure you want to ignore all %1 files within this git repository?"
 msgstr "Apakah Anda yakin ingin mengabaikan semua %1 berkas-berkas di dalam repositori git ini?"
 
-#: src/commandsAndMenu.tsx:882 src/commandsAndMenu.tsx:885
+#: src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:906
 msgid "Ignore"
 msgstr "Abaikan"
 
-#: src/commandsAndMenu.tsx:902 src/components/GitPanel.tsx:358
+#: src/commandsAndMenu.tsx:923 src/components/GitPanel.tsx:358
 msgid "History"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:903
+#: src/commandsAndMenu.tsx:924
 msgid "View the history of this file"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:921
+#: src/commandsAndMenu.tsx:942
 msgid "No actions available"
 msgstr "Tidak ada tindakan yang tersedia"
 
-#: src/commandsAndMenu.tsx:940
+#: src/commandsAndMenu.tsx:961
 msgid "Set Up Remotes"
 msgstr "Mempersiapkan Remotes"
 
-#: src/commandsAndMenu.tsx:944
+#: src/commandsAndMenu.tsx:965
 msgid "Git Documentation"
 msgstr "Dokumentasi Git"
 
-#: src/commandsAndMenu.tsx:978
+#: src/commandsAndMenu.tsx:999
 msgid " Help "
 msgstr " Membantu "
 
