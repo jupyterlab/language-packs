@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-08-18 08:02\n"
+"PO-Revision-Date: 2021-08-18 09:03\n"
 
 #: /examples/federated/md_package/schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:38
 msgid "Font Family"
@@ -70,7 +70,7 @@ msgstr "Markdown 查看器设置。"
 
 #: /examples/federated/md_package/schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:62
 msgid "Hide Front Matter"
-msgstr "隐藏YAML头部"
+msgstr "隐藏 YAML 头部信息"
 
 #: /examples/federated/md_package/schema/plugin.json:55 /packages/markdownviewer-extension/schema/plugin.json:63
 msgctxt "schema"
@@ -117,7 +117,19 @@ msgid "Note: To disable a context menu item,\n"
 "  ]\n"
 "}\n\n"
 "Context menu description:"
-msgstr ""
+msgstr "注意：要禁用上下文菜单项，\n"
+"将其复制到用户首选项并添加「禁用」键。\n"
+"下面的示例将在文件上禁用下载项：\n"
+"{\n"
+"  \"contextMenu\": [\n"
+"    {\n"
+"      \"command\": \"filebrowser:download\",\n"
+"      \"selector\": \".jp-DirListing-item[data-isdir=\\\"false\\\"]\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"上下文菜单描述："
 
 #: /packages/application-extension/schema/context-menu.json:3
 msgctxt "schema"
@@ -258,7 +270,7 @@ msgctxt "schema"
 msgid "CSS file defining the corresponding\n"
 ".cm-s-[name] styles is loaded"
 msgstr "定义对应的.cm-s-[name] 样式的\n"
-"CSS文件已加载"
+"CSS 文件已加载"
 
 #: /packages/codemirror-extension/schema/commands.json:189
 msgid "Scroll behavior"
@@ -338,12 +350,12 @@ msgstr "笔记本自动补全设置。"
 #: /packages/console-extension/schema/foreign.json:2
 msgctxt "schema"
 msgid "Code Console Foreign plugin"
-msgstr ""
+msgstr "代码控制台外部插件"
 
 #: /packages/console-extension/schema/foreign.json:3
 msgctxt "schema"
 msgid "Code Console Foreign plugin settings."
-msgstr ""
+msgstr "代码控制台外部插件设置。"
 
 #: /packages/console-extension/schema/tracker.json:162
 msgid "Interaction mode"
@@ -497,7 +509,7 @@ msgstr "NPM 源"
 #: /packages/extensionmanager-extension/schema/plugin.json:42
 msgctxt "schema"
 msgid "The URI of the NPM registry to use for searching for jupyterlab extensions"
-msgstr ""
+msgstr "用于搜索 JupyterLab 扩展时所用的 NPM 源 URI"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:47
 msgid "NPM CDN"
@@ -506,7 +518,7 @@ msgstr "NPM CDN"
 #: /packages/extensionmanager-extension/schema/plugin.json:48
 msgctxt "schema"
 msgid "The URI of the CDN to use for fetching full package data"
-msgstr ""
+msgstr "用于获取完整包数据的 CDN URI"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:53
 msgid "Enable CDN"
@@ -515,7 +527,7 @@ msgstr "开启 CDN"
 #: /packages/extensionmanager-extension/schema/plugin.json:54
 msgctxt "schema"
 msgid "Enables using the CDN to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry"
-msgstr ""
+msgstr "启用通过 CDN 获取完整的包数据。否则，将使用已配置的 NPM 源。由于 NPM 源缺少 CORS 支持，请仅在提供自定义源时禁用该选项"
 
 #: /packages/filebrowser-extension/schema/browser.json:134
 msgctxt "schema"
@@ -547,42 +559,42 @@ msgstr "过滤文件名时是否使用模糊算法"
 
 #: /packages/filebrowser-extension/schema/browser.json:198
 msgid "Show last modified column"
-msgstr ""
+msgstr "切换最后修改列"
 
 #: /packages/filebrowser-extension/schema/browser.json:199
 msgctxt "schema"
 msgid "Whether to show the last modified column"
-msgstr ""
+msgstr "是否显示最后修改列"
 
 #: /packages/filebrowser-extension/schema/download.json:2
 msgctxt "schema"
 msgid "File Browser Download"
-msgstr ""
+msgstr "文件浏览器下载"
 
 #: /packages/filebrowser-extension/schema/download.json:3
 msgctxt "schema"
 msgid "File Browser Download settings."
-msgstr ""
+msgstr "文件浏览器下载设置。"
 
 #: /packages/filebrowser-extension/schema/open-browser-tab.json:2
 msgctxt "schema"
 msgid "File Browser Open Browser Tab"
-msgstr ""
+msgstr "文件浏览器打开浏览器标签页"
 
 #: /packages/filebrowser-extension/schema/open-browser-tab.json:3
 msgctxt "schema"
 msgid "File Browser Open Browser Tab settings."
-msgstr ""
+msgstr "文件浏览器打开浏览器标签页设置。"
 
 #: /packages/filebrowser-extension/schema/open-with.json:2
 msgctxt "schema"
 msgid "File Browser Open With"
-msgstr ""
+msgstr "文件浏览器打开方式"
 
 #: /packages/filebrowser-extension/schema/open-with.json:3
 msgctxt "schema"
 msgid "File Browser Open With settings."
-msgstr ""
+msgstr "文件浏览器打开方式设置。"
 
 #: /packages/fileeditor-extension/schema/plugin.json:143
 msgctxt "schema"
@@ -720,7 +732,27 @@ msgid "Note: To disable a menu or a menu item,\n"
 "  ]\n"
 "}\n\n"
 "Menu description:"
-msgstr ""
+msgstr "注意：要禁用一个菜单或一个菜单项，\n"
+"将其复制到用户选项并添加「禁用」键。\n"
+"下面的示例将禁用「标签页」、「重启内核」以及「运行到所选单元格」项：\n"
+"{\n"
+"  \"menus\": [\n"
+"    {\n"
+"      \"id\": \"jp-mainmenu-tabs\",\n"
+"      \"disabled\": true\n"
+"    },\n"
+"    {\n"
+"      \"id\": \"jp-mainmenu-kernel\",\n"
+"      \"items\": [\n"
+"        {\n"
+"          \"command\": \"notebook:restart-and-run-to-selected\",\n"
+"          \"disabled\": true\n"
+"        }\n"
+"      ]\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"菜单描述："
 
 #: /packages/mainmenu-extension/schema/plugin.json:2
 msgctxt "schema"
@@ -734,7 +766,7 @@ msgstr "JupyterLab 主菜单设置。"
 
 #: /packages/mainmenu-extension/schema/plugin.json:314
 msgid "The application menu description."
-msgstr ""
+msgstr "应用菜单描述。"
 
 #: /packages/notebook-extension/schema/export.json:27
 msgctxt "schema"
@@ -821,48 +853,48 @@ msgstr "是否在单元格元数据中记录计时数据"
 
 #: /packages/notebook-extension/schema/tracker.json:735
 msgid "Number of cells to render directly"
-msgstr ""
+msgstr "要直接渲染的单元格数量"
 
 #: /packages/notebook-extension/schema/tracker.json:736
 msgctxt "schema"
 msgid "Define the number of cells to render directly when virtual notebook intersection observer is available"
-msgstr ""
+msgstr "定义虚拟笔记本交接观察者可用时直接渲染的单元格数量"
 
 #: /packages/notebook-extension/schema/tracker.json:741
 msgid "Render cell on browser idle time"
-msgstr ""
+msgstr "在浏览器空闲时间渲染单元格"
 
 #: /packages/notebook-extension/schema/tracker.json:742
 msgctxt "schema"
 msgid "Defines if the placeholder cells should be rendered when the browser is idle"
-msgstr ""
+msgstr "定义当浏览器空闲时是否渲染占位单元格"
 
 #: /packages/notebook-extension/schema/tracker.json:747
 msgid "Observed top margin"
-msgstr ""
+msgstr "观察到的上边距"
 
 #: /packages/notebook-extension/schema/tracker.json:748
 msgctxt "schema"
 msgid "Defines the observed top margin for the virtual notebook, set a positive number of pixels to render cells above the visible view"
-msgstr ""
+msgstr "定义虚拟笔记本观察到的上边距，设置一个正数的像素数来渲染在可见视图上方的单元格"
 
 #: /packages/notebook-extension/schema/tracker.json:753
 msgid "Observed bottom margin"
-msgstr ""
+msgstr "观察到的下边距"
 
 #: /packages/notebook-extension/schema/tracker.json:754
 msgctxt "schema"
 msgid "Defines the observed bottom margin for the virtual notebook, set a positive number of pixels to render cells below the visible view"
-msgstr ""
+msgstr "定义虚拟笔记本观察到的下边距，设置一个正数的像素数来渲染在可见视图下方的单元格"
 
 #: /packages/notebook-extension/schema/tracker.json:759
 msgid "The maximum number of output cells to to be rendered in the output area. Set to 0 to have the complete display."
-msgstr ""
+msgstr "输出区域中要渲染的输出单元格的最大数量。设为 0 以显示全部内容。"
 
 #: /packages/notebook-extension/schema/tracker.json:760
 msgctxt "schema"
 msgid "Defines the maximum number of output cells to to to be rendered in the output area for cells with many outputs. The output area will have a head and a tail, and the outputs between will be trimmed and not displayed unless the user clicks on the information message."
-msgstr ""
+msgstr "定义输出区要呈现的输出单元格的最大数量。 输出区域将包含一个开头和结尾部分，除非用户点击信息消息，否则中间的输出内容将剪裁并不会显示。"
 
 #: /packages/settingeditor-extension/schema/plugin.json:2
 msgctxt "schema"
@@ -974,16 +1006,16 @@ msgstr "使用 Ctrl+V 粘贴"
 #: /packages/terminal-extension/schema/plugin.json:157
 msgctxt "schema"
 msgid "Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available"
-msgstr "启用 Ctrl+V 粘贴。在 vi 编辑器中使用 Ctrl+V 时可禁用此项。 此设置对 macOS没有任何影响，因为macOS中使用Cmd+V"
+msgstr "启用 Ctrl+V 粘贴。在 vi 编辑器中使用 Ctrl+V 时可禁用此项。 此设置对 macOS 没有任何影响，因为 macOS 中使用 Cmd+V"
 
 #: /packages/terminal-extension/schema/plugin.json:162
 msgid "Treat option as meta key on macOS"
-msgstr "在 macOS 上将Option键视作Meta键"
+msgstr "在 macOS 上将 option 键视作 meta 键"
 
 #: /packages/terminal-extension/schema/plugin.json:163
 msgctxt "schema"
 msgid "Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word"
-msgstr "MacOS中Option键可被用作Meta键。这使得诸如 option+f（将光标向前移动一个单词）的快捷键可以使用。"
+msgstr "macOS 中 option 键可被用作 meta 键。这使得诸如 option + f（将光标向前移动一个单词）的快捷键可以使用。"
 
 #: /packages/terminal-extension/schema/plugin.json:84
 msgctxt "schema"
@@ -997,40 +1029,40 @@ msgstr "终端设置。"
 
 #: /packages/toc-extension/schema/plugin.json:14
 msgid "Include cell output in headings"
-msgstr ""
+msgstr "在标题中包含单元格输出"
 
 #: /packages/toc-extension/schema/plugin.json:15
 msgctxt "schema"
 msgid "Whether to include cell output in headings"
-msgstr ""
+msgstr "是否在标题中包含单元格输出"
 
 #: /packages/toc-extension/schema/plugin.json:21
 msgid "syncCollapseState"
-msgstr ""
+msgstr "syncCollapseState"
 
 #: /packages/toc-extension/schema/plugin.json:22
 msgctxt "schema"
 msgid "If set to true, when a header is collapsed in the ToC the corresponding section in the notebook is collapsed as well and vice versa."
-msgstr ""
+msgstr "如果设置为 true，当标题在目录中折叠时，笔记本中的相应部分也会折叠，反之亦然。"
 
 #: /packages/toc-extension/schema/plugin.json:4
 msgctxt "schema"
 msgid "Table of Contents"
-msgstr ""
+msgstr "目录"
 
 #: /packages/toc-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Table of contents settings."
-msgstr ""
+msgstr "目录设置。"
 
 #: /packages/toc-extension/schema/plugin.json:8
 msgid "Enable h1 numbering"
-msgstr ""
+msgstr "启用 h1 编号"
 
 #: /packages/toc-extension/schema/plugin.json:9
 msgctxt "schema"
 msgid "Whether to number first level headings"
-msgstr ""
+msgstr "是否为一级标题显示编号"
 
 #: /packages/tooltip-extension/schema/consoles.json:2
 msgctxt "schema"
@@ -1105,7 +1137,7 @@ msgstr "主工作区"
 
 #: packages/application-extension/src/index.tsx:110
 msgid "Shift+Right Click for Browser Menu"
-msgstr "使用 Shift+右键点击 调出浏览器菜单"
+msgstr "使用 Shift+右键点击调出浏览器菜单"
 
 #: packages/application-extension/src/index.tsx:1143
 msgid "Switch Sidebar Side"
@@ -1117,7 +1149,7 @@ msgstr "关闭标签页"
 
 #: packages/application-extension/src/index.tsx:209
 msgid "Close All Other Tabs"
-msgstr "关闭全部其它标签"
+msgstr "关闭所有其它标签页"
 
 #: packages/application-extension/src/index.tsx:229
 msgid "Close Tabs to Right"
@@ -1141,7 +1173,7 @@ msgstr "激活上一标签栏"
 
 #: packages/application-extension/src/index.tsx:272
 msgid "Close All Tabs"
-msgstr "关闭所有标签"
+msgstr "关闭所有标签页"
 
 #: packages/application-extension/src/index.tsx:279
 msgid "Show Left Sidebar"
@@ -1193,7 +1225,7 @@ msgstr "编译失败"
 
 #: packages/application-extension/src/index.tsx:514
 msgid "JupyterLab build is suggested:"
-msgstr "建议进行Jupyterlab Build来重新构建"
+msgstr "建议重新构建 Jupyterlab："
 
 #: packages/application-extension/src/index.tsx:521
 msgid "Build Recommended"
@@ -1206,11 +1238,11 @@ msgstr "编译"
 #: packages/application-extension/src/index.tsx:588
 msgid "Are you sure you want to exit JupyterLab?\n\n"
 "Any unsaved changes will be lost."
-msgstr "您确定要退出登录吗? 所有未保存的操作都会丢失。"
+msgstr "您确定要退出登录吗？所有未保存的操作都会丢失。"
 
 #: packages/application-extension/src/index.tsx:756
 msgid "The path: %1 was not found. JupyterLab redirected to: %2"
-msgstr "路径： %1 未找到。JupyterLab 将会重定向到： %2"
+msgstr "路径：%1 未找到。JupyterLab 将会重定向到：%2"
 
 #: packages/application-extension/src/index.tsx:765
 msgid "Path Not Found"
@@ -1292,11 +1324,11 @@ msgstr "运行第一个启用的命令"
 
 #: packages/apputils-extension/src/index.ts:575
 msgid "Run All Enabled Commands Passed as Args"
-msgstr ""
+msgstr "运行所有从参数传递过来的已启用的命令"
 
 #: packages/apputils-extension/src/palette.ts:101
 msgid "Command Palette Section"
-msgstr ""
+msgstr "命令面板部分"
 
 #: packages/apputils-extension/src/palette.ts:142
 msgid "Commands (%1)"
@@ -1372,7 +1404,7 @@ msgstr "保存"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:276 packages/apputils-extension/src/workspacesplugin.ts:82
 msgid "Save Current Workspace As…"
-msgstr ""
+msgstr "保存当前工作区为…"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1217 packages/debugger-extension/src/index.ts:469 packages/debugger/src/panels/breakpoints/index.ts:51 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:847 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:448 packages/filebrowser/src/opendialog.ts:81 packages/notebook/src/actions.tsx:1762 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/translation-extension/src/index.ts:132
 msgid "Cancel"
@@ -1432,7 +1464,7 @@ msgstr "使用来自其他会话的内核"
 
 #: packages/apputils/src/sessioncontext.tsx:1612
 msgid "Use No Kernel"
-msgstr ""
+msgstr "不使用内核"
 
 #: packages/apputils/src/sessioncontext.tsx:1614 packages/apputils/src/sessioncontext.tsx:601 packages/statusbar/src/defaults/kernelStatus.tsx:187
 msgid "No Kernel"
@@ -1484,11 +1516,11 @@ msgstr "切换内核"
 
 #: packages/apputils/src/toolbar.tsx:771 packages/statusbar/src/defaults/kernelStatus.tsx:124
 msgid "Unknown"
-msgstr ""
+msgstr "未知"
 
 #: packages/apputils/src/toolbar.tsx:772 packages/statusbar/src/defaults/kernelStatus.tsx:125
 msgid "Starting"
-msgstr ""
+msgstr "正在启动"
 
 #: packages/apputils/src/toolbar.tsx:773 packages/statusbar/src/defaults/kernelStatus.tsx:126
 msgid "Idle"
@@ -2793,7 +2825,7 @@ msgstr "制表符大小"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:63
 msgid "Change Tab indentation…"
-msgstr "更改Tab缩进…"
+msgstr "更改 Tab 缩进…"
 
 #: packages/help-extension/src/index.tsx:124
 msgid "CONTRIBUTOR LIST"
@@ -3828,7 +3860,7 @@ msgstr "开启的标签页"
 
 #: packages/running-extension/src/opentabs.ts:88
 msgid "Close All"
-msgstr "关闭全部"
+msgstr "全部关闭"
 
 #: packages/running-extension/src/opentabs.ts:89
 msgid "Are you sure you want to close all open tabs?"
