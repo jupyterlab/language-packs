@@ -1,0 +1,17 @@
+# Contributors
+
+* JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
+* Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
+* Thomas Lecocq ([@ThomasLecocq](https://crowdin.com/profile/ThomasLecocq))
+* Guillaume MARION ([@guillaumemarion](https://crowdin.com/profile/guillaumemarion))
+* jbarh ([@jbarh](https://crowdin.com/profile/jbarh))
+* Frédéric Collonval ([@fcollonval](https://crowdin.com/profile/fcollonval))
+* Thomas Vincent ([@vrince](https://crowdin.com/profile/vrince))
+* Matthias Bussonnier ([@mbussonnier](https://crowdin.com/profile/mbussonnier))
+* Graham Knapp ([@dancergraham](https://crowdin.com/profile/dancergraham))
+* eupha ([@eupha](https://crowdin.com/profile/eupha))
+* Éric Gaspar ([@erga](https://crowdin.com/profile/erga))
+* Loïc Houpert ([@lhoupert](https://crowdin.com/profile/lhoupert))
+* Pierre Poulain ([@pierrepo](https://crowdin.com/profile/pierrepo))
+* mocquin ([@mocquin](https://crowdin.com/profile/mocquin))
+* Félix-Antoine Fortin ([@cmd-ntrf](https://crowdin.com/profile/cmd-ntrf))
