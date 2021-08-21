@@ -77,7 +77,7 @@ jobs:
     - name: Build release artifacts
       run: |
         cd ${{ env.CURRENT_LOCALE_DIR }}
-        check-manifest -v
+        check-manifest -v --ignore-bad-ideas *.mo
         python setup.py sdist bdist_wheel
         python -m twine check dist/*
     - name: Create Release
