@@ -45,8 +45,7 @@ jobs:
           python scripts/03_prepare_release.py --new-version "${{ github.event.inputs.version }}"
       - name: Set branch name and get hash
         run: |
-          echo "BRANCH_NAME=pack-update-${VERSION:-auto}" >> $GITHUB_ENV
-          echo "COMMIT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+          echo "BRANCH_NAME=pack-update-$(git rev-parse --short HEAD)" >> $GITHUB_ENV
       - name: Create a new branch
         run: |
           git checkout -b "${{ env.BRANCH_NAME }}"
@@ -63,7 +62,7 @@ jobs:
           git push --set-upstream origin "${{ env.BRANCH_NAME }}"
       - name: Create a PR
         run: |
-          hub pull-request -m "Update language packs to '${VERSION:-auto}'"
+          hub pull-request -m "Update language packs to '${TARGET_VERSION:-auto}'"
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
