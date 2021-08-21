@@ -36,7 +36,7 @@ jobs:
       - name: Update the language packages
         if: ${{ github.event.inputs.version != '' }}
         run: |
-          python scripts/03_prepare_release.py --new-version "${{ github.event.inputs.version }}""
+          python scripts/03_prepare_release.py --new-version "${{ github.event.inputs.version }}"
       - name: Set branch name and get hash
         run: |
           echo "BRANCH_NAME=pack-update-${VERSION:-auto}" >> $GITHUB_ENV
