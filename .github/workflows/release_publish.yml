@@ -93,6 +93,7 @@ jobs:
       env:
         TWINE_USERNAME: __token__
         TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+      shell: bash
       run: |
         cd ${{ env.CURRENT_LOCALE_DIR }}
         counter=0
