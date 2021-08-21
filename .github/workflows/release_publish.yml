@@ -73,7 +73,7 @@ jobs:
     - name: Prepare env variables
       run: |
         echo "CURRENT_TAG=${CURRENT_LOCALE}@v$(python .github/scripts/get_version.py)" >> $GITHUB_ENV
-        echo "CURRENT_LOCALE_DIR=language-packs/jupyterlab-language-pack-${CURRENT_LOCALE}" >> $GITHUB_ENV
+        echo "CURRENT_LOCALE_DIR=language-packs/jupyterlab-language-pack-${CURRENT_LOCALE}" >> $CURRENT_LOCALE_DIR
     - name: Build release artifacts
       run: |
         cd ${{ env.CURRENT_LOCALE_DIR }}
