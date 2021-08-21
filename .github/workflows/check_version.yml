@@ -2,9 +2,7 @@ name: Check language packs version
 
 on:
   pull_request:
-    branches: ['*', ]
     paths: ['language-packs/*/.bumpversion.cfg', ]
-  
 
 jobs:
   check_version:
