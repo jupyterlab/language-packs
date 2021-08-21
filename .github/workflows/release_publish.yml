@@ -84,7 +84,7 @@ jobs:
       run: |
         hub release create \
         ${{ env.CURRENT_TAG }} \
-        -m Release ${{ env.CURRENT_TAG }} \
+        -m "Release ${{ env.CURRENT_TAG }}" \
         -a ${{ env.CURRENT_LOCALE_DIR }}/dist/* 
       env:
         GITHUB_USER: ${{ secrets.GITHUB_USER }}
