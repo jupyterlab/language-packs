@@ -13,6 +13,6 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: '3.8'
-      - name: Update the language packages
+      - name: Check language packs version homogeneity
         run: |
           python scripts/04_check_version.py
