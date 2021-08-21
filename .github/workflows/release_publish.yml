@@ -95,4 +95,12 @@ jobs:
         TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
       run: |
         cd ${{ env.CURRENT_LOCALE_DIR }}
-        python -m twine upload dist/* --verbose --skip-existing
+        counter=0
+        max_retry=6
+        until python -m twine upload dist/*
+        do
+            echo "Backing off for 10 seconds - PyPI is busy or not available"
+            sleep 10
+            [[ counter -eq $max_retry ]] && echo "Could not upload within 1 minute, giving up!" && exit 1
+            ((counter++))
+        done
