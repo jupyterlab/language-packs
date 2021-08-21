@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   prepare_release:
@@ -32,10 +33,14 @@ jobs:
           python -m pip install git+https://github.com/jupyterlab/jupyterlab-translate
       - name: Update the language packages
         if: ${{ github.event.inputs.version == '' }}
+        env:
+          CROWDIN_API: ${{ secrets.CROWDIN_TOKEN }}
         run: |
           python scripts/03_prepare_release.py
       - name: Update the language packages
         if: ${{ github.event.inputs.version != '' }}
+        env:
+          CROWDIN_API: ${{ secrets.CROWDIN_TOKEN }}
         run: |
           python scripts/03_prepare_release.py --new-version "${{ github.event.inputs.version }}"
       - name: Set branch name and get hash
