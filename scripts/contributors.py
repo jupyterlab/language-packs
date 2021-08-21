@@ -91,7 +91,7 @@ def download_data(project_id=409874, language_id=None):
         unit = "none"
     else:
         amount, unit = eta.split(" ")
-        
+
     if unit == "second":
         wait_time = int(amount) * 2
     else:
@@ -167,10 +167,14 @@ def format_data(data: dict, language: str = None):
 
 
 def get_contributors_report(
-    project_id: int = 409874, locale: Optional[str] = None
+    project_id: int = 409874,
+    locale: Optional[str] = None,
+    crowdin_key: Optional[str] = None,
 ) -> str:
     """
     Get the translators report per word for a given locale language.
+
+    Crowdin key needs either to be provided or to be set through CROWDIN_API environment variable.
 
     Parameters
     ----------
@@ -178,19 +182,29 @@ def get_contributors_report(
         Crowding project identifier.
     locale : str, optional
         Loale string. Default is `None`.
+    crowding_key: str, optional
+        Crowdin API key
 
     Returns
     -------
     str
         The formated string for the contributors file.
     """
-    data = get_project_data(project_id)
-    if locale:
-        language_id = get_languages(data)[locale]["id"]
-    else:
-        language_id = None
+    if crowdin_key is not None:
+        old_token = client.TOKEN
+        client.TOKEN = crowdin_key
 
-    data = download_data(language_id=language_id)
+    try:
+        data = get_project_data(project_id)
+        if locale:
+            language_id = get_languages(data)[locale]["id"]
+        else:
+            language_id = None
+
+        data = download_data(language_id=language_id)
+    finally:
+        if crowdin_key is not None:
+            client.TOKEN = old_token
 
     return format_data(data)
 

@@ -2,18 +2,25 @@
 # Distributed under the terms of the Modified BSD License.
 
 """
+This script will prepare a release by:
+- Generating the JSON and MO files for all language packages from PO files
+- Update the contributors list
+- Bumping the version
 """
 
 # Standard library imports
+import argparse
 import configparser
 import hashlib
+import os
+import re
+import subprocess
+import traceback
 from pathlib import Path
-from typing import List
+from typing import List, Optional
 
 # Third party imports
 import polib
-import subprocess
-import traceback
 from jupyterlab_translate import api
 
 from contributors import get_contributors_report
@@ -28,6 +35,7 @@ LOCALE_FOLDER = "locale"
 LC_MESSAGES_FOLDER = "LC_MESSAGES"
 BUMP_CONFIG = ".bumpversion.cfg"
 CONTRIBUTORS = "CONTRIBUTORS.md"
+VERSION_REGEX = re.compile(r"\d+\.\d+\.post\d+")
 
 
 def load_hash(package_dir: Path) -> str:
@@ -67,9 +75,7 @@ def create_hash(*files: Path) -> str:
     return hasher.hexdigest()
 
 
-def is_updated_translation(
-    po_file_paths: List[Path], package_dir: Path, locale: str
-) -> bool:
+def is_updated_translation(po_file_paths: List[Path], package_dir: Path) -> bool:
     """Are the translations updated?
 
     Notes:
@@ -79,14 +85,10 @@ def is_updated_translation(
     Args:
         po_file_paths: translations PO files
         package_dir: Package directory containing the PO file
-        locale: Locale of interest
     Returns:
         Whether the translations have been updated or not
     """
     old_hash = load_hash(package_dir)
-
-    if not package_dir.is_dir():
-        api.create_new_language_pack(LANG_PACKS_PATH, locale)
 
     new_hash = create_hash(*po_file_paths)
 
@@ -96,36 +98,57 @@ def is_updated_translation(
         return old_hash != new_hash
 
 
-def bumpversion(path: Path, release: bool = False) -> None:
+def bumpversion(path: Path, new_version: Optional[str] = None) -> None:
     """Update the package version.
 
     Args:
         path: Package path
         release: Is the new version a release or a patch version.
     """
-    if release:
-        cmd_args = ["bump2version", "release", "--tag", "--allow-dirty"]
+    if new_version:
+        cmd_args = [
+            "bump2version",
+            "--allow-dirty",
+            "--new-version",
+            new_version,
+            "build",
+        ]
     else:
-        cmd_args = ["bump2version", "patch", "--allow-dirty"]
+        cmd_args = ["bump2version", "--allow-dirty", "build"]
 
     subprocess.check_call(cmd_args, cwd=path)
 
 
-def prepare_jupyterlab_lp_release():
-    """ """
+def prepare_jupyterlab_lp_release(
+    crowdin_key: str, new_version: Optional[str] = None
+) -> None:
+    """Prepare the JupyterLab Language Packages release
+
+    Version are in format X.Y.postZ and by default Z will be bumped.
+
+    Args:
+        crowding_key: Crowdin API key
+        new_version: [optional] New version of the package
+    """
     # TODO upgrade from cookiecutter template
 
     # Minimal percentage needed to compile a PO file
     COMPILATION_THRESHOLD = 0
-    # Is it a release?
-    RELEASE = False
 
     # This assumes the JupyterLab folder is the source of truth for available locales
     for locale in sorted(filter(lambda i: i.is_dir(), JLAB_LOCALE_PATH.iterdir())):
-        try:
-            locale_name = locale.name.replace("_", "-")
-            package_dir = LANG_PACKS_PATH / f"jupyterlab-language-pack-{locale_name}"
+        locale_name = locale.name.replace("_", "-")
+        package_dir = LANG_PACKS_PATH / f"jupyterlab-language-pack-{locale_name}"
 
+        # Bump the version
+        if package_dir.exists():
+            bumpversion(package_dir, new_version)
+        else:
+            api.create_new_language_pack(LANG_PACKS_PATH, locale.name)
+            if new_version:
+                bumpversion(package_dir, new_version)
+
+        try:
             all_po_files = [
                 JLAB_LOCALE_PATH / locale / LC_MESSAGES_FOLDER / "jupyterlab.po"
             ] + [
@@ -142,7 +165,7 @@ def prepare_jupyterlab_lp_release():
             po_files = list(filter(lambda f: f.is_file(), all_po_files))
 
             # Check if PO files have been changed
-            if is_updated_translation(po_files, package_dir, locale.name):
+            if is_updated_translation(po_files, package_dir):
                 any_compiled = False
 
                 # Compile the PO files above a given percentage
@@ -171,9 +194,11 @@ def prepare_jupyterlab_lp_release():
                     save_hash(package_dir, create_hash(*po_files))
                     # Update the contributors file
                     contributors = package_dir / CONTRIBUTORS
-                    contributors.write_text(get_contributors_report(locale=locale_name))
-                    # Bump the version
-                    # bumpversion(package_dir, release=RELEASE)
+                    contributors.write_text(
+                        get_contributors_report(
+                            locale=locale_name, crowdin_key=crowdin_key
+                        )
+                    )
             else:
                 print(f"No updates for the language package {locale_name}")
 
@@ -185,4 +210,24 @@ def prepare_jupyterlab_lp_release():
 
 
 if __name__ == "__main__":
-    prepare_jupyterlab_lp_release()
+    parser = argparse.ArgumentParser(
+        description="Prepare JupyterLab language packages for release"
+    )
+    parser.add_argument("--new-version", help="New version of the language packages")
+    parser.add_argument(
+        "--crowdin-key", default=os.environ.get("CROWDIN_API"), help="Crowdin API key"
+    )
+    args = parser.parse_args()
+
+    if args.new_version:
+        if VERSION_REGEX.fullmatch(args.new_version) is None:
+            raise ValueError(
+                f"Version must be formatted as '<major>.<minor>.post<build>'; got {args.new_version}"
+            )
+    if args.crowdin_key is None:
+        raise ValueError(
+            "Crowdin API key needs to be set using either the "
+            "'--crowdin-key' option or the 'CROWDIN_API' environment variable"
+        )
+
+    prepare_jupyterlab_lp_release(args.crowdin_key, args.new_version)

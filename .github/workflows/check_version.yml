@@ -1,0 +1,23 @@
+name: Check language packs version
+
+on:
+  pull_request:
+    branches: ['*', ]
+    paths: ['language-packs/*/.bumpversion.cfg', ]
+  push: 
+    branches: ['master', ]
+    paths: ['language-packs/*/.bumpversion.cfg', ]
+  
+
+jobs:
+  check_version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.8'
+      - name: Update the language packages
+        run: |
+          python scripts/04_check_version.py
