@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2021-08-22 10:24\n"
+"PO-Revision-Date: 2021-08-22 11:29\n"
 
 #: /examples/federated/md_package/schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:38
 msgid "Font Family"
@@ -114,12 +114,24 @@ msgid "Note: To disable a context menu item,\n"
 "  ]\n"
 "}\n\n"
 "Context menu description:"
-msgstr ""
+msgstr "Uwaga: Aby wyłączyć element menu kontekstowego,\n"
+"skopiuj go do Preferencji Użytkownika i dodaj klucz\n"
+"\"disabled\". Poniższy przykład wyłączy element \"Pobierz\" w menu plików:\n"
+"{\n"
+"  \"contextMenu\": [\n"
+"    {\n"
+"      \"command\": \"filebrowser:download\",\n"
+"      \"selector\": \". p-DirListing-item[data-isdir=\\\"false\\\"]\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Opis menu kontekstowego:"
 
 #: /packages/application-extension/schema/context-menu.json:3
 msgctxt "schema"
 msgid "JupyterLab context menu settings."
-msgstr ""
+msgstr "Ustawienia menu kontekstowego JupyterLab."
 
 #: /packages/application-extension/schema/context-menu.json:4
 msgctxt "schema"
@@ -1222,11 +1234,11 @@ msgstr "Inspektor własności"
 
 #: packages/application-extension/src/index.tsx:947 packages/mainmenu-extension/src/index.ts:876
 msgid "Information"
-msgstr ""
+msgstr "Informacja"
 
 #: packages/application-extension/src/index.tsx:948
 msgid "Context menu customization has changed. You will need to reload JupyterLab to see the changes."
-msgstr ""
+msgstr "Menu kontekstowe uległo zmianie. Aby zobaczyć zmiany, musisz przeładować JupyterLab."
 
 #: packages/application-extension/src/index.tsx:953 packages/docmanager-extension/src/index.ts:585 packages/mainmenu-extension/src/index.ts:882
 msgid "Reload"
@@ -1250,15 +1262,15 @@ msgstr ""
 
 #: packages/application/src/shell.ts:270 packages/application/src/shell.ts:274
 msgid "main sidebar"
-msgstr ""
+msgstr "główny pasek boczny"
 
 #: packages/application/src/shell.ts:283 packages/application/src/shell.ts:287
 msgid "alternate sidebar"
-msgstr ""
+msgstr "alternatywny pasek boczny"
 
 #: packages/apputils-extension/src/index.ts:207
 msgid "Loading…"
-msgstr ""
+msgstr "Ładowanie…"
 
 #: packages/apputils-extension/src/index.ts:208
 msgid "The loading screen is taking a long time.\n"
@@ -1276,11 +1288,11 @@ msgstr "Wyczyść obszar roboczy"
 
 #: packages/apputils-extension/src/index.ts:277
 msgid "Print…"
-msgstr ""
+msgstr "Drukuj…"
 
 #: packages/apputils-extension/src/index.ts:307
 msgid "Show Header Above Content"
-msgstr ""
+msgstr "Pokaż nagłówek powyżej zawartości"
 
 #: packages/apputils-extension/src/index.ts:468
 msgid "Reset Application State"
@@ -1292,11 +1304,11 @@ msgstr "Uruchom pierwsze włączone polecenie"
 
 #: packages/apputils-extension/src/index.ts:575
 msgid "Run All Enabled Commands Passed as Args"
-msgstr ""
+msgstr "Uruchom wszystkie aktywne polecenia przekazane jako argumenty"
 
 #: packages/apputils-extension/src/palette.ts:101
 msgid "Command Palette Section"
-msgstr ""
+msgstr "Sekcja palety poleceń"
 
 #: packages/apputils-extension/src/palette.ts:142
 msgid "Commands (%1)"
@@ -1540,7 +1552,7 @@ msgstr "Dodaj Znacznik"
 
 #: packages/celltags/src/tool.ts:198
 msgid "Cell Tags"
-msgstr ""
+msgstr "Tagi komórek"
 
 #: packages/codeeditor/src/jsoneditor.ts:311 packages/codeeditor/src/jsoneditor.ts:78
 msgid "No data!"
@@ -1560,7 +1572,7 @@ msgstr ""
 
 #: packages/codemirror-extension/src/index.ts:314
 msgid "Sublime Text"
-msgstr ""
+msgstr "Sublime Text"
 
 #: packages/codemirror-extension/src/index.ts:329 packages/documentsearch-extension/src/index.ts:142
 msgid "Find…"
@@ -2146,7 +2158,7 @@ msgstr ""
 
 #: packages/documentsearch/src/searchoverlay.tsx:338
 msgid "Search Selected Cell(s)"
-msgstr ""
+msgstr "Wyszukaj w zaznaczonych komórkach"
 
 #: packages/extensionmanager-extension/src/index.ts:107
 msgid "Enable Extension Manager"
@@ -2184,7 +2196,7 @@ msgstr "Włącz"
 
 #: packages/extensionmanager-extension/src/index.ts:68 packages/extensionmanager-extension/src/index.ts:89
 msgid "Extension Manager section"
-msgstr ""
+msgstr "Sekcja menedżera rozszerzeń"
 
 #: packages/extensionmanager/src/companions.tsx:137
 msgid "This package has indicated that it needs a corresponding server\n"
@@ -2196,7 +2208,7 @@ msgstr "Ten pakiet wskazał, że wymaga odpowiedniego rozszerzenia serwera. \n"
 
 #: packages/extensionmanager/src/companions.tsx:153
 msgid "This package has indicated that it needs a corresponding package for the kernel."
-msgstr ""
+msgstr "Ten pakiet potrzebuje odpowiedniego pakietu dla jądra."
 
 #: packages/extensionmanager/src/companions.tsx:161
 msgid "The package <code>%1</code>, is required by the following kernels:"
@@ -2219,15 +2231,15 @@ msgstr "Powinieneś upewnić się, że wskazane pakiety są zainstalowane, zanim
 
 #: packages/extensionmanager/src/companions.tsx:206
 msgid "Kernel and Server Companions"
-msgstr ""
+msgstr "Towarzyszące rozszerzenia jądra i serwera"
 
 #: packages/extensionmanager/src/companions.tsx:208
 msgid "Kernel Companions"
-msgstr ""
+msgstr "Towarzyszące rozszerzenia jądra"
 
 #: packages/extensionmanager/src/companions.tsx:210
 msgid "Server Companion"
-msgstr ""
+msgstr "Towarzyszące rozszerzenie serwera"
 
 #: packages/extensionmanager/src/companions.tsx:219
 msgid "Install the JupyterLab extension."
@@ -2263,11 +2275,11 @@ msgstr "%1 (rozwijany przez Projekt Jupyter)"
 
 #: packages/extensionmanager/src/widget.tsx:247
 msgid "%1 extension has been blockedExtensions since install. Please uninstall immediately and contact your blockedExtensions administrator."
-msgstr ""
+msgstr "Rozszerzenie %1 zostało zablokowane od czasu instalacji. Odinstaluj natychmiast i skontaktuj się z administratorem zablokowanych rozszerzeń."
 
 #: packages/extensionmanager/src/widget.tsx:263
 msgid "%1 extension has been removed from the allowedExtensions since installation. Please uninstall immediately and contact your allowedExtensions administrator."
-msgstr ""
+msgstr "Rozszerzenie %1 zostało usunięte z dozwolonych rozszerzeń od czasu instalacji. Odinstaluj natychmiast i skontaktuj się z administratorem dozwolonych rozszerzeń."
 
 #: packages/extensionmanager/src/widget.tsx:298
 msgid "Install"
@@ -2288,12 +2300,14 @@ msgstr "O projekcie"
 #: packages/extensionmanager/src/widget.tsx:384
 msgid "This is a prebuilt extension. To uninstall it, please\n"
 "    apply following instructions."
-msgstr ""
+msgstr "To jest wstępnie zbudowane rozszerzenie. Aby odinstalować to rozszerzenie,\n"
+"    zastosuj poniższe instrukcje."
 
 #: packages/extensionmanager/src/widget.tsx:394
 msgid "This is a prebuilt extension. To uninstall it, please\n"
 "    read the user guide on:"
-msgstr ""
+msgstr "To jest wstępnie zbudowane rozszerzenie. Aby odinstalować to rozszerzenie,\n"
+"    przeczytaj poradnik użytkownika:"
 
 #: packages/extensionmanager/src/widget.tsx:491
 msgid "No entries"
@@ -2358,7 +2372,7 @@ msgstr "Odkryj"
 
 #: packages/filebrowser-extension/src/index.ts:1009
 msgid "Show Last Modified Column"
-msgstr ""
+msgstr "Pokaż kolumnę z datą modyfikacji"
 
 #: packages/filebrowser-extension/src/index.ts:1025
 msgid "Search on File Names"
@@ -2370,7 +2384,7 @@ msgstr "Brak przeglądarki dla ścieżki"
 
 #: packages/filebrowser-extension/src/index.ts:153
 msgid "File Browser Section"
-msgstr ""
+msgstr "Sekcja przeglądarki plików"
 
 #: packages/filebrowser-extension/src/index.ts:176
 msgid "File Browser (%1)"
@@ -2482,7 +2496,7 @@ msgstr "Nie znaleziono katalogu: \"%1\""
 
 #: packages/filebrowser/src/browser.ts:83
 msgid "file browser"
-msgstr ""
+msgstr "przeglądarka plików"
 
 #: packages/filebrowser/src/crumbs.ts:163
 msgid "Open Error"
@@ -2847,7 +2861,7 @@ msgstr "Licencje"
 
 #: packages/help-extension/src/index.tsx:492
 msgid "Refresh Licenses"
-msgstr ""
+msgstr "Przeładuj licencje"
 
 #: packages/help-extension/src/index.tsx:93
 msgid "About %1"
@@ -2859,23 +2873,23 @@ msgstr "Wersja %1"
 
 #: packages/help-extension/src/licenses.tsx:513
 msgid "Filter Licenses By"
-msgstr ""
+msgstr "Filtruj licencje według"
 
 #: packages/help-extension/src/licenses.tsx:517 packages/help-extension/src/licenses.tsx:643
 msgid "Package"
-msgstr ""
+msgstr "Pakiet"
 
 #: packages/help-extension/src/licenses.tsx:521 packages/help-extension/src/licenses.tsx:644
 msgid "Version"
-msgstr ""
+msgstr "Wersja"
 
 #: packages/help-extension/src/licenses.tsx:525 packages/help-extension/src/licenses.tsx:645 packages/help-extension/src/licenses.tsx:712
 msgid "License"
-msgstr ""
+msgstr "Licencja"
 
 #: packages/help-extension/src/licenses.tsx:530
 msgid "Distributions"
-msgstr ""
+msgstr "Dystrybucje"
 
 #: packages/help-extension/src/licenses.tsx:633
 msgid "No Packages found"
@@ -3088,7 +3102,7 @@ msgstr "%1 wpisów dziennika logów dla %2"
 
 #: packages/logconsole/src/widget.ts:390
 msgid "Log: %1"
-msgstr ""
+msgstr "Log: %1"
 
 #: packages/logconsole/src/widget.ts:397
 msgid "No source selected."
@@ -3368,11 +3382,11 @@ msgstr "Scal wybrane komórki"
 
 #: packages/notebook-extension/src/index.ts:1758
 msgid "Merge Cell Above"
-msgstr ""
+msgstr "Scal z komórką powyżej"
 
 #: packages/notebook-extension/src/index.ts:1769
 msgid "Merge Cell Below"
-msgstr ""
+msgstr "Scal z komórką poniżej"
 
 #: packages/notebook-extension/src/index.ts:1780
 msgid "Insert Cell Above"
@@ -3544,23 +3558,23 @@ msgstr "Nowa konsola dla notatnika"
 
 #: packages/notebook-extension/src/index.ts:2578
 msgid "HTML"
-msgstr ""
+msgstr "HTML"
 
 #: packages/notebook-extension/src/index.ts:2579
 msgid "LaTeX"
-msgstr ""
+msgstr "LaTeX"
 
 #: packages/notebook-extension/src/index.ts:2580 packages/notebook/src/default-toolbar.tsx:343
 msgid "Markdown"
-msgstr ""
+msgstr "Markdown"
 
 #: packages/notebook-extension/src/index.ts:2581 packages/notebook-extension/src/index.ts:637
 msgid "PDF"
-msgstr ""
+msgstr "PDF"
 
 #: packages/notebook-extension/src/index.ts:2582
 msgid "ReStructured Text"
-msgstr ""
+msgstr "ReStructured Text"
 
 #: packages/notebook-extension/src/index.ts:2583
 msgid "Executable Script"
@@ -3616,11 +3630,11 @@ msgstr "Wybór zaufania spowoduje ponowne renderowanie tego notatnika w zaufanym
 
 #: packages/notebook/src/actions.tsx:1740
 msgid "For more information, see"
-msgstr ""
+msgstr "Aby dowiedzieć się więcej, zobacz"
 
 #: packages/notebook/src/actions.tsx:1746
 msgid "the Jupyter security documentation"
-msgstr ""
+msgstr "dokumentację bezpieczeństwa Jupytera"
 
 #: packages/notebook/src/actions.tsx:1753
 msgid "Notebook is already trusted"
@@ -3668,7 +3682,7 @@ msgstr "Typ komórki"
 
 #: packages/notebook/src/default-toolbar.tsx:339
 msgid "Select the cell type"
-msgstr ""
+msgstr "Wybierz typ komórki"
 
 #: packages/notebook/src/default-toolbar.tsx:342
 msgid "Code"
@@ -3744,7 +3758,7 @@ msgstr "Podslajd"
 
 #: packages/notebook/src/notebooktools.ts:878
 msgid "Fragment"
-msgstr ""
+msgstr "Fragment"
 
 #: packages/notebook/src/notebooktools.ts:879
 msgid "Skip"
@@ -3752,7 +3766,7 @@ msgstr "Pomiń"
 
 #: packages/notebook/src/notebooktools.ts:880
 msgid "Notes"
-msgstr ""
+msgstr "Notatki"
 
 #: packages/notebook/src/notebooktools.ts:918
 msgid "Raw NBConvert Format"
@@ -3895,7 +3909,20 @@ msgid "Note: To disable a system default shortcut,\n"
 "List of commands followed by keyboard shortcuts:\n"
 "%1\n\n"
 "List of keyboard shortcuts:"
-msgstr ""
+msgstr "Uwaga: Aby wyłączyć domyślny skrót systemowy,\n"
+"skopiuj go do Preferencji Użytkownika i dodaj klucz\n"
+"\"disabled\", na przykład:\n"
+"{\n"
+"    \"command\": \"application:activate-next-tab\",\n"
+"    \"keys\": [\n"
+"        \"Ctrl Shift ]\"\n"
+"    ],\n"
+"    \"selector\": \"body\",\n"
+"    \"disabled\": true\n"
+"}\n\n"
+"Lista poleceń, a następnie lista skrótów klawiaturowych:\n"
+"%1\n\n"
+"Lista skrótów klawiaturowych:"
 
 #: packages/statusbar-extension/src/index.ts:359
 msgid "Simple Interface (%1)"
@@ -3963,7 +3990,7 @@ msgstr "Nowy terminal"
 
 #: packages/terminal-extension/src/index.ts:295 packages/terminal-extension/src/index.ts:88 packages/terminal/src/widget.ts:69
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: packages/terminal-extension/src/index.ts:296
 msgid "Start a new terminal session"
@@ -3995,15 +4022,15 @@ msgstr "Ustaw motyw terminalu"
 
 #: packages/terminal/src/widget.ts:90
 msgid "Terminal %1"
-msgstr ""
+msgstr "Terminal %1"
 
 #: packages/theme-dark-extension/src/index.ts:30
 msgid "JupyterLab Dark"
-msgstr ""
+msgstr "Ciemny JupyterLab"
 
 #: packages/theme-light-extension/src/index.ts:30
 msgid "JupyterLab Light"
-msgstr ""
+msgstr "Jasny JupyterLab"
 
 #: packages/toc-extension/src/index.ts:82 packages/toc/src/toc.tsx:125
 msgid "Table of Contents"
@@ -4011,11 +4038,11 @@ msgstr "Spis Treści"
 
 #: packages/toc-extension/src/index.ts:85
 msgid "Table of Contents section"
-msgstr ""
+msgstr "Sekcja spisu treści"
 
 #: packages/toc-extension/src/index.ts:93
 msgid "Run Cell(s)"
-msgstr ""
+msgstr "Uruchom komórkę(ki)"
 
 #: packages/toc/src/generators/markdown/toolbar_generator.tsx:64 packages/toc/src/generators/markdown/toolbar_generator.tsx:65 packages/toc/src/generators/notebook/toolbar_generator.tsx:214 packages/toc/src/generators/notebook/toolbar_generator.tsx:215
 msgid "Toggle Auto-Numbering"
@@ -4031,7 +4058,7 @@ msgstr "Wyczyść filtry"
 
 #: packages/toc/src/generators/notebook/tagstool/index.tsx:255 packages/toc/src/generators/notebook/tagstool/index.tsx:256 packages/toc/src/generators/notebook/tagstool/index.tsx:258 packages/toc/src/generators/notebook/tagstool/index.tsx:266 packages/toc/src/generators/notebook/tagstool/index.tsx:267 packages/toc/src/generators/notebook/tagstool/index.tsx:271
 msgid "Select All Cells With Current Tags"
-msgstr ""
+msgstr "Zaznacz wszystkie komórki z bieżącymi tagami"
 
 #: packages/toc/src/generators/notebook/toolbar_generator.tsx:182 packages/toc/src/generators/notebook/toolbar_generator.tsx:183
 msgid "Toggle Code Cells"
