@@ -17,4 +17,5 @@ jobs:
           python-version: '3.8'
       - name: Check language packs version homogeneity
         run: |
+          python -m pip install bump2version
           python scripts/04_check_version.py
