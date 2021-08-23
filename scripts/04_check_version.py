@@ -6,6 +6,7 @@ This script will check that all language pack have the same version
 """
 
 import configparser
+import subprocess
 from pathlib import Path
 
 # Constants
@@ -22,18 +23,34 @@ if __name__ == "__main__":
             config = configparser.ConfigParser()
             config.read(config_path)
 
+            # Check version are consistent between package
             pkg_version = config.get("bumpversion", "current_version")
             if version is None:
                 print(
                     f"Reference version taken from {config_path.parent.name}: {pkg_version}."
                 )
                 version = pkg_version
-            elif pkg_version != version:
-                errors.append((config_path.parent.name, pkg_version, version))
+
+            # Check package version is coherent with bump2version configuration
+            bumpversion_error = None
+            try:
+                subprocess.check_output(
+                    ["bump2version", "--dry-run", "--allow-dirty", "build"],
+                    stderr=subprocess.PIPE,
+                    encoding="utf-8",
+                    cwd=config_path.parent
+                )
+            except subprocess.CalledProcessError as e:
+                last_line = e.stderr.splitlines()[-1]
+                error_class, _, msg = last_line.partition(":")
+                bumpversion_error = msg.strip()
+
+            if bumpversion_error or pkg_version != version:
+                errors.append((config_path.parent.name, pkg_version, bumpversion_error))
 
     if errors:
         print("Following packages have singular versions:")
-        print("Package name\t\tPkg version\tCommon version")
+        print("Package name\t\t\tPkg version\tBumpversion error")
         for error in errors:
             print(f"{error[0]}\t{error[1]}\t{error[2]}")
         raise ValueError("Language packages do not have homogeneous version.")
