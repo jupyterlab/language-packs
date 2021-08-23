@@ -5,6 +5,7 @@ on:
     branches: ['master', ]
     # Launch if any .bumpversion.cfg files got modify on 'master' branch
     paths: ['language-packs/*/.bumpversion.cfg', ]
+  workflow_dispatch:
 
 permissions:
   contents: write
