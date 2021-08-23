@@ -82,15 +82,17 @@ jobs:
         echo "CURRENT_TAG=${CURRENT_LOCALE}@v$(python .github/scripts/get_version.py)" >> $GITHUB_ENV
         echo "CURRENT_LOCALE_DIR=language-packs/jupyterlab-language-pack-${CURRENT_LOCALE}" >> $GITHUB_ENV
     - name: Build release artifacts
+      shell: bash
       run: |
         # Create global dist folder if it does not exist
         mkdir -p dist
-        cd ${{ env.CURRENT_LOCALE_DIR }}
+        pushd ${{ env.CURRENT_LOCALE_DIR }}
         check-manifest -v --ignore-bad-ideas *.mo
         python setup.py sdist bdist_wheel
         python -m twine check dist/*
         # Copy the artifacts to the global repository
-        cp -r dist/* ../dist
+        popd
+        cp -r ./${{ env.CURRENT_LOCALE_DIR }}/dist/* ./dist
     - name: Create Release
       if: ${{ github.event.inputs.skipRelease == 'false' }}
       run: |
