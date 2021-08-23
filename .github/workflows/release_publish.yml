@@ -6,6 +6,11 @@ on:
     # Launch if any .bumpversion.cfg files got modify on 'master' branch
     paths: ['language-packs/*/.bumpversion.cfg', ]
   workflow_dispatch:
+    inputs:
+      skipRelease:
+        description: 'If "true", skip release and tag creation'
+        required: true
+        default: 'false'
 
 permissions:
   contents: write
@@ -25,8 +30,8 @@ jobs:
           python -m pip install bump2version
           python scripts/04_check_version.py
 
-  publish:
-    name: 'Publish ${{ matrix.locale }}'
+  build-artifacts:
+    name: 'Build ${{ matrix.locale }}'
     needs: check-version
     runs-on: ubuntu-latest
     env:
@@ -78,11 +83,16 @@ jobs:
         echo "CURRENT_LOCALE_DIR=language-packs/jupyterlab-language-pack-${CURRENT_LOCALE}" >> $GITHUB_ENV
     - name: Build release artifacts
       run: |
+        # Create global dist folder if it does not exist
+        mkdir -p dist
         cd ${{ env.CURRENT_LOCALE_DIR }}
         check-manifest -v --ignore-bad-ideas *.mo
         python setup.py sdist bdist_wheel
         python -m twine check dist/*
+        # Copy the artifacts to the global repository
+        cp -r dist/* ../dist
     - name: Create Release
+      if: ${{ github.event.inputs.skipRelease == 'false' }}
       run: |
         hub release create \
         ${{ env.CURRENT_TAG }} \
@@ -91,19 +101,31 @@ jobs:
       env:
         GITHUB_USER: ${{ secrets.GITHUB_USER }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Publish PyPI Package
-      env:
-        TWINE_USERNAME: __token__
-        TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
-      shell: bash
-      run: |
-        cd ${{ env.CURRENT_LOCALE_DIR }}
-        counter=0
-        max_retry=6
-        until python -m twine upload dist/*
-        do
-            echo "Backing off for 10 seconds - PyPI is busy or not available"
-            sleep 10
-            [[ counter -eq $max_retry ]] && echo "Could not upload within 1 minute, giving up!" && exit 1
-            ((counter++))
-        done
+    - name: Upload language pack artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: pip_packages
+        path: dist/*
+
+  publish:
+    name: Publish all language packs at once
+    needs: build-artifacts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.8'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip twine
+      - name: Get the artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: pip_packages
+      - name: Publish PyPI Packages
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        run: |
+          python -m twine upload --skip-existing dist/*
