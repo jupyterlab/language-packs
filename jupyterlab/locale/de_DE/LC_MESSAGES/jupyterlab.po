@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2021-08-17 20:12\n"
+"PO-Revision-Date: 2021-08-18 11:56\n"
 
 #: /examples/federated/md_package/schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:38
 msgid "Font Family"
@@ -66,7 +66,7 @@ msgstr "Die in CSS-ch Einheiten ausgedrückte Zeilenbreite.\n"
 #: /examples/federated/md_package/schema/plugin.json:5 /packages/markdownviewer-extension/schema/plugin.json:5
 msgctxt "schema"
 msgid "Markdown viewer settings."
-msgstr "Markdown Viewer Einstellungen."
+msgstr "Markdown-Viewer-Einstellungen."
 
 #: /examples/federated/md_package/schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:62
 msgid "Hide Front Matter"
@@ -78,7 +78,10 @@ msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr ""
+msgstr "Gibt an, ob der YAML Titelei-Abschnitt ausgeblendet werden soll.\n"
+"Der YAML Titelei-Abschnitt muss am Anfang des Dokuments stehen,\n"
+"durch eine Zeile mit drei Strichen (---) eingeleitet und durch eine Zeile mit\n"
+"drei Bindestrichen (---) oder drei Punkten (...) abgeschlossen werden."
 
 #: /examples/federated/md_package/schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:68
 msgid "Render Timeout"
@@ -92,12 +95,12 @@ msgstr "Das Render-Timeout in Millisekunden."
 #: /packages/application-extension/schema/commands.json:2
 msgctxt "schema"
 msgid "Application Commands"
-msgstr ""
+msgstr "Anwendungsbefehle"
 
 #: /packages/application-extension/schema/commands.json:3
 msgctxt "schema"
 msgid "Application commands settings."
-msgstr ""
+msgstr "Einstellungen der Anwendungsbefehle."
 
 #: /packages/application-extension/schema/context-menu.json:0
 msgctxt "schema"
@@ -114,12 +117,25 @@ msgid "Note: To disable a context menu item,\n"
 "  ]\n"
 "}\n\n"
 "Context menu description:"
-msgstr ""
+msgstr "Hinweis: Um ein Kontextmenüelement zu deaktivieren,\n"
+"kopieren Sie es in die Benutzereinstellungen\n"
+"und fügen Sie den Schlüssel \"disabled\" hinzu.\n"
+"Das folgende Beispiel deaktiviert die Option \"Download\" für Dateien:\n"
+"{\n"
+"  \"contextMenu\": [\n"
+"    {\n"
+"      \"command\": \"filebrowser:download\",\n"
+"      \"selector\": \".jp-DirListing-item[data-isdir=\\\"false\\\"]\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Beschreibung des Kontextmenüs:"
 
 #: /packages/application-extension/schema/context-menu.json:3
 msgctxt "schema"
 msgid "JupyterLab context menu settings."
-msgstr ""
+msgstr "JupyterLab Kontextmenü-Einstellungen."
 
 #: /packages/application-extension/schema/context-menu.json:4
 msgctxt "schema"
@@ -168,7 +184,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/palette.json:3
 msgctxt "schema"
 msgid "Command palette settings."
-msgstr ""
+msgstr "Einstellungen der Befehlspalette."
 
 #: /packages/apputils-extension/schema/print.json:2
 msgctxt "schema"
