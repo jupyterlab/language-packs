@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-08-18 10:10\n"
+"PO-Revision-Date: 2021-08-24 20:12\n"
 
 #: /examples/federated/md_package/schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:38
 msgid "Font Family"
@@ -1037,13 +1037,13 @@ msgid "Whether to include cell output in headings"
 msgstr "是否在标题中包含单元格输出"
 
 #: /packages/toc-extension/schema/plugin.json:21
-msgid "syncCollapseState"
-msgstr "syncCollapseState"
+msgid "Synchronize collapse state"
+msgstr ""
 
 #: /packages/toc-extension/schema/plugin.json:22
 msgctxt "schema"
-msgid "If set to true, when a header is collapsed in the ToC the corresponding section in the notebook is collapsed as well and vice versa."
-msgstr "如果设置为 true，当标题在目录中折叠时，笔记本中的相应部分也会折叠，反之亦然。"
+msgid "If set to true, when a header is collapsed in the table of contents the corresponding section in the notebook is collapsed as well and vice versa."
+msgstr ""
 
 #: /packages/toc-extension/schema/plugin.json:4
 msgctxt "schema"
@@ -1061,8 +1061,8 @@ msgstr "启用 h1 编号"
 
 #: /packages/toc-extension/schema/plugin.json:9
 msgctxt "schema"
-msgid "Whether to number first level headings"
-msgstr "是否为一级标题显示编号"
+msgid "Whether to number first-level headings"
+msgstr ""
 
 #: /packages/tooltip-extension/schema/consoles.json:2
 msgctxt "schema"
@@ -1252,7 +1252,7 @@ msgstr "未找到路径"
 msgid "Property Inspector"
 msgstr "属性检查器"
 
-#: packages/application-extension/src/index.tsx:947 packages/mainmenu-extension/src/index.ts:876
+#: packages/application-extension/src/index.tsx:947 packages/mainmenu-extension/src/index.ts:889
 msgid "Information"
 msgstr "信息"
 
@@ -1260,7 +1260,7 @@ msgstr "信息"
 msgid "Context menu customization has changed. You will need to reload JupyterLab to see the changes."
 msgstr "上下文菜单自定义已更改。您需要重新载入 JupyterLab 来查看改动。"
 
-#: packages/application-extension/src/index.tsx:953 packages/docmanager-extension/src/index.ts:585 packages/mainmenu-extension/src/index.ts:882
+#: packages/application-extension/src/index.tsx:953 packages/docmanager-extension/src/index.ts:585 packages/mainmenu-extension/src/index.ts:895
 msgid "Reload"
 msgstr "重新加载"
 
@@ -1406,7 +1406,7 @@ msgstr "保存"
 msgid "Save Current Workspace As…"
 msgstr "保存当前工作区为…"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1217 packages/debugger-extension/src/index.ts:469 packages/debugger/src/panels/breakpoints/index.ts:51 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:847 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:448 packages/filebrowser/src/opendialog.ts:81 packages/notebook/src/actions.tsx:1762 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/translation-extension/src/index.ts:132
+#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1217 packages/debugger-extension/src/index.ts:469 packages/debugger/src/panels/breakpoints/index.ts:51 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:847 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:448 packages/filebrowser/src/opendialog.ts:81 packages/notebook/src/actions.tsx:1759 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/translation-extension/src/index.ts:135
 msgid "Cancel"
 msgstr "取消"
 
@@ -1646,11 +1646,11 @@ msgstr "插入换行符"
 msgid "Replace Selection in Console"
 msgstr "在控制台中替换选择"
 
-#: packages/console-extension/src/index.ts:551 packages/mainmenu-extension/src/index.ts:452 packages/notebook-extension/src/index.ts:1620
+#: packages/console-extension/src/index.ts:551 packages/mainmenu-extension/src/index.ts:465 packages/notebook-extension/src/index.ts:1620
 msgid "Interrupt Kernel"
 msgstr "中断内核"
 
-#: packages/console-extension/src/index.ts:566 packages/mainmenu-extension/src/index.ts:472 packages/notebook-extension/src/index.ts:1492
+#: packages/console-extension/src/index.ts:566 packages/mainmenu-extension/src/index.ts:485 packages/notebook-extension/src/index.ts:1492
 msgid "Restart Kernel…"
 msgstr "重启内核…"
 
@@ -1666,7 +1666,7 @@ msgstr "关闭控制台？"
 msgid "Are you sure you want to close \"%1\"?"
 msgstr "您确定要关闭「%1」吗？"
 
-#: packages/console-extension/src/index.ts:629 packages/mainmenu-extension/src/index.ts:507 packages/notebook-extension/src/index.ts:1967
+#: packages/console-extension/src/index.ts:629 packages/mainmenu-extension/src/index.ts:520 packages/notebook-extension/src/index.ts:1967
 msgid "Change Kernel…"
 msgstr "更改内核…"
 
@@ -1898,7 +1898,7 @@ msgstr "从磁盘重新加载内容"
 msgid "Cannot Reload"
 msgstr "无法重载"
 
-#: packages/docmanager-extension/src/index.ts:573 packages/docmanager-extension/src/index.ts:618 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:671 packages/docmanager-extension/src/index.ts:727 packages/notebook/src/actions.tsx:1754 packages/notebook/src/actions.tsx:1763 packages/notebook/src/actions.tsx:1981 packages/notebook/src/default-toolbar.tsx:67 packages/notebook/src/model.ts:353 packages/notebook/src/panel.ts:219 packages/settingeditor/src/plugineditor.ts:138 packages/settingeditor/src/plugineditor.ts:260 packages/translation-extension/src/index.ts:133
+#: packages/docmanager-extension/src/index.ts:573 packages/docmanager-extension/src/index.ts:618 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:671 packages/docmanager-extension/src/index.ts:727 packages/notebook/src/actions.tsx:1751 packages/notebook/src/actions.tsx:1760 packages/notebook/src/actions.tsx:1978 packages/notebook/src/default-toolbar.tsx:67 packages/notebook/src/model.ts:353 packages/notebook/src/panel.ts:219 packages/settingeditor/src/plugineditor.ts:138 packages/settingeditor/src/plugineditor.ts:260
 msgid "Ok"
 msgstr "确认"
 
@@ -2022,7 +2022,7 @@ msgstr "重命名文件"
 msgid "Rename"
 msgstr "重命名"
 
-#: packages/docmanager/src/dialogs.ts:61
+#: packages/docmanager/src/dialogs.ts:61 packages/filebrowser/src/listing.ts:1526
 msgid "Rename Error"
 msgstr "重命名错误"
 
@@ -2503,7 +2503,7 @@ msgstr "新建Markdown文件"
 msgid "Copy Path"
 msgstr "复制路径"
 
-#: packages/filebrowser-extension/src/index.ts:974 packages/mainmenu-extension/src/index.ts:513
+#: packages/filebrowser-extension/src/index.ts:974 packages/mainmenu-extension/src/index.ts:526
 msgid "Shut Down Kernel"
 msgstr "关闭内核"
 
@@ -2565,10 +2565,6 @@ msgstr "复制或移动文件时出错"
 msgctxt "showErrorMessage"
 msgid "Delete Failed"
 msgstr "删除失败"
-
-#: packages/filebrowser/src/listing.ts:1526
-msgid "showErrorMessage"
-msgstr "显示错误消息"
 
 #: packages/filebrowser/src/listing.ts:1528
 msgctxt "showErrorMessage"
@@ -2743,7 +2739,7 @@ msgstr[0] "空格：%1"
 msgid "Indent with Tab"
 msgstr "使用 Tab 缩进"
 
-#: packages/fileeditor-extension/src/commands.ts:426 packages/mainmenu-extension/src/index.ts:570
+#: packages/fileeditor-extension/src/commands.ts:426 packages/mainmenu-extension/src/index.ts:583
 msgid "Match Brackets"
 msgstr "高亮显示括号对"
 
@@ -2839,7 +2835,7 @@ msgstr "关于 JUPYTER 项目"
 msgid "© 2015-2021 Project Jupyter Contributors"
 msgstr "© 2015-2021 Jupyter 项目贡献者"
 
-#: packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:399 packages/hub-extension/src/index.ts:161 packages/mainmenu-extension/src/index.ts:528
+#: packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:399 packages/hub-extension/src/index.ts:161 packages/mainmenu-extension/src/index.ts:541
 msgid "Dismiss"
 msgstr "忽略"
 
@@ -2995,7 +2991,7 @@ msgstr "Hub 控制面板"
 msgid "Open the Hub control panel in a new browser tab"
 msgstr "在新的游览器选项卡中打开 Hub 控制面板"
 
-#: packages/hub-extension/src/index.ts:82 packages/mainmenu-extension/src/index.ts:431
+#: packages/hub-extension/src/index.ts:82 packages/mainmenu-extension/src/index.ts:444
 msgid "Log Out"
 msgstr "注销"
 
@@ -3208,71 +3204,71 @@ msgstr "关闭服务确认"
 msgid "Please confirm you want to shut down JupyterLab."
 msgstr "请确认您想要关闭 JupyterLab。"
 
-#: packages/mainmenu-extension/src/index.ts:402
+#: packages/mainmenu-extension/src/index.ts:415
 msgid "You have shut down the Jupyter server. You can now close this tab."
 msgstr "您已关闭 Jupyter 服务进程。您现在可以关闭此选项卡。"
 
-#: packages/mainmenu-extension/src/index.ts:406
+#: packages/mainmenu-extension/src/index.ts:419
 msgid "To use JupyterLab again, you will need to relaunch it."
 msgstr "若要再次使用 JupyterLab ，您需要重新启动它。"
 
-#: packages/mainmenu-extension/src/index.ts:413
+#: packages/mainmenu-extension/src/index.ts:426
 msgid "Server stopped"
 msgstr "服务进程已终止"
 
-#: packages/mainmenu-extension/src/index.ts:432
+#: packages/mainmenu-extension/src/index.ts:445
 msgid "Log out of JupyterLab"
 msgstr "退出 JupyterLab"
 
-#: packages/mainmenu-extension/src/index.ts:462
+#: packages/mainmenu-extension/src/index.ts:475
 msgid "Reconnect to Kernel"
 msgstr "重新连接至内核"
 
-#: packages/mainmenu-extension/src/index.ts:484
+#: packages/mainmenu-extension/src/index.ts:497
 msgid "Restart Kernel and Clear…"
 msgstr "重新启动内核并清除…"
 
-#: packages/mainmenu-extension/src/index.ts:519
+#: packages/mainmenu-extension/src/index.ts:532
 msgid "Shut Down All Kernels…"
 msgstr "关闭所有内核…"
 
-#: packages/mainmenu-extension/src/index.ts:525
+#: packages/mainmenu-extension/src/index.ts:538
 msgid "Shut Down All?"
 msgstr "全部关闭？"
 
-#: packages/mainmenu-extension/src/index.ts:526
+#: packages/mainmenu-extension/src/index.ts:539
 msgid "Shut down all kernels?"
 msgstr "关闭所有内核?"
 
-#: packages/mainmenu-extension/src/index.ts:529 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:252
+#: packages/mainmenu-extension/src/index.ts:542 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:252
 msgid "Shut Down All"
 msgstr "全部关闭"
 
-#: packages/mainmenu-extension/src/index.ts:551
+#: packages/mainmenu-extension/src/index.ts:564
 msgid "Show Line Numbers"
 msgstr "显示行号"
 
-#: packages/mainmenu-extension/src/index.ts:589
+#: packages/mainmenu-extension/src/index.ts:602
 msgid "Wrap Words"
 msgstr "换行"
 
-#: packages/mainmenu-extension/src/index.ts:622
+#: packages/mainmenu-extension/src/index.ts:635
 msgid "Run Selected"
 msgstr "运行选定单元格"
 
-#: packages/mainmenu-extension/src/index.ts:630
+#: packages/mainmenu-extension/src/index.ts:643
 msgid "Run All"
 msgstr "运行所有"
 
-#: packages/mainmenu-extension/src/index.ts:650
+#: packages/mainmenu-extension/src/index.ts:663
 msgid "Restart Kernel and Run All"
 msgstr "重新启动内核并运行所有"
 
-#: packages/mainmenu-extension/src/index.ts:708
+#: packages/mainmenu-extension/src/index.ts:721
 msgid "Activate Previously Used Tab"
 msgstr "激活之前使用过的标签"
 
-#: packages/mainmenu-extension/src/index.ts:877
+#: packages/mainmenu-extension/src/index.ts:890
 msgid "Menu customization has changed. You will need to reload JupyterLab to see the changes."
 msgstr "菜单自定义已更改。您需要重新载入 JupyterLab 来查看改动。"
 
@@ -3644,35 +3640,35 @@ msgstr "为输出创建新视图"
 msgid "Run Selected Text or Current Line in Console"
 msgstr "在控制台中运行所选文本或当前行"
 
-#: packages/notebook/src/actions.tsx:1732
+#: packages/notebook/src/actions.tsx:1729
 msgid "A trusted Jupyter notebook may execute hidden malicious code when you open it."
 msgstr "受信任的 Jupyter 笔记本可能会在您打开它时执行隐藏的恶意代码。"
 
-#: packages/notebook/src/actions.tsx:1736
+#: packages/notebook/src/actions.tsx:1733
 msgid "Selecting trust will re-render this notebook in a trusted state."
 msgstr "选择信任将在信任状态下重新渲染此笔记本。"
 
-#: packages/notebook/src/actions.tsx:1740
+#: packages/notebook/src/actions.tsx:1737
 msgid "For more information, see"
 msgstr "更多信息，请参阅"
 
-#: packages/notebook/src/actions.tsx:1746
+#: packages/notebook/src/actions.tsx:1743
 msgid "the Jupyter security documentation"
 msgstr "Jupyter 安全文档"
 
-#: packages/notebook/src/actions.tsx:1753
+#: packages/notebook/src/actions.tsx:1750
 msgid "Notebook is already trusted"
 msgstr "笔记本已被信任。"
 
-#: packages/notebook/src/actions.tsx:1760
+#: packages/notebook/src/actions.tsx:1757
 msgid "Trust this notebook?"
 msgstr "信任此笔记本？"
 
-#: packages/notebook/src/actions.tsx:1976
+#: packages/notebook/src/actions.tsx:1973
 msgid "Kernel Terminating"
 msgstr "正在终止内核"
 
-#: packages/notebook/src/actions.tsx:1977
+#: packages/notebook/src/actions.tsx:1974
 msgid "The kernel for %1 appears to be terminating. You can not run any cell for now."
 msgstr "%1 的内核似乎正在终止。您现在不能运行任何单元格。"
 
@@ -3748,11 +3744,19 @@ msgstr "此笔记本已从较新的笔记本格式 (v%1)\n"
 msgid "Notebook converted"
 msgstr "笔记本已转换"
 
-#: packages/notebook/src/modestatus.tsx:25
+#: packages/notebook/src/modestatus.tsx:24
 msgid "Mode: %1"
 msgstr "模式：%1"
 
-#: packages/notebook/src/modestatus.tsx:70
+#: packages/notebook/src/modestatus.tsx:66
+msgid "Command"
+msgstr ""
+
+#: packages/notebook/src/modestatus.tsx:67
+msgid "Edit"
+msgstr ""
+
+#: packages/notebook/src/modestatus.tsx:78
 msgid "Notebook is in %1 mode"
 msgstr "笔记本处于 %1 模式"
 
@@ -4101,6 +4105,10 @@ msgid "Change interface language?"
 msgstr "更改界面语言？"
 
 #: packages/translation-extension/src/index.ts:130
-msgid "Are you sure you want to refresh?"
-msgstr "您确定要刷新吗？"
+msgid "After changing the interface language to %1, you will need to reload JupyterLab to see the changes."
+msgstr ""
+
+#: packages/translation-extension/src/index.ts:136
+msgid "Change and reload"
+msgstr ""
 
