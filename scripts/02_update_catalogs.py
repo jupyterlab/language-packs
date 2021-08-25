@@ -15,13 +15,14 @@ This script will:
 """
 
 # Standard library imports
+import argparse
+import os
 import subprocess
-import sys
 import time
 from pathlib import Path
 
 # Third party imports
-import click
+# import click
 import jupyterlab_translate.api as api
 import yaml
 
@@ -116,7 +117,7 @@ def update_repo(package_name: str, url: str, version: str):
         subprocess.check_call(args, cwd=clone_path)
 
 
-def update_catalog(package_name: str, version: str):
+def update_catalog(package_name: str, version: str, merge: bool):
     """
     Create or update pot catalogs for package_name and version using
     `jupyterlab-translate`.
@@ -124,36 +125,35 @@ def update_catalog(package_name: str, version: str):
     TODO: version is ignored
     """
     package_repo_dir = REPO_ROOT / REPOSITORIES_FOLDER / package_name
-    api.extract_language_pack(package_repo_dir, REPO_ROOT, package_name)
+    api.extract_language_pack(package_repo_dir, REPO_ROOT, package_name, merge)
 
 
 if __name__ == "__main__":
     start_run_time = time.time()
-    args = sys.argv[1:]
-    data = load_repo_map()
-    packages = []
+    parser = argparse.ArgumentParser(description="Update JupyterLab language packages source strings.")
+    parser.add_argument("packages", nargs="*", help="Package to update")
+    parser.add_argument("--no-merge", action="store_true", help="If present, the existing PO template file will be overridden (by default the new strings are merged).")
 
+    args = parser.parse_args()
+
+    data = load_repo_map()
+    
     # Ensure repository map and crowdin config are in sync
     update_crowdin_config()
-
-    if len(args) == 1:
-        package_name = args[0]
-        # Update package if found in the repository-map.yml
-        if package_name in data:
-            packages = [package_name]
-    elif len(args) == 0:
+    
+    if len(args.packages) == 0:
         packages = sorted(data.keys())
     else:
-        sys.exit(0)
+        packages = [pkg for pkg in args.packages if pkg in data]
+    
+    merge = not args.no_merge and os.environ.get("NO_MERGE_POT", "false") == "false"
 
     for package_name in packages:
-        click.echo(
-            click.style(f'\n\nUpdating catalog for "{package_name}"\n\n', fg="cyan")
-        )
+        print(f'\n\nUpdating catalog for "{package_name}" with {"" if merge else "no "}merge\n\n')
         url = data[package_name]["url"]
         version = data[package_name]["current-version-tag"]
         update_repo(package_name, url, version)
-        update_catalog(package_name, version)
+        update_catalog(package_name, version, merge)
 
     delta = round(time.time() - start_run_time, 0)
-    click.echo(click.style(f"\n\n\nCatalogs updated in {delta} seconds\n", fg="green"))
+    print(f"\n\n\nCatalogs updated in {delta} seconds\n")

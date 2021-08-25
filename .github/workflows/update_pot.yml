@@ -7,6 +7,11 @@ on:
     paths:
       - repository-map.yml
   workflow_dispatch:
+    inputs:
+      no_merge:
+        description: 'If "true" skip merging new source strings with existing ones.'
+        required: false
+        default: 'false'
 
 permissions:
   contents: write
