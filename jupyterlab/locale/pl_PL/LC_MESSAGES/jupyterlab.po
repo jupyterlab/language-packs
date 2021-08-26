@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2021-08-26 22:38\n"
+"PO-Revision-Date: 2021-08-26 23:41\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -148,17 +148,17 @@ msgstr ""
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/args/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/args/description
 msgctxt "settings"
 msgid "Command arguments"
-msgstr ""
+msgstr "Argumenty polecenia"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/command/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/command/description
 msgctxt "settings"
 msgid "Command id"
-msgstr ""
+msgstr "ID polecenia"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/disabled/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/disabled/description
 msgctxt "settings"
 msgid "Whether the item is disabled or not"
-msgstr ""
+msgstr "Czy element jest wyłączony czy nie"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/rank/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/rank/description
 msgctxt "settings"
@@ -217,7 +217,7 @@ msgstr "Uwaga: Aby wyłączyć element menu kontekstowego,\n"
 #: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/items/allOf[1]/properties/selector/description
 msgctxt "settings"
 msgid "The CSS selector for the context menu item."
-msgstr ""
+msgstr "Selektor CSS dla elementu menu kontekstowego."
 
 #: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/title
 msgctxt "settings"
@@ -501,7 +501,7 @@ msgstr ""
 #: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/description /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/cursorBlinkRate/description /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/description
 msgctxt "settings"
 msgid "Half-period in milliseconds used for cursor blinking. The default blink rate is 530ms. By setting this to zero, blinking can be disabled. A negative value hides the cursor entirely."
-msgstr ""
+msgstr "Półokres używany do migania kursora, w milisekundach. Domyślna prędkość migania wynosi 530ms. Ustawiając to na zero, miganie może być wyłączone. Wartość ujemna ukrywa kursor całkowicie."
 
 #: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/title /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/cursorBlinkRate/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/title
 msgctxt "settings"
@@ -906,12 +906,12 @@ msgstr "Konsola logów"
 #: /packages/logconsole-extension/schema/plugin.json:/properties/flash/description
 msgctxt "settings"
 msgid "Whether to flash on new log message or not"
-msgstr ""
+msgstr "Czy błyskać po zalogowaniu nowej wiadomości"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/flash/title
 msgctxt "settings"
 msgid "Status Bar Item flash"
-msgstr ""
+msgstr "Błyskanie elementu paska stanu"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/maxLogEntries/description
 msgctxt "settings"
@@ -1003,7 +1003,29 @@ msgid "Note: To disable a menu or a menu item,\n"
 "  ]\n"
 "}\n\n"
 "Menu description:"
-msgstr ""
+msgstr "Uwaga: Aby wyłączyć menu lub pozycję menu,\n"
+"skopiuj je do Preferencji Użytkownika i dodaj klawisz\n"
+"\"disabled\". Poniższy przykład wyłączy\n"
+"menu \"Tabs\" i \"Zrestartuj jądro i uruchom do wybranej komórki\"\n"
+"element:\n"
+"{\n"
+"  \"menu\": [\n"
+"    {\n"
+"      \"id\": \"jp-mainmenu-tabs\",\n"
+"      \"disabled\": true\n"
+"    },\n"
+"    {\n"
+"      \"id\": \"jp-mainmenu-kernel\",\n"
+"      \"items\": [\n"
+"        {\n"
+"          \"command\": \"notebook:restart-and-run-to-selected\",\n"
+"          \"disabled\": true\n"
+"        }\n"
+"      ]\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Opis menu:"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/properties/menus/title
 msgctxt "settings"
@@ -1018,7 +1040,7 @@ msgstr "Menu główne"
 #: /packages/notebook-extension/schema/export.json:/description
 msgctxt "schema"
 msgid "Notebook Export settings."
-msgstr ""
+msgstr "Ustawienia eksportu notatnika."
 
 #: /packages/notebook-extension/schema/export.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
 msgctxt "menu"
@@ -1083,17 +1105,17 @@ msgstr "Konfiguracja Komórki Markdown"
 #: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/description
 msgctxt "settings"
 msgid "Defines the maximum number of output cells to to to be rendered in the output area for cells with many outputs. The output area will have a head and a tail, and the outputs between will be trimmed and not displayed unless the user clicks on the information message."
-msgstr ""
+msgstr "Określa maksymalną liczbę komórek wyjściowych, które mają być renderowane w obszarze wyjściowym dla komórek o wielu wyjściach. Obszar wyjściowy będzie miał głowę i ogon, a wyniki pomiędzy nimi zostaną przycięte i nie będą wyświetlane, chyba że użytkownik kliknie na komunikat informacyjny."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/title
 msgctxt "settings"
 msgid "The maximum number of output cells to to be rendered in the output area. Set to 0 to have the complete display."
-msgstr ""
+msgstr "Maksymalna liczba komórek wyjściowych do renderowania w obszarze wyjścia. Ustaw 0, aby wyświetlać wszystkie."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/numberCellsToRenderDirectly/description
 msgctxt "settings"
 msgid "Define the number of cells to render directly when virtual notebook intersection observer is available"
-msgstr ""
+msgstr "Zdefiniuj liczbę komórek do renderowania bezpośrednio, gdy dostępny jest obserwator intersekcji dla wirtualnego notatnika"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/numberCellsToRenderDirectly/title
 msgctxt "settings"
@@ -1103,7 +1125,7 @@ msgstr "Liczba komórek do renderowania bezpośrednio"
 #: /packages/notebook-extension/schema/tracker.json:/properties/observedBottomMargin/description
 msgctxt "settings"
 msgid "Defines the observed bottom margin for the virtual notebook, set a positive number of pixels to render cells below the visible view"
-msgstr ""
+msgstr "Określa obserwowany dolny margines dla wirtualnego notatnika, ustaw dodatnią liczbę pikseli do renderowania komórek poniżej widoku widocznego"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/observedBottomMargin/title
 msgctxt "settings"
@@ -2132,7 +2154,7 @@ msgstr "Czy na pewno chcesz usunąć wszystkie punkty przerwania?"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:50
 msgid "Remove breakpoints"
-msgstr ""
+msgstr "Usuń punkty przerwania"
 
 #: packages/debugger/src/panels/callstack/header.ts:25
 msgid "Callstack"
@@ -2758,7 +2780,7 @@ msgstr "Kopiuj link do udostępniania"
 
 #: packages/filebrowser-extension/src/index.ts:657 packages/filebrowser-extension/src/index.ts:988 packages/launcher-extension/src/index.ts:59
 msgid "New Launcher"
-msgstr ""
+msgstr "Nowy Launcher"
 
 #: packages/filebrowser-extension/src/index.ts:700 packages/fileeditor-extension/src/commands.ts:838
 msgid "Copy"
