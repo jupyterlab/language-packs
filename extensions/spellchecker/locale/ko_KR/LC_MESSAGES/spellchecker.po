@@ -12,10 +12,70 @@ msgstr ""
 "X-Crowdin-File-ID: 103\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2021-08-17 15:31\n"
+"PO-Revision-Date: 2021-08-26 21:28\n"
 
-#: /schema/plugin.json:0
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/aff/title
+msgctxt "settings"
+msgid "URL address of the .aff file"
+msgstr ""
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/dic/title
+msgctxt "settings"
+msgid "URL address of the .dic file"
+msgstr ""
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/id/title
+msgctxt "settings"
+msgid "Unique identifier"
+msgstr ""
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/name/title
+msgctxt "settings"
+msgid "Display name"
+msgstr ""
+
+#: /schema/plugin.json:/description
 msgctxt "schema"
+msgid "Spellchecker settings."
+msgstr ""
+
+#: /schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Spellchecker"
+msgstr ""
+
+#: /schema/plugin.json:/properties/ignore/description
+msgctxt "settings"
+msgid "Case-sensitive list of words to be ignored"
+msgstr ""
+
+#: /schema/plugin.json:/properties/ignore/title
+msgctxt "settings"
+msgid "Words to be ignored by the spellchecker"
+msgstr ""
+
+#: /schema/plugin.json:/properties/language/description
+msgctxt "settings"
+msgid "Dictionary identifier, e.g. en-us"
+msgstr ""
+
+#: /schema/plugin.json:/properties/language/title
+msgctxt "settings"
+msgid "Language of the spellchecker"
+msgstr ""
+
+#: /schema/plugin.json:/properties/mimeTypes/description
+msgctxt "settings"
+msgid "List of MIME types. GFM denotes GitHub Flavored Markdown"
+msgstr ""
+
+#: /schema/plugin.json:/properties/mimeTypes/title
+msgctxt "settings"
+msgid "MIME types for files/editors for which the spellchecking should be activated"
+msgstr ""
+
+#: /schema/plugin.json:/properties/onlineDictionaries/description
+msgctxt "settings"
 msgid "A list of online dictionaries to use if installing dictionaries in data path of jupyter-server is not possible or not desirable. For example:\n\n"
 "[\n"
 "    {\n"
@@ -27,57 +87,27 @@ msgid "A list of online dictionaries to use if installing dictionaries in data p
 "]"
 msgstr ""
 
-#: /schema/plugin.json:4
-msgctxt "schema"
-msgid "Spellchecker"
+#: /schema/plugin.json:/properties/onlineDictionaries/title
+msgctxt "settings"
+msgid "Online dictionaries"
 msgstr ""
 
-#: /schema/plugin.json:5
-msgctxt "schema"
-msgid "Spellchecker settings."
-msgstr ""
-
-#: /schema/plugin.json:57
-msgid "Theme"
-msgstr ""
-
-#: /schema/plugin.json:58
-msgctxt "schema"
+#: /schema/plugin.json:/properties/theme/description
+msgctxt "settings"
 msgid "Theme for decorating misspelt words, one of:\n"
 "  - 'background-box': fills the background of the misspelt word;\n"
 "  - 'wavy-underline': underline with wavelets (note: Chrome has a bug which prevents rendering of wavelets under some very short words)\n"
 "  - 'dotted-underline': underline with dotted style"
 msgstr ""
 
-#: /schema/plugin.json:63
-msgid "Language of the spellchecker"
+#: /schema/plugin.json:/properties/theme/title
+msgctxt "settings"
+msgid "Theme"
 msgstr ""
 
-#: /schema/plugin.json:64
+#: /schema/plugin.json:/title
 msgctxt "schema"
-msgid "Dictionary identifier, e.g. en-us"
-msgstr ""
-
-#: /schema/plugin.json:69
-msgid "Words to be ignored by the spellchecker"
-msgstr ""
-
-#: /schema/plugin.json:70
-msgctxt "schema"
-msgid "Case-sensitive list of words to be ignored"
-msgstr ""
-
-#: /schema/plugin.json:75
-msgid "MIME types for files/editors for which the spellchecking should be activated"
-msgstr ""
-
-#: /schema/plugin.json:76
-msgctxt "schema"
-msgid "List of MIME types. GFM denotes GitHub Flavored Markdown"
-msgstr ""
-
-#: /schema/plugin.json:84
-msgid "Online dictionaries"
+msgid "Spellchecker"
 msgstr ""
 
 #: src/index.ts:242
