@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 97\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2021-08-17 18:07\n"
+"PO-Revision-Date: 2021-08-24 20:11\n"
 
 #: /schema/plugin.json:10
 msgid "Suspend user interaction until commands finish"
@@ -114,187 +114,203 @@ msgctxt "schema"
 msgid "Whether to trigger or not a push for each commit."
 msgstr "Apakan akan memicu atau tidak mendorong pada setiap commit."
 
-#: src/commandsAndMenu.tsx:119
+#: src/commandsAndMenu.tsx:1012
+msgid "No actions available"
+msgstr "Tidak ada tindakan yang tersedia"
+
+#: src/commandsAndMenu.tsx:1031
+msgid "Set Up Remotes"
+msgstr "Mempersiapkan Remotes"
+
+#: src/commandsAndMenu.tsx:1035
+msgid "Git Documentation"
+msgstr "Dokumentasi Git"
+
+#: src/commandsAndMenu.tsx:1069
+msgid " Help "
+msgstr " Membantu "
+
+#: src/commandsAndMenu.tsx:118
 msgid "Commit from the Commit Box"
 msgstr "Commit dari Kotak Commit"
 
-#: src/commandsAndMenu.tsx:120
+#: src/commandsAndMenu.tsx:119
 msgid "Submit the commit using the summary and description from commit box"
 msgstr "Serakan commit mengguanakan ringkasan dan deskripsi dari kotak commit"
 
-#: src/commandsAndMenu.tsx:1241
+#: src/commandsAndMenu.tsx:130
+msgid "Open Git Repository in Terminal"
+msgstr "Buka repositori Git di Terminal"
+
+#: src/commandsAndMenu.tsx:1303
 msgid "Git credentials required"
 msgstr "Dibutuhkan kredensial Git"
 
-#: src/commandsAndMenu.tsx:1244 src/widgets/CredentialsBox.tsx:15
+#: src/commandsAndMenu.tsx:1306 src/widgets/CredentialsBox.tsx:15
 msgid "Enter credentials for remote repository"
 msgstr "Masukkan kredensial untuk repositori jarak jauh"
 
-#: src/commandsAndMenu.tsx:1245
+#: src/commandsAndMenu.tsx:1307
 msgid "Incorrect username or password."
 msgstr "Salah identitas pegguna atau kata sandi."
 
 #: src/commandsAndMenu.tsx:131
-msgid "Open Git Repository in Terminal"
-msgstr "Buka repositori Git di Terminal"
-
-#: src/commandsAndMenu.tsx:132
 msgid "Open a New Terminal to the Git Repository"
 msgstr "Buka baru Terminal ke repositori Git"
 
-#: src/commandsAndMenu.tsx:163
+#: src/commandsAndMenu.tsx:162
 msgid "Git Interface"
 msgstr "Tampilan Git"
 
-#: src/commandsAndMenu.tsx:164
+#: src/commandsAndMenu.tsx:163
 msgid "Go to Git user interface"
 msgstr "Pergi ke tampilan pengguna Git"
 
-#: src/commandsAndMenu.tsx:176 src/commandsAndMenu.tsx:183 src/components/GitPanel.tsx:461
+#: src/commandsAndMenu.tsx:175 src/commandsAndMenu.tsx:182 src/components/GitPanel.tsx:461
 msgid "Initialize a Repository"
 msgstr "Inisialisasi Repositori"
 
-#: src/commandsAndMenu.tsx:177
+#: src/commandsAndMenu.tsx:176
 msgid "Create an empty Git repository or reinitialize an existing one"
 msgstr "Buat repositori Git kosong atau inisialisasi ulang yang sudah ada"
 
-#: src/commandsAndMenu.tsx:184
+#: src/commandsAndMenu.tsx:183
 msgid "Do you really want to make this directory a Git Repo?"
 msgstr "Apakah Anda yakin ingin membuat direktori ini sebagai Git Repo?"
 
-#: src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:820 src/components/BranchMenu.tsx:344 src/components/FileList.tsx:191 src/components/FileList.tsx:216 src/components/NewBranchDialog.tsx:202
+#: src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:847 src/commandsAndMenu.tsx:890 src/components/BranchMenu.tsx:344 src/components/FileList.tsx:193 src/components/FileList.tsx:218 src/components/NewBranchDialog.tsx:202
 msgid "Cancel"
 msgstr "Batalkan"
 
-#: src/commandsAndMenu.tsx:187
+#: src/commandsAndMenu.tsx:186
 msgid "Yes"
 msgstr "Ya"
 
-#: src/commandsAndMenu.tsx:193
+#: src/commandsAndMenu.tsx:192
 msgid "Initializing..."
 msgstr "Mulai inisialisasi..."
 
-#: src/commandsAndMenu.tsx:200
+#: src/commandsAndMenu.tsx:199
 msgid "Git repository initialized."
 msgstr "Repositori Git diinisialisasi."
 
-#: src/commandsAndMenu.tsx:205
+#: src/commandsAndMenu.tsx:204
 msgid "Encountered an error when initializing the repository. Error: "
 msgstr "Mengalami kesalahan saat mendorong perubahan. Kesalahan: "
 
-#: src/commandsAndMenu.tsx:211
+#: src/commandsAndMenu.tsx:210
 msgid "Failed to initialize the Git repository"
 msgstr "Gagal inisialisasi repositori Git"
 
-#: src/commandsAndMenu.tsx:232
+#: src/commandsAndMenu.tsx:231
 msgid "Simple staging"
 msgstr "Staging sederhana"
 
-#: src/commandsAndMenu.tsx:241
+#: src/commandsAndMenu.tsx:240
 msgid "Double click opens diff"
 msgstr "Klik duo kali membuka diff"
 
-#: src/commandsAndMenu.tsx:250
+#: src/commandsAndMenu.tsx:249
 msgid "Add Remote Repository"
 msgstr "Tambahkan Repositori Jarak Jauh"
 
-#: src/commandsAndMenu.tsx:251
+#: src/commandsAndMenu.tsx:250
 msgid "Add a Git remote repository"
 msgstr "Tambahkan Repositori Git Jarak Jauh"
 
-#: src/commandsAndMenu.tsx:256
+#: src/commandsAndMenu.tsx:255
 msgid "Not in a Git repository. Unable to add a remote."
 msgstr "Tidak di repositori Git. Tidak bisa tambah jarak jauh."
 
-#: src/commandsAndMenu.tsx:265
+#: src/commandsAndMenu.tsx:264
 msgid "Add a remote repository"
 msgstr "Tambahkan Repositori Git Jarak Jauh"
 
-#: src/commandsAndMenu.tsx:266
+#: src/commandsAndMenu.tsx:265
 msgid "Remote Git repository URL"
 msgstr "URL repositori Git jarak jauh"
 
-#: src/commandsAndMenu.tsx:280
+#: src/commandsAndMenu.tsx:279
 msgid "Error when adding remote repository"
 msgstr "Error ketika tambah repositori jarak jauh"
 
-#: src/commandsAndMenu.tsx:290 src/components/GitPanel.tsx:470
+#: src/commandsAndMenu.tsx:289 src/components/GitPanel.tsx:470
 msgid "Clone a Repository"
 msgstr "Klon Repositori"
 
-#: src/commandsAndMenu.tsx:291
+#: src/commandsAndMenu.tsx:290
 msgid "Clone a repository from a URL"
 msgstr "Klon repositori dari URL"
 
-#: src/commandsAndMenu.tsx:295
+#: src/commandsAndMenu.tsx:294
 msgid "Clone a repo"
 msgstr "Klon repositori"
 
-#: src/commandsAndMenu.tsx:300
+#: src/commandsAndMenu.tsx:299
 msgid "CLONE"
 msgstr "KLON"
 
-#: src/commandsAndMenu.tsx:307
+#: src/commandsAndMenu.tsx:306
 msgid "Cloning..."
 msgstr "Kloning..."
 
-#: src/commandsAndMenu.tsx:317
+#: src/commandsAndMenu.tsx:316
 msgid "Successfully cloned"
 msgstr "Berhasil klon"
 
-#: src/commandsAndMenu.tsx:328
+#: src/commandsAndMenu.tsx:327
 msgid "Failed to clone"
 msgstr "Gagal klon"
 
-#: src/commandsAndMenu.tsx:339 src/commandsAndMenu.tsx:340
+#: src/commandsAndMenu.tsx:338 src/commandsAndMenu.tsx:339
 msgid "Open .gitignore"
 msgstr "Buka .gitignore"
 
-#: src/commandsAndMenu.tsx:351
+#: src/commandsAndMenu.tsx:350
 msgid "Push to Remote (Force)"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:352
+#: src/commandsAndMenu.tsx:351
 msgid "Push to Remote"
 msgstr "Mendorong ke Jarak Jauh"
 
-#: src/commandsAndMenu.tsx:353
+#: src/commandsAndMenu.tsx:352
 msgid "Push code to remote repository"
 msgstr "Mendorong kode ke repositori jarak jauh"
 
-#: src/commandsAndMenu.tsx:358
+#: src/commandsAndMenu.tsx:357
 msgid "Pushing..."
 msgstr "Mendorong..."
 
-#: src/commandsAndMenu.tsx:367
+#: src/commandsAndMenu.tsx:366
 msgid "Successfully pushed"
 msgstr "Berhasil mendorong"
 
-#: src/commandsAndMenu.tsx:373
+#: src/commandsAndMenu.tsx:372
 msgid "Encountered an error when pushing changes. Error: "
 msgstr "Mengalami kesalahan saat mendorong perubahan. Kesalahan: "
 
-#: src/commandsAndMenu.tsx:377
+#: src/commandsAndMenu.tsx:376
 msgid "Failed to push"
 msgstr "Gagal mendorong"
 
-#: src/commandsAndMenu.tsx:387
+#: src/commandsAndMenu.tsx:386
 msgid "Pull from Remote"
 msgstr "Menarik dari Jarak Jauh"
 
-#: src/commandsAndMenu.tsx:388
+#: src/commandsAndMenu.tsx:387
 msgid "Pull latest code from remote repository"
 msgstr "Menarik kode dari repositori jarak jauh"
 
-#: src/commandsAndMenu.tsx:393
+#: src/commandsAndMenu.tsx:392
 msgid "Pulling..."
 msgstr "Menarik..."
 
-#: src/commandsAndMenu.tsx:402
+#: src/commandsAndMenu.tsx:401
 msgid "Successfully pulled"
 msgstr "Berhasil menarik"
 
-#: src/commandsAndMenu.tsx:412
+#: src/commandsAndMenu.tsx:411
 msgid "Failed to pull"
 msgstr "Gagal menarik"
 
@@ -306,210 +322,222 @@ msgstr "Menunjukkan Diff"
 msgid "Display a file diff."
 msgstr "Menampilkan diff berkas."
 
-#: src/commandsAndMenu.tsx:475
+#: src/commandsAndMenu.tsx:477
+msgid "Mark as resolved"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:481
+msgid "Resolve with conflicts"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:482
+msgid "Are you sure you want to mark this file as resolved with merge conflicts?"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:509
+msgid "Mark file as resolved"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:516
 msgid "Refresh"
 msgstr "Segarkan"
 
-#: src/commandsAndMenu.tsx:480
+#: src/commandsAndMenu.tsx:521
 msgid "Refresh diff widget"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:508
+#: src/commandsAndMenu.tsx:549
 msgid "Diff Not Supported"
 msgstr "Diff Tidak Didukung"
 
-#: src/commandsAndMenu.tsx:509
+#: src/commandsAndMenu.tsx:550
 msgid "Diff is not supported for %1 files."
 msgstr "Diff tidak didukung untuk %1 berkas-berkas."
 
-#: src/commandsAndMenu.tsx:523
+#: src/commandsAndMenu.tsx:564
 msgid "Open"
 msgstr "Buka"
 
-#: src/commandsAndMenu.tsx:525
+#: src/commandsAndMenu.tsx:566
 msgid "Open selected file"
 msgstr "Buka berkas pilihan"
 
-#: src/commandsAndMenu.tsx:526
+#: src/commandsAndMenu.tsx:567
 msgid "Open selected files"
 msgstr "Buka berkas-berkas pilihan"
 
-#: src/commandsAndMenu.tsx:534
+#: src/commandsAndMenu.tsx:575
 msgid "Open File Failed"
 msgstr "Membuka Berkas Gagal"
 
-#: src/commandsAndMenu.tsx:535
+#: src/commandsAndMenu.tsx:576
 msgid "This file has been deleted!"
 msgstr "Berkas ini sudah di hapus!"
 
-#: src/commandsAndMenu.tsx:556
+#: src/commandsAndMenu.tsx:597
 msgid "Diff"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:558
+#: src/commandsAndMenu.tsx:599
 msgid "Diff selected file"
 msgstr "Diff berkas pilihan"
 
-#: src/commandsAndMenu.tsx:559
+#: src/commandsAndMenu.tsx:600
 msgid "Diff selected files"
 msgstr "Diff berkas-berkas pilihan"
 
-#: src/commandsAndMenu.tsx:685
+#: src/commandsAndMenu.tsx:675
+msgid "CURRENT"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:676
+msgid "INCOMING"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:690
+msgid "RESULT"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:755
 msgid "Add"
 msgstr "Tambah"
 
-#: src/commandsAndMenu.tsx:687
+#: src/commandsAndMenu.tsx:757
 msgid "Stage or track the changes to selected file"
 msgstr "Stage atau telusur perubahan berkas yang di pilih"
 
-#: src/commandsAndMenu.tsx:688
+#: src/commandsAndMenu.tsx:758
 msgid "Stage or track the changes of selected files"
 msgstr "Stage atau telusur perubahan berkas-berkas yang di pilih"
 
-#: src/commandsAndMenu.tsx:700
+#: src/commandsAndMenu.tsx:770
 msgid "Stage"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:702
+#: src/commandsAndMenu.tsx:772
 msgid "Stage the changes of selected file"
 msgstr "Stage perubahan berkas yang di pilih"
 
-#: src/commandsAndMenu.tsx:703
+#: src/commandsAndMenu.tsx:773
 msgid "Stage the changes of selected files"
 msgstr "Stage perubahan berkas-berkas yang di pilih"
 
-#: src/commandsAndMenu.tsx:715
+#: src/commandsAndMenu.tsx:785
 msgid "Track"
 msgstr "Telusur"
 
-#: src/commandsAndMenu.tsx:717
+#: src/commandsAndMenu.tsx:787
 msgid "Start tracking selected file"
 msgstr "Mulai melacak berkas pilihan"
 
-#: src/commandsAndMenu.tsx:718
+#: src/commandsAndMenu.tsx:788
 msgid "Start tracking selected files"
 msgstr "Mulai melacak berkas-berkas pilihan"
 
-#: src/commandsAndMenu.tsx:730
+#: src/commandsAndMenu.tsx:800
 msgid "Unstage"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:732
+#: src/commandsAndMenu.tsx:802
 msgid "Unstage the changes of selected file"
 msgstr "Unstage perubahan berkas yang di pilih"
 
-#: src/commandsAndMenu.tsx:733
+#: src/commandsAndMenu.tsx:803
 msgid "Unstage the changes of selected files"
 msgstr "Unstage perubahan berkas-berkas yang di pilih"
 
-#: src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:778 src/components/BranchMenu.tsx:345
+#: src/commandsAndMenu.tsx:826 src/commandsAndMenu.tsx:848 src/components/BranchMenu.tsx:345
 msgid "Delete"
 msgstr "Hapus"
 
-#: src/commandsAndMenu.tsx:758
+#: src/commandsAndMenu.tsx:828
 msgid "Delete this file"
 msgstr "Hapus berkas ini"
 
-#: src/commandsAndMenu.tsx:759
+#: src/commandsAndMenu.tsx:829
 msgid "Delete these files"
 msgstr "Hapus berkas-berkas ini"
 
-#: src/commandsAndMenu.tsx:766
+#: src/commandsAndMenu.tsx:836
 msgid "Delete Files"
 msgstr "Hapus Berkas"
 
-#: src/commandsAndMenu.tsx:769
+#: src/commandsAndMenu.tsx:839
 msgid "Are you sure you want to permanently delete the following files?               This action cannot be undone."
 msgstr "Apakah Anda yakin ingin menghapus berkas-berkas berikut secara permanen? Tindakan ini tidak dapat dibatalkan."
 
-#: src/commandsAndMenu.tsx:788
+#: src/commandsAndMenu.tsx:858
 msgid "Deleting %1 failed."
 msgstr "Gagal hapus %1."
 
-#: src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:844 src/components/Alert.tsx:123 src/index.ts:128
+#: src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:914 src/components/Alert.tsx:123 src/index.ts:132
 msgid "DISMISS"
 msgstr "Memberhentikan"
 
-#: src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:821 src/components/FileList.tsx:192 src/components/FileList.tsx:217
+#: src/commandsAndMenu.tsx:869 src/commandsAndMenu.tsx:891 src/components/FileList.tsx:194 src/components/FileList.tsx:219
 msgid "Discard"
 msgstr "Membuang"
 
-#: src/commandsAndMenu.tsx:801
+#: src/commandsAndMenu.tsx:871
 msgid "Discard recent changes of selected file"
 msgstr "Buang perubahan terbaru dari berkas di pilih"
 
-#: src/commandsAndMenu.tsx:802
+#: src/commandsAndMenu.tsx:872
 msgid "Discard recent changes of selected files"
 msgstr "Buang perubahan terbaru dari berkas tertentu"
 
-#: src/commandsAndMenu.tsx:809 src/components/FileList.tsx:466 src/components/FileList.tsx:664 src/components/FileList.tsx:690
+#: src/commandsAndMenu.tsx:879 src/components/FileList.tsx:515 src/components/FileList.tsx:713 src/components/FileList.tsx:739
 msgid "Discard changes"
 msgstr "Membuang perubahan"
 
-#: src/commandsAndMenu.tsx:812
+#: src/commandsAndMenu.tsx:882
 msgid "Are you sure you want to permanently discard changes to the following files?               This action cannot be undone."
 msgstr "Apakah Anda yakin ingin membuang berkas-berkas yang di rubah secara permanen? Tindakan ini tidak dapat dibatalkan."
 
-#: src/commandsAndMenu.tsx:842
+#: src/commandsAndMenu.tsx:912
 msgid "Discard changes for %1 failed."
 msgstr "Buang perubahan untuk %1 gagal."
 
-#: src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:859
+#: src/commandsAndMenu.tsx:925 src/commandsAndMenu.tsx:929
 msgid "Ignore this file (add to .gitignore)"
 msgstr "Abaikan berkas ini (tambahkan ke .gitignore)"
 
-#: src/commandsAndMenu.tsx:856 src/commandsAndMenu.tsx:860
+#: src/commandsAndMenu.tsx:926 src/commandsAndMenu.tsx:930
 msgid "Ignore these files (add to .gitignore)"
 msgstr "Abaikan berkas-berkas ini (tambahkan ke .gitignore)"
 
-#: src/commandsAndMenu.tsx:878
+#: src/commandsAndMenu.tsx:948
 msgid "Ignore %2 extension (add to .gitignore)"
 msgid_plural "Ignore %2 extensions (add to .gitignore)"
 msgstr[0] "Abaikan %2 exstensi (tambakan ke .gitignore)"
 
-#: src/commandsAndMenu.tsx:886
+#: src/commandsAndMenu.tsx:956
 msgid "Ignore this file extension (add to .gitignore)"
 msgstr "Abaikan exstensi berkas ini (tambakan ke .gitignore)"
 
-#: src/commandsAndMenu.tsx:887
+#: src/commandsAndMenu.tsx:957
 msgid "Ignore these files extension (add to .gitignore)"
 msgstr "Abaikan exstensi berkas-berkas ini (tambakan ke .gitignore)"
 
-#: src/commandsAndMenu.tsx:896
+#: src/commandsAndMenu.tsx:966
 msgid "Ignore file extension"
 msgstr "Abaikan exstensi berkas"
 
-#: src/commandsAndMenu.tsx:897
+#: src/commandsAndMenu.tsx:967
 msgid "Are you sure you want to ignore all %1 files within this git repository?"
 msgstr "Apakah Anda yakin ingin mengabaikan semua %1 berkas-berkas di dalam repositori git ini?"
 
-#: src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:906
+#: src/commandsAndMenu.tsx:973 src/commandsAndMenu.tsx:976
 msgid "Ignore"
 msgstr "Abaikan"
 
-#: src/commandsAndMenu.tsx:923 src/components/GitPanel.tsx:358
+#: src/commandsAndMenu.tsx:993 src/components/GitPanel.tsx:358
 msgid "History"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:924
+#: src/commandsAndMenu.tsx:994
 msgid "View the history of this file"
 msgstr ""
-
-#: src/commandsAndMenu.tsx:942
-msgid "No actions available"
-msgstr "Tidak ada tindakan yang tersedia"
-
-#: src/commandsAndMenu.tsx:961
-msgid "Set Up Remotes"
-msgstr "Mempersiapkan Remotes"
-
-#: src/commandsAndMenu.tsx:965
-msgid "Git Documentation"
-msgstr "Dokumentasi Git"
-
-#: src/commandsAndMenu.tsx:999
-msgid " Help "
-msgstr " Membantu "
 
 #: src/components/Alert.tsx:105
 msgid "Error"
@@ -647,67 +675,71 @@ msgstr ""
 msgid "Summary"
 msgstr ""
 
-#: src/components/FileList.tsx:186 src/components/FileList.tsx:211
+#: src/components/FileList.tsx:188 src/components/FileList.tsx:213
 msgid "Discard all changes"
 msgstr ""
 
-#: src/components/FileList.tsx:187 src/components/FileList.tsx:212
+#: src/components/FileList.tsx:189 src/components/FileList.tsx:214
 msgid "Are you sure you want to permanently discard changes to all files? This action cannot be undone."
 msgstr ""
 
-#: src/components/FileList.tsx:200
+#: src/components/FileList.tsx:202
 msgid "Discard all unstaged changes failed."
 msgstr ""
 
-#: src/components/FileList.tsx:225
+#: src/components/FileList.tsx:227
 msgid "Discard all changes failed."
 msgstr ""
 
-#: src/components/FileList.tsx:372 src/components/FileList.tsx:459 src/components/FileList.tsx:558 src/components/FileList.tsx:644 src/components/FileList.tsx:657 src/components/FileList.tsx:683
+#: src/components/FileList.tsx:385
+msgid "Conflicted"
+msgstr ""
+
+#: src/components/FileList.tsx:421 src/components/FileList.tsx:508 src/components/FileList.tsx:607 src/components/FileList.tsx:693 src/components/FileList.tsx:706 src/components/FileList.tsx:732
 msgid "Open this file"
 msgstr ""
 
-#: src/components/FileList.tsx:379
+#: src/components/FileList.tsx:428
 msgid "Unstage this change"
 msgstr ""
 
-#: src/components/FileList.tsx:417
+#: src/components/FileList.tsx:466
 msgid "Unstage all changes"
 msgstr ""
 
-#: src/components/FileList.tsx:423
+#: src/components/FileList.tsx:472
 msgid "Staged"
 msgstr ""
 
-#: src/components/FileList.tsx:474
+#: src/components/FileList.tsx:523
 msgid "Stage this change"
 msgstr ""
 
-#: src/components/FileList.tsx:514 src/components/FileList.tsx:733
+#: src/components/FileList.tsx:563 src/components/FileList.tsx:782
 msgid "Discard All Changes"
 msgstr ""
 
-#: src/components/FileList.tsx:521
+#: src/components/FileList.tsx:570
 msgid "Stage all changes"
 msgstr ""
 
-#: src/components/FileList.tsx:527 src/components/FileList.tsx:737 src/components/SinglePastCommitInfo.tsx:208
+#: src/components/FileList.tsx:576 src/components/FileList.tsx:786 src/components/SinglePastCommitInfo.tsx:208
 msgid "Changed"
 msgstr ""
 
-#: src/components/FileList.tsx:568
+#: src/components/FileList.tsx:617
 msgid "Track this file"
 msgstr ""
 
-#: src/components/FileList.tsx:606
+#: src/components/FileList.tsx:655
 msgid "Track all untracked files"
 msgstr ""
 
-#: src/components/FileList.tsx:611
+#: src/components/FileList.tsx:660
 msgid "Untracked"
 msgstr ""
 
-#: src/components/FileList.tsx:758
+#: src/components/FileList.tsx:807
 msgid "Diff this file"
 msgstr ""
 
@@ -1027,19 +1059,19 @@ msgstr ""
 msgid "Failed to refresh."
 msgstr ""
 
-#: src/index.ts:102
+#: src/index.ts:106
 msgid "git command version must be > 2; got %1."
 msgstr "versi perintah git harus > 2; punya %1."
 
-#: src/index.ts:109
+#: src/index.ts:113
 msgid "The versions of the JupyterLab Git server frontend and backend do not match. The @jupyterlab/git frontend extension has version: %1 while the python package has version %2. Please install identical version of jupyterlab-git Python package and the @jupyterlab/git extension. Try running: pip install --upgrade jupyterlab-git"
 msgstr "Versi frontend dan backed server JupyterLab Git tidak cocok. @jupyterlab/git frontend ekstensi ada versi: %1 sedangkan paket python ada versi %2. Silakan instal versi paket Python jupyterlab-git identik dan @jupyterlab/git ekstensi. Coba jalankan: pip install --upgrade jupyterlab-git"
 
-#: src/index.ts:126
+#: src/index.ts:130
 msgid "Failed to load the jupyterlab-git server extension"
 msgstr "Gagal memuat ekstensi server jupyterlab-git"
 
-#: src/index.ts:94
+#: src/index.ts:98
 msgid "git command not found - please ensure you have Git > 2 installed"
 msgstr "perintah git tidak ditemukan - silakan pastikan Anda punya Git > 2 sudah di instal"
 
