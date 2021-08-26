@@ -12,107 +12,132 @@ msgstr ""
 "X-Crowdin-File-ID: 97\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2021-08-24 20:12\n"
+"PO-Revision-Date: 2021-08-26 21:27\n"
 
-#: /schema/plugin.json:10
-msgid "Suspend user interaction until commands finish"
-msgstr "Suspender la interacción del usuario hasta que finalicen los comandos"
-
-#: /schema/plugin.json:11
-msgctxt "schema"
-msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
-msgstr "Suspender la interacción de usuarios de JupyterLab hasta que los comandos de Git (ej., commit, pull, reset, revert) terminen su ejecución. Establecer esto como verdadero ayuda a mitigar potenciales condiciones de carrera que conducen a pérdida de datos, conflictos, y un historial roto de Git. A menos que se ejecute en una red lenta la suspensión de la IU (interfaz de usuario) no debería interferir con los flujos de trabajo estándar. Establecer este valor como falso permite que las acciones desencadenen múltiples acciones de Git simultáneas."
-
-#: /schema/plugin.json:152
-msgctxt "schema"
-msgid "Git"
-msgstr ""
-
-#: /schema/plugin.json:16
-msgid "Cancel pull merge conflict"
-msgstr "Cancelar conflicto de fusión de pull"
-
-#: /schema/plugin.json:17
-msgctxt "schema"
-msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
-msgstr "Si este valor es verdadero, al extraer (fetch) e integrar cambios de un repositorio remoto, si la fusión tiene un conflicto es cancelada, y el árbol de trabajo se deja sin modificaciones."
-
-#: /schema/plugin.json:22
-msgid "Disable branch with changes"
-msgstr "Desactivar rama con cambios"
-
-#: /schema/plugin.json:23
-msgctxt "schema"
-msgid "Disable all branch operations (new, switch) when there are changed/staged files"
-msgstr "Deshabilitar todas las operaciones de rama (nuevo, cambiar) cuando haya archivos cambiados/escalados"
-
-#: /schema/plugin.json:28
-msgid "Display Git status updates"
-msgstr "Mostrar actualizaciones de estado de Git"
-
-#: /schema/plugin.json:29
-msgctxt "schema"
-msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
-msgstr "Mostrar actualizaciones de estado de extensiones de Git en la barra de estado de JupyterLab. Si es verdadero, la extensión muestra las actualizaciones de estado en la barra de estado de JupyterLab, como cuando se se extraen y empujan cambios, cuando se cambia de ramas y cuando se sondea en búsqueda de cambios. Dependiendo del nivel de actividad de la extensión, algunos usuarios pueden considerar que las actualizaciones de estado los distraen. En tal caso, configurar este valor como falso puede reducir el ruido visual."
-
-#: /schema/plugin.json:34
-msgid "Show diff on double click"
-msgstr "Mostrar diferencias al hacer doble clic"
-
-#: /schema/plugin.json:35
-msgctxt "schema"
-msgid "If true, doubling clicking a file in the list of changed files will open a diff."
-msgstr "Si es verdadero, al hacer doble clic en un archivo en la lista de archivos modificados, abrirá un diff."
-
-#: /schema/plugin.json:40
-msgid "History count"
-msgstr "Recuento de historia"
-
-#: /schema/plugin.json:41
-msgctxt "schema"
-msgid "Number of (most recent) commits shown in the history log"
-msgstr "Cantidad de confirmaciones o commits más recientes que se muestran en el registro del historial"
-
-#: /schema/plugin.json:46
-msgid "Refresh if the Git tab is hidden"
-msgstr "Actualizar si la pestaña Git está oculta"
-
-#: /schema/plugin.json:47
-msgctxt "schema"
-msgid "Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance."
-msgstr "Comprobar el estado de Git cuando la pestaña Git no es visible. Elige `falso` para un mayor rendimiento."
-
-#: /schema/plugin.json:5
+#: /schema/plugin.json:/description
 msgctxt "schema"
 msgid "jupyterlab-git settings."
 msgstr "configuración de jupyterlab-git."
 
-#: /schema/plugin.json:52
-msgid "Refresh interval"
-msgstr "Intervalo de refresco"
+#: /schema/plugin.json:/jupyter.lab.menus/context[0]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/label
+msgctxt "menu"
+msgid "Git"
+msgstr ""
 
-#: /schema/plugin.json:53
-msgctxt "schema"
-msgid "Number of milliseconds between polling the file system for changes."
-msgstr "Cantidad de milisegundos transcurridos entre sondeos del sistema de archivos en búsqueda de cambios."
+#: /schema/plugin.json:/jupyter.lab.menus/main[0]/items[12]/submenu/label
+msgctxt "menu"
+msgid "Help"
+msgstr ""
 
-#: /schema/plugin.json:58
-msgid "Simple staging flag"
-msgstr "Flag simple de preparación (staging)"
+#: /schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Git"
+msgstr ""
 
-#: /schema/plugin.json:59
-msgctxt "schema"
-msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
-msgstr "Si es verdadero, utiliza un concepto simplificado de preparación (staging) en el que solo se muestran los archivos com cambios (en lugar de mostrar en preparación/modificados/sin rastrear), y todos los archivos modificados pasan al área de preparación automáticamente"
+#: /schema/plugin.json:/properties/blockWhileCommandExecutes/description
+msgctxt "settings"
+msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
+msgstr ""
 
-#: /schema/plugin.json:64
-msgid "Trigger push on commit"
-msgstr "Inicia el empuje de commit"
+#: /schema/plugin.json:/properties/blockWhileCommandExecutes/title
+msgctxt "settings"
+msgid "Suspend user interaction until commands finish"
+msgstr ""
 
-#: /schema/plugin.json:65
-msgctxt "schema"
+#: /schema/plugin.json:/properties/cancelPullMergeConflict/description
+msgctxt "settings"
+msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
+msgstr ""
+
+#: /schema/plugin.json:/properties/cancelPullMergeConflict/title
+msgctxt "settings"
+msgid "Cancel pull merge conflict"
+msgstr ""
+
+#: /schema/plugin.json:/properties/commitAndPush/description
+msgctxt "settings"
 msgid "Whether to trigger or not a push for each commit."
-msgstr "Si se activa o no un push para cada confirmación."
+msgstr ""
+
+#: /schema/plugin.json:/properties/commitAndPush/title
+msgctxt "settings"
+msgid "Trigger push on commit"
+msgstr ""
+
+#: /schema/plugin.json:/properties/disableBranchWithChanges/description
+msgctxt "settings"
+msgid "Disable all branch operations (new, switch) when there are changed/staged files"
+msgstr ""
+
+#: /schema/plugin.json:/properties/disableBranchWithChanges/title
+msgctxt "settings"
+msgid "Disable branch with changes"
+msgstr ""
+
+#: /schema/plugin.json:/properties/displayStatus/description
+msgctxt "settings"
+msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
+msgstr ""
+
+#: /schema/plugin.json:/properties/displayStatus/title
+msgctxt "settings"
+msgid "Display Git status updates"
+msgstr ""
+
+#: /schema/plugin.json:/properties/doubleClickDiff/description
+msgctxt "settings"
+msgid "If true, doubling clicking a file in the list of changed files will open a diff."
+msgstr ""
+
+#: /schema/plugin.json:/properties/doubleClickDiff/title
+msgctxt "settings"
+msgid "Show diff on double click"
+msgstr ""
+
+#: /schema/plugin.json:/properties/historyCount/description
+msgctxt "settings"
+msgid "Number of (most recent) commits shown in the history log"
+msgstr ""
+
+#: /schema/plugin.json:/properties/historyCount/title
+msgctxt "settings"
+msgid "History count"
+msgstr ""
+
+#: /schema/plugin.json:/properties/refreshIfHidden/description
+msgctxt "settings"
+msgid "Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance."
+msgstr ""
+
+#: /schema/plugin.json:/properties/refreshIfHidden/title
+msgctxt "settings"
+msgid "Refresh if the Git tab is hidden"
+msgstr ""
+
+#: /schema/plugin.json:/properties/refreshInterval/description
+msgctxt "settings"
+msgid "Number of milliseconds between polling the file system for changes."
+msgstr ""
+
+#: /schema/plugin.json:/properties/refreshInterval/title
+msgctxt "settings"
+msgid "Refresh interval"
+msgstr ""
+
+#: /schema/plugin.json:/properties/simpleStaging/description
+msgctxt "settings"
+msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
+msgstr ""
+
+#: /schema/plugin.json:/properties/simpleStaging/title
+msgctxt "settings"
+msgid "Simple staging flag"
+msgstr ""
+
+#: /schema/plugin.json:/title
+msgctxt "schema"
+msgid "Git"
+msgstr ""
 
 #: src/commandsAndMenu.tsx:1012
 msgid "No actions available"
