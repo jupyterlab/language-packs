@@ -12,107 +12,132 @@ msgstr ""
 "X-Crowdin-File-ID: 97\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2021-08-24 20:11\n"
+"PO-Revision-Date: 2021-08-26 21:29\n"
 
-#: /schema/plugin.json:10
-msgid "Suspend user interaction until commands finish"
-msgstr ""
-
-#: /schema/plugin.json:11
-msgctxt "schema"
-msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
-msgstr ""
-
-#: /schema/plugin.json:152
-msgctxt "schema"
-msgid "Git"
-msgstr ""
-
-#: /schema/plugin.json:16
-msgid "Cancel pull merge conflict"
-msgstr ""
-
-#: /schema/plugin.json:17
-msgctxt "schema"
-msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
-msgstr ""
-
-#: /schema/plugin.json:22
-msgid "Disable branch with changes"
-msgstr ""
-
-#: /schema/plugin.json:23
-msgctxt "schema"
-msgid "Disable all branch operations (new, switch) when there are changed/staged files"
-msgstr ""
-
-#: /schema/plugin.json:28
-msgid "Display Git status updates"
-msgstr ""
-
-#: /schema/plugin.json:29
-msgctxt "schema"
-msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
-msgstr ""
-
-#: /schema/plugin.json:34
-msgid "Show diff on double click"
-msgstr ""
-
-#: /schema/plugin.json:35
-msgctxt "schema"
-msgid "If true, doubling clicking a file in the list of changed files will open a diff."
-msgstr ""
-
-#: /schema/plugin.json:40
-msgid "History count"
-msgstr "Licznik historii"
-
-#: /schema/plugin.json:41
-msgctxt "schema"
-msgid "Number of (most recent) commits shown in the history log"
-msgstr ""
-
-#: /schema/plugin.json:46
-msgid "Refresh if the Git tab is hidden"
-msgstr ""
-
-#: /schema/plugin.json:47
-msgctxt "schema"
-msgid "Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance."
-msgstr ""
-
-#: /schema/plugin.json:5
+#: /schema/plugin.json:/description
 msgctxt "schema"
 msgid "jupyterlab-git settings."
 msgstr "ustawienia jupyterlab-git."
 
-#: /schema/plugin.json:52
-msgid "Refresh interval"
-msgstr "Interwał odświeżania"
+#: /schema/plugin.json:/jupyter.lab.menus/context[0]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/label
+msgctxt "menu"
+msgid "Git"
+msgstr "Git"
 
-#: /schema/plugin.json:53
-msgctxt "schema"
-msgid "Number of milliseconds between polling the file system for changes."
-msgstr "Liczba milisekund pomiędzy sprawdzaniem zmian w systemie plików."
+#: /schema/plugin.json:/jupyter.lab.menus/main[0]/items[12]/submenu/label
+msgctxt "menu"
+msgid "Help"
+msgstr "Pomoc"
 
-#: /schema/plugin.json:58
-msgid "Simple staging flag"
+#: /schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Git"
+msgstr "Git"
+
+#: /schema/plugin.json:/properties/blockWhileCommandExecutes/description
+msgctxt "settings"
+msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
+msgstr "Zawieś interakcję użytkownika JupyterLab do zakończenia wykonania polecenia Git (np. polecenie, pobieranie, resetowanie, cofanie). Ustawianie 'true' pozwala złagodzić potencjalny hazard który mógłby doprowadzić do utraty danych, konfliktów i zepsutej historii Git. Jeżeli nie masz wolnego połączenia, zawieszenie interfejsu użytkownika nie powinno zbytnio utrudniać pracy. Ustawienie tej opcji na false umożliwia na uruchamianie wielu równoległych akcji Git."
+
+#: /schema/plugin.json:/properties/blockWhileCommandExecutes/title
+msgctxt "settings"
+msgid "Suspend user interaction until commands finish"
+msgstr "Zawieś interakcję użytkownika na czas wykonywania poleceń"
+
+#: /schema/plugin.json:/properties/cancelPullMergeConflict/description
+msgctxt "settings"
+msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
 msgstr ""
 
-#: /schema/plugin.json:59
-msgctxt "schema"
-msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
+#: /schema/plugin.json:/properties/cancelPullMergeConflict/title
+msgctxt "settings"
+msgid "Cancel pull merge conflict"
 msgstr ""
 
-#: /schema/plugin.json:64
+#: /schema/plugin.json:/properties/commitAndPush/description
+msgctxt "settings"
+msgid "Whether to trigger or not a push for each commit."
+msgstr ""
+
+#: /schema/plugin.json:/properties/commitAndPush/title
+msgctxt "settings"
 msgid "Trigger push on commit"
 msgstr ""
 
-#: /schema/plugin.json:65
-msgctxt "schema"
-msgid "Whether to trigger or not a push for each commit."
+#: /schema/plugin.json:/properties/disableBranchWithChanges/description
+msgctxt "settings"
+msgid "Disable all branch operations (new, switch) when there are changed/staged files"
 msgstr ""
+
+#: /schema/plugin.json:/properties/disableBranchWithChanges/title
+msgctxt "settings"
+msgid "Disable branch with changes"
+msgstr ""
+
+#: /schema/plugin.json:/properties/displayStatus/description
+msgctxt "settings"
+msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
+msgstr ""
+
+#: /schema/plugin.json:/properties/displayStatus/title
+msgctxt "settings"
+msgid "Display Git status updates"
+msgstr ""
+
+#: /schema/plugin.json:/properties/doubleClickDiff/description
+msgctxt "settings"
+msgid "If true, doubling clicking a file in the list of changed files will open a diff."
+msgstr ""
+
+#: /schema/plugin.json:/properties/doubleClickDiff/title
+msgctxt "settings"
+msgid "Show diff on double click"
+msgstr "Pokaż różnicę przy podwójnym kliknięciu"
+
+#: /schema/plugin.json:/properties/historyCount/description
+msgctxt "settings"
+msgid "Number of (most recent) commits shown in the history log"
+msgstr ""
+
+#: /schema/plugin.json:/properties/historyCount/title
+msgctxt "settings"
+msgid "History count"
+msgstr "Licznik historii"
+
+#: /schema/plugin.json:/properties/refreshIfHidden/description
+msgctxt "settings"
+msgid "Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance."
+msgstr ""
+
+#: /schema/plugin.json:/properties/refreshIfHidden/title
+msgctxt "settings"
+msgid "Refresh if the Git tab is hidden"
+msgstr ""
+
+#: /schema/plugin.json:/properties/refreshInterval/description
+msgctxt "settings"
+msgid "Number of milliseconds between polling the file system for changes."
+msgstr "Liczba milisekund pomiędzy sprawdzaniem zmian w systemie plików."
+
+#: /schema/plugin.json:/properties/refreshInterval/title
+msgctxt "settings"
+msgid "Refresh interval"
+msgstr "Interwał odświeżania"
+
+#: /schema/plugin.json:/properties/simpleStaging/description
+msgctxt "settings"
+msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
+msgstr ""
+
+#: /schema/plugin.json:/properties/simpleStaging/title
+msgctxt "settings"
+msgid "Simple staging flag"
+msgstr ""
+
+#: /schema/plugin.json:/title
+msgctxt "schema"
+msgid "Git"
+msgstr "Git"
 
 #: src/commandsAndMenu.tsx:1012
 msgid "No actions available"
@@ -204,7 +229,7 @@ msgstr "Nie udało się zainicjować repozytorium Git"
 
 #: src/commandsAndMenu.tsx:231
 msgid "Simple staging"
-msgstr ""
+msgstr "Uproszczona poczekalnia"
 
 #: src/commandsAndMenu.tsx:240
 msgid "Double click opens diff"
@@ -216,11 +241,11 @@ msgstr ""
 
 #: src/commandsAndMenu.tsx:250
 msgid "Add a Git remote repository"
-msgstr ""
+msgstr "Dodaj zdalne repozytorium Git"
 
 #: src/commandsAndMenu.tsx:255
 msgid "Not in a Git repository. Unable to add a remote."
-msgstr ""
+msgstr "Nie w repozytorium Git. Nie można dodać zdalnego repozytorium."
 
 #: src/commandsAndMenu.tsx:264
 msgid "Add a remote repository"
@@ -232,7 +257,7 @@ msgstr ""
 
 #: src/commandsAndMenu.tsx:279
 msgid "Error when adding remote repository"
-msgstr ""
+msgstr "Wystąpił błąd podczas dodawania zdalnego repozytorium"
 
 #: src/commandsAndMenu.tsx:289 src/components/GitPanel.tsx:470
 msgid "Clone a Repository"
@@ -272,11 +297,11 @@ msgstr ""
 
 #: src/commandsAndMenu.tsx:351
 msgid "Push to Remote"
-msgstr ""
+msgstr "Wyślij do zdalnego repozytorium"
 
 #: src/commandsAndMenu.tsx:352
 msgid "Push code to remote repository"
-msgstr ""
+msgstr "Wyślij kod do zdalnego repozytorium"
 
 #: src/commandsAndMenu.tsx:357
 msgid "Pushing..."
@@ -284,15 +309,15 @@ msgstr "Przesyłanie..."
 
 #: src/commandsAndMenu.tsx:366
 msgid "Successfully pushed"
-msgstr ""
+msgstr "Wysłano pomyślnie"
 
 #: src/commandsAndMenu.tsx:372
 msgid "Encountered an error when pushing changes. Error: "
-msgstr ""
+msgstr "Wystąpił błąd podczas wysyłania zmian. Błąd: "
 
 #: src/commandsAndMenu.tsx:376
 msgid "Failed to push"
-msgstr ""
+msgstr "Wysyłanie nie powiodło się"
 
 #: src/commandsAndMenu.tsx:386
 msgid "Pull from Remote"
@@ -324,7 +349,7 @@ msgstr ""
 
 #: src/commandsAndMenu.tsx:477
 msgid "Mark as resolved"
-msgstr ""
+msgstr "Oznacz jako rozwiązane"
 
 #: src/commandsAndMenu.tsx:481
 msgid "Resolve with conflicts"
@@ -416,35 +441,35 @@ msgstr ""
 
 #: src/commandsAndMenu.tsx:772
 msgid "Stage the changes of selected file"
-msgstr ""
+msgstr "Dodaj zmiany w wybranym pliku do poczekalni"
 
 #: src/commandsAndMenu.tsx:773
 msgid "Stage the changes of selected files"
-msgstr ""
+msgstr "Dodaj zmiany w wybranych plikach do poczekalni"
 
 #: src/commandsAndMenu.tsx:785
 msgid "Track"
-msgstr ""
+msgstr "Śledź"
 
 #: src/commandsAndMenu.tsx:787
 msgid "Start tracking selected file"
-msgstr ""
+msgstr "Rozpocznij śledzenie wybranego pliku"
 
 #: src/commandsAndMenu.tsx:788
 msgid "Start tracking selected files"
-msgstr ""
+msgstr "Rozpocznij śledzenie wybranych plików"
 
 #: src/commandsAndMenu.tsx:800
 msgid "Unstage"
-msgstr ""
+msgstr "Usuń plik z poczekalni"
 
 #: src/commandsAndMenu.tsx:802
 msgid "Unstage the changes of selected file"
-msgstr ""
+msgstr "Usuń zmiany w wybranym pliku z poczekalni"
 
 #: src/commandsAndMenu.tsx:803
 msgid "Unstage the changes of selected files"
-msgstr ""
+msgstr "Usuń zmiany w wybranych plikach z poczekalni"
 
 #: src/commandsAndMenu.tsx:826 src/commandsAndMenu.tsx:848 src/components/BranchMenu.tsx:345
 msgid "Delete"
@@ -496,7 +521,7 @@ msgstr "Czy na pewno chcesz trwale odrzucić zmiany w następujących plikach? T
 
 #: src/commandsAndMenu.tsx:912
 msgid "Discard changes for %1 failed."
-msgstr ""
+msgstr "Odrzucenie zmian dla %1 nie powiodło się."
 
 #: src/commandsAndMenu.tsx:925 src/commandsAndMenu.tsx:929
 msgid "Ignore this file (add to .gitignore)"
@@ -536,15 +561,15 @@ msgstr "Ignoruj"
 
 #: src/commandsAndMenu.tsx:993 src/components/GitPanel.tsx:358
 msgid "History"
-msgstr ""
+msgstr "Historia"
 
 #: src/commandsAndMenu.tsx:994
 msgid "View the history of this file"
-msgstr ""
+msgstr "Wyświetl historię tego pliku"
 
 #: src/components/Alert.tsx:105
 msgid "Error"
-msgstr ""
+msgstr "Błąd"
 
 #: src/components/Alert.tsx:106 src/components/BranchMenu.tsx:69 src/components/TagMenu.tsx:63
 msgid "Dismiss"
@@ -552,27 +577,27 @@ msgstr "Odrzuć"
 
 #: src/components/Alert.tsx:110
 msgid "SHOW"
-msgstr ""
+msgstr "POKAŻ"
 
 #: src/components/Alert.tsx:120
 msgid "Detailed message"
-msgstr ""
+msgstr "Detale wiadomości"
 
 #: src/components/Alert.tsx:128
 msgid "Details"
-msgstr ""
+msgstr "Szczegóły"
 
 #: src/components/Alert.tsx:148
 msgid "(missing message)"
-msgstr ""
+msgstr "(brak wiadomości)"
 
 #: src/components/BranchMenu.tsx:148
 msgid "The current branch contains files with uncommitted changes. Please commit or discard these changes before switching to or creating another branch."
-msgstr ""
+msgstr "Bieżąca gałąź zawiera pliki z niezatwierdzonymi zmianami. Proszę zatwierdzić lub odrzucić te zmiany przed przełączeniem do lub utworzeniem innej gałęzi."
 
 #: src/components/BranchMenu.tsx:195 src/components/NewBranchDialog.tsx:177 src/components/TagMenu.tsx:189
 msgid "Filter"
-msgstr ""
+msgstr "Filtruj"
 
 #: src/components/BranchMenu.tsx:196 src/components/NewBranchDialog.tsx:178 src/components/TagMenu.tsx:190
 msgid "Filter branch menu"
@@ -588,11 +613,11 @@ msgstr ""
 
 #: src/components/BranchMenu.tsx:212
 msgid "New Branch"
-msgstr ""
+msgstr "Nowa gałąź"
 
 #: src/components/BranchMenu.tsx:261
 msgid "Switch to branch: %1"
-msgstr ""
+msgstr "Przełącz na gałąź: %1"
 
 #: src/components/BranchMenu.tsx:275
 msgid "Delete this branch locally"
@@ -600,19 +625,19 @@ msgstr ""
 
 #: src/components/BranchMenu.tsx:332
 msgid "Delete branch"
-msgstr ""
+msgstr "Usuń gałąź"
 
 #: src/components/BranchMenu.tsx:335
 msgid "Are you sure you want to permanently delete the branch "
-msgstr ""
+msgstr "Czy na pewno chcesz trwale usunąć gałąź "
 
 #: src/components/BranchMenu.tsx:340
 msgid "This action cannot be undone."
-msgstr ""
+msgstr "Nie będzie można cofnąć tej operacji."
 
 #: src/components/BranchMenu.tsx:366
 msgid "Creating a new branch is disabled"
-msgstr ""
+msgstr "Tworzenie nowej gałęzi jest wyłączone"
 
 #: src/components/BranchMenu.tsx:51
 msgid "Unable to switch branch"
@@ -668,7 +693,7 @@ msgstr ""
 
 #: src/components/CommitMessage.tsx:140
 msgid "Description (optional)"
-msgstr ""
+msgstr "Opis (opcjonalny)"
 
 #: src/components/CommitMessage.tsx:147
 msgid "Enter a commit message description"
@@ -676,11 +701,11 @@ msgstr ""
 
 #: src/components/CommitMessage.tsx:66
 msgid "Summary"
-msgstr ""
+msgstr "Podsumowanie"
 
 #: src/components/FileList.tsx:188 src/components/FileList.tsx:213
 msgid "Discard all changes"
-msgstr ""
+msgstr "Odrzuć wszystkie zmiany"
 
 #: src/components/FileList.tsx:189 src/components/FileList.tsx:214
 msgid "Are you sure you want to permanently discard changes to all files? This action cannot be undone."
@@ -700,7 +725,7 @@ msgstr ""
 
 #: src/components/FileList.tsx:421 src/components/FileList.tsx:508 src/components/FileList.tsx:607 src/components/FileList.tsx:693 src/components/FileList.tsx:706 src/components/FileList.tsx:732
 msgid "Open this file"
-msgstr ""
+msgstr "Otwórz ten plik"
 
 #: src/components/FileList.tsx:428
 msgid "Unstage this change"
@@ -712,7 +737,7 @@ msgstr ""
 
 #: src/components/FileList.tsx:472
 msgid "Staged"
-msgstr ""
+msgstr "W poczekalni"
 
 #: src/components/FileList.tsx:523
 msgid "Stage this change"
@@ -832,15 +857,15 @@ msgstr ""
 
 #: src/components/NewBranchDialog.tsx:147
 msgid "Create a Branch"
-msgstr ""
+msgstr "Utwórz gałąź"
 
 #: src/components/NewBranchDialog.tsx:150 src/components/ResetRevertDialog.tsx:130
 msgid "Close this dialog"
-msgstr ""
+msgstr "Zamknij to okno"
 
 #: src/components/NewBranchDialog.tsx:160
 msgid "Name"
-msgstr ""
+msgstr "Nazwa"
 
 #: src/components/NewBranchDialog.tsx:167
 msgid "Enter a branch name"
@@ -856,7 +881,7 @@ msgstr ""
 
 #: src/components/NewBranchDialog.tsx:209
 msgid "Create Branch"
-msgstr ""
+msgstr "Utwórz gałąź"
 
 #: src/components/NewBranchDialog.tsx:300
 msgid "The current branch. Pick this if you want to build on work done in this branch."
@@ -952,15 +977,15 @@ msgstr ""
 
 #: src/components/SinglePastCommitInfo.tsx:186
 msgid "# Files Changed"
-msgstr ""
+msgstr "# zmodyfikowane pliki"
 
 #: src/components/SinglePastCommitInfo.tsx:190
 msgid "# Insertions"
-msgstr ""
+msgstr "# wstawienia"
 
 #: src/components/SinglePastCommitInfo.tsx:197
 msgid "# Deletions"
-msgstr ""
+msgstr "# usunięcia"
 
 #: src/components/SinglePastCommitInfo.tsx:212
 msgid "Revert changes introduced by this commit"
@@ -1012,19 +1037,19 @@ msgstr ""
 
 #: src/components/Toolbar.tsx:207
 msgid "Publish branch"
-msgstr ""
+msgstr "Opublikuj gałąź"
 
 #: src/components/Toolbar.tsx:217
 msgid "Refresh the repository to detect local and remote changes"
-msgstr ""
+msgstr "Odśwież repozytorium, aby wykryć lokalne i zdalne zmiany"
 
 #: src/components/Toolbar.tsx:240
 msgid "Current repository: %1"
-msgstr ""
+msgstr "Bieżące repozytorium: %1"
 
 #: src/components/Toolbar.tsx:248
 msgid "Current Repository"
-msgstr ""
+msgstr "Bieżące repozytorium"
 
 #: src/components/Toolbar.tsx:273
 msgid "Manage branches and tags"
