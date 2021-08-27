@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-08-27 06:30\n"
+"PO-Revision-Date: 2021-08-27 07:37\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -28,7 +28,7 @@ msgstr "Markdown 查看器"
 msgctxt "settings"
 msgid "The font family used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr "用于渲染Markdown的字体集。\n"
+msgstr "用于渲染 Markdown 的字体集。\n"
 "如果值为 `null`，则沿用当前主题的值。"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontFamily/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontFamily/title
@@ -40,7 +40,7 @@ msgstr "字体集"
 msgctxt "settings"
 msgid "The size in pixel of the font used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr "用来渲染Markdown的字体大小，以像素为单位。\n"
+msgstr "用来渲染 Markdown 的字体的像素大小。\n"
 "如果值为 `null`，则沿用当前主题的值。"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontSize/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontSize/title
@@ -55,14 +55,14 @@ msgid "Whether to hide YAML front matter.\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
 msgstr "是否隐藏 YAML 头部。\n"
-"必须将YAML 头部放置在文档的顶部，\n"
-"起始于三个破折线(---) 构成的行，结束于\n"
-"三个破折线(---) 或三个点(...) 构成的行"
+"YAML 头部必须被放置在文档的顶部，\n"
+"起始于三个破折线（---）构成的行，并结束于\n"
+"三个破折线（---）或三个点（...）构成的行。"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/hideFrontMatter/title /packages/markdownviewer-extension/schema/plugin.json:/properties/hideFrontMatter/title
 msgctxt "settings"
 msgid "Hide Front Matter"
-msgstr "隐藏YAML头部"
+msgstr "隐藏 YAML 头部信息"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/lineHeight/description /packages/markdownviewer-extension/schema/plugin.json:/properties/lineHeight/description
 msgctxt "settings"
@@ -80,8 +80,8 @@ msgstr "行高"
 msgctxt "settings"
 msgid "The text line width expressed in CSS ch units.\n"
 "If `null`, lines fit the viewport width."
-msgstr "以CSS ch 为单位表示的文本行宽。\n"
-"如果为 `null` ，则文本行宽会拓展到当前视图宽度。"
+msgstr "以 CSS 中的 ch 单位表示的文本行宽。\n"
+"如果为 `null`， 则符合视口宽度。"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/lineWidth/title /packages/markdownviewer-extension/schema/plugin.json:/properties/lineWidth/title
 msgctxt "settings"
@@ -121,12 +121,12 @@ msgstr "无论菜单是否已禁用"
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/icon/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/icon/description
 msgctxt "settings"
 msgid "Menu icon id"
-msgstr "菜单图标的 id"
+msgstr "菜单图标 id"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/id/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/id/description
 msgctxt "settings"
 msgid "Menu unique id"
-msgstr "菜单的唯一 id"
+msgstr "菜单唯一 id"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/items/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/items/description
 msgctxt "settings"
@@ -1074,7 +1074,7 @@ msgstr "代码单元格配置"
 #: /packages/notebook-extension/schema/tracker.json:/properties/defaultCell/description
 msgctxt "settings"
 msgid "The default type (markdown, code, or raw) for new cells"
-msgstr "新建单元格的默认类型 (markdown, 代码或 原始)"
+msgstr "新单元格默认类型（markdown、代码或纯文本）"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/defaultCell/title
 msgctxt "settings"
