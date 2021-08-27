@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-08-27 07:37\n"
+"PO-Revision-Date: 2021-08-27 11:23\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -80,8 +80,7 @@ msgstr "行高"
 msgctxt "settings"
 msgid "The text line width expressed in CSS ch units.\n"
 "If `null`, lines fit the viewport width."
-msgstr "以 CSS 中的 ch 单位表示的文本行宽。\n"
-"如果为 `null`， 则符合视口宽度。"
+msgstr "以 CSS 中的 ch 单位表示的文本行宽。如果为 `null`，则符合视口宽度。"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/lineWidth/title /packages/markdownviewer-extension/schema/plugin.json:/properties/lineWidth/title
 msgctxt "settings"
@@ -397,7 +396,7 @@ msgstr "按键映射"
 #: /packages/codemirror-extension/schema/commands.json:/properties/lineWiseCopyCut/description
 msgctxt "settings"
 msgid "When enabled, which is the default, doing copy or cut when there is no selection will copy or cut the whole lines that have cursors on them."
-msgstr "当启用时（此为默认值）， 在没有选取内容的情况下复制或剪切操作将会复制或剪切光标所在的整行。"
+msgstr "当启用时（此为默认值），在没有选取内容的情况下复制或剪切操作将会复制或剪切光标所在的整行。"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/lineWiseCopyCut/title
 msgctxt "settings"
@@ -1089,7 +1088,7 @@ msgstr "关闭笔记本时是否终止内核。"
 #: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/title
 msgctxt "settings"
 msgid "Shut down kernel"
-msgstr "终止内核"
+msgstr "关闭内核"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/markdownCellConfig/description
 msgctxt "settings"
@@ -1104,7 +1103,7 @@ msgstr "Markdown 单元格配置"
 #: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/description
 msgctxt "settings"
 msgid "Defines the maximum number of output cells to to to be rendered in the output area for cells with many outputs. The output area will have a head and a tail, and the outputs between will be trimmed and not displayed unless the user clicks on the information message."
-msgstr "对于有很多输出内容的单元格，定义其输出区域要呈现的输出单元格的最大数量。 输出区域将包含一个开头和结尾部分，除非用户点击信息消息，否则中间的输出内容将剪裁并不会显示。"
+msgstr "对于有很多输出内容的单元格，定义其输出区域要呈现的输出单元格的最大数量。输出区域将包含一个开头和结尾部分，除非用户点击信息消息，否则中间的输出内容将剪裁并不会显示。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/title
 msgctxt "settings"
@@ -1299,7 +1298,7 @@ msgstr "在 macOS 上将 option 键视作 meta 键"
 #: /packages/terminal-extension/schema/plugin.json:/properties/pasteWithCtrlV/description
 msgctxt "settings"
 msgid "Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available"
-msgstr "启用 Ctrl+V 粘贴。在 vi 编辑器中使用 Ctrl+V 时可禁用此项。 此设置对 macOS 没有任何影响，因为 macOS 中使用 Cmd+V"
+msgstr "启用 Ctrl+V 粘贴。在 vi 编辑器中使用 Ctrl+V 时可禁用此项。此设置对 macOS 没有任何影响，因为 macOS 中使用 Cmd+V"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/pasteWithCtrlV/title
 msgctxt "settings"
@@ -1635,8 +1634,7 @@ msgstr "正在载入…"
 #: packages/apputils-extension/src/index.ts:208
 msgid "The loading screen is taking a long time.\n"
 "Would you like to clear the workspace or keep waiting?"
-msgstr "载入屏幕花费了较长时间。 \n"
-"您是否要清除工作区或继续等待？"
+msgstr "载入屏幕花费了较长时间。您是否要清除工作区或继续等待？"
 
 #: packages/apputils-extension/src/index.ts:211
 msgid "Keep Waiting"
@@ -1780,7 +1778,7 @@ msgstr "选择内核"
 
 #: packages/apputils/src/sessioncontext.tsx:1280
 msgid "Restart Kernel?"
-msgstr "重启内核?"
+msgstr "重启内核？"
 
 #: packages/apputils/src/sessioncontext.tsx:1281
 msgid "Do you want to restart the current kernel? All variables will be lost."
@@ -1788,11 +1786,11 @@ msgstr "您想要重新启动当前内核吗？所有变量都将丢失。"
 
 #: packages/apputils/src/sessioncontext.tsx:1335
 msgid "Select kernel for:"
-msgstr "选择内核:"
+msgstr "选择内核："
 
 #: packages/apputils/src/sessioncontext.tsx:1475
 msgid "Start Preferred Kernel"
-msgstr "启动首选内核。"
+msgstr "启动首选内核"
 
 #: packages/apputils/src/sessioncontext.tsx:1490
 msgid "Start Other Kernel"
@@ -1824,11 +1822,11 @@ msgstr "名称:"
 
 #: packages/apputils/src/sessioncontext.tsx:1638
 msgid "Kernel Name:"
-msgstr "内核名称:"
+msgstr "内核名称："
 
 #: packages/apputils/src/sessioncontext.tsx:1639
 msgid "Kernel Id:"
-msgstr "内核 ID:"
+msgstr "内核 ID："
 
 #: packages/apputils/src/sessioncontext.tsx:967
 msgid "Error Starting Kernel"
@@ -2004,7 +2002,7 @@ msgstr "重启内核…"
 
 #: packages/console-extension/src/index.ts:581
 msgid "Close and Shut Down…"
-msgstr "关闭并终止..."
+msgstr "关闭并终止…"
 
 #: packages/console-extension/src/index.ts:588
 msgid "Shut down the console?"
@@ -2056,7 +2054,7 @@ msgstr "目录: %1\n"
 
 #: packages/console/src/panel.ts:316
 msgid "Kernel: %1"
-msgstr "内核: %1"
+msgstr "内核：%1"
 
 #: packages/console/src/panel.ts:319
 msgid "\n"
@@ -2194,13 +2192,11 @@ msgid "Overrides for the default viewers for file types.\n"
 "%1\n\n"
 "Available file types:\n"
 "%2"
-msgstr "覆盖文件类型对应的默认查看器。\n"
-"请指定从文件类型到查看器名称的映射， 例如：\n\n"
+msgstr "覆盖文件类型对应的默认查看器。请指定从文件类型到查看器名称的映射，例如：\n\n"
 "defaultViewers: {\n"
 "  markdown: \"Markdown Preview\"\n"
 "}\n\n"
-"如果您指定了不存在的文件类型或查看器， 或者如果查看器无法\n"
-"打开指定的文件类型，覆盖将不会生效。\n\n"
+"如果您指定了不存在的文件类型或查看器，或者如果查看器无法打开指定的文件类型，覆盖将不会生效。\n\n"
 "可用的查看器：\n"
 "%1\n\n"
 "可用的文件类型：\n"
@@ -2432,9 +2428,7 @@ msgstr "加载文件 %1 时出错"
 msgid "\"%1\" has changed on disk since the last time it was opened or saved.\n"
 "Do you want to overwrite the file on disk with the version open here,\n"
 "or load the version on disk (revert)?"
-msgstr "「%1」自上次打开或保存后在磁盘上已经改变。\n"
-"您想要用这里打开的版本覆盖磁盘上的文件， \n"
-"还是加载磁盘上的版本(复原)？"
+msgstr "「%1」自上次打开或保存后在磁盘上已经改变。您想要用这里打开的版本覆盖磁盘上的文件， 还是加载磁盘上的版本（复原）？"
 
 #: packages/docregistry/src/context.ts:804
 msgid "File Changed"
@@ -2442,7 +2436,7 @@ msgstr "文件已更改"
 
 #: packages/docregistry/src/context.ts:828
 msgid "\"%1\" already exists. Do you want to replace it?"
-msgstr "「%1」已经存在。你想要替换它么？"
+msgstr "「%1」已经存在。您想要替换它么？"
 
 #: packages/docregistry/src/context.ts:836
 msgid "File Overwrite?"
@@ -2563,12 +2557,7 @@ msgid "Thanks for trying out JupyterLab's extension manager.\n"
 "However, we cannot vouch for every extension,\n"
 "and some may introduce security risks.\n"
 "Do you want to continue?"
-msgstr "感谢您尝试了 JupyterLab 的扩展管理器。\n"
-"JupyterLab 开发团队很高兴有一个强大的\n"
-"第三方扩展社区。\n"
-"然而，我们不能为审核每个扩展，\n"
-"其中一些扩展可能会带来安全风险。\n"
-"你想要继续吗？"
+msgstr "感谢您尝试了 JupyterLab 的扩展管理器。JupyterLab 开发团队很高兴有一个强大的第三方扩展社区。然而，我们不能审核每个扩展，其中一些扩展可能会带来安全风险。您想要继续吗？"
 
 #: packages/extensionmanager-extension/src/index.ts:151 packages/extensionmanager/src/widget.tsx:329 packages/extensionmanager/src/widget.tsx:798
 msgid "Disable"
@@ -2586,8 +2575,7 @@ msgstr "扩展管理器部分"
 msgid "This package has indicated that it needs a corresponding server\n"
 "extension. Please contact your Administrator to update the server with\n"
 "one of the following commands:"
-msgstr "这个软件包表示它需要一个相应的服务器\n"
-"扩展。 请联系您的管理员用下面的命令更新服务器："
+msgstr "这个软件包表示它需要一个相应的服务器扩展。 请联系您的管理员用下面的命令更新服务器："
 
 #: packages/extensionmanager/src/companions.tsx:153
 msgid "This package has indicated that it needs a corresponding package for the kernel."
@@ -2601,7 +2589,7 @@ msgstr "包 <code>%1</code> 是下列内核必需的："
 msgid "This package has indicated that it needs a corresponding kernel\n"
 "package. Please contact your Administrator to update the server with\n"
 "one of the following commands:"
-msgstr "这个软件包表示它需要一个相应的内核包。 请联系您的管理员用下面的命令更新服务器："
+msgstr "这个软件包表示它需要一个相应的内核包。请联系您的管理员用下面的命令更新服务器："
 
 #: packages/extensionmanager/src/companions.tsx:196
 msgid "You should make sure that the indicated packages are installed before\n"
@@ -2712,10 +2700,7 @@ msgid "The JupyterLab development team is excited to have a robust\n"
 "third-party extension community. However, we do not review\n"
 "third-party extensions, and some extensions may introduce security\n"
 "risks or contain malicious code that runs on your machine."
-msgstr "JupyterLab 开发团队很高兴有一个强大的\n"
-"第三方扩展社区。 然而，我们不会审查\n"
-"第三方扩展，一些扩展可能会带来安全\n"
-"风险或包含您能在您机器上运行的恶意代码。"
+msgstr "JupyterLab 开发团队很高兴有一个强大的第三方扩展社区。然而，我们并不会审查第三方扩展，一些扩展可能会带来安全风险或包含您能在您机器上运行的恶意代码。"
 
 #: packages/extensionmanager/src/widget.tsx:823
 msgid "Updating extensions list"
@@ -2982,7 +2967,7 @@ msgstr "粘贴出错"
 
 #: packages/filebrowser/src/listing.ts:401
 msgid "Are you sure you want to permanently delete: %1?"
-msgstr "你确定要删除「%1」吗？"
+msgstr "您确定要删除「%1」吗？"
 
 #: packages/filebrowser/src/listing.ts:405
 msgid "Are you sure you want to permanently delete the %1 selected item?"
@@ -3682,7 +3667,7 @@ msgstr "关闭并停止"
 
 #: packages/notebook-extension/src/index.ts:1514
 msgid "Shut down the notebook?"
-msgstr "停止笔记本？"
+msgstr "关闭笔记本？"
 
 #: packages/notebook-extension/src/index.ts:1528
 msgid "Trust Notebook"
@@ -4074,11 +4059,7 @@ msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "The next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n"
 "'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\n"
 "close the notebook without saving it."
-msgstr "此笔记本已从旧笔记本格式 (v%1) \n"
-"转换为当前笔记本格式 (v%2)。\n"
-"下次保存此笔记本，当前笔记本将使用新格式。\n"
-"老版本的 Jupyter 项目可能无法读取新格式。 \n"
-"要保留原始格式版本，请关闭笔记本并避免保存它。"
+msgstr "此笔记本已从旧笔记本格式（v%1）转换为当前笔记本格式（v%2）。下次保存此笔记本，当前笔记本将使用新格式。老版本的 Jupyter 项目可能无法读取新格式。 要保留原始格式版本，请关闭笔记本并避免保存它。"
 
 #: packages/notebook/src/model.ts:340
 msgid "This notebook has been converted from an newer notebook format (v%1)\n"
@@ -4207,8 +4188,8 @@ msgstr "您确定要永久关闭所有正在运行的内核吗？"
 #: packages/running-extension/src/kernels.ts:80
 msgid "Path: %1\n"
 "Kernel: %2"
-msgstr "路径: %1\n"
-"内核: %2"
+msgstr "路径：%1\n"
+"内核：%2"
 
 #: packages/running-extension/src/opentabs.ts:71
 msgid "Open Tabs"
@@ -4318,7 +4299,7 @@ msgstr "显示状态栏"
 
 #: packages/statusbar/src/defaults/kernelStatus.tsx:121
 msgid "No Kernel!"
-msgstr "无内核!"
+msgstr "无内核！"
 
 #: packages/statusbar/src/defaults/kernelStatus.tsx:31
 msgid "Change kernel for %1"
@@ -4338,7 +4319,7 @@ msgstr "转到行号…"
 
 #: packages/statusbar/src/defaults/runningSessions.tsx:111
 msgid "%1 Terminals, %2 Kernel sessions"
-msgstr "%1 个终端， %2 个内核会话"
+msgstr "%1 个终端，%2 个内核会话"
 
 #: packages/terminal-extension/src/index.ts:185
 msgid "Shutdown Terminal"
