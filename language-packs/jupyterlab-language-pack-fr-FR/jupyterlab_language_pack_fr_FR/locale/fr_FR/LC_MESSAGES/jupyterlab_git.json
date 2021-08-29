@@ -35,9 +35,6 @@
     "Cancel": [
         "Annuler"
     ],
-    "Cancel pull merge conflict": [
-        "Annuler le conflit de fusion de pull"
-    ],
     "Clone a Repository": [
         "Cloner un d\u00e9p\u00f4t"
     ],
@@ -86,9 +83,6 @@
     "Diff selected files": [
         "Diff les fichiers s\u00e9lectionn\u00e9s"
     ],
-    "Disable branch with changes": [
-        "D\u00e9sactiver la branche avec les changements"
-    ],
     "Discard": [
         "Abandonner"
     ],
@@ -106,9 +100,6 @@
     ],
     "Dismiss": [
         "Rejeter"
-    ],
-    "Display Git status updates": [
-        "Afficher les mises \u00e0 jour du statut de Git"
     ],
     "Display a file diff.": [
         "Afficher le diff d'un fichier."
@@ -172,9 +163,6 @@
     ],
     "Go to Git user interface": [
         "Aller \u00e0 l'interface utilisateur de Git"
-    ],
-    "History count": [
-        "Nombre d'historiques"
     ],
     "Ignore": [
         "Ignorer"
@@ -265,12 +253,6 @@
     "Refresh diff widget": [
         "Actualiser le widget de diff"
     ],
-    "Refresh if the Git tab is hidden": [
-        "Actualiser si l'onglet Git est cach\u00e9"
-    ],
-    "Refresh interval": [
-        "Fr\u00e9quence d'actualisation"
-    ],
     "Remote Git repository URL": [
         "URL du d\u00e9p\u00f4t Git distant"
     ],
@@ -280,14 +262,8 @@
     "Show Diff": [
         "Afficher les diff\u00e9rences"
     ],
-    "Show diff on double click": [
-        "Afficher le diff lors d'un double-clic"
-    ],
     "Simple staging": [
         "Indexation Simple"
-    ],
-    "Simple staging flag": [
-        "L'option d'indexation simple"
     ],
     "Stage": [
         "Indexer"
@@ -318,9 +294,6 @@
     ],
     "Successfully pushed": [
         "Poussage a r\u00e9ussi"
-    ],
-    "Suspend user interaction until commands finish": [
-        "Suspendre l'interaction de l'utilisateur jusqu'\u00e0 la fin des commandes"
     ],
     "The versions of the JupyterLab Git server frontend and backend do not match. The @jupyterlab/git frontend extension has version: %1 while the python package has version %2. Please install identical version of jupyterlab-git Python package and the @jupyterlab/git extension. Try running: pip install --upgrade jupyterlab-git": [
         "Les versions du frontend et du backend du serveur JupyterLab Git ne correspondent pas. L'extension frontend @jupyterlab/git contient la version: %1 tandis que le paquetage Python contient la version %2. Veuillez installer une version identique du paquetage Python jupyterlab-git et l'extension@jupyterlab/git. Essayez d'ex\u00e9cuter: pip install --upgrade jupyterlab-git"
@@ -360,30 +333,6 @@
     ],
     "password / personal access token": [
         "mot de passe / jeton d'acc\u00e8s personnel"
-    ],
-    "schema\u0004Disable all branch operations (new, switch) when there are changed/staged files": [
-        "D\u00e9sactiver toutes les op\u00e9rations de la branche (nouvelle, chang\u00e9e) quand il y a des fichiers modifi\u00e9s/index\u00e9s"
-    ],
-    "schema\u0004Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise.": [
-        "Afficher les mises \u00e0 jour d'\u00e9tat de l'extension Git dans la barre d'\u00e9tat de JupyterLab. Si activ\u00e9, l'extension affiche les mises \u00e0 jour d'\u00e9tat dans la barre d'\u00e9tat de JupyterLab, comme lors du tirage et de la pouss\u00e9e des changements, du changement de branches, et du sondage. Selon le niveau d'activit\u00e9 de l'extension, certains utilisateurs peuvent trouver les mises \u00e0 jour de statut. Dans ce cas, r\u00e9gler ceci \u00e0 faux devrait r\u00e9duire le bruit visuel."
-    ],
-    "schema\u0004If true, doubling clicking a file in the list of changed files will open a diff.": [
-        "Si vrai, un double clic sur un fichier dans la liste des fichiers modifi\u00e9s ouvrira un diff."
-    ],
-    "schema\u0004If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged": [
-        "Si vrai, utilisez un concept simplifi\u00e9 d'indexation. Seuls les fichiers avec des modifications sont affich\u00e9s (au lieu d'afficher les fichiers index\u00e9s/modifi\u00e9s/non suivis), et tous les fichiers avec des modifications seront automatiquement index\u00e9s"
-    ],
-    "schema\u0004If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched.": [
-        "Si vrai, lors de la r\u00e9cup\u00e9ration et de l'int\u00e9gration des changements depuis un d\u00e9p\u00f4t distant, une fusion en conflit est annul\u00e9e et l'arborescence de travail reste intacte."
-    ],
-    "schema\u0004Number of (most recent) commits shown in the history log": [
-        "Nombre de commits (plus r\u00e9cents) affich\u00e9s dans l'historique"
-    ],
-    "schema\u0004Number of milliseconds between polling the file system for changes.": [
-        "Nombre de millisecondes entre le sondage du syst\u00e8me de fichiers pour les modifications."
-    ],
-    "schema\u0004Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions.": [
-        "Suspendre l'interaction utilisateur de JupyterLab jusqu'\u00e0 ce que les commandes Git (par exemple, commit, pull, reset, revert) soient ex\u00e9cut\u00e9es. D\u00e9finir ceci comme vrai permet d'att\u00e9nuer les conditions potentielles menant \u00e0 des pertes de donn\u00e9es, des conflits et une histoire de Git cass\u00e9e. \u00c0 moins d'ex\u00e9cuter un r\u00e9seau lent, la suspension de l'interface utilisateur ne devrait pas interf\u00e9rer avec les flux de travail standard. D\u00e9finir cette valeur \u00e0 false permet aux actions de d\u00e9clencher plusieurs actions Git simultan\u00e9es."
     ],
     "schema\u0004jupyterlab-git settings.": [
         "param\u00e8tres jupyterlab-git."
