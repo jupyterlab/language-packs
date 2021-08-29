@@ -38,6 +38,9 @@
     "Are you sure you want to ignore all %1 files within this git repository?": [
         "Sei sicuro di voler ignorare tutti i %1 file entro questa repository di git?"
     ],
+    "Are you sure you want to mark this file as resolved with merge conflicts?": [
+        "Sei sicuro di voler contrassegnare questo file come risolto con i conflitti di fusione?"
+    ],
     "Are you sure you want to permanently delete the branch ": [
         "Sei sicuro di voler eliminare permanentemente il ramo "
     ],
@@ -53,14 +56,14 @@
     "CLONE": [
         "CLONA"
     ],
+    "CURRENT": [
+        "CORRENTE"
+    ],
     "Cancel": [
         "Annulla"
     ],
     "Cancel changes": [
         "Annulla le modifiche"
-    ],
-    "Cancel pull merge conflict": [
-        "Annulla conflitto di fusione del pull"
     ],
     "Clear the current filter": [
         "Cancella il filtro corrente"
@@ -85,6 +88,9 @@
     ],
     "Commit from the Commit Box": [
         "Commit dalla Casella di Commit"
+    ],
+    "Conflicted": [
+        "In Conflitto"
     ],
     "Create Branch": [
         "Crea Ramo"
@@ -152,9 +158,6 @@
     "Diff selected files": [
         "Diff file selezionati"
     ],
-    "Disable branch with changes": [
-        "Disabilita ramo con modifiche"
-    ],
     "Discard": [
         "Scarta"
     ],
@@ -178,9 +181,6 @@
     ],
     "Dismiss": [
         "Scarta"
-    ],
-    "Display Git status updates": [
-        "Mostra aggiornamenti di stato di Git"
     ],
     "Display a file diff.": [
         "Mostra un file diff."
@@ -275,8 +275,8 @@
     "History": [
         "Cronologia"
     ],
-    "History count": [
-        "Conteggio della cronologia"
+    "INCOMING": [
+        "IN ARRIVO"
     ],
     "Ignore": [
         "Ignora"
@@ -309,6 +309,12 @@
     ],
     "Initializing...": [
         "Inizializzando..."
+    ],
+    "Mark as resolved": [
+        "Segna come risolto"
+    ],
+    "Mark file as resolved": [
+        "Segna file come risolto"
     ],
     "Name": [
         "Nome"
@@ -376,23 +382,23 @@
     "Pushing...": [
         "Spingendo..."
     ],
+    "RESULT": [
+        "RISULTATO"
+    ],
     "Refresh": [
         "Ricarica"
     ],
     "Refresh diff widget": [
         "Ricarica widget diff"
     ],
-    "Refresh if the Git tab is hidden": [
-        "Ricarica se la scheda di Git \u00e8 nascosta"
-    ],
-    "Refresh interval": [
-        "Intervallo di aggiornamento"
-    ],
     "Remote Git repository URL": [
         "URL della repository di Git remota"
     ],
     "Reset Changes": [
         "Ripristina Modifiche"
+    ],
+    "Resolve with conflicts": [
+        "Risolvi con i conflitti"
     ],
     "Revert '%1'": [
         "Ripristina '%1'"
@@ -415,14 +421,8 @@
     "Show Diff": [
         "Mostra Diff"
     ],
-    "Show diff on double click": [
-        "Mostra le differenze (diff) con doppio click"
-    ],
     "Simple staging": [
         "Staging semplice"
-    ],
-    "Simple staging flag": [
-        "Flag di staging semplice"
     ],
     "Stage": [
         "Inscena"
@@ -466,9 +466,6 @@
     "Successfully reverted changes.": [
         "Modifiche ripristinate correttamente."
     ],
-    "Suspend user interaction until commands finish": [
-        "Sospendi l'interazione utente fino alla fine dei comandi"
-    ],
     "Switch to branch: %1": [
         "Passa al ramo: %1"
     ],
@@ -498,9 +495,6 @@
     ],
     "Track": [
         "Traccia"
-    ],
-    "Trigger push on commit": [
-        "Innesca push su commit"
     ],
     "Unable to checkout tag": [
         "Impossibile controllare il tag"
@@ -541,38 +535,8 @@
     "password / personal access token": [
         "password / token d'accesso personale"
     ],
-    "schema\u0004Disable all branch operations (new, switch) when there are changed/staged files": [
-        "Disabilita tutte le operazioni del ramo (new, switch) quando ci sono file modificati/preparati"
-    ],
-    "schema\u0004Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise.": [
-        "Mostra gli aggiornamenti di stato dell'estensione di Git nella barra di stato di JupyterLab. Se true, l'estensione mostra gli aggiornamenti di stato nella barra di stato di JupyterLab, come quando le modifiche sono spinte o tirate, il cambio di rami e i sondaggi di modifica. In base al livello dell'attivit\u00e0 dell'estensione, alcuni utenti potrebbero trovare distraenti gli aggiornamenti di stato. Nel qual caso, impostarlo a false dovrebbe ridurre il rumore virtuale."
-    ],
     "schema\u0004Git": [
         "Git"
-    ],
-    "schema\u0004If true, doubling clicking a file in the list of changed files will open a diff.": [
-        "Se VERO, il doppio clic su un file nell'elenco dei file modificati aprir\u00e0 un diff."
-    ],
-    "schema\u0004If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged": [
-        "Se true, usa un concetto semplificato di staging. Solo i file con modifiche sono mostrati (invece di mostrare stage/modificati/non tracciati), e tutti i file con modifiche saranno automaticamente inscenati"
-    ],
-    "schema\u0004If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched.": [
-        "Se true, recuperando ed integrando modifiche da una repository remota, una fusione conflittuale \u00e8 annullata e l'albero funzionante \u00e8 lasciato intatto."
-    ],
-    "schema\u0004Number of (most recent) commits shown in the history log": [
-        "Numero di commit (pi\u00f9 recenti) mostrati nella cronologia"
-    ],
-    "schema\u0004Number of milliseconds between polling the file system for changes.": [
-        "Numero di millisecondi tra il polling del file system per le modifiche."
-    ],
-    "schema\u0004Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions.": [
-        "Sospendi l'interazione utente di JupyterLab fino alla fine dell'esecuzione dei comandi di Git (es., commit, pull, reset, revert). Impostarlo a true aiuta a mitigare le condizioni di razza potenziale portando a perdita di dati, conflitti ed una cronologia di Git rotta. A meno che non sia in esecuzione su una rete lenta, la sospensione dell'UI non dovrebbe intervenire con i flussi di lavoro standard. Impostarlo a false consente alle azioni di innescare azioni di Git concorrenti multiple."
-    ],
-    "schema\u0004Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance.": [
-        "Se controllare lo stato di Git quando la scheda Git non \u00e8 visibile. Scegli 'false' per prestazioni superiori."
-    ],
-    "schema\u0004Whether to trigger or not a push for each commit.": [
-        "Se innescare o no una spinta per ogni commit."
     ],
     "schema\u0004jupyterlab-git settings.": [
         "impostazioni di jupyterlab-git."

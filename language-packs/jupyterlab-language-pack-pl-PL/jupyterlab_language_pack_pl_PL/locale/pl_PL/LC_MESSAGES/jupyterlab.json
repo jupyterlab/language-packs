@@ -32,6 +32,9 @@
     "\"%1\" already exists. Do you want to replace it?": [
         "%1 ju\u017c istnieje. Czy chcesz go zast\u0105pi\u0107?"
     ],
+    "\"%1\" has changed on disk since the last time it was opened or saved.\nDo you want to overwrite the file on disk with the version open here,\nor load the version on disk (revert)?": [
+        "\"%1\" zmieni\u0142 si\u0119 na dysku od czasu jego ostatniego otwarcia lub zapisania.\nCzy chcesz zast\u0105pi\u0107 plik na dysku wersj\u0105 otwart\u0105 tutaj, czy za\u0142adowa\u0107 \naktualn\u0105\u00a0wersj\u0119 z dysku (cofn\u0105\u0107 wprowadzone zmiany)?"
+    ],
     "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\"": [
         "\"%1\" nie jest prawid\u0142ow\u0105 nazw\u0105 pliku. Nazwy musz\u0105 mie\u0107 d\u0142ugo\u015b\u0107 wi\u0119ksz\u0105 ni\u017c zero i nie mog\u0105 zawiera\u0107 \"/\", \"\\\", ani \":\""
     ],
@@ -69,6 +72,9 @@
     "A connection to the Jupyter server could not be established.\nJupyterLab will continue trying to reconnect.\nCheck your network connection or Jupyter server configuration.\n": [
         "Nie mo\u017cna nawi\u0105za\u0107 po\u0142\u0105czenia z serwerem Jupyter.\nJupyterLab b\u0119dzie kontynuowa\u0142 pr\u00f3by ponownego po\u0142\u0105czenia.\nSprawd\u017a po\u0142\u0105czenie sieciowe lub konfiguracj\u0119 serwera Jupyter.\n"
     ],
+    "A trusted Jupyter notebook may execute hidden malicious code when you open it.": [
+        "Zaufany notatnik Jupyter mo\u017ce wykona\u0107 ukryty z\u0142o\u015bliwy kod podczas otwierania."
+    ],
     "ABOUT PROJECT JUPYTER": [
         "O PROJEKCIE JUPYTER"
     ],
@@ -76,10 +82,10 @@
         "O projekcie"
     ],
     "About %1": [
-        "Oko\u0142o %1"
+        "O programie %1"
     ],
     "About the %1 Kernel": [
-        "Oko\u0142o %1 j\u0105dra"
+        "%1 j\u0105dra - informacje"
     ],
     "Activate Command Palette": [
         "Aktywuj palet\u0119 polece\u0144"
@@ -113,6 +119,9 @@
     ],
     "Advanced Tools": [
         "Zaawansowane narz\u0119dzia"
+    ],
+    "After changing the interface language to %1, you will need to reload JupyterLab to see the changes.": [
+        "Po zmianie j\u0119zyka interfejsu na %1 b\u0119dziesz musie\u0107 prze\u0142adowa\u0107 JupyterLab aby zobaczy\u0107 zmiany."
     ],
     "An error occurred installing <code>%1</code>.": [
         "Wyst\u0105pi\u0142 b\u0142\u0105d podczas instalacji <code>%1</code>."
@@ -151,11 +160,11 @@
     "Are you sure you want to permanently shut down all running terminals?": [
         "Czy na pewno chcesz trwale zamkn\u0105\u0107 wszystkie uruchomione terminale?"
     ],
-    "Are you sure you want to refresh?": [
-        "Czy na pewno chcesz od\u015bwie\u017cy\u0107?"
-    ],
     "Are you sure you want to reload the %1 from the disk?": [
         "Czy na pewno chcesz prze\u0142adowa\u0107 %1 z dysku?"
+    ],
+    "Are you sure you want to remove all breakpoints?": [
+        "Czy na pewno chcesz usun\u0105\u0107 wszystkie punkty przerwania?"
     ],
     "Are you sure you want to revert the %1 to the latest checkpoint? ": [
         "Czy na pewno chcesz przywr\u00f3ci\u0107 %1 do ostatniego punktu kontrolnego? "
@@ -174,9 +183,6 @@
     ],
     "Autosave Documents": [
         "Autozapis Dokument\u00f3w"
-    ],
-    "Autosave Interval": [
-        "Cz\u0119stotliwo\u015b\u0107 autozapisu (sek.)"
     ],
     "Breakpoints": [
         "Punkty przerwania"
@@ -244,6 +250,9 @@
     "Change Tab indentation\u2026": [
         "Zmie\u0144 wci\u0119cie karty\u2026"
     ],
+    "Change and reload": [
+        "Zmie\u0144 i za\u0142aduj ponownie"
+    ],
     "Change interface language?": [
         "Zmieni\u0107 j\u0119zyk interfejsu?"
     ],
@@ -276,6 +285,9 @@
     ],
     "Change to Markdown Cell Type": [
         "Zmie\u0144 typ kom\u00f3rki na Markdown"
+    ],
+    "Change to Raw Cell Type": [
+        "Zmie\u0144 na surow\u0105 kom\u00f3rk\u0119"
     ],
     "Clear": [
         "Wyczy\u015b\u0107"
@@ -343,9 +355,6 @@
     "Code": [
         "Kod"
     ],
-    "Code Cell Configuration": [
-        "Konfiguracja kom\u00f3rki kodu"
-    ],
     "Code Editor out of Sync": [
         "Edytor kodu nie jest synchronizowany"
     ],
@@ -360,6 +369,9 @@
     ],
     "Collapse Selected Outputs": [
         "Zwi\u0144 wszystkie wyj\u015bcia"
+    ],
+    "Command": [
+        "Polecenie"
     ],
     "Command Palette": [
         "Paleta Polece\u0144"
@@ -406,6 +418,9 @@
     "Copy Download Link": [
         "Link do pobrania"
     ],
+    "Copy Output to Clipboard": [
+        "Kopiuj rezultat do schowka"
+    ],
     "Copy Path": [
         "Skopiuj \u015bcie\u017ck\u0119"
     ],
@@ -445,9 +460,6 @@
     "Critical": [
         "Krytyczny"
     ],
-    "Ctrl-C": [
-        "Ctrl+C"
-    ],
     "Custom": [
         "Niestandardowy"
     ],
@@ -486,12 +498,6 @@
     ],
     "Decrease UI Font Size": [
         "Zmniejsz rozmiar czcionki UI"
-    ],
-    "Default Viewers": [
-        "Domy\u015blne przegl\u0105darki"
-    ],
-    "Default cell type": [
-        "Domy\u015blny typ kom\u00f3rki"
     ],
     "Delete": [
         "Usu\u0144"
@@ -565,20 +571,20 @@
     "Download the file to your computer": [
         "Pobierz plik na sw\u00f3j komputer"
     ],
+    "Drag and Drop is currently not supported for folders": [
+        "Przeci\u0105gnij i upu\u015b\u0107 nie jest obecnie obs\u0142ugiwane dla folder\u00f3w"
+    ],
     "Duplicate": [
         "Duplikuj"
     ],
-    "Editor Configuration": [
-        "Konfiguracja edytora"
+    "Edit": [
+        "Edytuj"
     ],
     "Enable": [
         "W\u0142\u0105cz"
     ],
     "Enable / Disable Debugger": [
         "W\u0142\u0105cz / Wy\u0142\u0105cz debugger"
-    ],
-    "Enable CDN": [
-        "Aktywuj CDN"
     ],
     "Enable Extension Manager": [
         "W\u0142\u0105cz mened\u017cera rozszerze\u0144"
@@ -588,9 +594,6 @@
     ],
     "Enable Scrolling for Outputs": [
         "W\u0142\u0105cz przewijanie dla wyj\u015b\u0107"
-    ],
-    "Enabled Status": [
-        "Status aktywowania"
     ],
     "Enter Command Mode": [
         "Przejd\u017a do trybu polece\u0144"
@@ -612,6 +615,9 @@
     ],
     "Error Starting Kernel": [
         "B\u0142\u0105d podczas uruchamiania j\u0105dra"
+    ],
+    "Error Uploading Folder": [
+        "B\u0142\u0105d podczas wgrywania katalogu"
     ],
     "Error communicating with server extension. Consult the documentation\n            for how to ensure that it is enabled.": [
         "B\u0142\u0105d komunikacji z rozszerzeniem serwera. Sprawd\u017a w dokumentacji,             jak upewni\u0107 si\u0119, \u017ce jest w\u0142\u0105czony."
@@ -706,9 +712,6 @@
     "Filter files by name": [
         "Filtruj pliki wed\u0142ug nazwy"
     ],
-    "Filter on file name with a fuzzy search": [
-        "Filtruj wed\u0142ug nazwy pliku za pomoc\u0105 wyszukiwania rozmytego"
-    ],
     "Filter\u2026": [
         "Filtruj\u2026"
     ],
@@ -732,18 +735,6 @@
     ],
     "Flip image vertically": [
         "Przewr\u00f3\u0107 obraz w pionie"
-    ],
-    "Font Family": [
-        "Czcionka"
-    ],
-    "Font Size": [
-        "Rozmiar czcionki"
-    ],
-    "Font family": [
-        "Rodzina czcionek"
-    ],
-    "Font size": [
-        "Rozmiar czcionki"
     ],
     "For Notebook:": [
         "Dla notatnika:"
@@ -783,9 +774,6 @@
     ],
     "Help": [
         "Pomoc"
-    ],
-    "Hide Front Matter": [
-        "Ukryj prz\u00f3d"
     ],
     "Idle": [
         "Bezczynny"
@@ -855,9 +843,6 @@
     ],
     "Installed": [
         "Zainstalowane"
-    ],
-    "Interaction mode": [
-        "Tryb interakcji"
     ],
     "Interrupt Kernel": [
         "Przerwij j\u0105dro"
@@ -934,14 +919,8 @@
     "Kernels": [
         "J\u0105dra"
     ],
-    "Key Map": [
-        "Skr\u00f3ty klawiszowe"
-    ],
     "LaTeX": [
         "LaTeX"
-    ],
-    "Language locale": [
-        "Kod lokalizacji j\u0119zyka"
     ],
     "Large file size warning": [
         "Ostrze\u017cenie o du\u017cym rozmiarze pliku"
@@ -958,6 +937,9 @@
     "Launch Classic Notebook": [
         "Uruchom klasyczny notatnik"
     ],
+    "Launcher": [
+        "Launcher"
+    ],
     "License": [
         "Licencja"
     ],
@@ -967,17 +949,11 @@
     "Light": [
         "Jasny"
     ],
-    "Line Height": [
-        "Wysoko\u015b\u0107 linii"
-    ],
     "Line Numbers": [
         "Numery linii"
     ],
-    "Line Width": [
-        "Szeroko\u015b\u0107 linii"
-    ],
-    "Line height": [
-        "Wysoko\u015b\u0107 linii"
+    "Live updating code documentation from the active kernel": [
+        "Aktualizuj dokumentacj\u0119 kodu na bie\u017c\u0105co u\u017cywaj\u0105c aktywnego j\u0105dra"
     ],
     "Ln %1, Col %2": [
         "Ln %1, Kol %2"
@@ -993,9 +969,6 @@
     ],
     "Log Out": [
         "Wyloguj si\u0119"
-    ],
-    "Log entry count limit": [
-        "Limit liczby wpis\u00f3w w dzienniku log\u00f3w"
     ],
     "Log level": [
         "Poziom logowania"
@@ -1014,9 +987,6 @@
     ],
     "Markdown": [
         "Markdown"
-    ],
-    "Markdown Cell Configuration": [
-        "Konfiguracja Kom\u00f3rki Markdown"
     ],
     "Markdown File": [
         "Plik Markdown"
@@ -1042,9 +1012,6 @@
     "Merge Selected Cells": [
         "Scal wybrane kom\u00f3rki"
     ],
-    "Modal Command Palette": [
-        "Paleta Polece\u0144 Modalnych"
-    ],
     "Mode: %1": [
         "Tryb: %1"
     ],
@@ -1056,12 +1023,6 @@
     ],
     "Move Error": [
         "B\u0142\u0105d podczas przenoszenia"
-    ],
-    "NPM CDN": [
-        "NPM CDN"
-    ],
-    "NPM Registry": [
-        "Rejestr NPM"
     ],
     "Name": [
         "Nazwa"
@@ -1077,9 +1038,6 @@
     ],
     "Name: %1\nPath: %2\n": [
         "Nazwa: %1\n\u015acie\u017cka: %2\n"
-    ],
-    "Navigate to current directory": [
-        "Przejd\u017a do bie\u017c\u0105cego katalogu"
     ],
     "Neither theme %1 nor default %2 loaded.": [
         "Motyw %1 ani domy\u015blny motyw %2 nie zosta\u0142 za\u0142adowany."
@@ -1101,6 +1059,9 @@
     ],
     "New Julia File": [
         "Nowy plik Julia"
+    ],
+    "New Launcher": [
+        "Nowy Launcher"
     ],
     "New Markdown File": [
         "Nowy plik Markdown"
@@ -1273,9 +1234,6 @@
     "Other": [
         "Inne"
     ],
-    "Overrides": [
-        "Nadpisania"
-    ],
     "Overwrite": [
         "Nadpisz"
     ],
@@ -1305,9 +1263,6 @@
     ],
     "Paste cells from the clipboard": [
         "Wklej kom\u00f3rki ze schowka"
-    ],
-    "Paste with Ctrl+V": [
-        "Wklej za pomoc\u0105 Ctrl+V"
     ],
     "Path": [
         "\u015acie\u017cka"
@@ -1345,9 +1300,6 @@
     "Raw": [
         "Surowy"
     ],
-    "Raw Cell Configuration": [
-        "Konfiguracja kom\u00f3rki kodu"
-    ],
     "ReStructured Text": [
         "ReStructured Text"
     ],
@@ -1368,9 +1320,6 @@
     ],
     "Reconnect to Kernel": [
         "Po\u0142\u0105cz si\u0119 ponownie z j\u0105drem"
-    ],
-    "Recording timing": [
-        "Harmonogram nagrywania"
     ],
     "Redo": [
         "Pon\u00f3w"
@@ -1411,6 +1360,9 @@
     "Remove All Breakpoints": [
         "Usu\u0144 wszystkie punkty przerwania"
     ],
+    "Remove breakpoints": [
+        "Usu\u0144 punkty przerwania"
+    ],
     "Rename": [
         "Zmie\u0144 nazw\u0119"
     ],
@@ -1425,9 +1377,6 @@
     ],
     "Render All Markdown Cells": [
         "Renderuj wszystkie kom\u00f3rki Markdown"
-    ],
-    "Render Timeout": [
-        "Limit czasu renderowania"
     ],
     "Renderer Failure: %1": [
         "B\u0142\u0105d renderowania: %1"
@@ -1585,6 +1534,9 @@
     "Run the selected cells and advance": [
         "Uruchom wybrane kom\u00f3rki i przejd\u017a dalej"
     ],
+    "Running Sessions section": [
+        "Sekcja aktywnych sesji"
+    ],
     "Running Terminals and Kernels": [
         "Uruchomione terminale i j\u0105dra"
     ],
@@ -1648,23 +1600,8 @@
     "Scope": [
         "Zakres"
     ],
-    "Screen Reader Mode": [
-        "Tryb czytnika ekranu"
-    ],
     "Script": [
         "Skrypt"
-    ],
-    "Scroll behavior": [
-        "Zachowanie przewijania"
-    ],
-    "Scroll past last cell": [
-        "Przewi\u0144 poza ostatni\u0105 kom\u00f3rk\u0119"
-    ],
-    "Scrollback Buffer": [
-        "Bufor przewijania"
-    ],
-    "Scrollbar Theming": [
-        "Motyw paska przewijania"
     ],
     "Search Results": [
         "Wyniki wyszukiwania"
@@ -1708,14 +1645,8 @@
     "Select the cell type": [
         "Wybierz typ kom\u00f3rki"
     ],
-    "Selected Theme": [
-        "Wybrany Motyw"
-    ],
     "Selecting trust will re-render this notebook in a trusted state.": [
         "Wyb\u00f3r zaufania spowoduje ponowne renderowanie tego notatnika w zaufanym stanie."
-    ],
-    "Selection Pointer": [
-        "Wska\u017anik zaznaczenia"
     ],
     "Server Companion": [
         "Towarzysz\u0105ce rozszerzenie serwera"
@@ -1783,9 +1714,6 @@
     "Show in File Browser": [
         "Poka\u017c w przegl\u0105darce plik\u00f3w"
     ],
-    "Show last modified column": [
-        "Poka\u017c kolumn\u0119 z dat\u0105 modyfikacji"
-    ],
     "Shut Down": [
         "Wy\u0142\u0105cz"
     ],
@@ -1806,12 +1734,6 @@
     ],
     "Shut down all kernels?": [
         "Zamkn\u0105\u0107 wszystkie j\u0105dra?"
-    ],
-    "Shut down kernel": [
-        "Wy\u0142\u0105cz j\u0105dro"
-    ],
-    "Shut down on close": [
-        "Zamknij po zamkni\u0119ciu"
     ],
     "Shut down the Console?": [
         "Wy\u0142\u0105czy\u0107 konsol\u0119?"
@@ -1883,14 +1805,8 @@
     "Starting": [
         "Uruchamiam"
     ],
-    "Status Bar Visibility": [
-        "Widoczno\u015b\u0107 Paska Stanu"
-    ],
-    "Style Active Line": [
-        "Styl aktynwego wiersza"
-    ],
-    "Style Selected Text": [
-        "Ustaw styl zaznaczonego tekstu"
+    "Step In": [
+        "Krok do"
     ],
     "Sub-Slide": [
         "Podslajd"
@@ -1949,11 +1865,11 @@
     "Thanks for trying out JupyterLab's extension manager.\nThe JupyterLab development team is excited to have a robust\nthird-party extension community.\nHowever, we cannot vouch for every extension,\nand some may introduce security risks.\nDo you want to continue?": [
         "Dzi\u0119kujemy za wypr\u00f3bowanie mened\u017cera rozszerze\u0144 JupyterLab.\nZesp\u00f3\u0142 ds. rozwoju JupyterLab jest podekscytowany, solidn\u0105\nspo\u0142eczno\u015bci\u0105 rozszerze\u0144 zewn\u0119trznych.\nNie mo\u017cemy jednak r\u0119czy\u0107 za ka\u017cde rozszerzenie,\ni niekt\u00f3re mog\u0105 wprowadzi\u0107 zagro\u017cenia bezpiecze\u0144stwa.\nCzy chcesz kontynuowa\u0107?"
     ],
-    "The application context menu.": [
-        "Menu kontekstowe aplikacji."
-    ],
     "The checkpoint was last updated at: ": [
         "Data ostatniej aktualizacji punktu kontrolnego: "
+    ],
+    "The extension manager is disabled. Please contact your system\nadministrator to verify the listings configuration.": [
+        "Mened\u017cer rozszerze\u0144 jest wy\u0142\u0105czony. Skontaktuj si\u0119 z administratorem systemu, aby zweryfikowa\u0107 konfiguracj\u0119."
     ],
     "The file size is %1 MB. Do you still want to upload it?": [
         "Rozmiar pliku wynosi %1 MB. Czy nadal chcesz go przes\u0142a\u0107?"
@@ -1978,9 +1894,6 @@
     ],
     "Theme": [
         "Motyw"
-    ],
-    "Theme CSS Overrides": [
-        "Nadpisz motyw CSS"
     ],
     "Theme Scrollbars": [
         "Paski przewijania motywu"
@@ -2026,9 +1939,6 @@
     ],
     "Toggle Markdown Text Cells": [
         "Prze\u0142\u0105cz kom\u00f3rki tekstowe Markdown"
-    ],
-    "Treat option as meta key on macOS": [
-        "Traktuj opcj\u0119 jako meta klawisz na macOS"
     ],
     "Tree View": [
         "Widok drzewa"
@@ -2078,6 +1988,9 @@
     "Use Kernel from Preferred Session": [
         "U\u017cyj j\u0105dra z preferowanej sesji"
     ],
+    "Use No Kernel": [
+        "U\u017cyj bez j\u0105dra"
+    ],
     "Use Terminal Theme: %1": [
         "U\u017cyj motywu Terminalu: %1"
     ],
@@ -2086,9 +1999,6 @@
     ],
     "User Preferences": [
         "Ustawienia u\u017cytkownika"
-    ],
-    "Variable filter": [
-        "Filtr zmiennych"
     ],
     "Variables": [
         "Zmienne"
@@ -2144,26 +2054,98 @@
     "alternate sidebar": [
         "alternatywny pasek boczny"
     ],
+    "codemirror": [
+        "codemirror"
+    ],
     "default": [
         "domy\u015blne"
     ],
     "file browser": [
         "przegl\u0105darka plik\u00f3w"
     ],
+    "hash": [
+        "hash"
+    ],
+    "main": [
+        "g\u0142\u00f3wny"
+    ],
     "main sidebar": [
         "g\u0142\u00f3wny pasek boczny"
     ],
-    "schema\u0004Add accessibility elements for use with screen readers.": [
-        "Dodaj elementy u\u0142atwie\u0144 dost\u0119pu do u\u017cytku z czytnikami ekran\u00f3w."
+    "menu\u0004Console Run Keystroke": [
+        "Klawisz uruchamiania konsoli"
+    ],
+    "menu\u0004Edit": [
+        "Edycja"
+    ],
+    "menu\u0004Export Notebook As\u2026": [
+        "Eksportuj notatnik jako\u2026"
+    ],
+    "menu\u0004File": [
+        "Plik"
+    ],
+    "menu\u0004Help": [
+        "Pomoc"
+    ],
+    "menu\u0004JupyterLab Theme": [
+        "Motyw JupyterLab"
+    ],
+    "menu\u0004Kernel": [
+        "J\u0105dro"
+    ],
+    "menu\u0004Language": [
+        "J\u0119zyk"
+    ],
+    "menu\u0004New": [
+        "Nowy"
+    ],
+    "menu\u0004Open With": [
+        "Otw\u00f3rz za pomoc\u0105"
+    ],
+    "menu\u0004Run": [
+        "Uruchom"
+    ],
+    "menu\u0004Settings": [
+        "Ustawienia"
+    ],
+    "menu\u0004Tabs": [
+        "Karty"
+    ],
+    "menu\u0004Terminal Theme": [
+        "Motyw Terminalu"
+    ],
+    "menu\u0004Text Editor Indentation": [
+        "Wci\u0119cie edytora tekstu"
+    ],
+    "menu\u0004Text Editor Key Map": [
+        "Skr\u00f3ty klawiszowe edytora tekstu"
+    ],
+    "menu\u0004Text Editor Syntax Highlighting": [
+        "Pod\u015bwietlanie sk\u0142adni edytora tekstu"
+    ],
+    "menu\u0004Text Editor Theme": [
+        "Motyw Edytora Tekstu"
+    ],
+    "menu\u0004View": [
+        "Widok"
+    ],
+    "notebook actions": [
+        "akcje notatnika"
+    ],
+    "notebook content": [
+        "zawarto\u015b\u0107 notatnika"
+    ],
+    "pipe": [
+        "znak potoku (pionowa kreska)"
+    ],
+    "schema\u0004Application Commands": [
+        "Polecenia aplikacji"
     ],
     "schema\u0004Application Context Menu": [
         "Menu kontekstowe aplikacji"
     ],
-    "schema\u0004Application-level visual styling theme": [
-        "Wizualny motyw stylu aplikacji"
-    ],
-    "schema\u0004CSS file defining the corresponding\n.cm-s-[name] styles is loaded": [
-        "Plik CSS definiuj\u0105cy odpowiadaj\u0105ce\n.cm-s-[name] style jest za\u0142adowany"
+    "schema\u0004Application commands settings.": [
+        "Ustawienia polece\u0144 aplikacji."
     ],
     "schema\u0004Code Console": [
         "Konsola kodu"
@@ -2179,9 +2161,6 @@
     ],
     "schema\u0004Command palette settings.": [
         "Ustawienia palety polece\u0144."
-    ],
-    "schema\u0004Configures the keymap to use": [
-        "Konfiguruje skr\u00f3ty klawiszowe do u\u017cycia"
     ],
     "schema\u0004Console Completer": [
         "Autouzupe\u0142nianie konsoli"
@@ -2204,6 +2183,12 @@
     "schema\u0004Document Manager": [
         "Mened\u017cer Dokument\u00f3w"
     ],
+    "schema\u0004Document Manager Download": [
+        "Pobierz mened\u017cera dokument\u00f3w"
+    ],
+    "schema\u0004Document Manager Download settings.": [
+        "Ustawienia pobierania menad\u017cera dokument\u00f3w."
+    ],
     "schema\u0004Document Manager settings.": [
         "Ustawienia mened\u017cera dokument\u00f3w."
     ],
@@ -2213,15 +2198,6 @@
     "schema\u0004Document search plugin.": [
         "Wtyczka do wyszukiwania w dokumencie."
     ],
-    "schema\u0004Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available": [
-        "W\u0142\u0105cz wklejanie przy u\u017cyciu Ctrl+V. Mo\u017cna to wy\u0142\u0105czy\u0107, aby u\u017cywa\u0107 Ctrl+V w edytorze vi. To ustawienie nie ma wp\u0142ywu na macOS, gdzie Cmd+V jest dost\u0119pne"
-    ],
-    "schema\u0004Enable/disable styling of the application scrollbars": [
-        "W\u0142\u0105cz/Wy\u0142\u0105cz styl pask\u00f3w przewijania aplikacji"
-    ],
-    "schema\u0004Enables extension manager (requires Node.js/npm).\nWARNING: installing untrusted extensions may be unsafe.": [
-        "W\u0142\u0105cza mened\u017cera rozszerze\u0144 (wymaga Node.js/npm).\nOSTRZE\u017bENIE: instalowanie niezaufanych rozszerze\u0144 mo\u017ce by\u0107 niebezpieczne."
-    ],
     "schema\u0004Extension Manager": [
         "Mened\u017cer Rozszerze\u0144"
     ],
@@ -2230,6 +2206,24 @@
     ],
     "schema\u0004File Browser": [
         "Przegl\u0105darka plik\u00f3w"
+    ],
+    "schema\u0004File Browser Download": [
+        "Pobierz przegl\u0105dark\u0119 plik\u00f3w"
+    ],
+    "schema\u0004File Browser Download settings.": [
+        "Ustawienia pobierania przegl\u0105darki plik\u00f3w."
+    ],
+    "schema\u0004File Browser Open Browser Tab": [
+        "Przegl\u0105darka plik\u00f3w: otw\u00f3rz kart\u0119 przegl\u0105darki"
+    ],
+    "schema\u0004File Browser Open Browser Tab settings.": [
+        "Ustawienia przegl\u0105darki plik\u00f3w: otw\u00f3rz kart\u0119 przegl\u0105darki."
+    ],
+    "schema\u0004File Browser Open With": [
+        "Przegl\u0105darka plik\u00f3w: otw\u00f3rz za pomoc\u0105"
+    ],
+    "schema\u0004File Browser Open With settings.": [
+        "Ustawienia przegl\u0105darki plik\u00f3w: otw\u00f3rz za pomoc\u0105."
     ],
     "schema\u0004File Browser settings.": [
         "Ustawienia przegl\u0105darki plik\u00f3w."
@@ -2261,6 +2255,9 @@
     "schema\u0004Inspector": [
         "Inspektor"
     ],
+    "schema\u0004Inspector Notebook": [
+        "Inspektor notatnika"
+    ],
     "schema\u0004Inspector settings.": [
         "Ustawienia inspektora."
     ],
@@ -2285,11 +2282,11 @@
     "schema\u0004Language settings.": [
         "Ustawienia j\u0119zyka."
     ],
+    "schema\u0004Launcher": [
+        "Launcher"
+    ],
     "schema\u0004Launcher settings.": [
         "Ustawienia Launchera."
-    ],
-    "schema\u0004Length of save interval in seconds": [
-        "D\u0142ugo\u015b\u0107 przerwy mi\u0119dzy zapisami w sekundach"
     ],
     "schema\u0004Log Console": [
         "Konsola log\u00f3w"
@@ -2309,17 +2306,17 @@
     "schema\u0004Markdown viewer settings.": [
         "Ustawienia przegl\u0105darki Markdown."
     ],
-    "schema\u0004Maximum number of log entries to store in memory": [
-        "Maksymalna liczba wpis\u00f3w dziennika log\u00f3w do przechowywania w pami\u0119ci"
-    ],
-    "schema\u0004Note: To disable a context menu item,\ncopy it to User Preferences and add the\n\"disabled\" key. The following example will disable Download item on files:\n{\n  \"contextMenu\": [\n    {\n      \"command\": \"filebrowser:download\",\n      \"selector\": \".jp-DirListing-item[data-isdir=\\\"false\\\"]\",\n      \"disabled\": true\n    }\n  ]\n}\n\nContext menu description:": [
-        "Uwaga: Aby wy\u0142\u0105czy\u0107 element menu kontekstowego,\nskopiuj go do Preferencji U\u017cytkownika i dodaj klucz\n\"disabled\". Poni\u017cszy przyk\u0142ad wy\u0142\u0105czy element \"Pobierz\" w menu plik\u00f3w:\n{\n  \"contextMenu\": [\n    {\n      \"command\": \"filebrowser:download\",\n      \"selector\": \". p-DirListing-item[data-isdir=\\\"false\\\"]\",\n      \"disabled\": true\n    }\n  ]\n}\n\nOpis menu kontekstowego:"
-    ],
     "schema\u0004Notebook": [
         "Notatnik"
     ],
     "schema\u0004Notebook Completer": [
         "Autouzupe\u0142nianie notatnika"
+    ],
+    "schema\u0004Notebook Export": [
+        "Eksport notatnika"
+    ],
+    "schema\u0004Notebook Export settings.": [
+        "Ustawienia eksportu notatnika."
     ],
     "schema\u0004Notebook Tooltips": [
         "Tooltipy notebook\u00f3w"
@@ -2333,38 +2330,17 @@
     "schema\u0004Notebook tooltip settings.": [
         "Ustawienia tooltipu notebooka."
     ],
-    "schema\u0004Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word": [
-        "Klawisz opcji dla macOS mo\u017ce by\u0107 u\u017cyty jako meta klawisz. Umo\u017cliwia to u\u017cycie skr\u00f3t\u00f3w takich jak opcja + f, aby przesun\u0105\u0107 kursor do przodu o jedno s\u0142owo"
-    ],
-    "schema\u0004Override theme CSS variables by setting key-value pairs here": [
-        "Tutaj zast\u0105p zmienne motywu CSS przez ustawienie par klucz-warto\u015b\u0107"
-    ],
-    "schema\u0004Overrides for the default viewers for file types": [
-        "Nadpisywania domy\u015blnych przegl\u0105darek dla typ\u00f3w plik\u00f3w"
-    ],
-    "schema\u0004Overrides for where to show sidebar items\ne.g., {\"tab-manager\": \"right\"}": [
-        "Nadpisuje gdzie pokazywa\u0107 elementy paska bocznego\nnp. {\"tab-manager\": \"right\"}"
-    ],
     "schema\u0004Print": [
         "Drukuj"
     ],
     "schema\u0004Print settings.": [
         "Ustawienia drukowania."
     ],
-    "schema\u0004Set the interface display language. Examples: 'es_CO', 'fr'.": [
-        "Ustaw j\u0119zyk wy\u015bwietlania interfejsu. Przyk\u0142ady: 'es_CO', 'fr'."
-    ],
     "schema\u0004Setting Editor": [
         "Edytor Ustawie\u0144"
     ],
     "schema\u0004Setting editor settings.": [
         "Ustawienia edytora ustawie\u0144."
-    ],
-    "schema\u0004Should timing data be recorded in cell metadata": [
-        "Czy dane dotycz\u0105ce czasu powinny by\u0107 rejestrowane w metadanych kom\u00f3rki"
-    ],
-    "schema\u0004Shut down the session when closing the terminal.": [
-        "Zamknij sesj\u0119 przy zamykaniu terminalu."
     ],
     "schema\u0004Sidebar": [
         "Pasek boczny"
@@ -2384,6 +2360,9 @@
     "schema\u0004Table of contents settings.": [
         "Ustawienia spisu tre\u015bci."
     ],
+    "schema\u0004Terminal": [
+        "Terminal"
+    ],
     "schema\u0004Terminal settings.": [
         "Ustawienia terminalu."
     ],
@@ -2396,116 +2375,482 @@
     "schema\u0004Text editor settings.": [
         "Ustawienia edytora tekstu."
     ],
-    "schema\u0004The URI of the NPM registry to use for searching for jupyterlab extensions": [
-        "URI rejestru NPM do wyszukiwania rozszerze\u0144 JupyterLab"
-    ],
-    "schema\u0004The configuration for all code cells.": [
-        "Konfiguracja dla wszystkich kom\u00f3rek kodu."
-    ],
-    "schema\u0004The configuration for all markdown cells.": [
-        "Konfiguracja wszystkich kom\u00f3rek markdown."
-    ],
-    "schema\u0004The configuration for all raw cells.": [
-        "Konfiguracja dla wszystkich kom\u00f3rek kodu."
-    ],
-    "schema\u0004The configuration for all text editors.\nIf `fontFamily`, `fontSize` or `lineHeight` are `null`,\nvalues from current theme are used.": [
-        "Konfiguracja dla wszystkich edytor\u00f3w tekstu.\nJe\u015bli `fontFamily`, `fontSize` lub `lineHeight` maj\u0105 warto\u015b\u0107 `null`,\nzostan\u0105 u\u017cyte warto\u015bci z bie\u017c\u0105cego motywu."
-    ],
-    "schema\u0004The default type (markdown, code, or raw) for new cells": [
-        "Domy\u015blny typ (markdown, code, lub raw) dla nowych kom\u00f3rek"
-    ],
-    "schema\u0004The font family used to render markdown.\nIf `null`, value from current theme is used.": [
-        "Rodzina czcionek u\u017cywana do renderowania markdown.\nJe\u015bli `null`, u\u017cywana jest warto\u015b\u0107 z bie\u017c\u0105cego motywu."
-    ],
-    "schema\u0004The font family used to render text.": [
-        "Rodzina czcionek u\u017cyta do renderowania tekstu."
-    ],
-    "schema\u0004The font size used to render text.": [
-        "Rozmiar czcionki u\u017cyty do renderowania tekstu."
-    ],
-    "schema\u0004The line height used to render markdown.\nIf `null`, value from current theme is used.": [
-        "Wysoko\u015b\u0107 linii u\u017cywana do renderowania markdown.\nJe\u015bli `null`, u\u017cywana jest warto\u015b\u0107 z bie\u017c\u0105cego motywu."
-    ],
-    "schema\u0004The line height used to render text.": [
-        "Wysoko\u015b\u0107 linii u\u017cywanej do renderowania tekstu."
-    ],
-    "schema\u0004The list of keyboard shortcuts.": [
-        "Lista skr\u00f3t\u00f3w klawiaturowych."
-    ],
-    "schema\u0004The render timeout in milliseconds.": [
-        "Limit czasu renderowania w milisekundach."
-    ],
-    "schema\u0004The size in pixel of the font used to render markdown.\nIf `null`, value from current theme is used.": [
-        "Rozmiar czcionki u\u017cywanej do renderowania markdown w pikselach.\nJe\u015bli `null`, u\u017cywana jest warto\u015b\u0107 z bie\u017c\u0105cego motywu."
-    ],
-    "schema\u0004The text line width expressed in CSS ch units.\nIf `null`, lines fit the viewport width.": [
-        "Szeroko\u015b\u0107 linii tekstu wyra\u017cona w jednostkach \"ch\" CSS.\nJe\u015bli `null`, linie dopasowuj\u0105 si\u0119 do szeroko\u015bci widoku."
-    ],
-    "schema\u0004The theme for the terminal.": [
-        "Motyw terminalu."
-    ],
     "schema\u0004Theme": [
         "Motyw"
     ],
     "schema\u0004Theme manager settings.": [
         "Ustawienia mened\u017cera motyw\u00f3w."
     ],
-    "schema\u0004Value is boolean": [
-        "Warto\u015b\u0107 jest warto\u015bci\u0105 logiczn\u0105"
-    ],
-    "schema\u0004Value is boolean or string, e.g. 'pointer'": [
-        "Warto\u015b\u0107 jest typem logicznym lub stringiem, np. 'wska\u017anik'"
-    ],
-    "schema\u0004Value is boolean, or { nonEmpty: boolean }": [
-        "Warto\u015b\u0107 jest warto\u015bci\u0105 logiczn\u0105, lub { nonEmpty: boolean }"
-    ],
-    "schema\u0004Variables to filter out in the tree and table viewers": [
-        "Zmienne do filtrowania drzewa i przegl\u0105darki tabeli"
-    ],
-    "schema\u0004When enabled, which is the default, doing copy or cut when there is no selection will copy or cut the whole lines that have cursors on them.": [
-        "Gdy w\u0142\u0105czone (domy\u015blnie) skopiowanie lub wyci\u0119cie gdy nie ma zaznaczenia kopiuje lub wycina ca\u0142e wiersze, na kt\u00f3rych spoczywaj\u0105 kursory."
-    ],
-    "schema\u0004Whether the command palette should be modal or in the left panel.": [
-        "Czy paleta polece\u0144 powinna by\u0107 modalna czy w lewym panelu."
-    ],
-    "schema\u0004Whether the console defaults to showing all\nkernel activity or just kernel activity originating from itself.": [
-        "Czy konsola domy\u015blnie wy\u015bwietla wszystkie\nczynno\u015bci j\u0105dra czy tylko te pochodz\u0105ce od siebie."
-    ],
-    "schema\u0004Whether the console interaction mimics the notebook\nor terminal keyboard shortcuts.": [
-        "Czy interakcja konsoli na\u015bladuje notebook\nczy skr\u00f3ty klawiaturowe terminalu."
-    ],
-    "schema\u0004Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous": [
-        "Czy u\u017cytkownik rozumie, \u017ce rozszerzenia zarz\u0105dzane przez ten interfejs uruchamiaj\u0105 dowolny kod, kt\u00f3ry mo\u017ce by\u0107 niebezpieczny"
-    ],
-    "schema\u0004Whether to apply fuzzy algorithm while filtering on file names": [
-        "Czy stosowa\u0107 rozmyty algorytm podczas filtrowania nazw plik\u00f3w"
-    ],
-    "schema\u0004Whether to automatically navigate to a document's current directory": [
-        "Czy automatycznie przej\u015b\u0107 do bie\u017c\u0105cego katalogu dokumentu"
-    ],
-    "schema\u0004Whether to autosave documents": [
-        "Automatycznie zapisuj dokumenty"
-    ],
-    "schema\u0004Whether to be able to scroll so the last cell is at the top of the panel": [
-        "Czy umo\u017cliwi\u0107 przewijanie, tak aby ostatnia kom\u00f3rka znajdowa\u0142a si\u0119 na g\u00f3rze panelu"
-    ],
-    "schema\u0004Whether to scroll past the end of text document": [
-        "Czy przewija\u0107 poza koniec dokumentu tekstowego"
-    ],
-    "schema\u0004Whether to show status bar or not": [
-        "Czy pokaza\u0107 pasek stanu, czy nie"
-    ],
-    "schema\u0004Whether to show the last modified column": [
-        "Czy pokaza\u0107 kolumn\u0119 z ostatni\u0105 dat\u0105 modyfikacji"
-    ],
-    "schema\u0004Whether to shut down or not the kernel when closing a notebook.": [
-        "Czy wy\u0142\u0105czy\u0107 j\u0105dro zamykaj\u0105c notebook."
-    ],
     "schema\u0004Workspaces": [
         "Obszary robocze"
     ],
     "schema\u0004Workspaces settings.": [
         "Ustawienia obszar\u00f3w roboczych."
+    ],
+    "settings\u0004Add a prefix to localized strings.": [
+        "Dodaj prefiks do t\u0142umaczonych ci\u0105g\u00f3w tekstowych."
+    ],
+    "settings\u0004Add accessibility elements for use with screen readers.": [
+        "Dodaj elementy u\u0142atwie\u0144 dost\u0119pu do u\u017cytku z czytnikami ekran\u00f3w."
+    ],
+    "settings\u0004Application Context Menu": [
+        "Menu kontekstowe aplikacji"
+    ],
+    "settings\u0004Application-level visual styling theme": [
+        "Wizualny motyw stylu aplikacji"
+    ],
+    "settings\u0004Autosave Documents": [
+        "Autozapis Dokument\u00f3w"
+    ],
+    "settings\u0004Autosave Interval": [
+        "Cz\u0119stotliwo\u015b\u0107 autozapisu"
+    ],
+    "settings\u0004CSS file defining the corresponding\n.cm-s-[name] styles is loaded": [
+        "Plik CSS definiuj\u0105cy odpowiadaj\u0105ce\n.cm-s-[name] style jest za\u0142adowany"
+    ],
+    "settings\u0004Code Cell Configuration": [
+        "Konfiguracja kom\u00f3rki kodu"
+    ],
+    "settings\u0004Code Console Settings": [
+        "Ustawienia konsoli kodu"
+    ],
+    "settings\u0004CodeMirror": [
+        "CodeMirror"
+    ],
+    "settings\u0004Command arguments": [
+        "Argumenty polecenia"
+    ],
+    "settings\u0004Command id": [
+        "ID polecenia"
+    ],
+    "settings\u0004Configures the keymap to use": [
+        "Konfiguruje skr\u00f3ty klawiszowe do u\u017cycia"
+    ],
+    "settings\u0004Ctrl-C": [
+        "Ctrl+C"
+    ],
+    "settings\u0004Cursor blinking rate": [
+        "Cz\u0119stotliwo\u015b\u0107 migania kursora"
+    ],
+    "settings\u0004Default Viewers": [
+        "Domy\u015blne przegl\u0105darki"
+    ],
+    "settings\u0004Default cell type": [
+        "Domy\u015blny typ kom\u00f3rki"
+    ],
+    "settings\u0004Define the number of cells to render directly when virtual notebook intersection observer is available": [
+        "Zdefiniuj liczb\u0119 kom\u00f3rek do renderowania bezpo\u015brednio, gdy dost\u0119pny jest obserwator intersekcji dla wirtualnego notatnika"
+    ],
+    "settings\u0004Defines if the placeholder cells should be rendered when the browser is idle": [
+        "Okre\u015bla, czy kom\u00f3rki zast\u0119pcze powinny by\u0107 renderowane kiedy przegl\u0105darka jest bezczynna"
+    ],
+    "settings\u0004Defines the maximum number of output cells to to to be rendered in the output area for cells with many outputs. The output area will have a head and a tail, and the outputs between will be trimmed and not displayed unless the user clicks on the information message.": [
+        "Okre\u015bla maksymaln\u0105 liczb\u0119 kom\u00f3rek wyj\u015bciowych, kt\u00f3re maj\u0105 by\u0107 renderowane w obszarze wyj\u015bciowym dla kom\u00f3rek o wielu wyj\u015bciach. Obszar wyj\u015bciowy b\u0119dzie mia\u0142 g\u0142ow\u0119 i ogon, a wyniki pomi\u0119dzy nimi zostan\u0105 przyci\u0119te i nie b\u0119d\u0105 wy\u015bwietlane, chyba \u017ce u\u017cytkownik kliknie na komunikat informacyjny."
+    ],
+    "settings\u0004Defines the observed bottom margin for the virtual notebook, set a positive number of pixels to render cells below the visible view": [
+        "Okre\u015bla obserwowany dolny margines dla wirtualnego notatnika, ustaw dodatni\u0105 liczb\u0119 pikseli do renderowania kom\u00f3rek poni\u017cej widoku widocznego"
+    ],
+    "settings\u0004Defines the observed top margin for the virtual notebook, set a positive number of pixels to render cells above the visible view": [
+        "Okre\u015bla obserwowany g\u00f3rny margines dla wirtualnego notatnika, ustaw dodatni\u0105 liczb\u0119 pikseli do renderowania kom\u00f3rek powy\u017cej widoku widocznego"
+    ],
+    "settings\u0004Disclaimed Status": [
+        "Status potwierdzenia zapoznania si\u0119 z wyrzeczeniem odpowiedzialno\u015bci"
+    ],
+    "settings\u0004Display localized strings prefix": [
+        "Wy\u015bwietlaj prefiks t\u0142umacze\u0144 tekstowych"
+    ],
+    "settings\u0004Display the `stringsPrefix` on localized strings.": [
+        "Wy\u015bwietlaj `stringsPrefix` na zlokalizowanych tekstach."
+    ],
+    "settings\u0004Document Manager": [
+        "Mened\u017cer Dokument\u00f3w"
+    ],
+    "settings\u0004Editor": [
+        "Edytor"
+    ],
+    "settings\u0004Editor Configuration": [
+        "Konfiguracja edytora"
+    ],
+    "settings\u0004Enable CDN": [
+        "Aktywuj CDN"
+    ],
+    "settings\u0004Enable h1 numbering": [
+        "W\u0142\u0105cz numeracj\u0119 h1"
+    ],
+    "settings\u0004Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available": [
+        "W\u0142\u0105cz wklejanie przy u\u017cyciu Ctrl+V. Mo\u017cna to wy\u0142\u0105czy\u0107, aby u\u017cywa\u0107 Ctrl+V w edytorze vi. To ustawienie nie ma wp\u0142ywu na macOS, gdzie Cmd+V jest dost\u0119pne"
+    ],
+    "settings\u0004Enable/disable styling of the application scrollbars": [
+        "W\u0142\u0105cz/Wy\u0142\u0105cz styl pask\u00f3w przewijania aplikacji"
+    ],
+    "settings\u0004Enabled Status": [
+        "Status aktywowania"
+    ],
+    "settings\u0004Enables extension manager (requires Node.js/npm).\nWARNING: installing untrusted extensions may be unsafe.": [
+        "W\u0142\u0105cza mened\u017cera rozszerze\u0144 (wymaga Node.js/npm).\nOSTRZE\u017bENIE: instalowanie niezaufanych rozszerze\u0144 mo\u017ce by\u0107 niebezpieczne."
+    ],
+    "settings\u0004Enables using the CDN to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry": [
+        "W\u0142\u0105cza u\u017cycie CDN do pobrania pe\u0142nych danych pakietu. W przeciwnym razie zostanie u\u017cyty skonfigurowany rejestr NPM. Ze wzgl\u0119du na brak obs\u0142ugi CORS przez rejestr NPM, zalecamy wy\u0142\u0105czenie tylko wtedy, gdy dostarczany jest rejestr niestandardowy"
+    ],
+    "settings\u0004Extension Manager": [
+        "Mened\u017cer Rozszerze\u0144"
+    ],
+    "settings\u0004File Browser": [
+        "Przegl\u0105darka plik\u00f3w"
+    ],
+    "settings\u0004Filter on file name with a fuzzy search": [
+        "Filtruj wed\u0142ug nazwy pliku za pomoc\u0105 wyszukiwania rozmytego"
+    ],
+    "settings\u0004Font Family": [
+        "Czcionka"
+    ],
+    "settings\u0004Font Size": [
+        "Rozmiar czcionki"
+    ],
+    "settings\u0004Font family": [
+        "Rodzina czcionek"
+    ],
+    "settings\u0004Font size": [
+        "Rozmiar czcionki"
+    ],
+    "settings\u0004Half-period in milliseconds used for cursor blinking. The default blink rate is 530ms. By setting this to zero, blinking can be disabled. A negative value hides the cursor entirely.": [
+        "P\u00f3\u0142okres u\u017cywany do migania kursora, w milisekundach. Domy\u015blna pr\u0119dko\u015b\u0107 migania wynosi 530ms. Ustawiaj\u0105c to na zero, miganie mo\u017ce by\u0107 wy\u0142\u0105czone. Warto\u015b\u0107 ujemna ukrywa kursor ca\u0142kowicie."
+    ],
+    "settings\u0004If set to true, when a header is collapsed in the table of contents the corresponding section in the notebook is collapsed as well and vice versa.": [
+        "Je\u015bli ustawione na true, gdy nag\u0142\u00f3wek jest zwini\u0119ty w spisie tre\u015bci, odpowiednia sekcja w notatniku r\u00f3wnie\u017c zostaje zwini\u0119ta i odwrotnie."
+    ],
+    "settings\u0004Include cell output in headings": [
+        "Uwzgl\u0119dnij rezultaty wywo\u0142ania kom\u00f3rek w nag\u0142\u00f3wkach"
+    ],
+    "settings\u0004Interaction mode": [
+        "Tryb interakcji"
+    ],
+    "settings\u0004Item type": [
+        "Typ elementu"
+    ],
+    "settings\u0004Key Map": [
+        "Skr\u00f3ty klawiszowe"
+    ],
+    "settings\u0004Keyboard Shortcuts": [
+        "Skr\u00f3ty klawiszowe"
+    ],
+    "settings\u0004Language": [
+        "J\u0119zyk"
+    ],
+    "settings\u0004Language locale": [
+        "Kod lokalizacji j\u0119zyka"
+    ],
+    "settings\u0004Length of save interval in seconds": [
+        "D\u0142ugo\u015b\u0107 przerwy mi\u0119dzy zapisami w sekundach"
+    ],
+    "settings\u0004Line Height": [
+        "Wysoko\u015b\u0107 linii"
+    ],
+    "settings\u0004Line Width": [
+        "Szeroko\u015b\u0107 linii"
+    ],
+    "settings\u0004Line height": [
+        "Wysoko\u015b\u0107 linii"
+    ],
+    "settings\u0004Localized strings prefix": [
+        "Prefiks t\u0142umacze\u0144 tekstowych"
+    ],
+    "settings\u0004Log Console": [
+        "Konsola log\u00f3w"
+    ],
+    "settings\u0004Log entry count limit": [
+        "Limit liczby wpis\u00f3w w dzienniku log\u00f3w"
+    ],
+    "settings\u0004Markdown Cell Configuration": [
+        "Konfiguracja Kom\u00f3rki Markdown"
+    ],
+    "settings\u0004Markdown Viewer": [
+        "Podgl\u0105d Markdown"
+    ],
+    "settings\u0004Maximum number of log entries to store in memory": [
+        "Maksymalna liczba wpis\u00f3w dziennika log\u00f3w do przechowywania w pami\u0119ci"
+    ],
+    "settings\u0004Menu label": [
+        "Etykieta menu"
+    ],
+    "settings\u0004Mnemonic index for the label": [
+        "Mnemoniczny indeks dla etykiety"
+    ],
+    "settings\u0004Modal Command Palette": [
+        "Paleta Polece\u0144 Modalnych"
+    ],
+    "settings\u0004NPM CDN": [
+        "NPM CDN"
+    ],
+    "settings\u0004NPM Registry": [
+        "Rejestr NPM"
+    ],
+    "settings\u0004Navigate to current directory": [
+        "Przejd\u017a do bie\u017c\u0105cego katalogu"
+    ],
+    "settings\u0004Note: To disable a context menu item,\ncopy it to User Preferences and add the\n\"disabled\" key. The following example will disable Download item on files:\n{\n  \"contextMenu\": [\n    {\n      \"command\": \"filebrowser:download\",\n      \"selector\": \".jp-DirListing-item[data-isdir=\\\"false\\\"]\",\n      \"disabled\": true\n    }\n  ]\n}\n\nContext menu description:": [
+        "Uwaga: Aby wy\u0142\u0105czy\u0107 element menu kontekstowego,\nskopiuj go do Preferencji U\u017cytkownika i dodaj klucz\n\"disabled\". Poni\u017cszy przyk\u0142ad wy\u0142\u0105czy element \"Pobierz\" w menu plik\u00f3w:\n{\n  \"contextMenu\": [\n    {\n      \"command\": \"filebrowser:download\",\n      \"selector\": \". p-DirListing-item[data-isdir=\\\"false\\\"]\",\n      \"disabled\": true\n    }\n  ]\n}\n\nOpis menu kontekstowego:"
+    ],
+    "settings\u0004Note: To disable a menu or a menu item,\ncopy it to User Preferences and add the\n\"disabled\" key. The following example will disable\nthe \"Tabs\" menu and \"Restart Kernel and Run up to Selected Cell\"\nitem:\n{\n  \"menus\": [\n    {\n      \"id\": \"jp-mainmenu-tabs\",\n      \"disabled\": true\n    },\n    {\n      \"id\": \"jp-mainmenu-kernel\",\n      \"items\": [\n        {\n          \"command\": \"notebook:restart-and-run-to-selected\",\n          \"disabled\": true\n        }\n      ]\n    }\n  ]\n}\n\nMenu description:": [
+        "Uwaga: Aby wy\u0142\u0105czy\u0107 menu lub pozycj\u0119 menu,\nskopiuj je do Preferencji U\u017cytkownika i dodaj klawisz\n\"disabled\". Poni\u017cszy przyk\u0142ad wy\u0142\u0105czy\nmenu \"Tabs\" i \"Zrestartuj j\u0105dro i uruchom do wybranej kom\u00f3rki\"\nelement:\n{\n  \"menu\": [\n    {\n      \"id\": \"jp-mainmenu-tabs\",\n      \"disabled\": true\n    },\n    {\n      \"id\": \"jp-mainmenu-kernel\",\n      \"items\": [\n        {\n          \"command\": \"notebook:restart-and-run-to-selected\",\n          \"disabled\": true\n        }\n      ]\n    }\n  ]\n}\n\nOpis menu:"
+    ],
+    "settings\u0004Notebook": [
+        "Notatnik"
+    ],
+    "settings\u0004Number of cells to render directly": [
+        "Liczba kom\u00f3rek do renderowania bezpo\u015brednio"
+    ],
+    "settings\u0004Observed bottom margin": [
+        "Obserwowany dolny margines"
+    ],
+    "settings\u0004Observed top margin": [
+        "Obserwowany g\u00f3rny margines"
+    ],
+    "settings\u0004Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word": [
+        "Klawisz Option dla macOS mo\u017ce by\u0107 u\u017cyty jako meta klawisz. Umo\u017cliwia to u\u017cycie skr\u00f3t\u00f3w takich jak Option + f, aby przesun\u0105\u0107 kursor do przodu o jedno s\u0142owo"
+    ],
+    "settings\u0004Override theme CSS variables by setting key-value pairs here": [
+        "Tutaj zast\u0105p zmienne motywu CSS przez ustawienie par klucz-warto\u015b\u0107"
+    ],
+    "settings\u0004Overrides": [
+        "Nadpisania"
+    ],
+    "settings\u0004Overrides for the default viewers for file types": [
+        "Nadpisywania domy\u015blnych przegl\u0105darek dla typ\u00f3w plik\u00f3w"
+    ],
+    "settings\u0004Overrides for where to show sidebar items\ne.g., {\"tab-manager\": \"right\"}": [
+        "Nadpisuje gdzie pokazywa\u0107 elementy paska bocznego\nnp. {\"tab-manager\": \"right\"}"
+    ],
+    "settings\u0004Paste with Ctrl+V": [
+        "Wklej za pomoc\u0105 Ctrl+V"
+    ],
+    "settings\u0004Raw Cell Configuration": [
+        "Konfiguracja kom\u00f3rki kodu"
+    ],
+    "settings\u0004Recording timing": [
+        "Harmonogram nagrywania"
+    ],
+    "settings\u0004Render Timeout": [
+        "Limit czasu renderowania"
+    ],
+    "settings\u0004Render cell on browser idle time": [
+        "Renderowanie kom\u00f3rki w czasie bezczynno\u015bci przegl\u0105darki"
+    ],
+    "settings\u0004Screen Reader Mode": [
+        "Tryb czytnika ekranu"
+    ],
+    "settings\u0004Scroll behavior": [
+        "Zachowanie przewijania"
+    ],
+    "settings\u0004Scroll past last cell": [
+        "Przewi\u0144 poza ostatni\u0105 kom\u00f3rk\u0119"
+    ],
+    "settings\u0004Scrollback Buffer": [
+        "Bufor przewijania"
+    ],
+    "settings\u0004Scrollbar Theming": [
+        "Motyw paska przewijania"
+    ],
+    "settings\u0004Selected Theme": [
+        "Wybrany Motyw"
+    ],
+    "settings\u0004Selection Pointer": [
+        "Wska\u017anik zaznaczenia"
+    ],
+    "settings\u0004Set the interface display language. Examples: 'es_CO', 'fr'.": [
+        "Ustaw j\u0119zyk wy\u015bwietlania interfejsu. Przyk\u0142ady: 'es_CO', 'fr'."
+    ],
+    "settings\u0004Should timing data be recorded in cell metadata": [
+        "Czy dane dotycz\u0105ce czasu powinny by\u0107 rejestrowane w metadanych kom\u00f3rki"
+    ],
+    "settings\u0004Show All Kernel Activity": [
+        "Poka\u017c ca\u0142\u0105 aktywno\u015b\u0107 j\u0105dra"
+    ],
+    "settings\u0004Show last modified column": [
+        "Poka\u017c kolumn\u0119 z dat\u0105 modyfikacji"
+    ],
+    "settings\u0004Shut down kernel": [
+        "Wy\u0142\u0105cz j\u0105dro"
+    ],
+    "settings\u0004Shut down on close": [
+        "Zamknij po zamkni\u0119ciu"
+    ],
+    "settings\u0004Shut down the session when closing the terminal.": [
+        "Zamknij sesj\u0119 przy zamykaniu terminalu."
+    ],
+    "settings\u0004Sidebar": [
+        "Pasek boczny"
+    ],
+    "settings\u0004Status Bar": [
+        "Pasek Stanu"
+    ],
+    "settings\u0004Status Bar Item flash": [
+        "B\u0142yskanie elementu paska stanu"
+    ],
+    "settings\u0004Status Bar Visibility": [
+        "Widoczno\u015b\u0107 Paska Stanu"
+    ],
+    "settings\u0004Style Active Line": [
+        "Styl aktywnego wiersza"
+    ],
+    "settings\u0004Style Selected Text": [
+        "Ustaw styl zaznaczonego tekstu"
+    ],
+    "settings\u0004Synchronize collapse state": [
+        "Synchronizuj stan zwijania"
+    ],
+    "settings\u0004Table of Contents": [
+        "Spis Tre\u015bci"
+    ],
+    "settings\u0004Terminal": [
+        "Terminal"
+    ],
+    "settings\u0004The CSS selector for the context menu item.": [
+        "Selektor CSS dla elementu menu kontekstowego."
+    ],
+    "settings\u0004The URI of the CDN to use for fetching full package data": [
+        "URI CDN do pobierania pe\u0142nych danych pakietu"
+    ],
+    "settings\u0004The URI of the NPM registry to use for searching for jupyterlab extensions": [
+        "URI rejestru NPM do wyszukiwania rozszerze\u0144 JupyterLab"
+    ],
+    "settings\u0004The amount of scrollback beyond initial viewport": [
+        "Ilo\u015b\u0107 przewijania poza widokiem pocz\u0105tkowym"
+    ],
+    "settings\u0004The application context menu.": [
+        "Menu kontekstowe aplikacji."
+    ],
+    "settings\u0004The application menu description.": [
+        "Opis menu aplikacji."
+    ],
+    "settings\u0004The configuration for all code cells.": [
+        "Konfiguracja dla wszystkich kom\u00f3rek kodu."
+    ],
+    "settings\u0004The configuration for all markdown cells.": [
+        "Konfiguracja wszystkich kom\u00f3rek markdown."
+    ],
+    "settings\u0004The configuration for all raw cells.": [
+        "Konfiguracja dla wszystkich kom\u00f3rek kodu."
+    ],
+    "settings\u0004The configuration for all text editors.\nIf `fontFamily`, `fontSize` or `lineHeight` are `null`,\nvalues from current theme are used.": [
+        "Konfiguracja dla wszystkich edytor\u00f3w tekstu.\nJe\u015bli `fontFamily`, `fontSize` lub `lineHeight` maj\u0105 warto\u015b\u0107 `null`,\nzostan\u0105 u\u017cyte warto\u015bci z bie\u017c\u0105cego motywu."
+    ],
+    "settings\u0004The default type (markdown, code, or raw) for new cells": [
+        "Domy\u015blny typ (markdown, code, lub raw) dla nowych kom\u00f3rek"
+    ],
+    "settings\u0004The font family used to render markdown.\nIf `null`, value from current theme is used.": [
+        "Rodzina czcionek u\u017cywana do renderowania markdown.\nJe\u015bli `null`, u\u017cywana jest warto\u015b\u0107 z bie\u017c\u0105cego motywu."
+    ],
+    "settings\u0004The font family used to render text.": [
+        "Rodzina czcionek u\u017cyta do renderowania tekstu."
+    ],
+    "settings\u0004The font size used to render text.": [
+        "Rozmiar czcionki u\u017cyty do renderowania tekstu."
+    ],
+    "settings\u0004The line height used to render markdown.\nIf `null`, value from current theme is used.": [
+        "Wysoko\u015b\u0107 linii u\u017cywana do renderowania markdown.\nJe\u015bli `null`, u\u017cywana jest warto\u015b\u0107 z bie\u017c\u0105cego motywu."
+    ],
+    "settings\u0004The line height used to render text.": [
+        "Wysoko\u015b\u0107 linii u\u017cywanej do renderowania tekstu."
+    ],
+    "settings\u0004The list of keyboard shortcuts.": [
+        "Lista skr\u00f3t\u00f3w klawiaturowych."
+    ],
+    "settings\u0004The maximum number of output cells to to be rendered in the output area. Set to 0 to have the complete display.": [
+        "Maksymalna liczba kom\u00f3rek wyj\u015bciowych do renderowania w obszarze wyj\u015bcia. Ustaw 0, aby wy\u015bwietla\u0107\u00a0wszystkie."
+    ],
+    "settings\u0004The render timeout in milliseconds.": [
+        "Limit czasu renderowania w milisekundach."
+    ],
+    "settings\u0004The size in pixel of the font used to render markdown.\nIf `null`, value from current theme is used.": [
+        "Rozmiar czcionki u\u017cywanej do renderowania markdown w pikselach.\nJe\u015bli `null`, u\u017cywana jest warto\u015b\u0107 z bie\u017c\u0105cego motywu."
+    ],
+    "settings\u0004The text line width expressed in CSS ch units.\nIf `null`, lines fit the viewport width.": [
+        "Szeroko\u015b\u0107 linii tekstu wyra\u017cona w jednostkach \"ch\" CSS.\nJe\u015bli `null`, linie dopasowuj\u0105 si\u0119 do szeroko\u015bci widoku."
+    ],
+    "settings\u0004The theme for the terminal.": [
+        "Motyw terminalu."
+    ],
+    "settings\u0004Theme": [
+        "Motyw"
+    ],
+    "settings\u0004Theme CSS Overrides": [
+        "Nadpisz motyw CSS"
+    ],
+    "settings\u0004Theme Manager": [
+        "Mened\u017cer motyw\u00f3w"
+    ],
+    "settings\u0004Treat option as meta key on macOS": [
+        "Traktuj klawisz Option jako meta klawisz na macOS"
+    ],
+    "settings\u0004Value is boolean": [
+        "Warto\u015b\u0107 jest warto\u015bci\u0105 logiczn\u0105"
+    ],
+    "settings\u0004Value is boolean or string, e.g. 'pointer'": [
+        "Warto\u015b\u0107 jest typem logicznym lub tekstem, np. 'wska\u017anik'"
+    ],
+    "settings\u0004Value is boolean, or { nonEmpty: boolean }": [
+        "Warto\u015b\u0107 jest warto\u015bci\u0105 logiczn\u0105, lub { nonEmpty: boolean }"
+    ],
+    "settings\u0004Variable filter": [
+        "Filtr zmiennych"
+    ],
+    "settings\u0004Variables to filter out in the tree and table viewers": [
+        "Zmienne do odfiltrowania w widoku drzewa i tabeli"
+    ],
+    "settings\u0004When enabled, which is the default, doing copy or cut when there is no selection will copy or cut the whole lines that have cursors on them.": [
+        "Gdy w\u0142\u0105czone (domy\u015blnie) skopiowanie lub wyci\u0119cie gdy nie ma zaznaczenia kopiuje lub wycina ca\u0142e wiersze, na kt\u00f3rych spoczywaj\u0105 kursory."
+    ],
+    "settings\u0004Whether the command palette should be modal or in the left panel.": [
+        "Czy paleta polece\u0144 powinna by\u0107 modalna czy w lewym panelu."
+    ],
+    "settings\u0004Whether the console defaults to showing all\nkernel activity or just kernel activity originating from itself.": [
+        "Czy konsola domy\u015blnie wy\u015bwietla wszystkie\nczynno\u015bci j\u0105dra czy tylko te pochodz\u0105ce od siebie."
+    ],
+    "settings\u0004Whether the console interaction mimics the notebook\nor terminal keyboard shortcuts.": [
+        "Czy interakcja konsoli na\u015bladuje notebook\nczy skr\u00f3ty klawiaturowe terminalu."
+    ],
+    "settings\u0004Whether the item is disabled or not": [
+        "Czy element jest wy\u0142\u0105czony czy nie"
+    ],
+    "settings\u0004Whether the menu is disabled or not": [
+        "Czy menu jest wy\u0142\u0105czone czy nie"
+    ],
+    "settings\u0004Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous": [
+        "Czy u\u017cytkownik rozumie, \u017ce rozszerzenia zarz\u0105dzane przez ten interfejs uruchamiaj\u0105 dowolny kod, kt\u00f3ry mo\u017ce by\u0107 niebezpieczny"
+    ],
+    "settings\u0004Whether to apply fuzzy algorithm while filtering on file names": [
+        "Czy stosowa\u0107 rozmyty algorytm podczas filtrowania nazw plik\u00f3w"
+    ],
+    "settings\u0004Whether to automatically navigate to a document's current directory": [
+        "Czy automatycznie przej\u015b\u0107 do bie\u017c\u0105cego katalogu dokumentu"
+    ],
+    "settings\u0004Whether to autosave documents": [
+        "Automatycznie zapisuj dokumenty"
+    ],
+    "settings\u0004Whether to be able to scroll so the last cell is at the top of the panel": [
+        "Czy umo\u017cliwi\u0107 przewijanie, tak aby ostatnia kom\u00f3rka znajdowa\u0142a si\u0119 na g\u00f3rze panelu"
+    ],
+    "settings\u0004Whether to flash on new log message or not": [
+        "Czy b\u0142yska\u0107 po zalogowaniu nowej wiadomo\u015bci"
+    ],
+    "settings\u0004Whether to include cell output in headings": [
+        "Czy do\u0142\u0105czy\u0107 rezultaty wywo\u0142ania kom\u00f3rek do nag\u0142\u00f3wk\u00f3w"
+    ],
+    "settings\u0004Whether to number first-level headings": [
+        "Czy numerowa\u0107 nag\u0142\u00f3wki pierwszego poziomu"
+    ],
+    "settings\u0004Whether to scroll past the end of text document": [
+        "Czy przewija\u0107 poza koniec dokumentu tekstowego"
+    ],
+    "settings\u0004Whether to show status bar or not": [
+        "Czy pokaza\u0107 pasek stanu, czy nie"
+    ],
+    "settings\u0004Whether to show the last modified column": [
+        "Czy pokaza\u0107 kolumn\u0119 z ostatni\u0105 dat\u0105 modyfikacji"
+    ],
+    "settings\u0004Whether to shut down or not the kernel when closing a notebook.": [
+        "Czy wy\u0142\u0105czy\u0107 j\u0105dro zamykaj\u0105c notebook."
     ],
     "showErrorMessage\u0004\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\"": [
         "\"%1\" nie jest prawid\u0142ow\u0105 nazw\u0105 pliku. Nazwy musz\u0105 mie\u0107 d\u0142ugo\u015b\u0107 wi\u0119ksz\u0105 ni\u017c zero i nie mog\u0105 zawiera\u0107 \"/\", \"\\\", ani \":\""
