@@ -12,10 +12,70 @@ msgstr ""
 "X-Crowdin-File-ID: 103\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-08-17 18:06\n"
+"PO-Revision-Date: 2021-08-27 07:37\n"
 
-#: /schema/plugin.json:0
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/aff/title
+msgctxt "settings"
+msgid "URL address of the .aff file"
+msgstr ".aff 文件的 URL 地址"
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/dic/title
+msgctxt "settings"
+msgid "URL address of the .dic file"
+msgstr ".aff 文件的 URL 地址"
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/id/title
+msgctxt "settings"
+msgid "Unique identifier"
+msgstr "唯一标识符"
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/name/title
+msgctxt "settings"
+msgid "Display name"
+msgstr "显示名称"
+
+#: /schema/plugin.json:/description
 msgctxt "schema"
+msgid "Spellchecker settings."
+msgstr "拼写检查器设置。"
+
+#: /schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Spellchecker"
+msgstr "拼写检查器"
+
+#: /schema/plugin.json:/properties/ignore/description
+msgctxt "settings"
+msgid "Case-sensitive list of words to be ignored"
+msgstr "要忽略的区分大小写单词"
+
+#: /schema/plugin.json:/properties/ignore/title
+msgctxt "settings"
+msgid "Words to be ignored by the spellchecker"
+msgstr "拼写检查器忽略单词"
+
+#: /schema/plugin.json:/properties/language/description
+msgctxt "settings"
+msgid "Dictionary identifier, e.g. en-us"
+msgstr "字典标识符，例如 en-us"
+
+#: /schema/plugin.json:/properties/language/title
+msgctxt "settings"
+msgid "Language of the spellchecker"
+msgstr "拼写检查器语言"
+
+#: /schema/plugin.json:/properties/mimeTypes/description
+msgctxt "settings"
+msgid "List of MIME types. GFM denotes GitHub Flavored Markdown"
+msgstr "MIME 类型列表。GFM 表示 GitHub Flavored Markdown"
+
+#: /schema/plugin.json:/properties/mimeTypes/title
+msgctxt "settings"
+msgid "MIME types for files/editors for which the spellchecking should be activated"
+msgstr "需要激活拼写检查的 MIME 文件/编辑器类型"
+
+#: /schema/plugin.json:/properties/onlineDictionaries/description
+msgctxt "settings"
 msgid "A list of online dictionaries to use if installing dictionaries in data path of jupyter-server is not possible or not desirable. For example:\n\n"
 "[\n"
 "    {\n"
@@ -35,22 +95,13 @@ msgstr "当在 jupyter-server 的数据路径中安装字典不可用或无法�
 "    }\n"
 "]"
 
-#: /schema/plugin.json:4
-msgctxt "schema"
-msgid "Spellchecker"
-msgstr "拼写检查器"
+#: /schema/plugin.json:/properties/onlineDictionaries/title
+msgctxt "settings"
+msgid "Online dictionaries"
+msgstr "在线词典"
 
-#: /schema/plugin.json:5
-msgctxt "schema"
-msgid "Spellchecker settings."
-msgstr "拼写检查器设置。"
-
-#: /schema/plugin.json:57
-msgid "Theme"
-msgstr "主题"
-
-#: /schema/plugin.json:58
-msgctxt "schema"
+#: /schema/plugin.json:/properties/theme/description
+msgctxt "settings"
 msgid "Theme for decorating misspelt words, one of:\n"
 "  - 'background-box': fills the background of the misspelt word;\n"
 "  - 'wavy-underline': underline with wavelets (note: Chrome has a bug which prevents rendering of wavelets under some very short words)\n"
@@ -60,36 +111,15 @@ msgstr "使用下列一种方式修饰拼写错误的单词：\n"
 "  - 'wavy-underline'：使用小波浪下划线（注意：Chrome 使用此选项时，在个别非常短的单词下无法渲然下划线）\n"
 "  - 'dotted-undline'：点状下划线"
 
-#: /schema/plugin.json:63
-msgid "Language of the spellchecker"
-msgstr "拼写检查器语言"
+#: /schema/plugin.json:/properties/theme/title
+msgctxt "settings"
+msgid "Theme"
+msgstr "主题"
 
-#: /schema/plugin.json:64
+#: /schema/plugin.json:/title
 msgctxt "schema"
-msgid "Dictionary identifier, e.g. en-us"
-msgstr "字典标识符，例如 en-us"
-
-#: /schema/plugin.json:69
-msgid "Words to be ignored by the spellchecker"
-msgstr "拼写检查器忽略单词"
-
-#: /schema/plugin.json:70
-msgctxt "schema"
-msgid "Case-sensitive list of words to be ignored"
-msgstr "要忽略的区分大小写单词"
-
-#: /schema/plugin.json:75
-msgid "MIME types for files/editors for which the spellchecking should be activated"
-msgstr "需要激活拼写检查的 MIME 文件/编辑器类型"
-
-#: /schema/plugin.json:76
-msgctxt "schema"
-msgid "List of MIME types. GFM denotes GitHub Flavored Markdown"
-msgstr "MIME 类型列表。GFM 表示 GitHub Flavored Markdown"
-
-#: /schema/plugin.json:84
-msgid "Online dictionaries"
-msgstr "在线词典"
+msgid "Spellchecker"
+msgstr "拼写检查器"
 
 #: src/index.ts:242
 msgid "Dictionary not loaded"

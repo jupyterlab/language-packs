@@ -12,91 +12,177 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
-"PO-Revision-Date: 2021-08-24 20:12\n"
+"PO-Revision-Date: 2021-08-26 21:28\n"
 
-#: /examples/federated/md_package/schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:38
-msgid "Font Family"
-msgstr ""
-
-#: /examples/federated/md_package/schema/plugin.json:31 /packages/markdownviewer-extension/schema/plugin.json:39
-msgctxt "schema"
-msgid "The font family used to render markdown.\n"
-"If `null`, value from current theme is used."
-msgstr ""
-
-#: /examples/federated/md_package/schema/plugin.json:36 /packages/markdownviewer-extension/schema/plugin.json:44
-msgid "Font Size"
-msgstr "Cỡ chữ"
-
-#: /examples/federated/md_package/schema/plugin.json:37 /packages/markdownviewer-extension/schema/plugin.json:45
-msgctxt "schema"
-msgid "The size in pixel of the font used to render markdown.\n"
-"If `null`, value from current theme is used."
-msgstr ""
-
-#: /examples/federated/md_package/schema/plugin.json:4 /packages/markdownviewer-extension/schema/plugin.json:4
-msgctxt "schema"
-msgid "Markdown Viewer"
-msgstr ""
-
-#: /examples/federated/md_package/schema/plugin.json:42 /packages/markdownviewer-extension/schema/plugin.json:50
-msgid "Line Height"
-msgstr ""
-
-#: /examples/federated/md_package/schema/plugin.json:43 /packages/markdownviewer-extension/schema/plugin.json:51
-msgctxt "schema"
-msgid "The line height used to render markdown.\n"
-"If `null`, value from current theme is used."
-msgstr ""
-
-#: /examples/federated/md_package/schema/plugin.json:48 /packages/markdownviewer-extension/schema/plugin.json:56
-msgid "Line Width"
-msgstr ""
-
-#: /examples/federated/md_package/schema/plugin.json:49 /packages/markdownviewer-extension/schema/plugin.json:57
-msgctxt "schema"
-msgid "The text line width expressed in CSS ch units.\n"
-"If `null`, lines fit the viewport width."
-msgstr ""
-
-#: /examples/federated/md_package/schema/plugin.json:5 /packages/markdownviewer-extension/schema/plugin.json:5
+#: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Markdown viewer settings."
 msgstr ""
 
-#: /examples/federated/md_package/schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:62
-msgid "Hide Front Matter"
+#: /examples/federated/md_package/schema/plugin.json:/jupyter.lab.setting-icon-label /packages/markdownviewer-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Markdown Viewer"
 msgstr ""
 
-#: /examples/federated/md_package/schema/plugin.json:55 /packages/markdownviewer-extension/schema/plugin.json:63
-msgctxt "schema"
+#: /examples/federated/md_package/schema/plugin.json:/properties/fontFamily/description /packages/markdownviewer-extension/schema/plugin.json:/properties/fontFamily/description
+msgctxt "settings"
+msgid "The font family used to render markdown.\n"
+"If `null`, value from current theme is used."
+msgstr ""
+
+#: /examples/federated/md_package/schema/plugin.json:/properties/fontFamily/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontFamily/title
+msgctxt "settings"
+msgid "Font Family"
+msgstr ""
+
+#: /examples/federated/md_package/schema/plugin.json:/properties/fontSize/description /packages/markdownviewer-extension/schema/plugin.json:/properties/fontSize/description
+msgctxt "settings"
+msgid "The size in pixel of the font used to render markdown.\n"
+"If `null`, value from current theme is used."
+msgstr ""
+
+#: /examples/federated/md_package/schema/plugin.json:/properties/fontSize/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontSize/title
+msgctxt "settings"
+msgid "Font Size"
+msgstr ""
+
+#: /examples/federated/md_package/schema/plugin.json:/properties/hideFrontMatter/description /packages/markdownviewer-extension/schema/plugin.json:/properties/hideFrontMatter/description
+msgctxt "settings"
 msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
 msgstr ""
 
-#: /examples/federated/md_package/schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:68
-msgid "Render Timeout"
+#: /examples/federated/md_package/schema/plugin.json:/properties/hideFrontMatter/title /packages/markdownviewer-extension/schema/plugin.json:/properties/hideFrontMatter/title
+msgctxt "settings"
+msgid "Hide Front Matter"
 msgstr ""
 
-#: /examples/federated/md_package/schema/plugin.json:61 /packages/markdownviewer-extension/schema/plugin.json:69
-msgctxt "schema"
+#: /examples/federated/md_package/schema/plugin.json:/properties/lineHeight/description /packages/markdownviewer-extension/schema/plugin.json:/properties/lineHeight/description
+msgctxt "settings"
+msgid "The line height used to render markdown.\n"
+"If `null`, value from current theme is used."
+msgstr ""
+
+#: /examples/federated/md_package/schema/plugin.json:/properties/lineHeight/title /packages/markdownviewer-extension/schema/plugin.json:/properties/lineHeight/title
+msgctxt "settings"
+msgid "Line Height"
+msgstr ""
+
+#: /examples/federated/md_package/schema/plugin.json:/properties/lineWidth/description /packages/markdownviewer-extension/schema/plugin.json:/properties/lineWidth/description
+msgctxt "settings"
+msgid "The text line width expressed in CSS ch units.\n"
+"If `null`, lines fit the viewport width."
+msgstr ""
+
+#: /examples/federated/md_package/schema/plugin.json:/properties/lineWidth/title /packages/markdownviewer-extension/schema/plugin.json:/properties/lineWidth/title
+msgctxt "settings"
+msgid "Line Width"
+msgstr ""
+
+#: /examples/federated/md_package/schema/plugin.json:/properties/renderTimeout/description /packages/markdownviewer-extension/schema/plugin.json:/properties/renderTimeout/description
+msgctxt "settings"
 msgid "The render timeout in milliseconds."
 msgstr ""
 
-#: /packages/application-extension/schema/commands.json:2
-msgctxt "schema"
-msgid "Application Commands"
+#: /examples/federated/md_package/schema/plugin.json:/properties/renderTimeout/title /packages/markdownviewer-extension/schema/plugin.json:/properties/renderTimeout/title
+msgctxt "settings"
+msgid "Render Timeout"
 msgstr ""
 
-#: /packages/application-extension/schema/commands.json:3
+#: /examples/federated/md_package/schema/plugin.json:/title /packages/markdownviewer-extension/schema/plugin.json:/title
+msgctxt "schema"
+msgid "Markdown Viewer"
+msgstr ""
+
+#: /packages/application-extension/schema/commands.json:/description
 msgctxt "schema"
 msgid "Application commands settings."
 msgstr ""
 
-#: /packages/application-extension/schema/context-menu.json:0
+#: /packages/application-extension/schema/commands.json:/title
 msgctxt "schema"
+msgid "Application Commands"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/disabled/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/disabled/description
+msgctxt "settings"
+msgid "Whether the menu is disabled or not"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/icon/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/icon/description
+msgctxt "settings"
+msgid "Menu icon id"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/id/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/id/description
+msgctxt "settings"
+msgid "Menu unique id"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/items/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/items/description
+msgctxt "settings"
+msgid "Menu items"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/label/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/label/description
+msgctxt "settings"
+msgid "Menu label"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/mnemonic/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/mnemonic/description
+msgctxt "settings"
+msgid "Mnemonic index for the label"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/rank/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/rank/description
+msgctxt "settings"
+msgid "Menu rank"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/args/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/args/description
+msgctxt "settings"
+msgid "Command arguments"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/command/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/command/description
+msgctxt "settings"
+msgid "Command id"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/disabled/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/disabled/description
+msgctxt "settings"
+msgid "Whether the item is disabled or not"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/rank/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/rank/description
+msgctxt "settings"
+msgid "Item rank"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/submenu/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/submenu/description
+msgctxt "settings"
+msgid "Submenu definition"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/type/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/type/description
+msgctxt "settings"
+msgid "Item type"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/description
+msgctxt "schema"
+msgid "JupyterLab context menu settings."
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Application Context Menu"
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/description
+msgctxt "settings"
 msgid "Note: To disable a context menu item,\n"
 "copy it to User Preferences and add the\n"
 "\"disabled\" key. The following example will disable Download item on files:\n"
@@ -112,579 +198,765 @@ msgid "Note: To disable a context menu item,\n"
 "Context menu description:"
 msgstr ""
 
-#: /packages/application-extension/schema/context-menu.json:3
-msgctxt "schema"
-msgid "JupyterLab context menu settings."
+#: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/items/allOf[1]/properties/selector/description
+msgctxt "settings"
+msgid "The CSS selector for the context menu item."
 msgstr ""
 
-#: /packages/application-extension/schema/context-menu.json:4
+#: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/title
+msgctxt "settings"
+msgid "The application context menu."
+msgstr ""
+
+#: /packages/application-extension/schema/context-menu.json:/title
 msgctxt "schema"
 msgid "Application Context Menu"
 msgstr ""
 
-#: /packages/application-extension/schema/context-menu.json:9
-msgid "The application context menu."
-msgstr ""
-
-#: /packages/application-extension/schema/sidebar.json:0
-msgctxt "schema"
-msgid "Overrides for where to show sidebar items\n"
-"e.g., {\"tab-manager\": \"right\"}"
-msgstr ""
-
-#: /packages/application-extension/schema/sidebar.json:17
-msgid "Overrides"
-msgstr ""
-
-#: /packages/application-extension/schema/sidebar.json:3
-msgctxt "schema"
-msgid "Sidebar"
-msgstr ""
-
-#: /packages/application-extension/schema/sidebar.json:4
+#: /packages/application-extension/schema/sidebar.json:/description
 msgctxt "schema"
 msgid "Sidebar layout settings."
 msgstr ""
 
-#: /packages/apputils-extension/schema/palette.json:2
+#: /packages/application-extension/schema/sidebar.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Sidebar"
+msgstr ""
+
+#: /packages/application-extension/schema/sidebar.json:/properties/overrides/description
+msgctxt "settings"
+msgid "Overrides for where to show sidebar items\n"
+"e.g., {\"tab-manager\": \"right\"}"
+msgstr ""
+
+#: /packages/application-extension/schema/sidebar.json:/properties/overrides/title
+msgctxt "settings"
+msgid "Overrides"
+msgstr ""
+
+#: /packages/application-extension/schema/sidebar.json:/title
 msgctxt "schema"
-msgid "Command Palette"
+msgid "Sidebar"
 msgstr ""
 
-#: /packages/apputils-extension/schema/palette.json:26
-msgid "Modal Command Palette"
-msgstr ""
-
-#: /packages/apputils-extension/schema/palette.json:27
-msgctxt "schema"
-msgid "Whether the command palette should be modal or in the left panel."
-msgstr ""
-
-#: /packages/apputils-extension/schema/palette.json:3
+#: /packages/apputils-extension/schema/palette.json:/description
 msgctxt "schema"
 msgid "Command palette settings."
 msgstr ""
 
-#: /packages/apputils-extension/schema/print.json:2
-msgctxt "schema"
-msgid "Print"
+#: /packages/apputils-extension/schema/palette.json:/properties/modal/description
+msgctxt "settings"
+msgid "Whether the command palette should be modal or in the left panel."
 msgstr ""
 
-#: /packages/apputils-extension/schema/print.json:3
+#: /packages/apputils-extension/schema/palette.json:/properties/modal/title
+msgctxt "settings"
+msgid "Modal Command Palette"
+msgstr ""
+
+#: /packages/apputils-extension/schema/palette.json:/title
+msgctxt "schema"
+msgid "Command Palette"
+msgstr ""
+
+#: /packages/apputils-extension/schema/print.json:/description
 msgctxt "schema"
 msgid "Print settings."
 msgstr ""
 
-#: /packages/apputils-extension/schema/themes.json:107
-msgid "Selected Theme"
-msgstr ""
-
-#: /packages/apputils-extension/schema/themes.json:108
+#: /packages/apputils-extension/schema/print.json:/title
 msgctxt "schema"
-msgid "Application-level visual styling theme"
+msgid "Print"
 msgstr ""
 
-#: /packages/apputils-extension/schema/themes.json:113
-msgid "Scrollbar Theming"
+#: /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/code-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/content-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/ui-font-family/description
+msgctxt "settings"
+msgid "font-family"
 msgstr ""
 
-#: /packages/apputils-extension/schema/themes.json:114
-msgctxt "schema"
-msgid "Enable/disable styling of the application scrollbars"
+#: /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/code-font-size/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/content-font-size1/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/ui-font-size1/description
+msgctxt "settings"
+msgid "font-size"
 msgstr ""
 
-#: /packages/apputils-extension/schema/themes.json:118
-msgid "Theme CSS Overrides"
-msgstr ""
-
-#: /packages/apputils-extension/schema/themes.json:119
-msgctxt "schema"
-msgid "Override theme CSS variables by setting key-value pairs here"
-msgstr ""
-
-#: /packages/apputils-extension/schema/themes.json:2
-msgctxt "schema"
-msgid "Theme"
-msgstr ""
-
-#: /packages/apputils-extension/schema/themes.json:66
+#: /packages/apputils-extension/schema/themes.json:/description
 msgctxt "schema"
 msgid "Theme manager settings."
 msgstr ""
 
-#: /packages/apputils-extension/schema/workspaces.json:2
-msgctxt "schema"
-msgid "Workspaces"
+#: /packages/apputils-extension/schema/themes.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
+msgctxt "menu"
+msgid "JupyterLab Theme"
 msgstr ""
 
-#: /packages/apputils-extension/schema/workspaces.json:3
+#: /packages/apputils-extension/schema/themes.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Theme Manager"
+msgstr ""
+
+#: /packages/apputils-extension/schema/themes.json:/properties/overrides/description
+msgctxt "settings"
+msgid "Override theme CSS variables by setting key-value pairs here"
+msgstr ""
+
+#: /packages/apputils-extension/schema/themes.json:/properties/overrides/title
+msgctxt "settings"
+msgid "Theme CSS Overrides"
+msgstr ""
+
+#: /packages/apputils-extension/schema/themes.json:/properties/theme-scrollbars/description
+msgctxt "settings"
+msgid "Enable/disable styling of the application scrollbars"
+msgstr ""
+
+#: /packages/apputils-extension/schema/themes.json:/properties/theme-scrollbars/title
+msgctxt "settings"
+msgid "Scrollbar Theming"
+msgstr ""
+
+#: /packages/apputils-extension/schema/themes.json:/properties/theme/description
+msgctxt "settings"
+msgid "Application-level visual styling theme"
+msgstr ""
+
+#: /packages/apputils-extension/schema/themes.json:/properties/theme/title
+msgctxt "settings"
+msgid "Selected Theme"
+msgstr ""
+
+#: /packages/apputils-extension/schema/themes.json:/title
+msgctxt "schema"
+msgid "Theme"
+msgstr ""
+
+#: /packages/apputils-extension/schema/workspaces.json:/description
 msgctxt "schema"
 msgid "Workspaces settings."
 msgstr ""
 
-#: /packages/codemirror-extension/schema/commands.json:172
+#: /packages/apputils-extension/schema/workspaces.json:/title
 msgctxt "schema"
-msgid "CodeMirror"
+msgid "Workspaces"
 msgstr ""
 
-#: /packages/codemirror-extension/schema/commands.json:173
+#: /packages/codemirror-extension/schema/commands.json:/description
 msgctxt "schema"
 msgid "Text editor settings for all CodeMirror editors."
 msgstr ""
 
-#: /packages/codemirror-extension/schema/commands.json:177
-msgid "Key Map"
+#: /packages/codemirror-extension/schema/commands.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
+msgctxt "menu"
+msgid "Text Editor Syntax Highlighting"
 msgstr ""
 
-#: /packages/codemirror-extension/schema/commands.json:178
-msgctxt "schema"
+#: /packages/codemirror-extension/schema/commands.json:/jupyter.lab.menus/main[1]/items[0]/submenu/label
+msgctxt "menu"
+msgid "Text Editor Key Map"
+msgstr ""
+
+#: /packages/codemirror-extension/schema/commands.json:/jupyter.lab.menus/main[1]/items[1]/submenu/label
+msgctxt "menu"
+msgid "Text Editor Theme"
+msgstr ""
+
+#: /packages/codemirror-extension/schema/commands.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "CodeMirror"
+msgstr ""
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/keyMap/description
+msgctxt "settings"
 msgid "Configures the keymap to use"
 msgstr ""
 
-#: /packages/codemirror-extension/schema/commands.json:183 /packages/terminal-extension/schema/plugin.json:132 packages/apputils-extension/src/themesplugins.ts:202
-msgid "Theme"
+#: /packages/codemirror-extension/schema/commands.json:/properties/keyMap/title
+msgctxt "settings"
+msgid "Key Map"
 msgstr ""
 
-#: /packages/codemirror-extension/schema/commands.json:184
-msgctxt "schema"
+#: /packages/codemirror-extension/schema/commands.json:/properties/lineWiseCopyCut/description
+msgctxt "settings"
+msgid "When enabled, which is the default, doing copy or cut when there is no selection will copy or cut the whole lines that have cursors on them."
+msgstr ""
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/lineWiseCopyCut/title
+msgctxt "settings"
+msgid "Ctrl-C"
+msgstr ""
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/scrollPastEnd/description
+msgctxt "settings"
+msgid "Whether to scroll past the end of text document"
+msgstr ""
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/scrollPastEnd/title
+msgctxt "settings"
+msgid "Scroll behavior"
+msgstr ""
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/selectionPointer/description
+msgctxt "settings"
+msgid "Value is boolean or string, e.g. 'pointer'"
+msgstr ""
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/selectionPointer/title
+msgctxt "settings"
+msgid "Selection Pointer"
+msgstr ""
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/styleActiveLine/description
+msgctxt "settings"
+msgid "Value is boolean, or { nonEmpty: boolean }"
+msgstr ""
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/styleActiveLine/title
+msgctxt "settings"
+msgid "Style Active Line"
+msgstr ""
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/styleSelectedText/description
+msgctxt "settings"
+msgid "Value is boolean"
+msgstr ""
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/styleSelectedText/title
+msgctxt "settings"
+msgid "Style Selected Text"
+msgstr ""
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/theme/description
+msgctxt "settings"
 msgid "CSS file defining the corresponding\n"
 ".cm-s-[name] styles is loaded"
 msgstr ""
 
-#: /packages/codemirror-extension/schema/commands.json:189
-msgid "Scroll behavior"
+#: /packages/codemirror-extension/schema/commands.json:/properties/theme/title /packages/terminal-extension/schema/plugin.json:/properties/theme/title
+msgctxt "settings"
+msgid "Theme"
 msgstr ""
 
-#: /packages/codemirror-extension/schema/commands.json:190
+#: /packages/codemirror-extension/schema/commands.json:/title
 msgctxt "schema"
-msgid "Whether to scroll past the end of text document"
+msgid "CodeMirror"
 msgstr ""
 
-#: /packages/codemirror-extension/schema/commands.json:195
-msgid "Style Active Line"
-msgstr ""
-
-#: /packages/codemirror-extension/schema/commands.json:196
-msgctxt "schema"
-msgid "Value is boolean, or { nonEmpty: boolean }"
-msgstr ""
-
-#: /packages/codemirror-extension/schema/commands.json:201
-msgid "Style Selected Text"
-msgstr ""
-
-#: /packages/codemirror-extension/schema/commands.json:202
-msgctxt "schema"
-msgid "Value is boolean"
-msgstr ""
-
-#: /packages/codemirror-extension/schema/commands.json:207
-msgid "Selection Pointer"
-msgstr ""
-
-#: /packages/codemirror-extension/schema/commands.json:208
-msgctxt "schema"
-msgid "Value is boolean or string, e.g. 'pointer'"
-msgstr ""
-
-#: /packages/codemirror-extension/schema/commands.json:213
-msgid "Ctrl-C"
-msgstr ""
-
-#: /packages/codemirror-extension/schema/commands.json:214
-msgctxt "schema"
-msgid "When enabled, which is the default, doing copy or cut when there is no selection will copy or cut the whole lines that have cursors on them."
-msgstr "Khi tính năng được kích hoạt (chế độ mặc định bật), nếu không sử dụng con trỏ để khoanh vùng chữ cần cắt/gián, tính năng tự động cắt gián tất cả các dòng chữ có vị trí con trỏ."
-
-#: /packages/completer-extension/schema/consoles.json:2
-msgctxt "schema"
-msgid "Console Completer"
-msgstr ""
-
-#: /packages/completer-extension/schema/consoles.json:3
+#: /packages/completer-extension/schema/consoles.json:/description
 msgctxt "schema"
 msgid "Console completer settings."
 msgstr ""
 
-#: /packages/completer-extension/schema/files.json:2
+#: /packages/completer-extension/schema/consoles.json:/title
 msgctxt "schema"
-msgid "File Editor Completer"
+msgid "Console Completer"
 msgstr ""
 
-#: /packages/completer-extension/schema/files.json:3
+#: /packages/completer-extension/schema/files.json:/description
 msgctxt "schema"
 msgid "File editor completer settings."
 msgstr ""
 
-#: /packages/completer-extension/schema/notebooks.json:2
+#: /packages/completer-extension/schema/files.json:/title
 msgctxt "schema"
-msgid "Notebook Completer"
+msgid "File Editor Completer"
 msgstr ""
 
-#: /packages/completer-extension/schema/notebooks.json:3
+#: /packages/completer-extension/schema/notebooks.json:/description
 msgctxt "schema"
 msgid "Notebook completer settings."
 msgstr ""
 
-#: /packages/console-extension/schema/foreign.json:2
+#: /packages/completer-extension/schema/notebooks.json:/title
 msgctxt "schema"
-msgid "Code Console Foreign plugin"
+msgid "Notebook Completer"
 msgstr ""
 
-#: /packages/console-extension/schema/foreign.json:3
+#: /packages/console-extension/schema/foreign.json:/description
 msgctxt "schema"
 msgid "Code Console Foreign plugin settings."
 msgstr ""
 
-#: /packages/console-extension/schema/tracker.json:162
-msgid "Interaction mode"
-msgstr ""
-
-#: /packages/console-extension/schema/tracker.json:163
+#: /packages/console-extension/schema/foreign.json:/title
 msgctxt "schema"
-msgid "Whether the console interaction mimics the notebook\n"
-"or terminal keyboard shortcuts."
+msgid "Code Console Foreign plugin"
 msgstr ""
 
-#: /packages/console-extension/schema/tracker.json:169 packages/console-extension/src/foreign.ts:79
-msgid "Show All Kernel Activity"
-msgstr "Xem tất cả băng thông của tiến trình kernel"
-
-#: /packages/console-extension/schema/tracker.json:170
-msgctxt "schema"
-msgid "Whether the console defaults to showing all\n"
-"kernel activity or just kernel activity originating from itself."
+#: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/description /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/cursorBlinkRate/description /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/description
+msgctxt "settings"
+msgid "Half-period in milliseconds used for cursor blinking. The default blink rate is 530ms. By setting this to zero, blinking can be disabled. A negative value hides the cursor entirely."
 msgstr ""
 
-#: /packages/console-extension/schema/tracker.json:175
-msgid "Prompt Cell Configuration"
+#: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/title /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/cursorBlinkRate/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/title
+msgctxt "settings"
+msgid "Cursor blinking rate"
 msgstr ""
 
-#: /packages/console-extension/schema/tracker.json:176
-msgctxt "schema"
-msgid "The configuration for all prompt cells."
-msgstr ""
-
-#: /packages/console-extension/schema/tracker.json:2
-msgctxt "schema"
-msgid "Code Console"
-msgstr ""
-
-#: /packages/console-extension/schema/tracker.json:3
+#: /packages/console-extension/schema/tracker.json:/description
 msgctxt "schema"
 msgid "Code Console settings."
 msgstr ""
 
-#: /packages/debugger-extension/schema/main.json:3
+#: /packages/console-extension/schema/tracker.json:/jupyter.lab.menus/main[1]/items[1]/submenu/label
+msgctxt "menu"
+msgid "Console Run Keystroke"
+msgstr ""
+
+#: /packages/console-extension/schema/tracker.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Code Console Settings"
+msgstr ""
+
+#: /packages/console-extension/schema/tracker.json:/properties/interactionMode/description
+msgctxt "settings"
+msgid "Whether the console interaction mimics the notebook\n"
+"or terminal keyboard shortcuts."
+msgstr ""
+
+#: /packages/console-extension/schema/tracker.json:/properties/interactionMode/title
+msgctxt "settings"
+msgid "Interaction mode"
+msgstr ""
+
+#: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/description
+msgctxt "settings"
+msgid "The configuration for all prompt cells."
+msgstr ""
+
+#: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/title
+msgctxt "settings"
+msgid "Prompt Cell Configuration"
+msgstr ""
+
+#: /packages/console-extension/schema/tracker.json:/properties/showAllKernelActivity/description
+msgctxt "settings"
+msgid "Whether the console defaults to showing all\n"
+"kernel activity or just kernel activity originating from itself."
+msgstr ""
+
+#: /packages/console-extension/schema/tracker.json:/properties/showAllKernelActivity/title
+msgctxt "settings"
+msgid "Show All Kernel Activity"
+msgstr ""
+
+#: /packages/console-extension/schema/tracker.json:/title
+msgctxt "schema"
+msgid "Code Console"
+msgstr ""
+
+#: /packages/debugger-extension/schema/main.json:/description
 msgctxt "schema"
 msgid "Debugger settings"
 msgstr ""
 
-#: /packages/debugger-extension/schema/main.json:5
+#: /packages/debugger-extension/schema/main.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Debugger"
+msgstr ""
+
+#: /packages/debugger-extension/schema/main.json:/properties/variableFilters/description
+msgctxt "settings"
+msgid "Variables to filter out in the tree and table viewers"
+msgstr ""
+
+#: /packages/debugger-extension/schema/main.json:/properties/variableFilters/title
+msgctxt "settings"
+msgid "Variable filter"
+msgstr ""
+
+#: /packages/debugger-extension/schema/main.json:/title
 msgctxt "schema"
 msgid "Debugger"
 msgstr ""
 
-#: /packages/debugger-extension/schema/main.json:59
-msgid "Variable filter"
-msgstr ""
-
-#: /packages/debugger-extension/schema/main.json:60
-msgctxt "schema"
-msgid "Variables to filter out in the tree and table viewers"
-msgstr ""
-
-#: /packages/docmanager-extension/schema/download.json:2
-msgctxt "schema"
-msgid "Document Manager Download"
-msgstr ""
-
-#: /packages/docmanager-extension/schema/download.json:3
+#: /packages/docmanager-extension/schema/download.json:/description
 msgctxt "schema"
 msgid "Document Manager Download settings."
 msgstr ""
 
-#: /packages/docmanager-extension/schema/plugin.json:110 packages/docmanager-extension/src/index.ts:736
-msgid "Autosave Documents"
-msgstr ""
-
-#: /packages/docmanager-extension/schema/plugin.json:111
+#: /packages/docmanager-extension/schema/download.json:/title
 msgctxt "schema"
-msgid "Whether to autosave documents"
+msgid "Document Manager Download"
 msgstr ""
 
-#: /packages/docmanager-extension/schema/plugin.json:116
-msgid "Autosave Interval"
-msgstr ""
-
-#: /packages/docmanager-extension/schema/plugin.json:117
-msgctxt "schema"
-msgid "Length of save interval in seconds"
-msgstr ""
-
-#: /packages/docmanager-extension/schema/plugin.json:122
-msgid "Default Viewers"
-msgstr ""
-
-#: /packages/docmanager-extension/schema/plugin.json:124
-msgctxt "schema"
-msgid "Overrides for the default viewers for file types"
-msgstr ""
-
-#: /packages/docmanager-extension/schema/plugin.json:3
+#: /packages/docmanager-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Document Manager settings."
 msgstr ""
 
-#: /packages/docmanager-extension/schema/plugin.json:5
+#: /packages/docmanager-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Document Manager"
+msgstr ""
+
+#: /packages/docmanager-extension/schema/plugin.json:/properties/autosave/description
+msgctxt "settings"
+msgid "Whether to autosave documents"
+msgstr ""
+
+#: /packages/docmanager-extension/schema/plugin.json:/properties/autosave/title
+msgctxt "settings"
+msgid "Autosave Documents"
+msgstr ""
+
+#: /packages/docmanager-extension/schema/plugin.json:/properties/autosaveInterval/description
+msgctxt "settings"
+msgid "Length of save interval in seconds"
+msgstr ""
+
+#: /packages/docmanager-extension/schema/plugin.json:/properties/autosaveInterval/title
+msgctxt "settings"
+msgid "Autosave Interval"
+msgstr ""
+
+#: /packages/docmanager-extension/schema/plugin.json:/properties/defaultViewers/description
+msgctxt "settings"
+msgid "Overrides for the default viewers for file types"
+msgstr ""
+
+#: /packages/docmanager-extension/schema/plugin.json:/properties/defaultViewers/title
+msgctxt "settings"
+msgid "Default Viewers"
+msgstr ""
+
+#: /packages/docmanager-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Document Manager"
 msgstr "Quản lý tài liệu"
 
-#: /packages/documentsearch-extension/schema/plugin.json:2
-msgctxt "schema"
-msgid "Document Search"
-msgstr "Tìm kiếm tài liệu"
-
-#: /packages/documentsearch-extension/schema/plugin.json:3
+#: /packages/documentsearch-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Document search plugin."
 msgstr ""
 
-#: /packages/extensionmanager-extension/schema/plugin.json:25
+#: /packages/documentsearch-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Extension Manager"
-msgstr ""
+msgid "Document Search"
+msgstr "Tìm kiếm tài liệu"
 
-#: /packages/extensionmanager-extension/schema/plugin.json:26
+#: /packages/extensionmanager-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Extension manager settings."
 msgstr ""
 
-#: /packages/extensionmanager-extension/schema/plugin.json:29
-msgid "Enabled Status"
+#: /packages/extensionmanager-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Extension Manager"
 msgstr ""
 
-#: /packages/extensionmanager-extension/schema/plugin.json:30
-msgctxt "schema"
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/disclaimed/description
+msgctxt "settings"
+msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/disclaimed/title
+msgctxt "settings"
+msgid "Disclaimed Status"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/enableCdn/description
+msgctxt "settings"
+msgid "Enables using the CDN to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/enableCdn/title
+msgctxt "settings"
+msgid "Enable CDN"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/description
+msgctxt "settings"
 msgid "Enables extension manager (requires Node.js/npm).\n"
 "WARNING: installing untrusted extensions may be unsafe."
 msgstr ""
 
-#: /packages/extensionmanager-extension/schema/plugin.json:35
-msgid "Disclaimed Status"
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/title
+msgctxt "settings"
+msgid "Enabled Status"
 msgstr ""
 
-#: /packages/extensionmanager-extension/schema/plugin.json:36
-msgctxt "schema"
-msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
-msgstr ""
-
-#: /packages/extensionmanager-extension/schema/plugin.json:41
-msgid "NPM Registry"
-msgstr ""
-
-#: /packages/extensionmanager-extension/schema/plugin.json:42
-msgctxt "schema"
-msgid "The URI of the NPM registry to use for searching for jupyterlab extensions"
-msgstr ""
-
-#: /packages/extensionmanager-extension/schema/plugin.json:47
-msgid "NPM CDN"
-msgstr ""
-
-#: /packages/extensionmanager-extension/schema/plugin.json:48
-msgctxt "schema"
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/description
+msgctxt "settings"
 msgid "The URI of the CDN to use for fetching full package data"
 msgstr ""
 
-#: /packages/extensionmanager-extension/schema/plugin.json:53
-msgid "Enable CDN"
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/title
+msgctxt "settings"
+msgid "NPM CDN"
 msgstr ""
 
-#: /packages/extensionmanager-extension/schema/plugin.json:54
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmRegistry/description
+msgctxt "settings"
+msgid "The URI of the NPM registry to use for searching for jupyterlab extensions"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmRegistry/title
+msgctxt "settings"
+msgid "NPM Registry"
+msgstr ""
+
+#: /packages/extensionmanager-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Enables using the CDN to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry"
+msgid "Extension Manager"
 msgstr ""
 
-#: /packages/filebrowser-extension/schema/browser.json:134
-msgctxt "schema"
-msgid "File Browser"
-msgstr ""
-
-#: /packages/filebrowser-extension/schema/browser.json:135
+#: /packages/filebrowser-extension/schema/browser.json:/description
 msgctxt "schema"
 msgid "File Browser settings."
 msgstr ""
 
-#: /packages/filebrowser-extension/schema/browser.json:186
-msgid "Navigate to current directory"
+#: /packages/filebrowser-extension/schema/browser.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "File Browser"
 msgstr ""
 
-#: /packages/filebrowser-extension/schema/browser.json:187
-msgctxt "schema"
+#: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/description
+msgctxt "settings"
 msgid "Whether to automatically navigate to a document's current directory"
 msgstr ""
 
-#: /packages/filebrowser-extension/schema/browser.json:192
-msgid "Filter on file name with a fuzzy search"
+#: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/title
+msgctxt "settings"
+msgid "Navigate to current directory"
 msgstr ""
 
-#: /packages/filebrowser-extension/schema/browser.json:193
-msgctxt "schema"
-msgid "Whether to apply fuzzy algorithm while filtering on file names"
-msgstr ""
-
-#: /packages/filebrowser-extension/schema/browser.json:198
-msgid "Show last modified column"
-msgstr ""
-
-#: /packages/filebrowser-extension/schema/browser.json:199
-msgctxt "schema"
+#: /packages/filebrowser-extension/schema/browser.json:/properties/showLastModifiedColumn/description
+msgctxt "settings"
 msgid "Whether to show the last modified column"
 msgstr ""
 
-#: /packages/filebrowser-extension/schema/download.json:2
-msgctxt "schema"
-msgid "File Browser Download"
+#: /packages/filebrowser-extension/schema/browser.json:/properties/showLastModifiedColumn/title
+msgctxt "settings"
+msgid "Show last modified column"
 msgstr ""
 
-#: /packages/filebrowser-extension/schema/download.json:3
+#: /packages/filebrowser-extension/schema/browser.json:/properties/useFuzzyFilter/description
+msgctxt "settings"
+msgid "Whether to apply fuzzy algorithm while filtering on file names"
+msgstr ""
+
+#: /packages/filebrowser-extension/schema/browser.json:/properties/useFuzzyFilter/title
+msgctxt "settings"
+msgid "Filter on file name with a fuzzy search"
+msgstr ""
+
+#: /packages/filebrowser-extension/schema/browser.json:/title
+msgctxt "schema"
+msgid "File Browser"
+msgstr ""
+
+#: /packages/filebrowser-extension/schema/download.json:/description
 msgctxt "schema"
 msgid "File Browser Download settings."
 msgstr ""
 
-#: /packages/filebrowser-extension/schema/open-browser-tab.json:2
+#: /packages/filebrowser-extension/schema/download.json:/title
 msgctxt "schema"
-msgid "File Browser Open Browser Tab"
+msgid "File Browser Download"
 msgstr ""
 
-#: /packages/filebrowser-extension/schema/open-browser-tab.json:3
+#: /packages/filebrowser-extension/schema/open-browser-tab.json:/description
 msgctxt "schema"
 msgid "File Browser Open Browser Tab settings."
 msgstr ""
 
-#: /packages/filebrowser-extension/schema/open-with.json:2
+#: /packages/filebrowser-extension/schema/open-browser-tab.json:/title
 msgctxt "schema"
-msgid "File Browser Open With"
+msgid "File Browser Open Browser Tab"
 msgstr ""
 
-#: /packages/filebrowser-extension/schema/open-with.json:3
+#: /packages/filebrowser-extension/schema/open-with.json:/description
 msgctxt "schema"
 msgid "File Browser Open With settings."
 msgstr ""
 
-#: /packages/fileeditor-extension/schema/plugin.json:143
-msgctxt "schema"
-msgid "Text Editor"
+#: /packages/filebrowser-extension/schema/open-with.json:/jupyter.lab.menus/context[0]/submenu/label
+msgctxt "menu"
+msgid "Open With"
 msgstr ""
 
-#: /packages/fileeditor-extension/schema/plugin.json:144
+#: /packages/filebrowser-extension/schema/open-with.json:/title
+msgctxt "schema"
+msgid "File Browser Open With"
+msgstr ""
+
+#: /packages/fileeditor-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Text editor settings."
 msgstr "Cấu hình trình soạn thảo."
 
-#: /packages/fileeditor-extension/schema/plugin.json:205
-msgid "Editor Configuration"
+#: /packages/fileeditor-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[1]/submenu/label
+msgctxt "menu"
+msgid "Text Editor Indentation"
 msgstr ""
 
-#: /packages/fileeditor-extension/schema/plugin.json:206
-msgctxt "schema"
+#: /packages/fileeditor-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Editor"
+msgstr ""
+
+#: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/description
+msgctxt "settings"
 msgid "The configuration for all text editors.\n"
 "If `fontFamily`, `fontSize` or `lineHeight` are `null`,\n"
 "values from current theme are used."
 msgstr ""
 
-#: /packages/help-extension/schema/about.json:19
-msgctxt "schema"
-msgid "Help"
+#: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/title
+msgctxt "settings"
+msgid "Editor Configuration"
 msgstr ""
 
-#: /packages/help-extension/schema/about.json:20
+#: /packages/fileeditor-extension/schema/plugin.json:/title
+msgctxt "schema"
+msgid "Text Editor"
+msgstr ""
+
+#: /packages/help-extension/schema/about.json:/description
 msgctxt "schema"
 msgid "Help settings."
 msgstr ""
 
-#: /packages/hub-extension/schema/plugin.json:27
+#: /packages/help-extension/schema/about.json:/title
 msgctxt "schema"
-msgid "JupyterHub"
+msgid "Help"
 msgstr ""
 
-#: /packages/hub-extension/schema/plugin.json:28
+#: /packages/hub-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "JupyterHub settings."
 msgstr ""
 
-#: /packages/imageviewer-extension/schema/plugin.json:2
+#: /packages/hub-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Image Viewer"
+msgid "JupyterHub"
 msgstr ""
 
-#: /packages/imageviewer-extension/schema/plugin.json:3
+#: /packages/imageviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Image viewer settings."
 msgstr ""
 
-#: /packages/inspector-extension/schema/consoles.json:2 /packages/inspector-extension/schema/notebooks.json:2
+#: /packages/imageviewer-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Inspector Notebook"
+msgid "Image Viewer"
 msgstr ""
 
-#: /packages/inspector-extension/schema/consoles.json:3 /packages/inspector-extension/schema/notebooks.json:3
+#: /packages/inspector-extension/schema/consoles.json:/description /packages/inspector-extension/schema/notebooks.json:/description
 msgctxt "schema"
 msgid "Inspector Notebook settings."
 msgstr ""
 
-#: /packages/inspector-extension/schema/inspector.json:2
+#: /packages/inspector-extension/schema/consoles.json:/title /packages/inspector-extension/schema/notebooks.json:/title
 msgctxt "schema"
-msgid "Inspector"
+msgid "Inspector Notebook"
 msgstr ""
 
-#: /packages/inspector-extension/schema/inspector.json:3
+#: /packages/inspector-extension/schema/inspector.json:/description
 msgctxt "schema"
 msgid "Inspector settings."
 msgstr ""
 
-#: /packages/launcher-extension/schema/plugin.json:2
+#: /packages/inspector-extension/schema/inspector.json:/title
 msgctxt "schema"
-msgid "Launcher"
+msgid "Inspector"
 msgstr ""
 
-#: /packages/launcher-extension/schema/plugin.json:3
+#: /packages/launcher-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Launcher settings."
 msgstr ""
 
-#: /packages/logconsole-extension/schema/plugin.json:23
+#: /packages/launcher-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Log Console"
+msgid "Launcher"
 msgstr ""
 
-#: /packages/logconsole-extension/schema/plugin.json:24
+#: /packages/logconsole-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Log Console settings."
 msgstr ""
 
-#: /packages/logconsole-extension/schema/plugin.json:28
-msgid "Log entry count limit"
+#: /packages/logconsole-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Log Console"
 msgstr ""
 
-#: /packages/logconsole-extension/schema/plugin.json:29
-msgctxt "schema"
-msgid "Maximum number of log entries to store in memory"
-msgstr ""
-
-#: /packages/logconsole-extension/schema/plugin.json:34
-msgid "Status Bar Item flash"
-msgstr ""
-
-#: /packages/logconsole-extension/schema/plugin.json:35
-msgctxt "schema"
+#: /packages/logconsole-extension/schema/plugin.json:/properties/flash/description
+msgctxt "settings"
 msgid "Whether to flash on new log message or not"
 msgstr ""
 
-#: /packages/mainmenu-extension/schema/plugin.json:0
+#: /packages/logconsole-extension/schema/plugin.json:/properties/flash/title
+msgctxt "settings"
+msgid "Status Bar Item flash"
+msgstr ""
+
+#: /packages/logconsole-extension/schema/plugin.json:/properties/maxLogEntries/description
+msgctxt "settings"
+msgid "Maximum number of log entries to store in memory"
+msgstr ""
+
+#: /packages/logconsole-extension/schema/plugin.json:/properties/maxLogEntries/title
+msgctxt "settings"
+msgid "Log entry count limit"
+msgstr ""
+
+#: /packages/logconsole-extension/schema/plugin.json:/title
 msgctxt "schema"
+msgid "Log Console"
+msgstr ""
+
+#: /packages/mainmenu-extension/schema/plugin.json:/description
+msgctxt "schema"
+msgid "Main JupyterLab menu settings."
+msgstr ""
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
+msgctxt "menu"
+msgid "New"
+msgstr ""
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[0]/label
+msgctxt "menu"
+msgid "File"
+msgstr ""
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/label
+msgctxt "menu"
+msgid "Edit"
+msgstr ""
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[2]/label
+msgctxt "menu"
+msgid "View"
+msgstr ""
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[3]/label
+msgctxt "menu"
+msgid "Run"
+msgstr ""
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[4]/label
+msgctxt "menu"
+msgid "Kernel"
+msgstr ""
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[5]/label
+msgctxt "menu"
+msgid "Tabs"
+msgstr ""
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[6]/label
+msgctxt "menu"
+msgid "Settings"
+msgstr ""
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[7]/label
+msgctxt "menu"
+msgid "Help"
+msgstr ""
+
+#: /packages/mainmenu-extension/schema/plugin.json:/properties/menus/description
+msgctxt "settings"
 msgid "Note: To disable a menu or a menu item,\n"
 "copy it to User Preferences and add the\n"
 "\"disabled\" key. The following example will disable\n"
@@ -710,381 +982,449 @@ msgid "Note: To disable a menu or a menu item,\n"
 "Menu description:"
 msgstr ""
 
-#: /packages/mainmenu-extension/schema/plugin.json:2
+#: /packages/mainmenu-extension/schema/plugin.json:/properties/menus/title
+msgctxt "settings"
+msgid "The application menu description."
+msgstr ""
+
+#: /packages/mainmenu-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Main Menu"
 msgstr "Thanh công cụ"
 
-#: /packages/mainmenu-extension/schema/plugin.json:3
-msgctxt "schema"
-msgid "Main JupyterLab menu settings."
-msgstr ""
-
-#: /packages/mainmenu-extension/schema/plugin.json:314
-msgid "The application menu description."
-msgstr ""
-
-#: /packages/notebook-extension/schema/export.json:27
-msgctxt "schema"
-msgid "Notebook Export"
-msgstr ""
-
-#: /packages/notebook-extension/schema/export.json:28
+#: /packages/notebook-extension/schema/export.json:/description
 msgctxt "schema"
 msgid "Notebook Export settings."
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:579
-msgctxt "schema"
-msgid "Notebook"
+#: /packages/notebook-extension/schema/export.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
+msgctxt "menu"
+msgid "Export Notebook As…"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:580
+#: /packages/notebook-extension/schema/export.json:/title
+msgctxt "schema"
+msgid "Notebook Export"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/description
 msgctxt "schema"
 msgid "Notebook settings."
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:644
-msgid "Code Cell Configuration"
+#: /packages/notebook-extension/schema/tracker.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Notebook"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:645
-msgctxt "schema"
+#: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/description
+msgctxt "settings"
 msgid "The configuration for all code cells."
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:666
-msgid "Default cell type"
+#: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/title
+msgctxt "settings"
+msgid "Code Cell Configuration"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:667
-msgctxt "schema"
+#: /packages/notebook-extension/schema/tracker.json:/properties/defaultCell/description
+msgctxt "settings"
 msgid "The default type (markdown, code, or raw) for new cells"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:673
-msgid "Shut down kernel"
-msgstr "Hủy tiến trình kernel"
+#: /packages/notebook-extension/schema/tracker.json:/properties/defaultCell/title
+msgctxt "settings"
+msgid "Default cell type"
+msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:674
-msgctxt "schema"
+#: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/description
+msgctxt "settings"
 msgid "Whether to shut down or not the kernel when closing a notebook."
-msgstr "Tuỳ chỉnh giữ hoặc hủy tiến trình kernel khi đóng notebook."
+msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:679
+#: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/title
+msgctxt "settings"
+msgid "Shut down kernel"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/markdownCellConfig/description
+msgctxt "settings"
+msgid "The configuration for all markdown cells."
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/markdownCellConfig/title
+msgctxt "settings"
 msgid "Markdown Cell Configuration"
 msgstr ""
 
-#: /packages/notebook-extension/schema/tracker.json:680
-msgctxt "schema"
-msgid "The configuration for all markdown cells."
-msgstr "Tuỳ chỉnh áp dụng cho tất cả các cell chứa văn bản diễn giải (markdown)."
-
-#: /packages/notebook-extension/schema/tracker.json:701
-msgid "Raw Cell Configuration"
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:702
-msgctxt "schema"
-msgid "The configuration for all raw cells."
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:723
-msgid "Scroll past last cell"
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:724
-msgctxt "schema"
-msgid "Whether to be able to scroll so the last cell is at the top of the panel"
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:729
-msgid "Recording timing"
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:730
-msgctxt "schema"
-msgid "Should timing data be recorded in cell metadata"
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:735
-msgid "Number of cells to render directly"
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:736
-msgctxt "schema"
-msgid "Define the number of cells to render directly when virtual notebook intersection observer is available"
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:741
-msgid "Render cell on browser idle time"
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:742
-msgctxt "schema"
-msgid "Defines if the placeholder cells should be rendered when the browser is idle"
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:747
-msgid "Observed top margin"
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:748
-msgctxt "schema"
-msgid "Defines the observed top margin for the virtual notebook, set a positive number of pixels to render cells above the visible view"
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:753
-msgid "Observed bottom margin"
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:754
-msgctxt "schema"
-msgid "Defines the observed bottom margin for the virtual notebook, set a positive number of pixels to render cells below the visible view"
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:759
-msgid "The maximum number of output cells to to be rendered in the output area. Set to 0 to have the complete display."
-msgstr ""
-
-#: /packages/notebook-extension/schema/tracker.json:760
-msgctxt "schema"
+#: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/description
+msgctxt "settings"
 msgid "Defines the maximum number of output cells to to to be rendered in the output area for cells with many outputs. The output area will have a head and a tail, and the outputs between will be trimmed and not displayed unless the user clicks on the information message."
 msgstr ""
 
-#: /packages/settingeditor-extension/schema/plugin.json:2
-msgctxt "schema"
-msgid "Setting Editor"
+#: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/title
+msgctxt "settings"
+msgid "The maximum number of output cells to to be rendered in the output area. Set to 0 to have the complete display."
 msgstr ""
 
-#: /packages/settingeditor-extension/schema/plugin.json:3
+#: /packages/notebook-extension/schema/tracker.json:/properties/numberCellsToRenderDirectly/description
+msgctxt "settings"
+msgid "Define the number of cells to render directly when virtual notebook intersection observer is available"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/numberCellsToRenderDirectly/title
+msgctxt "settings"
+msgid "Number of cells to render directly"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/observedBottomMargin/description
+msgctxt "settings"
+msgid "Defines the observed bottom margin for the virtual notebook, set a positive number of pixels to render cells below the visible view"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/observedBottomMargin/title
+msgctxt "settings"
+msgid "Observed bottom margin"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/observedTopMargin/description
+msgctxt "settings"
+msgid "Defines the observed top margin for the virtual notebook, set a positive number of pixels to render cells above the visible view"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/observedTopMargin/title
+msgctxt "settings"
+msgid "Observed top margin"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/description
+msgctxt "settings"
+msgid "The configuration for all raw cells."
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/title
+msgctxt "settings"
+msgid "Raw Cell Configuration"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/recordTiming/description
+msgctxt "settings"
+msgid "Should timing data be recorded in cell metadata"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/recordTiming/title
+msgctxt "settings"
+msgid "Recording timing"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/renderCellOnIdle/description
+msgctxt "settings"
+msgid "Defines if the placeholder cells should be rendered when the browser is idle"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/renderCellOnIdle/title
+msgctxt "settings"
+msgid "Render cell on browser idle time"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/scrollPastEnd/description
+msgctxt "settings"
+msgid "Whether to be able to scroll so the last cell is at the top of the panel"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/scrollPastEnd/title
+msgctxt "settings"
+msgid "Scroll past last cell"
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/title
+msgctxt "schema"
+msgid "Notebook"
+msgstr ""
+
+#: /packages/settingeditor-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Setting editor settings."
 msgstr ""
 
-#: /packages/shortcuts-extension/schema/shortcuts.json:11
+#: /packages/settingeditor-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "The list of keyboard shortcuts."
-msgstr "Danh sách các phím tắt (tổ hợp phím)."
-
-#: /packages/shortcuts-extension/schema/shortcuts.json:5
-msgctxt "schema"
-msgid "Keyboard Shortcuts"
+msgid "Setting Editor"
 msgstr ""
 
-#: /packages/shortcuts-extension/schema/shortcuts.json:6
+#: /packages/shortcuts-extension/schema/shortcuts.json:/description
 msgctxt "schema"
 msgid "Keyboard shortcut settings."
 msgstr "Thiết đặt phím tắt."
 
-#: /packages/statusbar-extension/schema/plugin.json:25
-msgctxt "schema"
-msgid "Status Bar"
-msgstr "Thanh Trạng Thái"
+#: /packages/shortcuts-extension/schema/shortcuts.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Keyboard Shortcuts"
+msgstr ""
 
-#: /packages/statusbar-extension/schema/plugin.json:26
+#: /packages/shortcuts-extension/schema/shortcuts.json:/properties/shortcuts/description
+msgctxt "settings"
+msgid "The list of keyboard shortcuts."
+msgstr ""
+
+#: /packages/shortcuts-extension/schema/shortcuts.json:/title
+msgctxt "schema"
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: /packages/statusbar-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Status Bar settings."
 msgstr "Thiết đặt thanh trạng thái."
 
-#: /packages/statusbar-extension/schema/plugin.json:30
-msgid "Status Bar Visibility"
-msgstr "Hiển thị thanh Trạng Thái"
+#: /packages/statusbar-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Status Bar"
+msgstr ""
 
-#: /packages/statusbar-extension/schema/plugin.json:31
-msgctxt "schema"
+#: /packages/statusbar-extension/schema/plugin.json:/properties/visible/description
+msgctxt "settings"
 msgid "Whether to show status bar or not"
-msgstr "Tuỳ chỉnh để hiển thị thanh trạng thái"
-
-#: /packages/terminal-extension/schema/plugin.json:114
-msgid "Font family"
 msgstr ""
 
-#: /packages/terminal-extension/schema/plugin.json:115
+#: /packages/statusbar-extension/schema/plugin.json:/properties/visible/title
+msgctxt "settings"
+msgid "Status Bar Visibility"
+msgstr ""
+
+#: /packages/statusbar-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "The font family used to render text."
-msgstr ""
+msgid "Status Bar"
+msgstr "Thanh Trạng Thái"
 
-#: /packages/terminal-extension/schema/plugin.json:120
-msgid "Font size"
-msgstr "Cỡ chữ"
-
-#: /packages/terminal-extension/schema/plugin.json:121
-msgctxt "schema"
-msgid "The font size used to render text."
-msgstr "Cỡ chữ dùng hiển thị."
-
-#: /packages/terminal-extension/schema/plugin.json:126
-msgid "Line height"
-msgstr ""
-
-#: /packages/terminal-extension/schema/plugin.json:127
-msgctxt "schema"
-msgid "The line height used to render text."
-msgstr ""
-
-#: /packages/terminal-extension/schema/plugin.json:133
-msgctxt "schema"
-msgid "The theme for the terminal."
-msgstr ""
-
-#: /packages/terminal-extension/schema/plugin.json:138
-msgid "Screen Reader Mode"
-msgstr ""
-
-#: /packages/terminal-extension/schema/plugin.json:139
-msgctxt "schema"
-msgid "Add accessibility elements for use with screen readers."
-msgstr ""
-
-#: /packages/terminal-extension/schema/plugin.json:144
-msgid "Scrollback Buffer"
-msgstr ""
-
-#: /packages/terminal-extension/schema/plugin.json:145
-msgctxt "schema"
-msgid "The amount of scrollback beyond initial viewport"
-msgstr ""
-
-#: /packages/terminal-extension/schema/plugin.json:150
-msgid "Shut down on close"
-msgstr ""
-
-#: /packages/terminal-extension/schema/plugin.json:151
-msgctxt "schema"
-msgid "Shut down the session when closing the terminal."
-msgstr ""
-
-#: /packages/terminal-extension/schema/plugin.json:156
-msgid "Paste with Ctrl+V"
-msgstr "Gián bằng Ctrl+V"
-
-#: /packages/terminal-extension/schema/plugin.json:157
-msgctxt "schema"
-msgid "Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available"
-msgstr ""
-
-#: /packages/terminal-extension/schema/plugin.json:162
-msgid "Treat option as meta key on macOS"
-msgstr ""
-
-#: /packages/terminal-extension/schema/plugin.json:163
-msgctxt "schema"
-msgid "Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word"
-msgstr ""
-
-#: /packages/terminal-extension/schema/plugin.json:84
-msgctxt "schema"
-msgid "Terminal"
-msgstr ""
-
-#: /packages/terminal-extension/schema/plugin.json:85
+#: /packages/terminal-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Terminal settings."
 msgstr "Thiết đặt phiên điều khiển."
 
-#: /packages/toc-extension/schema/plugin.json:14
-msgid "Include cell output in headings"
+#: /packages/terminal-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[3]/submenu/label
+msgctxt "menu"
+msgid "Terminal Theme"
 msgstr ""
 
-#: /packages/toc-extension/schema/plugin.json:15
+#: /packages/terminal-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Terminal"
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/fontFamily/description
+msgctxt "settings"
+msgid "The font family used to render text."
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/fontFamily/title
+msgctxt "settings"
+msgid "Font family"
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/fontSize/description
+msgctxt "settings"
+msgid "The font size used to render text."
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/fontSize/title
+msgctxt "settings"
+msgid "Font size"
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/lineHeight/description
+msgctxt "settings"
+msgid "The line height used to render text."
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/lineHeight/title
+msgctxt "settings"
+msgid "Line height"
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/macOptionIsMeta/description
+msgctxt "settings"
+msgid "Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word"
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/macOptionIsMeta/title
+msgctxt "settings"
+msgid "Treat option as meta key on macOS"
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/pasteWithCtrlV/description
+msgctxt "settings"
+msgid "Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available"
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/pasteWithCtrlV/title
+msgctxt "settings"
+msgid "Paste with Ctrl+V"
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/screenReaderMode/description
+msgctxt "settings"
+msgid "Add accessibility elements for use with screen readers."
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/screenReaderMode/title
+msgctxt "settings"
+msgid "Screen Reader Mode"
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/scrollback/description
+msgctxt "settings"
+msgid "The amount of scrollback beyond initial viewport"
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/scrollback/title
+msgctxt "settings"
+msgid "Scrollback Buffer"
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/shutdownOnClose/description
+msgctxt "settings"
+msgid "Shut down the session when closing the terminal."
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/shutdownOnClose/title
+msgctxt "settings"
+msgid "Shut down on close"
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/theme/description
+msgctxt "settings"
+msgid "The theme for the terminal."
+msgstr ""
+
+#: /packages/terminal-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Whether to include cell output in headings"
+msgid "Terminal"
 msgstr ""
 
-#: /packages/toc-extension/schema/plugin.json:21
-msgid "Synchronize collapse state"
-msgstr ""
-
-#: /packages/toc-extension/schema/plugin.json:22
-msgctxt "schema"
-msgid "If set to true, when a header is collapsed in the table of contents the corresponding section in the notebook is collapsed as well and vice versa."
-msgstr ""
-
-#: /packages/toc-extension/schema/plugin.json:4
-msgctxt "schema"
-msgid "Table of Contents"
-msgstr ""
-
-#: /packages/toc-extension/schema/plugin.json:5
+#: /packages/toc-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Table of contents settings."
 msgstr ""
 
-#: /packages/toc-extension/schema/plugin.json:8
-msgid "Enable h1 numbering"
+#: /packages/toc-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Table of Contents"
 msgstr ""
 
-#: /packages/toc-extension/schema/plugin.json:9
-msgctxt "schema"
+#: /packages/toc-extension/schema/plugin.json:/properties/includeOutput/description
+msgctxt "settings"
+msgid "Whether to include cell output in headings"
+msgstr ""
+
+#: /packages/toc-extension/schema/plugin.json:/properties/includeOutput/title
+msgctxt "settings"
+msgid "Include cell output in headings"
+msgstr ""
+
+#: /packages/toc-extension/schema/plugin.json:/properties/numberingH1/description
+msgctxt "settings"
 msgid "Whether to number first-level headings"
 msgstr ""
 
-#: /packages/tooltip-extension/schema/consoles.json:2
-msgctxt "schema"
-msgid "Console Tooltips"
+#: /packages/toc-extension/schema/plugin.json:/properties/numberingH1/title
+msgctxt "settings"
+msgid "Enable h1 numbering"
 msgstr ""
 
-#: /packages/tooltip-extension/schema/consoles.json:3
+#: /packages/toc-extension/schema/plugin.json:/properties/syncCollapseState/description
+msgctxt "settings"
+msgid "If set to true, when a header is collapsed in the table of contents the corresponding section in the notebook is collapsed as well and vice versa."
+msgstr ""
+
+#: /packages/toc-extension/schema/plugin.json:/properties/syncCollapseState/title
+msgctxt "settings"
+msgid "Synchronize collapse state"
+msgstr ""
+
+#: /packages/toc-extension/schema/plugin.json:/title
+msgctxt "schema"
+msgid "Table of Contents"
+msgstr ""
+
+#: /packages/tooltip-extension/schema/consoles.json:/description
 msgctxt "schema"
 msgid "Console tooltip settings."
 msgstr ""
 
-#: /packages/tooltip-extension/schema/files.json:2
+#: /packages/tooltip-extension/schema/consoles.json:/title
 msgctxt "schema"
-msgid "File Editor Tooltips"
+msgid "Console Tooltips"
 msgstr ""
 
-#: /packages/tooltip-extension/schema/files.json:3
+#: /packages/tooltip-extension/schema/files.json:/description
 msgctxt "schema"
 msgid "File editor tooltip settings."
 msgstr ""
 
-#: /packages/tooltip-extension/schema/notebooks.json:2
+#: /packages/tooltip-extension/schema/files.json:/title
 msgctxt "schema"
-msgid "Notebook Tooltips"
+msgid "File Editor Tooltips"
 msgstr ""
 
-#: /packages/tooltip-extension/schema/notebooks.json:3
+#: /packages/tooltip-extension/schema/notebooks.json:/description
 msgctxt "schema"
 msgid "Notebook tooltip settings."
 msgstr ""
 
-#: /packages/translation-extension/schema/plugin.json:29
+#: /packages/tooltip-extension/schema/notebooks.json:/title
 msgctxt "schema"
-msgid "Language"
+msgid "Notebook Tooltips"
 msgstr ""
 
-#: /packages/translation-extension/schema/plugin.json:30
+#: /packages/translation-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Language settings."
 msgstr "Cài đặt ngôn ngữ."
 
-#: /packages/translation-extension/schema/plugin.json:35
-msgid "Language locale"
+#: /packages/translation-extension/schema/plugin.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
+msgctxt "menu"
+msgid "Language"
 msgstr ""
 
-#: /packages/translation-extension/schema/plugin.json:36
-msgctxt "schema"
-msgid "Set the interface display language. Examples: 'es_CO', 'fr'."
+#: /packages/translation-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Language"
 msgstr ""
 
-#: /packages/translation-extension/schema/plugin.json:41
-msgid "Localized strings prefix"
+#: /packages/translation-extension/schema/plugin.json:/properties/displayStringsPrefix/description
+msgctxt "settings"
+msgid "Display the `stringsPrefix` on localized strings."
 msgstr ""
 
-#: /packages/translation-extension/schema/plugin.json:42
-msgctxt "schema"
-msgid "Add a prefix to localized strings."
-msgstr ""
-
-#: /packages/translation-extension/schema/plugin.json:47
+#: /packages/translation-extension/schema/plugin.json:/properties/displayStringsPrefix/title
+msgctxt "settings"
 msgid "Display localized strings prefix"
 msgstr ""
 
-#: /packages/translation-extension/schema/plugin.json:48
+#: /packages/translation-extension/schema/plugin.json:/properties/locale/description
+msgctxt "settings"
+msgid "Set the interface display language. Examples: 'es_CO', 'fr'."
+msgstr ""
+
+#: /packages/translation-extension/schema/plugin.json:/properties/locale/title
+msgctxt "settings"
+msgid "Language locale"
+msgstr ""
+
+#: /packages/translation-extension/schema/plugin.json:/properties/stringsPrefix/description
+msgctxt "settings"
+msgid "Add a prefix to localized strings."
+msgstr ""
+
+#: /packages/translation-extension/schema/plugin.json:/properties/stringsPrefix/title
+msgctxt "settings"
+msgid "Localized strings prefix"
+msgstr ""
+
+#: /packages/translation-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Display the `stringsPrefix` on localized strings."
+msgid "Language"
 msgstr ""
 
 #: packages/application-extension/src/index.tsx:106 packages/apputils-extension/src/index.ts:305 packages/documentsearch-extension/src/index.ts:216 packages/documentsearch-extension/src/index.ts:220 packages/documentsearch-extension/src/index.ts:224 packages/logconsole-extension/src/index.tsx:242 packages/mainmenu-extension/src/index.ts:222 packages/mainmenu-extension/src/index.ts:226 packages/mainmenu-extension/src/index.ts:236 packages/statusbar-extension/src/index.ts:74
@@ -1343,6 +1683,10 @@ msgstr ""
 msgid "Decrease Font Size"
 msgstr ""
 
+#: packages/apputils-extension/src/themesplugins.ts:202
+msgid "Theme"
+msgstr ""
+
 #: packages/apputils-extension/src/themesplugins.ts:89
 msgid "Use Theme: %1"
 msgstr ""
@@ -1570,6 +1914,10 @@ msgstr ""
 #: packages/console-extension/src/foreign.ts:65 packages/console-extension/src/index.ts:156 packages/console-extension/src/index.ts:208 packages/console-extension/src/index.ts:466 packages/console/src/panel.ts:331 packages/launcher/src/index.tsx:150 packages/launcher/src/index.tsx:155
 msgid "Console"
 msgstr ""
+
+#: packages/console-extension/src/foreign.ts:79
+msgid "Show All Kernel Activity"
+msgstr "Xem tất cả băng thông của tiến trình kernel"
 
 #: packages/console-extension/src/index.ts:401
 msgid "Auto Close Brackets for Code Console Prompt"
@@ -1897,6 +2245,10 @@ msgstr ""
 
 #: packages/docmanager-extension/src/index.ts:717
 msgid "Save with new path"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.ts:736
+msgid "Autosave Documents"
 msgstr ""
 
 #: packages/docmanager-extension/src/index.ts:796
@@ -2609,7 +2961,7 @@ msgstr ""
 msgid "Complete!"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:1027 packages/fileeditor-extension/src/commands.ts:1041 packages/fileeditor-extension/src/commands.ts:1057 packages/launcher/src/index.tsx:151 packages/launcher/src/index.tsx:161 packages/launcher/src/index.tsx:434 packages/terminal-extension/src/index.ts:220
+#: packages/fileeditor-extension/src/commands.ts:1027 packages/fileeditor-extension/src/commands.ts:1041 packages/fileeditor-extension/src/commands.ts:1057 packages/launcher/src/index.tsx:151 packages/launcher/src/index.tsx:161 packages/launcher/src/index.tsx:434 packages/terminal-extension/src/index.ts:228
 msgid "Other"
 msgstr ""
 
@@ -3103,7 +3455,7 @@ msgstr ""
 msgid "New Console for Activity"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:376 packages/mainmenu-extension/src/index.ts:386 packages/running-extension/src/kernels.ts:39 packages/running/src/index.tsx:142 packages/terminal-extension/src/index.ts:251
+#: packages/mainmenu-extension/src/index.ts:376 packages/mainmenu-extension/src/index.ts:386 packages/running-extension/src/kernels.ts:39 packages/running/src/index.tsx:142 packages/terminal-extension/src/index.ts:259
 msgid "Shut Down"
 msgstr ""
 
@@ -3155,7 +3507,7 @@ msgstr ""
 msgid "Shut down all kernels?"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:542 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:252
+#: packages/mainmenu-extension/src/index.ts:542 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:260
 msgid "Shut Down All"
 msgstr ""
 
@@ -3881,63 +4233,63 @@ msgstr ""
 msgid "%1 Terminals, %2 Kernel sessions"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:177
+#: packages/terminal-extension/src/index.ts:185
 msgid "Shutdown Terminal"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:200 packages/terminal-extension/src/index.ts:394
+#: packages/terminal-extension/src/index.ts:208 packages/terminal-extension/src/index.ts:402
 msgid "Inherit"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:207 packages/terminal-extension/src/index.ts:395
+#: packages/terminal-extension/src/index.ts:215 packages/terminal-extension/src/index.ts:403
 msgid "Light"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:212 packages/terminal-extension/src/index.ts:396
+#: packages/terminal-extension/src/index.ts:220 packages/terminal-extension/src/index.ts:404
 msgid "Dark"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:245
+#: packages/terminal-extension/src/index.ts:253
 msgid "Terminals"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:253
+#: packages/terminal-extension/src/index.ts:261
 msgid "Are you sure you want to permanently shut down all running terminals?"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:295
+#: packages/terminal-extension/src/index.ts:303
 msgid "New Terminal"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:295 packages/terminal-extension/src/index.ts:88 packages/terminal/src/widget.ts:69
+#: packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:88 packages/terminal/src/widget.ts:69
 msgid "Terminal"
 msgstr "Phiên điều khiển"
 
-#: packages/terminal-extension/src/index.ts:296
+#: packages/terminal-extension/src/index.ts:304
 msgid "Start a new terminal session"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:345
+#: packages/terminal-extension/src/index.ts:353
 msgid "Refresh Terminal"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:346
+#: packages/terminal-extension/src/index.ts:354
 msgid "Refresh the current terminal session"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:366
+#: packages/terminal-extension/src/index.ts:374
 msgid "Increase Terminal Font Size"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:380
+#: packages/terminal-extension/src/index.ts:388
 msgid "Decrease Terminal Font Size"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:407
+#: packages/terminal-extension/src/index.ts:415
 msgid "Use Terminal Theme: %1"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:410
+#: packages/terminal-extension/src/index.ts:418
 msgid "Set the terminal theme"
 msgstr ""
 

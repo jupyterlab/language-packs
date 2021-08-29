@@ -12,68 +12,44 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-08-26 02:27\n"
+"PO-Revision-Date: 2021-08-27 11:23\n"
 
-#: /examples/federated/md_package/schema/plugin.json:30 /packages/markdownviewer-extension/schema/plugin.json:38
-msgid "Font Family"
-msgstr "字体集"
-
-#: /examples/federated/md_package/schema/plugin.json:31 /packages/markdownviewer-extension/schema/plugin.json:39
+#: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
+msgid "Markdown viewer settings."
+msgstr "Markdown 查看器设置。"
+
+#: /examples/federated/md_package/schema/plugin.json:/jupyter.lab.setting-icon-label /packages/markdownviewer-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Markdown Viewer"
+msgstr "Markdown 查看器"
+
+#: /examples/federated/md_package/schema/plugin.json:/properties/fontFamily/description /packages/markdownviewer-extension/schema/plugin.json:/properties/fontFamily/description
+msgctxt "settings"
 msgid "The font family used to render markdown.\n"
 "If `null`, value from current theme is used."
 msgstr "用于渲染 Markdown 的字体集。\n"
 "如果值为 `null`，则沿用当前主题的值。"
 
-#: /examples/federated/md_package/schema/plugin.json:36 /packages/markdownviewer-extension/schema/plugin.json:44
-msgid "Font Size"
-msgstr "字体大小"
+#: /examples/federated/md_package/schema/plugin.json:/properties/fontFamily/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontFamily/title
+msgctxt "settings"
+msgid "Font Family"
+msgstr "字体集"
 
-#: /examples/federated/md_package/schema/plugin.json:37 /packages/markdownviewer-extension/schema/plugin.json:45
-msgctxt "schema"
+#: /examples/federated/md_package/schema/plugin.json:/properties/fontSize/description /packages/markdownviewer-extension/schema/plugin.json:/properties/fontSize/description
+msgctxt "settings"
 msgid "The size in pixel of the font used to render markdown.\n"
 "If `null`, value from current theme is used."
 msgstr "用来渲染 Markdown 的字体的像素大小。\n"
 "如果值为 `null`，则沿用当前主题的值。"
 
-#: /examples/federated/md_package/schema/plugin.json:4 /packages/markdownviewer-extension/schema/plugin.json:4
-msgctxt "schema"
-msgid "Markdown Viewer"
-msgstr "Markdown 查看器"
+#: /examples/federated/md_package/schema/plugin.json:/properties/fontSize/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontSize/title
+msgctxt "settings"
+msgid "Font Size"
+msgstr "字体大小"
 
-#: /examples/federated/md_package/schema/plugin.json:42 /packages/markdownviewer-extension/schema/plugin.json:50
-msgid "Line Height"
-msgstr "行高"
-
-#: /examples/federated/md_package/schema/plugin.json:43 /packages/markdownviewer-extension/schema/plugin.json:51
-msgctxt "schema"
-msgid "The line height used to render markdown.\n"
-"If `null`, value from current theme is used."
-msgstr "用于渲染 Markdown 的行高。\n"
-"如果值为 `null`，则沿用当前主题的值。"
-
-#: /examples/federated/md_package/schema/plugin.json:48 /packages/markdownviewer-extension/schema/plugin.json:56
-msgid "Line Width"
-msgstr "行宽"
-
-#: /examples/federated/md_package/schema/plugin.json:49 /packages/markdownviewer-extension/schema/plugin.json:57
-msgctxt "schema"
-msgid "The text line width expressed in CSS ch units.\n"
-"If `null`, lines fit the viewport width."
-msgstr "以 CSS 中的 ch 单位表示的文本行宽。\n"
-"如果为 `null`， 则符合视口宽度。"
-
-#: /examples/federated/md_package/schema/plugin.json:5 /packages/markdownviewer-extension/schema/plugin.json:5
-msgctxt "schema"
-msgid "Markdown viewer settings."
-msgstr "Markdown 查看器设置。"
-
-#: /examples/federated/md_package/schema/plugin.json:54 /packages/markdownviewer-extension/schema/plugin.json:62
-msgid "Hide Front Matter"
-msgstr "隐藏 YAML 头部信息"
-
-#: /examples/federated/md_package/schema/plugin.json:55 /packages/markdownviewer-extension/schema/plugin.json:63
-msgctxt "schema"
+#: /examples/federated/md_package/schema/plugin.json:/properties/hideFrontMatter/description /packages/markdownviewer-extension/schema/plugin.json:/properties/hideFrontMatter/description
+msgctxt "settings"
 msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
@@ -83,27 +59,136 @@ msgstr "是否隐藏 YAML 头部。\n"
 "起始于三个破折线（---）构成的行，并结束于\n"
 "三个破折线（---）或三个点（...）构成的行。"
 
-#: /examples/federated/md_package/schema/plugin.json:60 /packages/markdownviewer-extension/schema/plugin.json:68
-msgid "Render Timeout"
-msgstr "渲染超时时间"
+#: /examples/federated/md_package/schema/plugin.json:/properties/hideFrontMatter/title /packages/markdownviewer-extension/schema/plugin.json:/properties/hideFrontMatter/title
+msgctxt "settings"
+msgid "Hide Front Matter"
+msgstr "隐藏 YAML 头部信息"
 
-#: /examples/federated/md_package/schema/plugin.json:61 /packages/markdownviewer-extension/schema/plugin.json:69
-msgctxt "schema"
+#: /examples/federated/md_package/schema/plugin.json:/properties/lineHeight/description /packages/markdownviewer-extension/schema/plugin.json:/properties/lineHeight/description
+msgctxt "settings"
+msgid "The line height used to render markdown.\n"
+"If `null`, value from current theme is used."
+msgstr "用于渲染 Markdown 的行高。\n"
+"如果值为 `null`，则沿用当前主题的值。"
+
+#: /examples/federated/md_package/schema/plugin.json:/properties/lineHeight/title /packages/markdownviewer-extension/schema/plugin.json:/properties/lineHeight/title
+msgctxt "settings"
+msgid "Line Height"
+msgstr "行高"
+
+#: /examples/federated/md_package/schema/plugin.json:/properties/lineWidth/description /packages/markdownviewer-extension/schema/plugin.json:/properties/lineWidth/description
+msgctxt "settings"
+msgid "The text line width expressed in CSS ch units.\n"
+"If `null`, lines fit the viewport width."
+msgstr "以 CSS 中的 ch 单位表示的文本行宽。如果为 `null`，则符合视口宽度。"
+
+#: /examples/federated/md_package/schema/plugin.json:/properties/lineWidth/title /packages/markdownviewer-extension/schema/plugin.json:/properties/lineWidth/title
+msgctxt "settings"
+msgid "Line Width"
+msgstr "行宽"
+
+#: /examples/federated/md_package/schema/plugin.json:/properties/renderTimeout/description /packages/markdownviewer-extension/schema/plugin.json:/properties/renderTimeout/description
+msgctxt "settings"
 msgid "The render timeout in milliseconds."
-msgstr "渲染超时（毫秒）。"
+msgstr "渲染超时（单位：毫秒）。"
 
-#: /packages/application-extension/schema/commands.json:2
+#: /examples/federated/md_package/schema/plugin.json:/properties/renderTimeout/title /packages/markdownviewer-extension/schema/plugin.json:/properties/renderTimeout/title
+msgctxt "settings"
+msgid "Render Timeout"
+msgstr "渲染超时"
+
+#: /examples/federated/md_package/schema/plugin.json:/title /packages/markdownviewer-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Application Commands"
-msgstr "应用命令"
+msgid "Markdown Viewer"
+msgstr "Markdown 查看器"
 
-#: /packages/application-extension/schema/commands.json:3
+#: /packages/application-extension/schema/commands.json:/description
 msgctxt "schema"
 msgid "Application commands settings."
 msgstr "应用命令设置。"
 
-#: /packages/application-extension/schema/context-menu.json:0
+#: /packages/application-extension/schema/commands.json:/title
 msgctxt "schema"
+msgid "Application Commands"
+msgstr "应用命令"
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/disabled/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/disabled/description
+msgctxt "settings"
+msgid "Whether the menu is disabled or not"
+msgstr "无论菜单是否已禁用"
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/icon/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/icon/description
+msgctxt "settings"
+msgid "Menu icon id"
+msgstr "菜单图标 id"
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/id/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/id/description
+msgctxt "settings"
+msgid "Menu unique id"
+msgstr "菜单唯一 id"
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/items/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/items/description
+msgctxt "settings"
+msgid "Menu items"
+msgstr "菜单项"
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/label/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/label/description
+msgctxt "settings"
+msgid "Menu label"
+msgstr "菜单标签"
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/mnemonic/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/mnemonic/description
+msgctxt "settings"
+msgid "Mnemonic index for the label"
+msgstr "标签的速记索引"
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/rank/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/rank/description
+msgctxt "settings"
+msgid "Menu rank"
+msgstr "菜单级别"
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/args/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/args/description
+msgctxt "settings"
+msgid "Command arguments"
+msgstr "命令参数"
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/command/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/command/description
+msgctxt "settings"
+msgid "Command id"
+msgstr "命令 id"
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/disabled/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/disabled/description
+msgctxt "settings"
+msgid "Whether the item is disabled or not"
+msgstr "无论菜单项是否已禁用"
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/rank/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/rank/description
+msgctxt "settings"
+msgid "Item rank"
+msgstr "菜单项等级"
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/submenu/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/submenu/description
+msgctxt "settings"
+msgid "Submenu definition"
+msgstr "子菜单定义"
+
+#: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/type/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/type/description
+msgctxt "settings"
+msgid "Item type"
+msgstr "菜单项类型"
+
+#: /packages/application-extension/schema/context-menu.json:/description
+msgctxt "schema"
+msgid "JupyterLab context menu settings."
+msgstr "JupyterLab 上下文菜单设置。"
+
+#: /packages/application-extension/schema/context-menu.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Application Context Menu"
+msgstr "应用程序的上下文菜单"
+
+#: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/description
+msgctxt "settings"
 msgid "Note: To disable a context menu item,\n"
 "copy it to User Preferences and add the\n"
 "\"disabled\" key. The following example will disable Download item on files:\n"
@@ -118,8 +203,8 @@ msgid "Note: To disable a context menu item,\n"
 "}\n\n"
 "Context menu description:"
 msgstr "注意：要禁用上下文菜单项，\n"
-"将其复制到用户首选项并添加「禁用」键。\n"
-"下面的示例将在文件上禁用下载项：\n"
+"将其复制到用户首选项并添加「disabled」键。\n"
+"下面的示例将禁用文件浏览器上下文菜单中的下载选项：\n"
 "{\n"
 "  \"contextMenu\": [\n"
 "    {\n"
@@ -131,487 +216,606 @@ msgstr "注意：要禁用上下文菜单项，\n"
 "}\n\n"
 "上下文菜单描述："
 
-#: /packages/application-extension/schema/context-menu.json:3
-msgctxt "schema"
-msgid "JupyterLab context menu settings."
-msgstr "JupyterLab 上下文菜单设置。"
+#: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/items/allOf[1]/properties/selector/description
+msgctxt "settings"
+msgid "The CSS selector for the context menu item."
+msgstr "上下文菜单项的 CSS 选择器。"
 
-#: /packages/application-extension/schema/context-menu.json:4
+#: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/title
+msgctxt "settings"
+msgid "The application context menu."
+msgstr "应用程序的上下文菜单."
+
+#: /packages/application-extension/schema/context-menu.json:/title
 msgctxt "schema"
 msgid "Application Context Menu"
 msgstr "应用上下文菜单"
 
-#: /packages/application-extension/schema/context-menu.json:9
-msgid "The application context menu."
-msgstr "应用程序上下文菜单。"
-
-#: /packages/application-extension/schema/sidebar.json:0
-msgctxt "schema"
-msgid "Overrides for where to show sidebar items\n"
-"e.g., {\"tab-manager\": \"right\"}"
-msgstr "覆盖侧边栏项目显示位置\n"
-"例如 {\"tab-manager\": \"right\"}"
-
-#: /packages/application-extension/schema/sidebar.json:17
-msgid "Overrides"
-msgstr "覆盖"
-
-#: /packages/application-extension/schema/sidebar.json:3
-msgctxt "schema"
-msgid "Sidebar"
-msgstr "侧边栏"
-
-#: /packages/application-extension/schema/sidebar.json:4
+#: /packages/application-extension/schema/sidebar.json:/description
 msgctxt "schema"
 msgid "Sidebar layout settings."
 msgstr "侧边栏布局设置。"
 
-#: /packages/apputils-extension/schema/palette.json:2
+#: /packages/application-extension/schema/sidebar.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Sidebar"
+msgstr "侧边栏"
+
+#: /packages/application-extension/schema/sidebar.json:/properties/overrides/description
+msgctxt "settings"
+msgid "Overrides for where to show sidebar items\n"
+"e.g., {\"tab-manager\": \"right\"}"
+msgstr "覆盖侧边栏项目的显示位置\n"
+"例如 {\"tab-manager\": \"right\"}"
+
+#: /packages/application-extension/schema/sidebar.json:/properties/overrides/title
+msgctxt "settings"
+msgid "Overrides"
+msgstr "覆盖"
+
+#: /packages/application-extension/schema/sidebar.json:/title
 msgctxt "schema"
-msgid "Command Palette"
-msgstr "命令面板"
+msgid "Sidebar"
+msgstr "侧边栏"
 
-#: /packages/apputils-extension/schema/palette.json:26
-msgid "Modal Command Palette"
-msgstr "命令面板"
-
-#: /packages/apputils-extension/schema/palette.json:27
-msgctxt "schema"
-msgid "Whether the command palette should be modal or in the left panel."
-msgstr "命令面板是否应该浮窗是还是出现在左侧。"
-
-#: /packages/apputils-extension/schema/palette.json:3
+#: /packages/apputils-extension/schema/palette.json:/description
 msgctxt "schema"
 msgid "Command palette settings."
 msgstr "命令面板设置。"
 
-#: /packages/apputils-extension/schema/print.json:2
-msgctxt "schema"
-msgid "Print"
-msgstr "打印"
+#: /packages/apputils-extension/schema/palette.json:/properties/modal/description
+msgctxt "settings"
+msgid "Whether the command palette should be modal or in the left panel."
+msgstr "无论命令面板是模态的还是出现在左侧"
 
-#: /packages/apputils-extension/schema/print.json:3
+#: /packages/apputils-extension/schema/palette.json:/properties/modal/title
+msgctxt "settings"
+msgid "Modal Command Palette"
+msgstr "模态命令面板"
+
+#: /packages/apputils-extension/schema/palette.json:/title
+msgctxt "schema"
+msgid "Command Palette"
+msgstr "命令面板"
+
+#: /packages/apputils-extension/schema/print.json:/description
 msgctxt "schema"
 msgid "Print settings."
 msgstr "打印设置。"
 
-#: /packages/apputils-extension/schema/themes.json:107
-msgid "Selected Theme"
-msgstr "选定的主题"
-
-#: /packages/apputils-extension/schema/themes.json:108
+#: /packages/apputils-extension/schema/print.json:/title
 msgctxt "schema"
-msgid "Application-level visual styling theme"
-msgstr "应用程序级视觉样式主题"
+msgid "Print"
+msgstr "打印"
 
-#: /packages/apputils-extension/schema/themes.json:113
-msgid "Scrollbar Theming"
-msgstr "滚动条主题"
+#: /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/code-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/content-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/ui-font-family/description
+msgctxt "settings"
+msgid "font-family"
+msgstr "字体集"
 
-#: /packages/apputils-extension/schema/themes.json:114
-msgctxt "schema"
-msgid "Enable/disable styling of the application scrollbars"
-msgstr "启用/禁用应用程序滚动条样式"
+#: /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/code-font-size/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/content-font-size1/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/ui-font-size1/description
+msgctxt "settings"
+msgid "font-size"
+msgstr "字体大小"
 
-#: /packages/apputils-extension/schema/themes.json:118
-msgid "Theme CSS Overrides"
-msgstr "主题 CSS 覆盖写入"
-
-#: /packages/apputils-extension/schema/themes.json:119
-msgctxt "schema"
-msgid "Override theme CSS variables by setting key-value pairs here"
-msgstr "在此设定键值对以覆盖主题 CSS 变量"
-
-#: /packages/apputils-extension/schema/themes.json:2
-msgctxt "schema"
-msgid "Theme"
-msgstr "主题"
-
-#: /packages/apputils-extension/schema/themes.json:66
+#: /packages/apputils-extension/schema/themes.json:/description
 msgctxt "schema"
 msgid "Theme manager settings."
 msgstr "主题管理器设置。"
 
-#: /packages/apputils-extension/schema/workspaces.json:2
-msgctxt "schema"
-msgid "Workspaces"
-msgstr "工作空间"
+#: /packages/apputils-extension/schema/themes.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
+msgctxt "menu"
+msgid "JupyterLab Theme"
+msgstr "JupyterLab 主题"
 
-#: /packages/apputils-extension/schema/workspaces.json:3
+#: /packages/apputils-extension/schema/themes.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Theme Manager"
+msgstr "主题管理器"
+
+#: /packages/apputils-extension/schema/themes.json:/properties/overrides/description
+msgctxt "settings"
+msgid "Override theme CSS variables by setting key-value pairs here"
+msgstr "在此设定键值对以覆盖主题 CSS 变量"
+
+#: /packages/apputils-extension/schema/themes.json:/properties/overrides/title
+msgctxt "settings"
+msgid "Theme CSS Overrides"
+msgstr "主题 CSS 覆盖"
+
+#: /packages/apputils-extension/schema/themes.json:/properties/theme-scrollbars/description
+msgctxt "settings"
+msgid "Enable/disable styling of the application scrollbars"
+msgstr "启用/禁用应用程序滚动条样式"
+
+#: /packages/apputils-extension/schema/themes.json:/properties/theme-scrollbars/title
+msgctxt "settings"
+msgid "Scrollbar Theming"
+msgstr "滚动条主题"
+
+#: /packages/apputils-extension/schema/themes.json:/properties/theme/description
+msgctxt "settings"
+msgid "Application-level visual styling theme"
+msgstr "应用程序级视觉样式主题"
+
+#: /packages/apputils-extension/schema/themes.json:/properties/theme/title
+msgctxt "settings"
+msgid "Selected Theme"
+msgstr "选定的主题"
+
+#: /packages/apputils-extension/schema/themes.json:/title
+msgctxt "schema"
+msgid "Theme"
+msgstr "主题"
+
+#: /packages/apputils-extension/schema/workspaces.json:/description
 msgctxt "schema"
 msgid "Workspaces settings."
 msgstr "工作区设置。"
 
-#: /packages/codemirror-extension/schema/commands.json:172
+#: /packages/apputils-extension/schema/workspaces.json:/title
 msgctxt "schema"
-msgid "CodeMirror"
-msgstr "CodeMirror"
+msgid "Workspaces"
+msgstr "工作空间"
 
-#: /packages/codemirror-extension/schema/commands.json:173
+#: /packages/codemirror-extension/schema/commands.json:/description
 msgctxt "schema"
 msgid "Text editor settings for all CodeMirror editors."
 msgstr "所有 CodeMirror 文本编辑器的全局设置。"
 
-#: /packages/codemirror-extension/schema/commands.json:177
-msgid "Key Map"
-msgstr "按键映射"
+#: /packages/codemirror-extension/schema/commands.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
+msgctxt "menu"
+msgid "Text Editor Syntax Highlighting"
+msgstr "文本编辑器语法加亮"
 
-#: /packages/codemirror-extension/schema/commands.json:178
-msgctxt "schema"
+#: /packages/codemirror-extension/schema/commands.json:/jupyter.lab.menus/main[1]/items[0]/submenu/label
+msgctxt "menu"
+msgid "Text Editor Key Map"
+msgstr "文本编辑器按键映射"
+
+#: /packages/codemirror-extension/schema/commands.json:/jupyter.lab.menus/main[1]/items[1]/submenu/label
+msgctxt "menu"
+msgid "Text Editor Theme"
+msgstr "文本编辑器主题"
+
+#: /packages/codemirror-extension/schema/commands.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "CodeMirror"
+msgstr "CodeMirror"
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/keyMap/description
+msgctxt "settings"
 msgid "Configures the keymap to use"
 msgstr "配置快捷键映射"
 
-#: /packages/codemirror-extension/schema/commands.json:183 /packages/terminal-extension/schema/plugin.json:132 packages/apputils-extension/src/themesplugins.ts:202
-msgid "Theme"
-msgstr "主题"
+#: /packages/codemirror-extension/schema/commands.json:/properties/keyMap/title
+msgctxt "settings"
+msgid "Key Map"
+msgstr "按键映射"
 
-#: /packages/codemirror-extension/schema/commands.json:184
-msgctxt "schema"
-msgid "CSS file defining the corresponding\n"
-".cm-s-[name] styles is loaded"
-msgstr "定义对应的.cm-s-[name] 样式的\n"
-"CSS 文件已加载"
+#: /packages/codemirror-extension/schema/commands.json:/properties/lineWiseCopyCut/description
+msgctxt "settings"
+msgid "When enabled, which is the default, doing copy or cut when there is no selection will copy or cut the whole lines that have cursors on them."
+msgstr "当启用时（此为默认值），在没有选取内容的情况下复制或剪切操作将会复制或剪切光标所在的整行。"
 
-#: /packages/codemirror-extension/schema/commands.json:189
-msgid "Scroll behavior"
-msgstr "滚动行为"
-
-#: /packages/codemirror-extension/schema/commands.json:190
-msgctxt "schema"
-msgid "Whether to scroll past the end of text document"
-msgstr "是否滚动超过文本文档的末端"
-
-#: /packages/codemirror-extension/schema/commands.json:195
-msgid "Style Active Line"
-msgstr "样式化活动行"
-
-#: /packages/codemirror-extension/schema/commands.json:196
-msgctxt "schema"
-msgid "Value is boolean, or { nonEmpty: boolean }"
-msgstr "值是布尔值或 { nonEmpty: boolean }"
-
-#: /packages/codemirror-extension/schema/commands.json:201
-msgid "Style Selected Text"
-msgstr "样式化选定的文本"
-
-#: /packages/codemirror-extension/schema/commands.json:202
-msgctxt "schema"
-msgid "Value is boolean"
-msgstr "值为布尔值"
-
-#: /packages/codemirror-extension/schema/commands.json:207
-msgid "Selection Pointer"
-msgstr "选择指针"
-
-#: /packages/codemirror-extension/schema/commands.json:208
-msgctxt "schema"
-msgid "Value is boolean or string, e.g. 'pointer'"
-msgstr "值是布尔值或字符串（例如 'pointer'）"
-
-#: /packages/codemirror-extension/schema/commands.json:213
+#: /packages/codemirror-extension/schema/commands.json:/properties/lineWiseCopyCut/title
+msgctxt "settings"
 msgid "Ctrl-C"
 msgstr "Ctrl+C"
 
-#: /packages/codemirror-extension/schema/commands.json:214
-msgctxt "schema"
-msgid "When enabled, which is the default, doing copy or cut when there is no selection will copy or cut the whole lines that have cursors on them."
-msgstr "当启用时（此为默认值）， 在没有选取内容的情况下复制或剪切操作将会复制或剪切光标所在的整行。"
+#: /packages/codemirror-extension/schema/commands.json:/properties/scrollPastEnd/description
+msgctxt "settings"
+msgid "Whether to scroll past the end of text document"
+msgstr "是否滚动超过文本文档的末端"
 
-#: /packages/completer-extension/schema/consoles.json:2
-msgctxt "schema"
-msgid "Console Completer"
-msgstr "控制台补全"
+#: /packages/codemirror-extension/schema/commands.json:/properties/scrollPastEnd/title
+msgctxt "settings"
+msgid "Scroll behavior"
+msgstr "滚动行为"
 
-#: /packages/completer-extension/schema/consoles.json:3
+#: /packages/codemirror-extension/schema/commands.json:/properties/selectionPointer/description
+msgctxt "settings"
+msgid "Value is boolean or string, e.g. 'pointer'"
+msgstr "值是布尔值或字符串（例如 'pointer'）"
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/selectionPointer/title
+msgctxt "settings"
+msgid "Selection Pointer"
+msgstr "选择指针"
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/styleActiveLine/description
+msgctxt "settings"
+msgid "Value is boolean, or { nonEmpty: boolean }"
+msgstr "值是布尔值或 { nonEmpty: boolean }"
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/styleActiveLine/title
+msgctxt "settings"
+msgid "Style Active Line"
+msgstr "样式化活动行"
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/styleSelectedText/description
+msgctxt "settings"
+msgid "Value is boolean"
+msgstr "值为布尔值"
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/styleSelectedText/title
+msgctxt "settings"
+msgid "Style Selected Text"
+msgstr "样式化选定的文本"
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/theme/description
+msgctxt "settings"
+msgid "CSS file defining the corresponding\n"
+".cm-s-[name] styles is loaded"
+msgstr "定义对应的 .cm-s-[name] 样式的\n"
+"CSS 文件已加载"
+
+#: /packages/codemirror-extension/schema/commands.json:/properties/theme/title /packages/terminal-extension/schema/plugin.json:/properties/theme/title
+msgctxt "settings"
+msgid "Theme"
+msgstr "主题"
+
+#: /packages/codemirror-extension/schema/commands.json:/title
+msgctxt "schema"
+msgid "CodeMirror"
+msgstr "CodeMirror"
+
+#: /packages/completer-extension/schema/consoles.json:/description
 msgctxt "schema"
 msgid "Console completer settings."
 msgstr "控制台补全设置"
 
-#: /packages/completer-extension/schema/files.json:2
+#: /packages/completer-extension/schema/consoles.json:/title
 msgctxt "schema"
-msgid "File Editor Completer"
-msgstr "文件编辑器补全"
+msgid "Console Completer"
+msgstr "控制台补全"
 
-#: /packages/completer-extension/schema/files.json:3
+#: /packages/completer-extension/schema/files.json:/description
 msgctxt "schema"
 msgid "File editor completer settings."
 msgstr "文件编辑器补全设置。"
 
-#: /packages/completer-extension/schema/notebooks.json:2
+#: /packages/completer-extension/schema/files.json:/title
 msgctxt "schema"
-msgid "Notebook Completer"
-msgstr "笔记本自动补全"
+msgid "File Editor Completer"
+msgstr "文件编辑器补全"
 
-#: /packages/completer-extension/schema/notebooks.json:3
+#: /packages/completer-extension/schema/notebooks.json:/description
 msgctxt "schema"
 msgid "Notebook completer settings."
 msgstr "笔记本自动补全设置。"
 
-#: /packages/console-extension/schema/foreign.json:2
+#: /packages/completer-extension/schema/notebooks.json:/title
 msgctxt "schema"
-msgid "Code Console Foreign plugin"
-msgstr "代码控制台外部插件"
+msgid "Notebook Completer"
+msgstr "笔记本自动补全"
 
-#: /packages/console-extension/schema/foreign.json:3
+#: /packages/console-extension/schema/foreign.json:/description
 msgctxt "schema"
 msgid "Code Console Foreign plugin settings."
 msgstr "代码控制台外部插件设置。"
 
-#: /packages/console-extension/schema/tracker.json:162
-msgid "Interaction mode"
-msgstr "交互模式"
-
-#: /packages/console-extension/schema/tracker.json:163
+#: /packages/console-extension/schema/foreign.json:/title
 msgctxt "schema"
-msgid "Whether the console interaction mimics the notebook\n"
-"or terminal keyboard shortcuts."
-msgstr "控制台交互是否模拟笔记本或终端键盘快捷键。"
+msgid "Code Console Foreign plugin"
+msgstr "代码控制台外部插件"
 
-#: /packages/console-extension/schema/tracker.json:169 packages/console-extension/src/foreign.ts:79
-msgid "Show All Kernel Activity"
-msgstr "显示所有内核动态"
+#: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/description /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/cursorBlinkRate/description /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/description
+msgctxt "settings"
+msgid "Half-period in milliseconds used for cursor blinking. The default blink rate is 530ms. By setting this to zero, blinking can be disabled. A negative value hides the cursor entirely."
+msgstr "光标闪烁所用的半段时间（毫秒）。默认闪光速率为 530 毫秒。如果设置为零将禁用闪烁。如果设为负值将完全隐藏光标。"
 
-#: /packages/console-extension/schema/tracker.json:170
-msgctxt "schema"
-msgid "Whether the console defaults to showing all\n"
-"kernel activity or just kernel activity originating from itself."
-msgstr "控制台是默认显示所有内核活动，还是仅显示源自其自身的内核活动。"
+#: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/title /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/cursorBlinkRate/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/title
+msgctxt "settings"
+msgid "Cursor blinking rate"
+msgstr "光标闪烁频率"
 
-#: /packages/console-extension/schema/tracker.json:175
-msgid "Prompt Cell Configuration"
-msgstr "提示符单元格配置"
-
-#: /packages/console-extension/schema/tracker.json:176
-msgctxt "schema"
-msgid "The configuration for all prompt cells."
-msgstr "所有提示符单元格配置。"
-
-#: /packages/console-extension/schema/tracker.json:2
-msgctxt "schema"
-msgid "Code Console"
-msgstr "代码控制台"
-
-#: /packages/console-extension/schema/tracker.json:3
+#: /packages/console-extension/schema/tracker.json:/description
 msgctxt "schema"
 msgid "Code Console settings."
 msgstr "代码控制台设置。"
 
-#: /packages/debugger-extension/schema/main.json:3
+#: /packages/console-extension/schema/tracker.json:/jupyter.lab.menus/main[1]/items[1]/submenu/label
+msgctxt "menu"
+msgid "Console Run Keystroke"
+msgstr "控制台运行按键"
+
+#: /packages/console-extension/schema/tracker.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Code Console Settings"
+msgstr "代码控制台设置"
+
+#: /packages/console-extension/schema/tracker.json:/properties/interactionMode/description
+msgctxt "settings"
+msgid "Whether the console interaction mimics the notebook\n"
+"or terminal keyboard shortcuts."
+msgstr "控制台交互是否模拟笔记本或终端键盘快捷键。"
+
+#: /packages/console-extension/schema/tracker.json:/properties/interactionMode/title
+msgctxt "settings"
+msgid "Interaction mode"
+msgstr "交互模式"
+
+#: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/description
+msgctxt "settings"
+msgid "The configuration for all prompt cells."
+msgstr "所有提示符单元格配置。"
+
+#: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/title
+msgctxt "settings"
+msgid "Prompt Cell Configuration"
+msgstr "提示符单元格配置"
+
+#: /packages/console-extension/schema/tracker.json:/properties/showAllKernelActivity/description
+msgctxt "settings"
+msgid "Whether the console defaults to showing all\n"
+"kernel activity or just kernel activity originating from itself."
+msgstr "控制台是默认显示所有内核活动，还是仅显示源自其自身的内核活动。"
+
+#: /packages/console-extension/schema/tracker.json:/properties/showAllKernelActivity/title
+msgctxt "settings"
+msgid "Show All Kernel Activity"
+msgstr "显示所有内核动态"
+
+#: /packages/console-extension/schema/tracker.json:/title
+msgctxt "schema"
+msgid "Code Console"
+msgstr "代码控制台"
+
+#: /packages/debugger-extension/schema/main.json:/description
 msgctxt "schema"
 msgid "Debugger settings"
 msgstr "调试器设置"
 
-#: /packages/debugger-extension/schema/main.json:5
+#: /packages/debugger-extension/schema/main.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Debugger"
+msgstr "调试器"
+
+#: /packages/debugger-extension/schema/main.json:/properties/variableFilters/description
+msgctxt "settings"
+msgid "Variables to filter out in the tree and table viewers"
+msgstr "在树和表格查看器中筛选变量"
+
+#: /packages/debugger-extension/schema/main.json:/properties/variableFilters/title
+msgctxt "settings"
+msgid "Variable filter"
+msgstr "变量筛选器"
+
+#: /packages/debugger-extension/schema/main.json:/title
 msgctxt "schema"
 msgid "Debugger"
 msgstr "调试器"
 
-#: /packages/debugger-extension/schema/main.json:59
-msgid "Variable filter"
-msgstr "变量筛选器"
-
-#: /packages/debugger-extension/schema/main.json:60
-msgctxt "schema"
-msgid "Variables to filter out in the tree and table viewers"
-msgstr "在树和表格查看器中筛选变量"
-
-#: /packages/docmanager-extension/schema/download.json:2
-msgctxt "schema"
-msgid "Document Manager Download"
-msgstr "文档管理器下载"
-
-#: /packages/docmanager-extension/schema/download.json:3
+#: /packages/docmanager-extension/schema/download.json:/description
 msgctxt "schema"
 msgid "Document Manager Download settings."
 msgstr "文档管理器下载设置。"
 
-#: /packages/docmanager-extension/schema/plugin.json:110 packages/docmanager-extension/src/index.ts:736
-msgid "Autosave Documents"
-msgstr "自动保存文档"
-
-#: /packages/docmanager-extension/schema/plugin.json:111
+#: /packages/docmanager-extension/schema/download.json:/title
 msgctxt "schema"
-msgid "Whether to autosave documents"
-msgstr "是否自动保存文档"
+msgid "Document Manager Download"
+msgstr "文档管理器下载"
 
-#: /packages/docmanager-extension/schema/plugin.json:116
-msgid "Autosave Interval"
-msgstr "自动保存间隔"
-
-#: /packages/docmanager-extension/schema/plugin.json:117
-msgctxt "schema"
-msgid "Length of save interval in seconds"
-msgstr "保存间隔（秒）"
-
-#: /packages/docmanager-extension/schema/plugin.json:122
-msgid "Default Viewers"
-msgstr "默认查看器"
-
-#: /packages/docmanager-extension/schema/plugin.json:124
-msgctxt "schema"
-msgid "Overrides for the default viewers for file types"
-msgstr "覆盖指定文件类型的默认查看器"
-
-#: /packages/docmanager-extension/schema/plugin.json:3
+#: /packages/docmanager-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Document Manager settings."
 msgstr "文档管理器设置。"
 
-#: /packages/docmanager-extension/schema/plugin.json:5
+#: /packages/docmanager-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Document Manager"
+msgstr "文档管理器"
+
+#: /packages/docmanager-extension/schema/plugin.json:/properties/autosave/description
+msgctxt "settings"
+msgid "Whether to autosave documents"
+msgstr "是否自动保存文档"
+
+#: /packages/docmanager-extension/schema/plugin.json:/properties/autosave/title
+msgctxt "settings"
+msgid "Autosave Documents"
+msgstr "自动保存文档"
+
+#: /packages/docmanager-extension/schema/plugin.json:/properties/autosaveInterval/description
+msgctxt "settings"
+msgid "Length of save interval in seconds"
+msgstr "保存间隔（秒）"
+
+#: /packages/docmanager-extension/schema/plugin.json:/properties/autosaveInterval/title
+msgctxt "settings"
+msgid "Autosave Interval"
+msgstr "自动保存间隔"
+
+#: /packages/docmanager-extension/schema/plugin.json:/properties/defaultViewers/description
+msgctxt "settings"
+msgid "Overrides for the default viewers for file types"
+msgstr "覆盖指定文件类型的默认查看器"
+
+#: /packages/docmanager-extension/schema/plugin.json:/properties/defaultViewers/title
+msgctxt "settings"
+msgid "Default Viewers"
+msgstr "默认查看器"
+
+#: /packages/docmanager-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Document Manager"
 msgstr "文档管理器"
 
-#: /packages/documentsearch-extension/schema/plugin.json:2
-msgctxt "schema"
-msgid "Document Search"
-msgstr "文档搜索"
-
-#: /packages/documentsearch-extension/schema/plugin.json:3
+#: /packages/documentsearch-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Document search plugin."
 msgstr "文档搜索插件。"
 
-#: /packages/extensionmanager-extension/schema/plugin.json:25
+#: /packages/documentsearch-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Extension Manager"
-msgstr "扩展程序管理器"
+msgid "Document Search"
+msgstr "文档搜索"
 
-#: /packages/extensionmanager-extension/schema/plugin.json:26
+#: /packages/extensionmanager-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Extension manager settings."
 msgstr "扩展管理器设置。"
 
-#: /packages/extensionmanager-extension/schema/plugin.json:29
-msgid "Enabled Status"
-msgstr "启用状态"
+#: /packages/extensionmanager-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Extension Manager"
+msgstr "扩展管理器"
 
-#: /packages/extensionmanager-extension/schema/plugin.json:30
-msgctxt "schema"
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/disclaimed/description
+msgctxt "settings"
+msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
+msgstr "用户是否理解通过此接口管理的扩展会运行任意代码（这些代码可能具有危险性）"
+
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/disclaimed/title
+msgctxt "settings"
+msgid "Disclaimed Status"
+msgstr "免责状态"
+
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/enableCdn/description
+msgctxt "settings"
+msgid "Enables using the CDN to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry"
+msgstr "启用通过 CDN 获取完整的包数据。否则，将使用已配置的 NPM 源。由于 NPM 源缺少 CORS 支持，请仅在提供自定义源时禁用该选项"
+
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/enableCdn/title
+msgctxt "settings"
+msgid "Enable CDN"
+msgstr "开启 CDN"
+
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/description
+msgctxt "settings"
 msgid "Enables extension manager (requires Node.js/npm).\n"
 "WARNING: installing untrusted extensions may be unsafe."
 msgstr "启用扩展管理器（需要 Node.js/npm）。\n"
 "警告: 安装不信任的扩展可能不安全。"
 
-#: /packages/extensionmanager-extension/schema/plugin.json:35
-msgid "Disclaimed Status"
-msgstr "免责状态"
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/title
+msgctxt "settings"
+msgid "Enabled Status"
+msgstr "启用状态"
 
-#: /packages/extensionmanager-extension/schema/plugin.json:36
-msgctxt "schema"
-msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
-msgstr "用户是否理解通过此接口管理的扩展会运行任意代码（这些代码可能具有危险性）"
-
-#: /packages/extensionmanager-extension/schema/plugin.json:41
-msgid "NPM Registry"
-msgstr "NPM 源"
-
-#: /packages/extensionmanager-extension/schema/plugin.json:42
-msgctxt "schema"
-msgid "The URI of the NPM registry to use for searching for jupyterlab extensions"
-msgstr "用于搜索 JupyterLab 扩展时所用的 NPM 源 URI"
-
-#: /packages/extensionmanager-extension/schema/plugin.json:47
-msgid "NPM CDN"
-msgstr "NPM CDN"
-
-#: /packages/extensionmanager-extension/schema/plugin.json:48
-msgctxt "schema"
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/description
+msgctxt "settings"
 msgid "The URI of the CDN to use for fetching full package data"
 msgstr "用于获取完整包数据的 CDN URI"
 
-#: /packages/extensionmanager-extension/schema/plugin.json:53
-msgid "Enable CDN"
-msgstr "开启 CDN"
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/title
+msgctxt "settings"
+msgid "NPM CDN"
+msgstr "NPM CDN"
 
-#: /packages/extensionmanager-extension/schema/plugin.json:54
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmRegistry/description
+msgctxt "settings"
+msgid "The URI of the NPM registry to use for searching for jupyterlab extensions"
+msgstr "用于搜索 JupyterLab 扩展时所用的 NPM 源 URI"
+
+#: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmRegistry/title
+msgctxt "settings"
+msgid "NPM Registry"
+msgstr "NPM 源"
+
+#: /packages/extensionmanager-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Enables using the CDN to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry"
-msgstr "启用通过 CDN 获取完整的包数据。否则，将使用已配置的 NPM 源。由于 NPM 源缺少 CORS 支持，请仅在提供自定义源时禁用该选项"
+msgid "Extension Manager"
+msgstr "扩展程序管理器"
 
-#: /packages/filebrowser-extension/schema/browser.json:134
-msgctxt "schema"
-msgid "File Browser"
-msgstr "文件浏览器"
-
-#: /packages/filebrowser-extension/schema/browser.json:135
+#: /packages/filebrowser-extension/schema/browser.json:/description
 msgctxt "schema"
 msgid "File Browser settings."
 msgstr "文件浏览器设置。"
 
-#: /packages/filebrowser-extension/schema/browser.json:186
-msgid "Navigate to current directory"
-msgstr "导航到当前目录"
+#: /packages/filebrowser-extension/schema/browser.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "File Browser"
+msgstr "文件浏览器"
 
-#: /packages/filebrowser-extension/schema/browser.json:187
-msgctxt "schema"
+#: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/description
+msgctxt "settings"
 msgid "Whether to automatically navigate to a document's current directory"
 msgstr "是否自动导航到文档的当前目录"
 
-#: /packages/filebrowser-extension/schema/browser.json:192
-msgid "Filter on file name with a fuzzy search"
-msgstr "过滤文件名时使用模糊搜索"
+#: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/title
+msgctxt "settings"
+msgid "Navigate to current directory"
+msgstr "导航到当前目录"
 
-#: /packages/filebrowser-extension/schema/browser.json:193
-msgctxt "schema"
-msgid "Whether to apply fuzzy algorithm while filtering on file names"
-msgstr "过滤文件名时是否使用模糊算法"
-
-#: /packages/filebrowser-extension/schema/browser.json:198
-msgid "Show last modified column"
-msgstr "切换最后修改列"
-
-#: /packages/filebrowser-extension/schema/browser.json:199
-msgctxt "schema"
+#: /packages/filebrowser-extension/schema/browser.json:/properties/showLastModifiedColumn/description
+msgctxt "settings"
 msgid "Whether to show the last modified column"
 msgstr "是否显示最后修改列"
 
-#: /packages/filebrowser-extension/schema/download.json:2
-msgctxt "schema"
-msgid "File Browser Download"
-msgstr "文件浏览器下载"
+#: /packages/filebrowser-extension/schema/browser.json:/properties/showLastModifiedColumn/title
+msgctxt "settings"
+msgid "Show last modified column"
+msgstr "显示最后修改列"
 
-#: /packages/filebrowser-extension/schema/download.json:3
+#: /packages/filebrowser-extension/schema/browser.json:/properties/useFuzzyFilter/description
+msgctxt "settings"
+msgid "Whether to apply fuzzy algorithm while filtering on file names"
+msgstr "过滤文件名时是否使用模糊算法"
+
+#: /packages/filebrowser-extension/schema/browser.json:/properties/useFuzzyFilter/title
+msgctxt "settings"
+msgid "Filter on file name with a fuzzy search"
+msgstr "使用模糊搜索过滤文件名"
+
+#: /packages/filebrowser-extension/schema/browser.json:/title
+msgctxt "schema"
+msgid "File Browser"
+msgstr "文件浏览器"
+
+#: /packages/filebrowser-extension/schema/download.json:/description
 msgctxt "schema"
 msgid "File Browser Download settings."
 msgstr "文件浏览器下载设置。"
 
-#: /packages/filebrowser-extension/schema/open-browser-tab.json:2
+#: /packages/filebrowser-extension/schema/download.json:/title
 msgctxt "schema"
-msgid "File Browser Open Browser Tab"
-msgstr "文件浏览器打开浏览器标签页"
+msgid "File Browser Download"
+msgstr "文件浏览器下载"
 
-#: /packages/filebrowser-extension/schema/open-browser-tab.json:3
+#: /packages/filebrowser-extension/schema/open-browser-tab.json:/description
 msgctxt "schema"
 msgid "File Browser Open Browser Tab settings."
 msgstr "文件浏览器打开浏览器标签页设置。"
 
-#: /packages/filebrowser-extension/schema/open-with.json:2
+#: /packages/filebrowser-extension/schema/open-browser-tab.json:/title
 msgctxt "schema"
-msgid "File Browser Open With"
-msgstr "文件浏览器打开方式"
+msgid "File Browser Open Browser Tab"
+msgstr "文件浏览器打开浏览器标签页"
 
-#: /packages/filebrowser-extension/schema/open-with.json:3
+#: /packages/filebrowser-extension/schema/open-with.json:/description
 msgctxt "schema"
 msgid "File Browser Open With settings."
 msgstr "文件浏览器打开方式设置。"
 
-#: /packages/fileeditor-extension/schema/plugin.json:143
-msgctxt "schema"
-msgid "Text Editor"
-msgstr "文本编辑器"
+#: /packages/filebrowser-extension/schema/open-with.json:/jupyter.lab.menus/context[0]/submenu/label
+msgctxt "menu"
+msgid "Open With"
+msgstr "打开方式"
 
-#: /packages/fileeditor-extension/schema/plugin.json:144
+#: /packages/filebrowser-extension/schema/open-with.json:/title
+msgctxt "schema"
+msgid "File Browser Open With"
+msgstr "文件浏览器打开方式"
+
+#: /packages/fileeditor-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Text editor settings."
 msgstr "文本编辑器设置。"
 
-#: /packages/fileeditor-extension/schema/plugin.json:205
-msgid "Editor Configuration"
-msgstr "编辑器配置"
+#: /packages/fileeditor-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[1]/submenu/label
+msgctxt "menu"
+msgid "Text Editor Indentation"
+msgstr "文本编辑器缩进"
 
-#: /packages/fileeditor-extension/schema/plugin.json:206
-msgctxt "schema"
+#: /packages/fileeditor-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Editor"
+msgstr "编辑器"
+
+#: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/description
+msgctxt "settings"
 msgid "The configuration for all text editors.\n"
 "If `fontFamily`, `fontSize` or `lineHeight` are `null`,\n"
 "values from current theme are used."
@@ -619,96 +823,163 @@ msgstr "所有文本编辑器的配置。\n"
 "如果 `fontFamily`, `fontSize` 或 `lineHight` 为 `null`，\n"
 "将使用当前主题配置。"
 
-#: /packages/help-extension/schema/about.json:19
-msgctxt "schema"
-msgid "Help"
-msgstr "帮助"
+#: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/title
+msgctxt "settings"
+msgid "Editor Configuration"
+msgstr "编辑器配置"
 
-#: /packages/help-extension/schema/about.json:20
+#: /packages/fileeditor-extension/schema/plugin.json:/title
+msgctxt "schema"
+msgid "Text Editor"
+msgstr "文本编辑器"
+
+#: /packages/help-extension/schema/about.json:/description
 msgctxt "schema"
 msgid "Help settings."
 msgstr "帮助设置。"
 
-#: /packages/hub-extension/schema/plugin.json:27
+#: /packages/help-extension/schema/about.json:/title
 msgctxt "schema"
-msgid "JupyterHub"
-msgstr "JupyterHub"
+msgid "Help"
+msgstr "帮助"
 
-#: /packages/hub-extension/schema/plugin.json:28
+#: /packages/hub-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "JupyterHub settings."
 msgstr "JupyterHub 设置。"
 
-#: /packages/imageviewer-extension/schema/plugin.json:2
+#: /packages/hub-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Image Viewer"
-msgstr "图像查看器"
+msgid "JupyterHub"
+msgstr "JupyterHub"
 
-#: /packages/imageviewer-extension/schema/plugin.json:3
+#: /packages/imageviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Image viewer settings."
 msgstr "图像查看器设置。"
 
-#: /packages/inspector-extension/schema/consoles.json:2 /packages/inspector-extension/schema/notebooks.json:2
+#: /packages/imageviewer-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Inspector Notebook"
-msgstr "审查器笔记本"
+msgid "Image Viewer"
+msgstr "图像查看器"
 
-#: /packages/inspector-extension/schema/consoles.json:3 /packages/inspector-extension/schema/notebooks.json:3
+#: /packages/inspector-extension/schema/consoles.json:/description /packages/inspector-extension/schema/notebooks.json:/description
 msgctxt "schema"
 msgid "Inspector Notebook settings."
 msgstr "审查器笔记本设置。"
 
-#: /packages/inspector-extension/schema/inspector.json:2
+#: /packages/inspector-extension/schema/consoles.json:/title /packages/inspector-extension/schema/notebooks.json:/title
 msgctxt "schema"
-msgid "Inspector"
-msgstr "检查器"
+msgid "Inspector Notebook"
+msgstr "审查器笔记本"
 
-#: /packages/inspector-extension/schema/inspector.json:3
+#: /packages/inspector-extension/schema/inspector.json:/description
 msgctxt "schema"
 msgid "Inspector settings."
 msgstr "检查器设置。"
 
-#: /packages/launcher-extension/schema/plugin.json:2
+#: /packages/inspector-extension/schema/inspector.json:/title
 msgctxt "schema"
-msgid "Launcher"
-msgstr "启动页"
+msgid "Inspector"
+msgstr "检查器"
 
-#: /packages/launcher-extension/schema/plugin.json:3
+#: /packages/launcher-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Launcher settings."
 msgstr "启动页设置。"
 
-#: /packages/logconsole-extension/schema/plugin.json:23
+#: /packages/launcher-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Log Console"
-msgstr "日志控制台"
+msgid "Launcher"
+msgstr "启动页"
 
-#: /packages/logconsole-extension/schema/plugin.json:24
+#: /packages/logconsole-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Log Console settings."
 msgstr "日志控制台设置。"
 
-#: /packages/logconsole-extension/schema/plugin.json:28
-msgid "Log entry count limit"
-msgstr "日志条目数量限制"
+#: /packages/logconsole-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Log Console"
+msgstr "日志控制台"
 
-#: /packages/logconsole-extension/schema/plugin.json:29
-msgctxt "schema"
-msgid "Maximum number of log entries to store in memory"
-msgstr "存储在内存中的日志条目的最大数量"
-
-#: /packages/logconsole-extension/schema/plugin.json:34
-msgid "Status Bar Item flash"
-msgstr "状态栏项目闪烁"
-
-#: /packages/logconsole-extension/schema/plugin.json:35
-msgctxt "schema"
+#: /packages/logconsole-extension/schema/plugin.json:/properties/flash/description
+msgctxt "settings"
 msgid "Whether to flash on new log message or not"
 msgstr "有新日志消息时是否闪烁？"
 
-#: /packages/mainmenu-extension/schema/plugin.json:0
+#: /packages/logconsole-extension/schema/plugin.json:/properties/flash/title
+msgctxt "settings"
+msgid "Status Bar Item flash"
+msgstr "状态栏项目闪烁"
+
+#: /packages/logconsole-extension/schema/plugin.json:/properties/maxLogEntries/description
+msgctxt "settings"
+msgid "Maximum number of log entries to store in memory"
+msgstr "存储在内存中的日志条目的最大数量"
+
+#: /packages/logconsole-extension/schema/plugin.json:/properties/maxLogEntries/title
+msgctxt "settings"
+msgid "Log entry count limit"
+msgstr "日志条目数量限制"
+
+#: /packages/logconsole-extension/schema/plugin.json:/title
 msgctxt "schema"
+msgid "Log Console"
+msgstr "日志控制台"
+
+#: /packages/mainmenu-extension/schema/plugin.json:/description
+msgctxt "schema"
+msgid "Main JupyterLab menu settings."
+msgstr "JupyterLab 主菜单设置。"
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
+msgctxt "menu"
+msgid "New"
+msgstr "新建"
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[0]/label
+msgctxt "menu"
+msgid "File"
+msgstr "文件"
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/label
+msgctxt "menu"
+msgid "Edit"
+msgstr "编辑"
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[2]/label
+msgctxt "menu"
+msgid "View"
+msgstr "查看"
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[3]/label
+msgctxt "menu"
+msgid "Run"
+msgstr "运行"
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[4]/label
+msgctxt "menu"
+msgid "Kernel"
+msgstr "内核"
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[5]/label
+msgctxt "menu"
+msgid "Tabs"
+msgstr "标签页"
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[6]/label
+msgctxt "menu"
+msgid "Settings"
+msgstr "设置"
+
+#: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[7]/label
+msgctxt "menu"
+msgid "Help"
+msgstr "帮助"
+
+#: /packages/mainmenu-extension/schema/plugin.json:/properties/menus/description
+msgctxt "settings"
 msgid "Note: To disable a menu or a menu item,\n"
 "copy it to User Preferences and add the\n"
 "\"disabled\" key. The following example will disable\n"
@@ -733,7 +1004,7 @@ msgid "Note: To disable a menu or a menu item,\n"
 "}\n\n"
 "Menu description:"
 msgstr "注意：要禁用一个菜单或一个菜单项，\n"
-"将其复制到用户选项并添加「禁用」键。\n"
+"将其复制到用户选项并添加「disabled」键。\n"
 "下面的示例将禁用「标签页」、「重启内核」以及「运行到所选单元格」项：\n"
 "{\n"
 "  \"menus\": [\n"
@@ -754,382 +1025,450 @@ msgstr "注意：要禁用一个菜单或一个菜单项，\n"
 "}\n\n"
 "菜单描述："
 
-#: /packages/mainmenu-extension/schema/plugin.json:2
+#: /packages/mainmenu-extension/schema/plugin.json:/properties/menus/title
+msgctxt "settings"
+msgid "The application menu description."
+msgstr "应用程序的菜单描述。"
+
+#: /packages/mainmenu-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Main Menu"
 msgstr "主菜单"
 
-#: /packages/mainmenu-extension/schema/plugin.json:3
-msgctxt "schema"
-msgid "Main JupyterLab menu settings."
-msgstr "JupyterLab 主菜单设置。"
-
-#: /packages/mainmenu-extension/schema/plugin.json:314
-msgid "The application menu description."
-msgstr "应用菜单描述。"
-
-#: /packages/notebook-extension/schema/export.json:27
-msgctxt "schema"
-msgid "Notebook Export"
-msgstr "笔记本导出"
-
-#: /packages/notebook-extension/schema/export.json:28
+#: /packages/notebook-extension/schema/export.json:/description
 msgctxt "schema"
 msgid "Notebook Export settings."
 msgstr "笔记本导出设置。"
 
-#: /packages/notebook-extension/schema/tracker.json:579
-msgctxt "schema"
-msgid "Notebook"
-msgstr "笔记本"
+#: /packages/notebook-extension/schema/export.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
+msgctxt "menu"
+msgid "Export Notebook As…"
+msgstr "导出笔记本为…"
 
-#: /packages/notebook-extension/schema/tracker.json:580
+#: /packages/notebook-extension/schema/export.json:/title
+msgctxt "schema"
+msgid "Notebook Export"
+msgstr "笔记本导出"
+
+#: /packages/notebook-extension/schema/tracker.json:/description
 msgctxt "schema"
 msgid "Notebook settings."
 msgstr "笔记本设置。"
 
-#: /packages/notebook-extension/schema/tracker.json:644
+#: /packages/notebook-extension/schema/tracker.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Notebook"
+msgstr "笔记本"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/description
+msgctxt "settings"
+msgid "The configuration for all code cells."
+msgstr "所有代码单元格的配置。"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/title
+msgctxt "settings"
 msgid "Code Cell Configuration"
 msgstr "代码单元格配置"
 
-#: /packages/notebook-extension/schema/tracker.json:645
-msgctxt "schema"
-msgid "The configuration for all code cells."
-msgstr "所有代码单元格配置。"
-
-#: /packages/notebook-extension/schema/tracker.json:666
-msgid "Default cell type"
-msgstr "单元格默认类型"
-
-#: /packages/notebook-extension/schema/tracker.json:667
-msgctxt "schema"
+#: /packages/notebook-extension/schema/tracker.json:/properties/defaultCell/description
+msgctxt "settings"
 msgid "The default type (markdown, code, or raw) for new cells"
 msgstr "新单元格默认类型（markdown、代码或纯文本）"
 
-#: /packages/notebook-extension/schema/tracker.json:673
-msgid "Shut down kernel"
-msgstr "关闭内核"
+#: /packages/notebook-extension/schema/tracker.json:/properties/defaultCell/title
+msgctxt "settings"
+msgid "Default cell type"
+msgstr "单元格默认类型"
 
-#: /packages/notebook-extension/schema/tracker.json:674
-msgctxt "schema"
+#: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/description
+msgctxt "settings"
 msgid "Whether to shut down or not the kernel when closing a notebook."
 msgstr "关闭笔记本时是否终止内核。"
 
-#: /packages/notebook-extension/schema/tracker.json:679
-msgid "Markdown Cell Configuration"
-msgstr "Markdown 单元格配置"
+#: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/title
+msgctxt "settings"
+msgid "Shut down kernel"
+msgstr "关闭内核"
 
-#: /packages/notebook-extension/schema/tracker.json:680
-msgctxt "schema"
+#: /packages/notebook-extension/schema/tracker.json:/properties/markdownCellConfig/description
+msgctxt "settings"
 msgid "The configuration for all markdown cells."
 msgstr "所有 Markdown 单元格的配置。"
 
-#: /packages/notebook-extension/schema/tracker.json:701
-msgid "Raw Cell Configuration"
-msgstr "原始单元格配置"
+#: /packages/notebook-extension/schema/tracker.json:/properties/markdownCellConfig/title
+msgctxt "settings"
+msgid "Markdown Cell Configuration"
+msgstr "Markdown 单元格配置"
 
-#: /packages/notebook-extension/schema/tracker.json:702
-msgctxt "schema"
-msgid "The configuration for all raw cells."
-msgstr "所有原始单元格的配置。"
+#: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/description
+msgctxt "settings"
+msgid "Defines the maximum number of output cells to to to be rendered in the output area for cells with many outputs. The output area will have a head and a tail, and the outputs between will be trimmed and not displayed unless the user clicks on the information message."
+msgstr "对于有很多输出内容的单元格，定义其输出区域要呈现的输出单元格的最大数量。输出区域将包含一个开头和结尾部分，除非用户点击信息消息，否则中间的输出内容将剪裁并不会显示。"
 
-#: /packages/notebook-extension/schema/tracker.json:723
-msgid "Scroll past last cell"
-msgstr "滚动超过最后一个单元格"
+#: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/title
+msgctxt "settings"
+msgid "The maximum number of output cells to to be rendered in the output area. Set to 0 to have the complete display."
+msgstr "输出区域中要呈现的输出单元格的最大数量。设置为 0 以显示全部内容。"
 
-#: /packages/notebook-extension/schema/tracker.json:724
-msgctxt "schema"
-msgid "Whether to be able to scroll so the last cell is at the top of the panel"
-msgstr "是否能够滚动以使最后一个单元格位于面板的顶端"
-
-#: /packages/notebook-extension/schema/tracker.json:729
-msgid "Recording timing"
-msgstr "记录计时数据"
-
-#: /packages/notebook-extension/schema/tracker.json:730
-msgctxt "schema"
-msgid "Should timing data be recorded in cell metadata"
-msgstr "是否在单元格元数据中记录计时数据"
-
-#: /packages/notebook-extension/schema/tracker.json:735
-msgid "Number of cells to render directly"
-msgstr "要直接渲染的单元格数量"
-
-#: /packages/notebook-extension/schema/tracker.json:736
-msgctxt "schema"
+#: /packages/notebook-extension/schema/tracker.json:/properties/numberCellsToRenderDirectly/description
+msgctxt "settings"
 msgid "Define the number of cells to render directly when virtual notebook intersection observer is available"
 msgstr "定义虚拟笔记本交接观察者可用时直接渲染的单元格数量"
 
-#: /packages/notebook-extension/schema/tracker.json:741
-msgid "Render cell on browser idle time"
-msgstr "在浏览器空闲时间渲染单元格"
+#: /packages/notebook-extension/schema/tracker.json:/properties/numberCellsToRenderDirectly/title
+msgctxt "settings"
+msgid "Number of cells to render directly"
+msgstr "直接渲染的单元格数量"
 
-#: /packages/notebook-extension/schema/tracker.json:742
-msgctxt "schema"
-msgid "Defines if the placeholder cells should be rendered when the browser is idle"
-msgstr "定义当浏览器空闲时是否渲染占位单元格"
-
-#: /packages/notebook-extension/schema/tracker.json:747
-msgid "Observed top margin"
-msgstr "观察到的上边距"
-
-#: /packages/notebook-extension/schema/tracker.json:748
-msgctxt "schema"
-msgid "Defines the observed top margin for the virtual notebook, set a positive number of pixels to render cells above the visible view"
-msgstr "定义虚拟笔记本观察到的上边距，设置一个正数的像素数来渲染在可见视图上方的单元格"
-
-#: /packages/notebook-extension/schema/tracker.json:753
-msgid "Observed bottom margin"
-msgstr "观察到的下边距"
-
-#: /packages/notebook-extension/schema/tracker.json:754
-msgctxt "schema"
+#: /packages/notebook-extension/schema/tracker.json:/properties/observedBottomMargin/description
+msgctxt "settings"
 msgid "Defines the observed bottom margin for the virtual notebook, set a positive number of pixels to render cells below the visible view"
 msgstr "定义虚拟笔记本观察到的下边距，设置一个正数的像素数来渲染在可见视图下方的单元格"
 
-#: /packages/notebook-extension/schema/tracker.json:759
-msgid "The maximum number of output cells to to be rendered in the output area. Set to 0 to have the complete display."
-msgstr "输出区域中要渲染的输出单元格的最大数量。设为 0 以显示全部内容。"
+#: /packages/notebook-extension/schema/tracker.json:/properties/observedBottomMargin/title
+msgctxt "settings"
+msgid "Observed bottom margin"
+msgstr "观察到的下边距"
 
-#: /packages/notebook-extension/schema/tracker.json:760
+#: /packages/notebook-extension/schema/tracker.json:/properties/observedTopMargin/description
+msgctxt "settings"
+msgid "Defines the observed top margin for the virtual notebook, set a positive number of pixels to render cells above the visible view"
+msgstr "定义虚拟笔记本观察到的上边距，设置一个正数的像素数来渲染在可见视图上方的单元格"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/observedTopMargin/title
+msgctxt "settings"
+msgid "Observed top margin"
+msgstr "观察到的上边距"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/description
+msgctxt "settings"
+msgid "The configuration for all raw cells."
+msgstr "所有原始单元格的配置。"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/title
+msgctxt "settings"
+msgid "Raw Cell Configuration"
+msgstr "原始单元格配置"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/recordTiming/description
+msgctxt "settings"
+msgid "Should timing data be recorded in cell metadata"
+msgstr "是否在单元格元数据中记录用时数据"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/recordTiming/title
+msgctxt "settings"
+msgid "Recording timing"
+msgstr "记录执行用时"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/renderCellOnIdle/description
+msgctxt "settings"
+msgid "Defines if the placeholder cells should be rendered when the browser is idle"
+msgstr "定义当浏览器空闲时是否渲染占位单元格"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/renderCellOnIdle/title
+msgctxt "settings"
+msgid "Render cell on browser idle time"
+msgstr "在浏览器空闲时间渲染单元格"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/scrollPastEnd/description
+msgctxt "settings"
+msgid "Whether to be able to scroll so the last cell is at the top of the panel"
+msgstr "是否能够滚动以使最后一个单元格位于面板的顶端"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/scrollPastEnd/title
+msgctxt "settings"
+msgid "Scroll past last cell"
+msgstr "滚动超过最后一个单元格"
+
+#: /packages/notebook-extension/schema/tracker.json:/title
 msgctxt "schema"
-msgid "Defines the maximum number of output cells to to to be rendered in the output area for cells with many outputs. The output area will have a head and a tail, and the outputs between will be trimmed and not displayed unless the user clicks on the information message."
-msgstr "定义输出区要呈现的输出单元格的最大数量。 输出区域将包含一个开头和结尾部分，除非用户点击信息消息，否则中间的输出内容将剪裁并不会显示。"
+msgid "Notebook"
+msgstr "笔记本"
 
-#: /packages/settingeditor-extension/schema/plugin.json:2
-msgctxt "schema"
-msgid "Setting Editor"
-msgstr "密钥串编辑器"
-
-#: /packages/settingeditor-extension/schema/plugin.json:3
+#: /packages/settingeditor-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Setting editor settings."
 msgstr "设置编辑器设置。"
 
-#: /packages/shortcuts-extension/schema/shortcuts.json:11
+#: /packages/settingeditor-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "The list of keyboard shortcuts."
-msgstr "键盘快捷键列表。"
+msgid "Setting Editor"
+msgstr "密钥串编辑器"
 
-#: /packages/shortcuts-extension/schema/shortcuts.json:5
-msgctxt "schema"
-msgid "Keyboard Shortcuts"
-msgstr "快捷键"
-
-#: /packages/shortcuts-extension/schema/shortcuts.json:6
+#: /packages/shortcuts-extension/schema/shortcuts.json:/description
 msgctxt "schema"
 msgid "Keyboard shortcut settings."
 msgstr "键盘快捷键设置。"
 
-#: /packages/statusbar-extension/schema/plugin.json:25
-msgctxt "schema"
-msgid "Status Bar"
-msgstr "状态栏​​​​​​​"
+#: /packages/shortcuts-extension/schema/shortcuts.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Keyboard Shortcuts"
+msgstr "快捷键"
 
-#: /packages/statusbar-extension/schema/plugin.json:26
+#: /packages/shortcuts-extension/schema/shortcuts.json:/properties/shortcuts/description
+msgctxt "settings"
+msgid "The list of keyboard shortcuts."
+msgstr "键盘快捷键列表。"
+
+#: /packages/shortcuts-extension/schema/shortcuts.json:/title
+msgctxt "schema"
+msgid "Keyboard Shortcuts"
+msgstr "快捷键"
+
+#: /packages/statusbar-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Status Bar settings."
 msgstr "状态栏设置。"
 
-#: /packages/statusbar-extension/schema/plugin.json:30
-msgid "Status Bar Visibility"
-msgstr "状态栏可见度"
+#: /packages/statusbar-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Status Bar"
+msgstr "状态栏​​​​​​​"
 
-#: /packages/statusbar-extension/schema/plugin.json:31
-msgctxt "schema"
+#: /packages/statusbar-extension/schema/plugin.json:/properties/visible/description
+msgctxt "settings"
 msgid "Whether to show status bar or not"
 msgstr "是否显示状态栏"
 
-#: /packages/terminal-extension/schema/plugin.json:114
-msgid "Font family"
-msgstr "字体集"
+#: /packages/statusbar-extension/schema/plugin.json:/properties/visible/title
+msgctxt "settings"
+msgid "Status Bar Visibility"
+msgstr "状态栏可见度"
 
-#: /packages/terminal-extension/schema/plugin.json:115
+#: /packages/statusbar-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "The font family used to render text."
-msgstr "用来渲染文本的字体。"
+msgid "Status Bar"
+msgstr "状态栏​​​​​​​"
 
-#: /packages/terminal-extension/schema/plugin.json:120
-msgid "Font size"
-msgstr "字体大小"
-
-#: /packages/terminal-extension/schema/plugin.json:121
-msgctxt "schema"
-msgid "The font size used to render text."
-msgstr "用于渲染文本的字体大小。"
-
-#: /packages/terminal-extension/schema/plugin.json:126
-msgid "Line height"
-msgstr "行高"
-
-#: /packages/terminal-extension/schema/plugin.json:127
-msgctxt "schema"
-msgid "The line height used to render text."
-msgstr "渲染文本时所使用的行高。"
-
-#: /packages/terminal-extension/schema/plugin.json:133
-msgctxt "schema"
-msgid "The theme for the terminal."
-msgstr "终端主题。"
-
-#: /packages/terminal-extension/schema/plugin.json:138
-msgid "Screen Reader Mode"
-msgstr "屏幕阅读器模式"
-
-#: /packages/terminal-extension/schema/plugin.json:139
-msgctxt "schema"
-msgid "Add accessibility elements for use with screen readers."
-msgstr "添加用于屏幕阅读器的辅助元素。"
-
-#: /packages/terminal-extension/schema/plugin.json:144
-msgid "Scrollback Buffer"
-msgstr "回滚缓存"
-
-#: /packages/terminal-extension/schema/plugin.json:145
-msgctxt "schema"
-msgid "The amount of scrollback beyond initial viewport"
-msgstr "回滚量超过了初始视口"
-
-#: /packages/terminal-extension/schema/plugin.json:150
-msgid "Shut down on close"
-msgstr "关闭时终止"
-
-#: /packages/terminal-extension/schema/plugin.json:151
-msgctxt "schema"
-msgid "Shut down the session when closing the terminal."
-msgstr "关闭终端时终止此会话。"
-
-#: /packages/terminal-extension/schema/plugin.json:156
-msgid "Paste with Ctrl+V"
-msgstr "使用 Ctrl+V 粘贴"
-
-#: /packages/terminal-extension/schema/plugin.json:157
-msgctxt "schema"
-msgid "Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available"
-msgstr "启用 Ctrl+V 粘贴。在 vi 编辑器中使用 Ctrl+V 时可禁用此项。 此设置对 macOS 没有任何影响，因为 macOS 中使用 Cmd+V"
-
-#: /packages/terminal-extension/schema/plugin.json:162
-msgid "Treat option as meta key on macOS"
-msgstr "在 macOS 上将 option 键视作 meta 键"
-
-#: /packages/terminal-extension/schema/plugin.json:163
-msgctxt "schema"
-msgid "Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word"
-msgstr "macOS 中 option 键可被用作 meta 键。这使得诸如 option + f（将光标向前移动一个单词）的快捷键可以使用。"
-
-#: /packages/terminal-extension/schema/plugin.json:84
-msgctxt "schema"
-msgid "Terminal"
-msgstr "终端"
-
-#: /packages/terminal-extension/schema/plugin.json:85
+#: /packages/terminal-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Terminal settings."
 msgstr "终端设置。"
 
-#: /packages/toc-extension/schema/plugin.json:14
-msgid "Include cell output in headings"
-msgstr "在标题中包含单元格输出"
+#: /packages/terminal-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[3]/submenu/label
+msgctxt "menu"
+msgid "Terminal Theme"
+msgstr "终端主题"
 
-#: /packages/toc-extension/schema/plugin.json:15
+#: /packages/terminal-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Terminal"
+msgstr "终端"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/fontFamily/description
+msgctxt "settings"
+msgid "The font family used to render text."
+msgstr "用来渲染文本的字体。"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/fontFamily/title
+msgctxt "settings"
+msgid "Font family"
+msgstr "字体集"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/fontSize/description
+msgctxt "settings"
+msgid "The font size used to render text."
+msgstr "用于渲染文本的字体大小。"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/fontSize/title
+msgctxt "settings"
+msgid "Font size"
+msgstr "字体大小"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/lineHeight/description
+msgctxt "settings"
+msgid "The line height used to render text."
+msgstr "渲染文本时所使用的行高。"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/lineHeight/title
+msgctxt "settings"
+msgid "Line height"
+msgstr "行高"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/macOptionIsMeta/description
+msgctxt "settings"
+msgid "Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word"
+msgstr "macOS 中 option 键可被用作 meta 键。这使得诸如 option + f（将光标向前移动一个单词）的快捷键可以使用。"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/macOptionIsMeta/title
+msgctxt "settings"
+msgid "Treat option as meta key on macOS"
+msgstr "在 macOS 上将 option 键视作 meta 键"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/pasteWithCtrlV/description
+msgctxt "settings"
+msgid "Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available"
+msgstr "启用 Ctrl+V 粘贴。在 vi 编辑器中使用 Ctrl+V 时可禁用此项。此设置对 macOS 没有任何影响，因为 macOS 中使用 Cmd+V"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/pasteWithCtrlV/title
+msgctxt "settings"
+msgid "Paste with Ctrl+V"
+msgstr "使用 Ctrl+V 粘贴"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/screenReaderMode/description
+msgctxt "settings"
+msgid "Add accessibility elements for use with screen readers."
+msgstr "添加用于屏幕阅读器的辅助元素。"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/screenReaderMode/title
+msgctxt "settings"
+msgid "Screen Reader Mode"
+msgstr "屏幕阅读器模式"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/scrollback/description
+msgctxt "settings"
+msgid "The amount of scrollback beyond initial viewport"
+msgstr "回滚量超过了初始视口"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/scrollback/title
+msgctxt "settings"
+msgid "Scrollback Buffer"
+msgstr "回滚缓存"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/shutdownOnClose/description
+msgctxt "settings"
+msgid "Shut down the session when closing the terminal."
+msgstr "关闭终端时终止此会话。"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/shutdownOnClose/title
+msgctxt "settings"
+msgid "Shut down on close"
+msgstr "关闭时终止"
+
+#: /packages/terminal-extension/schema/plugin.json:/properties/theme/description
+msgctxt "settings"
+msgid "The theme for the terminal."
+msgstr "终端主题。"
+
+#: /packages/terminal-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Whether to include cell output in headings"
-msgstr "是否在标题中包含单元格输出"
+msgid "Terminal"
+msgstr "终端"
 
-#: /packages/toc-extension/schema/plugin.json:21
-msgid "Synchronize collapse state"
-msgstr "同步折叠状态"
-
-#: /packages/toc-extension/schema/plugin.json:22
-msgctxt "schema"
-msgid "If set to true, when a header is collapsed in the table of contents the corresponding section in the notebook is collapsed as well and vice versa."
-msgstr "如果设置为 true，当标题在目录中折叠时，笔记本中的相应部分也会折叠，反之亦然。"
-
-#: /packages/toc-extension/schema/plugin.json:4
-msgctxt "schema"
-msgid "Table of Contents"
-msgstr "目录"
-
-#: /packages/toc-extension/schema/plugin.json:5
+#: /packages/toc-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Table of contents settings."
 msgstr "目录设置。"
 
-#: /packages/toc-extension/schema/plugin.json:8
-msgid "Enable h1 numbering"
-msgstr "启用 h1 编号"
+#: /packages/toc-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Table of Contents"
+msgstr "目录"
 
-#: /packages/toc-extension/schema/plugin.json:9
-msgctxt "schema"
+#: /packages/toc-extension/schema/plugin.json:/properties/includeOutput/description
+msgctxt "settings"
+msgid "Whether to include cell output in headings"
+msgstr "是否在标题中包含单元格输出"
+
+#: /packages/toc-extension/schema/plugin.json:/properties/includeOutput/title
+msgctxt "settings"
+msgid "Include cell output in headings"
+msgstr "在标题中包含单元格输出"
+
+#: /packages/toc-extension/schema/plugin.json:/properties/numberingH1/description
+msgctxt "settings"
 msgid "Whether to number first-level headings"
 msgstr "是否为一级标题显示编号"
 
-#: /packages/tooltip-extension/schema/consoles.json:2
-msgctxt "schema"
-msgid "Console Tooltips"
-msgstr "控制台工具提示"
+#: /packages/toc-extension/schema/plugin.json:/properties/numberingH1/title
+msgctxt "settings"
+msgid "Enable h1 numbering"
+msgstr "启用 h1 编号"
 
-#: /packages/tooltip-extension/schema/consoles.json:3
+#: /packages/toc-extension/schema/plugin.json:/properties/syncCollapseState/description
+msgctxt "settings"
+msgid "If set to true, when a header is collapsed in the table of contents the corresponding section in the notebook is collapsed as well and vice versa."
+msgstr "如果设置为 true，当标题在目录中折叠时，笔记本中的相应部分也会折叠，反之亦然。"
+
+#: /packages/toc-extension/schema/plugin.json:/properties/syncCollapseState/title
+msgctxt "settings"
+msgid "Synchronize collapse state"
+msgstr "同步折叠状态"
+
+#: /packages/toc-extension/schema/plugin.json:/title
+msgctxt "schema"
+msgid "Table of Contents"
+msgstr "目录"
+
+#: /packages/tooltip-extension/schema/consoles.json:/description
 msgctxt "schema"
 msgid "Console tooltip settings."
 msgstr "控制台工具提示设置。"
 
-#: /packages/tooltip-extension/schema/files.json:2
+#: /packages/tooltip-extension/schema/consoles.json:/title
 msgctxt "schema"
-msgid "File Editor Tooltips"
-msgstr "文件编辑器工具提示"
+msgid "Console Tooltips"
+msgstr "控制台工具提示"
 
-#: /packages/tooltip-extension/schema/files.json:3
+#: /packages/tooltip-extension/schema/files.json:/description
 msgctxt "schema"
 msgid "File editor tooltip settings."
 msgstr "文件编辑器工具提示设置。"
 
-#: /packages/tooltip-extension/schema/notebooks.json:2
+#: /packages/tooltip-extension/schema/files.json:/title
 msgctxt "schema"
-msgid "Notebook Tooltips"
-msgstr "笔记本工具提示"
+msgid "File Editor Tooltips"
+msgstr "文件编辑器工具提示"
 
-#: /packages/tooltip-extension/schema/notebooks.json:3
+#: /packages/tooltip-extension/schema/notebooks.json:/description
 msgctxt "schema"
 msgid "Notebook tooltip settings."
 msgstr "笔记本提示设置。"
 
-#: /packages/translation-extension/schema/plugin.json:29
+#: /packages/tooltip-extension/schema/notebooks.json:/title
 msgctxt "schema"
-msgid "Language"
-msgstr "语言"
+msgid "Notebook Tooltips"
+msgstr "笔记本工具提示"
 
-#: /packages/translation-extension/schema/plugin.json:30
+#: /packages/translation-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Language settings."
 msgstr "语言设置。"
 
-#: /packages/translation-extension/schema/plugin.json:35
-msgid "Language locale"
-msgstr "语言区域设置"
+#: /packages/translation-extension/schema/plugin.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
+msgctxt "menu"
+msgid "Language"
+msgstr "语言"
 
-#: /packages/translation-extension/schema/plugin.json:36
-msgctxt "schema"
-msgid "Set the interface display language. Examples: 'es_CO', 'fr'."
-msgstr "设置界面显示语言。例如: 'es_CO', 'fr'。"
+#: /packages/translation-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Language"
+msgstr "语言"
 
-#: /packages/translation-extension/schema/plugin.json:41
-msgid "Localized strings prefix"
-msgstr "本地化字符串前缀"
+#: /packages/translation-extension/schema/plugin.json:/properties/displayStringsPrefix/description
+msgctxt "settings"
+msgid "Display the `stringsPrefix` on localized strings."
+msgstr "在本地化字符串上显示 `stringsPrefix` 。"
 
-#: /packages/translation-extension/schema/plugin.json:42
-msgctxt "schema"
-msgid "Add a prefix to localized strings."
-msgstr "向本地化字符串添加前缀。"
-
-#: /packages/translation-extension/schema/plugin.json:47
+#: /packages/translation-extension/schema/plugin.json:/properties/displayStringsPrefix/title
+msgctxt "settings"
 msgid "Display localized strings prefix"
 msgstr "显示本地化字符串前缀"
 
-#: /packages/translation-extension/schema/plugin.json:48
+#: /packages/translation-extension/schema/plugin.json:/properties/locale/description
+msgctxt "settings"
+msgid "Set the interface display language. Examples: 'es_CO', 'fr'."
+msgstr "设置界面显示语言。例如：'es_CO'、'fr'。"
+
+#: /packages/translation-extension/schema/plugin.json:/properties/locale/title
+msgctxt "settings"
+msgid "Language locale"
+msgstr "语言区域设置"
+
+#: /packages/translation-extension/schema/plugin.json:/properties/stringsPrefix/description
+msgctxt "settings"
+msgid "Add a prefix to localized strings."
+msgstr "为本地化字符串添加前缀。"
+
+#: /packages/translation-extension/schema/plugin.json:/properties/stringsPrefix/title
+msgctxt "settings"
+msgid "Localized strings prefix"
+msgstr "本地化字符串前缀"
+
+#: /packages/translation-extension/schema/plugin.json:/title
 msgctxt "schema"
-msgid "Display the `stringsPrefix` on localized strings."
-msgstr "在本地化字符串上显示 `stringsPrefix` 。"
+msgid "Language"
+msgstr "语言"
 
 #: packages/application-extension/src/index.tsx:106 packages/apputils-extension/src/index.ts:305 packages/documentsearch-extension/src/index.ts:216 packages/documentsearch-extension/src/index.ts:220 packages/documentsearch-extension/src/index.ts:224 packages/logconsole-extension/src/index.tsx:242 packages/mainmenu-extension/src/index.ts:222 packages/mainmenu-extension/src/index.ts:226 packages/mainmenu-extension/src/index.ts:236 packages/statusbar-extension/src/index.ts:74
 msgid "Main Area"
@@ -1295,8 +1634,7 @@ msgstr "正在载入…"
 #: packages/apputils-extension/src/index.ts:208
 msgid "The loading screen is taking a long time.\n"
 "Would you like to clear the workspace or keep waiting?"
-msgstr "载入屏幕花费了较长时间。 \n"
-"您是否要清除工作区或继续等待？"
+msgstr "载入屏幕花费了较长时间。您是否要清除工作区或继续等待？"
 
 #: packages/apputils-extension/src/index.ts:211
 msgid "Keep Waiting"
@@ -1390,6 +1728,10 @@ msgstr "减小界面字号"
 msgid "Decrease Font Size"
 msgstr "减小字号"
 
+#: packages/apputils-extension/src/themesplugins.ts:202
+msgid "Theme"
+msgstr "主题"
+
 #: packages/apputils-extension/src/themesplugins.ts:89
 msgid "Use Theme: %1"
 msgstr "使用主题: %1"
@@ -1436,7 +1778,7 @@ msgstr "选择内核"
 
 #: packages/apputils/src/sessioncontext.tsx:1280
 msgid "Restart Kernel?"
-msgstr "重启内核?"
+msgstr "重启内核？"
 
 #: packages/apputils/src/sessioncontext.tsx:1281
 msgid "Do you want to restart the current kernel? All variables will be lost."
@@ -1444,11 +1786,11 @@ msgstr "您想要重新启动当前内核吗？所有变量都将丢失。"
 
 #: packages/apputils/src/sessioncontext.tsx:1335
 msgid "Select kernel for:"
-msgstr "选择内核:"
+msgstr "选择内核："
 
 #: packages/apputils/src/sessioncontext.tsx:1475
 msgid "Start Preferred Kernel"
-msgstr "启动首选内核。"
+msgstr "启动首选内核"
 
 #: packages/apputils/src/sessioncontext.tsx:1490
 msgid "Start Other Kernel"
@@ -1480,11 +1822,11 @@ msgstr "名称:"
 
 #: packages/apputils/src/sessioncontext.tsx:1638
 msgid "Kernel Name:"
-msgstr "内核名称:"
+msgstr "内核名称："
 
 #: packages/apputils/src/sessioncontext.tsx:1639
 msgid "Kernel Id:"
-msgstr "内核 ID:"
+msgstr "内核 ID："
 
 #: packages/apputils/src/sessioncontext.tsx:967
 msgid "Error Starting Kernel"
@@ -1618,6 +1960,10 @@ msgstr "更改文本编辑器语法高亮显示"
 msgid "Console"
 msgstr "控制台"
 
+#: packages/console-extension/src/foreign.ts:79
+msgid "Show All Kernel Activity"
+msgstr "显示所有内核动态"
+
 #: packages/console-extension/src/index.ts:401
 msgid "Auto Close Brackets for Code Console Prompt"
 msgstr "为控制台提示符自动闭合代码"
@@ -1656,7 +2002,7 @@ msgstr "重启内核…"
 
 #: packages/console-extension/src/index.ts:581
 msgid "Close and Shut Down…"
-msgstr "关闭并终止..."
+msgstr "关闭并终止…"
 
 #: packages/console-extension/src/index.ts:588
 msgid "Shut down the console?"
@@ -1708,7 +2054,7 @@ msgstr "目录: %1\n"
 
 #: packages/console/src/panel.ts:316
 msgid "Kernel: %1"
-msgstr "内核: %1"
+msgstr "内核：%1"
 
 #: packages/console/src/panel.ts:319
 msgid "\n"
@@ -1846,13 +2192,11 @@ msgid "Overrides for the default viewers for file types.\n"
 "%1\n\n"
 "Available file types:\n"
 "%2"
-msgstr "覆盖文件类型对应的默认查看器。\n"
-"请指定从文件类型到查看器名称的映射， 例如：\n\n"
+msgstr "覆盖文件类型对应的默认查看器。请指定从文件类型到查看器名称的映射，例如：\n\n"
 "defaultViewers: {\n"
 "  markdown: \"Markdown Preview\"\n"
 "}\n\n"
-"如果您指定了不存在的文件类型或查看器， 或者如果查看器无法\n"
-"打开指定的文件类型，覆盖将不会生效。\n\n"
+"如果您指定了不存在的文件类型或查看器，或者如果查看器无法打开指定的文件类型，覆盖将不会生效。\n\n"
 "可用的查看器：\n"
 "%1\n\n"
 "可用的文件类型：\n"
@@ -1957,6 +2301,10 @@ msgstr "将 %1 另存为…"
 #: packages/docmanager-extension/src/index.ts:717
 msgid "Save with new path"
 msgstr "使用新路径保存"
+
+#: packages/docmanager-extension/src/index.ts:736
+msgid "Autosave Documents"
+msgstr "自动保存文档"
 
 #: packages/docmanager-extension/src/index.ts:796
 msgid "New View for %1"
@@ -2080,9 +2428,7 @@ msgstr "加载文件 %1 时出错"
 msgid "\"%1\" has changed on disk since the last time it was opened or saved.\n"
 "Do you want to overwrite the file on disk with the version open here,\n"
 "or load the version on disk (revert)?"
-msgstr "「%1」自上次打开或保存后在磁盘上已经改变。\n"
-"您想要用这里打开的版本覆盖磁盘上的文件， \n"
-"还是加载磁盘上的版本(复原)？"
+msgstr "「%1」自上次打开或保存后在磁盘上已经改变。您想要用这里打开的版本覆盖磁盘上的文件， 还是加载磁盘上的版本（复原）？"
 
 #: packages/docregistry/src/context.ts:804
 msgid "File Changed"
@@ -2090,7 +2436,7 @@ msgstr "文件已更改"
 
 #: packages/docregistry/src/context.ts:828
 msgid "\"%1\" already exists. Do you want to replace it?"
-msgstr "「%1」已经存在。你想要替换它么？"
+msgstr "「%1」已经存在。您想要替换它么？"
 
 #: packages/docregistry/src/context.ts:836
 msgid "File Overwrite?"
@@ -2211,12 +2557,7 @@ msgid "Thanks for trying out JupyterLab's extension manager.\n"
 "However, we cannot vouch for every extension,\n"
 "and some may introduce security risks.\n"
 "Do you want to continue?"
-msgstr "感谢您尝试了 JupyterLab 的扩展管理器。\n"
-"JupyterLab 开发团队很高兴有一个强大的\n"
-"第三方扩展社区。\n"
-"然而，我们不能为审核每个扩展，\n"
-"其中一些扩展可能会带来安全风险。\n"
-"你想要继续吗？"
+msgstr "感谢您尝试了 JupyterLab 的扩展管理器。JupyterLab 开发团队很高兴有一个强大的第三方扩展社区。然而，我们不能审核每个扩展，其中一些扩展可能会带来安全风险。您想要继续吗？"
 
 #: packages/extensionmanager-extension/src/index.ts:151 packages/extensionmanager/src/widget.tsx:329 packages/extensionmanager/src/widget.tsx:798
 msgid "Disable"
@@ -2234,8 +2575,7 @@ msgstr "扩展管理器部分"
 msgid "This package has indicated that it needs a corresponding server\n"
 "extension. Please contact your Administrator to update the server with\n"
 "one of the following commands:"
-msgstr "这个软件包表示它需要一个相应的服务器\n"
-"扩展。 请联系您的管理员用下面的命令更新服务器："
+msgstr "这个软件包表示它需要一个相应的服务器扩展。 请联系您的管理员用下面的命令更新服务器："
 
 #: packages/extensionmanager/src/companions.tsx:153
 msgid "This package has indicated that it needs a corresponding package for the kernel."
@@ -2249,7 +2589,7 @@ msgstr "包 <code>%1</code> 是下列内核必需的："
 msgid "This package has indicated that it needs a corresponding kernel\n"
 "package. Please contact your Administrator to update the server with\n"
 "one of the following commands:"
-msgstr "这个软件包表示它需要一个相应的内核包。 请联系您的管理员用下面的命令更新服务器："
+msgstr "这个软件包表示它需要一个相应的内核包。请联系您的管理员用下面的命令更新服务器："
 
 #: packages/extensionmanager/src/companions.tsx:196
 msgid "You should make sure that the indicated packages are installed before\n"
@@ -2360,10 +2700,7 @@ msgid "The JupyterLab development team is excited to have a robust\n"
 "third-party extension community. However, we do not review\n"
 "third-party extensions, and some extensions may introduce security\n"
 "risks or contain malicious code that runs on your machine."
-msgstr "JupyterLab 开发团队很高兴有一个强大的\n"
-"第三方扩展社区。 然而，我们不会审查\n"
-"第三方扩展，一些扩展可能会带来安全\n"
-"风险或包含您能在您机器上运行的恶意代码。"
+msgstr "JupyterLab 开发团队很高兴有一个强大的第三方扩展社区。然而，我们并不会审查第三方扩展，一些扩展可能会带来安全风险或包含您能在您机器上运行的恶意代码。"
 
 #: packages/extensionmanager/src/widget.tsx:823
 msgid "Updating extensions list"
@@ -2630,7 +2967,7 @@ msgstr "粘贴出错"
 
 #: packages/filebrowser/src/listing.ts:401
 msgid "Are you sure you want to permanently delete: %1?"
-msgstr "你确定要删除「%1」吗？"
+msgstr "您确定要删除「%1」吗？"
 
 #: packages/filebrowser/src/listing.ts:405
 msgid "Are you sure you want to permanently delete the %1 selected item?"
@@ -2690,7 +3027,7 @@ msgstr "正在上传…"
 msgid "Complete!"
 msgstr "完成！"
 
-#: packages/fileeditor-extension/src/commands.ts:1027 packages/fileeditor-extension/src/commands.ts:1041 packages/fileeditor-extension/src/commands.ts:1057 packages/launcher/src/index.tsx:151 packages/launcher/src/index.tsx:161 packages/launcher/src/index.tsx:434 packages/terminal-extension/src/index.ts:220
+#: packages/fileeditor-extension/src/commands.ts:1027 packages/fileeditor-extension/src/commands.ts:1041 packages/fileeditor-extension/src/commands.ts:1057 packages/launcher/src/index.tsx:151 packages/launcher/src/index.tsx:161 packages/launcher/src/index.tsx:434 packages/terminal-extension/src/index.ts:228
 msgid "Other"
 msgstr "其他"
 
@@ -3188,7 +3525,7 @@ msgstr "关闭并停止服务进程"
 msgid "New Console for Activity"
 msgstr "新建活动控制台"
 
-#: packages/mainmenu-extension/src/index.ts:376 packages/mainmenu-extension/src/index.ts:386 packages/running-extension/src/kernels.ts:39 packages/running/src/index.tsx:142 packages/terminal-extension/src/index.ts:251
+#: packages/mainmenu-extension/src/index.ts:376 packages/mainmenu-extension/src/index.ts:386 packages/running-extension/src/kernels.ts:39 packages/running/src/index.tsx:142 packages/terminal-extension/src/index.ts:259
 msgid "Shut Down"
 msgstr "关闭"
 
@@ -3240,7 +3577,7 @@ msgstr "全部关闭？"
 msgid "Shut down all kernels?"
 msgstr "关闭所有内核?"
 
-#: packages/mainmenu-extension/src/index.ts:542 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:252
+#: packages/mainmenu-extension/src/index.ts:542 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:260
 msgid "Shut Down All"
 msgstr "全部关闭"
 
@@ -3330,7 +3667,7 @@ msgstr "关闭并停止"
 
 #: packages/notebook-extension/src/index.ts:1514
 msgid "Shut down the notebook?"
-msgstr "停止笔记本？"
+msgstr "关闭笔记本？"
 
 #: packages/notebook-extension/src/index.ts:1528
 msgid "Trust Notebook"
@@ -3722,11 +4059,7 @@ msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "The next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n"
 "'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\n"
 "close the notebook without saving it."
-msgstr "此笔记本已从旧笔记本格式 (v%1) \n"
-"转换为当前笔记本格式 (v%2)。\n"
-"下次保存此笔记本，当前笔记本将使用新格式。\n"
-"老版本的 Jupyter 项目可能无法读取新格式。 \n"
-"要保留原始格式版本，请关闭笔记本并避免保存它。"
+msgstr "此笔记本已从旧笔记本格式（v%1）转换为当前笔记本格式（v%2）。下次保存此笔记本，当前笔记本将使用新格式。老版本的 Jupyter 项目可能无法读取新格式。 要保留原始格式版本，请关闭笔记本并避免保存它。"
 
 #: packages/notebook/src/model.ts:340
 msgid "This notebook has been converted from an newer notebook format (v%1)\n"
@@ -3855,8 +4188,8 @@ msgstr "您确定要永久关闭所有正在运行的内核吗？"
 #: packages/running-extension/src/kernels.ts:80
 msgid "Path: %1\n"
 "Kernel: %2"
-msgstr "路径: %1\n"
-"内核: %2"
+msgstr "路径：%1\n"
+"内核：%2"
 
 #: packages/running-extension/src/opentabs.ts:71
 msgid "Open Tabs"
@@ -3966,7 +4299,7 @@ msgstr "显示状态栏"
 
 #: packages/statusbar/src/defaults/kernelStatus.tsx:121
 msgid "No Kernel!"
-msgstr "无内核!"
+msgstr "无内核！"
 
 #: packages/statusbar/src/defaults/kernelStatus.tsx:31
 msgid "Change kernel for %1"
@@ -3986,65 +4319,65 @@ msgstr "转到行号…"
 
 #: packages/statusbar/src/defaults/runningSessions.tsx:111
 msgid "%1 Terminals, %2 Kernel sessions"
-msgstr "%1 个终端， %2 个内核会话"
+msgstr "%1 个终端，%2 个内核会话"
 
-#: packages/terminal-extension/src/index.ts:177
+#: packages/terminal-extension/src/index.ts:185
 msgid "Shutdown Terminal"
 msgstr "关闭终端"
 
-#: packages/terminal-extension/src/index.ts:200 packages/terminal-extension/src/index.ts:394
+#: packages/terminal-extension/src/index.ts:208 packages/terminal-extension/src/index.ts:402
 msgid "Inherit"
 msgstr "繼承"
 
-#: packages/terminal-extension/src/index.ts:207 packages/terminal-extension/src/index.ts:395
+#: packages/terminal-extension/src/index.ts:215 packages/terminal-extension/src/index.ts:403
 msgid "Light"
 msgstr "亮色"
 
-#: packages/terminal-extension/src/index.ts:212 packages/terminal-extension/src/index.ts:396
+#: packages/terminal-extension/src/index.ts:220 packages/terminal-extension/src/index.ts:404
 msgid "Dark"
 msgstr "暗色"
 
-#: packages/terminal-extension/src/index.ts:245
+#: packages/terminal-extension/src/index.ts:253
 msgid "Terminals"
 msgstr "终端"
 
-#: packages/terminal-extension/src/index.ts:253
+#: packages/terminal-extension/src/index.ts:261
 msgid "Are you sure you want to permanently shut down all running terminals?"
 msgstr "您确定要永久关闭所有正在运行的终端吗？"
 
-#: packages/terminal-extension/src/index.ts:295
+#: packages/terminal-extension/src/index.ts:303
 msgid "New Terminal"
 msgstr "新建终端"
 
-#: packages/terminal-extension/src/index.ts:295 packages/terminal-extension/src/index.ts:88 packages/terminal/src/widget.ts:69
+#: packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:88 packages/terminal/src/widget.ts:69
 msgid "Terminal"
 msgstr "终端"
 
-#: packages/terminal-extension/src/index.ts:296
+#: packages/terminal-extension/src/index.ts:304
 msgid "Start a new terminal session"
 msgstr "开始一个新终端会话"
 
-#: packages/terminal-extension/src/index.ts:345
+#: packages/terminal-extension/src/index.ts:353
 msgid "Refresh Terminal"
 msgstr "刷新终端"
 
-#: packages/terminal-extension/src/index.ts:346
+#: packages/terminal-extension/src/index.ts:354
 msgid "Refresh the current terminal session"
 msgstr "刷新当前终端会话"
 
-#: packages/terminal-extension/src/index.ts:366
+#: packages/terminal-extension/src/index.ts:374
 msgid "Increase Terminal Font Size"
 msgstr "增加终端字体大小"
 
-#: packages/terminal-extension/src/index.ts:380
+#: packages/terminal-extension/src/index.ts:388
 msgid "Decrease Terminal Font Size"
 msgstr "减小终端字体大小"
 
-#: packages/terminal-extension/src/index.ts:407
+#: packages/terminal-extension/src/index.ts:415
 msgid "Use Terminal Theme: %1"
 msgstr "使用终端主题：%1"
 
-#: packages/terminal-extension/src/index.ts:410
+#: packages/terminal-extension/src/index.ts:418
 msgid "Set the terminal theme"
 msgstr "设置终端主题"
 

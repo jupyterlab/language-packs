@@ -12,28 +12,35 @@ msgstr ""
 "X-Crowdin-File-ID: 95\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2021-08-17 15:32\n"
+"PO-Revision-Date: 2021-08-26 21:29\n"
 
-#: /schema/plugin.json:14
-msgid "Auto-Start Client"
-msgstr "自啟動用戶端"
-
-#: /schema/plugin.json:15
-msgctxt "schema"
-msgid "If set to true, every notebook and console will automatically have a dask client for the active cluster injected into the kernel under the name 'client'"
-msgstr "如果設定為 True，每個活躍的計算集群中的 Notebook 和主控台都會自動產生一個 Dask 用戶端，並以 'client' 這個名字注入到核心中"
-
-#: /schema/plugin.json:4
-msgctxt "schema"
-msgid "Dask Dashboard"
-msgstr "Dask 儀表板"
-
-#: /schema/plugin.json:5
+#: /schema/plugin.json:/description
 msgctxt "schema"
 msgid "Settings for the Dask Dashboard plugin."
 msgstr "Dask 儀表板附加元件的設定"
 
-#: /schema/plugin.json:9
+#: /schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Dask Dashboard"
+msgstr ""
+
+#: /schema/plugin.json:/properties/autoStartClient/description
+msgctxt "settings"
+msgid "If set to true, every notebook and console will automatically have a dask client for the active cluster injected into the kernel under the name 'client'"
+msgstr ""
+
+#: /schema/plugin.json:/properties/autoStartClient/title
+msgctxt "settings"
+msgid "Auto-Start Client"
+msgstr ""
+
+#: /schema/plugin.json:/properties/defaultURL/title
+msgctxt "settings"
 msgid "Default URL for the Dask Dashboard Webserver"
-msgstr "Dask 儀表板網路伺服器的預設 URL"
+msgstr ""
+
+#: /schema/plugin.json:/title
+msgctxt "schema"
+msgid "Dask Dashboard"
+msgstr "Dask 儀表板"
 
