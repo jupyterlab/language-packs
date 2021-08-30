@@ -144,9 +144,14 @@ def prepare_jupyterlab_lp_release(
         if package_dir.exists():
             bumpversion(package_dir, new_version)
         else:
-            api.create_new_language_pack(LANG_PACKS_PATH, locale.name)
-            if new_version:
-                bumpversion(package_dir, new_version)
+            if new_version is not None:
+                api.create_new_language_pack(
+                    LANG_PACKS_PATH,
+                    locale.name,
+                    version=new_version,
+                )
+            else:
+                api.create_new_language_pack(LANG_PACKS_PATH, locale.name)
 
         try:
             all_po_files = [
