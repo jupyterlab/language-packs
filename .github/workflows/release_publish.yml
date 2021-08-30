@@ -94,7 +94,7 @@ jobs:
         popd
         cp -r ./${{ env.CURRENT_LOCALE_DIR }}/dist/* ./dist
     - name: Create Release
-      if: ${{ github.event.inputs.skipRelease == 'false' }}
+      if: ${{ github.event_name == 'push' || github.event.inputs.skipRelease == 'false' }}
       run: |
         hub release create \
         ${{ env.CURRENT_TAG }} \
