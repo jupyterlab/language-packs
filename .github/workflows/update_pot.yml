@@ -22,8 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Install gettext
+        run: sudo apt-get install gettext
       - name: Set up Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v2
         with:
           python-version: '3.8'
       - name: Install dependencies
@@ -31,9 +33,14 @@ jobs:
           python -m pip install -r requirements/release.txt
           # temporarily use master version as not yet released
           python -m pip install git+https://github.com/jupyterlab/jupyterlab-translate
-      - name: Update po templates
+      - name: Update po templates (merging with existing)
+        if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.no_merge != 'true' }}
         run: |
           python scripts/02_update_catalogs.py
+      - name: Update po templates (not merging with existing)
+        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.no_merge == 'true' }}
+        run: |
+          python scripts/02_update_catalogs.py --no-merge
       - name: Set branch name and get hash
         run: |
           echo "BRANCH_NAME=pot-update-$(git rev-parse --short HEAD)" >> $GITHUB_ENV

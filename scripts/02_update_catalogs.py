@@ -22,7 +22,6 @@ import time
 from pathlib import Path
 
 # Third party imports
-# import click
 import jupyterlab_translate.api as api
 import yaml
 
