@@ -12,67 +12,67 @@ msgstr ""
 "X-Crowdin-File-ID: 103\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2021-08-26 21:27\n"
+"PO-Revision-Date: 2021-08-31 14:36\n"
 
 #: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/aff/title
 msgctxt "settings"
 msgid "URL address of the .aff file"
-msgstr ""
+msgstr "Adresse URL du fichier .aff"
 
 #: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/dic/title
 msgctxt "settings"
 msgid "URL address of the .dic file"
-msgstr ""
+msgstr "Adresse URL du fichier .dic"
 
 #: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/id/title
 msgctxt "settings"
 msgid "Unique identifier"
-msgstr ""
+msgstr "Identifiant unique"
 
 #: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/name/title
 msgctxt "settings"
 msgid "Display name"
-msgstr ""
+msgstr "Nom d'affichage"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
 msgid "Spellchecker settings."
-msgstr ""
+msgstr "Paramètres du correcteur orthographique."
 
 #: /schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Spellchecker"
-msgstr ""
+msgstr "Correcteur orthographique"
 
 #: /schema/plugin.json:/properties/ignore/description
 msgctxt "settings"
 msgid "Case-sensitive list of words to be ignored"
-msgstr ""
+msgstr "Liste de mots à ignorer sensible à la casse"
 
 #: /schema/plugin.json:/properties/ignore/title
 msgctxt "settings"
 msgid "Words to be ignored by the spellchecker"
-msgstr ""
+msgstr "Mots à ignorer par le correcteur orthographique"
 
 #: /schema/plugin.json:/properties/language/description
 msgctxt "settings"
 msgid "Dictionary identifier, e.g. en-us"
-msgstr ""
+msgstr "Identifiant du dictionnaire, par ex. en-us"
 
 #: /schema/plugin.json:/properties/language/title
 msgctxt "settings"
 msgid "Language of the spellchecker"
-msgstr ""
+msgstr "Langue du correcteur orthographique"
 
 #: /schema/plugin.json:/properties/mimeTypes/description
 msgctxt "settings"
 msgid "List of MIME types. GFM denotes GitHub Flavored Markdown"
-msgstr ""
+msgstr "Liste des types MIME. GFM signifie GitHub Flavored Markdown"
 
 #: /schema/plugin.json:/properties/mimeTypes/title
 msgctxt "settings"
 msgid "MIME types for files/editors for which the spellchecking should be activated"
-msgstr ""
+msgstr "Types MIME pour les fichiers/éditeurs pour lesquels la vérification orthographique doit être activée"
 
 #: /schema/plugin.json:/properties/onlineDictionaries/description
 msgctxt "settings"
@@ -85,12 +85,20 @@ msgid "A list of online dictionaries to use if installing dictionaries in data p
 "        \"name\": \"polski (Polska)\"\n"
 "    }\n"
 "]"
-msgstr ""
+msgstr "Une liste de dictionnaires en ligne à utiliser si l'installation de dictionnaires dans le chemin de données de jupyter-server n'est pas possible ou n'est pas souhaitable. Par exemple :\n\n"
+"[\n"
+"    {\n"
+"        \"id\": \"pl_PL-online\",\n"
+"        \"aff\": \"http://some-url/pl_PL. ff\",\n"
+"        \"dic\": \"http://some-url/pl_PL. ic\",\n"
+"        \"name\": \"polski (Polska)\"\n"
+"    }\n"
+"]"
 
 #: /schema/plugin.json:/properties/onlineDictionaries/title
 msgctxt "settings"
 msgid "Online dictionaries"
-msgstr ""
+msgstr "Dictionnaires en ligne"
 
 #: /schema/plugin.json:/properties/theme/description
 msgctxt "settings"
@@ -98,55 +106,58 @@ msgid "Theme for decorating misspelt words, one of:\n"
 "  - 'background-box': fills the background of the misspelt word;\n"
 "  - 'wavy-underline': underline with wavelets (note: Chrome has a bug which prevents rendering of wavelets under some very short words)\n"
 "  - 'dotted-underline': underline with dotted style"
-msgstr ""
+msgstr "Thème pour décorer des mots mal orthographiés, parmi :\n"
+"  - 'background-box' : remplit le fond du mot mal orthographiés;\n"
+"  - 'wavy-underline' : Souligner avec des ondes (note: Chrome a un bug qui empêche le rendu des ondes sous quelques mots très courts)\n"
+"  - 'dotted-underline' : souligner avec le style pointillé"
 
 #: /schema/plugin.json:/properties/theme/title
 msgctxt "settings"
 msgid "Theme"
-msgstr ""
+msgstr "Thème"
 
 #: /schema/plugin.json:/title
 msgctxt "schema"
 msgid "Spellchecker"
-msgstr ""
+msgstr "Correcteur orthographique"
 
 #: src/index.ts:242
 msgid "Dictionary not loaded"
-msgstr ""
+msgstr "Dictionnaire non chargé"
 
 #: src/index.ts:243
 msgid "Adjust spelling to"
-msgstr ""
+msgstr "Ajuster l'orthographe à"
 
 #: src/index.ts:244
 msgid "No spellcheck suggestions"
-msgstr ""
+msgstr "Aucune suggestion de correction orthographique"
 
 #: src/index.ts:245
 msgid "Spell Checker"
-msgstr ""
+msgstr "Vérificateur orthographique"
 
 #: src/index.ts:374
 msgid "Toggle spellchecker"
-msgstr ""
+msgstr "Activer/désactiver le correcteur orthographique"
 
 #: src/index.ts:473
 msgid "Ignore"
-msgstr ""
+msgstr "Ignorer"
 
 #: src/index.ts:560
 msgid "Loading dictionary…"
-msgstr ""
+msgstr "Chargement du dictionnaire…"
 
 #: src/index.ts:630
 msgid "%1 [%2] (online)"
-msgstr ""
+msgstr "%1 [%2] (en ligne)"
 
 #: src/index.ts:631
 msgid "%1 [%2]"
-msgstr ""
+msgstr "%1 [%2]"
 
 #: src/index.ts:635 src/index.ts:663
 msgid "Choose spellchecker language"
-msgstr ""
+msgstr "Choisir la langue du correcteur orthographique"
 

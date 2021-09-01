@@ -12,17 +12,17 @@ msgstr ""
 "X-Crowdin-File-ID: 99\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2021-08-26 23:41\n"
+"PO-Revision-Date: 2021-08-31 17:58\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
 msgid "LSP Completion settings."
-msgstr ""
+msgstr "Ustawienia podpowiedzi LSP."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/diagnostics.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/highlights.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/hover.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/jump_to.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/plugin.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/rename.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Language integration"
-msgstr ""
+msgstr "Integracja języka"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/caseSensitive/description
 msgctxt "settings"
@@ -37,7 +37,7 @@ msgstr "Filtrowanie z uwzględnieniem wielkości liter"
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/continuousHinting/description
 msgctxt "settings"
 msgid "Whether to enable continuous hinting (Hinterland mode)."
-msgstr ""
+msgstr "Czy włączyć ciągłe podpowiedzi (tryb Hinterland)."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/continuousHinting/title
 msgctxt "settings"
@@ -67,17 +67,17 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/kernelCompletionsFirst/title
 msgctxt "settings"
 msgid "Prioritize completions from kernel"
-msgstr ""
+msgstr "Nadaj wyższy priorytet podpowiedziom z jądra"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/kernelResponseTimeout/description
 msgctxt "settings"
 msgid "The time to wait for the kernel completions suggestions in milliseconds. Set to 0 to disable kernel completions, or to -1 to wait indefinitely (not recommended)."
-msgstr ""
+msgstr "Czas oczekiwania na podpowiedzi uzupełnienie z jądra w milisekundach. Ustaw 0, aby wyłączyć podpowiedzi z jądra, lub na -1, aby czekać bezterminowo (nie zalecane)."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/kernelResponseTimeout/title
 msgctxt "settings"
 msgid "Kernel completion response timeout"
-msgstr ""
+msgstr "Limit czasu na podpowiedzi z jądra"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/labelExtra/description
 msgctxt "settings"
@@ -127,12 +127,12 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/theme/title
 msgctxt "settings"
 msgid "Completer theme"
-msgstr ""
+msgstr "Motyw autouzupełnianiacza"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/typesMap/description
 msgctxt "settings"
 msgid "Mapping used for icon selection. The kernel types (keys) are case-insensitive. Accepted values are the names of CompletionItemKind and 'Kernel' literal. The defaults aim to provide good initial experience for Julia, Python and R kernels."
-msgstr ""
+msgstr "Mapowanie używane do wyboru ikon. Wielkość liter dla typów jądra (keys) nie maj znaczenia. Akceptowane wartości to nazwy CompletionItemKind i \"Kernel\". Domyślnie wartości mają na celu zapewnienie dobrego początkowego doświadczenia dla jąder Julii, Pythona i R."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/typesMap/title
 msgctxt "settings"
@@ -172,7 +172,7 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/ignoreCodes/description
 msgctxt "settings"
 msgid "Codes of diagnostics which should not be shown in the panel nor highlighted in the editor."
-msgstr ""
+msgstr "Kody diagnostyk, które nie powinny być wyświetlane w panelu ani podkreślane w edytorze."
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/ignoreCodes/title
 msgctxt "settings"
@@ -187,7 +187,7 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/ignoreMessagesPatterns/title
 msgctxt "settings"
 msgid "Diagnostic messages to ignore"
-msgstr ""
+msgstr "Wiadomości diagnostyczne do zignorowania"
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/title
 msgctxt "schema"
@@ -217,7 +217,7 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/highlights.json:/properties/removeOnBlur/title
 msgctxt "settings"
 msgid "Remove highlights on editor (e.g. cell) blur"
-msgstr ""
+msgstr "Usuń podświetlenia po opuszczeniu edytora (np. komórki)"
 
 #: /packages/jupyterlab-lsp/schema/highlights.json:/title
 msgctxt "schema"
@@ -247,7 +247,7 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/hover.json:/properties/modifierKey/title /packages/jupyterlab-lsp/schema/jump_to.json:/properties/modifierKey/title
 msgctxt "settings"
 msgid "Modifier key"
-msgstr ""
+msgstr "Klawisz modyfikujący"
 
 #: /packages/jupyterlab-lsp/schema/hover.json:/properties/throttlerDelay/description
 msgctxt "settings"
@@ -282,12 +282,12 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/plugin.json:/definitions/language-server/properties/priority/title
 msgctxt "settings"
 msgid "Priority of the server"
-msgstr ""
+msgstr "Priorytet serwera"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:/definitions/language-server/properties/serverSettings/description
 msgctxt "settings"
 msgid "Configuration to be sent to language server over LSP when initialized: see the specific language server's documentation for more"
-msgstr ""
+msgstr "Konfiguracja do wysłania na serwer językowy przez LSP po zainicjowaniu: zobacz dokumentację konkretnego serwera językowego, aby dowiedzieć się więcej"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:/definitions/language-server/properties/serverSettings/title
 msgctxt "settings"
@@ -332,12 +332,12 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/plugin.json:/properties/language_servers/title
 msgctxt "settings"
 msgid "Language Server"
-msgstr ""
+msgstr "Serwer języka"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:/properties/logAllCommunication/description
 msgctxt "settings"
 msgid "Whether all messages sent to and received from LSP servers should be logged into the console. To see these messages, set loggingLevel to debug or log. Note: Only messages handled by the new API will be shown."
-msgstr ""
+msgstr "Czy wszystkie wiadomości wysyłane i odbierane z serwerów LSP powinny być zalogowane do konsoli. Aby zobaczyć te wiadomości, ustaw loggingLevel na debug lub log. Uwaga: Wyświetlane będą tylko wiadomości obsługiwane przez nowe API."
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:/properties/logAllCommunication/title
 msgctxt "settings"
@@ -466,7 +466,7 @@ msgstr ""
 
 #: packages/completion-theme/src/index.ts:189
 msgid "Display the completer themes"
-msgstr ""
+msgstr "Wyświetl motywy autouzupełniania"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:150
 msgid "Troubleshooting"
@@ -482,7 +482,7 @@ msgstr "Instalacja"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:168
 msgid "No installation instructions were provided with this specification."
-msgstr ""
+msgstr "Nie dostarczono instrukcji instalacji wraz z tą specyfikacją."
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:183
 msgid "No language server for %1 detected"
@@ -502,7 +502,7 @@ msgstr "Nie mamy jeszcze gotowego automatycznego wykrywania dla serwerów język
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:217
 msgid "You may contribute a specification for auto-detection as described in our "
-msgstr ""
+msgstr "Możesz dodać specyfikację automatycznego wykrywania w sposób opisany w naszym "
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:225
 msgid "documentation"

@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 97\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2021-08-27 11:23\n"
+"PO-Revision-Date: 2021-08-31 19:04\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
@@ -57,12 +57,12 @@ msgstr ""
 #: /schema/plugin.json:/properties/commitAndPush/description
 msgctxt "settings"
 msgid "Whether to trigger or not a push for each commit."
-msgstr ""
+msgstr "Czy wykokonać wysłanie zmian po każdym zatwierdzeniu."
 
 #: /schema/plugin.json:/properties/commitAndPush/title
 msgctxt "settings"
 msgid "Trigger push on commit"
-msgstr ""
+msgstr "Wyślij po wysłaniu"
 
 #: /schema/plugin.json:/properties/disableBranchWithChanges/description
 msgctxt "settings"
@@ -77,12 +77,12 @@ msgstr ""
 #: /schema/plugin.json:/properties/displayStatus/description
 msgctxt "settings"
 msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
-msgstr ""
+msgstr "Wyświetlaj aktualizacje statusu rozszerzenia Git na pasku stanu JupyterLab. Gdy true, rozszerzenie wyświetla aktualizacje statusu na pasku stanu JupyterLab, miedzy innymi podczas pobierania i wysyłania zmian, przełączania gałęzi i sprawdzania zmian. W zależności od poziomu aktywności, aktualizacje stanu mogą być rozpraszające dla niektórych użytkowników. W takim przypadku przełączenie na false powinno zmniejszyć wizualne rozproszenie."
 
 #: /schema/plugin.json:/properties/displayStatus/title
 msgctxt "settings"
 msgid "Display Git status updates"
-msgstr ""
+msgstr "Wyświetl aktualizacje statusu Git"
 
 #: /schema/plugin.json:/properties/doubleClickDiff/description
 msgctxt "settings"
@@ -657,31 +657,31 @@ msgstr "Nie udało się przełączyć gałęzi."
 
 #: src/components/CommitBox.tsx:141
 msgid "Create a new commit"
-msgstr ""
+msgstr "Zatwierdź nową zmianę"
 
 #: src/components/CommitBox.tsx:142
 msgid "New commit will be created and show up as a next one after the previous commit (default)."
-msgstr ""
+msgstr "Nowy zmiana zostanie utworzona i pojawi się jako następna po poprzedniej zatwierdzonej zmianie (domyślnie)."
 
 #: src/components/CommitBox.tsx:147
 msgid "Amend previous commit"
-msgstr ""
+msgstr "Popraw poprzednią zmianę"
 
 #: src/components/CommitBox.tsx:148
 msgid "Staged changes will be added to the previous commit and its date will be updated."
-msgstr ""
+msgstr "Zmiany z poczekalnie zostaną dodane do poprzedniej zmiany a data zmiany zostanie zaktualizowana."
 
 #: src/components/CommitBox.tsx:176
 msgid "Disabled: No files are staged for commit"
-msgstr ""
+msgstr "Nieaktywne: brak plików do zatwierdzenia"
 
 #: src/components/CommitBox.tsx:178
 msgid "Disabled: No commit message summary"
-msgstr ""
+msgstr "Nieaktywne: brak wiadomości podsumowującej zmianę"
 
 #: src/components/CommitBox.tsx:184
 msgid "Summary (%1 to commit)"
-msgstr ""
+msgstr "Podsumowanie (%1 aby zatwierdzić)"
 
 #: src/components/CommitMessage.tsx:114 src/components/CommitMessage.tsx:144
 msgid "Amending the commit will re-use the previous commit summary"
@@ -689,7 +689,7 @@ msgstr ""
 
 #: src/components/CommitMessage.tsx:117
 msgid "Enter a commit message summary (a single line, preferably less than 50 characters)"
-msgstr ""
+msgstr "Wprowadź wiadomość podsumowującą zmiany (pojedynczy wiersz, najlepiej mniej niż 50 znaków)"
 
 #: src/components/CommitMessage.tsx:140
 msgid "Description (optional)"
@@ -697,7 +697,7 @@ msgstr "Opis (opcjonalny)"
 
 #: src/components/CommitMessage.tsx:147
 msgid "Enter a commit message description"
-msgstr ""
+msgstr "Wprowadź opis zatwierdzanych zmian"
 
 #: src/components/CommitMessage.tsx:66
 msgid "Summary"
@@ -717,7 +717,7 @@ msgstr ""
 
 #: src/components/FileList.tsx:227
 msgid "Discard all changes failed."
-msgstr ""
+msgstr "Odrzucenie wszystkich zmian nie powiodło się."
 
 #: src/components/FileList.tsx:385
 msgid "Conflicted"
@@ -753,7 +753,7 @@ msgstr ""
 
 #: src/components/FileList.tsx:576 src/components/FileList.tsx:786 src/components/SinglePastCommitInfo.tsx:208
 msgid "Changed"
-msgstr ""
+msgstr "Zmienione"
 
 #: src/components/FileList.tsx:617
 msgid "Track this file"
@@ -781,15 +781,15 @@ msgstr "Zmiany"
 
 #: src/components/GitPanel.tsx:357
 msgid "View commit history"
-msgstr ""
+msgstr "Zobacz historię zmian"
 
 #: src/components/GitPanel.tsx:378
 msgid "Commit and Push"
-msgstr ""
+msgstr "Zatwierdź i wyślij"
 
 #: src/components/GitPanel.tsx:379
 msgid "Commit"
-msgstr ""
+msgstr "Zatwierdź"
 
 #: src/components/GitPanel.tsx:442
 msgid "is not"
@@ -813,11 +813,11 @@ msgstr ""
 
 #: src/components/GitPanel.tsx:550
 msgid "Failed to commit changes."
-msgstr ""
+msgstr "Nie udało się zatwierdzić zmian."
 
 #: src/components/GitPanel.tsx:558
 msgid "Committing changes..."
-msgstr ""
+msgstr "Zatwierdzanie zmian..."
 
 #: src/components/GitPanel.tsx:569
 msgid "Committed changes."
@@ -825,7 +825,7 @@ msgstr ""
 
 #: src/components/GitPanel.tsx:602
 msgid "Who is committing?"
-msgstr ""
+msgstr "Kto zatwierdza zmiany?"
 
 #: src/components/GitPanel.tsx:608
 msgid "User refused to set identity."
@@ -841,7 +841,7 @@ msgstr ""
 
 #: src/components/HistorySideBar.tsx:122
 msgid "Uncommitted Changes"
-msgstr ""
+msgstr "Niezatwierdzone zmiany"
 
 #: src/components/HistorySideBar.tsx:123
 msgid "now"
@@ -909,11 +909,11 @@ msgstr ""
 
 #: src/components/PastCommitNode.tsx:111
 msgid "View commit details"
-msgstr ""
+msgstr "Zobacz szczegóły zmian"
 
 #: src/components/PastCommitNode.tsx:112 src/components/SinglePastCommitInfo.tsx:284
 msgid "View file changes"
-msgstr ""
+msgstr "Wyświetl zmiany w pliku"
 
 #: src/components/ResetRevertDialog.tsx:125
 msgid "Revert Changes"
@@ -925,7 +925,7 @@ msgstr ""
 
 #: src/components/ResetRevertDialog.tsx:139
 msgid "These changes will be reverted. Only commit if you're sure you're okay losing these changes."
-msgstr ""
+msgstr "Te zmiany zostaną cofnięte. Zatwierdź tylko wtedy, gdy jesteś pewien chcesz usunąć te zmiany."
 
 #: src/components/ResetRevertDialog.tsx:142
 msgid "All changes after commit %1 will be gone forever (hard reset). Are you sure?"
