@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2021-08-31 17:03\n"
+"PO-Revision-Date: 2021-09-01 22:34\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -118,17 +118,17 @@ msgstr "Czy menu jest wyłączone czy nie"
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/icon/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/icon/description
 msgctxt "settings"
 msgid "Menu icon id"
-msgstr ""
+msgstr "Identyfikator ikony menu"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/id/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/id/description
 msgctxt "settings"
 msgid "Menu unique id"
-msgstr ""
+msgstr "Unikalny identyfikator menu"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/items/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/items/description
 msgctxt "settings"
 msgid "Menu items"
-msgstr ""
+msgstr "Elementy menu"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/label/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/label/description
 msgctxt "settings"
@@ -143,7 +143,7 @@ msgstr "Mnemoniczny indeks dla etykiety"
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/rank/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/rank/description
 msgctxt "settings"
 msgid "Menu rank"
-msgstr ""
+msgstr "Ranga menu"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/args/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/args/description
 msgctxt "settings"
@@ -163,12 +163,12 @@ msgstr "Czy element jest wyłączony czy nie"
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/rank/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/rank/description
 msgctxt "settings"
 msgid "Item rank"
-msgstr ""
+msgstr "Ranga elementu"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/submenu/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/submenu/description
 msgctxt "settings"
 msgid "Submenu definition"
-msgstr ""
+msgstr "Definicja podmenu"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/type/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/type/description
 msgctxt "settings"
@@ -2374,9 +2374,17 @@ msgstr "Błąd zmiany nazwy"
 msgid "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\""
 msgstr "\"%1\" nie jest prawidłową nazwą pliku. Nazwy muszą mieć długość większą niż zero i nie mogą zawierać \"/\", \"\\\", ani \":\""
 
-#: packages/docmanager/src/savingstatus.tsx:44
-msgid "Saving %1"
-msgstr "Zapisywanie %1"
+#: packages/docmanager/src/savingstatus.tsx:58
+msgid "Saving completed"
+msgstr "Zapisano"
+
+#: packages/docmanager/src/savingstatus.tsx:59
+msgid "Saving started"
+msgstr "Rozpoczęto zapisywanie"
+
+#: packages/docmanager/src/savingstatus.tsx:60
+msgid "Saving failed"
+msgstr "Błąd zapisu"
 
 #: packages/docmanager/src/widgetmanager.ts:271
 msgid "Name: %1\n"
@@ -2530,7 +2538,7 @@ msgstr "Zamień wszystkie"
 
 #: packages/documentsearch/src/searchoverlay.tsx:321
 msgid "Search Cell Outputs"
-msgstr ""
+msgstr "Wyszukaj w rezultatach komórek"
 
 #: packages/documentsearch/src/searchoverlay.tsx:338
 msgid "Search Selected Cell(s)"
@@ -2707,7 +2715,10 @@ msgid "The JupyterLab development team is excited to have a robust\n"
 "third-party extension community. However, we do not review\n"
 "third-party extensions, and some extensions may introduce security\n"
 "risks or contain malicious code that runs on your machine."
-msgstr ""
+msgstr "Zespół rozwoju JupyterLab z entuzjazmem docenia solidną\n"
+"społeczność tworzącą zewnętrzne rozszerzenia. Nie sprawdzamy jednak\n"
+"rozszerzeń stron trzecich, a niektóre rozszerzenia mogą wprowadzić ryzyko bezpieczeństwa\n"
+"lub zawierać złośliwy kod, który który może zostać wykonany na twoim komputerze."
 
 #: packages/extensionmanager/src/widget.tsx:823
 msgid "Updating extensions list"
@@ -3353,7 +3364,7 @@ msgstr "Wyloguj się z Hub"
 
 #: packages/hub-extension/src/index.ts:91
 msgid "Hub"
-msgstr ""
+msgstr "Hub"
 
 #: packages/imageviewer-extension/src/index.ts:158
 msgid "Image Viewer"
@@ -3874,27 +3885,27 @@ msgstr "Rozwiń cały kod"
 
 #: packages/notebook-extension/src/index.ts:2108
 msgid "Collapse Selected Outputs"
-msgstr "Zwiń wszystkie wyjścia"
+msgstr "Zwiń wszystkie rezultaty"
 
 #: packages/notebook-extension/src/index.ts:2119
 msgid "Expand Selected Outputs"
-msgstr "Rozwiń wybrane wyjścia"
+msgstr "Rozwiń wybrane rezultaty"
 
 #: packages/notebook-extension/src/index.ts:2130
 msgid "Collapse All Outputs"
-msgstr "Zwiń wszystkie wyjścia"
+msgstr "Zwiń wszystkie rezultaty"
 
 #: packages/notebook-extension/src/index.ts:2141
 msgid "Expand All Outputs"
-msgstr "Rozwiń wszystkie wyjścia"
+msgstr "Rozwiń wszystkie rezultaty"
 
 #: packages/notebook-extension/src/index.ts:2152
 msgid "Enable Scrolling for Outputs"
-msgstr "Włącz przewijanie dla wyjść"
+msgstr "Włącz przewijanie dla rezultatów"
 
 #: packages/notebook-extension/src/index.ts:2163
 msgid "Disable Scrolling for Outputs"
-msgstr "Wyłącz przewijanie dla wyjść"
+msgstr "Wyłącz przewijanie dla rezultatów"
 
 #: packages/notebook-extension/src/index.ts:2174
 msgid "Select current running or last run cell"
@@ -3914,7 +3925,7 @@ msgstr "Operacje w komórce notatnika"
 
 #: packages/notebook-extension/src/index.ts:2350
 msgid "Clear Output"
-msgstr "Wyczyść wyjście"
+msgstr "Wyczyść rezultat"
 
 #: packages/notebook-extension/src/index.ts:2366
 msgid "Close and Shutdown Notebook"
@@ -3986,7 +3997,7 @@ msgstr "Narzędzia notatnika"
 
 #: packages/notebook-extension/src/index.ts:758
 msgid "Create New View for Output"
-msgstr "Utwórz nowy widok dla wyjścia"
+msgstr "Utwórz nowy widok dla rezultatu"
 
 #: packages/notebook-extension/src/index.ts:845
 msgid "Run Selected Text or Current Line in Console"
