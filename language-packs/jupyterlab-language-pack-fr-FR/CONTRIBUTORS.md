@@ -1,6 +1,7 @@
 # Contributors
 
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
+* Cedric Jorand ([@cedricgump](https://crowdin.com/profile/cedricgump))
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * Thomas Lecocq ([@ThomasLecocq](https://crowdin.com/profile/ThomasLecocq))
 * Guillaume MARION ([@guillaumemarion](https://crowdin.com/profile/guillaumemarion))

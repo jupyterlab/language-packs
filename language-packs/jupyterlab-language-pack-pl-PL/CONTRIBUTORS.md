@@ -1,7 +1,7 @@
 # Contributors
 
-* JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * Michał Krassowski ([@krassowski](https://crowdin.com/profile/krassowski))
+* JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * Marcin Koculak ([@mkoculak](https://crowdin.com/profile/mkoculak))
 * Kacper Łukawski ([@lukawskikacper](https://crowdin.com/profile/lukawskikacper))

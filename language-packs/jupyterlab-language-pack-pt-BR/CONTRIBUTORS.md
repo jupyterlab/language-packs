@@ -18,5 +18,6 @@
 * Gökberk Keskinkılıç ([@gokiberk](https://crowdin.com/profile/gokiberk))
 * Frédéric Collonval ([@fcollonval](https://crowdin.com/profile/fcollonval))
 * Guilherme Cruz ([@gcrz](https://crowdin.com/profile/gcrz))
+* Luciano Resende ([@lresende](https://crowdin.com/profile/lresende))
 * Mariana Meireles ([@marimeire](https://crowdin.com/profile/marimeire))
 * João Paulo Taylor Ienczak Zanette ([@JPTIZ](https://crowdin.com/profile/JPTIZ))
