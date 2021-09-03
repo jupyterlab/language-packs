@@ -11,6 +11,9 @@
     "Cancel": [
         "Anuluj"
     ],
+    "Display the completer themes": [
+        "Wy\u015bwietl motywy autouzupe\u0142niania"
+    ],
     "Highlight references": [
         "Wyr\u00f3\u017cnij odwo\u0142ania"
     ],
@@ -31,6 +34,9 @@
     ],
     "Licence: ": [
         "Licencja: "
+    ],
+    "No installation instructions were provided with this specification.": [
+        "Nie dostarczono instrukcji instalacji wraz z t\u0105 specyfikacj\u0105."
     ],
     "No issues detected, great job!": [
         "Nie wykryto \u017cadnych problem\u00f3w, \u015bwietna robota!"
@@ -75,6 +81,9 @@
     "We do not have an auto-detection ready for a language servers supporting %1 yet.": [
         "Nie mamy jeszcze gotowego automatycznego wykrywania dla serwer\u00f3w j\u0119zykowych obs\u0142uguj\u0105cych %1."
     ],
+    "You may contribute a specification for auto-detection as described in our ": [
+        "Mo\u017cesz doda\u0107 specyfikacj\u0119 automatycznego wykrywania w spos\u00f3b opisany w naszym "
+    ],
     "documentation": [
         "dokumentacja"
     ],
@@ -93,6 +102,9 @@
     "schema\u0004Code Syntax": [
         "Sk\u0142adnia kodu"
     ],
+    "schema\u0004LSP Completion settings.": [
+        "Ustawienia podpowiedzi LSP."
+    ],
     "schema\u0004Language Server": [
         "Serwer j\u0119zyka"
     ],
@@ -102,17 +114,53 @@
     "settings\u0004Case-sensitive filtering": [
         "Filtrowanie z uwzgl\u0119dnieniem wielko\u015bci liter"
     ],
+    "settings\u0004Codes of diagnostics which should not be shown in the panel nor highlighted in the editor.": [
+        "Kody diagnostyk, kt\u00f3re nie powinny by\u0107 wy\u015bwietlane w panelu ani podkre\u015blane w edytorze."
+    ],
+    "settings\u0004Completer theme": [
+        "Motyw autouzupe\u0142nianiacza"
+    ],
+    "settings\u0004Configuration to be sent to language server over LSP when initialized: see the specific language server's documentation for more": [
+        "Konfiguracja do wys\u0142ania na serwer j\u0119zykowy przez LSP po zainicjowaniu: zobacz dokumentacj\u0119 konkretnego serwera j\u0119zykowego, aby dowiedzie\u0107\u00a0si\u0119 wi\u0119cej"
+    ],
     "settings\u0004Continuous hinting": [
         "Ci\u0105g\u0142e podpowiedzi"
     ],
     "settings\u0004Diagnostic codes to ignore": [
         "Wiadomo\u015bci diagnostyczne do zignorowania"
     ],
+    "settings\u0004Diagnostic messages to ignore": [
+        "Wiadomo\u015bci diagnostyczne do zignorowania"
+    ],
+    "settings\u0004Kernel completion response timeout": [
+        "Limit czasu na podpowiedzi z j\u0105dra"
+    ],
+    "settings\u0004Language Server": [
+        "Serwer j\u0119zyka"
+    ],
+    "settings\u0004Language integration": [
+        "Integracja j\u0119zyka"
+    ],
     "settings\u0004Log all LSP communication with the LSP servers": [
         "Loguj wszystkie komunikaty LSP z serwerami LSP"
     ],
     "settings\u0004Logging console type": [
         "Typ konsoli logowania"
+    ],
+    "settings\u0004Mapping used for icon selection. The kernel types (keys) are case-insensitive. Accepted values are the names of CompletionItemKind and 'Kernel' literal. The defaults aim to provide good initial experience for Julia, Python and R kernels.": [
+        "Mapowanie u\u017cywane do wyboru ikon. Wielko\u015b\u0107 liter dla typ\u00f3w j\u0105dra (keys) nie maj znaczenia. Akceptowane warto\u015bci to nazwy CompletionItemKind i \"Kernel\". Domy\u015blnie warto\u015bci maj\u0105 na celu zapewnienie dobrego pocz\u0105tkowego do\u015bwiadczenia dla j\u0105der Julii, Pythona i R."
+    ],
+    "settings\u0004Modifier key": [
+        "Klawisz modyfikuj\u0105cy"
+    ],
+    "settings\u0004Prioritize completions from kernel": [
+        "Nadaj wy\u017cszy priorytet podpowiedziom z j\u0105dra"
+    ],
+    "settings\u0004Priority of the server": [
+        "Priorytet serwera"
+    ],
+    "settings\u0004Remove highlights on editor (e.g. cell) blur": [
+        "Usu\u0144 pod\u015bwietlenia po opuszczeniu edytora (np. kom\u00f3rki)"
     ],
     "settings\u0004Should completion filtering be case-sensitive?": [
         "Czy filtrowanie podpowiedzi autouzupe\u0142niania powinno uwzgl\u0119dnia\u0107 wielko\u015b\u0107 liter?"
@@ -123,8 +171,17 @@
     "settings\u0004The console to use for debugging problems with this extension. Allowed values are: browser, floating.": [
         "Konsola do debugowania problem\u00f3w z tym rozszerzeniem. Dozwolone warto\u015bci to: browser, floating."
     ],
+    "settings\u0004The time to wait for the kernel completions suggestions in milliseconds. Set to 0 to disable kernel completions, or to -1 to wait indefinitely (not recommended).": [
+        "Czas oczekiwania na podpowiedzi uzupe\u0142nienie z j\u0105dra w milisekundach. Ustaw 0, aby wy\u0142\u0105czy\u0107 podpowiedzi z j\u0105dra, lub na -1, aby czeka\u0107 bezterminowo (nie zalecane)."
+    ],
     "settings\u0004Wait for kernel if busy": [
         "Czekaj na j\u0105dro je\u015bli zaj\u0119te"
+    ],
+    "settings\u0004Whether all messages sent to and received from LSP servers should be logged into the console. To see these messages, set loggingLevel to debug or log. Note: Only messages handled by the new API will be shown.": [
+        "Czy wszystkie wiadomo\u015bci wysy\u0142ane i odbierane z serwer\u00f3w LSP powinny by\u0107 zalogowane do konsoli. Aby zobaczy\u0107 te wiadomo\u015bci, ustaw loggingLevel na debug lub log. Uwaga: Wy\u015bwietlane b\u0119d\u0105 tylko wiadomo\u015bci obs\u0142ugiwane przez nowe API."
+    ],
+    "settings\u0004Whether to enable continuous hinting (Hinterland mode).": [
+        "Czy w\u0142\u0105czy\u0107 ci\u0105g\u0142e podpowiedzi (tryb Hinterland)."
     ],
     "settings\u0004Whether to show documentation box next to the completion suggestions.": [
         "Czy pokazywa\u0107 dokumentacj\u0119\u00a0przy podpowiedziach autouzupe\u0142niania."
