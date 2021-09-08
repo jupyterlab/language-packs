@@ -31,8 +31,6 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install -r requirements/release.txt
-          # temporarily use master version as not yet released
-          python -m pip install git+https://github.com/jupyterlab/jupyterlab-translate
       - name: Update po templates (merging with existing)
         if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.no_merge != 'true' }}
         run: |
