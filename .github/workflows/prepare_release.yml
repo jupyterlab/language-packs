@@ -29,8 +29,6 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install -r requirements/release.txt
-          # temporarily use master version as not yet released
-          python -m pip install git+https://github.com/jupyterlab/jupyterlab-translate
       - name: Update the language packages
         if: ${{ github.event.inputs.version == '' }}
         env:
