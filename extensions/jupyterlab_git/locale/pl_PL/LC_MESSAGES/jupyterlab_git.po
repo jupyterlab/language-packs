@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 97\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2021-09-01 23:31\n"
+"PO-Revision-Date: 2021-09-07 22:41\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
@@ -72,7 +72,7 @@ msgstr ""
 #: /schema/plugin.json:/properties/disableBranchWithChanges/title
 msgctxt "settings"
 msgid "Disable branch with changes"
-msgstr ""
+msgstr "Wyłącz gałąź ze zmianami"
 
 #: /schema/plugin.json:/properties/displayStatus/description
 msgctxt "settings"
@@ -87,7 +87,7 @@ msgstr "Wyświetl aktualizacje statusu Git"
 #: /schema/plugin.json:/properties/doubleClickDiff/description
 msgctxt "settings"
 msgid "If true, double clicking a file in the list of changed files will open a diff."
-msgstr ""
+msgstr "Jeśli `true`, podwójne kliknięcie pliku na liście zmienionych plików otworzy porównanie."
 
 #: /schema/plugin.json:/properties/doubleClickDiff/title
 msgctxt "settings"
@@ -97,7 +97,7 @@ msgstr "Pokaż różnicę przy podwójnym kliknięciu"
 #: /schema/plugin.json:/properties/historyCount/description
 msgctxt "settings"
 msgid "Number of (most recent) commits shown in the history log"
-msgstr ""
+msgstr "Liczba (ostatnich) zatwierdzonych zmian wyświetlanych w dzienniku historii"
 
 #: /schema/plugin.json:/properties/historyCount/title
 msgctxt "settings"
@@ -107,7 +107,7 @@ msgstr "Licznik historii"
 #: /schema/plugin.json:/properties/refreshIfHidden/description
 msgctxt "settings"
 msgid "Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance."
-msgstr ""
+msgstr "Czy sprawdzić status Git, gdy zakładka Git nie jest widoczna. Wybierz `false` dla wyższej wydajności."
 
 #: /schema/plugin.json:/properties/refreshIfHidden/title
 msgctxt "settings"
@@ -233,11 +233,11 @@ msgstr "Uproszczona poczekalnia"
 
 #: src/commandsAndMenu.tsx:240
 msgid "Double click opens diff"
-msgstr ""
+msgstr "Podwójne kliknięcie otwiera porównanie"
 
 #: src/commandsAndMenu.tsx:249
 msgid "Add Remote Repository"
-msgstr ""
+msgstr "Dodaj zdalne repozytorium"
 
 #: src/commandsAndMenu.tsx:250
 msgid "Add a Git remote repository"
@@ -293,7 +293,7 @@ msgstr "Otwórz .gitignore"
 
 #: src/commandsAndMenu.tsx:350
 msgid "Push to Remote (Force)"
-msgstr ""
+msgstr "Wyślij do zdalnego (wymuś)"
 
 #: src/commandsAndMenu.tsx:351
 msgid "Push to Remote"
@@ -321,31 +321,31 @@ msgstr "Wysyłanie nie powiodło się"
 
 #: src/commandsAndMenu.tsx:386
 msgid "Pull from Remote"
-msgstr ""
+msgstr "Pobierz i scale ze zdalnego"
 
 #: src/commandsAndMenu.tsx:387
 msgid "Pull latest code from remote repository"
-msgstr ""
+msgstr "Pobierz i scal kod ze zdalnego repozytorium"
 
 #: src/commandsAndMenu.tsx:392
 msgid "Pulling..."
-msgstr ""
+msgstr "Pobieranie i scalanie..."
 
 #: src/commandsAndMenu.tsx:401
 msgid "Successfully pulled"
-msgstr ""
+msgstr "Pomyślnie pobrano i scalono"
 
 #: src/commandsAndMenu.tsx:411
 msgid "Failed to pull"
-msgstr ""
+msgstr "Pobieranie nie powiodło się"
 
 #: src/commandsAndMenu.tsx:428
 msgid "Show Diff"
-msgstr ""
+msgstr "Pokaż porównanie"
 
 #: src/commandsAndMenu.tsx:429
 msgid "Display a file diff."
-msgstr ""
+msgstr "Wyświetl porównanie pliku."
 
 #: src/commandsAndMenu.tsx:477
 msgid "Mark as resolved"
@@ -369,15 +369,15 @@ msgstr "Odśwież"
 
 #: src/commandsAndMenu.tsx:521
 msgid "Refresh diff widget"
-msgstr ""
+msgstr "Odśwież widżet różnicy"
 
 #: src/commandsAndMenu.tsx:549
 msgid "Diff Not Supported"
-msgstr ""
+msgstr "Porównywanie nie jest wspierane"
 
 #: src/commandsAndMenu.tsx:550
 msgid "Diff is not supported for %1 files."
-msgstr ""
+msgstr "Porównywanie plików %1 nie jest wspierane."
 
 #: src/commandsAndMenu.tsx:564
 msgid "Open"
@@ -413,7 +413,7 @@ msgstr "Porównaj wybrane pliki"
 
 #: src/commandsAndMenu.tsx:675
 msgid "CURRENT"
-msgstr ""
+msgstr "BIEŻĄCE"
 
 #: src/commandsAndMenu.tsx:676
 msgid "INCOMING"
@@ -421,7 +421,7 @@ msgstr ""
 
 #: src/commandsAndMenu.tsx:690
 msgid "RESULT"
-msgstr ""
+msgstr "WYNIK"
 
 #: src/commandsAndMenu.tsx:755
 msgid "Add"
@@ -621,7 +621,7 @@ msgstr "Przełącz na gałąź: %1"
 
 #: src/components/BranchMenu.tsx:275
 msgid "Delete this branch locally"
-msgstr ""
+msgstr "Usuń lokalnie tę gałąź"
 
 #: src/components/BranchMenu.tsx:332
 msgid "Delete branch"
@@ -709,7 +709,7 @@ msgstr "Odrzuć wszystkie zmiany"
 
 #: src/components/FileList.tsx:189 src/components/FileList.tsx:214
 msgid "Are you sure you want to permanently discard changes to all files? This action cannot be undone."
-msgstr ""
+msgstr "Czy na pewno chcesz trwale odrzucić zmiany we wszystkich plikach? Tej akcji nie można cofnąć."
 
 #: src/components/FileList.tsx:202
 msgid "Discard all unstaged changes failed."
@@ -745,11 +745,11 @@ msgstr "Dodaj zmianę do poczekalni"
 
 #: src/components/FileList.tsx:563 src/components/FileList.tsx:782
 msgid "Discard All Changes"
-msgstr ""
+msgstr "Odrzuć wszystkie zmiany"
 
 #: src/components/FileList.tsx:570
 msgid "Stage all changes"
-msgstr ""
+msgstr "Dodaj wszystkie zmiany do poczekalni"
 
 #: src/components/FileList.tsx:576 src/components/FileList.tsx:786 src/components/SinglePastCommitInfo.tsx:208
 msgid "Changed"
@@ -769,7 +769,7 @@ msgstr "Nieśledzone"
 
 #: src/components/FileList.tsx:807
 msgid "Diff this file"
-msgstr ""
+msgstr "Porównaj ten plik"
 
 #: src/components/GitPanel.tsx:347
 msgid "View changed files"
@@ -805,11 +805,11 @@ msgstr " repozytorium Git. Aby korzystać z Git, przejdź do lokalnego repozytor
 
 #: src/components/GitPanel.tsx:455
 msgid "Open the FileBrowser"
-msgstr ""
+msgstr "Otwórz przeglądarkę plików"
 
 #: src/components/GitPanel.tsx:533
 msgid "Staging files..."
-msgstr ""
+msgstr "Dodawanie plików do poczekalni..."
 
 #: src/components/GitPanel.tsx:550
 msgid "Failed to commit changes."
@@ -821,7 +821,7 @@ msgstr "Zatwierdzanie zmian..."
 
 #: src/components/GitPanel.tsx:569
 msgid "Committed changes."
-msgstr ""
+msgstr "Zatwierdzono zmiany."
 
 #: src/components/GitPanel.tsx:602
 msgid "Who is committing?"
@@ -829,15 +829,15 @@ msgstr "Kto zatwierdza zmiany?"
 
 #: src/components/GitPanel.tsx:608
 msgid "User refused to set identity."
-msgstr ""
+msgstr "Użytkownik odmówił ustawienia tożsamości."
 
 #: src/components/GitPanel.tsx:625
 msgid "Failed to set your identity. %1"
-msgstr ""
+msgstr "Nie udało się ustawić Twojej tożsamości. %1"
 
 #: src/components/HistorySideBar.tsx:114
 msgid "You"
-msgstr ""
+msgstr "Ty"
 
 #: src/components/HistorySideBar.tsx:122
 msgid "Uncommitted Changes"
@@ -845,7 +845,7 @@ msgstr "Niezatwierdzone zmiany"
 
 #: src/components/HistorySideBar.tsx:123
 msgid "now"
-msgstr ""
+msgstr "przed chwilą"
 
 #: src/components/HistorySideBar.tsx:144
 msgid "Discard file history"
@@ -885,11 +885,11 @@ msgstr "Utwórz gałąź"
 
 #: src/components/NewBranchDialog.tsx:300
 msgid "The current branch. Pick this if you want to build on work done in this branch."
-msgstr ""
+msgstr "Bieżąca gałąź. Wybierz, jeśli chcesz budować na pracy wykonanej w tej gałęzi."
 
 #: src/components/NewBranchDialog.tsx:305
 msgid "The default branch. Pick this if you want to start fresh from the default branch."
-msgstr ""
+msgstr "Domyślna gałąź. Wybierz to, jeśli chcesz rozpocząć na nowo od domyślnej gałęzi."
 
 #: src/components/NewBranchDialog.tsx:313
 msgid "Create a new branch based on: %1"
@@ -897,15 +897,15 @@ msgstr "Utwórz nową gałąź na podstawie: %1"
 
 #: src/components/NewBranchDialog.tsx:434
 msgid "Creating branch..."
-msgstr ""
+msgstr "Tworzenie gałęzi..."
 
 #: src/components/NewBranchDialog.tsx:444
 msgid "Failed to create branch."
-msgstr ""
+msgstr "Nie udało się utworzyć gałęzi."
 
 #: src/components/NewBranchDialog.tsx:451
 msgid "Branch created."
-msgstr ""
+msgstr "Utworzono gałąź."
 
 #: src/components/PastCommitNode.tsx:111
 msgid "View commit details"
@@ -917,11 +917,11 @@ msgstr "Wyświetl zmiany w pliku"
 
 #: src/components/ResetRevertDialog.tsx:125
 msgid "Revert Changes"
-msgstr ""
+msgstr "Odwróć zmiany"
 
 #: src/components/ResetRevertDialog.tsx:126
 msgid "Reset Changes"
-msgstr ""
+msgstr "Zresetuj zmiany"
 
 #: src/components/ResetRevertDialog.tsx:139
 msgid "These changes will be reverted. Only commit if you're sure you're okay losing these changes."
@@ -929,7 +929,7 @@ msgstr "Te zmiany zostaną cofnięte. Zatwierdź tylko wtedy, gdy jesteś pewien
 
 #: src/components/ResetRevertDialog.tsx:142
 msgid "All changes after commit %1 will be gone forever (hard reset). Are you sure?"
-msgstr ""
+msgstr "Wszystkie zmiany po %1 zostaną na zawsze usunięte (twardy reset). Czy jesteś pewien?"
 
 #: src/components/ResetRevertDialog.tsx:166
 msgid "Cancel changes"
@@ -953,27 +953,27 @@ msgstr "Nie udało się odrzucić zmian."
 
 #: src/components/ResetRevertDialog.tsx:256
 msgid "Reverting changes..."
-msgstr ""
+msgstr "Odwracanie zmian..."
 
 #: src/components/ResetRevertDialog.tsx:262
 msgid "Successfully reverted changes."
-msgstr ""
+msgstr "Pomyślnie odwrócono zmiany."
 
 #: src/components/ResetRevertDialog.tsx:267
 msgid "Failed to revert changes."
-msgstr ""
+msgstr "Nie udało się odwrócić zmian."
 
 #: src/components/ResetRevertDialog.tsx:299
 msgid "Revert '%1'"
-msgstr ""
+msgstr "Odwróć '%1'"
 
 #: src/components/ResetRevertDialog.tsx:308
 msgid "This reverts commit %1"
-msgstr ""
+msgstr "To odwraca zatwierdzoną zmianę %1"
 
 #: src/components/SinglePastCommitInfo.tsx:180
 msgid "Error loading commit data"
-msgstr ""
+msgstr "Błąd odczytywania danych zmiany"
 
 #: src/components/SinglePastCommitInfo.tsx:186
 msgid "# Files Changed"
@@ -989,11 +989,11 @@ msgstr "# usunięcia"
 
 #: src/components/SinglePastCommitInfo.tsx:212
 msgid "Revert changes introduced by this commit"
-msgstr ""
+msgstr "Odwróć zmiany wprowadzone przez to zatwierdzenie"
 
 #: src/components/SinglePastCommitInfo.tsx:220
 msgid "Discard changes introduced *after* this commit (hard reset)"
-msgstr ""
+msgstr "Odrzuć zmiany wprowadzone *po* tej zatwierdzonej zmianie (twarde zresetowanie)"
 
 #: src/components/TagMenu.tsx:157
 msgid "Fail to get the tags."
@@ -1001,11 +1001,11 @@ msgstr "Nie udało się uzyskać tagów."
 
 #: src/components/TagMenu.tsx:246
 msgid "Checkout to tag: %1"
-msgstr ""
+msgstr "Przełącz do tagu: %1"
 
 #: src/components/TagMenu.tsx:45
 msgid "Unable to checkout tag"
-msgstr ""
+msgstr "Nie można przełączyć do tagu"
 
 #: src/components/TagMenu.tsx:57
 msgid "Please commit, stash, or discard your changes before you checkout tags."
@@ -1013,27 +1013,27 @@ msgstr "Prosimy o zatwierdzenie, zapisanie w schowku lub odrzucenie zmian przed 
 
 #: src/components/TagMenu.tsx:68
 msgid "Failed to checkout tag."
-msgstr ""
+msgstr "Nie udało się przełączyć do tagu."
 
 #: src/components/Toolbar.tsx:173
 msgid "Pull latest changes"
-msgstr ""
+msgstr "Pobierz i scale najnowsze zmiany"
 
 #: src/components/Toolbar.tsx:175
 msgid " (behind by %1 commits)"
-msgstr ""
+msgstr " (z tyłu o %1 zmian)"
 
 #: src/components/Toolbar.tsx:180 src/components/Toolbar.tsx:208
 msgid "No remote repository defined"
-msgstr ""
+msgstr "Nie zdefiniowano zdalnego repozytorium"
 
 #: src/components/Toolbar.tsx:200
 msgid "Push committed changes"
-msgstr ""
+msgstr "Wyślij zatwierdzone zmiany"
 
 #: src/components/Toolbar.tsx:202
 msgid " (ahead by %1 commits)"
-msgstr ""
+msgstr " (do przodu o %1 zmian)"
 
 #: src/components/Toolbar.tsx:207
 msgid "Publish branch"
