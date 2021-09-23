@@ -18,26 +18,12 @@ msgstr ""
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontFamily/description /packages/markdownviewer-extension/schema/plugin.json:/properties/fontFamily/description
 msgctxt "settings"
-msgid ""
-"The font family used to render markdown.\n"
-"If `null`, value from current theme is used."
-msgstr ""
-
-#: /examples/federated/md_package/schema/plugin.json:/properties/fontFamily/description /packages/markdownviewer-extension/schema/plugin.json:/properties/fontFamily/description
-msgctxt "settings"
 msgid "The font family used to render markdown.\nIf `null`, value from current theme is used."
 msgstr ""
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontFamily/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontFamily/title
 msgctxt "settings"
 msgid "Font Family"
-msgstr ""
-
-#: /examples/federated/md_package/schema/plugin.json:/properties/fontSize/description /packages/markdownviewer-extension/schema/plugin.json:/properties/fontSize/description
-msgctxt "settings"
-msgid ""
-"The size in pixel of the font used to render markdown.\n"
-"If `null`, value from current theme is used."
 msgstr ""
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontSize/description /packages/markdownviewer-extension/schema/plugin.json:/properties/fontSize/description
@@ -52,15 +38,6 @@ msgstr ""
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/hideFrontMatter/description /packages/markdownviewer-extension/schema/plugin.json:/properties/hideFrontMatter/description
 msgctxt "settings"
-msgid ""
-"Whether to hide YAML front matter.\n"
-"The YAML front matter must be placed at the top of the document,\n"
-"started by a line of three dashes (---) and ended by a line of\n"
-"three dashes (---) or three points (...)."
-msgstr ""
-
-#: /examples/federated/md_package/schema/plugin.json:/properties/hideFrontMatter/description /packages/markdownviewer-extension/schema/plugin.json:/properties/hideFrontMatter/description
-msgctxt "settings"
 msgid "Whether to hide YAML front matter.\nThe YAML front matter must be placed at the top of the document,\nstarted by a line of three dashes (---) and ended by a line of\nthree dashes (---) or three points (...)."
 msgstr ""
 
@@ -71,26 +48,12 @@ msgstr ""
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/lineHeight/description /packages/markdownviewer-extension/schema/plugin.json:/properties/lineHeight/description
 msgctxt "settings"
-msgid ""
-"The line height used to render markdown.\n"
-"If `null`, value from current theme is used."
-msgstr ""
-
-#: /examples/federated/md_package/schema/plugin.json:/properties/lineHeight/description /packages/markdownviewer-extension/schema/plugin.json:/properties/lineHeight/description
-msgctxt "settings"
 msgid "The line height used to render markdown.\nIf `null`, value from current theme is used."
 msgstr ""
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/lineHeight/title /packages/markdownviewer-extension/schema/plugin.json:/properties/lineHeight/title
 msgctxt "settings"
 msgid "Line Height"
-msgstr ""
-
-#: /examples/federated/md_package/schema/plugin.json:/properties/lineWidth/description /packages/markdownviewer-extension/schema/plugin.json:/properties/lineWidth/description
-msgctxt "settings"
-msgid ""
-"The text line width expressed in CSS ch units.\n"
-"If `null`, lines fit the viewport width."
 msgstr ""
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/lineWidth/description /packages/markdownviewer-extension/schema/plugin.json:/properties/lineWidth/description
@@ -205,25 +168,6 @@ msgstr ""
 
 #: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/description
 msgctxt "settings"
-msgid ""
-"Note: To disable a context menu item,\n"
-"copy it to User Preferences and add the\n"
-"\"disabled\" key. The following example will disable Download item on files:\n"
-"{\n"
-"  \"contextMenu\": [\n"
-"    {\n"
-"      \"command\": \"filebrowser:download\",\n"
-"      \"selector\": \".jp-DirListing-item[data-isdir=\\\"false\\\"]\",\n"
-"      \"disabled\": true\n"
-"    }\n"
-"  ]\n"
-"}\n"
-"\n"
-"Context menu description:"
-msgstr ""
-
-#: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/description
-msgctxt "settings"
 msgid "Note: To disable a context menu item,\ncopy it to User Preferences and add the\n\"disabled\" key. The following example will disable Download item on files:\n{\n  \"contextMenu\": [\n    {\n      \"command\": \"filebrowser:download\",\n      \"selector\": \".jp-DirListing-item[data-isdir=\\\"false\\\"]\",\n      \"disabled\": true\n    }\n  ]\n}\n\nContext menu description:"
 msgstr ""
 
@@ -250,13 +194,6 @@ msgstr ""
 #: /packages/application-extension/schema/sidebar.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Sidebar"
-msgstr ""
-
-#: /packages/application-extension/schema/sidebar.json:/properties/overrides/description
-msgctxt "settings"
-msgid ""
-"Overrides for where to show sidebar items\n"
-"e.g., {\"tab-manager\": \"right\"}"
 msgstr ""
 
 #: /packages/application-extension/schema/sidebar.json:/properties/overrides/description
@@ -461,13 +398,6 @@ msgstr ""
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/theme/description
 msgctxt "settings"
-msgid ""
-"CSS file defining the corresponding\n"
-".cm-s-[name] styles is loaded"
-msgstr ""
-
-#: /packages/codemirror-extension/schema/commands.json:/properties/theme/description
-msgctxt "settings"
 msgid "CSS file defining the corresponding\n.cm-s-[name] styles is loaded"
 msgstr ""
 
@@ -548,13 +478,6 @@ msgstr ""
 
 #: /packages/console-extension/schema/tracker.json:/properties/interactionMode/description
 msgctxt "settings"
-msgid ""
-"Whether the console interaction mimics the notebook\n"
-"or terminal keyboard shortcuts."
-msgstr ""
-
-#: /packages/console-extension/schema/tracker.json:/properties/interactionMode/description
-msgctxt "settings"
 msgid "Whether the console interaction mimics the notebook\nor terminal keyboard shortcuts."
 msgstr ""
 
@@ -571,13 +494,6 @@ msgstr ""
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/title
 msgctxt "settings"
 msgid "Prompt Cell Configuration"
-msgstr ""
-
-#: /packages/console-extension/schema/tracker.json:/properties/showAllKernelActivity/description
-msgctxt "settings"
-msgid ""
-"Whether the console defaults to showing all\n"
-"kernel activity or just kernel activity originating from itself."
 msgstr ""
 
 #: /packages/console-extension/schema/tracker.json:/properties/showAllKernelActivity/description
@@ -717,13 +633,6 @@ msgstr ""
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/description
 msgctxt "settings"
-msgid ""
-"Enables extension manager (requires Node.js/npm).\n"
-"WARNING: installing untrusted extensions may be unsafe."
-msgstr ""
-
-#: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/description
-msgctxt "settings"
 msgid "Enables extension manager (requires Node.js/npm).\nWARNING: installing untrusted extensions may be unsafe."
 msgstr ""
 
@@ -850,14 +759,6 @@ msgstr ""
 #: /packages/fileeditor-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Editor"
-msgstr ""
-
-#: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/description
-msgctxt "settings"
-msgid ""
-"The configuration for all text editors.\n"
-"If `fontFamily`, `fontSize` or `lineHeight` are `null`,\n"
-"values from current theme are used."
 msgstr ""
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/description
@@ -1018,35 +919,6 @@ msgstr ""
 #: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[7]/label
 msgctxt "menu"
 msgid "Help"
-msgstr ""
-
-#: /packages/mainmenu-extension/schema/plugin.json:/properties/menus/description
-msgctxt "settings"
-msgid ""
-"Note: To disable a menu or a menu item,\n"
-"copy it to User Preferences and add the\n"
-"\"disabled\" key. The following example will disable\n"
-"the \"Tabs\" menu and \"Restart Kernel and Run up to Selected Cell\"\n"
-"item:\n"
-"{\n"
-"  \"menus\": [\n"
-"    {\n"
-"      \"id\": \"jp-mainmenu-tabs\",\n"
-"      \"disabled\": true\n"
-"    },\n"
-"    {\n"
-"      \"id\": \"jp-mainmenu-kernel\",\n"
-"      \"items\": [\n"
-"        {\n"
-"          \"command\": \"notebook:restart-and-run-to-selected\",\n"
-"          \"disabled\": true\n"
-"        }\n"
-"      ]\n"
-"    }\n"
-"  ]\n"
-"}\n"
-"\n"
-"Menu description:"
 msgstr ""
 
 #: /packages/mainmenu-extension/schema/plugin.json:/properties/menus/description
