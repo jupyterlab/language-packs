@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: spellchecker 0.7.0\n"
+"Project-Id-Version: spellchecker 0.7.1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -68,12 +68,36 @@ msgstr ""
 
 #: /schema/plugin.json:/properties/onlineDictionaries/description
 msgctxt "settings"
+msgid ""
+"A list of online dictionaries to use if installing dictionaries in data path of jupyter-server is not possible or not desirable. For example:\n"
+"\n"
+"[\n"
+"    {\n"
+"        \"id\": \"pl_PL-online\",\n"
+"        \"aff\": \"http://some-url/pl_PL.aff\",\n"
+"        \"dic\": \"http://some-url/pl_PL.dic\",\n"
+"        \"name\": \"polski (Polska)\"\n"
+"    }\n"
+"]"
+msgstr ""
+
+#: /schema/plugin.json:/properties/onlineDictionaries/description
+msgctxt "settings"
 msgid "A list of online dictionaries to use if installing dictionaries in data path of jupyter-server is not possible or not desirable. For example:\n\n[\n    {\n        \"id\": \"pl_PL-online\",\n        \"aff\": \"http://some-url/pl_PL.aff\",\n        \"dic\": \"http://some-url/pl_PL.dic\",\n        \"name\": \"polski (Polska)\"\n    }\n]"
 msgstr ""
 
 #: /schema/plugin.json:/properties/onlineDictionaries/title
 msgctxt "settings"
 msgid "Online dictionaries"
+msgstr ""
+
+#: /schema/plugin.json:/properties/theme/description
+msgctxt "settings"
+msgid ""
+"Theme for decorating misspelt words, one of:\n"
+"  - 'background-box': fills the background of the misspelt word;\n"
+"  - 'wavy-underline': underline with wavelets (note: Chrome has a bug which prevents rendering of wavelets under some very short words)\n"
+"  - 'dotted-underline': underline with dotted style"
 msgstr ""
 
 #: /schema/plugin.json:/properties/theme/description
