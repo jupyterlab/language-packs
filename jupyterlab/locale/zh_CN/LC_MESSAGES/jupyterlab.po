@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-09-23 14:11\n"
+"PO-Revision-Date: 2021-09-28 08:33\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1245,7 +1245,7 @@ msgctxt "schema"
 msgid "Terminal settings."
 msgstr "终端设置。"
 
-#: /packages/terminal-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[3]/submenu/label
+#: /packages/terminal-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[3]/submenu/label packages/terminal-extension/src/index.ts:177
 msgctxt "menu"
 msgid "Terminal Theme"
 msgstr "终端主题"
@@ -1599,7 +1599,7 @@ msgstr "信息"
 msgid "Context menu customization has changed. You will need to reload JupyterLab to see the changes."
 msgstr "上下文菜单自定义已更改。您需要重新载入 JupyterLab 来查看改动。"
 
-#: packages/application-extension/src/index.tsx:953 packages/docmanager-extension/src/index.ts:585 packages/mainmenu-extension/src/index.ts:895
+#: packages/application-extension/src/index.tsx:953 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:585 packages/mainmenu-extension/src/index.ts:895
 msgid "Reload"
 msgstr "重新加载"
 
@@ -1708,7 +1708,7 @@ msgstr "增大内容字号"
 msgid "Increase UI Font Size"
 msgstr "增大界面字号"
 
-#: packages/apputils-extension/src/themesplugins.ts:127 packages/fileeditor-extension/src/commands.ts:304
+#: packages/apputils-extension/src/themesplugins.ts:127 packages/fileeditor-extension/src/commands.ts:301 packages/fileeditor-extension/src/commands.ts:304
 msgid "Increase Font Size"
 msgstr "增大字号"
 
@@ -1724,7 +1724,7 @@ msgstr "减少内容字号"
 msgid "Decrease UI Font Size"
 msgstr "减小界面字号"
 
-#: packages/apputils-extension/src/themesplugins.ts:143 packages/fileeditor-extension/src/commands.ts:308
+#: packages/apputils-extension/src/themesplugins.ts:143 packages/fileeditor-extension/src/commands.ts:305 packages/fileeditor-extension/src/commands.ts:308
 msgid "Decrease Font Size"
 msgstr "减小字号"
 
@@ -1748,7 +1748,7 @@ msgstr "保存"
 msgid "Save Current Workspace As…"
 msgstr "保存当前工作区为…"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1217 packages/debugger-extension/src/index.ts:469 packages/debugger/src/panels/breakpoints/index.ts:51 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:847 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:448 packages/filebrowser/src/opendialog.ts:81 packages/notebook/src/actions.tsx:1759 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/translation-extension/src/index.ts:135
+#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1217 packages/debugger-extension/src/index.ts:469 packages/debugger/src/panels/breakpoints/index.ts:51 packages/docmanager-extension/src/index.ts:583 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:633 packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:846 packages/docmanager-extension/src/index.ts:847 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:448 packages/filebrowser/src/opendialog.ts:81 packages/notebook/src/actions.tsx:1759 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/translation-extension/src/index.ts:135 packages/translation-extension/src/index.ts:138
 msgid "Cancel"
 msgstr "取消"
 
@@ -1840,7 +1840,7 @@ msgstr "主题 %1 及默认 %2 均未加载。"
 msgid "Error Loading Theme"
 msgstr "加载主题时出错"
 
-#: packages/apputils/src/thememanager.ts:441 packages/docmanager-extension/src/index.ts:362 packages/extensionmanager/src/companions.tsx:218 packages/extensionmanager/src/dialog.tsx:39 packages/extensionmanager/src/widget.tsx:354 packages/extensionmanager/src/widget.tsx:355
+#: packages/apputils/src/thememanager.ts:441 packages/docmanager-extension/src/index.ts:361 packages/docmanager-extension/src/index.ts:362 packages/extensionmanager/src/companions.tsx:218 packages/extensionmanager/src/dialog.tsx:39 packages/extensionmanager/src/widget.tsx:354 packages/extensionmanager/src/widget.tsx:355
 msgid "OK"
 msgstr "确定"
 
@@ -2202,143 +2202,143 @@ msgstr "覆盖文件类型对应的默认查看器。请指定从文件类型到
 "可用的文件类型：\n"
 "%2"
 
-#: packages/docmanager-extension/src/index.ts:351 packages/filebrowser-extension/src/index.ts:318
+#: packages/docmanager-extension/src/index.ts:350 packages/docmanager-extension/src/index.ts:351 packages/filebrowser-extension/src/index.ts:318
 msgid "Download"
 msgstr "下载"
 
-#: packages/docmanager-extension/src/index.ts:352
+#: packages/docmanager-extension/src/index.ts:351 packages/docmanager-extension/src/index.ts:352
 msgid "Download the file to your computer"
 msgstr "将文件下载到您的计算机"
 
-#: packages/docmanager-extension/src/index.ts:360
+#: packages/docmanager-extension/src/index.ts:359 packages/docmanager-extension/src/index.ts:360
 msgid "Cannot Download"
 msgstr "无法下载"
 
-#: packages/docmanager-extension/src/index.ts:361 packages/docmanager-extension/src/index.ts:572 packages/docmanager-extension/src/index.ts:617 packages/docmanager-extension/src/index.ts:663 packages/docmanager-extension/src/index.ts:726
+#: packages/docmanager-extension/src/index.ts:360 packages/docmanager-extension/src/index.ts:361 packages/docmanager-extension/src/index.ts:571 packages/docmanager-extension/src/index.ts:572 packages/docmanager-extension/src/index.ts:616 packages/docmanager-extension/src/index.ts:617 packages/docmanager-extension/src/index.ts:662 packages/docmanager-extension/src/index.ts:663 packages/docmanager-extension/src/index.ts:725 packages/docmanager-extension/src/index.ts:726
 msgid "No context found for current widget!"
 msgstr "没有找到当前部件的上下文！"
 
-#: packages/docmanager-extension/src/index.ts:370 packages/docmanager-extension/src/index.ts:477 packages/filebrowser-extension/src/index.ts:1032 packages/filebrowser-extension/src/index.ts:835 packages/htmlviewer-extension/src/index.tsx:131
+#: packages/docmanager-extension/src/index.ts:369 packages/docmanager-extension/src/index.ts:370 packages/docmanager-extension/src/index.ts:476 packages/docmanager-extension/src/index.ts:477 packages/filebrowser-extension/src/index.ts:1032 packages/filebrowser-extension/src/index.ts:835 packages/htmlviewer-extension/src/index.tsx:131
 msgid "File Operations"
 msgstr "文件操作"
 
-#: packages/docmanager-extension/src/index.ts:417 packages/filebrowser-extension/src/index.ts:590
+#: packages/docmanager-extension/src/index.ts:416 packages/docmanager-extension/src/index.ts:417 packages/filebrowser-extension/src/index.ts:590
 msgid "Open in New Browser Tab"
 msgstr "在新的浏览器标签页中打开"
 
-#: packages/docmanager-extension/src/index.ts:518 packages/filebrowser/src/browser.ts:279 packages/filebrowser/src/browser.ts:309 packages/logconsole-extension/src/index.tsx:381
+#: packages/docmanager-extension/src/index.ts:517 packages/docmanager-extension/src/index.ts:518 packages/filebrowser/src/browser.ts:279 packages/filebrowser/src/browser.ts:309 packages/logconsole-extension/src/index.tsx:381
 msgid "Error"
 msgstr "错误"
 
-#: packages/docmanager-extension/src/index.ts:556 packages/docmanager-extension/src/index.ts:578
+#: packages/docmanager-extension/src/index.ts:555 packages/docmanager-extension/src/index.ts:556 packages/docmanager-extension/src/index.ts:577 packages/docmanager-extension/src/index.ts:578
 msgid "Reload %1 from Disk"
 msgstr "从磁盘重新加载 %1"
 
-#: packages/docmanager-extension/src/index.ts:560
+#: packages/docmanager-extension/src/index.ts:559 packages/docmanager-extension/src/index.ts:560
 msgid "Reload contents from disk"
 msgstr "从磁盘重新加载内容"
 
-#: packages/docmanager-extension/src/index.ts:571
+#: packages/docmanager-extension/src/index.ts:570 packages/docmanager-extension/src/index.ts:571
 msgid "Cannot Reload"
 msgstr "无法重载"
 
-#: packages/docmanager-extension/src/index.ts:573 packages/docmanager-extension/src/index.ts:618 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:671 packages/docmanager-extension/src/index.ts:727 packages/notebook/src/actions.tsx:1751 packages/notebook/src/actions.tsx:1760 packages/notebook/src/actions.tsx:1978 packages/notebook/src/default-toolbar.tsx:67 packages/notebook/src/model.ts:353 packages/notebook/src/panel.ts:219 packages/settingeditor/src/plugineditor.ts:138 packages/settingeditor/src/plugineditor.ts:260
+#: packages/docmanager-extension/src/index.ts:572 packages/docmanager-extension/src/index.ts:573 packages/docmanager-extension/src/index.ts:617 packages/docmanager-extension/src/index.ts:618 packages/docmanager-extension/src/index.ts:663 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:670 packages/docmanager-extension/src/index.ts:671 packages/docmanager-extension/src/index.ts:726 packages/docmanager-extension/src/index.ts:727 packages/notebook/src/actions.tsx:1751 packages/notebook/src/actions.tsx:1760 packages/notebook/src/actions.tsx:1978 packages/notebook/src/default-toolbar.tsx:67 packages/notebook/src/model.ts:353 packages/notebook/src/panel.ts:219 packages/settingeditor/src/plugineditor.ts:138 packages/settingeditor/src/plugineditor.ts:260
 msgid "Ok"
 msgstr "确认"
 
-#: packages/docmanager-extension/src/index.ts:579
+#: packages/docmanager-extension/src/index.ts:578 packages/docmanager-extension/src/index.ts:579
 msgid "Are you sure you want to reload the %1 from the disk?"
 msgstr "您确定要从磁盘重新加载 %1 吗？"
 
-#: packages/docmanager-extension/src/index.ts:602
+#: packages/docmanager-extension/src/index.ts:601 packages/docmanager-extension/src/index.ts:602
 msgid "Revert %1 to Checkpoint"
 msgstr "将 %1 撤回至检查点"
 
-#: packages/docmanager-extension/src/index.ts:606
+#: packages/docmanager-extension/src/index.ts:605 packages/docmanager-extension/src/index.ts:606
 msgid "Revert contents to previous checkpoint"
 msgstr "撤回内容到之前的检查点"
 
-#: packages/docmanager-extension/src/index.ts:616
+#: packages/docmanager-extension/src/index.ts:615 packages/docmanager-extension/src/index.ts:616
 msgid "Cannot Revert"
 msgstr "无法撤回"
 
-#: packages/docmanager-extension/src/index.ts:631
+#: packages/docmanager-extension/src/index.ts:630 packages/docmanager-extension/src/index.ts:631
 msgid "Revert %1 to checkpoint"
 msgstr "将 %1 撤回至检查点"
 
-#: packages/docmanager-extension/src/index.ts:635 packages/docregistry/src/context.ts:799 packages/docregistry/src/context.ts:815
+#: packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:635 packages/docregistry/src/context.ts:799 packages/docregistry/src/context.ts:815
 msgid "Revert"
 msgstr "撤回"
 
-#: packages/docmanager-extension/src/index.ts:653
+#: packages/docmanager-extension/src/index.ts:652 packages/docmanager-extension/src/index.ts:653
 msgid "Save %1"
 msgstr "保存 %1"
 
-#: packages/docmanager-extension/src/index.ts:654
+#: packages/docmanager-extension/src/index.ts:653 packages/docmanager-extension/src/index.ts:654
 msgid "Save and create checkpoint"
 msgstr "保存并创建检查点"
 
-#: packages/docmanager-extension/src/index.ts:662 packages/docmanager-extension/src/index.ts:669 packages/docmanager-extension/src/index.ts:725 packages/notebook/src/default-toolbar.tsx:65
+#: packages/docmanager-extension/src/index.ts:661 packages/docmanager-extension/src/index.ts:662 packages/docmanager-extension/src/index.ts:668 packages/docmanager-extension/src/index.ts:669 packages/docmanager-extension/src/index.ts:724 packages/docmanager-extension/src/index.ts:725 packages/notebook/src/default-toolbar.tsx:65
 msgid "Cannot Save"
 msgstr "无法保存"
 
-#: packages/docmanager-extension/src/index.ts:670 packages/notebook/src/default-toolbar.tsx:66
+#: packages/docmanager-extension/src/index.ts:669 packages/docmanager-extension/src/index.ts:670 packages/notebook/src/default-toolbar.tsx:66
 msgid "Document is read-only"
 msgstr "文档为只读状态"
 
-#: packages/docmanager-extension/src/index.ts:692
+#: packages/docmanager-extension/src/index.ts:691 packages/docmanager-extension/src/index.ts:692
 msgid "Save All"
 msgstr "保存全部"
 
-#: packages/docmanager-extension/src/index.ts:693
+#: packages/docmanager-extension/src/index.ts:692 packages/docmanager-extension/src/index.ts:693
 msgid "Save all open documents"
 msgstr "保存全部打开的文档"
 
-#: packages/docmanager-extension/src/index.ts:716
+#: packages/docmanager-extension/src/index.ts:715 packages/docmanager-extension/src/index.ts:716
 msgid "Save %1 As…"
 msgstr "将 %1 另存为…"
 
-#: packages/docmanager-extension/src/index.ts:717
+#: packages/docmanager-extension/src/index.ts:716 packages/docmanager-extension/src/index.ts:717
 msgid "Save with new path"
 msgstr "使用新路径保存"
 
-#: packages/docmanager-extension/src/index.ts:736
+#: packages/docmanager-extension/src/index.ts:735 packages/docmanager-extension/src/index.ts:736
 msgid "Autosave Documents"
 msgstr "自动保存文档"
 
-#: packages/docmanager-extension/src/index.ts:796
+#: packages/docmanager-extension/src/index.ts:795 packages/docmanager-extension/src/index.ts:796
 msgid "New View for %1"
 msgstr "%1 的新视图"
 
-#: packages/docmanager-extension/src/index.ts:820
+#: packages/docmanager-extension/src/index.ts:819 packages/docmanager-extension/src/index.ts:820
 msgid "Rename%1…"
 msgstr "重命名%1…"
 
-#: packages/docmanager-extension/src/index.ts:834
+#: packages/docmanager-extension/src/index.ts:833 packages/docmanager-extension/src/index.ts:834
 msgid "Delete %1"
 msgstr "删除 %1"
 
-#: packages/docmanager-extension/src/index.ts:844 packages/docmanager-extension/src/index.ts:848 packages/filebrowser-extension/src/index.ts:687 packages/filebrowser/src/listing.ts:411 packages/filebrowser/src/listing.ts:415
+#: packages/docmanager-extension/src/index.ts:843 packages/docmanager-extension/src/index.ts:844 packages/docmanager-extension/src/index.ts:847 packages/docmanager-extension/src/index.ts:848 packages/filebrowser-extension/src/index.ts:687 packages/filebrowser/src/listing.ts:411 packages/filebrowser/src/listing.ts:415
 msgid "Delete"
 msgstr "删除"
 
-#: packages/docmanager-extension/src/index.ts:845
+#: packages/docmanager-extension/src/index.ts:844 packages/docmanager-extension/src/index.ts:845
 msgid "Are you sure you want to delete %1"
 msgstr "您确定要删除 %1 吗？"
 
-#: packages/docmanager-extension/src/index.ts:862
+#: packages/docmanager-extension/src/index.ts:861 packages/docmanager-extension/src/index.ts:862
 msgid "Show in File Browser"
 msgstr "在文件浏览器中显示"
 
-#: packages/docmanager-extension/src/index.ts:928
+#: packages/docmanager-extension/src/index.ts:927 packages/docmanager-extension/src/index.ts:928
 msgid "Are you sure you want to revert the %1 to the latest checkpoint? "
 msgstr "您确定要将 %1 还原到上一检查点吗？ "
 
-#: packages/docmanager-extension/src/index.ts:934
+#: packages/docmanager-extension/src/index.ts:933 packages/docmanager-extension/src/index.ts:934
 msgid "This cannot be undone."
 msgstr "此操作不可撤销。"
 
-#: packages/docmanager-extension/src/index.ts:941
+#: packages/docmanager-extension/src/index.ts:940 packages/docmanager-extension/src/index.ts:941
 msgid "The checkpoint was last updated at: "
 msgstr "检查点最后一次更新于: "
 
@@ -2474,7 +2474,7 @@ msgstr "笔记本"
 msgid "Directory"
 msgstr "目录"
 
-#: packages/docregistry/src/registry.ts:1366 packages/fileeditor-extension/src/commands.ts:996
+#: packages/docregistry/src/registry.ts:1366 packages/fileeditor-extension/src/commands.ts:993 packages/fileeditor-extension/src/commands.ts:996
 msgid "Markdown File"
 msgstr "Markdown 文件"
 
@@ -2784,11 +2784,11 @@ msgstr "复制共享链接"
 msgid "New Launcher"
 msgstr "新建启动页"
 
-#: packages/filebrowser-extension/src/index.ts:700 packages/fileeditor-extension/src/commands.ts:838
+#: packages/filebrowser-extension/src/index.ts:700 packages/fileeditor-extension/src/commands.ts:835 packages/fileeditor-extension/src/commands.ts:838
 msgid "Copy"
 msgstr "复制"
 
-#: packages/filebrowser-extension/src/index.ts:713 packages/fileeditor-extension/src/commands.ts:797
+#: packages/filebrowser-extension/src/index.ts:713 packages/fileeditor-extension/src/commands.ts:794 packages/fileeditor-extension/src/commands.ts:797
 msgid "Cut"
 msgstr "剪切"
 
@@ -2828,7 +2828,7 @@ msgstr "找不到路径 %1"
 msgid "Cannot open"
 msgstr "无法打开"
 
-#: packages/filebrowser-extension/src/index.ts:892 packages/fileeditor-extension/src/commands.ts:872
+#: packages/filebrowser-extension/src/index.ts:892 packages/fileeditor-extension/src/commands.ts:869 packages/fileeditor-extension/src/commands.ts:872
 msgid "Paste"
 msgstr "粘贴"
 
@@ -2840,7 +2840,7 @@ msgstr "新建文件夹"
 msgid "New File"
 msgstr "新建文件"
 
-#: packages/filebrowser-extension/src/index.ts:929 packages/fileeditor-extension/src/commands.ts:995
+#: packages/filebrowser-extension/src/index.ts:929 packages/fileeditor-extension/src/commands.ts:992 packages/fileeditor-extension/src/commands.ts:995
 msgid "New Markdown File"
 msgstr "新建Markdown文件"
 
@@ -3035,100 +3035,100 @@ msgstr "正在上传…"
 msgid "Complete!"
 msgstr "完成！"
 
-#: packages/fileeditor-extension/src/commands.ts:1027 packages/fileeditor-extension/src/commands.ts:1041 packages/fileeditor-extension/src/commands.ts:1057 packages/launcher/src/index.tsx:151 packages/launcher/src/index.tsx:161 packages/launcher/src/index.tsx:434 packages/terminal-extension/src/index.ts:228
+#: packages/fileeditor-extension/src/commands.ts:1024 packages/fileeditor-extension/src/commands.ts:1027 packages/fileeditor-extension/src/commands.ts:1038 packages/fileeditor-extension/src/commands.ts:1041 packages/fileeditor-extension/src/commands.ts:1054 packages/fileeditor-extension/src/commands.ts:1057 packages/launcher/src/index.tsx:151 packages/launcher/src/index.tsx:161 packages/launcher/src/index.tsx:434 packages/terminal-extension/src/index.ts:228 packages/terminal-extension/src/index.ts:261
 msgid "Other"
 msgstr "其他"
 
-#: packages/fileeditor-extension/src/commands.ts:1087 packages/fileeditor-extension/src/commands.ts:1111 packages/fileeditor-extension/src/commands.ts:1126 packages/fileeditor-extension/src/commands.ts:1141 packages/fileeditor-extension/src/commands.ts:1159
+#: packages/fileeditor-extension/src/commands.ts:1084 packages/fileeditor-extension/src/commands.ts:1087 packages/fileeditor-extension/src/commands.ts:1108 packages/fileeditor-extension/src/commands.ts:1111 packages/fileeditor-extension/src/commands.ts:1123 packages/fileeditor-extension/src/commands.ts:1126 packages/fileeditor-extension/src/commands.ts:1138 packages/fileeditor-extension/src/commands.ts:1141 packages/fileeditor-extension/src/commands.ts:1156 packages/fileeditor-extension/src/commands.ts:1159
 msgid "Text Editor"
 msgstr "文本编辑器"
 
-#: packages/fileeditor-extension/src/commands.ts:1281 packages/fileeditor-extension/src/commands.ts:530
+#: packages/fileeditor-extension/src/commands.ts:1278 packages/fileeditor-extension/src/commands.ts:1281 packages/fileeditor-extension/src/commands.ts:527 packages/fileeditor-extension/src/commands.ts:530
 msgid "Create Console for Editor"
 msgstr "为编辑器创建控制台"
 
-#: packages/fileeditor-extension/src/commands.ts:1299 packages/fileeditor-extension/src/commands.ts:601
+#: packages/fileeditor-extension/src/commands.ts:1296 packages/fileeditor-extension/src/commands.ts:1299 packages/fileeditor-extension/src/commands.ts:598 packages/fileeditor-extension/src/commands.ts:601
 msgid "Run Code"
 msgstr "运行代码"
 
-#: packages/fileeditor-extension/src/commands.ts:1300 packages/fileeditor-extension/src/commands.ts:646
+#: packages/fileeditor-extension/src/commands.ts:1297 packages/fileeditor-extension/src/commands.ts:1300 packages/fileeditor-extension/src/commands.ts:643 packages/fileeditor-extension/src/commands.ts:646
 msgid "Run All Code"
 msgstr "运行全部代码"
 
-#: packages/fileeditor-extension/src/commands.ts:1302
+#: packages/fileeditor-extension/src/commands.ts:1299 packages/fileeditor-extension/src/commands.ts:1302
 msgid "Restart Kernel and Run All Code"
 msgstr "重新启动内核并运行所有代码"
 
-#: packages/fileeditor-extension/src/commands.ts:303
+#: packages/fileeditor-extension/src/commands.ts:300 packages/fileeditor-extension/src/commands.ts:303
 msgid "Increase Text Editor Font Size"
 msgstr "增加文本编辑器字体大小"
 
-#: packages/fileeditor-extension/src/commands.ts:307
+#: packages/fileeditor-extension/src/commands.ts:304 packages/fileeditor-extension/src/commands.ts:307
 msgid "Decrease Text Editor Font Size"
 msgstr "减小文本编辑器字体大小"
 
-#: packages/fileeditor-extension/src/commands.ts:335
+#: packages/fileeditor-extension/src/commands.ts:332 packages/fileeditor-extension/src/commands.ts:335
 msgid "Line Numbers"
 msgstr "行号"
 
-#: packages/fileeditor-extension/src/commands.ts:365
+#: packages/fileeditor-extension/src/commands.ts:362 packages/fileeditor-extension/src/commands.ts:365
 msgid "Word Wrap"
 msgstr "换行"
 
-#: packages/fileeditor-extension/src/commands.ts:381 packages/fileeditor-extension/src/index.ts:98
+#: packages/fileeditor-extension/src/commands.ts:378 packages/fileeditor-extension/src/commands.ts:381 packages/fileeditor-extension/src/index.ts:98
 msgid "Spaces: %1"
 msgid_plural "Spaces: %1"
 msgstr[0] "空格：%1"
 
-#: packages/fileeditor-extension/src/commands.ts:387 packages/fileeditor-extension/src/index.ts:91
+#: packages/fileeditor-extension/src/commands.ts:384 packages/fileeditor-extension/src/commands.ts:387 packages/fileeditor-extension/src/index.ts:91
 msgid "Indent with Tab"
 msgstr "使用 Tab 缩进"
 
-#: packages/fileeditor-extension/src/commands.ts:426 packages/mainmenu-extension/src/index.ts:583
+#: packages/fileeditor-extension/src/commands.ts:423 packages/fileeditor-extension/src/commands.ts:426 packages/mainmenu-extension/src/index.ts:583
 msgid "Match Brackets"
 msgstr "高亮显示括号对"
 
-#: packages/fileeditor-extension/src/commands.ts:452
+#: packages/fileeditor-extension/src/commands.ts:449 packages/fileeditor-extension/src/commands.ts:452
 msgid "Auto Close Brackets for Text Editor"
 msgstr "文本编辑器自动关闭括号"
 
-#: packages/fileeditor-extension/src/commands.ts:478
+#: packages/fileeditor-extension/src/commands.ts:475 packages/fileeditor-extension/src/commands.ts:478
 msgid "Auto Close Brackets"
 msgstr "自动关闭启动器"
 
-#: packages/fileeditor-extension/src/commands.ts:505
+#: packages/fileeditor-extension/src/commands.ts:502 packages/fileeditor-extension/src/commands.ts:505
 msgid "Replace Selection in Editor"
 msgstr "在编辑器中替换选择"
 
-#: packages/fileeditor-extension/src/commands.ts:679
+#: packages/fileeditor-extension/src/commands.ts:676 packages/fileeditor-extension/src/commands.ts:679
 msgid "Show Markdown Preview"
 msgstr "显示 Markdown 预览"
 
-#: packages/fileeditor-extension/src/commands.ts:717 packages/mainmenu-extension/src/index.ts:258
+#: packages/fileeditor-extension/src/commands.ts:714 packages/fileeditor-extension/src/commands.ts:717 packages/mainmenu-extension/src/index.ts:258
 msgid "Undo"
 msgstr "撤消"
 
-#: packages/fileeditor-extension/src/commands.ts:755 packages/mainmenu-extension/src/index.ts:263
+#: packages/fileeditor-extension/src/commands.ts:752 packages/fileeditor-extension/src/commands.ts:755 packages/mainmenu-extension/src/index.ts:263
 msgid "Redo"
 msgstr "重做"
 
-#: packages/fileeditor-extension/src/commands.ts:897
+#: packages/fileeditor-extension/src/commands.ts:894 packages/fileeditor-extension/src/commands.ts:897
 msgid "Select All"
 msgstr "全选"
 
-#: packages/fileeditor-extension/src/commands.ts:961
+#: packages/fileeditor-extension/src/commands.ts:958 packages/fileeditor-extension/src/commands.ts:961
 msgid "New Text File"
 msgstr "新建文本文件"
 
-#: packages/fileeditor-extension/src/commands.ts:963
+#: packages/fileeditor-extension/src/commands.ts:960 packages/fileeditor-extension/src/commands.ts:963
 msgid "Text File"
 msgstr "文本文件"
 
-#: packages/fileeditor-extension/src/commands.ts:966
+#: packages/fileeditor-extension/src/commands.ts:963 packages/fileeditor-extension/src/commands.ts:966
 msgid "Create a new text file"
 msgstr "新建一个文本文件"
 
-#: packages/fileeditor-extension/src/commands.ts:997
+#: packages/fileeditor-extension/src/commands.ts:994 packages/fileeditor-extension/src/commands.ts:997
 msgid "Create a new markdown file"
 msgstr "新建一个 Markdown 文件"
 
@@ -3533,7 +3533,7 @@ msgstr "关闭并停止服务进程"
 msgid "New Console for Activity"
 msgstr "新建活动控制台"
 
-#: packages/mainmenu-extension/src/index.ts:376 packages/mainmenu-extension/src/index.ts:386 packages/running-extension/src/kernels.ts:39 packages/running/src/index.tsx:142 packages/terminal-extension/src/index.ts:259
+#: packages/mainmenu-extension/src/index.ts:376 packages/mainmenu-extension/src/index.ts:386 packages/running-extension/src/kernels.ts:39 packages/running/src/index.tsx:142 packages/terminal-extension/src/index.ts:259 packages/terminal-extension/src/index.ts:292
 msgid "Shut Down"
 msgstr "关闭"
 
@@ -3585,7 +3585,7 @@ msgstr "全部关闭？"
 msgid "Shut down all kernels?"
 msgstr "关闭所有内核?"
 
-#: packages/mainmenu-extension/src/index.ts:542 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:260
+#: packages/mainmenu-extension/src/index.ts:542 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:260 packages/terminal-extension/src/index.ts:293
 msgid "Shut Down All"
 msgstr "全部关闭"
 
@@ -4064,6 +4064,14 @@ msgstr "保存笔记本内容并创建检查点"
 #: packages/notebook/src/model.ts:330
 msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "to the current notebook format (v%2).\n"
+"The next time you save this notebook, the current notebook format (v%2) will be used.\n"
+"'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\n"
+"close the notebook without saving it."
+msgstr ""
+
+#: packages/notebook/src/model.ts:330
+msgid "This notebook has been converted from an older notebook format (v%1)\n"
+"to the current notebook format (v%2).\n"
 "The next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n"
 "'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\n"
 "close the notebook without saving it."
@@ -4325,63 +4333,63 @@ msgstr "转到行号…"
 msgid "%1 Terminals, %2 Kernel sessions"
 msgstr "%1 个终端，%2 个内核会话"
 
-#: packages/terminal-extension/src/index.ts:185
-msgid "Shutdown Terminal"
-msgstr "关闭终端"
-
-#: packages/terminal-extension/src/index.ts:208 packages/terminal-extension/src/index.ts:402
+#: packages/terminal-extension/src/index.ts:182 packages/terminal-extension/src/index.ts:208 packages/terminal-extension/src/index.ts:241 packages/terminal-extension/src/index.ts:402 packages/terminal-extension/src/index.ts:435
 msgid "Inherit"
 msgstr "繼承"
 
-#: packages/terminal-extension/src/index.ts:215 packages/terminal-extension/src/index.ts:403
+#: packages/terminal-extension/src/index.ts:185 packages/terminal-extension/src/index.ts:218
+msgid "Shutdown Terminal"
+msgstr "关闭终端"
+
+#: packages/terminal-extension/src/index.ts:190 packages/terminal-extension/src/index.ts:215 packages/terminal-extension/src/index.ts:248 packages/terminal-extension/src/index.ts:403 packages/terminal-extension/src/index.ts:436
 msgid "Light"
 msgstr "亮色"
 
-#: packages/terminal-extension/src/index.ts:220 packages/terminal-extension/src/index.ts:404
+#: packages/terminal-extension/src/index.ts:196 packages/terminal-extension/src/index.ts:220 packages/terminal-extension/src/index.ts:253 packages/terminal-extension/src/index.ts:404 packages/terminal-extension/src/index.ts:437
 msgid "Dark"
 msgstr "暗色"
 
-#: packages/terminal-extension/src/index.ts:253
+#: packages/terminal-extension/src/index.ts:253 packages/terminal-extension/src/index.ts:286
 msgid "Terminals"
 msgstr "终端"
 
-#: packages/terminal-extension/src/index.ts:261
+#: packages/terminal-extension/src/index.ts:261 packages/terminal-extension/src/index.ts:294
 msgid "Are you sure you want to permanently shut down all running terminals?"
 msgstr "您确定要永久关闭所有正在运行的终端吗？"
 
-#: packages/terminal-extension/src/index.ts:303
+#: packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:336
 msgid "New Terminal"
 msgstr "新建终端"
 
-#: packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:88 packages/terminal/src/widget.ts:69
+#: packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:336 packages/terminal-extension/src/index.ts:88 packages/terminal-extension/src/index.ts:89 packages/terminal/src/widget.ts:69
 msgid "Terminal"
 msgstr "终端"
 
-#: packages/terminal-extension/src/index.ts:304
+#: packages/terminal-extension/src/index.ts:304 packages/terminal-extension/src/index.ts:337
 msgid "Start a new terminal session"
 msgstr "开始一个新终端会话"
 
-#: packages/terminal-extension/src/index.ts:353
+#: packages/terminal-extension/src/index.ts:353 packages/terminal-extension/src/index.ts:386
 msgid "Refresh Terminal"
 msgstr "刷新终端"
 
-#: packages/terminal-extension/src/index.ts:354
+#: packages/terminal-extension/src/index.ts:354 packages/terminal-extension/src/index.ts:387
 msgid "Refresh the current terminal session"
 msgstr "刷新当前终端会话"
 
-#: packages/terminal-extension/src/index.ts:374
+#: packages/terminal-extension/src/index.ts:374 packages/terminal-extension/src/index.ts:407
 msgid "Increase Terminal Font Size"
 msgstr "增加终端字体大小"
 
-#: packages/terminal-extension/src/index.ts:388
+#: packages/terminal-extension/src/index.ts:388 packages/terminal-extension/src/index.ts:421
 msgid "Decrease Terminal Font Size"
 msgstr "减小终端字体大小"
 
-#: packages/terminal-extension/src/index.ts:415
+#: packages/terminal-extension/src/index.ts:415 packages/terminal-extension/src/index.ts:448
 msgid "Use Terminal Theme: %1"
 msgstr "使用终端主题：%1"
 
-#: packages/terminal-extension/src/index.ts:418
+#: packages/terminal-extension/src/index.ts:418 packages/terminal-extension/src/index.ts:451
 msgid "Set the terminal theme"
 msgstr "设置终端主题"
 
@@ -4437,15 +4445,15 @@ msgstr "切换至Markdown 文本单元格"
 msgid "Show Tags Menu"
 msgstr "显示标签菜单"
 
-#: packages/translation-extension/src/index.ts:129
+#: packages/translation-extension/src/index.ts:129 packages/translation-extension/src/index.ts:132
 msgid "Change interface language?"
 msgstr "更改界面语言？"
 
-#: packages/translation-extension/src/index.ts:130
+#: packages/translation-extension/src/index.ts:130 packages/translation-extension/src/index.ts:133
 msgid "After changing the interface language to %1, you will need to reload JupyterLab to see the changes."
 msgstr "在将界面语言更改为 %1 后，您需要重新加载 JupyterLab 方可生效。"
 
-#: packages/translation-extension/src/index.ts:136
+#: packages/translation-extension/src/index.ts:136 packages/translation-extension/src/index.ts:139
 msgid "Change and reload"
 msgstr "更改并重新加载"
 
