@@ -128,7 +128,7 @@
         "Toutes les erreurs seront list\u00e9es ici"
     ],
     "Are you sure that you want to run arbitrary Javascript within your JupyterLab session?": [
-        "\u00cates-vous s\u00fbr de vouloir ex\u00e9cuter du Javascript dans votre session JupyterLab?"
+        "\u00cates-vous s\u00fbr de vouloir ex\u00e9cuter du JavaScript dans votre session JupyterLab?"
     ],
     "Are you sure you want to close \"%1\"?": [
         "\u00cates-vous s\u00fbr de vouloir fermer \"%1\"?"
@@ -211,7 +211,7 @@
         "Fichier CSV"
     ],
     "Callstack": [
-        "Callstack"
+        "Pile des appels"
     ],
     "Cancel": [
         "Annuler"
@@ -1249,7 +1249,7 @@
         "Autre"
     ],
     "Overrides for the default viewers for file types.\nSpecify a mapping from file type name to document viewer name, for example:\n\ndefaultViewers: {\n  markdown: \"Markdown Preview\"\n}\n\nIf you specify non-existent file types or viewers, or if a viewer cannot\nopen a given file type, the override will not function.\n\nAvailable viewers:\n%1\n\nAvailable file types:\n%2": [
-        "Remplace les afficheurs par d\u00e9faut pour les types de fichiers.\nSp\u00e9cifiez un mappage du nom du type de fichier au nom de la visionneuse du document, par exemple :\n\ndefaultViewers: {\n  markdown: \"Markdown Preview\"\n}\n\nSi vous sp\u00e9cifiez des types de fichiers ou des visualisateurs inexistants, ou si une visionneuse ne peut pas\nouvrir un type de fichier donn\u00e9, la substitution ne fonctionnera pas.\n\nVisualisateurs disponibles :\n%1\n\nTypes de fichiers disponibles :\n%2"
+        "Remplace les afficheurs par d\u00e9faut pour les types de fichiers.\nSp\u00e9cifiez une correspondance du nom du type de fichier au nom de la visionneuse du document, par exemple :\n\ndefaultViewers: {\n  markdown: \"Markdown Preview\"\n}\n\nSi vous sp\u00e9cifiez des types de fichiers ou des visionneuses inexistants, ou si une visionneuse ne peut pas\nouvrir un type de fichier donn\u00e9, la substitution ne fonctionnera pas.\n\nVisionneuses disponibles :\n%1\n\nTypes de fichiers disponibles :\n%2"
     ],
     "Overwrite": [
         "\u00c9craser"
@@ -1585,7 +1585,7 @@
         "\u00c9chec de l'enregistrement"
     ],
     "Save File As..": [
-        "Enregistrer le fichier sous..."
+        "Enregistrer le fichier sous.."
     ],
     "Save User Settings": [
         "Enregistrer les param\u00e8tres de l'utilisateur"
@@ -1614,6 +1614,15 @@
     "Save your work": [
         "Enregistrer votre travail"
     ],
+    "Saving completed": [
+        "Enregistrement effectu\u00e9"
+    ],
+    "Saving failed": [
+        "\u00c9chec de la sauvegarde"
+    ],
+    "Saving started": [
+        "Sauvegarde d\u00e9marr\u00e9e"
+    ],
     "Scope": [
         "P\u00e9rim\u00e8tre d\u2019application"
     ],
@@ -1627,7 +1636,7 @@
         "R\u00e9sultats de la recherche"
     ],
     "Search Selected Cell(s)": [
-        "Rechercher les cellules s\u00e9lectionn\u00e9es"
+        "Rechercher la(les) cellule(s) s\u00e9lectionn\u00e9e(s)"
     ],
     "Search on File Names": [
         "Rechercher dans les noms de fichiers"
@@ -1936,6 +1945,9 @@
     ],
     "This notebook has been converted from an newer notebook format (v%1)\nto the current notebook format (v%2).\nThe next time you save this notebook, the current notebook format (v%2) will be used.\nSome features of the original notebook may not be available.' To preserve the original format version,\nclose the notebook without saving it.": [
         "Ce notebook a \u00e9t\u00e9 converti d'un format de notebook plus r\u00e9cent (v%1)\nque le format actuel (v%2).\nLa prochaine fois que vous sauverez ce notebook, le format actuel du notebook (v%2) sera utilis\u00e9.\n'Certaines fonctionnalit\u00e9s du notebook original peuvent ne pas \u00eatre disponibles.' Pour pr\u00e9server la version originale,\nfermez le notebook sans le sauvegarder."
+    ],
+    "This notebook has been converted from an older notebook format (v%1)\nto the current notebook format (v%2).\nThe next time you save this notebook, the current notebook format (v%2) will be used.\n'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\nclose the notebook without saving it.": [
+        "Ce notebook a \u00e9t\u00e9 converti d'un ancien format de notebook (v%1)\nau format actuel (v%2).\nLa prochaine fois que vous sauverez ce notebook, le format actuel du notebook (v%2) sera utilis\u00e9.\n'Anciennes versions de Jupyter peuvent ne pas \u00eatre en mesure de lire le nouveau format.' Pour pr\u00e9server la version originale,\nfermez le notebook sans le sauvegarder."
     ],
     "This notebook has been converted from an older notebook format (v%1)\nto the current notebook format (v%2).\nThe next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\nclose the notebook without saving it.": [
         "Ce notebook a \u00e9t\u00e9 converti d'un ancien format de notebook (v%1)\nau format actuel (v%2).\nLa prochaine fois que vous sauverez ce notebook, le format actuel du notebook (vthis._nbformat) sera utilis\u00e9.\n'Anciennes versions de Jupyter peuvent ne pas \u00eatre en mesure de lire le nouveau format.' Pour pr\u00e9server la version originale,\nfermez le notebook sans le sauvegarder."
@@ -2772,7 +2784,7 @@
         "L'URI du CDN \u00e0 utiliser pour r\u00e9cup\u00e9rer toutes les donn\u00e9es du paquet"
     ],
     "settings\u0004The URI of the NPM registry to use for searching for jupyterlab extensions": [
-        "L'URI du registre NPM \u00e0 utiliser pour la recherche d'extensions jupyterlab"
+        "L'URI du registre NPM \u00e0 utiliser pour la recherche d'extensions JupyterLab"
     ],
     "settings\u0004The amount of scrollback beyond initial viewport": [
         "La quantit\u00e9 de d\u00e9filement arri\u00e8re au-del\u00e0 de la fen\u00eatre de visualisation initiale"
