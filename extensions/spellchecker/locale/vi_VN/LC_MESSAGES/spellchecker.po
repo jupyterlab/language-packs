@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 103\n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
-"PO-Revision-Date: 2021-09-24 17:44\n"
+"PO-Revision-Date: 2021-09-28 09:38\n"
 
 #: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/aff/title
 msgctxt "settings"
@@ -57,7 +57,7 @@ msgstr "Từ bỏ qua kiểm tra chính tả"
 #: /schema/plugin.json:/properties/language/description
 msgctxt "settings"
 msgid "Dictionary identifier, e.g. en-us"
-msgstr ""
+msgstr "Nhận dạng từ điển, ví dụ: en-us"
 
 #: /schema/plugin.json:/properties/language/title
 msgctxt "settings"
@@ -85,12 +85,20 @@ msgid "A list of online dictionaries to use if installing dictionaries in data p
 "        \"name\": \"polski (Polska)\"\n"
 "    }\n"
 "]"
-msgstr ""
+msgstr "Danh sách các từ điển trực tuyến được sử dụng nếu việc cài đặt từ điển từ đường dẫn dữ liệu của jupyter-server không thể thực thi hoặc không được chọn. For example:\n\n"
+"[\n"
+"    {\n"
+"        \"id\": \"pl_PL-online\",\n"
+"        \"aff\": \"http://some-url/pl_PL.aff\",\n"
+"        \"dic\": \"http://some-url/pl_PL.dic\",\n"
+"        \"name\": \"polski (Polska)\"\n"
+"    }\n"
+"]"
 
 #: /schema/plugin.json:/properties/onlineDictionaries/title
 msgctxt "settings"
 msgid "Online dictionaries"
-msgstr ""
+msgstr "Các từ điển trực tuyến"
 
 #: /schema/plugin.json:/properties/theme/description
 msgctxt "settings"
@@ -112,7 +120,7 @@ msgstr "Công cụ kiểm tra chính tả"
 
 #: src/index.ts:242
 msgid "Dictionary not loaded"
-msgstr ""
+msgstr "Không thể tải từ điển"
 
 #: src/index.ts:243
 msgid "Adjust spelling to"
@@ -136,15 +144,15 @@ msgstr "Bỏ qua"
 
 #: src/index.ts:560
 msgid "Loading dictionary…"
-msgstr ""
+msgstr "Không thể tải từ điển…"
 
 #: src/index.ts:630
 msgid "%1 [%2] (online)"
-msgstr ""
+msgstr "%1 [%2] (trực tuyến)"
 
 #: src/index.ts:631
 msgid "%1 [%2]"
-msgstr ""
+msgstr "%1 [%2]"
 
 #: src/index.ts:635 src/index.ts:663
 msgid "Choose spellchecker language"
