@@ -31,7 +31,8 @@ jobs:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if [[ ! -z "$(git st --porcelain repository-map.yml)" ]]; then
+          set -eux
+          if [[ ! -z "$(git status --porcelain repository-map.yml)" ]]; then
             export SHA=$(git rev-parse --short HEAD)
             export BRANCH_NAME=new-release-${SHA}
             git checkout -b "${BRANCH_NAME}"
