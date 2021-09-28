@@ -3,7 +3,7 @@
 
 """
 # Get the latest tags of all the
-# packages and and update the repository-map.yml
+# packages and update the repository-map.yml
 """
 import argparse
 import re
