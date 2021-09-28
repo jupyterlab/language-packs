@@ -33,7 +33,7 @@ jobs:
         run: |
           if [[ ! -z "$(git st --porcelain repository-map.yml)" ]]; then
             export SHA=$(git rev-parse --short HEAD)
-            export BRANCH_NAME=new-release-${SHA}"
+            export BRANCH_NAME=new-release-${SHA}
             git checkout -b "${BRANCH_NAME}"
 
             git config user.name "JupyterLab Language Packs Bot"
