@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Hebrew\n"
 "Language: he_IL\n"
-"PO-Revision-Date: 2021-09-01 18:26\n"
+"PO-Revision-Date: 2021-09-28 08:34\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1202,7 +1202,7 @@ msgctxt "schema"
 msgid "Terminal settings."
 msgstr "הגדרות מסוף."
 
-#: /packages/terminal-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[3]/submenu/label
+#: /packages/terminal-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[3]/submenu/label packages/terminal-extension/src/index.ts:177
 msgctxt "menu"
 msgid "Terminal Theme"
 msgstr ""
@@ -1557,7 +1557,7 @@ msgstr ""
 msgid "Context menu customization has changed. You will need to reload JupyterLab to see the changes."
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:953 packages/docmanager-extension/src/index.ts:585 packages/mainmenu-extension/src/index.ts:895
+#: packages/application-extension/src/index.tsx:953 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:585 packages/mainmenu-extension/src/index.ts:895
 msgid "Reload"
 msgstr "לטעון מחדש"
 
@@ -1666,7 +1666,7 @@ msgstr "להגדיל את גודל גופן התוכן"
 msgid "Increase UI Font Size"
 msgstr "להגדיל את גודל גופן מנשק המשתמש"
 
-#: packages/apputils-extension/src/themesplugins.ts:127 packages/fileeditor-extension/src/commands.ts:304
+#: packages/apputils-extension/src/themesplugins.ts:127 packages/fileeditor-extension/src/commands.ts:301 packages/fileeditor-extension/src/commands.ts:304
 msgid "Increase Font Size"
 msgstr "הגדלת גודל גופן"
 
@@ -1682,7 +1682,7 @@ msgstr "להקטין את גודל גופן התוכן"
 msgid "Decrease UI Font Size"
 msgstr "להקטין את גודל גופן מנשק המשתמש"
 
-#: packages/apputils-extension/src/themesplugins.ts:143 packages/fileeditor-extension/src/commands.ts:308
+#: packages/apputils-extension/src/themesplugins.ts:143 packages/fileeditor-extension/src/commands.ts:305 packages/fileeditor-extension/src/commands.ts:308
 msgid "Decrease Font Size"
 msgstr "הקטנת גודל גופן"
 
@@ -1706,7 +1706,7 @@ msgstr "שמירה"
 msgid "Save Current Workspace As…"
 msgstr ""
 
-#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1217 packages/debugger-extension/src/index.ts:469 packages/debugger/src/panels/breakpoints/index.ts:51 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:847 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:448 packages/filebrowser/src/opendialog.ts:81 packages/notebook/src/actions.tsx:1759 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/translation-extension/src/index.ts:135
+#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1217 packages/debugger-extension/src/index.ts:469 packages/debugger/src/panels/breakpoints/index.ts:51 packages/docmanager-extension/src/index.ts:583 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:633 packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:846 packages/docmanager-extension/src/index.ts:847 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:448 packages/filebrowser/src/opendialog.ts:81 packages/notebook/src/actions.tsx:1759 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/translation-extension/src/index.ts:135 packages/translation-extension/src/index.ts:138
 msgid "Cancel"
 msgstr "ביטול"
 
@@ -1798,7 +1798,7 @@ msgstr "לא ערכת הנושא %1 ולא בררת המחדל %2 נטענו."
 msgid "Error Loading Theme"
 msgstr "שגיאה בטעינת ערכת העיצוב"
 
-#: packages/apputils/src/thememanager.ts:441 packages/docmanager-extension/src/index.ts:362 packages/extensionmanager/src/companions.tsx:218 packages/extensionmanager/src/dialog.tsx:39 packages/extensionmanager/src/widget.tsx:354 packages/extensionmanager/src/widget.tsx:355
+#: packages/apputils/src/thememanager.ts:441 packages/docmanager-extension/src/index.ts:361 packages/docmanager-extension/src/index.ts:362 packages/extensionmanager/src/companions.tsx:218 packages/extensionmanager/src/dialog.tsx:39 packages/extensionmanager/src/widget.tsx:354 packages/extensionmanager/src/widget.tsx:355
 msgid "OK"
 msgstr "אישור"
 
@@ -2162,143 +2162,143 @@ msgstr "עוקף את מציגי בררת המחדל לסוגי קבצים.\n"
 "סוגי קבצים זמינים:\n"
 "%2"
 
-#: packages/docmanager-extension/src/index.ts:351 packages/filebrowser-extension/src/index.ts:318
+#: packages/docmanager-extension/src/index.ts:350 packages/docmanager-extension/src/index.ts:351 packages/filebrowser-extension/src/index.ts:318
 msgid "Download"
 msgstr "להוריד"
 
-#: packages/docmanager-extension/src/index.ts:352
+#: packages/docmanager-extension/src/index.ts:351 packages/docmanager-extension/src/index.ts:352
 msgid "Download the file to your computer"
 msgstr "להוריד את הקובץ למחשב שלך"
 
-#: packages/docmanager-extension/src/index.ts:360
+#: packages/docmanager-extension/src/index.ts:359 packages/docmanager-extension/src/index.ts:360
 msgid "Cannot Download"
 msgstr "לא ניתן להוריד"
 
-#: packages/docmanager-extension/src/index.ts:361 packages/docmanager-extension/src/index.ts:572 packages/docmanager-extension/src/index.ts:617 packages/docmanager-extension/src/index.ts:663 packages/docmanager-extension/src/index.ts:726
+#: packages/docmanager-extension/src/index.ts:360 packages/docmanager-extension/src/index.ts:361 packages/docmanager-extension/src/index.ts:571 packages/docmanager-extension/src/index.ts:572 packages/docmanager-extension/src/index.ts:616 packages/docmanager-extension/src/index.ts:617 packages/docmanager-extension/src/index.ts:662 packages/docmanager-extension/src/index.ts:663 packages/docmanager-extension/src/index.ts:725 packages/docmanager-extension/src/index.ts:726
 msgid "No context found for current widget!"
 msgstr "לא נמצא הקשר לווידג׳ט הנוכחי!"
 
-#: packages/docmanager-extension/src/index.ts:370 packages/docmanager-extension/src/index.ts:477 packages/filebrowser-extension/src/index.ts:1032 packages/filebrowser-extension/src/index.ts:835 packages/htmlviewer-extension/src/index.tsx:131
+#: packages/docmanager-extension/src/index.ts:369 packages/docmanager-extension/src/index.ts:370 packages/docmanager-extension/src/index.ts:476 packages/docmanager-extension/src/index.ts:477 packages/filebrowser-extension/src/index.ts:1032 packages/filebrowser-extension/src/index.ts:835 packages/htmlviewer-extension/src/index.tsx:131
 msgid "File Operations"
 msgstr "פעולות קבצים"
 
-#: packages/docmanager-extension/src/index.ts:417 packages/filebrowser-extension/src/index.ts:590
+#: packages/docmanager-extension/src/index.ts:416 packages/docmanager-extension/src/index.ts:417 packages/filebrowser-extension/src/index.ts:590
 msgid "Open in New Browser Tab"
 msgstr "פתיחה בלשונית דפדפן חדשה"
 
-#: packages/docmanager-extension/src/index.ts:518 packages/filebrowser/src/browser.ts:279 packages/filebrowser/src/browser.ts:309 packages/logconsole-extension/src/index.tsx:381
+#: packages/docmanager-extension/src/index.ts:517 packages/docmanager-extension/src/index.ts:518 packages/filebrowser/src/browser.ts:279 packages/filebrowser/src/browser.ts:309 packages/logconsole-extension/src/index.tsx:381
 msgid "Error"
 msgstr "שגיאה"
 
-#: packages/docmanager-extension/src/index.ts:556 packages/docmanager-extension/src/index.ts:578
+#: packages/docmanager-extension/src/index.ts:555 packages/docmanager-extension/src/index.ts:556 packages/docmanager-extension/src/index.ts:577 packages/docmanager-extension/src/index.ts:578
 msgid "Reload %1 from Disk"
 msgstr "לטעון את %1 מהכונן מחדש"
 
-#: packages/docmanager-extension/src/index.ts:560
+#: packages/docmanager-extension/src/index.ts:559 packages/docmanager-extension/src/index.ts:560
 msgid "Reload contents from disk"
 msgstr "לטעון מחדש תכנים מהכונן"
 
-#: packages/docmanager-extension/src/index.ts:571
+#: packages/docmanager-extension/src/index.ts:570 packages/docmanager-extension/src/index.ts:571
 msgid "Cannot Reload"
 msgstr "לא ניתן לטעון מחדש"
 
-#: packages/docmanager-extension/src/index.ts:573 packages/docmanager-extension/src/index.ts:618 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:671 packages/docmanager-extension/src/index.ts:727 packages/notebook/src/actions.tsx:1751 packages/notebook/src/actions.tsx:1760 packages/notebook/src/actions.tsx:1978 packages/notebook/src/default-toolbar.tsx:67 packages/notebook/src/model.ts:353 packages/notebook/src/panel.ts:219 packages/settingeditor/src/plugineditor.ts:138 packages/settingeditor/src/plugineditor.ts:260
+#: packages/docmanager-extension/src/index.ts:572 packages/docmanager-extension/src/index.ts:573 packages/docmanager-extension/src/index.ts:617 packages/docmanager-extension/src/index.ts:618 packages/docmanager-extension/src/index.ts:663 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:670 packages/docmanager-extension/src/index.ts:671 packages/docmanager-extension/src/index.ts:726 packages/docmanager-extension/src/index.ts:727 packages/notebook/src/actions.tsx:1751 packages/notebook/src/actions.tsx:1760 packages/notebook/src/actions.tsx:1978 packages/notebook/src/default-toolbar.tsx:67 packages/notebook/src/model.ts:353 packages/notebook/src/panel.ts:219 packages/settingeditor/src/plugineditor.ts:138 packages/settingeditor/src/plugineditor.ts:260
 msgid "Ok"
 msgstr "אישור"
 
-#: packages/docmanager-extension/src/index.ts:579
+#: packages/docmanager-extension/src/index.ts:578 packages/docmanager-extension/src/index.ts:579
 msgid "Are you sure you want to reload the %1 from the disk?"
 msgstr "לטעון את %1 מחדש מהכונן?"
 
-#: packages/docmanager-extension/src/index.ts:602
+#: packages/docmanager-extension/src/index.ts:601 packages/docmanager-extension/src/index.ts:602
 msgid "Revert %1 to Checkpoint"
 msgstr "להחזיר את %1 לנקודת הבקרה"
 
-#: packages/docmanager-extension/src/index.ts:606
+#: packages/docmanager-extension/src/index.ts:605 packages/docmanager-extension/src/index.ts:606
 msgid "Revert contents to previous checkpoint"
 msgstr "להחזיר את התוכן לנקודת הבקרה הקודמת"
 
-#: packages/docmanager-extension/src/index.ts:616
+#: packages/docmanager-extension/src/index.ts:615 packages/docmanager-extension/src/index.ts:616
 msgid "Cannot Revert"
 msgstr "לא ניתן להחזיר"
 
-#: packages/docmanager-extension/src/index.ts:631
+#: packages/docmanager-extension/src/index.ts:630 packages/docmanager-extension/src/index.ts:631
 msgid "Revert %1 to checkpoint"
 msgstr "להחזיר את %1 לנקודת הבקרה"
 
-#: packages/docmanager-extension/src/index.ts:635 packages/docregistry/src/context.ts:799 packages/docregistry/src/context.ts:815
+#: packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:635 packages/docregistry/src/context.ts:799 packages/docregistry/src/context.ts:815
 msgid "Revert"
 msgstr "להחזיר"
 
-#: packages/docmanager-extension/src/index.ts:653
+#: packages/docmanager-extension/src/index.ts:652 packages/docmanager-extension/src/index.ts:653
 msgid "Save %1"
 msgstr "לשמור את %1"
 
-#: packages/docmanager-extension/src/index.ts:654
+#: packages/docmanager-extension/src/index.ts:653 packages/docmanager-extension/src/index.ts:654
 msgid "Save and create checkpoint"
 msgstr "לשמור וליצור נקודת בקרה"
 
-#: packages/docmanager-extension/src/index.ts:662 packages/docmanager-extension/src/index.ts:669 packages/docmanager-extension/src/index.ts:725 packages/notebook/src/default-toolbar.tsx:65
+#: packages/docmanager-extension/src/index.ts:661 packages/docmanager-extension/src/index.ts:662 packages/docmanager-extension/src/index.ts:668 packages/docmanager-extension/src/index.ts:669 packages/docmanager-extension/src/index.ts:724 packages/docmanager-extension/src/index.ts:725 packages/notebook/src/default-toolbar.tsx:65
 msgid "Cannot Save"
 msgstr "לא ניתן לשמור"
 
-#: packages/docmanager-extension/src/index.ts:670 packages/notebook/src/default-toolbar.tsx:66
+#: packages/docmanager-extension/src/index.ts:669 packages/docmanager-extension/src/index.ts:670 packages/notebook/src/default-toolbar.tsx:66
 msgid "Document is read-only"
 msgstr "המסמך לקריאה בלבד"
 
-#: packages/docmanager-extension/src/index.ts:692
+#: packages/docmanager-extension/src/index.ts:691 packages/docmanager-extension/src/index.ts:692
 msgid "Save All"
 msgstr "לשמור הכול"
 
-#: packages/docmanager-extension/src/index.ts:693
+#: packages/docmanager-extension/src/index.ts:692 packages/docmanager-extension/src/index.ts:693
 msgid "Save all open documents"
 msgstr "לשמור את כל המסמכים הפתוחים"
 
-#: packages/docmanager-extension/src/index.ts:716
+#: packages/docmanager-extension/src/index.ts:715 packages/docmanager-extension/src/index.ts:716
 msgid "Save %1 As…"
 msgstr "לשמור את %1 בשם…"
 
-#: packages/docmanager-extension/src/index.ts:717
+#: packages/docmanager-extension/src/index.ts:716 packages/docmanager-extension/src/index.ts:717
 msgid "Save with new path"
 msgstr "לשמור עם נתיב חדש"
 
-#: packages/docmanager-extension/src/index.ts:736
+#: packages/docmanager-extension/src/index.ts:735 packages/docmanager-extension/src/index.ts:736
 msgid "Autosave Documents"
 msgstr "שמירת מסמכים אוטומטית"
 
-#: packages/docmanager-extension/src/index.ts:796
+#: packages/docmanager-extension/src/index.ts:795 packages/docmanager-extension/src/index.ts:796
 msgid "New View for %1"
 msgstr "תצוגה חדשה עבור %1"
 
-#: packages/docmanager-extension/src/index.ts:820
+#: packages/docmanager-extension/src/index.ts:819 packages/docmanager-extension/src/index.ts:820
 msgid "Rename%1…"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.ts:834
+#: packages/docmanager-extension/src/index.ts:833 packages/docmanager-extension/src/index.ts:834
 msgid "Delete %1"
 msgstr "למחוק את %1"
 
-#: packages/docmanager-extension/src/index.ts:844 packages/docmanager-extension/src/index.ts:848 packages/filebrowser-extension/src/index.ts:687 packages/filebrowser/src/listing.ts:411 packages/filebrowser/src/listing.ts:415
+#: packages/docmanager-extension/src/index.ts:843 packages/docmanager-extension/src/index.ts:844 packages/docmanager-extension/src/index.ts:847 packages/docmanager-extension/src/index.ts:848 packages/filebrowser-extension/src/index.ts:687 packages/filebrowser/src/listing.ts:411 packages/filebrowser/src/listing.ts:415
 msgid "Delete"
 msgstr "למחוק"
 
-#: packages/docmanager-extension/src/index.ts:845
+#: packages/docmanager-extension/src/index.ts:844 packages/docmanager-extension/src/index.ts:845
 msgid "Are you sure you want to delete %1"
 msgstr "למחוק את %1"
 
-#: packages/docmanager-extension/src/index.ts:862
+#: packages/docmanager-extension/src/index.ts:861 packages/docmanager-extension/src/index.ts:862
 msgid "Show in File Browser"
 msgstr "הצגה במנהל הקבצים"
 
-#: packages/docmanager-extension/src/index.ts:928
+#: packages/docmanager-extension/src/index.ts:927 packages/docmanager-extension/src/index.ts:928
 msgid "Are you sure you want to revert the %1 to the latest checkpoint? "
 msgstr "להחזיר את %1 לנקודת הבקרה האחרונה? "
 
-#: packages/docmanager-extension/src/index.ts:934
+#: packages/docmanager-extension/src/index.ts:933 packages/docmanager-extension/src/index.ts:934
 msgid "This cannot be undone."
 msgstr "פעולה זו אינה הפיכה."
 
-#: packages/docmanager-extension/src/index.ts:941
+#: packages/docmanager-extension/src/index.ts:940 packages/docmanager-extension/src/index.ts:941
 msgid "The checkpoint was last updated at: "
 msgstr "נקודת הביקורת עודכנה לאחרונה במועד: "
 
@@ -2434,7 +2434,7 @@ msgstr "מחברת"
 msgid "Directory"
 msgstr "תיקייה"
 
-#: packages/docregistry/src/registry.ts:1366 packages/fileeditor-extension/src/commands.ts:996
+#: packages/docregistry/src/registry.ts:1366 packages/fileeditor-extension/src/commands.ts:993 packages/fileeditor-extension/src/commands.ts:996
 msgid "Markdown File"
 msgstr "קובץ Markdown"
 
@@ -2758,11 +2758,11 @@ msgstr "העתקת קישור שניתן לשתף"
 msgid "New Launcher"
 msgstr "משגר חדש"
 
-#: packages/filebrowser-extension/src/index.ts:700 packages/fileeditor-extension/src/commands.ts:838
+#: packages/filebrowser-extension/src/index.ts:700 packages/fileeditor-extension/src/commands.ts:835 packages/fileeditor-extension/src/commands.ts:838
 msgid "Copy"
 msgstr "העתקה"
 
-#: packages/filebrowser-extension/src/index.ts:713 packages/fileeditor-extension/src/commands.ts:797
+#: packages/filebrowser-extension/src/index.ts:713 packages/fileeditor-extension/src/commands.ts:794 packages/fileeditor-extension/src/commands.ts:797
 msgid "Cut"
 msgstr "גזירה"
 
@@ -2802,7 +2802,7 @@ msgstr "לא ניתן למצוא נתיב: %1"
 msgid "Cannot open"
 msgstr "לא ניתן לפתוח"
 
-#: packages/filebrowser-extension/src/index.ts:892 packages/fileeditor-extension/src/commands.ts:872
+#: packages/filebrowser-extension/src/index.ts:892 packages/fileeditor-extension/src/commands.ts:869 packages/fileeditor-extension/src/commands.ts:872
 msgid "Paste"
 msgstr "הדבקה"
 
@@ -2814,7 +2814,7 @@ msgstr "תיקייה חדשה"
 msgid "New File"
 msgstr "קובץ חדש"
 
-#: packages/filebrowser-extension/src/index.ts:929 packages/fileeditor-extension/src/commands.ts:995
+#: packages/filebrowser-extension/src/index.ts:929 packages/fileeditor-extension/src/commands.ts:992 packages/fileeditor-extension/src/commands.ts:995
 msgid "New Markdown File"
 msgstr "קובץ Markdown חדש"
 
@@ -3015,47 +3015,47 @@ msgstr "מתבצעת העלאה…"
 msgid "Complete!"
 msgstr "הסתיים!"
 
-#: packages/fileeditor-extension/src/commands.ts:1027 packages/fileeditor-extension/src/commands.ts:1041 packages/fileeditor-extension/src/commands.ts:1057 packages/launcher/src/index.tsx:151 packages/launcher/src/index.tsx:161 packages/launcher/src/index.tsx:434 packages/terminal-extension/src/index.ts:228
+#: packages/fileeditor-extension/src/commands.ts:1024 packages/fileeditor-extension/src/commands.ts:1027 packages/fileeditor-extension/src/commands.ts:1038 packages/fileeditor-extension/src/commands.ts:1041 packages/fileeditor-extension/src/commands.ts:1054 packages/fileeditor-extension/src/commands.ts:1057 packages/launcher/src/index.tsx:151 packages/launcher/src/index.tsx:161 packages/launcher/src/index.tsx:434 packages/terminal-extension/src/index.ts:228 packages/terminal-extension/src/index.ts:261
 msgid "Other"
 msgstr "אחר"
 
-#: packages/fileeditor-extension/src/commands.ts:1087 packages/fileeditor-extension/src/commands.ts:1111 packages/fileeditor-extension/src/commands.ts:1126 packages/fileeditor-extension/src/commands.ts:1141 packages/fileeditor-extension/src/commands.ts:1159
+#: packages/fileeditor-extension/src/commands.ts:1084 packages/fileeditor-extension/src/commands.ts:1087 packages/fileeditor-extension/src/commands.ts:1108 packages/fileeditor-extension/src/commands.ts:1111 packages/fileeditor-extension/src/commands.ts:1123 packages/fileeditor-extension/src/commands.ts:1126 packages/fileeditor-extension/src/commands.ts:1138 packages/fileeditor-extension/src/commands.ts:1141 packages/fileeditor-extension/src/commands.ts:1156 packages/fileeditor-extension/src/commands.ts:1159
 msgid "Text Editor"
 msgstr "עורך טקסט"
 
-#: packages/fileeditor-extension/src/commands.ts:1281 packages/fileeditor-extension/src/commands.ts:530
+#: packages/fileeditor-extension/src/commands.ts:1278 packages/fileeditor-extension/src/commands.ts:1281 packages/fileeditor-extension/src/commands.ts:527 packages/fileeditor-extension/src/commands.ts:530
 msgid "Create Console for Editor"
 msgstr "ליצור מסוף לעורך"
 
-#: packages/fileeditor-extension/src/commands.ts:1299 packages/fileeditor-extension/src/commands.ts:601
+#: packages/fileeditor-extension/src/commands.ts:1296 packages/fileeditor-extension/src/commands.ts:1299 packages/fileeditor-extension/src/commands.ts:598 packages/fileeditor-extension/src/commands.ts:601
 msgid "Run Code"
 msgstr "להריץ קוד"
 
-#: packages/fileeditor-extension/src/commands.ts:1300 packages/fileeditor-extension/src/commands.ts:646
+#: packages/fileeditor-extension/src/commands.ts:1297 packages/fileeditor-extension/src/commands.ts:1300 packages/fileeditor-extension/src/commands.ts:643 packages/fileeditor-extension/src/commands.ts:646
 msgid "Run All Code"
 msgstr "להריץ את כל הקוד"
 
-#: packages/fileeditor-extension/src/commands.ts:1302
+#: packages/fileeditor-extension/src/commands.ts:1299 packages/fileeditor-extension/src/commands.ts:1302
 msgid "Restart Kernel and Run All Code"
 msgstr "להפעיל את הליבה מחדש ולהריץ את כל הקוד"
 
-#: packages/fileeditor-extension/src/commands.ts:303
+#: packages/fileeditor-extension/src/commands.ts:300 packages/fileeditor-extension/src/commands.ts:303
 msgid "Increase Text Editor Font Size"
 msgstr "להגדיל את גודל גופן עורך הטקסט"
 
-#: packages/fileeditor-extension/src/commands.ts:307
+#: packages/fileeditor-extension/src/commands.ts:304 packages/fileeditor-extension/src/commands.ts:307
 msgid "Decrease Text Editor Font Size"
 msgstr "להקטין את גודל גופן עורך הטקסט"
 
-#: packages/fileeditor-extension/src/commands.ts:335
+#: packages/fileeditor-extension/src/commands.ts:332 packages/fileeditor-extension/src/commands.ts:335
 msgid "Line Numbers"
 msgstr "מספרי שורות"
 
-#: packages/fileeditor-extension/src/commands.ts:365
+#: packages/fileeditor-extension/src/commands.ts:362 packages/fileeditor-extension/src/commands.ts:365
 msgid "Word Wrap"
 msgstr "גלישת שורות"
 
-#: packages/fileeditor-extension/src/commands.ts:381 packages/fileeditor-extension/src/index.ts:98
+#: packages/fileeditor-extension/src/commands.ts:378 packages/fileeditor-extension/src/commands.ts:381 packages/fileeditor-extension/src/index.ts:98
 msgid "Spaces: %1"
 msgid_plural "Spaces: %1"
 msgstr[0] "רווחים: %1"
@@ -3063,55 +3063,55 @@ msgstr[1] "רווחים: %1"
 msgstr[2] "רווחים: %1"
 msgstr[3] "רווחים: %1"
 
-#: packages/fileeditor-extension/src/commands.ts:387 packages/fileeditor-extension/src/index.ts:91
+#: packages/fileeditor-extension/src/commands.ts:384 packages/fileeditor-extension/src/commands.ts:387 packages/fileeditor-extension/src/index.ts:91
 msgid "Indent with Tab"
 msgstr "הזחה עם טאב"
 
-#: packages/fileeditor-extension/src/commands.ts:426 packages/mainmenu-extension/src/index.ts:583
+#: packages/fileeditor-extension/src/commands.ts:423 packages/fileeditor-extension/src/commands.ts:426 packages/mainmenu-extension/src/index.ts:583
 msgid "Match Brackets"
 msgstr "התאמת סוגריים"
 
-#: packages/fileeditor-extension/src/commands.ts:452
+#: packages/fileeditor-extension/src/commands.ts:449 packages/fileeditor-extension/src/commands.ts:452
 msgid "Auto Close Brackets for Text Editor"
 msgstr "לסגור סוגריים אוטומטית בעורך טקסט"
 
-#: packages/fileeditor-extension/src/commands.ts:478
+#: packages/fileeditor-extension/src/commands.ts:475 packages/fileeditor-extension/src/commands.ts:478
 msgid "Auto Close Brackets"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:505
+#: packages/fileeditor-extension/src/commands.ts:502 packages/fileeditor-extension/src/commands.ts:505
 msgid "Replace Selection in Editor"
 msgstr "להחליף את הבחירה בעורך"
 
-#: packages/fileeditor-extension/src/commands.ts:679
+#: packages/fileeditor-extension/src/commands.ts:676 packages/fileeditor-extension/src/commands.ts:679
 msgid "Show Markdown Preview"
 msgstr "תצוגה מקדימה של Markdown"
 
-#: packages/fileeditor-extension/src/commands.ts:717 packages/mainmenu-extension/src/index.ts:258
+#: packages/fileeditor-extension/src/commands.ts:714 packages/fileeditor-extension/src/commands.ts:717 packages/mainmenu-extension/src/index.ts:258
 msgid "Undo"
 msgstr "ביטול"
 
-#: packages/fileeditor-extension/src/commands.ts:755 packages/mainmenu-extension/src/index.ts:263
+#: packages/fileeditor-extension/src/commands.ts:752 packages/fileeditor-extension/src/commands.ts:755 packages/mainmenu-extension/src/index.ts:263
 msgid "Redo"
 msgstr "ביצוע מחדש"
 
-#: packages/fileeditor-extension/src/commands.ts:897
+#: packages/fileeditor-extension/src/commands.ts:894 packages/fileeditor-extension/src/commands.ts:897
 msgid "Select All"
 msgstr "לבחור הכול"
 
-#: packages/fileeditor-extension/src/commands.ts:961
+#: packages/fileeditor-extension/src/commands.ts:958 packages/fileeditor-extension/src/commands.ts:961
 msgid "New Text File"
 msgstr "קובץ טקסט חדש"
 
-#: packages/fileeditor-extension/src/commands.ts:963
+#: packages/fileeditor-extension/src/commands.ts:960 packages/fileeditor-extension/src/commands.ts:963
 msgid "Text File"
 msgstr "קובץ טקסט"
 
-#: packages/fileeditor-extension/src/commands.ts:966
+#: packages/fileeditor-extension/src/commands.ts:963 packages/fileeditor-extension/src/commands.ts:966
 msgid "Create a new text file"
 msgstr "יצירת קובץ טקסט חדש"
 
-#: packages/fileeditor-extension/src/commands.ts:997
+#: packages/fileeditor-extension/src/commands.ts:994 packages/fileeditor-extension/src/commands.ts:997
 msgid "Create a new markdown file"
 msgstr "יצירת קובץ markdown חדש"
 
@@ -3516,7 +3516,7 @@ msgstr "סגירה וכיבוי"
 msgid "New Console for Activity"
 msgstr "מסוף חדש לפעילות"
 
-#: packages/mainmenu-extension/src/index.ts:376 packages/mainmenu-extension/src/index.ts:386 packages/running-extension/src/kernels.ts:39 packages/running/src/index.tsx:142 packages/terminal-extension/src/index.ts:259
+#: packages/mainmenu-extension/src/index.ts:376 packages/mainmenu-extension/src/index.ts:386 packages/running-extension/src/kernels.ts:39 packages/running/src/index.tsx:142 packages/terminal-extension/src/index.ts:259 packages/terminal-extension/src/index.ts:292
 msgid "Shut Down"
 msgstr "כיבוי"
 
@@ -3568,7 +3568,7 @@ msgstr "לכבות את הכול?"
 msgid "Shut down all kernels?"
 msgstr "לכבות את כל הליבות?"
 
-#: packages/mainmenu-extension/src/index.ts:542 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:260
+#: packages/mainmenu-extension/src/index.ts:542 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:260 packages/terminal-extension/src/index.ts:293
 msgid "Shut Down All"
 msgstr "לכבות את הכול"
 
@@ -4047,6 +4047,14 @@ msgstr "לשמור את תכני המחברת וליצור נקודת ביקור
 #: packages/notebook/src/model.ts:330
 msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "to the current notebook format (v%2).\n"
+"The next time you save this notebook, the current notebook format (v%2) will be used.\n"
+"'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\n"
+"close the notebook without saving it."
+msgstr ""
+
+#: packages/notebook/src/model.ts:330
+msgid "This notebook has been converted from an older notebook format (v%1)\n"
+"to the current notebook format (v%2).\n"
 "The next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n"
 "'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\n"
 "close the notebook without saving it."
@@ -4315,63 +4323,63 @@ msgstr "מעבר לשורה מספר…"
 msgid "%1 Terminals, %2 Kernel sessions"
 msgstr "%1 מסופים, %2 מופעי ליבה"
 
-#: packages/terminal-extension/src/index.ts:185
-msgid "Shutdown Terminal"
-msgstr "כיבוי המסוף"
-
-#: packages/terminal-extension/src/index.ts:208 packages/terminal-extension/src/index.ts:402
+#: packages/terminal-extension/src/index.ts:182 packages/terminal-extension/src/index.ts:208 packages/terminal-extension/src/index.ts:241 packages/terminal-extension/src/index.ts:402 packages/terminal-extension/src/index.ts:435
 msgid "Inherit"
 msgstr "לרשת"
 
-#: packages/terminal-extension/src/index.ts:215 packages/terminal-extension/src/index.ts:403
+#: packages/terminal-extension/src/index.ts:185 packages/terminal-extension/src/index.ts:218
+msgid "Shutdown Terminal"
+msgstr "כיבוי המסוף"
+
+#: packages/terminal-extension/src/index.ts:190 packages/terminal-extension/src/index.ts:215 packages/terminal-extension/src/index.ts:248 packages/terminal-extension/src/index.ts:403 packages/terminal-extension/src/index.ts:436
 msgid "Light"
 msgstr "בהירה"
 
-#: packages/terminal-extension/src/index.ts:220 packages/terminal-extension/src/index.ts:404
+#: packages/terminal-extension/src/index.ts:196 packages/terminal-extension/src/index.ts:220 packages/terminal-extension/src/index.ts:253 packages/terminal-extension/src/index.ts:404 packages/terminal-extension/src/index.ts:437
 msgid "Dark"
 msgstr "כהה"
 
-#: packages/terminal-extension/src/index.ts:253
+#: packages/terminal-extension/src/index.ts:253 packages/terminal-extension/src/index.ts:286
 msgid "Terminals"
 msgstr "מסופים"
 
-#: packages/terminal-extension/src/index.ts:261
+#: packages/terminal-extension/src/index.ts:261 packages/terminal-extension/src/index.ts:294
 msgid "Are you sure you want to permanently shut down all running terminals?"
 msgstr "לכבות את כל המסופים הפעילים?"
 
-#: packages/terminal-extension/src/index.ts:303
+#: packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:336
 msgid "New Terminal"
 msgstr "מסוף חדש"
 
-#: packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:88 packages/terminal/src/widget.ts:69
+#: packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:336 packages/terminal-extension/src/index.ts:88 packages/terminal-extension/src/index.ts:89 packages/terminal/src/widget.ts:69
 msgid "Terminal"
 msgstr "מסוף"
 
-#: packages/terminal-extension/src/index.ts:304
+#: packages/terminal-extension/src/index.ts:304 packages/terminal-extension/src/index.ts:337
 msgid "Start a new terminal session"
 msgstr "הפעלת מופע מסוף חדש"
 
-#: packages/terminal-extension/src/index.ts:353
+#: packages/terminal-extension/src/index.ts:353 packages/terminal-extension/src/index.ts:386
 msgid "Refresh Terminal"
 msgstr "רענון מסוף"
 
-#: packages/terminal-extension/src/index.ts:354
+#: packages/terminal-extension/src/index.ts:354 packages/terminal-extension/src/index.ts:387
 msgid "Refresh the current terminal session"
 msgstr "לרענן את מופע המסוף הנוכחי"
 
-#: packages/terminal-extension/src/index.ts:374
+#: packages/terminal-extension/src/index.ts:374 packages/terminal-extension/src/index.ts:407
 msgid "Increase Terminal Font Size"
 msgstr "להגדיל את גודל גופן המסוף"
 
-#: packages/terminal-extension/src/index.ts:388
+#: packages/terminal-extension/src/index.ts:388 packages/terminal-extension/src/index.ts:421
 msgid "Decrease Terminal Font Size"
 msgstr "להקטין את גודל גופן המסוף"
 
-#: packages/terminal-extension/src/index.ts:415
+#: packages/terminal-extension/src/index.ts:415 packages/terminal-extension/src/index.ts:448
 msgid "Use Terminal Theme: %1"
 msgstr "להשתמש בערכת עיצוב של מסוף: %1"
 
-#: packages/terminal-extension/src/index.ts:418
+#: packages/terminal-extension/src/index.ts:418 packages/terminal-extension/src/index.ts:451
 msgid "Set the terminal theme"
 msgstr "הגדרת ערכת עיצוב המסוף"
 
@@ -4427,15 +4435,15 @@ msgstr "החלפת מצב תאי טקסט Markdown"
 msgid "Show Tags Menu"
 msgstr "הצגת תפריט תגיות"
 
-#: packages/translation-extension/src/index.ts:129
+#: packages/translation-extension/src/index.ts:129 packages/translation-extension/src/index.ts:132
 msgid "Change interface language?"
 msgstr "להחליף את שפת המנשק?"
 
-#: packages/translation-extension/src/index.ts:130
+#: packages/translation-extension/src/index.ts:130 packages/translation-extension/src/index.ts:133
 msgid "After changing the interface language to %1, you will need to reload JupyterLab to see the changes."
 msgstr ""
 
-#: packages/translation-extension/src/index.ts:136
+#: packages/translation-extension/src/index.ts:136 packages/translation-extension/src/index.ts:139
 msgid "Change and reload"
 msgstr ""
 

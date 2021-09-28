@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2021-09-08 17:42\n"
+"PO-Revision-Date: 2021-09-28 08:32\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1247,7 +1247,7 @@ msgctxt "schema"
 msgid "Terminal settings."
 msgstr "Ustawienia terminalu."
 
-#: /packages/terminal-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[3]/submenu/label
+#: /packages/terminal-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[3]/submenu/label packages/terminal-extension/src/index.ts:177
 msgctxt "menu"
 msgid "Terminal Theme"
 msgstr "Motyw Terminalu"
@@ -1602,7 +1602,7 @@ msgstr "Informacja"
 msgid "Context menu customization has changed. You will need to reload JupyterLab to see the changes."
 msgstr "Menu kontekstowe uległo zmianie. Aby zobaczyć zmiany, musisz przeładować JupyterLab."
 
-#: packages/application-extension/src/index.tsx:953 packages/docmanager-extension/src/index.ts:585 packages/mainmenu-extension/src/index.ts:895
+#: packages/application-extension/src/index.tsx:953 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:585 packages/mainmenu-extension/src/index.ts:895
 msgid "Reload"
 msgstr "Załaduj ponownie"
 
@@ -1712,7 +1712,7 @@ msgstr "Zwiększ rozmiar czcionki treści"
 msgid "Increase UI Font Size"
 msgstr "Zwiększ rozmiar czcionki UI"
 
-#: packages/apputils-extension/src/themesplugins.ts:127 packages/fileeditor-extension/src/commands.ts:304
+#: packages/apputils-extension/src/themesplugins.ts:127 packages/fileeditor-extension/src/commands.ts:301 packages/fileeditor-extension/src/commands.ts:304
 msgid "Increase Font Size"
 msgstr "Zwiększ rozmiar czcionki"
 
@@ -1728,7 +1728,7 @@ msgstr "Zmniejsz rozmiar czcionki treści"
 msgid "Decrease UI Font Size"
 msgstr "Zmniejsz rozmiar czcionki UI"
 
-#: packages/apputils-extension/src/themesplugins.ts:143 packages/fileeditor-extension/src/commands.ts:308
+#: packages/apputils-extension/src/themesplugins.ts:143 packages/fileeditor-extension/src/commands.ts:305 packages/fileeditor-extension/src/commands.ts:308
 msgid "Decrease Font Size"
 msgstr "Zmniejsz Rozmiar Czcionki"
 
@@ -1752,7 +1752,7 @@ msgstr "Zapisz"
 msgid "Save Current Workspace As…"
 msgstr "Zapisz bieżący obszar roboczy jako…"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1217 packages/debugger-extension/src/index.ts:469 packages/debugger/src/panels/breakpoints/index.ts:51 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:847 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:448 packages/filebrowser/src/opendialog.ts:81 packages/notebook/src/actions.tsx:1759 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/translation-extension/src/index.ts:135
+#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1217 packages/debugger-extension/src/index.ts:469 packages/debugger/src/panels/breakpoints/index.ts:51 packages/docmanager-extension/src/index.ts:583 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:633 packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:846 packages/docmanager-extension/src/index.ts:847 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:448 packages/filebrowser/src/opendialog.ts:81 packages/notebook/src/actions.tsx:1759 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/translation-extension/src/index.ts:135 packages/translation-extension/src/index.ts:138
 msgid "Cancel"
 msgstr "Anuluj"
 
@@ -1844,7 +1844,7 @@ msgstr "Motyw %1 ani domyślny motyw %2 nie został załadowany."
 msgid "Error Loading Theme"
 msgstr "Błąd ładowania motywu"
 
-#: packages/apputils/src/thememanager.ts:441 packages/docmanager-extension/src/index.ts:362 packages/extensionmanager/src/companions.tsx:218 packages/extensionmanager/src/dialog.tsx:39 packages/extensionmanager/src/widget.tsx:354 packages/extensionmanager/src/widget.tsx:355
+#: packages/apputils/src/thememanager.ts:441 packages/docmanager-extension/src/index.ts:361 packages/docmanager-extension/src/index.ts:362 packages/extensionmanager/src/companions.tsx:218 packages/extensionmanager/src/dialog.tsx:39 packages/extensionmanager/src/widget.tsx:354 packages/extensionmanager/src/widget.tsx:355
 msgid "OK"
 msgstr "OK"
 
@@ -2208,143 +2208,143 @@ msgstr "Nadpisuje domyślne przeglądarki dla typów plików.\n"
 "Dostępne typy plików:\n"
 "%2"
 
-#: packages/docmanager-extension/src/index.ts:351 packages/filebrowser-extension/src/index.ts:318
+#: packages/docmanager-extension/src/index.ts:350 packages/docmanager-extension/src/index.ts:351 packages/filebrowser-extension/src/index.ts:318
 msgid "Download"
 msgstr "Pobierz"
 
-#: packages/docmanager-extension/src/index.ts:352
+#: packages/docmanager-extension/src/index.ts:351 packages/docmanager-extension/src/index.ts:352
 msgid "Download the file to your computer"
 msgstr "Pobierz plik na swój komputer"
 
-#: packages/docmanager-extension/src/index.ts:360
+#: packages/docmanager-extension/src/index.ts:359 packages/docmanager-extension/src/index.ts:360
 msgid "Cannot Download"
 msgstr "Nie można pobrać"
 
-#: packages/docmanager-extension/src/index.ts:361 packages/docmanager-extension/src/index.ts:572 packages/docmanager-extension/src/index.ts:617 packages/docmanager-extension/src/index.ts:663 packages/docmanager-extension/src/index.ts:726
+#: packages/docmanager-extension/src/index.ts:360 packages/docmanager-extension/src/index.ts:361 packages/docmanager-extension/src/index.ts:571 packages/docmanager-extension/src/index.ts:572 packages/docmanager-extension/src/index.ts:616 packages/docmanager-extension/src/index.ts:617 packages/docmanager-extension/src/index.ts:662 packages/docmanager-extension/src/index.ts:663 packages/docmanager-extension/src/index.ts:725 packages/docmanager-extension/src/index.ts:726
 msgid "No context found for current widget!"
 msgstr "Nie znaleziono kontekstu dla bieżącego widżetu!"
 
-#: packages/docmanager-extension/src/index.ts:370 packages/docmanager-extension/src/index.ts:477 packages/filebrowser-extension/src/index.ts:1032 packages/filebrowser-extension/src/index.ts:835 packages/htmlviewer-extension/src/index.tsx:131
+#: packages/docmanager-extension/src/index.ts:369 packages/docmanager-extension/src/index.ts:370 packages/docmanager-extension/src/index.ts:476 packages/docmanager-extension/src/index.ts:477 packages/filebrowser-extension/src/index.ts:1032 packages/filebrowser-extension/src/index.ts:835 packages/htmlviewer-extension/src/index.tsx:131
 msgid "File Operations"
 msgstr "Operacje na plikach"
 
-#: packages/docmanager-extension/src/index.ts:417 packages/filebrowser-extension/src/index.ts:590
+#: packages/docmanager-extension/src/index.ts:416 packages/docmanager-extension/src/index.ts:417 packages/filebrowser-extension/src/index.ts:590
 msgid "Open in New Browser Tab"
 msgstr "Otwórz w nowej karcie przeglądarki"
 
-#: packages/docmanager-extension/src/index.ts:518 packages/filebrowser/src/browser.ts:279 packages/filebrowser/src/browser.ts:309 packages/logconsole-extension/src/index.tsx:381
+#: packages/docmanager-extension/src/index.ts:517 packages/docmanager-extension/src/index.ts:518 packages/filebrowser/src/browser.ts:279 packages/filebrowser/src/browser.ts:309 packages/logconsole-extension/src/index.tsx:381
 msgid "Error"
 msgstr "Błąd"
 
-#: packages/docmanager-extension/src/index.ts:556 packages/docmanager-extension/src/index.ts:578
+#: packages/docmanager-extension/src/index.ts:555 packages/docmanager-extension/src/index.ts:556 packages/docmanager-extension/src/index.ts:577 packages/docmanager-extension/src/index.ts:578
 msgid "Reload %1 from Disk"
 msgstr "Załaduj ponownie %1 z dysku"
 
-#: packages/docmanager-extension/src/index.ts:560
+#: packages/docmanager-extension/src/index.ts:559 packages/docmanager-extension/src/index.ts:560
 msgid "Reload contents from disk"
 msgstr "Załaduj ponownie zawartość z dysku"
 
-#: packages/docmanager-extension/src/index.ts:571
+#: packages/docmanager-extension/src/index.ts:570 packages/docmanager-extension/src/index.ts:571
 msgid "Cannot Reload"
 msgstr "Nie można załadować ponownie"
 
-#: packages/docmanager-extension/src/index.ts:573 packages/docmanager-extension/src/index.ts:618 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:671 packages/docmanager-extension/src/index.ts:727 packages/notebook/src/actions.tsx:1751 packages/notebook/src/actions.tsx:1760 packages/notebook/src/actions.tsx:1978 packages/notebook/src/default-toolbar.tsx:67 packages/notebook/src/model.ts:353 packages/notebook/src/panel.ts:219 packages/settingeditor/src/plugineditor.ts:138 packages/settingeditor/src/plugineditor.ts:260
+#: packages/docmanager-extension/src/index.ts:572 packages/docmanager-extension/src/index.ts:573 packages/docmanager-extension/src/index.ts:617 packages/docmanager-extension/src/index.ts:618 packages/docmanager-extension/src/index.ts:663 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:670 packages/docmanager-extension/src/index.ts:671 packages/docmanager-extension/src/index.ts:726 packages/docmanager-extension/src/index.ts:727 packages/notebook/src/actions.tsx:1751 packages/notebook/src/actions.tsx:1760 packages/notebook/src/actions.tsx:1978 packages/notebook/src/default-toolbar.tsx:67 packages/notebook/src/model.ts:353 packages/notebook/src/panel.ts:219 packages/settingeditor/src/plugineditor.ts:138 packages/settingeditor/src/plugineditor.ts:260
 msgid "Ok"
 msgstr "Ok"
 
-#: packages/docmanager-extension/src/index.ts:579
+#: packages/docmanager-extension/src/index.ts:578 packages/docmanager-extension/src/index.ts:579
 msgid "Are you sure you want to reload the %1 from the disk?"
 msgstr "Czy na pewno chcesz przeładować %1 z dysku?"
 
-#: packages/docmanager-extension/src/index.ts:602
+#: packages/docmanager-extension/src/index.ts:601 packages/docmanager-extension/src/index.ts:602
 msgid "Revert %1 to Checkpoint"
 msgstr "Przywróć %1 do punktu kontrolnego"
 
-#: packages/docmanager-extension/src/index.ts:606
+#: packages/docmanager-extension/src/index.ts:605 packages/docmanager-extension/src/index.ts:606
 msgid "Revert contents to previous checkpoint"
 msgstr "Przywróć zawartość do ostatniego punktu kontrolnego"
 
-#: packages/docmanager-extension/src/index.ts:616
+#: packages/docmanager-extension/src/index.ts:615 packages/docmanager-extension/src/index.ts:616
 msgid "Cannot Revert"
 msgstr "Nie można cofnąć"
 
-#: packages/docmanager-extension/src/index.ts:631
+#: packages/docmanager-extension/src/index.ts:630 packages/docmanager-extension/src/index.ts:631
 msgid "Revert %1 to checkpoint"
 msgstr "Przywróć %1 do punktu kontrolnego"
 
-#: packages/docmanager-extension/src/index.ts:635 packages/docregistry/src/context.ts:799 packages/docregistry/src/context.ts:815
+#: packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:635 packages/docregistry/src/context.ts:799 packages/docregistry/src/context.ts:815
 msgid "Revert"
 msgstr "Przywróć"
 
-#: packages/docmanager-extension/src/index.ts:653
+#: packages/docmanager-extension/src/index.ts:652 packages/docmanager-extension/src/index.ts:653
 msgid "Save %1"
 msgstr "Zapisz %1"
 
-#: packages/docmanager-extension/src/index.ts:654
+#: packages/docmanager-extension/src/index.ts:653 packages/docmanager-extension/src/index.ts:654
 msgid "Save and create checkpoint"
 msgstr "Zapisz, a następnie utwórz punkt kontrolny"
 
-#: packages/docmanager-extension/src/index.ts:662 packages/docmanager-extension/src/index.ts:669 packages/docmanager-extension/src/index.ts:725 packages/notebook/src/default-toolbar.tsx:65
+#: packages/docmanager-extension/src/index.ts:661 packages/docmanager-extension/src/index.ts:662 packages/docmanager-extension/src/index.ts:668 packages/docmanager-extension/src/index.ts:669 packages/docmanager-extension/src/index.ts:724 packages/docmanager-extension/src/index.ts:725 packages/notebook/src/default-toolbar.tsx:65
 msgid "Cannot Save"
 msgstr "Nie można zapisać"
 
-#: packages/docmanager-extension/src/index.ts:670 packages/notebook/src/default-toolbar.tsx:66
+#: packages/docmanager-extension/src/index.ts:669 packages/docmanager-extension/src/index.ts:670 packages/notebook/src/default-toolbar.tsx:66
 msgid "Document is read-only"
 msgstr "Dokument jest wyłącznie do odczytu"
 
-#: packages/docmanager-extension/src/index.ts:692
+#: packages/docmanager-extension/src/index.ts:691 packages/docmanager-extension/src/index.ts:692
 msgid "Save All"
 msgstr "Zapisz wszystko"
 
-#: packages/docmanager-extension/src/index.ts:693
+#: packages/docmanager-extension/src/index.ts:692 packages/docmanager-extension/src/index.ts:693
 msgid "Save all open documents"
 msgstr "Zapisz wszystkie otwarte dokumenty"
 
-#: packages/docmanager-extension/src/index.ts:716
+#: packages/docmanager-extension/src/index.ts:715 packages/docmanager-extension/src/index.ts:716
 msgid "Save %1 As…"
 msgstr "Zapisz %1 jako…"
 
-#: packages/docmanager-extension/src/index.ts:717
+#: packages/docmanager-extension/src/index.ts:716 packages/docmanager-extension/src/index.ts:717
 msgid "Save with new path"
 msgstr "Zapisz przy użyciu nowej ścieżki"
 
-#: packages/docmanager-extension/src/index.ts:736
+#: packages/docmanager-extension/src/index.ts:735 packages/docmanager-extension/src/index.ts:736
 msgid "Autosave Documents"
 msgstr "Autozapis Dokumentów"
 
-#: packages/docmanager-extension/src/index.ts:796
+#: packages/docmanager-extension/src/index.ts:795 packages/docmanager-extension/src/index.ts:796
 msgid "New View for %1"
 msgstr "Nowy widok dla %1"
 
-#: packages/docmanager-extension/src/index.ts:820
+#: packages/docmanager-extension/src/index.ts:819 packages/docmanager-extension/src/index.ts:820
 msgid "Rename%1…"
 msgstr "Zmień nazwę %1…"
 
-#: packages/docmanager-extension/src/index.ts:834
+#: packages/docmanager-extension/src/index.ts:833 packages/docmanager-extension/src/index.ts:834
 msgid "Delete %1"
 msgstr "Usuń %1"
 
-#: packages/docmanager-extension/src/index.ts:844 packages/docmanager-extension/src/index.ts:848 packages/filebrowser-extension/src/index.ts:687 packages/filebrowser/src/listing.ts:411 packages/filebrowser/src/listing.ts:415
+#: packages/docmanager-extension/src/index.ts:843 packages/docmanager-extension/src/index.ts:844 packages/docmanager-extension/src/index.ts:847 packages/docmanager-extension/src/index.ts:848 packages/filebrowser-extension/src/index.ts:687 packages/filebrowser/src/listing.ts:411 packages/filebrowser/src/listing.ts:415
 msgid "Delete"
 msgstr "Usuń"
 
-#: packages/docmanager-extension/src/index.ts:845
+#: packages/docmanager-extension/src/index.ts:844 packages/docmanager-extension/src/index.ts:845
 msgid "Are you sure you want to delete %1"
 msgstr "Czy na pewno chcesz usunąć %1"
 
-#: packages/docmanager-extension/src/index.ts:862
+#: packages/docmanager-extension/src/index.ts:861 packages/docmanager-extension/src/index.ts:862
 msgid "Show in File Browser"
 msgstr "Pokaż w przeglądarce plików"
 
-#: packages/docmanager-extension/src/index.ts:928
+#: packages/docmanager-extension/src/index.ts:927 packages/docmanager-extension/src/index.ts:928
 msgid "Are you sure you want to revert the %1 to the latest checkpoint? "
 msgstr "Czy na pewno chcesz przywrócić %1 do ostatniego punktu kontrolnego? "
 
-#: packages/docmanager-extension/src/index.ts:934
+#: packages/docmanager-extension/src/index.ts:933 packages/docmanager-extension/src/index.ts:934
 msgid "This cannot be undone."
 msgstr "Operacja nie może zostać cofnięta."
 
-#: packages/docmanager-extension/src/index.ts:941
+#: packages/docmanager-extension/src/index.ts:940 packages/docmanager-extension/src/index.ts:941
 msgid "The checkpoint was last updated at: "
 msgstr "Data ostatniej aktualizacji punktu kontrolnego: "
 
@@ -2482,7 +2482,7 @@ msgstr "Notatnik"
 msgid "Directory"
 msgstr "Katalog"
 
-#: packages/docregistry/src/registry.ts:1366 packages/fileeditor-extension/src/commands.ts:996
+#: packages/docregistry/src/registry.ts:1366 packages/fileeditor-extension/src/commands.ts:993 packages/fileeditor-extension/src/commands.ts:996
 msgid "Markdown File"
 msgstr "Plik Markdown"
 
@@ -2803,11 +2803,11 @@ msgstr "Kopiuj link do udostępniania"
 msgid "New Launcher"
 msgstr "Nowy Launcher"
 
-#: packages/filebrowser-extension/src/index.ts:700 packages/fileeditor-extension/src/commands.ts:838
+#: packages/filebrowser-extension/src/index.ts:700 packages/fileeditor-extension/src/commands.ts:835 packages/fileeditor-extension/src/commands.ts:838
 msgid "Copy"
 msgstr "Kopiuj"
 
-#: packages/filebrowser-extension/src/index.ts:713 packages/fileeditor-extension/src/commands.ts:797
+#: packages/filebrowser-extension/src/index.ts:713 packages/fileeditor-extension/src/commands.ts:794 packages/fileeditor-extension/src/commands.ts:797
 msgid "Cut"
 msgstr "Wytnij"
 
@@ -2847,7 +2847,7 @@ msgstr "Nie można odnaleźć ścieżki: %1"
 msgid "Cannot open"
 msgstr "Nie można otworzyć"
 
-#: packages/filebrowser-extension/src/index.ts:892 packages/fileeditor-extension/src/commands.ts:872
+#: packages/filebrowser-extension/src/index.ts:892 packages/fileeditor-extension/src/commands.ts:869 packages/fileeditor-extension/src/commands.ts:872
 msgid "Paste"
 msgstr "Wklej"
 
@@ -2859,7 +2859,7 @@ msgstr "Nowy katalog"
 msgid "New File"
 msgstr "Nowy plik"
 
-#: packages/filebrowser-extension/src/index.ts:929 packages/fileeditor-extension/src/commands.ts:995
+#: packages/filebrowser-extension/src/index.ts:929 packages/fileeditor-extension/src/commands.ts:992 packages/fileeditor-extension/src/commands.ts:995
 msgid "New Markdown File"
 msgstr "Nowy plik Markdown"
 
@@ -3060,47 +3060,47 @@ msgstr "Przesyłanie…"
 msgid "Complete!"
 msgstr "Ukończono!"
 
-#: packages/fileeditor-extension/src/commands.ts:1027 packages/fileeditor-extension/src/commands.ts:1041 packages/fileeditor-extension/src/commands.ts:1057 packages/launcher/src/index.tsx:151 packages/launcher/src/index.tsx:161 packages/launcher/src/index.tsx:434 packages/terminal-extension/src/index.ts:228
+#: packages/fileeditor-extension/src/commands.ts:1024 packages/fileeditor-extension/src/commands.ts:1027 packages/fileeditor-extension/src/commands.ts:1038 packages/fileeditor-extension/src/commands.ts:1041 packages/fileeditor-extension/src/commands.ts:1054 packages/fileeditor-extension/src/commands.ts:1057 packages/launcher/src/index.tsx:151 packages/launcher/src/index.tsx:161 packages/launcher/src/index.tsx:434 packages/terminal-extension/src/index.ts:228 packages/terminal-extension/src/index.ts:261
 msgid "Other"
 msgstr "Inne"
 
-#: packages/fileeditor-extension/src/commands.ts:1087 packages/fileeditor-extension/src/commands.ts:1111 packages/fileeditor-extension/src/commands.ts:1126 packages/fileeditor-extension/src/commands.ts:1141 packages/fileeditor-extension/src/commands.ts:1159
+#: packages/fileeditor-extension/src/commands.ts:1084 packages/fileeditor-extension/src/commands.ts:1087 packages/fileeditor-extension/src/commands.ts:1108 packages/fileeditor-extension/src/commands.ts:1111 packages/fileeditor-extension/src/commands.ts:1123 packages/fileeditor-extension/src/commands.ts:1126 packages/fileeditor-extension/src/commands.ts:1138 packages/fileeditor-extension/src/commands.ts:1141 packages/fileeditor-extension/src/commands.ts:1156 packages/fileeditor-extension/src/commands.ts:1159
 msgid "Text Editor"
 msgstr "Edytor tekstu"
 
-#: packages/fileeditor-extension/src/commands.ts:1281 packages/fileeditor-extension/src/commands.ts:530
+#: packages/fileeditor-extension/src/commands.ts:1278 packages/fileeditor-extension/src/commands.ts:1281 packages/fileeditor-extension/src/commands.ts:527 packages/fileeditor-extension/src/commands.ts:530
 msgid "Create Console for Editor"
 msgstr "Utwórz konsolę dla edytora"
 
-#: packages/fileeditor-extension/src/commands.ts:1299 packages/fileeditor-extension/src/commands.ts:601
+#: packages/fileeditor-extension/src/commands.ts:1296 packages/fileeditor-extension/src/commands.ts:1299 packages/fileeditor-extension/src/commands.ts:598 packages/fileeditor-extension/src/commands.ts:601
 msgid "Run Code"
 msgstr "Uruchom kod"
 
-#: packages/fileeditor-extension/src/commands.ts:1300 packages/fileeditor-extension/src/commands.ts:646
+#: packages/fileeditor-extension/src/commands.ts:1297 packages/fileeditor-extension/src/commands.ts:1300 packages/fileeditor-extension/src/commands.ts:643 packages/fileeditor-extension/src/commands.ts:646
 msgid "Run All Code"
 msgstr "Uruchom całość kodu"
 
-#: packages/fileeditor-extension/src/commands.ts:1302
+#: packages/fileeditor-extension/src/commands.ts:1299 packages/fileeditor-extension/src/commands.ts:1302
 msgid "Restart Kernel and Run All Code"
 msgstr "Zrestartuj jądro i uruchom całość kodu"
 
-#: packages/fileeditor-extension/src/commands.ts:303
+#: packages/fileeditor-extension/src/commands.ts:300 packages/fileeditor-extension/src/commands.ts:303
 msgid "Increase Text Editor Font Size"
 msgstr "Zwiększ rozmiar czcionki edytora tekstu"
 
-#: packages/fileeditor-extension/src/commands.ts:307
+#: packages/fileeditor-extension/src/commands.ts:304 packages/fileeditor-extension/src/commands.ts:307
 msgid "Decrease Text Editor Font Size"
 msgstr "Zmniejsz rozmiar czcionki edytora tekstu"
 
-#: packages/fileeditor-extension/src/commands.ts:335
+#: packages/fileeditor-extension/src/commands.ts:332 packages/fileeditor-extension/src/commands.ts:335
 msgid "Line Numbers"
 msgstr "Numery linii"
 
-#: packages/fileeditor-extension/src/commands.ts:365
+#: packages/fileeditor-extension/src/commands.ts:362 packages/fileeditor-extension/src/commands.ts:365
 msgid "Word Wrap"
 msgstr "Zawijanie wierszy"
 
-#: packages/fileeditor-extension/src/commands.ts:381 packages/fileeditor-extension/src/index.ts:98
+#: packages/fileeditor-extension/src/commands.ts:378 packages/fileeditor-extension/src/commands.ts:381 packages/fileeditor-extension/src/index.ts:98
 msgid "Spaces: %1"
 msgid_plural "Spaces: %1"
 msgstr[0] "Spacja: %1"
@@ -3108,55 +3108,55 @@ msgstr[1] "Spacje: %1"
 msgstr[2] "Spacje: %1"
 msgstr[3] "Spacji: %1"
 
-#: packages/fileeditor-extension/src/commands.ts:387 packages/fileeditor-extension/src/index.ts:91
+#: packages/fileeditor-extension/src/commands.ts:384 packages/fileeditor-extension/src/commands.ts:387 packages/fileeditor-extension/src/index.ts:91
 msgid "Indent with Tab"
 msgstr "Wcinaj tabulatorami"
 
-#: packages/fileeditor-extension/src/commands.ts:426 packages/mainmenu-extension/src/index.ts:583
+#: packages/fileeditor-extension/src/commands.ts:423 packages/fileeditor-extension/src/commands.ts:426 packages/mainmenu-extension/src/index.ts:583
 msgid "Match Brackets"
 msgstr "Dopasuj nawiasy"
 
-#: packages/fileeditor-extension/src/commands.ts:452
+#: packages/fileeditor-extension/src/commands.ts:449 packages/fileeditor-extension/src/commands.ts:452
 msgid "Auto Close Brackets for Text Editor"
 msgstr "Automatyczne zamykanie nawiasów dla edytora tekstu"
 
-#: packages/fileeditor-extension/src/commands.ts:478
+#: packages/fileeditor-extension/src/commands.ts:475 packages/fileeditor-extension/src/commands.ts:478
 msgid "Auto Close Brackets"
 msgstr "Automatyczne zamykanie nawiasów"
 
-#: packages/fileeditor-extension/src/commands.ts:505
+#: packages/fileeditor-extension/src/commands.ts:502 packages/fileeditor-extension/src/commands.ts:505
 msgid "Replace Selection in Editor"
 msgstr "Zastąp zaznaczenie w edytorze"
 
-#: packages/fileeditor-extension/src/commands.ts:679
+#: packages/fileeditor-extension/src/commands.ts:676 packages/fileeditor-extension/src/commands.ts:679
 msgid "Show Markdown Preview"
 msgstr "Pokaż podgląd Markdown"
 
-#: packages/fileeditor-extension/src/commands.ts:717 packages/mainmenu-extension/src/index.ts:258
+#: packages/fileeditor-extension/src/commands.ts:714 packages/fileeditor-extension/src/commands.ts:717 packages/mainmenu-extension/src/index.ts:258
 msgid "Undo"
 msgstr "Cofnij"
 
-#: packages/fileeditor-extension/src/commands.ts:755 packages/mainmenu-extension/src/index.ts:263
+#: packages/fileeditor-extension/src/commands.ts:752 packages/fileeditor-extension/src/commands.ts:755 packages/mainmenu-extension/src/index.ts:263
 msgid "Redo"
 msgstr "Ponów"
 
-#: packages/fileeditor-extension/src/commands.ts:897
+#: packages/fileeditor-extension/src/commands.ts:894 packages/fileeditor-extension/src/commands.ts:897
 msgid "Select All"
 msgstr "Zaznacz wszystko"
 
-#: packages/fileeditor-extension/src/commands.ts:961
+#: packages/fileeditor-extension/src/commands.ts:958 packages/fileeditor-extension/src/commands.ts:961
 msgid "New Text File"
 msgstr "Nowy plik tekstowy"
 
-#: packages/fileeditor-extension/src/commands.ts:963
+#: packages/fileeditor-extension/src/commands.ts:960 packages/fileeditor-extension/src/commands.ts:963
 msgid "Text File"
 msgstr "Plik tekstowy"
 
-#: packages/fileeditor-extension/src/commands.ts:966
+#: packages/fileeditor-extension/src/commands.ts:963 packages/fileeditor-extension/src/commands.ts:966
 msgid "Create a new text file"
 msgstr "Utwórz nowy plik tekstowy"
 
-#: packages/fileeditor-extension/src/commands.ts:997
+#: packages/fileeditor-extension/src/commands.ts:994 packages/fileeditor-extension/src/commands.ts:997
 msgid "Create a new markdown file"
 msgstr "Utwórz nowy plik Markdown"
 
@@ -3561,7 +3561,7 @@ msgstr "Zamknij i wyłącz"
 msgid "New Console for Activity"
 msgstr "Nowa konsola dla aktywności"
 
-#: packages/mainmenu-extension/src/index.ts:376 packages/mainmenu-extension/src/index.ts:386 packages/running-extension/src/kernels.ts:39 packages/running/src/index.tsx:142 packages/terminal-extension/src/index.ts:259
+#: packages/mainmenu-extension/src/index.ts:376 packages/mainmenu-extension/src/index.ts:386 packages/running-extension/src/kernels.ts:39 packages/running/src/index.tsx:142 packages/terminal-extension/src/index.ts:259 packages/terminal-extension/src/index.ts:292
 msgid "Shut Down"
 msgstr "Wyłącz"
 
@@ -3613,7 +3613,7 @@ msgstr "Zamknąć wszystko?"
 msgid "Shut down all kernels?"
 msgstr "Zamknąć wszystkie jądra?"
 
-#: packages/mainmenu-extension/src/index.ts:542 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:260
+#: packages/mainmenu-extension/src/index.ts:542 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:260 packages/terminal-extension/src/index.ts:293
 msgid "Shut Down All"
 msgstr "Zamknąć wszystko"
 
@@ -4092,6 +4092,14 @@ msgstr "Zapisz zawartość notatnika i utwórz punkt kontrolny"
 #: packages/notebook/src/model.ts:330
 msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "to the current notebook format (v%2).\n"
+"The next time you save this notebook, the current notebook format (v%2) will be used.\n"
+"'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\n"
+"close the notebook without saving it."
+msgstr ""
+
+#: packages/notebook/src/model.ts:330
+msgid "This notebook has been converted from an older notebook format (v%1)\n"
+"to the current notebook format (v%2).\n"
 "The next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n"
 "'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\n"
 "close the notebook without saving it."
@@ -4361,63 +4369,63 @@ msgstr "Przejdź do linii…"
 msgid "%1 Terminals, %2 Kernel sessions"
 msgstr "%1 terminale, %2 sesji jądra"
 
-#: packages/terminal-extension/src/index.ts:185
-msgid "Shutdown Terminal"
-msgstr "Zamknij terminal"
-
-#: packages/terminal-extension/src/index.ts:208 packages/terminal-extension/src/index.ts:402
+#: packages/terminal-extension/src/index.ts:182 packages/terminal-extension/src/index.ts:208 packages/terminal-extension/src/index.ts:241 packages/terminal-extension/src/index.ts:402 packages/terminal-extension/src/index.ts:435
 msgid "Inherit"
 msgstr "Dziedzicz"
 
-#: packages/terminal-extension/src/index.ts:215 packages/terminal-extension/src/index.ts:403
+#: packages/terminal-extension/src/index.ts:185 packages/terminal-extension/src/index.ts:218
+msgid "Shutdown Terminal"
+msgstr "Zamknij terminal"
+
+#: packages/terminal-extension/src/index.ts:190 packages/terminal-extension/src/index.ts:215 packages/terminal-extension/src/index.ts:248 packages/terminal-extension/src/index.ts:403 packages/terminal-extension/src/index.ts:436
 msgid "Light"
 msgstr "Jasny"
 
-#: packages/terminal-extension/src/index.ts:220 packages/terminal-extension/src/index.ts:404
+#: packages/terminal-extension/src/index.ts:196 packages/terminal-extension/src/index.ts:220 packages/terminal-extension/src/index.ts:253 packages/terminal-extension/src/index.ts:404 packages/terminal-extension/src/index.ts:437
 msgid "Dark"
 msgstr "Ciemny"
 
-#: packages/terminal-extension/src/index.ts:253
+#: packages/terminal-extension/src/index.ts:253 packages/terminal-extension/src/index.ts:286
 msgid "Terminals"
 msgstr "Terminale"
 
-#: packages/terminal-extension/src/index.ts:261
+#: packages/terminal-extension/src/index.ts:261 packages/terminal-extension/src/index.ts:294
 msgid "Are you sure you want to permanently shut down all running terminals?"
 msgstr "Czy na pewno chcesz trwale zamknąć wszystkie uruchomione terminale?"
 
-#: packages/terminal-extension/src/index.ts:303
+#: packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:336
 msgid "New Terminal"
 msgstr "Nowy terminal"
 
-#: packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:88 packages/terminal/src/widget.ts:69
+#: packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:336 packages/terminal-extension/src/index.ts:88 packages/terminal-extension/src/index.ts:89 packages/terminal/src/widget.ts:69
 msgid "Terminal"
 msgstr "Terminal"
 
-#: packages/terminal-extension/src/index.ts:304
+#: packages/terminal-extension/src/index.ts:304 packages/terminal-extension/src/index.ts:337
 msgid "Start a new terminal session"
 msgstr "Rozpocznij nową sesję terminala"
 
-#: packages/terminal-extension/src/index.ts:353
+#: packages/terminal-extension/src/index.ts:353 packages/terminal-extension/src/index.ts:386
 msgid "Refresh Terminal"
 msgstr "Odśwież terminal"
 
-#: packages/terminal-extension/src/index.ts:354
+#: packages/terminal-extension/src/index.ts:354 packages/terminal-extension/src/index.ts:387
 msgid "Refresh the current terminal session"
 msgstr "Odśwież bieżącą sesję terminalu"
 
-#: packages/terminal-extension/src/index.ts:374
+#: packages/terminal-extension/src/index.ts:374 packages/terminal-extension/src/index.ts:407
 msgid "Increase Terminal Font Size"
 msgstr "Zwiększ rozmiar czcionki terminalu"
 
-#: packages/terminal-extension/src/index.ts:388
+#: packages/terminal-extension/src/index.ts:388 packages/terminal-extension/src/index.ts:421
 msgid "Decrease Terminal Font Size"
 msgstr "Zmniejsz rozmiar czcionki terminalu"
 
-#: packages/terminal-extension/src/index.ts:415
+#: packages/terminal-extension/src/index.ts:415 packages/terminal-extension/src/index.ts:448
 msgid "Use Terminal Theme: %1"
 msgstr "Użyj motywu Terminalu: %1"
 
-#: packages/terminal-extension/src/index.ts:418
+#: packages/terminal-extension/src/index.ts:418 packages/terminal-extension/src/index.ts:451
 msgid "Set the terminal theme"
 msgstr "Ustaw motyw terminalu"
 
@@ -4473,15 +4481,15 @@ msgstr "Przełącz komórki tekstowe Markdown"
 msgid "Show Tags Menu"
 msgstr "Pokaż menu etykiet"
 
-#: packages/translation-extension/src/index.ts:129
+#: packages/translation-extension/src/index.ts:129 packages/translation-extension/src/index.ts:132
 msgid "Change interface language?"
 msgstr "Zmienić język interfejsu?"
 
-#: packages/translation-extension/src/index.ts:130
+#: packages/translation-extension/src/index.ts:130 packages/translation-extension/src/index.ts:133
 msgid "After changing the interface language to %1, you will need to reload JupyterLab to see the changes."
 msgstr "Po zmianie języka interfejsu na %1 będziesz musieć przeładować JupyterLab aby zobaczyć zmiany."
 
-#: packages/translation-extension/src/index.ts:136
+#: packages/translation-extension/src/index.ts:136 packages/translation-extension/src/index.ts:139
 msgid "Change and reload"
 msgstr "Zmień i załaduj ponownie"
 
