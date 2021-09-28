@@ -6,6 +6,7 @@
 * Melissa Weber Mendonça ([@melissawm](https://crowdin.com/profile/melissawm))
 * Itanú Romero ([@ItanuRomero](https://crowdin.com/profile/ItanuRomero))
 * lakto69 ([@lakto69](https://crowdin.com/profile/lakto69))
+* Julio Batista Silva ([@jbsilva](https://crowdin.com/profile/jbsilva))
 * Caio Pereira Oliveira ([@caiopo](https://crowdin.com/profile/caiopo))
 * Carlos Leal de Castro ([@lealdecastro](https://crowdin.com/profile/lealdecastro))
 * Luiz Fernando Bossa ([@LFBossa](https://crowdin.com/profile/LFBossa))
