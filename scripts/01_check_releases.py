@@ -7,11 +7,11 @@
 """
 import argparse
 import re
-import requests
 from pathlib import Path
 
+import requests
 import yaml
-from packaging.version import parse
+from packaging.version import LegacyVersion, parse
 
 # Constants
 HERE = Path(__file__).parent.resolve()
@@ -52,6 +52,9 @@ if __name__ == "__main__":
                 if response.ok:
                     for tag in response.json():
                         version = parse(tag["name"])
+                        if isinstance(version, LegacyVersion):
+                            continue
+
                         if not version.is_prerelease and version > current_version:
                             print(f"Package `{package_name}` has a new version available: {version!s}.")
                             data[package_name]["current-version-tag"] = tag["name"]

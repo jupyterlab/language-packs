@@ -10,23 +10,45 @@ To install a specific language pack please see the [available packs](https://git
 
 ## Adding a new extension
 
-Follow the instructions described in the [developer documentation](https://jupyterlab.readthedocs.io/en/stable/) of JupyterLab.
+Follow the instructions described in the [developer documentation](https://jupyterlab.readthedocs.io/en/stable/extension/internationalization.html) of JupyterLab.
 
 Create a PR adding a new entry to the [repository-map.yml](https://github.com/jupyterlab/language-packs/blob/master/repository-map.yml) file.
 
 ```yaml
-# Package name, repository url and current version
-jupyterlab:
-  current-version-tag: v3.0.0b4
-  url: https://github.com/jupyterlab/jupyterlab
-# Add extensions alphabetically. Use lowercase for keys.
+# Packages in alphabetical order
 dask-labextension:
-  current-version-tag: v1.0.0
+  current-version-tag: 5.0.2
+  supported-versions: 5.0.x
   url: https://github.com/dask/dask-labextension
+jupyterlab:
+  current-version-tag: v3.1.14
+  supported-versions: 3.1.x
+  url: https://github.com/jupyterlab/jupyterlab
 jupyterlab-git:
-  current-version-tag: v0.21.1
+  current-version-tag: v0.32.4
+  supported-versions: '>=0.30.0 <0.40.0'
   url: https://github.com/jupyterlab/jupyterlab-git
 ```
+
+The three entries requires are:
+
+- `current-version-tag`: The latest Git tag to consider as reference for the package.
+- `supported-versions`: A semver range (npm syntax) of supported versions
+- `url`: Git repository URL (only HTTP on GitHub is supported)
+
+The current tag is used by a bot to check for new GitHub release. If one is detected, it
+will bump the tag and open a PR to add this changes.
+
+The source strings are gathered for multiple versions matching the `supported-versions` range.
+The list of versions included is computed as follow:
+
+1. Get the last 100 tags from the GitHub
+2. Check if the tag is a parsable non-dev non-prerelease version (parsing is done using Python function `packaging.version.parse`)
+3. Check that the tag is part of the supported range(s)
+
+> The `current-version-tag` can be a _branch_ name (no recommended). In such a case, `supported-versions` has
+> no effect and the source strings are only extracted from the current branch HEAD commit (no merging with the
+> previous POT file).
 
 After the PR is merged, our bot will create/update the `.pot` files in a subsequent PR. Once merged, the catalog for the new extension will be available on [Crowdin](https://crowdin.com/project/jupyterlab).
 
