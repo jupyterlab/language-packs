@@ -30,23 +30,23 @@ jupyterlab-git:
   url: https://github.com/jupyterlab/jupyterlab-git
 ```
 
-The three entries requires are:
+The three entries required are:
 
 - `current-version-tag`: The latest Git tag to consider as reference for the package.
-- `supported-versions`: A semver range (npm syntax) of supported versions
-- `url`: Git repository URL (only HTTP on GitHub is supported)
+- `supported-versions`: A semver range (npm syntax) of supported versions.
+- `url`: Git repository URL (only HTTP on GitHub is supported).
 
 The current tag is used by a bot to check for new GitHub release. If one is detected, it
-will bump the tag and open a PR to add this changes.
+will bump the tag and open a PR to add this change.
 
 The source strings are gathered for multiple versions matching the `supported-versions` range.
 The list of versions included is computed as follow:
 
-1. Get the last 100 tags from the GitHub
+1. Get the last 100 tags from the GitHub repository
 2. Check if the tag is a parsable non-dev non-prerelease version (parsing is done using Python function `packaging.version.parse`)
 3. Check that the tag is part of the supported range(s)
 
-> The `current-version-tag` can be a _branch_ name (no recommended). In such a case, `supported-versions` has
+> The `current-version-tag` can be a _branch_ name (not recommended). In such a case, `supported-versions` has
 > no effect and the source strings are only extracted from the current branch HEAD commit (no merging with the
 > previous POT file).
 
