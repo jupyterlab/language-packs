@@ -26,7 +26,7 @@ import jupyterlab_translate.api as api
 import requests
 import semantic_version as semver
 import yaml
-from packaging.version import LegacyVersion, parse
+from packaging.version import parse
 
 # Constants
 HERE = Path(__file__).parent.resolve()
@@ -187,7 +187,7 @@ if __name__ == "__main__":
                     for tag in response.json():
                         version = parse(tag["name"])
                         if (
-                            isinstance(version, LegacyVersion)  # non standard version
+                            version.release is None  # non standard version
                             or version == parse(current_version)  # Already handled
                             or version.is_devrelease # Skip non final versions
                             or version.is_prerelease
