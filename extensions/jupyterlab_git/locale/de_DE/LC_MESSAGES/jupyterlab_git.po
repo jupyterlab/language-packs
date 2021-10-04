@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 97\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2021-09-28 08:34\n"
+"PO-Revision-Date: 2021-10-04 14:27\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
@@ -89,6 +89,11 @@ msgctxt "settings"
 msgid "If true, double clicking a file in the list of changed files will open a diff."
 msgstr ""
 
+#: /schema/plugin.json:/properties/doubleClickDiff/description
+msgctxt "settings"
+msgid "If true, doubling clicking a file in the list of changed files will open a diff."
+msgstr ""
+
 #: /schema/plugin.json:/properties/doubleClickDiff/title
 msgctxt "settings"
 msgid "Show diff on double click"
@@ -139,431 +144,403 @@ msgctxt "schema"
 msgid "Git"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:1012
-msgid "No actions available"
-msgstr "Keine Aktionen verfügbar"
-
-#: src/commandsAndMenu.tsx:1031
-msgid "Set Up Remotes"
-msgstr ""
-
-#: src/commandsAndMenu.tsx:1035
-msgid "Git Documentation"
-msgstr "Git-Dokumentation"
-
-#: src/commandsAndMenu.tsx:1069
-msgid " Help "
-msgstr " Hilfe "
-
-#: src/commandsAndMenu.tsx:118
+#: src/commandsAndMenu.tsx:117 src/commandsAndMenu.tsx:118 src/commandsAndMenu.tsx:119
 msgid "Commit from the Commit Box"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:119
-msgid "Submit the commit using the summary and description from commit box"
-msgstr ""
-
-#: src/commandsAndMenu.tsx:130
-msgid "Open Git Repository in Terminal"
-msgstr "Git-Repositorium im Terminal öffnen"
-
-#: src/commandsAndMenu.tsx:1303 src/commandsAndMenu.tsx:1307
+#: src/commandsAndMenu.tsx:1172 src/commandsAndMenu.tsx:1174 src/commandsAndMenu.tsx:1180 src/commandsAndMenu.tsx:1203 src/commandsAndMenu.tsx:1232 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1241
 msgid "Git credentials required"
 msgstr "Git-Anmeldedaten erforderlich"
 
-#: src/commandsAndMenu.tsx:1306 src/commandsAndMenu.tsx:1310 src/widgets/CredentialsBox.tsx:15
+#: src/commandsAndMenu.tsx:1175 src/commandsAndMenu.tsx:1177 src/commandsAndMenu.tsx:1183 src/commandsAndMenu.tsx:1206 src/commandsAndMenu.tsx:1235 src/commandsAndMenu.tsx:1239 src/commandsAndMenu.tsx:1244 src/widgets/CredentialsBox.tsx:14 src/widgets/CredentialsBox.tsx:15
 msgid "Enter credentials for remote repository"
 msgstr "Anmeldedaten für entferntes Repositoríum eingeben"
 
-#: src/commandsAndMenu.tsx:1307 src/commandsAndMenu.tsx:1311
+#: src/commandsAndMenu.tsx:1176 src/commandsAndMenu.tsx:1178 src/commandsAndMenu.tsx:1184 src/commandsAndMenu.tsx:1207 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1240 src/commandsAndMenu.tsx:1245
 msgid "Incorrect username or password."
 msgstr "Falscher Benutzername oder falsches Passwort."
 
-#: src/commandsAndMenu.tsx:131
+#: src/commandsAndMenu.tsx:118 src/commandsAndMenu.tsx:119 src/commandsAndMenu.tsx:120
+msgid "Submit the commit using the summary and description from commit box"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:129 src/commandsAndMenu.tsx:130 src/commandsAndMenu.tsx:131
+msgid "Open Git Repository in Terminal"
+msgstr "Git-Repositorium im Terminal öffnen"
+
+#: src/commandsAndMenu.tsx:130 src/commandsAndMenu.tsx:131 src/commandsAndMenu.tsx:132
 msgid "Open a New Terminal to the Git Repository"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:162
+#: src/commandsAndMenu.tsx:159 src/commandsAndMenu.tsx:161 src/commandsAndMenu.tsx:162 src/commandsAndMenu.tsx:163
 msgid "Git Interface"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:163
+#: src/commandsAndMenu.tsx:160 src/commandsAndMenu.tsx:162 src/commandsAndMenu.tsx:163 src/commandsAndMenu.tsx:164
 msgid "Go to Git user interface"
 msgstr "Zur Git-Benutzeroberfläche wechseln"
 
-#: src/commandsAndMenu.tsx:175 src/commandsAndMenu.tsx:182 src/components/GitPanel.tsx:461
+#: src/commandsAndMenu.tsx:172 src/commandsAndMenu.tsx:174 src/commandsAndMenu.tsx:175 src/commandsAndMenu.tsx:176 src/commandsAndMenu.tsx:179 src/commandsAndMenu.tsx:181 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/components/GitPanel.tsx:445 src/components/GitPanel.tsx:461 src/components/GitPanel.tsx:466
 msgid "Initialize a Repository"
 msgstr "Ein Repositorium initialisieren"
 
-#: src/commandsAndMenu.tsx:176
+#: src/commandsAndMenu.tsx:173 src/commandsAndMenu.tsx:175 src/commandsAndMenu.tsx:176 src/commandsAndMenu.tsx:177
 msgid "Create an empty Git repository or reinitialize an existing one"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:183
+#: src/commandsAndMenu.tsx:180 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:184
 msgid "Do you really want to make this directory a Git Repo?"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:847 src/commandsAndMenu.tsx:890 src/components/BranchMenu.tsx:344 src/components/FileList.tsx:193 src/components/FileList.tsx:218 src/components/NewBranchDialog.tsx:202
+#: src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:297 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:743 src/commandsAndMenu.tsx:745 src/commandsAndMenu.tsx:751 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:794 src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:819 src/commandsAndMenu.tsx:820 src/components/BranchMenu.tsx:344 src/components/FileList.tsx:182 src/components/FileList.tsx:191 src/components/FileList.tsx:207 src/components/FileList.tsx:216 src/components/NewBranchDialog.tsx:202 src/components/NewBranchDialog.tsx:209
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: src/commandsAndMenu.tsx:186
+#: src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:187
 msgid "Yes"
 msgstr "Ja"
 
-#: src/commandsAndMenu.tsx:192
+#: src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193
 msgid "Initializing..."
 msgstr "Wird initialisiert ..."
 
-#: src/commandsAndMenu.tsx:199
+#: src/commandsAndMenu.tsx:196 src/commandsAndMenu.tsx:198 src/commandsAndMenu.tsx:199 src/commandsAndMenu.tsx:200
 msgid "Git repository initialized."
 msgstr "Git-Repositorium initialisiert."
 
-#: src/commandsAndMenu.tsx:204
+#: src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:203 src/commandsAndMenu.tsx:204 src/commandsAndMenu.tsx:205
 msgid "Encountered an error when initializing the repository. Error: "
 msgstr ""
 
-#: src/commandsAndMenu.tsx:210
+#: src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:209 src/commandsAndMenu.tsx:210 src/commandsAndMenu.tsx:211
 msgid "Failed to initialize the Git repository"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:231
+#: src/commandsAndMenu.tsx:228 src/commandsAndMenu.tsx:230 src/commandsAndMenu.tsx:231 src/commandsAndMenu.tsx:232
 msgid "Simple staging"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:240
+#: src/commandsAndMenu.tsx:237 src/commandsAndMenu.tsx:239 src/commandsAndMenu.tsx:240 src/commandsAndMenu.tsx:241
 msgid "Double click opens diff"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:249
+#: src/commandsAndMenu.tsx:246 src/commandsAndMenu.tsx:248 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:250
 msgid "Add Remote Repository"
 msgstr "Entferntes Repositorium hinzufügen"
 
-#: src/commandsAndMenu.tsx:250
+#: src/commandsAndMenu.tsx:247 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:250 src/commandsAndMenu.tsx:251
 msgid "Add a Git remote repository"
 msgstr "Ein entferntes Git-Repositorium hinzufügen"
 
-#: src/commandsAndMenu.tsx:255
+#: src/commandsAndMenu.tsx:252 src/commandsAndMenu.tsx:254 src/commandsAndMenu.tsx:255 src/commandsAndMenu.tsx:256
 msgid "Not in a Git repository. Unable to add a remote."
 msgstr ""
 
-#: src/commandsAndMenu.tsx:264
+#: src/commandsAndMenu.tsx:261 src/commandsAndMenu.tsx:263 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:265
 msgid "Add a remote repository"
 msgstr "Ein entferntes Repositorium hinzufügen"
 
-#: src/commandsAndMenu.tsx:265
+#: src/commandsAndMenu.tsx:262 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:265 src/commandsAndMenu.tsx:266
 msgid "Remote Git repository URL"
 msgstr "URL des entfernten Git-Repositoriums"
 
-#: src/commandsAndMenu.tsx:279
+#: src/commandsAndMenu.tsx:276 src/commandsAndMenu.tsx:278 src/commandsAndMenu.tsx:279 src/commandsAndMenu.tsx:280
 msgid "Error when adding remote repository"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:289 src/components/GitPanel.tsx:470
+#: src/commandsAndMenu.tsx:286 src/commandsAndMenu.tsx:288 src/commandsAndMenu.tsx:289 src/commandsAndMenu.tsx:290 src/components/GitPanel.tsx:454 src/components/GitPanel.tsx:470 src/components/GitPanel.tsx:475
 msgid "Clone a Repository"
 msgstr "Ein Repositorium klonen"
 
-#: src/commandsAndMenu.tsx:290
+#: src/commandsAndMenu.tsx:287 src/commandsAndMenu.tsx:289 src/commandsAndMenu.tsx:290 src/commandsAndMenu.tsx:291
 msgid "Clone a repository from a URL"
 msgstr "Ein Repository von einer URL klonen"
 
-#: src/commandsAndMenu.tsx:294
+#: src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:293 src/commandsAndMenu.tsx:294 src/commandsAndMenu.tsx:295
 msgid "Clone a repo"
 msgstr "Ein Repo klonen"
 
-#: src/commandsAndMenu.tsx:299
+#: src/commandsAndMenu.tsx:296 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:300
 msgid "CLONE"
 msgstr "KLONEN"
 
-#: src/commandsAndMenu.tsx:306
+#: src/commandsAndMenu.tsx:303 src/commandsAndMenu.tsx:305 src/commandsAndMenu.tsx:306 src/commandsAndMenu.tsx:307
 msgid "Cloning..."
 msgstr "Wird geklont ..."
 
-#: src/commandsAndMenu.tsx:316
+#: src/commandsAndMenu.tsx:313 src/commandsAndMenu.tsx:315 src/commandsAndMenu.tsx:316 src/commandsAndMenu.tsx:317
 msgid "Successfully cloned"
 msgstr "Erfolgreich geklont"
 
-#: src/commandsAndMenu.tsx:327
+#: src/commandsAndMenu.tsx:324 src/commandsAndMenu.tsx:326 src/commandsAndMenu.tsx:327 src/commandsAndMenu.tsx:328
 msgid "Failed to clone"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:338 src/commandsAndMenu.tsx:339
+#: src/commandsAndMenu.tsx:335 src/commandsAndMenu.tsx:336 src/commandsAndMenu.tsx:337 src/commandsAndMenu.tsx:338 src/commandsAndMenu.tsx:339 src/commandsAndMenu.tsx:340
 msgid "Open .gitignore"
 msgstr ".gitignore öffnen"
 
-#: src/commandsAndMenu.tsx:350
-msgid "Push to Remote (Force)"
-msgstr ""
-
-#: src/commandsAndMenu.tsx:351
+#: src/commandsAndMenu.tsx:345 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:352
 msgid "Push to Remote"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:352
+#: src/commandsAndMenu.tsx:346 src/commandsAndMenu.tsx:348 src/commandsAndMenu.tsx:352 src/commandsAndMenu.tsx:353
 msgid "Push code to remote repository"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:357
+#: src/commandsAndMenu.tsx:350 src/commandsAndMenu.tsx:351
+msgid "Push to Remote (Force)"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:357 src/commandsAndMenu.tsx:358
 msgid "Pushing..."
 msgstr ""
 
-#: src/commandsAndMenu.tsx:366
+#: src/commandsAndMenu.tsx:360 src/commandsAndMenu.tsx:362 src/commandsAndMenu.tsx:366 src/commandsAndMenu.tsx:367
 msgid "Successfully pushed"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:372
+#: src/commandsAndMenu.tsx:366 src/commandsAndMenu.tsx:368 src/commandsAndMenu.tsx:372 src/commandsAndMenu.tsx:373
 msgid "Encountered an error when pushing changes. Error: "
 msgstr ""
 
-#: src/commandsAndMenu.tsx:376
+#: src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:372 src/commandsAndMenu.tsx:376 src/commandsAndMenu.tsx:377
 msgid "Failed to push"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:386
+#: src/commandsAndMenu.tsx:380 src/commandsAndMenu.tsx:382 src/commandsAndMenu.tsx:386 src/commandsAndMenu.tsx:387
 msgid "Pull from Remote"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:387
+#: src/commandsAndMenu.tsx:381 src/commandsAndMenu.tsx:383 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:388
 msgid "Pull latest code from remote repository"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:392
+#: src/commandsAndMenu.tsx:386 src/commandsAndMenu.tsx:388 src/commandsAndMenu.tsx:392 src/commandsAndMenu.tsx:393
 msgid "Pulling..."
 msgstr ""
 
-#: src/commandsAndMenu.tsx:401
+#: src/commandsAndMenu.tsx:395 src/commandsAndMenu.tsx:397 src/commandsAndMenu.tsx:401 src/commandsAndMenu.tsx:402
 msgid "Successfully pulled"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:411
+#: src/commandsAndMenu.tsx:405 src/commandsAndMenu.tsx:407 src/commandsAndMenu.tsx:411 src/commandsAndMenu.tsx:412
 msgid "Failed to pull"
 msgstr "Pull fehlgeschlagen"
 
-#: src/commandsAndMenu.tsx:428
+#: src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:423 src/commandsAndMenu.tsx:427 src/commandsAndMenu.tsx:428
 msgid "Show Diff"
 msgstr "Diff anzeigen"
 
-#: src/commandsAndMenu.tsx:429
+#: src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:424 src/commandsAndMenu.tsx:428 src/commandsAndMenu.tsx:429
 msgid "Display a file diff."
 msgstr ""
 
-#: src/commandsAndMenu.tsx:477
-msgid "Mark as resolved"
-msgstr ""
-
-#: src/commandsAndMenu.tsx:481
-msgid "Resolve with conflicts"
-msgstr ""
-
-#: src/commandsAndMenu.tsx:482
-msgid "Are you sure you want to mark this file as resolved with merge conflicts?"
-msgstr ""
-
-#: src/commandsAndMenu.tsx:509
-msgid "Mark file as resolved"
-msgstr ""
-
-#: src/commandsAndMenu.tsx:516
+#: src/commandsAndMenu.tsx:468 src/commandsAndMenu.tsx:470 src/commandsAndMenu.tsx:474 src/commandsAndMenu.tsx:475
 msgid "Refresh"
 msgstr "Aktualisieren"
 
-#: src/commandsAndMenu.tsx:521
+#: src/commandsAndMenu.tsx:473 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:479 src/commandsAndMenu.tsx:480
 msgid "Refresh diff widget"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:549
+#: src/commandsAndMenu.tsx:496 src/commandsAndMenu.tsx:498 src/commandsAndMenu.tsx:503 src/commandsAndMenu.tsx:507 src/commandsAndMenu.tsx:508
 msgid "Diff Not Supported"
 msgstr "Diff nicht unterstützt"
 
-#: src/commandsAndMenu.tsx:550
+#: src/commandsAndMenu.tsx:497 src/commandsAndMenu.tsx:499 src/commandsAndMenu.tsx:504 src/commandsAndMenu.tsx:508 src/commandsAndMenu.tsx:509
 msgid "Diff is not supported for %1 files."
 msgstr ""
 
-#: src/commandsAndMenu.tsx:564
+#: src/commandsAndMenu.tsx:511 src/commandsAndMenu.tsx:513 src/commandsAndMenu.tsx:518 src/commandsAndMenu.tsx:522 src/commandsAndMenu.tsx:523
 msgid "Open"
 msgstr "Öffnen"
 
-#: src/commandsAndMenu.tsx:566
+#: src/commandsAndMenu.tsx:513 src/commandsAndMenu.tsx:515 src/commandsAndMenu.tsx:520 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:525
 msgid "Open selected file"
 msgstr "Ausgewählte Datei öffnen"
 
-#: src/commandsAndMenu.tsx:567
+#: src/commandsAndMenu.tsx:514 src/commandsAndMenu.tsx:516 src/commandsAndMenu.tsx:521 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:526
 msgid "Open selected files"
 msgstr "Ausgewählte Dateien öffnen"
 
-#: src/commandsAndMenu.tsx:575
+#: src/commandsAndMenu.tsx:522 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:529 src/commandsAndMenu.tsx:533 src/commandsAndMenu.tsx:534
 msgid "Open File Failed"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:576
+#: src/commandsAndMenu.tsx:523 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:530 src/commandsAndMenu.tsx:534 src/commandsAndMenu.tsx:535
 msgid "This file has been deleted!"
 msgstr "Diese Datei wurde gelöscht!"
 
-#: src/commandsAndMenu.tsx:597
+#: src/commandsAndMenu.tsx:544 src/commandsAndMenu.tsx:546 src/commandsAndMenu.tsx:551 src/commandsAndMenu.tsx:555 src/commandsAndMenu.tsx:556
 msgid "Diff"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:599
+#: src/commandsAndMenu.tsx:546 src/commandsAndMenu.tsx:548 src/commandsAndMenu.tsx:553 src/commandsAndMenu.tsx:557 src/commandsAndMenu.tsx:558
 msgid "Diff selected file"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:600
+#: src/commandsAndMenu.tsx:547 src/commandsAndMenu.tsx:549 src/commandsAndMenu.tsx:554 src/commandsAndMenu.tsx:558 src/commandsAndMenu.tsx:559
 msgid "Diff selected files"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:675
-msgid "CURRENT"
-msgstr ""
-
-#: src/commandsAndMenu.tsx:676
-msgid "INCOMING"
-msgstr ""
-
-#: src/commandsAndMenu.tsx:690
-msgid "RESULT"
-msgstr ""
-
-#: src/commandsAndMenu.tsx:755
+#: src/commandsAndMenu.tsx:651 src/commandsAndMenu.tsx:653 src/commandsAndMenu.tsx:659 src/commandsAndMenu.tsx:664 src/commandsAndMenu.tsx:684 src/commandsAndMenu.tsx:685
 msgid "Add"
 msgstr "Hinzufügen"
 
-#: src/commandsAndMenu.tsx:757
+#: src/commandsAndMenu.tsx:653 src/commandsAndMenu.tsx:655 src/commandsAndMenu.tsx:661 src/commandsAndMenu.tsx:666 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:687
 msgid "Stage or track the changes to selected file"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:758
+#: src/commandsAndMenu.tsx:654 src/commandsAndMenu.tsx:656 src/commandsAndMenu.tsx:662 src/commandsAndMenu.tsx:667 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:688
 msgid "Stage or track the changes of selected files"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:770
+#: src/commandsAndMenu.tsx:666 src/commandsAndMenu.tsx:668 src/commandsAndMenu.tsx:674 src/commandsAndMenu.tsx:679 src/commandsAndMenu.tsx:699 src/commandsAndMenu.tsx:700
 msgid "Stage"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:772
+#: src/commandsAndMenu.tsx:668 src/commandsAndMenu.tsx:670 src/commandsAndMenu.tsx:676 src/commandsAndMenu.tsx:681 src/commandsAndMenu.tsx:701 src/commandsAndMenu.tsx:702
 msgid "Stage the changes of selected file"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:773
+#: src/commandsAndMenu.tsx:669 src/commandsAndMenu.tsx:671 src/commandsAndMenu.tsx:677 src/commandsAndMenu.tsx:682 src/commandsAndMenu.tsx:702 src/commandsAndMenu.tsx:703
 msgid "Stage the changes of selected files"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:785
+#: src/commandsAndMenu.tsx:681 src/commandsAndMenu.tsx:683 src/commandsAndMenu.tsx:689 src/commandsAndMenu.tsx:694 src/commandsAndMenu.tsx:714 src/commandsAndMenu.tsx:715
 msgid "Track"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:787
+#: src/commandsAndMenu.tsx:683 src/commandsAndMenu.tsx:685 src/commandsAndMenu.tsx:691 src/commandsAndMenu.tsx:696 src/commandsAndMenu.tsx:716 src/commandsAndMenu.tsx:717
 msgid "Start tracking selected file"
 msgstr "Verfolgung der ausgewählten Datei starten"
 
-#: src/commandsAndMenu.tsx:788
+#: src/commandsAndMenu.tsx:684 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:692 src/commandsAndMenu.tsx:697 src/commandsAndMenu.tsx:717 src/commandsAndMenu.tsx:718
 msgid "Start tracking selected files"
 msgstr "Verfolgung der ausgewählten Dateien starten"
 
-#: src/commandsAndMenu.tsx:800
+#: src/commandsAndMenu.tsx:696 src/commandsAndMenu.tsx:698 src/commandsAndMenu.tsx:704 src/commandsAndMenu.tsx:709 src/commandsAndMenu.tsx:729 src/commandsAndMenu.tsx:730
 msgid "Unstage"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:802
+#: src/commandsAndMenu.tsx:698 src/commandsAndMenu.tsx:700 src/commandsAndMenu.tsx:706 src/commandsAndMenu.tsx:711 src/commandsAndMenu.tsx:731 src/commandsAndMenu.tsx:732
 msgid "Unstage the changes of selected file"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:803
+#: src/commandsAndMenu.tsx:699 src/commandsAndMenu.tsx:701 src/commandsAndMenu.tsx:707 src/commandsAndMenu.tsx:712 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:733
 msgid "Unstage the changes of selected files"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:826 src/commandsAndMenu.tsx:848 src/components/BranchMenu.tsx:345
+#: src/commandsAndMenu.tsx:722 src/commandsAndMenu.tsx:724 src/commandsAndMenu.tsx:730 src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:744 src/commandsAndMenu.tsx:746 src/commandsAndMenu.tsx:752 src/commandsAndMenu.tsx:755 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:778 src/components/BranchMenu.tsx:345
 msgid "Delete"
 msgstr "Löschen"
 
-#: src/commandsAndMenu.tsx:828
+#: src/commandsAndMenu.tsx:724 src/commandsAndMenu.tsx:726 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:737 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:758
 msgid "Delete this file"
 msgstr "Diese Datei löschen"
 
-#: src/commandsAndMenu.tsx:829
+#: src/commandsAndMenu.tsx:725 src/commandsAndMenu.tsx:727 src/commandsAndMenu.tsx:733 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:758 src/commandsAndMenu.tsx:759
 msgid "Delete these files"
 msgstr "Diese Dateien löschen"
 
-#: src/commandsAndMenu.tsx:836
+#: src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:734 src/commandsAndMenu.tsx:740 src/commandsAndMenu.tsx:745 src/commandsAndMenu.tsx:765 src/commandsAndMenu.tsx:766
 msgid "Delete Files"
 msgstr "Dateien löschen"
 
-#: src/commandsAndMenu.tsx:839
+#: src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:737 src/commandsAndMenu.tsx:743 src/commandsAndMenu.tsx:748 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:769
 msgid "Are you sure you want to permanently delete the following files?               This action cannot be undone."
 msgstr "Sind Sie sicher, dass Sie die folgenden Dateien dauerhaft löschen möchten?               Diese Aktion kann nicht rückgängig gemacht werden."
 
-#: src/commandsAndMenu.tsx:858
+#: src/commandsAndMenu.tsx:754 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:762 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:787 src/commandsAndMenu.tsx:788
 msgid "Deleting %1 failed."
 msgstr "Löschen von %1 ist fehlgeschlagen."
 
-#: src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:914 src/components/Alert.tsx:123 src/index.ts:132
+#: src/commandsAndMenu.tsx:755 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:763 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:810 src/commandsAndMenu.tsx:812 src/commandsAndMenu.tsx:818 src/commandsAndMenu.tsx:823 src/commandsAndMenu.tsx:843 src/commandsAndMenu.tsx:844 src/components/Alert.tsx:123 src/index.ts:128 src/index.ts:132
 msgid "DISMISS"
 msgstr "VERWERFEN"
 
-#: src/commandsAndMenu.tsx:869 src/commandsAndMenu.tsx:891 src/components/FileList.tsx:194 src/components/FileList.tsx:219
+#: src/commandsAndMenu.tsx:765 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:773 src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:787 src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:795 src/commandsAndMenu.tsx:798 src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:800 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:821 src/components/FileList.tsx:183 src/components/FileList.tsx:192 src/components/FileList.tsx:208 src/components/FileList.tsx:217
 msgid "Discard"
 msgstr "Verwerfen"
 
-#: src/commandsAndMenu.tsx:871
+#: src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:769 src/commandsAndMenu.tsx:775 src/commandsAndMenu.tsx:780 src/commandsAndMenu.tsx:800 src/commandsAndMenu.tsx:801
 msgid "Discard recent changes of selected file"
 msgstr "Letzte Änderungen an der ausgewählten Datei verwerfen"
 
-#: src/commandsAndMenu.tsx:872
+#: src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:770 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:781 src/commandsAndMenu.tsx:801 src/commandsAndMenu.tsx:802
 msgid "Discard recent changes of selected files"
 msgstr "Letzte Änderungen an den ausgewählten Dateien verwerfen"
 
-#: src/commandsAndMenu.tsx:879 src/components/FileList.tsx:515 src/components/FileList.tsx:713 src/components/FileList.tsx:739
+#: src/commandsAndMenu.tsx:775 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:783 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:808 src/commandsAndMenu.tsx:809 src/components/FileList.tsx:457 src/components/FileList.tsx:466 src/components/FileList.tsx:655 src/components/FileList.tsx:664 src/components/FileList.tsx:681 src/components/FileList.tsx:690
 msgid "Discard changes"
 msgstr "Änderungen verwerfen"
 
-#: src/commandsAndMenu.tsx:882
+#: src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:780 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:791 src/commandsAndMenu.tsx:811 src/commandsAndMenu.tsx:812
 msgid "Are you sure you want to permanently discard changes to the following files?               This action cannot be undone."
 msgstr "Sind Sie sicher, dass Sie Änderungen an den folgenden Dateien dauerhaft verwerfen möchten?               Diese Aktion kann nicht rückgängig gemacht werden."
 
-#: src/commandsAndMenu.tsx:912
+#: src/commandsAndMenu.tsx:808 src/commandsAndMenu.tsx:810 src/commandsAndMenu.tsx:816 src/commandsAndMenu.tsx:821 src/commandsAndMenu.tsx:841 src/commandsAndMenu.tsx:842
 msgid "Discard changes for %1 failed."
 msgstr "Verwerfen von Änderungen für %1 ist fehlgeschlagen."
 
-#: src/commandsAndMenu.tsx:925 src/commandsAndMenu.tsx:929
+#: src/commandsAndMenu.tsx:821 src/commandsAndMenu.tsx:823 src/commandsAndMenu.tsx:825 src/commandsAndMenu.tsx:827 src/commandsAndMenu.tsx:829 src/commandsAndMenu.tsx:833 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:838 src/commandsAndMenu.tsx:854 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:858 src/commandsAndMenu.tsx:859
 msgid "Ignore this file (add to .gitignore)"
 msgstr "Diese Datei ignorieren (zu .gitignore hinzufügen)"
 
-#: src/commandsAndMenu.tsx:926 src/commandsAndMenu.tsx:930
+#: src/commandsAndMenu.tsx:822 src/commandsAndMenu.tsx:824 src/commandsAndMenu.tsx:826 src/commandsAndMenu.tsx:828 src/commandsAndMenu.tsx:830 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:835 src/commandsAndMenu.tsx:839 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:856 src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:860
 msgid "Ignore these files (add to .gitignore)"
 msgstr "Diese Dateien ignorieren (zu .gitignore hinzufügen)"
 
-#: src/commandsAndMenu.tsx:948
+#: src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:846 src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:857 src/commandsAndMenu.tsx:877 src/commandsAndMenu.tsx:878
 msgid "Ignore %2 extension (add to .gitignore)"
 msgid_plural "Ignore %2 extensions (add to .gitignore)"
 msgstr[0] "%2 Erweiterung ignorieren (zu .gitignore hinzufügen)"
 msgstr[1] "%2 Erweiterungen ignorieren (zu .gitignore hinzufügen)"
 
-#: src/commandsAndMenu.tsx:956
+#: src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:854 src/commandsAndMenu.tsx:860 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:885 src/commandsAndMenu.tsx:886
 msgid "Ignore this file extension (add to .gitignore)"
 msgstr "Diese Dateiendung ignorieren (zu .gitignore hinzufügen)"
 
-#: src/commandsAndMenu.tsx:957
+#: src/commandsAndMenu.tsx:853 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:861 src/commandsAndMenu.tsx:866 src/commandsAndMenu.tsx:886 src/commandsAndMenu.tsx:887
 msgid "Ignore these files extension (add to .gitignore)"
 msgstr "Diese Dateiendungen ignorieren (zu .gitignore hinzufügen)"
 
-#: src/commandsAndMenu.tsx:966
+#: src/commandsAndMenu.tsx:862 src/commandsAndMenu.tsx:864 src/commandsAndMenu.tsx:870 src/commandsAndMenu.tsx:875 src/commandsAndMenu.tsx:895 src/commandsAndMenu.tsx:896
 msgid "Ignore file extension"
 msgstr "Dateiendung ignorieren"
 
-#: src/commandsAndMenu.tsx:967
+#: src/commandsAndMenu.tsx:863 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:871 src/commandsAndMenu.tsx:876 src/commandsAndMenu.tsx:896 src/commandsAndMenu.tsx:897
 msgid "Are you sure you want to ignore all %1 files within this git repository?"
 msgstr "Sind Sie sicher, dass Sie alle %1 Dateien innerhalb dieses Git-Repositoriums ignorieren möchten?"
 
-#: src/commandsAndMenu.tsx:973 src/commandsAndMenu.tsx:976
+#: src/commandsAndMenu.tsx:869 src/commandsAndMenu.tsx:871 src/commandsAndMenu.tsx:872 src/commandsAndMenu.tsx:874 src/commandsAndMenu.tsx:877 src/commandsAndMenu.tsx:880 src/commandsAndMenu.tsx:882 src/commandsAndMenu.tsx:885 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:905 src/commandsAndMenu.tsx:906
 msgid "Ignore"
 msgstr "Ignorieren"
 
-#: src/commandsAndMenu.tsx:993 src/components/GitPanel.tsx:358
+#: src/commandsAndMenu.tsx:889 src/commandsAndMenu.tsx:891 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:941 src/commandsAndMenu.tsx:942
+msgid "No actions available"
+msgstr "Keine Aktionen verfügbar"
+
+#: src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:922 src/commandsAndMenu.tsx:923 src/components/GitPanel.tsx:344 src/components/GitPanel.tsx:358 src/components/GitPanel.tsx:363
 msgid "History"
 msgstr ""
 
-#: src/commandsAndMenu.tsx:994
+#: src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:923 src/commandsAndMenu.tsx:924
 msgid "View the history of this file"
 msgstr ""
+
+#: src/commandsAndMenu.tsx:908 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:916 src/commandsAndMenu.tsx:940 src/commandsAndMenu.tsx:960 src/commandsAndMenu.tsx:961
+msgid "Set Up Remotes"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:914 src/commandsAndMenu.tsx:920 src/commandsAndMenu.tsx:944 src/commandsAndMenu.tsx:964 src/commandsAndMenu.tsx:965
+msgid "Git Documentation"
+msgstr "Git-Dokumentation"
+
+#: src/commandsAndMenu.tsx:943 src/commandsAndMenu.tsx:945 src/commandsAndMenu.tsx:951 src/commandsAndMenu.tsx:978 src/commandsAndMenu.tsx:998 src/commandsAndMenu.tsx:999
+msgid " Help "
+msgstr " Hilfe "
 
 #: src/components/Alert.tsx:105
 msgid "Error"
@@ -593,19 +570,19 @@ msgstr ""
 msgid "The current branch contains files with uncommitted changes. Please commit or discard these changes before switching to or creating another branch."
 msgstr ""
 
-#: src/components/BranchMenu.tsx:195 src/components/NewBranchDialog.tsx:177 src/components/TagMenu.tsx:189
+#: src/components/BranchMenu.tsx:195 src/components/NewBranchDialog.tsx:177 src/components/NewBranchDialog.tsx:184 src/components/TagMenu.tsx:189
 msgid "Filter"
 msgstr ""
 
-#: src/components/BranchMenu.tsx:196 src/components/NewBranchDialog.tsx:178 src/components/TagMenu.tsx:190
+#: src/components/BranchMenu.tsx:196 src/components/NewBranchDialog.tsx:178 src/components/NewBranchDialog.tsx:185 src/components/TagMenu.tsx:190
 msgid "Filter branch menu"
 msgstr ""
 
-#: src/components/BranchMenu.tsx:201 src/components/NewBranchDialog.tsx:183 src/components/TagMenu.tsx:195
+#: src/components/BranchMenu.tsx:201 src/components/NewBranchDialog.tsx:183 src/components/NewBranchDialog.tsx:190 src/components/TagMenu.tsx:195
 msgid "Clear the current filter"
 msgstr ""
 
-#: src/components/BranchMenu.tsx:211 src/components/NewBranchDialog.tsx:208
+#: src/components/BranchMenu.tsx:211 src/components/NewBranchDialog.tsx:208 src/components/NewBranchDialog.tsx:215
 msgid "Create a new branch"
 msgstr ""
 
@@ -653,6 +630,26 @@ msgstr ""
 msgid "Failed to switch branch."
 msgstr ""
 
+#: src/components/CommitBox.tsx:100 src/components/CommitBox.tsx:101 src/components/CommitBox.tsx:178
+msgid "Disabled: No commit message summary"
+msgstr ""
+
+#: src/components/CommitBox.tsx:106 src/components/CommitBox.tsx:107 src/components/CommitBox.tsx:184
+msgid "Summary (%1 to commit)"
+msgstr ""
+
+#: src/components/CommitBox.tsx:116 src/components/CommitBox.tsx:117 src/components/CommitMessage.tsx:117 src/components/ResetRevertDialog.tsx:155
+msgid "Enter a commit message summary (a single line, preferably less than 50 characters)"
+msgstr ""
+
+#: src/components/CommitBox.tsx:126 src/components/CommitBox.tsx:127 src/components/CommitMessage.tsx:140
+msgid "Description (optional)"
+msgstr ""
+
+#: src/components/CommitBox.tsx:127 src/components/CommitBox.tsx:128 src/components/CommitMessage.tsx:147 src/components/ResetRevertDialog.tsx:165
+msgid "Enter a commit message description"
+msgstr ""
+
 #: src/components/CommitBox.tsx:141
 msgid "Create a new commit"
 msgstr ""
@@ -669,168 +666,144 @@ msgstr ""
 msgid "Staged changes will be added to the previous commit and its date will be updated."
 msgstr ""
 
-#: src/components/CommitBox.tsx:176
+#: src/components/CommitBox.tsx:176 src/components/CommitBox.tsx:98 src/components/CommitBox.tsx:99
 msgid "Disabled: No files are staged for commit"
-msgstr ""
-
-#: src/components/CommitBox.tsx:178
-msgid "Disabled: No commit message summary"
-msgstr ""
-
-#: src/components/CommitBox.tsx:184
-msgid "Summary (%1 to commit)"
 msgstr ""
 
 #: src/components/CommitMessage.tsx:114 src/components/CommitMessage.tsx:144
 msgid "Amending the commit will re-use the previous commit summary"
 msgstr ""
 
-#: src/components/CommitMessage.tsx:117
-msgid "Enter a commit message summary (a single line, preferably less than 50 characters)"
-msgstr ""
-
-#: src/components/CommitMessage.tsx:140
-msgid "Description (optional)"
-msgstr ""
-
-#: src/components/CommitMessage.tsx:147
-msgid "Enter a commit message description"
-msgstr ""
-
 #: src/components/CommitMessage.tsx:66
 msgid "Summary"
 msgstr ""
 
-#: src/components/FileList.tsx:188 src/components/FileList.tsx:213
+#: src/components/FileList.tsx:177 src/components/FileList.tsx:186 src/components/FileList.tsx:202 src/components/FileList.tsx:211
 msgid "Discard all changes"
 msgstr ""
 
-#: src/components/FileList.tsx:189 src/components/FileList.tsx:214
+#: src/components/FileList.tsx:178 src/components/FileList.tsx:187 src/components/FileList.tsx:203 src/components/FileList.tsx:212
 msgid "Are you sure you want to permanently discard changes to all files? This action cannot be undone."
 msgstr ""
 
-#: src/components/FileList.tsx:202
+#: src/components/FileList.tsx:191 src/components/FileList.tsx:200
 msgid "Discard all unstaged changes failed."
 msgstr ""
 
-#: src/components/FileList.tsx:227
+#: src/components/FileList.tsx:216 src/components/FileList.tsx:225
 msgid "Discard all changes failed."
 msgstr ""
 
-#: src/components/FileList.tsx:385
-msgid "Conflicted"
-msgstr ""
-
-#: src/components/FileList.tsx:421 src/components/FileList.tsx:508 src/components/FileList.tsx:607 src/components/FileList.tsx:693 src/components/FileList.tsx:706 src/components/FileList.tsx:732
+#: src/components/FileList.tsx:363 src/components/FileList.tsx:372 src/components/FileList.tsx:450 src/components/FileList.tsx:459 src/components/FileList.tsx:549 src/components/FileList.tsx:558 src/components/FileList.tsx:635 src/components/FileList.tsx:644 src/components/FileList.tsx:648 src/components/FileList.tsx:657 src/components/FileList.tsx:674 src/components/FileList.tsx:683
 msgid "Open this file"
 msgstr ""
 
-#: src/components/FileList.tsx:428
+#: src/components/FileList.tsx:370 src/components/FileList.tsx:379
 msgid "Unstage this change"
 msgstr ""
 
-#: src/components/FileList.tsx:466
+#: src/components/FileList.tsx:408 src/components/FileList.tsx:417
 msgid "Unstage all changes"
 msgstr ""
 
-#: src/components/FileList.tsx:472
+#: src/components/FileList.tsx:414 src/components/FileList.tsx:423
 msgid "Staged"
 msgstr ""
 
-#: src/components/FileList.tsx:523
+#: src/components/FileList.tsx:465 src/components/FileList.tsx:474
 msgid "Stage this change"
 msgstr ""
 
-#: src/components/FileList.tsx:563 src/components/FileList.tsx:782
+#: src/components/FileList.tsx:505 src/components/FileList.tsx:514 src/components/FileList.tsx:724 src/components/FileList.tsx:733
 msgid "Discard All Changes"
 msgstr ""
 
-#: src/components/FileList.tsx:570
+#: src/components/FileList.tsx:512 src/components/FileList.tsx:521
 msgid "Stage all changes"
 msgstr ""
 
-#: src/components/FileList.tsx:576 src/components/FileList.tsx:786 src/components/SinglePastCommitInfo.tsx:208
+#: src/components/FileList.tsx:518 src/components/FileList.tsx:527 src/components/FileList.tsx:728 src/components/FileList.tsx:737 src/components/SinglePastCommitInfo.tsx:197 src/components/SinglePastCommitInfo.tsx:208
 msgid "Changed"
 msgstr ""
 
-#: src/components/FileList.tsx:617
+#: src/components/FileList.tsx:559 src/components/FileList.tsx:568
 msgid "Track this file"
 msgstr ""
 
-#: src/components/FileList.tsx:655
+#: src/components/FileList.tsx:597 src/components/FileList.tsx:606
 msgid "Track all untracked files"
 msgstr ""
 
-#: src/components/FileList.tsx:660
+#: src/components/FileList.tsx:602 src/components/FileList.tsx:611
 msgid "Untracked"
 msgstr ""
 
-#: src/components/FileList.tsx:807
+#: src/components/FileList.tsx:749 src/components/FileList.tsx:758
 msgid "Diff this file"
 msgstr ""
 
-#: src/components/GitPanel.tsx:347
-msgid "View changed files"
-msgstr ""
-
-#: src/components/GitPanel.tsx:348
-msgid "Changes"
-msgstr ""
-
-#: src/components/GitPanel.tsx:357
-msgid "View commit history"
-msgstr ""
-
-#: src/components/GitPanel.tsx:378
-msgid "Commit and Push"
-msgstr ""
-
-#: src/components/GitPanel.tsx:379
-msgid "Commit"
-msgstr ""
-
-#: src/components/GitPanel.tsx:442
-msgid "is not"
-msgstr ""
-
-#: src/components/GitPanel.tsx:445
-msgid "You are not currently in"
-msgstr ""
-
-#: src/components/GitPanel.tsx:447
-msgid " a Git repository. To use Git, navigate to a local repository, initialize a repository here, or clone an existing repository."
-msgstr ""
-
-#: src/components/GitPanel.tsx:455
-msgid "Open the FileBrowser"
-msgstr ""
-
-#: src/components/GitPanel.tsx:533
+#: src/components/GitPanel.tsx:216 src/components/GitPanel.tsx:506 src/components/GitPanel.tsx:533
 msgid "Staging files..."
 msgstr ""
 
-#: src/components/GitPanel.tsx:550
+#: src/components/GitPanel.tsx:237 src/components/GitPanel.tsx:523 src/components/GitPanel.tsx:550
 msgid "Failed to commit changes."
 msgstr ""
 
-#: src/components/GitPanel.tsx:558
+#: src/components/GitPanel.tsx:250 src/components/GitPanel.tsx:531 src/components/GitPanel.tsx:558
 msgid "Committing changes..."
 msgstr ""
 
-#: src/components/GitPanel.tsx:569
+#: src/components/GitPanel.tsx:257 src/components/GitPanel.tsx:538 src/components/GitPanel.tsx:569
 msgid "Committed changes."
 msgstr ""
 
-#: src/components/GitPanel.tsx:602
+#: src/components/GitPanel.tsx:333 src/components/GitPanel.tsx:347 src/components/GitPanel.tsx:352
+msgid "View changed files"
+msgstr ""
+
+#: src/components/GitPanel.tsx:334 src/components/GitPanel.tsx:348 src/components/GitPanel.tsx:353
+msgid "Changes"
+msgstr ""
+
+#: src/components/GitPanel.tsx:343 src/components/GitPanel.tsx:357 src/components/GitPanel.tsx:362
+msgid "View commit history"
+msgstr ""
+
+#: src/components/GitPanel.tsx:364 src/components/GitPanel.tsx:378 src/components/GitPanel.tsx:383
+msgid "Commit and Push"
+msgstr ""
+
+#: src/components/GitPanel.tsx:365 src/components/GitPanel.tsx:379 src/components/GitPanel.tsx:384
+msgid "Commit"
+msgstr ""
+
+#: src/components/GitPanel.tsx:426 src/components/GitPanel.tsx:442 src/components/GitPanel.tsx:447
+msgid "is not"
+msgstr ""
+
+#: src/components/GitPanel.tsx:429 src/components/GitPanel.tsx:445 src/components/GitPanel.tsx:450
+msgid "You are not currently in"
+msgstr ""
+
+#: src/components/GitPanel.tsx:431 src/components/GitPanel.tsx:447 src/components/GitPanel.tsx:452
+msgid " a Git repository. To use Git, navigate to a local repository, initialize a repository here, or clone an existing repository."
+msgstr ""
+
+#: src/components/GitPanel.tsx:439 src/components/GitPanel.tsx:455 src/components/GitPanel.tsx:460
+msgid "Open the FileBrowser"
+msgstr ""
+
+#: src/components/GitPanel.tsx:513 src/components/GitPanel.tsx:571 src/components/GitPanel.tsx:602
 msgid "Who is committing?"
 msgstr ""
 
-#: src/components/GitPanel.tsx:608
-msgid "User refused to set identity."
+#: src/components/GitPanel.tsx:537 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:625
+msgid "Failed to set your identity. %1"
 msgstr ""
 
-#: src/components/GitPanel.tsx:625
-msgid "Failed to set your identity. %1"
+#: src/components/GitPanel.tsx:577 src/components/GitPanel.tsx:608
+msgid "User refused to set identity."
 msgstr ""
 
 #: src/components/HistorySideBar.tsx:114
@@ -853,31 +826,31 @@ msgstr ""
 msgid "No history found."
 msgstr ""
 
-#: src/components/NewBranchDialog.tsx:147
+#: src/components/NewBranchDialog.tsx:147 src/components/NewBranchDialog.tsx:154
 msgid "Create a Branch"
 msgstr ""
 
-#: src/components/NewBranchDialog.tsx:150 src/components/ResetRevertDialog.tsx:130
+#: src/components/NewBranchDialog.tsx:150 src/components/NewBranchDialog.tsx:157 src/components/ResetRevertDialog.tsx:130 src/components/ResetRevertDialog.tsx:132
 msgid "Close this dialog"
 msgstr ""
 
-#: src/components/NewBranchDialog.tsx:160
+#: src/components/NewBranchDialog.tsx:160 src/components/NewBranchDialog.tsx:167
 msgid "Name"
 msgstr ""
 
-#: src/components/NewBranchDialog.tsx:167
+#: src/components/NewBranchDialog.tsx:167 src/components/NewBranchDialog.tsx:174
 msgid "Enter a branch name"
 msgstr ""
 
-#: src/components/NewBranchDialog.tsx:169
+#: src/components/NewBranchDialog.tsx:169 src/components/NewBranchDialog.tsx:176
 msgid "Create branch based on..."
 msgstr ""
 
-#: src/components/NewBranchDialog.tsx:199
+#: src/components/NewBranchDialog.tsx:199 src/components/NewBranchDialog.tsx:206
 msgid "Close this dialog without creating a new branch"
 msgstr ""
 
-#: src/components/NewBranchDialog.tsx:209
+#: src/components/NewBranchDialog.tsx:209 src/components/NewBranchDialog.tsx:216
 msgid "Create Branch"
 msgstr ""
 
@@ -889,19 +862,19 @@ msgstr ""
 msgid "The default branch. Pick this if you want to start fresh from the default branch."
 msgstr ""
 
-#: src/components/NewBranchDialog.tsx:313
+#: src/components/NewBranchDialog.tsx:309 src/components/NewBranchDialog.tsx:313
 msgid "Create a new branch based on: %1"
 msgstr ""
 
-#: src/components/NewBranchDialog.tsx:434
+#: src/components/NewBranchDialog.tsx:433 src/components/NewBranchDialog.tsx:434
 msgid "Creating branch..."
 msgstr ""
 
-#: src/components/NewBranchDialog.tsx:444
+#: src/components/NewBranchDialog.tsx:443 src/components/NewBranchDialog.tsx:444
 msgid "Failed to create branch."
 msgstr ""
 
-#: src/components/NewBranchDialog.tsx:451
+#: src/components/NewBranchDialog.tsx:450 src/components/NewBranchDialog.tsx:451
 msgid "Branch created."
 msgstr ""
 
@@ -909,87 +882,87 @@ msgstr ""
 msgid "View commit details"
 msgstr ""
 
-#: src/components/PastCommitNode.tsx:112 src/components/SinglePastCommitInfo.tsx:284
+#: src/components/PastCommitNode.tsx:112 src/components/SinglePastCommitInfo.tsx:273 src/components/SinglePastCommitInfo.tsx:284
 msgid "View file changes"
 msgstr ""
 
-#: src/components/ResetRevertDialog.tsx:125
+#: src/components/ResetRevertDialog.tsx:125 src/components/ResetRevertDialog.tsx:127
 msgid "Revert Changes"
 msgstr ""
 
-#: src/components/ResetRevertDialog.tsx:126
+#: src/components/ResetRevertDialog.tsx:126 src/components/ResetRevertDialog.tsx:128
 msgid "Reset Changes"
 msgstr ""
 
-#: src/components/ResetRevertDialog.tsx:139
+#: src/components/ResetRevertDialog.tsx:139 src/components/ResetRevertDialog.tsx:141
 msgid "These changes will be reverted. Only commit if you're sure you're okay losing these changes."
 msgstr ""
 
-#: src/components/ResetRevertDialog.tsx:142
+#: src/components/ResetRevertDialog.tsx:142 src/components/ResetRevertDialog.tsx:144
 msgid "All changes after commit %1 will be gone forever (hard reset). Are you sure?"
 msgstr ""
 
-#: src/components/ResetRevertDialog.tsx:166
+#: src/components/ResetRevertDialog.tsx:166 src/components/ResetRevertDialog.tsx:179
 msgid "Cancel changes"
 msgstr ""
 
-#: src/components/ResetRevertDialog.tsx:174
+#: src/components/ResetRevertDialog.tsx:174 src/components/ResetRevertDialog.tsx:187
 msgid "Submit changes"
 msgstr ""
 
-#: src/components/ResetRevertDialog.tsx:229
+#: src/components/ResetRevertDialog.tsx:229 src/components/ResetRevertDialog.tsx:246
 msgid "Discarding changes..."
 msgstr ""
 
-#: src/components/ResetRevertDialog.tsx:235
+#: src/components/ResetRevertDialog.tsx:235 src/components/ResetRevertDialog.tsx:252
 msgid "Successfully discarded changes."
 msgstr ""
 
-#: src/components/ResetRevertDialog.tsx:240
+#: src/components/ResetRevertDialog.tsx:240 src/components/ResetRevertDialog.tsx:257
 msgid "Failed to discard changes."
 msgstr ""
 
-#: src/components/ResetRevertDialog.tsx:256
+#: src/components/ResetRevertDialog.tsx:256 src/components/ResetRevertDialog.tsx:273
 msgid "Reverting changes..."
 msgstr ""
 
-#: src/components/ResetRevertDialog.tsx:262
+#: src/components/ResetRevertDialog.tsx:262 src/components/ResetRevertDialog.tsx:279
 msgid "Successfully reverted changes."
 msgstr ""
 
-#: src/components/ResetRevertDialog.tsx:267
+#: src/components/ResetRevertDialog.tsx:267 src/components/ResetRevertDialog.tsx:284
 msgid "Failed to revert changes."
 msgstr ""
 
-#: src/components/ResetRevertDialog.tsx:299
+#: src/components/ResetRevertDialog.tsx:299 src/components/ResetRevertDialog.tsx:316
 msgid "Revert '%1'"
 msgstr ""
 
-#: src/components/ResetRevertDialog.tsx:308
+#: src/components/ResetRevertDialog.tsx:308 src/components/ResetRevertDialog.tsx:325
 msgid "This reverts commit %1"
 msgstr ""
 
-#: src/components/SinglePastCommitInfo.tsx:180
+#: src/components/SinglePastCommitInfo.tsx:169 src/components/SinglePastCommitInfo.tsx:180
 msgid "Error loading commit data"
 msgstr ""
 
-#: src/components/SinglePastCommitInfo.tsx:186
+#: src/components/SinglePastCommitInfo.tsx:175 src/components/SinglePastCommitInfo.tsx:186
 msgid "# Files Changed"
 msgstr ""
 
-#: src/components/SinglePastCommitInfo.tsx:190
+#: src/components/SinglePastCommitInfo.tsx:179 src/components/SinglePastCommitInfo.tsx:190
 msgid "# Insertions"
 msgstr ""
 
-#: src/components/SinglePastCommitInfo.tsx:197
+#: src/components/SinglePastCommitInfo.tsx:186 src/components/SinglePastCommitInfo.tsx:197
 msgid "# Deletions"
 msgstr ""
 
-#: src/components/SinglePastCommitInfo.tsx:212
+#: src/components/SinglePastCommitInfo.tsx:201 src/components/SinglePastCommitInfo.tsx:212
 msgid "Revert changes introduced by this commit"
 msgstr ""
 
-#: src/components/SinglePastCommitInfo.tsx:220
+#: src/components/SinglePastCommitInfo.tsx:209 src/components/SinglePastCommitInfo.tsx:220
 msgid "Discard changes introduced *after* this commit (hard reset)"
 msgstr ""
 
@@ -1041,63 +1014,63 @@ msgstr ""
 msgid "Refresh the repository to detect local and remote changes"
 msgstr ""
 
-#: src/components/Toolbar.tsx:240
+#: src/components/Toolbar.tsx:236 src/components/Toolbar.tsx:240
 msgid "Current repository: %1"
 msgstr ""
 
-#: src/components/Toolbar.tsx:248
+#: src/components/Toolbar.tsx:245 src/components/Toolbar.tsx:248
 msgid "Current Repository"
 msgstr ""
 
-#: src/components/Toolbar.tsx:273
+#: src/components/Toolbar.tsx:272 src/components/Toolbar.tsx:273
 msgid "Manage branches and tags"
 msgstr ""
 
-#: src/components/Toolbar.tsx:279
+#: src/components/Toolbar.tsx:278 src/components/Toolbar.tsx:279
 msgid "Current Branch"
 msgstr ""
 
-#: src/components/Toolbar.tsx:316
+#: src/components/Toolbar.tsx:315 src/components/Toolbar.tsx:316
 msgid "View branches"
 msgstr ""
 
-#: src/components/Toolbar.tsx:317
+#: src/components/Toolbar.tsx:316 src/components/Toolbar.tsx:317
 msgid "Branches"
 msgstr ""
 
-#: src/components/Toolbar.tsx:326
+#: src/components/Toolbar.tsx:325 src/components/Toolbar.tsx:326
 msgid "View tags"
 msgstr ""
 
-#: src/components/Toolbar.tsx:327
+#: src/components/Toolbar.tsx:326 src/components/Toolbar.tsx:327
 msgid "Tags"
 msgstr ""
 
-#: src/components/Toolbar.tsx:402
+#: src/components/Toolbar.tsx:401 src/components/Toolbar.tsx:402
 msgid "Refreshing..."
 msgstr ""
 
-#: src/components/Toolbar.tsx:409
+#: src/components/Toolbar.tsx:408 src/components/Toolbar.tsx:409
 msgid "Successfully refreshed."
 msgstr ""
 
-#: src/components/Toolbar.tsx:415
+#: src/components/Toolbar.tsx:414 src/components/Toolbar.tsx:415
 msgid "Failed to refresh."
 msgstr ""
 
-#: src/index.ts:106
+#: src/index.ts:102 src/index.ts:106
 msgid "git command version must be > 2; got %1."
 msgstr "git Befehlsversion muss > 2 sein; %1 erhalten."
 
-#: src/index.ts:113
+#: src/index.ts:109 src/index.ts:113
 msgid "The versions of the JupyterLab Git server frontend and backend do not match. The @jupyterlab/git frontend extension has version: %1 while the python package has version %2. Please install identical version of jupyterlab-git Python package and the @jupyterlab/git extension. Try running: pip install --upgrade jupyterlab-git"
 msgstr ""
 
-#: src/index.ts:130
+#: src/index.ts:126 src/index.ts:130
 msgid "Failed to load the jupyterlab-git server extension"
 msgstr "Fehler beim Laden der jupyterlab-git Server-Erweiterung"
 
-#: src/index.ts:98
+#: src/index.ts:94 src/index.ts:98
 msgid "git command not found - please ensure you have Git > 2 installed"
 msgstr "git-Befehl nicht gefunden - bitte stellen Sie sicher, dass Sie Git > 2 installiert haben"
 
@@ -1105,11 +1078,11 @@ msgstr "git-Befehl nicht gefunden - bitte stellen Sie sicher, dass Sie Git > 2 i
 msgid "Git server extension is unavailable. Please ensure you have installed the JupyterLab Git server extension by running: pip install --upgrade jupyterlab-git. To confirm that the server extension is installed, run: jupyter server extension list."
 msgstr ""
 
-#: src/widgets/CredentialsBox.tsx:37
+#: src/widgets/CredentialsBox.tsx:36 src/widgets/CredentialsBox.tsx:37
 msgid "username"
 msgstr "Benutzername"
 
-#: src/widgets/CredentialsBox.tsx:38
+#: src/widgets/CredentialsBox.tsx:37 src/widgets/CredentialsBox.tsx:38
 msgid "password / personal access token"
 msgstr "Passwort / persönliches Zugangs-Token"
 
