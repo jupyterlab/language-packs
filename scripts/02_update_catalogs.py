@@ -191,7 +191,6 @@ if __name__ == "__main__":
                     version = parse(tag)
                     if (
                         version.release is None  # non standard version
-                        or version == cur_version  # Handle as last step
                         or version.is_devrelease # Skip non final versions
                         or version.is_prerelease
                     ):
@@ -217,6 +216,8 @@ if __name__ == "__main__":
                     #     break
         
         # The final step is to merge the current version so the POT file is tagged accordingly
+        # This is suboptimal as it was probably already extracted but it ensures strings are
+        # the latest one including white space changes (that apparently are ignored see https://github.com/jupyterlab/language-packs/pull/116)
         update_repo(package_name, url, current_version)
         update_catalog(package_name, current_version, should_merge)
 
