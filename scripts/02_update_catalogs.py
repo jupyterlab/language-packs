@@ -168,6 +168,7 @@ if __name__ == "__main__":
         print(f'\n\nUpdating catalog for "{package_name}"\n\n')
         url = data[package_name]["url"]
         current_version = data[package_name]["current-version-tag"]
+        cur_version = parse(current_version)
         should_merge = False
 
         # Get the latest tags - assuming the repository is on github
@@ -175,11 +176,13 @@ if __name__ == "__main__":
         if data[package_name].get("supported-versions") is not None and match is not None:
             repo = match.groupdict()
             range = semver.NpmSpec(data[package_name]["supported-versions"])
-            min_version = get_min(range.clause)
+            # min_version = get_min(range.clause)  # Not use
 
-            # Request 100 tags in descending commit date order
+            # For JupyterLab we filter explicitly to catch version belonging to minor range
+            ref_filter = f"v{cur_version.major}.{cur_version.minor}" if package_name == "jupyterlab" else None
             try:
-                tags = get_tags(repo["owner"], repo["repo"])
+                # Request 100 tags in descending commit date order
+                tags = get_tags(repo["owner"], repo["repo"], filter=ref_filter)
             except ValueError as err:
                 print(f"Error when retrieving version for package `{package_name}`.")
                 print(err)
@@ -188,7 +191,7 @@ if __name__ == "__main__":
                     version = parse(tag)
                     if (
                         version.release is None  # non standard version
-                        or version == parse(current_version)  # Already handled
+                        or version == cur_version  # Handle as last step
                         or version.is_devrelease # Skip non final versions
                         or version.is_prerelease
                     ):
@@ -203,9 +206,11 @@ if __name__ == "__main__":
                         update_catalog(package_name, current_version, should_merge)
                         should_merge = True
 
-                    elif semversion < min_version:
-                        print(f"\nNext available version {semversion!s} for `{package_name}` is below the supported range {range!s}.\n")
-                        break
+                    # This allows to break when the version is below the supported range. But it breaks merging tags if newer security release
+                    # on older versions are carried out like for JupyterLab --> We scan for all first 100 tags
+                    # elif semversion < min_version:
+                    #     print(f"\nNext available version {semversion!s} for `{package_name}` is below the supported range {range!s}.\n")
+                    #     break
         
         # The final step is to merge the current version so the POT file is tagged accordingly
         update_repo(package_name, url, current_version)

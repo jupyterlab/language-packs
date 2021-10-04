@@ -7,11 +7,6 @@ on:
     paths:
       - repository-map.yml
   workflow_dispatch:
-    inputs:
-      no_merge:
-        description: 'If "true" skip merging new source strings with existing ones.'
-        required: false
-        default: 'false'
 
 permissions:
   contents: write
@@ -32,13 +27,10 @@ jobs:
         run: |
           python -m pip install -r requirements/release.txt
       - name: Update po templates (merging with existing)
-        if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.no_merge != 'true' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python scripts/02_update_catalogs.py
-      - name: Update po templates (not merging with existing)
-        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.no_merge == 'true' }}
-        run: |
-          python scripts/02_update_catalogs.py --no-merge
       - name: Set branch name and get hash
         run: |
           echo "BRANCH_NAME=pot-update-$(git rev-parse --short HEAD)" >> $GITHUB_ENV

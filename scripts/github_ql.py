@@ -1,6 +1,6 @@
 """Helper to request GitHub GraphQL API."""
 import os
-from typing import Iterator
+from typing import Iterator, Optional
 
 import requests
 
@@ -22,14 +22,18 @@ def _run_query(query: str) -> dict:
         raise ValueError("Query failed to run by returning code of {}. {}".format(request.status_code, query))
 
 
-def get_tags(owner: str, repo: str, n: int = 100) -> Iterator[str]:
+def get_tags(owner: str, repo: str, n: int = 100, filter: Optional[str] = None) -> Iterator[str]:
     """Get the tags on a repository in descending commit tag date order."""
+
+    ref_query = ""
+    if filter is not None:
+        ref_query = f', query: "{filter}"'
 
     # Use GraphQL to get tag by commit date and not by alphabetical order
     query = f"""
     {{
         repository(owner: "{owner}", name: "{repo}") {{
-            refs(refPrefix: "refs/tags/", last: {min(100, n)}, orderBy: {{field: TAG_COMMIT_DATE, direction: DESC}}) {{
+            refs(refPrefix: "refs/tags/"{ref_query}, first: {min(100, n)}, orderBy: {{field: TAG_COMMIT_DATE, direction: DESC}}) {{
                 edges {{
                     node {{
                         name
