@@ -9,10 +9,12 @@ import argparse
 import re
 from pathlib import Path
 
-import requests
 import semantic_version as semver
 import yaml
 from packaging.version import parse
+
+from github_ql import get_tags
+
 
 # Constants
 HERE = Path(__file__).parent.resolve()
@@ -35,45 +37,48 @@ if __name__ == "__main__":
         
     errors = []  # Will gather the list of extensions not matching the supported versions range
     
-    with requests.Session() as s:
-        for package_name in packages:
-            current_version = parse(data[package_name]["current-version-tag"])
-            if current_version.release is None:
-                print(f"Package `{package_name}` has an unsupported version `{current_version.public}` - it will be skipped.")
-                continue
-                
-            versions_range = data[package_name].get("supported-versions")
-            if versions_range is not None:
-                versions_range = semver.NpmSpec(versions_range)
+    for package_name in packages:
+        current_version = parse(data[package_name]["current-version-tag"])
+        if current_version.release is None:
+            print(f"Package `{package_name}` has an unsupported version `{current_version.public}` - it will be skipped.")
+            continue
+        else:
+            print(f"Looking for new releases for package `{package_name}`...")
+            
+        versions_range = data[package_name].get("supported-versions")
+        if versions_range is not None:
+            versions_range = semver.NpmSpec(versions_range)
 
-            # Get the latest tags - assuming the repository is on github
-            match = REPO_REGEX.match(data[package_name]["url"])
-            if match is not None:
-                repo = match.groupdict()
+        # Get the latest tags - assuming the repository is on github
+        match = REPO_REGEX.match(data[package_name]["url"])
+        if match is not None:
+            repo = match.groupdict()
 
-                response = s.get(
-                    "https://api.github.com/repos/{owner}/{repo}/tags".format(**repo),
-                    headers={"Accept": "application/vnd.github.v3+json"}
-                )
+            try:
+                tags = get_tags(repo["owner"], repo["repo"])
+            except ValueError as err:
+                print(f"Error when retrieving version for package `{package_name}`.")
+                print(err)
+                errors.append(str(err))
+            else:
+                for tag in tags:
+                    version = parse(tag)
+                    if version.release is None:
+                        continue
 
-                if response.ok:
-                    for tag in response.json():
-                        version = parse(tag["name"])
-                        if version.release is None:
-                            continue
+                    if not version.is_devrelease and not version.is_prerelease and version > current_version:
+                        print(f"Package `{package_name}` has a new version available: {version!s}.")
+                        data[package_name]["current-version-tag"] = tag
+                        if versions_range is not None and semver.Version(version.base_version) not in versions_range:
+                            msg = "New version '{version}' is out of supported range '{range}'".format(
+                                version=tag, range=data[package_name]["supported-versions"]
+                            )
+                            print(msg)
+                            errors.append(msg)
+                        break
+                    elif version <= current_version:
+                        break
 
-                        if not version.is_devrelease and not version.is_prerelease and version > current_version:
-                            print(f"Package `{package_name}` has a new version available: {version!s}.")
-                            data[package_name]["current-version-tag"] = tag["name"]
-                            if versions_range is not None and semver.Version(version.base_version) not in versions_range:
-                                errors.append(
-                                    "New version '{version}' is out of supported range '{range}'".format(
-                                        version=tag["name"], range=data[package_name][supported-versions"]
-                                    )
-                                )
-                            break
-                        elif version <= current_version:
-                            break
     if len(errors) > 0:
         raise ValueError("\n".join(errors))
 

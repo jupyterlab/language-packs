@@ -23,10 +23,11 @@ from pathlib import Path
 
 # Third party imports
 import jupyterlab_translate.api as api
-import requests
 import semantic_version as semver
 import yaml
 from packaging.version import parse
+
+from github_ql import get_tags
 
 # Constants
 HERE = Path(__file__).parent.resolve()
@@ -163,53 +164,52 @@ if __name__ == "__main__":
     else:
         packages = [pkg for pkg in args.packages if pkg in data]
 
-    with requests.Session() as s:
-        for package_name in packages:
-            print(f'\n\nUpdating catalog for "{package_name}"\n\n')
-            url = data[package_name]["url"]
-            current_version = data[package_name]["current-version-tag"]
-            should_merge = False
+    for package_name in packages:
+        print(f'\n\nUpdating catalog for "{package_name}"\n\n')
+        url = data[package_name]["url"]
+        current_version = data[package_name]["current-version-tag"]
+        should_merge = False
 
-            # Get the latest tags - assuming the repository is on github
-            match = REPO_REGEX.match(data[package_name]["url"])
-            if data[package_name].get("supported-versions") is not None and match is not None:
-                repo = match.groupdict()
-                range = semver.NpmSpec(data[package_name]["supported-versions"])
-                min_version = get_min(range.clause)
+        # Get the latest tags - assuming the repository is on github
+        match = REPO_REGEX.match(data[package_name]["url"])
+        if data[package_name].get("supported-versions") is not None and match is not None:
+            repo = match.groupdict()
+            range = semver.NpmSpec(data[package_name]["supported-versions"])
+            min_version = get_min(range.clause)
 
-                # Request 100 tags - hopefully this is enough to get all supported versions
-                response = s.get(
-                    "https://api.github.com/repos/{owner}/{repo}/tags?per_page=100".format(**repo),
-                    headers={"Accept": "application/vnd.github.v3+json"}
-                )
+            # Request 100 tags in descending commit date order
+            try:
+                tags = get_tags(repo["owner"], repo["repo"])
+            except ValueError as err:
+                print(f"Error when retrieving version for package `{package_name}`.")
+                print(err)
+            else:
+                for tag in tags:
+                    version = parse(tag)
+                    if (
+                        version.release is None  # non standard version
+                        or version == parse(current_version)  # Already handled
+                        or version.is_devrelease # Skip non final versions
+                        or version.is_prerelease
+                    ):
+                        continue
 
-                if response.ok:
-                    for tag in response.json():
-                        version = parse(tag["name"])
-                        if (
-                            version.release is None  # non standard version
-                            or version == parse(current_version)  # Already handled
-                            or version.is_devrelease # Skip non final versions
-                            or version.is_prerelease
-                        ):
-                            continue
+                    # The following will erase any part of the version that is not (major, minor, patch)
+                    semversion = semver.Version(version.base_version)
 
-                        # The following will erase any part of the version that is not (major, minor, patch)
-                        semversion = semver.Version(version.base_version)
+                    if semversion in range:
+                        print(f"\nMerge version {version!s} for `{package_name}`.\n")
+                        update_repo(package_name, url, tag)
+                        update_catalog(package_name, current_version, should_merge)
+                        should_merge = True
 
-                        if semversion in range:
-                            print(f"\nMerge version {version!s} for `{package_name}`.\n")
-                            update_repo(package_name, url, tag["name"])
-                            update_catalog(package_name, current_version, should_merge)
-                            should_merge = True
-
-                        elif semversion < min_version:
-                            print(f"\nNext available version {semversion!s} for `{package_name}` is below the supported range {range!s}.\n")
-                            break
-            
-            # The final step is to merge the current version so the POT file is tagged accordingly
-            update_repo(package_name, url, current_version)
-            update_catalog(package_name, current_version, should_merge)
+                    elif semversion < min_version:
+                        print(f"\nNext available version {semversion!s} for `{package_name}` is below the supported range {range!s}.\n")
+                        break
+        
+        # The final step is to merge the current version so the POT file is tagged accordingly
+        update_repo(package_name, url, current_version)
+        update_catalog(package_name, current_version, should_merge)
 
     delta = round(time.time() - start_run_time, 0)
     print(f"\n\n\nCatalogs updated in {delta} seconds\n")
