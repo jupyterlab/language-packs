@@ -16,14 +16,18 @@ This script will:
 
 # Standard library imports
 import argparse
-import os
+import re
 import subprocess
 import time
 from pathlib import Path
 
 # Third party imports
 import jupyterlab_translate.api as api
+import semantic_version as semver
 import yaml
+from packaging.version import parse
+
+from github_ql import get_tags
 
 # Constants
 HERE = Path(__file__).parent.resolve()
@@ -32,6 +36,7 @@ REPOSITORIES_FOLDER = "repos"
 LANGUAGE_PACKS_FOLDER = "language-packs"
 REPO_MAP_FILE = "repository-map.yml"
 CROWDIN_FILE = "crowdin.yml"
+REPO_REGEX = re.compile(r"^https://(www)?github\.com/(?P<owner>.+)/(?P<repo>.+)(\.git)?$")
 
 
 def load_repo_map() -> dict:
@@ -102,16 +107,23 @@ def update_repo(package_name: str, url: str, version: str):
     repos_path.mkdir(parents=True, exist_ok=True)
 
     if not clone_path.is_dir():
-        args = ["git", "clone", url + ".git", package_name]
+        args = ["git", "clone", "--depth=1", f"--branch={version}", f"{url}.git", package_name]
         subprocess.check_call(args, cwd=repos_path)
 
-    args = ["git", "fetch", "--tags"]
-    subprocess.check_call(args, cwd=clone_path)
+    is_branch = False
+    try:
+        args = ["git", "fetch", "--depth=1", "origin", f"+refs/tags/{version}:refs/tags/{version}"]
+        subprocess.check_call(args, cwd=clone_path)
+    except subprocess.CalledProcessError as err:
+        # The version is probably a branch
+        args = ["git", "fetch", "--depth=1", "origin", f"+refs/heads/{version}:refs/remotes/origin/{version}"]
+        subprocess.check_call(args, cwd=clone_path)
+        is_branch = True
 
     args = ["git", "checkout", version]
     subprocess.check_call(args, cwd=clone_path)
 
-    if version in ["master", "main"]:
+    if is_branch:
         args = ["git", "pull", "origin", version]
         subprocess.check_call(args, cwd=clone_path)
 
@@ -126,33 +138,78 @@ def update_catalog(package_name: str, version: str, merge: bool):
     package_repo_dir = REPO_ROOT / REPOSITORIES_FOLDER / package_name
     api.extract_language_pack(package_repo_dir, REPO_ROOT, package_name, merge)
 
+def get_min(clause):
+    """Extract the smallest version from a NpmSpec range."""
+    if isinstance(clause, semver.base.AllOf):
+        return min(map(lambda c: get_min(c), clause))
+    elif isinstance(clause, semver.base.AnyOf):
+        return min(map(lambda c: get_min(c), clause.clauses))
+    elif isinstance(clause, semver.base.Range):
+        return clause.target
 
 if __name__ == "__main__":
     start_run_time = time.time()
     parser = argparse.ArgumentParser(description="Update JupyterLab language packages source strings.")
     parser.add_argument("packages", nargs="*", help="Package to update")
-    parser.add_argument("--no-merge", action="store_true", help="If present, the existing PO template file will be overridden (by default the new strings are merged).")
 
     args = parser.parse_args()
 
     data = load_repo_map()
-    
+
     # Ensure repository map and crowdin config are in sync
     update_crowdin_config()
-    
+
     if len(args.packages) == 0:
         packages = sorted(data.keys())
     else:
         packages = [pkg for pkg in args.packages if pkg in data]
-    
-    merge = not args.no_merge and os.environ.get("NO_MERGE_POT", "false") == "false"
 
     for package_name in packages:
-        print(f'\n\nUpdating catalog for "{package_name}" with {"" if merge else "no "}merge\n\n')
+        print(f'\n\nUpdating catalog for "{package_name}"\n\n')
         url = data[package_name]["url"]
-        version = data[package_name]["current-version-tag"]
-        update_repo(package_name, url, version)
-        update_catalog(package_name, version, merge)
+        current_version = data[package_name]["current-version-tag"]
+        should_merge = False
+
+        # Get the latest tags - assuming the repository is on github
+        match = REPO_REGEX.match(data[package_name]["url"])
+        if data[package_name].get("supported-versions") is not None and match is not None:
+            repo = match.groupdict()
+            range = semver.NpmSpec(data[package_name]["supported-versions"])
+            min_version = get_min(range.clause)
+
+            # Request 100 tags in descending commit date order
+            try:
+                tags = get_tags(repo["owner"], repo["repo"])
+            except ValueError as err:
+                print(f"Error when retrieving version for package `{package_name}`.")
+                print(err)
+            else:
+                for tag in tags:
+                    version = parse(tag)
+                    if (
+                        version.release is None  # non standard version
+                        or version == parse(current_version)  # Already handled
+                        or version.is_devrelease # Skip non final versions
+                        or version.is_prerelease
+                    ):
+                        continue
+
+                    # The following will erase any part of the version that is not (major, minor, patch)
+                    semversion = semver.Version(version.base_version)
+
+                    if semversion in range:
+                        print(f"\nMerge version {version!s} for `{package_name}`.\n")
+                        update_repo(package_name, url, tag)
+                        update_catalog(package_name, current_version, should_merge)
+                        should_merge = True
+
+                    elif semversion < min_version:
+                        print(f"\nNext available version {semversion!s} for `{package_name}` is below the supported range {range!s}.\n")
+                        break
+        
+        # The final step is to merge the current version so the POT file is tagged accordingly
+        update_repo(package_name, url, current_version)
+        update_catalog(package_name, current_version, should_merge)
 
     delta = round(time.time() - start_run_time, 0)
     print(f"\n\n\nCatalogs updated in {delta} seconds\n")
