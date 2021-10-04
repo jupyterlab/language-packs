@@ -54,8 +54,11 @@ if __name__ == "__main__":
         if match is not None:
             repo = match.groupdict()
 
+            # For JupyterLab we filter explicitly to catch version belonging to minor range
+            ref_filter = f"v{current_version.major}.{current_version.minor}" if package_name == "jupyterlab" else None
             try:
-                tags = get_tags(repo["owner"], repo["repo"])
+                # Request 100 tags in descending commit date order
+                tags = get_tags(repo["owner"], repo["repo"], filter=ref_filter)
             except ValueError as err:
                 print(f"Error when retrieving version for package `{package_name}`.")
                 print(err)
@@ -76,8 +79,9 @@ if __name__ == "__main__":
                             print(msg)
                             errors.append(msg)
                         break
-                    elif version <= current_version:
-                        break
+                    # As version are ordered by commit date, patch release on older branch may be more recent for example
+                    # elif version <= current_version:
+                    #     break
 
     if len(errors) > 0:
         raise ValueError("\n".join(errors))
