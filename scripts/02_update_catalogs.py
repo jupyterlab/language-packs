@@ -198,7 +198,11 @@ if __name__ == "__main__":
                         continue
 
                     # The following will erase any part of the version that is not (major, minor, patch)
-                    semversion = semver.Version(version.base_version)
+                    try:
+                        semversion = semver.Version(version.base_version)
+                    except ValueError as err:
+                        print(f"Tag '{tag}' skipped for package '{package_name}': not a valid semver.")
+                        continue
 
                     if semversion in range:
                         print(f"\nMerge version {version!s} for `{package_name}`.\n")
