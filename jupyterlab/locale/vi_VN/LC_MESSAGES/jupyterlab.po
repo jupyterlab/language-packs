@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
-"PO-Revision-Date: 2021-09-28 08:32\n"
+"PO-Revision-Date: 2021-10-04 14:27\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -106,7 +106,7 @@ msgstr "Trình đọc Markdown"
 #: /packages/application-extension/schema/commands.json:/description
 msgctxt "schema"
 msgid "Application commands settings."
-msgstr "Cài đăt tập lệnh ứng dụng."
+msgstr "Cài đặt tập lệnh ứng dụng."
 
 #: /packages/application-extension/schema/commands.json:/title
 msgctxt "schema"
@@ -121,7 +121,7 @@ msgstr "Có vô hiệu hóa tình đơn hay không"
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/icon/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/icon/description
 msgctxt "settings"
 msgid "Menu icon id"
-msgstr "Mã định danh của biểu tượng trình đơn"
+msgstr "Mã định danh của biểu tượng trong trình đơn"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/id/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/id/description
 msgctxt "settings"
@@ -146,7 +146,7 @@ msgstr "Chỉ số ghi nhớ cho nhãn"
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/rank/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/rank/description
 msgctxt "settings"
 msgid "Menu rank"
-msgstr "Thứ hạng trình đơn"
+msgstr "Thứ hạng của trình đơn"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/args/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/args/description
 msgctxt "settings"
@@ -397,7 +397,7 @@ msgstr ""
 #: /packages/codemirror-extension/schema/commands.json:/properties/lineWiseCopyCut/description
 msgctxt "settings"
 msgid "When enabled, which is the default, doing copy or cut when there is no selection will copy or cut the whole lines that have cursors on them."
-msgstr ""
+msgstr "Khi bật, theo mặc định, sao chép hoặc cắt khi không chọn đối tượng nào sẽ sao chép hoặc cắt tất cả các dòng có con trỏ chỉ tới."
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/lineWiseCopyCut/title
 msgctxt "settings"
@@ -412,7 +412,7 @@ msgstr "Có cuộn qua phần cuối của văn bản hay không"
 #: /packages/codemirror-extension/schema/commands.json:/properties/scrollPastEnd/title
 msgctxt "settings"
 msgid "Scroll behavior"
-msgstr ""
+msgstr "Thao tác cuộn"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/selectionPointer/description
 msgctxt "settings"
@@ -427,7 +427,7 @@ msgstr "Lựa chọn Con trỏ"
 #: /packages/codemirror-extension/schema/commands.json:/properties/styleActiveLine/description
 msgctxt "settings"
 msgid "Value is boolean, or { nonEmpty: boolean }"
-msgstr ""
+msgstr "Giá trị là boolean, hoặc { nonEmpty: boolean }"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/styleActiveLine/title
 msgctxt "settings"
@@ -581,7 +581,7 @@ msgstr ""
 #: /packages/debugger-extension/schema/main.json:/properties/variableFilters/title
 msgctxt "settings"
 msgid "Variable filter"
-msgstr ""
+msgstr "Bộ lọc biến"
 
 #: /packages/debugger-extension/schema/main.json:/title
 msgctxt "schema"
@@ -1039,7 +1039,7 @@ msgstr ""
 #: /packages/notebook-extension/schema/tracker.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Notebook"
-msgstr ""
+msgstr "Sổ tay"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/description
 msgctxt "settings"
@@ -1049,7 +1049,7 @@ msgstr ""
 #: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/title
 msgctxt "settings"
 msgid "Code Cell Configuration"
-msgstr ""
+msgstr "Cấu hình ô chứa lệnh"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/defaultCell/description
 msgctxt "settings"
@@ -1229,7 +1229,7 @@ msgstr "Cài đặt Terminal."
 #: /packages/terminal-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[3]/submenu/label packages/terminal-extension/src/index.ts:177
 msgctxt "menu"
 msgid "Terminal Theme"
-msgstr ""
+msgstr "Chủ đề phiên điều khiển"
 
 #: /packages/terminal-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -1348,6 +1348,11 @@ msgstr ""
 
 #: /packages/toc-extension/schema/plugin.json:/properties/numberingH1/description
 msgctxt "settings"
+msgid "Whether to number first level headings"
+msgstr ""
+
+#: /packages/toc-extension/schema/plugin.json:/properties/numberingH1/description
+msgctxt "settings"
 msgid "Whether to number first-level headings"
 msgstr ""
 
@@ -1358,12 +1363,22 @@ msgstr ""
 
 #: /packages/toc-extension/schema/plugin.json:/properties/syncCollapseState/description
 msgctxt "settings"
+msgid "If set to true, when a header is collapsed in the ToC the corresponding section in the notebook is collapsed as well and vice versa."
+msgstr ""
+
+#: /packages/toc-extension/schema/plugin.json:/properties/syncCollapseState/description
+msgctxt "settings"
 msgid "If set to true, when a header is collapsed in the table of contents the corresponding section in the notebook is collapsed as well and vice versa."
 msgstr ""
 
 #: /packages/toc-extension/schema/plugin.json:/properties/syncCollapseState/title
 msgctxt "settings"
 msgid "Synchronize collapse state"
+msgstr ""
+
+#: /packages/toc-extension/schema/plugin.json:/properties/syncCollapseState/title
+msgctxt "settings"
+msgid "syncCollapseState"
 msgstr ""
 
 #: /packages/toc-extension/schema/plugin.json:/title
@@ -1573,7 +1588,7 @@ msgstr "Không tìm thấy đường dẫn"
 msgid "Property Inspector"
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:947 packages/mainmenu-extension/src/index.ts:889
+#: packages/application-extension/src/index.tsx:947 packages/mainmenu-extension/src/index.ts:876 packages/mainmenu-extension/src/index.ts:889
 msgid "Information"
 msgstr "Thông Tin"
 
@@ -1581,7 +1596,7 @@ msgstr "Thông Tin"
 msgid "Context menu customization has changed. You will need to reload JupyterLab to see the changes."
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:953 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:585 packages/mainmenu-extension/src/index.ts:895
+#: packages/application-extension/src/index.tsx:953 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:585 packages/mainmenu-extension/src/index.ts:882 packages/mainmenu-extension/src/index.ts:895
 msgid "Reload"
 msgstr "Tải lại"
 
@@ -1723,7 +1738,7 @@ msgstr "Sử dụng chủ đề: %1"
 msgid "Workspace loader"
 msgstr ""
 
-#: packages/apputils-extension/src/workspacesplugin.ts:274 packages/apputils-extension/src/workspacesplugin.ts:280 packages/docmanager/src/widgetmanager.ts:371 packages/docregistry/src/context.ts:971 packages/docregistry/src/context.ts:978
+#: packages/apputils-extension/src/workspacesplugin.ts:274 packages/apputils-extension/src/workspacesplugin.ts:280 packages/docmanager/src/widgetmanager.ts:371 packages/docregistry/src/context.ts:971 packages/docregistry/src/context.ts:978 packages/docregistry/src/context.ts:979 packages/docregistry/src/context.ts:986
 msgid "Save"
 msgstr "Lưu"
 
@@ -1731,7 +1746,7 @@ msgstr "Lưu"
 msgid "Save Current Workspace As…"
 msgstr "Lưu không gian làm việc hiện tại dưới dạng…"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1217 packages/debugger-extension/src/index.ts:469 packages/debugger/src/panels/breakpoints/index.ts:51 packages/docmanager-extension/src/index.ts:583 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:633 packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:846 packages/docmanager-extension/src/index.ts:847 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:448 packages/filebrowser/src/opendialog.ts:81 packages/notebook/src/actions.tsx:1759 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/translation-extension/src/index.ts:135 packages/translation-extension/src/index.ts:138
+#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1217 packages/apputils/src/sessioncontext.tsx:1218 packages/apputils/src/sessioncontext.tsx:1243 packages/debugger-extension/src/index.ts:469 packages/debugger/src/panels/breakpoints/index.ts:51 packages/docmanager-extension/src/index.ts:583 packages/docmanager-extension/src/index.ts:584 packages/docmanager-extension/src/index.ts:633 packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:846 packages/docmanager-extension/src/index.ts:847 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:448 packages/filebrowser/src/opendialog.ts:81 packages/notebook/src/actions.tsx:1758 packages/notebook/src/actions.tsx:1759 packages/notebook/src/actions.tsx:1762 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/translation-extension/src/index.ts:132 packages/translation-extension/src/index.ts:135 packages/translation-extension/src/index.ts:138
 msgid "Cancel"
 msgstr "Huỷ"
 
@@ -1751,67 +1766,67 @@ msgstr ""
 msgid "notebook actions"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1223 packages/filebrowser/src/opendialog.ts:83
+#: packages/apputils/src/sessioncontext.tsx:1223 packages/apputils/src/sessioncontext.tsx:1224 packages/apputils/src/sessioncontext.tsx:1249 packages/filebrowser/src/opendialog.ts:83
 msgid "Select"
 msgstr "Chọn"
 
-#: packages/apputils/src/sessioncontext.tsx:1227
+#: packages/apputils/src/sessioncontext.tsx:1227 packages/apputils/src/sessioncontext.tsx:1228 packages/apputils/src/sessioncontext.tsx:1253
 msgid "Select Kernel"
 msgstr "Chọn Kernel"
 
-#: packages/apputils/src/sessioncontext.tsx:1280
+#: packages/apputils/src/sessioncontext.tsx:1280 packages/apputils/src/sessioncontext.tsx:1281 packages/apputils/src/sessioncontext.tsx:1306
 msgid "Restart Kernel?"
 msgstr "Khởi động lại Kernel?"
 
-#: packages/apputils/src/sessioncontext.tsx:1281
+#: packages/apputils/src/sessioncontext.tsx:1281 packages/apputils/src/sessioncontext.tsx:1282 packages/apputils/src/sessioncontext.tsx:1307
 msgid "Do you want to restart the current kernel? All variables will be lost."
 msgstr "Bạn có muốn khởi động lại kernel hiện tại? Tất cả các biến sẽ bị xoá."
 
-#: packages/apputils/src/sessioncontext.tsx:1335
+#: packages/apputils/src/sessioncontext.tsx:1335 packages/apputils/src/sessioncontext.tsx:1336 packages/apputils/src/sessioncontext.tsx:1361
 msgid "Select kernel for:"
 msgstr "Chọn Kernel cho:"
 
-#: packages/apputils/src/sessioncontext.tsx:1475
+#: packages/apputils/src/sessioncontext.tsx:1475 packages/apputils/src/sessioncontext.tsx:1476 packages/apputils/src/sessioncontext.tsx:1501
 msgid "Start Preferred Kernel"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1490
+#: packages/apputils/src/sessioncontext.tsx:1490 packages/apputils/src/sessioncontext.tsx:1491 packages/apputils/src/sessioncontext.tsx:1516
 msgid "Start Other Kernel"
 msgstr "Khởi động kernel khác"
 
-#: packages/apputils/src/sessioncontext.tsx:1547
+#: packages/apputils/src/sessioncontext.tsx:1547 packages/apputils/src/sessioncontext.tsx:1548 packages/apputils/src/sessioncontext.tsx:1573
 msgid "Use Kernel from Preferred Session"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1562
+#: packages/apputils/src/sessioncontext.tsx:1562 packages/apputils/src/sessioncontext.tsx:1563 packages/apputils/src/sessioncontext.tsx:1588
 msgid "Use Kernel from Other Session"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1612
+#: packages/apputils/src/sessioncontext.tsx:1612 packages/apputils/src/sessioncontext.tsx:1613
 msgid "Use No Kernel"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1614 packages/apputils/src/sessioncontext.tsx:601 packages/statusbar/src/defaults/kernelStatus.tsx:187
+#: packages/apputils/src/sessioncontext.tsx:1614 packages/apputils/src/sessioncontext.tsx:1615 packages/apputils/src/sessioncontext.tsx:1640 packages/apputils/src/sessioncontext.tsx:601 packages/apputils/src/sessioncontext.tsx:613 packages/statusbar/src/defaults/kernelStatus.tsx:187
 msgid "No Kernel"
 msgstr "Không có kernel"
 
-#: packages/apputils/src/sessioncontext.tsx:1636
+#: packages/apputils/src/sessioncontext.tsx:1636 packages/apputils/src/sessioncontext.tsx:1637 packages/apputils/src/sessioncontext.tsx:1662
 msgid "Path:"
 msgstr "Đường dẫn:"
 
-#: packages/apputils/src/sessioncontext.tsx:1637
+#: packages/apputils/src/sessioncontext.tsx:1637 packages/apputils/src/sessioncontext.tsx:1638 packages/apputils/src/sessioncontext.tsx:1663
 msgid "Name:"
 msgstr "Tên:"
 
-#: packages/apputils/src/sessioncontext.tsx:1638
+#: packages/apputils/src/sessioncontext.tsx:1638 packages/apputils/src/sessioncontext.tsx:1639 packages/apputils/src/sessioncontext.tsx:1664
 msgid "Kernel Name:"
 msgstr "Tên Kernel:"
 
-#: packages/apputils/src/sessioncontext.tsx:1639
+#: packages/apputils/src/sessioncontext.tsx:1639 packages/apputils/src/sessioncontext.tsx:1640 packages/apputils/src/sessioncontext.tsx:1665
 msgid "Kernel Id:"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:967
+#: packages/apputils/src/sessioncontext.tsx:967 packages/apputils/src/sessioncontext.tsx:968 packages/apputils/src/sessioncontext.tsx:981
 msgid "Error Starting Kernel"
 msgstr ""
 
@@ -1827,15 +1842,15 @@ msgstr "Lỗi tải chủ đề giao diện"
 msgid "OK"
 msgstr ""
 
-#: packages/apputils/src/toolbar.tsx:383
+#: packages/apputils/src/toolbar.tsx:383 packages/apputils/src/toolbar.tsx:384
 msgid "Interrupt the kernel"
 msgstr ""
 
-#: packages/apputils/src/toolbar.tsx:405
+#: packages/apputils/src/toolbar.tsx:405 packages/apputils/src/toolbar.tsx:406
 msgid "Restart the kernel"
 msgstr "Khởi động lại kernel"
 
-#: packages/apputils/src/toolbar.tsx:749
+#: packages/apputils/src/toolbar.tsx:749 packages/apputils/src/toolbar.tsx:750
 msgid "Switch kernel"
 msgstr ""
 
@@ -1887,7 +1902,7 @@ msgstr "Đã ngắt kết nối"
 msgid "Initializing"
 msgstr "Đang khởi tạo"
 
-#: packages/apputils/src/toolbar.tsx:805
+#: packages/apputils/src/toolbar.tsx:790 packages/apputils/src/toolbar.tsx:805
 msgid "Kernel %1"
 msgstr ""
 
@@ -1975,11 +1990,11 @@ msgstr "Chèn dấu ngắt dòng"
 msgid "Replace Selection in Console"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:551 packages/mainmenu-extension/src/index.ts:465 packages/notebook-extension/src/index.ts:1620
+#: packages/console-extension/src/index.ts:551 packages/mainmenu-extension/src/index.ts:452 packages/mainmenu-extension/src/index.ts:465 packages/notebook-extension/src/index.ts:1620
 msgid "Interrupt Kernel"
 msgstr "Ngưng tiến trình kernel"
 
-#: packages/console-extension/src/index.ts:566 packages/mainmenu-extension/src/index.ts:485 packages/notebook-extension/src/index.ts:1492
+#: packages/console-extension/src/index.ts:566 packages/mainmenu-extension/src/index.ts:472 packages/mainmenu-extension/src/index.ts:485 packages/notebook-extension/src/index.ts:1492
 msgid "Restart Kernel…"
 msgstr "Khởi động lại kernel…"
 
@@ -1995,7 +2010,7 @@ msgstr ""
 msgid "Are you sure you want to close \"%1\"?"
 msgstr "Bạn có chắc chắn muốn đóng \"%1\"?"
 
-#: packages/console-extension/src/index.ts:629 packages/mainmenu-extension/src/index.ts:520 packages/notebook-extension/src/index.ts:1967
+#: packages/console-extension/src/index.ts:629 packages/mainmenu-extension/src/index.ts:507 packages/mainmenu-extension/src/index.ts:520 packages/notebook-extension/src/index.ts:1967
 msgid "Change Kernel…"
 msgstr ""
 
@@ -2207,19 +2222,19 @@ msgstr "Lỗi"
 
 #: packages/docmanager-extension/src/index.ts:555 packages/docmanager-extension/src/index.ts:556 packages/docmanager-extension/src/index.ts:577 packages/docmanager-extension/src/index.ts:578
 msgid "Reload %1 from Disk"
-msgstr ""
+msgstr "Tải lại %1 từ đĩa"
 
 #: packages/docmanager-extension/src/index.ts:559 packages/docmanager-extension/src/index.ts:560
 msgid "Reload contents from disk"
-msgstr ""
+msgstr "Tải lại nội dung từ đĩa"
 
 #: packages/docmanager-extension/src/index.ts:570 packages/docmanager-extension/src/index.ts:571
 msgid "Cannot Reload"
 msgstr "Không thể tải lại"
 
-#: packages/docmanager-extension/src/index.ts:572 packages/docmanager-extension/src/index.ts:573 packages/docmanager-extension/src/index.ts:617 packages/docmanager-extension/src/index.ts:618 packages/docmanager-extension/src/index.ts:663 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:670 packages/docmanager-extension/src/index.ts:671 packages/docmanager-extension/src/index.ts:726 packages/docmanager-extension/src/index.ts:727 packages/notebook/src/actions.tsx:1751 packages/notebook/src/actions.tsx:1760 packages/notebook/src/actions.tsx:1978 packages/notebook/src/default-toolbar.tsx:67 packages/notebook/src/model.ts:353 packages/notebook/src/panel.ts:219 packages/settingeditor/src/plugineditor.ts:138 packages/settingeditor/src/plugineditor.ts:260
+#: packages/docmanager-extension/src/index.ts:572 packages/docmanager-extension/src/index.ts:573 packages/docmanager-extension/src/index.ts:617 packages/docmanager-extension/src/index.ts:618 packages/docmanager-extension/src/index.ts:663 packages/docmanager-extension/src/index.ts:664 packages/docmanager-extension/src/index.ts:670 packages/docmanager-extension/src/index.ts:671 packages/docmanager-extension/src/index.ts:726 packages/docmanager-extension/src/index.ts:727 packages/notebook/src/actions.tsx:1750 packages/notebook/src/actions.tsx:1751 packages/notebook/src/actions.tsx:1754 packages/notebook/src/actions.tsx:1759 packages/notebook/src/actions.tsx:1760 packages/notebook/src/actions.tsx:1763 packages/notebook/src/actions.tsx:1977 packages/notebook/src/actions.tsx:1978 packages/notebook/src/actions.tsx:1981 packages/notebook/src/actions.tsx:1987 packages/notebook/src/default-toolbar.tsx:67 packages/notebook/src/model.ts:353 packages/notebook/src/model.ts:355 packages/notebook/src/panel.ts:219 packages/settingeditor/src/plugineditor.ts:138 packages/settingeditor/src/plugineditor.ts:260 packages/translation-extension/src/index.ts:133
 msgid "Ok"
-msgstr ""
+msgstr "Đồng ý"
 
 #: packages/docmanager-extension/src/index.ts:578 packages/docmanager-extension/src/index.ts:579
 msgid "Are you sure you want to reload the %1 from the disk?"
@@ -2241,7 +2256,7 @@ msgstr "Không thể hoàn lại"
 msgid "Revert %1 to checkpoint"
 msgstr "Hoàn lại %1 so với điểm kiểm tra"
 
-#: packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:635 packages/docregistry/src/context.ts:799 packages/docregistry/src/context.ts:815
+#: packages/docmanager-extension/src/index.ts:634 packages/docmanager-extension/src/index.ts:635 packages/docregistry/src/context.ts:799 packages/docregistry/src/context.ts:807 packages/docregistry/src/context.ts:815 packages/docregistry/src/context.ts:823
 msgid "Revert"
 msgstr "Hoàn lại"
 
@@ -2323,9 +2338,9 @@ msgstr "Ghi đè lên tập tin không?"
 
 #: packages/docmanager/src/dialogs.ts:110
 msgid "\"%1\" already exists, overwrite?"
-msgstr ""
+msgstr "\"%1\" đã tồn tại, ghi đè lên?"
 
-#: packages/docmanager/src/dialogs.ts:113 packages/docregistry/src/context.ts:801 packages/docregistry/src/context.ts:811 packages/docregistry/src/context.ts:833 packages/docregistry/src/context.ts:844
+#: packages/docmanager/src/dialogs.ts:113 packages/docregistry/src/context.ts:801 packages/docregistry/src/context.ts:809 packages/docregistry/src/context.ts:811 packages/docregistry/src/context.ts:819 packages/docregistry/src/context.ts:833 packages/docregistry/src/context.ts:841 packages/docregistry/src/context.ts:844 packages/docregistry/src/context.ts:852
 msgid "Overwrite"
 msgstr "Ghi đè lên"
 
@@ -2352,6 +2367,10 @@ msgstr "Lỗi đổi tên"
 #: packages/docmanager/src/dialogs.ts:63
 msgid "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\""
 msgstr "\"%1\" không phải là tên tệp tin hợp lệ. Tên phải có độ dài lớn hơn không, và không chứa các kí tự \"/\", \"\\\", hay \":\""
+
+#: packages/docmanager/src/savingstatus.tsx:44
+msgid "Saving %1"
+msgstr ""
 
 #: packages/docmanager/src/savingstatus.tsx:58
 msgid "Saving completed"
@@ -2399,33 +2418,35 @@ msgstr "Lưu thay đổi trong \"%1\" trước khi đóng?"
 msgid "Discard"
 msgstr "Hủy"
 
-#: packages/docregistry/src/context.ts:634
+#: packages/docregistry/src/context.ts:634 packages/docregistry/src/context.ts:642
 msgid "File Save Error for %1"
 msgstr "Lỗi lưu file cho %1"
 
-#: packages/docregistry/src/context.ts:697
+#: packages/docregistry/src/context.ts:697 packages/docregistry/src/context.ts:705
 msgid "File Load Error for %1"
 msgstr "Lỗi đọc file cho %1"
 
-#: packages/docregistry/src/context.ts:793
+#: packages/docregistry/src/context.ts:793 packages/docregistry/src/context.ts:801
 msgid "\"%1\" has changed on disk since the last time it was opened or saved.\n"
 "Do you want to overwrite the file on disk with the version open here,\n"
 "or load the version on disk (revert)?"
-msgstr ""
+msgstr "\"%1\" đã thay đổi trong đĩa kể từ lần cuối nó được mở hoặc lưu.\n"
+"Bạn có muốn ghi đè tập tin trong đĩa với phiên bản đang được mở,\n"
+"hay tải phiên bản trong đĩa (hoàn nguyên)?"
 
-#: packages/docregistry/src/context.ts:804
+#: packages/docregistry/src/context.ts:804 packages/docregistry/src/context.ts:812
 msgid "File Changed"
 msgstr "Các tệp đã thay đổi"
 
-#: packages/docregistry/src/context.ts:828
+#: packages/docregistry/src/context.ts:828 packages/docregistry/src/context.ts:836
 msgid "\"%1\" already exists. Do you want to replace it?"
 msgstr ""
 
-#: packages/docregistry/src/context.ts:836
+#: packages/docregistry/src/context.ts:836 packages/docregistry/src/context.ts:844
 msgid "File Overwrite?"
 msgstr "Ghi đè tập tin?"
 
-#: packages/docregistry/src/context.ts:973
+#: packages/docregistry/src/context.ts:973 packages/docregistry/src/context.ts:981
 msgid "Save File As.."
 msgstr "Lưu tệp dưới dạng.."
 
@@ -2433,59 +2454,59 @@ msgstr "Lưu tệp dưới dạng.."
 msgid "Renderer Failure: %1"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1268
+#: packages/docregistry/src/registry.ts:1268 packages/docregistry/src/registry.ts:1272
 msgid "default"
 msgstr "mặc định"
 
-#: packages/docregistry/src/registry.ts:1291
+#: packages/docregistry/src/registry.ts:1291 packages/docregistry/src/registry.ts:1295
 msgid "Text"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1314 packages/launcher/src/index.tsx:149 packages/launcher/src/index.tsx:154 packages/notebook-extension/src/index.ts:1231 packages/notebook-extension/src/index.ts:1272 packages/notebook-extension/src/index.ts:640
+#: packages/docregistry/src/registry.ts:1314 packages/docregistry/src/registry.ts:1318 packages/launcher/src/index.tsx:149 packages/launcher/src/index.tsx:154 packages/notebook-extension/src/index.ts:1231 packages/notebook-extension/src/index.ts:1272 packages/notebook-extension/src/index.ts:640
 msgid "Notebook"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1339
+#: packages/docregistry/src/registry.ts:1339 packages/docregistry/src/registry.ts:1343
 msgid "Directory"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1366 packages/fileeditor-extension/src/commands.ts:993 packages/fileeditor-extension/src/commands.ts:996
+#: packages/docregistry/src/registry.ts:1366 packages/docregistry/src/registry.ts:1370 packages/fileeditor-extension/src/commands.ts:993 packages/fileeditor-extension/src/commands.ts:996
 msgid "Markdown File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1373
+#: packages/docregistry/src/registry.ts:1373 packages/docregistry/src/registry.ts:1377
 msgid "PDF File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1380 packages/fileeditor-extension/src/index.ts:186
+#: packages/docregistry/src/registry.ts:1380 packages/docregistry/src/registry.ts:1384 packages/fileeditor-extension/src/index.ts:186
 msgid "Python File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1387
+#: packages/docregistry/src/registry.ts:1387 packages/docregistry/src/registry.ts:1391
 msgid "JSON File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1394 packages/fileeditor-extension/src/index.ts:198
+#: packages/docregistry/src/registry.ts:1394 packages/docregistry/src/registry.ts:1398 packages/fileeditor-extension/src/index.ts:198
 msgid "Julia File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1401
+#: packages/docregistry/src/registry.ts:1401 packages/docregistry/src/registry.ts:1405
 msgid "CSV File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1408
+#: packages/docregistry/src/registry.ts:1408 packages/docregistry/src/registry.ts:1412
 msgid "TSV File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1415 packages/fileeditor-extension/src/index.ts:210
+#: packages/docregistry/src/registry.ts:1415 packages/docregistry/src/registry.ts:1419 packages/fileeditor-extension/src/index.ts:210
 msgid "R File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1422
+#: packages/docregistry/src/registry.ts:1422 packages/docregistry/src/registry.ts:1426
 msgid "YAML File"
 msgstr ""
 
-#: packages/docregistry/src/registry.ts:1429 packages/docregistry/src/registry.ts:1437 packages/docregistry/src/registry.ts:1445 packages/docregistry/src/registry.ts:1453 packages/docregistry/src/registry.ts:1461 packages/docregistry/src/registry.ts:1469
+#: packages/docregistry/src/registry.ts:1429 packages/docregistry/src/registry.ts:1433 packages/docregistry/src/registry.ts:1437 packages/docregistry/src/registry.ts:1441 packages/docregistry/src/registry.ts:1445 packages/docregistry/src/registry.ts:1449 packages/docregistry/src/registry.ts:1453 packages/docregistry/src/registry.ts:1457 packages/docregistry/src/registry.ts:1461 packages/docregistry/src/registry.ts:1465 packages/docregistry/src/registry.ts:1469 packages/docregistry/src/registry.ts:1473
 msgid "Image"
 msgstr "Hình ảnh"
 
@@ -2634,19 +2655,19 @@ msgstr ""
 
 #: packages/extensionmanager/src/widget.tsx:298
 msgid "Install"
-msgstr ""
+msgstr "Cài đặt"
 
 #: packages/extensionmanager/src/widget.tsx:311
 msgid "Update"
-msgstr ""
+msgstr "Cập nhật"
 
 #: packages/extensionmanager/src/widget.tsx:320
 msgid "Uninstall"
-msgstr ""
+msgstr "Gỡ cài đặt"
 
 #: packages/extensionmanager/src/widget.tsx:365
 msgid "About"
-msgstr ""
+msgstr "Thông tin"
 
 #: packages/extensionmanager/src/widget.tsx:384
 msgid "This is a prebuilt extension. To uninstall it, please\n"
@@ -2697,7 +2718,7 @@ msgstr ""
 
 #: packages/extensionmanager/src/widget.tsx:835
 msgid "Reason given:"
-msgstr ""
+msgstr "Lý do đưa ra:"
 
 #: packages/extensionmanager/src/widget.tsx:843
 msgid "The server has some missing requirements for installing extensions."
@@ -2721,11 +2742,11 @@ msgstr "Kết quả Tìm kiếm"
 
 #: packages/extensionmanager/src/widget.tsx:947
 msgid "Discover"
-msgstr ""
+msgstr "Khám phá"
 
 #: packages/filebrowser-extension/src/index.ts:1009
 msgid "Show Last Modified Column"
-msgstr ""
+msgstr "Hiển thị cột được chỉnh sửa cuối cùng"
 
 #: packages/filebrowser-extension/src/index.ts:1025
 msgid "Search on File Names"
@@ -2757,7 +2778,7 @@ msgstr "Sao chép liên kết có thể chia sẻ"
 
 #: packages/filebrowser-extension/src/index.ts:657 packages/filebrowser-extension/src/index.ts:988 packages/launcher-extension/src/index.ts:59
 msgid "New Launcher"
-msgstr ""
+msgstr "Trình khởi chạy mới"
 
 #: packages/filebrowser-extension/src/index.ts:700 packages/fileeditor-extension/src/commands.ts:835 packages/fileeditor-extension/src/commands.ts:838
 msgid "Copy"
@@ -2823,7 +2844,7 @@ msgstr ""
 msgid "Copy Path"
 msgstr "Sao chép đường dẫn"
 
-#: packages/filebrowser-extension/src/index.ts:974 packages/mainmenu-extension/src/index.ts:526
+#: packages/filebrowser-extension/src/index.ts:974 packages/mainmenu-extension/src/index.ts:513 packages/mainmenu-extension/src/index.ts:526
 msgid "Shut Down Kernel"
 msgstr "Tắt kernel"
 
@@ -2833,7 +2854,7 @@ msgstr ""
 
 #: packages/filebrowser/src/browser.ts:101
 msgid "Refresh File List"
-msgstr ""
+msgstr "Làm mới danh sách tập tin"
 
 #: packages/filebrowser/src/browser.ts:117 packages/filebrowser/src/browser.ts:187
 msgid "Filter files by name"
@@ -2885,6 +2906,10 @@ msgstr "Lỗi khi sao chép/di chuyển tập tin"
 msgctxt "showErrorMessage"
 msgid "Delete Failed"
 msgstr "Xóa không thành công"
+
+#: packages/filebrowser/src/listing.ts:1526
+msgid "showErrorMessage"
+msgstr ""
 
 #: packages/filebrowser/src/listing.ts:1528
 msgctxt "showErrorMessage"
@@ -3010,7 +3035,7 @@ msgstr "Đang tải lên…"
 msgid "Complete!"
 msgstr "Hoàn thành!"
 
-#: packages/fileeditor-extension/src/commands.ts:1024 packages/fileeditor-extension/src/commands.ts:1027 packages/fileeditor-extension/src/commands.ts:1038 packages/fileeditor-extension/src/commands.ts:1041 packages/fileeditor-extension/src/commands.ts:1054 packages/fileeditor-extension/src/commands.ts:1057 packages/launcher/src/index.tsx:151 packages/launcher/src/index.tsx:161 packages/launcher/src/index.tsx:434 packages/terminal-extension/src/index.ts:228 packages/terminal-extension/src/index.ts:261
+#: packages/fileeditor-extension/src/commands.ts:1024 packages/fileeditor-extension/src/commands.ts:1027 packages/fileeditor-extension/src/commands.ts:1038 packages/fileeditor-extension/src/commands.ts:1041 packages/fileeditor-extension/src/commands.ts:1054 packages/fileeditor-extension/src/commands.ts:1057 packages/launcher/src/index.tsx:151 packages/launcher/src/index.tsx:161 packages/launcher/src/index.tsx:434 packages/terminal-extension/src/index.ts:220 packages/terminal-extension/src/index.ts:228 packages/terminal-extension/src/index.ts:261
 msgid "Other"
 msgstr "Khác"
 
@@ -3059,7 +3084,7 @@ msgstr[0] ""
 msgid "Indent with Tab"
 msgstr "Thụt lề bằng phím Tab"
 
-#: packages/fileeditor-extension/src/commands.ts:423 packages/fileeditor-extension/src/commands.ts:426 packages/mainmenu-extension/src/index.ts:583
+#: packages/fileeditor-extension/src/commands.ts:423 packages/fileeditor-extension/src/commands.ts:426 packages/mainmenu-extension/src/index.ts:570 packages/mainmenu-extension/src/index.ts:583
 msgid "Match Brackets"
 msgstr ""
 
@@ -3153,11 +3178,11 @@ msgstr "VỀ DỰ ÁN JUPYTER"
 
 #: packages/help-extension/src/index.tsx:138
 msgid "© 2015-2021 Project Jupyter Contributors"
-msgstr ""
+msgstr "© 2015-2021 Những người đóng góp cho dự án Jupyter"
 
-#: packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:399 packages/hub-extension/src/index.ts:161 packages/mainmenu-extension/src/index.ts:541
+#: packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:399 packages/hub-extension/src/index.ts:161 packages/mainmenu-extension/src/index.ts:528 packages/mainmenu-extension/src/index.ts:541
 msgid "Dismiss"
-msgstr ""
+msgstr "Bỏ qua"
 
 #: packages/help-extension/src/index.tsx:182 packages/help-extension/src/index.tsx:212 packages/help-extension/src/index.tsx:244 packages/help-extension/src/index.tsx:489 packages/help-extension/src/index.tsx:90
 msgid "Help"
@@ -3169,15 +3194,15 @@ msgstr ""
 
 #: packages/help-extension/src/index.tsx:215
 msgid "Jupyter Forum"
-msgstr ""
+msgstr "Diễn đàn Jupyter"
 
 #: packages/help-extension/src/index.tsx:251
 msgid "JupyterLab Reference"
-msgstr ""
+msgstr "Tham khảo JupyterLab"
 
 #: packages/help-extension/src/index.tsx:255
 msgid "JupyterLab FAQ"
-msgstr ""
+msgstr "Những câu hỏi thường gặp về JupyterLab"
 
 #: packages/help-extension/src/index.tsx:260
 msgid "Jupyter Reference"
@@ -3205,11 +3230,11 @@ msgstr ""
 
 #: packages/help-extension/src/index.tsx:93
 msgid "About %1"
-msgstr ""
+msgstr "Về %1"
 
 #: packages/help-extension/src/index.tsx:96
 msgid "Version %1"
-msgstr ""
+msgstr "Phiên bản %1"
 
 #: packages/help-extension/src/licenses.tsx:513
 msgid "Filter Licenses By"
@@ -3217,15 +3242,15 @@ msgstr ""
 
 #: packages/help-extension/src/licenses.tsx:517 packages/help-extension/src/licenses.tsx:643
 msgid "Package"
-msgstr ""
+msgstr "Gói"
 
 #: packages/help-extension/src/licenses.tsx:521 packages/help-extension/src/licenses.tsx:644
 msgid "Version"
-msgstr ""
+msgstr "Phiên bản"
 
 #: packages/help-extension/src/licenses.tsx:525 packages/help-extension/src/licenses.tsx:645 packages/help-extension/src/licenses.tsx:712
 msgid "License"
-msgstr ""
+msgstr "Giấy phép"
 
 #: packages/help-extension/src/licenses.tsx:530
 msgid "Distributions"
@@ -3233,11 +3258,11 @@ msgstr ""
 
 #: packages/help-extension/src/licenses.tsx:633
 msgid "No Packages found"
-msgstr ""
+msgstr "Không gói nào được tìm thấy"
 
 #: packages/help-extension/src/licenses.tsx:707
 msgid "No Package selected"
-msgstr ""
+msgstr "Không gói nào được chọn"
 
 #: packages/help-extension/src/licenses.tsx:713
 msgid "No License ID found"
@@ -3249,15 +3274,15 @@ msgstr ""
 
 #: packages/htmlviewer-extension/src/index.tsx:110
 msgid "Trust HTML File"
-msgstr ""
+msgstr "Tin tưởng tập tin HTML"
 
 #: packages/htmlviewer-extension/src/index.tsx:59
 msgid "HTML File"
-msgstr ""
+msgstr "Tập tin HTML"
 
 #: packages/htmlviewer-extension/src/index.tsx:68
 msgid "HTML Viewer"
-msgstr ""
+msgstr "Trình xem HTML"
 
 #: packages/htmlviewer/src/index.tsx:101
 msgid "Rerender HTML Document"
@@ -3272,11 +3297,11 @@ msgstr ""
 
 #: packages/htmlviewer/src/index.tsx:295
 msgid "Distrust HTML"
-msgstr ""
+msgstr "Bỏ tin tập tin HTML"
 
 #: packages/htmlviewer/src/index.tsx:296
 msgid "Trust HTML"
-msgstr ""
+msgstr "Tin tập tin HTML"
 
 #: packages/hub-extension/src/index.ts:154
 msgid "Server unavailable or unreachable"
@@ -3308,7 +3333,7 @@ msgstr ""
 msgid "Open the Hub control panel in a new browser tab"
 msgstr ""
 
-#: packages/hub-extension/src/index.ts:82 packages/mainmenu-extension/src/index.ts:444
+#: packages/hub-extension/src/index.ts:82 packages/mainmenu-extension/src/index.ts:431 packages/mainmenu-extension/src/index.ts:444
 msgid "Log Out"
 msgstr "Đăng xuất"
 
@@ -3322,7 +3347,7 @@ msgstr ""
 
 #: packages/imageviewer-extension/src/index.ts:158
 msgid "Image Viewer"
-msgstr ""
+msgstr "Trình xem ảnh"
 
 #: packages/imageviewer-extension/src/index.ts:199
 msgid "Zoom In"
@@ -3334,31 +3359,31 @@ msgstr "Thu nhỏ"
 
 #: packages/imageviewer-extension/src/index.ts:211
 msgid "Reset Image"
-msgstr ""
+msgstr "Thiết lại lại hình ảnh"
 
 #: packages/imageviewer-extension/src/index.ts:217
 msgid "Rotate Clockwise"
-msgstr ""
+msgstr "Xoay chiều kim đồng hồ"
 
 #: packages/imageviewer-extension/src/index.ts:223
 msgid "Rotate Counterclockwise"
-msgstr ""
+msgstr "Xoay ngược chiều kim đồng hồ"
 
 #: packages/imageviewer-extension/src/index.ts:229
 msgid "Flip image horizontally"
-msgstr ""
+msgstr "Lật hình ảnh theo chiều ngang"
 
 #: packages/imageviewer-extension/src/index.ts:235
 msgid "Flip image vertically"
-msgstr ""
+msgstr "Lật hình ảnh theo chiều dọc"
 
 #: packages/imageviewer-extension/src/index.ts:241
 msgid "Invert Colors"
-msgstr ""
+msgstr "Đảo màu"
 
 #: packages/inspector-extension/src/index.ts:57
 msgid "Show Contextual Help"
-msgstr ""
+msgstr "Hiển thị trợ giúp theo ngữ cảnh"
 
 #: packages/inspector-extension/src/index.ts:91
 msgid "Live updating code documentation from the active kernel"
@@ -3366,11 +3391,11 @@ msgstr ""
 
 #: packages/inspector/src/inspector.ts:51
 msgid "Click on a function to see documentation."
-msgstr ""
+msgstr "Bấm vào một hàm để xem tài liệu liên quan."
 
 #: packages/javascript-extension/src/index.ts:41
 msgid "Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
-msgstr ""
+msgstr "Bạn có chắc muốn chạy mã Javascript bất kỳ trong phiên JupyterLab của bạn?"
 
 #: packages/javascript-extension/src/index.ts:45 packages/rendermime/src/renderers.ts:70
 msgid "Run"
@@ -3382,12 +3407,12 @@ msgstr ""
 
 #: packages/launcher-extension/src/index.ts:100 packages/launcher-extension/src/index.ts:76
 msgid "Launcher"
-msgstr ""
+msgstr "Trình khởi chạy"
 
 #: packages/launcher/src/index.tsx:408
 msgctxt "Error"
 msgid "Launcher Error"
-msgstr ""
+msgstr "Lỗi trình khởi chạy"
 
 #: packages/logconsole-extension/src/index.tsx:142 packages/logconsole/src/widget.ts:389
 msgid "Log Console"
@@ -3505,7 +3530,7 @@ msgstr ""
 msgid "New Console for Activity"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:376 packages/mainmenu-extension/src/index.ts:386 packages/running-extension/src/kernels.ts:39 packages/running/src/index.tsx:142 packages/terminal-extension/src/index.ts:259 packages/terminal-extension/src/index.ts:292
+#: packages/mainmenu-extension/src/index.ts:376 packages/mainmenu-extension/src/index.ts:386 packages/running-extension/src/kernels.ts:39 packages/running/src/index.tsx:142 packages/terminal-extension/src/index.ts:251 packages/terminal-extension/src/index.ts:259 packages/terminal-extension/src/index.ts:292
 msgid "Shut Down"
 msgstr ""
 
@@ -3521,71 +3546,71 @@ msgstr ""
 msgid "Please confirm you want to shut down JupyterLab."
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:415
+#: packages/mainmenu-extension/src/index.ts:402 packages/mainmenu-extension/src/index.ts:415
 msgid "You have shut down the Jupyter server. You can now close this tab."
 msgstr "Bạn đã tắt máy chủ Jupyter. Bây giờ bạn có thể đóng thẻ này."
 
-#: packages/mainmenu-extension/src/index.ts:419
+#: packages/mainmenu-extension/src/index.ts:406 packages/mainmenu-extension/src/index.ts:419
 msgid "To use JupyterLab again, you will need to relaunch it."
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:426
+#: packages/mainmenu-extension/src/index.ts:413 packages/mainmenu-extension/src/index.ts:426
 msgid "Server stopped"
 msgstr "Máy chủ đã dừng hoạt động"
 
-#: packages/mainmenu-extension/src/index.ts:445
+#: packages/mainmenu-extension/src/index.ts:432 packages/mainmenu-extension/src/index.ts:445
 msgid "Log out of JupyterLab"
 msgstr "Đăng xuất khỏi JupyterLab"
 
-#: packages/mainmenu-extension/src/index.ts:475
+#: packages/mainmenu-extension/src/index.ts:462 packages/mainmenu-extension/src/index.ts:475
 msgid "Reconnect to Kernel"
 msgstr "Kết nối lại tới Kernel"
 
-#: packages/mainmenu-extension/src/index.ts:497
+#: packages/mainmenu-extension/src/index.ts:484 packages/mainmenu-extension/src/index.ts:497
 msgid "Restart Kernel and Clear…"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:532
+#: packages/mainmenu-extension/src/index.ts:519 packages/mainmenu-extension/src/index.ts:532
 msgid "Shut Down All Kernels…"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:538
+#: packages/mainmenu-extension/src/index.ts:525 packages/mainmenu-extension/src/index.ts:538
 msgid "Shut Down All?"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:539
+#: packages/mainmenu-extension/src/index.ts:526 packages/mainmenu-extension/src/index.ts:539
 msgid "Shut down all kernels?"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:542 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:260 packages/terminal-extension/src/index.ts:293
+#: packages/mainmenu-extension/src/index.ts:529 packages/mainmenu-extension/src/index.ts:542 packages/running-extension/src/kernels.ts:40 packages/running/src/index.tsx:222 packages/terminal-extension/src/index.ts:252 packages/terminal-extension/src/index.ts:260 packages/terminal-extension/src/index.ts:293
 msgid "Shut Down All"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:564
+#: packages/mainmenu-extension/src/index.ts:551 packages/mainmenu-extension/src/index.ts:564
 msgid "Show Line Numbers"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:602
+#: packages/mainmenu-extension/src/index.ts:589 packages/mainmenu-extension/src/index.ts:602
 msgid "Wrap Words"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:635
+#: packages/mainmenu-extension/src/index.ts:622 packages/mainmenu-extension/src/index.ts:635
 msgid "Run Selected"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:643
+#: packages/mainmenu-extension/src/index.ts:630 packages/mainmenu-extension/src/index.ts:643
 msgid "Run All"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:663
+#: packages/mainmenu-extension/src/index.ts:650 packages/mainmenu-extension/src/index.ts:663
 msgid "Restart Kernel and Run All"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:721
+#: packages/mainmenu-extension/src/index.ts:708 packages/mainmenu-extension/src/index.ts:721
 msgid "Activate Previously Used Tab"
 msgstr ""
 
-#: packages/mainmenu-extension/src/index.ts:890
+#: packages/mainmenu-extension/src/index.ts:877 packages/mainmenu-extension/src/index.ts:890
 msgid "Menu customization has changed. You will need to reload JupyterLab to see the changes."
 msgstr ""
 
@@ -3957,36 +3982,52 @@ msgstr ""
 msgid "Run Selected Text or Current Line in Console"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1729
+#: packages/notebook/src/actions.tsx:1729 packages/notebook/src/actions.tsx:1732
 msgid "A trusted Jupyter notebook may execute hidden malicious code when you open it."
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1733
+#: packages/notebook/src/actions.tsx:1733 packages/notebook/src/actions.tsx:1736
 msgid "Selecting trust will re-render this notebook in a trusted state."
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1737
+#: packages/notebook/src/actions.tsx:1737 packages/notebook/src/actions.tsx:1740
 msgid "For more information, see"
 msgstr "Để biết thêm thông tin, hãy xem"
 
-#: packages/notebook/src/actions.tsx:1743
+#: packages/notebook/src/actions.tsx:1740
+msgid "For more information, see the <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>"
+msgstr ""
+
+#: packages/notebook/src/actions.tsx:1742
+msgid "Jupyter security documentation"
+msgstr ""
+
+#: packages/notebook/src/actions.tsx:1743 packages/notebook/src/actions.tsx:1746
 msgid "the Jupyter security documentation"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1750
+#: packages/notebook/src/actions.tsx:1749 packages/notebook/src/actions.tsx:1750 packages/notebook/src/actions.tsx:1753
 msgid "Notebook is already trusted"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1757
+#: packages/notebook/src/actions.tsx:1756 packages/notebook/src/actions.tsx:1757 packages/notebook/src/actions.tsx:1760
 msgid "Trust this notebook?"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1973
+#: packages/notebook/src/actions.tsx:1972 packages/notebook/src/actions.tsx:1973 packages/notebook/src/actions.tsx:1976
 msgid "Kernel Terminating"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:1974
+#: packages/notebook/src/actions.tsx:1973 packages/notebook/src/actions.tsx:1974 packages/notebook/src/actions.tsx:1977
 msgid "The kernel for %1 appears to be terminating. You can not run any cell for now."
+msgstr ""
+
+#: packages/notebook/src/actions.tsx:1983
+msgid "Waiting on User Input"
+msgstr ""
+
+#: packages/notebook/src/actions.tsx:1984
+msgid "Did not run selected cell because there is a cell waiting on input! Submit your input and try again."
 msgstr ""
 
 #: packages/notebook/src/default-toolbar.tsx:114
@@ -4041,7 +4082,7 @@ msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "close the notebook without saving it."
 msgstr ""
 
-#: packages/notebook/src/model.ts:330
+#: packages/notebook/src/model.ts:330 packages/notebook/src/model.ts:332
 msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "to the current notebook format (v%2).\n"
 "The next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n"
@@ -4049,7 +4090,7 @@ msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "close the notebook without saving it."
 msgstr ""
 
-#: packages/notebook/src/model.ts:340
+#: packages/notebook/src/model.ts:340 packages/notebook/src/model.ts:342
 msgid "This notebook has been converted from an newer notebook format (v%1)\n"
 "to the current notebook format (v%2).\n"
 "The next time you save this notebook, the current notebook format (v%2) will be used.\n"
@@ -4057,13 +4098,13 @@ msgid "This notebook has been converted from an newer notebook format (v%1)\n"
 "close the notebook without saving it."
 msgstr ""
 
-#: packages/notebook/src/model.ts:351
+#: packages/notebook/src/model.ts:351 packages/notebook/src/model.ts:353
 msgid "Notebook converted"
 msgstr ""
 
-#: packages/notebook/src/modestatus.tsx:24
+#: packages/notebook/src/modestatus.tsx:24 packages/notebook/src/modestatus.tsx:25
 msgid "Mode: %1"
-msgstr ""
+msgstr "Chế độ: %1"
 
 #: packages/notebook/src/modestatus.tsx:66
 msgid "Command"
@@ -4071,9 +4112,9 @@ msgstr ""
 
 #: packages/notebook/src/modestatus.tsx:67
 msgid "Edit"
-msgstr ""
+msgstr "Chỉnh sửa"
 
-#: packages/notebook/src/modestatus.tsx:78
+#: packages/notebook/src/modestatus.tsx:70 packages/notebook/src/modestatus.tsx:78
 msgid "Notebook is in %1 mode"
 msgstr ""
 
@@ -4123,7 +4164,7 @@ msgstr ""
 
 #: packages/notebook/src/panel.ts:215
 msgid "The kernel for %1 appears to have died. It will restart automatically."
-msgstr ""
+msgstr "Kernel cho %1 có vẻ như sắp ngừng hoạt động. Nó sẽ tự động khởi động lại."
 
 #: packages/notebook/src/truststatus.tsx:21
 msgid "Notebook trusted: %1 of %2 cells trusted."
@@ -4151,7 +4192,7 @@ msgstr ""
 
 #: packages/rendermime/src/widgets.ts:416
 msgid "JavaScript output is disabled in JupyterLab"
-msgstr "Xuất ra JavaScript bị tắt trong JupyterLab"
+msgstr ""
 
 #: packages/running-extension/src/index.ts:54
 msgid "Running Terminals and Kernels"
@@ -4225,7 +4266,7 @@ msgstr "Bạn có muốn thoát mà không lưu thay đổi?"
 
 #: packages/settingeditor/src/plugineditor.ts:258
 msgid "Your changes were not saved."
-msgstr ""
+msgstr "Thay đổi của bạn chưa được lưu."
 
 #: packages/settingeditor/src/raweditor.ts:377
 msgid "System Defaults"
@@ -4258,7 +4299,7 @@ msgstr ""
 
 #: packages/statusbar-extension/src/index.ts:359
 msgid "Simple Interface (%1)"
-msgstr ""
+msgstr "Giao diện đơn giản (%1)"
 
 #: packages/statusbar-extension/src/index.ts:369
 msgid "Simple"
@@ -4268,13 +4309,13 @@ msgstr "Chế độ đơn giản"
 msgid "Show Status Bar"
 msgstr "Hiển thị thanh trạng thái"
 
-#: packages/statusbar/src/defaults/kernelStatus.tsx:121
+#: packages/statusbar/src/defaults/kernelStatus.tsx:121 packages/statusbar/src/defaults/kernelStatus.tsx:122
 msgid "No Kernel!"
 msgstr "Không có kernel!"
 
-#: packages/statusbar/src/defaults/kernelStatus.tsx:31
+#: packages/statusbar/src/defaults/kernelStatus.tsx:31 packages/statusbar/src/defaults/kernelStatus.tsx:32
 msgid "Change kernel for %1"
-msgstr ""
+msgstr "Thay đổi kernel cho %1"
 
 #: packages/statusbar/src/defaults/lineCol.tsx:133
 msgid "Go to line number between 1 and %1"
@@ -4282,7 +4323,7 @@ msgstr ""
 
 #: packages/statusbar/src/defaults/lineCol.tsx:231
 msgid "Ln %1, Col %2"
-msgstr ""
+msgstr "Dòng %1, Cột %2"
 
 #: packages/statusbar/src/defaults/lineCol.tsx:232
 msgid "Go to line number…"
@@ -4292,63 +4333,63 @@ msgstr "Đi tới dòng số…"
 msgid "%1 Terminals, %2 Kernel sessions"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:182 packages/terminal-extension/src/index.ts:208 packages/terminal-extension/src/index.ts:241 packages/terminal-extension/src/index.ts:402 packages/terminal-extension/src/index.ts:435
-msgid "Inherit"
-msgstr ""
-
-#: packages/terminal-extension/src/index.ts:185 packages/terminal-extension/src/index.ts:218
+#: packages/terminal-extension/src/index.ts:177 packages/terminal-extension/src/index.ts:185 packages/terminal-extension/src/index.ts:218
 msgid "Shutdown Terminal"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:190 packages/terminal-extension/src/index.ts:215 packages/terminal-extension/src/index.ts:248 packages/terminal-extension/src/index.ts:403 packages/terminal-extension/src/index.ts:436
+#: packages/terminal-extension/src/index.ts:182 packages/terminal-extension/src/index.ts:200 packages/terminal-extension/src/index.ts:208 packages/terminal-extension/src/index.ts:241 packages/terminal-extension/src/index.ts:394 packages/terminal-extension/src/index.ts:402 packages/terminal-extension/src/index.ts:435
+msgid "Inherit"
+msgstr ""
+
+#: packages/terminal-extension/src/index.ts:190 packages/terminal-extension/src/index.ts:207 packages/terminal-extension/src/index.ts:215 packages/terminal-extension/src/index.ts:248 packages/terminal-extension/src/index.ts:395 packages/terminal-extension/src/index.ts:403 packages/terminal-extension/src/index.ts:436
 msgid "Light"
 msgstr "Sáng"
 
-#: packages/terminal-extension/src/index.ts:196 packages/terminal-extension/src/index.ts:220 packages/terminal-extension/src/index.ts:253 packages/terminal-extension/src/index.ts:404 packages/terminal-extension/src/index.ts:437
+#: packages/terminal-extension/src/index.ts:196 packages/terminal-extension/src/index.ts:212 packages/terminal-extension/src/index.ts:220 packages/terminal-extension/src/index.ts:253 packages/terminal-extension/src/index.ts:396 packages/terminal-extension/src/index.ts:404 packages/terminal-extension/src/index.ts:437
 msgid "Dark"
 msgstr "Tối"
 
-#: packages/terminal-extension/src/index.ts:253 packages/terminal-extension/src/index.ts:286
+#: packages/terminal-extension/src/index.ts:245 packages/terminal-extension/src/index.ts:253 packages/terminal-extension/src/index.ts:286
 msgid "Terminals"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:261 packages/terminal-extension/src/index.ts:294
+#: packages/terminal-extension/src/index.ts:253 packages/terminal-extension/src/index.ts:261 packages/terminal-extension/src/index.ts:294
 msgid "Are you sure you want to permanently shut down all running terminals?"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:336
+#: packages/terminal-extension/src/index.ts:295 packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:336
 msgid "New Terminal"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:336 packages/terminal-extension/src/index.ts:88 packages/terminal-extension/src/index.ts:89 packages/terminal/src/widget.ts:69
+#: packages/terminal-extension/src/index.ts:295 packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:336 packages/terminal-extension/src/index.ts:88 packages/terminal-extension/src/index.ts:89 packages/terminal/src/widget.ts:69
 msgid "Terminal"
 msgstr "Phiên điều khiển"
 
-#: packages/terminal-extension/src/index.ts:304 packages/terminal-extension/src/index.ts:337
+#: packages/terminal-extension/src/index.ts:296 packages/terminal-extension/src/index.ts:304 packages/terminal-extension/src/index.ts:337
 msgid "Start a new terminal session"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:353 packages/terminal-extension/src/index.ts:386
+#: packages/terminal-extension/src/index.ts:345 packages/terminal-extension/src/index.ts:353 packages/terminal-extension/src/index.ts:386
 msgid "Refresh Terminal"
-msgstr ""
+msgstr "Làm mới phiên điều khiển"
 
-#: packages/terminal-extension/src/index.ts:354 packages/terminal-extension/src/index.ts:387
+#: packages/terminal-extension/src/index.ts:346 packages/terminal-extension/src/index.ts:354 packages/terminal-extension/src/index.ts:387
 msgid "Refresh the current terminal session"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:374 packages/terminal-extension/src/index.ts:407
+#: packages/terminal-extension/src/index.ts:366 packages/terminal-extension/src/index.ts:374 packages/terminal-extension/src/index.ts:407
 msgid "Increase Terminal Font Size"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:388 packages/terminal-extension/src/index.ts:421
+#: packages/terminal-extension/src/index.ts:380 packages/terminal-extension/src/index.ts:388 packages/terminal-extension/src/index.ts:421
 msgid "Decrease Terminal Font Size"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:415 packages/terminal-extension/src/index.ts:448
+#: packages/terminal-extension/src/index.ts:407 packages/terminal-extension/src/index.ts:415 packages/terminal-extension/src/index.ts:448
 msgid "Use Terminal Theme: %1"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:418 packages/terminal-extension/src/index.ts:451
+#: packages/terminal-extension/src/index.ts:410 packages/terminal-extension/src/index.ts:418 packages/terminal-extension/src/index.ts:451
 msgid "Set the terminal theme"
 msgstr ""
 
@@ -4407,6 +4448,10 @@ msgstr ""
 #: packages/translation-extension/src/index.ts:129 packages/translation-extension/src/index.ts:132
 msgid "Change interface language?"
 msgstr "Thay đổi ngôn ngữ của giao diện?"
+
+#: packages/translation-extension/src/index.ts:130
+msgid "Are you sure you want to refresh?"
+msgstr ""
 
 #: packages/translation-extension/src/index.ts:130 packages/translation-extension/src/index.ts:133
 msgid "After changing the interface language to %1, you will need to reload JupyterLab to see the changes."
