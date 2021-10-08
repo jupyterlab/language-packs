@@ -15,3 +15,4 @@
 * cmaass ([@ccmaass](https://crowdin.com/profile/ccmaass))
 * Michał Krassowski ([@krassowski](https://crowdin.com/profile/krassowski))
 * Kyle Goodrick ([@kjgoodrick](https://crowdin.com/profile/kjgoodrick))
+* Thorsten Beier ([@derthorstenbeier](https://crowdin.com/profile/derthorstenbeier))

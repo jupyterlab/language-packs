@@ -1,13 +1,14 @@
 # Contributors
 
-* Vu Nguyen ([@vumnguyenn](https://crowdin.com/profile/vumnguyenn))
 * Lê Hoàng Manh ([@vuaphapthuat410](https://crowdin.com/profile/vuaphapthuat410))
+* Vu Nguyen ([@vumnguyenn](https://crowdin.com/profile/vumnguyenn))
 * TrMiNa ([@TrMiNa](https://crowdin.com/profile/TrMiNa))
 * Thai Pham ([@phamthaiide](https://crowdin.com/profile/phamthaiide))
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * hna040894 ([@hna040894](https://crowdin.com/profile/hna040894))
 * Jean ([@giahung24](https://crowdin.com/profile/giahung24))
+* Marco-Nguyen ([@Marco-Nguyen](https://crowdin.com/profile/Marco-Nguyen))
 * Phuong Cao ([@cnyp](https://crowdin.com/profile/cnyp))
 * Sơn Nguyễn ([@personwhofloat](https://crowdin.com/profile/personwhofloat))
 * Duc Trung LE ([@trungleduc](https://crowdin.com/profile/trungleduc))
