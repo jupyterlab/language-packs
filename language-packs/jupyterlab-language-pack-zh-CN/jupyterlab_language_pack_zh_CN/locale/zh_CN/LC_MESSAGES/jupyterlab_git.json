@@ -53,6 +53,9 @@
     "Are you sure you want to ignore all %1 files within this git repository?": [
         "\u60a8\u786e\u5b9a\u8981\u5ffd\u7565\u6b64 git \u4ed3\u5e93\u4e2d\u7684\u6240\u6709 %1 \u4e2a\u6587\u4ef6\u5417\uff1f"
     ],
+    "Are you sure you want to mark this file as resolved with merge conflicts?": [
+        "\u60a8\u786e\u5b9a\u8981\u5c06\u8fd9\u4e2a\u5e26\u6709\u5408\u5e76\u51b2\u7a81\u7684\u6587\u4ef6\u6807\u8bb0\u4e3a\u5df2\u89e3\u51b3\u5417\uff1f"
+    ],
     "Are you sure you want to permanently delete the branch ": [
         "\u786e\u5b9a\u8981\u6c38\u4e45\u5220\u9664\u5206\u652f "
     ],
@@ -73,6 +76,12 @@
     ],
     "CLONE": [
         "\u514b\u9686"
+    ],
+    "COMMON ANCESTOR": [
+        "\u5171\u540c\u7956\u5148"
+    ],
+    "CURRENT": [
+        "\u5f53\u524d"
     ],
     "Cancel": [
         "\u53d6\u6d88"
@@ -124,6 +133,9 @@
     ],
     "Committing changes...": [
         "\u6b63\u5728\u63d0\u4ea4\u6539\u52a8..."
+    ],
+    "Conflicted": [
+        "\u6709\u51b2\u7a81\u7684"
     ],
     "Create Branch": [
         "\u65b0\u5efa\u5206\u652f"
@@ -264,7 +276,7 @@
         "\u60a8\u771f\u7684\u8981\u5c06\u8fd9\u4e2a\u76ee\u5f55\u4f5c\u4e3a Git \u4ed3\u5e93\u5417\uff1f"
     ],
     "Double click opens diff": [
-        "\u53cc\u51fb\u6253\u5f00\u6587\u4ef6\u5bf9\u6bd4"
+        "\u53cc\u51fb\u6253\u5f00\u5dee\u5f02\u5bf9\u6bd4"
     ],
     "Encountered an error when initializing the repository. Error: ": [
         "\u521d\u59cb\u5316\u4ed3\u5e93\u65f6\u51fa\u73b0\u9519\u8bef\u3002\u9519\u8bef\uff1a"
@@ -290,6 +302,12 @@
     "Error": [
         "\u9519\u8bef"
     ],
+    "Error Loading File Diff:": [
+        "\u8f7d\u5165\u6587\u4ef6\u5dee\u5f02\u5bf9\u6bd4\u65f6\u53d1\u751f\u9519\u8bef\uff1a"
+    ],
+    "Error Loading Notebook Diff:": [
+        "\u8f7d\u5165\u7b14\u8bb0\u672c\u5dee\u5f02\u5bf9\u6bd4\u65f6\u53d1\u751f\u9519\u8bef\uff1a"
+    ],
     "Error loading commit data": [
         "\u8f7d\u5165\u63d0\u4ea4\u6570\u636e\u65f6\u51fa\u9519"
     ],
@@ -314,17 +332,35 @@
     "Failed to discard changes.": [
         "\u65e0\u6cd5\u653e\u5f03\u6539\u52a8\u3002"
     ],
+    "Failed to get a valid file value.": [
+        "\u65e0\u6cd5\u83b7\u53d6\u4e00\u4e2a\u5408\u6cd5\u7684\u6587\u4ef6\u503c\u3002"
+    ],
+    "Failed to init notebook diff view: %1": [
+        "\u65e0\u6cd5\u521d\u59cb\u5316\u7b14\u8bb0\u672c\u5dee\u5f02\u5bf9\u6bd4\u8bd5\u56fe\uff1a%1"
+    ],
     "Failed to initialize the Git repository": [
         "\u521d\u59cb\u5316 Git \u4ed3\u5e93\u5931\u8d25"
     ],
+    "Failed to load file diff.": [
+        "\u65e0\u6cd5\u8f7d\u5165\u6587\u4ef6\u5dee\u5f02\u5bf9\u6bd4\u3002"
+    ],
+    "Failed to load settings for the Git Extension.\n%1": [
+        "\u65e0\u6cd5\u8f7d\u5165 Git \u6269\u5c55\u8bbe\u7f6e\u3002\n%1"
+    ],
     "Failed to load the jupyterlab-git server extension": [
         "\u52a0\u8f7d jupyterlab-git \u670d\u52a1\u5668\u6269\u5c55\u5931\u8d25"
+    ],
+    "Failed to load the jupyterlab-git server extension settings": [
+        "\u65e0\u6cd5\u8f7d\u5165 jupyterlab-git \u670d\u52a1\u5668\u6269\u5c55\u8bbe\u7f6e"
     ],
     "Failed to pull": [
         "\u62c9\u53d6\u5931\u8d25"
     ],
     "Failed to push": [
         "\u63a8\u9001\u5931\u8d25"
+    ],
+    "Failed to refresh Notebook diff.": [
+        "\u65e0\u6cd5\u5237\u65b0\u7b14\u8bb0\u672c\u5dee\u5f02\u5bf9\u6bd4\u3002"
     ],
     "Failed to refresh.": [
         "\u5237\u65b0\u5931\u8d25\u3002"
@@ -362,8 +398,14 @@
     "Go to Git user interface": [
         "\u8f6c\u5230 Git \u7528\u6237\u754c\u9762"
     ],
+    "Hide unchanged cells": [
+        "\u9690\u85cf\u672a\u6539\u53d8\u5355\u5143\u683c"
+    ],
     "History": [
         "\u5386\u53f2"
+    ],
+    "INCOMING": [
+        "\u5916\u6765\u6539\u52a8"
     ],
     "Ignore": [
         "\u5ffd\u7565"
@@ -398,6 +440,12 @@
     ],
     "Manage branches and tags": [
         "\u7ba1\u7406\u5206\u652f\u548c\u6807\u7b7e"
+    ],
+    "Mark as resolved": [
+        "\u6807\u8bb0\u4e3a\u5df2\u89e3\u51b3"
+    ],
+    "Mark file as resolved": [
+        "\u6807\u8bb0\u6587\u4ef6\u4e3a\u5df2\u89e3\u51b3"
     ],
     "Name": [
         "\u540d\u79f0"
@@ -483,6 +531,9 @@
     "Pushing...": [
         "\u6b63\u5728\u63a8\u9001..."
     ],
+    "RESULT": [
+        "\u7ed3\u679c"
+    ],
     "Refresh": [
         "\u5237\u65b0"
     ],
@@ -500,6 +551,9 @@
     ],
     "Reset Changes": [
         "\u91cd\u7f6e\u6539\u52a8"
+    ],
+    "Resolve with conflicts": [
+        "\u65e0\u89c6\u51b2\u7a81\u5e76\u6807\u8bb0\u4e3a\u5df2\u89e3\u51b3"
     ],
     "Revert '%1'": [
         "\u64a4\u56de\u300c%1\u300d"

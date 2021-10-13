@@ -17,3 +17,4 @@
 * 顽皮绅士 ([@Hadboon](https://crowdin.com/profile/Hadboon))
 * henuzfl ([@henuzfl1](https://crowdin.com/profile/henuzfl1))
 * Gonzalo Peña-Castellanos ([@goanpeca](https://crowdin.com/profile/goanpeca))
+* Xiang Yiqing ([@xiangyiqing](https://crowdin.com/profile/xiangyiqing))

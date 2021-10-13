@@ -18,6 +18,7 @@
 * Edward_TL ([@Edward_TL](https://crowdin.com/profile/Edward_TL))
 * David Perez-Suarez ([@dpshelio](https://crowdin.com/profile/dpshelio))
 * covarj ([@covarj](https://crowdin.com/profile/covarj))
+* Antonio Fraga ([@AntonioFraga](https://crowdin.com/profile/AntonioFraga))
 * David del Val ([@ddelval28](https://crowdin.com/profile/ddelval28))
 * Javier Andrés Mansilla ([@javimansilla](https://crowdin.com/profile/javimansilla))
 * Miguel Fosas de Pando ([@miguelfp](https://crowdin.com/profile/miguelfp))
@@ -25,4 +26,3 @@
 * Benja Cortes ([@flacolimpiatuerk](https://crowdin.com/profile/flacolimpiatuerk))
 * Germán Sosa ([@gesosa](https://crowdin.com/profile/gesosa))
 * Malcnez ([@Malcnez](https://crowdin.com/profile/Malcnez))
-* Antonio Fraga ([@AntonioFraga](https://crowdin.com/profile/AntonioFraga))
