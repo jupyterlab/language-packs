@@ -3,6 +3,7 @@
 * Yuliia Pavliuk ([@pav.yulia](https://crowdin.com/profile/pav.yulia))
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
+* khrystynaboitsun ([@khrystynaboitsun](https://crowdin.com/profile/khrystynaboitsun))
 * Oleksii Burdin ([@oleksiburdin](https://crowdin.com/profile/oleksiburdin))
 * sahanshiii ([@sahanshiii](https://crowdin.com/profile/sahanshiii))
 * Nathalie Rud ([@talka](https://crowdin.com/profile/talka))
