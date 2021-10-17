@@ -12,14 +12,14 @@ msgstr ""
 "X-Crowdin-File-ID: 99\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2021-10-04 14:28\n"
+"PO-Revision-Date: 2021-10-17 23:39\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
 msgid "LSP Completion settings."
 msgstr ""
 
-#: /packages/jupyterlab-lsp/schema/completion.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/diagnostics.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/highlights.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/hover.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/jump_to.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/plugin.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/rename.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/jupyter.lab.setting-icon-label
+#: /packages/jupyterlab-lsp/schema/completion.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/diagnostics.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/highlights.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/hover.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/jump_to.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/plugin.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/rename.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/signature.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Language integration"
 msgstr ""
@@ -42,6 +42,16 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/continuousHinting/title
 msgctxt "settings"
 msgid "Continuous hinting"
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/completion.json:/properties/disable/description /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/disable/description /packages/jupyterlab-lsp/schema/highlights.json:/properties/disable/description /packages/jupyterlab-lsp/schema/hover.json:/properties/disable/description /packages/jupyterlab-lsp/schema/jump_to.json:/properties/disable/description /packages/jupyterlab-lsp/schema/rename.json:/properties/disable/description /packages/jupyterlab-lsp/schema/signature.json:/properties/disable/description /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/properties/disable/description
+msgctxt "settings"
+msgid "Disable this feature. Requires reloading JupyterLab to apply changes."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/completion.json:/properties/disable/title /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/disable/title /packages/jupyterlab-lsp/schema/highlights.json:/properties/disable/title /packages/jupyterlab-lsp/schema/hover.json:/properties/disable/title /packages/jupyterlab-lsp/schema/jump_to.json:/properties/disable/title /packages/jupyterlab-lsp/schema/rename.json:/properties/disable/title /packages/jupyterlab-lsp/schema/signature.json:/properties/disable/title /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/properties/disable/title
+msgctxt "settings"
+msgid "Disable"
 msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/disableCompletionsFrom/description
@@ -389,6 +399,36 @@ msgctxt "schema"
 msgid "Code Rename"
 msgstr ""
 
+#: /packages/jupyterlab-lsp/schema/signature.json:/description
+msgctxt "schema"
+msgid "LSP Code Signature Help settings."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/signature.json:/properties/closeCharacters/description
+msgctxt "settings"
+msgid "An array of characters which should close the signature help. The signature help may be shown again after typing a character from this list if the server requests it to open."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/signature.json:/properties/closeCharacters/title
+msgctxt "settings"
+msgid "Close characters"
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/signature.json:/properties/maxLines/description
+msgctxt "settings"
+msgid "The number of documentation lines to show without collapsing into the details section."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/signature.json:/properties/maxLines/title
+msgctxt "settings"
+msgid "Number of lines to show without collapsing"
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/signature.json:/title
+msgctxt "schema"
+msgid "Code Signature"
+msgstr ""
+
 #: /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/description
 msgctxt "schema"
 msgid "LSP code syntax highlighting settings."
@@ -468,7 +508,7 @@ msgstr ""
 msgid "Includes dedicated dark mode icons set"
 msgstr ""
 
-#: packages/completion-theme/src/index.ts:189
+#: packages/completion-theme/src/index.ts:189 packages/completion-theme/src/index.ts:190
 msgid "Display the completer themes"
 msgstr ""
 
@@ -512,8 +552,32 @@ msgstr ""
 msgid "documentation"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/index.ts:42
+#: packages/jupyterlab-lsp/src/components/utils.tsx:54
+msgid "cell %1"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/utils.tsx:55
+msgid "cells: %1-%2"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/index.ts:42 packages/jupyterlab-lsp/src/features/diagnostics/index.ts:43
 msgid "Show diagnostics panel"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:161
+msgid "Error"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:162
+msgid "Warning"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:163
+msgid "Information"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:164
+msgid "Hint"
 msgstr ""
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:230
@@ -528,39 +592,39 @@ msgstr ""
 msgid "Highlight type definition"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/jump_to.ts:129
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:128 packages/jupyterlab-lsp/src/features/jump_to.ts:129
 msgid "No jump targets found"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/jump_to.ts:260
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:258 packages/jupyterlab-lsp/src/features/jump_to.ts:260
 msgid "Jump to definition"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/jump_to.ts:270
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:268 packages/jupyterlab-lsp/src/features/jump_to.ts:270
 msgid "Jump back"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/rename.ts:103
+#: packages/jupyterlab-lsp/src/features/rename.ts:103 packages/jupyterlab-lsp/src/features/rename.ts:104
 msgid "Rename symbol"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/rename.ts:68
+#: packages/jupyterlab-lsp/src/features/rename.ts:68 packages/jupyterlab-lsp/src/features/rename.ts:69
 msgid "Rename failed: %1"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/rename.ts:75
+#: packages/jupyterlab-lsp/src/features/rename.ts:75 packages/jupyterlab-lsp/src/features/rename.ts:76
 msgid "Rename to"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/rename.ts:77
+#: packages/jupyterlab-lsp/src/features/rename.ts:77 packages/jupyterlab-lsp/src/features/rename.ts:78
 msgid "Rename"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/rename.ts:78
+#: packages/jupyterlab-lsp/src/features/rename.ts:78 packages/jupyterlab-lsp/src/features/rename.ts:79
 msgid "Cancel"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/rename.ts:88
+#: packages/jupyterlab-lsp/src/features/rename.ts:88 packages/jupyterlab-lsp/src/features/rename.ts:89
 msgid "Renaming %1 to %2..."
 msgstr ""
 
