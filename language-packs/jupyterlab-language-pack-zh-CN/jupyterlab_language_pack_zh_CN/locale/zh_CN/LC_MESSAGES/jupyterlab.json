@@ -154,9 +154,6 @@
     "Are you sure you want to permanently shut down all running terminals?": [
         "\u60a8\u786e\u5b9a\u8981\u6c38\u4e45\u5173\u95ed\u6240\u6709\u6b63\u5728\u8fd0\u884c\u7684\u7ec8\u7aef\u5417\uff1f"
     ],
-    "Are you sure you want to refresh?": [
-        "\u60a8\u786e\u5b9a\u8981\u5237\u65b0\u5417\uff1f"
-    ],
     "Are you sure you want to reload the %1 from the disk?": [
         "\u60a8\u786e\u5b9a\u8981\u4ece\u78c1\u76d8\u91cd\u65b0\u52a0\u8f7d %1 \u5417\uff1f"
     ],
@@ -240,6 +237,9 @@
     ],
     "Cell Tags": [
         "\u5355\u5143\u683c\u6807\u7b7e"
+    ],
+    "Cell not executed due to pending input": [
+        "\u7531\u4e8e\u5305\u542b\u5f85\u5b9a\u8f93\u5165\uff0c\u5355\u5143\u683c\u672a\u88ab\u6267\u884c"
     ],
     "Cell type": [
         "\u5355\u5143\u683c\u7c7b\u578b"
@@ -523,9 +523,6 @@
     "Details:": [
         "\u8be6\u7ec6\u4fe1\u606f\uff1a"
     ],
-    "Did not run selected cell because there is a cell waiting on input! Submit your input and try again.": [
-        "\u6ca1\u6709\u8fd0\u884c\u9009\u4e2d\u7684\u5355\u5143\u683c\uff0c\u56e0\u4e3a\u6709\u4e00\u4e2a\u5355\u5143\u683c\u7b49\u5f85\u8f93\u5165\uff01\u63d0\u4ea4\u60a8\u7684\u8f93\u5165\u7136\u540e\u91cd\u8bd5\u3002"
-    ],
     "Directory": [
         "\u76ee\u5f55"
     ],
@@ -540,6 +537,9 @@
     ],
     "Disable": [
         "\u7981\u7528"
+    ],
+    "Disable Debugger": [
+        "\u7981\u7528\u8c03\u8bd5\u5668"
     ],
     "Disable Scrolling for Outputs": [
         "\u7981\u7528\u6eda\u52a8\u8f93\u51fa\u529f\u80fd"
@@ -592,8 +592,8 @@
     "Enable": [
         "\u542f\u7528"
     ],
-    "Enable / Disable Debugger": [
-        "\u542f\u7528/\u7981\u7528\u8c03\u8bd5\u5668"
+    "Enable Debugger": [
+        "\u542f\u7528\u8c03\u8bd5\u5668"
     ],
     "Enable Extension Manager": [
         "\u542f\u7528\u6269\u5c55\u7ba1\u7406\u5668"
@@ -660,9 +660,6 @@
     ],
     "Expand Selected Outputs": [
         "\u5c55\u5f00\u9009\u5b9a\u7684\u8f93\u51fa"
-    ],
-    "Export Notebook: %1": [
-        "\u5bfc\u51fa\u7b14\u8bb0\u672c\uff1a%1"
     ],
     "Extend Selection Above": [
         "\u5411\u4e0a\u65b9\u6269\u5c55\u9009\u533a"
@@ -753,9 +750,6 @@
     ],
     "For more information, see": [
         "\u66f4\u591a\u4fe1\u606f\uff0c\u8bf7\u53c2\u9605"
-    ],
-    "For more information, see the <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>": [
-        "\u6b32\u4e86\u89e3\u66f4\u591a\u4fe1\u606f\uff0c\u8bf7\u53c2\u9605 <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>"
     ],
     "Fragment": [
         "\u7247\u6bb5"
@@ -885,9 +879,6 @@
     ],
     "Jupyter Reference": [
         "Jupyter \u53c2\u8003\u6587\u6863"
-    ],
-    "Jupyter security documentation": [
-        "Jupyter \u5b89\u5168\u6587\u6863"
     ],
     "JupyterLab Dark": [
         "JupyterLab \u6697\u8272"
@@ -1408,6 +1399,9 @@
     "Render All Markdown Cells": [
         "\u6e32\u67d3\u5168\u90e8 Markdown"
     ],
+    "Render Side-by-side": [
+        "\u5e76\u6392\u6e32\u67d3"
+    ],
     "Renderer Failure: %1": [
         "\u6e32\u67d3\u5931\u8d25\uff1a%1"
     ],
@@ -1449,6 +1443,9 @@
     ],
     "Restart Kernel and Clear\u2026": [
         "\u91cd\u65b0\u542f\u52a8\u5185\u6838\u5e76\u6e05\u9664\u2026"
+    ],
+    "Restart Kernel and Debug\u2026": [
+        "\u91cd\u65b0\u542f\u52a8\u5185\u6838\u5e76\u8c03\u8bd5\u2026"
     ],
     "Restart Kernel and Run All": [
         "\u91cd\u65b0\u542f\u52a8\u5185\u6838\u5e76\u8fd0\u884c\u6240\u6709"
@@ -1603,6 +1600,9 @@
     "Save all open documents": [
         "\u4fdd\u5b58\u5168\u90e8\u6253\u5f00\u7684\u6587\u6863"
     ],
+    "Save and Export Notebook: %1": [
+        "\u4fdd\u5b58\u5e76\u5bfc\u51fa\u7b14\u8bb0\u672c\uff1a%1"
+    ],
     "Save and Reload": [
         "\u4fdd\u5b58\u5e76\u91cd\u65b0\u52a0\u8f7d"
     ],
@@ -1623,9 +1623,6 @@
     ],
     "Save your work": [
         "\u4fdd\u5b58\u60a8\u7684\u5de5\u4f5c"
-    ],
-    "Saving %1": [
-        "\u4fdd\u5b58%1"
     ],
     "Saving completed": [
         "\u4fdd\u5b58\u6210\u529f"
@@ -1675,6 +1672,9 @@
     "Select Kernel": [
         "\u9009\u62e9\u5185\u6838"
     ],
+    "Select a kernel that supports debugging to enable debugger": [
+        "\u9009\u62e9\u4e00\u4e2a\u652f\u6301\u8c03\u8bd5\u7684\u5185\u6838\u4ee5\u5f00\u542f\u8c03\u8bd5\u5668"
+    ],
     "Select a plugin from the list to view and edit its preferences.": [
         "\u4ece\u5217\u8868\u4e2d\u9009\u62e9\u4e00\u4e2a\u63d2\u4ef6\u6765\u67e5\u770b\u548c\u7f16\u8f91\u5176\u9009\u9879\u3002"
     ],
@@ -1705,6 +1705,9 @@
     "Set Log Level to %1": [
         "\u5c06\u65e5\u5fd7\u7ea7\u522b\u8bbe\u4e3a %1"
     ],
+    "Set side-by-side ratio": [
+        "\u8bbe\u7f6e\u5e76\u6392\u663e\u793a\u6bd4\u4f8b"
+    ],
     "Set the terminal theme": [
         "\u8bbe\u7f6e\u7ec8\u7aef\u4e3b\u9898"
     ],
@@ -1725,6 +1728,9 @@
     ],
     "Show Header Above Content": [
         "\u5728\u5185\u5bb9\u4e0a\u65b9\u663e\u793a\u9875\u5934"
+    ],
+    "Show Hidden Files": [
+        "\u663e\u793a\u9690\u85cf\u6587\u4ef6"
     ],
     "Show Last Modified Column": [
         "\u5207\u6362\u6700\u540e\u4fee\u6539\u5217"
@@ -1910,6 +1916,9 @@
     "The JupyterLab development team is excited to have a robust\nthird-party extension community. However, we do not review\nthird-party extensions, and some extensions may introduce security\nrisks or contain malicious code that runs on your machine.": [
         "JupyterLab \u5f00\u53d1\u56e2\u961f\u5f88\u9ad8\u5174\u6709\u4e00\u4e2a\u5f3a\u5927\u7684\u7b2c\u4e09\u65b9\u6269\u5c55\u793e\u533a\u3002\u7136\u800c\uff0c\u6211\u4eec\u5e76\u4e0d\u4f1a\u5ba1\u67e5\u7b2c\u4e09\u65b9\u6269\u5c55\uff0c\u4e00\u4e9b\u6269\u5c55\u53ef\u80fd\u4f1a\u5e26\u6765\u5b89\u5168\u98ce\u9669\u6216\u5305\u542b\u60a8\u80fd\u5728\u60a8\u673a\u5668\u4e0a\u8fd0\u884c\u7684\u6076\u610f\u4ee3\u7801\u3002"
     ],
+    "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again.": [
+        "\u5f53\u524d\u542b\u6709\u672a\u88ab\u6267\u884c\u7684\u8f93\u5165\u5185\u5bb9\uff0c\u4e3a\u4e86\u9632\u6b62\u5185\u6838\u6b7b\u9501\uff0c\u6b64\u5355\u5143\u683c\u5c1a\u672a\u88ab\u6267\u884c\u3002\u6e05\u63d0\u4ea4\u60a8\u5f53\u524d\u672a\u6267\u884c\u7684\u8f93\u5165\u7136\u540e\u518d\u8bd5\u3002"
+    ],
     "The checkpoint was last updated at: ": [
         "\u68c0\u67e5\u70b9\u6700\u540e\u4e00\u6b21\u66f4\u65b0\u4e8e: "
     ],
@@ -1960,9 +1969,6 @@
     ],
     "This notebook has been converted from an older notebook format (v%1)\nto the current notebook format (v%2).\nThe next time you save this notebook, the current notebook format (v%2) will be used.\n'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\nclose the notebook without saving it.": [
         "\u6b64\u7b14\u8bb0\u672c\u5df2\u4ece\u65e7\u7b14\u8bb0\u672c\u683c\u5f0f\uff08v%1\uff09\u8f6c\u6362\u4e3a\u5f53\u524d\u7b14\u8bb0\u672c\u683c\u5f0f\uff08v%2\uff09\u3002\u4e0b\u6b21\u4fdd\u5b58\u6b64\u7b14\u8bb0\u672c\uff0c\u5f53\u524d\u7b14\u8bb0\u672c\u5c06\u4f7f\u7528\u65b0\u683c\u5f0f\uff08v%2\uff09\u3002\u8001\u7248\u672c\u7684 Jupyter \u9879\u76ee\u53ef\u80fd\u65e0\u6cd5\u8bfb\u53d6\u65b0\u683c\u5f0f\u3002\u8981\u4fdd\u7559\u539f\u59cb\u683c\u5f0f\u7248\u672c\uff0c\u8bf7\u5173\u95ed\u7b14\u8bb0\u672c\u5e76\u907f\u514d\u4fdd\u5b58\u5b83\u3002"
-    ],
-    "This notebook has been converted from an older notebook format (v%1)\nto the current notebook format (v%2).\nThe next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\nclose the notebook without saving it.": [
-        "\u6b64\u7b14\u8bb0\u672c\u5df2\u4ece\u65e7\u7b14\u8bb0\u672c\u683c\u5f0f\uff08v%1\uff09\u8f6c\u6362\u4e3a\u5f53\u524d\u7b14\u8bb0\u672c\u683c\u5f0f\uff08v%2\uff09\u3002\u4e0b\u6b21\u4fdd\u5b58\u6b64\u7b14\u8bb0\u672c\uff0c\u5f53\u524d\u7b14\u8bb0\u672c\u5c06\u4f7f\u7528\u65b0\u683c\u5f0f\u3002\u8001\u7248\u672c\u7684 Jupyter \u9879\u76ee\u53ef\u80fd\u65e0\u6cd5\u8bfb\u53d6\u65b0\u683c\u5f0f\u3002 \u8981\u4fdd\u7559\u539f\u59cb\u683c\u5f0f\u7248\u672c\uff0c\u8bf7\u5173\u95ed\u7b14\u8bb0\u672c\u5e76\u907f\u514d\u4fdd\u5b58\u5b83\u3002"
     ],
     "This package has indicated that it needs a corresponding kernel\npackage. Please contact your Administrator to update the server with\none of the following commands:": [
         "\u8fd9\u4e2a\u8f6f\u4ef6\u5305\u8868\u793a\u5b83\u9700\u8981\u4e00\u4e2a\u76f8\u5e94\u7684\u5185\u6838\u5305\u3002\u8bf7\u8054\u7cfb\u60a8\u7684\u7ba1\u7406\u5458\u7528\u4e0b\u9762\u7684\u547d\u4ee4\u66f4\u65b0\u670d\u52a1\u5668\uff1a"
@@ -2057,14 +2063,14 @@
     "Version %1": [
         "\u7248\u672c %1"
     ],
-    "Waiting on User Input": [
-        "\u6b63\u5728\u7b49\u5f85\u7528\u6237\u8f93\u5165"
-    ],
     "Warning": [
         "\u8b66\u544a"
     ],
     "Whether the HTML file is trusted.\nTrusting the file allows scripts to run in it,\nwhich may result in security risks.\nOnly enable for files you trust.": [
         "HTML \u6587\u4ef6\u662f\u5426\u53ef\u4fe1\u3002\n\u4fe1\u4efb\u6b64\u6587\u4ef6\u5c06\u5141\u8bb8\u5176\u4e2d\u7684\u811a\u672c\u8fd0\u884c\uff0c\n\u8fd9\u53ef\u80fd\u5bfc\u81f4\u5b89\u5168\u98ce\u9669\u3002\n\u8bf7\u4ec5\u5bf9\u60a8\u4fe1\u4efb\u7684\u6587\u4ef6\u542f\u7528\u3002"
+    ],
+    "Width of the output in side-by-side mode": [
+        "\u5e76\u6392\u663e\u793a\u6a21\u5f0f\u7684\u8f93\u51fa\u5bbd\u5ea6"
     ],
     "Word Wrap": [
         "\u6362\u884c"
@@ -2129,17 +2135,11 @@
     "menu\u0004Edit": [
         "\u7f16\u8f91"
     ],
-    "menu\u0004Export Notebook As\u2026": [
-        "\u5bfc\u51fa\u7b14\u8bb0\u672c\u4e3a\u2026"
-    ],
     "menu\u0004File": [
         "\u6587\u4ef6"
     ],
     "menu\u0004Help": [
         "\u5e2e\u52a9"
-    ],
-    "menu\u0004JupyterLab Theme": [
-        "JupyterLab \u4e3b\u9898"
     ],
     "menu\u0004Kernel": [
         "\u5185\u6838"
@@ -2155,6 +2155,9 @@
     ],
     "menu\u0004Run": [
         "\u8fd0\u884c"
+    ],
+    "menu\u0004Save and Export Notebook As\u2026": [
+        "\u4fdd\u5b58\u5e76\u5bfc\u51fa\u7b14\u8bb0\u672c\u4e3a\u2026"
     ],
     "menu\u0004Settings": [
         "\u8bbe\u7f6e"
@@ -2176,6 +2179,9 @@
     ],
     "menu\u0004Text Editor Theme": [
         "\u6587\u672c\u7f16\u8f91\u5668\u4e3b\u9898"
+    ],
+    "menu\u0004Theme": [
+        "\u4e3b\u9898"
     ],
     "menu\u0004View": [
         "\u67e5\u770b"
@@ -2516,6 +2522,9 @@
     "settings\u0004Defines the observed top margin for the virtual notebook, set a positive number of pixels to render cells above the visible view": [
         "\u5b9a\u4e49\u865a\u62df\u7b14\u8bb0\u672c\u89c2\u5bdf\u5230\u7684\u4e0a\u8fb9\u8ddd\uff0c\u8bbe\u7f6e\u4e00\u4e2a\u6b63\u6570\u7684\u50cf\u7d20\u6570\u6765\u6e32\u67d3\u5728\u53ef\u89c1\u89c6\u56fe\u4e0a\u65b9\u7684\u5355\u5143\u683c"
     ],
+    "settings\u0004Disable the undo/redo on the notebook document level, so actions independent cells can have their own history. The undo/redo never applies on the outputs, in other words, outputs don't have history. A moved cell completely looses history capability for now.": [
+        "\u7981\u7528\u7b14\u8bb0\u672c\u6587\u6863\u7ea7\u522b\u7684\u64a4\u9500/\u91cd\u505a\uff0c\u4ece\u800c\u6bcf\u4e2a\u52a8\u4f5c\u72ec\u7acb\u7684\u5355\u5143\u683c\u5c06\u6709\u81ea\u5df1\u7684\u5386\u53f2\u8bb0\u5f55\u3002\u64a4\u9500/\u91cd\u505a\u4e0d\u4f1a\u5e94\u7528\u5230\u8f93\u51fa\u4e0a\uff0c\u6362\u53e5\u8bdd\u8bf4\uff0c\u5373\u8f93\u51fa\u4e0d\u5305\u542b\u5386\u53f2\u8bb0\u5f55\u3002\u76ee\u524d\u5355\u5143\u683c\u88ab\u79fb\u52a8\u4e4b\u540e\u4f1a\u5b8c\u5168\u5931\u53bb\u5386\u53f2\u8bb0\u5f55\u3002"
+    ],
     "settings\u0004Disclaimed Status": [
         "\u514d\u8d23\u72b6\u6001"
     ],
@@ -2555,6 +2564,9 @@
     "settings\u0004Enables using the CDN to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry": [
         "\u542f\u7528\u901a\u8fc7 CDN \u83b7\u53d6\u5b8c\u6574\u7684\u5305\u6570\u636e\u3002\u5426\u5219\uff0c\u5c06\u4f7f\u7528\u5df2\u914d\u7f6e\u7684 NPM \u6e90\u3002\u7531\u4e8e NPM \u6e90\u7f3a\u5c11 CORS \u652f\u6301\uff0c\u8bf7\u4ec5\u5728\u63d0\u4f9b\u81ea\u5b9a\u4e49\u6e90\u65f6\u7981\u7528\u8be5\u9009\u9879"
     ],
+    "settings\u0004Experimental settings to enable the undo/redo on the notebook document level.": [
+        "\u7528\u4e8e\u5f00\u542f\u7b14\u8bb0\u672c\u6587\u6863\u7ea7\u522b\u64a4\u9500/\u91cd\u505a\u7684\u5b9e\u9a8c\u6027\u8bbe\u7f6e\u3002"
+    ],
     "settings\u0004Extension Manager": [
         "\u6269\u5c55\u7ba1\u7406\u5668"
     ],
@@ -2581,9 +2593,6 @@
     ],
     "settings\u0004Hide Front Matter": [
         "\u9690\u85cf YAML \u5934\u90e8\u4fe1\u606f"
-    ],
-    "settings\u0004If set to true, when a header is collapsed in the ToC the corresponding section in the notebook is collapsed as well and vice versa.": [
-        "\u5982\u679c\u8bbe\u7f6e\u4e3a true\uff0c\u5f53\u6807\u9898\u5728\u76ee\u5f55\u4e2d\u6298\u53e0\u65f6\uff0c\u7b14\u8bb0\u672c\u4e2d\u7684\u76f8\u5e94\u90e8\u5206\u4e5f\u4f1a\u6298\u53e0\uff0c\u53cd\u4e4b\u4ea6\u7136\u3002"
     ],
     "settings\u0004If set to true, when a header is collapsed in the table of contents the corresponding section in the notebook is collapsed as well and vice versa.": [
         "\u5982\u679c\u8bbe\u7f6e\u4e3a true\uff0c\u5f53\u6807\u9898\u5728\u76ee\u5f55\u4e2d\u6298\u53e0\u65f6\uff0c\u7b14\u8bb0\u672c\u4e2d\u7684\u76f8\u5e94\u90e8\u5206\u4e5f\u4f1a\u6298\u53e0\uff0c\u53cd\u4e4b\u4ea6\u7136\u3002"
@@ -2633,11 +2642,17 @@
     "settings\u0004Log entry count limit": [
         "\u65e5\u5fd7\u6761\u76ee\u6570\u91cf\u9650\u5236"
     ],
+    "settings\u0004Margin for last modified timestamp check": [
+        "\u6700\u540e\u4fee\u6539\u65f6\u95f4\u68c0\u67e5\u7684\u8303\u56f4\u533a\u95f4"
+    ],
     "settings\u0004Markdown Cell Configuration": [
         "Markdown \u5355\u5143\u683c\u914d\u7f6e"
     ],
     "settings\u0004Markdown Viewer": [
         "Markdown \u67e5\u770b\u5668"
+    ],
+    "settings\u0004Max acceptable difference, in milliseconds, between last modified timestamps on disk and client": [
+        "\u5728\u78c1\u76d8\u4e0a\u548c\u5728\u5ba2\u6237\u7aef\u4e0a\u6700\u540e\u4fee\u6539\u65f6\u95f4\u6233\u7684\u6700\u5927\u53ef\u63a5\u53d7\u5dee\u5f02\u533a\u95f4\uff0c\u5355\u4f4d\u6beb\u79d2"
     ],
     "settings\u0004Maximum number of log entries to store in memory": [
         "\u5b58\u50a8\u5728\u5185\u5b58\u4e2d\u7684\u65e5\u5fd7\u6761\u76ee\u7684\u6700\u5927\u6570\u91cf"
@@ -2702,8 +2717,8 @@
     "settings\u0004Overrides for the default viewers for file types": [
         "\u8986\u76d6\u6307\u5b9a\u6587\u4ef6\u7c7b\u578b\u7684\u9ed8\u8ba4\u67e5\u770b\u5668"
     ],
-    "settings\u0004Overrides for where to show sidebar items\ne.g., {\"tab-manager\": \"right\"}": [
-        "\u8986\u76d6\u4fa7\u8fb9\u680f\u9879\u76ee\u7684\u663e\u793a\u4f4d\u7f6e\n\u4f8b\u5982 {\"tab-manager\": \"right\"}"
+    "settings\u0004Overrides for where to show sidebar items\ne.g., {\"jp-debugger-sidebar\": \"left\"}\nYou can also change this by right-clicking the sidebar icons.": [
+        "\u8986\u76d6\u4fa7\u680f\u9879\u76ee\u663e\u793a\u4f4d\u7f6e\n\u4f8b\u5982 {\"jp-debugger-sidebar\": \"left\"}\n\u60a8\u540c\u6837\u53ef\u4ee5\u901a\u8fc7\u53f3\u952e\u70b9\u51fb\u4fa7\u680f\u56fe\u6807\u6765\u4fee\u6539\u6b64\u8bbe\u7f6e\u3002"
     ],
     "settings\u0004Paste with Ctrl+V": [
         "\u4f7f\u7528 Ctrl+V \u7c98\u8d34"
@@ -2752,6 +2767,9 @@
     ],
     "settings\u0004Show All Kernel Activity": [
         "\u663e\u793a\u6240\u6709\u5185\u6838\u52a8\u6001"
+    ],
+    "settings\u0004Show hidden files": [
+        "\u663e\u793a\u9690\u85cf\u6587\u4ef6"
     ],
     "settings\u0004Show last modified column": [
         "\u663e\u793a\u6700\u540e\u4fee\u6539\u5217"
@@ -2933,14 +2951,14 @@
     "settings\u0004Whether to include cell output in headings": [
         "\u662f\u5426\u5728\u6807\u9898\u4e2d\u5305\u542b\u5355\u5143\u683c\u8f93\u51fa"
     ],
-    "settings\u0004Whether to number first level headings": [
-        "\u662f\u5426\u4e3a\u4e00\u7ea7\u6807\u9898\u663e\u793a\u7f16\u53f7"
-    ],
     "settings\u0004Whether to number first-level headings": [
         "\u662f\u5426\u4e3a\u4e00\u7ea7\u6807\u9898\u663e\u793a\u7f16\u53f7"
     ],
     "settings\u0004Whether to scroll past the end of text document": [
         "\u662f\u5426\u6eda\u52a8\u8d85\u8fc7\u6587\u672c\u6587\u6863\u7684\u672b\u7aef"
+    ],
+    "settings\u0004Whether to show hidden files": [
+        "\u662f\u5426\u663e\u793a\u9690\u85cf\u6587\u4ef6"
     ],
     "settings\u0004Whether to show status bar or not": [
         "\u662f\u5426\u663e\u793a\u72b6\u6001\u680f"
@@ -2956,12 +2974,6 @@
     ],
     "settings\u0004font-size": [
         "\u5b57\u4f53\u5927\u5c0f"
-    ],
-    "settings\u0004syncCollapseState": [
-        "syncCollapseState\uff08\u540c\u6b65\u6298\u53e0\u72b6\u6001\uff09"
-    ],
-    "showErrorMessage": [
-        "showErrorMessage\uff08\u663e\u793a\u62a5\u9519\u4fe1\u606f\uff09"
     ],
     "showErrorMessage\u0004\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\"": [
         "\u300c%1\u300d\u4e0d\u662f\u4e00\u4e2a\u6709\u6548\u7684\u6587\u4ef6\u540d\u3002\u6587\u4ef6\u540d\u5fc5\u987b\u5177\u6709\u975e\u96f6\u957f\u5ea6\uff0c\u4e14\u4e0d\u5305\u542b\u300c/\u300d\u3001\u300c\\\u300d\u6216\u300c:\u300d"
