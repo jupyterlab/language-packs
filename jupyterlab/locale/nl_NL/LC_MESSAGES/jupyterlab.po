@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Dutch\n"
 "Language: nl_NL\n"
-"PO-Revision-Date: 2021-10-29 14:50\n"
+"PO-Revision-Date: 2021-10-29 15:49\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -150,42 +150,42 @@ msgstr "Menu rang"
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/args/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/args/description
 msgctxt "settings"
 msgid "Command arguments"
-msgstr ""
+msgstr "Argumenten commando"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/command/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/command/description
 msgctxt "settings"
 msgid "Command id"
-msgstr ""
+msgstr "Commando id"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/disabled/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/disabled/description
 msgctxt "settings"
 msgid "Whether the item is disabled or not"
-msgstr ""
+msgstr "Item uitgeschakeld"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/rank/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/rank/description
 msgctxt "settings"
 msgid "Item rank"
-msgstr ""
+msgstr "Item rang"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/submenu/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/submenu/description
 msgctxt "settings"
 msgid "Submenu definition"
-msgstr ""
+msgstr "Submenu definitie"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/type/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/type/description
 msgctxt "settings"
 msgid "Item type"
-msgstr ""
+msgstr "Item type"
 
 #: /packages/application-extension/schema/context-menu.json:/description
 msgctxt "schema"
 msgid "JupyterLab context menu settings."
-msgstr ""
+msgstr "JupyterLab contextmenuinstellingen."
 
 #: /packages/application-extension/schema/context-menu.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Application Context Menu"
-msgstr ""
+msgstr "Toepassingscontextmenu"
 
 #: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/description
 msgctxt "settings"
@@ -202,22 +202,34 @@ msgid "Note: To disable a context menu item,\n"
 "  ]\n"
 "}\n\n"
 "Context menu description:"
-msgstr ""
+msgstr "Opmerking: Om een contextmenu-item uit te schakelen,\n"
+"kopieer het naar gebruikersinstellingen en voeg de\n"
+"\"uitgeschakeld\" toets toe. Het volgende voorbeeld schakelt Download item in bestanden uit:\n"
+"{\n"
+"  \"contextMenu\": [\n"
+"    {\n"
+"      \"command\": \"filebrowser:download\",\n"
+"      \"selector\": \". p-DirListing-item[data-isdir=\\\"false\\\"]\",\n"
+"      \"uitgeschakeld\": echte\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Context menu beschrijving:"
 
 #: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/items/allOf[1]/properties/selector/description
 msgctxt "settings"
 msgid "The CSS selector for the context menu item."
-msgstr ""
+msgstr "De CSS-selector voor het contextmenuitem."
 
 #: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/title
 msgctxt "settings"
 msgid "The application context menu."
-msgstr ""
+msgstr "Toepassingscontextmenu."
 
 #: /packages/application-extension/schema/context-menu.json:/title
 msgctxt "schema"
 msgid "Application Context Menu"
-msgstr ""
+msgstr "Toepassingscontextmenu"
 
 #: /packages/application-extension/schema/sidebar.json:/description
 msgctxt "schema"
@@ -227,19 +239,21 @@ msgstr "Zijbalk lay-outinstellingen."
 #: /packages/application-extension/schema/sidebar.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Sidebar"
-msgstr ""
+msgstr "Zijbalk"
 
 #: /packages/application-extension/schema/sidebar.json:/properties/overrides/description
 msgctxt "settings"
 msgid "Overrides for where to show sidebar items\n"
 "e.g., {\"jp-debugger-sidebar\": \"left\"}\n"
 "You can also change this by right-clicking the sidebar icons."
-msgstr ""
+msgstr "Vervangers voor positie zijbalkitems\n"
+"b.v. {\"jp-debugger-sidebar\": \"left\"}\n"
+"Je kunt dit ook veranderen door met de rechtermuisknop op de zijbalk te klikken."
 
 #: /packages/application-extension/schema/sidebar.json:/properties/overrides/title
 msgctxt "settings"
 msgid "Overrides"
-msgstr ""
+msgstr "Vervangers"
 
 #: /packages/application-extension/schema/sidebar.json:/title
 msgctxt "schema"
@@ -249,22 +263,22 @@ msgstr "Zijbalk"
 #: /packages/apputils-extension/schema/palette.json:/description
 msgctxt "schema"
 msgid "Command palette settings."
-msgstr ""
+msgstr "Commandopalet instellingen."
 
 #: /packages/apputils-extension/schema/palette.json:/properties/modal/description
 msgctxt "settings"
 msgid "Whether the command palette should be modal or in the left panel."
-msgstr ""
+msgstr "Of het commando palet modaal of in het linker paneel staan moet."
 
 #: /packages/apputils-extension/schema/palette.json:/properties/modal/title
 msgctxt "settings"
 msgid "Modal Command Palette"
-msgstr ""
+msgstr "Modaal commandopalet"
 
 #: /packages/apputils-extension/schema/palette.json:/title
 msgctxt "schema"
 msgid "Command Palette"
-msgstr ""
+msgstr "Commandopalet"
 
 #: /packages/apputils-extension/schema/print.json:/description
 msgctxt "schema"
@@ -279,12 +293,12 @@ msgstr "Afdrukken"
 #: /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/code-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/content-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/ui-font-family/description
 msgctxt "settings"
 msgid "font-family"
-msgstr ""
+msgstr "lettertype"
 
 #: /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/code-font-size/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/content-font-size1/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/ui-font-size1/description
 msgctxt "settings"
 msgid "font-size"
-msgstr ""
+msgstr "lettergrootte"
 
 #: /packages/apputils-extension/schema/themes.json:/description
 msgctxt "schema"
@@ -294,37 +308,37 @@ msgstr "Instellingen themabeheer."
 #: /packages/apputils-extension/schema/themes.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
 msgctxt "menu"
 msgid "Theme"
-msgstr ""
+msgstr "Thema"
 
 #: /packages/apputils-extension/schema/themes.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Theme Manager"
-msgstr ""
+msgstr "Thema Beheerder"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/overrides/description
 msgctxt "settings"
 msgid "Override theme CSS variables by setting key-value pairs here"
-msgstr ""
+msgstr "Overschrijf CSS variabelen door hier sleutelwaarde paren in te stellen"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/overrides/title
 msgctxt "settings"
 msgid "Theme CSS Overrides"
-msgstr ""
+msgstr "Thema CSS vervangers"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme-scrollbars/description
 msgctxt "settings"
 msgid "Enable/disable styling of the application scrollbars"
-msgstr ""
+msgstr "Stileren applicatie-scrollbalk in-/uitschakelen"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme-scrollbars/title
 msgctxt "settings"
 msgid "Scrollbar Theming"
-msgstr ""
+msgstr "Scrollbalk stilering"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme/description
 msgctxt "settings"
 msgid "Application-level visual styling theme"
-msgstr ""
+msgstr "Visuele stijl toepassing"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme/title
 msgctxt "settings"
@@ -597,118 +611,119 @@ msgstr ""
 #: /packages/docmanager-extension/schema/plugin.json:/properties/autosave/description
 msgctxt "settings"
 msgid "Whether to autosave documents"
-msgstr ""
+msgstr "Bewaar documenten automatisch"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/autosave/title
 msgctxt "settings"
 msgid "Autosave Documents"
-msgstr ""
+msgstr "Bewaar documenten automatisch"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/autosaveInterval/description
 msgctxt "settings"
 msgid "Length of save interval in seconds"
-msgstr ""
+msgstr "Lengte opslaginterval in seconden"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/autosaveInterval/title
 msgctxt "settings"
 msgid "Autosave Interval"
-msgstr ""
+msgstr "Interval van automatisch opslaan"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/defaultViewers/description
 msgctxt "settings"
 msgid "Overrides for the default viewers for file types"
-msgstr ""
+msgstr "Vervangers voor standaardweergaves voor bestandstypen"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/defaultViewers/title
 msgctxt "settings"
 msgid "Default Viewers"
-msgstr ""
+msgstr "Standaard weergaves"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/lastModifiedCheckMargin/description
 msgctxt "settings"
 msgid "Max acceptable difference, in milliseconds, between last modified timestamps on disk and client"
-msgstr ""
+msgstr "Max acceptabel verschil tussen laatst gewijzigde tijdstempels op schijf en cliënt, in milliseconden"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/lastModifiedCheckMargin/title
 msgctxt "settings"
 msgid "Margin for last modified timestamp check"
-msgstr ""
+msgstr "Marge voor controle tijdstempel laatste wijziging"
 
 #: /packages/docmanager-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Document Manager"
-msgstr ""
+msgstr "Documentenbeheer"
 
 #: /packages/documentsearch-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Document search plugin."
-msgstr ""
+msgstr "Document zoekplugin."
 
 #: /packages/documentsearch-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Document Search"
-msgstr ""
+msgstr "Document zoeken"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Extension manager settings."
-msgstr ""
+msgstr "Instellingen extensiebeheer."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Extension Manager"
-msgstr ""
+msgstr "Extensiebeheer"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/disclaimed/description
 msgctxt "settings"
 msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
-msgstr ""
+msgstr "Gebruiker begrijpt dat extensies beheerd door deze interface willekeurige, potentieel gevaarlijk code kan uitvoeren"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/disclaimed/title
 msgctxt "settings"
 msgid "Disclaimed Status"
-msgstr ""
+msgstr "Afgewezen Status"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enableCdn/description
 msgctxt "settings"
 msgid "Enables using the CDN to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry"
-msgstr ""
+msgstr "Gebruik CDN om complete pakketdata op te halen.  Anders, de ingestelde NPM opslagplaats gebruiken. Wegens ontbreken CORS ondersteuning door de NPM opslagplaats, alleen uitschakelen indien de opslagplaats aangepast is"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enableCdn/title
 msgctxt "settings"
 msgid "Enable CDN"
-msgstr ""
+msgstr "CDN inschakelen"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/description
 msgctxt "settings"
 msgid "Enables extension manager (requires Node.js/npm).\n"
 "WARNING: installing untrusted extensions may be unsafe."
-msgstr ""
+msgstr "Extensiebeheer inschakelen (Node.js/NPM vereist).\n"
+"WAARSCHUWING: het installeren van niet-vertrouwde extensies kan onveilig zijn."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/title
 msgctxt "settings"
 msgid "Enabled Status"
-msgstr ""
+msgstr "Ingeschakelde status"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/description
 msgctxt "settings"
 msgid "The URI of the CDN to use for fetching full package data"
-msgstr ""
+msgstr "URI van de CDN die voor ophalen complete pakketdata gebruikt wordt"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/title
 msgctxt "settings"
 msgid "NPM CDN"
-msgstr ""
+msgstr "NPM CDN"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmRegistry/description
 msgctxt "settings"
 msgid "The URI of the NPM registry to use for searching for jupyterlab extensions"
-msgstr ""
+msgstr "URI van de CDN die voor zoeken naar Jupterlab extensies gebruikt wordt"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmRegistry/title
 msgctxt "settings"
 msgid "NPM Registry"
-msgstr ""
+msgstr "NPM opslagplaats"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -718,139 +733,141 @@ msgstr "Extensiebeheer"
 #: /packages/filebrowser-extension/schema/browser.json:/description
 msgctxt "schema"
 msgid "File Browser settings."
-msgstr ""
+msgstr "Instellingen bestandsbeheer."
 
 #: /packages/filebrowser-extension/schema/browser.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "File Browser"
-msgstr ""
+msgstr "Bestandsbeheer"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/description
 msgctxt "settings"
 msgid "Whether to automatically navigate to a document's current directory"
-msgstr ""
+msgstr "Automatisch navigeren naar de huidige map van een document"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/title
 msgctxt "settings"
 msgid "Navigate to current directory"
-msgstr ""
+msgstr "Navigeer naar huidige map"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/description
 msgctxt "settings"
 msgid "Whether to show hidden files"
-msgstr ""
+msgstr "Verborgen bestanden tonen"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/title
 msgctxt "settings"
 msgid "Show hidden files"
-msgstr ""
+msgstr "Verborgen bestanden tonen"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showLastModifiedColumn/description
 msgctxt "settings"
 msgid "Whether to show the last modified column"
-msgstr ""
+msgstr "Toon kolom laatst wijziging"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showLastModifiedColumn/title
 msgctxt "settings"
 msgid "Show last modified column"
-msgstr ""
+msgstr "Toon kolom laatste wijziging"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/useFuzzyFilter/description
 msgctxt "settings"
 msgid "Whether to apply fuzzy algorithm while filtering on file names"
-msgstr ""
+msgstr "Gebruik fuzzy algoritme bij bestandsnaam filter"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/useFuzzyFilter/title
 msgctxt "settings"
 msgid "Filter on file name with a fuzzy search"
-msgstr ""
+msgstr "Filter bestandsnaam met fuzzy zoekopdracht"
 
 #: /packages/filebrowser-extension/schema/browser.json:/title
 msgctxt "schema"
 msgid "File Browser"
-msgstr ""
+msgstr "Bestandsbeheer"
 
 #: /packages/filebrowser-extension/schema/download.json:/description
 msgctxt "schema"
 msgid "File Browser Download settings."
-msgstr ""
+msgstr "Downloadinstellingen voor bestandsbeheer."
 
 #: /packages/filebrowser-extension/schema/download.json:/title
 msgctxt "schema"
 msgid "File Browser Download"
-msgstr ""
+msgstr "Bestandsbeheer download"
 
 #: /packages/filebrowser-extension/schema/open-browser-tab.json:/description
 msgctxt "schema"
 msgid "File Browser Open Browser Tab settings."
-msgstr ""
+msgstr "Bestandsbeheer tabinstellingen."
 
 #: /packages/filebrowser-extension/schema/open-browser-tab.json:/title
 msgctxt "schema"
 msgid "File Browser Open Browser Tab"
-msgstr ""
+msgstr "Bestandsbeheer tab"
 
 #: /packages/filebrowser-extension/schema/open-with.json:/description
 msgctxt "schema"
 msgid "File Browser Open With settings."
-msgstr ""
+msgstr "Bestandsbeheer open met instellingen."
 
 #: /packages/filebrowser-extension/schema/open-with.json:/jupyter.lab.menus/context[0]/submenu/label
 msgctxt "menu"
 msgid "Open With"
-msgstr ""
+msgstr "Open met"
 
 #: /packages/filebrowser-extension/schema/open-with.json:/title
 msgctxt "schema"
 msgid "File Browser Open With"
-msgstr ""
+msgstr "Bestandsbeheer open met"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Text editor settings."
-msgstr ""
+msgstr "Instellingen tekstbewerker."
 
 #: /packages/fileeditor-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[1]/submenu/label
 msgctxt "menu"
 msgid "Text Editor Indentation"
-msgstr ""
+msgstr "Inspringing teksteditor"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Editor"
-msgstr ""
+msgstr "Bewerker"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/description
 msgctxt "settings"
 msgid "The configuration for all text editors.\n"
 "If `fontFamily`, `fontSize` or `lineHeight` are `null`,\n"
 "values from current theme are used."
-msgstr ""
+msgstr "Configuratie voor alle tekstverwerkers.\n"
+"Indien `fontFamily`, `fontSize` of `lineHeight` gelijk `null`,\n"
+"worden waarden van het huidige thema gebruikt."
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/title
 msgctxt "settings"
 msgid "Editor Configuration"
-msgstr ""
+msgstr "Configuratie tekstbewerker"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Text Editor"
-msgstr ""
+msgstr "Tekstbewerker"
 
 #: /packages/help-extension/schema/about.json:/description
 msgctxt "schema"
 msgid "Help settings."
-msgstr ""
+msgstr "Help instellingen."
 
 #: /packages/help-extension/schema/about.json:/title
 msgctxt "schema"
 msgid "Help"
-msgstr ""
+msgstr "Help"
 
 #: /packages/hub-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "JupyterHub settings."
-msgstr ""
+msgstr "JupyterHub instellingen."
 
 #: /packages/hub-extension/schema/plugin.json:/title
 msgctxt "schema"
