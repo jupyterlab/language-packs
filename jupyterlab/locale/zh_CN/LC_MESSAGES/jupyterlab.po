@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-10-29 12:52\n"
+"PO-Revision-Date: 2021-10-29 13:48\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -246,7 +246,9 @@ msgctxt "settings"
 msgid "Overrides for where to show sidebar items\n"
 "e.g., {\"jp-debugger-sidebar\": \"left\"}\n"
 "You can also change this by right-clicking the sidebar icons."
-msgstr ""
+msgstr "覆盖侧栏项目显示位置\n"
+"例如 {\"jp-debugger-sidebar\": \"left\"}\n"
+"您同样可以通过右键点击侧栏图标来修改此设置。"
 
 #: /packages/application-extension/schema/sidebar.json:/properties/overrides/title
 msgctxt "settings"
@@ -306,7 +308,7 @@ msgstr "主题管理器设置。"
 #: /packages/apputils-extension/schema/themes.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
 msgctxt "menu"
 msgid "Theme"
-msgstr ""
+msgstr "主题"
 
 #: /packages/apputils-extension/schema/themes.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -640,12 +642,12 @@ msgstr "默认查看器"
 #: /packages/docmanager-extension/schema/plugin.json:/properties/lastModifiedCheckMargin/description
 msgctxt "settings"
 msgid "Max acceptable difference, in milliseconds, between last modified timestamps on disk and client"
-msgstr ""
+msgstr "在磁盘上和在客户端上最后修改时间戳的最大可接受差异区间，单位毫秒"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/lastModifiedCheckMargin/title
 msgctxt "settings"
 msgid "Margin for last modified timestamp check"
-msgstr ""
+msgstr "最后修改时间检查的范围区间"
 
 #: /packages/docmanager-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -752,12 +754,12 @@ msgstr "导航到当前目录"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/description
 msgctxt "settings"
 msgid "Whether to show hidden files"
-msgstr ""
+msgstr "是否显示隐藏文件"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/title
 msgctxt "settings"
 msgid "Show hidden files"
-msgstr ""
+msgstr "显示隐藏文件"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showLastModifiedColumn/description
 msgctxt "settings"
@@ -1063,7 +1065,7 @@ msgstr "笔记本导出设置。"
 #: /packages/notebook-extension/schema/export.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
 msgctxt "menu"
 msgid "Save and Export Notebook As…"
-msgstr ""
+msgstr "保存并导出笔记本为…"
 
 #: /packages/notebook-extension/schema/export.json:/title
 msgctxt "schema"
@@ -1103,12 +1105,12 @@ msgstr "单元格默认类型"
 #: /packages/notebook-extension/schema/tracker.json:/properties/experimentalDisableDocumentWideUndoRedo/description
 msgctxt "settings"
 msgid "Disable the undo/redo on the notebook document level, so actions independent cells can have their own history. The undo/redo never applies on the outputs, in other words, outputs don't have history. A moved cell completely looses history capability for now."
-msgstr ""
+msgstr "禁用笔记本文档级别的撤销/重做，从而每个动作独立的单元格将有自己的历史记录。撤销/重做不会应用到输出上，换句话说，即输出不包含历史记录。目前单元格被移动之后会完全失去历史记录。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/experimentalDisableDocumentWideUndoRedo/title
 msgctxt "settings"
 msgid "Experimental settings to enable the undo/redo on the notebook document level."
-msgstr ""
+msgstr "用于开启笔记本文档级别撤销/重做的实验性设置。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/description
 msgctxt "settings"
@@ -2119,7 +2121,7 @@ msgstr "分隔符: "
 
 #: packages/debugger-extension/src/index.ts:192 packages/debugger-extension/src/index.ts:193
 msgid "Restart Kernel and Debug…"
-msgstr ""
+msgstr "重新启动内核并调试…"
 
 #: packages/debugger-extension/src/index.ts:332 packages/debugger-extension/src/index.ts:333
 msgid "Inspect Variable"
@@ -2163,15 +2165,15 @@ msgstr "调试器"
 
 #: packages/debugger/src/handler.ts:55 packages/debugger/src/handler.ts:57
 msgid "Enable Debugger"
-msgstr ""
+msgstr "启用调试器"
 
 #: packages/debugger/src/handler.ts:57 packages/debugger/src/handler.ts:59
 msgid "Disable Debugger"
-msgstr ""
+msgstr "禁用调试器"
 
 #: packages/debugger/src/handler.ts:58 packages/debugger/src/handler.ts:60
 msgid "Select a kernel that supports debugging to enable debugger"
-msgstr ""
+msgstr "选择一个支持调试的内核以开启调试器"
 
 #: packages/debugger/src/panels/breakpoints/header.ts:25
 msgid "Breakpoints"
@@ -2799,7 +2801,7 @@ msgstr "切换最后修改列"
 
 #: packages/filebrowser-extension/src/index.ts:1042
 msgid "Show Hidden Files"
-msgstr ""
+msgstr "显示隐藏文件"
 
 #: packages/filebrowser-extension/src/index.ts:1059
 msgid "Search on File Names"
@@ -3920,15 +3922,15 @@ msgstr "折叠全部输出"
 
 #: packages/notebook-extension/src/index.ts:2149
 msgid "Render Side-by-side"
-msgstr ""
+msgstr "并排渲染"
 
 #: packages/notebook-extension/src/index.ts:2174
 msgid "Set side-by-side ratio"
-msgstr ""
+msgstr "设置并排显示比例"
 
 #: packages/notebook-extension/src/index.ts:2177
 msgid "Width of the output in side-by-side mode"
-msgstr ""
+msgstr "并排显示模式的输出宽度"
 
 #: packages/notebook-extension/src/index.ts:2192
 msgid "Expand All Outputs"
@@ -4012,7 +4014,7 @@ msgstr "对 Notebook:"
 
 #: packages/notebook-extension/src/index.ts:388
 msgid "Save and Export Notebook: %1"
-msgstr ""
+msgstr "保存并导出笔记本：%1"
 
 #: packages/notebook-extension/src/index.ts:639
 msgid "Slides"
@@ -4072,11 +4074,11 @@ msgstr "%1 的内核似乎正在终止。您现在不能运行任何单元格。
 
 #: packages/notebook/src/actions.tsx:2017
 msgid "Cell not executed due to pending input"
-msgstr ""
+msgstr "由于包含待定输入，单元格未被执行"
 
 #: packages/notebook/src/actions.tsx:2018
 msgid "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again."
-msgstr ""
+msgstr "当前含有未被执行的输入内容，为了防止内核死锁，此单元格尚未被执行。清提交您当前未执行的输入然后再试。"
 
 #: packages/notebook/src/default-toolbar.tsx:114
 msgid "Insert a cell below"
