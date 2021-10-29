@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2021-10-29 12:53\n"
+"PO-Revision-Date: 2021-10-29 15:49\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -247,7 +247,9 @@ msgctxt "settings"
 msgid "Overrides for where to show sidebar items\n"
 "e.g., {\"jp-debugger-sidebar\": \"left\"}\n"
 "You can also change this by right-clicking the sidebar icons."
-msgstr ""
+msgstr "Modifie la barre latérale utilisée pour afficher un panneau\n"
+"par exemple, {\"jp-debugger-sidebar\": \"left\"}\n"
+"Vous pouvez également modifier cela en cliquant avec le bouton droit de la souris sur les icônes de la barre latérale."
 
 #: /packages/application-extension/schema/sidebar.json:/properties/overrides/title
 msgctxt "settings"
@@ -307,7 +309,7 @@ msgstr "Paramètres du gestionnaire de thèmes."
 #: /packages/apputils-extension/schema/themes.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
 msgctxt "menu"
 msgid "Theme"
-msgstr ""
+msgstr "Thème"
 
 #: /packages/apputils-extension/schema/themes.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -643,12 +645,12 @@ msgstr "Visionneurs par défaut"
 #: /packages/docmanager-extension/schema/plugin.json:/properties/lastModifiedCheckMargin/description
 msgctxt "settings"
 msgid "Max acceptable difference, in milliseconds, between last modified timestamps on disk and client"
-msgstr ""
+msgstr "Différence maximale acceptable, en millisecondes, entre l'instant de la dernière modification sur le disque et dans le client"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/lastModifiedCheckMargin/title
 msgctxt "settings"
 msgid "Margin for last modified timestamp check"
-msgstr ""
+msgstr "Marge pour la vérification de l'instant de la dernière modification"
 
 #: /packages/docmanager-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -755,12 +757,12 @@ msgstr "Naviguer vers le répertoire actuel"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/description
 msgctxt "settings"
 msgid "Whether to show hidden files"
-msgstr ""
+msgstr "Afficher ou non les fichiers cachés"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/title
 msgctxt "settings"
 msgid "Show hidden files"
-msgstr ""
+msgstr "Afficher les fichiers cachés"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showLastModifiedColumn/description
 msgctxt "settings"
@@ -1068,7 +1070,7 @@ msgstr "Paramètres d'exportation du Notebook."
 #: /packages/notebook-extension/schema/export.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
 msgctxt "menu"
 msgid "Save and Export Notebook As…"
-msgstr ""
+msgstr "Enregistrer et exporter le notebook sous…"
 
 #: /packages/notebook-extension/schema/export.json:/title
 msgctxt "schema"
@@ -1108,12 +1110,12 @@ msgstr "Type de cellule par défaut"
 #: /packages/notebook-extension/schema/tracker.json:/properties/experimentalDisableDocumentWideUndoRedo/description
 msgctxt "settings"
 msgid "Disable the undo/redo on the notebook document level, so actions independent cells can have their own history. The undo/redo never applies on the outputs, in other words, outputs don't have history. A moved cell completely looses history capability for now."
-msgstr ""
+msgstr "Désactive l'annulation des changements au niveau du notebook pour que les cellules indépendantes puissent avoir leur propre historique. Annuler les changements ne s'applique jamais aux sorties, en d'autres termes, les sorties n'ont pas d'historique. Actuellement une cellule déplacée perd complètement son historique."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/experimentalDisableDocumentWideUndoRedo/title
 msgctxt "settings"
 msgid "Experimental settings to enable the undo/redo on the notebook document level."
-msgstr ""
+msgstr "Paramètre expérimental pour annuler/rejouer les changements au niveau du notebook complet."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/description
 msgctxt "settings"
@@ -2126,7 +2128,7 @@ msgstr "Délimiteur: "
 
 #: packages/debugger-extension/src/index.ts:192 packages/debugger-extension/src/index.ts:193
 msgid "Restart Kernel and Debug…"
-msgstr ""
+msgstr "Redémarrer le noyau et déboguer…"
 
 #: packages/debugger-extension/src/index.ts:332 packages/debugger-extension/src/index.ts:333
 msgid "Inspect Variable"
@@ -2170,15 +2172,15 @@ msgstr "Débogueur"
 
 #: packages/debugger/src/handler.ts:55 packages/debugger/src/handler.ts:57
 msgid "Enable Debugger"
-msgstr ""
+msgstr "Activer le débogueur"
 
 #: packages/debugger/src/handler.ts:57 packages/debugger/src/handler.ts:59
 msgid "Disable Debugger"
-msgstr ""
+msgstr "Désactiver le débogueur"
 
 #: packages/debugger/src/handler.ts:58 packages/debugger/src/handler.ts:60
 msgid "Select a kernel that supports debugging to enable debugger"
-msgstr ""
+msgstr "Sélectionnez un noyau supportant le débogage pour activer le débogueur"
 
 #: packages/debugger/src/panels/breakpoints/header.ts:25
 msgid "Breakpoints"
@@ -2823,7 +2825,7 @@ msgstr "Afficher la dernière colonne modifiée"
 
 #: packages/filebrowser-extension/src/index.ts:1042
 msgid "Show Hidden Files"
-msgstr ""
+msgstr "Afficher les fichiers cachés"
 
 #: packages/filebrowser-extension/src/index.ts:1059
 msgid "Search on File Names"
@@ -3947,15 +3949,15 @@ msgstr "Réduire toutes les sorties"
 
 #: packages/notebook-extension/src/index.ts:2149
 msgid "Render Side-by-side"
-msgstr ""
+msgstr "Afficher le code et la sortie côte à côte"
 
 #: packages/notebook-extension/src/index.ts:2174
 msgid "Set side-by-side ratio"
-msgstr ""
+msgstr "Régler le ratio côte à côte"
 
 #: packages/notebook-extension/src/index.ts:2177
 msgid "Width of the output in side-by-side mode"
-msgstr ""
+msgstr "Largeur de la sortie en mode côte à côte"
 
 #: packages/notebook-extension/src/index.ts:2192
 msgid "Expand All Outputs"
@@ -4039,7 +4041,7 @@ msgstr "Pour le notebook:"
 
 #: packages/notebook-extension/src/index.ts:388
 msgid "Save and Export Notebook: %1"
-msgstr ""
+msgstr "Enregistrer et exporter le notebook : %1"
 
 #: packages/notebook-extension/src/index.ts:639
 msgid "Slides"
@@ -4099,11 +4101,11 @@ msgstr "Le noyau pour %1 semble être en train de se fermer. Vous ne pouvez pas 
 
 #: packages/notebook/src/actions.tsx:2017
 msgid "Cell not executed due to pending input"
-msgstr ""
+msgstr "La cellule n'a pas été exécutée en raison d'une entrée en attente"
 
 #: packages/notebook/src/actions.tsx:2018
 msgid "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again."
-msgstr ""
+msgstr "La cellule n'a pas été exécutée pour éviter de bloquer le noyau car une autre entrée est en attente ! Soumettez une entrée et réessayez."
 
 #: packages/notebook/src/default-toolbar.tsx:114
 msgid "Insert a cell below"
