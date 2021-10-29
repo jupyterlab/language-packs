@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 99\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2021-10-17 23:38\n"
+"PO-Revision-Date: 2021-10-28 07:59\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
@@ -47,12 +47,12 @@ msgstr "Suggestion continue"
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/disable/description /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/disable/description /packages/jupyterlab-lsp/schema/highlights.json:/properties/disable/description /packages/jupyterlab-lsp/schema/hover.json:/properties/disable/description /packages/jupyterlab-lsp/schema/jump_to.json:/properties/disable/description /packages/jupyterlab-lsp/schema/rename.json:/properties/disable/description /packages/jupyterlab-lsp/schema/signature.json:/properties/disable/description /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/properties/disable/description
 msgctxt "settings"
 msgid "Disable this feature. Requires reloading JupyterLab to apply changes."
-msgstr ""
+msgstr "Désactiver cette fonctionnalité. Nécessite de recharger JupyterLab pour appliquer les modifications."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/disable/title /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/disable/title /packages/jupyterlab-lsp/schema/highlights.json:/properties/disable/title /packages/jupyterlab-lsp/schema/hover.json:/properties/disable/title /packages/jupyterlab-lsp/schema/jump_to.json:/properties/disable/title /packages/jupyterlab-lsp/schema/rename.json:/properties/disable/title /packages/jupyterlab-lsp/schema/signature.json:/properties/disable/title /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/properties/disable/title
 msgctxt "settings"
 msgid "Disable"
-msgstr ""
+msgstr "Désactiver"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/disableCompletionsFrom/description
 msgctxt "settings"
@@ -427,32 +427,32 @@ msgstr "Renommage du code"
 #: /packages/jupyterlab-lsp/schema/signature.json:/description
 msgctxt "schema"
 msgid "LSP Code Signature Help settings."
-msgstr ""
+msgstr "Paramètres d'aide pour la signature de code LSP."
 
 #: /packages/jupyterlab-lsp/schema/signature.json:/properties/closeCharacters/description
 msgctxt "settings"
 msgid "An array of characters which should close the signature help. The signature help may be shown again after typing a character from this list if the server requests it to open."
-msgstr ""
+msgstr "Un tableau de caractères qui devrait fermer l'aide de la signature. L'aide à la signature peut être affichée à nouveau après avoir tapé un caractère de cette liste si le serveur le demande."
 
 #: /packages/jupyterlab-lsp/schema/signature.json:/properties/closeCharacters/title
 msgctxt "settings"
 msgid "Close characters"
-msgstr ""
+msgstr "Caractères de fermetures"
 
 #: /packages/jupyterlab-lsp/schema/signature.json:/properties/maxLines/description
 msgctxt "settings"
 msgid "The number of documentation lines to show without collapsing into the details section."
-msgstr ""
+msgstr "Le nombre de lignes de documentation à afficher sans regroupement par sections."
 
 #: /packages/jupyterlab-lsp/schema/signature.json:/properties/maxLines/title
 msgctxt "settings"
 msgid "Number of lines to show without collapsing"
-msgstr ""
+msgstr "Nombre de lignes à afficher sans regroupement"
 
 #: /packages/jupyterlab-lsp/schema/signature.json:/title
 msgctxt "schema"
 msgid "Code Signature"
-msgstr ""
+msgstr "Signature du code"
 
 #: /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/description
 msgctxt "schema"
@@ -536,9 +536,21 @@ msgstr "Licence : "
 msgid "Includes dedicated dark mode icons set"
 msgstr "Inclut un ensemble d'icônes dédiées au mode sombre"
 
+#: packages/completion-theme/src/index.ts:152
+msgid "LSP Completer Themes"
+msgstr "Thèmes de compléteur LSP"
+
+#: packages/completion-theme/src/index.ts:158
+msgid "OK"
+msgstr "OK"
+
 #: packages/completion-theme/src/index.ts:189 packages/completion-theme/src/index.ts:190
 msgid "Display the completer themes"
 msgstr "Afficher les thèmes completer"
+
+#: packages/jupyterlab-lsp/src/adapters/adapter.ts:388 packages/jupyterlab-lsp/src/adapters/adapter.ts:397 packages/jupyterlab-lsp/src/adapters/adapter.ts:409 packages/jupyterlab-lsp/src/adapters/adapter.ts:418
+msgid "Message from "
+msgstr "Message de "
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:150
 msgid "Troubleshooting"
@@ -578,13 +590,83 @@ msgstr "Vous pouvez contribuer à une spécification pour l'auto-détection comm
 msgid "documentation"
 msgstr "documentation"
 
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:418 packages/jupyterlab-lsp/src/components/statusbar.tsx:419
+msgid "LSP status"
+msgstr "Statut LSP"
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:468 packages/jupyterlab-lsp/src/components/statusbar.tsx:469
+msgid "LSP Code Intelligence"
+msgstr "Suggestion de code LSP"
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:487 packages/jupyterlab-lsp/src/components/statusbar.tsx:488
+msgid "LSP server extension not found"
+msgstr "Extension de serveur LSP introuvable"
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:813 packages/jupyterlab-lsp/src/components/statusbar.tsx:816 packages/jupyterlab-lsp/src/components/statusbar.tsx:824 packages/jupyterlab-lsp/src/components/statusbar.tsx:827
+msgid "not initialized"
+msgstr "non initialisé"
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:829 packages/jupyterlab-lsp/src/components/statusbar.tsx:832
+msgid "Waiting for documents initialization..."
+msgstr "En attente d'initialisation des documents..."
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:834
+msgid "Fully connected & initialized (%2 virtual document)"
+msgid_plural "Fully connected & initialized (%2 virtual document)"
+msgstr[0] "Entièrement connecté et initialisé (%2 document virtuel)"
+msgstr[1] "Complètement connecté et initialisé (%2 documents virtuels)"
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:845 packages/jupyterlab-lsp/src/components/statusbar.tsx:848
+msgid "Fully connected, but %2/%3 virtual document stuck uninitialized: %4"
+msgstr "Complètement connecté, mais un document virtuel sur %3 n'a pas été initialisé : %4"
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:859 packages/jupyterlab-lsp/src/components/statusbar.tsx:862
+msgid "%2/%3 virtual document connected (%4 connections; waiting for: %5)"
+msgstr "%2/%3 document virtuel connecté (%4 connexions ; en attente : %5)"
+
 #: packages/jupyterlab-lsp/src/components/utils.tsx:54
 msgid "cell %1"
-msgstr ""
+msgstr "cellule %1"
 
 #: packages/jupyterlab-lsp/src/components/utils.tsx:55
 msgid "cells: %1-%2"
-msgstr ""
+msgstr "cellules : %1-%2"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:109 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:113
+msgid "Panel columns"
+msgstr "Colonnes du panneau"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:138 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:142
+msgid "Ignore diagnostics like this"
+msgstr "Ignorer les diagnostics de ce type"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:182 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:186
+msgid "Ignore diagnostics with \"%1\" code"
+msgstr "Ignorer les diagnostics avec le code \"%1\""
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:214 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:218
+msgid "Ignore diagnostics with \"%1\" message"
+msgstr "Ignorer les diagnostics avec le message \"%1\""
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:226 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:230
+msgid "Jump to location"
+msgstr "Aller à l'emplacement"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:241 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:245
+msgid "Successfully copied \"%1\" to clipboard"
+msgstr "\"%1\" copié avec succès dans le presse-papiers"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:249 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:253
+msgid "Your browser protects clipboard from write operations; please copy the message manually"
+msgstr "Votre navigateur protège le presse-papiers contre les opérations d'écriture; veuillez copier le message manuellement"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:256 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:260
+msgid "Copy diagnostics' message"
+msgstr "Copier le message de diagnostics"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:81 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:85
+msgid "Diagnostics Panel"
+msgstr "Panneau des diagnostics"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/index.ts:42 packages/jupyterlab-lsp/src/features/diagnostics/index.ts:43
 msgid "Show diagnostics panel"
@@ -592,23 +674,51 @@ msgstr "Afficher le panneau de diagnostics"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:161
 msgid "Error"
-msgstr ""
+msgstr "Erreur"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:162
 msgid "Warning"
-msgstr ""
+msgstr "Alerte"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:163
 msgid "Information"
-msgstr ""
+msgstr "Information"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:164
 msgid "Hint"
-msgstr ""
+msgstr "Suggestion"
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:230
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:170
+msgid "Virtual Document"
+msgstr "Document virtuel"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:185
+msgid "Message"
+msgstr "Message"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:195
+msgid "Code"
+msgstr "Code"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:204
+msgid "Severity"
+msgstr "Gravité"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:219
+msgid "Source"
+msgstr "Source"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:226
+msgid "Cell"
+msgstr "Cellule"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:230 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:271
 msgid "No issues detected, great job!"
 msgstr "Aucun problème détecté, excellent travail !"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:240
+msgid "Line:Ch"
+msgstr "Ligne:Colonne"
 
 #: packages/jupyterlab-lsp/src/features/highlights.ts:39
 msgid "Highlight references"
@@ -634,9 +744,37 @@ msgstr "Retour en arrière"
 msgid "Rename symbol"
 msgstr "Renommer le symbole"
 
-#: packages/jupyterlab-lsp/src/features/rename.ts:68 packages/jupyterlab-lsp/src/features/rename.ts:69
+#: packages/jupyterlab-lsp/src/features/rename.ts:127 packages/jupyterlab-lsp/src/features/rename.ts:128 packages/jupyterlab-lsp/src/features/rename.ts:68 packages/jupyterlab-lsp/src/features/rename.ts:69
 msgid "Rename failed: %1"
 msgstr "Échec du renommage : %1"
+
+#: packages/jupyterlab-lsp/src/features/rename.ts:133 packages/jupyterlab-lsp/src/features/rename.ts:134
+msgid "%1 to %2"
+msgstr "%1 en %2"
+
+#: packages/jupyterlab-lsp/src/features/rename.ts:136 packages/jupyterlab-lsp/src/features/rename.ts:137
+msgid "Could not rename %1 - consult the language server documentation"
+msgstr "Impossible de renommer %1 - consulter la documentation du serveur de language"
+
+#: packages/jupyterlab-lsp/src/features/rename.ts:141 packages/jupyterlab-lsp/src/features/rename.ts:142
+msgid "Renamed %2 in %3 place"
+msgid_plural "Renamed %2 in %3 places"
+msgstr[0] "Renommé %2"
+msgstr[1] "Renommé %2 en %3 positions"
+
+#: packages/jupyterlab-lsp/src/features/rename.ts:149 packages/jupyterlab-lsp/src/features/rename.ts:150
+msgid "Renamed %2 in %3 cell"
+msgid_plural "Renamed %2 in %3 cells"
+msgstr[0] "Renommé %2 dans %3 cellule"
+msgstr[1] "Renommé %2 dans %3 cellules"
+
+#: packages/jupyterlab-lsp/src/features/rename.ts:157 packages/jupyterlab-lsp/src/features/rename.ts:158
+msgid "Renamed %1"
+msgstr "Renommé %1"
+
+#: packages/jupyterlab-lsp/src/features/rename.ts:161 packages/jupyterlab-lsp/src/features/rename.ts:162
+msgid " with errors: %1"
+msgstr " avec des erreurs : %1"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:75 packages/jupyterlab-lsp/src/features/rename.ts:76
 msgid "Rename to"

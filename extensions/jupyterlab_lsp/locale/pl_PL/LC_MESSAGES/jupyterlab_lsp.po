@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 99\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2021-10-17 23:38\n"
+"PO-Revision-Date: 2021-10-27 20:29\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
@@ -508,9 +508,21 @@ msgstr "Licencja: "
 msgid "Includes dedicated dark mode icons set"
 msgstr "Zawiera dedykowane ikony trybu ciemnego"
 
+#: packages/completion-theme/src/index.ts:152
+msgid "LSP Completer Themes"
+msgstr ""
+
+#: packages/completion-theme/src/index.ts:158
+msgid "OK"
+msgstr "OK"
+
 #: packages/completion-theme/src/index.ts:189 packages/completion-theme/src/index.ts:190
 msgid "Display the completer themes"
 msgstr "Wyświetl motywy autouzupełniania"
+
+#: packages/jupyterlab-lsp/src/adapters/adapter.ts:388 packages/jupyterlab-lsp/src/adapters/adapter.ts:397 packages/jupyterlab-lsp/src/adapters/adapter.ts:409 packages/jupyterlab-lsp/src/adapters/adapter.ts:418
+msgid "Message from "
+msgstr ""
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:150
 msgid "Troubleshooting"
@@ -535,10 +547,10 @@ msgstr "Nie wykryto serwera języka dla %1"
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:192
 msgid "There is %1 language server you can easily install that supports %2."
 msgid_plural "There are %1 language servers you can easily install that supports %2."
-msgstr[0] "Serwer językowy %1, który obsługuje %2, można łatwo zainstalować."
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Dostępny jest do łatwej instalacji %1 serwer językowy który obsługuje %2."
+msgstr[1] "Dostępne są do łatwej instalacji %1 serwery językowe które obsługują %2."
+msgstr[2] "Dostępne są do łatwej instalacji %1 serwery językowe które obsługują %2."
+msgstr[3] "Dostępne są do łatwej instalacji %1 serwery językowe które obsługują %2."
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:211
 msgid "We do not have an auto-detection ready for a language servers supporting %1 yet."
@@ -552,13 +564,85 @@ msgstr "Możesz dodać specyfikację automatycznego wykrywania w sposób opisany
 msgid "documentation"
 msgstr "dokumentacja"
 
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:418 packages/jupyterlab-lsp/src/components/statusbar.tsx:419
+msgid "LSP status"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:468 packages/jupyterlab-lsp/src/components/statusbar.tsx:469
+msgid "LSP Code Intelligence"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:487 packages/jupyterlab-lsp/src/components/statusbar.tsx:488
+msgid "LSP server extension not found"
+msgstr "Nie znaleziono rozszerzenia serwera LSP"
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:813 packages/jupyterlab-lsp/src/components/statusbar.tsx:816 packages/jupyterlab-lsp/src/components/statusbar.tsx:824 packages/jupyterlab-lsp/src/components/statusbar.tsx:827
+msgid "not initialized"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:829 packages/jupyterlab-lsp/src/components/statusbar.tsx:832
+msgid "Waiting for documents initialization..."
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:834
+msgid "Fully connected & initialized (%2 virtual document)"
+msgid_plural "Fully connected & initialized (%2 virtual document)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:845 packages/jupyterlab-lsp/src/components/statusbar.tsx:848
+msgid "Fully connected, but %2/%3 virtual document stuck uninitialized: %4"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:859 packages/jupyterlab-lsp/src/components/statusbar.tsx:862
+msgid "%2/%3 virtual document connected (%4 connections; waiting for: %5)"
+msgstr ""
+
 #: packages/jupyterlab-lsp/src/components/utils.tsx:54
 msgid "cell %1"
-msgstr ""
+msgstr "komórka %1"
 
 #: packages/jupyterlab-lsp/src/components/utils.tsx:55
 msgid "cells: %1-%2"
-msgstr ""
+msgstr "komórki: %1-%2"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:109 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:113
+msgid "Panel columns"
+msgstr "Kolumny panelu"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:138 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:142
+msgid "Ignore diagnostics like this"
+msgstr "Ignoruj podobne diagnostyki"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:182 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:186
+msgid "Ignore diagnostics with \"%1\" code"
+msgstr "Ignoruj diagnostyki z kodem \"%1\""
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:214 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:218
+msgid "Ignore diagnostics with \"%1\" message"
+msgstr "Ignoruj diagnostyki z wiadomością \"%1\""
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:226 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:230
+msgid "Jump to location"
+msgstr "Przejdź do lokalizacji"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:241 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:245
+msgid "Successfully copied \"%1\" to clipboard"
+msgstr "Pomyślnie skopiowano \"%1\" do schowka"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:249 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:253
+msgid "Your browser protects clipboard from write operations; please copy the message manually"
+msgstr "Twoja przeglądarka chroni schowek przed operacjami zapisu; skopiuj wiadomość ręcznie"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:256 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:260
+msgid "Copy diagnostics' message"
+msgstr "Kopiuj wiadomość diagnostyczną"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:81 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:85
+msgid "Diagnostics Panel"
+msgstr "Panel diagnostyk"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/index.ts:42 packages/jupyterlab-lsp/src/features/diagnostics/index.ts:43
 msgid "Show diagnostics panel"
@@ -566,23 +650,51 @@ msgstr "Pokaż panel diagnostyczny"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:161
 msgid "Error"
-msgstr ""
+msgstr "Błąd"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:162
 msgid "Warning"
-msgstr ""
+msgstr "Ostrzeżenie"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:163
 msgid "Information"
-msgstr ""
+msgstr "Informacja"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:164
 msgid "Hint"
-msgstr ""
+msgstr "Wskazówka"
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:230
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:170
+msgid "Virtual Document"
+msgstr "Wirtualny dokument"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:185
+msgid "Message"
+msgstr "Wiadomość"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:195
+msgid "Code"
+msgstr "Kod"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:204
+msgid "Severity"
+msgstr "Krytyczność"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:219
+msgid "Source"
+msgstr "Źródło"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:226
+msgid "Cell"
+msgstr "Komórka"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:230 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:271
 msgid "No issues detected, great job!"
 msgstr "Nie wykryto żadnych problemów, świetna robota!"
+
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:240
+msgid "Line:Ch"
+msgstr "Linia:Kolumna"
 
 #: packages/jupyterlab-lsp/src/features/highlights.ts:39
 msgid "Highlight references"
@@ -608,9 +720,41 @@ msgstr "Skocz z powrotem"
 msgid "Rename symbol"
 msgstr "Zmień nazwę symbolu"
 
-#: packages/jupyterlab-lsp/src/features/rename.ts:68 packages/jupyterlab-lsp/src/features/rename.ts:69
+#: packages/jupyterlab-lsp/src/features/rename.ts:127 packages/jupyterlab-lsp/src/features/rename.ts:128 packages/jupyterlab-lsp/src/features/rename.ts:68 packages/jupyterlab-lsp/src/features/rename.ts:69
 msgid "Rename failed: %1"
 msgstr "Zmiana nazwy nie powiodła się: %1"
+
+#: packages/jupyterlab-lsp/src/features/rename.ts:133 packages/jupyterlab-lsp/src/features/rename.ts:134
+msgid "%1 to %2"
+msgstr "%1 na %2"
+
+#: packages/jupyterlab-lsp/src/features/rename.ts:136 packages/jupyterlab-lsp/src/features/rename.ts:137
+msgid "Could not rename %1 - consult the language server documentation"
+msgstr "Nie można zmienić nazwy %1 - sprawdź dokumentację serwera językowego"
+
+#: packages/jupyterlab-lsp/src/features/rename.ts:141 packages/jupyterlab-lsp/src/features/rename.ts:142
+msgid "Renamed %2 in %3 place"
+msgid_plural "Renamed %2 in %3 places"
+msgstr[0] "Zmieniono nazwę %2 w %3 miejscu"
+msgstr[1] "Zmieniono nazwę %2 w %3 miejscach"
+msgstr[2] "Zmieniono nazwę %2 w %3 miejscach"
+msgstr[3] "Zmieniono nazwę %2 w %3 miejscach"
+
+#: packages/jupyterlab-lsp/src/features/rename.ts:149 packages/jupyterlab-lsp/src/features/rename.ts:150
+msgid "Renamed %2 in %3 cell"
+msgid_plural "Renamed %2 in %3 cells"
+msgstr[0] "Zmieniono nazwę %2 w %3 komórce"
+msgstr[1] "Zmieniono nazwę %2 w %3 komórkach"
+msgstr[2] "Zmieniono nazwę %2 w %3 komórkach"
+msgstr[3] "Zmieniono nazwę %2 w %3 komórkach"
+
+#: packages/jupyterlab-lsp/src/features/rename.ts:157 packages/jupyterlab-lsp/src/features/rename.ts:158
+msgid "Renamed %1"
+msgstr "Zmieniono nazwę %1"
+
+#: packages/jupyterlab-lsp/src/features/rename.ts:161 packages/jupyterlab-lsp/src/features/rename.ts:162
+msgid " with errors: %1"
+msgstr " z błędami: %1"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:75 packages/jupyterlab-lsp/src/features/rename.ts:76
 msgid "Rename to"
