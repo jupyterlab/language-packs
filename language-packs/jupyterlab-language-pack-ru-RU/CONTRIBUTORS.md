@@ -9,6 +9,6 @@
 * Mike ([@insolor](https://crowdin.com/profile/insolor))
 * Sindzicat ([@Sindzicat](https://crowdin.com/profile/Sindzicat))
 * Николай Графф ([@nigraff](https://crowdin.com/profile/nigraff))
+* Иван Ястребов ([@esim.i2p](https://crowdin.com/profile/esim.i2p))
 * Pishunick ([@Pishunick](https://crowdin.com/profile/Pishunick))
 * Frédéric Collonval ([@fcollonval](https://crowdin.com/profile/fcollonval))
-* Иван Ястребов ([@esim.i2p](https://crowdin.com/profile/esim.i2p))
