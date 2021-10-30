@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2021-10-29 12:53\n"
+"PO-Revision-Date: 2021-10-30 00:44\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -244,7 +244,9 @@ msgctxt "settings"
 msgid "Overrides for where to show sidebar items\n"
 "e.g., {\"jp-debugger-sidebar\": \"left\"}\n"
 "You can also change this by right-clicking the sidebar icons."
-msgstr ""
+msgstr "Nadpisuje pozycję elementów paska bocznego\n"
+"np. {\"jp-debugger-bodebar\": \"lewo\"}\n"
+"Możesz to również zmienić klikając prawym przyciskiem myszy na ikony paska bocznego."
 
 #: /packages/application-extension/schema/sidebar.json:/properties/overrides/title
 msgctxt "settings"
@@ -304,7 +306,7 @@ msgstr "Ustawienia menedżera motywów."
 #: /packages/apputils-extension/schema/themes.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
 msgctxt "menu"
 msgid "Theme"
-msgstr ""
+msgstr "Motyw"
 
 #: /packages/apputils-extension/schema/themes.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -640,7 +642,7 @@ msgstr "Domyślne przeglądarki"
 #: /packages/docmanager-extension/schema/plugin.json:/properties/lastModifiedCheckMargin/description
 msgctxt "settings"
 msgid "Max acceptable difference, in milliseconds, between last modified timestamps on disk and client"
-msgstr ""
+msgstr "Maksymalna dopuszczalna różnica, w milisekundach, pomiędzy ostatnią modyfikacją znaczników czasu na dysku a klientem"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/lastModifiedCheckMargin/title
 msgctxt "settings"
@@ -752,12 +754,12 @@ msgstr "Przejdź do bieżącego katalogu"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/description
 msgctxt "settings"
 msgid "Whether to show hidden files"
-msgstr ""
+msgstr "Czy pokazywać ukryte pliki"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/title
 msgctxt "settings"
 msgid "Show hidden files"
-msgstr ""
+msgstr "Pokaż ukryte pliki"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showLastModifiedColumn/description
 msgctxt "settings"
@@ -1065,7 +1067,7 @@ msgstr "Ustawienia eksportu notatnika."
 #: /packages/notebook-extension/schema/export.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
 msgctxt "menu"
 msgid "Save and Export Notebook As…"
-msgstr ""
+msgstr "Zapisz i wyeksportuj notatnik jako…"
 
 #: /packages/notebook-extension/schema/export.json:/title
 msgctxt "schema"
@@ -1105,12 +1107,12 @@ msgstr "Domyślny typ komórki"
 #: /packages/notebook-extension/schema/tracker.json:/properties/experimentalDisableDocumentWideUndoRedo/description
 msgctxt "settings"
 msgid "Disable the undo/redo on the notebook document level, so actions independent cells can have their own history. The undo/redo never applies on the outputs, in other words, outputs don't have history. A moved cell completely looses history capability for now."
-msgstr ""
+msgstr "Wyłącz cofanie/ponawianie na poziomie całego dokumentu notatnika, aby niezależne komórki mogły mieć niezależną historię. Cofnij/ponów nigdy nie wpływa na rezultaty, innymi słowy, wyjścia nie mają historii. Przeniesiona komórka na razie całkowicie traci zdolność historii."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/experimentalDisableDocumentWideUndoRedo/title
 msgctxt "settings"
 msgid "Experimental settings to enable the undo/redo on the notebook document level."
-msgstr ""
+msgstr "Eksperymentalne ustawienia cofania/ponawiania na poziomie dokumentu notatnika."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/description
 msgctxt "settings"
@@ -2123,7 +2125,7 @@ msgstr "Separator: "
 
 #: packages/debugger-extension/src/index.ts:192 packages/debugger-extension/src/index.ts:193
 msgid "Restart Kernel and Debug…"
-msgstr ""
+msgstr "Uruchom ponownie jądro i debuguj…"
 
 #: packages/debugger-extension/src/index.ts:332 packages/debugger-extension/src/index.ts:333
 msgid "Inspect Variable"
@@ -2167,15 +2169,15 @@ msgstr "Debugger"
 
 #: packages/debugger/src/handler.ts:55 packages/debugger/src/handler.ts:57
 msgid "Enable Debugger"
-msgstr ""
+msgstr "Włącz debugger"
 
 #: packages/debugger/src/handler.ts:57 packages/debugger/src/handler.ts:59
 msgid "Disable Debugger"
-msgstr ""
+msgstr "Wyłącz debugger"
 
 #: packages/debugger/src/handler.ts:58 packages/debugger/src/handler.ts:60
 msgid "Select a kernel that supports debugging to enable debugger"
-msgstr ""
+msgstr "Wybierz kernel ze wsparciem debugowania aby włączyć debugger"
 
 #: packages/debugger/src/panels/breakpoints/header.ts:25
 msgid "Breakpoints"
@@ -2818,7 +2820,7 @@ msgstr "Pokaż kolumnę z datą modyfikacji"
 
 #: packages/filebrowser-extension/src/index.ts:1042
 msgid "Show Hidden Files"
-msgstr ""
+msgstr "Pokaż ukryte pliki"
 
 #: packages/filebrowser-extension/src/index.ts:1059
 msgid "Search on File Names"
@@ -3043,10 +3045,10 @@ msgstr "Czy na pewno chcesz trwale usunąć %1?"
 #: packages/filebrowser/src/listing.ts:405
 msgid "Are you sure you want to permanently delete the %1 selected item?"
 msgid_plural "Are you sure you want to permanently delete the %1 selected items?"
-msgstr[0] ""
+msgstr[0] "Czy na pewno chcesz trwale usunąć %1 wybrany element?"
 msgstr[1] "Czy na pewno chcesz trwale usunąć %1 wybrane elementy?"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[2] "Czy na pewno chcesz trwale usunąć %1 wybrane elementy?"
+msgstr[3] "Czy na pewno chcesz trwale usunąć %1 wybrane elementy?"
 
 #: packages/filebrowser/src/listing.ts:447
 msgctxt "showErrorMessage"
@@ -3948,15 +3950,15 @@ msgstr "Zwiń wszystkie rezultaty"
 
 #: packages/notebook-extension/src/index.ts:2149
 msgid "Render Side-by-side"
-msgstr ""
+msgstr "Wyświetl bok-do-boku"
 
 #: packages/notebook-extension/src/index.ts:2174
 msgid "Set side-by-side ratio"
-msgstr ""
+msgstr "Ustaw stosunek wyświetlania bok-do-boku"
 
 #: packages/notebook-extension/src/index.ts:2177
 msgid "Width of the output in side-by-side mode"
-msgstr ""
+msgstr "Szerokość wyjścia w trybie „bok-do-boku”"
 
 #: packages/notebook-extension/src/index.ts:2192
 msgid "Expand All Outputs"
@@ -4040,7 +4042,7 @@ msgstr "Dla notatnika:"
 
 #: packages/notebook-extension/src/index.ts:388
 msgid "Save and Export Notebook: %1"
-msgstr ""
+msgstr "Zapisz i wyeksportuj notatnik: %1"
 
 #: packages/notebook-extension/src/index.ts:639
 msgid "Slides"
@@ -4100,11 +4102,11 @@ msgstr "Jądro dla %1 wydaje się wyłączać. Na razie nie możesz uruchomić �
 
 #: packages/notebook/src/actions.tsx:2017
 msgid "Cell not executed due to pending input"
-msgstr ""
+msgstr "Komórka nie wykonana - oczekiwanie na wejście"
 
 #: packages/notebook/src/actions.tsx:2018
 msgid "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again."
-msgstr ""
+msgstr "Komórka nie została wykonana w celu uniknięcia blokady jądra ponieważ inna komórka oczekuje na wprowadzenie danych! Wypełnij oczekiwane dane wejściowe i spróbuj ponownie."
 
 #: packages/notebook/src/default-toolbar.tsx:114
 msgid "Insert a cell below"
