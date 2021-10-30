@@ -156,9 +156,6 @@
     "Are you sure you want to permanently shut down all running terminals?": [
         "\u00cates-vous s\u00fbr de vouloir \u00e9teindre d\u00e9finitivement tous les terminaux en cours d'ex\u00e9cution ?"
     ],
-    "Are you sure you want to refresh?": [
-        "\u00cates-vous s\u00fbr(e) de vouloir actualiser ?"
-    ],
     "Are you sure you want to reload the %1 from the disk?": [
         "\u00cates-vous s\u00fbr de vouloir recharger le %1 depuis le disque ?"
     ],
@@ -242,6 +239,9 @@
     ],
     "Cell Tags": [
         "Tags de cellule"
+    ],
+    "Cell not executed due to pending input": [
+        "La cellule n'a pas \u00e9t\u00e9 ex\u00e9cut\u00e9e en raison d'une entr\u00e9e en attente"
     ],
     "Cell type": [
         "Type de cellule"
@@ -525,9 +525,6 @@
     "Details:": [
         "D\u00e9tails:"
     ],
-    "Did not run selected cell because there is a cell waiting on input! Submit your input and try again.": [
-        "La cellule s\u00e9lectionn\u00e9e n'a pas \u00e9t\u00e9 ex\u00e9cut\u00e9e car il y a une cellule en attente de saisie! Soumettez votre entr\u00e9e et r\u00e9essayez."
-    ],
     "Directory": [
         "Dossier"
     ],
@@ -542,6 +539,9 @@
     ],
     "Disable": [
         "D\u00e9sactiver"
+    ],
+    "Disable Debugger": [
+        "D\u00e9sactiver le d\u00e9bogueur"
     ],
     "Disable Scrolling for Outputs": [
         "D\u00e9sactiver le d\u00e9filement pour les sorties"
@@ -594,8 +594,8 @@
     "Enable": [
         "Activer"
     ],
-    "Enable / Disable Debugger": [
-        "Activer / D\u00e9sactiver le d\u00e9bogueur"
+    "Enable Debugger": [
+        "Activer le d\u00e9bogueur"
     ],
     "Enable Extension Manager": [
         "Activer le gestionnaire d'extensions"
@@ -662,9 +662,6 @@
     ],
     "Expand Selected Outputs": [
         "D\u00e9velopper les sorties s\u00e9lectionn\u00e9es"
-    ],
-    "Export Notebook: %1": [
-        "Exporter le notebook: %1"
     ],
     "Extend Selection Above": [
         "\u00c9tendre la s\u00e9lection au dessus"
@@ -755,9 +752,6 @@
     ],
     "For more information, see": [
         "Pour plus d'informations, voir"
-    ],
-    "For more information, see the <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>": [
-        "Pour plus d'informations, voir <a href=\"https://jupyter-server.readthedocs.io/en/stable/operators/security.html\">%1</a>"
     ],
     "Fragment": [
         "Fragment"
@@ -887,9 +881,6 @@
     ],
     "Jupyter Reference": [
         "R\u00e9f\u00e9rence Jupyter"
-    ],
-    "Jupyter security documentation": [
-        "Documentation sur la s\u00e9curit\u00e9 de Jupyter"
     ],
     "JupyterLab Dark": [
         "JupyterLab Sombre"
@@ -1410,6 +1401,9 @@
     "Render All Markdown Cells": [
         "Effectuer le rendu de toutes les cellules Markdown"
     ],
+    "Render Side-by-side": [
+        "Afficher le code et la sortie c\u00f4te \u00e0 c\u00f4te"
+    ],
     "Renderer Failure: %1": [
         "\u00c9chec du rendu : %1"
     ],
@@ -1451,6 +1445,9 @@
     ],
     "Restart Kernel and Clear\u2026": [
         "Red\u00e9marrer le noyau et effacer\u2026"
+    ],
+    "Restart Kernel and Debug\u2026": [
+        "Red\u00e9marrer le noyau et d\u00e9boguer\u2026"
     ],
     "Restart Kernel and Run All": [
         "Red\u00e9marrer le noyau et ex\u00e9cuter tout le code"
@@ -1605,6 +1602,9 @@
     "Save all open documents": [
         "Enregistrer tous les documents ouverts"
     ],
+    "Save and Export Notebook: %1": [
+        "Enregistrer et exporter le notebook : %1"
+    ],
     "Save and Reload": [
         "Sauvegarder et Actualiser"
     ],
@@ -1625,9 +1625,6 @@
     ],
     "Save your work": [
         "Enregistrer votre travail"
-    ],
-    "Saving %1": [
-        "Enregistrement %1"
     ],
     "Saving completed": [
         "Enregistrement effectu\u00e9"
@@ -1677,6 +1674,9 @@
     "Select Kernel": [
         "S\u00e9lectionnez le noyau"
     ],
+    "Select a kernel that supports debugging to enable debugger": [
+        "S\u00e9lectionnez un noyau supportant le d\u00e9bogage pour activer le d\u00e9bogueur"
+    ],
     "Select a plugin from the list to view and edit its preferences.": [
         "S\u00e9lectionnez un plugin dans la liste pour afficher et modifier ses pr\u00e9f\u00e9rences."
     ],
@@ -1707,6 +1707,9 @@
     "Set Log Level to %1": [
         "D\u00e9finir le niveau du journal \u00e0 %1"
     ],
+    "Set side-by-side ratio": [
+        "R\u00e9gler le ratio c\u00f4te \u00e0 c\u00f4te"
+    ],
     "Set the terminal theme": [
         "D\u00e9finissez le th\u00e8me du terminal"
     ],
@@ -1727,6 +1730,9 @@
     ],
     "Show Header Above Content": [
         "Afficher l'en-t\u00eate au-dessus du contenu"
+    ],
+    "Show Hidden Files": [
+        "Afficher les fichiers cach\u00e9s"
     ],
     "Show Last Modified Column": [
         "Afficher la derni\u00e8re colonne modifi\u00e9e"
@@ -1913,6 +1919,9 @@
     "The JupyterLab development team is excited to have a robust\nthird-party extension community. However, we do not review\nthird-party extensions, and some extensions may introduce security\nrisks or contain malicious code that runs on your machine.": [
         "L'\u00e9quipe de d\u00e9veloppement de JupyterLab est heureuse d'avoir une communaut\u00e9 d'extension\ntiers robuste. Cependant, nous ne r\u00e9visons pas les extensions\ntierces, et certaines extensions peuvent introduire des risques de s\u00e9curit\u00e9\nou contenir du code malveillant qui s'ex\u00e9cute sur votre machine."
     ],
+    "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again.": [
+        "La cellule n'a pas \u00e9t\u00e9 ex\u00e9cut\u00e9e pour \u00e9viter de bloquer le noyau car une autre entr\u00e9e est en attente ! Soumettez une entr\u00e9e et r\u00e9essayez."
+    ],
     "The checkpoint was last updated at: ": [
         "Le point de contr\u00f4le a \u00e9t\u00e9 mis \u00e0 jour pour la derni\u00e8re fois \u00e0: "
     ],
@@ -1963,9 +1972,6 @@
     ],
     "This notebook has been converted from an older notebook format (v%1)\nto the current notebook format (v%2).\nThe next time you save this notebook, the current notebook format (v%2) will be used.\n'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\nclose the notebook without saving it.": [
         "Ce notebook a \u00e9t\u00e9 converti d'un ancien format de notebook (v%1)\nau format actuel (v%2).\nLa prochaine fois que vous sauverez ce notebook, le format actuel du notebook (v%2) sera utilis\u00e9.\n'Anciennes versions de Jupyter peuvent ne pas \u00eatre en mesure de lire le nouveau format.' Pour pr\u00e9server la version originale,\nfermez le notebook sans le sauvegarder."
-    ],
-    "This notebook has been converted from an older notebook format (v%1)\nto the current notebook format (v%2).\nThe next time you save this notebook, the current notebook format (vthis._nbformat) will be used.\n'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\nclose the notebook without saving it.": [
-        "Ce notebook a \u00e9t\u00e9 converti d'un ancien format de notebook (v%1)\nau format actuel (v%2).\nLa prochaine fois que vous sauverez ce notebook, le format actuel du notebook (vthis._nbformat) sera utilis\u00e9.\n'Anciennes versions de Jupyter peuvent ne pas \u00eatre en mesure de lire le nouveau format.' Pour pr\u00e9server la version originale,\nfermez le notebook sans le sauvegarder."
     ],
     "This package has indicated that it needs a corresponding kernel\npackage. Please contact your Administrator to update the server with\none of the following commands:": [
         "Ce paquet a indiqu\u00e9 qu'il a besoin d'un paquet correspondant au noyau.\nVeuillez contacter votre administrateur pour mettre \u00e0 jour le serveur avec\nl'une des commandes suivantes :"
@@ -2060,14 +2066,14 @@
     "Version %1": [
         "Version : %1"
     ],
-    "Waiting on User Input": [
-        "En attente de saisie de l'utilisateur"
-    ],
     "Warning": [
         "Attention"
     ],
     "Whether the HTML file is trusted.\nTrusting the file allows scripts to run in it,\nwhich may result in security risks.\nOnly enable for files you trust.": [
         "Si le fichier HTML est fiable.\nFaire confiance au fichier permet \u00e0 des scripts de s'ex\u00e9cuter dedans,\nce qui peut entra\u00eener des risques de s\u00e9curit\u00e9.\nActiver uniquement pour les fichiers de confiance."
+    ],
+    "Width of the output in side-by-side mode": [
+        "Largeur de la sortie en mode c\u00f4te \u00e0 c\u00f4te"
     ],
     "Word Wrap": [
         "Retour \u00e0 la ligne"
@@ -2132,17 +2138,11 @@
     "menu\u0004Edit": [
         "\u00c9dition"
     ],
-    "menu\u0004Export Notebook As\u2026": [
-        "Exporter le notebook sous\u2026"
-    ],
     "menu\u0004File": [
         "Fichier"
     ],
     "menu\u0004Help": [
         "Aide"
-    ],
-    "menu\u0004JupyterLab Theme": [
-        "Th\u00e8me JupyterLab"
     ],
     "menu\u0004Kernel": [
         "Noyau"
@@ -2158,6 +2158,9 @@
     ],
     "menu\u0004Run": [
         "Ex\u00e9cution"
+    ],
+    "menu\u0004Save and Export Notebook As\u2026": [
+        "Enregistrer et exporter le notebook sous\u2026"
     ],
     "menu\u0004Settings": [
         "Param\u00e8tres"
@@ -2179,6 +2182,9 @@
     ],
     "menu\u0004Text Editor Theme": [
         "Th\u00e8me de l'\u00e9diteur de texte"
+    ],
+    "menu\u0004Theme": [
+        "Th\u00e8me"
     ],
     "menu\u0004View": [
         "Affichage"
@@ -2519,6 +2525,9 @@
     "settings\u0004Defines the observed top margin for the virtual notebook, set a positive number of pixels to render cells above the visible view": [
         "D\u00e9finit la marge sup\u00e9rieure observ\u00e9e pour le notebook virtuel, d\u00e9finit un nombre positif de pixels pour rendre les cellules au dessus de la vue visible"
     ],
+    "settings\u0004Disable the undo/redo on the notebook document level, so actions independent cells can have their own history. The undo/redo never applies on the outputs, in other words, outputs don't have history. A moved cell completely looses history capability for now.": [
+        "D\u00e9sactive l'annulation des changements au niveau du notebook pour que les cellules ind\u00e9pendantes puissent avoir leur propre historique. Annuler les changements ne s'applique jamais aux sorties, en d'autres termes, les sorties n'ont pas d'historique. Actuellement une cellule d\u00e9plac\u00e9e perd compl\u00e8tement son historique."
+    ],
     "settings\u0004Disclaimed Status": [
         "Statut de renonciation"
     ],
@@ -2558,6 +2567,9 @@
     "settings\u0004Enables using the CDN to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry": [
         "Active l'utilisation du CDN pour r\u00e9cup\u00e9rer les donn\u00e9es compl\u00e8tes du paquet. Sinon, le registre NPM configur\u00e9 sera utilis\u00e9. En raison d'un manque de support de CORS par le registre NPM, d\u00e9sactiver uniquement si vous fournissez un registre personnalis\u00e9"
     ],
+    "settings\u0004Experimental settings to enable the undo/redo on the notebook document level.": [
+        "Param\u00e8tre exp\u00e9rimental pour annuler/rejouer les changements au niveau du notebook complet."
+    ],
     "settings\u0004Extension Manager": [
         "Gestionnaire d'extensions"
     ],
@@ -2584,9 +2596,6 @@
     ],
     "settings\u0004Hide Front Matter": [
         "Cacher le Pr\u00e9ambule"
-    ],
-    "settings\u0004If set to true, when a header is collapsed in the ToC the corresponding section in the notebook is collapsed as well and vice versa.": [
-        "Si r\u00e9gl\u00e9 sur `true`, lorsqu'un titre est r\u00e9duit dans la table des mati\u00e8res, la section correspondante dans le notebook est r\u00e9duite et vice versa."
     ],
     "settings\u0004If set to true, when a header is collapsed in the table of contents the corresponding section in the notebook is collapsed as well and vice versa.": [
         "Si r\u00e9gl\u00e9 sur true, lorsqu'un en-t\u00eate est r\u00e9duit dans la table des mati\u00e8res, la section correspondante dans le bloc-notes est r\u00e9duite et vice versa."
@@ -2636,11 +2645,17 @@
     "settings\u0004Log entry count limit": [
         "Limite de nombre d'entr\u00e9e de journal"
     ],
+    "settings\u0004Margin for last modified timestamp check": [
+        "Marge pour la v\u00e9rification de l'instant de la derni\u00e8re modification"
+    ],
     "settings\u0004Markdown Cell Configuration": [
         "Configuration des cellules Markdown"
     ],
     "settings\u0004Markdown Viewer": [
         "Visualiseur Markdown"
+    ],
+    "settings\u0004Max acceptable difference, in milliseconds, between last modified timestamps on disk and client": [
+        "Diff\u00e9rence maximale acceptable, en millisecondes, entre l'instant de la derni\u00e8re modification sur le disque et dans le client"
     ],
     "settings\u0004Maximum number of log entries to store in memory": [
         "Nombre maximum d'entr\u00e9es de journal \u00e0 stocker en m\u00e9moire"
@@ -2705,8 +2720,8 @@
     "settings\u0004Overrides for the default viewers for file types": [
         "Remplace les afficheurs par d\u00e9faut pour les types de fichiers"
     ],
-    "settings\u0004Overrides for where to show sidebar items\ne.g., {\"tab-manager\": \"right\"}": [
-        "Substitue pour o\u00f9 afficher les \u00e9l\u00e9ments de la barre lat\u00e9rale\npar exemple, {\"tab-manager\": \"right\"}"
+    "settings\u0004Overrides for where to show sidebar items\ne.g., {\"jp-debugger-sidebar\": \"left\"}\nYou can also change this by right-clicking the sidebar icons.": [
+        "Modifie la barre lat\u00e9rale utilis\u00e9e pour afficher un panneau\npar exemple, {\"jp-debugger-sidebar\": \"left\"}\nVous pouvez \u00e9galement modifier cela en cliquant avec le bouton droit de la souris sur les ic\u00f4nes de la barre lat\u00e9rale."
     ],
     "settings\u0004Paste with Ctrl+V": [
         "Coller avec Ctrl+V"
@@ -2755,6 +2770,9 @@
     ],
     "settings\u0004Show All Kernel Activity": [
         "Afficher toute l'activit\u00e9 du noyau"
+    ],
+    "settings\u0004Show hidden files": [
+        "Afficher les fichiers cach\u00e9s"
     ],
     "settings\u0004Show last modified column": [
         "Afficher la derni\u00e8re colonne modifi\u00e9e"
@@ -2936,14 +2954,14 @@
     "settings\u0004Whether to include cell output in headings": [
         "Inclure la sortie de cellule dans les en-t\u00eates"
     ],
-    "settings\u0004Whether to number first level headings": [
-        "Nombre d'en-t\u00eates de premier niveau ou non"
-    ],
     "settings\u0004Whether to number first-level headings": [
         "Nombre d'en-t\u00eates de premier niveau ou non"
     ],
     "settings\u0004Whether to scroll past the end of text document": [
         "S'il faut d\u00e9filer apr\u00e8s la fin du document texte"
+    ],
+    "settings\u0004Whether to show hidden files": [
+        "Afficher ou non les fichiers cach\u00e9s"
     ],
     "settings\u0004Whether to show status bar or not": [
         "Afficher/Masquer la barre d'\u00e9tat"
@@ -2959,12 +2977,6 @@
     ],
     "settings\u0004font-size": [
         "taille de police"
-    ],
-    "settings\u0004syncCollapseState": [
-        "syncCollapseState"
-    ],
-    "showErrorMessage": [
-        "showErrorMessage"
     ],
     "showErrorMessage\u0004\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\"": [
         "\"%1\" n'est pas un nom valide pour un fichier. Les noms doivent avoir une longueur non nulle, et ne peuvent pas inclure \"/\", \"\\\", ou \":\""
