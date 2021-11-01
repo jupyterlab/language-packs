@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 97\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2021-10-09 10:58\n"
+"PO-Revision-Date: 2021-10-30 18:15\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
@@ -22,67 +22,67 @@ msgstr "Налаштування jupyterlab-git."
 #: /schema/plugin.json:/jupyter.lab.menus/context[0]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/label
 msgctxt "menu"
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: /schema/plugin.json:/jupyter.lab.menus/main[0]/items[12]/submenu/label
 msgctxt "menu"
 msgid "Help"
-msgstr ""
+msgstr "Довідка"
 
 #: /schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: /schema/plugin.json:/properties/blockWhileCommandExecutes/description
 msgctxt "settings"
 msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
-msgstr ""
+msgstr "Призупинити взаємодію користувача JupyterLab, доки не завершиться виконання команд Git (наприклад, commit, pull, reset, revert). Встановлення значення true допомагає пом’якшити потенційні умови перегонів, що призводять до втрати даних, конфліктів та порушеної історії Git. Якщо мережа не повільна, призупинення інтерфейсу не повинно заважати стандартним робочим процесам. Встановлення значення false дозволяє діям запускати кілька одночасних дій Git."
 
 #: /schema/plugin.json:/properties/blockWhileCommandExecutes/title
 msgctxt "settings"
 msgid "Suspend user interaction until commands finish"
-msgstr ""
+msgstr "Призупинити взаємодію з користувачем до завершення команд"
 
 #: /schema/plugin.json:/properties/cancelPullMergeConflict/description
 msgctxt "settings"
 msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
-msgstr ""
+msgstr "Якщо значення true, під час отримання та інтеграції змін з віддаленого сховища конфліктне злиття скасовується, а робоче дерево залишається недоторканим."
 
 #: /schema/plugin.json:/properties/cancelPullMergeConflict/title
 msgctxt "settings"
 msgid "Cancel pull merge conflict"
-msgstr ""
+msgstr "Скасувати конфлікт злиття"
 
 #: /schema/plugin.json:/properties/commitAndPush/description
 msgctxt "settings"
 msgid "Whether to trigger or not a push for each commit."
-msgstr ""
+msgstr "Чи запускати чи ні натискання для кожного коміту."
 
 #: /schema/plugin.json:/properties/commitAndPush/title
 msgctxt "settings"
 msgid "Trigger push on commit"
-msgstr ""
+msgstr "Натискання тригера під час фіксації"
 
 #: /schema/plugin.json:/properties/disableBranchWithChanges/description
 msgctxt "settings"
 msgid "Disable all branch operations (new, switch) when there are changed/staged files"
-msgstr ""
+msgstr "Вимкнути всі операції розгалужень (нові, перемикач), коли є змінені/поетапні файли"
 
 #: /schema/plugin.json:/properties/disableBranchWithChanges/title
 msgctxt "settings"
 msgid "Disable branch with changes"
-msgstr ""
+msgstr "Вимкнути гілку зі змінами"
 
 #: /schema/plugin.json:/properties/displayStatus/description
 msgctxt "settings"
 msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
-msgstr ""
+msgstr "Відображати оновлення статусу розширення Git у рядку стану JupyterLab. Якщо значення true, розширення відображає оновлення статусу в рядку стану JupyterLab, наприклад, під час витягування та переміщення змін, перемикання гілок та опитування змін. Залежно від рівня активності розширення деякі користувачі можуть вважати оновлення статусу відволікаючими. У цьому випадку встановлення значення false має зменшити візуальний шум."
 
 #: /schema/plugin.json:/properties/displayStatus/title
 msgctxt "settings"
 msgid "Display Git status updates"
-msgstr ""
+msgstr "Відображати оновлення статусу Git"
 
 #: /schema/plugin.json:/properties/doubleClickDiff/description
 msgctxt "settings"
@@ -92,161 +92,161 @@ msgstr "Якщо увімкнено, подвійне натискання на 
 #: /schema/plugin.json:/properties/doubleClickDiff/description
 msgctxt "settings"
 msgid "If true, doubling clicking a file in the list of changed files will open a diff."
-msgstr ""
+msgstr "Якщо значення true, подвійне клацання файлу в списку змінених файлів відкриє відмінність."
 
 #: /schema/plugin.json:/properties/doubleClickDiff/title
 msgctxt "settings"
 msgid "Show diff on double click"
-msgstr ""
+msgstr "Показати відмінність подвійним клацанням"
 
 #: /schema/plugin.json:/properties/historyCount/description
 msgctxt "settings"
 msgid "Number of (most recent) commits shown in the history log"
-msgstr ""
+msgstr "Кількість (останніх) комітів, показаних у журналі історії"
 
 #: /schema/plugin.json:/properties/historyCount/title
 msgctxt "settings"
 msgid "History count"
-msgstr ""
+msgstr "Лічильник історії"
 
 #: /schema/plugin.json:/properties/refreshIfHidden/description
 msgctxt "settings"
 msgid "Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance."
-msgstr ""
+msgstr "Чи перевіряти статус Git, якщо вкладка Git не відображається. Виберіть `false` для кращої продуктивності."
 
 #: /schema/plugin.json:/properties/refreshIfHidden/title
 msgctxt "settings"
 msgid "Refresh if the Git tab is hidden"
-msgstr ""
+msgstr "Оновіть, якщо вкладка Git прихована"
 
 #: /schema/plugin.json:/properties/refreshInterval/description
 msgctxt "settings"
 msgid "Number of milliseconds between polling the file system for changes."
-msgstr ""
+msgstr "Кількість мілісекунд між опитуванням файлової системи щодо змін."
 
 #: /schema/plugin.json:/properties/refreshInterval/title
 msgctxt "settings"
 msgid "Refresh interval"
-msgstr ""
+msgstr "Інтервал оновлення"
 
 #: /schema/plugin.json:/properties/simpleStaging/description
 msgctxt "settings"
 msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
-msgstr ""
+msgstr "Якщо вірно, використовуйте спрощену концепцію постановки. Відображаються лише файли зі змінами (замість показу поетапних/змінених/невідстежених), а всі файли зі змінами будуть автоматично переміщені"
 
 #: /schema/plugin.json:/properties/simpleStaging/title
 msgctxt "settings"
 msgid "Simple staging flag"
-msgstr ""
+msgstr "Позначка простого індексування"
 
 #: /schema/plugin.json:/title
 msgctxt "schema"
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: src/commandsAndMenu.tsx:1004 src/commandsAndMenu.tsx:1007 src/commandsAndMenu.tsx:869 src/commandsAndMenu.tsx:871 src/commandsAndMenu.tsx:872 src/commandsAndMenu.tsx:874 src/commandsAndMenu.tsx:877 src/commandsAndMenu.tsx:880 src/commandsAndMenu.tsx:882 src/commandsAndMenu.tsx:885 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:905 src/commandsAndMenu.tsx:906
 msgid "Ignore"
-msgstr ""
+msgstr "Ігнорувати"
 
 #: src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:922 src/commandsAndMenu.tsx:923 src/components/GitPanel.tsx:344 src/components/GitPanel.tsx:358 src/components/GitPanel.tsx:363
 msgid "History"
-msgstr ""
+msgstr "Історія"
 
 #: src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:923 src/commandsAndMenu.tsx:924
 msgid "View the history of this file"
-msgstr ""
+msgstr "Переглянути історію цього файлу"
 
 #: src/commandsAndMenu.tsx:1043 src/commandsAndMenu.tsx:889 src/commandsAndMenu.tsx:891 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:941 src/commandsAndMenu.tsx:942
 msgid "No actions available"
-msgstr ""
+msgstr "Немає доступних дій"
 
 #: src/commandsAndMenu.tsx:1062 src/commandsAndMenu.tsx:908 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:916 src/commandsAndMenu.tsx:940 src/commandsAndMenu.tsx:960 src/commandsAndMenu.tsx:961
 msgid "Set Up Remotes"
-msgstr ""
+msgstr "Налаштувати пульти дистанційного керування"
 
 #: src/commandsAndMenu.tsx:1066 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:914 src/commandsAndMenu.tsx:920 src/commandsAndMenu.tsx:944 src/commandsAndMenu.tsx:964 src/commandsAndMenu.tsx:965
 msgid "Git Documentation"
-msgstr ""
+msgstr "Документація Git"
 
 #: src/commandsAndMenu.tsx:1100 src/commandsAndMenu.tsx:943 src/commandsAndMenu.tsx:945 src/commandsAndMenu.tsx:951 src/commandsAndMenu.tsx:978 src/commandsAndMenu.tsx:998 src/commandsAndMenu.tsx:999
 msgid " Help "
-msgstr ""
+msgstr " Довідка "
 
 #: src/commandsAndMenu.tsx:117 src/commandsAndMenu.tsx:118 src/commandsAndMenu.tsx:119 src/commandsAndMenu.tsx:122
 msgid "Commit from the Commit Box"
-msgstr ""
+msgstr "Коміт з бази комітів"
 
 #: src/commandsAndMenu.tsx:1172 src/commandsAndMenu.tsx:1174 src/commandsAndMenu.tsx:1180 src/commandsAndMenu.tsx:1203 src/commandsAndMenu.tsx:1232 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1241 src/commandsAndMenu.tsx:1338
 msgid "Git credentials required"
-msgstr ""
+msgstr "Потрібні облікові дані Git"
 
 #: src/commandsAndMenu.tsx:1175 src/commandsAndMenu.tsx:1177 src/commandsAndMenu.tsx:1183 src/commandsAndMenu.tsx:1206 src/commandsAndMenu.tsx:1235 src/commandsAndMenu.tsx:1239 src/commandsAndMenu.tsx:1244 src/commandsAndMenu.tsx:1341 src/widgets/CredentialsBox.tsx:14 src/widgets/CredentialsBox.tsx:15
 msgid "Enter credentials for remote repository"
-msgstr ""
+msgstr "Введіть облікові дані для віддаленого сховища"
 
 #: src/commandsAndMenu.tsx:1176 src/commandsAndMenu.tsx:1178 src/commandsAndMenu.tsx:1184 src/commandsAndMenu.tsx:1207 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1240 src/commandsAndMenu.tsx:1245 src/commandsAndMenu.tsx:1342
 msgid "Incorrect username or password."
-msgstr ""
+msgstr "Неправильне ім'я користувача або пароль."
 
 #: src/commandsAndMenu.tsx:118 src/commandsAndMenu.tsx:119 src/commandsAndMenu.tsx:120 src/commandsAndMenu.tsx:123
 msgid "Submit the commit using the summary and description from commit box"
-msgstr ""
+msgstr "Надішліть коміт, використовуючи підсумок та опис із поля комітів"
 
 #: src/commandsAndMenu.tsx:129 src/commandsAndMenu.tsx:130 src/commandsAndMenu.tsx:131 src/commandsAndMenu.tsx:134
 msgid "Open Git Repository in Terminal"
-msgstr ""
+msgstr "Відкрийте репозиторій Git в терміналі"
 
 #: src/commandsAndMenu.tsx:130 src/commandsAndMenu.tsx:131 src/commandsAndMenu.tsx:132 src/commandsAndMenu.tsx:135
 msgid "Open a New Terminal to the Git Repository"
-msgstr ""
+msgstr "Відкрийте новий термінал у репозиторії Git"
 
 #: src/commandsAndMenu.tsx:159 src/commandsAndMenu.tsx:161 src/commandsAndMenu.tsx:162 src/commandsAndMenu.tsx:163 src/commandsAndMenu.tsx:166
 msgid "Git Interface"
-msgstr ""
+msgstr "Інтерфейс Git"
 
 #: src/commandsAndMenu.tsx:160 src/commandsAndMenu.tsx:162 src/commandsAndMenu.tsx:163 src/commandsAndMenu.tsx:164 src/commandsAndMenu.tsx:167
 msgid "Go to Git user interface"
-msgstr ""
+msgstr "Перейдіть до інтерфейсу користувача Git"
 
 #: src/commandsAndMenu.tsx:172 src/commandsAndMenu.tsx:174 src/commandsAndMenu.tsx:175 src/commandsAndMenu.tsx:176 src/commandsAndMenu.tsx:179 src/commandsAndMenu.tsx:181 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:186 src/components/GitPanel.tsx:445 src/components/GitPanel.tsx:461 src/components/GitPanel.tsx:466
 msgid "Initialize a Repository"
-msgstr ""
+msgstr "Ініціалізуйте репозиторій"
 
 #: src/commandsAndMenu.tsx:173 src/commandsAndMenu.tsx:175 src/commandsAndMenu.tsx:176 src/commandsAndMenu.tsx:177 src/commandsAndMenu.tsx:180
 msgid "Create an empty Git repository or reinitialize an existing one"
-msgstr ""
+msgstr "Створіть порожній репозиторій Git або повторно ініціалізуйте наявний"
 
 #: src/commandsAndMenu.tsx:180 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:187
 msgid "Do you really want to make this directory a Git Repo?"
-msgstr ""
+msgstr "Ви дійсно хочете зробити цей каталог Git Repo?"
 
 #: src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:297 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:302 src/commandsAndMenu.tsx:743 src/commandsAndMenu.tsx:745 src/commandsAndMenu.tsx:751 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:794 src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:819 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:878 src/commandsAndMenu.tsx:921 src/components/BranchMenu.tsx:344 src/components/FileList.tsx:182 src/components/FileList.tsx:191 src/components/FileList.tsx:193 src/components/FileList.tsx:207 src/components/FileList.tsx:216 src/components/FileList.tsx:218 src/components/NewBranchDialog.tsx:202 src/components/NewBranchDialog.tsx:209
 msgid "Cancel"
-msgstr ""
+msgstr "Скасувати"
 
 #: src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:187 src/commandsAndMenu.tsx:190
 msgid "Yes"
-msgstr ""
+msgstr "Так"
 
 #: src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:196
 msgid "Initializing..."
-msgstr ""
+msgstr "Ініціалізація..."
 
 #: src/commandsAndMenu.tsx:196 src/commandsAndMenu.tsx:198 src/commandsAndMenu.tsx:199 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:203
 msgid "Git repository initialized."
-msgstr ""
+msgstr "Репозиторій Git ініціалізовано."
 
 #: src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:203 src/commandsAndMenu.tsx:204 src/commandsAndMenu.tsx:205 src/commandsAndMenu.tsx:208
 msgid "Encountered an error when initializing the repository. Error: "
-msgstr ""
+msgstr "Під час ініціалізації сховища сталася помилка. Помилка:"
 
 #: src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:209 src/commandsAndMenu.tsx:210 src/commandsAndMenu.tsx:211 src/commandsAndMenu.tsx:214
 msgid "Failed to initialize the Git repository"
-msgstr ""
+msgstr "Не вдалося ініціалізувати репозиторій Git"
 
 #: src/commandsAndMenu.tsx:228 src/commandsAndMenu.tsx:230 src/commandsAndMenu.tsx:231 src/commandsAndMenu.tsx:232 src/commandsAndMenu.tsx:235
 msgid "Simple staging"
-msgstr ""
+msgstr "Проста постановка"
 
 #: src/commandsAndMenu.tsx:237 src/commandsAndMenu.tsx:239 src/commandsAndMenu.tsx:240 src/commandsAndMenu.tsx:241 src/commandsAndMenu.tsx:244
 msgid "Double click opens diff"

@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 99\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2021-10-30 00:44\n"
+"PO-Revision-Date: 2021-10-30 20:33\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
@@ -72,7 +72,7 @@ msgstr "Uwzględnij idealne dopasowania"
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/kernelCompletionsFirst/description
 msgctxt "settings"
 msgid "In case of ties when sorting completions, should the kernel completions receive higher priority than the language server completions?"
-msgstr ""
+msgstr "W przypadku remisów podczas sortowania podpowiedzi, czy podpowiedzi jądra powinny mieć wyższy priorytet niż podpowiedzi serwera językowego?"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/kernelCompletionsFirst/title
 msgctxt "settings"
@@ -212,7 +212,7 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/highlights.json:/properties/debouncerDelay/description
 msgctxt "settings"
 msgid "Number of milliseconds to delay sending out the highlights request to the language server; you can get better responsiveness adjusting this value, but setting it to zero can actually slow it down as the server might get overwhelmed when moving the cursor."
-msgstr ""
+msgstr "Liczba milisekund na opóźnienie wysłania prośby o podświetlenie do serwera językowego; możesz uzyskać lepszą zdolność reagowania dostosowując tę wartość, ale ustawienie na zero może w spowodować spowolnienie, ponieważ serwer może zostać przytłoczony podczas przesuwania kursora."
 
 #: /packages/jupyterlab-lsp/schema/highlights.json:/properties/debouncerDelay/title
 msgctxt "settings"
@@ -337,7 +337,32 @@ msgid "Language-server specific configuration, keyed by implementation, e.g: \n\
 "    \"pyls.plugins.flake8.enabled\": true\n"
 "  }\n"
 "}"
-msgstr ""
+msgstr "Konfiguracja dla poszczególnych serwerów językowych, gdzie klucze korespondują do implementacji serwera, na przykład:\n\n"
+"pyls: {\n"
+"  serverSettings: {\n"
+"    pyls: {\n"
+"      plugins: {\n"
+"        pydocstyle: {\n"
+"          enabled: true\n"
+"        }\n"
+"        płatki: {\n"
+"          enabled: false\n"
+"        },\n"
+"        płatki8: {\n"
+"          enabled: true\n"
+"        }\n"
+"      }\n"
+"    }\n"
+"  }\n"
+"}\n\n"
+"Alternatywnie, używając konwencji nazw VSCode:\n\n"
+"pyls: {\n"
+"  serverSettings: {\n"
+"    \"pyls. lugins.pydocstyle.enabled\": true,\n"
+"    \"pyls.plugins.pyflakes.enabled\": false,\n"
+"    \"pyls.plugins.flake8.enabled\": true\n"
+"  }\n"
+"}"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:/properties/language_servers/title
 msgctxt "settings"
@@ -392,7 +417,7 @@ msgstr "Serwer języka"
 #: /packages/jupyterlab-lsp/schema/rename.json:/description
 msgctxt "schema"
 msgid "LSP Rename settings."
-msgstr ""
+msgstr "Ustawienia zmiany nazw LSP."
 
 #: /packages/jupyterlab-lsp/schema/rename.json:/title
 msgctxt "schema"
@@ -432,7 +457,7 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/description
 msgctxt "schema"
 msgid "LSP code syntax highlighting settings."
-msgstr ""
+msgstr "Ustawienia podświetlania składni kodu LSP."
 
 #: /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/properties/foreignCodeThreshold/description
 msgctxt "settings"
