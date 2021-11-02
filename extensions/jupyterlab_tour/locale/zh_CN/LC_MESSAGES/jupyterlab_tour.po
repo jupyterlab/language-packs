@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 101\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-10-04 14:29\n"
+"PO-Revision-Date: 2021-11-01 15:50\n"
 
 #: /schema/user-tours.json:/description
 msgctxt "schema"
@@ -32,32 +32,37 @@ msgstr "一个向导数组。每个向导都必须包含一个 `id`、`label` �
 #: /schema/user-tours.json:/properties/tours/items/properties/hasHelpEntry/description
 msgctxt "settings"
 msgid "Whether to add a Help Menu item with the label to launch the tour"
-msgstr "是否添加带标签的帮助菜单项来启动游览"
+msgstr "是否添加带标签的帮助菜单项来启动向导"
 
 #: /schema/user-tours.json:/properties/tours/items/properties/id/description
 msgctxt "settings"
 msgid "A machine-readable ID to identify this tour, will be prefixed. Should be unique within this document."
-msgstr "一个机器可读的 ID 前缀用来识别此导览，此 ID 在这个文档中应该是唯一的。"
+msgstr "一个机器可读的 ID 前缀用来识别此向导，此 ID 在这个文档中应该是唯一的。"
 
 #: /schema/user-tours.json:/properties/tours/items/properties/label/description
 msgctxt "settings"
 msgid "A human-readable name for the tour"
-msgstr "用户可读的导览名称"
+msgstr "用户可读的向导名称"
 
 #: /schema/user-tours.json:/properties/tours/items/properties/options/description
 msgctxt "settings"
 msgid "Other options for the tour"
-msgstr "其他导览选项"
+msgstr "其他向导选项"
 
 #: /schema/user-tours.json:/properties/tours/items/properties/steps/description
 msgctxt "settings"
 msgid "The definition of the steps of a tour"
-msgstr "导览步骤的定义"
+msgstr "向导步骤的定义"
 
 #: /schema/user-tours.json:/properties/tours/items/properties/translation/description
 msgctxt "settings"
 msgid "Translation domain containing for this tour"
 msgstr "包含此游览的翻译域"
+
+#: /schema/user-tours.json:/properties/tours/items/properties/translation/description
+msgctxt "settings"
+msgid "Translation domain containing strings for this tour"
+msgstr "翻译域包含了本次向导所用到的字符串"
 
 #: /schema/user-tours.json:/title
 msgctxt "schema"
@@ -66,7 +71,7 @@ msgstr "向导"
 
 #: src/tourManager.ts:139 src/tourManager.ts:145
 msgid "Fail to add tour '%1' (%2)"
-msgstr "添加想到「%1」（%2）失败"
+msgstr "添加向导「%1」（%2）失败"
 
 #: src/tourManager.ts:166 src/tourManager.ts:172
 msgid "Error creating new tour. TourHandler id's must be unique.\n"
