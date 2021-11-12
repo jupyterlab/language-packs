@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 97\n"
 "Language-Team: Hebrew\n"
 "Language: he_IL\n"
-"PO-Revision-Date: 2021-10-26 12:10\n"
+"PO-Revision-Date: 2021-11-06 23:43\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
@@ -37,72 +37,72 @@ msgstr "Git"
 #: /schema/plugin.json:/properties/blockWhileCommandExecutes/description
 msgctxt "settings"
 msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
-msgstr ""
+msgstr "השהיית פעילות המשתמש ב־JupyterLab עד לסיום פעילות פקודות ה־Git (למשל: commit,‏ pull,‏ reset,‏ revert). הגדרת ערך זה ל־true (אמת) מסייעת באפחות התחרות התניות שעשויה להוביל לאובדן נתונים, התנגשויות והיסטוריית Git פגומה. אלא אם יש לך רשת אטית, השהיית מנשק משתמש לא אמורה להפריע לרצף העבודה הרגיל שלך. הגדרת ערך זה ל־false (שקר) מאפשרת לפעולות להריץ מספרת פעולות Git בו־זמנית."
 
 #: /schema/plugin.json:/properties/blockWhileCommandExecutes/title
 msgctxt "settings"
 msgid "Suspend user interaction until commands finish"
-msgstr ""
+msgstr "להשהות את תפעול המשתמש עד לסיום הפקודות"
 
 #: /schema/plugin.json:/properties/cancelPullMergeConflict/description
 msgctxt "settings"
 msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
-msgstr ""
+msgstr "אם „אמת” (true), בעת משיכה ושילוב השינויים מהמאגר המרוחק, מיזוג סותר מבוטל והעץ עליו מתבצעת העבודה יישאר ללא שינוי."
 
 #: /schema/plugin.json:/properties/cancelPullMergeConflict/title
 msgctxt "settings"
 msgid "Cancel pull merge conflict"
-msgstr ""
+msgstr "ביטול סתירת מיזוג דחיפות"
 
 #: /schema/plugin.json:/properties/commitAndPush/description
 msgctxt "settings"
 msgid "Whether to trigger or not a push for each commit."
-msgstr ""
+msgstr "האם להפעיל או לא להפעיל דחיפה (push) על כל הגשה (commit)."
 
 #: /schema/plugin.json:/properties/commitAndPush/title
 msgctxt "settings"
 msgid "Trigger push on commit"
-msgstr ""
+msgstr "להפעיל דחיפה עם הגשה"
 
 #: /schema/plugin.json:/properties/disableBranchWithChanges/description
 msgctxt "settings"
 msgid "Disable all branch operations (new, switch) when there are changed/staged files"
-msgstr ""
+msgstr "השבתת כל פעילויות הענף (חדש, מעבר) כאשר יש קבצים שהשתנו/ממתינים להגשה"
 
 #: /schema/plugin.json:/properties/disableBranchWithChanges/title
 msgctxt "settings"
 msgid "Disable branch with changes"
-msgstr ""
+msgstr "השבתת ענף עם שינויים"
 
 #: /schema/plugin.json:/properties/displayStatus/description
 msgctxt "settings"
 msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
-msgstr ""
+msgstr "להציג את מצב הרחבת Git בשורת המצב של JupyterLab. אם true (אמת), ההרחבה מציגה את עדכוני המצב בסרגל המצב של JupyterLab, כגון בעת משיכת ודחיפת שינויים, מעבר בין ענפים ותשאול לאיתור עדכונים. בהתאם לרמת פעילות ההרחבה, חלק מהמשתמשים עשויים לחוש כי עדכוני המצב מטרידים אותם. במקרה כזה, הגדרה ל־false (שקר) אמורה להפחית את הרעש החזותי."
 
 #: /schema/plugin.json:/properties/displayStatus/title
 msgctxt "settings"
 msgid "Display Git status updates"
-msgstr ""
+msgstr "הצגת עדכוני מצב Git"
 
 #: /schema/plugin.json:/properties/doubleClickDiff/description
 msgctxt "settings"
 msgid "If true, double clicking a file in the list of changed files will open a diff."
-msgstr ""
+msgstr "אם „אמת” (true), לחיצה כפולה על הקובץ ברשימת הקבצים שהשתנו תפתח את ההבדלים."
 
 #: /schema/plugin.json:/properties/doubleClickDiff/description
 msgctxt "settings"
 msgid "If true, doubling clicking a file in the list of changed files will open a diff."
-msgstr ""
+msgstr "אם „אמת” (true), לחיצה כפולה על הקובץ ברשימת הקבצים שהשתנו תפתח את ההבדלים."
 
 #: /schema/plugin.json:/properties/doubleClickDiff/title
 msgctxt "settings"
 msgid "Show diff on double click"
-msgstr ""
+msgstr "הצגת הבדלים בלחיצה כפולה"
 
 #: /schema/plugin.json:/properties/historyCount/description
 msgctxt "settings"
 msgid "Number of (most recent) commits shown in the history log"
-msgstr ""
+msgstr "מספר ההגשות (העדכניות ביותר) שתופענה ביומן ההיסטוריה"
 
 #: /schema/plugin.json:/properties/historyCount/title
 msgctxt "settings"
@@ -112,37 +112,37 @@ msgstr "ספירת היסטוריה"
 #: /schema/plugin.json:/properties/refreshIfHidden/description
 msgctxt "settings"
 msgid "Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance."
-msgstr ""
+msgstr "האם לבדוק את מצב ה־Git כאשר לשונית ה־Git אינה גלויה. יש לבחור ב־`false` (שקר) לשיפור הביצועים."
 
 #: /schema/plugin.json:/properties/refreshIfHidden/title
 msgctxt "settings"
 msgid "Refresh if the Git tab is hidden"
-msgstr ""
+msgstr "לרענן אם לשונית ה־Git מוסתרת"
 
 #: /schema/plugin.json:/properties/refreshInterval/description
 msgctxt "settings"
 msgid "Number of milliseconds between polling the file system for changes."
-msgstr ""
+msgstr "מספר המילישניות בין תשאולי מערכת הקבצים לאיתור שינויים."
 
 #: /schema/plugin.json:/properties/refreshInterval/title
 msgctxt "settings"
 msgid "Refresh interval"
-msgstr ""
+msgstr "הפרש בין רענונים"
 
 #: /schema/plugin.json:/properties/simpleStaging/description
 msgctxt "settings"
 msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
-msgstr ""
+msgstr "אם הוגדר ל„אמת” (true), להשתמש בעיקרון מופשט של הכנה להגשה. רק קבצים עם שינויים מופיעים (במקום להציג מוכן להגשה/השתנה/לא במעקב) וכל הקבצים שהשתנו אוטומטית יוכנו להגשה"
 
 #: /schema/plugin.json:/properties/simpleStaging/title
 msgctxt "settings"
 msgid "Simple staging flag"
-msgstr ""
+msgstr "דגלון הכנה להגשה פשוט"
 
 #: /schema/plugin.json:/title
 msgctxt "schema"
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: src/commandsAndMenu.tsx:1004 src/commandsAndMenu.tsx:1007 src/commandsAndMenu.tsx:869 src/commandsAndMenu.tsx:871 src/commandsAndMenu.tsx:872 src/commandsAndMenu.tsx:874 src/commandsAndMenu.tsx:877 src/commandsAndMenu.tsx:880 src/commandsAndMenu.tsx:882 src/commandsAndMenu.tsx:885 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:905 src/commandsAndMenu.tsx:906
 msgid "Ignore"
@@ -250,7 +250,7 @@ msgstr ""
 
 #: src/commandsAndMenu.tsx:237 src/commandsAndMenu.tsx:239 src/commandsAndMenu.tsx:240 src/commandsAndMenu.tsx:241 src/commandsAndMenu.tsx:244
 msgid "Double click opens diff"
-msgstr ""
+msgstr "לחיצה כפולה פותחת את ההבדלים"
 
 #: src/commandsAndMenu.tsx:246 src/commandsAndMenu.tsx:248 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:250 src/commandsAndMenu.tsx:253
 msgid "Add Remote Repository"
@@ -318,7 +318,7 @@ msgstr "דחיפת קוד למאגר מרוחק"
 
 #: src/commandsAndMenu.tsx:350 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:354
 msgid "Push to Remote (Force)"
-msgstr ""
+msgstr "דחיפה למרוחק (בכוח)"
 
 #: src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:357 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:361
 msgid "Pushing..."
@@ -330,7 +330,7 @@ msgstr "הדחיפה הצליחה"
 
 #: src/commandsAndMenu.tsx:366 src/commandsAndMenu.tsx:368 src/commandsAndMenu.tsx:372 src/commandsAndMenu.tsx:373 src/commandsAndMenu.tsx:376
 msgid "Encountered an error when pushing changes. Error: "
-msgstr ""
+msgstr "עלתה שגיאה בעת דחיפת השינויים. שגיאה: "
 
 #: src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:372 src/commandsAndMenu.tsx:376 src/commandsAndMenu.tsx:377 src/commandsAndMenu.tsx:380
 msgid "Failed to push"
@@ -374,7 +374,7 @@ msgstr "רענון וידג׳ט ההבדלים"
 
 #: src/commandsAndMenu.tsx:490
 msgid "Mark as resolved"
-msgstr ""
+msgstr "סימון נפתר"
 
 #: src/commandsAndMenu.tsx:494
 msgid "Resolve with conflicts"
@@ -614,7 +614,7 @@ msgstr ""
 
 #: src/components/BranchMenu.tsx:211 src/components/NewBranchDialog.tsx:208 src/components/NewBranchDialog.tsx:215
 msgid "Create a new branch"
-msgstr ""
+msgstr "יצירת ענף חדש"
 
 #: src/components/BranchMenu.tsx:212
 msgid "New Branch"
@@ -666,7 +666,7 @@ msgstr ""
 
 #: src/components/CommitBox.tsx:106 src/components/CommitBox.tsx:107 src/components/CommitBox.tsx:184
 msgid "Summary (%1 to commit)"
-msgstr ""
+msgstr "תקציר (%1 להגשה)"
 
 #: src/components/CommitBox.tsx:116 src/components/CommitBox.tsx:117 src/components/CommitMessage.tsx:117 src/components/ResetRevertDialog.tsx:155
 msgid "Enter a commit message summary (a single line, preferably less than 50 characters)"
@@ -674,15 +674,15 @@ msgstr ""
 
 #: src/components/CommitBox.tsx:126 src/components/CommitBox.tsx:127 src/components/CommitMessage.tsx:140
 msgid "Description (optional)"
-msgstr ""
+msgstr "תיאור (רשות)"
 
 #: src/components/CommitBox.tsx:127 src/components/CommitBox.tsx:128 src/components/CommitMessage.tsx:147 src/components/ResetRevertDialog.tsx:165
 msgid "Enter a commit message description"
-msgstr ""
+msgstr "נא למלא תיאור להודעת ההגשה"
 
 #: src/components/CommitBox.tsx:141
 msgid "Create a new commit"
-msgstr ""
+msgstr "יצירת הגשה חדשה"
 
 #: src/components/CommitBox.tsx:142
 msgid "New commit will be created and show up as a next one after the previous commit (default)."
@@ -710,11 +710,11 @@ msgstr "תקציר"
 
 #: src/components/FileList.tsx:177 src/components/FileList.tsx:186 src/components/FileList.tsx:188 src/components/FileList.tsx:202 src/components/FileList.tsx:211 src/components/FileList.tsx:213
 msgid "Discard all changes"
-msgstr ""
+msgstr "השלכת כל השינויים"
 
 #: src/components/FileList.tsx:178 src/components/FileList.tsx:187 src/components/FileList.tsx:189 src/components/FileList.tsx:203 src/components/FileList.tsx:212 src/components/FileList.tsx:214
 msgid "Are you sure you want to permanently discard changes to all files? This action cannot be undone."
-msgstr ""
+msgstr "להשליך את השינויים לכל הקבצים לצמיתות? זו פעולה בלתי הפיכה."
 
 #: src/components/FileList.tsx:191 src/components/FileList.tsx:200 src/components/FileList.tsx:202
 msgid "Discard all unstaged changes failed."
@@ -726,7 +726,7 @@ msgstr ""
 
 #: src/components/FileList.tsx:363 src/components/FileList.tsx:372 src/components/FileList.tsx:441 src/components/FileList.tsx:450 src/components/FileList.tsx:459 src/components/FileList.tsx:528 src/components/FileList.tsx:549 src/components/FileList.tsx:558 src/components/FileList.tsx:627 src/components/FileList.tsx:635 src/components/FileList.tsx:644 src/components/FileList.tsx:648 src/components/FileList.tsx:657 src/components/FileList.tsx:674 src/components/FileList.tsx:683 src/components/FileList.tsx:713 src/components/FileList.tsx:726 src/components/FileList.tsx:752
 msgid "Open this file"
-msgstr ""
+msgstr "פתיחת הקובץ הזה"
 
 #: src/components/FileList.tsx:370 src/components/FileList.tsx:379 src/components/FileList.tsx:448
 msgid "Unstage this change"
@@ -834,19 +834,19 @@ msgstr ""
 
 #: src/components/GitPanel.tsx:537 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:625
 msgid "Failed to set your identity. %1"
-msgstr ""
+msgstr "הגדרת הזהות שלך נכשלה. %1"
 
 #: src/components/GitPanel.tsx:577 src/components/GitPanel.tsx:608
 msgid "User refused to set identity."
-msgstr ""
+msgstr "המשתמש סרב להגדיר זהות."
 
 #: src/components/HistorySideBar.tsx:114 src/components/HistorySideBar.tsx:116
 msgid "You"
-msgstr ""
+msgstr "אני"
 
 #: src/components/HistorySideBar.tsx:122 src/components/HistorySideBar.tsx:124
 msgid "Uncommitted Changes"
-msgstr ""
+msgstr "שינויים שלא הוגשו"
 
 #: src/components/HistorySideBar.tsx:123 src/components/HistorySideBar.tsx:125
 msgid "now"
@@ -854,15 +854,15 @@ msgstr ""
 
 #: src/components/HistorySideBar.tsx:144 src/components/HistorySideBar.tsx:146
 msgid "Discard file history"
-msgstr ""
+msgstr "השלכת היסטוריית הקבצים"
 
 #: src/components/HistorySideBar.tsx:189 src/components/HistorySideBar.tsx:192
 msgid "No history found."
-msgstr ""
+msgstr "לא נמצאה היסטוריה."
 
 #: src/components/NewBranchDialog.tsx:147 src/components/NewBranchDialog.tsx:154
 msgid "Create a Branch"
-msgstr ""
+msgstr "יצירת ענף"
 
 #: src/components/NewBranchDialog.tsx:150 src/components/NewBranchDialog.tsx:157 src/components/ResetRevertDialog.tsx:130 src/components/ResetRevertDialog.tsx:132
 msgid "Close this dialog"
@@ -874,11 +874,11 @@ msgstr "שם"
 
 #: src/components/NewBranchDialog.tsx:167 src/components/NewBranchDialog.tsx:174
 msgid "Enter a branch name"
-msgstr ""
+msgstr "נא למלא שם לענף"
 
 #: src/components/NewBranchDialog.tsx:169 src/components/NewBranchDialog.tsx:176
 msgid "Create branch based on..."
-msgstr ""
+msgstr "יצירת ענף על בסיס…"
 
 #: src/components/NewBranchDialog.tsx:199 src/components/NewBranchDialog.tsx:206
 msgid "Close this dialog without creating a new branch"
@@ -886,7 +886,7 @@ msgstr ""
 
 #: src/components/NewBranchDialog.tsx:209 src/components/NewBranchDialog.tsx:216
 msgid "Create Branch"
-msgstr ""
+msgstr "יצירת ענף"
 
 #: src/components/NewBranchDialog.tsx:300
 msgid "The current branch. Pick this if you want to build on work done in this branch."
@@ -902,15 +902,15 @@ msgstr ""
 
 #: src/components/NewBranchDialog.tsx:433 src/components/NewBranchDialog.tsx:434
 msgid "Creating branch..."
-msgstr ""
+msgstr "נוצר ענף…"
 
 #: src/components/NewBranchDialog.tsx:443 src/components/NewBranchDialog.tsx:444
 msgid "Failed to create branch."
-msgstr ""
+msgstr "יצירת ענף נכשלה."
 
 #: src/components/NewBranchDialog.tsx:450 src/components/NewBranchDialog.tsx:451
 msgid "Branch created."
-msgstr ""
+msgstr "נוצר ענף."
 
 #: src/components/PastCommitNode.tsx:111
 msgid "View commit details"
@@ -926,7 +926,7 @@ msgstr ""
 
 #: src/components/ResetRevertDialog.tsx:126 src/components/ResetRevertDialog.tsx:128
 msgid "Reset Changes"
-msgstr ""
+msgstr "איפוס שינויים"
 
 #: src/components/ResetRevertDialog.tsx:139 src/components/ResetRevertDialog.tsx:141
 msgid "These changes will be reverted. Only commit if you're sure you're okay losing these changes."
@@ -938,11 +938,11 @@ msgstr ""
 
 #: src/components/ResetRevertDialog.tsx:166 src/components/ResetRevertDialog.tsx:179
 msgid "Cancel changes"
-msgstr ""
+msgstr "ביטול שינויים"
 
 #: src/components/ResetRevertDialog.tsx:174 src/components/ResetRevertDialog.tsx:187
 msgid "Submit changes"
-msgstr ""
+msgstr "הגשת שינויים"
 
 #: src/components/ResetRevertDialog.tsx:229 src/components/ResetRevertDialog.tsx:246
 msgid "Discarding changes..."
