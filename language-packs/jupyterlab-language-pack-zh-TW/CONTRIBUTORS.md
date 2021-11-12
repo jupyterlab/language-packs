@@ -7,5 +7,6 @@
 * raingel ([@raingel](https://crowdin.com/profile/raingel))
 * REMOVED_USER ([@REMOVED_USER](https://crowdin.com/profile/REMOVED_USER))
 * lydian ([@lydian](https://crowdin.com/profile/lydian))
+* Tunghsiao Liu ([@sparanoid](https://crowdin.com/profile/sparanoid))
 * Sam Li ([@sam.l](https://crowdin.com/profile/sam.l))
 * Yuhao Zhu ([@forfudan](https://crowdin.com/profile/forfudan))

@@ -3,6 +3,7 @@
 * Yuliia Pavliuk ([@pav.yulia](https://crowdin.com/profile/pav.yulia))
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
+* Valentyna_Boberska ([@Valentyna_Boberska](https://crowdin.com/profile/Valentyna_Boberska))
 * EvelinaRevenko ([@EvelinaRevenko](https://crowdin.com/profile/EvelinaRevenko))
 * khrystynaboitsun ([@khrystynaboitsun](https://crowdin.com/profile/khrystynaboitsun))
 * Oleksii Burdin ([@oleksiburdin](https://crowdin.com/profile/oleksiburdin))
@@ -12,4 +13,3 @@
 * Olia Tkachuk ([@ms_lechka](https://crowdin.com/profile/ms_lechka))
 * Serhiy Dmytryshyn ([@dies](https://crowdin.com/profile/dies))
 * d.yankovskyi ([@d.yankovskyi](https://crowdin.com/profile/d.yankovskyi))
-* Valentyna_Boberska ([@Valentyna_Boberska](https://crowdin.com/profile/Valentyna_Boberska))

@@ -96,6 +96,9 @@
     "Message": [
         "Wiadomo\u015b\u0107"
     ],
+    "Message from ": [
+        "Wiadomo\u015b\u0107 z "
+    ],
     "No installation instructions were provided with this specification.": [
         "Nie dostarczono instrukcji instalacji wraz z t\u0105 specyfikacj\u0105."
     ],
@@ -177,6 +180,9 @@
     "Virtual Document": [
         "Wirtualny dokument"
     ],
+    "Waiting for documents initialization...": [
+        "Oczekiwanie na inicjalizacj\u0119 dokument\u00f3w..."
+    ],
     "Warning": [
         "Ostrze\u017cenie"
     ],
@@ -219,6 +225,12 @@
     "schema\u0004LSP Completion settings.": [
         "Ustawienia podpowiedzi LSP."
     ],
+    "schema\u0004LSP Rename settings.": [
+        "Ustawienia zmiany nazw LSP."
+    ],
+    "schema\u0004LSP code syntax highlighting settings.": [
+        "Ustawienia pod\u015bwietlania sk\u0142adni kodu LSP."
+    ],
     "schema\u0004Language Server": [
         "Serwer j\u0119zyka"
     ],
@@ -246,6 +258,12 @@
     "settings\u0004Continuous hinting": [
         "Ci\u0105g\u0142e podpowiedzi"
     ],
+    "settings\u0004Default level of the severity for diagnostics without severity provided by the language server.": [
+        "Domy\u015blny poziom krytyczno\u015bci dla diagnostyk dla kt\u00f3rych server j\u0119zykowy nie okre\u015bli\u0142 krytyczno\u015bci."
+    ],
+    "settings\u0004Default severity level": [
+        "Domy\u015blny poziom krytyczno\u015bci"
+    ],
     "settings\u0004Diagnostic codes to ignore": [
         "Wiadomo\u015bci diagnostyczne do zignorowania"
     ],
@@ -258,11 +276,17 @@
     "settings\u0004Disable this feature. Requires reloading JupyterLab to apply changes.": [
         "Wy\u0142\u0105cz t\u0119 funkcj\u0119. Wymaga prze\u0142adowania JupyterLab aby zastosowa\u0107 zmiany."
     ],
+    "settings\u0004In case of ties when sorting completions, should the kernel completions receive higher priority than the language server completions?": [
+        "W przypadku remis\u00f3w podczas sortowania podpowiedzi, czy podpowiedzi j\u0105dra powinny mie\u0107 wy\u017cszy priorytet ni\u017c podpowiedzi serwera j\u0119zykowego?"
+    ],
     "settings\u0004Include perfect matches": [
         "Uwzgl\u0119dnij idealne dopasowania"
     ],
     "settings\u0004Kernel completion response timeout": [
         "Limit czasu na podpowiedzi z j\u0105dra"
+    ],
+    "settings\u0004Keyboard key which needs to be pressed with click to jump. The allowed keys are Alt, Control, Shift, Accel, and AltGraph. Accel corresponds to Control or Meta (Command on Mac). Linux user: Meta key is also supported. Safari users: Meta key is also supported, AltGraph is not supported. To see which physical keys are mapped, visit: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState": [
+        "Klawisz klawiatury, kt\u00f3ry nale\u017cy wcisn\u0105\u0107 razem z klikni\u0119ciem, aby skaka\u0107. Dozwolone klawisze to Alt, Control, Shift, Accel i AltGraph. Accel odpowiada Control lub Meta (Command on Mac). Dla u\u017cytkownik\u00f3w Linux: klawisz Meta jest r\u00f3wnie\u017c obs\u0142ugiwany. U\u017cytkownicy Safari: klawisze Meta jest r\u00f3wnie\u017c obs\u0142ugiwany, AltGraph nie jest obs\u0142ugiwany. Aby zobaczy\u0107, do kt\u00f3rych fizycznych klawisze zosta\u0142y zmapowane, odwied\u017a: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState"
     ],
     "settings\u0004Language Server": [
         "Serwer j\u0119zyka"
@@ -273,6 +297,9 @@
     "settings\u0004Language integration": [
         "Integracja j\u0119zyka"
     ],
+    "settings\u0004Language-server specific configuration, keyed by implementation, e.g: \n\npyls: {\n  serverSettings: {\n    pyls: {\n      plugins: {\n        pydocstyle: {\n          enabled: true\n        },\n        pyflakes: {\n          enabled: false\n        },\n        flake8: {\n          enabled: true\n        }\n      }\n    }\n  }\n}\n\nAlternatively, using VSCode's naming convention:\n\npyls: {\n  serverSettings: {\n    \"pyls.plugins.pydocstyle.enabled\": true,\n    \"pyls.plugins.pyflakes.enabled\": false,\n    \"pyls.plugins.flake8.enabled\": true\n  }\n}": [
+        "Konfiguracja dla poszczeg\u00f3lnych serwer\u00f3w j\u0119zykowych, gdzie klucze koresponduj\u0105 do implementacji serwera, na przyk\u0142ad:\n\npyls: {\n  serverSettings: {\n    pyls: {\n      plugins: {\n        pydocstyle: {\n          enabled: true\n        }\n        p\u0142atki: {\n          enabled: false\n        },\n        p\u0142atki8: {\n          enabled: true\n        }\n      }\n    }\n  }\n}\n\nAlternatywnie, u\u017cywaj\u0105c konwencji nazw VSCode:\n\npyls: {\n  serverSettings: {\n    \"pyls. lugins.pydocstyle.enabled\": true,\n    \"pyls.plugins.pyflakes.enabled\": false,\n    \"pyls.plugins.flake8.enabled\": true\n  }\n}"
+    ],
     "settings\u0004Log all LSP communication with the LSP servers": [
         "Loguj wszystkie komunikaty LSP z serwerami LSP"
     ],
@@ -282,11 +309,17 @@
     "settings\u0004Logging console verbosity level": [
         "Poziom szczeg\u00f3\u0142owo\u015bci konsoli dziennika"
     ],
+    "settings\u0004Mapping of custom kernel types to valid completion kind names": [
+        "Mapowanie niestandardowych typ\u00f3w j\u0105dra do poprawnych nazw rodzaj\u00f3w podpowiedzi"
+    ],
     "settings\u0004Mapping used for icon selection. The kernel types (keys) are case-insensitive. Accepted values are the names of CompletionItemKind and 'Kernel' literal. The defaults aim to provide good initial experience for Julia, Python and R kernels.": [
         "Mapowanie u\u017cywane do wyboru ikon. Wielko\u015b\u0107 liter dla typ\u00f3w j\u0105dra (keys) nie maj znaczenia. Akceptowane warto\u015bci to nazwy CompletionItemKind i \"Kernel\". Domy\u015blnie warto\u015bci maj\u0105 na celu zapewnienie dobrego pocz\u0105tkowego do\u015bwiadczenia dla j\u0105der Julii, Pythona i R."
     ],
     "settings\u0004Modifier key": [
         "Klawisz modyfikuj\u0105cy"
+    ],
+    "settings\u0004Number of milliseconds to delay sending out the highlights request to the language server; you can get better responsiveness adjusting this value, but setting it to zero can actually slow it down as the server might get overwhelmed when moving the cursor.": [
+        "Liczba milisekund na op\u00f3\u017anienie wys\u0142ania pro\u015bby o pod\u015bwietlenie do serwera j\u0119zykowego; mo\u017cesz uzyska\u0107 lepsz\u0105 zdolno\u015b\u0107 reagowania dostosowuj\u0105c t\u0119 warto\u015b\u0107, ale ustawienie na zero mo\u017ce w spowodowa\u0107 spowolnienie, poniewa\u017c serwer mo\u017ce zosta\u0107 przyt\u0142oczony podczas przesuwania kursora."
     ],
     "settings\u0004Prioritize completions from kernel": [
         "Nadaj wy\u017cszy priorytet podpowiedziom z j\u0105dra"
@@ -300,11 +333,20 @@
     "settings\u0004Remove highlights on editor (e.g. cell) blur": [
         "Usu\u0144 pod\u015bwietlenia po opuszczeniu edytora (np. kom\u00f3rki)"
     ],
+    "settings\u0004Should an attempt to get the kernel response (with timeout as specified by kernelResponseTimeout) be made if kernel is busy? If you often write code in notebook while computations are running for long time (e.g. training models), turning this off might give you faster response times.": [
+        "Czy powinna by\u0107 podj\u0119ta pr\u00f3ba uzyskania odpowiedzi j\u0105dra (z limitem czasu oczekiwania okre\u015blonym przez kernelResponseTimeout), je\u015bli j\u0105dro jest zaj\u0119te? Je\u015bli cz\u0119sto piszesz kod w notatniku, podczas gdy obliczenia dzia\u0142aj\u0105 przez d\u0142ugi czas (n.p. trenuj\u0105c modele), wy\u0142\u0105czenie tej opcji mo\u017ce da\u0107 szybszy czas reakcji."
+    ],
     "settings\u0004Should completion filtering be case-sensitive?": [
         "Czy filtrowanie podpowiedzi autouzupe\u0142niania powinno uwzgl\u0119dnia\u0107 wielko\u015b\u0107 liter?"
     ],
     "settings\u0004Show documentation box": [
         "Poka\u017c pole dokumentacji"
+    ],
+    "settings\u0004Suppress invoke via trigger character in specific code fragments": [
+        "Zahamuj wywo\u0142ywanie przez znak wyzwalaj\u0105cy w okre\u015blonych fragmentach kodu"
+    ],
+    "settings\u0004Text to display next to completion label": [
+        "Tekst wy\u015bwietlany obok etykiety podpowiedzi"
     ],
     "settings\u0004The console to use for debugging problems with this extension. Allowed values are: browser, floating.": [
         "Konsola do debugowania problem\u00f3w z tym rozszerzeniem. Dozwolone warto\u015bci to: browser, floating."
@@ -320,6 +362,9 @@
     ],
     "settings\u0004Wait for kernel if busy": [
         "Czekaj na j\u0105dro je\u015bli zaj\u0119te"
+    ],
+    "settings\u0004What to display next to the completion label, one of: 'detail', 'type', 'source', 'auto'. The default 'auto' will display whichever information is available.": [
+        "Co wy\u015bwietla\u0107 obok etykiety uzupe\u0142niaj\u0105cej, jedno z: 'detail', 'type', 'source', 'auto'. Domy\u015blne 'auto' wy\u015bwietli cokolwiek b\u0119dzie dost\u0119pne."
     ],
     "settings\u0004Whether all messages sent to and received from LSP servers should be logged into the console. To see these messages, set loggingLevel to debug or log. Note: Only messages handled by the new API will be shown.": [
         "Czy wszystkie wiadomo\u015bci wysy\u0142ane i odbierane z serwer\u00f3w LSP powinny by\u0107 zalogowane do konsoli. Aby zobaczy\u0107 te wiadomo\u015bci, ustaw loggingLevel na debug lub log. Uwaga: Wy\u015bwietlane b\u0119d\u0105 tylko wiadomo\u015bci obs\u0142ugiwane przez nowe API."
