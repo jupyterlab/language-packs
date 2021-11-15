@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 97\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2021-11-15 19:11\n"
+"PO-Revision-Date: 2021-11-15 20:12\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
@@ -224,7 +224,7 @@ msgid_plural "Ignore %2 extensions (add to .gitignore)"
 msgstr[0] "Ігнорувати розширення %2 (додати до .gitignore)"
 msgstr[1] "Ігнорувати розширення %2 (додати до .gitignore)"
 msgstr[2] ""
-msgstr[3] "Ігнорувати розширення %2 (додати до .gitignore)"
+msgstr[3] "Ігнорувати усі розширення %2 (додати до .gitignore)"
 
 #: src/commandsAndMenu.tsx:1051 src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:854 src/commandsAndMenu.tsx:860 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:885 src/commandsAndMenu.tsx:886 src/commandsAndMenu.tsx:987
 msgid "Ignore this file extension (add to .gitignore)"
@@ -672,27 +672,27 @@ msgstr "(відсутнє повідомлення)"
 
 #: src/components/BranchMenu.tsx:148 src/components/BranchMenu.tsx:154
 msgid "The current branch contains files with uncommitted changes. Please commit or discard these changes before switching to or creating another branch."
-msgstr ""
+msgstr "Поточка гілка містить файли з непідтвердженими змінами. Будь ласка, підтвердьте або скасуйте ці зміни до того, як перейти або створити іншу гілку."
 
 #: src/components/BranchMenu.tsx:195 src/components/BranchMenu.tsx:201 src/components/MergeBranchDialog.tsx:138 src/components/NewBranchDialog.tsx:177 src/components/NewBranchDialog.tsx:184 src/components/TagMenu.tsx:189
 msgid "Filter"
-msgstr ""
+msgstr "Фільтр"
 
 #: src/components/BranchMenu.tsx:196 src/components/BranchMenu.tsx:202 src/components/NewBranchDialog.tsx:178 src/components/NewBranchDialog.tsx:185 src/components/TagMenu.tsx:190
 msgid "Filter branch menu"
-msgstr ""
+msgstr "Меню фільтру гілки"
 
 #: src/components/BranchMenu.tsx:201 src/components/BranchMenu.tsx:207 src/components/MergeBranchDialog.tsx:144 src/components/NewBranchDialog.tsx:183 src/components/NewBranchDialog.tsx:190 src/components/TagMenu.tsx:195
 msgid "Clear the current filter"
-msgstr ""
+msgstr "Очистити поточний фільтр"
 
 #: src/components/BranchMenu.tsx:211 src/components/BranchMenu.tsx:217 src/components/NewBranchDialog.tsx:208 src/components/NewBranchDialog.tsx:215
 msgid "Create a new branch"
-msgstr ""
+msgstr "Створити нову гілку"
 
 #: src/components/BranchMenu.tsx:212 src/components/BranchMenu.tsx:218
 msgid "New Branch"
-msgstr ""
+msgstr "Нова гілка"
 
 #: src/components/BranchMenu.tsx:261 src/components/BranchMenu.tsx:269
 msgid "Switch to branch: %1"
@@ -720,43 +720,43 @@ msgstr "Цю дію не можна скасувати."
 
 #: src/components/BranchMenu.tsx:366 src/components/BranchMenu.tsx:398
 msgid "Creating a new branch is disabled"
-msgstr ""
+msgstr "Створення нової гілки вимкнено"
 
 #: src/components/BranchMenu.tsx:51 src/components/BranchMenu.tsx:52
 msgid "Unable to switch branch"
-msgstr ""
+msgstr "Неможливо змінити гілку"
 
 #: src/components/BranchMenu.tsx:55 src/components/BranchMenu.tsx:56 src/components/TagMenu.tsx:49
 msgid "Your changes to the following files would be overwritten by switching:"
-msgstr ""
+msgstr "Ваші зміни в наступних файлах будуть перезаписані через переключення:"
 
 #: src/components/BranchMenu.tsx:63 src/components/BranchMenu.tsx:64
 msgid "Please commit, stash, or discard your changes before you switch branches."
-msgstr ""
+msgstr "Будь ласка, підтвердьте, припиніть або скасуйте ваші зміни до того, як переключити гілки."
 
 #: src/components/BranchMenu.tsx:74 src/components/BranchMenu.tsx:75
 msgid "Failed to switch branch."
-msgstr ""
+msgstr "Не вдалося переключити гілки."
 
 #: src/components/CommitBox.tsx:100 src/components/CommitBox.tsx:101 src/components/CommitBox.tsx:178
 msgid "Disabled: No commit message summary"
-msgstr ""
+msgstr "Вимкнено: Відсутнє підсумкове повідомлення commit"
 
 #: src/components/CommitBox.tsx:106 src/components/CommitBox.tsx:107 src/components/CommitBox.tsx:184
 msgid "Summary (%1 to commit)"
-msgstr ""
+msgstr "Підсумок (%1 для commit)"
 
 #: src/components/CommitBox.tsx:116 src/components/CommitBox.tsx:117 src/components/CommitMessage.tsx:117 src/components/ResetRevertDialog.tsx:155
 msgid "Enter a commit message summary (a single line, preferably less than 50 characters)"
-msgstr ""
+msgstr "Введіть підсумкове повідомлення commit (один рядок, бажано менше 50-ти символів)"
 
 #: src/components/CommitBox.tsx:126 src/components/CommitBox.tsx:127 src/components/CommitMessage.tsx:140
 msgid "Description (optional)"
-msgstr ""
+msgstr "Опис (необов'язково)"
 
 #: src/components/CommitBox.tsx:127 src/components/CommitBox.tsx:128 src/components/CommitMessage.tsx:147 src/components/ResetRevertDialog.tsx:165
 msgid "Enter a commit message description"
-msgstr ""
+msgstr "Введіть опис до підсумкового повідомлення commit"
 
 #: src/components/CommitBox.tsx:141
 msgid "Create a new commit"
@@ -776,7 +776,7 @@ msgstr "Індексовані зміни буде додано до попер�
 
 #: src/components/CommitBox.tsx:176 src/components/CommitBox.tsx:98 src/components/CommitBox.tsx:99
 msgid "Disabled: No files are staged for commit"
-msgstr ""
+msgstr "Вимкнено: Немає індексованих файлів для commit"
 
 #: src/components/CommitMessage.tsx:114 src/components/CommitMessage.tsx:144
 msgid "Amending the commit will re-use the previous commit summary"
@@ -808,7 +808,7 @@ msgstr "Не вдалося скасувати всі зміни."
 
 #: src/components/FileList.tsx:363 src/components/FileList.tsx:372 src/components/FileList.tsx:440 src/components/FileList.tsx:441 src/components/FileList.tsx:450 src/components/FileList.tsx:459 src/components/FileList.tsx:527 src/components/FileList.tsx:528 src/components/FileList.tsx:549 src/components/FileList.tsx:558 src/components/FileList.tsx:626 src/components/FileList.tsx:627 src/components/FileList.tsx:635 src/components/FileList.tsx:644 src/components/FileList.tsx:648 src/components/FileList.tsx:657 src/components/FileList.tsx:674 src/components/FileList.tsx:683 src/components/FileList.tsx:710 src/components/FileList.tsx:713 src/components/FileList.tsx:726 src/components/FileList.tsx:752 src/components/FileList.tsx:790 src/components/FileList.tsx:803 src/components/FileList.tsx:829
 msgid "Open this file"
-msgstr ""
+msgstr "Відкрийте цей файл"
 
 #: src/components/FileList.tsx:370 src/components/FileList.tsx:379 src/components/FileList.tsx:447 src/components/FileList.tsx:448
 msgid "Unstage this change"
@@ -816,47 +816,47 @@ msgstr ""
 
 #: src/components/FileList.tsx:404 src/components/FileList.tsx:405
 msgid "Conflicted"
-msgstr ""
+msgstr "Конфлікт"
 
 #: src/components/FileList.tsx:408 src/components/FileList.tsx:417 src/components/FileList.tsx:485 src/components/FileList.tsx:486
 msgid "Unstage all changes"
-msgstr ""
+msgstr "Не індексувати всі зміни"
 
 #: src/components/FileList.tsx:414 src/components/FileList.tsx:423 src/components/FileList.tsx:491 src/components/FileList.tsx:492
 msgid "Staged"
-msgstr ""
+msgstr "Індексовано"
 
 #: src/components/FileList.tsx:465 src/components/FileList.tsx:474 src/components/FileList.tsx:542 src/components/FileList.tsx:543
 msgid "Stage this change"
-msgstr ""
+msgstr "Індексувати цю зміну"
 
 #: src/components/FileList.tsx:505 src/components/FileList.tsx:514 src/components/FileList.tsx:582 src/components/FileList.tsx:583 src/components/FileList.tsx:724 src/components/FileList.tsx:733 src/components/FileList.tsx:802 src/components/FileList.tsx:879
 msgid "Discard All Changes"
-msgstr ""
+msgstr "Скасувати всі зміни"
 
 #: src/components/FileList.tsx:512 src/components/FileList.tsx:521 src/components/FileList.tsx:589 src/components/FileList.tsx:590
 msgid "Stage all changes"
-msgstr ""
+msgstr "Проіндексувати всі зміни"
 
 #: src/components/FileList.tsx:518 src/components/FileList.tsx:527 src/components/FileList.tsx:595 src/components/FileList.tsx:596 src/components/FileList.tsx:728 src/components/FileList.tsx:737 src/components/FileList.tsx:806 src/components/FileList.tsx:883 src/components/SinglePastCommitInfo.tsx:197 src/components/SinglePastCommitInfo.tsx:208 src/components/SinglePastCommitInfo.tsx:210
 msgid "Changed"
-msgstr ""
+msgstr "Змінено"
 
 #: src/components/FileList.tsx:559 src/components/FileList.tsx:568 src/components/FileList.tsx:636 src/components/FileList.tsx:637
 msgid "Track this file"
-msgstr ""
+msgstr "Відстежити цей файл"
 
 #: src/components/FileList.tsx:597 src/components/FileList.tsx:606 src/components/FileList.tsx:674 src/components/FileList.tsx:675
 msgid "Track all untracked files"
-msgstr ""
+msgstr "Відстежувати усі файли без відслідковувань"
 
 #: src/components/FileList.tsx:602 src/components/FileList.tsx:611 src/components/FileList.tsx:679 src/components/FileList.tsx:680
 msgid "Untracked"
-msgstr ""
+msgstr "Не відстежується"
 
 #: src/components/FileList.tsx:749 src/components/FileList.tsx:758 src/components/FileList.tsx:827 src/components/FileList.tsx:904
 msgid "Diff this file"
-msgstr ""
+msgstr "Виконати Diff для файла"
 
 #: src/components/FileList.tsx:751
 msgid "Pull from remote branch"
@@ -868,7 +868,7 @@ msgstr ""
 
 #: src/components/GitPanel.tsx:216 src/components/GitPanel.tsx:506 src/components/GitPanel.tsx:533 src/components/GitPanel.tsx:547
 msgid "Staging files..."
-msgstr ""
+msgstr "Індексування файлів..."
 
 #: src/components/GitPanel.tsx:237 src/components/GitPanel.tsx:523 src/components/GitPanel.tsx:550 src/components/GitPanel.tsx:564
 msgid "Failed to commit changes."
@@ -884,27 +884,27 @@ msgstr ""
 
 #: src/components/GitPanel.tsx:333 src/components/GitPanel.tsx:347 src/components/GitPanel.tsx:352 src/components/GitPanel.tsx:359
 msgid "View changed files"
-msgstr ""
+msgstr "Показати змінені файли"
 
 #: src/components/GitPanel.tsx:334 src/components/GitPanel.tsx:348 src/components/GitPanel.tsx:353 src/components/GitPanel.tsx:360
 msgid "Changes"
-msgstr ""
+msgstr "Зміни"
 
 #: src/components/GitPanel.tsx:343 src/components/GitPanel.tsx:357 src/components/GitPanel.tsx:362 src/components/GitPanel.tsx:369
 msgid "View commit history"
-msgstr ""
+msgstr "Переглянути історію операції commit"
 
 #: src/components/GitPanel.tsx:364 src/components/GitPanel.tsx:378 src/components/GitPanel.tsx:383 src/components/GitPanel.tsx:390
 msgid "Commit and Push"
-msgstr ""
+msgstr "Виконати та надіслати"
 
 #: src/components/GitPanel.tsx:365 src/components/GitPanel.tsx:379 src/components/GitPanel.tsx:384 src/components/GitPanel.tsx:391
 msgid "Commit"
-msgstr ""
+msgstr "Commit"
 
 #: src/components/GitPanel.tsx:426 src/components/GitPanel.tsx:442 src/components/GitPanel.tsx:447 src/components/GitPanel.tsx:454
 msgid "is not"
-msgstr ""
+msgstr "не є"
 
 #: src/components/GitPanel.tsx:429 src/components/GitPanel.tsx:445 src/components/GitPanel.tsx:450 src/components/GitPanel.tsx:457
 msgid "You are not currently in"
@@ -916,11 +916,11 @@ msgstr ""
 
 #: src/components/GitPanel.tsx:439 src/components/GitPanel.tsx:455 src/components/GitPanel.tsx:460 src/components/GitPanel.tsx:467
 msgid "Open the FileBrowser"
-msgstr ""
+msgstr "Відкрити FileBrowser"
 
 #: src/components/GitPanel.tsx:513 src/components/GitPanel.tsx:571 src/components/GitPanel.tsx:602 src/components/GitPanel.tsx:616
 msgid "Who is committing?"
-msgstr ""
+msgstr "Хто робить зміни?"
 
 #: src/components/GitPanel.tsx:537 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:625 src/components/GitPanel.tsx:639
 msgid "Failed to set your identity. %1"
@@ -936,11 +936,11 @@ msgstr ""
 
 #: src/components/GitPanel.tsx:694
 msgid "Continue Without Pulling"
-msgstr ""
+msgstr "Продовжити без перетягування"
 
 #: src/components/GitPanel.tsx:697
 msgid "Pull"
-msgstr ""
+msgstr "Pull"
 
 #: src/components/GitPanel.tsx:698
 msgid "Git Pull from Remote Branch"
@@ -960,7 +960,7 @@ msgstr ""
 
 #: src/components/HistorySideBar.tsx:123 src/components/HistorySideBar.tsx:125
 msgid "now"
-msgstr ""
+msgstr "зараз"
 
 #: src/components/HistorySideBar.tsx:144 src/components/HistorySideBar.tsx:146
 msgid "Discard file history"
@@ -968,7 +968,7 @@ msgstr ""
 
 #: src/components/HistorySideBar.tsx:189 src/components/HistorySideBar.tsx:192
 msgid "No history found."
-msgstr ""
+msgstr "Не знайдено історію."
 
 #: src/components/MergeBranchDialog.tsx:114
 msgid "Merge Branch"
@@ -976,7 +976,7 @@ msgstr ""
 
 #: src/components/MergeBranchDialog.tsx:117 src/components/NewBranchDialog.tsx:150 src/components/NewBranchDialog.tsx:157 src/components/ResetRevertDialog.tsx:130 src/components/ResetRevertDialog.tsx:132
 msgid "Close this dialog"
-msgstr ""
+msgstr "Закрити це вікно"
 
 #: src/components/MergeBranchDialog.tsx:127
 msgid "Select the branch to merge in %1"
@@ -1008,15 +1008,15 @@ msgstr ""
 
 #: src/components/NewBranchDialog.tsx:160 src/components/NewBranchDialog.tsx:167
 msgid "Name"
-msgstr ""
+msgstr "Ім'я"
 
 #: src/components/NewBranchDialog.tsx:167 src/components/NewBranchDialog.tsx:174
 msgid "Enter a branch name"
-msgstr ""
+msgstr "Введіть ім'я гілки"
 
 #: src/components/NewBranchDialog.tsx:169
 msgid "Create branch based on…"
-msgstr ""
+msgstr "Створити гілку на основі…"
 
 #: src/components/NewBranchDialog.tsx:169 src/components/NewBranchDialog.tsx:176
 msgid "Create branch based on..."
@@ -1040,35 +1040,35 @@ msgstr ""
 
 #: src/components/NewBranchDialog.tsx:433 src/components/NewBranchDialog.tsx:434
 msgid "Creating branch..."
-msgstr ""
+msgstr "Створення гілки..."
 
 #: src/components/NewBranchDialog.tsx:434
 msgid "Creating branch…"
-msgstr ""
+msgstr "Створення гілки…"
 
 #: src/components/NewBranchDialog.tsx:443 src/components/NewBranchDialog.tsx:444
 msgid "Failed to create branch."
-msgstr ""
+msgstr "Не вдалося створити гілку."
 
 #: src/components/NewBranchDialog.tsx:450 src/components/NewBranchDialog.tsx:451
 msgid "Branch created."
-msgstr ""
+msgstr "Створено гілку."
 
 #: src/components/PastCommitNode.tsx:111
 msgid "View commit details"
-msgstr ""
+msgstr "Показати деталі коміту"
 
 #: src/components/PastCommitNode.tsx:112 src/components/SinglePastCommitInfo.tsx:273 src/components/SinglePastCommitInfo.tsx:284 src/components/SinglePastCommitInfo.tsx:287
 msgid "View file changes"
-msgstr ""
+msgstr "Переглянути зміни файлу"
 
 #: src/components/ResetRevertDialog.tsx:125 src/components/ResetRevertDialog.tsx:127
 msgid "Revert Changes"
-msgstr ""
+msgstr "Скасувати зміни"
 
 #: src/components/ResetRevertDialog.tsx:126 src/components/ResetRevertDialog.tsx:128
 msgid "Reset Changes"
-msgstr ""
+msgstr "Відновити зміни"
 
 #: src/components/ResetRevertDialog.tsx:139 src/components/ResetRevertDialog.tsx:141
 msgid "These changes will be reverted. Only commit if you're sure you're okay losing these changes."
@@ -1080,15 +1080,15 @@ msgstr ""
 
 #: src/components/ResetRevertDialog.tsx:166 src/components/ResetRevertDialog.tsx:179
 msgid "Cancel changes"
-msgstr ""
+msgstr "Скасувати зміни"
 
 #: src/components/ResetRevertDialog.tsx:174 src/components/ResetRevertDialog.tsx:187
 msgid "Submit changes"
-msgstr ""
+msgstr "Підтвердити зміни"
 
 #: src/components/ResetRevertDialog.tsx:229
 msgid "Discarding changes…"
-msgstr ""
+msgstr "Скасування змін…"
 
 #: src/components/ResetRevertDialog.tsx:229 src/components/ResetRevertDialog.tsx:246
 msgid "Discarding changes..."
@@ -1168,31 +1168,31 @@ msgstr ""
 
 #: src/components/TagMenu.tsx:68
 msgid "Failed to checkout tag."
-msgstr ""
+msgstr "Не вдалося перевірити тег."
 
 #: src/components/Toolbar.tsx:173
 msgid "Pull latest changes"
-msgstr ""
+msgstr "Перетягнути останні зміни"
 
 #: src/components/Toolbar.tsx:175
 msgid " (behind by %1 commits)"
-msgstr ""
+msgstr " (позаду на %1 комітів)"
 
 #: src/components/Toolbar.tsx:180 src/components/Toolbar.tsx:208
 msgid "No remote repository defined"
-msgstr ""
+msgstr "Віддалене сховище не було визначено"
 
 #: src/components/Toolbar.tsx:200
 msgid "Push committed changes"
-msgstr ""
+msgstr "Надіслати внесені зміни"
 
 #: src/components/Toolbar.tsx:202
 msgid " (ahead by %1 commits)"
-msgstr ""
+msgstr " (попереду на %1 комітів)"
 
 #: src/components/Toolbar.tsx:207
 msgid "Publish branch"
-msgstr ""
+msgstr "Опублікувати гілку"
 
 #: src/components/Toolbar.tsx:217
 msgid "Refresh the repository to detect local and remote changes"
@@ -1200,31 +1200,31 @@ msgstr "Оновити сховище для виявлення локальни
 
 #: src/components/Toolbar.tsx:236 src/components/Toolbar.tsx:240
 msgid "Current repository: %1"
-msgstr ""
+msgstr "Поточне сховище: %1"
 
 #: src/components/Toolbar.tsx:245 src/components/Toolbar.tsx:248
 msgid "Current Repository"
-msgstr ""
+msgstr "Поточне сховище"
 
 #: src/components/Toolbar.tsx:272 src/components/Toolbar.tsx:273
 msgid "Manage branches and tags"
-msgstr ""
+msgstr "Керувати гілками та тегами"
 
 #: src/components/Toolbar.tsx:278 src/components/Toolbar.tsx:279
 msgid "Current Branch"
-msgstr ""
+msgstr "Поточна гілка"
 
 #: src/components/Toolbar.tsx:315 src/components/Toolbar.tsx:316
 msgid "View branches"
-msgstr ""
+msgstr "Переглянути гілки"
 
 #: src/components/Toolbar.tsx:316 src/components/Toolbar.tsx:317
 msgid "Branches"
-msgstr ""
+msgstr "Гілки"
 
 #: src/components/Toolbar.tsx:325 src/components/Toolbar.tsx:326
 msgid "View tags"
-msgstr ""
+msgstr "Переглянути теги"
 
 #: src/components/Toolbar.tsx:326 src/components/Toolbar.tsx:327
 msgid "Tags"
@@ -1292,38 +1292,39 @@ msgstr "версія команди git повинна бути >2; отрима
 
 #: src/index.ts:109 src/index.ts:113 src/index.ts:115 src/index.ts:116
 msgid "The versions of the JupyterLab Git server frontend and backend do not match. The @jupyterlab/git frontend extension has version: %1 while the python package has version %2. Please install identical version of jupyterlab-git Python package and the @jupyterlab/git extension. Try running: pip install --upgrade jupyterlab-git"
-msgstr ""
+msgstr "Фронтенд і бекенд версії JupyterLab Git сервера не збігаються. Фронтенд розширення @jupyterlab/git містить версію: %1 коли пайтон пакет має версію %2. Будь ласка, встановіть однакову версію пакету jupyterlab-git Python та розширення @jupyterlab/git. Спробуйте виконати: pip install --upgrade jupyterlab-git"
 
 #: src/index.ts:126 src/index.ts:130 src/index.ts:132 src/index.ts:133
 msgid "Failed to load the jupyterlab-git server extension"
-msgstr ""
+msgstr "Не вдалося завантажити серверне розширення jupyterlab-git"
 
 #: src/index.ts:128 src/index.ts:129
 msgid "Failed to load the jupyterlab-git server extension settings"
-msgstr ""
+msgstr "Не вдалося завантажити налаштування розширення jupyterlab-git сервера"
 
 #: src/index.ts:90 src/index.ts:91
 msgid "Failed to load settings for the Git Extension.\n"
 "%1"
-msgstr ""
+msgstr "Не вдалося завантажити параметри розширення Git.\n"
+"%1"
 
 #: src/server.ts:27
 msgid "Git server extension is unavailable. Please ensure you have installed the JupyterLab Git server extension by running: pip install --upgrade jupyterlab-git. To confirm that the server extension is installed, run: jupyter server extension list."
-msgstr ""
+msgstr "Серверне розширення Git є недоступним. Будь ласка, переконайтесь, що ви встановили серверне розширення Git, виконуючи: встановити pip --оновити jupyterlab-git. Для підтвердження того, що серверне розширення було встановлено, запустіть: список серверних розширень jupyter."
 
 #: src/widgets/CredentialsBox.tsx:36 src/widgets/CredentialsBox.tsx:37
 msgid "username"
-msgstr ""
+msgstr "ім'я користувача"
 
 #: src/widgets/CredentialsBox.tsx:37 src/widgets/CredentialsBox.tsx:38
 msgid "password / personal access token"
-msgstr ""
+msgstr "пароль / токен персонального доступу"
 
 #: src/widgets/GitCloneForm.ts:30
 msgid "Enter the Clone URI of the repository"
-msgstr ""
+msgstr "Введіть клоновану URL-адресу сховища"
 
 #: src/widgets/discardAllChanges.ts:18
 msgid "Your current changes forbid pulling the latest changes. Do you want to permanently discard those changes? This action cannot be undone."
-msgstr ""
+msgstr "Ваші поточні зміни перешкоджають перетяганню попередніх змін. Чи хочете ви назавжди скасувати ті зміни? Ця дія є незворотньою."
 
