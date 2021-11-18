@@ -6,3 +6,4 @@
 * Koen Van Noten ([@koenvannoten](https://crowdin.com/profile/koenvannoten))
 * Wouter Saelens ([@zouter](https://crowdin.com/profile/zouter))
 * Jan Genoe ([@JanGenoe](https://crowdin.com/profile/JanGenoe))
+* ba-tno ([@ba-tno](https://crowdin.com/profile/ba-tno))
