@@ -1,7 +1,7 @@
 # Contributors
 
-* Lê Hoàng Manh ([@vuaphapthuat410](https://crowdin.com/profile/vuaphapthuat410))
 * Vu Nguyen ([@vumnguyenn](https://crowdin.com/profile/vumnguyenn))
+* Lê Hoàng Manh ([@vuaphapthuat410](https://crowdin.com/profile/vuaphapthuat410))
 * TrMiNa ([@TrMiNa](https://crowdin.com/profile/TrMiNa))
 * Thai Pham ([@phamthaiide](https://crowdin.com/profile/phamthaiide))
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
