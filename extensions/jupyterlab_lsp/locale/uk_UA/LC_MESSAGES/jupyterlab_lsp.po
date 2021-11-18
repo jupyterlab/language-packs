@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 99\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2021-11-18 10:13\n"
+"PO-Revision-Date: 2021-11-18 11:26\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
@@ -72,82 +72,82 @@ msgstr "Включати ідеальні збіги"
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/kernelCompletionsFirst/description
 msgctxt "settings"
 msgid "In case of ties when sorting completions, should the kernel completions receive higher priority than the language server completions?"
-msgstr ""
+msgstr "У разі зв'язків при сортуванні доповнень, чи повинні доповнення ядра займати вищу позицію за доповнення мовних серверів?"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/kernelCompletionsFirst/title
 msgctxt "settings"
 msgid "Prioritize completions from kernel"
-msgstr ""
+msgstr "Пріорітет доповнень з ядра"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/kernelResponseTimeout/description
 msgctxt "settings"
 msgid "The time to wait for the kernel completions suggestions in milliseconds. Set to 0 to disable kernel completions, or to -1 to wait indefinitely (not recommended)."
-msgstr ""
+msgstr "Час очікування пропозицій доповнень ядра в мілісекундах. Встановіть 0, щоб вимкнути доповнення ядра або -1, щоб очікувати невизначений час (не рекомендовано)."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/kernelResponseTimeout/title
 msgctxt "settings"
 msgid "Kernel completion response timeout"
-msgstr ""
+msgstr "Час очікування результату заповнення ядра"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/labelExtra/description
 msgctxt "settings"
 msgid "What to display next to the completion label, one of: 'detail', 'type', 'source', 'auto'. The default 'auto' will display whichever information is available."
-msgstr ""
+msgstr "Що відображати поруч із позначкою доповнень: 'detail', 'type', 'source', 'auto'. 'Auto' за замовчуванням буду відображати будь-яку доступну інформацію."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/labelExtra/title
 msgctxt "settings"
 msgid "Text to display next to completion label"
-msgstr ""
+msgstr "Текст для відображення поруч з позначкою доповнень"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/showDocumentation/description
 msgctxt "settings"
 msgid "Whether to show documentation box next to the completion suggestions."
-msgstr ""
+msgstr "Визначає, чи показувати вікно документації поруч з пропозиціями доповнення."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/showDocumentation/title
 msgctxt "settings"
 msgid "Show documentation box"
-msgstr ""
+msgstr "Показати вікно документації"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/suppressContinuousHintingIn/description
 msgctxt "settings"
 msgid "An array of CodeMirror tokens for which the continuous hinting should be suppressed. The token names vary between languages (modes)."
-msgstr ""
+msgstr "Масив токенів CodeMirror, для яких будуть заборонені безперервні підказки. Імена токенів змінюються між мовами (режимами)."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/suppressContinuousHintingIn/title
 msgctxt "settings"
 msgid "Suppress invoke continuous hinting in specific code fragments"
-msgstr ""
+msgstr "Заборонити виклик безперервних підказок у специфічних фрагментах коду"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/suppressTriggerCharacterIn/description
 msgctxt "settings"
 msgid "An array of CodeMirror tokens for which the auto-invoke after entering a trigger (e.g. `.` in Python or `::` in R) character should be suppressed. The token names vary between languages (modes)."
-msgstr ""
+msgstr "Масив токенів CodeMirror, для яких буде заборонено автоматичний виклик підказок після введення тригерів (наприклад,`.` в Python або `::` в R). Імена токенів змінюються між мовами (режимами)."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/suppressTriggerCharacterIn/title
 msgctxt "settings"
 msgid "Suppress invoke via trigger character in specific code fragments"
-msgstr ""
+msgstr "Заборонити виклик підказок за допомогою тригерів в специфічних фрагментах коду"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/theme/description
 msgctxt "settings"
 msgid "The identifier of a completer theme with icons which indicate the kind of completion. Set to null to disable icons. Search for 'completer themes' in the command palette for a command displaying available themes."
-msgstr ""
+msgstr "Визначення теми доповнювача з іконками, які вказують на тип доповнень. Встановіть 0, щоб прибрати іконки. Шукайте \"completer themes\" в командній панелі, щоб знайти команду, яка відображає доступні тем."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/theme/title
 msgctxt "settings"
 msgid "Completer theme"
-msgstr ""
+msgstr "Тема доповнювача"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/typesMap/description
 msgctxt "settings"
 msgid "Mapping used for icon selection. The kernel types (keys) are case-insensitive. Accepted values are the names of CompletionItemKind and 'Kernel' literal. The defaults aim to provide good initial experience for Julia, Python and R kernels."
-msgstr ""
+msgstr "\"Mapping\" використовується для вибору іконок. Типи ядра (клавіші) не чутливі до регістру. Допустимі значення - CompletionItemKind та буквально 'Kernel'. Значення за замовчуванням мають на меті надати гарний первісний досвід для ядер Julia, Python та R."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/typesMap/title
 msgctxt "settings"
 msgid "Mapping of custom kernel types to valid completion kind names"
-msgstr ""
+msgstr "Налаштування типів ядра для коректного заповнення назв подібного роду"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/waitForBusyKernel/description
 msgctxt "settings"
@@ -157,7 +157,7 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/waitForBusyKernel/title
 msgctxt "settings"
 msgid "Wait for kernel if busy"
-msgstr ""
+msgstr "Чекати на ядро, якщо воно зайнято"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/title
 msgctxt "schema"
@@ -167,7 +167,7 @@ msgstr "Завершення коду"
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/description
 msgctxt "schema"
 msgid "LSP Diagnostics (linter results) settings."
-msgstr ""
+msgstr "Налаштування діагностики LSP (внутрішні результати)."
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/defaultSeverity/description
 msgctxt "settings"
@@ -187,7 +187,7 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/ignoreCodes/title
 msgctxt "settings"
 msgid "Diagnostic codes to ignore"
-msgstr ""
+msgstr "Ігнорувати такі коди діагностики"
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/ignoreMessagesPatterns/description
 msgctxt "settings"
@@ -232,12 +232,12 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/highlights.json:/title
 msgctxt "schema"
 msgid "Code Highlights"
-msgstr ""
+msgstr "Підсвічування коду"
 
 #: /packages/jupyterlab-lsp/schema/hover.json:/description
 msgctxt "schema"
 msgid "LSP Hover over the code tooltip settings."
-msgstr ""
+msgstr "LSP Hover над налаштуваннями підказок коду."
 
 #: /packages/jupyterlab-lsp/schema/hover.json:/properties/cacheSize/description
 msgctxt "settings"
@@ -292,7 +292,7 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/plugin.json:/definitions/language-server/properties/priority/title
 msgctxt "settings"
 msgid "Priority of the server"
-msgstr ""
+msgstr "Пріоритет сервера"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:/definitions/language-server/properties/serverSettings/description
 msgctxt "settings"
@@ -302,7 +302,7 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/plugin.json:/definitions/language-server/properties/serverSettings/title
 msgctxt "settings"
 msgid "Language Server Configurations"
-msgstr ""
+msgstr "Налаштування мовного сервера"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:/description
 msgctxt "schema"
@@ -447,42 +447,45 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/title
 msgctxt "schema"
 msgid "Code Syntax"
-msgstr ""
+msgstr "Синтаксис коду"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:238
 msgid "Failed to load language server spec finder `{}`: \n"
 "{}"
-msgstr ""
+msgstr "Не вдалося завантажити мовний сервер специфікації пошуку `{}`: \n"
+"{}"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:248
 msgid "Skipping non-installed server: `{}`"
-msgstr ""
+msgstr "Пропускати невстановлений сервер: `{}`"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254
 msgid "Failed to fetch commands from language server spec finder `{}`:\n"
 "{}"
-msgstr ""
+msgstr "Не вдалося отримати команди від мовного серверу специфікації пошуку `{}`:\n"
+"{}"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267
 msgid "Failed to validate commands from language server spec finder `{}`:\n"
 "{}"
-msgstr ""
+msgstr "Не вдалося підтвердити команди від мовного серверу специфікації пошуку `{}`:\n"
+"{}"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:279
 msgid "Skipped non-installed server(s): {}"
-msgstr ""
+msgstr "Пропущені невстановлені сервер(и): {}"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:41
 msgid "extra language server specs, keyed by implementation, from conf.d"
-msgstr ""
+msgstr "додаткові специфікації мовного серверу з conf.d, запрограмовані в реалізацї"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46
 msgid "a dict of language server specs, keyed by implementation"
-msgstr ""
+msgstr "словник специфікації мовного сервера, запрограмовані в реалізацї"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:52
 msgid "try to find known language servers in sys.prefix (and elsewhere)"
-msgstr ""
+msgstr "спроба знайти відомі мовні сервери в sys.prefix (і в інших місцях)"
 
 #: /python_packages/jupyter_lsp/jupyter_lsp/types.py:193
 msgid "path to nodejs executable"
@@ -498,39 +501,39 @@ msgstr ""
 
 #: packages/completion-theme/src/about.tsx:47
 msgid " (current)"
-msgstr ""
+msgstr " (поточний)"
 
 #: packages/completion-theme/src/about.tsx:54
 msgid "Licence: "
-msgstr ""
+msgstr "Ліцензія: "
 
 #: packages/completion-theme/src/about.tsx:60
 msgid "Includes dedicated dark mode icons set"
-msgstr ""
+msgstr "Включає в себе набір іконок для темного режиму"
 
 #: packages/completion-theme/src/index.ts:152
 msgid "LSP Completer Themes"
-msgstr ""
+msgstr "Теми доповнювача LSP"
 
 #: packages/completion-theme/src/index.ts:158
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: packages/completion-theme/src/index.ts:189 packages/completion-theme/src/index.ts:190
 msgid "Display the completer themes"
-msgstr ""
+msgstr "Відображати теми доповнювача"
 
 #: packages/jupyterlab-lsp/src/adapters/adapter.ts:388 packages/jupyterlab-lsp/src/adapters/adapter.ts:397 packages/jupyterlab-lsp/src/adapters/adapter.ts:409 packages/jupyterlab-lsp/src/adapters/adapter.ts:418
 msgid "Message from "
-msgstr ""
+msgstr "Повідомлення від "
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:150
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Вирішення проблем"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:154
 msgid "In case of issues with installation feel welcome to ask a question on GitHub."
-msgstr ""
+msgstr "У разі виникнення проблем з установкою, звертайтесь з питаннями на GitHub."
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:158
 msgid "Installation"
@@ -574,47 +577,47 @@ msgstr ""
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:487 packages/jupyterlab-lsp/src/components/statusbar.tsx:488
 msgid "LSP server extension not found"
-msgstr ""
+msgstr "Розширення сервера LSP не знайдено"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:813 packages/jupyterlab-lsp/src/components/statusbar.tsx:816 packages/jupyterlab-lsp/src/components/statusbar.tsx:824 packages/jupyterlab-lsp/src/components/statusbar.tsx:827
 msgid "not initialized"
-msgstr ""
+msgstr "не ініціалізовано"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:829 packages/jupyterlab-lsp/src/components/statusbar.tsx:832
 msgid "Waiting for documents initialization..."
-msgstr ""
+msgstr "Очікування ініціалізації документів..."
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:834
 msgid "Fully connected & initialized (%2 virtual document)"
 msgid_plural "Fully connected & initialized (%2 virtual document)"
-msgstr[0] ""
+msgstr[0] "Повністю підключено та ініціалізовано (%2 віртуальний документ)"
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
+msgstr[3] "Повністю підключено та ініціалізовано (%2 віртуальний документ)"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:845 packages/jupyterlab-lsp/src/components/statusbar.tsx:848
 msgid "Fully connected, but %2/%3 virtual document stuck uninitialized: %4"
-msgstr ""
+msgstr "Повністю підключено, але %2/%3 віртуальний документ не ініціалізовано: %4"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:859 packages/jupyterlab-lsp/src/components/statusbar.tsx:862
 msgid "%2/%3 virtual document connected (%4 connections; waiting for: %5)"
-msgstr ""
+msgstr "%2/%3 віртуальний документ підключено (%4 підключення; очікується: %5)"
 
 #: packages/jupyterlab-lsp/src/components/utils.tsx:54
 msgid "cell %1"
-msgstr ""
+msgstr "клітинка %1"
 
 #: packages/jupyterlab-lsp/src/components/utils.tsx:55
 msgid "cells: %1-%2"
-msgstr ""
+msgstr "клітинки: %1-%2"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:109 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:113
 msgid "Panel columns"
-msgstr ""
+msgstr "Стовпці панелі"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:138 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:142
 msgid "Ignore diagnostics like this"
-msgstr ""
+msgstr "Ігнорувати таку діагностику"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:182 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:186
 msgid "Ignore diagnostics with \"%1\" code"
@@ -642,51 +645,51 @@ msgstr ""
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:81 packages/jupyterlab-lsp/src/features/diagnostics/diagnostics.ts:85
 msgid "Diagnostics Panel"
-msgstr ""
+msgstr "Панель діагностики"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/index.ts:42 packages/jupyterlab-lsp/src/features/diagnostics/index.ts:43
 msgid "Show diagnostics panel"
-msgstr ""
+msgstr "Показати панель діагностики"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:161
 msgid "Error"
-msgstr ""
+msgstr "Помилка"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:162
 msgid "Warning"
-msgstr ""
+msgstr "Попередження"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:163
 msgid "Information"
-msgstr ""
+msgstr "Інформація"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:164
 msgid "Hint"
-msgstr ""
+msgstr "Підказка"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:170
 msgid "Virtual Document"
-msgstr ""
+msgstr "Віртуальний документ"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:185
 msgid "Message"
-msgstr ""
+msgstr "Повідомлення"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:195
 msgid "Code"
-msgstr ""
+msgstr "Код"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:204
 msgid "Severity"
-msgstr ""
+msgstr "Якість"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:219
 msgid "Source"
-msgstr ""
+msgstr "Джерело"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:226
 msgid "Cell"
-msgstr ""
+msgstr "Клітинка"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:230 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:271
 msgid "No issues detected, great job!"
@@ -743,36 +746,36 @@ msgstr[3] ""
 #: packages/jupyterlab-lsp/src/features/rename.ts:149 packages/jupyterlab-lsp/src/features/rename.ts:150
 msgid "Renamed %2 in %3 cell"
 msgid_plural "Renamed %2 in %3 cells"
-msgstr[0] ""
+msgstr[0] "Перейменовано %2 в %3 клітинку"
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
+msgstr[3] "Перейменовано %2 в %3 клітинки"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:157 packages/jupyterlab-lsp/src/features/rename.ts:158
 msgid "Renamed %1"
-msgstr ""
+msgstr "Перейменовано %1"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:161 packages/jupyterlab-lsp/src/features/rename.ts:162
 msgid " with errors: %1"
-msgstr ""
+msgstr " з помилками: %1"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:75 packages/jupyterlab-lsp/src/features/rename.ts:76
 msgid "Rename to"
-msgstr ""
+msgstr "Перейменувати в"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:77 packages/jupyterlab-lsp/src/features/rename.ts:78
 msgid "Rename"
-msgstr ""
+msgstr "Перейменувати"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:78 packages/jupyterlab-lsp/src/features/rename.ts:79
 msgid "Cancel"
-msgstr ""
+msgstr "Скасувати"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:88 packages/jupyterlab-lsp/src/features/rename.ts:89
 msgid "Renaming %1 to %2..."
-msgstr ""
+msgstr "Перейменування %1 на %2..."
 
 #: packages/jupyterlab-lsp/src/features/syntax_highlighting.ts:150
 msgid "Syntax highlighting"
-msgstr ""
+msgstr "Підсвічування синтаксису"
 
