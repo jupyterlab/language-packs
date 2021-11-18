@@ -12,12 +12,12 @@ msgstr ""
 "X-Crowdin-File-ID: 97\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-11-13 10:14\n"
+"PO-Revision-Date: 2021-11-17 12:06\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
 msgid "jupyterlab-git settings."
-msgstr "jupyterlab-git 设置"
+msgstr "jupyterlab-git 设置。"
 
 #: /schema/plugin.json:/jupyter.lab.menus/context[0]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/label
 msgctxt "menu"
@@ -112,12 +112,12 @@ msgstr "历史计数"
 #: /schema/plugin.json:/properties/openFilesBehindWarning/description
 msgctxt "settings"
 msgid "If true, a popup dialog will be displayed if a user opens a file that is behind its remote branch version, or if an opened file has updates on the remote branch."
-msgstr ""
+msgstr "如果开启，当一个用户打开了一个文件落后于远程分支的版本，或者该文件在远程分支有更新，则弹出对话框进行提醒。"
 
 #: /schema/plugin.json:/properties/openFilesBehindWarning/title
 msgctxt "settings"
 msgid "Open files behind warning"
-msgstr ""
+msgstr "打开中的文件落后版本时发出警告"
 
 #: /schema/plugin.json:/properties/refreshIfHidden/description
 msgctxt "settings"
@@ -172,11 +172,11 @@ msgstr "取消"
 
 #: src/cloneCommand.ts:45
 msgid "Clone"
-msgstr ""
+msgstr "克隆"
 
 #: src/cloneCommand.ts:52
 msgid "Cloning…"
-msgstr ""
+msgstr "正在克隆…"
 
 #: src/cloneCommand.ts:62 src/commandsAndMenu.tsx:313 src/commandsAndMenu.tsx:315 src/commandsAndMenu.tsx:316 src/commandsAndMenu.tsx:317 src/commandsAndMenu.tsx:320
 msgid "Successfully cloned"
@@ -313,7 +313,7 @@ msgstr "Git 仓库已初始化。"
 
 #: src/commandsAndMenu.tsx:198
 msgid "Initializing…"
-msgstr ""
+msgstr "正在初始化…"
 
 #: src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:203 src/commandsAndMenu.tsx:204 src/commandsAndMenu.tsx:205 src/commandsAndMenu.tsx:208 src/commandsAndMenu.tsx:210
 msgid "Encountered an error when initializing the repository. Error: "
@@ -381,7 +381,7 @@ msgstr "推送代码到远程仓库"
 
 #: src/commandsAndMenu.tsx:314
 msgid "Pushing…"
-msgstr ""
+msgstr "正在推送…"
 
 #: src/commandsAndMenu.tsx:323 src/commandsAndMenu.tsx:360 src/commandsAndMenu.tsx:362 src/commandsAndMenu.tsx:366 src/commandsAndMenu.tsx:367 src/commandsAndMenu.tsx:370
 msgid "Successfully pushed"
@@ -397,7 +397,7 @@ msgstr "推送失败"
 
 #: src/commandsAndMenu.tsx:345
 msgid "Pull from Remote (Force)"
-msgstr ""
+msgstr "推送至远程（强制）"
 
 #: src/commandsAndMenu.tsx:346 src/commandsAndMenu.tsx:380 src/commandsAndMenu.tsx:382 src/commandsAndMenu.tsx:386 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:390
 msgid "Pull from Remote"
@@ -405,7 +405,7 @@ msgstr "从远程拉取"
 
 #: src/commandsAndMenu.tsx:349
 msgid "Discard all current changes and pull from remote repository"
-msgstr ""
+msgstr "放弃所有当前改动并从远程仓库拉取"
 
 #: src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:357 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:361
 msgid "Pushing..."
@@ -417,7 +417,7 @@ msgstr "从远程仓库拉取最新代码"
 
 #: src/commandsAndMenu.tsx:361
 msgid "Pulling…"
-msgstr ""
+msgstr "正在拉取…"
 
 #: src/commandsAndMenu.tsx:369 src/commandsAndMenu.tsx:395 src/commandsAndMenu.tsx:397 src/commandsAndMenu.tsx:401 src/commandsAndMenu.tsx:402 src/commandsAndMenu.tsx:405
 msgid "Successfully pulled"
@@ -505,23 +505,23 @@ msgstr "比较选中的文件"
 
 #: src/commandsAndMenu.tsx:568
 msgid "Merge Branch…"
-msgstr ""
+msgstr "合并分支…"
 
 #: src/commandsAndMenu.tsx:569
 msgid "Merge selected branch in the current branch"
-msgstr ""
+msgstr "合并已选分支到当前分支"
 
 #: src/commandsAndMenu.tsx:608
 msgid "Merging branch '%1'…"
-msgstr ""
+msgstr "正在合并分支「%1」…"
 
 #: src/commandsAndMenu.tsx:615
 msgid "Failed to merge branch '%1' into '%2'."
-msgstr ""
+msgstr "合并分支「%1」到「%2」失败。"
 
 #: src/commandsAndMenu.tsx:627
 msgid "Branch '%1' merged into '%2'."
-msgstr ""
+msgstr "分支「%1」已合并至「%2」。"
 
 #: src/commandsAndMenu.tsx:651 src/commandsAndMenu.tsx:653 src/commandsAndMenu.tsx:659 src/commandsAndMenu.tsx:664 src/commandsAndMenu.tsx:684 src/commandsAndMenu.tsx:685 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:850
 msgid "Add"
@@ -621,7 +621,7 @@ msgstr "放弃选定文件的改动"
 
 #: src/commandsAndMenu.tsx:768
 msgid "Current"
-msgstr ""
+msgstr "当前"
 
 #: src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:770 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:781 src/commandsAndMenu.tsx:801 src/commandsAndMenu.tsx:802 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:967
 msgid "Discard recent changes of selected files"
@@ -629,7 +629,7 @@ msgstr "放弃选定文件的更改"
 
 #: src/commandsAndMenu.tsx:769
 msgid "Incoming"
-msgstr ""
+msgstr "外来改动"
 
 #: src/commandsAndMenu.tsx:775 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:783 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:808 src/commandsAndMenu.tsx:809 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:974 src/components/FileList.tsx:457 src/components/FileList.tsx:466 src/components/FileList.tsx:534 src/components/FileList.tsx:535 src/components/FileList.tsx:655 src/components/FileList.tsx:664 src/components/FileList.tsx:681 src/components/FileList.tsx:690 src/components/FileList.tsx:733 src/components/FileList.tsx:759 src/components/FileList.tsx:810 src/components/FileList.tsx:836
 msgid "Discard changes"
@@ -641,7 +641,7 @@ msgstr "您确定要永久放弃对以下文件的改动？               此操
 
 #: src/commandsAndMenu.tsx:785
 msgid "Result"
-msgstr ""
+msgstr "结果"
 
 #: src/components/Alert.tsx:105
 msgid "Error"
@@ -653,7 +653,7 @@ msgstr "显示"
 
 #: src/components/Alert.tsx:110
 msgid "Show"
-msgstr ""
+msgstr "显示"
 
 #: src/components/Alert.tsx:120
 msgid "Detailed message"
@@ -701,7 +701,7 @@ msgstr "删除本地分支"
 
 #: src/components/BranchMenu.tsx:295
 msgid "Merge this branch into the current one"
-msgstr ""
+msgstr "合并此分支到当前分支"
 
 #: src/components/BranchMenu.tsx:332 src/components/BranchMenu.tsx:355
 msgid "Delete branch"
@@ -797,7 +797,7 @@ msgstr "放弃所有未暂存改动失败。"
 
 #: src/components/FileList.tsx:192
 msgid "Are you sure you want to permanently discard changes to all unstaged files? This action cannot be undone."
-msgstr ""
+msgstr "您确定想要永久放弃所有未暂存文件的改动？此操作无法撤消。"
 
 #: src/components/FileList.tsx:216 src/components/FileList.tsx:225 src/components/FileList.tsx:227 src/widgets/discardAllChanges.ts:34
 msgid "Discard all changes failed."
@@ -857,11 +857,11 @@ msgstr "对比此文件"
 
 #: src/components/FileList.tsx:751
 msgid "Pull from remote branch"
-msgstr ""
+msgstr "从远程拉取分支"
 
 #: src/components/FileList.tsx:756
 msgid "Remote Changes"
-msgstr ""
+msgstr "远程改动"
 
 #: src/components/GitPanel.tsx:216 src/components/GitPanel.tsx:506 src/components/GitPanel.tsx:533 src/components/GitPanel.tsx:547
 msgid "Staging files..."
@@ -929,23 +929,23 @@ msgstr "用户拒绝设置身份。"
 
 #: src/components/GitPanel.tsx:685
 msgid "One or more open files are behind %1 head. Do you want to pull the latest remote version?"
-msgstr ""
+msgstr "一个或多个已打开的文件已落后于头部 %1。您想要拉取最新的远程版本吗？"
 
 #: src/components/GitPanel.tsx:694
 msgid "Continue Without Pulling"
-msgstr ""
+msgstr "不拉取并继续"
 
 #: src/components/GitPanel.tsx:697
 msgid "Pull"
-msgstr ""
+msgstr "拉取"
 
 #: src/components/GitPanel.tsx:698
 msgid "Git Pull from Remote Branch"
-msgstr ""
+msgstr "Git 从远程分支拉取"
 
 #: src/components/GitPanel.tsx:722
 msgid "The following open files remain behind:"
-msgstr ""
+msgstr "下列打开的文件仍然落后最新版本："
 
 #: src/components/HistorySideBar.tsx:114 src/components/HistorySideBar.tsx:116
 msgid "You"
@@ -969,7 +969,7 @@ msgstr "未找到历史。"
 
 #: src/components/MergeBranchDialog.tsx:114
 msgid "Merge Branch"
-msgstr ""
+msgstr "合并分支"
 
 #: src/components/MergeBranchDialog.tsx:117 src/components/NewBranchDialog.tsx:150 src/components/NewBranchDialog.tsx:157 src/components/ResetRevertDialog.tsx:130 src/components/ResetRevertDialog.tsx:132
 msgid "Close this dialog"
@@ -977,23 +977,23 @@ msgstr "关闭此对话框"
 
 #: src/components/MergeBranchDialog.tsx:127
 msgid "Select the branch to merge in %1"
-msgstr ""
+msgstr "选择要合并至 %1 的分支"
 
 #: src/components/MergeBranchDialog.tsx:139
 msgid "Filter branch list"
-msgstr ""
+msgstr "筛选分支列表"
 
 #: src/components/MergeBranchDialog.tsx:172
 msgid "Close this dialog without merging a branch"
-msgstr ""
+msgstr "关闭当前对话框而不合并分支"
 
 #: src/components/MergeBranchDialog.tsx:181
 msgid "Merge branch"
-msgstr ""
+msgstr "合并分支"
 
 #: src/components/MergeBranchDialog.tsx:182
 msgid "Merge"
-msgstr ""
+msgstr "合并"
 
 #: src/components/MergeBranchDialog.tsx:87 src/components/NewBranchDialog.tsx:309 src/components/NewBranchDialog.tsx:313
 msgid "Create a new branch based on: %1"
@@ -1013,7 +1013,7 @@ msgstr "输入新分支名称"
 
 #: src/components/NewBranchDialog.tsx:169
 msgid "Create branch based on…"
-msgstr ""
+msgstr "基于其他分支创建新分支…"
 
 #: src/components/NewBranchDialog.tsx:169 src/components/NewBranchDialog.tsx:176
 msgid "Create branch based on..."
@@ -1041,7 +1041,7 @@ msgstr "正在创建分支..."
 
 #: src/components/NewBranchDialog.tsx:434
 msgid "Creating branch…"
-msgstr ""
+msgstr "正在创建分支…"
 
 #: src/components/NewBranchDialog.tsx:443 src/components/NewBranchDialog.tsx:444
 msgid "Failed to create branch."
@@ -1085,7 +1085,7 @@ msgstr "提交改动"
 
 #: src/components/ResetRevertDialog.tsx:229
 msgid "Discarding changes…"
-msgstr ""
+msgstr "这在放弃改动…"
 
 #: src/components/ResetRevertDialog.tsx:229 src/components/ResetRevertDialog.tsx:246
 msgid "Discarding changes..."
@@ -1101,11 +1101,11 @@ msgstr "无法放弃改动。"
 
 #: src/components/ResetRevertDialog.tsx:256
 msgid "Reverting changes…"
-msgstr ""
+msgstr "正在撤回改动…"
 
 #: src/components/ResetRevertDialog.tsx:256 src/components/ResetRevertDialog.tsx:273
 msgid "Reverting changes..."
-msgstr "撤回改动..."
+msgstr "正在撤回改动..."
 
 #: src/components/ResetRevertDialog.tsx:262 src/components/ResetRevertDialog.tsx:279
 msgid "Successfully reverted changes."
@@ -1233,7 +1233,7 @@ msgstr "正在刷新..."
 
 #: src/components/Toolbar.tsx:403
 msgid "Refreshing…"
-msgstr ""
+msgstr "正在刷新…"
 
 #: src/components/Toolbar.tsx:408 src/components/Toolbar.tsx:409 src/components/Toolbar.tsx:410
 msgid "Successfully refreshed."
@@ -1257,7 +1257,7 @@ msgstr "共同祖先"
 
 #: src/components/diff/NotebookDiff.ts:238
 msgid "Common Ancestor"
-msgstr ""
+msgstr "共同祖先"
 
 #: src/components/diff/NotebookDiff.ts:277
 msgid "Failed to init notebook diff view: %1"
@@ -1323,5 +1323,5 @@ msgstr "输入仓库的克隆 URI"
 
 #: src/widgets/discardAllChanges.ts:18
 msgid "Your current changes forbid pulling the latest changes. Do you want to permanently discard those changes? This action cannot be undone."
-msgstr ""
+msgstr "您当前的改动阻止您拉取最新改动。您是否想永久放弃当前改动？此操作无法撤销。"
 

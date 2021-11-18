@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2021-11-12 08:12\n"
+"PO-Revision-Date: 2021-11-17 20:36\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -246,7 +246,9 @@ msgctxt "settings"
 msgid "Overrides for where to show sidebar items\n"
 "e.g., {\"jp-debugger-sidebar\": \"left\"}\n"
 "You can also change this by right-clicking the sidebar icons."
-msgstr ""
+msgstr "Перевизначає, де саме показувати бічну панель\n"
+"наприклад, {\"jp-debugger-sidebar\": \"left\"}\n"
+"Ви також можете змінити це, клацаючи правою кнопкою миші на значки бічної панелі."
 
 #: /packages/application-extension/schema/sidebar.json:/properties/overrides/title
 msgctxt "settings"
@@ -306,7 +308,7 @@ msgstr "Налаштування диспетчера тем."
 #: /packages/apputils-extension/schema/themes.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
 msgctxt "menu"
 msgid "Theme"
-msgstr ""
+msgstr "Тема"
 
 #: /packages/apputils-extension/schema/themes.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -381,83 +383,84 @@ msgstr "Тема текстового редактора"
 #: /packages/codemirror-extension/schema/commands.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "CodeMirror"
-msgstr ""
+msgstr "CodeMirror"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/keyMap/description
 msgctxt "settings"
 msgid "Configures the keymap to use"
-msgstr ""
+msgstr "Налаштовує карту клавіш для використання"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/keyMap/title
 msgctxt "settings"
 msgid "Key Map"
-msgstr ""
+msgstr "Карта клавіш"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/lineWiseCopyCut/description
 msgctxt "settings"
 msgid "When enabled, which is the default, doing copy or cut when there is no selection will copy or cut the whole lines that have cursors on them."
-msgstr ""
+msgstr "Коли ввімкнено (за замовчуванням), копіювання та вирізання за відсутності виділеного фрагмента призводить до копіювання або вирізання цілого рядка, на який наведено курсор."
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/lineWiseCopyCut/title
 msgctxt "settings"
 msgid "Ctrl-C"
-msgstr ""
+msgstr "Ctrl+C"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/scrollPastEnd/description
 msgctxt "settings"
 msgid "Whether to scroll past the end of text document"
-msgstr ""
+msgstr "Визначає, чи прокручувати після кінця текстового документа"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/scrollPastEnd/title
 msgctxt "settings"
 msgid "Scroll behavior"
-msgstr ""
+msgstr "Поведінка прокручування"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/selectionPointer/description
 msgctxt "settings"
 msgid "Value is boolean or string, e.g. 'pointer'"
-msgstr ""
+msgstr "Значення логічне або рядкове, наприклад «вказівник»"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/selectionPointer/title
 msgctxt "settings"
 msgid "Selection Pointer"
-msgstr ""
+msgstr "Вказівник виділення"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/styleActiveLine/description
 msgctxt "settings"
 msgid "Value is boolean, or { nonEmpty: boolean }"
-msgstr ""
+msgstr "Значення логічне або { nonEmpty: boolean }"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/styleActiveLine/title
 msgctxt "settings"
 msgid "Style Active Line"
-msgstr ""
+msgstr "Стилізувати активний рядок"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/styleSelectedText/description
 msgctxt "settings"
 msgid "Value is boolean"
-msgstr ""
+msgstr "Значення логічне"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/styleSelectedText/title
 msgctxt "settings"
 msgid "Style Selected Text"
-msgstr ""
+msgstr "Стилізувати вибраний текст"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/theme/description
 msgctxt "settings"
 msgid "CSS file defining the corresponding\n"
 ".cm-s-[name] styles is loaded"
-msgstr ""
+msgstr "Файл CSS, що визначає відповідні стилі \n"
+".cm-s-[name], завантажено"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/theme/title /packages/terminal-extension/schema/plugin.json:/properties/theme/title
 msgctxt "settings"
 msgid "Theme"
-msgstr ""
+msgstr "Тема"
 
 #: /packages/codemirror-extension/schema/commands.json:/title
 msgctxt "schema"
 msgid "CodeMirror"
-msgstr ""
+msgstr "CodeMirror"
 
 #: /packages/completer-extension/schema/consoles.json:/description
 msgctxt "schema"
@@ -492,22 +495,22 @@ msgstr "Доповнювач блокнота"
 #: /packages/console-extension/schema/foreign.json:/description
 msgctxt "schema"
 msgid "Code Console Foreign plugin settings."
-msgstr ""
+msgstr "Налаштування зовнішнього плагіну консолі коду."
 
 #: /packages/console-extension/schema/foreign.json:/title
 msgctxt "schema"
 msgid "Code Console Foreign plugin"
-msgstr ""
+msgstr "Зовнішній плагін консолі коду"
 
 #: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/description /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/cursorBlinkRate/description /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/description
 msgctxt "settings"
 msgid "Half-period in milliseconds used for cursor blinking. The default blink rate is 530ms. By setting this to zero, blinking can be disabled. A negative value hides the cursor entirely."
-msgstr ""
+msgstr "Для блимання курсора застосовується частота у мілісекундах. Частота за замовчуванням становить 530мс. Для відключення цієї фукції втсановіть значення \"0\". Щоб повністю приховати курсор встановіть від'ємне значення."
 
 #: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/title /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/cursorBlinkRate/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/title
 msgctxt "settings"
 msgid "Cursor blinking rate"
-msgstr ""
+msgstr "Частота мерехтіння курсору"
 
 #: /packages/console-extension/schema/tracker.json:/description
 msgctxt "schema"
@@ -517,44 +520,46 @@ msgstr "Налаштування консолі коду."
 #: /packages/console-extension/schema/tracker.json:/jupyter.lab.menus/main[1]/items[1]/submenu/label
 msgctxt "menu"
 msgid "Console Run Keystroke"
-msgstr ""
+msgstr "Клавіша запуску консолі"
 
 #: /packages/console-extension/schema/tracker.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Code Console Settings"
-msgstr ""
+msgstr "Налаштування консолі коду"
 
 #: /packages/console-extension/schema/tracker.json:/properties/interactionMode/description
 msgctxt "settings"
 msgid "Whether the console interaction mimics the notebook\n"
 "or terminal keyboard shortcuts."
-msgstr ""
+msgstr "Визначає, чи взаємодія з консоллю імітує натискання\n"
+"сполучення клавіш блокнота або термінала."
 
 #: /packages/console-extension/schema/tracker.json:/properties/interactionMode/title
 msgctxt "settings"
 msgid "Interaction mode"
-msgstr ""
+msgstr "Режим взаємодії"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all prompt cells."
-msgstr ""
+msgstr "Конфігурація для всіх клітинок командного рядка."
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/title
 msgctxt "settings"
 msgid "Prompt Cell Configuration"
-msgstr ""
+msgstr "Конфігурації клітинок командного рядка"
 
 #: /packages/console-extension/schema/tracker.json:/properties/showAllKernelActivity/description
 msgctxt "settings"
 msgid "Whether the console defaults to showing all\n"
 "kernel activity or just kernel activity originating from itself."
-msgstr ""
+msgstr "Визначає, які операції ядра відображає консоль за умовчанням:\n"
+"усі чи лише ті, які походять із нього."
 
 #: /packages/console-extension/schema/tracker.json:/properties/showAllKernelActivity/title
 msgctxt "settings"
 msgid "Show All Kernel Activity"
-msgstr ""
+msgstr "Показувати всю активність ядра"
 
 #: /packages/console-extension/schema/tracker.json:/title
 msgctxt "schema"
@@ -569,17 +574,17 @@ msgstr "Налаштування налагоджувача"
 #: /packages/debugger-extension/schema/main.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Debugger"
-msgstr ""
+msgstr "Налагоджувач"
 
 #: /packages/debugger-extension/schema/main.json:/properties/variableFilters/description
 msgctxt "settings"
 msgid "Variables to filter out in the tree and table viewers"
-msgstr ""
+msgstr "Змінні, за якими можна фільтрувати дані в переглядачах дерева й таблиці"
 
 #: /packages/debugger-extension/schema/main.json:/properties/variableFilters/title
 msgctxt "settings"
 msgid "Variable filter"
-msgstr ""
+msgstr "Фільтр змінних"
 
 #: /packages/debugger-extension/schema/main.json:/title
 msgctxt "schema"
@@ -589,12 +594,12 @@ msgstr "Налагоджувач"
 #: /packages/docmanager-extension/schema/download.json:/description
 msgctxt "schema"
 msgid "Document Manager Download settings."
-msgstr ""
+msgstr "Налаштування завантаження диспетчера документів."
 
 #: /packages/docmanager-extension/schema/download.json:/title
 msgctxt "schema"
 msgid "Document Manager Download"
-msgstr ""
+msgstr "Завантаження диспетчера документів"
 
 #: /packages/docmanager-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -604,47 +609,47 @@ msgstr "Налаштування диспетчера документів."
 #: /packages/docmanager-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Document Manager"
-msgstr ""
+msgstr "Диспетчер документів"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/autosave/description
 msgctxt "settings"
 msgid "Whether to autosave documents"
-msgstr ""
+msgstr "Чи зберігати документи автоматично"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/autosave/title
 msgctxt "settings"
 msgid "Autosave Documents"
-msgstr ""
+msgstr "Автозбереження документів"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/autosaveInterval/description
 msgctxt "settings"
 msgid "Length of save interval in seconds"
-msgstr ""
+msgstr "Довжина інтервалу збереження в секундах"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/autosaveInterval/title
 msgctxt "settings"
 msgid "Autosave Interval"
-msgstr ""
+msgstr "Інтервал автозбереження"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/defaultViewers/description
 msgctxt "settings"
 msgid "Overrides for the default viewers for file types"
-msgstr ""
+msgstr "Перевизначає параметри стандартних переглядачів певних типів файлів"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/defaultViewers/title
 msgctxt "settings"
 msgid "Default Viewers"
-msgstr ""
+msgstr "Стандартні переглядачі"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/lastModifiedCheckMargin/description
 msgctxt "settings"
 msgid "Max acceptable difference, in milliseconds, between last modified timestamps on disk and client"
-msgstr ""
+msgstr "Максимально допустима різниця в мілісекундах між останніми зміненими мітками часу на диску та клієнті"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/lastModifiedCheckMargin/title
 msgctxt "settings"
 msgid "Margin for last modified timestamp check"
-msgstr ""
+msgstr "Поле для перевірки останньої зміненої позначки часу"
 
 #: /packages/docmanager-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -669,58 +674,59 @@ msgstr "Налаштування диспетчера розширень."
 #: /packages/extensionmanager-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Extension Manager"
-msgstr ""
+msgstr "Диспетчер розширень"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/disclaimed/description
 msgctxt "settings"
 msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
-msgstr ""
+msgstr "Визначає, чи усвідомлює користувач те, що розширення, якими він керує в цьому інтерфейсі, запускають довільний код, який може бути небезпечний"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/disclaimed/title
 msgctxt "settings"
 msgid "Disclaimed Status"
-msgstr ""
+msgstr "Статус «Застережено»"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enableCdn/description
 msgctxt "settings"
 msgid "Enables using the CDN to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry"
-msgstr ""
+msgstr "Дозволяє використовувати CDN для отримання повного пакета даних. В іншому випадку буде використовуватись налаштований NPM реєстр. Через відсутність підтримки CORS реєстру NPM, відключайте CDN, якщо використовуєте власний реєстр"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enableCdn/title
 msgctxt "settings"
 msgid "Enable CDN"
-msgstr ""
+msgstr "Увімкнути CDN"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/description
 msgctxt "settings"
 msgid "Enables extension manager (requires Node.js/npm).\n"
 "WARNING: installing untrusted extensions may be unsafe."
-msgstr ""
+msgstr "Активує диспетчер розширень (потрібен Node.js/npm).\n"
+"УВАГА! Установлювати ненадійні розширення може бути небезпечно."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/title
 msgctxt "settings"
 msgid "Enabled Status"
-msgstr ""
+msgstr "Статус «Увімкнено»"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/description
 msgctxt "settings"
 msgid "The URI of the CDN to use for fetching full package data"
-msgstr ""
+msgstr "URI CDN для отримання повного пакета даних"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/title
 msgctxt "settings"
 msgid "NPM CDN"
-msgstr ""
+msgstr "NPM CDN"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmRegistry/description
 msgctxt "settings"
 msgid "The URI of the NPM registry to use for searching for jupyterlab extensions"
-msgstr ""
+msgstr "URI реєстру NPM для пошуку розширень jupyterlab"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmRegistry/title
 msgctxt "settings"
 msgid "NPM Registry"
-msgstr ""
+msgstr "NPM Registry"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -735,47 +741,47 @@ msgstr "Налаштування оглядача файлів."
 #: /packages/filebrowser-extension/schema/browser.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "File Browser"
-msgstr ""
+msgstr "Оглядач файлів"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/description
 msgctxt "settings"
 msgid "Whether to automatically navigate to a document's current directory"
-msgstr ""
+msgstr "Визначає, чи переходити автоматично до поточного каталогу документа"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/title
 msgctxt "settings"
 msgid "Navigate to current directory"
-msgstr ""
+msgstr "Переходити до поточного каталогу"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/description
 msgctxt "settings"
 msgid "Whether to show hidden files"
-msgstr ""
+msgstr "Показувати приховані файли"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/title
 msgctxt "settings"
 msgid "Show hidden files"
-msgstr ""
+msgstr "Відображати приховані файли"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showLastModifiedColumn/description
 msgctxt "settings"
 msgid "Whether to show the last modified column"
-msgstr ""
+msgstr "Чи відображати останню змінену колонку"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showLastModifiedColumn/title
 msgctxt "settings"
 msgid "Show last modified column"
-msgstr ""
+msgstr "Відображати останню змінену колонку"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/useFuzzyFilter/description
 msgctxt "settings"
 msgid "Whether to apply fuzzy algorithm while filtering on file names"
-msgstr ""
+msgstr "Визначає, чи застосовувати алгоритм часткових збігів під час фільтрування за назвою файлу"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/useFuzzyFilter/title
 msgctxt "settings"
 msgid "Filter on file name with a fuzzy search"
-msgstr ""
+msgstr "Фільтрувати за назвою файлу з використанням неточного пошуку"
 
 #: /packages/filebrowser-extension/schema/browser.json:/title
 msgctxt "schema"
@@ -785,37 +791,37 @@ msgstr "Оглядач файлів"
 #: /packages/filebrowser-extension/schema/download.json:/description
 msgctxt "schema"
 msgid "File Browser Download settings."
-msgstr ""
+msgstr "Налаштування завантаження оглядача файлів."
 
 #: /packages/filebrowser-extension/schema/download.json:/title
 msgctxt "schema"
 msgid "File Browser Download"
-msgstr ""
+msgstr "Завантажити оглядач файлів"
 
 #: /packages/filebrowser-extension/schema/open-browser-tab.json:/description
 msgctxt "schema"
 msgid "File Browser Open Browser Tab settings."
-msgstr ""
+msgstr "Оглядач файлів відкриє налаштування вкладок браузера."
 
 #: /packages/filebrowser-extension/schema/open-browser-tab.json:/title
 msgctxt "schema"
 msgid "File Browser Open Browser Tab"
-msgstr ""
+msgstr "Оглядач файлів відкриє вкладку браузера"
 
 #: /packages/filebrowser-extension/schema/open-with.json:/description
 msgctxt "schema"
 msgid "File Browser Open With settings."
-msgstr ""
+msgstr "Оглядач файлів відкриє з налаштуваннями."
 
 #: /packages/filebrowser-extension/schema/open-with.json:/jupyter.lab.menus/context[0]/submenu/label
 msgctxt "menu"
 msgid "Open With"
-msgstr ""
+msgstr "Відкрити через"
 
 #: /packages/filebrowser-extension/schema/open-with.json:/title
 msgctxt "schema"
 msgid "File Browser Open With"
-msgstr ""
+msgstr "Відкрити оглядач файлів за допомогою"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -825,24 +831,26 @@ msgstr "Налаштування текстового редактора."
 #: /packages/fileeditor-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[1]/submenu/label
 msgctxt "menu"
 msgid "Text Editor Indentation"
-msgstr ""
+msgstr "Відступ текстового редактора"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Editor"
-msgstr ""
+msgstr "Редактор"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/description
 msgctxt "settings"
 msgid "The configuration for all text editors.\n"
 "If `fontFamily`, `fontSize` or `lineHeight` are `null`,\n"
 "values from current theme are used."
-msgstr ""
+msgstr "Конфігурація всіх текстових редакторів.\n"
+"Якщо для параметрів fontFamily, fontSize або lineHeight установлено значення null,\n"
+"використовуються значення поточної теми."
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/title
 msgctxt "settings"
 msgid "Editor Configuration"
-msgstr ""
+msgstr "Конфігурація редактора"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -852,22 +860,22 @@ msgstr "Текстовий редактор"
 #: /packages/help-extension/schema/about.json:/description
 msgctxt "schema"
 msgid "Help settings."
-msgstr ""
+msgstr "Налаштування довідки."
 
 #: /packages/help-extension/schema/about.json:/title
 msgctxt "schema"
 msgid "Help"
-msgstr ""
+msgstr "Довідка"
 
 #: /packages/hub-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "JupyterHub settings."
-msgstr ""
+msgstr "Налаштування JupyterHub."
 
 #: /packages/hub-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "JupyterHub"
-msgstr ""
+msgstr "JupyterHub"
 
 #: /packages/imageviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -882,12 +890,12 @@ msgstr "Переглядач зображень"
 #: /packages/inspector-extension/schema/consoles.json:/description /packages/inspector-extension/schema/notebooks.json:/description
 msgctxt "schema"
 msgid "Inspector Notebook settings."
-msgstr ""
+msgstr "Інспектор налаштувань блокнота."
 
 #: /packages/inspector-extension/schema/consoles.json:/title /packages/inspector-extension/schema/notebooks.json:/title
 msgctxt "schema"
 msgid "Inspector Notebook"
-msgstr ""
+msgstr "Інспектор блокнота"
 
 #: /packages/inspector-extension/schema/inspector.json:/description
 msgctxt "schema"
@@ -917,27 +925,27 @@ msgstr "Налаштування консолі журналу."
 #: /packages/logconsole-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Log Console"
-msgstr ""
+msgstr "Консоль журналу"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/flash/description
 msgctxt "settings"
 msgid "Whether to flash on new log message or not"
-msgstr ""
+msgstr "Визначає, чи підсвічувати нові повідомлення журналу"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/flash/title
 msgctxt "settings"
 msgid "Status Bar Item flash"
-msgstr ""
+msgstr "Підсвічування елементів у рядку стану"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/maxLogEntries/description
 msgctxt "settings"
 msgid "Maximum number of log entries to store in memory"
-msgstr ""
+msgstr "Максимальна кількість записів журналу, що можуть зберігатися в пам’яті"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/maxLogEntries/title
 msgctxt "settings"
 msgid "Log entry count limit"
-msgstr ""
+msgstr "Ліміт кількості записів журналу"
 
 #: /packages/logconsole-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -952,47 +960,47 @@ msgstr "Налаштування головного меню JupyterLab."
 #: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
 msgctxt "menu"
 msgid "New"
-msgstr ""
+msgstr "Створити"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[0]/label
 msgctxt "menu"
 msgid "File"
-msgstr ""
+msgstr "Файл"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/label
 msgctxt "menu"
 msgid "Edit"
-msgstr ""
+msgstr "Редагування"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[2]/label
 msgctxt "menu"
 msgid "View"
-msgstr ""
+msgstr "Перегляд"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[3]/label
 msgctxt "menu"
 msgid "Run"
-msgstr ""
+msgstr "Виконати"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[4]/label
 msgctxt "menu"
 msgid "Kernel"
-msgstr ""
+msgstr "Ядро"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[5]/label
 msgctxt "menu"
 msgid "Tabs"
-msgstr ""
+msgstr "Вкладки"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[6]/label
 msgctxt "menu"
 msgid "Settings"
-msgstr ""
+msgstr "Налаштування"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[7]/label
 msgctxt "menu"
 msgid "Help"
-msgstr ""
+msgstr "Довідка"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/properties/menus/description
 msgctxt "settings"
@@ -1019,12 +1027,34 @@ msgid "Note: To disable a menu or a menu item,\n"
 "  ]\n"
 "}\n\n"
 "Menu description:"
-msgstr ""
+msgstr "Примітка: Щоб відключити меню або пункт меню,\n"
+"скопіюйте його до User Preferences та додайте позначку\n"
+"\"disabled\". Наприклад, як відключити меню\n"
+"\"Tabs\" та \"Restart Kernel and Run up to Selected Cell\"\n"
+"item:\n"
+"{\n"
+"  \"menus\": [\n"
+"    {\n"
+"      \"id\": \"jp-mainmenu-tabs\",\n"
+"      \"disabled\": true\n"
+"    },\n"
+"    {\n"
+"      \"id\": \"jp-mainmenu-kernel\",\n"
+"      \"items\": [\n"
+"        {\n"
+"          \"command\": \"notebook:restart-and-run-to-selected\",\n"
+"          \"disabled\": true\n"
+"        }\n"
+"      ]\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Menu description:"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/properties/menus/title
 msgctxt "settings"
 msgid "The application menu description."
-msgstr ""
+msgstr "Опис меню програми."
 
 #: /packages/mainmenu-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1034,17 +1064,17 @@ msgstr "Головне меню"
 #: /packages/notebook-extension/schema/export.json:/description
 msgctxt "schema"
 msgid "Notebook Export settings."
-msgstr ""
+msgstr "Експорт налаштувань блокнота."
 
 #: /packages/notebook-extension/schema/export.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
 msgctxt "menu"
 msgid "Save and Export Notebook As…"
-msgstr ""
+msgstr "Зберегти та експортувати блокнот як…"
 
 #: /packages/notebook-extension/schema/export.json:/title
 msgctxt "schema"
 msgid "Notebook Export"
-msgstr ""
+msgstr "Експорт блокноту"
 
 #: /packages/notebook-extension/schema/tracker.json:/description
 msgctxt "schema"
@@ -1054,137 +1084,137 @@ msgstr "Налаштування блокнота."
 #: /packages/notebook-extension/schema/tracker.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Notebook"
-msgstr ""
+msgstr "Блокнот"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all code cells."
-msgstr ""
+msgstr "Конфігурація для всіх клітинок коду."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/title
 msgctxt "settings"
 msgid "Code Cell Configuration"
-msgstr ""
+msgstr "Конфігурація клітин коду"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/defaultCell/description
 msgctxt "settings"
 msgid "The default type (markdown, code, or raw) for new cells"
-msgstr ""
+msgstr "Стандартний тип (розмітка, код або неформатовані дані) для нових клітинок"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/defaultCell/title
 msgctxt "settings"
 msgid "Default cell type"
-msgstr ""
+msgstr "Стандартний тип клітинки"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/experimentalDisableDocumentWideUndoRedo/description
 msgctxt "settings"
 msgid "Disable the undo/redo on the notebook document level, so actions independent cells can have their own history. The undo/redo never applies on the outputs, in other words, outputs don't have history. A moved cell completely looses history capability for now."
-msgstr ""
+msgstr "Відключити скасувати/повторити на рівні документів в блокноті, щоб у незалежних клітинок була своя історія дій. Скасувати/повторити ніколи не застосовується для результатів, тобто вони не мають власної історії. Так, пересунута клітинка повністю втрачає можливість мати власну історію."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/experimentalDisableDocumentWideUndoRedo/title
 msgctxt "settings"
 msgid "Experimental settings to enable the undo/redo on the notebook document level."
-msgstr ""
+msgstr "Експерименталь налаштування, щоб увімкнути скасувати/повторити на рівні документів у блокноті."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/description
 msgctxt "settings"
 msgid "Whether to shut down or not the kernel when closing a notebook."
-msgstr ""
+msgstr "Визначає, чи завершувати роботу ядра в разі закриття блокнота."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/title
 msgctxt "settings"
 msgid "Shut down kernel"
-msgstr ""
+msgstr "Завершити роботу ядра"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/markdownCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all markdown cells."
-msgstr ""
+msgstr "Конфігурація всіх клітинок розмітки."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/markdownCellConfig/title
 msgctxt "settings"
 msgid "Markdown Cell Configuration"
-msgstr ""
+msgstr "Конфігурація клітинки розмітки"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/description
 msgctxt "settings"
 msgid "Defines the maximum number of output cells to to to be rendered in the output area for cells with many outputs. The output area will have a head and a tail, and the outputs between will be trimmed and not displayed unless the user clicks on the information message."
-msgstr ""
+msgstr "Визначає максимальну кількість готових клітинок для рендеру в області результатів для клітинок з великою кількістю результатів. Область результатів буде мати голову та хвіст, а результати між ними будуть обрізані та не відображені, якщо користувач не натисне на інформаційне повідомлення."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/title
 msgctxt "settings"
 msgid "The maximum number of output cells to to be rendered in the output area. Set to 0 to have the complete display."
-msgstr ""
+msgstr "Максимальна кількість готових клітинок для показу в області результатів. Встановіть \"0\", щоб відобразити повністю."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/numberCellsToRenderDirectly/description
 msgctxt "settings"
 msgid "Define the number of cells to render directly when virtual notebook intersection observer is available"
-msgstr ""
+msgstr "Визначте кількість клітинок для безпосереднього показу, коли доступний віртуальний блокнот пошуку перехресть"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/numberCellsToRenderDirectly/title
 msgctxt "settings"
 msgid "Number of cells to render directly"
-msgstr ""
+msgstr "Кількість клітинок для безпосереднього показу"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/observedBottomMargin/description
 msgctxt "settings"
 msgid "Defines the observed bottom margin for the virtual notebook, set a positive number of pixels to render cells below the visible view"
-msgstr ""
+msgstr "Визначає видимість нижнього поля віртуального блокнота, встановіть позитивну кількість пікселів, щоб відображати клітини нижче видимого поля"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/observedBottomMargin/title
 msgctxt "settings"
 msgid "Observed bottom margin"
-msgstr ""
+msgstr "Видиме нижнє поле"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/observedTopMargin/description
 msgctxt "settings"
 msgid "Defines the observed top margin for the virtual notebook, set a positive number of pixels to render cells above the visible view"
-msgstr ""
+msgstr "Визначає видимість верхнього поля віртуального блокнота, встановіть позитивну кількість пікселів, щоб відображати клітини вище видимого поля"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/observedTopMargin/title
 msgctxt "settings"
 msgid "Observed top margin"
-msgstr ""
+msgstr "Видиме верхнє поле"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all raw cells."
-msgstr ""
+msgstr "Конфігурація всіх клітинок неформатованих даних."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/title
 msgctxt "settings"
 msgid "Raw Cell Configuration"
-msgstr ""
+msgstr "Конфігурація клітинок неформатованих даних"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/recordTiming/description
 msgctxt "settings"
 msgid "Should timing data be recorded in cell metadata"
-msgstr ""
+msgstr "Визначає, чи записувати хронометричні дані в метадані клітинок"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/recordTiming/title
 msgctxt "settings"
 msgid "Recording timing"
-msgstr ""
+msgstr "Хронометраж записування"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/renderCellOnIdle/description
 msgctxt "settings"
 msgid "Defines if the placeholder cells should be rendered when the browser is idle"
-msgstr ""
+msgstr "Визначає, чи повинні клітинки заповнювача показуватись при простої браузера"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/renderCellOnIdle/title
 msgctxt "settings"
 msgid "Render cell on browser idle time"
-msgstr ""
+msgstr "Показувати клітинку в браузері під час простою"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/scrollPastEnd/description
 msgctxt "settings"
 msgid "Whether to be able to scroll so the last cell is at the top of the panel"
-msgstr ""
+msgstr "Визначає, чи можна прокручувати так, щоб остання клітинка відображалася вгорі панелі"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/scrollPastEnd/title
 msgctxt "settings"
 msgid "Scroll past last cell"
-msgstr ""
+msgstr "Прокручувати після останньої клітинки"
 
 #: /packages/notebook-extension/schema/tracker.json:/title
 msgctxt "schema"
@@ -1209,12 +1239,12 @@ msgstr "Налаштування сполучень клавіш."
 #: /packages/shortcuts-extension/schema/shortcuts.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Гарячі Клавіші"
 
 #: /packages/shortcuts-extension/schema/shortcuts.json:/properties/shortcuts/description
 msgctxt "settings"
 msgid "The list of keyboard shortcuts."
-msgstr ""
+msgstr "Список сполучень клавіш."
 
 #: /packages/shortcuts-extension/schema/shortcuts.json:/title
 msgctxt "schema"
@@ -1229,17 +1259,17 @@ msgstr "Налаштування рядка стану."
 #: /packages/statusbar-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Status Bar"
-msgstr ""
+msgstr "Рядок стану"
 
 #: /packages/statusbar-extension/schema/plugin.json:/properties/visible/description
 msgctxt "settings"
 msgid "Whether to show status bar or not"
-msgstr ""
+msgstr "Визначає, чи показувати рядок стану"
 
 #: /packages/statusbar-extension/schema/plugin.json:/properties/visible/title
 msgctxt "settings"
 msgid "Status Bar Visibility"
-msgstr ""
+msgstr "Видимість рядка стану"
 
 #: /packages/statusbar-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1254,92 +1284,92 @@ msgstr "Налаштування термінала."
 #: /packages/terminal-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Terminal"
-msgstr ""
+msgstr "Термінал"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontFamily/description
 msgctxt "settings"
 msgid "The font family used to render text."
-msgstr ""
+msgstr "Сімейство шрифтів для відрисовки тексту."
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontFamily/title
 msgctxt "settings"
 msgid "Font family"
-msgstr ""
+msgstr "Сімейство шрифтів"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontSize/description
 msgctxt "settings"
 msgid "The font size used to render text."
-msgstr ""
+msgstr "Розмір шрифту для відрисовки тексту."
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontSize/title
 msgctxt "settings"
 msgid "Font size"
-msgstr ""
+msgstr "Розмір шрифту"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/lineHeight/description
 msgctxt "settings"
 msgid "The line height used to render text."
-msgstr ""
+msgstr "Висота рядка для відрисовки тексту."
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/lineHeight/title
 msgctxt "settings"
 msgid "Line height"
-msgstr ""
+msgstr "Висота рядка"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/macOptionIsMeta/description
 msgctxt "settings"
 msgid "Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word"
-msgstr ""
+msgstr "Клавіша Option у macOS може слугувати метаклавішею. Це дає змогу переміщувати курсор на одне слово за допомогою такого сполучення, як Option+F"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/macOptionIsMeta/title
 msgctxt "settings"
 msgid "Treat option as meta key on macOS"
-msgstr ""
+msgstr "Вважати клавішу Option метаклавішею в macOS"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/pasteWithCtrlV/description
 msgctxt "settings"
 msgid "Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available"
-msgstr ""
+msgstr "Активує можливість вставлення за допомогою клавіш Ctrl+V. Можна заборонити виконувати команду вставлення за допомогою клавіш Ctrl+V, наприклад, у редакторі vi. Цей параметр не діє в macOS, де застосовується сполучення клавіш Cmd+V"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/pasteWithCtrlV/title
 msgctxt "settings"
 msgid "Paste with Ctrl+V"
-msgstr ""
+msgstr "Вставляти за допомогою Ctrl+V"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/screenReaderMode/description
 msgctxt "settings"
 msgid "Add accessibility elements for use with screen readers."
-msgstr ""
+msgstr "Додати елементи спеціальних можливостей для використання екранними дикторами."
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/screenReaderMode/title
 msgctxt "settings"
 msgid "Screen Reader Mode"
-msgstr ""
+msgstr "Режим читання"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/scrollback/description
 msgctxt "settings"
 msgid "The amount of scrollback beyond initial viewport"
-msgstr ""
+msgstr "Обсяг даних на екрані за межами вихідного вікна"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/scrollback/title
 msgctxt "settings"
 msgid "Scrollback Buffer"
-msgstr ""
+msgstr "Буфер прокручування"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/shutdownOnClose/description
 msgctxt "settings"
 msgid "Shut down the session when closing the terminal."
-msgstr ""
+msgstr "Завершуйте роботу сеансу в разі закриття термінала."
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/shutdownOnClose/title
 msgctxt "settings"
 msgid "Shut down on close"
-msgstr ""
+msgstr "Завершувати роботу в разі закриття"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/theme/description
 msgctxt "settings"
 msgid "The theme for the terminal."
-msgstr ""
+msgstr "Тема для термінала."
 
 #: /packages/terminal-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1349,47 +1379,47 @@ msgstr "Термінал"
 #: /packages/toc-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Table of contents settings."
-msgstr ""
+msgstr "Налаштування змісту."
 
 #: /packages/toc-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Table of Contents"
-msgstr ""
+msgstr "Зміст"
 
 #: /packages/toc-extension/schema/plugin.json:/properties/includeOutput/description
 msgctxt "settings"
 msgid "Whether to include cell output in headings"
-msgstr ""
+msgstr "Визначає, чи включати ємність клітинки в заголовки"
 
 #: /packages/toc-extension/schema/plugin.json:/properties/includeOutput/title
 msgctxt "settings"
 msgid "Include cell output in headings"
-msgstr ""
+msgstr "Включати ємність клітинки в заголовки"
 
 #: /packages/toc-extension/schema/plugin.json:/properties/numberingH1/description
 msgctxt "settings"
 msgid "Whether to number first-level headings"
-msgstr ""
+msgstr "Визначає, чи нумерувати заголовки першого рівня"
 
 #: /packages/toc-extension/schema/plugin.json:/properties/numberingH1/title
 msgctxt "settings"
 msgid "Enable h1 numbering"
-msgstr ""
+msgstr "Увімкнути нумерацію h1"
 
 #: /packages/toc-extension/schema/plugin.json:/properties/syncCollapseState/description
 msgctxt "settings"
 msgid "If set to true, when a header is collapsed in the table of contents the corresponding section in the notebook is collapsed as well and vice versa."
-msgstr ""
+msgstr "Якщо встановлено \"true\", коли заголовок згорнутий у змісті, відповідна секція у блокноті також згортається та навпаки."
 
 #: /packages/toc-extension/schema/plugin.json:/properties/syncCollapseState/title
 msgctxt "settings"
 msgid "Synchronize collapse state"
-msgstr ""
+msgstr "Синхронізувати стан колапсу"
 
 #: /packages/toc-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Table of Contents"
-msgstr ""
+msgstr "Зміст"
 
 #: /packages/tooltip-extension/schema/consoles.json:/description
 msgctxt "schema"
@@ -1429,42 +1459,42 @@ msgstr "Налаштування мови."
 #: /packages/translation-extension/schema/plugin.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
 msgctxt "menu"
 msgid "Language"
-msgstr ""
+msgstr "Мова"
 
 #: /packages/translation-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Language"
-msgstr ""
+msgstr "Мова"
 
 #: /packages/translation-extension/schema/plugin.json:/properties/displayStringsPrefix/description
 msgctxt "settings"
 msgid "Display the `stringsPrefix` on localized strings."
-msgstr ""
+msgstr "Відображайте префікс «stringsPrefix» у локалізованих рядках."
 
 #: /packages/translation-extension/schema/plugin.json:/properties/displayStringsPrefix/title
 msgctxt "settings"
 msgid "Display localized strings prefix"
-msgstr ""
+msgstr "Показувати префікс локалізованих рядків"
 
 #: /packages/translation-extension/schema/plugin.json:/properties/locale/description
 msgctxt "settings"
 msgid "Set the interface display language. Examples: 'es_CO', 'fr'."
-msgstr ""
+msgstr "Установіть мову інтерфейсу користувача. Наприклад, «es_CO», «fr»."
 
 #: /packages/translation-extension/schema/plugin.json:/properties/locale/title
 msgctxt "settings"
 msgid "Language locale"
-msgstr ""
+msgstr "Мова користувача"
 
 #: /packages/translation-extension/schema/plugin.json:/properties/stringsPrefix/description
 msgctxt "settings"
 msgid "Add a prefix to localized strings."
-msgstr ""
+msgstr "Додавайте префікс до локалізованих рядків."
 
 #: /packages/translation-extension/schema/plugin.json:/properties/stringsPrefix/title
 msgctxt "settings"
 msgid "Localized strings prefix"
-msgstr ""
+msgstr "Префікс локалізованих рядків"
 
 #: /packages/translation-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1529,7 +1559,7 @@ msgstr "Режим презентації"
 
 #: packages/application-extension/src/index.tsx:335 packages/statusbar-extension/src/index.ts:361
 msgid "Simple Interface"
-msgstr ""
+msgstr "Простий інтерфейс"
 
 #: packages/application-extension/src/index.tsx:426
 msgid "Error Registering Plugins"
@@ -1595,11 +1625,11 @@ msgstr "Інспектор властивостей"
 
 #: packages/application-extension/src/index.tsx:962 packages/mainmenu-extension/src/index.ts:889
 msgid "Information"
-msgstr ""
+msgstr "Інформація"
 
 #: packages/application-extension/src/index.tsx:963
 msgid "Context menu customization has changed. You will need to reload JupyterLab to see the changes."
-msgstr ""
+msgstr "Налаштування контекстного меню було змінено. Перезавантажте JupyterLab, щоб побачити зміни."
 
 #: packages/application-extension/src/index.tsx:968 packages/docmanager-extension/src/index.ts:589 packages/mainmenu-extension/src/index.ts:895
 msgid "Reload"
@@ -1619,24 +1649,25 @@ msgstr "Не вдалося встановити зв’язок із серве
 
 #: packages/application/src/shell.ts:238
 msgid "main"
-msgstr ""
+msgstr "основне"
 
 #: packages/application/src/shell.ts:270 packages/application/src/shell.ts:274
 msgid "main sidebar"
-msgstr ""
+msgstr "головна бічна панель"
 
 #: packages/application/src/shell.ts:283 packages/application/src/shell.ts:287
 msgid "alternate sidebar"
-msgstr ""
+msgstr "альтернативна бічна панель"
 
 #: packages/apputils-extension/src/index.ts:207
 msgid "Loading…"
-msgstr ""
+msgstr "Завантаження…"
 
 #: packages/apputils-extension/src/index.ts:208
 msgid "The loading screen is taking a long time.\n"
 "Would you like to clear the workspace or keep waiting?"
-msgstr ""
+msgstr "Завантаження екрана триває довго. \n"
+"Очистити робочу область чи очікувати далі?"
 
 #: packages/apputils-extension/src/index.ts:211
 msgid "Keep Waiting"
@@ -1648,11 +1679,11 @@ msgstr "Очистити робочу область"
 
 #: packages/apputils-extension/src/index.ts:277
 msgid "Print…"
-msgstr ""
+msgstr "Друкувати…"
 
 #: packages/apputils-extension/src/index.ts:307
 msgid "Show Header Above Content"
-msgstr ""
+msgstr "Відображати заголовок над змістом"
 
 #: packages/apputils-extension/src/index.ts:468
 msgid "Reset Application State"
@@ -1664,11 +1695,11 @@ msgstr "Запустити першу ввімкнену команду"
 
 #: packages/apputils-extension/src/index.ts:575
 msgid "Run All Enabled Commands Passed as Args"
-msgstr ""
+msgstr "Запустити всі увімкнені команди, передані як Args"
 
 #: packages/apputils-extension/src/palette.ts:101
 msgid "Command Palette Section"
-msgstr ""
+msgstr "Налаштування палітри команд"
 
 #: packages/apputils-extension/src/palette.ts:142
 msgid "Commands (%1)"
@@ -1696,7 +1727,7 @@ msgstr "Стилізувати смуги прокручування"
 
 #: packages/apputils-extension/src/themesplugins.ts:110
 msgid "waiting for fonts"
-msgstr ""
+msgstr "очікування шрифтів"
 
 #: packages/apputils-extension/src/themesplugins.ts:121
 msgid "Increase Code Font Size"
@@ -1748,7 +1779,7 @@ msgstr "Зберегти"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:276 packages/apputils-extension/src/workspacesplugin.ts:82
 msgid "Save Current Workspace As…"
-msgstr ""
+msgstr "Зберегти цю робочу область як…"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1245 packages/debugger-extension/src/index.ts:511 packages/debugger/src/panels/breakpoints/index.ts:51 packages/docmanager-extension/src/index.ts:588 packages/docmanager-extension/src/index.ts:638 packages/docmanager-extension/src/index.ts:851 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:452 packages/filebrowser/src/opendialog.ts:81 packages/notebook/src/actions.tsx:1791 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/translation-extension/src/index.ts:138
 msgid "Cancel"
@@ -1764,11 +1795,11 @@ msgstr "Зберегти цю робочу область"
 
 #: packages/apputils/src/mainareawidget.ts:42
 msgid "notebook content"
-msgstr ""
+msgstr "зміст блокноту"
 
 #: packages/apputils/src/mainareawidget.ts:45
 msgid "notebook actions"
-msgstr ""
+msgstr "дії з блокнотом"
 
 #: packages/apputils/src/sessioncontext.tsx:1251 packages/filebrowser/src/opendialog.ts:83
 msgid "Select"
@@ -1808,7 +1839,7 @@ msgstr "Використовувати ядро з іншого сеансу"
 
 #: packages/apputils/src/sessioncontext.tsx:1640
 msgid "Use No Kernel"
-msgstr ""
+msgstr "Не використовувати ядро"
 
 #: packages/apputils/src/sessioncontext.tsx:1642 packages/apputils/src/sessioncontext.tsx:613 packages/statusbar/src/defaults/kernelStatus.tsx:187
 msgid "No Kernel"
@@ -1844,7 +1875,7 @@ msgstr "Помилка завантаження теми"
 
 #: packages/apputils/src/thememanager.ts:441 packages/docmanager-extension/src/index.ts:366 packages/extensionmanager/src/companions.tsx:218 packages/extensionmanager/src/dialog.tsx:39 packages/extensionmanager/src/widget.tsx:354 packages/extensionmanager/src/widget.tsx:355
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: packages/apputils/src/toolbar.tsx:1206
 msgid "Switch kernel"
@@ -1852,51 +1883,51 @@ msgstr "Перемкнути ядро"
 
 #: packages/apputils/src/toolbar.tsx:1228 packages/statusbar/src/defaults/kernelStatus.tsx:124
 msgid "Unknown"
-msgstr ""
+msgstr "Невідомо"
 
 #: packages/apputils/src/toolbar.tsx:1229 packages/statusbar/src/defaults/kernelStatus.tsx:125
 msgid "Starting"
-msgstr ""
+msgstr "Запускається"
 
 #: packages/apputils/src/toolbar.tsx:1230 packages/statusbar/src/defaults/kernelStatus.tsx:126
 msgid "Idle"
-msgstr ""
+msgstr "Очікування"
 
 #: packages/apputils/src/toolbar.tsx:1231 packages/statusbar/src/defaults/kernelStatus.tsx:127
 msgid "Busy"
-msgstr ""
+msgstr "Зайнятий"
 
 #: packages/apputils/src/toolbar.tsx:1232 packages/statusbar/src/defaults/kernelStatus.tsx:128
 msgid "Terminating"
-msgstr ""
+msgstr "Припинення"
 
 #: packages/apputils/src/toolbar.tsx:1233 packages/statusbar/src/defaults/kernelStatus.tsx:129
 msgid "Restarting"
-msgstr ""
+msgstr "Перезавантаження"
 
 #: packages/apputils/src/toolbar.tsx:1234 packages/statusbar/src/defaults/kernelStatus.tsx:130
 msgid "Autorestarting"
-msgstr ""
+msgstr "Автоматичний перезапуск"
 
 #: packages/apputils/src/toolbar.tsx:1235 packages/statusbar/src/defaults/kernelStatus.tsx:131
 msgid "Dead"
-msgstr ""
+msgstr "Розряджена"
 
 #: packages/apputils/src/toolbar.tsx:1236 packages/statusbar/src/defaults/kernelStatus.tsx:132
 msgid "Connected"
-msgstr ""
+msgstr "Підключено"
 
 #: packages/apputils/src/toolbar.tsx:1237 packages/statusbar/src/defaults/kernelStatus.tsx:133
 msgid "Connecting"
-msgstr ""
+msgstr "Підключення"
 
 #: packages/apputils/src/toolbar.tsx:1238 packages/statusbar/src/defaults/kernelStatus.tsx:134
 msgid "Disconnected"
-msgstr ""
+msgstr "Роз’єднано"
 
 #: packages/apputils/src/toolbar.tsx:1239 packages/statusbar/src/defaults/kernelStatus.tsx:135
 msgid "Initializing"
-msgstr ""
+msgstr "Ініціалізація"
 
 #: packages/apputils/src/toolbar.tsx:1262
 msgid "Kernel %1"
@@ -1916,7 +1947,7 @@ msgstr "Додати тег"
 
 #: packages/celltags/src/tool.ts:198
 msgid "Cell Tags"
-msgstr ""
+msgstr "Теги клітинок"
 
 #: packages/codeeditor/src/jsoneditor.ts:311 packages/codeeditor/src/jsoneditor.ts:78
 msgid "No data!"
@@ -1932,11 +1963,11 @@ msgstr "Зберегти зміни даних"
 
 #: packages/codemirror-extension/src/index.ts:297
 msgid "codemirror"
-msgstr ""
+msgstr "codemirror"
 
 #: packages/codemirror-extension/src/index.ts:314
 msgid "Sublime Text"
-msgstr ""
+msgstr "Sublime Text"
 
 #: packages/codemirror-extension/src/index.ts:329 packages/documentsearch-extension/src/index.ts:142
 msgid "Find…"
@@ -1968,7 +1999,7 @@ msgstr "Показувати всю активність ядра"
 
 #: packages/console-extension/src/index.ts:414
 msgid "Auto Close Brackets for Code Console Prompt"
-msgstr ""
+msgstr "Автоматично закривати дужки для Prompt консолі коду"
 
 #: packages/console-extension/src/index.ts:468
 msgid "New Console"
@@ -2096,7 +2127,7 @@ msgstr "Роздільник: "
 
 #: packages/debugger-extension/src/index.ts:192 packages/debugger-extension/src/index.ts:193
 msgid "Restart Kernel and Debug…"
-msgstr ""
+msgstr "Перезапустити ядро та відладчик…"
 
 #: packages/debugger-extension/src/index.ts:332 packages/debugger-extension/src/index.ts:333
 msgid "Inspect Variable"
@@ -2104,11 +2135,11 @@ msgstr "Перевірити змінну"
 
 #: packages/debugger-extension/src/index.ts:500 packages/debugger-extension/src/index.ts:501 packages/debugger-extension/src/index.ts:509
 msgid "Evaluate Code"
-msgstr ""
+msgstr "Оцінити код"
 
 #: packages/debugger-extension/src/index.ts:510
 msgid "Evaluate"
-msgstr ""
+msgstr "Оцінити"
 
 #: packages/debugger-extension/src/index.ts:537 packages/debugger-extension/src/index.ts:538
 msgid "Continue"
@@ -2132,7 +2163,7 @@ msgstr "Крок назад"
 
 #: packages/debugger-extension/src/index.ts:614
 msgid "Debugger section"
-msgstr ""
+msgstr "Розділ відладчика"
 
 #: packages/debugger-extension/src/index.ts:619
 msgid "Debugger"
@@ -2140,15 +2171,15 @@ msgstr "Налагоджувач"
 
 #: packages/debugger/src/handler.ts:55 packages/debugger/src/handler.ts:57
 msgid "Enable Debugger"
-msgstr ""
+msgstr "Увімкнути відладчик"
 
 #: packages/debugger/src/handler.ts:57 packages/debugger/src/handler.ts:59
 msgid "Disable Debugger"
-msgstr ""
+msgstr "Вимкнути відладчик"
 
 #: packages/debugger/src/handler.ts:58 packages/debugger/src/handler.ts:60
 msgid "Select a kernel that supports debugging to enable debugger"
-msgstr ""
+msgstr "Оберіть ядро, яке підтримує відладку, щоб увімкнути відладчик"
 
 #: packages/debugger/src/panels/breakpoints/header.ts:25
 msgid "Breakpoints"
@@ -2160,11 +2191,11 @@ msgstr "Вилучити всі точки переходу"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:48
 msgid "Are you sure you want to remove all breakpoints?"
-msgstr ""
+msgstr "Ви дійсно хочете видалити всі точки переходу?"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:50
 msgid "Remove breakpoints"
-msgstr ""
+msgstr "Видалити точки переходу"
 
 #: packages/debugger/src/panels/callstack/header.ts:25
 msgid "Callstack"
@@ -2184,15 +2215,15 @@ msgstr "Змінні"
 
 #: packages/debugger/src/panels/variables/index.ts:73
 msgid "Tree View"
-msgstr ""
+msgstr "У вигляді дерева"
 
 #: packages/debugger/src/panels/variables/index.ts:80
 msgid "Table View"
-msgstr ""
+msgstr "У вигляді таблиці"
 
 #: packages/debugger/src/panels/variables/scope.tsx:53
 msgid "Scope"
-msgstr ""
+msgstr "Scope"
 
 #: packages/docmanager-extension/src/index.ts:231
 msgid "Overrides for the default viewers for file types.\n"
@@ -2328,7 +2359,7 @@ msgstr "Нове подання для %1"
 
 #: packages/docmanager-extension/src/index.ts:824
 msgid "Rename%1…"
-msgstr ""
+msgstr "Перейменувати %1…"
 
 #: packages/docmanager-extension/src/index.ts:838
 msgid "Delete %1"
@@ -2452,7 +2483,9 @@ msgstr "Помилка завантаження файлу для %1"
 msgid "\"%1\" has changed on disk since the last time it was opened or saved.\n"
 "Do you want to overwrite the file on disk with the version open here,\n"
 "or load the version on disk (revert)?"
-msgstr ""
+msgstr "«%1» змінено на диску з моменту останнього відкриття або зберігання.\n"
+"Перезаписати файл на диску відкритою тут версією\n"
+"чи завантажити версію на диску (відновити)?"
 
 #: packages/docregistry/src/context.ts:820 packages/docregistry/src/context.ts:823
 msgid "File Changed"
@@ -2508,7 +2541,7 @@ msgstr "Файл JSON"
 
 #: packages/docregistry/src/registry.ts:1399 packages/fileeditor-extension/src/index.ts:198
 msgid "Julia File"
-msgstr ""
+msgstr "Файл Julia"
 
 #: packages/docregistry/src/registry.ts:1406
 msgid "CSV File"
@@ -2556,11 +2589,11 @@ msgstr "Замінити все"
 
 #: packages/documentsearch/src/searchoverlay.tsx:321
 msgid "Search Cell Outputs"
-msgstr ""
+msgstr "Пошук результатів клітинки"
 
 #: packages/documentsearch/src/searchoverlay.tsx:338
 msgid "Search Selected Cell(s)"
-msgstr ""
+msgstr "Знайти обрані клітин(ки)"
 
 #: packages/extensionmanager-extension/src/index.ts:107
 msgid "Enable Extension Manager"
@@ -2598,7 +2631,7 @@ msgstr "Увімкнути"
 
 #: packages/extensionmanager-extension/src/index.ts:68 packages/extensionmanager-extension/src/index.ts:89
 msgid "Extension Manager section"
-msgstr ""
+msgstr "Розділ диспетчера розширень"
 
 #: packages/extensionmanager/src/companions.tsx:137
 msgid "This package has indicated that it needs a corresponding server\n"
@@ -2698,17 +2731,19 @@ msgstr "Видалити"
 
 #: packages/extensionmanager/src/widget.tsx:365
 msgid "About"
-msgstr ""
+msgstr "Про додаток"
 
 #: packages/extensionmanager/src/widget.tsx:384
 msgid "This is a prebuilt extension. To uninstall it, please\n"
 "    apply following instructions."
-msgstr ""
+msgstr "Це попередньо створене розширення. Щоб видалити його, будь ласка,\n"
+"виконайте наступні кроки."
 
 #: packages/extensionmanager/src/widget.tsx:394
 msgid "This is a prebuilt extension. To uninstall it, please\n"
 "    read the user guide on:"
-msgstr ""
+msgstr "Це попередньо створене розширення. Щоб видалити його, будь ласка,\n"
+"прочитайте керівництво користувача щодо:"
 
 #: packages/extensionmanager/src/widget.tsx:491
 msgid "No entries"
@@ -2786,11 +2821,11 @@ msgstr "Показувати активний файл в оглядачі фа�
 
 #: packages/filebrowser-extension/src/index.ts:1026
 msgid "Show Last Modified Column"
-msgstr ""
+msgstr "Відображати останню змінену колонку"
 
 #: packages/filebrowser-extension/src/index.ts:1042
 msgid "Show Hidden Files"
-msgstr ""
+msgstr "Відображати приховані файли"
 
 #: packages/filebrowser-extension/src/index.ts:1059
 msgid "Search on File Names"
@@ -2802,7 +2837,7 @@ msgstr "За цим шляхом немає оглядача"
 
 #: packages/filebrowser-extension/src/index.ts:155
 msgid "File Browser Section"
-msgstr ""
+msgstr "Розділ оглядача файлів"
 
 #: packages/filebrowser-extension/src/index.ts:184
 msgid "File Browser (%1)"
@@ -2906,7 +2941,7 @@ msgstr "Каталог не знайдено: «%1»"
 
 #: packages/filebrowser/src/browser.ts:83
 msgid "file browser"
-msgstr ""
+msgstr "оглядач файлів"
 
 #: packages/filebrowser/src/crumbs.ts:163
 msgid "Open Error"
@@ -2923,15 +2958,15 @@ msgstr "Відкрити каталог"
 
 #: packages/filebrowser/src/listing.ts:1135
 msgid "Error Uploading Folder"
-msgstr ""
+msgstr "Помилка при завантаженні папки"
 
 #: packages/filebrowser/src/listing.ts:1136
 msgid "Drag and Drop is currently not supported for folders"
-msgstr ""
+msgstr "Drag and Drop наразі не використовуються для папок"
 
 #: packages/filebrowser/src/listing.ts:1139 packages/running-extension/src/opentabs.ts:87
 msgid "Close"
-msgstr ""
+msgstr "Закрити"
 
 #: packages/filebrowser/src/listing.ts:1255
 msgctxt "showErrorMessage"
@@ -3135,7 +3170,7 @@ msgstr "Автоматично закривати дужки в текстово
 
 #: packages/fileeditor-extension/src/commands.ts:475
 msgid "Auto Close Brackets"
-msgstr ""
+msgstr "Автоматично закривати дужки"
 
 #: packages/fileeditor-extension/src/commands.ts:502
 msgid "Replace Selection in Editor"
@@ -3175,27 +3210,27 @@ msgstr "Створити новий файл розмітки"
 
 #: packages/fileeditor-extension/src/index.ts:187
 msgid "New Python File"
-msgstr ""
+msgstr "Новий файл Python"
 
 #: packages/fileeditor-extension/src/index.ts:188
 msgid "Create a new Python file"
-msgstr ""
+msgstr "Створити новий файл Python"
 
 #: packages/fileeditor-extension/src/index.ts:199
 msgid "New Julia File"
-msgstr ""
+msgstr "Новий файл Julia"
 
 #: packages/fileeditor-extension/src/index.ts:200
 msgid "Create a new Julia file"
-msgstr ""
+msgstr "Створити новий файл Julia"
 
 #: packages/fileeditor-extension/src/index.ts:211
 msgid "New R File"
-msgstr ""
+msgstr "Новий файл R"
 
 #: packages/fileeditor-extension/src/index.ts:212
 msgid "Create a new R file"
-msgstr ""
+msgstr "Створити новий файл R"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:57
 msgid "Spaces"
@@ -3219,7 +3254,7 @@ msgstr "ПРО ПРОЄКТ JUPYTER"
 
 #: packages/help-extension/src/index.tsx:138
 msgid "© 2015-2021 Project Jupyter Contributors"
-msgstr ""
+msgstr "© 2015-2021 Співавтори проєкту Jupyter"
 
 #: packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:394 packages/hub-extension/src/index.ts:161 packages/mainmenu-extension/src/index.ts:541
 msgid "Dismiss"
@@ -3235,7 +3270,7 @@ msgstr "Запустити класичний блокнот"
 
 #: packages/help-extension/src/index.tsx:215
 msgid "Jupyter Forum"
-msgstr ""
+msgstr "Форум Jupyter"
 
 #: packages/help-extension/src/index.tsx:250
 msgid "JupyterLab Reference"
@@ -3259,15 +3294,15 @@ msgstr "Про ядро %1"
 
 #: packages/help-extension/src/index.tsx:485
 msgid "Download All Licenses as"
-msgstr ""
+msgstr "Завантажити всі ліцензії як"
 
 #: packages/help-extension/src/index.tsx:486 packages/help-extension/src/licenses.tsx:438
 msgid "Licenses"
-msgstr ""
+msgstr "Ліцензії"
 
 #: packages/help-extension/src/index.tsx:487
 msgid "Refresh Licenses"
-msgstr ""
+msgstr "Оновити ліцензії"
 
 #: packages/help-extension/src/index.tsx:93
 msgid "About %1"
@@ -3279,39 +3314,39 @@ msgstr "Версія %1"
 
 #: packages/help-extension/src/licenses.tsx:513
 msgid "Filter Licenses By"
-msgstr ""
+msgstr "Фільтрувати ліцензії за"
 
 #: packages/help-extension/src/licenses.tsx:517 packages/help-extension/src/licenses.tsx:643
 msgid "Package"
-msgstr ""
+msgstr "Пакет"
 
 #: packages/help-extension/src/licenses.tsx:521 packages/help-extension/src/licenses.tsx:644
 msgid "Version"
-msgstr ""
+msgstr "Версія"
 
 #: packages/help-extension/src/licenses.tsx:525 packages/help-extension/src/licenses.tsx:645 packages/help-extension/src/licenses.tsx:712
 msgid "License"
-msgstr ""
+msgstr "Ліцензія"
 
 #: packages/help-extension/src/licenses.tsx:530
 msgid "Distributions"
-msgstr ""
+msgstr "Поширення"
 
 #: packages/help-extension/src/licenses.tsx:633
 msgid "No Packages found"
-msgstr ""
+msgstr "Пакети не знайдено"
 
 #: packages/help-extension/src/licenses.tsx:707
 msgid "No Package selected"
-msgstr ""
+msgstr "Пакет не було обрано"
 
 #: packages/help-extension/src/licenses.tsx:713
 msgid "No License ID found"
-msgstr ""
+msgstr "Не знайдено ліцензії ID"
 
 #: packages/help-extension/src/licenses.tsx:715
 msgid "No License Text found"
-msgstr ""
+msgstr "Не знайдено текст ліцензії"
 
 #: packages/htmlviewer-extension/src/index.tsx:110
 msgid "Trust HTML File"
@@ -3349,7 +3384,7 @@ msgstr "Довіряти HTML"
 
 #: packages/hub-extension/src/index.ts:154
 msgid "Server unavailable or unreachable"
-msgstr ""
+msgstr "Сервер недоступний або недосяжний"
 
 #: packages/hub-extension/src/index.ts:155
 msgid "Your server at %1 is not running.\n"
@@ -3447,7 +3482,7 @@ msgstr "Запустити"
 
 #: packages/json-extension/src/component.tsx:63
 msgid "Filter…"
-msgstr ""
+msgstr "Фільтр…"
 
 #: packages/launcher-extension/src/index.ts:100 packages/launcher-extension/src/index.ts:76
 msgid "Launcher"
@@ -3608,7 +3643,7 @@ msgstr "Вийти з JupyterLab"
 
 #: packages/mainmenu-extension/src/index.ts:475
 msgid "Reconnect to Kernel"
-msgstr ""
+msgstr "Повторно підключитися до ядра"
 
 #: packages/mainmenu-extension/src/index.ts:497
 msgid "Restart Kernel and Clear…"
@@ -3656,7 +3691,7 @@ msgstr "Перейти до раніше активованої вкладки"
 
 #: packages/mainmenu-extension/src/index.ts:890
 msgid "Menu customization has changed. You will need to reload JupyterLab to see the changes."
-msgstr ""
+msgstr "Налаштування меню було змінено. Перезавантажте JupyterLab, щоб побачити зміни."
 
 #: packages/markdownviewer-extension/src/index.ts:138
 msgid "Markdown Preview"
@@ -3668,11 +3703,11 @@ msgstr "Показати редактор розмітки"
 
 #: packages/notebook-extension/src/index.ts:1006
 msgid "Copy Output to Clipboard"
-msgstr ""
+msgstr "Копіювати результат в буфер обміну"
 
 #: packages/notebook-extension/src/index.ts:1095
 msgid "Auto Close Brackets for All Notebook Cell Types"
-msgstr ""
+msgstr "Автоматично закривати дужки для всіх типів клітинок блокноту"
 
 #: packages/notebook-extension/src/index.ts:1241
 msgid "New Notebook"
@@ -3788,11 +3823,11 @@ msgstr "Об’єднати вибрані клітинки"
 
 #: packages/notebook-extension/src/index.ts:1765
 msgid "Merge Cell Above"
-msgstr ""
+msgstr "Об'єднати клітини вище"
 
 #: packages/notebook-extension/src/index.ts:1776
 msgid "Merge Cell Below"
-msgstr ""
+msgstr "Об'єднати клітини нижче"
 
 #: packages/notebook-extension/src/index.ts:1787
 msgid "Insert Cell Above"
@@ -3920,15 +3955,15 @@ msgstr "Згорнути всі результати"
 
 #: packages/notebook-extension/src/index.ts:2149
 msgid "Render Side-by-side"
-msgstr ""
+msgstr "Відображати один за одним"
 
 #: packages/notebook-extension/src/index.ts:2174
 msgid "Set side-by-side ratio"
-msgstr ""
+msgstr "Встановити співвідношення side-by-side"
 
 #: packages/notebook-extension/src/index.ts:2177
 msgid "Width of the output in side-by-side mode"
-msgstr ""
+msgstr "Ширина виводу у режимі side-by-side"
 
 #: packages/notebook-extension/src/index.ts:2192
 msgid "Expand All Outputs"
@@ -3976,11 +4011,11 @@ msgstr "Нова консоль для блокнота"
 
 #: packages/notebook-extension/src/index.ts:2631
 msgid "HTML"
-msgstr ""
+msgstr "HTML"
 
 #: packages/notebook-extension/src/index.ts:2632
 msgid "LaTeX"
-msgstr ""
+msgstr "LaTeX"
 
 #: packages/notebook-extension/src/index.ts:2633 packages/notebook/src/default-toolbar.tsx:343
 msgid "Markdown"
@@ -3988,7 +4023,7 @@ msgstr "Розмітка"
 
 #: packages/notebook-extension/src/index.ts:2634 packages/notebook-extension/src/index.ts:638
 msgid "PDF"
-msgstr ""
+msgstr "PDF"
 
 #: packages/notebook-extension/src/index.ts:2635
 msgid "ReStructured Text"
@@ -4012,7 +4047,7 @@ msgstr "Для блокнота:"
 
 #: packages/notebook-extension/src/index.ts:388
 msgid "Save and Export Notebook: %1"
-msgstr ""
+msgstr "Зберегти та експортувати блокнот як: %1"
 
 #: packages/notebook-extension/src/index.ts:639
 msgid "Slides"
@@ -4040,7 +4075,7 @@ msgstr "Запустити вибраний текст або цей рядок 
 
 #: packages/notebook/src/actions.tsx:1761
 msgid "A trusted Jupyter notebook may execute hidden malicious code when you open it."
-msgstr ""
+msgstr "Якщо відкрити надійний блокнот Jupyter, він може виконувати прихований зловмисний код."
 
 #: packages/notebook/src/actions.tsx:1765
 msgid "Selecting trust will re-render this notebook in a trusted state."
@@ -4048,11 +4083,11 @@ msgstr "Якщо вибрати цей блокнот надійним, його
 
 #: packages/notebook/src/actions.tsx:1769
 msgid "For more information, see"
-msgstr ""
+msgstr "Для отримання додаткової інформації"
 
 #: packages/notebook/src/actions.tsx:1775
 msgid "the Jupyter security documentation"
-msgstr ""
+msgstr "документація з безпеки Jupyter"
 
 #: packages/notebook/src/actions.tsx:1782
 msgid "Notebook is already trusted"
@@ -4072,11 +4107,12 @@ msgstr "Схоже, ядро для %1 припиняє роботу. Зараз
 
 #: packages/notebook/src/actions.tsx:2017
 msgid "Cell not executed due to pending input"
-msgstr ""
+msgstr "Клітина не виконана через очікування вводу даних"
 
 #: packages/notebook/src/actions.tsx:2018
 msgid "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again."
-msgstr ""
+msgstr "Клітина не була виконана, щоб уникнути блокування ядра, бо є ще одне очікування вводу даних!\n"
+"Надішліть свої очікувані дані та спробуйте знову."
 
 #: packages/notebook/src/default-toolbar.tsx:114
 msgid "Insert a cell below"
@@ -4108,7 +4144,7 @@ msgstr "Тип клітинки"
 
 #: packages/notebook/src/default-toolbar.tsx:339
 msgid "Select the cell type"
-msgstr ""
+msgstr "Оберіть тип клітинки"
 
 #: packages/notebook/src/default-toolbar.tsx:342
 msgid "Code"
@@ -4128,7 +4164,11 @@ msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "The next time you save this notebook, the current notebook format (v%2) will be used.\n"
 "'Older versions of Jupyter may not be able to read the new format.' To preserve the original format version,\n"
 "close the notebook without saving it."
-msgstr ""
+msgstr "Цей блокнот було перетворено на основі блокнота старішого формату (v%1)\n"
+"у поточний блокноту формату (v%2).\n"
+"Наступного разу при збереженні цього блокнота, буде використовуватись поточний блокнот формату (v%2).\n"
+"'Не всі старіші версії Jupyter підтримують новий формат.' Щоб зберегти версію вихідного формату,\n"
+"закрийте блокнот, не зберігаючи його."
 
 #: packages/notebook/src/model.ts:346
 msgid "This notebook has been converted from an newer notebook format (v%1)\n"
@@ -4243,7 +4283,7 @@ msgstr "Запущені термінали та ядра"
 
 #: packages/running-extension/src/index.ts:57
 msgid "Running Sessions section"
-msgstr ""
+msgstr "Секція виконання сеансів"
 
 #: packages/running-extension/src/kernels.ts:30
 msgid "Kernels"
@@ -4251,7 +4291,7 @@ msgstr "Ядра"
 
 #: packages/running-extension/src/kernels.ts:41
 msgid "Are you sure you want to permanently shut down all running kernels?"
-msgstr ""
+msgstr "Ви впевнені, що хочете назавжди вимкнути всі запущені ядра?"
 
 #: packages/running-extension/src/kernels.ts:80
 msgid "Path: %1\n"
@@ -4265,11 +4305,11 @@ msgstr "Відкриті вкладки"
 
 #: packages/running-extension/src/opentabs.ts:88
 msgid "Close All"
-msgstr ""
+msgstr "Закрити все"
 
 #: packages/running-extension/src/opentabs.ts:89
 msgid "Are you sure you want to close all open tabs?"
-msgstr ""
+msgstr "Ви впевнені, що хочете закрити усі вкладки?"
 
 #: packages/running/src/index.tsx:288
 msgid "Refresh List"
@@ -4355,11 +4395,11 @@ msgstr "Зверніть увагу: щоб вимкнути стандартн�
 
 #: packages/statusbar-extension/src/index.ts:359
 msgid "Simple Interface (%1)"
-msgstr ""
+msgstr "Простий інтерфейс (%1)"
 
 #: packages/statusbar-extension/src/index.ts:369
 msgid "Simple"
-msgstr ""
+msgstr "Простий"
 
 #: packages/statusbar-extension/src/index.ts:78
 msgid "Show Status Bar"
@@ -4392,7 +4432,7 @@ msgstr "Терміналів: %1; сеансів ядра: %2"
 #: packages/terminal-extension/src/index.ts:177
 msgctxt "menu"
 msgid "Terminal Theme"
-msgstr ""
+msgstr "Тема термінала"
 
 #: packages/terminal-extension/src/index.ts:182 packages/terminal-extension/src/index.ts:241 packages/terminal-extension/src/index.ts:435
 msgid "Inherit"
@@ -4416,7 +4456,7 @@ msgstr "Термінали"
 
 #: packages/terminal-extension/src/index.ts:294
 msgid "Are you sure you want to permanently shut down all running terminals?"
-msgstr ""
+msgstr "Ви впевнені, що хочете назавжди вимкнути всі запущені ядра?"
 
 #: packages/terminal-extension/src/index.ts:336
 msgid "New Terminal"
@@ -4468,7 +4508,7 @@ msgstr "JupyterLab світла"
 
 #: packages/toc-extension/src/index.ts:121 packages/toc-extension/src/index.ts:93
 msgid "Run Cell(s)"
-msgstr ""
+msgstr "Запустити клітин(ки)"
 
 #: packages/toc-extension/src/index.ts:82 packages/toc-extension/src/index.ts:83 packages/toc/src/toc.tsx:125
 msgid "Table of Contents"
@@ -4476,7 +4516,7 @@ msgstr "Зміст"
 
 #: packages/toc-extension/src/index.ts:85 packages/toc-extension/src/index.ts:86
 msgid "Table of Contents section"
-msgstr ""
+msgstr "Таблиця вмісту розділу"
 
 #: packages/toc/src/generators/markdown/toolbar_generator.tsx:64 packages/toc/src/generators/markdown/toolbar_generator.tsx:65 packages/toc/src/generators/notebook/toolbar_generator.tsx:214 packages/toc/src/generators/notebook/toolbar_generator.tsx:215
 msgid "Toggle Auto-Numbering"
@@ -4492,7 +4532,7 @@ msgstr "Очистити фільтри"
 
 #: packages/toc/src/generators/notebook/tagstool/index.tsx:255 packages/toc/src/generators/notebook/tagstool/index.tsx:256 packages/toc/src/generators/notebook/tagstool/index.tsx:258 packages/toc/src/generators/notebook/tagstool/index.tsx:266 packages/toc/src/generators/notebook/tagstool/index.tsx:267 packages/toc/src/generators/notebook/tagstool/index.tsx:271
 msgid "Select All Cells With Current Tags"
-msgstr ""
+msgstr "Вибрати всі клітини з поточними тегами"
 
 #: packages/toc/src/generators/notebook/toolbar_generator.tsx:182 packages/toc/src/generators/notebook/toolbar_generator.tsx:183
 msgid "Toggle Code Cells"
