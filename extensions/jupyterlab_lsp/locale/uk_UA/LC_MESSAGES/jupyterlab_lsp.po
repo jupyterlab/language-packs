@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 99\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2021-11-18 12:29\n"
+"PO-Revision-Date: 2021-11-18 14:47\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
@@ -152,7 +152,7 @@ msgstr "Налаштування типів ядра для коректного
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/waitForBusyKernel/description
 msgctxt "settings"
 msgid "Should an attempt to get the kernel response (with timeout as specified by kernelResponseTimeout) be made if kernel is busy? If you often write code in notebook while computations are running for long time (e.g. training models), turning this off might give you faster response times."
-msgstr ""
+msgstr "Чи слід робити спробу отримати відповідь ядра (з тайм-аутом, визначеним kernelResponseTomeout), якщо ядро зайняте? Якщо ви часто пишете код у записну книжкуб поки обчислення виконуються протягом тривалого часу( наприклад, навчальні моделі), вимкнення цієї функції може прискорити час відповіді."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/waitForBusyKernel/title
 msgctxt "settings"
@@ -172,7 +172,7 @@ msgstr "Налаштування діагностики LSP (внутрішні 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/defaultSeverity/description
 msgctxt "settings"
 msgid "Default level of the severity for diagnostics without severity provided by the language server."
-msgstr ""
+msgstr "Рівень серйозності за замовчуванням для діагностики без серйозності, що надається мовним сервером."
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/defaultSeverity/title
 msgctxt "settings"
@@ -182,7 +182,7 @@ msgstr "Рівень якості за замовчуванням"
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/ignoreCodes/description
 msgctxt "settings"
 msgid "Codes of diagnostics which should not be shown in the panel nor highlighted in the editor."
-msgstr ""
+msgstr "Коди діагностики, які не повинні відображатися на панелі або висвітлюватися в редакторі."
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/ignoreCodes/title
 msgctxt "settings"
@@ -192,12 +192,12 @@ msgstr "Ігнорувати такі коди діагностики"
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/ignoreMessagesPatterns/description
 msgctxt "settings"
 msgid "Regular expressions matching messages of diagnostics which should not be shown in the panel nor highlighted in the editor."
-msgstr ""
+msgstr "Регулярні вирази, що відповідають повідомленням діагностики, які не мають відображатися на панелі чи виділяти в редакторі."
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/ignoreMessagesPatterns/title
 msgctxt "settings"
 msgid "Diagnostic messages to ignore"
-msgstr ""
+msgstr "Діагностичні повідомлення для ігнорування"
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/title
 msgctxt "schema"
@@ -207,27 +207,27 @@ msgstr "Діагностика коду"
 #: /packages/jupyterlab-lsp/schema/highlights.json:/description
 msgctxt "schema"
 msgid "LSP highlights of the variable under the cursor settings."
-msgstr ""
+msgstr "LSP підсвічує змінну під налаштуваннями курсора."
 
 #: /packages/jupyterlab-lsp/schema/highlights.json:/properties/debouncerDelay/description
 msgctxt "settings"
 msgid "Number of milliseconds to delay sending out the highlights request to the language server; you can get better responsiveness adjusting this value, but setting it to zero can actually slow it down as the server might get overwhelmed when moving the cursor."
-msgstr ""
+msgstr "Кількість мілісекунд для затримки відправлення запиту на виділення до сервера мови; ви можете краще коригувати це значення за допомогою чутливості, але це налаштування до нуля насправді може уповільнити його, так як сервер може бути розбитий при переміщенні курсора."
 
 #: /packages/jupyterlab-lsp/schema/highlights.json:/properties/debouncerDelay/title
 msgctxt "settings"
 msgid "Debouncer delay"
-msgstr ""
+msgstr "Затримка боржника"
 
 #: /packages/jupyterlab-lsp/schema/highlights.json:/properties/removeOnBlur/description
 msgctxt "settings"
 msgid "Whether the highlights should disappear after the focus leaves the editor/cell"
-msgstr ""
+msgstr "Чи має підсвічування зникнути після того, як фокус покине редактора/клітинку"
 
 #: /packages/jupyterlab-lsp/schema/highlights.json:/properties/removeOnBlur/title
 msgctxt "settings"
 msgid "Remove highlights on editor (e.g. cell) blur"
-msgstr ""
+msgstr "Прибрати підсвічування в редакторі (наприклад, льот) розмиття"
 
 #: /packages/jupyterlab-lsp/schema/highlights.json:/title
 msgctxt "schema"
@@ -242,7 +242,7 @@ msgstr "LSP Hover над налаштуваннями підказок коду.
 #: /packages/jupyterlab-lsp/schema/hover.json:/properties/cacheSize/description
 msgctxt "settings"
 msgid "Up to how many hover responses should be cached at any given time. The cache being is invalidated after any change in the editor."
-msgstr ""
+msgstr "До скількох наведених нижче відповідей кешуватиметься в будь-який час. Кеш недвійсний після будь-якої зміни в редакторі."
 
 #: /packages/jupyterlab-lsp/schema/hover.json:/properties/cacheSize/title
 msgctxt "settings"
@@ -262,7 +262,7 @@ msgstr "Вирішна клавіша"
 #: /packages/jupyterlab-lsp/schema/hover.json:/properties/throttlerDelay/description
 msgctxt "settings"
 msgid "Number of milliseconds to delay sending out the hover request to the language server; you can get better responsiveness adjusting this value, but setting it to zero can actually slow it down as the server might get overwhelmed when moving the mouse over the code."
-msgstr ""
+msgstr "Кількість мілісекунд для затримки відправлення запиту на виділення до сервера мови; ви можете краще коригувати це значення за допомогою чутливості, але це налаштування до нуля насправді може уповільнити його, так як сервер може бути розбитий при переміщенні курсора."
 
 #: /packages/jupyterlab-lsp/schema/hover.json:/properties/throttlerDelay/title
 msgctxt "settings"
@@ -282,12 +282,12 @@ msgstr "Перестрибнути на код"
 #: /packages/jupyterlab-lsp/schema/jump_to.json:/properties/modifierKey/description
 msgctxt "settings"
 msgid "Keyboard key which needs to be pressed with click to jump. The allowed keys are Alt, Control, Shift, Accel, and AltGraph. Accel corresponds to Control or Meta (Command on Mac). Linux user: Meta key is also supported. Safari users: Meta key is also supported, AltGraph is not supported. To see which physical keys are mapped, visit: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState"
-msgstr ""
+msgstr "Горячі клавіші, які активують підказки при наведенні. Дозволені клавіші: Alt, Control, Shift, AltGraph. Для користувачів Linux: метаклавіша також підтримується. Для користувачів Safari: метаклавіша також підтримується, AltGraph - ні. Щоб переглянути, які гарячі клавіші приховані: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:/definitions/language-server/properties/priority/description
 msgctxt "settings"
 msgid "When multiple servers match specific document/language, the server with the highest priority will be used"
-msgstr ""
+msgstr "Коли кілька серверів відповідають конкретній документ/мові, сервер з найвищим пріоритетом буде використаний"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:/definitions/language-server/properties/priority/title
 msgctxt "settings"
@@ -297,7 +297,7 @@ msgstr "Пріоритет сервера"
 #: /packages/jupyterlab-lsp/schema/plugin.json:/definitions/language-server/properties/serverSettings/description
 msgctxt "settings"
 msgid "Configuration to be sent to language server over LSP when initialized: see the specific language server's documentation for more"
-msgstr ""
+msgstr "При ініціалізації конфігурації на сервер конкретної мови дивіться документацію сервера конкретної мови для більшої інформації"
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:/definitions/language-server/properties/serverSettings/title
 msgctxt "settings"
@@ -307,7 +307,7 @@ msgstr "Налаштування мовного сервера"
 #: /packages/jupyterlab-lsp/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Language Server Protocol settings."
-msgstr ""
+msgstr "Налаштування мовного протоколу сервера."
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:/properties/language_servers/description
 msgctxt "settings"
