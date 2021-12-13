@@ -1,5 +1,6 @@
 # Contributors
 
+* 민섭정 ([@jungminseob2](https://crowdin.com/profile/jungminseob2))
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * Dongook Son ([@donny-son](https://crowdin.com/profile/donny-son))
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))

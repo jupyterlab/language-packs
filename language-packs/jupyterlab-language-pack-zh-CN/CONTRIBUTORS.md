@@ -15,6 +15,6 @@
 * Frédéric Collonval ([@fcollonval](https://crowdin.com/profile/fcollonval))
 * Allan Chain ([@AllanChain](https://crowdin.com/profile/AllanChain))
 * 顽皮绅士 ([@Hadboon](https://crowdin.com/profile/Hadboon))
+* Xiang Yiqing ([@xiangyiqing](https://crowdin.com/profile/xiangyiqing))
 * henuzfl ([@henuzfl1](https://crowdin.com/profile/henuzfl1))
 * Gonzalo Peña-Castellanos ([@goanpeca](https://crowdin.com/profile/goanpeca))
-* Xiang Yiqing ([@xiangyiqing](https://crowdin.com/profile/xiangyiqing))
