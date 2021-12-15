@@ -205,8 +205,13 @@ if __name__ == "__main__":
 
                     if semversion in range:
                         print(f"\nMerge version {version!s} for `{package_name}`.\n")
-                        update_repo(package_name, url, tag)
-                        update_catalog(package_name, current_version, should_merge)
+                        try:
+                            update_repo(package_name, url, tag)
+                            update_catalog(package_name, current_version, should_merge)
+                        except subprocess.CalledProcessError as e:
+                            print(e.stdout)
+                            print(e.stderr)
+                            raise e
                         should_merge = True
 
                     # This allows to break when the version is below the supported range. But it breaks merging tags if newer security release
@@ -214,12 +219,17 @@ if __name__ == "__main__":
                     # elif semversion < min_version:
                     #     print(f"\nNext available version {semversion!s} for `{package_name}` is below the supported range {range!s}.\n")
                     #     break
-        
+
         # The final step is to merge the current version so the POT file is tagged accordingly
         # This is suboptimal as it was probably already extracted but it ensures strings are
         # the latest one including white space changes (that apparently are ignored see https://github.com/jupyterlab/language-packs/pull/116)
-        update_repo(package_name, url, current_version)
-        update_catalog(package_name, current_version, should_merge)
+        try:
+            update_repo(package_name, url, current_version)
+            update_catalog(package_name, current_version, should_merge)
+        except subprocess.CalledProcessError as e:
+            print(e.stdout)
+            print(e.stderr)
+            raise e
 
     delta = round(time.time() - start_run_time, 0)
     print(f"\n\n\nCatalogs updated in {delta} seconds\n")
