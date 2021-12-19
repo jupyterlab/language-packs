@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 99\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-10-29 06:29\n"
+"PO-Revision-Date: 2021-12-19 19:55\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
@@ -98,6 +98,16 @@ msgstr "在完成标签旁边显示什么，可选的值包括：'detail'，'typ
 msgctxt "settings"
 msgid "Text to display next to completion label"
 msgstr "在补全标签旁显示的文本"
+
+#: /packages/jupyterlab-lsp/schema/completion.json:/properties/layout/description
+msgctxt "settings"
+msgid "Layout of the completer, one of: 'detail-below', 'side-by-side'"
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/completion.json:/properties/layout/title
+msgctxt "settings"
+msgid "Completer layout"
+msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/showDocumentation/description
 msgctxt "settings"
@@ -474,7 +484,7 @@ msgctxt "schema"
 msgid "Code Syntax"
 msgstr "代码语法"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:238
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:238 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:243
 msgid "Failed to load language server spec finder `{}`: \n"
 "{}"
 msgstr "载入语言服务器规范查找器失败 `{}`：\n"
@@ -484,43 +494,43 @@ msgstr "载入语言服务器规范查找器失败 `{}`：\n"
 msgid "Skipping non-installed server: `{}`"
 msgstr "跳过未安装的服务器：`{}`"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259
 msgid "Failed to fetch commands from language server spec finder `{}`:\n"
 "{}"
 msgstr "从语言服务器规范查找器获取命令失败 `{}`：\n"
 "{}"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:272
 msgid "Failed to validate commands from language server spec finder `{}`:\n"
 "{}"
 msgstr "从语言服务器规范查找器验证命令失败 `{}`：\n"
 "{}"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:279
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:279 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:284
 msgid "Skipped non-installed server(s): {}"
 msgstr "跳过未安装的服务器：`{}`"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:41
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:41 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46
 msgid "extra language server specs, keyed by implementation, from conf.d"
 msgstr "额外语言服务器规范，通过实现归类，来自 conf.d"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:51
 msgid "a dict of language server specs, keyed by implementation"
 msgstr "一种语言服务器规范的字典，由实现归类"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:52
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:52 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:57
 msgid "try to find known language servers in sys.prefix (and elsewhere)"
 msgstr "尝试在 sys.prefix（和其他地方）中查找已知的语言服务器"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:193
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:193 /python_packages/jupyter_lsp/jupyter_lsp/types.py:196
 msgid "path to nodejs executable"
 msgstr "nodejs 可执行文件路径"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:195
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:195 /python_packages/jupyter_lsp/jupyter_lsp/types.py:198
 msgid "absolute paths in which to seek node_modules"
 msgstr "可寻找 node_modules 的绝对路径"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:200
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:200 /python_packages/jupyter_lsp/jupyter_lsp/types.py:203
 msgid "additional absolute paths to seek node_modules first"
 msgstr "额外用于首先寻找 node_modules 的绝对路径"
 
@@ -589,27 +599,51 @@ msgstr "您可以按我们下列描述贡献一个自动检测的规范 "
 msgid "documentation"
 msgstr "文档"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:418 packages/jupyterlab-lsp/src/components/statusbar.tsx:419
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:347
+msgid "LSP servers"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:352
+msgid "Available"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:362
+msgid "Running"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:371
+msgid "Missing"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:380
+msgid "Documentation:"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:388
+msgid "Language Servers"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:417 packages/jupyterlab-lsp/src/components/statusbar.tsx:418 packages/jupyterlab-lsp/src/components/statusbar.tsx:419
 msgid "LSP status"
 msgstr "LSP 状态"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:468 packages/jupyterlab-lsp/src/components/statusbar.tsx:469
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:467 packages/jupyterlab-lsp/src/components/statusbar.tsx:468 packages/jupyterlab-lsp/src/components/statusbar.tsx:469
 msgid "LSP Code Intelligence"
 msgstr "LSP 代码智能"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:487 packages/jupyterlab-lsp/src/components/statusbar.tsx:488
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:486 packages/jupyterlab-lsp/src/components/statusbar.tsx:487 packages/jupyterlab-lsp/src/components/statusbar.tsx:488
 msgid "LSP server extension not found"
 msgstr "未找到 LSP 服务器扩展"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:813 packages/jupyterlab-lsp/src/components/statusbar.tsx:816 packages/jupyterlab-lsp/src/components/statusbar.tsx:824 packages/jupyterlab-lsp/src/components/statusbar.tsx:827
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:813 packages/jupyterlab-lsp/src/components/statusbar.tsx:815 packages/jupyterlab-lsp/src/components/statusbar.tsx:816 packages/jupyterlab-lsp/src/components/statusbar.tsx:824 packages/jupyterlab-lsp/src/components/statusbar.tsx:826 packages/jupyterlab-lsp/src/components/statusbar.tsx:827
 msgid "not initialized"
 msgstr "未初始化"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:829 packages/jupyterlab-lsp/src/components/statusbar.tsx:832
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:829 packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:832
 msgid "Waiting for documents initialization..."
 msgstr "正在等待文档初始化..."
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:834
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:833 packages/jupyterlab-lsp/src/components/statusbar.tsx:834
 msgid "Fully connected & initialized (%2 virtual document)"
 msgid_plural "Fully connected & initialized (%2 virtual document)"
 msgstr[0] "已完全连接并初始化（%2 虚拟文档）"
@@ -618,9 +652,21 @@ msgstr[0] "已完全连接并初始化（%2 虚拟文档）"
 msgid "Fully connected, but %2/%3 virtual document stuck uninitialized: %4"
 msgstr "已完全连接，但 %2/%3 个虚拟文档未能初始化：%4"
 
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:847
+msgctxt "pluralized"
+msgid "Fully connected, but %2/%3 virtual document stuck uninitialized: %4"
+msgid_plural "Fully connected, but %2/%3 virtual documents stuck uninitialized: %4"
+msgstr[0] ""
+
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:859 packages/jupyterlab-lsp/src/components/statusbar.tsx:862
 msgid "%2/%3 virtual document connected (%4 connections; waiting for: %5)"
 msgstr "%2/%3 个虚拟文档已连接（%4 个连接；等待：%5）"
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:862
+msgctxt "pluralized"
+msgid "%2/%3 virtual document connected (%4 connections; waiting for: %5)"
+msgid_plural "%2/%3 virtual documents connected (%4 connections; waiting for: %5)"
+msgstr[0] ""
 
 #: packages/jupyterlab-lsp/src/components/utils.tsx:54
 msgid "cell %1"
@@ -670,51 +716,51 @@ msgstr "诊断面板"
 msgid "Show diagnostics panel"
 msgstr "显示诊断面板"
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:161
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:161 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:162
 msgid "Error"
 msgstr "错误"
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:162
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:162 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:163
 msgid "Warning"
 msgstr "警告"
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:163
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:163 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:164
 msgid "Information"
 msgstr "信息"
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:164
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:164 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:165
 msgid "Hint"
 msgstr "提示"
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:170
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:170 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:171
 msgid "Virtual Document"
 msgstr "虚拟文档"
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:185
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:185 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:186
 msgid "Message"
 msgstr "消息"
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:195
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:195 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:196
 msgid "Code"
 msgstr "代码"
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:204
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:204 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:205
 msgid "Severity"
 msgstr "严重等级"
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:219
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:219 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:220
 msgid "Source"
 msgstr "源"
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:226
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:226 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:227
 msgid "Cell"
 msgstr "单元格"
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:230 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:271
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:230 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:265 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:271
 msgid "No issues detected, great job!"
 msgstr "没有检测到问题，干得不错！"
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:240
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:237 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:240
 msgid "Line:Ch"
 msgstr "行:列"
 
