@@ -17,6 +17,9 @@
     "%2/%3 virtual document connected (%4 connections; waiting for: %5)": [
         "%2/%3 document virtuel connect\u00e9 (%4 connexions ; en attente : %5)"
     ],
+    "Available": [
+        "Disponible"
+    ],
     "Cancel": [
         "Annuler"
     ],
@@ -37,6 +40,9 @@
     ],
     "Display the completer themes": [
         "Afficher les th\u00e8mes completer"
+    ],
+    "Documentation:": [
+        "Documentation :"
     ],
     "Error": [
         "Erreur"
@@ -106,8 +112,14 @@
     "LSP server extension not found": [
         "Extension de serveur LSP introuvable"
     ],
+    "LSP servers": [
+        "Serveurs LSP"
+    ],
     "LSP status": [
         "Statut LSP"
+    ],
+    "Language Servers": [
+        "Serveurs de langage"
     ],
     "Licence: ": [
         "Licence : "
@@ -120,6 +132,9 @@
     ],
     "Message from ": [
         "Message de "
+    ],
+    "Missing": [
+        "Manquant"
     ],
     "No installation instructions were provided with this specification.": [
         "Aucune instruction d'installation n'a \u00e9t\u00e9 fournie avec cette sp\u00e9cification."
@@ -166,6 +181,9 @@
     ],
     "Renaming %1 to %2...": [
         "Renommage de %1 vers %2..."
+    ],
+    "Running": [
+        "Actifs"
     ],
     "Severity": [
         "Gravit\u00e9"
@@ -241,6 +259,16 @@
     "path to nodejs executable": [
         "chemin vers l'ex\u00e9cutable de nodejs"
     ],
+    "pluralized\u0004%2/%3 virtual document connected (%4 connections; waiting for: %5)": [
+        "%2/%3 virtual documents connected (%4 connections; waiting for: %5)",
+        "%2/%3 document virtuel connect\u00e9 (%4 connexions ; en attente de : %5)",
+        "%2/%3 documents virtuels connect\u00e9s (%4 connexions ; en attente de : %5)"
+    ],
+    "pluralized\u0004Fully connected, but %2/%3 virtual document stuck uninitialized: %4": [
+        "Fully connected, but %2/%3 virtual documents stuck uninitialized: %4",
+        "Compl\u00e8tement connect\u00e9, mais %2 document virtuel sur %3 n'a pas \u00e9t\u00e9 initialis\u00e9 : %4",
+        "Compl\u00e8tement connect\u00e9, mais %2 documents virtuels sur %3 n'ont pas \u00e9t\u00e9 initialis\u00e9s : %4"
+    ],
     "schema\u0004Code Completion": [
         "Compl\u00e9tion du code"
     ],
@@ -269,7 +297,7 @@
         "Param\u00e8tres d'aide pour la signature de code LSP."
     ],
     "schema\u0004LSP Completion settings.": [
-        "Param\u00e8tres d'ach\u00e8vement de LSP."
+        "Param\u00e8tres de compl\u00e9tion par LSP."
     ],
     "schema\u0004LSP Diagnostics (linter results) settings.": [
         "Param\u00e8tres de diagnostics LSP (r\u00e9sultats de linter)."
@@ -316,8 +344,11 @@
     "settings\u0004Codes of diagnostics which should not be shown in the panel nor highlighted in the editor.": [
         "Codes de diagnostics qui ne devraient pas \u00eatre affich\u00e9s dans le panneau ni mis en \u00e9vidence dans l'\u00e9diteur."
     ],
+    "settings\u0004Completer layout": [
+        "Disposition du compl\u00e9teur"
+    ],
     "settings\u0004Completer theme": [
-        "Th\u00e8me completer"
+        "Th\u00e8me du compl\u00e9teur"
     ],
     "settings\u0004Configuration to be sent to language server over LSP when initialized: see the specific language server's documentation for more": [
         "Configuration \u00e0 envoyer au serveur de langue par LSP lors de l'initialisation : voir la documentation du serveur de language sp\u00e9cifique pour plus de d\u00e9tails"
@@ -375,6 +406,9 @@
     ],
     "settings\u0004Language-server specific configuration, keyed by implementation, e.g: \n\npyls: {\n  serverSettings: {\n    pyls: {\n      plugins: {\n        pydocstyle: {\n          enabled: true\n        },\n        pyflakes: {\n          enabled: false\n        },\n        flake8: {\n          enabled: true\n        }\n      }\n    }\n  }\n}\n\nAlternatively, using VSCode's naming convention:\n\npyls: {\n  serverSettings: {\n    \"pyls.plugins.pydocstyle.enabled\": true,\n    \"pyls.plugins.pyflakes.enabled\": false,\n    \"pyls.plugins.flake8.enabled\": true\n  }\n}": [
         "Configuration sp\u00e9cifique du serveur de language, trie par l'impl\u00e9mentation, par exemple: \n\npyls: {\n  serverSettings: {\n    pyls: {\n      plugins: {\n        pydocstyle: {\n          enabled: true\n        },\n        flocons : {\n          enabled: false\n        },\n        flake8 : {\n          enabled: true\n        }\n      }\n    }\n  }\n}\n\nAlternativement, en utilisant la convention de nommage de VSCode:\n\npyls: {\n  serverSettings: {\n    \"pyls. lugins.pydocstyle.enabled\": true,\n    \"pyls.plugins.pyflakes.enabled\": false,\n    \"pyls.plugins.flake8.enabled\": true\n  }\n}"
+    ],
+    "settings\u0004Layout of the completer, one of: 'detail-below', 'side-by-side'": [
+        "Mise en page du compl\u00e9teur, un de : 'detail-below' (d\u00e9tails en dessous), 'side-by-side' (c\u00f4te-\u00e0-c\u00f4te)"
     ],
     "settings\u0004Log all LSP communication with the LSP servers": [
         "Enregistre toutes les communications LSP avec les serveurs LSP"
