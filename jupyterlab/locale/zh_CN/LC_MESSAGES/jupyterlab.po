@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2021-12-02 08:36\n"
+"PO-Revision-Date: 2021-12-20 06:47\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1134,8 +1134,18 @@ msgstr "Markdown 单元格配置"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/description
 msgctxt "settings"
+msgid "Defines the maximum number of output cells to be rendered in the output area for cells with many outputs. The output area will have a head and the remaining outputs will be trimmed and not displayed unless the user clicks on the information message."
+msgstr "对于具有多个输出的单元格，定义其输出区域要呈现的输出单元格的最大数量。输出区域将包含一个头部和部分消息内容。只有当用户单击消息后，才会显示完整的消息。"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/description
+msgctxt "settings"
 msgid "Defines the maximum number of output cells to to to be rendered in the output area for cells with many outputs. The output area will have a head and a tail, and the outputs between will be trimmed and not displayed unless the user clicks on the information message."
 msgstr "对于有很多输出内容的单元格，定义其输出区域要呈现的输出单元格的最大数量。输出区域将包含一个开头和结尾部分，除非用户点击信息消息，否则中间的输出内容将剪裁并不会显示。"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/title
+msgctxt "settings"
+msgid "The maximum number of output cells to be rendered in the output area. Set to 0 to have the complete display."
+msgstr "输出区域中要呈现的输出单元格的最大数量。设置为 0 以显示所有的单元格。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/title
 msgctxt "settings"
@@ -1211,6 +1221,16 @@ msgstr "是否能够滚动以使最后一个单元格位于面板的顶端"
 msgctxt "settings"
 msgid "Scroll past last cell"
 msgstr "滚动超过最后一个单元格"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/sideBySideRendering/description
+msgctxt "settings"
+msgid "Global setting to enable side-by-side rendering in notebooks"
+msgstr "开启笔记本并排渲染的全局设置"
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/sideBySideRendering/title
+msgctxt "settings"
+msgid "Side-by-side rendering"
+msgstr "并排渲染"
 
 #: /packages/notebook-extension/schema/tracker.json:/title
 msgctxt "schema"
@@ -1497,136 +1517,136 @@ msgctxt "schema"
 msgid "Language"
 msgstr "语言"
 
-#: packages/application-extension/src/index.tsx:106 packages/apputils-extension/src/index.ts:305 packages/documentsearch-extension/src/index.ts:216 packages/documentsearch-extension/src/index.ts:220 packages/documentsearch-extension/src/index.ts:224 packages/logconsole-extension/src/index.tsx:242 packages/mainmenu-extension/src/index.ts:222 packages/mainmenu-extension/src/index.ts:226 packages/mainmenu-extension/src/index.ts:236 packages/statusbar-extension/src/index.ts:74
+#: packages/application-extension/src/index.tsx:106 packages/application-extension/src/index.tsx:111 packages/apputils-extension/src/index.ts:305 packages/documentsearch-extension/src/index.ts:216 packages/documentsearch-extension/src/index.ts:220 packages/documentsearch-extension/src/index.ts:224 packages/logconsole-extension/src/index.tsx:242 packages/mainmenu-extension/src/index.ts:222 packages/mainmenu-extension/src/index.ts:226 packages/mainmenu-extension/src/index.ts:236 packages/statusbar-extension/src/index.ts:74
 msgid "Main Area"
 msgstr "主工作区"
 
-#: packages/application-extension/src/index.tsx:110
+#: packages/application-extension/src/index.tsx:110 packages/application-extension/src/index.tsx:115
 msgid "Shift+Right Click for Browser Menu"
 msgstr "使用 Shift+右键点击调出浏览器菜单"
 
-#: packages/application-extension/src/index.tsx:1158
+#: packages/application-extension/src/index.tsx:1158 packages/application-extension/src/index.tsx:1179
 msgid "Switch Sidebar Side"
 msgstr "侧边栏位置切换"
 
-#: packages/application-extension/src/index.tsx:195
+#: packages/application-extension/src/index.tsx:195 packages/application-extension/src/index.tsx:200
 msgid "Close Tab"
 msgstr "关闭标签页"
 
-#: packages/application-extension/src/index.tsx:209
+#: packages/application-extension/src/index.tsx:209 packages/application-extension/src/index.tsx:214
 msgid "Close All Other Tabs"
 msgstr "关闭所有其它标签页"
 
-#: packages/application-extension/src/index.tsx:229
+#: packages/application-extension/src/index.tsx:229 packages/application-extension/src/index.tsx:234
 msgid "Close Tabs to Right"
 msgstr "关闭右侧标签页"
 
-#: packages/application-extension/src/index.tsx:244
+#: packages/application-extension/src/index.tsx:244 packages/application-extension/src/index.tsx:249
 msgid "Activate Next Tab"
 msgstr "激活下一标签页"
 
-#: packages/application-extension/src/index.tsx:251
+#: packages/application-extension/src/index.tsx:251 packages/application-extension/src/index.tsx:256
 msgid "Activate Previous Tab"
 msgstr "激活上一标签页"
 
-#: packages/application-extension/src/index.tsx:258
+#: packages/application-extension/src/index.tsx:258 packages/application-extension/src/index.tsx:263
 msgid "Activate Next Tab Bar"
 msgstr "激活下一标签栏"
 
-#: packages/application-extension/src/index.tsx:265
+#: packages/application-extension/src/index.tsx:265 packages/application-extension/src/index.tsx:270
 msgid "Activate Previous Tab Bar"
 msgstr "激活上一标签栏"
 
-#: packages/application-extension/src/index.tsx:272
+#: packages/application-extension/src/index.tsx:272 packages/application-extension/src/index.tsx:277
 msgid "Close All Tabs"
 msgstr "关闭所有标签页"
 
-#: packages/application-extension/src/index.tsx:279
+#: packages/application-extension/src/index.tsx:279 packages/application-extension/src/index.tsx:284
 msgid "Show Left Sidebar"
 msgstr "显示左侧边栏"
 
-#: packages/application-extension/src/index.tsx:295
+#: packages/application-extension/src/index.tsx:295 packages/application-extension/src/index.tsx:300
 msgid "Show Right Sidebar"
 msgstr "显示右侧边栏"
 
-#: packages/application-extension/src/index.tsx:311
+#: packages/application-extension/src/index.tsx:311 packages/application-extension/src/index.tsx:316
 msgid "Presentation Mode"
 msgstr "演示模式"
 
-#: packages/application-extension/src/index.tsx:335 packages/statusbar-extension/src/index.ts:361
+#: packages/application-extension/src/index.tsx:335 packages/application-extension/src/index.tsx:340 packages/statusbar-extension/src/index.ts:361
 msgid "Simple Interface"
 msgstr "简易界面"
 
-#: packages/application-extension/src/index.tsx:426
+#: packages/application-extension/src/index.tsx:426 packages/application-extension/src/index.tsx:431
 msgid "Error Registering Plugins"
 msgstr "注册插件时出错"
 
-#: packages/application-extension/src/index.tsx:476 packages/extensionmanager/src/build-helper.tsx:27
+#: packages/application-extension/src/index.tsx:476 packages/application-extension/src/index.tsx:481 packages/extensionmanager/src/build-helper.tsx:27
 msgid "Build Complete"
 msgstr "构建完成"
 
-#: packages/application-extension/src/index.tsx:479 packages/extensionmanager/src/build-helper.tsx:30
+#: packages/application-extension/src/index.tsx:479 packages/application-extension/src/index.tsx:484 packages/extensionmanager/src/build-helper.tsx:30
 msgid "Build successfully completed, reload page?"
 msgstr "构建已成功完成，重新加载页面？"
 
-#: packages/application-extension/src/index.tsx:481 packages/extensionmanager/src/build-helper.tsx:32
+#: packages/application-extension/src/index.tsx:481 packages/application-extension/src/index.tsx:486 packages/extensionmanager/src/build-helper.tsx:32
 msgid "You will lose any unsaved changes."
 msgstr "您将丢失任何未保存的更改。"
 
-#: packages/application-extension/src/index.tsx:486 packages/extensionmanager/src/build-helper.tsx:37
+#: packages/application-extension/src/index.tsx:486 packages/application-extension/src/index.tsx:491 packages/extensionmanager/src/build-helper.tsx:37
 msgid "Reload Without Saving"
 msgstr "重新加载且不保存当前更改"
 
-#: packages/application-extension/src/index.tsx:489 packages/extensionmanager/src/build-helper.tsx:40
+#: packages/application-extension/src/index.tsx:489 packages/application-extension/src/index.tsx:494 packages/extensionmanager/src/build-helper.tsx:40
 msgid "Save and Reload"
 msgstr "保存并重新加载"
 
-#: packages/application-extension/src/index.tsx:502 packages/extensionmanager/src/build-helper.tsx:53
+#: packages/application-extension/src/index.tsx:502 packages/application-extension/src/index.tsx:507 packages/extensionmanager/src/build-helper.tsx:53
 msgid "Save Failed"
 msgstr "保存失败"
 
-#: packages/application-extension/src/index.tsx:511 packages/extensionmanager/src/build-helper.tsx:63
+#: packages/application-extension/src/index.tsx:511 packages/application-extension/src/index.tsx:516 packages/extensionmanager/src/build-helper.tsx:63
 msgid "Build Failed"
 msgstr "编译失败"
 
-#: packages/application-extension/src/index.tsx:529
+#: packages/application-extension/src/index.tsx:529 packages/application-extension/src/index.tsx:534
 msgid "JupyterLab build is suggested:"
 msgstr "建议重新构建 JupyterLab："
 
-#: packages/application-extension/src/index.tsx:536
+#: packages/application-extension/src/index.tsx:536 packages/application-extension/src/index.tsx:541
 msgid "Build Recommended"
 msgstr "建议重新编译"
 
-#: packages/application-extension/src/index.tsx:540
+#: packages/application-extension/src/index.tsx:540 packages/application-extension/src/index.tsx:545
 msgid "Build"
 msgstr "编译"
 
-#: packages/application-extension/src/index.tsx:603
+#: packages/application-extension/src/index.tsx:603 packages/application-extension/src/index.tsx:608
 msgid "Are you sure you want to exit JupyterLab?\n\n"
 "Any unsaved changes will be lost."
 msgstr "您确定要退出登录吗？所有未保存的操作都会丢失。"
 
-#: packages/application-extension/src/index.tsx:771
+#: packages/application-extension/src/index.tsx:771 packages/application-extension/src/index.tsx:776
 msgid "The path: %1 was not found. JupyterLab redirected to: %2"
 msgstr "路径：%1 未找到。JupyterLab 将会重定向到：%2"
 
-#: packages/application-extension/src/index.tsx:780
+#: packages/application-extension/src/index.tsx:780 packages/application-extension/src/index.tsx:785
 msgid "Path Not Found"
 msgstr "未找到路径"
 
-#: packages/application-extension/src/index.tsx:906
+#: packages/application-extension/src/index.tsx:906 packages/application-extension/src/index.tsx:911
 msgid "Property Inspector"
 msgstr "属性检查器"
 
-#: packages/application-extension/src/index.tsx:962 packages/mainmenu-extension/src/index.ts:889
+#: packages/application-extension/src/index.tsx:962 packages/application-extension/src/index.tsx:967 packages/mainmenu-extension/src/index.ts:889
 msgid "Information"
 msgstr "信息"
 
-#: packages/application-extension/src/index.tsx:963
+#: packages/application-extension/src/index.tsx:963 packages/application-extension/src/index.tsx:968
 msgid "Context menu customization has changed. You will need to reload JupyterLab to see the changes."
 msgstr "上下文菜单自定义已更改。您需要重新加载 JupyterLab 来查看改动。"
 
-#: packages/application-extension/src/index.tsx:968 packages/docmanager-extension/src/index.ts:589 packages/mainmenu-extension/src/index.ts:895
+#: packages/application-extension/src/index.tsx:968 packages/application-extension/src/index.tsx:973 packages/docmanager-extension/src/index.ts:589 packages/mainmenu-extension/src/index.ts:895
 msgid "Reload"
 msgstr "重新加载"
 
@@ -1767,7 +1787,7 @@ msgstr "使用主题: %1"
 msgid "Workspace loader"
 msgstr "工作区加载器"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:274 packages/apputils-extension/src/workspacesplugin.ts:280 packages/docmanager/src/widgetmanager.ts:371 packages/docregistry/src/context.ts:1000 packages/docregistry/src/context.ts:1003 packages/docregistry/src/context.ts:993 packages/docregistry/src/context.ts:996
+#: packages/apputils-extension/src/workspacesplugin.ts:274 packages/apputils-extension/src/workspacesplugin.ts:280 packages/docmanager/src/widgetmanager.ts:371 packages/docregistry/src/context.ts:1000 packages/docregistry/src/context.ts:1002 packages/docregistry/src/context.ts:1003 packages/docregistry/src/context.ts:993 packages/docregistry/src/context.ts:995 packages/docregistry/src/context.ts:996
 msgid "Save"
 msgstr "保存"
 
@@ -2019,11 +2039,11 @@ msgstr "插入换行符"
 msgid "Replace Selection in Console"
 msgstr "在控制台中替换选择"
 
-#: packages/console-extension/src/index.ts:564 packages/mainmenu-extension/src/index.ts:465 packages/notebook-extension/src/index.ts:1627
+#: packages/console-extension/src/index.ts:564 packages/mainmenu-extension/src/index.ts:465 packages/notebook-extension/src/index.ts:1616 packages/notebook-extension/src/index.ts:1627
 msgid "Interrupt Kernel"
 msgstr "中断内核"
 
-#: packages/console-extension/src/index.ts:579 packages/mainmenu-extension/src/index.ts:485 packages/notebook-extension/src/index.ts:1499
+#: packages/console-extension/src/index.ts:579 packages/mainmenu-extension/src/index.ts:485 packages/notebook-extension/src/index.ts:1488 packages/notebook-extension/src/index.ts:1499
 msgid "Restart Kernel…"
 msgstr "重启内核…"
 
@@ -2035,11 +2055,11 @@ msgstr "关闭并终止…"
 msgid "Shut down the console?"
 msgstr "关闭控制台？"
 
-#: packages/console-extension/src/index.ts:602 packages/console-extension/src/index.ts:681 packages/notebook-extension/src/index.ts:1522 packages/notebook-extension/src/index.ts:2424
+#: packages/console-extension/src/index.ts:602 packages/console-extension/src/index.ts:681 packages/notebook-extension/src/index.ts:1511 packages/notebook-extension/src/index.ts:1522 packages/notebook-extension/src/index.ts:2412 packages/notebook-extension/src/index.ts:2424
 msgid "Are you sure you want to close \"%1\"?"
 msgstr "您确定要关闭「%1」吗？"
 
-#: packages/console-extension/src/index.ts:642 packages/mainmenu-extension/src/index.ts:520 packages/notebook-extension/src/index.ts:1974
+#: packages/console-extension/src/index.ts:642 packages/mainmenu-extension/src/index.ts:520 packages/notebook-extension/src/index.ts:1963 packages/notebook-extension/src/index.ts:1974
 msgid "Change Kernel…"
 msgstr "更改内核…"
 
@@ -2281,7 +2301,7 @@ msgstr "从磁盘重新加载内容"
 msgid "Cannot Reload"
 msgstr "无法重载"
 
-#: packages/docmanager-extension/src/index.ts:577 packages/docmanager-extension/src/index.ts:622 packages/docmanager-extension/src/index.ts:668 packages/docmanager-extension/src/index.ts:675 packages/docmanager-extension/src/index.ts:731 packages/notebook/src/actions.tsx:1783 packages/notebook/src/actions.tsx:1792 packages/notebook/src/actions.tsx:2011 packages/notebook/src/actions.tsx:2021 packages/notebook/src/default-toolbar.tsx:67 packages/notebook/src/model.ts:359 packages/notebook/src/panel.ts:219 packages/settingeditor/src/plugineditor.ts:138 packages/settingeditor/src/plugineditor.ts:260
+#: packages/docmanager-extension/src/index.ts:577 packages/docmanager-extension/src/index.ts:622 packages/docmanager-extension/src/index.ts:668 packages/docmanager-extension/src/index.ts:675 packages/docmanager-extension/src/index.ts:731 packages/notebook/src/actions.tsx:1783 packages/notebook/src/actions.tsx:1792 packages/notebook/src/actions.tsx:2011 packages/notebook/src/actions.tsx:2021 packages/notebook/src/default-toolbar.tsx:67 packages/notebook/src/model.ts:358 packages/notebook/src/model.ts:359 packages/notebook/src/panel.ts:219 packages/settingeditor/src/plugineditor.ts:138 packages/settingeditor/src/plugineditor.ts:260
 msgid "Ok"
 msgstr "确认"
 
@@ -2305,7 +2325,7 @@ msgstr "无法撤回"
 msgid "Revert %1 to checkpoint"
 msgstr "将 %1 撤回至检查点"
 
-#: packages/docmanager-extension/src/index.ts:639 packages/docregistry/src/context.ts:815 packages/docregistry/src/context.ts:818 packages/docregistry/src/context.ts:831 packages/docregistry/src/context.ts:834
+#: packages/docmanager-extension/src/index.ts:639 packages/docregistry/src/context.ts:815 packages/docregistry/src/context.ts:817 packages/docregistry/src/context.ts:818 packages/docregistry/src/context.ts:831 packages/docregistry/src/context.ts:833 packages/docregistry/src/context.ts:834
 msgid "Revert"
 msgstr "撤回"
 
@@ -2389,7 +2409,7 @@ msgstr "覆盖文件？"
 msgid "\"%1\" already exists, overwrite?"
 msgstr "文件「%1」已存在，是否覆盖？"
 
-#: packages/docmanager/src/dialogs.ts:113 packages/docregistry/src/context.ts:817 packages/docregistry/src/context.ts:820 packages/docregistry/src/context.ts:827 packages/docregistry/src/context.ts:830 packages/docregistry/src/context.ts:849 packages/docregistry/src/context.ts:852 packages/docregistry/src/context.ts:860 packages/docregistry/src/context.ts:863
+#: packages/docmanager/src/dialogs.ts:113 packages/docregistry/src/context.ts:817 packages/docregistry/src/context.ts:819 packages/docregistry/src/context.ts:820 packages/docregistry/src/context.ts:827 packages/docregistry/src/context.ts:829 packages/docregistry/src/context.ts:830 packages/docregistry/src/context.ts:849 packages/docregistry/src/context.ts:851 packages/docregistry/src/context.ts:852 packages/docregistry/src/context.ts:860 packages/docregistry/src/context.ts:862 packages/docregistry/src/context.ts:863
 msgid "Overwrite"
 msgstr "覆盖"
 
@@ -2467,29 +2487,29 @@ msgstr "丢弃"
 msgid "File Save Error for %1"
 msgstr "保存文件 %1 时出错"
 
-#: packages/docregistry/src/context.ts:711 packages/docregistry/src/context.ts:714
+#: packages/docregistry/src/context.ts:711 packages/docregistry/src/context.ts:713 packages/docregistry/src/context.ts:714
 msgid "File Load Error for %1"
 msgstr "加载文件 %1 时出错"
 
-#: packages/docregistry/src/context.ts:809 packages/docregistry/src/context.ts:812
+#: packages/docregistry/src/context.ts:809 packages/docregistry/src/context.ts:811 packages/docregistry/src/context.ts:812
 msgid "\"%1\" has changed on disk since the last time it was opened or saved.\n"
 "Do you want to overwrite the file on disk with the version open here,\n"
 "or load the version on disk (revert)?"
 msgstr "「%1」自上次打开或保存后在磁盘上已经改变。您想要用这里打开的版本覆盖磁盘上的文件， 还是加载磁盘上的版本（复原）？"
 
-#: packages/docregistry/src/context.ts:820 packages/docregistry/src/context.ts:823
+#: packages/docregistry/src/context.ts:820 packages/docregistry/src/context.ts:822 packages/docregistry/src/context.ts:823
 msgid "File Changed"
 msgstr "文件已更改"
 
-#: packages/docregistry/src/context.ts:844 packages/docregistry/src/context.ts:847
+#: packages/docregistry/src/context.ts:844 packages/docregistry/src/context.ts:846 packages/docregistry/src/context.ts:847
 msgid "\"%1\" already exists. Do you want to replace it?"
 msgstr "「%1」已经存在。您想要替换它么？"
 
-#: packages/docregistry/src/context.ts:852 packages/docregistry/src/context.ts:855
+#: packages/docregistry/src/context.ts:852 packages/docregistry/src/context.ts:854 packages/docregistry/src/context.ts:855
 msgid "File Overwrite?"
 msgstr "要覆盖文件吗？"
 
-#: packages/docregistry/src/context.ts:995 packages/docregistry/src/context.ts:998
+#: packages/docregistry/src/context.ts:995 packages/docregistry/src/context.ts:997 packages/docregistry/src/context.ts:998
 msgid "Save File As.."
 msgstr "另存文件為..."
 
@@ -2497,59 +2517,59 @@ msgstr "另存文件為..."
 msgid "Renderer Failure: %1"
 msgstr "渲染失败：%1"
 
-#: packages/docregistry/src/registry.ts:1273
+#: packages/docregistry/src/registry.ts:1273 packages/docregistry/src/registry.ts:1280
 msgid "default"
 msgstr "默认"
 
-#: packages/docregistry/src/registry.ts:1296
+#: packages/docregistry/src/registry.ts:1296 packages/docregistry/src/registry.ts:1303
 msgid "Text"
 msgstr "文本"
 
-#: packages/docregistry/src/registry.ts:1319 packages/launcher/src/index.tsx:149 packages/launcher/src/index.tsx:154 packages/notebook-extension/src/index.ts:1243 packages/notebook-extension/src/index.ts:1279 packages/notebook-extension/src/index.ts:641
+#: packages/docregistry/src/registry.ts:1319 packages/docregistry/src/registry.ts:1326 packages/launcher/src/index.tsx:149 packages/launcher/src/index.tsx:154 packages/notebook-extension/src/index.ts:1243 packages/notebook-extension/src/index.ts:1247 packages/notebook-extension/src/index.ts:1279 packages/notebook-extension/src/index.ts:1283 packages/notebook-extension/src/index.ts:641
 msgid "Notebook"
 msgstr "笔记本"
 
-#: packages/docregistry/src/registry.ts:1344
+#: packages/docregistry/src/registry.ts:1344 packages/docregistry/src/registry.ts:1351
 msgid "Directory"
 msgstr "目录"
 
-#: packages/docregistry/src/registry.ts:1371 packages/fileeditor-extension/src/commands.ts:993
+#: packages/docregistry/src/registry.ts:1371 packages/docregistry/src/registry.ts:1378 packages/fileeditor-extension/src/commands.ts:993
 msgid "Markdown File"
 msgstr "Markdown 文件"
 
-#: packages/docregistry/src/registry.ts:1378
+#: packages/docregistry/src/registry.ts:1378 packages/docregistry/src/registry.ts:1385
 msgid "PDF File"
 msgstr "PDF文件"
 
-#: packages/docregistry/src/registry.ts:1385 packages/fileeditor-extension/src/index.ts:186
+#: packages/docregistry/src/registry.ts:1385 packages/docregistry/src/registry.ts:1392 packages/fileeditor-extension/src/index.ts:186
 msgid "Python File"
 msgstr "Python 文件"
 
-#: packages/docregistry/src/registry.ts:1392
+#: packages/docregistry/src/registry.ts:1392 packages/docregistry/src/registry.ts:1399
 msgid "JSON File"
 msgstr "JSON 文件"
 
-#: packages/docregistry/src/registry.ts:1399 packages/fileeditor-extension/src/index.ts:198
+#: packages/docregistry/src/registry.ts:1399 packages/docregistry/src/registry.ts:1406 packages/fileeditor-extension/src/index.ts:198
 msgid "Julia File"
 msgstr "Julia 文件"
 
-#: packages/docregistry/src/registry.ts:1406
+#: packages/docregistry/src/registry.ts:1406 packages/docregistry/src/registry.ts:1413
 msgid "CSV File"
 msgstr "CSV 文件"
 
-#: packages/docregistry/src/registry.ts:1413
+#: packages/docregistry/src/registry.ts:1413 packages/docregistry/src/registry.ts:1420
 msgid "TSV File"
 msgstr "TSV 文件"
 
-#: packages/docregistry/src/registry.ts:1420 packages/fileeditor-extension/src/index.ts:210
+#: packages/docregistry/src/registry.ts:1420 packages/docregistry/src/registry.ts:1427 packages/fileeditor-extension/src/index.ts:210
 msgid "R File"
 msgstr "R 文件"
 
-#: packages/docregistry/src/registry.ts:1427
+#: packages/docregistry/src/registry.ts:1427 packages/docregistry/src/registry.ts:1434
 msgid "YAML File"
 msgstr "YAML 文件"
 
-#: packages/docregistry/src/registry.ts:1434 packages/docregistry/src/registry.ts:1442 packages/docregistry/src/registry.ts:1450 packages/docregistry/src/registry.ts:1458 packages/docregistry/src/registry.ts:1466 packages/docregistry/src/registry.ts:1474
+#: packages/docregistry/src/registry.ts:1434 packages/docregistry/src/registry.ts:1441 packages/docregistry/src/registry.ts:1442 packages/docregistry/src/registry.ts:1449 packages/docregistry/src/registry.ts:1450 packages/docregistry/src/registry.ts:1457 packages/docregistry/src/registry.ts:1458 packages/docregistry/src/registry.ts:1465 packages/docregistry/src/registry.ts:1466 packages/docregistry/src/registry.ts:1473 packages/docregistry/src/registry.ts:1474 packages/docregistry/src/registry.ts:1481
 msgid "Image"
 msgstr "图片"
 
@@ -3676,339 +3696,339 @@ msgstr "复制输出到剪贴板"
 msgid "Auto Close Brackets for All Notebook Cell Types"
 msgstr "为所有笔记本单元格类型自动闭合括号"
 
-#: packages/notebook-extension/src/index.ts:1241
+#: packages/notebook-extension/src/index.ts:1241 packages/notebook-extension/src/index.ts:1245
 msgid "New Notebook"
 msgstr "新建笔记本"
 
-#: packages/notebook-extension/src/index.ts:1245
+#: packages/notebook-extension/src/index.ts:1245 packages/notebook-extension/src/index.ts:1249
 msgid "Create a new notebook"
 msgstr "创建笔记本"
 
-#: packages/notebook-extension/src/index.ts:1392 packages/notebook-extension/src/index.ts:2498
+#: packages/notebook-extension/src/index.ts:1381 packages/notebook-extension/src/index.ts:1392 packages/notebook-extension/src/index.ts:2486 packages/notebook-extension/src/index.ts:2498
 msgid "Run Selected Cells"
 msgstr "运行选中的单元格"
 
-#: packages/notebook-extension/src/index.ts:1405
+#: packages/notebook-extension/src/index.ts:1394 packages/notebook-extension/src/index.ts:1405
 msgid "Run Selected Cells and Don't Advance"
 msgstr "仅运行选中的单元格且不前进"
 
-#: packages/notebook-extension/src/index.ts:1418
+#: packages/notebook-extension/src/index.ts:1407 packages/notebook-extension/src/index.ts:1418
 msgid "Run Selected Cells and Insert Below"
 msgstr "运行选中的单元格并在下面插入"
 
-#: packages/notebook-extension/src/index.ts:1431 packages/notebook-extension/src/index.ts:2499
+#: packages/notebook-extension/src/index.ts:1420 packages/notebook-extension/src/index.ts:1431 packages/notebook-extension/src/index.ts:2487 packages/notebook-extension/src/index.ts:2499
 msgid "Run All Cells"
 msgstr "运行所有单元格"
 
-#: packages/notebook-extension/src/index.ts:1444
+#: packages/notebook-extension/src/index.ts:1433 packages/notebook-extension/src/index.ts:1444
 msgid "Run All Above Selected Cell"
 msgstr "运行选中单元格上方的所有单元格"
 
-#: packages/notebook-extension/src/index.ts:1464
+#: packages/notebook-extension/src/index.ts:1453 packages/notebook-extension/src/index.ts:1464
 msgid "Run Selected Cell and All Below"
 msgstr "运行选中的单元格及以下所有"
 
-#: packages/notebook-extension/src/index.ts:1485
+#: packages/notebook-extension/src/index.ts:1474 packages/notebook-extension/src/index.ts:1485
 msgid "Render All Markdown Cells"
 msgstr "渲染全部 Markdown"
 
-#: packages/notebook-extension/src/index.ts:1510
+#: packages/notebook-extension/src/index.ts:1499 packages/notebook-extension/src/index.ts:1510
 msgid "Close and Shut Down"
 msgstr "关闭并停止"
 
-#: packages/notebook-extension/src/index.ts:1521
+#: packages/notebook-extension/src/index.ts:1510 packages/notebook-extension/src/index.ts:1521
 msgid "Shut down the notebook?"
 msgstr "关闭笔记本？"
 
-#: packages/notebook-extension/src/index.ts:1535
+#: packages/notebook-extension/src/index.ts:1524 packages/notebook-extension/src/index.ts:1535
 msgid "Trust Notebook"
 msgstr "信任笔记本"
 
-#: packages/notebook-extension/src/index.ts:1546 packages/notebook-extension/src/index.ts:2454
+#: packages/notebook-extension/src/index.ts:1535 packages/notebook-extension/src/index.ts:1546 packages/notebook-extension/src/index.ts:2442 packages/notebook-extension/src/index.ts:2454
 msgid "Restart Kernel and Clear All Outputs…"
 msgstr "重启并清除所有输出…"
 
-#: packages/notebook-extension/src/index.ts:1561
+#: packages/notebook-extension/src/index.ts:1550 packages/notebook-extension/src/index.ts:1561
 msgid "Restart Kernel and Run up to Selected Cell…"
 msgstr "重启内核并运行到所选单元格…"
 
-#: packages/notebook-extension/src/index.ts:1585 packages/notebook-extension/src/index.ts:2501
+#: packages/notebook-extension/src/index.ts:1574 packages/notebook-extension/src/index.ts:1585 packages/notebook-extension/src/index.ts:2489 packages/notebook-extension/src/index.ts:2501
 msgid "Restart Kernel and Run All Cells…"
 msgstr "重启并运行所有单元格…"
 
-#: packages/notebook-extension/src/index.ts:1605 packages/notebook-extension/src/index.ts:2405
+#: packages/notebook-extension/src/index.ts:1594 packages/notebook-extension/src/index.ts:1605 packages/notebook-extension/src/index.ts:2393 packages/notebook-extension/src/index.ts:2405
 msgid "Clear All Outputs"
 msgstr "清除全部输出"
 
-#: packages/notebook-extension/src/index.ts:1616
+#: packages/notebook-extension/src/index.ts:1605 packages/notebook-extension/src/index.ts:1616
 msgid "Clear Outputs"
 msgstr "清除输出"
 
-#: packages/notebook-extension/src/index.ts:1644
+#: packages/notebook-extension/src/index.ts:1633 packages/notebook-extension/src/index.ts:1644
 msgid "Change to Code Cell Type"
 msgstr "更改为代码单元格类型"
 
-#: packages/notebook-extension/src/index.ts:1655
+#: packages/notebook-extension/src/index.ts:1644 packages/notebook-extension/src/index.ts:1655
 msgid "Change to Markdown Cell Type"
 msgstr "更改为 Markdown 类型"
 
-#: packages/notebook-extension/src/index.ts:1666
+#: packages/notebook-extension/src/index.ts:1655 packages/notebook-extension/src/index.ts:1666
 msgid "Change to Raw Cell Type"
 msgstr "更改为纯文本单元格类型"
 
-#: packages/notebook-extension/src/index.ts:1677
+#: packages/notebook-extension/src/index.ts:1666 packages/notebook-extension/src/index.ts:1677
 msgid "Cut Cells"
 msgstr "剪切单元格"
 
-#: packages/notebook-extension/src/index.ts:1688
+#: packages/notebook-extension/src/index.ts:1677 packages/notebook-extension/src/index.ts:1688
 msgid "Copy Cells"
 msgstr "复制单元格"
 
-#: packages/notebook-extension/src/index.ts:1699
+#: packages/notebook-extension/src/index.ts:1688 packages/notebook-extension/src/index.ts:1699
 msgid "Paste Cells Below"
 msgstr "在下面粘贴单元格"
 
-#: packages/notebook-extension/src/index.ts:1710
+#: packages/notebook-extension/src/index.ts:1699 packages/notebook-extension/src/index.ts:1710
 msgid "Paste Cells Above"
 msgstr "在上方粘贴单元格"
 
-#: packages/notebook-extension/src/index.ts:1721
+#: packages/notebook-extension/src/index.ts:1710 packages/notebook-extension/src/index.ts:1721
 msgid "Paste Cells and Replace"
 msgstr "粘贴单元格并替换"
 
-#: packages/notebook-extension/src/index.ts:1732
+#: packages/notebook-extension/src/index.ts:1721 packages/notebook-extension/src/index.ts:1732
 msgid "Delete Cells"
 msgstr "删除单元格"
 
-#: packages/notebook-extension/src/index.ts:1743
+#: packages/notebook-extension/src/index.ts:1732 packages/notebook-extension/src/index.ts:1743
 msgid "Split Cell"
 msgstr "拆分单元格"
 
-#: packages/notebook-extension/src/index.ts:1754
+#: packages/notebook-extension/src/index.ts:1743 packages/notebook-extension/src/index.ts:1754
 msgid "Merge Selected Cells"
 msgstr "合并所选单元格"
 
-#: packages/notebook-extension/src/index.ts:1765
+#: packages/notebook-extension/src/index.ts:1754 packages/notebook-extension/src/index.ts:1765
 msgid "Merge Cell Above"
 msgstr "合并上方单元格"
 
-#: packages/notebook-extension/src/index.ts:1776
+#: packages/notebook-extension/src/index.ts:1765 packages/notebook-extension/src/index.ts:1776
 msgid "Merge Cell Below"
 msgstr "合并下方单元格"
 
-#: packages/notebook-extension/src/index.ts:1787
+#: packages/notebook-extension/src/index.ts:1776 packages/notebook-extension/src/index.ts:1787
 msgid "Insert Cell Above"
 msgstr "上方插入单元格"
 
-#: packages/notebook-extension/src/index.ts:1798
+#: packages/notebook-extension/src/index.ts:1787 packages/notebook-extension/src/index.ts:1798
 msgid "Insert Cell Below"
 msgstr "下方插入单元格"
 
-#: packages/notebook-extension/src/index.ts:1809
+#: packages/notebook-extension/src/index.ts:1798 packages/notebook-extension/src/index.ts:1809
 msgid "Select Cell Above"
 msgstr "选择上方单元格"
 
-#: packages/notebook-extension/src/index.ts:1820
+#: packages/notebook-extension/src/index.ts:1809 packages/notebook-extension/src/index.ts:1820
 msgid "Select Cell Below"
 msgstr "选择下方单元格"
 
-#: packages/notebook-extension/src/index.ts:1831
+#: packages/notebook-extension/src/index.ts:1820 packages/notebook-extension/src/index.ts:1831
 msgid "Extend Selection Above"
 msgstr "向上方扩展选区"
 
-#: packages/notebook-extension/src/index.ts:1842
+#: packages/notebook-extension/src/index.ts:1831 packages/notebook-extension/src/index.ts:1842
 msgid "Extend Selection to Top"
 msgstr "将选区扩展到顶部"
 
-#: packages/notebook-extension/src/index.ts:1853
+#: packages/notebook-extension/src/index.ts:1842 packages/notebook-extension/src/index.ts:1853
 msgid "Extend Selection Below"
 msgstr "向下方扩展选区"
 
-#: packages/notebook-extension/src/index.ts:1864
+#: packages/notebook-extension/src/index.ts:1853 packages/notebook-extension/src/index.ts:1864
 msgid "Extend Selection to Bottom"
 msgstr "将选区扩展到底部"
 
-#: packages/notebook-extension/src/index.ts:1875
+#: packages/notebook-extension/src/index.ts:1864 packages/notebook-extension/src/index.ts:1875
 msgid "Select All Cells"
 msgstr "选择所有单元格"
 
-#: packages/notebook-extension/src/index.ts:1886
+#: packages/notebook-extension/src/index.ts:1875 packages/notebook-extension/src/index.ts:1886
 msgid "Deselect All Cells"
 msgstr "取消选择所有单元格"
 
-#: packages/notebook-extension/src/index.ts:1897
+#: packages/notebook-extension/src/index.ts:1886 packages/notebook-extension/src/index.ts:1897
 msgid "Move Cells Up"
 msgstr "上移单元格"
 
-#: packages/notebook-extension/src/index.ts:1908
+#: packages/notebook-extension/src/index.ts:1897 packages/notebook-extension/src/index.ts:1908
 msgid "Move Cells Down"
 msgstr "下移单元格"
 
-#: packages/notebook-extension/src/index.ts:1919
+#: packages/notebook-extension/src/index.ts:1908 packages/notebook-extension/src/index.ts:1919
 msgid "Toggle All Line Numbers"
 msgstr "切换所有行号"
 
-#: packages/notebook-extension/src/index.ts:1930
+#: packages/notebook-extension/src/index.ts:1919 packages/notebook-extension/src/index.ts:1930
 msgid "Enter Command Mode"
 msgstr "进入命令模式"
 
-#: packages/notebook-extension/src/index.ts:1941
+#: packages/notebook-extension/src/index.ts:1930 packages/notebook-extension/src/index.ts:1941
 msgid "Enter Edit Mode"
 msgstr "进入编辑模式"
 
-#: packages/notebook-extension/src/index.ts:1952
+#: packages/notebook-extension/src/index.ts:1941 packages/notebook-extension/src/index.ts:1952
 msgid "Undo Cell Operation"
 msgstr "撤销单元格操作"
 
-#: packages/notebook-extension/src/index.ts:1963
+#: packages/notebook-extension/src/index.ts:1952 packages/notebook-extension/src/index.ts:1963
 msgid "Redo Cell Operation"
 msgstr "重做单元格操作"
 
-#: packages/notebook-extension/src/index.ts:1988
+#: packages/notebook-extension/src/index.ts:1977 packages/notebook-extension/src/index.ts:1988
 msgid "Reconnect To Kernel"
 msgstr "重新连接到内核"
 
-#: packages/notebook-extension/src/index.ts:2005
+#: packages/notebook-extension/src/index.ts:1994 packages/notebook-extension/src/index.ts:2005
 msgid "Change to Heading 1"
 msgstr "更改为标题 1"
 
-#: packages/notebook-extension/src/index.ts:2016
+#: packages/notebook-extension/src/index.ts:2005 packages/notebook-extension/src/index.ts:2016
 msgid "Change to Heading 2"
 msgstr "更改为标题 2"
 
-#: packages/notebook-extension/src/index.ts:2027
+#: packages/notebook-extension/src/index.ts:2016 packages/notebook-extension/src/index.ts:2027
 msgid "Change to Heading 3"
 msgstr "更改为标题 3"
 
-#: packages/notebook-extension/src/index.ts:2038
+#: packages/notebook-extension/src/index.ts:2027 packages/notebook-extension/src/index.ts:2038
 msgid "Change to Heading 4"
 msgstr "更改为标题 4"
 
-#: packages/notebook-extension/src/index.ts:2049
+#: packages/notebook-extension/src/index.ts:2038 packages/notebook-extension/src/index.ts:2049
 msgid "Change to Heading 5"
 msgstr "更改为标题 5"
 
-#: packages/notebook-extension/src/index.ts:2060
+#: packages/notebook-extension/src/index.ts:2049 packages/notebook-extension/src/index.ts:2060
 msgid "Change to Heading 6"
 msgstr "更改为标题 6"
 
-#: packages/notebook-extension/src/index.ts:2071
+#: packages/notebook-extension/src/index.ts:2060 packages/notebook-extension/src/index.ts:2071
 msgid "Collapse Selected Code"
 msgstr "折叠选定的代码"
 
-#: packages/notebook-extension/src/index.ts:2082
+#: packages/notebook-extension/src/index.ts:2071 packages/notebook-extension/src/index.ts:2082
 msgid "Expand Selected Code"
 msgstr "展开选定的代码"
 
-#: packages/notebook-extension/src/index.ts:2093
+#: packages/notebook-extension/src/index.ts:2082 packages/notebook-extension/src/index.ts:2093
 msgid "Collapse All Code"
 msgstr "折叠所有代码"
 
-#: packages/notebook-extension/src/index.ts:2104
+#: packages/notebook-extension/src/index.ts:2093 packages/notebook-extension/src/index.ts:2104
 msgid "Expand All Code"
 msgstr "展开所有代码"
 
-#: packages/notebook-extension/src/index.ts:2115
+#: packages/notebook-extension/src/index.ts:2104 packages/notebook-extension/src/index.ts:2115
 msgid "Collapse Selected Outputs"
 msgstr "折叠选中的输出"
 
-#: packages/notebook-extension/src/index.ts:2126
+#: packages/notebook-extension/src/index.ts:2115 packages/notebook-extension/src/index.ts:2126
 msgid "Expand Selected Outputs"
 msgstr "展开选定的输出"
 
-#: packages/notebook-extension/src/index.ts:2137
+#: packages/notebook-extension/src/index.ts:2126 packages/notebook-extension/src/index.ts:2137
 msgid "Collapse All Outputs"
 msgstr "折叠全部输出"
 
-#: packages/notebook-extension/src/index.ts:2149
+#: packages/notebook-extension/src/index.ts:2138 packages/notebook-extension/src/index.ts:2149
 msgid "Render Side-by-side"
 msgstr "并排渲染"
 
-#: packages/notebook-extension/src/index.ts:2174
+#: packages/notebook-extension/src/index.ts:2162 packages/notebook-extension/src/index.ts:2174
 msgid "Set side-by-side ratio"
 msgstr "设置并排显示比例"
 
-#: packages/notebook-extension/src/index.ts:2177
+#: packages/notebook-extension/src/index.ts:2165 packages/notebook-extension/src/index.ts:2177
 msgid "Width of the output in side-by-side mode"
 msgstr "并排显示模式的输出宽度"
 
-#: packages/notebook-extension/src/index.ts:2192
+#: packages/notebook-extension/src/index.ts:2180 packages/notebook-extension/src/index.ts:2192
 msgid "Expand All Outputs"
 msgstr "展开全部输出"
 
-#: packages/notebook-extension/src/index.ts:2203
+#: packages/notebook-extension/src/index.ts:2191 packages/notebook-extension/src/index.ts:2203
 msgid "Enable Scrolling for Outputs"
 msgstr "启用滚动输出功能"
 
-#: packages/notebook-extension/src/index.ts:2214
+#: packages/notebook-extension/src/index.ts:2202 packages/notebook-extension/src/index.ts:2214
 msgid "Disable Scrolling for Outputs"
 msgstr "禁用滚动输出功能"
 
-#: packages/notebook-extension/src/index.ts:2225
+#: packages/notebook-extension/src/index.ts:2213 packages/notebook-extension/src/index.ts:2225
 msgid "Select current running or last run cell"
 msgstr "选择正在运行或最后运行的单元格"
 
-#: packages/notebook-extension/src/index.ts:2236
+#: packages/notebook-extension/src/index.ts:2224 packages/notebook-extension/src/index.ts:2236
 msgid "Replace Selection in Notebook Cell"
 msgstr "在笔记本单元格中替换选择"
 
-#: packages/notebook-extension/src/index.ts:2284 packages/notebook-extension/src/index.ts:456
+#: packages/notebook-extension/src/index.ts:2272 packages/notebook-extension/src/index.ts:2284 packages/notebook-extension/src/index.ts:456
 msgid "Notebook Operations"
 msgstr "笔记本操作"
 
-#: packages/notebook-extension/src/index.ts:2320
+#: packages/notebook-extension/src/index.ts:2308 packages/notebook-extension/src/index.ts:2320
 msgid "Notebook Cell Operations"
 msgstr "笔记本单元格操作"
 
-#: packages/notebook-extension/src/index.ts:2403
+#: packages/notebook-extension/src/index.ts:2391 packages/notebook-extension/src/index.ts:2403
 msgid "Clear Output"
 msgstr "清空输出"
 
-#: packages/notebook-extension/src/index.ts:2419
+#: packages/notebook-extension/src/index.ts:2407 packages/notebook-extension/src/index.ts:2419
 msgid "Close and Shutdown Notebook"
 msgstr "关闭并终止笔记本服务"
 
-#: packages/notebook-extension/src/index.ts:2423
+#: packages/notebook-extension/src/index.ts:2411 packages/notebook-extension/src/index.ts:2423
 msgid "Shut down the Notebook?"
 msgstr "关闭此笔记本？"
 
-#: packages/notebook-extension/src/index.ts:2475 packages/notebook-extension/src/index.ts:828
+#: packages/notebook-extension/src/index.ts:2463 packages/notebook-extension/src/index.ts:2475 packages/notebook-extension/src/index.ts:828
 msgid "New Console for Notebook"
 msgstr "新建笔记本控制台"
 
-#: packages/notebook-extension/src/index.ts:2631
+#: packages/notebook-extension/src/index.ts:2619 packages/notebook-extension/src/index.ts:2631
 msgid "HTML"
 msgstr "HTML"
 
-#: packages/notebook-extension/src/index.ts:2632
+#: packages/notebook-extension/src/index.ts:2620 packages/notebook-extension/src/index.ts:2632
 msgid "LaTeX"
 msgstr "LaTeX"
 
-#: packages/notebook-extension/src/index.ts:2633 packages/notebook/src/default-toolbar.tsx:343
+#: packages/notebook-extension/src/index.ts:2621 packages/notebook-extension/src/index.ts:2633 packages/notebook/src/default-toolbar.tsx:343
 msgid "Markdown"
 msgstr "Markdown"
 
-#: packages/notebook-extension/src/index.ts:2634 packages/notebook-extension/src/index.ts:638
+#: packages/notebook-extension/src/index.ts:2622 packages/notebook-extension/src/index.ts:2634 packages/notebook-extension/src/index.ts:638
 msgid "PDF"
 msgstr "PDF"
 
-#: packages/notebook-extension/src/index.ts:2635
+#: packages/notebook-extension/src/index.ts:2623 packages/notebook-extension/src/index.ts:2635
 msgid "ReStructured Text"
 msgstr "ReStructured 文本"
 
-#: packages/notebook-extension/src/index.ts:2636
+#: packages/notebook-extension/src/index.ts:2624 packages/notebook-extension/src/index.ts:2636
 msgid "Executable Script"
 msgstr "可执行脚本"
 
-#: packages/notebook-extension/src/index.ts:2637
+#: packages/notebook-extension/src/index.ts:2625 packages/notebook-extension/src/index.ts:2637
 msgid "Reveal.js Slides"
 msgstr "Reveal.js 幻灯片"
 
-#: packages/notebook-extension/src/index.ts:2655
+#: packages/notebook-extension/src/index.ts:2643 packages/notebook-extension/src/index.ts:2655
 msgid "For Notebook: %1"
 msgstr "对笔记本：%1"
 
-#: packages/notebook-extension/src/index.ts:2656
+#: packages/notebook-extension/src/index.ts:2644 packages/notebook-extension/src/index.ts:2656
 msgid "For Notebook:"
 msgstr "对 Notebook:"
 
@@ -4124,7 +4144,7 @@ msgstr "纯文本"
 msgid "Save the notebook contents and create checkpoint"
 msgstr "保存笔记本内容并创建检查点"
 
-#: packages/notebook/src/model.ts:336
+#: packages/notebook/src/model.ts:335 packages/notebook/src/model.ts:336
 msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "to the current notebook format (v%2).\n"
 "The next time you save this notebook, the current notebook format (v%2) will be used.\n"
@@ -4132,7 +4152,7 @@ msgid "This notebook has been converted from an older notebook format (v%1)\n"
 "close the notebook without saving it."
 msgstr "此笔记本已从旧笔记本格式（v%1）转换为当前笔记本格式（v%2）。下次保存此笔记本，当前笔记本将使用新格式（v%2）。老版本的 Jupyter 项目可能无法读取新格式。要保留原始格式版本，请关闭笔记本并避免保存它。"
 
-#: packages/notebook/src/model.ts:346
+#: packages/notebook/src/model.ts:345 packages/notebook/src/model.ts:346
 msgid "This notebook has been converted from an newer notebook format (v%1)\n"
 "to the current notebook format (v%2).\n"
 "The next time you save this notebook, the current notebook format (v%2) will be used.\n"
@@ -4140,7 +4160,7 @@ msgid "This notebook has been converted from an newer notebook format (v%1)\n"
 "close the notebook without saving it."
 msgstr "此笔记本已从较新的笔记本格式（v%1）转换为当前笔记本格式（v%2）。下次保存笔记本时，当前笔记本格式（v%2）将被使用。原笔记本的某些功能可能不可用。要保留原始格式版本，关闭笔记本而不保存它。"
 
-#: packages/notebook/src/model.ts:357
+#: packages/notebook/src/model.ts:356 packages/notebook/src/model.ts:357
 msgid "Notebook converted"
 msgstr "笔记本已转换"
 
@@ -4232,7 +4252,7 @@ msgstr "处理本地链接"
 msgid "This HTML output contains inline scripts. Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
 msgstr "此 HTML 输出包含内嵌脚本。您确定要在您的 JupyterLab 会话中运行任意的 JavaScript 吗？"
 
-#: packages/rendermime/src/widgets.ts:416
+#: packages/rendermime/src/widgets.ts:416 packages/rendermime/src/widgets.ts:420
 msgid "JavaScript output is disabled in JupyterLab"
 msgstr "JavaScript 输出在 JupyterLab 中被禁用"
 

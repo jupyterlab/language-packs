@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 99\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2021-10-27 18:31\n"
+"PO-Revision-Date: 2021-12-19 19:55\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
@@ -97,6 +97,16 @@ msgstr ""
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/labelExtra/title
 msgctxt "settings"
 msgid "Text to display next to completion label"
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/completion.json:/properties/layout/description
+msgctxt "settings"
+msgid "Layout of the completer, one of: 'detail-below', 'side-by-side'"
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/completion.json:/properties/layout/title
+msgctxt "settings"
+msgid "Completer layout"
 msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/showDocumentation/description
@@ -449,7 +459,7 @@ msgctxt "schema"
 msgid "Code Syntax"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:238
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:238 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:243
 msgid "Failed to load language server spec finder `{}`: \n"
 "{}"
 msgstr ""
@@ -458,41 +468,41 @@ msgstr ""
 msgid "Skipping non-installed server: `{}`"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259
 msgid "Failed to fetch commands from language server spec finder `{}`:\n"
 "{}"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:272
 msgid "Failed to validate commands from language server spec finder `{}`:\n"
 "{}"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:279
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:279 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:284
 msgid "Skipped non-installed server(s): {}"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:41
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:41 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46
 msgid "extra language server specs, keyed by implementation, from conf.d"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:51
 msgid "a dict of language server specs, keyed by implementation"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:52
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:52 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:57
 msgid "try to find known language servers in sys.prefix (and elsewhere)"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:193
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:193 /python_packages/jupyter_lsp/jupyter_lsp/types.py:196
 msgid "path to nodejs executable"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:195
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:195 /python_packages/jupyter_lsp/jupyter_lsp/types.py:198
 msgid "absolute paths in which to seek node_modules"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:200
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:200 /python_packages/jupyter_lsp/jupyter_lsp/types.py:203
 msgid "additional absolute paths to seek node_modules first"
 msgstr ""
 
@@ -561,27 +571,51 @@ msgstr ""
 msgid "documentation"
 msgstr "dokumentasi"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:418 packages/jupyterlab-lsp/src/components/statusbar.tsx:419
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:347
+msgid "LSP servers"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:352
+msgid "Available"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:362
+msgid "Running"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:371
+msgid "Missing"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:380
+msgid "Documentation:"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:388
+msgid "Language Servers"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:417 packages/jupyterlab-lsp/src/components/statusbar.tsx:418 packages/jupyterlab-lsp/src/components/statusbar.tsx:419
 msgid "LSP status"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:468 packages/jupyterlab-lsp/src/components/statusbar.tsx:469
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:467 packages/jupyterlab-lsp/src/components/statusbar.tsx:468 packages/jupyterlab-lsp/src/components/statusbar.tsx:469
 msgid "LSP Code Intelligence"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:487 packages/jupyterlab-lsp/src/components/statusbar.tsx:488
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:486 packages/jupyterlab-lsp/src/components/statusbar.tsx:487 packages/jupyterlab-lsp/src/components/statusbar.tsx:488
 msgid "LSP server extension not found"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:813 packages/jupyterlab-lsp/src/components/statusbar.tsx:816 packages/jupyterlab-lsp/src/components/statusbar.tsx:824 packages/jupyterlab-lsp/src/components/statusbar.tsx:827
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:813 packages/jupyterlab-lsp/src/components/statusbar.tsx:815 packages/jupyterlab-lsp/src/components/statusbar.tsx:816 packages/jupyterlab-lsp/src/components/statusbar.tsx:824 packages/jupyterlab-lsp/src/components/statusbar.tsx:826 packages/jupyterlab-lsp/src/components/statusbar.tsx:827
 msgid "not initialized"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:829 packages/jupyterlab-lsp/src/components/statusbar.tsx:832
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:829 packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:832
 msgid "Waiting for documents initialization..."
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:834
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:833 packages/jupyterlab-lsp/src/components/statusbar.tsx:834
 msgid "Fully connected & initialized (%2 virtual document)"
 msgid_plural "Fully connected & initialized (%2 virtual document)"
 msgstr[0] ""
@@ -590,9 +624,21 @@ msgstr[0] ""
 msgid "Fully connected, but %2/%3 virtual document stuck uninitialized: %4"
 msgstr ""
 
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:847
+msgctxt "pluralized"
+msgid "Fully connected, but %2/%3 virtual document stuck uninitialized: %4"
+msgid_plural "Fully connected, but %2/%3 virtual documents stuck uninitialized: %4"
+msgstr[0] ""
+
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:859 packages/jupyterlab-lsp/src/components/statusbar.tsx:862
 msgid "%2/%3 virtual document connected (%4 connections; waiting for: %5)"
 msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:862
+msgctxt "pluralized"
+msgid "%2/%3 virtual document connected (%4 connections; waiting for: %5)"
+msgid_plural "%2/%3 virtual documents connected (%4 connections; waiting for: %5)"
+msgstr[0] ""
 
 #: packages/jupyterlab-lsp/src/components/utils.tsx:54
 msgid "cell %1"
@@ -642,51 +688,51 @@ msgstr ""
 msgid "Show diagnostics panel"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:161
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:161 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:162
 msgid "Error"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:162
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:162 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:163
 msgid "Warning"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:163
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:163 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:164
 msgid "Information"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:164
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:164 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:165
 msgid "Hint"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:170
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:170 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:171
 msgid "Virtual Document"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:185
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:185 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:186
 msgid "Message"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:195
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:195 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:196
 msgid "Code"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:204
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:204 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:205
 msgid "Severity"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:219
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:219 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:220
 msgid "Source"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:226
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:226 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:227
 msgid "Cell"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:230 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:271
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:230 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:265 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:271
 msgid "No issues detected, great job!"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:240
+#: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:237 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:240
 msgid "Line:Ch"
 msgstr ""
 
