@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 115\n"
 "Language-Team: Hebrew\n"
 "Language: he_IL\n"
-"PO-Revision-Date: 2021-12-29 05:42\n"
+"PO-Revision-Date: 2022-01-04 11:39\n"
 
 #: /packages/application-extension/schema/menus.json:/description /packages/application-extension/schema/menus.json:/title
 msgctxt "schema"
@@ -44,29 +44,54 @@ msgctxt "schema"
 msgid "RetroLab Top Area"
 msgstr "האזור העליון של RetroLab"
 
-#: packages/application-extension/src/index.ts:103 packages/application-extension/src/index.ts:104 packages/application-extension/src/index.ts:114
+#: /packages/notebook-extension/schema/scroll-output.json:/description
+msgctxt "schema"
+msgid "RetroLab Notebook settings"
+msgstr "הגדרות מחברת RetroLab"
+
+#: /packages/notebook-extension/schema/scroll-output.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "RetroLab Notebook"
+msgstr "מחברת RetroLab"
+
+#: /packages/notebook-extension/schema/scroll-output.json:/properties/autoScrollOutputs/description
+msgctxt "settings"
+msgid "Whether to auto scroll the output area when the outputs become too long"
+msgstr "האם לגלול את הפלטים אוטומטית כאשר הם ארוכים מדי"
+
+#: /packages/notebook-extension/schema/scroll-output.json:/properties/autoScrollOutputs/title
+msgctxt "settings"
+msgid "Auto Scroll Outputs"
+msgstr "גלילת הפלטים אוטומטית"
+
+#: /packages/notebook-extension/schema/scroll-output.json:/title
+msgctxt "schema"
+msgid "RetroLab Notebook"
+msgstr "מחברת RetroLab"
+
+#: packages/application-extension/src/index.ts:103 packages/application-extension/src/index.ts:104 packages/application-extension/src/index.ts:114 packages/application-extension/src/index.ts:115
 msgid "Are you sure you want to exit RetroLab?\n\n"
 "Any unsaved changes will be lost."
 msgstr "לצאת מ־RetroLab?\n\n"
 "כל השינויים שלא שמרת יאבדו."
 
-#: packages/application-extension/src/index.ts:218 packages/application-extension/src/index.ts:219 packages/application-extension/src/index.ts:249
+#: packages/application-extension/src/index.ts:218 packages/application-extension/src/index.ts:219 packages/application-extension/src/index.ts:249 packages/application-extension/src/index.ts:250
 msgid "Open JupyterLab"
 msgstr "לפתוח את Jupyter"
 
-#: packages/application-extension/src/index.ts:225 packages/application-extension/src/index.ts:226 packages/application-extension/src/index.ts:256
+#: packages/application-extension/src/index.ts:225 packages/application-extension/src/index.ts:226 packages/application-extension/src/index.ts:256 packages/application-extension/src/index.ts:257
 msgid "Open Files"
 msgstr "פתיחת קבצים"
 
-#: packages/application-extension/src/index.ts:457
+#: packages/application-extension/src/index.ts:457 packages/application-extension/src/index.ts:458
 msgid "Rename…"
 msgstr "שינוי השם…"
 
-#: packages/application-extension/src/index.ts:465 packages/application-extension/src/index.ts:468 packages/application-extension/src/index.ts:523
+#: packages/application-extension/src/index.ts:465 packages/application-extension/src/index.ts:468 packages/application-extension/src/index.ts:523 packages/application-extension/src/index.ts:524
 msgid "Show Header"
 msgstr "הצגת כותרת"
 
-#: packages/application-extension/src/index.ts:609 packages/application-extension/src/index.ts:634 packages/application-extension/src/index.ts:696
+#: packages/application-extension/src/index.ts:609 packages/application-extension/src/index.ts:634 packages/application-extension/src/index.ts:696 packages/application-extension/src/index.ts:697
 msgid "Toggle Zen Mode"
 msgstr "החלפת מצב ריכוז"
 
@@ -114,7 +139,7 @@ msgstr "הפעלת מנהל הקבצים של RetroLab"
 msgid "Interface"
 msgstr "מנשק"
 
-#: packages/notebook-extension/src/index.ts:81
+#: packages/notebook-extension/src/index.ts:81 packages/notebook-extension/src/index.ts:90
 msgid "Last Checkpoint: %1"
 msgstr "נקודת ביקורת אחרונה: %1"
 
