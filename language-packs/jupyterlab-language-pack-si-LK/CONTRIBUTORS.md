@@ -1,3 +1,3 @@
 # Contributors
 
-* Store ([@HelaBasa](https://crowdin.com/profile/HelaBasa))
+* හෙළබස ([@HelaBasa](https://crowdin.com/profile/HelaBasa))
