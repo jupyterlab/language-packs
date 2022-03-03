@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2022-03-03 16:03\n"
+"PO-Revision-Date: 2022-03-03 17:17\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -418,7 +418,7 @@ msgstr "滚动行为"
 #: /packages/codemirror-extension/schema/commands.json:/properties/selectionPointer/description
 msgctxt "settings"
 msgid "Control the mouse cursor appearance when hovering over the selection. Value is boolean or string, e.g. 'pointer'."
-msgstr ""
+msgstr "控制当鼠标指针移动到选定内容时的样式。值为布尔值或字符串，例如「pointer」。"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/selectionPointer/oneOf[0]/title
 msgctxt "settings"
@@ -438,7 +438,7 @@ msgstr "选择指针"
 #: /packages/codemirror-extension/schema/commands.json:/properties/styleActiveLine/description
 msgctxt "settings"
 msgid "Highlight active line. Value is boolean, or { nonEmpty: boolean }."
-msgstr ""
+msgstr "高亮当前激活的行。值为布尔值，或 { nonEmpty: boolean }。"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/styleActiveLine/oneOf[0]/title
 msgctxt "settings"
@@ -678,7 +678,16 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "注意：想要禁用一个工具栏项目，复制下面内容到用户选项并添加「disabled」键。下面的示例将会禁用限位选择器项目：\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"delimiter\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"工具栏描述："
 
 #: /packages/csvviewer-extension/schema/csv.json:/properties/toolbar/title
 msgctxt "settings"
@@ -813,7 +822,7 @@ msgstr "文档搜索插件。"
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/searchDebounceTime/description
 msgctxt "settings"
 msgid "The debounce time in milliseconds applied to the search input field. The already opened input files will not be updated if you change that value"
-msgstr ""
+msgstr "延迟时间（单位：毫秒）会应用到搜索输入框。修改此值不会立即应用到已经打开的输入文件"
 
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/searchDebounceTime/title
 msgctxt "settings"
@@ -1031,7 +1040,7 @@ msgctxt "settings"
 msgid "Note: To disable a toolbar item,\n"
 "copy it to User Preferences and add the\n"
 "\"disabled\" key. Toolbar description:"
-msgstr ""
+msgstr "注意：想要禁用一个工具栏项目，复制它到用户选项并添加「disabled」键。工具栏描述："
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
@@ -1072,7 +1081,16 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "注意：想要禁用一个工具栏项目，复制下面内容到用户选项并添加「disabled」键。下面的示例将会禁用刷新项目：\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"refresh\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"工具栏描述："
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
@@ -1310,7 +1328,16 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "注意：想要禁用一个工具栏项目，复制下面内容到用户选项并添加「disabled」键。下面的示例将会禁用中断按钮项目：\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"interrupt\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"工具栏描述："
 
 #: /packages/notebook-extension/schema/panel.json:/properties/toolbar/title
 msgctxt "settings"
@@ -1325,12 +1352,12 @@ msgstr "笔记本面板"
 #: /packages/notebook-extension/schema/tracker.json:/definitions/kernelStatusConfig/properties/showOnStatusBar/description
 msgctxt "settings"
 msgid "If `true`, the kernel status progression will be displayed in the status bar otherwise it will be in the toolbar."
-msgstr ""
+msgstr "如果为 `true`，内核状态进度将会在状态栏中显示，否则会在工具栏显示。"
 
 #: /packages/notebook-extension/schema/tracker.json:/definitions/kernelStatusConfig/properties/showOnStatusBar/title
 msgctxt "settings"
 msgid "Show kernel status on toolbar or status bar."
-msgstr ""
+msgstr "在工具栏或状态栏中显示内核状态。"
 
 #: /packages/notebook-extension/schema/tracker.json:/definitions/kernelStatusConfig/properties/showProgress/title
 msgctxt "settings"
@@ -1410,12 +1437,12 @@ msgstr "Markdown 单元格配置"
 #: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/description
 msgctxt "settings"
 msgid "Defines the maximum number of output cells to be rendered in the output area for cells with many outputs. The output area will have a head and the remaining outputs will be trimmed and not displayed unless the user clicks on the information message. Set to 0 to have the complete display."
-msgstr ""
+msgstr "对于具有多个输出的单元格，定义其输出区域要呈现的输出单元格的最大数量。输出区域将包含一个头部和部分消息内容。只有当用户单击消息后，才会显示完整的消息。设为 0 以完全显示。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/title
 msgctxt "settings"
 msgid "The maximum number of output cells to be rendered in the output area."
-msgstr ""
+msgstr "输出区域中输出单元格的最大数量。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/numberCellsToRenderDirectly/description
 msgctxt "settings"
@@ -1480,7 +1507,7 @@ msgstr "在浏览器空闲时间渲染单元格"
 #: /packages/notebook-extension/schema/tracker.json:/properties/renderingLayout/description
 msgctxt "settings"
 msgid "Global setting to define the rendering layout in notebooks. 'default' or 'side-by-side' are supported."
-msgstr ""
+msgstr "用来定义笔记本中渲染布局的全局设置。支持「default」或「side-by-side」。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/renderingLayout/title
 msgctxt "settings"
@@ -1500,12 +1527,12 @@ msgstr "滚动超过最后一个单元格"
 #: /packages/notebook-extension/schema/tracker.json:/properties/showEditorForReadOnlyMarkdown/description
 msgctxt "settings"
 msgid "Should an editor be shown for read-only markdown"
-msgstr ""
+msgstr "是否为只读的 Markdown 显示编辑器"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/showEditorForReadOnlyMarkdown/title
 msgctxt "settings"
 msgid "Show editor for read-only Markdown cells"
-msgstr ""
+msgstr "为只读的 Markdown 单元格显示编辑器"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/sideBySideLeftMarginOverride/description
 msgctxt "settings"
@@ -1580,7 +1607,7 @@ msgstr "JupyterLab 的启动模式。如果为空，该模式将从链接获取"
 #: /packages/statusbar-extension/schema/plugin.json:/properties/startMode/title
 msgctxt "settings"
 msgid "Start mode: ``, `single`or `multiple`"
-msgstr ""
+msgstr "启动模式：``、`single` 或 `multiple`"
 
 #: /packages/statusbar-extension/schema/plugin.json:/properties/visible/description
 msgctxt "settings"
@@ -2256,7 +2283,7 @@ msgstr "确定"
 
 #: packages/apputils/src/toolbar/factory.ts:26
 msgid "Toolbar customization has changed. You will need to reload JupyterLab to see the changes."
-msgstr ""
+msgstr "工具栏自定义已更改。您需要重新载入 JupyterLab 来查看改动。"
 
 #: packages/apputils/src/toolbar/widget.tsx:1245
 msgid "Switch kernel"
@@ -2612,7 +2639,7 @@ msgstr "表格视图"
 
 #: packages/debugger/src/panels/variables/mimerenderer.ts:49
 msgid "The variable is undefined in the active context."
-msgstr ""
+msgstr "该变量未定义在激活的上下文中。"
 
 #: packages/debugger/src/panels/variables/scope.tsx:53
 msgid "Scope"
@@ -3755,7 +3782,10 @@ msgid "Whether the HTML file is trusted.\n"
 "    Trusting the file allows scripts to run in it,\n"
 "    which may result in security risks.\n"
 "    Only enable for files you trust."
-msgstr ""
+msgstr "无论 HTML 文件是否被信任。\n"
+"    信任文件将允许在文件中运行脚本，\n"
+"    可能会带来安全风险。\n"
+"    请只为您信任的文件开启。"
 
 #: packages/htmlviewer/src/index.tsx:258
 msgid "Rerender HTML Document"
@@ -4868,7 +4898,7 @@ msgstr "编辑第二个"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:79
 msgid "Edit existing sortcut"
-msgstr ""
+msgstr "编辑现有快捷键"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:84
 msgid "Add new shortcut"
