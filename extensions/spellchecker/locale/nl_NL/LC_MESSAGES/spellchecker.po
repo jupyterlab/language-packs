@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 103\n"
 "Language-Team: Dutch\n"
 "Language: nl_NL\n"
-"PO-Revision-Date: 2021-08-26 21:28\n"
+"PO-Revision-Date: 2022-03-23 18:47\n"
 
 #: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/aff/title
 msgctxt "settings"
@@ -37,42 +37,42 @@ msgstr ""
 #: /schema/plugin.json:/description
 msgctxt "schema"
 msgid "Spellchecker settings."
-msgstr ""
+msgstr "Instellingen spellingscontrole."
 
 #: /schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Spellchecker"
-msgstr ""
+msgstr "Spellingscontrole"
 
 #: /schema/plugin.json:/properties/ignore/description
 msgctxt "settings"
 msgid "Case-sensitive list of words to be ignored"
-msgstr ""
+msgstr "Lijst met woorden die genegeerd moeten worden (hoofdlettergevoelig)"
 
 #: /schema/plugin.json:/properties/ignore/title
 msgctxt "settings"
 msgid "Words to be ignored by the spellchecker"
-msgstr ""
+msgstr "Woorden die genegeerd moeten worden door de spellingscontrole"
 
 #: /schema/plugin.json:/properties/language/description
 msgctxt "settings"
 msgid "Dictionary identifier, e.g. en-us"
-msgstr ""
+msgstr "Woordenboek identificatie, b.v. nl-NL"
 
 #: /schema/plugin.json:/properties/language/title
 msgctxt "settings"
 msgid "Language of the spellchecker"
-msgstr ""
+msgstr "Taal van de spellingscontrole"
 
 #: /schema/plugin.json:/properties/mimeTypes/description
 msgctxt "settings"
 msgid "List of MIME types. GFM denotes GitHub Flavored Markdown"
-msgstr ""
+msgstr "Lijst van MIME-types. GFM is de afkorting voor GitHub Flavored Markdown"
 
 #: /schema/plugin.json:/properties/mimeTypes/title
 msgctxt "settings"
 msgid "MIME types for files/editors for which the spellchecking should be activated"
-msgstr ""
+msgstr "MIME-types voor bestanden/editors waarvoor de spellingscontrole geactiveerd moet worden"
 
 #: /schema/plugin.json:/properties/onlineDictionaries/description
 msgctxt "settings"
@@ -85,12 +85,20 @@ msgid "A list of online dictionaries to use if installing dictionaries in data p
 "        \"name\": \"polski (Polska)\"\n"
 "    }\n"
 "]"
-msgstr ""
+msgstr "Een lijst met online woordenboeken die moeten worden gebruikt als het installeren van woordenboeken in het pad van de jupyter-server niet mogelijk of niet wenselijk is. Bijvoorbeeld:\n"
+"[\n"
+"    {\n"
+"        \"id\": \"pl_PL-online\",\n"
+"        \"aff\": \"http://some-url/pl_PL.aff\",\n"
+"        \"dic\": \"http://some-url/pl_PL.dic\",\n"
+"        \"naam\": \"polski (Polska)\"\n"
+"    }\n"
+"]"
 
 #: /schema/plugin.json:/properties/onlineDictionaries/title
 msgctxt "settings"
 msgid "Online dictionaries"
-msgstr ""
+msgstr "Online woordenboeken"
 
 #: /schema/plugin.json:/properties/theme/description
 msgctxt "settings"
@@ -98,55 +106,58 @@ msgid "Theme for decorating misspelt words, one of:\n"
 "  - 'background-box': fills the background of the misspelt word;\n"
 "  - 'wavy-underline': underline with wavelets (note: Chrome has a bug which prevents rendering of wavelets under some very short words)\n"
 "  - 'dotted-underline': underline with dotted style"
-msgstr ""
+msgstr "Thema voor het versieren van het  verkeerd gespelde woorden, kies één van de volgende mogelijkheden:\n"
+"  - 'achtergrond-box': vult de achtergrond van het verkeerd gespeld woord;\n"
+"  - 'wavy-underline': onderstreep met golfjes (opmerking: Chrome heeft een bug die het renderen van golfjes bij zeer korte woorden voorkomt)\n"
+"  - 'dotted-underline': benadruk met een gestippelde stijl"
 
 #: /schema/plugin.json:/properties/theme/title
 msgctxt "settings"
 msgid "Theme"
-msgstr ""
+msgstr "Thema"
 
 #: /schema/plugin.json:/title
 msgctxt "schema"
 msgid "Spellchecker"
-msgstr ""
+msgstr "Spellingscontrole"
 
 #: src/index.ts:242
 msgid "Dictionary not loaded"
-msgstr ""
+msgstr "Woordenboek is niet geladen"
 
 #: src/index.ts:243
 msgid "Adjust spelling to"
-msgstr ""
+msgstr "Spellingen aanpassen naar"
 
 #: src/index.ts:244
 msgid "No spellcheck suggestions"
-msgstr ""
+msgstr "Geen zoeksuggesties"
 
 #: src/index.ts:245
 msgid "Spell Checker"
-msgstr ""
+msgstr "Spellingscontrole"
 
 #: src/index.ts:374
 msgid "Toggle spellchecker"
-msgstr ""
+msgstr "Spellingscontrole in-/uitschakelen"
 
 #: src/index.ts:473
 msgid "Ignore"
-msgstr ""
+msgstr "Negeren"
 
 #: src/index.ts:560
 msgid "Loading dictionary…"
-msgstr ""
+msgstr "Bezig met het laden van het woordenboek…"
 
 #: src/index.ts:630
 msgid "%1 [%2] (online)"
-msgstr ""
+msgstr "%1 [%2] (online)"
 
 #: src/index.ts:631
 msgid "%1 [%2]"
-msgstr ""
+msgstr "%1 [%2]"
 
 #: src/index.ts:635 src/index.ts:663
 msgid "Choose spellchecker language"
-msgstr ""
+msgstr "Kies de spellingscontrole taal"
 
