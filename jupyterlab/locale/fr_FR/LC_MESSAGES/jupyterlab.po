@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2022-05-04 12:48\n"
+"PO-Revision-Date: 2022-05-04 13:56\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -235,22 +235,22 @@ msgstr "Menu Contextuel"
 #: /packages/application-extension/schema/shell.json:/description
 msgctxt "schema"
 msgid "JupyterLab Shell layout settings."
-msgstr ""
+msgstr "Paramètres de mise en page de JupyterLab."
 
 #: /packages/application-extension/schema/shell.json:/properties/hiddenMode/description
 msgctxt "settings"
 msgid "The method for hiding widgets in the main dock panel. Using `scale` will often increase performance as most browsers will not trigger style computation for the transform action."
-msgstr ""
+msgstr "La méthode pour masquer les widgets dans le panneau principal du dock. L'utilisation de `scale` augmentera souvent les performances car la plupart des navigateurs ne déclencheront pas le calcul de style pour l'action de transformation."
 
 #: /packages/application-extension/schema/shell.json:/properties/hiddenMode/title
 msgctxt "settings"
 msgid "Hidden mode of main panel widgets"
-msgstr ""
+msgstr "Mode pour masquer les widgets du panneau principal"
 
 #: /packages/application-extension/schema/shell.json:/title
 msgctxt "schema"
 msgid "JupyterLab Shell"
-msgstr ""
+msgstr "JupyterLab Interface"
 
 #: /packages/application-extension/schema/sidebar.json:/description
 msgctxt "schema"
@@ -414,22 +414,22 @@ msgstr "Nom unique"
 #: /packages/cell-toolbar-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Cell Toolbar Settings."
-msgstr ""
+msgstr "Paramètres de la barre d'outils des cellules."
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/properties/toolbar/description
 msgctxt "settings"
 msgid "An item is defined by a 'name', a 'command' name, and an 'icon' name"
-msgstr ""
+msgstr "Un élément est défini par un nom 'name', une commande 'command' et un nom d'icône 'icon'"
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "List of toolbar items"
-msgstr ""
+msgstr "Liste des éléments de la barre d'outils"
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Cell Toolbar"
-msgstr ""
+msgstr "Barre d'outils des cellules"
 
 #: /packages/codemirror-extension/schema/commands.json:/description
 msgctxt "schema"
@@ -1039,7 +1039,7 @@ msgstr "Navigateur de fichiers Ouvrir avec"
 #: /packages/filebrowser-extension/schema/widget.json:/description
 msgctxt "schema"
 msgid "File Browser widget settings."
-msgstr ""
+msgstr "Paramètres du navigateur de fichiers."
 
 #: /packages/filebrowser-extension/schema/widget.json:/properties/toolbar/description
 msgctxt "settings"
@@ -1055,17 +1055,28 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "Remarque : Pour désactiver un élément de la barre d'outils,\n"
+"copiez-le dans les préférences utilisateur et ajoutez l'attribut\n"
+"\"disabled\". L'exemple suivant désactivera le bouton pour envoyer un fichier:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"uploader\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Description de la barre d'outils :"
 
 #: /packages/filebrowser-extension/schema/widget.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "File browser toolbar items"
-msgstr ""
+msgstr "Éléments de la barre d'outils du navigateur de fichiers"
 
 #: /packages/filebrowser-extension/schema/widget.json:/title
 msgctxt "schema"
 msgid "File Browser Widget"
-msgstr ""
+msgstr "Navigateur de fichiers"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/cursorBlinkRate/title
 msgctxt "settings"
@@ -1581,12 +1592,12 @@ msgstr "Horodatage de l'enregistrement"
 #: /packages/notebook-extension/schema/tracker.json:/properties/remainingTimeBeforeRescheduling/description
 msgctxt "settings"
 msgid "Define the remaining time in milliseconds before virtual notebook rendering is rescheduled. Set 0 if you want to disable any rescheduling"
-msgstr ""
+msgstr "Temps restant en millisecondes avant que le rendu du notebook virtuel ne soit reprogrammé. Un temps de 0 désactivera la reprogrammation"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/remainingTimeBeforeRescheduling/title
 msgctxt "settings"
 msgid "Remaining time in milliseconds before virtual notebook rendering is rescheduled"
-msgstr ""
+msgstr "Temps restant en millisecondes avant que le rendu du notebook virtuel ne soit reprogrammé"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/renderCellOnIdle/description
 msgctxt "settings"
@@ -3348,7 +3359,7 @@ msgstr "Nouveau fichier Markdown"
 
 #: packages/filebrowser-extension/src/index.ts:1056
 msgid "Refresh the file browser."
-msgstr ""
+msgstr "Rafraîchir le navigateur de fichiers."
 
 #: packages/filebrowser-extension/src/index.ts:1057 packages/filebrowser/src/opendialog.ts:164
 msgid "Refresh File List"
@@ -3795,7 +3806,7 @@ msgstr "A PROPOS DU PROJET JUPYTER"
 
 #: packages/help-extension/src/index.tsx:138
 msgid "© 2015-2022 Project Jupyter Contributors"
-msgstr ""
+msgstr "© 2015-2022 Contributeurs du projet Jupyter"
 
 #: packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:394 packages/hub-extension/src/index.ts:161 packages/mainmenu-extension/src/index.ts:551
 msgid "Dismiss"
@@ -4374,11 +4385,11 @@ msgstr "Coller les cellules ci-dessus"
 
 #: packages/notebook-extension/src/index.ts:1914
 msgid "Duplicate Cells Below"
-msgstr ""
+msgstr "Dupliquer les cellules en dessous"
 
 #: packages/notebook-extension/src/index.ts:1915
 msgid "Copy the selected cells and paste them below the selection"
-msgstr ""
+msgstr "Copie les cellules sélectionnées et colle-les sous la sélection"
 
 #: packages/notebook-extension/src/index.ts:1929
 msgid "Paste Cells and Replace"
@@ -4683,7 +4694,8 @@ msgstr "Faire confiance au notebook?"
 #: packages/notebook/src/actions.tsx:1962
 msgid "Notebook is still rendering and has for now (%1) remaining cells to render.\n\n"
 "Please wait for the complete rendering before invoking that action."
-msgstr ""
+msgstr "Le notebook est toujours en cours de rendu et il reste %1 cellules à rendre.\n\n"
+"Veuillez attendre le rendu complet avant d'invoquer cette action."
 
 #: packages/notebook/src/actions.tsx:2134
 msgid "Kernel Terminating"
@@ -4997,7 +5009,7 @@ msgstr "Modifié"
 
 #: packages/settingeditor/src/pluginlist.tsx:455
 msgid "No items match your search."
-msgstr ""
+msgstr "Aucun élément ne correspond à votre recherche."
 
 #: packages/settingeditor/src/raweditor.ts:377
 msgid "System Defaults"
