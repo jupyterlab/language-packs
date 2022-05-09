@@ -448,6 +448,9 @@
     "Copy the selected cells": [
         "\u590d\u5236\u9009\u4e2d\u7684\u5355\u5143\u683c"
     ],
+    "Copy the selected cells and paste them below the selection": [
+        "\u590d\u5236\u9009\u5b9a\u7684\u5355\u5143\u683c\u5e76\u5c06\u5b83\u4eec\u7c98\u8d34\u81f3\u5176\u4e0b\u65b9"
+    ],
     "Could not find path: %1": [
         "\u627e\u4e0d\u5230\u8def\u5f84 %1"
     ],
@@ -610,6 +613,9 @@
     "Duplicate": [
         "\u521b\u5efa\u526f\u672c"
     ],
+    "Duplicate Cells Below": [
+        "\u590d\u5236\u5355\u5143\u683c\u81f3\u4e0b\u65b9"
+    ],
     "Edit": [
         "\u7f16\u8f91"
     ],
@@ -620,9 +626,6 @@
         "\u7f16\u8f91\u7b2c\u4e8c\u4e2a"
     ],
     "Edit existing shortcut": [
-        "\u7f16\u8f91\u73b0\u6709\u5feb\u6377\u952e"
-    ],
-    "Edit existing sortcut": [
         "\u7f16\u8f91\u73b0\u6709\u5feb\u6377\u952e"
     ],
     "Elapsed time: %1 second": [
@@ -1224,6 +1227,9 @@
     "No errors found": [
         "\u672a\u53d1\u73b0\u9519\u8bef"
     ],
+    "No items match your search.": [
+        "\u6ca1\u6709\u5339\u914d\u7684\u641c\u7d22\u9879\u76ee\u3002"
+    ],
     "No log messages.": [
         "\u65e0\u65e5\u5fd7\u6d88\u606f\u3002"
     ],
@@ -1463,6 +1469,9 @@
     ],
     "Refresh the current terminal session": [
         "\u5237\u65b0\u5f53\u524d\u7ec8\u7aef\u4f1a\u8bdd"
+    ],
+    "Refresh the file browser.": [
+        "\u5237\u65b0\u6587\u4ef6\u6d4f\u89c8\u5668\u3002"
     ],
     "Reload": [
         "\u91cd\u65b0\u52a0\u8f7d"
@@ -2398,6 +2407,12 @@
     "schema\u0004CSV Viewer settings.": [
         "CSV \u67e5\u770b\u5668\u8bbe\u7f6e\u3002"
     ],
+    "schema\u0004Cell Toolbar": [
+        "\u5355\u5143\u683c\u5de5\u5177\u680f"
+    ],
+    "schema\u0004Cell Toolbar Settings.": [
+        "\u5355\u5143\u683c\u5de5\u5177\u680f\u8bbe\u7f6e\u3002"
+    ],
     "schema\u0004Code Console": [
         "\u4ee3\u7801\u63a7\u5236\u53f0"
     ],
@@ -2482,8 +2497,14 @@
     "schema\u0004File Browser Open With settings.": [
         "\u6587\u4ef6\u6d4f\u89c8\u5668\u6253\u5f00\u65b9\u5f0f\u8bbe\u7f6e\u3002"
     ],
+    "schema\u0004File Browser Widget": [
+        "\u6587\u4ef6\u6d4f\u89c8\u5668\u5c0f\u7ec4\u4ef6"
+    ],
     "schema\u0004File Browser settings.": [
         "\u6587\u4ef6\u6d4f\u89c8\u5668\u8bbe\u7f6e\u3002"
+    ],
+    "schema\u0004File Browser widget settings.": [
+        "\u6587\u4ef6\u6d4f\u89c8\u5668\u5c0f\u7ec4\u4ef6\u8bbe\u7f6e\u3002"
     ],
     "schema\u0004File Editor Completer": [
         "\u6587\u4ef6\u7f16\u8f91\u5668\u8865\u5168"
@@ -2532,6 +2553,12 @@
     ],
     "schema\u0004JupyterHub settings.": [
         "JupyterHub \u8bbe\u7f6e\u3002"
+    ],
+    "schema\u0004JupyterLab Shell": [
+        "JupyterLab Shell"
+    ],
+    "schema\u0004JupyterLab Shell layout settings.": [
+        "JupyterLab Shell \u5e03\u5c40\u8bbe\u7f6e\u3002"
     ],
     "schema\u0004JupyterLab context menu settings.": [
         "JupyterLab \u4e0a\u4e0b\u6587\u83dc\u5355\u8bbe\u7f6e\u3002"
@@ -2818,6 +2845,9 @@
     "settings\u0004File Browser": [
         "\u6587\u4ef6\u6d4f\u89c8\u5668"
     ],
+    "settings\u0004File browser toolbar items": [
+        "\u6587\u4ef6\u6d4f\u89c8\u5668\u5de5\u5177\u680f\u9879\u76ee"
+    ],
     "settings\u0004Filter on file name with a fuzzy search": [
         "\u4f7f\u7528\u6a21\u7cca\u641c\u7d22\u8fc7\u6ee4\u6587\u4ef6\u540d"
     ],
@@ -2841,6 +2871,9 @@
     ],
     "settings\u0004Half-period in milliseconds used for cursor blinking. The default blink rate is 530ms. By setting this to zero, blinking can be disabled. A negative value hides the cursor entirely.": [
         "\u5149\u6807\u95ea\u70c1\u6240\u7528\u7684\u534a\u6bb5\u65f6\u95f4\uff08\u6beb\u79d2\uff09\u3002\u9ed8\u8ba4\u95ea\u5149\u901f\u7387\u4e3a 530 \u6beb\u79d2\u3002\u5982\u679c\u8bbe\u7f6e\u4e3a\u96f6\u5c06\u7981\u7528\u95ea\u70c1\u3002\u5982\u679c\u8bbe\u4e3a\u8d1f\u503c\u5c06\u5b8c\u5168\u9690\u85cf\u5149\u6807\u3002"
+    ],
+    "settings\u0004Hidden mode of main panel widgets": [
+        "\u4e3b\u9762\u677f\u5c0f\u7ec4\u4ef6\u7684\u9690\u85cf\u6a21\u5f0f"
     ],
     "settings\u0004Hide Front Matter": [
         "\u9690\u85cf YAML \u5934\u90e8\u4fe1\u606f"
@@ -2916,6 +2949,9 @@
     ],
     "settings\u0004Line-wise Ctrl-C": [
         "\u6574\u884c Ctrl-C"
+    ],
+    "settings\u0004List of toolbar items": [
+        "\u5de5\u5177\u680f\u9879\u76ee\u5217\u8868"
     ],
     "settings\u0004Localized strings prefix": [
         "\u672c\u5730\u5316\u5b57\u7b26\u4e32\u524d\u7f00"
@@ -3385,7 +3421,7 @@
     "waiting for fonts": [
         "\u6b63\u5728\u7b49\u5f85\u5b57\u4f53"
     ],
-    "\u00a9 2015-2021 Project Jupyter Contributors": [
-        "\u00a9 2015-2021 Jupyter \u9879\u76ee\u8d21\u732e\u8005"
+    "\u00a9 2015-2022 Project Jupyter Contributors": [
+        "\u00a9 2015-2022 Jupyter \u9879\u76ee\u8d21\u732e\u8005"
     ]
 }
