@@ -9,8 +9,9 @@ on:
     inputs:
       skipRelease:
         description: 'If "true", skip release and tag creation'
-        required: true
-        default: 'false'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -95,6 +96,11 @@ jobs:
         # Copy the artifacts to the global repository
         popd
         cp -r ./${{ env.CURRENT_LOCALE_DIR }}/dist/* ./dist
+    - name: Upload language pack artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: pip_packages
+        path: dist/*
     - name: Create Release
       if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.skipRelease == 'false' }}
       run: |
@@ -105,11 +111,6 @@ jobs:
       env:
         GITHUB_USER: ${{ secrets.GITHUB_USER }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Upload language pack artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: pip_packages
-        path: dist/*
 
   publish:
     name: Publish all language packs at once
