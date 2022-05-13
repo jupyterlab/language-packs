@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2022-05-04 12:49\n"
+"PO-Revision-Date: 2022-05-13 07:12\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1617,6 +1617,26 @@ msgctxt "schema"
 msgid "Notebook"
 msgstr "Блокнот"
 
+#: /packages/settingeditor-extension/schema/form-ui.json:/description
+msgctxt "schema"
+msgid "Settings editor form ui settings."
+msgstr ""
+
+#: /packages/settingeditor-extension/schema/form-ui.json:/properties/settingEditorType/description
+msgctxt "settings"
+msgid "Set the type of editor to use while editing your settings."
+msgstr ""
+
+#: /packages/settingeditor-extension/schema/form-ui.json:/properties/settingEditorType/title
+msgctxt "settings"
+msgid "Type of editor for the setting."
+msgstr ""
+
+#: /packages/settingeditor-extension/schema/form-ui.json:/title
+msgctxt "schema"
+msgid "Settings Editor Form UI"
+msgstr ""
+
 #: /packages/settingeditor-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Setting editor settings."
@@ -2197,7 +2217,7 @@ msgstr "Зберегти"
 msgid "Save Current Workspace As…"
 msgstr "Зберегти цю робочу область як…"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1292 packages/debugger-extension/src/index.ts:623 packages/debugger/src/panels/breakpoints/index.ts:66 packages/docmanager-extension/src/index.tsx:625 packages/docmanager-extension/src/index.tsx:675 packages/docmanager-extension/src/index.tsx:894 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:456 packages/filebrowser/src/opendialog.ts:82 packages/notebook/src/actions.tsx:1895 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/shortcuts-extension/src/components/ShortcutItem.tsx:245 packages/translation-extension/src/index.ts:138
+#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1292 packages/debugger-extension/src/index.ts:623 packages/debugger/src/panels/breakpoints/index.ts:66 packages/docmanager-extension/src/index.tsx:625 packages/docmanager-extension/src/index.tsx:675 packages/docmanager-extension/src/index.tsx:894 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:115 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:456 packages/filebrowser/src/opendialog.ts:82 packages/notebook/src/actions.tsx:1895 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/shortcuts-extension/src/components/ShortcutItem.tsx:245 packages/translation-extension/src/index.ts:138
 msgid "Cancel"
 msgstr "Скасувати"
 
@@ -2409,7 +2429,7 @@ msgstr "Відкрийте консоль JavaScript у браузері, щоб
 msgid "Change text editor syntax highlighting"
 msgstr "Змінювати виділення синтаксису текстового редактора"
 
-#: packages/console-extension/src/foreign.ts:65 packages/console-extension/src/index.ts:155 packages/console-extension/src/index.ts:202 packages/console-extension/src/index.ts:479 packages/console/src/panel.ts:331 packages/launcher/src/index.tsx:150 packages/launcher/src/index.tsx:155
+#: packages/console-extension/src/foreign.ts:65 packages/console-extension/src/index.ts:155 packages/console-extension/src/index.ts:202 packages/console-extension/src/index.ts:479 packages/console-extension/src/index.ts:482 packages/console/src/panel.ts:331 packages/launcher/src/index.tsx:150 packages/launcher/src/index.tsx:155
 msgid "Console"
 msgstr "Консоль"
 
@@ -2417,83 +2437,83 @@ msgstr "Консоль"
 msgid "Show All Kernel Activity"
 msgstr "Показувати всю активність ядра"
 
-#: packages/console-extension/src/index.ts:414
+#: packages/console-extension/src/index.ts:414 packages/console-extension/src/index.ts:417
 msgid "Auto Close Brackets for Code Console Prompt"
 msgstr "Автоматично закривати дужки для Prompt консолі коду"
 
-#: packages/console-extension/src/index.ts:468
+#: packages/console-extension/src/index.ts:468 packages/console-extension/src/index.ts:471
 msgid "New Console"
 msgstr "Нова консоль"
 
-#: packages/console-extension/src/index.ts:503
+#: packages/console-extension/src/index.ts:503 packages/console-extension/src/index.ts:506
 msgid "Clear Console Cells"
 msgstr "Очистити клітинки консолі"
 
-#: packages/console-extension/src/index.ts:515
+#: packages/console-extension/src/index.ts:515 packages/console-extension/src/index.ts:518
 msgid "Run Cell (unforced)"
 msgstr "Запустити клітинку (непримусово)"
 
-#: packages/console-extension/src/index.ts:527
+#: packages/console-extension/src/index.ts:527 packages/console-extension/src/index.ts:530
 msgid "Run Cell (forced)"
 msgstr "Запустити клітинку (примусово)"
 
-#: packages/console-extension/src/index.ts:539
+#: packages/console-extension/src/index.ts:539 packages/console-extension/src/index.ts:542
 msgid "Insert Line Break"
 msgstr "Вставити розрив рядка"
 
-#: packages/console-extension/src/index.ts:551
+#: packages/console-extension/src/index.ts:551 packages/console-extension/src/index.ts:554
 msgid "Replace Selection in Console"
 msgstr "Замінити виділений фрагмент у консолі"
 
-#: packages/console-extension/src/index.ts:564 packages/mainmenu-extension/src/index.ts:471 packages/notebook-extension/src/index.ts:1814
+#: packages/console-extension/src/index.ts:564 packages/console-extension/src/index.ts:567 packages/mainmenu-extension/src/index.ts:471 packages/notebook-extension/src/index.ts:1814
 msgid "Interrupt Kernel"
 msgstr "Перервати операцію ядра"
 
-#: packages/console-extension/src/index.ts:579 packages/mainmenu-extension/src/index.ts:493 packages/notebook-extension/src/index.ts:1686
+#: packages/console-extension/src/index.ts:579 packages/console-extension/src/index.ts:582 packages/mainmenu-extension/src/index.ts:493 packages/notebook-extension/src/index.ts:1686
 msgid "Restart Kernel…"
 msgstr "Перезапустити ядро…"
 
-#: packages/console-extension/src/index.ts:594
+#: packages/console-extension/src/index.ts:594 packages/console-extension/src/index.ts:597
 msgid "Close and Shut Down…"
 msgstr "Закрити й завершити роботу…"
 
-#: packages/console-extension/src/index.ts:601
+#: packages/console-extension/src/index.ts:601 packages/console-extension/src/index.ts:604
 msgid "Shut down the console?"
 msgstr "Завершити роботу консолі?"
 
-#: packages/console-extension/src/index.ts:602 packages/console-extension/src/index.ts:681 packages/notebook-extension/src/index.ts:1709 packages/notebook-extension/src/index.ts:2634
+#: packages/console-extension/src/index.ts:602 packages/console-extension/src/index.ts:605 packages/console-extension/src/index.ts:681 packages/console-extension/src/index.ts:684 packages/notebook-extension/src/index.ts:1709 packages/notebook-extension/src/index.ts:2634
 msgid "Are you sure you want to close \"%1\"?"
 msgstr "Справді закрити «%1»?"
 
-#: packages/console-extension/src/index.ts:642 packages/mainmenu-extension/src/index.ts:530 packages/notebook-extension/src/index.ts:2187
+#: packages/console-extension/src/index.ts:642 packages/console-extension/src/index.ts:645 packages/mainmenu-extension/src/index.ts:530 packages/notebook-extension/src/index.ts:2187
 msgid "Change Kernel…"
 msgstr "Змінити ядро…"
 
-#: packages/console-extension/src/index.ts:677
+#: packages/console-extension/src/index.ts:677 packages/console-extension/src/index.ts:680
 msgid "Shutdown Console"
 msgstr "Завершити роботу консолі"
 
-#: packages/console-extension/src/index.ts:680
+#: packages/console-extension/src/index.ts:680 packages/console-extension/src/index.ts:683
 msgid "Shut down the Console?"
 msgstr "Завершити роботу консолі?"
 
-#: packages/console-extension/src/index.ts:702
+#: packages/console-extension/src/index.ts:702 packages/console-extension/src/index.ts:705
 msgid "Restart Kernel and Clear Console"
 msgstr "Перезапустити ядро й очистити консоль"
 
-#: packages/console-extension/src/index.ts:733
+#: packages/console-extension/src/index.ts:733 packages/console-extension/src/index.ts:736
 msgid "Run Cell"
 msgstr "Запустити клітинку"
 
-#: packages/console-extension/src/index.ts:740
+#: packages/console-extension/src/index.ts:740 packages/console-extension/src/index.ts:743
 msgid "Clear Console Cell"
 msgstr "Очистити клітинку консолі"
 
-#: packages/console-extension/src/index.ts:753
+#: packages/console-extension/src/index.ts:753 packages/console-extension/src/index.ts:756
 msgid "Execute with Shift+Enter"
 msgstr "Виконати за допомогою Shift+Enter"
 
-#: packages/console-extension/src/index.ts:754
+#: packages/console-extension/src/index.ts:754 packages/console-extension/src/index.ts:757
 msgid "Execute with Enter"
 msgstr "Виконати за допомогою Enter"
 
@@ -2871,23 +2891,23 @@ msgstr "Цю дію не можна скасувати."
 msgid "The checkpoint was last updated at: "
 msgstr "Востаннє контрольну точку оновлено: "
 
-#: packages/docmanager/src/dialogs.ts:109
+#: packages/docmanager/src/dialogs.ts:109 packages/docmanager/src/dialogs.ts:112
 msgid "Overwrite file?"
 msgstr "Перезаписати файл?"
 
-#: packages/docmanager/src/dialogs.ts:110
+#: packages/docmanager/src/dialogs.ts:110 packages/docmanager/src/dialogs.ts:113
 msgid "\"%1\" already exists, overwrite?"
 msgstr "«%1» уже існує. Перезаписати?"
 
-#: packages/docmanager/src/dialogs.ts:113 packages/docregistry/src/context.ts:825 packages/docregistry/src/context.ts:837 packages/docregistry/src/context.ts:859 packages/docregistry/src/context.ts:870 packages/shortcuts-extension/src/components/ShortcutInput.tsx:499 packages/shortcuts-extension/src/components/ShortcutItem.tsx:252
+#: packages/docmanager/src/dialogs.ts:113 packages/docmanager/src/dialogs.ts:116 packages/docregistry/src/context.ts:825 packages/docregistry/src/context.ts:837 packages/docregistry/src/context.ts:859 packages/docregistry/src/context.ts:870 packages/shortcuts-extension/src/components/ShortcutInput.tsx:499 packages/shortcuts-extension/src/components/ShortcutItem.tsx:252
 msgid "Overwrite"
 msgstr "Перезаписати"
 
-#: packages/docmanager/src/dialogs.ts:177
+#: packages/docmanager/src/dialogs.ts:177 packages/docmanager/src/dialogs.ts:180
 msgid "File Path"
 msgstr "Шлях файлу"
 
-#: packages/docmanager/src/dialogs.ts:182
+#: packages/docmanager/src/dialogs.ts:182 packages/docmanager/src/dialogs.ts:185
 msgid "New Name"
 msgstr "Нове ім’я"
 
@@ -4865,27 +4885,27 @@ msgstr "Ви впевнені, що хочете закрити усі вкла�
 msgid "Refresh List"
 msgstr "Оновити список"
 
-#: packages/settingeditor-extension/src/index.ts:103 packages/settingeditor-extension/src/index.ts:154 packages/settingeditor-extension/src/index.ts:291 packages/settingeditor/src/jsonsettingeditor.tsx:67 packages/settingeditor/src/pluginlist.tsx:449
+#: packages/settingeditor-extension/src/index.ts:103 packages/settingeditor-extension/src/index.ts:148 packages/settingeditor-extension/src/index.ts:154 packages/settingeditor-extension/src/index.ts:178 packages/settingeditor-extension/src/index.ts:291 packages/settingeditor-extension/src/index.ts:307 packages/settingeditor/src/jsonsettingeditor.tsx:67 packages/settingeditor/src/pluginlist.tsx:449
 msgid "Settings"
 msgstr "Налаштування"
 
-#: packages/settingeditor-extension/src/index.ts:147
+#: packages/settingeditor-extension/src/index.ts:141 packages/settingeditor-extension/src/index.ts:147
 msgid "JSON Settings Editor"
 msgstr ""
 
-#: packages/settingeditor-extension/src/index.ts:164 packages/settingeditor-extension/src/index.ts:281
+#: packages/settingeditor-extension/src/index.ts:164 packages/settingeditor-extension/src/index.ts:172 packages/settingeditor-extension/src/index.ts:281 packages/settingeditor-extension/src/index.ts:297
 msgid "Advanced Settings Editor"
 msgstr "Редактор додаткових налаштувань"
 
-#: packages/settingeditor-extension/src/index.ts:287
+#: packages/settingeditor-extension/src/index.ts:287 packages/settingeditor-extension/src/index.ts:303
 msgid "Advanced JSON Settings Editor"
 msgstr ""
 
-#: packages/settingeditor-extension/src/index.ts:301
+#: packages/settingeditor-extension/src/index.ts:301 packages/settingeditor-extension/src/index.ts:317
 msgid "Revert User Settings"
 msgstr "Відновити налаштування користувача"
 
-#: packages/settingeditor-extension/src/index.ts:308
+#: packages/settingeditor-extension/src/index.ts:308 packages/settingeditor-extension/src/index.ts:324
 msgid "Save User Settings"
 msgstr "Зберегти налаштування користувача"
 
