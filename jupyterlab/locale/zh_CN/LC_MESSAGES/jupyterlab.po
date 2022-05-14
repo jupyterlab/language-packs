@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2022-05-14 12:06\n"
+"PO-Revision-Date: 2022-05-14 13:01\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -418,7 +418,7 @@ msgstr "单元格工具栏设置。"
 #: /packages/cell-toolbar-extension/schema/plugin.json:/properties/toolbar/description
 msgctxt "settings"
 msgid "An item is defined by a 'name', a 'command' name, and an 'icon' name"
-msgstr ""
+msgstr "定义单元格工具栏的项目，需要指定‘唯一的名字’、‘命令 id’ 和‘图标 id’。"
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
@@ -1050,7 +1050,16 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "注意：想要禁用一个工具栏项目，复制下面内容到用户选项并添加「disabled」键。下面的示例将会禁用上传按钮：\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"interrupt\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"工具栏描述："
 
 #: /packages/filebrowser-extension/schema/widget.json:/properties/toolbar/title
 msgctxt "settings"
@@ -1568,12 +1577,12 @@ msgstr "记录执行用时"
 #: /packages/notebook-extension/schema/tracker.json:/properties/remainingTimeBeforeRescheduling/description
 msgctxt "settings"
 msgid "Define the remaining time in milliseconds before virtual notebook rendering is rescheduled. Set 0 if you want to disable any rescheduling"
-msgstr ""
+msgstr "经过定义的剩余时间（单位：毫秒）之后再重新安排虚拟笔记本渲染。如果您想要禁止重新安排，请设置为 0"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/remainingTimeBeforeRescheduling/title
 msgctxt "settings"
 msgid "Remaining time in milliseconds before virtual notebook rendering is rescheduled"
-msgstr ""
+msgstr "重新安排虚拟笔记本渲染之前的剩余时间（单位：毫秒）"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/renderCellOnIdle/description
 msgctxt "settings"
@@ -1643,12 +1652,12 @@ msgstr "笔记本"
 #: /packages/settingeditor-extension/schema/form-ui.json:/description
 msgctxt "schema"
 msgid "Settings editor form ui settings."
-msgstr ""
+msgstr "设置编辑器的表单型用户界面的设置。"
 
 #: /packages/settingeditor-extension/schema/form-ui.json:/properties/settingEditorType/description
 msgctxt "settings"
 msgid "Set the type of editor to use while editing your settings."
-msgstr ""
+msgstr "设定编辑设置时所用的编辑器类型。"
 
 #: /packages/settingeditor-extension/schema/form-ui.json:/properties/settingEditorType/title
 msgctxt "settings"
@@ -1658,7 +1667,7 @@ msgstr "设置编辑器的类型。"
 #: /packages/settingeditor-extension/schema/form-ui.json:/title
 msgctxt "schema"
 msgid "Settings Editor Form UI"
-msgstr ""
+msgstr "设置编辑器的表单型用户界面"
 
 #: /packages/settingeditor-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -4668,7 +4677,8 @@ msgstr "信任此笔记本？"
 #: packages/notebook/src/actions.tsx:1962
 msgid "Notebook is still rendering and has for now (%1) remaining cells to render.\n\n"
 "Please wait for the complete rendering before invoking that action."
-msgstr ""
+msgstr "正在渲染笔记本，还有 (%1) 的单元格需要渲染。\n\n"
+"在调用动作之前，请先等待渲染过程结束。"
 
 #: packages/notebook/src/actions.tsx:2134
 msgid "Kernel Terminating"
