@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2022-05-13 07:12\n"
+"PO-Revision-Date: 2022-06-08 06:33\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1602,6 +1602,16 @@ msgctxt "settings"
 msgid "Side-by-side left margin override"
 msgstr ""
 
+#: /packages/notebook-extension/schema/tracker.json:/properties/sideBySideOutputRatio/description
+msgctxt "settings"
+msgid "For the side-by-side rendering, the side-by-side output ratio defines the width of the output vs the input. Set 1 for same size, > 1 for larger output, < 1 for smaller output."
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/sideBySideOutputRatio/title
+msgctxt "settings"
+msgid "Side-by-side output ratio"
+msgstr ""
+
 #: /packages/notebook-extension/schema/tracker.json:/properties/sideBySideRightMarginOverride/description
 msgctxt "settings"
 msgid "Side-by-side right margin override."
@@ -1945,7 +1955,7 @@ msgstr "Основна область"
 msgid "Shift+Right Click for Browser Menu"
 msgstr "Shift + права клавіша миші, щоб відкрити меню браузера"
 
-#: packages/application-extension/src/index.tsx:1205
+#: packages/application-extension/src/index.tsx:1203 packages/application-extension/src/index.tsx:1205
 msgid "Switch Sidebar Side"
 msgstr "Змінити сторону бічної панелі"
 
@@ -2059,7 +2069,7 @@ msgstr "Шлях не знайдено"
 msgid "Property Inspector"
 msgstr "Інспектор властивостей"
 
-#: packages/application-extension/src/index.tsx:984 packages/apputils/src/toolbar/factory.ts:26 packages/mainmenu-extension/src/index.ts:942
+#: packages/application-extension/src/index.tsx:984 packages/apputils/src/toolbar/factory.ts:26 packages/apputils/src/toolbar/factory.ts:28 packages/mainmenu-extension/src/index.ts:942
 msgid "Information"
 msgstr "Інформація"
 
@@ -2067,7 +2077,7 @@ msgstr "Інформація"
 msgid "Context menu customization has changed. You will need to reload JupyterLab to see the changes."
 msgstr "Налаштування контекстного меню було змінено. Перезавантажте JupyterLab, щоб побачити зміни."
 
-#: packages/application-extension/src/index.tsx:990 packages/apputils/src/toolbar/factory.ts:32 packages/docmanager-extension/src/index.tsx:626 packages/mainmenu-extension/src/index.ts:948
+#: packages/application-extension/src/index.tsx:990 packages/apputils/src/toolbar/factory.ts:32 packages/apputils/src/toolbar/factory.ts:34 packages/docmanager-extension/src/index.tsx:626 packages/mainmenu-extension/src/index.ts:948
 msgid "Reload"
 msgstr "Перезавантажити"
 
@@ -2217,7 +2227,7 @@ msgstr "Зберегти"
 msgid "Save Current Workspace As…"
 msgstr "Зберегти цю робочу область як…"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1292 packages/debugger-extension/src/index.ts:623 packages/debugger/src/panels/breakpoints/index.ts:66 packages/docmanager-extension/src/index.tsx:625 packages/docmanager-extension/src/index.tsx:675 packages/docmanager-extension/src/index.tsx:894 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:115 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:456 packages/filebrowser/src/opendialog.ts:82 packages/notebook/src/actions.tsx:1895 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/shortcuts-extension/src/components/ShortcutItem.tsx:245 packages/translation-extension/src/index.ts:138
+#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1292 packages/debugger-extension/src/index.ts:623 packages/debugger/src/panels/breakpoints/index.ts:66 packages/docmanager-extension/src/index.tsx:625 packages/docmanager-extension/src/index.tsx:675 packages/docmanager-extension/src/index.tsx:894 packages/docmanager/src/dialogs.ts:112 packages/docmanager/src/dialogs.ts:115 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:377 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:414 packages/filebrowser/src/model.ts:456 packages/filebrowser/src/opendialog.ts:82 packages/filebrowser/src/opendialog.ts:87 packages/notebook/src/actions.tsx:1895 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/shortcuts-extension/src/components/ShortcutItem.tsx:245 packages/translation-extension/src/index.ts:138
 msgid "Cancel"
 msgstr "Скасувати"
 
@@ -2289,7 +2299,7 @@ msgstr "дії з блокнотом"
 msgid "Error Starting Kernel"
 msgstr "Помилка запуску ядра"
 
-#: packages/apputils/src/sessioncontext.tsx:1298 packages/filebrowser/src/opendialog.ts:84
+#: packages/apputils/src/sessioncontext.tsx:1298 packages/filebrowser/src/opendialog.ts:84 packages/filebrowser/src/opendialog.ts:89
 msgid "Select"
 msgstr "Вибрати"
 
@@ -2361,7 +2371,7 @@ msgstr "Помилка завантаження теми"
 msgid "OK"
 msgstr "OK"
 
-#: packages/apputils/src/toolbar/factory.ts:27
+#: packages/apputils/src/toolbar/factory.ts:27 packages/apputils/src/toolbar/factory.ts:29
 msgid "Toolbar customization has changed. You will need to reload JupyterLab to see the changes."
 msgstr ""
 
@@ -2465,11 +2475,11 @@ msgstr "Вставити розрив рядка"
 msgid "Replace Selection in Console"
 msgstr "Замінити виділений фрагмент у консолі"
 
-#: packages/console-extension/src/index.ts:564 packages/console-extension/src/index.ts:567 packages/mainmenu-extension/src/index.ts:471 packages/notebook-extension/src/index.ts:1814
+#: packages/console-extension/src/index.ts:564 packages/console-extension/src/index.ts:567 packages/mainmenu-extension/src/index.ts:471 packages/notebook-extension/src/index.ts:1814 packages/notebook-extension/src/index.ts:1839
 msgid "Interrupt Kernel"
 msgstr "Перервати операцію ядра"
 
-#: packages/console-extension/src/index.ts:579 packages/console-extension/src/index.ts:582 packages/mainmenu-extension/src/index.ts:493 packages/notebook-extension/src/index.ts:1686
+#: packages/console-extension/src/index.ts:579 packages/console-extension/src/index.ts:582 packages/mainmenu-extension/src/index.ts:493 packages/notebook-extension/src/index.ts:1686 packages/notebook-extension/src/index.ts:1711
 msgid "Restart Kernel…"
 msgstr "Перезапустити ядро…"
 
@@ -2481,11 +2491,11 @@ msgstr "Закрити й завершити роботу…"
 msgid "Shut down the console?"
 msgstr "Завершити роботу консолі?"
 
-#: packages/console-extension/src/index.ts:602 packages/console-extension/src/index.ts:605 packages/console-extension/src/index.ts:681 packages/console-extension/src/index.ts:684 packages/notebook-extension/src/index.ts:1709 packages/notebook-extension/src/index.ts:2634
+#: packages/console-extension/src/index.ts:602 packages/console-extension/src/index.ts:605 packages/console-extension/src/index.ts:681 packages/console-extension/src/index.ts:684 packages/notebook-extension/src/index.ts:1709 packages/notebook-extension/src/index.ts:1734 packages/notebook-extension/src/index.ts:2634 packages/notebook-extension/src/index.ts:2641
 msgid "Are you sure you want to close \"%1\"?"
 msgstr "Справді закрити «%1»?"
 
-#: packages/console-extension/src/index.ts:642 packages/console-extension/src/index.ts:645 packages/mainmenu-extension/src/index.ts:530 packages/notebook-extension/src/index.ts:2187
+#: packages/console-extension/src/index.ts:642 packages/console-extension/src/index.ts:645 packages/mainmenu-extension/src/index.ts:530 packages/notebook-extension/src/index.ts:2187 packages/notebook-extension/src/index.ts:2212
 msgid "Change Kernel…"
 msgstr "Змінити ядро…"
 
@@ -2767,15 +2777,15 @@ msgstr "Неможливо завантажити"
 msgid "No context found for current widget!"
 msgstr "Контекст для цього віджета не знайдено!"
 
-#: packages/docmanager-extension/src/index.tsx:382 packages/docmanager-extension/src/index.tsx:518 packages/filebrowser-extension/src/index.ts:1182 packages/filebrowser-extension/src/index.ts:772 packages/filebrowser-extension/src/index.ts:950 packages/htmlviewer-extension/src/index.tsx:180
+#: packages/docmanager-extension/src/index.tsx:382 packages/docmanager-extension/src/index.tsx:518 packages/filebrowser-extension/src/index.ts:1182 packages/filebrowser-extension/src/index.ts:1201 packages/filebrowser-extension/src/index.ts:772 packages/filebrowser-extension/src/index.ts:791 packages/filebrowser-extension/src/index.ts:950 packages/filebrowser-extension/src/index.ts:969 packages/htmlviewer-extension/src/index.tsx:180
 msgid "File Operations"
 msgstr "Дії з файлами"
 
-#: packages/docmanager-extension/src/index.tsx:429 packages/filebrowser-extension/src/index.ts:653
+#: packages/docmanager-extension/src/index.tsx:429 packages/filebrowser-extension/src/index.ts:653 packages/filebrowser-extension/src/index.ts:672
 msgid "Open in New Browser Tab"
 msgstr "Відкрити на новій вкладці оглядача"
 
-#: packages/docmanager-extension/src/index.tsx:559 packages/filebrowser/src/browser.ts:275 packages/filebrowser/src/browser.ts:305 packages/logconsole-extension/src/index.tsx:381
+#: packages/docmanager-extension/src/index.tsx:559 packages/filebrowser/src/browser.ts:275 packages/filebrowser/src/browser.ts:282 packages/filebrowser/src/browser.ts:305 packages/filebrowser/src/browser.ts:312 packages/logconsole-extension/src/index.tsx:381
 msgid "Error"
 msgstr "Помилка"
 
@@ -2867,7 +2877,7 @@ msgstr "Перейменувати %1…"
 msgid "Delete %1"
 msgstr "Видалити %1"
 
-#: packages/docmanager-extension/src/index.tsx:891 packages/docmanager-extension/src/index.tsx:895 packages/filebrowser-extension/src/index.ts:801 packages/filebrowser/src/listing.ts:411 packages/filebrowser/src/listing.ts:415
+#: packages/docmanager-extension/src/index.tsx:891 packages/docmanager-extension/src/index.tsx:895 packages/filebrowser-extension/src/index.ts:801 packages/filebrowser-extension/src/index.ts:820 packages/filebrowser/src/listing.ts:411 packages/filebrowser/src/listing.ts:415
 msgid "Delete"
 msgstr "Видалити"
 
@@ -2915,7 +2925,7 @@ msgstr "Нове ім’я"
 msgid "Rename File"
 msgstr "Перейменувати файл"
 
-#: packages/docmanager/src/dialogs.ts:53 packages/filebrowser-extension/src/index.ts:1069
+#: packages/docmanager/src/dialogs.ts:53 packages/filebrowser-extension/src/index.ts:1069 packages/filebrowser-extension/src/index.ts:1088
 msgid "Rename"
 msgstr "Перейменувати"
 
@@ -3017,7 +3027,7 @@ msgstr "за умовчанням"
 msgid "Text"
 msgstr "Текст"
 
-#: packages/docregistry/src/registry.ts:1374 packages/launcher/src/index.tsx:149 packages/launcher/src/index.tsx:154 packages/notebook-extension/src/index.ts:1445 packages/notebook-extension/src/index.ts:1481 packages/notebook-extension/src/index.ts:760
+#: packages/docregistry/src/registry.ts:1374 packages/launcher/src/index.tsx:149 packages/launcher/src/index.tsx:154 packages/notebook-extension/src/index.ts:1445 packages/notebook-extension/src/index.ts:1470 packages/notebook-extension/src/index.ts:1481 packages/notebook-extension/src/index.ts:1506 packages/notebook-extension/src/index.ts:760
 msgid "Notebook"
 msgstr "Блокнот"
 
@@ -3313,59 +3323,63 @@ msgstr "Результати пошуку"
 msgid "Discover"
 msgstr "Не встановлено"
 
-#: packages/filebrowser-extension/src/index.ts:1007 packages/fileeditor-extension/src/commands.ts:866
+#: packages/filebrowser-extension/src/index.ts:1007 packages/filebrowser-extension/src/index.ts:1026 packages/fileeditor-extension/src/commands.ts:866
 msgid "Paste"
 msgstr "Вставити"
 
-#: packages/filebrowser-extension/src/index.ts:1020 packages/filebrowser/src/opendialog.ts:149
+#: packages/filebrowser-extension/src/index.ts:1013 packages/filebrowser-extension/src/index.ts:729 packages/filebrowser-extension/src/index.ts:748 packages/filebrowser-extension/src/index.ts:908 packages/filebrowser-extension/src/index.ts:927 packages/filebrowser-extension/src/index.ts:994
+msgid "Open"
+msgstr "Відкрити"
+
+#: packages/filebrowser-extension/src/index.ts:1020 packages/filebrowser-extension/src/index.ts:1039 packages/filebrowser/src/opendialog.ts:149 packages/filebrowser/src/opendialog.ts:154
 msgid "New Folder"
 msgstr "Нова папка"
 
-#: packages/filebrowser-extension/src/index.ts:1032
+#: packages/filebrowser-extension/src/index.ts:1032 packages/filebrowser-extension/src/index.ts:1051
 msgid "New File"
 msgstr "Новий файл"
 
-#: packages/filebrowser-extension/src/index.ts:1044 packages/fileeditor-extension/src/commands.ts:989
+#: packages/filebrowser-extension/src/index.ts:1044 packages/filebrowser-extension/src/index.ts:1063 packages/fileeditor-extension/src/commands.ts:989
 msgid "New Markdown File"
 msgstr "Новий файл розмітки"
 
-#: packages/filebrowser-extension/src/index.ts:1056
+#: packages/filebrowser-extension/src/index.ts:1056 packages/filebrowser-extension/src/index.ts:1075
 msgid "Refresh the file browser."
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1057 packages/filebrowser/src/opendialog.ts:164
+#: packages/filebrowser-extension/src/index.ts:1057 packages/filebrowser-extension/src/index.ts:1076 packages/filebrowser/src/opendialog.ts:164 packages/filebrowser/src/opendialog.ts:169
 msgid "Refresh File List"
 msgstr "Оновити список файлів"
 
-#: packages/filebrowser-extension/src/index.ts:1090
+#: packages/filebrowser-extension/src/index.ts:1090 packages/filebrowser-extension/src/index.ts:1109
 msgid "Copy Path"
 msgstr "Копіювати шлях"
 
-#: packages/filebrowser-extension/src/index.ts:1102 packages/mainmenu-extension/src/index.ts:536
+#: packages/filebrowser-extension/src/index.ts:1102 packages/filebrowser-extension/src/index.ts:1121 packages/mainmenu-extension/src/index.ts:536
 msgid "Shut Down Kernel"
 msgstr "Завершити роботу ядра"
 
-#: packages/filebrowser-extension/src/index.ts:1116 packages/launcher-extension/src/index.ts:59 packages/ui-components/src/icon/widgets/tabbarsvg.ts:29
+#: packages/filebrowser-extension/src/index.ts:1116 packages/filebrowser-extension/src/index.ts:1135 packages/launcher-extension/src/index.ts:59 packages/ui-components/src/icon/widgets/tabbarsvg.ts:29
 msgid "New Launcher"
 msgstr "Новий запускач"
 
-#: packages/filebrowser-extension/src/index.ts:1127
+#: packages/filebrowser-extension/src/index.ts:1127 packages/filebrowser-extension/src/index.ts:1146
 msgid "Show Active File in File Browser"
 msgstr "Показувати активний файл в оглядачі файлів"
 
-#: packages/filebrowser-extension/src/index.ts:1142
+#: packages/filebrowser-extension/src/index.ts:1142 packages/filebrowser-extension/src/index.ts:1161
 msgid "Show Last Modified Column"
 msgstr "Відображати останню змінену колонку"
 
-#: packages/filebrowser-extension/src/index.ts:1158
+#: packages/filebrowser-extension/src/index.ts:1158 packages/filebrowser-extension/src/index.ts:1177
 msgid "Show Hidden Files"
 msgstr "Відображати приховані файли"
 
-#: packages/filebrowser-extension/src/index.ts:1175
+#: packages/filebrowser-extension/src/index.ts:1175 packages/filebrowser-extension/src/index.ts:1194
 msgid "Search on File Names"
 msgstr "Пошук за назвами файлів"
 
-#: packages/filebrowser-extension/src/index.ts:1254
+#: packages/filebrowser-extension/src/index.ts:1254 packages/filebrowser-extension/src/index.ts:1273
 msgid "No browser for path"
 msgstr "За цим шляхом немає оглядача"
 
@@ -3389,92 +3403,92 @@ msgstr "Розділ оглядача файлів"
 msgid "Copy Shareable Link"
 msgstr "Копіювати посилання для доступу"
 
-#: packages/filebrowser-extension/src/index.ts:717
-msgid "Open from URL…"
+#: packages/filebrowser-extension/src/index.ts:671
+msgid "Open in Simple Mode"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:717 packages/filebrowser-extension/src/index.ts:719 packages/filebrowser-extension/src/index.ts:894 packages/filebrowser-extension/src/index.ts:896
+#: packages/filebrowser-extension/src/index.ts:717 packages/filebrowser-extension/src/index.ts:719 packages/filebrowser-extension/src/index.ts:736 packages/filebrowser-extension/src/index.ts:738 packages/filebrowser-extension/src/index.ts:894 packages/filebrowser-extension/src/index.ts:896 packages/filebrowser-extension/src/index.ts:913 packages/filebrowser-extension/src/index.ts:915
 msgid "Open %1"
 msgstr "Відкрити %1"
 
-#: packages/filebrowser-extension/src/index.ts:719
+#: packages/filebrowser-extension/src/index.ts:717 packages/filebrowser-extension/src/index.ts:736
+msgid "Open from URL…"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:719 packages/filebrowser-extension/src/index.ts:738
 msgid "Open from URL"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:726
+#: packages/filebrowser-extension/src/index.ts:726 packages/filebrowser-extension/src/index.ts:745
 msgid "URL"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:728
+#: packages/filebrowser-extension/src/index.ts:728 packages/filebrowser-extension/src/index.ts:747
 msgid "Open URL"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:729 packages/filebrowser-extension/src/index.ts:908 packages/filebrowser-extension/src/index.ts:994
-msgid "Open"
-msgstr "Відкрити"
-
-#: packages/filebrowser-extension/src/index.ts:747
+#: packages/filebrowser-extension/src/index.ts:747 packages/filebrowser-extension/src/index.ts:766
 msgid "Could not open URL: %1"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:749
+#: packages/filebrowser-extension/src/index.ts:749 packages/filebrowser-extension/src/index.ts:768
 msgid "Cannot fetch"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:762 packages/filebrowser/src/upload.ts:51
+#: packages/filebrowser-extension/src/index.ts:762 packages/filebrowser-extension/src/index.ts:781 packages/filebrowser/src/upload.ts:51
 msgctxt "showErrorMessage"
 msgid "Upload Error"
 msgstr "Помилка вивантаження"
 
-#: packages/filebrowser-extension/src/index.ts:814 packages/fileeditor-extension/src/commands.ts:832
+#: packages/filebrowser-extension/src/index.ts:814 packages/filebrowser-extension/src/index.ts:833 packages/fileeditor-extension/src/commands.ts:832
 msgid "Copy"
 msgstr "Копіювати"
 
-#: packages/filebrowser-extension/src/index.ts:827 packages/fileeditor-extension/src/commands.ts:791
+#: packages/filebrowser-extension/src/index.ts:827 packages/filebrowser-extension/src/index.ts:846 packages/fileeditor-extension/src/commands.ts:791
 msgid "Cut"
 msgstr "Вирізати"
 
-#: packages/filebrowser-extension/src/index.ts:839
+#: packages/filebrowser-extension/src/index.ts:839 packages/filebrowser-extension/src/index.ts:858
 msgid "Duplicate"
 msgstr "Дублювати"
 
-#: packages/filebrowser-extension/src/index.ts:894
+#: packages/filebrowser-extension/src/index.ts:894 packages/filebrowser-extension/src/index.ts:913
 msgid "Open from Path…"
 msgstr "Відкрити за шляхом…"
 
-#: packages/filebrowser-extension/src/index.ts:896
+#: packages/filebrowser-extension/src/index.ts:896 packages/filebrowser-extension/src/index.ts:915
 msgid "Open from path"
 msgstr "Відкрити за шляхом"
 
-#: packages/filebrowser-extension/src/index.ts:905
+#: packages/filebrowser-extension/src/index.ts:905 packages/filebrowser-extension/src/index.ts:924
 msgid "Path"
 msgstr "Шлях"
 
-#: packages/filebrowser-extension/src/index.ts:907
+#: packages/filebrowser-extension/src/index.ts:907 packages/filebrowser-extension/src/index.ts:926
 msgid "Open Path"
 msgstr "Відкрити шлях"
 
-#: packages/filebrowser-extension/src/index.ts:939
+#: packages/filebrowser-extension/src/index.ts:939 packages/filebrowser-extension/src/index.ts:958
 msgid "Could not find path: %1"
 msgstr "Не вдалося знайти шлях: %1"
 
-#: packages/filebrowser-extension/src/index.ts:941
+#: packages/filebrowser-extension/src/index.ts:941 packages/filebrowser-extension/src/index.ts:960
 msgid "Cannot open"
 msgstr "Не вдалося відкрити"
 
-#: packages/filebrowser/src/browser.ts:171 packages/filebrowser/src/browser.ts:97
+#: packages/filebrowser/src/browser.ts:101 packages/filebrowser/src/browser.ts:171 packages/filebrowser/src/browser.ts:178 packages/filebrowser/src/browser.ts:97
 msgid "Filter files by name"
 msgstr "Фільтрувати файли за іменем"
 
-#: packages/filebrowser/src/browser.ts:393
+#: packages/filebrowser/src/browser.ts:393 packages/filebrowser/src/browser.ts:400
 msgid "Directory not found"
 msgstr "Каталог не знайдено"
 
-#: packages/filebrowser/src/browser.ts:394 packages/filebrowser/src/model.ts:305
+#: packages/filebrowser/src/browser.ts:394 packages/filebrowser/src/browser.ts:401 packages/filebrowser/src/model.ts:305
 msgid "Directory not found: \"%1\""
 msgstr "Каталог не знайдено: «%1»"
 
-#: packages/filebrowser/src/browser.ts:80
+#: packages/filebrowser/src/browser.ts:80 packages/filebrowser/src/browser.ts:81
 msgid "file browser"
 msgstr "оглядач файлів"
 
@@ -4234,7 +4248,7 @@ msgstr "Попередній перегляд розмітки"
 msgid "Show Markdown Editor"
 msgstr "Показати редактор розмітки"
 
-#: packages/notebook-extension/src/index.ts:1003 packages/notebook-extension/src/index.ts:2685
+#: packages/notebook-extension/src/index.ts:1003 packages/notebook-extension/src/index.ts:2685 packages/notebook-extension/src/index.ts:2692
 msgid "New Console for Notebook"
 msgstr "Нова консоль для блокнота"
 
@@ -4246,375 +4260,375 @@ msgstr "Запустити вибраний текст або цей рядок 
 msgid "Copy Output to Clipboard"
 msgstr "Копіювати результат в буфер обміну"
 
-#: packages/notebook-extension/src/index.ts:1268
+#: packages/notebook-extension/src/index.ts:1268 packages/notebook-extension/src/index.ts:1274
 msgid "Auto Close Brackets for All Notebook Cell Types"
 msgstr "Автоматично закривати дужки для всіх типів клітинок блокноту"
 
-#: packages/notebook-extension/src/index.ts:1443
-msgid "New Notebook"
-msgstr "Новий блокнот"
-
-#: packages/notebook-extension/src/index.ts:1447
-msgid "Create a new notebook"
-msgstr "Створити новий блокнот"
-
-#: packages/notebook-extension/src/index.ts:1579 packages/notebook-extension/src/index.ts:2708
-msgid "Run Selected Cells"
-msgstr "Запустити вибрані клітинки"
-
-#: packages/notebook-extension/src/index.ts:1592
-msgid "Run Selected Cells and Don't Advance"
-msgstr "Запустити вибрані клітинки та не продовжувати"
-
-#: packages/notebook-extension/src/index.ts:1605
-msgid "Run Selected Cells and Insert Below"
-msgstr "Запустити вибрані клітинки та вставити нижче"
-
-#: packages/notebook-extension/src/index.ts:1618 packages/notebook-extension/src/index.ts:2710
-msgid "Run All Cells"
-msgstr "Запустити всі клітинки"
-
-#: packages/notebook-extension/src/index.ts:1631
-msgid "Run All Above Selected Cell"
-msgstr "Запустити всі клітинки над вибраною"
-
-#: packages/notebook-extension/src/index.ts:1651
-msgid "Run Selected Cell and All Below"
-msgstr "Запустити вибрану клітинку та всі клітинки нижче"
-
-#: packages/notebook-extension/src/index.ts:1672
-msgid "Render All Markdown Cells"
-msgstr "Відрисувати всі клітинки розмітки"
-
-#: packages/notebook-extension/src/index.ts:1697
-msgid "Close and Shut Down"
-msgstr "Закрити й завершити роботу"
-
-#: packages/notebook-extension/src/index.ts:1708
-msgid "Shut down the notebook?"
-msgstr "Завершити роботу блокнота?"
-
-#: packages/notebook-extension/src/index.ts:1722
-msgid "Trust Notebook"
-msgstr "Довіряти блокноту"
-
-#: packages/notebook-extension/src/index.ts:1733 packages/notebook-extension/src/index.ts:2664
-msgid "Restart Kernel and Clear All Outputs…"
-msgstr "Перезапустити ядро та очистити всі результати…"
-
-#: packages/notebook-extension/src/index.ts:1748
-msgid "Restart Kernel and Run up to Selected Cell…"
-msgstr "Перезапустити ядро та запустити всі клітинки до вибраної…"
-
-#: packages/notebook-extension/src/index.ts:1772 packages/notebook-extension/src/index.ts:2713
-msgid "Restart Kernel and Run All Cells…"
-msgstr "Перезапустити ядро та запустити всі клітинки…"
-
-#: packages/notebook-extension/src/index.ts:1792 packages/notebook-extension/src/index.ts:2615
-msgid "Clear All Outputs"
-msgstr "Очистити всі результати"
-
-#: packages/notebook-extension/src/index.ts:1803
-msgid "Clear Outputs"
-msgstr "Очистити результати"
-
-#: packages/notebook-extension/src/index.ts:1831
-msgid "Change to Code Cell Type"
-msgstr "Перетворити на клітинку коду"
-
-#: packages/notebook-extension/src/index.ts:1842
-msgid "Change to Markdown Cell Type"
-msgstr "Перетворити на клітинку розмітки"
-
-#: packages/notebook-extension/src/index.ts:1853
-msgid "Change to Raw Cell Type"
-msgstr "Перетворити на клітинку неформатованих даних"
-
-#: packages/notebook-extension/src/index.ts:1864
-msgid "Cut Cells"
-msgstr "Вирізати клітинки"
-
-#: packages/notebook-extension/src/index.ts:1865 packages/notebook/src/default-toolbar.tsx:140
-msgid "Cut the selected cells"
-msgstr "Вирізати вибрані клітинки"
-
-#: packages/notebook-extension/src/index.ts:1877
-msgid "Copy Cells"
-msgstr "Копіювати клітинки"
-
-#: packages/notebook-extension/src/index.ts:1878 packages/notebook/src/default-toolbar.tsx:160
-msgid "Copy the selected cells"
-msgstr "Копіювати вибрані клітинки"
-
-#: packages/notebook-extension/src/index.ts:1890
-msgid "Paste Cells Below"
-msgstr "Вставити клітинки нижче"
-
-#: packages/notebook-extension/src/index.ts:1891 packages/notebook/src/default-toolbar.tsx:180
-msgid "Paste cells from the clipboard"
-msgstr "Вставити клітинки з буфера обміну"
-
-#: packages/notebook-extension/src/index.ts:1903
-msgid "Paste Cells Above"
-msgstr "Вставити клітинки вище"
-
-#: packages/notebook-extension/src/index.ts:1914
-msgid "Duplicate Cells Below"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1915
-msgid "Copy the selected cells and paste them below the selection"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:1929
-msgid "Paste Cells and Replace"
-msgstr "Вставити клітинки та замінити"
-
-#: packages/notebook-extension/src/index.ts:1940
-msgid "Delete Cells"
-msgstr "Видалити клітинки"
-
-#: packages/notebook-extension/src/index.ts:1951
-msgid "Split Cell"
-msgstr "Розділити клітинки"
-
-#: packages/notebook-extension/src/index.ts:1962
-msgid "Merge Selected Cells"
-msgstr "Об’єднати вибрані клітинки"
-
-#: packages/notebook-extension/src/index.ts:1973
-msgid "Merge Cell Above"
-msgstr "Об'єднати клітини вище"
-
-#: packages/notebook-extension/src/index.ts:1984
-msgid "Merge Cell Below"
-msgstr "Об'єднати клітини нижче"
-
-#: packages/notebook-extension/src/index.ts:1995
-msgid "Insert Cell Above"
-msgstr "Вставити клітинку вище"
-
-#: packages/notebook-extension/src/index.ts:2007
-msgid "Insert Cell Below"
-msgstr "Вставити клітинку нижче"
-
-#: packages/notebook-extension/src/index.ts:2008 packages/notebook/src/default-toolbar.tsx:120
-msgid "Insert a cell below"
-msgstr "Вставити клітинку нижче"
-
-#: packages/notebook-extension/src/index.ts:2020
-msgid "Select Cell Above"
-msgstr "Вибрати клітинку вище"
-
-#: packages/notebook-extension/src/index.ts:2031
-msgid "Select Cell Below"
-msgstr "Вибрати клітинку нижче"
-
-#: packages/notebook-extension/src/index.ts:2042
-msgid "Extend Selection Above"
-msgstr "Розширити виділений фрагмент вище"
-
-#: packages/notebook-extension/src/index.ts:2053
-msgid "Extend Selection to Top"
-msgstr "Розширити виділений фрагмент догори"
-
-#: packages/notebook-extension/src/index.ts:2064
-msgid "Extend Selection Below"
-msgstr "Розширити виділений фрагмент нижче"
-
-#: packages/notebook-extension/src/index.ts:2075
-msgid "Extend Selection to Bottom"
-msgstr "Розширити виділений фрагмент донизу"
-
-#: packages/notebook-extension/src/index.ts:2086
-msgid "Select All Cells"
-msgstr "Вибрати всі клітинки"
-
-#: packages/notebook-extension/src/index.ts:2097
-msgid "Deselect All Cells"
-msgstr "Скасувати вибір усіх клітинок"
-
-#: packages/notebook-extension/src/index.ts:2108
-msgid "Move Cells Up"
-msgstr "Перемістити клітинки вгору"
-
-#: packages/notebook-extension/src/index.ts:2120
-msgid "Move Cells Down"
-msgstr "Перемістити клітинки вниз"
-
-#: packages/notebook-extension/src/index.ts:2132
-msgid "Toggle All Line Numbers"
-msgstr "Увімкнути або вимкнути всі номери рядків"
-
-#: packages/notebook-extension/src/index.ts:2143
-msgid "Enter Command Mode"
-msgstr "Ввійти в командний режим"
-
-#: packages/notebook-extension/src/index.ts:2154
-msgid "Enter Edit Mode"
-msgstr "Ввійти в режим редагування"
-
-#: packages/notebook-extension/src/index.ts:2165
-msgid "Undo Cell Operation"
-msgstr "Скасувати дію з клітинкою"
-
-#: packages/notebook-extension/src/index.ts:2176
-msgid "Redo Cell Operation"
-msgstr "Повторити дію з клітинкою"
-
-#: packages/notebook-extension/src/index.ts:2201
-msgid "Reconnect To Kernel"
-msgstr "Повторно підключитися до ядра"
-
-#: packages/notebook-extension/src/index.ts:2218
-msgid "Change to Heading 1"
-msgstr "Змінити на Заголовок 1"
-
-#: packages/notebook-extension/src/index.ts:2229
-msgid "Change to Heading 2"
-msgstr "Змінити на Заголовок 2"
-
-#: packages/notebook-extension/src/index.ts:2240
-msgid "Change to Heading 3"
-msgstr "Змінити на Заголовок 3"
-
-#: packages/notebook-extension/src/index.ts:2251
-msgid "Change to Heading 4"
-msgstr "Змінити на Заголовок 4"
-
-#: packages/notebook-extension/src/index.ts:2262
-msgid "Change to Heading 5"
-msgstr "Змінити на Заголовок 5"
-
-#: packages/notebook-extension/src/index.ts:2273
-msgid "Change to Heading 6"
-msgstr "Змінити на Заголовок 6"
-
-#: packages/notebook-extension/src/index.ts:2284
-msgid "Collapse Selected Code"
-msgstr "Згорнути вибраний код"
-
-#: packages/notebook-extension/src/index.ts:2295
-msgid "Expand Selected Code"
-msgstr "Розгорнути вибраний код"
-
-#: packages/notebook-extension/src/index.ts:2306
-msgid "Collapse All Code"
-msgstr "Згорнути весь код"
-
-#: packages/notebook-extension/src/index.ts:2317
-msgid "Expand All Code"
-msgstr "Розгорнути весь код"
-
-#: packages/notebook-extension/src/index.ts:2328
-msgid "Collapse Selected Outputs"
-msgstr "Згорнути вибрані результати"
-
-#: packages/notebook-extension/src/index.ts:2339
-msgid "Expand Selected Outputs"
-msgstr "Розгорнути вибрані результати"
-
-#: packages/notebook-extension/src/index.ts:2350
-msgid "Collapse All Outputs"
-msgstr "Згорнути всі результати"
-
-#: packages/notebook-extension/src/index.ts:2362
-msgid "Render Side-by-Side"
-msgstr ""
-
-#: packages/notebook-extension/src/index.ts:2384
+#: packages/notebook-extension/src/index.ts:1281 packages/notebook-extension/src/index.ts:2384
 msgid "Set side-by-side ratio"
 msgstr "Встановити співвідношення side-by-side"
 
-#: packages/notebook-extension/src/index.ts:2387
+#: packages/notebook-extension/src/index.ts:1284 packages/notebook-extension/src/index.ts:2387
 msgid "Width of the output in side-by-side mode"
 msgstr "Ширина виводу у режимі side-by-side"
 
-#: packages/notebook-extension/src/index.ts:2402
+#: packages/notebook-extension/src/index.ts:1443 packages/notebook-extension/src/index.ts:1468
+msgid "New Notebook"
+msgstr "Новий блокнот"
+
+#: packages/notebook-extension/src/index.ts:1447 packages/notebook-extension/src/index.ts:1472
+msgid "Create a new notebook"
+msgstr "Створити новий блокнот"
+
+#: packages/notebook-extension/src/index.ts:1579 packages/notebook-extension/src/index.ts:1604 packages/notebook-extension/src/index.ts:2708 packages/notebook-extension/src/index.ts:2715
+msgid "Run Selected Cells"
+msgstr "Запустити вибрані клітинки"
+
+#: packages/notebook-extension/src/index.ts:1592 packages/notebook-extension/src/index.ts:1617
+msgid "Run Selected Cells and Don't Advance"
+msgstr "Запустити вибрані клітинки та не продовжувати"
+
+#: packages/notebook-extension/src/index.ts:1605 packages/notebook-extension/src/index.ts:1630
+msgid "Run Selected Cells and Insert Below"
+msgstr "Запустити вибрані клітинки та вставити нижче"
+
+#: packages/notebook-extension/src/index.ts:1618 packages/notebook-extension/src/index.ts:1643 packages/notebook-extension/src/index.ts:2710 packages/notebook-extension/src/index.ts:2717
+msgid "Run All Cells"
+msgstr "Запустити всі клітинки"
+
+#: packages/notebook-extension/src/index.ts:1631 packages/notebook-extension/src/index.ts:1656
+msgid "Run All Above Selected Cell"
+msgstr "Запустити всі клітинки над вибраною"
+
+#: packages/notebook-extension/src/index.ts:1651 packages/notebook-extension/src/index.ts:1676
+msgid "Run Selected Cell and All Below"
+msgstr "Запустити вибрану клітинку та всі клітинки нижче"
+
+#: packages/notebook-extension/src/index.ts:1672 packages/notebook-extension/src/index.ts:1697
+msgid "Render All Markdown Cells"
+msgstr "Відрисувати всі клітинки розмітки"
+
+#: packages/notebook-extension/src/index.ts:1697 packages/notebook-extension/src/index.ts:1722
+msgid "Close and Shut Down"
+msgstr "Закрити й завершити роботу"
+
+#: packages/notebook-extension/src/index.ts:1708 packages/notebook-extension/src/index.ts:1733
+msgid "Shut down the notebook?"
+msgstr "Завершити роботу блокнота?"
+
+#: packages/notebook-extension/src/index.ts:1722 packages/notebook-extension/src/index.ts:1747
+msgid "Trust Notebook"
+msgstr "Довіряти блокноту"
+
+#: packages/notebook-extension/src/index.ts:1733 packages/notebook-extension/src/index.ts:1758 packages/notebook-extension/src/index.ts:2664 packages/notebook-extension/src/index.ts:2671
+msgid "Restart Kernel and Clear All Outputs…"
+msgstr "Перезапустити ядро та очистити всі результати…"
+
+#: packages/notebook-extension/src/index.ts:1748 packages/notebook-extension/src/index.ts:1773
+msgid "Restart Kernel and Run up to Selected Cell…"
+msgstr "Перезапустити ядро та запустити всі клітинки до вибраної…"
+
+#: packages/notebook-extension/src/index.ts:1772 packages/notebook-extension/src/index.ts:1797 packages/notebook-extension/src/index.ts:2713 packages/notebook-extension/src/index.ts:2720
+msgid "Restart Kernel and Run All Cells…"
+msgstr "Перезапустити ядро та запустити всі клітинки…"
+
+#: packages/notebook-extension/src/index.ts:1792 packages/notebook-extension/src/index.ts:1817 packages/notebook-extension/src/index.ts:2615 packages/notebook-extension/src/index.ts:2622
+msgid "Clear All Outputs"
+msgstr "Очистити всі результати"
+
+#: packages/notebook-extension/src/index.ts:1803 packages/notebook-extension/src/index.ts:1828
+msgid "Clear Outputs"
+msgstr "Очистити результати"
+
+#: packages/notebook-extension/src/index.ts:1831 packages/notebook-extension/src/index.ts:1856
+msgid "Change to Code Cell Type"
+msgstr "Перетворити на клітинку коду"
+
+#: packages/notebook-extension/src/index.ts:1842 packages/notebook-extension/src/index.ts:1867
+msgid "Change to Markdown Cell Type"
+msgstr "Перетворити на клітинку розмітки"
+
+#: packages/notebook-extension/src/index.ts:1853 packages/notebook-extension/src/index.ts:1878
+msgid "Change to Raw Cell Type"
+msgstr "Перетворити на клітинку неформатованих даних"
+
+#: packages/notebook-extension/src/index.ts:1864 packages/notebook-extension/src/index.ts:1889
+msgid "Cut Cells"
+msgstr "Вирізати клітинки"
+
+#: packages/notebook-extension/src/index.ts:1865 packages/notebook-extension/src/index.ts:1890 packages/notebook/src/default-toolbar.tsx:140
+msgid "Cut the selected cells"
+msgstr "Вирізати вибрані клітинки"
+
+#: packages/notebook-extension/src/index.ts:1877 packages/notebook-extension/src/index.ts:1902
+msgid "Copy Cells"
+msgstr "Копіювати клітинки"
+
+#: packages/notebook-extension/src/index.ts:1878 packages/notebook-extension/src/index.ts:1903 packages/notebook/src/default-toolbar.tsx:160
+msgid "Copy the selected cells"
+msgstr "Копіювати вибрані клітинки"
+
+#: packages/notebook-extension/src/index.ts:1890 packages/notebook-extension/src/index.ts:1915
+msgid "Paste Cells Below"
+msgstr "Вставити клітинки нижче"
+
+#: packages/notebook-extension/src/index.ts:1891 packages/notebook-extension/src/index.ts:1916 packages/notebook/src/default-toolbar.tsx:180
+msgid "Paste cells from the clipboard"
+msgstr "Вставити клітинки з буфера обміну"
+
+#: packages/notebook-extension/src/index.ts:1903 packages/notebook-extension/src/index.ts:1928
+msgid "Paste Cells Above"
+msgstr "Вставити клітинки вище"
+
+#: packages/notebook-extension/src/index.ts:1914 packages/notebook-extension/src/index.ts:1939
+msgid "Duplicate Cells Below"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1915 packages/notebook-extension/src/index.ts:1940
+msgid "Copy the selected cells and paste them below the selection"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:1929 packages/notebook-extension/src/index.ts:1954
+msgid "Paste Cells and Replace"
+msgstr "Вставити клітинки та замінити"
+
+#: packages/notebook-extension/src/index.ts:1940 packages/notebook-extension/src/index.ts:1965
+msgid "Delete Cells"
+msgstr "Видалити клітинки"
+
+#: packages/notebook-extension/src/index.ts:1951 packages/notebook-extension/src/index.ts:1976
+msgid "Split Cell"
+msgstr "Розділити клітинки"
+
+#: packages/notebook-extension/src/index.ts:1962 packages/notebook-extension/src/index.ts:1987
+msgid "Merge Selected Cells"
+msgstr "Об’єднати вибрані клітинки"
+
+#: packages/notebook-extension/src/index.ts:1973 packages/notebook-extension/src/index.ts:1998
+msgid "Merge Cell Above"
+msgstr "Об'єднати клітини вище"
+
+#: packages/notebook-extension/src/index.ts:1984 packages/notebook-extension/src/index.ts:2009
+msgid "Merge Cell Below"
+msgstr "Об'єднати клітини нижче"
+
+#: packages/notebook-extension/src/index.ts:1995 packages/notebook-extension/src/index.ts:2020
+msgid "Insert Cell Above"
+msgstr "Вставити клітинку вище"
+
+#: packages/notebook-extension/src/index.ts:2007 packages/notebook-extension/src/index.ts:2032
+msgid "Insert Cell Below"
+msgstr "Вставити клітинку нижче"
+
+#: packages/notebook-extension/src/index.ts:2008 packages/notebook-extension/src/index.ts:2033 packages/notebook/src/default-toolbar.tsx:120
+msgid "Insert a cell below"
+msgstr "Вставити клітинку нижче"
+
+#: packages/notebook-extension/src/index.ts:2020 packages/notebook-extension/src/index.ts:2045
+msgid "Select Cell Above"
+msgstr "Вибрати клітинку вище"
+
+#: packages/notebook-extension/src/index.ts:2031 packages/notebook-extension/src/index.ts:2056
+msgid "Select Cell Below"
+msgstr "Вибрати клітинку нижче"
+
+#: packages/notebook-extension/src/index.ts:2042 packages/notebook-extension/src/index.ts:2067
+msgid "Extend Selection Above"
+msgstr "Розширити виділений фрагмент вище"
+
+#: packages/notebook-extension/src/index.ts:2053 packages/notebook-extension/src/index.ts:2078
+msgid "Extend Selection to Top"
+msgstr "Розширити виділений фрагмент догори"
+
+#: packages/notebook-extension/src/index.ts:2064 packages/notebook-extension/src/index.ts:2089
+msgid "Extend Selection Below"
+msgstr "Розширити виділений фрагмент нижче"
+
+#: packages/notebook-extension/src/index.ts:2075 packages/notebook-extension/src/index.ts:2100
+msgid "Extend Selection to Bottom"
+msgstr "Розширити виділений фрагмент донизу"
+
+#: packages/notebook-extension/src/index.ts:2086 packages/notebook-extension/src/index.ts:2111
+msgid "Select All Cells"
+msgstr "Вибрати всі клітинки"
+
+#: packages/notebook-extension/src/index.ts:2097 packages/notebook-extension/src/index.ts:2122
+msgid "Deselect All Cells"
+msgstr "Скасувати вибір усіх клітинок"
+
+#: packages/notebook-extension/src/index.ts:2108 packages/notebook-extension/src/index.ts:2133
+msgid "Move Cells Up"
+msgstr "Перемістити клітинки вгору"
+
+#: packages/notebook-extension/src/index.ts:2120 packages/notebook-extension/src/index.ts:2145
+msgid "Move Cells Down"
+msgstr "Перемістити клітинки вниз"
+
+#: packages/notebook-extension/src/index.ts:2132 packages/notebook-extension/src/index.ts:2157
+msgid "Toggle All Line Numbers"
+msgstr "Увімкнути або вимкнути всі номери рядків"
+
+#: packages/notebook-extension/src/index.ts:2143 packages/notebook-extension/src/index.ts:2168
+msgid "Enter Command Mode"
+msgstr "Ввійти в командний режим"
+
+#: packages/notebook-extension/src/index.ts:2154 packages/notebook-extension/src/index.ts:2179
+msgid "Enter Edit Mode"
+msgstr "Ввійти в режим редагування"
+
+#: packages/notebook-extension/src/index.ts:2165 packages/notebook-extension/src/index.ts:2190
+msgid "Undo Cell Operation"
+msgstr "Скасувати дію з клітинкою"
+
+#: packages/notebook-extension/src/index.ts:2176 packages/notebook-extension/src/index.ts:2201
+msgid "Redo Cell Operation"
+msgstr "Повторити дію з клітинкою"
+
+#: packages/notebook-extension/src/index.ts:2201 packages/notebook-extension/src/index.ts:2226
+msgid "Reconnect To Kernel"
+msgstr "Повторно підключитися до ядра"
+
+#: packages/notebook-extension/src/index.ts:2218 packages/notebook-extension/src/index.ts:2243
+msgid "Change to Heading 1"
+msgstr "Змінити на Заголовок 1"
+
+#: packages/notebook-extension/src/index.ts:2229 packages/notebook-extension/src/index.ts:2254
+msgid "Change to Heading 2"
+msgstr "Змінити на Заголовок 2"
+
+#: packages/notebook-extension/src/index.ts:2240 packages/notebook-extension/src/index.ts:2265
+msgid "Change to Heading 3"
+msgstr "Змінити на Заголовок 3"
+
+#: packages/notebook-extension/src/index.ts:2251 packages/notebook-extension/src/index.ts:2276
+msgid "Change to Heading 4"
+msgstr "Змінити на Заголовок 4"
+
+#: packages/notebook-extension/src/index.ts:2262 packages/notebook-extension/src/index.ts:2287
+msgid "Change to Heading 5"
+msgstr "Змінити на Заголовок 5"
+
+#: packages/notebook-extension/src/index.ts:2273 packages/notebook-extension/src/index.ts:2298
+msgid "Change to Heading 6"
+msgstr "Змінити на Заголовок 6"
+
+#: packages/notebook-extension/src/index.ts:2284 packages/notebook-extension/src/index.ts:2309
+msgid "Collapse Selected Code"
+msgstr "Згорнути вибраний код"
+
+#: packages/notebook-extension/src/index.ts:2295 packages/notebook-extension/src/index.ts:2320
+msgid "Expand Selected Code"
+msgstr "Розгорнути вибраний код"
+
+#: packages/notebook-extension/src/index.ts:2306 packages/notebook-extension/src/index.ts:2331
+msgid "Collapse All Code"
+msgstr "Згорнути весь код"
+
+#: packages/notebook-extension/src/index.ts:2317 packages/notebook-extension/src/index.ts:2342
+msgid "Expand All Code"
+msgstr "Розгорнути весь код"
+
+#: packages/notebook-extension/src/index.ts:2328 packages/notebook-extension/src/index.ts:2353
+msgid "Collapse Selected Outputs"
+msgstr "Згорнути вибрані результати"
+
+#: packages/notebook-extension/src/index.ts:2339 packages/notebook-extension/src/index.ts:2364
+msgid "Expand Selected Outputs"
+msgstr "Розгорнути вибрані результати"
+
+#: packages/notebook-extension/src/index.ts:2350 packages/notebook-extension/src/index.ts:2375
+msgid "Collapse All Outputs"
+msgstr "Згорнути всі результати"
+
+#: packages/notebook-extension/src/index.ts:2362 packages/notebook-extension/src/index.ts:2387
+msgid "Render Side-by-Side"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:2402 packages/notebook-extension/src/index.ts:2409
 msgid "Expand All Outputs"
 msgstr "Розгорнути всі результати"
 
-#: packages/notebook-extension/src/index.ts:2413
+#: packages/notebook-extension/src/index.ts:2413 packages/notebook-extension/src/index.ts:2420
 msgid "Enable Scrolling for Outputs"
 msgstr "Увімкнути прокручування результатів"
 
-#: packages/notebook-extension/src/index.ts:2424
+#: packages/notebook-extension/src/index.ts:2424 packages/notebook-extension/src/index.ts:2431
 msgid "Disable Scrolling for Outputs"
 msgstr "Вимкнути прокручування результатів"
 
-#: packages/notebook-extension/src/index.ts:2435
+#: packages/notebook-extension/src/index.ts:2435 packages/notebook-extension/src/index.ts:2442
 msgid "Select current running or last run cell"
 msgstr "Вибрати клітинку, яку запущено зараз або востаннє"
 
-#: packages/notebook-extension/src/index.ts:2446
+#: packages/notebook-extension/src/index.ts:2446 packages/notebook-extension/src/index.ts:2453
 msgid "Replace Selection in Notebook Cell"
 msgstr "Замінити виділений фрагмент у клітинці блокнота"
 
-#: packages/notebook-extension/src/index.ts:2494 packages/notebook-extension/src/index.ts:572
+#: packages/notebook-extension/src/index.ts:2494 packages/notebook-extension/src/index.ts:2501 packages/notebook-extension/src/index.ts:572
 msgid "Notebook Operations"
 msgstr "Дії з блокнотом"
 
-#: packages/notebook-extension/src/index.ts:2530
+#: packages/notebook-extension/src/index.ts:2530 packages/notebook-extension/src/index.ts:2537
 msgid "Notebook Cell Operations"
 msgstr "Дії з клітинкою блокнота"
 
-#: packages/notebook-extension/src/index.ts:2613
+#: packages/notebook-extension/src/index.ts:2613 packages/notebook-extension/src/index.ts:2620
 msgid "Clear Output"
 msgstr "Очистити результати"
 
-#: packages/notebook-extension/src/index.ts:2629
+#: packages/notebook-extension/src/index.ts:2629 packages/notebook-extension/src/index.ts:2636
 msgid "Close and Shutdown Notebook"
 msgstr "Закрити й завершити роботу блокнота"
 
-#: packages/notebook-extension/src/index.ts:2633
+#: packages/notebook-extension/src/index.ts:2633 packages/notebook-extension/src/index.ts:2640
 msgid "Shut down the Notebook?"
 msgstr "Завершити роботу блокнота?"
 
-#: packages/notebook-extension/src/index.ts:2709 packages/notebook/src/default-toolbar.tsx:200
+#: packages/notebook-extension/src/index.ts:2709 packages/notebook-extension/src/index.ts:2716 packages/notebook/src/default-toolbar.tsx:200
 msgid "Run the selected cells and advance"
 msgstr "Запустити вибрані клітинки й продовжити"
 
-#: packages/notebook-extension/src/index.ts:2711
+#: packages/notebook-extension/src/index.ts:2711 packages/notebook-extension/src/index.ts:2718
 msgid "Run the all notebook cells"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:2715 packages/notebook/src/default-toolbar.tsx:227
+#: packages/notebook-extension/src/index.ts:2715 packages/notebook-extension/src/index.ts:2722 packages/notebook/src/default-toolbar.tsx:227
 msgid "Restart the kernel, then re-run the whole notebook"
 msgstr "Перезапустити ядро, а потім перезапустити цілий блокнот"
 
-#: packages/notebook-extension/src/index.ts:2845
+#: packages/notebook-extension/src/index.ts:2845 packages/notebook-extension/src/index.ts:2852
 msgid "HTML"
 msgstr "HTML"
 
-#: packages/notebook-extension/src/index.ts:2846
+#: packages/notebook-extension/src/index.ts:2846 packages/notebook-extension/src/index.ts:2853
 msgid "LaTeX"
 msgstr "LaTeX"
 
-#: packages/notebook-extension/src/index.ts:2847 packages/notebook/src/default-toolbar.tsx:360
+#: packages/notebook-extension/src/index.ts:2847 packages/notebook-extension/src/index.ts:2854 packages/notebook/src/default-toolbar.tsx:360
 msgid "Markdown"
 msgstr "Розмітка"
 
-#: packages/notebook-extension/src/index.ts:2848 packages/notebook-extension/src/index.ts:757
+#: packages/notebook-extension/src/index.ts:2848 packages/notebook-extension/src/index.ts:2855 packages/notebook-extension/src/index.ts:757
 msgid "PDF"
 msgstr "PDF"
 
-#: packages/notebook-extension/src/index.ts:2849
+#: packages/notebook-extension/src/index.ts:2849 packages/notebook-extension/src/index.ts:2856
 msgid "ReStructured Text"
 msgstr "reStructuredText"
 
-#: packages/notebook-extension/src/index.ts:2850
+#: packages/notebook-extension/src/index.ts:2850 packages/notebook-extension/src/index.ts:2857
 msgid "Executable Script"
 msgstr "Виконуваний скрипт"
 
-#: packages/notebook-extension/src/index.ts:2851
+#: packages/notebook-extension/src/index.ts:2851 packages/notebook-extension/src/index.ts:2858
 msgid "Reveal.js Slides"
 msgstr "Слайди Reveal.js"
 
-#: packages/notebook-extension/src/index.ts:2869
+#: packages/notebook-extension/src/index.ts:2869 packages/notebook-extension/src/index.ts:2876
 msgid "For Notebook: %1"
 msgstr "Для блокнота: %1"
 
-#: packages/notebook-extension/src/index.ts:2870
+#: packages/notebook-extension/src/index.ts:2870 packages/notebook-extension/src/index.ts:2877
 msgid "For Notebook:"
 msgstr "Для блокнота:"
 
@@ -4885,7 +4899,7 @@ msgstr "Ви впевнені, що хочете закрити усі вкла�
 msgid "Refresh List"
 msgstr "Оновити список"
 
-#: packages/settingeditor-extension/src/index.ts:103 packages/settingeditor-extension/src/index.ts:148 packages/settingeditor-extension/src/index.ts:154 packages/settingeditor-extension/src/index.ts:178 packages/settingeditor-extension/src/index.ts:291 packages/settingeditor-extension/src/index.ts:307 packages/settingeditor/src/jsonsettingeditor.tsx:67 packages/settingeditor/src/pluginlist.tsx:449
+#: packages/settingeditor-extension/src/index.ts:103 packages/settingeditor-extension/src/index.ts:148 packages/settingeditor-extension/src/index.ts:154 packages/settingeditor-extension/src/index.ts:178 packages/settingeditor-extension/src/index.ts:291 packages/settingeditor-extension/src/index.ts:307 packages/settingeditor/src/jsonsettingeditor.tsx:67 packages/settingeditor/src/pluginlist.tsx:449 packages/settingeditor/src/pluginlist.tsx:453
 msgid "Settings"
 msgstr "Налаштування"
 
@@ -4977,15 +4991,15 @@ msgstr "Вийти без зберігання?"
 msgid "Your changes were not saved."
 msgstr "Ваші зміни не збережено."
 
-#: packages/settingeditor/src/pluginlist.tsx:436
+#: packages/settingeditor/src/pluginlist.tsx:436 packages/settingeditor/src/pluginlist.tsx:440
 msgid "Search…"
 msgstr ""
 
-#: packages/settingeditor/src/pluginlist.tsx:443
+#: packages/settingeditor/src/pluginlist.tsx:443 packages/settingeditor/src/pluginlist.tsx:447
 msgid "Modified"
 msgstr ""
 
-#: packages/settingeditor/src/pluginlist.tsx:455
+#: packages/settingeditor/src/pluginlist.tsx:455 packages/settingeditor/src/pluginlist.tsx:459
 msgid "No items match your search."
 msgstr ""
 
