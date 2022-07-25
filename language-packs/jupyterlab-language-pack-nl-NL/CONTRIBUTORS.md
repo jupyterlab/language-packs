@@ -7,3 +7,4 @@
 * Koen Van Noten ([@koenvannoten](https://crowdin.com/profile/koenvannoten))
 * Wouter Saelens ([@zouter](https://crowdin.com/profile/zouter))
 * ba-tno ([@ba-tno](https://crowdin.com/profile/ba-tno))
+* Jasper Schelling ([@Jasper2-0](https://crowdin.com/profile/Jasper2-0))
