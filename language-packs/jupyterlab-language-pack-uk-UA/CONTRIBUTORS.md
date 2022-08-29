@@ -4,7 +4,7 @@
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * Alina ([@astromavka](https://crowdin.com/profile/astromavka))
-* маленький ([@GNCanva](https://crowdin.com/profile/GNCanva))
+* GNCanva ([@GNCanva](https://crowdin.com/profile/GNCanva))
 * seventeenfive36 ([@seventeenfive36](https://crowdin.com/profile/seventeenfive36))
 * Vladyslav Sazhen ([@astrochumak](https://crowdin.com/profile/astrochumak))
 * Valentyna_Boberska ([@Valentyna_Boberska](https://crowdin.com/profile/Valentyna_Boberska))
