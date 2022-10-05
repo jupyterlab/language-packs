@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2022-09-13 08:38\n"
+"PO-Revision-Date: 2022-10-05 08:39\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -235,6 +235,11 @@ msgstr "应用上下文菜单"
 msgctxt "schema"
 msgid "JupyterLab Shell layout settings."
 msgstr "JupyterLab Shell 布局设置。"
+
+#: /packages/application-extension/schema/shell.json:/properties/hiddenMode/description
+msgctxt "settings"
+msgid "The method for hiding widgets in the main dock panel. Using `scale` will increase performance on Firefox but don't use it with Chrome, Chromium or Edge."
+msgstr ""
 
 #: /packages/application-extension/schema/shell.json:/properties/hiddenMode/description
 msgctxt "settings"
@@ -2161,15 +2166,15 @@ msgstr "打印…"
 msgid "Show Header Above Content"
 msgstr "在内容上方显示页头"
 
-#: packages/apputils-extension/src/index.ts:476
+#: packages/apputils-extension/src/index.ts:475 packages/apputils-extension/src/index.ts:476
 msgid "Reset Application State"
 msgstr "重置应用程序状态"
 
-#: packages/apputils-extension/src/index.ts:567
+#: packages/apputils-extension/src/index.ts:566 packages/apputils-extension/src/index.ts:567
 msgid "Run First Enabled Command"
 msgstr "运行第一个启用的命令"
 
-#: packages/apputils-extension/src/index.ts:583
+#: packages/apputils-extension/src/index.ts:582 packages/apputils-extension/src/index.ts:583
 msgid "Run All Enabled Commands Passed as Args"
 msgstr "运行所有从参数传递过来的已启用的命令"
 
