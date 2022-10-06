@@ -14,6 +14,7 @@
 * Marcus Rodrigues ([@rodriguesmarcus](https://crowdin.com/profile/rodriguesmarcus))
 * Luciano Filho ([@luciano00filho](https://crowdin.com/profile/luciano00filho))
 * Guilherme Leobas ([@guilhermel](https://crowdin.com/profile/guilhermel))
+* rafael-neri ([@rafael-neri](https://crowdin.com/profile/rafael-neri))
 * Pablo Damasceno ([@pablodamasceno](https://crowdin.com/profile/pablodamasceno))
 * spacial ([@spacial](https://crowdin.com/profile/spacial))
 * Gökberk Keskinkılıç ([@gokiberk](https://crowdin.com/profile/gokiberk))

@@ -32,6 +32,9 @@
     "\"%1\" already exists. Do you want to replace it?": [
         "\"%1\" existiert bereits. M\u00f6chtest du es ersetzen?"
     ],
+    "\"%1\" has changed on disk since the last time it was opened or saved.\nDo you want to overwrite the file on disk with the version open here,\nor load the version on disk (revert)?": [
+        "\"%1\" hat sich seit dem letzten \u00d6ffnen oder Speichern auf der Festplatte ge\u00e4ndert.\nM\u00f6chten Sie die Datei auf der Festplatte mit der hier ge\u00f6ffneten Version \u00fcberschreiben,\noder die Version auf der Festplatte laden (zur\u00fccksetzen)?"
+    ],
     "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\"": [
         "\"%1\" ist kein g\u00fcltiger Name f\u00fcr eine Datei. Namen m\u00fcssen eine L\u00e4nge gr\u00f6\u00dfer Null haben und d\u00fcrfen \"/\", \"\\\" und \":\" nicht enthalten"
     ],
@@ -113,7 +116,7 @@
         "Bist du sicher, dass du %1 l\u00f6schen m\u00f6chtest"
     ],
     "Are you sure you want to exit JupyterLab?\n\nAny unsaved changes will be lost.": [
-        "Bist du sicher, dass du JupyterLab beenden m\u00f6chtest?\n\n Nicht gespeicherte \u00c4nderungen gehen verloren."
+        "Sind Sie sicher, dass Sie JupyterLab beenden m\u00f6chten?\n\nAlle nicht gespeicherten \u00c4nderungen gehen verloren."
     ],
     "Are you sure you want to permanently delete the %1 selected item?": [
         "Are you sure you want to permanently delete the %1 selected items?",
@@ -126,11 +129,20 @@
     "Are you sure you want to permanently shut down all running terminals?": [
         "Bist du sicher, dass du alle laufenden Terminals herunterfahren m\u00f6chtest?"
     ],
+    "Are you sure you want to reload the %1 from the disk?": [
+        "Sind Sie sicher, dass Sie die %1 von der Festplatte neu laden wollen?"
+    ],
+    "Are you sure you want to remove all breakpoints?": [
+        "Sind Sie sicher, dass Sie alle Breakpoints  entfernen wollen?"
+    ],
     "Are you sure you want to revert the %1 to the latest checkpoint? ": [
         "Sind Sie sicher, dass Sie %1 auf den letzten Kontrollpunkt zur\u00fccksetzen m\u00f6chten? "
     ],
     "Auto Close Brackets for Text Editor": [
         "Klammern im Texteditor automatisch schlie\u00dfen"
+    ],
+    "Autorestarting": [
+        "Automatisches Neustarten"
     ],
     "Autosave Documents": [
         "Dokumente automatisch speichern"
@@ -149,6 +161,9 @@
     ],
     "Build successfully completed, reload page?": [
         "Build erfolgreich abgeschlossen, Seite neu laden?"
+    ],
+    "Busy": [
+        "Besch\u00e4ftigt"
     ],
     "CONTRIBUTOR LIST": [
         "MITWIRKENDENLISTE"
@@ -300,6 +315,9 @@
     "Command Palette": [
         "Befehlspalette"
     ],
+    "Command Palette Section": [
+        "Abschnitt Befehlspalette"
+    ],
     "Commands": [
         "Befehle"
     ],
@@ -312,11 +330,20 @@
     "Complete!": [
         "Fertig!"
     ],
+    "Connected": [
+        "Verbunden"
+    ],
+    "Connecting": [
+        "Verbindung wird hergestellt"
+    ],
     "Console": [
         "Konsole"
     ],
     "Console %1": [
         "Konsole %1"
+    ],
+    "Context menu customization has changed. You will need to reload JupyterLab to see the changes.": [
+        "Die Anpassung des Kontextmen\u00fcs hat sich ge\u00e4ndert. Sie m\u00fcssen JupyterLab neu laden, um die \u00c4nderungen zu sehen."
     ],
     "Continue": [
         "Fortfahren"
@@ -345,6 +372,15 @@
     "Create Console for Editor": [
         "Konsole f\u00fcr Editor erstellen"
     ],
+    "Create a new Julia file": [
+        "Neue Julia-Datei erstellen"
+    ],
+    "Create a new Python file": [
+        "Neue Python-Datei erstellen"
+    ],
+    "Create a new R file": [
+        "Neue R-Datei erstellen"
+    ],
     "Create a new markdown file": [
         "Eine neue Markdown-Datei erstellen"
     ],
@@ -368,6 +404,9 @@
     ],
     "Dark": [
         "Dunkel"
+    ],
+    "Debugger section": [
+        "Debugger-Abschnitt"
     ],
     "Decrease Code Font Size": [
         "Code-Schriftgr\u00f6\u00dfe verringern"
@@ -417,11 +456,17 @@
     "Disable": [
         "Deaktivieren"
     ],
+    "Disable Debugger": [
+        "Debugger ausschalten"
+    ],
     "Disable Scrolling for Outputs": [
         "Scrollen f\u00fcr Ausgaben deaktivieren"
     ],
     "Discard": [
         "Verwerfen"
+    ],
+    "Disconnected": [
+        "Getrennt"
     ],
     "Discover": [
         "Entdecken"
@@ -447,6 +492,9 @@
     "Duplicate": [
         "Duplizieren"
     ],
+    "Edit": [
+        "Editieren"
+    ],
     "Elapsed time: %1 second": [
         "Elapsed time: %1 seconds",
         "",
@@ -454,6 +502,9 @@
     ],
     "Enable": [
         "Aktivieren"
+    ],
+    "Enable Debugger": [
+        "Debugger einschalten"
     ],
     "Enable Extension Manager": [
         "Erweiterungsmanager aktivieren"
@@ -487,6 +538,12 @@
     ],
     "Error message:": [
         "Fehlermeldung:"
+    ],
+    "Evaluate": [
+        "Bewerten"
+    ],
+    "Evaluate Code": [
+        "Code auswerten"
     ],
     "Executable Script": [
         "Ausf\u00fchrbares Skript"
@@ -536,6 +593,9 @@
     ],
     "Extension Manager": [
         "Erweiterungsmanager"
+    ],
+    "Extension Manager section": [
+        "Abschnitt des Extension Manager"
     ],
     "File Browser": [
         "Dateibrowser"
@@ -615,6 +675,9 @@
     "Hub Control Panel": [
         "Hub-Kontrollzentrum"
     ],
+    "Idle": [
+        "Leerlauf"
+    ],
     "Ignore": [
         "Ignorieren"
     ],
@@ -645,8 +708,14 @@
     "Indent with Tab": [
         "Mit Tabulator einr\u00fccken"
     ],
+    "Information": [
+        "Informationen"
+    ],
     "Inherit": [
         "Vererben"
+    ],
+    "Initializing": [
+        "Initialisiere"
     ],
     "Insert Cell Above": [
         "Zellen oberhalb einf\u00fcgen"
@@ -681,6 +750,9 @@
     "JSON File": [
         "JSON-Datei"
     ],
+    "Julia File": [
+        "Julia-Datei"
+    ],
     "Jupyter Reference": [
         "JupyterLab Referenz"
     ],
@@ -695,6 +767,9 @@
     ],
     "JupyterLab build is suggested:": [
         "JupyterLab Build wird empfohlen:"
+    ],
+    "JupyterLab workspace File": [
+        "JupyterLab-Arbeitsbereich-Datei"
     ],
     "Keep Waiting": [
         "Weiter warten"
@@ -726,6 +801,12 @@
     "Launcher": [
         "Starter"
     ],
+    "License": [
+        "Lizenz"
+    ],
+    "Licenses": [
+        "Lizenzen"
+    ],
     "Light": [
         "Hell"
     ],
@@ -737,6 +818,9 @@
     ],
     "Ln %1, Col %2": [
         "Z %1, Sp %2"
+    ],
+    "Loading\u2026": [
+        "Wird geladen..."
     ],
     "Log Console": [
         "Protokollkonsole"
@@ -807,8 +891,11 @@
     "New Folder": [
         "Neuer Ordner"
     ],
+    "New Julia File": [
+        "Neue Julia-Datei"
+    ],
     "New Launcher": [
-        "Neuer Starter"
+        "Neuer Launcher"
     ],
     "New Markdown File": [
         "Neue Markdown-Datei"
@@ -818,6 +905,12 @@
     ],
     "New Notebook": [
         "Neues Notebook"
+    ],
+    "New Python File": [
+        "Neue Python-Datei"
+    ],
+    "New R File": [
+        "Neue R-Datei"
     ],
     "New Terminal": [
         "Neues Terminal"
@@ -836,6 +929,18 @@
     ],
     "No Kernel!": [
         "Kein Kernel!"
+    ],
+    "No License ID found": [
+        "Keine License ID gefunden"
+    ],
+    "No License Text found": [
+        "Kein License Text gefunden"
+    ],
+    "No Package selected": [
+        "Keine Pakete ausgew\u00e4hlt"
+    ],
+    "No Packages found": [
+        "Keine Pakete gefunden"
     ],
     "No Tags Available": [
         "Keine Tags verf\u00fcgbar"
@@ -927,11 +1032,20 @@
     "Open Tabs Menu": [
         "Tabs Men\u00fc \u00f6ffnen"
     ],
+    "Open URL": [
+        "URL \u00f6ffnen"
+    ],
     "Open View Menu": [
         "Anzeige Men\u00fc \u00f6ffnen"
     ],
     "Open from Path\u2026": [
         "Von Pfad \u00f6ffnen \u2026"
+    ],
+    "Open from URL": [
+        "Von URL \u00f6ffnen"
+    ],
+    "Open from URL\u2026": [
+        "Von URL \u00f6ffnen\u2026"
     ],
     "Open from path": [
         "Von Pfad \u00f6ffnen"
@@ -941,6 +1055,9 @@
     ],
     "Open in the Main Area": [
         "Im Hauptbereich \u00f6ffnen"
+    ],
+    "Other": [
+        "Andere"
     ],
     "Overwrite": [
         "\u00dcberschreiben"
@@ -987,6 +1104,9 @@
     "Presentation Mode": [
         "Pr\u00e4sentationsmodus"
     ],
+    "Print\u2026": [
+        "Drucken\u2026"
+    ],
     "Property Inspector": [
         "Eigenschaften-Inspektor"
     ],
@@ -998,6 +1118,9 @@
     ],
     "Raw NBConvert Format": [
         "Raw-NBConvert-Format"
+    ],
+    "ReStructured Text": [
+        "ReStructuredText"
     ],
     "Read-only": [
         "Schreibgesch\u00fctzt"
@@ -1019,6 +1142,9 @@
     ],
     "Refresh File List": [
         "Dateiliste aktualisieren"
+    ],
+    "Refresh Licenses": [
+        "Lizenzen aktualisieren"
     ],
     "Refresh List": [
         "Liste aktualisieren"
@@ -1047,6 +1173,9 @@
     "Remove All Breakpoints": [
         "Alle Haltepunkte l\u00f6schen"
     ],
+    "Remove breakpoints": [
+        "Breakpoints entfernen"
+    ],
     "Rename": [
         "Umbenennen"
     ],
@@ -1055,6 +1184,9 @@
     ],
     "Rename File": [
         "Datei umbenennen"
+    ],
+    "Rename%1\u2026": [
+        "Umbenennen%1\u2026"
     ],
     "Render All Markdown Cells": [
         "Alle Markdown Zellen ausf\u00fchren"
@@ -1098,6 +1230,9 @@
     "Restart Kernel and Clear\u2026": [
         "Kernel neu starten und leeren\u2026"
     ],
+    "Restart Kernel and Debug\u2026": [
+        "Kernel neu starten und debuggen.."
+    ],
     "Restart Kernel and Run All": [
         "Kernel neu starten und alle ausf\u00fchren"
     ],
@@ -1121,6 +1256,9 @@
     ],
     "Restart the kernel": [
         "Kernel neu starten"
+    ],
+    "Restarting": [
+        "Wird neugestartet"
     ],
     "Revert": [
         "Zur\u00fccksetzen"
@@ -1215,6 +1353,9 @@
     "Save Current Workspace": [
         "Aktuellen Arbeitsbereich speichern"
     ],
+    "Save Current Workspace As\u2026": [
+        "Aktuellen Arbeitsbereich speichern unter.."
+    ],
     "Save Failed": [
         "Speichern fehlgeschlagen"
     ],
@@ -1226,6 +1367,9 @@
     ],
     "Save all open documents": [
         "Alle ge\u00f6ffneten Dokumente speichern"
+    ],
+    "Save and Export Notebook: %1": [
+        "Notebook speichern und exportieren: %1"
     ],
     "Save and Reload": [
         "Speichern und neu laden"
@@ -1263,8 +1407,14 @@
     "Script": [
         "Skript"
     ],
+    "Search Cell Outputs": [
+        "Suche Zellausgaben"
+    ],
     "Search Results": [
         "Suchergebnisse"
+    ],
+    "Search Selected Cell(s)": [
+        "Ausgew\u00e4hlte Zelle(n) suchen"
     ],
     "Search on File Names": [
         "Suche nach Dateinamen"
@@ -1286,6 +1436,9 @@
     ],
     "Select Kernel": [
         "Kernel ausw\u00e4hlen"
+    ],
+    "Select a kernel that supports debugging to enable debugger": [
+        "W\u00e4hlen Sie einen Kernel, der Debugging unterst\u00fctzt, um den Debugger zu aktivieren"
     ],
     "Select a plugin from the list to view and edit its preferences.": [
         "W\u00e4hle eine Erweiterung aus der Liste aus, um ihre Einstellungen anzuzeigen und zu bearbeiten."
@@ -1328,6 +1481,9 @@
     ],
     "Show Contextual Help": [
         "Kontextbezogene Hilfe anzeigen"
+    ],
+    "Show Hidden Files": [
+        "Versteckte Dateien anzeigen"
     ],
     "Show Left Sidebar": [
         "Linke Seitenleiste anzeigen"
@@ -1436,6 +1592,9 @@
     "Start a new terminal session": [
         "Eine neue Terminal-Sitzung starten"
     ],
+    "Starting": [
+        "Starten"
+    ],
     "Step In": [
         "Schritt hinein"
     ],
@@ -1469,6 +1628,9 @@
     "Terminate": [
         "Beenden"
     ],
+    "Terminating": [
+        "Beenden"
+    ],
     "Text Editor": [
         "Texteditor"
     ],
@@ -1478,8 +1640,17 @@
     "Thanks for trying out JupyterLab's extension manager.\nThe JupyterLab development team is excited to have a robust\nthird-party extension community.\nHowever, we cannot vouch for every extension,\nand some may introduce security risks.\nDo you want to continue?": [
         "Danke, dass du den Erweiterungsmanager von JupyterLab ausprobierst.\nDas JupyterLab Entwicklungsteam freut sich \u00fcber eine robuste\nDrittanbieter-Erweiterungsgemeinschaft.\nWir k\u00f6nnen jedoch nicht f\u00fcr jede Erweiterung b\u00fcrgen,\nund einige k\u00f6nnen Sicherheitsrisiken mit sich bringen.\nM\u00f6chten Sie fortfahren?"
     ],
+    "The JupyterLab development team is excited to have a robust\nthird-party extension community. However, we do not review\nthird-party extensions, and some extensions may introduce security\nrisks or contain malicious code that runs on your machine.": [
+        "Das JupyterLab-Entwicklerteam freut sich \u00fcber eine starke Gemeinschaft von Drittanbieter-Erweiterungen. Wir \u00fcberpr\u00fcfen jedoch keine Erweiterungen von Drittanbietern, und einige Erweiterungen k\u00f6nnen Sicherheitsrisiken bergen oder b\u00f6sartigen Code enthalten, der auf Ihrem Computer ausgef\u00fchrt wird."
+    ],
     "The checkpoint was last updated at: ": [
         "Der Kontrollpunkt wurde zuletzt aktualisiert um: "
+    ],
+    "The loading screen is taking a long time.\nWould you like to clear the workspace or keep waiting?": [
+        "Der Ladebildschirm dauert sehr lange.\nM\u00f6chten Sie den Arbeitsbereich l\u00f6schen oder weiter warten?"
+    ],
+    "The package <code>%1</code>, is required by the following kernels:": [
+        "Das Paket <code>%1</code> wird von den folgenden Kerneln ben\u00f6tigt:"
     ],
     "The path: %1 was not found. JupyterLab redirected to: %2": [
         "Der Pfad: %1 wurde nicht gefunden. JupyterLab weitergeleitet zu: %2"
@@ -1495,6 +1666,9 @@
     ],
     "This package has indicated that it needs a corresponding kernel\npackage. Please contact your Administrator to update the server with\none of the following commands:": [
         "Dieses Paket hat angedeutet, dass es ein entsprechendes Kernel-Paket\nben\u00f6tigt. Bitte kontaktiere deinen Administrator, um den Server mit\neinem der folgenden Befehle zu aktualisieren:"
+    ],
+    "This package has indicated that it needs a corresponding package for the kernel.": [
+        "Dieses Paket hat angegeben, dass es ein entsprechendes Paket f\u00fcr den Kernel ben\u00f6tigt."
     ],
     "To use JupyterLab again, you will need to relaunch it.": [
         "Um JupyterLab erneut nutzen zu k\u00f6nnen, musst du es neu starten."
@@ -1535,6 +1709,9 @@
     "Uninstall": [
         "Deinstallieren"
     ],
+    "Unknown": [
+        "Unbekannt"
+    ],
     "Update": [
         "Aktualisieren"
     ],
@@ -1552,6 +1729,9 @@
     ],
     "Use Kernel from Preferred Session": [
         "Kernel aus bevorzugter Sitzung verwenden"
+    ],
+    "Use No Kernel": [
+        "Keinen Kernel verwenden"
     ],
     "Use Terminal Theme: %1": [
         "Verwende Terminal-Theme: %1"
@@ -1573,6 +1753,9 @@
     ],
     "Word Wrap": [
         "Zeilenumbruch"
+    ],
+    "Workspace loader": [
+        "Arbeitsbereich-Loader"
     ],
     "Wrap Words": [
         "Automatischer Zeilenumbruch"
@@ -1604,8 +1787,56 @@
     "default": [
         "Standard"
     ],
+    "file browser": [
+        "Dateibrowser"
+    ],
     "hash": [
         "Hash"
+    ],
+    "menu\u0004Console Run Keystroke": [
+        "Konsole ausf\u00fchren Tastendruck"
+    ],
+    "menu\u0004Edit": [
+        "Bearbeiten"
+    ],
+    "menu\u0004File": [
+        "Datei"
+    ],
+    "menu\u0004Help": [
+        "Hilfe"
+    ],
+    "menu\u0004Language": [
+        "Sprache"
+    ],
+    "menu\u0004New": [
+        "Neu"
+    ],
+    "menu\u0004Open With": [
+        "\u00d6ffnen mit"
+    ],
+    "menu\u0004Run": [
+        "Ausf\u00fchren"
+    ],
+    "menu\u0004Save and Export Notebook As\u2026": [
+        "Notebook speichern und exportieren als..."
+    ],
+    "menu\u0004Settings": [
+        "Einstellungen"
+    ],
+    "menu\u0004Text Editor Indentation": [
+        "Einr\u00fcckung im Texteditor"
+    ],
+    "menu\u0004Text Editor Key Map": [
+        "Texteditor-Tastenbelegung"
+    ],
+    "menu\u0004View": [
+        "Anzeigen"
+    ],
+    "notebook actions": [
+        "Notebook-Aktionen"
+    ],
+    "notebook content": [
+        "Notebook-Inhalt"
     ],
     "pipe": [
         "Pipe"
@@ -1613,11 +1844,20 @@
     "schema\u0004Application Commands": [
         "Anwendungsbefehle"
     ],
+    "schema\u0004Application Context Menu": [
+        "Kontextmen\u00fc der Anwendung"
+    ],
     "schema\u0004Application commands settings.": [
         "Einstellungen der Anwendungsbefehle."
     ],
     "schema\u0004Code Console": [
         "Code Konsole"
+    ],
+    "schema\u0004Code Console Foreign plugin": [
+        "Code Console Fremd-Plugin"
+    ],
+    "schema\u0004Code Console Foreign plugin settings.": [
+        "Code Console Fremd-Plugin Einstellungen."
     ],
     "schema\u0004Code Console settings.": [
         "Code Konsole Einstellungen."
@@ -1634,6 +1874,9 @@
     "schema\u0004Console Tooltips": [
         "Konsolen-Tooltips"
     ],
+    "schema\u0004Console completer settings.": [
+        "Console Completer Einstellungen."
+    ],
     "schema\u0004Console tooltip settings.": [
         "Einstellungen f\u00fcr Konsolen-Tooltips."
     ],
@@ -1642,6 +1885,15 @@
     ],
     "schema\u0004Document Manager": [
         "Dokument Manager"
+    ],
+    "schema\u0004Document Manager Download": [
+        "Dokumenten-Manager Download"
+    ],
+    "schema\u0004Document Manager Download settings.": [
+        "Dokumenten-Manager Download-Einstellungen."
+    ],
+    "schema\u0004Document Manager settings.": [
+        "Dokumenten-Manager Einstellungen."
     ],
     "schema\u0004Document Search": [
         "Dokumentensuche"
@@ -1658,14 +1910,29 @@
     "schema\u0004File Browser": [
         "Dateibrowser"
     ],
+    "schema\u0004File Browser Download": [
+        "Datei-Browser Download"
+    ],
+    "schema\u0004File Browser Download settings.": [
+        "Datei-Browser Download-Einstellungen."
+    ],
     "schema\u0004File Browser settings.": [
         "Dateibrowser Einstellungen."
     ],
     "schema\u0004File Editor Tooltips": [
         "Datei-Editor-Tooltips"
     ],
+    "schema\u0004File editor completer settings.": [
+        "File Editor Completer Einstellungen."
+    ],
     "schema\u0004File editor tooltip settings.": [
         "Einstellungen f\u00fcr Datei-Editor-Tooltips."
+    ],
+    "schema\u0004Help": [
+        "Hilfe"
+    ],
+    "schema\u0004Help settings.": [
+        "Hilfeeinstellungen."
     ],
     "schema\u0004Image Viewer": [
         "Bildbetrachter"
@@ -1678,6 +1945,9 @@
     ],
     "schema\u0004Inspector settings.": [
         "Inspektor-Einstellungen."
+    ],
+    "schema\u0004JupyterHub settings.": [
+        "JupyterHub-Einstellungen."
     ],
     "schema\u0004JupyterLab context menu settings.": [
         "JupyterLab Kontextmen\u00fc-Einstellungen."
@@ -1715,8 +1985,17 @@
     "schema\u0004Markdown viewer settings.": [
         "Markdown-Viewer-Einstellungen."
     ],
+    "schema\u0004Notebook Export": [
+        "Notebook-Export"
+    ],
+    "schema\u0004Notebook Export settings.": [
+        "Notebook-Export-Einstellungen."
+    ],
     "schema\u0004Notebook Tooltips": [
         "Notebook-Tooltips"
+    ],
+    "schema\u0004Notebook completer settings.": [
+        "Notebook Completer Einstellungen."
     ],
     "schema\u0004Notebook settings.": [
         "Notebook-Einstellungen."
@@ -1748,6 +2027,12 @@
     "schema\u0004Status Bar settings.": [
         "Statusleisten-Einstellungen."
     ],
+    "schema\u0004Table of Contents": [
+        "Inhaltsverzeichnis"
+    ],
+    "schema\u0004Table of contents settings.": [
+        "Inhaltsverzeichnis-Einstellungen."
+    ],
     "schema\u0004Terminal settings.": [
         "Terminaleinstellungen."
     ],
@@ -1763,8 +2048,398 @@
     "schema\u0004Theme manager settings.": [
         "Theme-Manager-Einstellungen."
     ],
+    "schema\u0004Workspaces": [
+        "Arbeitsbereiche"
+    ],
+    "schema\u0004Workspaces settings.": [
+        "Arbeitsbereiche Einstellungen."
+    ],
+    "settings\u0004Add a prefix to localized strings.": [
+        "Hinzuf\u00fcgen eines Pr\u00e4fixes zu lokalisierten Zeichenketten."
+    ],
+    "settings\u0004Application Context Menu": [
+        "Kontextmen\u00fc der Anwendung"
+    ],
+    "settings\u0004Application-level visual styling theme": [
+        "Theme zur visuellen Gestaltung auf Anwendungsebene"
+    ],
+    "settings\u0004Autosave Documents": [
+        "Dokumente automatisch speichern"
+    ],
+    "settings\u0004Autosave Interval": [
+        "Autosave-Intervall"
+    ],
+    "settings\u0004CSS file defining the corresponding\n.cm-s-[name] styles is loaded": [
+        "CSS-Datei, die die entsprechenden\n.cm-s-[name] Stile definiert, wird geladen"
+    ],
+    "settings\u0004Code Cell Configuration": [
+        "Code-Zellen-Konfiguration"
+    ],
+    "settings\u0004Code Console Settings": [
+        "Code Console Einstellungen."
+    ],
     "settings\u0004CodeMirror": [
         "CodeMirror"
+    ],
+    "settings\u0004Command arguments": [
+        "Befehlsargumente"
+    ],
+    "settings\u0004Command id": [
+        "Befehls-ID"
+    ],
+    "settings\u0004Configures the keymap to use": [
+        "Konfiguriert die zu verwendende Tastaturbelegung"
+    ],
+    "settings\u0004Control the mouse cursor appearance when hovering over the selection. Value is boolean or string, e.g. 'pointer'.": [
+        "Steuert das Aussehen des Mauszeigers, wenn er \u00fcber der Auswahl schwebt. Der Wert ist boolean oder string, z. B. \"Zeiger\"."
+    ],
+    "settings\u0004Cursor blinking rate": [
+        "Blinkfrequenz des Cursors"
+    ],
+    "settings\u0004Cursor pointer name": [
+        "Name des Cursor-Zeigers"
+    ],
+    "settings\u0004Default Viewers": [
+        "Standard-Viewer"
+    ],
+    "settings\u0004Default cell type": [
+        "Standard-Zellentyp"
+    ],
+    "settings\u0004Disclaimed Status": [
+        "Abgelehnt-Status"
+    ],
+    "settings\u0004Display localized strings prefix": [
+        "Pr\u00e4fix f\u00fcr lokalisierte Zeichenketten anzeigen"
+    ],
+    "settings\u0004Display the `stringsPrefix` on localized strings.": [
+        "Anzeige des `stringsPrefix` bei lokalisierten Zeichenketten."
+    ],
+    "settings\u0004Document Manager": [
+        "Dokumenten-Manager"
+    ],
+    "settings\u0004Editor Configuration": [
+        "Editor-Konfiguration"
+    ],
+    "settings\u0004Enable CDN": [
+        "CDN aktivieren"
+    ],
+    "settings\u0004Enable h1 numbering": [
+        "H1-Nummerierung einschalten"
+    ],
+    "settings\u0004Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available": [
+        "Aktivieren Sie das Einf\u00fcgen mit Strg+V.  Dies kann deaktiviert werden, um z. B. Strg+V im vi-Editor zu verwenden.  Diese Einstellung hat keine Auswirkungen auf macOS, wo Cmd+V verf\u00fcgbar ist"
+    ],
+    "settings\u0004Enable/disable styling of the application scrollbars": [
+        "Aktivieren/Deaktivieren der Gestaltung der Anwendungs-Scrollbars"
+    ],
+    "settings\u0004Enabled Status": [
+        "Aktiviert-Status"
+    ],
+    "settings\u0004Extension Manager": [
+        "Erweiterungsmanager"
+    ],
+    "settings\u0004File Browser": [
+        "Dateibrowser"
+    ],
+    "settings\u0004Font Family": [
+        "Schriftfamilie"
+    ],
+    "settings\u0004Font Size": [
+        "Schriftgr\u00f6\u00dfe"
+    ],
+    "settings\u0004Font family": [
+        "Schriftfamilie"
+    ],
+    "settings\u0004Font size": [
+        "Schriftgr\u00f6\u00dfe"
+    ],
+    "settings\u0004Half-period in milliseconds used for cursor blinking. The default blink rate is 530ms. By setting this to zero, blinking can be disabled. A negative value hides the cursor entirely.": [
+        "Halbwertszeit in Millisekunden, die f\u00fcr das Blinken des Cursors verwendet wird. Die Standard-Blinkrate betr\u00e4gt 530 ms. Wenn Sie diesen Wert auf Null setzen, kann das Blinken deaktiviert werden. Ein negativer Wert blendet den Cursor vollst\u00e4ndig aus."
+    ],
+    "settings\u0004Hide Front Matter": [
+        "Vorspann ausblenden"
+    ],
+    "settings\u0004Highlight active line. Value is boolean, or { nonEmpty: boolean }.": [
+        "Aktive Zeile hervorheben. Wert ist boolean, oder { nonEmpty: boolean }."
+    ],
+    "settings\u0004If set to true, when a header is collapsed in the table of contents the corresponding section in the notebook is collapsed as well and vice versa.": [
+        "Wenn diese Option auf \"true\" gesetzt ist, wird beim Ausklappen einer \u00dcberschrift im Inhaltsverzeichnis der entsprechende Abschnitt im Notizbuch ebenfalls ausgeklappt und umgekehrt."
+    ],
+    "settings\u0004Include cell output in headings": [
+        "Zellausgaben in \u00dcberschriften einbeziehen"
+    ],
+    "settings\u0004Interaction mode": [
+        "Interaktionsmodus"
+    ],
+    "settings\u0004Item rank": [
+        "Element-Rang"
+    ],
+    "settings\u0004Item type": [
+        "Element-Typ"
+    ],
+    "settings\u0004Key Map": [
+        "Tastenbelegung"
+    ],
+    "settings\u0004Keyboard Shortcuts": [
+        "Tastaturk\u00fcrzel"
+    ],
+    "settings\u0004Language": [
+        "Sprache"
+    ],
+    "settings\u0004Language locale": [
+        "Sprach-Locale"
+    ],
+    "settings\u0004Length of save interval in seconds": [
+        "L\u00e4nge des Speicherintervalls in Sekunden"
+    ],
+    "settings\u0004Line Height": [
+        "Linien H\u00f6he"
+    ],
+    "settings\u0004Line Width": [
+        "Linien Breite"
+    ],
+    "settings\u0004Line height": [
+        "Zeilenh\u00f6he"
+    ],
+    "settings\u0004Line-wise Ctrl-C": [
+        "Zeilenweise Strg-C"
+    ],
+    "settings\u0004Localized strings prefix": [
+        "Pr\u00e4fix f\u00fcr lokalisierte Zeichenfolgen"
+    ],
+    "settings\u0004Log Console": [
+        "Protokollkonsole"
+    ],
+    "settings\u0004Log entry count limit": [
+        "Limit f\u00fcr die Anzahl der Protokolleintr\u00e4ge"
+    ],
+    "settings\u0004Margin for last modified timestamp check": [
+        "Margin f\u00fcr die Pr\u00fcfung des Zeitstempels der letzten \u00c4nderung"
+    ],
+    "settings\u0004Markdown Cell Configuration": [
+        "Konfiguration der Markdown-Zelle"
+    ],
+    "settings\u0004Markdown Viewer": [
+        "Markdown-Viewer"
+    ],
+    "settings\u0004Maximum number of log entries to store in memory": [
+        "Maximale Anzahl der zu speichernden Protokolleintr\u00e4ge"
+    ],
+    "settings\u0004Menu icon id": [
+        "Men\u00fcsymbol-ID"
+    ],
+    "settings\u0004Menu items": [
+        "Men\u00fcpunkte"
+    ],
+    "settings\u0004Menu label": [
+        "Men\u00fcbeschriftung"
+    ],
+    "settings\u0004Menu rank": [
+        "Men\u00fc-Rang"
+    ],
+    "settings\u0004Menu unique id": [
+        "Eindeutige Men\u00fc-ID"
+    ],
+    "settings\u0004Mnemonic index for the label": [
+        "Mnemonischer Index f\u00fcr die Bezeichnung"
+    ],
+    "settings\u0004Modal Command Palette": [
+        "Modale Befehlspalette"
+    ],
+    "settings\u0004Navigate to current directory": [
+        "Zum aktuellen Verzeichnis navigieren"
+    ],
+    "settings\u0004Note: To disable a context menu item,\ncopy it to User Preferences and add the\n\"disabled\" key. The following example will disable Download item on files:\n{\n  \"contextMenu\": [\n    {\n      \"command\": \"filebrowser:download\",\n      \"selector\": \".jp-DirListing-item[data-isdir=\\\"false\\\"]\",\n      \"disabled\": true\n    }\n  ]\n}\n\nContext menu description:": [
+        "Hinweis: Um einen Kontextmen\u00fceintrag zu deaktivieren,\nkopieren Sie ihn in die Benutzereinstellungen und f\u00fcgen Sie den Schl\u00fcssel\n\"deaktiviert\" hinzu. Das folgende Beispiel deaktiviert die Option \"Download\" f\u00fcr Dateien:\n{\n  \"contextMenu\": [\n    {\n      \"command\": \"filebrowser:download\",\n      \"selector\": \".jp-DirListing-item[data-isdir=\\\"false\\\"]\",\n      \"disabled\": true\n    }\n  ]\n}\n\nBeschreibung des Kontextmen\u00fcs:"
+    ],
+    "settings\u0004Number of cells to render directly": [
+        "Anzahl der direkt darzustellenden Zellen"
+    ],
+    "settings\u0004Override theme CSS variables by setting key-value pairs here": [
+        "\u00dcberschreiben Sie die CSS-Variablen des Theme, indem Sie hier Schl\u00fcsselwert-Paare festlegen"
+    ],
+    "settings\u0004Overrides for the default viewers for file types": [
+        "Overrides f\u00fcr die Standardviewer f\u00fcr Dateitypen"
+    ],
+    "settings\u0004Overrides for where to show sidebar items\ne.g., {\"jp-debugger-sidebar\": \"left\"}\nYou can also change this by right-clicking the sidebar icons.": [
+        "\u00dcberschreibt, wo die Seitenleiste angezeigt werden soll,\nz.B. {\"jp-debugger-sidebar\": \"left\"}\nSie k\u00f6nnen dies auch \u00e4ndern, indem Sie mit der rechten Maustaste auf die Seitenleistensymbole klicken."
+    ],
+    "settings\u0004Paste with Ctrl+V": [
+        "Einf\u00fcgen mit Strg +V"
+    ],
+    "settings\u0004Prompt Cell Configuration": [
+        "Prompt-Zellen-Konfiguration"
+    ],
+    "settings\u0004Recording timing": [
+        "Aufnahmezeitpunkt"
+    ],
+    "settings\u0004Render Timeout": [
+        "Zeit\u00fcberschreitung beim Rendern"
+    ],
+    "settings\u0004Screen Reader Mode": [
+        "Screen Reader Modus"
+    ],
+    "settings\u0004Scroll behavior": [
+        "Scroll-Verhalten"
+    ],
+    "settings\u0004Scrollback Buffer": [
+        "Scrollback-Puffer"
+    ],
+    "settings\u0004Selected Theme": [
+        "Ausgew\u00e4hltes Theme"
+    ],
+    "settings\u0004Selection Pointer": [
+        "Auswahl-Zeiger"
+    ],
+    "settings\u0004Set the interface display language. Examples: 'es_CO', 'fr'.": [
+        "Legen Sie die Anzeigesprache der Schnittstelle fest. Beispiele: 'es_CO', 'fr'."
+    ],
+    "settings\u0004Show All Kernel Activity": [
+        "Alle Kernel-Aktivit\u00e4ten anzeigen"
+    ],
+    "settings\u0004Show hidden files": [
+        "Versteckte Dateien anzeigen"
+    ],
+    "settings\u0004Show last modified column": [
+        "Zuletzt ge\u00e4nderte Spalte anzeigen"
+    ],
+    "settings\u0004Shut down kernel": [
+        "Kernel abschalten"
+    ],
+    "settings\u0004Shut down on close": [
+        "Ausschalten beim Schlie\u00dfen"
+    ],
+    "settings\u0004Shut down the session when closing the terminal.": [
+        "Beenden Sie die Sitzung beim Schlie\u00dfen des Terminals."
+    ],
+    "settings\u0004Sidebar": [
+        "Seitenleiste"
+    ],
+    "settings\u0004Status Bar": [
+        "Statusleiste"
+    ],
+    "settings\u0004Status Bar Visibility": [
+        "Sichtbarkeit der Statusleiste"
+    ],
+    "settings\u0004Style Active Line": [
+        "Aktive Zeile formatieren"
+    ],
+    "settings\u0004Style Selected Text": [
+        "Ausgew\u00e4hlten Text formatieren"
+    ],
+    "settings\u0004Submenu definition": [
+        "Untermen\u00fc-Definition"
+    ],
+    "settings\u0004Table of Contents": [
+        "Inhaltsverzeichnis"
+    ],
+    "settings\u0004The CSS selector for the context menu item.": [
+        "Der CSS-Selektor f\u00fcr das Kontextmen\u00fc-Element."
+    ],
+    "settings\u0004The application context menu.": [
+        "Das Kontextmen\u00fc der Anwendung."
+    ],
+    "settings\u0004The application menu description.": [
+        "Die Beschreibung des Anwendungsmen\u00fcs."
+    ],
+    "settings\u0004The configuration for all code cells.": [
+        "Die Konfiguration f\u00fcr alle Codezellen."
+    ],
+    "settings\u0004The configuration for all markdown cells.": [
+        "Die Konfiguration f\u00fcr alle Markdown-Zellen."
+    ],
+    "settings\u0004The configuration for all prompt cells.": [
+        "Die Konfiguration f\u00fcr alle Prompt-Zellen."
+    ],
+    "settings\u0004The default type (markdown, code, or raw) for new cells": [
+        "Der Standardtyp (Markdown, Code oder Raw) f\u00fcr neue Zellen"
+    ],
+    "settings\u0004The font family used to render markdown.\nIf `null`, value from current theme is used.": [
+        "Die Schriftfamilie, die f\u00fcr die Darstellung von Markdown verwendet wird.\nWenn `null`, wird der Wert aus dem aktuellen Theme verwendet."
+    ],
+    "settings\u0004The font family used to render text.": [
+        "Die f\u00fcr die Darstellung von Text verwendete Schriftfamilie."
+    ],
+    "settings\u0004The font size used to render text.": [
+        "Die f\u00fcr die Darstellung von Text verwendete Schriftgr\u00f6\u00dfe."
+    ],
+    "settings\u0004The line height used to render markdown.\nIf `null`, value from current theme is used.": [
+        "Die Zeilenh\u00f6he, die zum Rendern von Markdown verwendet wird.\nWenn `null`, wird der Wert aus dem aktuellen Thema verwendet."
+    ],
+    "settings\u0004The line height used to render text.": [
+        "Die Zeilenh\u00f6he, die f\u00fcr die Darstellung von Text verwendet wird."
+    ],
+    "settings\u0004The list of keyboard shortcuts.": [
+        "Die Liste der Tastaturk\u00fcrzel."
+    ],
+    "settings\u0004The render timeout in milliseconds.": [
+        "Die Renderzeit\u00fcberschreitung in Millisekunden."
+    ],
+    "settings\u0004The size in pixel of the font used to render markdown.\nIf `null`, value from current theme is used.": [
+        "Die Gr\u00f6\u00dfe der Schriftart in Pixel, die f\u00fcr die Darstellung von Markdown verwendet wird.\nWenn `null`, wird der Wert aus dem aktuellen Theme verwendet."
+    ],
+    "settings\u0004The text line width expressed in CSS ch units.\nIf `null`, lines fit the viewport width.": [
+        "Die Textzeilenbreite, ausgedr\u00fcckt in CSS ch-Einheiten.\nBei `null` passen sich die Zeilen der Breite des Viewports an."
+    ],
+    "settings\u0004The theme for the terminal.": [
+        "Das Theme des Terminals."
+    ],
+    "settings\u0004Treat option as meta key on macOS": [
+        "Option als Metataste unter macOS behandeln"
+    ],
+    "settings\u0004Use default": [
+        "Standard verwenden"
+    ],
+    "settings\u0004Variable filter": [
+        "Variablen-Filter"
+    ],
+    "settings\u0004Variables to filter out in the tree and table viewers": [
+        "Variablen, die in der Baum- und Tabellenansicht herausgefiltert werden sollen"
+    ],
+    "settings\u0004When enabled, which is the default, doing copy or cut when there is no selection will copy or cut the whole lines that have cursors on them.": [
+        "Wenn diese Funktion aktiviert ist (Standardeinstellung), werden beim Kopieren oder Ausschneiden ohne Auswahl die gesamten Zeilen mit Cursor kopiert oder ausgeschnitten."
+    ],
+    "settings\u0004Whether the command palette should be modal or in the left panel.": [
+        "Ob die Befehlspalette modal oder im linken Panel sein soll."
+    ],
+    "settings\u0004Whether the console interaction mimics the notebook\nor terminal keyboard shortcuts.": [
+        "Ob die Konsoleninteraktion die Tastaturk\u00fcrzel des Notebooks\noder Terminal-Tastaturkurzbefehle nachahmt."
+    ],
+    "settings\u0004Whether the item is disabled or not": [
+        "Ob das Element deaktiviert ist oder nicht"
+    ],
+    "settings\u0004Whether the menu is disabled or not": [
+        "Ob das Men\u00fc deaktiviert ist oder nicht"
+    ],
+    "settings\u0004Whether to autosave documents": [
+        "Ob Dokumente automatisch gespeichert werden sollen"
+    ],
+    "settings\u0004Whether to hide YAML front matter.\nThe YAML front matter must be placed at the top of the document,\nstarted by a line of three dashes (---) and ended by a line of\nthree dashes (---) or three points (...).": [
+        "Ob der YAML-Vorspann ausgeblendet werden soll.\nDer YAML-Virspann muss am Anfang des Dokuments stehen,\ndurch eine Zeile mit drei Strichen (---) eingeleitet und durch eine Zeile mit\ndrei Bindestrichen (---) oder drei Punkten (...) abgeschlossen werden."
+    ],
+    "settings\u0004Whether to include cell output in headings": [
+        "Ob die Zellausgabe in \u00dcberschriften einbezogen werden soll"
+    ],
+    "settings\u0004Whether to number first-level headings": [
+        "Nummerierung der \u00dcberschriften der ersten Ebene"
+    ],
+    "settings\u0004Whether to scroll past the end of text document": [
+        "Ob \u00fcber das Ende des Textdokuments hinaus gescrollt werden soll"
+    ],
+    "settings\u0004Whether to show hidden files": [
+        "Ob versteckte Dateien angezeigt werden sollen"
+    ],
+    "settings\u0004Whether to show status bar or not": [
+        "Ob die Statusleiste angezeigt werden soll oder nicht"
+    ],
+    "settings\u0004Whether to show the last modified column": [
+        "Ob die zuletzt ge\u00e4nderte Spalte angezeigt werden soll"
+    ],
+    "settings\u0004font-family": [
+        "Schriftfamilie"
+    ],
+    "settings\u0004font-size": [
+        "Schriftgr\u00f6\u00dfe"
     ],
     "showErrorMessage\u0004Delete Failed": [
         "L\u00f6schen fehlgeschlagen"
@@ -1789,6 +2464,9 @@
     ],
     "showErrorMessage\u0004Upload Error": [
         "Upload fehlgeschlagen"
+    ],
+    "syntax error": [
+        "Syntaxfehler"
     ],
     "tab": [
         "Tab"
