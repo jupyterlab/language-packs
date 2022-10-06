@@ -5,6 +5,7 @@
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * beweta ([@beweta](https://crowdin.com/profile/beweta))
 * Frédéric Collonval ([@fcollonval](https://crowdin.com/profile/fcollonval))
+* Alek Cesarz ([@alek-cesarz](https://crowdin.com/profile/alek-cesarz))
 * r4 ([@r4](https://crowdin.com/profile/r4))
 * asteppke ([@asteppke](https://crowdin.com/profile/asteppke))
 * Florian Harz ([@Superharz](https://crowdin.com/profile/Superharz))
