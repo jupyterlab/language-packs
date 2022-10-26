@@ -3,6 +3,7 @@
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * Igor Mahov ([@Igormahov](https://crowdin.com/profile/Igormahov))
+* Дмитрий Кондрашов ([@D1moncheck](https://crowdin.com/profile/D1moncheck))
 * Konstantin Taletskiy ([@ktaletsk](https://crowdin.com/profile/ktaletsk))
 * vfdev ([@vfdev-5](https://crowdin.com/profile/vfdev-5))
 * Mike ([@insolor](https://crowdin.com/profile/insolor))
