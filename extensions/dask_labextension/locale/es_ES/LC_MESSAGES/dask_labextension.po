@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 95\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2022-01-10 07:24\n"
+"PO-Revision-Date: 2022-11-02 08:41\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
@@ -43,6 +43,36 @@ msgstr ""
 msgctxt "settings"
 msgid "Auto-Start Client"
 msgstr "Autoiniciar Cliente"
+
+#: /schema/plugin.json:/properties/browserDashboardCheck/description
+msgctxt "settings"
+msgid "If set to true, the extension will check for the Dask dashboard from the user's browser. This is useful for testing the dashboard when behind a browser-cookie based authentication."
+msgstr ""
+
+#: /schema/plugin.json:/properties/browserDashboardCheck/description
+msgctxt "settings"
+msgid "If set to true, the test dashboard will be validated within the browser environment. This is useful for testing the dashboard when behind a browser-cookie based authentication."
+msgstr ""
+
+#: /schema/plugin.json:/properties/browserDashboardCheck/title
+msgctxt "settings"
+msgid "Check dashboards via browser."
+msgstr ""
+
+#: /schema/plugin.json:/properties/browserDashboardCheck/title
+msgctxt "settings"
+msgid "Determine whether to validate dashboards via browser check."
+msgstr ""
+
+#: /schema/plugin.json:/properties/defaultLayout/description
+msgctxt "settings"
+msgid "This allows you to store a default layout for your Dask dashboard panels. It is stored as an object keyed by the individual chart names. Each value in the object is an object storing `mode`, which specifies how the chart is to be added to the main area, and `ref`, which is an (optional) reference to another chart. If `ref` is supplied, then `mode` will be with respect to that chart, if it is not supplied, then `mode` will be with respect to the main area. The default value for this option provides a relatively simple example specification."
+msgstr ""
+
+#: /schema/plugin.json:/properties/defaultLayout/title
+msgctxt "settings"
+msgid "Default layout for Dask Dashboard panels"
+msgstr ""
 
 #: /schema/plugin.json:/properties/defaultURL/title
 msgctxt "settings"
