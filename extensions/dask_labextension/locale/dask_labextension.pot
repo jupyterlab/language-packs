@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: dask_labextension 5.3.0\n"
+"Project-Id-Version: dask_labextension 6.0.0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -38,12 +38,32 @@ msgstr ""
 
 #: /schema/plugin.json:/properties/browserDashboardCheck/description
 msgctxt "settings"
+msgid "If set to true, the extension will check for the Dask dashboard from the user's browser. This is useful for testing the dashboard when behind a browser-cookie based authentication."
+msgstr ""
+
+#: /schema/plugin.json:/properties/browserDashboardCheck/description
+msgctxt "settings"
 msgid "If set to true, the test dashboard will be validated within the browser environment. This is useful for testing the dashboard when behind a browser-cookie based authentication."
 msgstr ""
 
 #: /schema/plugin.json:/properties/browserDashboardCheck/title
 msgctxt "settings"
+msgid "Check dashboards via browser."
+msgstr ""
+
+#: /schema/plugin.json:/properties/browserDashboardCheck/title
+msgctxt "settings"
 msgid "Determine whether to validate dashboards via browser check."
+msgstr ""
+
+#: /schema/plugin.json:/properties/defaultLayout/description
+msgctxt "settings"
+msgid "This allows you to store a default layout for your Dask dashboard panels. It is stored as an object keyed by the individual chart names. Each value in the object is an object storing `mode`, which specifies how the chart is to be added to the main area, and `ref`, which is an (optional) reference to another chart. If `ref` is supplied, then `mode` will be with respect to that chart, if it is not supplied, then `mode` will be with respect to the main area. The default value for this option provides a relatively simple example specification."
+msgstr ""
+
+#: /schema/plugin.json:/properties/defaultLayout/title
+msgctxt "settings"
+msgid "Default layout for Dask Dashboard panels"
 msgstr ""
 
 #: /schema/plugin.json:/properties/defaultURL/title
