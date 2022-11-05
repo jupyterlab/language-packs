@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 95\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2022-11-05 01:16\n"
+"PO-Revision-Date: 2022-11-05 03:40\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
@@ -67,7 +67,7 @@ msgstr "确定是否通过浏览器发起验证仪表盘的检查。"
 #: /schema/plugin.json:/properties/defaultLayout/description
 msgctxt "settings"
 msgid "This allows you to store a default layout for your Dask dashboard panels. It is stored as an object keyed by the individual chart names. Each value in the object is an object storing `mode`, which specifies how the chart is to be added to the main area, and `ref`, which is an (optional) reference to another chart. If `ref` is supplied, then `mode` will be with respect to that chart, if it is not supplied, then `mode` will be with respect to the main area. The default value for this option provides a relatively simple example specification."
-msgstr ""
+msgstr "Dask仪表盘面板的默认布局将被保存为一个对象。每个单独的图表对应布局对象的一个键-值对：键的名字就是图表的名字，键的取值则是一个对象。该对象必须包含一个`mode`键-值对，其取值规定了如何在主区域中添加当前图表。如果它还同时包含一个`ref`键-值对，其取值是对另一个图表的引用，则`mode`的取值规定了如何在被引用的图表中添加当前图表。本选项的默认取值提供了一个相对简单的示例。"
 
 #: /schema/plugin.json:/properties/defaultLayout/title
 msgctxt "settings"
