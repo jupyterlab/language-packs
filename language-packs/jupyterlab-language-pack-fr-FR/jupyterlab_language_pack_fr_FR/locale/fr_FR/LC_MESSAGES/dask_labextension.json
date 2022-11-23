@@ -20,6 +20,9 @@
     "settings\u0004Auto-Start Client": [
         "D\u00e9marrage automatique du client"
     ],
+    "settings\u0004Check dashboards via browser.": [
+        "V\u00e9rifier les tableaux de bord via le navigateur."
+    ],
     "settings\u0004Dask": [
         "Dask"
     ],
@@ -29,13 +32,28 @@
     "settings\u0004Default URL for the Dask Dashboard Webserver": [
         "URL par d\u00e9faut pour le serveur Web du tableau de bord du Dask"
     ],
+    "settings\u0004Default layout for Dask Dashboard panels": [
+        "Disposition par d\u00e9faut pour le tableau de bord Dask"
+    ],
+    "settings\u0004Determine whether to validate dashboards via browser check.": [
+        "D\u00e9termine s'il faut valider les tableaux de bord via la v\u00e9rification du navigateur."
+    ],
     "settings\u0004Hide Cluster Manager": [
         "Masquer le gestionnaire de cluster"
     ],
     "settings\u0004If set to true, every notebook and console will automatically have a dask client for the active cluster injected into the kernel under the name 'client'": [
         "Si d\u00e9fini \u00e0 true, chaque notebook et console aura automatiquement un client dask pour le cluster actif inject\u00e9 dans le noyau sous le nom de 'client'"
     ],
+    "settings\u0004If set to true, the extension will check for the Dask dashboard from the user's browser. This is useful for testing the dashboard when behind a browser-cookie based authentication.": [
+        "Si activ\u00e9, l'extension v\u00e9rifiera le tableau de bord Dask \u00e0 partir du navigateur de l'utilisateur. Ceci est utile pour tester le tableau de bord prot\u00e9g\u00e9 par une authentification bas\u00e9e sur les cookies du navigateur."
+    ],
+    "settings\u0004If set to true, the test dashboard will be validated within the browser environment. This is useful for testing the dashboard when behind a browser-cookie based authentication.": [
+        "Si activ\u00e9, le tableau de bord de test sera valid\u00e9 dans l'environnement du navigateur. Ceci est utile pour tester le tableau de bord prot\u00e9g\u00e9 par une authentification bas\u00e9e sur les cookies du navigateur."
+    ],
     "settings\u0004Some deployments don't want to or are unable to use the cluster manager feature. Toggle to hide it from the user interface (note: this does not disable the underlying functionality).": [
         "Certains d\u00e9ploiements ne veulent pas ou ne sont pas capables d'utiliser la fonctionnalit\u00e9 de gestion du cluster. Activer/d\u00e9sactiver cette fonction de l'interface utilisateur (note: cela ne d\u00e9sactive pas la fonctionnalit\u00e9 sous-jacente)."
+    ],
+    "settings\u0004This allows you to store a default layout for your Dask dashboard panels. It is stored as an object keyed by the individual chart names. Each value in the object is an object storing `mode`, which specifies how the chart is to be added to the main area, and `ref`, which is an (optional) reference to another chart. If `ref` is supplied, then `mode` will be with respect to that chart, if it is not supplied, then `mode` will be with respect to the main area. The default value for this option provides a relatively simple example specification.": [
+        "Cela vous permet de stocker une mise en page par d\u00e9faut pour votre tableau de bord Dask. Il est stock\u00e9 sous la forme d'un objet cl\u00e9 par les noms individuels du graphique. Chaque valeur dans l'objet est un objet stockant le `mode`, qui sp\u00e9cifie comment le graphique doit \u00eatre ajout\u00e9 \u00e0 la zone principale, et `ref`, qui est une r\u00e9f\u00e9rence (optionnelle) \u00e0 un autre graphique. Si `ref` est fourni, alors `mode` sera en fonction de ce graphique, si elle n'est pas fournie, alors `mode` sera li\u00e9 \u00e0 la zone principale. La valeur par d\u00e9faut de cette option fournit un exemple relativement simple."
     ]
 }

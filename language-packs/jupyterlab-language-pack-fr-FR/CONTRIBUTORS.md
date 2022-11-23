@@ -13,6 +13,7 @@
 * eupha ([@eupha](https://crowdin.com/profile/eupha))
 * Jeremy Tuloup ([@jtpio](https://crowdin.com/profile/jtpio))
 * Éric Gaspar ([@erga](https://crowdin.com/profile/erga))
+* Pierreglg ([@Pierreglg](https://crowdin.com/profile/Pierreglg))
 * Loïc Houpert ([@lhoupert](https://crowdin.com/profile/lhoupert))
 * Pierre Poulain ([@pierrepo](https://crowdin.com/profile/pierrepo))
 * mocquin ([@mocquin](https://crowdin.com/profile/mocquin))
