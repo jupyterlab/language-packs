@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 95\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2022-02-20 06:28\n"
+"PO-Revision-Date: 2022-11-05 03:40\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
@@ -43,6 +43,36 @@ msgstr "如果设置为 true，每个记事本和控制台都会自动为当前�
 msgctxt "settings"
 msgid "Auto-Start Client"
 msgstr "自启动客户端"
+
+#: /schema/plugin.json:/properties/browserDashboardCheck/description
+msgctxt "settings"
+msgid "If set to true, the extension will check for the Dask dashboard from the user's browser. This is useful for testing the dashboard when behind a browser-cookie based authentication."
+msgstr "如果设置为 true，扩展将会从用户的浏览器（而不是服务端）发起验证Dask仪表盘的检查。这适合验证采用基于浏览器cookie身份认证的仪表盘。"
+
+#: /schema/plugin.json:/properties/browserDashboardCheck/description
+msgctxt "settings"
+msgid "If set to true, the test dashboard will be validated within the browser environment. This is useful for testing the dashboard when behind a browser-cookie based authentication."
+msgstr "如果设置为 true，将在浏览器环境中验证测试仪表盘。这是适合测试基于浏览器cookie的身份认证的仪表盘。"
+
+#: /schema/plugin.json:/properties/browserDashboardCheck/title
+msgctxt "settings"
+msgid "Check dashboards via browser."
+msgstr "通过浏览器发起验证仪表盘的检查。"
+
+#: /schema/plugin.json:/properties/browserDashboardCheck/title
+msgctxt "settings"
+msgid "Determine whether to validate dashboards via browser check."
+msgstr "确定是否通过浏览器发起验证仪表盘的检查。"
+
+#: /schema/plugin.json:/properties/defaultLayout/description
+msgctxt "settings"
+msgid "This allows you to store a default layout for your Dask dashboard panels. It is stored as an object keyed by the individual chart names. Each value in the object is an object storing `mode`, which specifies how the chart is to be added to the main area, and `ref`, which is an (optional) reference to another chart. If `ref` is supplied, then `mode` will be with respect to that chart, if it is not supplied, then `mode` will be with respect to the main area. The default value for this option provides a relatively simple example specification."
+msgstr "Dask仪表盘面板的默认布局将被保存为一个对象。每个单独的图表对应布局对象的一个键-值对：键的名字就是图表的名字，键的取值则是一个对象。该对象必须包含一个`mode`键-值对，其取值规定了如何在主区域中添加当前图表。如果它还同时包含一个`ref`键-值对，其取值是对另一个图表的引用，则`mode`的取值规定了如何在被引用的图表中添加当前图表。本选项的默认取值提供了一个相对简单的示例。"
+
+#: /schema/plugin.json:/properties/defaultLayout/title
+msgctxt "settings"
+msgid "Default layout for Dask Dashboard panels"
+msgstr "仪表盘面板的默认布局"
 
 #: /schema/plugin.json:/properties/defaultURL/title
 msgctxt "settings"
