@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 93\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2022-11-29 11:32\n"
+"PO-Revision-Date: 2022-11-29 13:27\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -34,13 +34,14 @@ msgstr "Markdownのレンダリングに使用する行の高さ。\n"
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontFamily/title /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/fontFamily/title /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/fontFamily/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontFamily/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/fontFamily/title
 msgctxt "settings"
 msgid "Font Family"
-msgstr "フォントファミリー"
+msgstr "フォントの種類"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontSize/description /packages/markdownviewer-extension/schema/plugin.json:/properties/fontSize/description
 msgctxt "settings"
 msgid "The size in pixel of the font used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr ""
+msgstr "マークダウンの表示に使用されるフォントのピクセルサイズ。\n"
+"「null」の場合、現在のテーマの値が使用されます。"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontSize/title /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/fontSize/title /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/fontSize/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontSize/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/fontSize/title
 msgctxt "settings"
@@ -53,44 +54,49 @@ msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr ""
+msgstr "YAML Front-matterを非表示にするかどうか。\n"
+"YAML Front-matterはドキュメントの先頭に配置する必要があります。\n"
+"3つのダッシュ (---) の行で始まり、\n"
+"3つのダッシュ (---) または 3 つの点 (...)の行で終ります。"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/hideFrontMatter/title /packages/markdownviewer-extension/schema/plugin.json:/properties/hideFrontMatter/title
 msgctxt "settings"
 msgid "Hide Front Matter"
-msgstr ""
+msgstr "Front-matterを隠す"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/lineHeight/description /packages/markdownviewer-extension/schema/plugin.json:/properties/lineHeight/description
 msgctxt "settings"
 msgid "The line height used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr ""
+msgstr "マークダウンの表示に使用される行の高さ。\n"
+"「null」の場合、現在のテーマの値が使用されます。"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/lineHeight/title /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/lineHeight/title /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/lineHeight/title /packages/markdownviewer-extension/schema/plugin.json:/properties/lineHeight/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/lineHeight/title
 msgctxt "settings"
 msgid "Line Height"
-msgstr ""
+msgstr "行の高さ"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/lineWidth/description /packages/markdownviewer-extension/schema/plugin.json:/properties/lineWidth/description
 msgctxt "settings"
 msgid "The text line width expressed in CSS ch units.\n"
 "If `null`, lines fit the viewport width."
-msgstr ""
+msgstr "CSSのch単位で表されるテキスト行の幅。\n"
+"「null」の場合、行幅はビューポートの幅に合わせます。"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/lineWidth/title /packages/markdownviewer-extension/schema/plugin.json:/properties/lineWidth/title
 msgctxt "settings"
 msgid "Line Width"
-msgstr ""
+msgstr "行の幅"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/renderTimeout/description /packages/markdownviewer-extension/schema/plugin.json:/properties/renderTimeout/description
 msgctxt "settings"
 msgid "The render timeout in milliseconds."
-msgstr ""
+msgstr "描画タイムアウト(ms単位)"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/renderTimeout/title /packages/markdownviewer-extension/schema/plugin.json:/properties/renderTimeout/title
 msgctxt "settings"
 msgid "Render Timeout"
-msgstr ""
+msgstr "描画タイムアウト"
 
 #: /examples/federated/md_package/schema/plugin.json:/title /packages/markdownviewer-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -100,72 +106,72 @@ msgstr "Markdown ビューア"
 #: /packages/application-extension/schema/commands.json:/description
 msgctxt "schema"
 msgid "Application commands settings."
-msgstr ""
+msgstr "アプリケーションコマンドの設定。"
 
 #: /packages/application-extension/schema/commands.json:/title
 msgctxt "schema"
 msgid "Application Commands"
-msgstr ""
+msgstr "アプリケーションコマンド"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/disabled/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/disabled/description
 msgctxt "settings"
 msgid "Whether the menu is disabled or not"
-msgstr ""
+msgstr "メニューが無効かどうか"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/icon/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/icon/description
 msgctxt "settings"
 msgid "Menu icon id"
-msgstr ""
+msgstr "メニューアイコンID"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/id/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/id/description
 msgctxt "settings"
 msgid "Menu unique id"
-msgstr ""
+msgstr "メニューユニークID"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/items/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/items/description
 msgctxt "settings"
 msgid "Menu items"
-msgstr ""
+msgstr "メニュー項目"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/label/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/label/description
 msgctxt "settings"
 msgid "Menu label"
-msgstr ""
+msgstr "メニューラベル"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/mnemonic/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/mnemonic/description
 msgctxt "settings"
 msgid "Mnemonic index for the label"
-msgstr ""
+msgstr "ラベルのニーモニックインデックス"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/rank/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/rank/description
 msgctxt "settings"
 msgid "Menu rank"
-msgstr ""
+msgstr "メニューランク"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/args/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/args/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/args/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/args/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/args/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/args/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/args/title /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/args/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/args/title
 msgctxt "settings"
 msgid "Command arguments"
-msgstr ""
+msgstr "コマンド引数"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/command/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/command/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/command/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/command/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/command/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/command/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/command/title /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/command/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/command/title
 msgctxt "settings"
 msgid "Command id"
-msgstr ""
+msgstr "コマンドID"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/disabled/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/disabled/description
 msgctxt "settings"
 msgid "Whether the item is disabled or not"
-msgstr ""
+msgstr "アイテムが無効かどうか"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/rank/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/rank/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/rank/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/rank/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/rank/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/rank/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/rank/title /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/rank/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/rank/title
 msgctxt "settings"
 msgid "Item rank"
-msgstr ""
+msgstr "アイテムランク"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/submenu/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/submenu/description
 msgctxt "settings"
 msgid "Submenu definition"
-msgstr ""
+msgstr "サブメニュー定義"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/type/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/type/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/type/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/type/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/type/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/type/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/type/title /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/type/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/type/title
 msgctxt "settings"
@@ -175,12 +181,12 @@ msgstr ""
 #: /packages/application-extension/schema/context-menu.json:/description
 msgctxt "schema"
 msgid "JupyterLab context menu settings."
-msgstr ""
+msgstr "JupyterLabコンテキストメニューの設定。"
 
 #: /packages/application-extension/schema/context-menu.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Application Context Menu"
-msgstr ""
+msgstr "アプリケーションコンテキストメニュー"
 
 #: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/description
 msgctxt "settings"
@@ -197,42 +203,53 @@ msgid "Note: To disable a context menu item,\n"
 "  ]\n"
 "}\n\n"
 "Context menu description:"
-msgstr ""
+msgstr "注: コンテキスト メニュー項目を無効にするには、\n"
+"「disabled」キーをユーザー設定にコピーして追加します。\n"
+"次の例では、ファイルのダウンロード アイテムを無効にします。:\n"
+"{\n"
+"  \"contextMenu\": [\n"
+"    {\n"
+"      \"command\": \"filebrowser:download\",\n"
+"      \"selector\": \".jp-DirListing-item[data-isdir=\\\"false\\\"]\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"コンテキストメニュー詳細:"
 
 #: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/items/allOf[1]/properties/selector/description
 msgctxt "settings"
 msgid "The CSS selector for the context menu item."
-msgstr ""
+msgstr "コンテキストメニュー項目のCSSセレクター。"
 
 #: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/title
 msgctxt "settings"
 msgid "The application context menu."
-msgstr ""
+msgstr "アプリケーションコンテキストメニュー。"
 
 #: /packages/application-extension/schema/context-menu.json:/title
 msgctxt "schema"
 msgid "Application Context Menu"
-msgstr ""
+msgstr "アプリケーションコンテキストメニュー"
 
 #: /packages/application-extension/schema/shell.json:/description
 msgctxt "schema"
 msgid "JupyterLab Shell layout settings."
-msgstr ""
+msgstr "JupyterLabシェルレイアウトの設定。"
 
 #: /packages/application-extension/schema/shell.json:/properties/hiddenMode/description
 msgctxt "settings"
 msgid "The method for hiding widgets in the main dock panel. Using `scale` will increase performance on Firefox but don't use it with Chrome, Chromium or Edge."
-msgstr ""
+msgstr "メインドックパネルでウィジェットを非表示にするメソッド。 「scale」 を使用すると Firefoxでのパフォーマンスが向上します。Chrome,Chromium,Edgeでは使用しないでください。"
 
 #: /packages/application-extension/schema/shell.json:/properties/hiddenMode/title
 msgctxt "settings"
 msgid "Hidden mode of main panel widgets"
-msgstr ""
+msgstr "メインパネルウィジェットの非表示モード"
 
 #: /packages/application-extension/schema/shell.json:/title
 msgctxt "schema"
 msgid "JupyterLab Shell"
-msgstr ""
+msgstr "JupyterLabシェル"
 
 #: /packages/application-extension/schema/sidebar.json:/description
 msgctxt "schema"
@@ -249,12 +266,14 @@ msgctxt "settings"
 msgid "Overrides for where to show sidebar items\n"
 "e.g., {\"jp-debugger-sidebar\": \"left\"}\n"
 "You can also change this by right-clicking the sidebar icons."
-msgstr ""
+msgstr "サイドバーアイテムを表示する位置の設定\n"
+"例: {\"jp-debugger-sidebar\": \"left\"}\n"
+"サイドバーのアイコンを右クリックして、変更することもできます。"
 
 #: /packages/application-extension/schema/sidebar.json:/properties/overrides/title
 msgctxt "settings"
 msgid "Overrides"
-msgstr ""
+msgstr "アイテム表示位置"
 
 #: /packages/application-extension/schema/sidebar.json:/title
 msgctxt "schema"
@@ -269,12 +288,12 @@ msgstr "コマンドパレットの設定。"
 #: /packages/apputils-extension/schema/palette.json:/properties/modal/description
 msgctxt "settings"
 msgid "Whether the command palette should be modal or in the left panel."
-msgstr ""
+msgstr "コマンドパレットをモーダルにするか、左側のパネルにするか。"
 
 #: /packages/apputils-extension/schema/palette.json:/properties/modal/title
 msgctxt "settings"
 msgid "Modal Command Palette"
-msgstr ""
+msgstr "モーダルコマンドパレット"
 
 #: /packages/apputils-extension/schema/palette.json:/title
 msgctxt "schema"
@@ -682,7 +701,7 @@ msgstr "コード コンソール"
 #: /packages/csvviewer-extension/schema/csv.json:/description
 msgctxt "schema"
 msgid "CSV Viewer settings."
-msgstr ""
+msgstr "CSVビュワーの設定。"
 
 #: /packages/csvviewer-extension/schema/csv.json:/properties/toolbar/description /packages/csvviewer-extension/schema/tsv.json:/properties/toolbar/description
 msgctxt "settings"
@@ -698,32 +717,43 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "注: ツールバー項目を無効にするには、\n"
+"「disabled」キーをユーザー設定にコピーして追加します。\n"
+"次の例では、デリミタアイテムを無効にします。:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"delimiter\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"ツールバー詳細:"
 
 #: /packages/csvviewer-extension/schema/csv.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "CSV viewer toolbar items"
-msgstr ""
+msgstr "CSVビュアーツールバーアイテム"
 
 #: /packages/csvviewer-extension/schema/csv.json:/title
 msgctxt "schema"
 msgid "CSV Viewer"
-msgstr ""
+msgstr "CSVビュアー"
 
 #: /packages/csvviewer-extension/schema/tsv.json:/description
 msgctxt "schema"
 msgid "TSV Viewer settings."
-msgstr ""
+msgstr "TSVビュアーの設定。"
 
 #: /packages/csvviewer-extension/schema/tsv.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "TSV viewer toolbar items"
-msgstr ""
+msgstr "TSVビュアーツールバーアイテム"
 
 #: /packages/csvviewer-extension/schema/tsv.json:/title
 msgctxt "schema"
 msgid "TSV Viewer"
-msgstr ""
+msgstr "TSVビュアー"
 
 #: /packages/debugger-extension/schema/main.json:/description
 msgctxt "schema"
@@ -733,7 +763,7 @@ msgstr "デバッガ設定"
 #: /packages/debugger-extension/schema/main.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Debugger"
-msgstr ""
+msgstr "デバッガ"
 
 #: /packages/debugger-extension/schema/main.json:/properties/autoCollapseDebuggerSidebar/description
 msgctxt "settings"
@@ -748,22 +778,22 @@ msgstr ""
 #: /packages/debugger-extension/schema/main.json:/properties/defaultKernelSourcesFilter/description
 msgctxt "settings"
 msgid "A regular expression filter to apply by default when showing the kernel sources"
-msgstr ""
+msgstr "カーネルソースを表示するときにデフォルトで適用される正規表現フィルター"
 
 #: /packages/debugger-extension/schema/main.json:/properties/defaultKernelSourcesFilter/title
 msgctxt "settings"
 msgid "Default kernel sources regexp filter"
-msgstr ""
+msgstr "カーネルソース表示の正規表現フィルター"
 
 #: /packages/debugger-extension/schema/main.json:/properties/variableFilters/description
 msgctxt "settings"
 msgid "Variables to filter out in the tree and table viewers"
-msgstr ""
+msgstr "ツリービューアーとテーブルビューアーで除外する変数"
 
 #: /packages/debugger-extension/schema/main.json:/properties/variableFilters/title
 msgctxt "settings"
 msgid "Variable filter"
-msgstr ""
+msgstr "変数フィルター"
 
 #: /packages/debugger-extension/schema/main.json:/title
 msgctxt "schema"
@@ -773,12 +803,12 @@ msgstr "デバッガ"
 #: /packages/docmanager-extension/schema/download.json:/description
 msgctxt "schema"
 msgid "Document Manager Download settings."
-msgstr ""
+msgstr "ドキュメントマネージャダウンロードの設定。"
 
 #: /packages/docmanager-extension/schema/download.json:/title
 msgctxt "schema"
 msgid "Document Manager Download"
-msgstr ""
+msgstr "ドキュメントマネージャダウンロード"
 
 #: /packages/docmanager-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -788,7 +818,7 @@ msgstr "テーママネージャの設定。"
 #: /packages/docmanager-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Document Manager"
-msgstr ""
+msgstr "ドキュメントマネージャ"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/autosave/description
 msgctxt "settings"
@@ -1024,7 +1054,7 @@ msgstr ""
 #: /packages/filebrowser-extension/schema/open-with.json:/jupyter.lab.menus/context[0]/submenu/label
 msgctxt "menu"
 msgid "Open With"
-msgstr ""
+msgstr "〜で開く"
 
 #: /packages/filebrowser-extension/schema/open-with.json:/title
 msgctxt "schema"
@@ -1065,17 +1095,17 @@ msgstr ""
 #: /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/cursorBlinkRate/title
 msgctxt "settings"
 msgid "Cursor blinking rate"
-msgstr ""
+msgstr "カーソル点滅周期"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/lineNumbers/title
 msgctxt "settings"
 msgid "Line Numbers"
-msgstr ""
+msgstr "行番号"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/showTrailingSpace/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/showTrailingSpace/title
 msgctxt "settings"
 msgid "Show Trailing Space"
-msgstr ""
+msgstr "末尾の空白を表示"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1085,7 +1115,7 @@ msgstr "テキストエディタの設定。"
 #: /packages/fileeditor-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[1]/submenu/label
 msgctxt "menu"
 msgid "Text Editor Indentation"
-msgstr ""
+msgstr "テキストエディタのインデント"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -1134,7 +1164,7 @@ msgstr "ヘルプ"
 #: /packages/htmlviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "HTML Viewer settings."
-msgstr ""
+msgstr "HTMLビュワーの設定。"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/toolbar/description
 msgctxt "settings"
@@ -1150,17 +1180,28 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "注: ツールバー項目を無効にするには、\n"
+"「disabled」キーをユーザー設定にコピーして追加します\n"
+"次の例では、更新項目を無効にします。:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"refresh\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"ツールバー詳細:"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "HTML viewer toolbar items"
-msgstr ""
+msgstr "HTMLビュワーツールバーアイテム"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "HTML Viewer"
-msgstr ""
+msgstr "HTMLビュワー"
 
 #: /packages/hub-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1322,12 +1363,33 @@ msgid "Note: To disable a menu or a menu item,\n"
 "  ]\n"
 "}\n\n"
 "Menu description:"
-msgstr ""
+msgstr "注: メニューまたはメニュー項目を無効にするには、\n"
+"「disabled」キーをユーザー設定にコピーして追加します。\n"
+"次の例は「カーネルを再起動して選択したセルまで実行する」アイテムとn\n"
+"「タブ」メニューを無効にします。:\n"
+"{\n"
+"  \"menus\": [\n"
+"    {\n"
+"      \"id\": \"jp-mainmenu-tabs\",\n"
+"      \"disabled\": true\n"
+"    },\n"
+"    {\n"
+"      \"id\": \"jp-mainmenu-kernel\",\n"
+"      \"items\": [\n"
+"        {\n"
+"          \"command\": \"notebook:restart-and-run-to-selected\",\n"
+"          \"disabled\": true\n"
+"        }\n"
+"      ]\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"メニュー詳細:"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/properties/menus/title
 msgctxt "settings"
 msgid "The application menu description."
-msgstr ""
+msgstr "アプリケーションメニューの説明。"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1337,22 +1399,22 @@ msgstr "メインメニュー"
 #: /packages/notebook-extension/schema/export.json:/description
 msgctxt "schema"
 msgid "Notebook Export settings."
-msgstr ""
+msgstr "Notebookエキスポート設定。"
 
 #: /packages/notebook-extension/schema/export.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
 msgctxt "menu"
 msgid "Save and Export Notebook As…"
-msgstr ""
+msgstr "名前を付けてNotebookをエキスポート…"
 
 #: /packages/notebook-extension/schema/export.json:/title
 msgctxt "schema"
 msgid "Notebook Export"
-msgstr ""
+msgstr "Notebookをエキスポート"
 
 #: /packages/notebook-extension/schema/panel.json:/description
 msgctxt "schema"
 msgid "Notebook Panel settings."
-msgstr ""
+msgstr "Notebookパネルの設定。"
 
 #: /packages/notebook-extension/schema/panel.json:/properties/toolbar/description
 msgctxt "settings"
@@ -1378,7 +1440,7 @@ msgstr ""
 #: /packages/notebook-extension/schema/panel.json:/title
 msgctxt "schema"
 msgid "Notebook Panel"
-msgstr ""
+msgstr "Notebookパネル"
 
 #: /packages/notebook-extension/schema/tracker.json:/definitions/kernelStatusConfig/properties/showOnStatusBar/description
 msgctxt "settings"
@@ -1708,62 +1770,62 @@ msgstr "ターミナル"
 #: /packages/terminal-extension/schema/plugin.json:/properties/closeOnExit/description
 msgctxt "settings"
 msgid "Close the widget when exiting the terminal."
-msgstr ""
+msgstr "ターミナルを終了した時にウェジットを閉じる。"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/closeOnExit/title
 msgctxt "settings"
 msgid "Close on exit"
-msgstr ""
+msgstr "終了で閉じる"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontFamily/description
 msgctxt "settings"
 msgid "The font family used to render text."
-msgstr ""
+msgstr "表示テキストに使用するフォントの種類。"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontFamily/title
 msgctxt "settings"
 msgid "Font family"
-msgstr ""
+msgstr "フォントの種類"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontSize/description
 msgctxt "settings"
 msgid "The font size used to render text."
-msgstr ""
+msgstr "表示テキストに使用するフォントサイズ。"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontSize/title
 msgctxt "settings"
 msgid "Font size"
-msgstr ""
+msgstr "フォントサイズ"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/lineHeight/description
 msgctxt "settings"
 msgid "The line height used to render text."
-msgstr ""
+msgstr "表示テキストに使用する行の高さ。"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/lineHeight/title
 msgctxt "settings"
 msgid "Line height"
-msgstr ""
+msgstr "行の高さ"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/macOptionIsMeta/description
 msgctxt "settings"
 msgid "Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word"
-msgstr ""
+msgstr "macOS のオプションキーはメタキーとして使用できます。 これにより、option+f などのショートカットを使用して、カーソルを1語前に移動できます"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/macOptionIsMeta/title
 msgctxt "settings"
 msgid "Treat option as meta key on macOS"
-msgstr ""
+msgstr "macOS でオプションをメタキーとして扱う"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/pasteWithCtrlV/description
 msgctxt "settings"
 msgid "Enable pasting with Ctrl+V.  This can be disabled to use Ctrl+V in the vi editor, for instance.  This setting has no effect on macOS, where Cmd+V is available"
-msgstr ""
+msgstr "Ctrl+V で貼り付けを有効にします。 これはvi エディター等で Ctrl+V を使用するために無効にすることができます。 この設定は、Cmd+V が使用可能なmacOS には影響しません。"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/pasteWithCtrlV/title
 msgctxt "settings"
 msgid "Paste with Ctrl+V"
-msgstr ""
+msgstr "Ctrl+Vで貼り付け"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/screenReaderMode/description
 msgctxt "settings"
@@ -1808,12 +1870,12 @@ msgstr "ターミナル"
 #: /packages/toc-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Table of contents settings."
-msgstr ""
+msgstr "目次の設定。"
 
 #: /packages/toc-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Table of Contents"
-msgstr ""
+msgstr "目次"
 
 #: /packages/toc-extension/schema/plugin.json:/properties/includeOutput/description
 msgctxt "settings"
@@ -1848,7 +1910,7 @@ msgstr ""
 #: /packages/toc-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Table of Contents"
-msgstr ""
+msgstr "目次"
 
 #: /packages/tooltip-extension/schema/consoles.json:/description
 msgctxt "schema"
@@ -1908,7 +1970,7 @@ msgstr ""
 #: /packages/translation-extension/schema/plugin.json:/properties/locale/description
 msgctxt "settings"
 msgid "Set the interface display language. Examples: 'es_CO', 'fr'."
-msgstr ""
+msgstr "表示に使用する言語を指定します。例:'ja_JP','es_CO','fr'"
 
 #: /packages/translation-extension/schema/plugin.json:/properties/locale/title
 msgctxt "settings"
@@ -2221,51 +2283,51 @@ msgstr "現在のワークスペースを保存"
 
 #: packages/apputils/src/kernelstatuses.ts:17
 msgid "Unknown"
-msgstr ""
+msgstr "不定"
 
 #: packages/apputils/src/kernelstatuses.ts:18
 msgid "Starting"
-msgstr ""
+msgstr "開始中"
 
 #: packages/apputils/src/kernelstatuses.ts:19
 msgid "Idle"
-msgstr ""
+msgstr "アイドル"
 
 #: packages/apputils/src/kernelstatuses.ts:20
 msgid "Busy"
-msgstr ""
+msgstr "実行中"
 
 #: packages/apputils/src/kernelstatuses.ts:21
 msgid "Terminating"
-msgstr ""
+msgstr "終了中"
 
 #: packages/apputils/src/kernelstatuses.ts:22
 msgid "Restarting"
-msgstr ""
+msgstr "再起動中"
 
 #: packages/apputils/src/kernelstatuses.ts:23
 msgid "Autorestarting"
-msgstr ""
+msgstr "自動実行中"
 
 #: packages/apputils/src/kernelstatuses.ts:24
 msgid "Dead"
-msgstr ""
+msgstr "停止"
 
 #: packages/apputils/src/kernelstatuses.ts:25
 msgid "Connected"
-msgstr ""
+msgstr "接続済み"
 
 #: packages/apputils/src/kernelstatuses.ts:26
 msgid "Connecting"
-msgstr ""
+msgstr "接続中"
 
 #: packages/apputils/src/kernelstatuses.ts:27
 msgid "Disconnected"
-msgstr ""
+msgstr "切断"
 
 #: packages/apputils/src/kernelstatuses.ts:28
 msgid "Initializing"
-msgstr ""
+msgstr "初期化中"
 
 #: packages/apputils/src/mainareawidget.ts:47
 msgid "notebook content"
@@ -2317,7 +2379,7 @@ msgstr "他のセッションのカーネルを使用する"
 
 #: packages/apputils/src/sessioncontext.tsx:1687
 msgid "Use No Kernel"
-msgstr ""
+msgstr "カーネルを使用しない"
 
 #: packages/apputils/src/sessioncontext.tsx:1689 packages/apputils/src/sessioncontext.tsx:613 packages/statusbar/src/defaults/kernelStatus.tsx:185
 msgid "No Kernel"
@@ -2429,7 +2491,7 @@ msgstr "すべてのカーネルのアクティビティを表示"
 
 #: packages/console-extension/src/index.ts:418
 msgid "Auto Close Brackets for Code Console Prompt"
-msgstr ""
+msgstr "コードコンソールプロンプトで括弧を自動で閉じる"
 
 #: packages/console-extension/src/index.ts:472
 msgid "New Console"
@@ -2557,7 +2619,7 @@ msgstr "区切り文字: "
 
 #: packages/debugger-extension/src/index.ts:192 packages/debugger-extension/src/index.ts:193
 msgid "Restart Kernel and Debug…"
-msgstr ""
+msgstr "カーネル再起動し、デバッグ…"
 
 #: packages/debugger-extension/src/index.ts:339 packages/debugger-extension/src/index.ts:340
 msgid "Inspect Variable"
@@ -2565,19 +2627,19 @@ msgstr "変数を調べる"
 
 #: packages/debugger-extension/src/index.ts:403
 msgid "Render Variable"
-msgstr ""
+msgstr "変数の表示"
 
 #: packages/debugger-extension/src/index.ts:404
 msgid "Render variable according to its mime type"
-msgstr ""
+msgstr "MIMEタイプに応じて変数を表示する"
 
 #: packages/debugger-extension/src/index.ts:616 packages/debugger-extension/src/index.ts:617 packages/debugger-extension/src/index.ts:623
 msgid "Evaluate Code"
-msgstr ""
+msgstr "コード評価"
 
 #: packages/debugger-extension/src/index.ts:624
 msgid "Evaluate"
-msgstr ""
+msgstr "評価"
 
 #: packages/debugger-extension/src/index.ts:651 packages/debugger-extension/src/index.ts:652
 msgid "Continue"
@@ -2601,23 +2663,23 @@ msgstr "ステップアウト"
 
 #: packages/debugger-extension/src/index.ts:703 packages/debugger-extension/src/index.ts:711
 msgid "Enable / Disable pausing on exceptions"
-msgstr ""
+msgstr "例外での一時停止の有効/無効"
 
 #: packages/debugger-extension/src/index.ts:708
 msgid "Disable pausing on exceptions"
-msgstr ""
+msgstr "例外での一時停止の無効"
 
 #: packages/debugger-extension/src/index.ts:709
 msgid "Enable pausing on exceptions"
-msgstr ""
+msgstr "例外での一時停止の有効"
 
 #: packages/debugger-extension/src/index.ts:710
 msgid "Kernel does not support pausing on exceptions."
-msgstr ""
+msgstr "カーネルは、例外での一時停止をサポートしていません。"
 
 #: packages/debugger-extension/src/index.ts:759
 msgid "Debugger section"
-msgstr ""
+msgstr "デバッガセクション"
 
 #: packages/debugger-extension/src/index.ts:764
 msgid "Debugger"
@@ -2625,15 +2687,15 @@ msgstr "デバッガ"
 
 #: packages/debugger/src/handler.ts:57
 msgid "Enable Debugger"
-msgstr ""
+msgstr "デバッガ有効"
 
 #: packages/debugger/src/handler.ts:59
 msgid "Disable Debugger"
-msgstr ""
+msgstr "デバッガ無効"
 
 #: packages/debugger/src/handler.ts:60
 msgid "Select a kernel that supports debugging to enable debugger"
-msgstr ""
+msgstr "デバッグをサポートするカーネルを選択して、デバッガーを有効にします"
 
 #: packages/debugger/src/panels/breakpoints/header.ts:25 packages/debugger/src/panels/breakpoints/index.ts:39
 msgid "Breakpoints"
@@ -2645,11 +2707,11 @@ msgstr "すべてのブレークポイントを削除する"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:63
 msgid "Are you sure you want to remove all breakpoints?"
-msgstr ""
+msgstr "全てのブレークポイントを削除して良いですか？"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:65
 msgid "Remove breakpoints"
-msgstr ""
+msgstr "ブレークポイントの削除"
 
 #: packages/debugger/src/panels/callstack/header.ts:25
 msgid "Callstack"
@@ -2882,7 +2944,7 @@ msgstr "%1 の新しいビュー"
 
 #: packages/docmanager-extension/src/index.tsx:931
 msgid "Rename%1…"
-msgstr ""
+msgstr "%1の名前変更…"
 
 #: packages/docmanager-extension/src/index.tsx:945
 msgid "Delete %1"
@@ -3233,12 +3295,14 @@ msgstr ""
 #: packages/extensionmanager/src/widget.tsx:384
 msgid "This is a prebuilt extension. To uninstall it, please\n"
 "    apply following instructions."
-msgstr ""
+msgstr "これはビルド済みの拡張機能です。 アンインストールするには、\n"
+"  次の手順を行います。"
 
 #: packages/extensionmanager/src/widget.tsx:394
 msgid "This is a prebuilt extension. To uninstall it, please\n"
 "    read the user guide on:"
-msgstr ""
+msgstr "これはビルド済みの拡張機能です。 アンインストールするには、\n"
+"  ユーザー ガイドをお読みください。:"
 
 #: packages/extensionmanager/src/widget.tsx:491
 msgid "No entries"
@@ -3388,7 +3452,7 @@ msgstr ""
 
 #: packages/filebrowser-extension/src/index.ts:730
 msgid "Open from URL…"
-msgstr ""
+msgstr "URLから開く…"
 
 #: packages/filebrowser-extension/src/index.ts:730 packages/filebrowser-extension/src/index.ts:732 packages/filebrowser-extension/src/index.ts:907 packages/filebrowser-extension/src/index.ts:909
 msgid "Open %1"
@@ -3396,7 +3460,7 @@ msgstr "%1を開く"
 
 #: packages/filebrowser-extension/src/index.ts:732
 msgid "Open from URL"
-msgstr ""
+msgstr "URLから開く"
 
 #: packages/filebrowser-extension/src/index.ts:739
 msgid "URL"
@@ -3404,11 +3468,11 @@ msgstr ""
 
 #: packages/filebrowser-extension/src/index.ts:741
 msgid "Open URL"
-msgstr ""
+msgstr "URLを開く"
 
 #: packages/filebrowser-extension/src/index.ts:760
 msgid "Could not open URL: %1"
-msgstr ""
+msgstr "URLから開く…"
 
 #: packages/filebrowser-extension/src/index.ts:762
 msgid "Cannot fetch"
@@ -3732,19 +3796,19 @@ msgstr "新しいPythonファイルを作成"
 
 #: packages/fileeditor-extension/src/index.ts:222
 msgid "New Julia File"
-msgstr ""
+msgstr "新規Juliaファイル"
 
 #: packages/fileeditor-extension/src/index.ts:223
 msgid "Create a new Julia file"
-msgstr ""
+msgstr "新しいJuliaファイルを作成"
 
 #: packages/fileeditor-extension/src/index.ts:234
 msgid "New R File"
-msgstr ""
+msgstr "新規Rファイル"
 
 #: packages/fileeditor-extension/src/index.ts:235
 msgid "Create a new R file"
-msgstr ""
+msgstr "新しいRファイルを作成"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:57
 msgid "Spaces"
@@ -4349,11 +4413,11 @@ msgstr "上にセルを貼り付け"
 
 #: packages/notebook-extension/src/index.ts:1951
 msgid "Duplicate Cells Below"
-msgstr ""
+msgstr "セルを複製"
 
 #: packages/notebook-extension/src/index.ts:1952
 msgid "Copy the selected cells and paste them below the selection"
-msgstr ""
+msgstr "選択したセルをコピーして、選択範囲の下に貼り付けます"
 
 #: packages/notebook-extension/src/index.ts:1966
 msgid "Paste Cells and Replace"
@@ -4373,11 +4437,11 @@ msgstr "選択したセルを結合"
 
 #: packages/notebook-extension/src/index.ts:2010
 msgid "Merge Cell Above"
-msgstr ""
+msgstr "上のセルと結合"
 
 #: packages/notebook-extension/src/index.ts:2021
 msgid "Merge Cell Below"
-msgstr ""
+msgstr "下のセルと結合"
 
 #: packages/notebook-extension/src/index.ts:2032
 msgid "Insert Cell Above"
@@ -4868,7 +4932,7 @@ msgstr "詳細設定エディタ"
 
 #: packages/settingeditor-extension/src/index.ts:303
 msgid "Advanced JSON Settings Editor"
-msgstr ""
+msgstr "JSON詳細設定エディタ"
 
 #: packages/settingeditor-extension/src/index.ts:317
 msgid "Revert User Settings"
@@ -5245,9 +5309,9 @@ msgstr "インターフェイスの言語を変更しますか?"
 
 #: packages/translation-extension/src/index.ts:133
 msgid "After changing the interface language to %1, you will need to reload JupyterLab to see the changes."
-msgstr ""
+msgstr "インターフェイス言語を%1に変更した後、JupyterLabを再読込みして変更を確認する必要があります。"
 
 #: packages/translation-extension/src/index.ts:139
 msgid "Change and reload"
-msgstr ""
+msgstr "変更して再読込み"
 
