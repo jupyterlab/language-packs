@@ -12,17 +12,17 @@ msgstr ""
 "X-Crowdin-File-ID: 97\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2022-12-07 04:55\n"
+"PO-Revision-Date: 2022-12-08 05:11\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
 msgid "jupyterlab-git settings."
-msgstr "주피터랩 깃 설정"
+msgstr "jupyterlab-git 설정"
 
 #: /schema/plugin.json:/jupyter.lab.menus/context[0]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/label
 msgctxt "menu"
 msgid "Git"
-msgstr "깃"
+msgstr "Git"
 
 #: /schema/plugin.json:/jupyter.lab.menus/main[0]/items[12]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/items[15]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/items[16]/submenu/label
 msgctxt "menu"
@@ -37,256 +37,256 @@ msgstr "원격 설정"
 #: /schema/plugin.json:/jupyter.lab.menus/main[0]/items[16]/submenu/items[1]/args/text
 msgctxt "schema"
 msgid "Git Documentation"
-msgstr "깃 문서"
+msgstr "Git 문서"
 
 #: /schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Git"
-msgstr "깃"
+msgstr "Git"
 
 #: /schema/plugin.json:/properties/blockWhileCommandExecutes/description
 msgctxt "settings"
 msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
-msgstr ""
+msgstr "Git 명령(예: commit, pull, reset, revert) 실행이 완료될 때까지 JupyterLab 사용자 상호 작용을 일시 중단합니다. 이 값을 true로 설정하면 데이터 손실, 충돌 및 손상된 Git 기록으로 이어질 수 있는 잠재적인 경쟁 조건을 완화하는 데 도움이 됩니다. 느린 네트워크를 실행하지 않는 한 UI 일시 중단은 표준 워크플로우를 방해하지 않아야 합니다. 이 값을 false로 설정하면 여러 Git 작업을 동시에 할 수 있습니다."
 
 #: /schema/plugin.json:/properties/blockWhileCommandExecutes/title
 msgctxt "settings"
 msgid "Suspend user interaction until commands finish"
-msgstr "명령어가 완료될때까지 사용자 상호작용을 일시중지합니다."
+msgstr "명령어가 완료될때까지 사용자 상호작용 일시중지"
 
 #: /schema/plugin.json:/properties/cancelPullMergeConflict/description
 msgctxt "settings"
 msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
-msgstr ""
+msgstr "True일 경우 원격 리포지토리에서 변경 내용을 가져오고 통합할 때 충돌하는 병합이 취소되고 작업 트리는 변경되지 않은 상태로 유지됩니다."
 
 #: /schema/plugin.json:/properties/cancelPullMergeConflict/title
 msgctxt "settings"
 msgid "Cancel pull merge conflict"
-msgstr ""
+msgstr "pull merge 충돌 취소"
 
 #: /schema/plugin.json:/properties/commitAndPush/description
 msgctxt "settings"
 msgid "Whether to trigger or not a push for each commit."
-msgstr ""
+msgstr "각 커밋에 대해 푸시를 트리거할지 여부입니다."
 
 #: /schema/plugin.json:/properties/commitAndPush/title
 msgctxt "settings"
 msgid "Trigger push on commit"
-msgstr ""
+msgstr "Commit과 동시에 push하기"
 
 #: /schema/plugin.json:/properties/disableBranchWithChanges/description
 msgctxt "settings"
 msgid "Disable all branch operations (new, switch) when there are changed/staged files"
-msgstr ""
+msgstr "변경/스테이지된 파일이 있는 경우 모든 브랜치 명령어(new, switch) 사용 안 함"
 
 #: /schema/plugin.json:/properties/disableBranchWithChanges/title
 msgctxt "settings"
 msgid "Disable branch with changes"
-msgstr ""
+msgstr "변경 사항이 있는 브랜치 사용 안 함"
 
 #: /schema/plugin.json:/properties/displayStatus/description
 msgctxt "settings"
 msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
-msgstr ""
+msgstr "JupyterLab 상태 표시줄에 Git 확장 상태 업데이트를 표시합니다. True일 경우 변경 사항 pulling 및 pushing, branch 전환, 변경 사항 폴링 등의 상태 업데이트를 JupyterLab 상태 표시줄에 표시합니다. 확장 활성 수준에 따라 일부 사용자는 상태 업데이트의 결함이 발생할 수도 있습니다. 이 경우 이 값을 false로 설정하면 시각적 노이즈가 감소합니다."
 
 #: /schema/plugin.json:/properties/displayStatus/title
 msgctxt "settings"
 msgid "Display Git status updates"
-msgstr ""
+msgstr "Git 상태 업데이트 표시"
 
 #: /schema/plugin.json:/properties/doubleClickDiff/description
 msgctxt "settings"
 msgid "If true, double clicking a file in the list of changed files will open a diff."
-msgstr ""
+msgstr "True 일 경우, 변경된 파일 목록에서 파일을 더블 클릭하면 diff를 열 수 있습니다."
 
 #: /schema/plugin.json:/properties/doubleClickDiff/description
 msgctxt "settings"
 msgid "If true, doubling clicking a file in the list of changed files will open a diff."
-msgstr ""
+msgstr "True 일 경우, 변경된 파일 목록에서 파일을 더블 클릭하면 diff를 열 수 있습니다."
 
 #: /schema/plugin.json:/properties/doubleClickDiff/title
 msgctxt "settings"
 msgid "Show diff on double click"
-msgstr ""
+msgstr "더블 클릭으로 diff 보기"
 
 #: /schema/plugin.json:/properties/historyCount/description
 msgctxt "settings"
 msgid "Number of (most recent) commits shown in the history log"
-msgstr ""
+msgstr "기록 로그에 표시된 (가장 최근의) 커밋 수"
 
 #: /schema/plugin.json:/properties/historyCount/title
 msgctxt "settings"
 msgid "History count"
-msgstr ""
+msgstr "기록 수"
 
 #: /schema/plugin.json:/properties/openFilesBehindWarning/description
 msgctxt "settings"
 msgid "If true, a popup dialog will be displayed if a user opens a file that is behind its remote branch version, or if an opened file has updates on the remote branch."
-msgstr ""
+msgstr "True일 경우 사용자가 원격 브랜치 버전 뒤에 있는 파일을 열거나 열려 있는 파일에 원격 브랜치에 대한 업데이트가 있는 경우 팝업 대화 상자가 표시됩니다."
 
 #: /schema/plugin.json:/properties/openFilesBehindWarning/title
 msgctxt "settings"
 msgid "Open files behind warning"
-msgstr ""
+msgstr "경고 뒤 파일 열기"
 
 #: /schema/plugin.json:/properties/refreshIfHidden/description
 msgctxt "settings"
 msgid "Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance."
-msgstr ""
+msgstr "Git 탭이 보이지 않을 때 Git status 확인 여부. 높은 성능을 위해서 `false`를 선택하십시오."
 
 #: /schema/plugin.json:/properties/refreshIfHidden/title
 msgctxt "settings"
 msgid "Refresh if the Git tab is hidden"
-msgstr ""
+msgstr "Git 탭이 숨겨져있다면 새로고침하십시오"
 
 #: /schema/plugin.json:/properties/refreshInterval/description
 msgctxt "settings"
 msgid "Number of milliseconds between polling the file system for changes."
-msgstr ""
+msgstr "파일 시스템에서 변경 사항을 폴링하는 간격(밀리초) 입니다."
 
 #: /schema/plugin.json:/properties/refreshInterval/title
 msgctxt "settings"
 msgid "Refresh interval"
-msgstr ""
+msgstr "새로고침 간격"
 
 #: /schema/plugin.json:/properties/simpleStaging/description
 msgctxt "settings"
 msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
-msgstr ""
+msgstr "True일 경우 단순화된 스테이징 개념을 사용합니다. staged/changed/untracked 상태로 표시되는 대신 변경 사항이 있는 파일만 표시되고 변경 사항이 있는 모든 파일은 자동으로 스테이지됩니다."
 
 #: /schema/plugin.json:/properties/simpleStaging/title
 msgctxt "settings"
 msgid "Simple staging flag"
-msgstr ""
+msgstr "간단한 스테이징 플래그"
 
 #: /schema/plugin.json:/title
 msgctxt "schema"
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: src/cloneCommand.ts:35 src/commandsAndMenu.tsx:286 src/commandsAndMenu.tsx:288 src/commandsAndMenu.tsx:289 src/commandsAndMenu.tsx:290 src/commandsAndMenu.tsx:293 src/components/GitPanel.tsx:454 src/components/GitPanel.tsx:470 src/components/GitPanel.tsx:475 src/components/GitPanel.tsx:483 src/components/GitPanel.tsx:497 src/components/GitPanel.tsx:505 src/components/GitPanel.tsx:604 src/components/GitPanel.tsx:605
 msgid "Clone a Repository"
-msgstr ""
+msgstr "레포지토리 복제"
 
 #: src/cloneCommand.ts:36 src/commandsAndMenu.tsx:287 src/commandsAndMenu.tsx:289 src/commandsAndMenu.tsx:290 src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:294
 msgid "Clone a repository from a URL"
-msgstr ""
+msgstr "URL의 레포지토리 복제"
 
 #: src/cloneCommand.ts:40 src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:293 src/commandsAndMenu.tsx:294 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:298
 msgid "Clone a repo"
-msgstr ""
+msgstr "레포 복제"
 
 #: src/cloneCommand.ts:44 src/commandsAndMenu.tsx:1001 src/commandsAndMenu.tsx:1002 src/commandsAndMenu.tsx:1044 src/commandsAndMenu.tsx:1045 src/commandsAndMenu.tsx:1070 src/commandsAndMenu.tsx:1086 src/commandsAndMenu.tsx:1108 src/commandsAndMenu.tsx:1112 src/commandsAndMenu.tsx:1113 src/commandsAndMenu.tsx:1129 src/commandsAndMenu.tsx:1151 src/commandsAndMenu.tsx:1155 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:204 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:297 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:302 src/commandsAndMenu.tsx:317 src/commandsAndMenu.tsx:323 src/commandsAndMenu.tsx:327 src/commandsAndMenu.tsx:432 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:449 src/commandsAndMenu.tsx:471 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:743 src/commandsAndMenu.tsx:745 src/commandsAndMenu.tsx:751 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:794 src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:819 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:878 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:942 src/commandsAndMenu.tsx:985 src/components/BranchMenu.tsx:344 src/components/BranchMenu.tsx:367 src/components/FileList.tsx:182 src/components/FileList.tsx:191 src/components/FileList.tsx:193 src/components/FileList.tsx:196 src/components/FileList.tsx:207 src/components/FileList.tsx:216 src/components/FileList.tsx:218 src/components/FileList.tsx:267 src/components/MergeBranchDialog.tsx:173 src/components/NewBranchDialog.tsx:202 src/components/NewBranchDialog.tsx:209 src/widgets/discardAllChanges.ts:25
 msgid "Cancel"
-msgstr ""
+msgstr "취소"
 
 #: src/cloneCommand.ts:45
 msgid "Clone"
-msgstr ""
+msgstr "복제"
 
 #: src/cloneCommand.ts:52
 msgid "Cloning…"
-msgstr ""
+msgstr "복제중..."
 
 #: src/cloneCommand.ts:62 src/cloneCommand.ts:66 src/cloneCommand.ts:67 src/commandsAndMenu.tsx:313 src/commandsAndMenu.tsx:315 src/commandsAndMenu.tsx:316 src/commandsAndMenu.tsx:317 src/commandsAndMenu.tsx:320
 msgid "Successfully cloned"
-msgstr ""
+msgstr "복제 성공"
 
 #: src/cloneCommand.ts:73 src/cloneCommand.ts:77 src/cloneCommand.ts:78 src/commandsAndMenu.tsx:324 src/commandsAndMenu.tsx:326 src/commandsAndMenu.tsx:327 src/commandsAndMenu.tsx:328 src/commandsAndMenu.tsx:331
 msgid "Failed to clone"
-msgstr ""
+msgstr "복제 실패"
 
 #: src/commandsAndMenu.tsx:1002 src/commandsAndMenu.tsx:1003 src/commandsAndMenu.tsx:1049 src/commandsAndMenu.tsx:1065 src/commandsAndMenu.tsx:1071 src/commandsAndMenu.tsx:1087 src/commandsAndMenu.tsx:1091 src/commandsAndMenu.tsx:1109 src/commandsAndMenu.tsx:1113 src/commandsAndMenu.tsx:722 src/commandsAndMenu.tsx:724 src/commandsAndMenu.tsx:730 src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:744 src/commandsAndMenu.tsx:746 src/commandsAndMenu.tsx:752 src/commandsAndMenu.tsx:755 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:857 src/commandsAndMenu.tsx:879 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:943 src/commandsAndMenu.tsx:980 src/commandsAndMenu.tsx:981 src/components/BranchMenu.tsx:345 src/components/BranchMenu.tsx:368
 msgid "Delete"
-msgstr ""
+msgstr "삭제"
 
 #: src/commandsAndMenu.tsx:1004 src/commandsAndMenu.tsx:1007 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:1071 src/commandsAndMenu.tsx:1128 src/commandsAndMenu.tsx:1129 src/commandsAndMenu.tsx:1131 src/commandsAndMenu.tsx:1132 src/commandsAndMenu.tsx:1197 src/commandsAndMenu.tsx:1200 src/commandsAndMenu.tsx:1213 src/commandsAndMenu.tsx:1216 src/commandsAndMenu.tsx:1235 src/commandsAndMenu.tsx:1238 src/commandsAndMenu.tsx:1239 src/commandsAndMenu.tsx:1242 src/commandsAndMenu.tsx:869 src/commandsAndMenu.tsx:871 src/commandsAndMenu.tsx:872 src/commandsAndMenu.tsx:874 src/commandsAndMenu.tsx:877 src/commandsAndMenu.tsx:880 src/commandsAndMenu.tsx:882 src/commandsAndMenu.tsx:885 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:905 src/commandsAndMenu.tsx:906
 msgid "Ignore"
-msgstr ""
+msgstr "무시하기"
 
 #: src/commandsAndMenu.tsx:1007 src/commandsAndMenu.tsx:1066 src/commandsAndMenu.tsx:1067 src/commandsAndMenu.tsx:1135 src/commandsAndMenu.tsx:1151 src/commandsAndMenu.tsx:1173 src/commandsAndMenu.tsx:1177 src/commandsAndMenu.tsx:808 src/commandsAndMenu.tsx:810 src/commandsAndMenu.tsx:816 src/commandsAndMenu.tsx:821 src/commandsAndMenu.tsx:841 src/commandsAndMenu.tsx:842 src/commandsAndMenu.tsx:943
 msgid "Discard changes for %1 failed."
-msgstr ""
+msgstr "%1에 대한 변경 내용 삭제 실패."
 
 #: src/commandsAndMenu.tsx:1008 src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1046 src/commandsAndMenu.tsx:1050 src/commandsAndMenu.tsx:681 src/commandsAndMenu.tsx:683 src/commandsAndMenu.tsx:689 src/commandsAndMenu.tsx:694 src/commandsAndMenu.tsx:714 src/commandsAndMenu.tsx:715 src/commandsAndMenu.tsx:816 src/commandsAndMenu.tsx:880 src/commandsAndMenu.tsx:939 src/commandsAndMenu.tsx:940
 msgid "Track"
-msgstr ""
+msgstr "트랙"
 
 #: src/commandsAndMenu.tsx:1009 src/commandsAndMenu.tsx:1013 src/commandsAndMenu.tsx:1014 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:1069 src/commandsAndMenu.tsx:1082 src/commandsAndMenu.tsx:1098 src/commandsAndMenu.tsx:1120 src/commandsAndMenu.tsx:1124 src/commandsAndMenu.tsx:1137 src/commandsAndMenu.tsx:1153 src/commandsAndMenu.tsx:1175 src/commandsAndMenu.tsx:1179 src/commandsAndMenu.tsx:954 src/components/Alert.tsx:106 src/components/Alert.tsx:123 src/components/BranchMenu.tsx:69 src/components/BranchMenu.tsx:70 src/components/TagMenu.tsx:63 src/index.ts:135 src/index.ts:136
 msgid "Dismiss"
-msgstr ""
+msgstr "취소"
 
 #: src/commandsAndMenu.tsx:1009 src/commandsAndMenu.tsx:1031 src/commandsAndMenu.tsx:1035 src/commandsAndMenu.tsx:666 src/commandsAndMenu.tsx:668 src/commandsAndMenu.tsx:674 src/commandsAndMenu.tsx:679 src/commandsAndMenu.tsx:699 src/commandsAndMenu.tsx:700 src/commandsAndMenu.tsx:801 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:924 src/commandsAndMenu.tsx:925 src/commandsAndMenu.tsx:993
 msgid "Stage"
-msgstr ""
+msgstr "스테이지"
 
 #: src/commandsAndMenu.tsx:1010 src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1048 src/commandsAndMenu.tsx:1052 src/commandsAndMenu.tsx:683 src/commandsAndMenu.tsx:685 src/commandsAndMenu.tsx:691 src/commandsAndMenu.tsx:696 src/commandsAndMenu.tsx:716 src/commandsAndMenu.tsx:717 src/commandsAndMenu.tsx:818 src/commandsAndMenu.tsx:882 src/commandsAndMenu.tsx:941 src/commandsAndMenu.tsx:942
 msgid "Start tracking selected file"
-msgstr ""
+msgstr "선택한 파일 트래킹 시작"
 
 #: src/commandsAndMenu.tsx:1011 src/commandsAndMenu.tsx:1027 src/commandsAndMenu.tsx:1049 src/commandsAndMenu.tsx:1053 src/commandsAndMenu.tsx:684 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:692 src/commandsAndMenu.tsx:697 src/commandsAndMenu.tsx:717 src/commandsAndMenu.tsx:718 src/commandsAndMenu.tsx:819 src/commandsAndMenu.tsx:883 src/commandsAndMenu.tsx:942 src/commandsAndMenu.tsx:943
 msgid "Start tracking selected files"
-msgstr ""
+msgstr "선택한 파일 트래킹 시작"
 
 #: src/commandsAndMenu.tsx:1011 src/commandsAndMenu.tsx:1033 src/commandsAndMenu.tsx:1037 src/commandsAndMenu.tsx:668 src/commandsAndMenu.tsx:670 src/commandsAndMenu.tsx:676 src/commandsAndMenu.tsx:681 src/commandsAndMenu.tsx:701 src/commandsAndMenu.tsx:702 src/commandsAndMenu.tsx:803 src/commandsAndMenu.tsx:867 src/commandsAndMenu.tsx:926 src/commandsAndMenu.tsx:927 src/commandsAndMenu.tsx:995
 msgid "Stage the changes of selected file"
-msgstr ""
+msgstr "선택된 파일의 변경 사항 스테이지"
 
 #: src/commandsAndMenu.tsx:1012 src/commandsAndMenu.tsx:1013 src/commandsAndMenu.tsx:1081 src/commandsAndMenu.tsx:1097 src/commandsAndMenu.tsx:1119 src/commandsAndMenu.tsx:1123 src/commandsAndMenu.tsx:754 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:762 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:787 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:889 src/commandsAndMenu.tsx:953
 msgid "Deleting %1 failed."
-msgstr ""
+msgstr "%1 삭제 실패."
 
 #: src/commandsAndMenu.tsx:1012 src/commandsAndMenu.tsx:1034 src/commandsAndMenu.tsx:1038 src/commandsAndMenu.tsx:669 src/commandsAndMenu.tsx:671 src/commandsAndMenu.tsx:677 src/commandsAndMenu.tsx:682 src/commandsAndMenu.tsx:702 src/commandsAndMenu.tsx:703 src/commandsAndMenu.tsx:804 src/commandsAndMenu.tsx:868 src/commandsAndMenu.tsx:927 src/commandsAndMenu.tsx:928 src/commandsAndMenu.tsx:996
 msgid "Stage the changes of selected files"
-msgstr ""
+msgstr "선택된 파일의 변경 사항 스테이지"
 
 #: src/commandsAndMenu.tsx:1016 src/commandsAndMenu.tsx:1020 src/commandsAndMenu.tsx:651 src/commandsAndMenu.tsx:653 src/commandsAndMenu.tsx:659 src/commandsAndMenu.tsx:664 src/commandsAndMenu.tsx:684 src/commandsAndMenu.tsx:685 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:850 src/commandsAndMenu.tsx:909 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:978 src/commandsAndMenu.tsx:994 src/components/ManageRemoteDialogue.tsx:159
 msgid "Add"
-msgstr ""
+msgstr "추가"
 
 #: src/commandsAndMenu.tsx:1018 src/commandsAndMenu.tsx:1022 src/commandsAndMenu.tsx:653 src/commandsAndMenu.tsx:655 src/commandsAndMenu.tsx:661 src/commandsAndMenu.tsx:666 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:911 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:980 src/commandsAndMenu.tsx:996
 msgid "Stage or track the changes to selected file"
-msgstr ""
+msgstr "선택된 파일의 변경 사항 스테이징 또는 트래킹"
 
 #: src/commandsAndMenu.tsx:1019 src/commandsAndMenu.tsx:1023 src/commandsAndMenu.tsx:654 src/commandsAndMenu.tsx:656 src/commandsAndMenu.tsx:662 src/commandsAndMenu.tsx:667 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:688 src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:853 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:981 src/commandsAndMenu.tsx:997
 msgid "Stage or track the changes of selected files"
-msgstr ""
+msgstr "선택된 파일의 변경 사항 스테이징 또는 트래킹"
 
 #: src/commandsAndMenu.tsx:1020 src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1079 src/commandsAndMenu.tsx:1080 src/commandsAndMenu.tsx:1083 src/commandsAndMenu.tsx:1084 src/commandsAndMenu.tsx:1148 src/commandsAndMenu.tsx:1152 src/commandsAndMenu.tsx:1164 src/commandsAndMenu.tsx:1168 src/commandsAndMenu.tsx:1186 src/commandsAndMenu.tsx:1190 src/commandsAndMenu.tsx:1194 src/commandsAndMenu.tsx:821 src/commandsAndMenu.tsx:823 src/commandsAndMenu.tsx:825 src/commandsAndMenu.tsx:827 src/commandsAndMenu.tsx:829 src/commandsAndMenu.tsx:833 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:838 src/commandsAndMenu.tsx:854 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:858 src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:956 src/commandsAndMenu.tsx:960
 msgid "Ignore this file (add to .gitignore)"
-msgstr ""
+msgstr "이 파일을 무시 (.gitignore에 추가)"
 
 #: src/commandsAndMenu.tsx:1021 src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1080 src/commandsAndMenu.tsx:1081 src/commandsAndMenu.tsx:1084 src/commandsAndMenu.tsx:1085 src/commandsAndMenu.tsx:1149 src/commandsAndMenu.tsx:1153 src/commandsAndMenu.tsx:1165 src/commandsAndMenu.tsx:1169 src/commandsAndMenu.tsx:1187 src/commandsAndMenu.tsx:1191 src/commandsAndMenu.tsx:1195 src/commandsAndMenu.tsx:822 src/commandsAndMenu.tsx:824 src/commandsAndMenu.tsx:826 src/commandsAndMenu.tsx:828 src/commandsAndMenu.tsx:830 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:835 src/commandsAndMenu.tsx:839 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:856 src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:860 src/commandsAndMenu.tsx:957 src/commandsAndMenu.tsx:961
 msgid "Ignore these files (add to .gitignore)"
-msgstr ""
+msgstr "이 파일들을 무시 (.gitignore에 추가)"
 
 #: src/commandsAndMenu.tsx:1023 src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1045 src/commandsAndMenu.tsx:1046 src/commandsAndMenu.tsx:1092 src/commandsAndMenu.tsx:1108 src/commandsAndMenu.tsx:1114 src/commandsAndMenu.tsx:1130 src/commandsAndMenu.tsx:1134 src/commandsAndMenu.tsx:1152 src/commandsAndMenu.tsx:1156 src/commandsAndMenu.tsx:765 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:773 src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:787 src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:795 src/commandsAndMenu.tsx:798 src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:800 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:821 src/commandsAndMenu.tsx:900 src/commandsAndMenu.tsx:922 src/commandsAndMenu.tsx:964 src/commandsAndMenu.tsx:986 src/components/FileList.tsx:183 src/components/FileList.tsx:192 src/components/FileList.tsx:194 src/components/FileList.tsx:197 src/components/FileList.tsx:208 src/components/FileList.tsx:217 src/components/FileList.tsx:219 src/components/FileList.tsx:268 src/widgets/discardAllChanges.ts:26
 msgid "Discard"
-msgstr ""
+msgstr "무시"
 
 #: src/commandsAndMenu.tsx:1023 src/commandsAndMenu.tsx:1039 src/commandsAndMenu.tsx:1061 src/commandsAndMenu.tsx:1065 src/commandsAndMenu.tsx:696 src/commandsAndMenu.tsx:698 src/commandsAndMenu.tsx:704 src/commandsAndMenu.tsx:709 src/commandsAndMenu.tsx:729 src/commandsAndMenu.tsx:730 src/commandsAndMenu.tsx:831 src/commandsAndMenu.tsx:895 src/commandsAndMenu.tsx:954 src/commandsAndMenu.tsx:955
 msgid "Unstage"
-msgstr ""
+msgstr "스테이징 취소"
 
 #: src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1088 src/commandsAndMenu.tsx:1148 src/commandsAndMenu.tsx:1149 src/commandsAndMenu.tsx:1217 src/commandsAndMenu.tsx:1233 src/commandsAndMenu.tsx:1255 src/commandsAndMenu.tsx:1259 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:922 src/commandsAndMenu.tsx:923 src/components/GitPanel.tsx:344 src/components/GitPanel.tsx:358 src/components/GitPanel.tsx:363 src/components/GitPanel.tsx:370 src/components/GitPanel.tsx:383 src/components/GitPanel.tsx:391 src/components/GitPanel.tsx:414 src/components/GitPanel.tsx:415
 msgid "History"
-msgstr ""
+msgstr "기록"
 
 #: src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1094 src/commandsAndMenu.tsx:1110 src/commandsAndMenu.tsx:1132 src/commandsAndMenu.tsx:1136 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:769 src/commandsAndMenu.tsx:775 src/commandsAndMenu.tsx:780 src/commandsAndMenu.tsx:800 src/commandsAndMenu.tsx:801 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:966
 msgid "Discard recent changes of selected file"
-msgstr ""
+msgstr "선택된 파일의 최근 변경 사항 취소"
 
 #: src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1041 src/commandsAndMenu.tsx:1063 src/commandsAndMenu.tsx:1067 src/commandsAndMenu.tsx:698 src/commandsAndMenu.tsx:700 src/commandsAndMenu.tsx:706 src/commandsAndMenu.tsx:711 src/commandsAndMenu.tsx:731 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:833 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:956 src/commandsAndMenu.tsx:957
 msgid "Unstage the changes of selected file"
-msgstr ""
+msgstr "선택된 파일의 변경 사항 스테이징 취소"
 
 #: src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1089 src/commandsAndMenu.tsx:1149 src/commandsAndMenu.tsx:1150 src/commandsAndMenu.tsx:1218 src/commandsAndMenu.tsx:1234 src/commandsAndMenu.tsx:1256 src/commandsAndMenu.tsx:1260 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:923 src/commandsAndMenu.tsx:924
 msgid "View the history of this file"
-msgstr ""
+msgstr "이 파일의 기록 보기"
 
 #: src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1027 src/commandsAndMenu.tsx:1095 src/commandsAndMenu.tsx:1111 src/commandsAndMenu.tsx:1133 src/commandsAndMenu.tsx:1137 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:770 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:781 src/commandsAndMenu.tsx:801 src/commandsAndMenu.tsx:802 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:967
 msgid "Discard recent changes of selected files"
-msgstr ""
+msgstr "선택된 파일들의 최근 변경 사항 취소"
 
 #: src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1042 src/commandsAndMenu.tsx:1064 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:699 src/commandsAndMenu.tsx:701 src/commandsAndMenu.tsx:707 src/commandsAndMenu.tsx:712 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:733 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:898 src/commandsAndMenu.tsx:957 src/commandsAndMenu.tsx:958
 msgid "Unstage the changes of selected files"
