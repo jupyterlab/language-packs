@@ -38,8 +38,11 @@ if __name__ == "__main__":
     errors = []  # Will gather the list of extensions not matching the supported versions range
     
     for package_name in packages:
-        current_version = parse(data[package_name]["current-version-tag"])
-        if current_version.release is None:
+        try:
+            current_version = parse(data[package_name]["current-version-tag"])
+        except packaging.version.InvalidVersion:
+            current_version = None
+        if current_version is None or current_version.release is None:
             print(f"Package `{package_name}` has an unsupported version `{current_version.public}` - it will be skipped.")
             continue
         else:
