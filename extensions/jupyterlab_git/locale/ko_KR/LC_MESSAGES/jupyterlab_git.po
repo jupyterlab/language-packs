@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 97\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2022-12-08 05:11\n"
+"PO-Revision-Date: 2022-12-08 06:39\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
@@ -57,7 +57,7 @@ msgstr "명령어가 완료될때까지 사용자 상호작용 일시중지"
 #: /schema/plugin.json:/properties/cancelPullMergeConflict/description
 msgctxt "settings"
 msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
-msgstr "True일 경우 원격 리포지토리에서 변경 내용을 가져오고 통합할 때 충돌하는 병합이 취소되고 작업 트리는 변경되지 않은 상태로 유지됩니다."
+msgstr "True일 경우 원격 저장소에서 변경 내용을 가져오고 통합할 때 충돌하는 병합이 취소되고 작업 트리는 변경되지 않은 상태로 유지됩니다."
 
 #: /schema/plugin.json:/properties/cancelPullMergeConflict/title
 msgctxt "settings"
@@ -67,7 +67,7 @@ msgstr "pull merge 충돌 취소"
 #: /schema/plugin.json:/properties/commitAndPush/description
 msgctxt "settings"
 msgid "Whether to trigger or not a push for each commit."
-msgstr "각 커밋에 대해 푸시를 트리거할지 여부입니다."
+msgstr "각 커밋에 대해 push를 할지 여부입니다."
 
 #: /schema/plugin.json:/properties/commitAndPush/title
 msgctxt "settings"
@@ -87,7 +87,7 @@ msgstr "변경 사항이 있는 브랜치 사용 안 함"
 #: /schema/plugin.json:/properties/displayStatus/description
 msgctxt "settings"
 msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
-msgstr "JupyterLab 상태 표시줄에 Git 확장 상태 업데이트를 표시합니다. True일 경우 변경 사항 pulling 및 pushing, branch 전환, 변경 사항 폴링 등의 상태 업데이트를 JupyterLab 상태 표시줄에 표시합니다. 확장 활성 수준에 따라 일부 사용자는 상태 업데이트의 결함이 발생할 수도 있습니다. 이 경우 이 값을 false로 설정하면 시각적 노이즈가 감소합니다."
+msgstr "JupyterLab 상태 표시줄에 Git 확장자 상태 업데이트를 표시합니다. True일 경우 확장자는 변경 사항 pulling 및 pushing, branch 전환, 변경 사항 폴링 등의 상태 업데이트를 JupyterLab 상태 표시줄에 표시합니다. 확장 활성 수준에 따라 일부 사용자는 상태 업데이트의 결함이 발생할 수도 있습니다. 이 경우 이 값을 false로 설정하면 시각적 노이즈가 감소합니다."
 
 #: /schema/plugin.json:/properties/displayStatus/title
 msgctxt "settings"
@@ -97,17 +97,17 @@ msgstr "Git 상태 업데이트 표시"
 #: /schema/plugin.json:/properties/doubleClickDiff/description
 msgctxt "settings"
 msgid "If true, double clicking a file in the list of changed files will open a diff."
-msgstr "True 일 경우, 변경된 파일 목록에서 파일을 더블 클릭하면 diff를 열 수 있습니다."
+msgstr "True 일 경우, 변경된 파일 목록에서 파일을 더블 클릭하면 버전 비교를 열 수 있습니다."
 
 #: /schema/plugin.json:/properties/doubleClickDiff/description
 msgctxt "settings"
 msgid "If true, doubling clicking a file in the list of changed files will open a diff."
-msgstr "True 일 경우, 변경된 파일 목록에서 파일을 더블 클릭하면 diff를 열 수 있습니다."
+msgstr "True 일 경우, 변경된 파일 목록에서 파일을 더블 클릭하면 버전 비교를 열 수 있습니다."
 
 #: /schema/plugin.json:/properties/doubleClickDiff/title
 msgctxt "settings"
 msgid "Show diff on double click"
-msgstr "더블 클릭으로 diff 보기"
+msgstr "더블 클릭으로 버전 비교 보기"
 
 #: /schema/plugin.json:/properties/historyCount/description
 msgctxt "settings"
@@ -166,11 +166,11 @@ msgstr "Git"
 
 #: src/cloneCommand.ts:35 src/commandsAndMenu.tsx:286 src/commandsAndMenu.tsx:288 src/commandsAndMenu.tsx:289 src/commandsAndMenu.tsx:290 src/commandsAndMenu.tsx:293 src/components/GitPanel.tsx:454 src/components/GitPanel.tsx:470 src/components/GitPanel.tsx:475 src/components/GitPanel.tsx:483 src/components/GitPanel.tsx:497 src/components/GitPanel.tsx:505 src/components/GitPanel.tsx:604 src/components/GitPanel.tsx:605
 msgid "Clone a Repository"
-msgstr "레포지토리 복제"
+msgstr "저장소 복제"
 
 #: src/cloneCommand.ts:36 src/commandsAndMenu.tsx:287 src/commandsAndMenu.tsx:289 src/commandsAndMenu.tsx:290 src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:294
 msgid "Clone a repository from a URL"
-msgstr "URL의 레포지토리 복제"
+msgstr "URL의 저장소 복제"
 
 #: src/cloneCommand.ts:40 src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:293 src/commandsAndMenu.tsx:294 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:298
 msgid "Clone a repo"
@@ -290,456 +290,456 @@ msgstr "선택된 파일들의 최근 변경 사항 취소"
 
 #: src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1042 src/commandsAndMenu.tsx:1064 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:699 src/commandsAndMenu.tsx:701 src/commandsAndMenu.tsx:707 src/commandsAndMenu.tsx:712 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:733 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:898 src/commandsAndMenu.tsx:957 src/commandsAndMenu.tsx:958
 msgid "Unstage the changes of selected files"
-msgstr ""
+msgstr "선택된 파일들의 변경 사항 스테이징 취소"
 
 #: src/commandsAndMenu.tsx:1033 src/commandsAndMenu.tsx:1034 src/commandsAndMenu.tsx:1102 src/commandsAndMenu.tsx:1118 src/commandsAndMenu.tsx:1140 src/commandsAndMenu.tsx:1144 src/commandsAndMenu.tsx:775 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:783 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:808 src/commandsAndMenu.tsx:809 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:974 src/components/FileList.tsx:1125 src/components/FileList.tsx:1151 src/components/FileList.tsx:457 src/components/FileList.tsx:466 src/components/FileList.tsx:534 src/components/FileList.tsx:535 src/components/FileList.tsx:655 src/components/FileList.tsx:664 src/components/FileList.tsx:681 src/components/FileList.tsx:690 src/components/FileList.tsx:733 src/components/FileList.tsx:759 src/components/FileList.tsx:810 src/components/FileList.tsx:836 src/components/FileList.tsx:837
 msgid "Discard changes"
-msgstr ""
+msgstr "변경 사항 취소"
 
 #: src/commandsAndMenu.tsx:1036 src/commandsAndMenu.tsx:1037 src/commandsAndMenu.tsx:1105 src/commandsAndMenu.tsx:1121 src/commandsAndMenu.tsx:1143 src/commandsAndMenu.tsx:1147 src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:780 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:791 src/commandsAndMenu.tsx:811 src/commandsAndMenu.tsx:812 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:977
 msgid "Are you sure you want to permanently discard changes to the following files?               This action cannot be undone."
-msgstr ""
+msgstr "다음 파일의 변경 내용을 영구적으로 취소하시겠습니까? 이 작업은 취소할 수 없습니다."
 
 #: src/commandsAndMenu.tsx:1043 src/commandsAndMenu.tsx:1103 src/commandsAndMenu.tsx:1104 src/commandsAndMenu.tsx:1172 src/commandsAndMenu.tsx:1188 src/commandsAndMenu.tsx:1210 src/commandsAndMenu.tsx:1214 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:846 src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:857 src/commandsAndMenu.tsx:877 src/commandsAndMenu.tsx:878 src/commandsAndMenu.tsx:979
 msgid "Ignore %2 extension (add to .gitignore)"
 msgid_plural "Ignore %2 extensions (add to .gitignore)"
-msgstr[0] ""
+msgstr[0] "%2 확장자 무시(.gitignore에 추가)"
 
 #: src/commandsAndMenu.tsx:1043 src/commandsAndMenu.tsx:1107 src/commandsAndMenu.tsx:1167 src/commandsAndMenu.tsx:1168 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1252 src/commandsAndMenu.tsx:1274 src/commandsAndMenu.tsx:1278 src/commandsAndMenu.tsx:889 src/commandsAndMenu.tsx:891 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:941 src/commandsAndMenu.tsx:942
 msgid "No actions available"
-msgstr ""
+msgstr "실행 가능한 작업 없음"
 
 #: src/commandsAndMenu.tsx:1051 src/commandsAndMenu.tsx:1067 src/commandsAndMenu.tsx:1089 src/commandsAndMenu.tsx:1093 src/commandsAndMenu.tsx:724 src/commandsAndMenu.tsx:726 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:737 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:758 src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:923 src/commandsAndMenu.tsx:982 src/commandsAndMenu.tsx:983
 msgid "Delete this file"
-msgstr ""
+msgstr "이 파일을 삭제"
 
 #: src/commandsAndMenu.tsx:1051 src/commandsAndMenu.tsx:1111 src/commandsAndMenu.tsx:1112 src/commandsAndMenu.tsx:1180 src/commandsAndMenu.tsx:1196 src/commandsAndMenu.tsx:1218 src/commandsAndMenu.tsx:1222 src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:854 src/commandsAndMenu.tsx:860 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:885 src/commandsAndMenu.tsx:886 src/commandsAndMenu.tsx:987
 msgid "Ignore this file extension (add to .gitignore)"
-msgstr ""
+msgstr "이 파일의 확장자 무시(.gitignore에 추가)"
 
 #: src/commandsAndMenu.tsx:1052 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:1090 src/commandsAndMenu.tsx:1094 src/commandsAndMenu.tsx:725 src/commandsAndMenu.tsx:727 src/commandsAndMenu.tsx:733 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:758 src/commandsAndMenu.tsx:759 src/commandsAndMenu.tsx:860 src/commandsAndMenu.tsx:924 src/commandsAndMenu.tsx:983 src/commandsAndMenu.tsx:984
 msgid "Delete these files"
-msgstr ""
+msgstr "이 파일들을 삭제"
 
 #: src/commandsAndMenu.tsx:1052 src/commandsAndMenu.tsx:1112 src/commandsAndMenu.tsx:1113 src/commandsAndMenu.tsx:1181 src/commandsAndMenu.tsx:1197 src/commandsAndMenu.tsx:1219 src/commandsAndMenu.tsx:1223 src/commandsAndMenu.tsx:853 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:861 src/commandsAndMenu.tsx:866 src/commandsAndMenu.tsx:886 src/commandsAndMenu.tsx:887 src/commandsAndMenu.tsx:988
 msgid "Ignore these files extension (add to .gitignore)"
-msgstr ""
+msgstr "이 파일들의 확장자 무시(.gitignore에 추가)"
 
 #: src/commandsAndMenu.tsx:1059 src/commandsAndMenu.tsx:1075 src/commandsAndMenu.tsx:1097 src/commandsAndMenu.tsx:1101 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:734 src/commandsAndMenu.tsx:740 src/commandsAndMenu.tsx:745 src/commandsAndMenu.tsx:765 src/commandsAndMenu.tsx:766 src/commandsAndMenu.tsx:867 src/commandsAndMenu.tsx:931 src/commandsAndMenu.tsx:990 src/commandsAndMenu.tsx:991
 msgid "Delete Files"
-msgstr ""
+msgstr "파일 삭제"
 
 #: src/commandsAndMenu.tsx:1061 src/commandsAndMenu.tsx:1121 src/commandsAndMenu.tsx:1122 src/commandsAndMenu.tsx:1190 src/commandsAndMenu.tsx:1206 src/commandsAndMenu.tsx:1228 src/commandsAndMenu.tsx:1232 src/commandsAndMenu.tsx:862 src/commandsAndMenu.tsx:864 src/commandsAndMenu.tsx:870 src/commandsAndMenu.tsx:875 src/commandsAndMenu.tsx:895 src/commandsAndMenu.tsx:896 src/commandsAndMenu.tsx:997
 msgid "Ignore file extension"
-msgstr ""
+msgstr "파일 확장자 무시"
 
 #: src/commandsAndMenu.tsx:1062 src/commandsAndMenu.tsx:1078 src/commandsAndMenu.tsx:1100 src/commandsAndMenu.tsx:1104 src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:737 src/commandsAndMenu.tsx:743 src/commandsAndMenu.tsx:748 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:769 src/commandsAndMenu.tsx:870 src/commandsAndMenu.tsx:934 src/commandsAndMenu.tsx:993 src/commandsAndMenu.tsx:994
 msgid "Are you sure you want to permanently delete the following files?               This action cannot be undone."
-msgstr ""
+msgstr "다음 파일들을 영구적으로 삭제하시겠습니까? 이 작업은 취소할 수 없습니다."
 
 #: src/commandsAndMenu.tsx:1062 src/commandsAndMenu.tsx:1122 src/commandsAndMenu.tsx:1123 src/commandsAndMenu.tsx:1191 src/commandsAndMenu.tsx:1207 src/commandsAndMenu.tsx:1229 src/commandsAndMenu.tsx:1233 src/commandsAndMenu.tsx:863 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:871 src/commandsAndMenu.tsx:876 src/commandsAndMenu.tsx:896 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:998
 msgid "Are you sure you want to ignore all %1 files within this git repository?"
-msgstr ""
+msgstr "이 Git 저장소 내의 %1 파일을 모두 무시하시겠습니까?"
 
 #: src/commandsAndMenu.tsx:1062 src/commandsAndMenu.tsx:1126 src/commandsAndMenu.tsx:1186 src/commandsAndMenu.tsx:1187 src/commandsAndMenu.tsx:1255 src/commandsAndMenu.tsx:1271 src/commandsAndMenu.tsx:1293 src/commandsAndMenu.tsx:1297 src/commandsAndMenu.tsx:908 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:916 src/commandsAndMenu.tsx:940 src/commandsAndMenu.tsx:960 src/commandsAndMenu.tsx:961
 msgid "Set Up Remotes"
-msgstr ""
+msgstr "원격 설정"
 
 #: src/commandsAndMenu.tsx:1066 src/commandsAndMenu.tsx:1130 src/commandsAndMenu.tsx:1190 src/commandsAndMenu.tsx:1191 src/commandsAndMenu.tsx:1259 src/commandsAndMenu.tsx:1275 src/commandsAndMenu.tsx:1297 src/commandsAndMenu.tsx:1301 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:914 src/commandsAndMenu.tsx:920 src/commandsAndMenu.tsx:944 src/commandsAndMenu.tsx:964 src/commandsAndMenu.tsx:965
 msgid "Git Documentation"
-msgstr ""
+msgstr "Git 문서"
 
 #: src/commandsAndMenu.tsx:1100 src/commandsAndMenu.tsx:1168 src/commandsAndMenu.tsx:1229 src/commandsAndMenu.tsx:1230 src/commandsAndMenu.tsx:1298 src/commandsAndMenu.tsx:1314 src/commandsAndMenu.tsx:1336 src/commandsAndMenu.tsx:1340 src/commandsAndMenu.tsx:943 src/commandsAndMenu.tsx:945 src/commandsAndMenu.tsx:951 src/commandsAndMenu.tsx:978 src/commandsAndMenu.tsx:998 src/commandsAndMenu.tsx:999
 msgid " Help "
-msgstr ""
+msgstr " 도움말 "
 
 #: src/commandsAndMenu.tsx:117 src/commandsAndMenu.tsx:118 src/commandsAndMenu.tsx:119 src/commandsAndMenu.tsx:122 src/commandsAndMenu.tsx:124 src/commandsAndMenu.tsx:125 src/commandsAndMenu.tsx:126 src/commandsAndMenu.tsx:127 src/commandsAndMenu.tsx:133 src/commandsAndMenu.tsx:137
 msgid "Commit from the Commit Box"
-msgstr ""
+msgstr "커밋 상자에서 커밋"
 
 #: src/commandsAndMenu.tsx:1172 src/commandsAndMenu.tsx:1174 src/commandsAndMenu.tsx:1180 src/commandsAndMenu.tsx:1203 src/commandsAndMenu.tsx:1232 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1241 src/commandsAndMenu.tsx:1338 src/commandsAndMenu.tsx:1404 src/commandsAndMenu.tsx:1465 src/commandsAndMenu.tsx:1470 src/commandsAndMenu.tsx:1538 src/commandsAndMenu.tsx:1562 src/commandsAndMenu.tsx:1590 src/commandsAndMenu.tsx:1596
 msgid "Git credentials required"
-msgstr ""
+msgstr "Git 자격 증명 필요"
 
 #: src/commandsAndMenu.tsx:1175 src/commandsAndMenu.tsx:1177 src/commandsAndMenu.tsx:1183 src/commandsAndMenu.tsx:1206 src/commandsAndMenu.tsx:1235 src/commandsAndMenu.tsx:1239 src/commandsAndMenu.tsx:1244 src/commandsAndMenu.tsx:1341 src/commandsAndMenu.tsx:1407 src/commandsAndMenu.tsx:1468 src/commandsAndMenu.tsx:1473 src/commandsAndMenu.tsx:1541 src/commandsAndMenu.tsx:1565 src/commandsAndMenu.tsx:1593 src/commandsAndMenu.tsx:1599 src/widgets/CredentialsBox.tsx:14 src/widgets/CredentialsBox.tsx:15
 msgid "Enter credentials for remote repository"
-msgstr ""
+msgstr "원격 저장소에 대한 자격 증명 입력"
 
 #: src/commandsAndMenu.tsx:1176 src/commandsAndMenu.tsx:1178 src/commandsAndMenu.tsx:1184 src/commandsAndMenu.tsx:1207 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1240 src/commandsAndMenu.tsx:1245 src/commandsAndMenu.tsx:1342 src/commandsAndMenu.tsx:1408 src/commandsAndMenu.tsx:1469 src/commandsAndMenu.tsx:1474 src/commandsAndMenu.tsx:1542 src/commandsAndMenu.tsx:1566 src/commandsAndMenu.tsx:1594 src/commandsAndMenu.tsx:1600
 msgid "Incorrect username or password."
-msgstr ""
+msgstr "유효하지 않은 아이디 또는 비밀번호 입니다."
 
 #: src/commandsAndMenu.tsx:118 src/commandsAndMenu.tsx:119 src/commandsAndMenu.tsx:120 src/commandsAndMenu.tsx:123 src/commandsAndMenu.tsx:125 src/commandsAndMenu.tsx:126 src/commandsAndMenu.tsx:127 src/commandsAndMenu.tsx:128 src/commandsAndMenu.tsx:134 src/commandsAndMenu.tsx:138
 msgid "Submit the commit using the summary and description from commit box"
-msgstr ""
+msgstr "요약 및 설명을 사용하여 커밋 상자에 커밋 제출"
 
 #: src/commandsAndMenu.tsx:129 src/commandsAndMenu.tsx:130 src/commandsAndMenu.tsx:131 src/commandsAndMenu.tsx:134 src/commandsAndMenu.tsx:136 src/commandsAndMenu.tsx:137 src/commandsAndMenu.tsx:138 src/commandsAndMenu.tsx:139 src/commandsAndMenu.tsx:145 src/commandsAndMenu.tsx:149
 msgid "Open Git Repository in Terminal"
-msgstr ""
+msgstr "터미널에서 Git 저장소 열기"
 
 #: src/commandsAndMenu.tsx:130 src/commandsAndMenu.tsx:131 src/commandsAndMenu.tsx:132 src/commandsAndMenu.tsx:135 src/commandsAndMenu.tsx:137 src/commandsAndMenu.tsx:138 src/commandsAndMenu.tsx:139 src/commandsAndMenu.tsx:140 src/commandsAndMenu.tsx:146 src/commandsAndMenu.tsx:150
 msgid "Open a New Terminal to the Git Repository"
-msgstr ""
+msgstr "Git 저장소에 새 터미널 열기"
 
 #: src/commandsAndMenu.tsx:1303 src/commandsAndMenu.tsx:1307 src/commandsAndMenu.tsx:1509 src/commandsAndMenu.tsx:1513
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: src/commandsAndMenu.tsx:159 src/commandsAndMenu.tsx:161 src/commandsAndMenu.tsx:162 src/commandsAndMenu.tsx:163 src/commandsAndMenu.tsx:166 src/commandsAndMenu.tsx:168 src/commandsAndMenu.tsx:169 src/commandsAndMenu.tsx:170 src/commandsAndMenu.tsx:171 src/commandsAndMenu.tsx:177 src/commandsAndMenu.tsx:181
 msgid "Git Interface"
-msgstr ""
+msgstr "Git 인터페이스"
 
 #: src/commandsAndMenu.tsx:160 src/commandsAndMenu.tsx:162 src/commandsAndMenu.tsx:163 src/commandsAndMenu.tsx:164 src/commandsAndMenu.tsx:167 src/commandsAndMenu.tsx:169 src/commandsAndMenu.tsx:170 src/commandsAndMenu.tsx:171 src/commandsAndMenu.tsx:172 src/commandsAndMenu.tsx:178 src/commandsAndMenu.tsx:182
 msgid "Go to Git user interface"
-msgstr ""
+msgstr "Git 사용자 인터페이스로 이동"
 
 #: src/commandsAndMenu.tsx:172 src/commandsAndMenu.tsx:174 src/commandsAndMenu.tsx:175 src/commandsAndMenu.tsx:176 src/commandsAndMenu.tsx:179 src/commandsAndMenu.tsx:181 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:188 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:190 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:197 src/commandsAndMenu.tsx:201 src/components/GitPanel.tsx:445 src/components/GitPanel.tsx:461 src/components/GitPanel.tsx:466 src/components/GitPanel.tsx:473 src/components/GitPanel.tsx:487 src/components/GitPanel.tsx:495 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:595
 msgid "Initialize a Repository"
-msgstr ""
+msgstr "저장소 초기화"
 
 #: src/commandsAndMenu.tsx:173 src/commandsAndMenu.tsx:175 src/commandsAndMenu.tsx:176 src/commandsAndMenu.tsx:177 src/commandsAndMenu.tsx:180 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:195
 msgid "Create an empty Git repository or reinitialize an existing one"
-msgstr ""
+msgstr "빈 Git 저장소를 생성 또는 기존 Git 저장소를 다시 초기화"
 
 #: src/commandsAndMenu.tsx:180 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:187 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:190 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:198 src/commandsAndMenu.tsx:202
 msgid "Do you really want to make this directory a Git Repo?"
-msgstr ""
+msgstr "이 디렉토리를 Git Repo로 설정하시겠습니까?"
 
 #: src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:187 src/commandsAndMenu.tsx:190 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:195 src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:205
 msgid "Yes"
-msgstr ""
+msgstr "예"
 
 #: src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:196
 msgid "Initializing..."
-msgstr ""
+msgstr "초기화 중..."
 
 #: src/commandsAndMenu.tsx:196 src/commandsAndMenu.tsx:198 src/commandsAndMenu.tsx:199 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:203 src/commandsAndMenu.tsx:205 src/commandsAndMenu.tsx:206 src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:208 src/commandsAndMenu.tsx:214 src/commandsAndMenu.tsx:218
 msgid "Git repository initialized."
-msgstr ""
+msgstr "Git 저장소 초기화 완료"
 
 #: src/commandsAndMenu.tsx:198 src/commandsAndMenu.tsx:199 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:211
 msgid "Initializing…"
-msgstr ""
+msgstr "초기화 중..."
 
 #: src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:203 src/commandsAndMenu.tsx:204 src/commandsAndMenu.tsx:205 src/commandsAndMenu.tsx:208 src/commandsAndMenu.tsx:210 src/commandsAndMenu.tsx:211 src/commandsAndMenu.tsx:212 src/commandsAndMenu.tsx:213 src/commandsAndMenu.tsx:219 src/commandsAndMenu.tsx:223
 msgid "Encountered an error when initializing the repository. Error: "
-msgstr ""
+msgstr "저장소를 초기화하는 동안 오류가 발생했습니다. 오류: "
 
 #: src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:209 src/commandsAndMenu.tsx:210 src/commandsAndMenu.tsx:211 src/commandsAndMenu.tsx:214 src/commandsAndMenu.tsx:216 src/commandsAndMenu.tsx:217 src/commandsAndMenu.tsx:218 src/commandsAndMenu.tsx:219 src/commandsAndMenu.tsx:225 src/commandsAndMenu.tsx:229
 msgid "Failed to initialize the Git repository"
-msgstr ""
+msgstr "Git 저장소 초기화에 실패했습니다."
 
 #: src/commandsAndMenu.tsx:228 src/commandsAndMenu.tsx:230 src/commandsAndMenu.tsx:231 src/commandsAndMenu.tsx:232 src/commandsAndMenu.tsx:235 src/commandsAndMenu.tsx:237 src/commandsAndMenu.tsx:238 src/commandsAndMenu.tsx:239 src/commandsAndMenu.tsx:240 src/commandsAndMenu.tsx:246 src/commandsAndMenu.tsx:250
 msgid "Simple staging"
-msgstr ""
+msgstr "간단한 스테이징"
 
 #: src/commandsAndMenu.tsx:237 src/commandsAndMenu.tsx:239 src/commandsAndMenu.tsx:240 src/commandsAndMenu.tsx:241 src/commandsAndMenu.tsx:244 src/commandsAndMenu.tsx:246 src/commandsAndMenu.tsx:247 src/commandsAndMenu.tsx:248 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:255 src/commandsAndMenu.tsx:259
 msgid "Double click opens diff"
-msgstr ""
+msgstr "버전 비교를 열기 위해 더블 클릭"
 
 #: src/commandsAndMenu.tsx:246 src/commandsAndMenu.tsx:248 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:250 src/commandsAndMenu.tsx:253 src/commandsAndMenu.tsx:255 src/commandsAndMenu.tsx:256 src/commandsAndMenu.tsx:257
 msgid "Add Remote Repository"
-msgstr ""
+msgstr "원격 저장소 추가"
 
 #: src/commandsAndMenu.tsx:247 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:250 src/commandsAndMenu.tsx:251 src/commandsAndMenu.tsx:254 src/commandsAndMenu.tsx:256 src/commandsAndMenu.tsx:257 src/commandsAndMenu.tsx:258
 msgid "Add a Git remote repository"
-msgstr ""
+msgstr "Git 원격 저장소 추가"
 
 #: src/commandsAndMenu.tsx:252 src/commandsAndMenu.tsx:254 src/commandsAndMenu.tsx:255 src/commandsAndMenu.tsx:256 src/commandsAndMenu.tsx:259 src/commandsAndMenu.tsx:261 src/commandsAndMenu.tsx:262 src/commandsAndMenu.tsx:263 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:270 src/commandsAndMenu.tsx:274
 msgid "Not in a Git repository. Unable to add a remote."
-msgstr ""
+msgstr "Git 저장소가 아닙니다. 원격을 추가할 수 없습니다."
 
 #: src/commandsAndMenu.tsx:258 src/commandsAndMenu.tsx:259 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:265 src/commandsAndMenu.tsx:268 src/commandsAndMenu.tsx:269
 msgid "Manage Remote Repositories"
-msgstr ""
+msgstr "원격 저장소 관리"
 
 #: src/commandsAndMenu.tsx:261 src/commandsAndMenu.tsx:263 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:265 src/commandsAndMenu.tsx:268 src/commandsAndMenu.tsx:270 src/commandsAndMenu.tsx:271 src/commandsAndMenu.tsx:272
 msgid "Add a remote repository"
-msgstr ""
+msgstr "원격 저장소 추가"
 
 #: src/commandsAndMenu.tsx:262 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:265 src/commandsAndMenu.tsx:266 src/commandsAndMenu.tsx:269 src/commandsAndMenu.tsx:271 src/commandsAndMenu.tsx:272 src/commandsAndMenu.tsx:273 src/components/ManageRemoteDialogue.tsx:128
 msgid "Remote Git repository URL"
-msgstr ""
+msgstr "원격 Git 저장소 URL"
 
 #: src/commandsAndMenu.tsx:276 src/commandsAndMenu.tsx:278 src/commandsAndMenu.tsx:279 src/commandsAndMenu.tsx:280 src/commandsAndMenu.tsx:283 src/commandsAndMenu.tsx:285 src/commandsAndMenu.tsx:286 src/commandsAndMenu.tsx:287 src/components/ManageRemoteDialogue.tsx:176
 msgid "Error when adding remote repository"
-msgstr ""
+msgstr "원격 저장소를 추가하는 동안 오류가 발생했습니다."
 
 #: src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:292 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:296 src/commandsAndMenu.tsx:297 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:301 src/commandsAndMenu.tsx:302 src/commandsAndMenu.tsx:335 src/commandsAndMenu.tsx:336 src/commandsAndMenu.tsx:337 src/commandsAndMenu.tsx:338 src/commandsAndMenu.tsx:339 src/commandsAndMenu.tsx:340 src/commandsAndMenu.tsx:342 src/commandsAndMenu.tsx:343
 msgid "Open .gitignore"
-msgstr ""
+msgstr ".gitignore 열기"
 
 #: src/commandsAndMenu.tsx:296 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:300 src/commandsAndMenu.tsx:303
 msgid "CLONE"
-msgstr ""
+msgstr "복제"
 
 #: src/commandsAndMenu.tsx:303 src/commandsAndMenu.tsx:305 src/commandsAndMenu.tsx:306 src/commandsAndMenu.tsx:307 src/commandsAndMenu.tsx:310
 msgid "Cloning..."
-msgstr ""
+msgstr "복제 중..."
 
 #: src/commandsAndMenu.tsx:303 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:313
 msgid "Push to Remote (Advanced)"
-msgstr ""
+msgstr "원격으로 푸시 (고급)"
 
 #: src/commandsAndMenu.tsx:304 src/commandsAndMenu.tsx:308 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:310 src/commandsAndMenu.tsx:314 src/commandsAndMenu.tsx:345 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:352 src/commandsAndMenu.tsx:355
 msgid "Push to Remote"
-msgstr ""
+msgstr "원격으로 푸시"
 
 #: src/commandsAndMenu.tsx:305 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:310 src/commandsAndMenu.tsx:311 src/commandsAndMenu.tsx:315 src/commandsAndMenu.tsx:346 src/commandsAndMenu.tsx:348 src/commandsAndMenu.tsx:352 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:356
 msgid "Push code to remote repository"
-msgstr ""
+msgstr "원격 저장소로 코드 푸시"
 
 #: src/commandsAndMenu.tsx:307 src/commandsAndMenu.tsx:308 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:350 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:354
 msgid "Push to Remote (Force)"
-msgstr ""
+msgstr "원격으로 푸시 (강제)"
 
 #: src/commandsAndMenu.tsx:314 src/commandsAndMenu.tsx:315 src/commandsAndMenu.tsx:316 src/commandsAndMenu.tsx:331 src/commandsAndMenu.tsx:337 src/commandsAndMenu.tsx:341
 msgid "Pushing…"
-msgstr ""
+msgstr "푸시 중..."
 
 #: src/commandsAndMenu.tsx:314 src/commandsAndMenu.tsx:320 src/commandsAndMenu.tsx:324
 msgid "Please select push options."
-msgstr ""
+msgstr "푸시 옵션을 선택해주세요."
 
 #: src/commandsAndMenu.tsx:318 src/commandsAndMenu.tsx:324 src/commandsAndMenu.tsx:328 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:434 src/commandsAndMenu.tsx:450 src/commandsAndMenu.tsx:472 src/commandsAndMenu.tsx:476
 msgid "Proceed"
-msgstr ""
+msgstr "진행"
 
 #: src/commandsAndMenu.tsx:323 src/commandsAndMenu.tsx:324 src/commandsAndMenu.tsx:325 src/commandsAndMenu.tsx:341 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:360 src/commandsAndMenu.tsx:362 src/commandsAndMenu.tsx:366 src/commandsAndMenu.tsx:367 src/commandsAndMenu.tsx:370
 msgid "Successfully pushed"
-msgstr ""
+msgstr "푸시 성공"
 
 #: src/commandsAndMenu.tsx:329 src/commandsAndMenu.tsx:330 src/commandsAndMenu.tsx:331 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:354 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:366 src/commandsAndMenu.tsx:368 src/commandsAndMenu.tsx:372 src/commandsAndMenu.tsx:373 src/commandsAndMenu.tsx:376
 msgid "Encountered an error when pushing changes. Error: "
-msgstr ""
+msgstr "변경 사항을 푸시하는 도중에 에러가 발생했습니다. 에러: "
 
 #: src/commandsAndMenu.tsx:333 src/commandsAndMenu.tsx:334 src/commandsAndMenu.tsx:335 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:362 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:372 src/commandsAndMenu.tsx:376 src/commandsAndMenu.tsx:377 src/commandsAndMenu.tsx:380
 msgid "Failed to push"
-msgstr ""
+msgstr "푸시 실패"
 
 #: src/commandsAndMenu.tsx:345 src/commandsAndMenu.tsx:346 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:363 src/commandsAndMenu.tsx:377 src/commandsAndMenu.tsx:381
 msgid "Pull from Remote (Force)"
-msgstr ""
+msgstr "원격에서 pull (강제)"
 
 #: src/commandsAndMenu.tsx:346 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:348 src/commandsAndMenu.tsx:364 src/commandsAndMenu.tsx:378 src/commandsAndMenu.tsx:380 src/commandsAndMenu.tsx:382 src/commandsAndMenu.tsx:386 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:390
 msgid "Pull from Remote"
-msgstr ""
+msgstr "원격에서 pull"
 
 #: src/commandsAndMenu.tsx:349 src/commandsAndMenu.tsx:350 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:367 src/commandsAndMenu.tsx:381 src/commandsAndMenu.tsx:385
 msgid "Discard all current changes and pull from remote repository"
-msgstr ""
+msgstr "현재 변경 내용을 모두 취소하고 원격 저장소에서 pull"
 
 #: src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:357 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:361
 msgid "Pushing..."
-msgstr ""
+msgstr "푸시 중..."
 
 #: src/commandsAndMenu.tsx:352 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:354 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:381 src/commandsAndMenu.tsx:383 src/commandsAndMenu.tsx:384 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:388 src/commandsAndMenu.tsx:391
 msgid "Pull latest code from remote repository"
-msgstr ""
+msgstr "원격 저장소로부터 최신 코드 pull"
 
 #: src/commandsAndMenu.tsx:361 src/commandsAndMenu.tsx:362 src/commandsAndMenu.tsx:363 src/commandsAndMenu.tsx:379 src/commandsAndMenu.tsx:393 src/commandsAndMenu.tsx:397
 msgid "Pulling…"
-msgstr ""
+msgstr "Pulling 중..."
 
 #: src/commandsAndMenu.tsx:369 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:371 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:395 src/commandsAndMenu.tsx:397 src/commandsAndMenu.tsx:401 src/commandsAndMenu.tsx:402 src/commandsAndMenu.tsx:405
 msgid "Successfully pulled"
-msgstr ""
+msgstr "Pull 성공"
 
 #: src/commandsAndMenu.tsx:386 src/commandsAndMenu.tsx:388 src/commandsAndMenu.tsx:392 src/commandsAndMenu.tsx:393 src/commandsAndMenu.tsx:396
 msgid "Pulling..."
-msgstr ""
+msgstr "Pulling 중..."
 
 #: src/commandsAndMenu.tsx:403 src/commandsAndMenu.tsx:404 src/commandsAndMenu.tsx:405 src/commandsAndMenu.tsx:407 src/commandsAndMenu.tsx:411 src/commandsAndMenu.tsx:412 src/commandsAndMenu.tsx:415 src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:436 src/commandsAndMenu.tsx:440
 msgid "Failed to pull"
-msgstr ""
+msgstr "Pull 실패"
 
 #: src/commandsAndMenu.tsx:416 src/commandsAndMenu.tsx:417 src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:438 src/commandsAndMenu.tsx:455 src/commandsAndMenu.tsx:459 src/commandsAndMenu.tsx:460 src/commandsAndMenu.tsx:464
 msgid "Reset to Remote"
-msgstr ""
+msgstr "원격으로 재설정"
 
 #: src/commandsAndMenu.tsx:417 src/commandsAndMenu.tsx:418 src/commandsAndMenu.tsx:434 src/commandsAndMenu.tsx:456 src/commandsAndMenu.tsx:460
 msgid "Reset Current Branch to Remote State"
-msgstr ""
+msgstr "현재 브랜치를 원격 상태로 재설정"
 
 #: src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:423 src/commandsAndMenu.tsx:427 src/commandsAndMenu.tsx:428 src/commandsAndMenu.tsx:432 src/commandsAndMenu.tsx:481 src/commandsAndMenu.tsx:482 src/commandsAndMenu.tsx:498 src/commandsAndMenu.tsx:520 src/commandsAndMenu.tsx:524
 msgid "Show Diff"
-msgstr ""
+msgstr "버전 비교 보기"
 
 #: src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:423 src/commandsAndMenu.tsx:424 src/commandsAndMenu.tsx:428 src/commandsAndMenu.tsx:429 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:482 src/commandsAndMenu.tsx:483 src/commandsAndMenu.tsx:499 src/commandsAndMenu.tsx:521 src/commandsAndMenu.tsx:525
 msgid "Display a file diff."
-msgstr ""
+msgstr "버전 비교 파일 표시"
 
 #: src/commandsAndMenu.tsx:423 src/commandsAndMenu.tsx:424 src/commandsAndMenu.tsx:440 src/commandsAndMenu.tsx:462 src/commandsAndMenu.tsx:466
 msgid "To bring the current branch to the state of its corresponding remote tracking branch,             a hard reset will be performed, which may result in some files being permanently deleted             and some changes being permanently discarded. Are you sure you want to proceed?             This action cannot be undone."
-msgstr ""
+msgstr "현재 브랜치를 해당 원격 트래킹 브랜치의 상태로 전환하기 위해 하드 재설정이 수행되며, 이로 인해 일부 파일이 영구적으로 삭제되고 일부 변경 사항이 영구적으로 삭제될 수 있습니다. 계속하시겠습니까? 이 작업은 취소할 수 없습니다."
 
 #: src/commandsAndMenu.tsx:429 src/commandsAndMenu.tsx:430 src/commandsAndMenu.tsx:446 src/commandsAndMenu.tsx:468 src/commandsAndMenu.tsx:472
 msgid "Close all opened files to avoid conflicts"
-msgstr ""
+msgstr "충돌을 방지하기 위해 열려 있는 모든 파일 닫기"
 
 #: src/commandsAndMenu.tsx:440 src/commandsAndMenu.tsx:441 src/commandsAndMenu.tsx:457 src/commandsAndMenu.tsx:479 src/commandsAndMenu.tsx:483
 msgid "Closing all opened files..."
-msgstr ""
+msgstr "열려 있는 모든 파일 닫는 중..."
 
 #: src/commandsAndMenu.tsx:446 src/commandsAndMenu.tsx:447 src/commandsAndMenu.tsx:463 src/commandsAndMenu.tsx:485 src/commandsAndMenu.tsx:489
 msgid "Resetting..."
-msgstr ""
+msgstr "재설정 중..."
 
 #: src/commandsAndMenu.tsx:451 src/commandsAndMenu.tsx:452 src/commandsAndMenu.tsx:468 src/commandsAndMenu.tsx:490 src/commandsAndMenu.tsx:494
 msgid "Successfully reset"
-msgstr ""
+msgstr "재설정 성공"
 
 #: src/commandsAndMenu.tsx:453 src/commandsAndMenu.tsx:454 src/commandsAndMenu.tsx:470 src/commandsAndMenu.tsx:492 src/commandsAndMenu.tsx:496
 msgid "Successfully reset the current branch to its remote state"
-msgstr ""
+msgstr "현재 분기를 원격 상태로 재설정 성공"
 
 #: src/commandsAndMenu.tsx:463 src/commandsAndMenu.tsx:464 src/commandsAndMenu.tsx:480 src/commandsAndMenu.tsx:502 src/commandsAndMenu.tsx:506
 msgid "Reset failed"
-msgstr ""
+msgstr "재설정 실패"
 
 #: src/commandsAndMenu.tsx:468 src/commandsAndMenu.tsx:470 src/commandsAndMenu.tsx:474 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:519 src/commandsAndMenu.tsx:529 src/commandsAndMenu.tsx:578 src/commandsAndMenu.tsx:579 src/commandsAndMenu.tsx:580 src/commandsAndMenu.tsx:596 src/commandsAndMenu.tsx:618 src/commandsAndMenu.tsx:622
 msgid "Refresh"
-msgstr ""
+msgstr "새로고침"
 
 #: src/commandsAndMenu.tsx:473 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:479 src/commandsAndMenu.tsx:480 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:534 src/commandsAndMenu.tsx:583 src/commandsAndMenu.tsx:584 src/commandsAndMenu.tsx:585 src/commandsAndMenu.tsx:601 src/commandsAndMenu.tsx:623 src/commandsAndMenu.tsx:627
 msgid "Refresh diff widget"
-msgstr ""
+msgstr "버전 비교 위젯 새로고침"
 
 #: src/commandsAndMenu.tsx:480 src/commandsAndMenu.tsx:490 src/commandsAndMenu.tsx:539 src/commandsAndMenu.tsx:540 src/commandsAndMenu.tsx:541 src/commandsAndMenu.tsx:557 src/commandsAndMenu.tsx:579 src/commandsAndMenu.tsx:583
 msgid "Mark as resolved"
-msgstr ""
+msgstr "해결됨으로 표시"
 
 #: src/commandsAndMenu.tsx:484 src/commandsAndMenu.tsx:494 src/commandsAndMenu.tsx:543 src/commandsAndMenu.tsx:544 src/commandsAndMenu.tsx:545 src/commandsAndMenu.tsx:561 src/commandsAndMenu.tsx:583 src/commandsAndMenu.tsx:587
 msgid "Resolve with conflicts"
-msgstr ""
+msgstr "충돌 해결"
 
 #: src/commandsAndMenu.tsx:485 src/commandsAndMenu.tsx:495 src/commandsAndMenu.tsx:544 src/commandsAndMenu.tsx:545 src/commandsAndMenu.tsx:546 src/commandsAndMenu.tsx:562 src/commandsAndMenu.tsx:584 src/commandsAndMenu.tsx:588
 msgid "Are you sure you want to mark this file as resolved with merge conflicts?"
-msgstr ""
+msgstr "이 파일을 병합 충돌이 해결된 것으로 표시하시겠습니까?"
 
 #: src/commandsAndMenu.tsx:496 src/commandsAndMenu.tsx:498 src/commandsAndMenu.tsx:503 src/commandsAndMenu.tsx:507 src/commandsAndMenu.tsx:508 src/commandsAndMenu.tsx:554 src/commandsAndMenu.tsx:564 src/commandsAndMenu.tsx:613 src/commandsAndMenu.tsx:614 src/commandsAndMenu.tsx:633 src/commandsAndMenu.tsx:649 src/commandsAndMenu.tsx:671 src/commandsAndMenu.tsx:675
 msgid "Diff Not Supported"
-msgstr ""
+msgstr "버전 비교 지원되지 않음"
 
 #: src/commandsAndMenu.tsx:497 src/commandsAndMenu.tsx:499 src/commandsAndMenu.tsx:504 src/commandsAndMenu.tsx:508 src/commandsAndMenu.tsx:509 src/commandsAndMenu.tsx:555 src/commandsAndMenu.tsx:565 src/commandsAndMenu.tsx:614 src/commandsAndMenu.tsx:615 src/commandsAndMenu.tsx:634 src/commandsAndMenu.tsx:650 src/commandsAndMenu.tsx:672 src/commandsAndMenu.tsx:676
 msgid "Diff is not supported for %1 files."
-msgstr ""
+msgstr "%1 파일에 대해 버전 비교가 지원되지 않습니다."
 
 #: src/commandsAndMenu.tsx:511 src/commandsAndMenu.tsx:513 src/commandsAndMenu.tsx:518 src/commandsAndMenu.tsx:522 src/commandsAndMenu.tsx:523 src/commandsAndMenu.tsx:579 src/commandsAndMenu.tsx:643 src/commandsAndMenu.tsx:702 src/commandsAndMenu.tsx:703 src/commandsAndMenu.tsx:722 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:760 src/commandsAndMenu.tsx:764
 msgid "Open"
-msgstr ""
+msgstr "열기"
 
 #: src/commandsAndMenu.tsx:512 src/commandsAndMenu.tsx:522 src/commandsAndMenu.tsx:571 src/commandsAndMenu.tsx:572 src/commandsAndMenu.tsx:573 src/commandsAndMenu.tsx:589 src/commandsAndMenu.tsx:611 src/commandsAndMenu.tsx:615
 msgid "Mark file as resolved"
-msgstr ""
+msgstr "해결됨으로 파일 표시"
 
 #: src/commandsAndMenu.tsx:513 src/commandsAndMenu.tsx:515 src/commandsAndMenu.tsx:520 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:581 src/commandsAndMenu.tsx:645 src/commandsAndMenu.tsx:704 src/commandsAndMenu.tsx:705 src/commandsAndMenu.tsx:724 src/commandsAndMenu.tsx:740 src/commandsAndMenu.tsx:762 src/commandsAndMenu.tsx:766
 msgid "Open selected file"
-msgstr ""
+msgstr "선택 파일 열기"
 
 #: src/commandsAndMenu.tsx:514 src/commandsAndMenu.tsx:516 src/commandsAndMenu.tsx:521 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:526 src/commandsAndMenu.tsx:582 src/commandsAndMenu.tsx:646 src/commandsAndMenu.tsx:705 src/commandsAndMenu.tsx:706 src/commandsAndMenu.tsx:725 src/commandsAndMenu.tsx:741 src/commandsAndMenu.tsx:763 src/commandsAndMenu.tsx:767
 msgid "Open selected files"
-msgstr ""
+msgstr "선택 파일 열기"
 
 #: src/commandsAndMenu.tsx:522 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:529 src/commandsAndMenu.tsx:533 src/commandsAndMenu.tsx:534 src/commandsAndMenu.tsx:590 src/commandsAndMenu.tsx:654 src/commandsAndMenu.tsx:713 src/commandsAndMenu.tsx:714 src/commandsAndMenu.tsx:733 src/commandsAndMenu.tsx:749 src/commandsAndMenu.tsx:771 src/commandsAndMenu.tsx:775
 msgid "Open File Failed"
-msgstr ""
+msgstr "파일 열기 실패"
 
 #: src/commandsAndMenu.tsx:523 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:530 src/commandsAndMenu.tsx:534 src/commandsAndMenu.tsx:535 src/commandsAndMenu.tsx:591 src/commandsAndMenu.tsx:655 src/commandsAndMenu.tsx:714 src/commandsAndMenu.tsx:715 src/commandsAndMenu.tsx:734 src/commandsAndMenu.tsx:750 src/commandsAndMenu.tsx:772 src/commandsAndMenu.tsx:776
 msgid "This file has been deleted!"
-msgstr ""
+msgstr "이 파일은 삭제되었습니다!"
 
 #: src/commandsAndMenu.tsx:544 src/commandsAndMenu.tsx:546 src/commandsAndMenu.tsx:551 src/commandsAndMenu.tsx:555 src/commandsAndMenu.tsx:556 src/commandsAndMenu.tsx:612 src/commandsAndMenu.tsx:676 src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:736 src/commandsAndMenu.tsx:804 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:842 src/commandsAndMenu.tsx:846
 msgid "Diff"
-msgstr ""
+msgstr "버전 비교"
 
 #: src/commandsAndMenu.tsx:546 src/commandsAndMenu.tsx:548 src/commandsAndMenu.tsx:553 src/commandsAndMenu.tsx:557 src/commandsAndMenu.tsx:558 src/commandsAndMenu.tsx:614 src/commandsAndMenu.tsx:678 src/commandsAndMenu.tsx:737 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:806 src/commandsAndMenu.tsx:822 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:848
 msgid "Diff selected file"
-msgstr ""
+msgstr "선택된 파일의 버전 비교"
 
 #: src/commandsAndMenu.tsx:547 src/commandsAndMenu.tsx:549 src/commandsAndMenu.tsx:554 src/commandsAndMenu.tsx:558 src/commandsAndMenu.tsx:559 src/commandsAndMenu.tsx:615 src/commandsAndMenu.tsx:679 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:739 src/commandsAndMenu.tsx:807 src/commandsAndMenu.tsx:823 src/commandsAndMenu.tsx:845 src/commandsAndMenu.tsx:849
 msgid "Diff selected files"
-msgstr ""
+msgstr "선택된 파일들의 버전 비교"
 
 #: src/commandsAndMenu.tsx:568 src/commandsAndMenu.tsx:627 src/commandsAndMenu.tsx:628 src/commandsAndMenu.tsx:647 src/commandsAndMenu.tsx:663 src/commandsAndMenu.tsx:685 src/commandsAndMenu.tsx:689
 msgid "Merge Branch…"
-msgstr ""
+msgstr "브랜치 병합"
 
 #: src/commandsAndMenu.tsx:569 src/commandsAndMenu.tsx:628 src/commandsAndMenu.tsx:629 src/commandsAndMenu.tsx:648 src/commandsAndMenu.tsx:664 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:690
 msgid "Merge selected branch in the current branch"
-msgstr ""
+msgstr "선택된 브랜치를 현재 브랜치에 병합"
 
 #: src/commandsAndMenu.tsx:608 src/commandsAndMenu.tsx:667 src/commandsAndMenu.tsx:668 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:703 src/commandsAndMenu.tsx:725 src/commandsAndMenu.tsx:729
 msgid "Merging branch '%1'…"
-msgstr ""
+msgstr "브랜치 병합중 '%1'..."
 
 #: src/commandsAndMenu.tsx:615 src/commandsAndMenu.tsx:674 src/commandsAndMenu.tsx:675 src/commandsAndMenu.tsx:694 src/commandsAndMenu.tsx:710 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:736
 msgid "Failed to merge branch '%1' into '%2'."
-msgstr ""
+msgstr "'%1' 브랜치를 '%2'에 병합 실패"
 
 #: src/commandsAndMenu.tsx:627 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:706 src/commandsAndMenu.tsx:722 src/commandsAndMenu.tsx:744 src/commandsAndMenu.tsx:748
 msgid "Branch '%1' merged into '%2'."
-msgstr ""
+msgstr "'%1' 브랜치가 '%2'에 병합됨"
 
 #: src/commandsAndMenu.tsx:704
 msgid "CURRENT"
-msgstr ""
+msgstr "현재"
 
 #: src/commandsAndMenu.tsx:705
 msgid "INCOMING"
-msgstr ""
+msgstr "수신"
 
 #: src/commandsAndMenu.tsx:721
 msgid "RESULT"
-msgstr ""
+msgstr "결과"
 
 #: src/commandsAndMenu.tsx:755 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:763 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:810 src/commandsAndMenu.tsx:812 src/commandsAndMenu.tsx:818 src/commandsAndMenu.tsx:823 src/commandsAndMenu.tsx:843 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:890 src/commandsAndMenu.tsx:945 src/components/Alert.tsx:123 src/index.ts:128 src/index.ts:132 src/index.ts:134
 msgid "DISMISS"
-msgstr ""
+msgstr "취소"
 
 #: src/commandsAndMenu.tsx:755 src/commandsAndMenu.tsx:771 src/commandsAndMenu.tsx:793 src/commandsAndMenu.tsx:797
 msgid "Open File"
-msgstr ""
+msgstr "파일 열기"
 
 #: src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:772 src/commandsAndMenu.tsx:794 src/commandsAndMenu.tsx:798
 msgid "Open file from its diff view"
-msgstr ""
+msgstr "버전 비교 보기에서 파일 열기"
 
 #: src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:827 src/commandsAndMenu.tsx:828 src/commandsAndMenu.tsx:896 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:934 src/commandsAndMenu.tsx:938
 msgid "Current"
-msgstr ""
+msgstr "현재"
 
 #: src/commandsAndMenu.tsx:769 src/commandsAndMenu.tsx:828 src/commandsAndMenu.tsx:829 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:935 src/commandsAndMenu.tsx:939
 msgid "Incoming"
-msgstr ""
+msgstr "수신"
 
 #: src/commandsAndMenu.tsx:785 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:845 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:929 src/commandsAndMenu.tsx:951 src/commandsAndMenu.tsx:955
 msgid "Result"
-msgstr ""
+msgstr "결과"
 
 #: src/components/Alert.tsx:105
 msgid "Error"
-msgstr ""
+msgstr "오류"
 
 #: src/components/Alert.tsx:110
 msgid "SHOW"
-msgstr ""
+msgstr "보기"
 
 #: src/components/Alert.tsx:110
 msgid "Show"
-msgstr ""
+msgstr "보기"
 
 #: src/components/Alert.tsx:120
 msgid "Detailed message"
-msgstr ""
+msgstr "상세 메시지"
 
 #: src/components/Alert.tsx:128
 msgid "Details"
-msgstr ""
+msgstr "상세 정보"
 
 #: src/components/Alert.tsx:148
 msgid "(missing message)"
-msgstr ""
+msgstr "(누락된 메세지)"
 
 #: src/components/BranchMenu.tsx:148 src/components/BranchMenu.tsx:154
 msgid "The current branch contains files with uncommitted changes. Please commit or discard these changes before switching to or creating another branch."
