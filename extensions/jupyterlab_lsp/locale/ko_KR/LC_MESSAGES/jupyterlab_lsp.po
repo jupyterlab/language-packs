@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 99\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2022-12-07 07:22\n"
+"PO-Revision-Date: 2022-12-08 01:35\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
@@ -27,7 +27,7 @@ msgstr "언어 통합"
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/caseSensitive/description
 msgctxt "settings"
 msgid "Should completion filtering be case-sensitive?"
-msgstr "Completion 필터링이 대소문자를 구분하도록 합니까?"
+msgstr "자동 완성 필터링이 대소문자를 구분하도록 합니까?"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/caseSensitive/title
 msgctxt "settings"
@@ -47,7 +47,7 @@ msgstr "연속 힌트 사용"
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/disable/description /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/disable/description /packages/jupyterlab-lsp/schema/highlights.json:/properties/disable/description /packages/jupyterlab-lsp/schema/hover.json:/properties/disable/description /packages/jupyterlab-lsp/schema/jump_to.json:/properties/disable/description /packages/jupyterlab-lsp/schema/rename.json:/properties/disable/description /packages/jupyterlab-lsp/schema/signature.json:/properties/disable/description /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/properties/disable/description
 msgctxt "settings"
 msgid "Disable this feature. Requires reloading JupyterLab to apply changes."
-msgstr "이 기능을 비활성화합니다. 변경 사항을 적용하려면 JupyterLab을 다시 불러와야 합니다."
+msgstr "이 기능을 비활성화 합니다. 변경 사항을 적용하려면 JupyterLab을 다시 불러와야 합니다."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/disable/title /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/disable/title /packages/jupyterlab-lsp/schema/highlights.json:/properties/disable/title /packages/jupyterlab-lsp/schema/hover.json:/properties/disable/title /packages/jupyterlab-lsp/schema/jump_to.json:/properties/disable/title /packages/jupyterlab-lsp/schema/rename.json:/properties/disable/title /packages/jupyterlab-lsp/schema/signature.json:/properties/disable/title /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/properties/disable/title
 msgctxt "settings"
@@ -57,12 +57,12 @@ msgstr "비활성화"
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/disableCompletionsFrom/description
 msgctxt "settings"
 msgid "The sources from which to exclude completion from. Possible values include 'Kernel', 'LSP'."
-msgstr "Completion을 제외할 source입니다. 가능한 값은 'Kernel', 'LSP' 입니다."
+msgstr "자동 완성을 제외할 소스입니다. 가능한 값은 'Kernel', 'LSP' 입니다."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/disableCompletionsFrom/title
 msgctxt "settings"
 msgid "Disable completions by source"
-msgstr "Source별 completion을 비활성화합니다."
+msgstr "소스 별 자동 완성을 비활성화합니다."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/includePerfectMatches/description
 msgctxt "settings"
@@ -72,37 +72,37 @@ msgstr "자동 완성 제안 목록에 완벽한 일치 항목이 포함되도�
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/includePerfectMatches/title
 msgctxt "settings"
 msgid "Include perfect matches"
-msgstr ""
+msgstr "완벽한 일치 항목 포함"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/kernelCompletionsFirst/description
 msgctxt "settings"
 msgid "In case of ties when sorting completions, should the kernel completions receive higher priority than the language server completions?"
-msgstr ""
+msgstr "커널과 언어 서버의 자동 완성 정렬 시 동점일 경우, 커널이 언어 서버보다 더 높은 우선 순위를 가지도록 할까요?"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/kernelCompletionsFirst/title
 msgctxt "settings"
 msgid "Prioritize completions from kernel"
-msgstr ""
+msgstr "커널의 자동 완성 우선 순위 지정"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/kernelResponseTimeout/description
 msgctxt "settings"
 msgid "The time to wait for the kernel completions suggestions in milliseconds. Set to 0 to disable kernel completions, or to -1 to wait indefinitely (not recommended)."
-msgstr ""
+msgstr "커널 자동 완성 제안을 기다리는 시간(밀리초) 입니다. 커널 자동 완성을 사용하지 않으려면 0으로 설정하고, 무기한 대기하려면 -1로 설정하세요(권장하지 않음)."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/kernelResponseTimeout/title
 msgctxt "settings"
 msgid "Kernel completion response timeout"
-msgstr ""
+msgstr "커널 자동 완성 응답 시간 초과"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/labelExtra/description
 msgctxt "settings"
 msgid "What to display next to the completion label, one of: 'detail', 'type', 'source', 'auto'. The default 'auto' will display whichever information is available."
-msgstr ""
+msgstr "자동 완성 라벨 옆에 표시할 내용입니다 ('상세', '유형', '소스', '자동' 중 하나). 기본값인 '자동'은 사용 가능한 정보를 표시합니다."
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/labelExtra/title
 msgctxt "settings"
 msgid "Text to display next to completion label"
-msgstr ""
+msgstr "자동 완성 라벨 옆에 표시할 텍스트"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/layout/description
 msgctxt "settings"
