@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2022-12-10 04:29\n"
+"PO-Revision-Date: 2022-12-10 05:43\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -116,7 +116,7 @@ msgstr "Comandos de aplicación"
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/disabled/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/disabled/description
 msgctxt "settings"
 msgid "Whether the menu is disabled or not"
-msgstr "Si el menú está deshabilitado o no"
+msgstr "Indica si el menú está deshabilitado o no"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/icon/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/icon/description
 msgctxt "settings"
@@ -615,37 +615,37 @@ msgstr "Insertar espacios"
 #: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/lineNumbers/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/lineNumbers/title
 msgctxt "settings"
 msgid "Show Line Numbers"
-msgstr ""
+msgstr "Mostrar números de línea"
 
 #: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/lineWrap/title /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/lineWrap/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/lineWrap/title
 msgctxt "settings"
 msgid "Line Wrap"
-msgstr ""
+msgstr "Ajuste de líneas"
 
 #: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/matchBrackets/title /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/matchBrackets/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/matchBrackets/title
 msgctxt "settings"
 msgid "Match Brackets"
-msgstr ""
+msgstr "Emparejar corchetes"
 
 #: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/readOnly/title /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/readOnly/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/readOnly/title
 msgctxt "settings"
 msgid "Read Only"
-msgstr ""
+msgstr "Solo lectura"
 
 #: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/rulers/title /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/rulers/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/rulers/title
 msgctxt "settings"
 msgid "Rulers"
-msgstr ""
+msgstr "Reglas"
 
 #: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/tabSize/title /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/tabSize/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/tabSize/title
 msgctxt "settings"
 msgid "Tab Size"
-msgstr ""
+msgstr "Tamaño de tabulador"
 
 #: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/wordWrapColumn/title /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/wordWrapColumn/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/wordWrapColumn/title
 msgctxt "settings"
 msgid "Word Wrap Column"
-msgstr ""
+msgstr "Columna de ajuste de líneas"
 
 #: /packages/console-extension/schema/tracker.json:/description
 msgctxt "schema"
@@ -1070,32 +1070,43 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "Nota: Para deshabilitar un elemento de la barra de herramientas,\n"
+"cópielo en Preferencias de usuario y agregue la\n"
+"tecla \"deshabilitada\". El siguiente ejemplo deshabilitará el botón de subida:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"uploader\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Descripción de la barra de herramientas:"
 
 #: /packages/filebrowser-extension/schema/widget.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "File browser toolbar items"
-msgstr ""
+msgstr "Elementos de barra de herramientas del explorador"
 
 #: /packages/filebrowser-extension/schema/widget.json:/title
 msgctxt "schema"
 msgid "File Browser Widget"
-msgstr ""
+msgstr "Widget del explorador de ficheros"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/cursorBlinkRate/title
 msgctxt "settings"
 msgid "Cursor blinking rate"
-msgstr ""
+msgstr "Frecuencia de parpadeo del cursor"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/lineNumbers/title
 msgctxt "settings"
 msgid "Line Numbers"
-msgstr ""
+msgstr "Números de línea"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/showTrailingSpace/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/showTrailingSpace/title
 msgctxt "settings"
 msgid "Show Trailing Space"
-msgstr ""
+msgstr "Mostrar espacios al final"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1105,31 +1116,35 @@ msgstr "Configuración del editor de texto."
 #: /packages/fileeditor-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[1]/submenu/label
 msgctxt "menu"
 msgid "Text Editor Indentation"
-msgstr ""
+msgstr "Indentación del editor de texto"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Editor"
-msgstr ""
+msgstr "Editor"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/description
 msgctxt "settings"
 msgid "The configuration for all text editors.\n"
 "If `fontFamily`, `fontSize` or `lineHeight` are `null`,\n"
 "values from current theme are used."
-msgstr ""
+msgstr "La configuración para los editores de texto.\n"
+"Si `fontFamily`, `fontSize` o `lineHeight` son `null`,\n"
+"se usarán los valores del tema actual."
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/title
 msgctxt "settings"
 msgid "Editor Configuration"
-msgstr ""
+msgstr "Configuración del editor"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/toolbar/description
 msgctxt "settings"
 msgid "Note: To disable a toolbar item,\n"
 "copy it to User Preferences and add the\n"
 "\"disabled\" key. Toolbar description:"
-msgstr ""
+msgstr "Nota: Para deshabilitar un elemento de la barra de herramientas,\n"
+"cópielo a Preferencias de usuario y agregue la clave\n"
+"\"deshabilitada\". Descripción de la barra de herramientas:"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
