@@ -10,6 +10,7 @@ import re
 from pathlib import Path
 
 import semantic_version as semver
+import packaging
 import yaml
 from packaging.version import parse
 
