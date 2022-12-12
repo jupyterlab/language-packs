@@ -10,9 +10,8 @@ import re
 from pathlib import Path
 
 import semantic_version as semver
-import packaging
 import yaml
-from packaging.version import parse
+from packaging.version import InvalidVersion, parse
 
 from github_ql import get_tags
 
@@ -39,12 +38,13 @@ if __name__ == "__main__":
     errors = []  # Will gather the list of extensions not matching the supported versions range
     
     for package_name in packages:
+        config_version = data[package_name]["current-version-tag"]
         try:
-            current_version = parse(data[package_name]["current-version-tag"])
-        except packaging.version.InvalidVersion:
+            current_version = parse(config_version)
+        except InvalidVersion:
             current_version = None
         if current_version is None or current_version.release is None:
-            print(f"Package `{package_name}` has an unsupported version `{current_version.public}` - it will be skipped.")
+            print(f"Package `{package_name}` has an unsupported version `{config_version}` - it will be skipped.")
             continue
         else:
             print(f"Looking for new releases for package `{package_name}`...")
