@@ -69,8 +69,11 @@ if __name__ == "__main__":
                 errors.append(str(err))
             else:
                 for tag in tags:
-                    version = parse(tag)
-                    if version.release is None:
+                    try:
+                        version = parse(tag)
+                    except InvalidVersion:
+                        version = None
+                    if version is None or version.release is None:
                         continue
 
                     if not version.is_devrelease and not version.is_prerelease and version > current_version:
