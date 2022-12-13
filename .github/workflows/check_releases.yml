@@ -41,6 +41,9 @@ jobs:
 
             git config user.name "JupyterLab Language Packs Bot"
             git config user.email 'jupyterlab-bot@users.noreply.github.com'
+            # Needed for hub to create the pull request correctly
+            # Ref: https://github.com/github/hub/issues/1538 https://github.com/github/hub/pull/1705
+            git remote set-head origin --auto
             
             git add repository-map.yml
             git commit -m "New releases"
