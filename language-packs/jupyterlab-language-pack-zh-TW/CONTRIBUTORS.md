@@ -1,7 +1,7 @@
 # Contributors
 
-* Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
+* Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * 蔣昆興 ([@neverleave0916](https://crowdin.com/profile/neverleave0916))
 * Whyjay Zheng ([@whyjz](https://crowdin.com/profile/whyjz))
 * raingel ([@raingel](https://crowdin.com/profile/raingel))

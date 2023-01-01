@@ -25,7 +25,7 @@ from pathlib import Path
 import jupyterlab_translate.api as api
 import semantic_version as semver
 import yaml
-from packaging.version import parse
+from packaging.version import InvalidVersion, parse
 
 from github_ql import get_tags
 
@@ -36,7 +36,9 @@ REPOSITORIES_FOLDER = "repos"
 LANGUAGE_PACKS_FOLDER = "language-packs"
 REPO_MAP_FILE = "repository-map.yml"
 CROWDIN_FILE = "crowdin.yml"
-REPO_REGEX = re.compile(r"^https://(www)?github\.com/(?P<owner>.+)/(?P<repo>.+)(\.git)?$")
+REPO_REGEX = re.compile(
+    r"^https://(www)?github\.com/(?P<owner>.+)/(?P<repo>.+)(\.git)?$"
+)
 
 
 def load_repo_map() -> dict:
@@ -71,14 +73,10 @@ def update_crowdin_config():
     """
     data = load_repo_map()
     crowdin_data = load_crowdin()
-    # _files = crowdin_data["files"]
     packages = [
         {
             "source": "/jupyterlab/locale/jupyterlab.pot",
-            "translation": (
-                f"/jupyterlab/locale/%locale_with_underscore%"
-                f"/LC_MESSAGES/%file_name%.po"
-            ),
+            "translation": r"/language-packs/jupyterlab-language-pack-%locale%/jupyterlab_language_pack_%locale_with_underscore%/locale/%locale_with_underscore%/LC_MESSAGES/%file_name%.po",
         }
     ]
     for pkg_name in sorted(data):
@@ -87,10 +85,7 @@ def update_crowdin_config():
             packages.append(
                 {
                     "source": f"/extensions/{pkg_name_norm}/locale/{pkg_name_norm}.pot",
-                    "translation": (
-                        f"/extensions/{pkg_name_norm}/locale"
-                        f"/%locale_with_underscore%/LC_MESSAGES/%file_name%.po"
-                    ),
+                    "translation": r"/language-packs/jupyterlab-language-pack-%locale%/jupyterlab_language_pack_%locale_with_underscore%/locale/%locale_with_underscore%/LC_MESSAGES/%file_name%.po",
                 }
             )
 
@@ -107,16 +102,35 @@ def update_repo(package_name: str, url: str, version: str):
     repos_path.mkdir(parents=True, exist_ok=True)
 
     if not clone_path.is_dir():
-        args = ["git", "clone", "--depth=1", f"--branch={version}", f"{url}.git", package_name]
+        args = [
+            "git",
+            "clone",
+            "--depth=1",
+            f"--branch={version}",
+            f"{url}.git",
+            package_name,
+        ]
         subprocess.check_call(args, cwd=repos_path)
 
     is_branch = False
     try:
-        args = ["git", "fetch", "--depth=1", "origin", f"+refs/tags/{version}:refs/tags/{version}"]
+        args = [
+            "git",
+            "fetch",
+            "--depth=1",
+            "origin",
+            f"+refs/tags/{version}:refs/tags/{version}",
+        ]
         subprocess.check_call(args, cwd=clone_path)
     except subprocess.CalledProcessError as err:
         # The version is probably a branch
-        args = ["git", "fetch", "--depth=1", "origin", f"+refs/heads/{version}:refs/remotes/origin/{version}"]
+        args = [
+            "git",
+            "fetch",
+            "--depth=1",
+            "origin",
+            f"+refs/heads/{version}:refs/remotes/origin/{version}",
+        ]
         subprocess.check_call(args, cwd=clone_path)
         is_branch = True
 
@@ -138,6 +152,7 @@ def update_catalog(package_name: str, version: str, merge: bool):
     package_repo_dir = REPO_ROOT / REPOSITORIES_FOLDER / package_name
     api.extract_language_pack(package_repo_dir, REPO_ROOT, package_name, merge)
 
+
 def get_min(clause):
     """Extract the smallest version from a NpmSpec range."""
     if isinstance(clause, semver.base.AllOf):
@@ -147,9 +162,12 @@ def get_min(clause):
     elif isinstance(clause, semver.base.Range):
         return clause.target
 
+
 if __name__ == "__main__":
     start_run_time = time.time()
-    parser = argparse.ArgumentParser(description="Update JupyterLab language packages source strings.")
+    parser = argparse.ArgumentParser(
+        description="Update JupyterLab language packages source strings."
+    )
     parser.add_argument("packages", nargs="*", help="Package to update")
 
     args = parser.parse_args()
@@ -168,18 +186,29 @@ if __name__ == "__main__":
         print(f'\n\nUpdating catalog for "{package_name}"\n\n')
         url = data[package_name]["url"]
         current_version = data[package_name]["current-version-tag"]
-        cur_version = parse(current_version)
+        try:
+            cur_version = parse(current_version)
+        except InvalidVersion:
+            cur_version = None
         should_merge = False
 
         # Get the latest tags - assuming the repository is on github
         match = REPO_REGEX.match(data[package_name]["url"])
-        if data[package_name].get("supported-versions") is not None and match is not None:
+        if (
+            cur_version is not None
+            and data[package_name].get("supported-versions") is not None
+            and match is not None
+        ):
             repo = match.groupdict()
             range = semver.NpmSpec(data[package_name]["supported-versions"])
             # min_version = get_min(range.clause)  # Not use
 
             # For JupyterLab we filter explicitly to catch version belonging to minor range
-            ref_filter = f"v{cur_version.major}.{cur_version.minor}" if package_name == "jupyterlab" else None
+            ref_filter = (
+                f"v{cur_version.major}.{cur_version.minor}"
+                if package_name == "jupyterlab"
+                else None
+            )
             try:
                 # Request 100 tags in descending commit date order
                 tags = get_tags(repo["owner"], repo["repo"], filter=ref_filter)
@@ -188,10 +217,14 @@ if __name__ == "__main__":
                 print(err)
             else:
                 for tag in tags:
-                    version = parse(tag)
+                    try:
+                        version = parse(tag)
+                    except InvalidVersion:
+                        version = None
                     if (
-                        version.release is None  # non standard version
-                        or version.is_devrelease # Skip non final versions
+                        version is None
+                        or version.release is None  # non standard version
+                        or version.is_devrelease  # Skip non final versions
                         or version.is_prerelease
                     ):
                         continue
@@ -200,7 +233,9 @@ if __name__ == "__main__":
                     try:
                         semversion = semver.Version(version.base_version)
                     except ValueError as err:
-                        print(f"Tag '{tag}' skipped for package '{package_name}': not a valid semver.")
+                        print(
+                            f"Tag '{tag}' skipped for package '{package_name}': not a valid semver."
+                        )
                         continue
 
                     if semversion in range:

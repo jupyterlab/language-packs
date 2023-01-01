@@ -5,6 +5,7 @@
 * jrogel ([@jrogel](https://crowdin.com/profile/jrogel))
 * Matias Baldanza ([@matiasbaldanza](https://crowdin.com/profile/matiasbaldanza))
 * Juanita Gomez ([@juanitagomezr](https://crowdin.com/profile/juanitagomezr))
+* Miguel J.A ([@mjimanz](https://crowdin.com/profile/mjimanz))
 * miguelmarco ([@miguelmarco](https://crowdin.com/profile/miguelmarco))
 * Edward Villegas-Pulgarin ([@cosmoscalibur](https://crowdin.com/profile/cosmoscalibur))
 * Gonzalo Peña-Castellanos ([@goanpeca](https://crowdin.com/profile/goanpeca))

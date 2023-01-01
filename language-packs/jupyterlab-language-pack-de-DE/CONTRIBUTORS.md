@@ -1,7 +1,7 @@
 # Contributors
 
-* Jens Henrik Goebbert ([@jhgoebbert](https://crowdin.com/profile/jhgoebbert))
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
+* Jens Henrik Goebbert ([@jhgoebbert](https://crowdin.com/profile/jhgoebbert))
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * beweta ([@beweta](https://crowdin.com/profile/beweta))
 * Frédéric Collonval ([@fcollonval](https://crowdin.com/profile/fcollonval))

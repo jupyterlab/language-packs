@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling>=1.4.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jupyterlab-language-pack-et-EE"
+description = "JupyterLab Estonian (Estonia) Language Pack"
+authors = [
+    { name = "Project Jupyter Contributors", email = "jupyter@googlegroups.com" }
+]
+license = { file = "LICENSE.txt" }
+readme = "README.md"
+classifiers = [
+    "Framework :: Jupyter",
+    "Framework :: Jupyter :: JupyterLab",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["jupyterlab", "language", "language pack", "localization"]
+dynamic = ["version"]
+
+[project.entry-points."jupyterlab.languagepack"]
+    et_EE = "jupyterlab_language_pack_et_EE"
+
+[projects.urls]
+homepage = "https://github.com/jupyterlab/language-packs"
+
+[tool.hatch.build]
+artifacts = [
+    "CONTRIBUTORS.md"
+]
+
+[tool.hatch.build.hooks.jupyter-translate]
+dependencies = ["jupyterlab-translate>=1.2.0"]
+
+[tool.hatch.build.targets.wheel]
+artifacts = [
+    "jupyterlab_language_pack_et_EE/**/*.json",
+    "jupyterlab_language_pack_et_EE/**/*.mo",
+]
+exclude = [
+    "jupyterlab_language_pack_et_EE/**/*.po",
+]
+
+[tool.hatch.version]
+path = "jupyterlab_language_pack_et_EE/__init__.py"

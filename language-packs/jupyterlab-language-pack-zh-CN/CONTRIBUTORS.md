@@ -1,7 +1,7 @@
 # Contributors
 
-* Tunghsiao Liu ([@sparanoid](https://crowdin.com/profile/sparanoid))
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
+* Tunghsiao Liu ([@sparanoid](https://crowdin.com/profile/sparanoid))
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * agateriver ([@agateriver](https://crowdin.com/profile/agateriver))
 * bnuhero ([@bnuhero](https://crowdin.com/profile/bnuhero))

@@ -5,12 +5,12 @@ for JupyterLab extensions.
 
 ## Environment
 
-Create an environment with the dependencies on `requirements/release.txt`.
+Create an environment with the dependencies on `requirements.txt`.
 
 ```bash
 conda create -n language-packs nodejs python -c conda-forge -y -q
 conda activate language-packs
-pip install -r requirements/release.txt
+pip install -r requirements.txt
 ```
 
 Also make sure you have `gettext-extract` available globally from NPM.

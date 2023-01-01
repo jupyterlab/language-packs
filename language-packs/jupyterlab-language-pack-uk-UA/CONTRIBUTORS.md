@@ -1,8 +1,8 @@
 # Contributors
 
+* JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * Yuliia Pavliuk ([@pav.yulia](https://crowdin.com/profile/pav.yulia))
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
-* JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * Alina ([@astromavka](https://crowdin.com/profile/astromavka))
 * Denys ([@Veydzher](https://crowdin.com/profile/Veydzher))
 * seventeenfive36 ([@seventeenfive36](https://crowdin.com/profile/seventeenfive36))
