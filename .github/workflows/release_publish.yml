@@ -2,7 +2,7 @@ name: Create Release and publish packages
 
 on:
   push: 
-    branches: ['master', ]
+    branches: ['main', ]
     # Launch if any __init__.py files got modified on 'master' branch
     paths: ['language-packs/**/__init__.py', ]
   workflow_dispatch:
