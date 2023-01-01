@@ -73,14 +73,10 @@ def update_crowdin_config():
     """
     data = load_repo_map()
     crowdin_data = load_crowdin()
-    # _files = crowdin_data["files"]
     packages = [
         {
             "source": "/jupyterlab/locale/jupyterlab.pot",
-            "translation": (
-                f"/jupyterlab/locale/%locale_with_underscore%"
-                f"/LC_MESSAGES/%file_name%.po"
-            ),
+            "translation": r"/language-packs/jupyterlab-language-pack-%locale%/jupyterlab_language_pack_%locale_with_underscore%/locale/%locale_with_underscore%/LC_MESSAGES/%file_name%.po",
         }
     ]
     for pkg_name in sorted(data):
@@ -89,10 +85,7 @@ def update_crowdin_config():
             packages.append(
                 {
                     "source": f"/extensions/{pkg_name_norm}/locale/{pkg_name_norm}.pot",
-                    "translation": (
-                        f"/extensions/{pkg_name_norm}/locale"
-                        f"/%locale_with_underscore%/LC_MESSAGES/%file_name%.po"
-                    ),
+                    "translation": r"/language-packs/jupyterlab-language-pack-%locale%/jupyterlab_language_pack_%locale_with_underscore%/locale/%locale_with_underscore%/LC_MESSAGES/%file_name%.po",
                 }
             )
 
