@@ -23,7 +23,6 @@ from typing import List, Optional
 import polib
 from jupyterlab_translate import api
 
-from contributors import get_contributors_report
 
 # Constants
 HERE = Path(__file__).parent.resolve()
