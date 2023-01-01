@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "New version with format 'X.Y.postZ'"
+        description: "New version with format 'X.Y.postZ' or a hatch segment."
         required: false
-        default: ''
+        default: 'rev'
 
 permissions:
   contents: write
@@ -18,7 +18,7 @@ jobs:
 
     env:
       TARGET_VERSION: ${{ github.event.inputs.version }}
-      CROWDIN_API: ${{ secrets.CROWDIN_TOKEN }}
+      CROWDIN_API_KEY: ${{ secrets.CROWDIN_TOKEN }}
 
     steps:
       - uses: actions/checkout@v3
@@ -30,15 +30,6 @@ jobs:
         run: |
           python -m pip install -r requirements.txt
       - name: Update the language packages
-        if: ${{ github.event.inputs.version == '' }}
-        env:
-          CROWDIN_API: ${{ secrets.CROWDIN_TOKEN }}
-        run: |
-          python scripts/03_prepare_release.py
-      - name: Update the language packages
-        if: ${{ github.event.inputs.version != '' }}
-        env:
-          CROWDIN_API: ${{ secrets.CROWDIN_TOKEN }}
         run: |
           python scripts/03_prepare_release.py --new-version "${{ github.event.inputs.version }}"
       - name: Set branch name and get hash
