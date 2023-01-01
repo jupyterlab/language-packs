@@ -25,7 +25,7 @@ from pathlib import Path
 import jupyterlab_translate.api as api
 import semantic_version as semver
 import yaml
-from packaging.version import parse
+from packaging.version import InvalidVersion, parse
 
 from github_ql import get_tags
 
@@ -186,13 +186,17 @@ if __name__ == "__main__":
         print(f'\n\nUpdating catalog for "{package_name}"\n\n')
         url = data[package_name]["url"]
         current_version = data[package_name]["current-version-tag"]
-        cur_version = parse(current_version)
+        try:
+            cur_version = parse(current_version)
+        except InvalidVersion:
+            cur_version = None
         should_merge = False
 
         # Get the latest tags - assuming the repository is on github
         match = REPO_REGEX.match(data[package_name]["url"])
         if (
-            data[package_name].get("supported-versions") is not None
+            cur_version is not None
+            and data[package_name].get("supported-versions") is not None
             and match is not None
         ):
             repo = match.groupdict()
@@ -213,9 +217,13 @@ if __name__ == "__main__":
                 print(err)
             else:
                 for tag in tags:
-                    version = parse(tag)
+                    try:
+                        version = parse(tag)
+                    except InvalidVersion:
+                        version = None
                     if (
-                        version.release is None  # non standard version
+                        version is None
+                        or version.release is None  # non standard version
                         or version.is_devrelease  # Skip non final versions
                         or version.is_prerelease
                     ):

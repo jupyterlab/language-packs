@@ -25,10 +25,6 @@ from jupyterlab_translate import api, contributors
 HERE = Path(__file__).parent.resolve()
 REPO_ROOT = HERE.parent
 LANG_PACKS_PATH = REPO_ROOT / "language-packs"
-JLAB_LOCALE_PATH = REPO_ROOT / "jupyterlab" / "locale"
-JLAB_EXT_PATH = REPO_ROOT / "extensions"
-LOCALE_FOLDER = "locale"
-LC_MESSAGES_FOLDER = "LC_MESSAGES"
 PYPROJECT_FILE = "pyproject.toml"
 VERSION_REGEX = re.compile(r"\d+\.\d+\.post\d+")
 
@@ -55,9 +51,10 @@ def prepare_jupyterlab_lp_release(
         new_version: [optional] New version of the package - default "rev"
     """
     # This assumes the JupyterLab folder is the source of truth for available locales
-    for locale in sorted(filter(lambda i: i.is_dir(), JLAB_LOCALE_PATH.iterdir())):
-        locale_name = locale.name.replace("_", "-")
-        package_dir = LANG_PACKS_PATH / f"jupyterlab-language-pack-{locale_name}"
+    for package_dir in sorted(filter(lambda i: i.is_dir(), LANG_PACKS_PATH.iterdir())):
+        print(f"Prepare release for {package_dir.name}")
+        locale_name = package_dir.name[-5:]
+        locale = locale_name.replace("-", "_")
 
         # Bump the version
         if (package_dir / PYPROJECT_FILE).exists():
@@ -81,11 +78,11 @@ def prepare_jupyterlab_lp_release(
             bumpversion(package_dir, new_version)
         else:
             if VERSION_REGEX.fullmatch(new_version) is None:
-                api.create_new_language_pack(LANG_PACKS_PATH, locale.name)
+                api.create_new_language_pack(LANG_PACKS_PATH, locale)
             else:
                 api.create_new_language_pack(
                     LANG_PACKS_PATH,
-                    locale.name,
+                    locale,
                     version=new_version,
                 )
 
