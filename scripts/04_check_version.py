@@ -26,7 +26,7 @@ if __name__ == "__main__":
                     cwd=pkg_path,
                     encoding="utf-8",
                     stderr=subprocess.PIPE,
-                )
+                ).strip()
             except subprocess.CalledProcessError as e:
                 last_line = e.stderr.splitlines()[-1]
                 error_class, _, msg = last_line.partition(":")

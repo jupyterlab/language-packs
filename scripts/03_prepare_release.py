@@ -63,7 +63,16 @@ def prepare_jupyterlab_lp_release(
         if (package_dir / PYPROJECT_FILE).exists():
             try:
                 subprocess.check_call(
-                    [sys.executable, "-m", "copier", "update"], cwd=package_dir
+                    [
+                        sys.executable,
+                        "-m",
+                        "copier",
+                        "--force",
+                        "--vsc-ref",
+                        "HEAD",
+                        "update",
+                    ],
+                    cwd=package_dir,
                 )
             except subprocess.CalledProcessError:
                 print(f"Failed to update the package template for {package_dir.name}.")
