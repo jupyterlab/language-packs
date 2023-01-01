@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling>=1.4.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jupyterlab-language-pack-it-IT"
+description = "JupyterLab Italian (Italy) Language Pack"
+authors = [
+    { name = "Project Jupyter Contributors", email = "jupyter@googlegroups.com" }
+]
+license = { file = "LICENSE.txt" }
+readme = "README.md"
+classifiers = [
+    "Framework :: Jupyter",
+    "Framework :: Jupyter :: JupyterLab",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["jupyterlab", "language", "language pack", "localization"]
+dynamic = ["version"]
+
+[project.entry-points."jupyterlab.languagepack"]
+    it_IT = "jupyterlab_language_pack_it_IT"
+
+[projects.urls]
+homepage = "https://github.com/jupyterlab/language-packs"
+
+[tool.hatch.build]
+artifacts = [
+    "CONTRIBUTORS.md"
+]
+
+[tool.hatch.build.hooks.jupyter-translate]
+dependencies = ["jupyterlab-translate>=1.2.0"]
+
+[tool.hatch.build.targets.wheel]
+artifacts = [
+    "jupyterlab_language_pack_it_IT/**/*.json",
+    "jupyterlab_language_pack_it_IT/**/*.mo",
+]
+exclude = [
+    "jupyterlab_language_pack_it_IT/**/*.po",
+]
+
+[tool.hatch.version]
+path = "jupyterlab_language_pack_it_IT/__init__.py"
