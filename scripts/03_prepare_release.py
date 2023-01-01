@@ -65,7 +65,7 @@ def prepare_jupyterlab_lp_release(
                         "-m",
                         "copier",
                         "--force",
-                        "--vsc-ref",
+                        "--vcs-ref",
                         "HEAD",
                         "update",
                     ],
