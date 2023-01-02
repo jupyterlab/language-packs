@@ -1,0 +1,163 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jupyterlab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: jupyterlab\n"
+"X-Crowdin-Project-ID: 409874\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /main/extensions/spellchecker/locale/spellchecker.pot\n"
+"X-Crowdin-File-ID: 213\n"
+"Language-Team: French\n"
+"Language: fr_FR\n"
+"PO-Revision-Date: 2022-12-12 08:53\n"
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/aff/title
+msgctxt "settings"
+msgid "URL address of the .aff file"
+msgstr "Adresse URL du fichier .aff"
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/dic/title
+msgctxt "settings"
+msgid "URL address of the .dic file"
+msgstr "Adresse URL du fichier .dic"
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/id/title
+msgctxt "settings"
+msgid "Unique identifier"
+msgstr "Identifiant unique"
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/name/title
+msgctxt "settings"
+msgid "Display name"
+msgstr "Nom d'affichage"
+
+#: /schema/plugin.json:/description
+msgctxt "schema"
+msgid "Spellchecker settings."
+msgstr "Paramètres du correcteur orthographique."
+
+#: /schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Spellchecker"
+msgstr "Correcteur orthographique"
+
+#: /schema/plugin.json:/properties/ignore/description
+msgctxt "settings"
+msgid "Case-sensitive list of words to be ignored"
+msgstr "Liste de mots à ignorer sensible à la casse"
+
+#: /schema/plugin.json:/properties/ignore/title
+msgctxt "settings"
+msgid "Words to be ignored by the spellchecker"
+msgstr "Mots à ignorer par le correcteur orthographique"
+
+#: /schema/plugin.json:/properties/language/description
+msgctxt "settings"
+msgid "Dictionary identifier, e.g. en-us"
+msgstr "Identifiant du dictionnaire, par ex. en-us"
+
+#: /schema/plugin.json:/properties/language/title
+msgctxt "settings"
+msgid "Language of the spellchecker"
+msgstr "Langue du correcteur orthographique"
+
+#: /schema/plugin.json:/properties/mimeTypes/description
+msgctxt "settings"
+msgid "List of MIME types. GFM denotes GitHub Flavored Markdown"
+msgstr "Liste des types MIME. GFM signifie GitHub Flavored Markdown"
+
+#: /schema/plugin.json:/properties/mimeTypes/title
+msgctxt "settings"
+msgid "MIME types for files/editors for which the spellchecking should be activated"
+msgstr "Types MIME pour les fichiers/éditeurs pour lesquels la vérification orthographique doit être activée"
+
+#: /schema/plugin.json:/properties/onlineDictionaries/description
+msgctxt "settings"
+msgid "A list of online dictionaries to use if installing dictionaries in data path of jupyter-server is not possible or not desirable. For example:\n\n"
+"[\n"
+"    {\n"
+"        \"id\": \"pl_PL-online\",\n"
+"        \"aff\": \"http://some-url/pl_PL.aff\",\n"
+"        \"dic\": \"http://some-url/pl_PL.dic\",\n"
+"        \"name\": \"polski (Polska)\"\n"
+"    }\n"
+"]"
+msgstr "Une liste de dictionnaires en ligne à utiliser si l'installation de dictionnaires dans le chemin de données de jupyter-server n'est pas possible ou n'est pas souhaitable. Par exemple :\n\n"
+"[\n"
+"    {\n"
+"        \"id\": \"pl_PL-online\",\n"
+"        \"aff\": \"http://some-url/pl_PL. ff\",\n"
+"        \"dic\": \"http://some-url/pl_PL. ic\",\n"
+"        \"name\": \"polski (Polska)\"\n"
+"    }\n"
+"]"
+
+#: /schema/plugin.json:/properties/onlineDictionaries/title
+msgctxt "settings"
+msgid "Online dictionaries"
+msgstr "Dictionnaires en ligne"
+
+#: /schema/plugin.json:/properties/theme/description
+msgctxt "settings"
+msgid "Theme for decorating misspelt words, one of:\n"
+"  - 'background-box': fills the background of the misspelt word;\n"
+"  - 'wavy-underline': underline with wavelets (note: Chrome has a bug which prevents rendering of wavelets under some very short words)\n"
+"  - 'dotted-underline': underline with dotted style"
+msgstr "Thème pour décorer des mots mal orthographiés, parmi :\n"
+"  - 'background-box' : remplit le fond du mot mal orthographiés;\n"
+"  - 'wavy-underline' : Souligner avec des ondes (note: Chrome a un bug qui empêche le rendu des ondes sous quelques mots très courts)\n"
+"  - 'dotted-underline' : souligner avec le style pointillé"
+
+#: /schema/plugin.json:/properties/theme/title
+msgctxt "settings"
+msgid "Theme"
+msgstr "Thème"
+
+#: /schema/plugin.json:/title
+msgctxt "schema"
+msgid "Spellchecker"
+msgstr "Correcteur orthographique"
+
+#: src/index.ts:242
+msgid "Dictionary not loaded"
+msgstr "Dictionnaire non chargé"
+
+#: src/index.ts:243
+msgid "Adjust spelling to"
+msgstr "Ajuster l'orthographe à"
+
+#: src/index.ts:244
+msgid "No spellcheck suggestions"
+msgstr "Aucune suggestion de correction orthographique"
+
+#: src/index.ts:245
+msgid "Spell Checker"
+msgstr "Vérificateur orthographique"
+
+#: src/index.ts:374
+msgid "Toggle spellchecker"
+msgstr "Activer/désactiver le correcteur orthographique"
+
+#: src/index.ts:473
+msgid "Ignore"
+msgstr "Ignorer"
+
+#: src/index.ts:560
+msgid "Loading dictionary…"
+msgstr "Chargement du dictionnaire…"
+
+#: src/index.ts:630
+msgid "%1 [%2] (online)"
+msgstr "%1 [%2] (en ligne)"
+
+#: src/index.ts:631
+msgid "%1 [%2]"
+msgstr "%1 [%2]"
+
+#: src/index.ts:635 src/index.ts:663
+msgid "Choose spellchecker language"
+msgstr "Choisir la langue du correcteur orthographique"
+

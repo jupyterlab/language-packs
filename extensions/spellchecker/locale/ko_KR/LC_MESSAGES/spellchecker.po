@@ -1,0 +1,163 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jupyterlab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: jupyterlab\n"
+"X-Crowdin-Project-ID: 409874\n"
+"X-Crowdin-Language: ko\n"
+"X-Crowdin-File: /main/extensions/spellchecker/locale/spellchecker.pot\n"
+"X-Crowdin-File-ID: 213\n"
+"Language-Team: Korean\n"
+"Language: ko_KR\n"
+"PO-Revision-Date: 2022-12-12 00:01\n"
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/aff/title
+msgctxt "settings"
+msgid "URL address of the .aff file"
+msgstr ".aff 파일의 URL 주소"
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/dic/title
+msgctxt "settings"
+msgid "URL address of the .dic file"
+msgstr ".dic 파일의 URL 주소"
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/id/title
+msgctxt "settings"
+msgid "Unique identifier"
+msgstr "고유 식별자"
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/name/title
+msgctxt "settings"
+msgid "Display name"
+msgstr "표시 이름"
+
+#: /schema/plugin.json:/description
+msgctxt "schema"
+msgid "Spellchecker settings."
+msgstr "맞춤법 검사기 설정."
+
+#: /schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Spellchecker"
+msgstr "맞춤법 검사기"
+
+#: /schema/plugin.json:/properties/ignore/description
+msgctxt "settings"
+msgid "Case-sensitive list of words to be ignored"
+msgstr "무시할 단어의 대소문자 구분 목록"
+
+#: /schema/plugin.json:/properties/ignore/title
+msgctxt "settings"
+msgid "Words to be ignored by the spellchecker"
+msgstr "맞춤법 검사기에서 무시할 단어"
+
+#: /schema/plugin.json:/properties/language/description
+msgctxt "settings"
+msgid "Dictionary identifier, e.g. en-us"
+msgstr "사전 식별자 (예: en-us)"
+
+#: /schema/plugin.json:/properties/language/title
+msgctxt "settings"
+msgid "Language of the spellchecker"
+msgstr "맞춤법 검사기 언어"
+
+#: /schema/plugin.json:/properties/mimeTypes/description
+msgctxt "settings"
+msgid "List of MIME types. GFM denotes GitHub Flavored Markdown"
+msgstr "MIME 유형 목록. GFM은 깃허브 마크다운을 나타낸다."
+
+#: /schema/plugin.json:/properties/mimeTypes/title
+msgctxt "settings"
+msgid "MIME types for files/editors for which the spellchecking should be activated"
+msgstr "맞춤법 검사를 활성화해야 하는 파일/편집기의 MIME 유형"
+
+#: /schema/plugin.json:/properties/onlineDictionaries/description
+msgctxt "settings"
+msgid "A list of online dictionaries to use if installing dictionaries in data path of jupyter-server is not possible or not desirable. For example:\n\n"
+"[\n"
+"    {\n"
+"        \"id\": \"pl_PL-online\",\n"
+"        \"aff\": \"http://some-url/pl_PL.aff\",\n"
+"        \"dic\": \"http://some-url/pl_PL.dic\",\n"
+"        \"name\": \"polski (Polska)\"\n"
+"    }\n"
+"]"
+msgstr "주피터 서버의 데이터 경로에 사전을 설치하는 것이 불가능하거나 바람직하지 않은 경우 사용할 온라인 사전 목록입니다. 예:\n\n"
+"[\n"
+"    {\n"
+"        \"id\": \"pl_PL-online\",\n"
+"        \"aff\": \"http://some-url/pl_PL.aff\",\n"
+"        \"dic\": \"http://some-url/pl_PL.dic\",\n"
+"        \"name\": \"polski (Polska)\"\n"
+"    }\n"
+"]"
+
+#: /schema/plugin.json:/properties/onlineDictionaries/title
+msgctxt "settings"
+msgid "Online dictionaries"
+msgstr "온라인 사전"
+
+#: /schema/plugin.json:/properties/theme/description
+msgctxt "settings"
+msgid "Theme for decorating misspelt words, one of:\n"
+"  - 'background-box': fills the background of the misspelt word;\n"
+"  - 'wavy-underline': underline with wavelets (note: Chrome has a bug which prevents rendering of wavelets under some very short words)\n"
+"  - 'dotted-underline': underline with dotted style"
+msgstr "맞춤법이 틀린 단어 표시 방법:\n"
+" - '배경 채우기': 맞춤법이 틀린 단어의 배경을 채웁니다.\n"
+" - '물결 밑줄 긋기': 물결 스타일의 밑줄을 긋습니다. (참고: 크롬에는 매우 짧은 단어 아래에 물결 모양을 렌더링하지 못하게 하는 버그가 있습니다.)\n"
+" - '점선 밑줄 긋기': 점선 스타일의 밑줄을 긋습니다."
+
+#: /schema/plugin.json:/properties/theme/title
+msgctxt "settings"
+msgid "Theme"
+msgstr "테마"
+
+#: /schema/plugin.json:/title
+msgctxt "schema"
+msgid "Spellchecker"
+msgstr "맞춤법 검사기"
+
+#: src/index.ts:242
+msgid "Dictionary not loaded"
+msgstr "불러온 사전이 없습니다."
+
+#: src/index.ts:243
+msgid "Adjust spelling to"
+msgstr "맞춤법 조정"
+
+#: src/index.ts:244
+msgid "No spellcheck suggestions"
+msgstr "가능한 맞춤법 수정 제안이 없습니다."
+
+#: src/index.ts:245
+msgid "Spell Checker"
+msgstr "맞춤법 검사기"
+
+#: src/index.ts:374
+msgid "Toggle spellchecker"
+msgstr "맞춤법 검사기 전환"
+
+#: src/index.ts:473
+msgid "Ignore"
+msgstr "무시하기"
+
+#: src/index.ts:560
+msgid "Loading dictionary…"
+msgstr "사전 불러오는 중..."
+
+#: src/index.ts:630
+msgid "%1 [%2] (online)"
+msgstr "%1 [%2] (온라인)"
+
+#: src/index.ts:631
+msgid "%1 [%2]"
+msgstr "%1 [%2]"
+
+#: src/index.ts:635 src/index.ts:663
+msgid "Choose spellchecker language"
+msgstr "맞춤법 검사기 언어 선택"
+

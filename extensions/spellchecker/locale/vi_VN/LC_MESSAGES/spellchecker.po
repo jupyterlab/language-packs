@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jupyterlab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: jupyterlab\n"
+"X-Crowdin-Project-ID: 409874\n"
+"X-Crowdin-Language: vi\n"
+"X-Crowdin-File: /main/extensions/spellchecker/locale/spellchecker.pot\n"
+"X-Crowdin-File-ID: 213\n"
+"Language-Team: Vietnamese\n"
+"Language: vi_VN\n"
+"PO-Revision-Date: 2022-12-09 17:16\n"
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/aff/title
+msgctxt "settings"
+msgid "URL address of the .aff file"
+msgstr ""
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/dic/title
+msgctxt "settings"
+msgid "URL address of the .dic file"
+msgstr ""
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/id/title
+msgctxt "settings"
+msgid "Unique identifier"
+msgstr "Định danh duy nhất"
+
+#: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/name/title
+msgctxt "settings"
+msgid "Display name"
+msgstr "Tên hiển thị"
+
+#: /schema/plugin.json:/description
+msgctxt "schema"
+msgid "Spellchecker settings."
+msgstr "Cài đặt kiểm tra chính tả."
+
+#: /schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Spellchecker"
+msgstr "Kiểm tra chính tả"
+
+#: /schema/plugin.json:/properties/ignore/description
+msgctxt "settings"
+msgid "Case-sensitive list of words to be ignored"
+msgstr ""
+
+#: /schema/plugin.json:/properties/ignore/title
+msgctxt "settings"
+msgid "Words to be ignored by the spellchecker"
+msgstr "Từ bỏ qua kiểm tra chính tả"
+
+#: /schema/plugin.json:/properties/language/description
+msgctxt "settings"
+msgid "Dictionary identifier, e.g. en-us"
+msgstr "Nhận dạng từ điển, ví dụ: en-us"
+
+#: /schema/plugin.json:/properties/language/title
+msgctxt "settings"
+msgid "Language of the spellchecker"
+msgstr "Ngôn ngữ kiểm tra chính tả"
+
+#: /schema/plugin.json:/properties/mimeTypes/description
+msgctxt "settings"
+msgid "List of MIME types. GFM denotes GitHub Flavored Markdown"
+msgstr ""
+
+#: /schema/plugin.json:/properties/mimeTypes/title
+msgctxt "settings"
+msgid "MIME types for files/editors for which the spellchecking should be activated"
+msgstr ""
+
+#: /schema/plugin.json:/properties/onlineDictionaries/description
+msgctxt "settings"
+msgid "A list of online dictionaries to use if installing dictionaries in data path of jupyter-server is not possible or not desirable. For example:\n\n"
+"[\n"
+"    {\n"
+"        \"id\": \"pl_PL-online\",\n"
+"        \"aff\": \"http://some-url/pl_PL.aff\",\n"
+"        \"dic\": \"http://some-url/pl_PL.dic\",\n"
+"        \"name\": \"polski (Polska)\"\n"
+"    }\n"
+"]"
+msgstr "Danh sách các từ điển trực tuyến được sử dụng nếu việc cài đặt từ điển từ đường dẫn dữ liệu của jupyter-server không thể thực thi hoặc không được chọn. For example:\n\n"
+"[\n"
+"    {\n"
+"        \"id\": \"pl_PL-online\",\n"
+"        \"aff\": \"http://some-url/pl_PL.aff\",\n"
+"        \"dic\": \"http://some-url/pl_PL.dic\",\n"
+"        \"name\": \"polski (Polska)\"\n"
+"    }\n"
+"]"
+
+#: /schema/plugin.json:/properties/onlineDictionaries/title
+msgctxt "settings"
+msgid "Online dictionaries"
+msgstr "Các từ điển trực tuyến"
+
+#: /schema/plugin.json:/properties/theme/description
+msgctxt "settings"
+msgid "Theme for decorating misspelt words, one of:\n"
+"  - 'background-box': fills the background of the misspelt word;\n"
+"  - 'wavy-underline': underline with wavelets (note: Chrome has a bug which prevents rendering of wavelets under some very short words)\n"
+"  - 'dotted-underline': underline with dotted style"
+msgstr ""
+
+#: /schema/plugin.json:/properties/theme/title
+msgctxt "settings"
+msgid "Theme"
+msgstr "Giao diện"
+
+#: /schema/plugin.json:/title
+msgctxt "schema"
+msgid "Spellchecker"
+msgstr "Công cụ kiểm tra chính tả"
+
+#: src/index.ts:242
+msgid "Dictionary not loaded"
+msgstr "Không thể tải từ điển"
+
+#: src/index.ts:243
+msgid "Adjust spelling to"
+msgstr "Điều chỉnh thành"
+
+#: src/index.ts:244
+msgid "No spellcheck suggestions"
+msgstr "Không đề xuất kiểm tra chính tả"
+
+#: src/index.ts:245
+msgid "Spell Checker"
+msgstr "Công cụ kiểm tra chính tả"
+
+#: src/index.ts:374
+msgid "Toggle spellchecker"
+msgstr "Chuyển đổi trình kiểm tra chính tả"
+
+#: src/index.ts:473
+msgid "Ignore"
+msgstr "Bỏ qua"
+
+#: src/index.ts:560
+msgid "Loading dictionary…"
+msgstr "Không thể tải từ điển…"
+
+#: src/index.ts:630
+msgid "%1 [%2] (online)"
+msgstr "%1 [%2] (trực tuyến)"
+
+#: src/index.ts:631
+msgid "%1 [%2]"
+msgstr ""
+
+#: src/index.ts:635 src/index.ts:663
+msgid "Choose spellchecker language"
+msgstr "Chọn ngôn ngữ kiểm tra chính tả"
+

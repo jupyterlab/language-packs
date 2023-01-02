@@ -1,0 +1,1639 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jupyterlab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: jupyterlab\n"
+"X-Crowdin-Project-ID: 409874\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /main/extensions/jupyterlab_git/locale/jupyterlab_git.pot\n"
+"X-Crowdin-File-ID: 197\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"PO-Revision-Date: 2022-12-09 17:12\n"
+
+#: /schema/plugin.json:/description
+msgctxt "schema"
+msgid "jupyterlab-git settings."
+msgstr "Настройки jupyterlab-git."
+
+#: /schema/plugin.json:/jupyter.lab.menus/context[0]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/label
+msgctxt "menu"
+msgid "Git"
+msgstr ""
+
+#: /schema/plugin.json:/jupyter.lab.menus/main[0]/items[12]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/items[15]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/items[16]/submenu/label
+msgctxt "menu"
+msgid "Help"
+msgstr "Справка"
+
+#: /schema/plugin.json:/jupyter.lab.menus/main[0]/items[16]/submenu/items[0]/args/text
+msgctxt "schema"
+msgid "Set Up Remotes"
+msgstr ""
+
+#: /schema/plugin.json:/jupyter.lab.menus/main[0]/items[16]/submenu/items[1]/args/text
+msgctxt "schema"
+msgid "Git Documentation"
+msgstr ""
+
+#: /schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Git"
+msgstr ""
+
+#: /schema/plugin.json:/properties/blockWhileCommandExecutes/description
+msgctxt "settings"
+msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
+msgstr ""
+
+#: /schema/plugin.json:/properties/blockWhileCommandExecutes/title
+msgctxt "settings"
+msgid "Suspend user interaction until commands finish"
+msgstr ""
+
+#: /schema/plugin.json:/properties/cancelPullMergeConflict/description
+msgctxt "settings"
+msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
+msgstr ""
+
+#: /schema/plugin.json:/properties/cancelPullMergeConflict/title
+msgctxt "settings"
+msgid "Cancel pull merge conflict"
+msgstr ""
+
+#: /schema/plugin.json:/properties/commitAndPush/description
+msgctxt "settings"
+msgid "Whether to trigger or not a push for each commit."
+msgstr ""
+
+#: /schema/plugin.json:/properties/commitAndPush/title
+msgctxt "settings"
+msgid "Trigger push on commit"
+msgstr ""
+
+#: /schema/plugin.json:/properties/disableBranchWithChanges/description
+msgctxt "settings"
+msgid "Disable all branch operations (new, switch) when there are changed/staged files"
+msgstr ""
+
+#: /schema/plugin.json:/properties/disableBranchWithChanges/title
+msgctxt "settings"
+msgid "Disable branch with changes"
+msgstr ""
+
+#: /schema/plugin.json:/properties/displayStatus/description
+msgctxt "settings"
+msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
+msgstr ""
+
+#: /schema/plugin.json:/properties/displayStatus/title
+msgctxt "settings"
+msgid "Display Git status updates"
+msgstr ""
+
+#: /schema/plugin.json:/properties/doubleClickDiff/description
+msgctxt "settings"
+msgid "If true, double clicking a file in the list of changed files will open a diff."
+msgstr ""
+
+#: /schema/plugin.json:/properties/doubleClickDiff/description
+msgctxt "settings"
+msgid "If true, doubling clicking a file in the list of changed files will open a diff."
+msgstr ""
+
+#: /schema/plugin.json:/properties/doubleClickDiff/title
+msgctxt "settings"
+msgid "Show diff on double click"
+msgstr ""
+
+#: /schema/plugin.json:/properties/historyCount/description
+msgctxt "settings"
+msgid "Number of (most recent) commits shown in the history log"
+msgstr ""
+
+#: /schema/plugin.json:/properties/historyCount/title
+msgctxt "settings"
+msgid "History count"
+msgstr "Счётчик истории"
+
+#: /schema/plugin.json:/properties/openFilesBehindWarning/description
+msgctxt "settings"
+msgid "If true, a popup dialog will be displayed if a user opens a file that is behind its remote branch version, or if an opened file has updates on the remote branch."
+msgstr ""
+
+#: /schema/plugin.json:/properties/openFilesBehindWarning/title
+msgctxt "settings"
+msgid "Open files behind warning"
+msgstr ""
+
+#: /schema/plugin.json:/properties/refreshIfHidden/description
+msgctxt "settings"
+msgid "Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance."
+msgstr ""
+
+#: /schema/plugin.json:/properties/refreshIfHidden/title
+msgctxt "settings"
+msgid "Refresh if the Git tab is hidden"
+msgstr ""
+
+#: /schema/plugin.json:/properties/refreshInterval/description
+msgctxt "settings"
+msgid "Number of milliseconds between polling the file system for changes."
+msgstr ""
+
+#: /schema/plugin.json:/properties/refreshInterval/title
+msgctxt "settings"
+msgid "Refresh interval"
+msgstr "Частота обновления"
+
+#: /schema/plugin.json:/properties/simpleStaging/description
+msgctxt "settings"
+msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
+msgstr ""
+
+#: /schema/plugin.json:/properties/simpleStaging/title
+msgctxt "settings"
+msgid "Simple staging flag"
+msgstr ""
+
+#: /schema/plugin.json:/title
+msgctxt "schema"
+msgid "Git"
+msgstr ""
+
+#: src/cloneCommand.ts:35 src/commandsAndMenu.tsx:286 src/commandsAndMenu.tsx:288 src/commandsAndMenu.tsx:289 src/commandsAndMenu.tsx:290 src/commandsAndMenu.tsx:293 src/components/GitPanel.tsx:454 src/components/GitPanel.tsx:470 src/components/GitPanel.tsx:475 src/components/GitPanel.tsx:483 src/components/GitPanel.tsx:497 src/components/GitPanel.tsx:505 src/components/GitPanel.tsx:604 src/components/GitPanel.tsx:605
+msgid "Clone a Repository"
+msgstr "Клонировать репозиторий"
+
+#: src/cloneCommand.ts:36 src/commandsAndMenu.tsx:287 src/commandsAndMenu.tsx:289 src/commandsAndMenu.tsx:290 src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:294
+msgid "Clone a repository from a URL"
+msgstr "Клонировать репозиторий по URL-адресу"
+
+#: src/cloneCommand.ts:40 src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:293 src/commandsAndMenu.tsx:294 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:298
+msgid "Clone a repo"
+msgstr "Клонировать репозиторий"
+
+#: src/cloneCommand.ts:44 src/commandsAndMenu.tsx:1001 src/commandsAndMenu.tsx:1002 src/commandsAndMenu.tsx:1044 src/commandsAndMenu.tsx:1045 src/commandsAndMenu.tsx:1070 src/commandsAndMenu.tsx:1086 src/commandsAndMenu.tsx:1108 src/commandsAndMenu.tsx:1112 src/commandsAndMenu.tsx:1113 src/commandsAndMenu.tsx:1129 src/commandsAndMenu.tsx:1151 src/commandsAndMenu.tsx:1155 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:204 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:297 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:302 src/commandsAndMenu.tsx:317 src/commandsAndMenu.tsx:323 src/commandsAndMenu.tsx:327 src/commandsAndMenu.tsx:432 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:449 src/commandsAndMenu.tsx:471 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:743 src/commandsAndMenu.tsx:745 src/commandsAndMenu.tsx:751 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:794 src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:819 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:878 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:942 src/commandsAndMenu.tsx:985 src/components/BranchMenu.tsx:344 src/components/BranchMenu.tsx:367 src/components/FileList.tsx:182 src/components/FileList.tsx:191 src/components/FileList.tsx:193 src/components/FileList.tsx:196 src/components/FileList.tsx:207 src/components/FileList.tsx:216 src/components/FileList.tsx:218 src/components/FileList.tsx:267 src/components/MergeBranchDialog.tsx:173 src/components/NewBranchDialog.tsx:202 src/components/NewBranchDialog.tsx:209 src/widgets/discardAllChanges.ts:25
+msgid "Cancel"
+msgstr "Отмена"
+
+#: src/cloneCommand.ts:45
+msgid "Clone"
+msgstr "Клонировать"
+
+#: src/cloneCommand.ts:52
+msgid "Cloning…"
+msgstr "Клонирование…"
+
+#: src/cloneCommand.ts:62 src/cloneCommand.ts:66 src/cloneCommand.ts:67 src/commandsAndMenu.tsx:313 src/commandsAndMenu.tsx:315 src/commandsAndMenu.tsx:316 src/commandsAndMenu.tsx:317 src/commandsAndMenu.tsx:320
+msgid "Successfully cloned"
+msgstr "Успешное клонирование"
+
+#: src/cloneCommand.ts:73 src/cloneCommand.ts:77 src/cloneCommand.ts:78 src/commandsAndMenu.tsx:324 src/commandsAndMenu.tsx:326 src/commandsAndMenu.tsx:327 src/commandsAndMenu.tsx:328 src/commandsAndMenu.tsx:331
+msgid "Failed to clone"
+msgstr "Не удалось клонировать"
+
+#: src/commandsAndMenu.tsx:1002 src/commandsAndMenu.tsx:1003 src/commandsAndMenu.tsx:1049 src/commandsAndMenu.tsx:1065 src/commandsAndMenu.tsx:1071 src/commandsAndMenu.tsx:1087 src/commandsAndMenu.tsx:1091 src/commandsAndMenu.tsx:1109 src/commandsAndMenu.tsx:1113 src/commandsAndMenu.tsx:722 src/commandsAndMenu.tsx:724 src/commandsAndMenu.tsx:730 src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:744 src/commandsAndMenu.tsx:746 src/commandsAndMenu.tsx:752 src/commandsAndMenu.tsx:755 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:857 src/commandsAndMenu.tsx:879 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:943 src/commandsAndMenu.tsx:980 src/commandsAndMenu.tsx:981 src/components/BranchMenu.tsx:345 src/components/BranchMenu.tsx:368
+msgid "Delete"
+msgstr "Удалить"
+
+#: src/commandsAndMenu.tsx:1004 src/commandsAndMenu.tsx:1007 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:1071 src/commandsAndMenu.tsx:1128 src/commandsAndMenu.tsx:1129 src/commandsAndMenu.tsx:1131 src/commandsAndMenu.tsx:1132 src/commandsAndMenu.tsx:1197 src/commandsAndMenu.tsx:1200 src/commandsAndMenu.tsx:1213 src/commandsAndMenu.tsx:1216 src/commandsAndMenu.tsx:1235 src/commandsAndMenu.tsx:1238 src/commandsAndMenu.tsx:1239 src/commandsAndMenu.tsx:1242 src/commandsAndMenu.tsx:869 src/commandsAndMenu.tsx:871 src/commandsAndMenu.tsx:872 src/commandsAndMenu.tsx:874 src/commandsAndMenu.tsx:877 src/commandsAndMenu.tsx:880 src/commandsAndMenu.tsx:882 src/commandsAndMenu.tsx:885 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:905 src/commandsAndMenu.tsx:906
+msgid "Ignore"
+msgstr "Игнорировать"
+
+#: src/commandsAndMenu.tsx:1007 src/commandsAndMenu.tsx:1066 src/commandsAndMenu.tsx:1067 src/commandsAndMenu.tsx:1135 src/commandsAndMenu.tsx:1151 src/commandsAndMenu.tsx:1173 src/commandsAndMenu.tsx:1177 src/commandsAndMenu.tsx:808 src/commandsAndMenu.tsx:810 src/commandsAndMenu.tsx:816 src/commandsAndMenu.tsx:821 src/commandsAndMenu.tsx:841 src/commandsAndMenu.tsx:842 src/commandsAndMenu.tsx:943
+msgid "Discard changes for %1 failed."
+msgstr "Не удалось отменить изменения для %1."
+
+#: src/commandsAndMenu.tsx:1008 src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1046 src/commandsAndMenu.tsx:1050 src/commandsAndMenu.tsx:681 src/commandsAndMenu.tsx:683 src/commandsAndMenu.tsx:689 src/commandsAndMenu.tsx:694 src/commandsAndMenu.tsx:714 src/commandsAndMenu.tsx:715 src/commandsAndMenu.tsx:816 src/commandsAndMenu.tsx:880 src/commandsAndMenu.tsx:939 src/commandsAndMenu.tsx:940
+msgid "Track"
+msgstr "Отслеживать"
+
+#: src/commandsAndMenu.tsx:1009 src/commandsAndMenu.tsx:1013 src/commandsAndMenu.tsx:1014 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:1069 src/commandsAndMenu.tsx:1082 src/commandsAndMenu.tsx:1098 src/commandsAndMenu.tsx:1120 src/commandsAndMenu.tsx:1124 src/commandsAndMenu.tsx:1137 src/commandsAndMenu.tsx:1153 src/commandsAndMenu.tsx:1175 src/commandsAndMenu.tsx:1179 src/commandsAndMenu.tsx:954 src/components/Alert.tsx:106 src/components/Alert.tsx:123 src/components/BranchMenu.tsx:69 src/components/BranchMenu.tsx:70 src/components/TagMenu.tsx:63 src/index.ts:135 src/index.ts:136
+msgid "Dismiss"
+msgstr "Отклонить"
+
+#: src/commandsAndMenu.tsx:1009 src/commandsAndMenu.tsx:1031 src/commandsAndMenu.tsx:1035 src/commandsAndMenu.tsx:666 src/commandsAndMenu.tsx:668 src/commandsAndMenu.tsx:674 src/commandsAndMenu.tsx:679 src/commandsAndMenu.tsx:699 src/commandsAndMenu.tsx:700 src/commandsAndMenu.tsx:801 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:924 src/commandsAndMenu.tsx:925 src/commandsAndMenu.tsx:993
+msgid "Stage"
+msgstr "Стадия"
+
+#: src/commandsAndMenu.tsx:1010 src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1048 src/commandsAndMenu.tsx:1052 src/commandsAndMenu.tsx:683 src/commandsAndMenu.tsx:685 src/commandsAndMenu.tsx:691 src/commandsAndMenu.tsx:696 src/commandsAndMenu.tsx:716 src/commandsAndMenu.tsx:717 src/commandsAndMenu.tsx:818 src/commandsAndMenu.tsx:882 src/commandsAndMenu.tsx:941 src/commandsAndMenu.tsx:942
+msgid "Start tracking selected file"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1011 src/commandsAndMenu.tsx:1027 src/commandsAndMenu.tsx:1049 src/commandsAndMenu.tsx:1053 src/commandsAndMenu.tsx:684 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:692 src/commandsAndMenu.tsx:697 src/commandsAndMenu.tsx:717 src/commandsAndMenu.tsx:718 src/commandsAndMenu.tsx:819 src/commandsAndMenu.tsx:883 src/commandsAndMenu.tsx:942 src/commandsAndMenu.tsx:943
+msgid "Start tracking selected files"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1011 src/commandsAndMenu.tsx:1033 src/commandsAndMenu.tsx:1037 src/commandsAndMenu.tsx:668 src/commandsAndMenu.tsx:670 src/commandsAndMenu.tsx:676 src/commandsAndMenu.tsx:681 src/commandsAndMenu.tsx:701 src/commandsAndMenu.tsx:702 src/commandsAndMenu.tsx:803 src/commandsAndMenu.tsx:867 src/commandsAndMenu.tsx:926 src/commandsAndMenu.tsx:927 src/commandsAndMenu.tsx:995
+msgid "Stage the changes of selected file"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1012 src/commandsAndMenu.tsx:1013 src/commandsAndMenu.tsx:1081 src/commandsAndMenu.tsx:1097 src/commandsAndMenu.tsx:1119 src/commandsAndMenu.tsx:1123 src/commandsAndMenu.tsx:754 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:762 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:787 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:889 src/commandsAndMenu.tsx:953
+msgid "Deleting %1 failed."
+msgstr "Удаление %1 не удалось."
+
+#: src/commandsAndMenu.tsx:1012 src/commandsAndMenu.tsx:1034 src/commandsAndMenu.tsx:1038 src/commandsAndMenu.tsx:669 src/commandsAndMenu.tsx:671 src/commandsAndMenu.tsx:677 src/commandsAndMenu.tsx:682 src/commandsAndMenu.tsx:702 src/commandsAndMenu.tsx:703 src/commandsAndMenu.tsx:804 src/commandsAndMenu.tsx:868 src/commandsAndMenu.tsx:927 src/commandsAndMenu.tsx:928 src/commandsAndMenu.tsx:996
+msgid "Stage the changes of selected files"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1016 src/commandsAndMenu.tsx:1020 src/commandsAndMenu.tsx:651 src/commandsAndMenu.tsx:653 src/commandsAndMenu.tsx:659 src/commandsAndMenu.tsx:664 src/commandsAndMenu.tsx:684 src/commandsAndMenu.tsx:685 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:850 src/commandsAndMenu.tsx:909 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:978 src/commandsAndMenu.tsx:994 src/components/ManageRemoteDialogue.tsx:159
+msgid "Add"
+msgstr "Добавить"
+
+#: src/commandsAndMenu.tsx:1018 src/commandsAndMenu.tsx:1022 src/commandsAndMenu.tsx:653 src/commandsAndMenu.tsx:655 src/commandsAndMenu.tsx:661 src/commandsAndMenu.tsx:666 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:911 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:980 src/commandsAndMenu.tsx:996
+msgid "Stage or track the changes to selected file"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1019 src/commandsAndMenu.tsx:1023 src/commandsAndMenu.tsx:654 src/commandsAndMenu.tsx:656 src/commandsAndMenu.tsx:662 src/commandsAndMenu.tsx:667 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:688 src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:853 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:981 src/commandsAndMenu.tsx:997
+msgid "Stage or track the changes of selected files"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1020 src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1079 src/commandsAndMenu.tsx:1080 src/commandsAndMenu.tsx:1083 src/commandsAndMenu.tsx:1084 src/commandsAndMenu.tsx:1148 src/commandsAndMenu.tsx:1152 src/commandsAndMenu.tsx:1164 src/commandsAndMenu.tsx:1168 src/commandsAndMenu.tsx:1186 src/commandsAndMenu.tsx:1190 src/commandsAndMenu.tsx:1194 src/commandsAndMenu.tsx:821 src/commandsAndMenu.tsx:823 src/commandsAndMenu.tsx:825 src/commandsAndMenu.tsx:827 src/commandsAndMenu.tsx:829 src/commandsAndMenu.tsx:833 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:838 src/commandsAndMenu.tsx:854 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:858 src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:956 src/commandsAndMenu.tsx:960
+msgid "Ignore this file (add to .gitignore)"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1021 src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1080 src/commandsAndMenu.tsx:1081 src/commandsAndMenu.tsx:1084 src/commandsAndMenu.tsx:1085 src/commandsAndMenu.tsx:1149 src/commandsAndMenu.tsx:1153 src/commandsAndMenu.tsx:1165 src/commandsAndMenu.tsx:1169 src/commandsAndMenu.tsx:1187 src/commandsAndMenu.tsx:1191 src/commandsAndMenu.tsx:1195 src/commandsAndMenu.tsx:822 src/commandsAndMenu.tsx:824 src/commandsAndMenu.tsx:826 src/commandsAndMenu.tsx:828 src/commandsAndMenu.tsx:830 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:835 src/commandsAndMenu.tsx:839 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:856 src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:860 src/commandsAndMenu.tsx:957 src/commandsAndMenu.tsx:961
+msgid "Ignore these files (add to .gitignore)"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1023 src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1045 src/commandsAndMenu.tsx:1046 src/commandsAndMenu.tsx:1092 src/commandsAndMenu.tsx:1108 src/commandsAndMenu.tsx:1114 src/commandsAndMenu.tsx:1130 src/commandsAndMenu.tsx:1134 src/commandsAndMenu.tsx:1152 src/commandsAndMenu.tsx:1156 src/commandsAndMenu.tsx:765 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:773 src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:787 src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:795 src/commandsAndMenu.tsx:798 src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:800 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:821 src/commandsAndMenu.tsx:900 src/commandsAndMenu.tsx:922 src/commandsAndMenu.tsx:964 src/commandsAndMenu.tsx:986 src/components/FileList.tsx:183 src/components/FileList.tsx:192 src/components/FileList.tsx:194 src/components/FileList.tsx:197 src/components/FileList.tsx:208 src/components/FileList.tsx:217 src/components/FileList.tsx:219 src/components/FileList.tsx:268 src/widgets/discardAllChanges.ts:26
+msgid "Discard"
+msgstr "Отклонить"
+
+#: src/commandsAndMenu.tsx:1023 src/commandsAndMenu.tsx:1039 src/commandsAndMenu.tsx:1061 src/commandsAndMenu.tsx:1065 src/commandsAndMenu.tsx:696 src/commandsAndMenu.tsx:698 src/commandsAndMenu.tsx:704 src/commandsAndMenu.tsx:709 src/commandsAndMenu.tsx:729 src/commandsAndMenu.tsx:730 src/commandsAndMenu.tsx:831 src/commandsAndMenu.tsx:895 src/commandsAndMenu.tsx:954 src/commandsAndMenu.tsx:955
+msgid "Unstage"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1088 src/commandsAndMenu.tsx:1148 src/commandsAndMenu.tsx:1149 src/commandsAndMenu.tsx:1217 src/commandsAndMenu.tsx:1233 src/commandsAndMenu.tsx:1255 src/commandsAndMenu.tsx:1259 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:922 src/commandsAndMenu.tsx:923 src/components/GitPanel.tsx:344 src/components/GitPanel.tsx:358 src/components/GitPanel.tsx:363 src/components/GitPanel.tsx:370 src/components/GitPanel.tsx:383 src/components/GitPanel.tsx:391 src/components/GitPanel.tsx:414 src/components/GitPanel.tsx:415
+msgid "History"
+msgstr "История"
+
+#: src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1094 src/commandsAndMenu.tsx:1110 src/commandsAndMenu.tsx:1132 src/commandsAndMenu.tsx:1136 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:769 src/commandsAndMenu.tsx:775 src/commandsAndMenu.tsx:780 src/commandsAndMenu.tsx:800 src/commandsAndMenu.tsx:801 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:966
+msgid "Discard recent changes of selected file"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1041 src/commandsAndMenu.tsx:1063 src/commandsAndMenu.tsx:1067 src/commandsAndMenu.tsx:698 src/commandsAndMenu.tsx:700 src/commandsAndMenu.tsx:706 src/commandsAndMenu.tsx:711 src/commandsAndMenu.tsx:731 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:833 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:956 src/commandsAndMenu.tsx:957
+msgid "Unstage the changes of selected file"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1089 src/commandsAndMenu.tsx:1149 src/commandsAndMenu.tsx:1150 src/commandsAndMenu.tsx:1218 src/commandsAndMenu.tsx:1234 src/commandsAndMenu.tsx:1256 src/commandsAndMenu.tsx:1260 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:923 src/commandsAndMenu.tsx:924
+msgid "View the history of this file"
+msgstr "Просмотреть историю этого файла"
+
+#: src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1027 src/commandsAndMenu.tsx:1095 src/commandsAndMenu.tsx:1111 src/commandsAndMenu.tsx:1133 src/commandsAndMenu.tsx:1137 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:770 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:781 src/commandsAndMenu.tsx:801 src/commandsAndMenu.tsx:802 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:967
+msgid "Discard recent changes of selected files"
+msgstr "Отменить последние изменения выбранных файлов"
+
+#: src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1042 src/commandsAndMenu.tsx:1064 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:699 src/commandsAndMenu.tsx:701 src/commandsAndMenu.tsx:707 src/commandsAndMenu.tsx:712 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:733 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:898 src/commandsAndMenu.tsx:957 src/commandsAndMenu.tsx:958
+msgid "Unstage the changes of selected files"
+msgstr "Отменить изменения выбранных файлов"
+
+#: src/commandsAndMenu.tsx:1033 src/commandsAndMenu.tsx:1034 src/commandsAndMenu.tsx:1102 src/commandsAndMenu.tsx:1118 src/commandsAndMenu.tsx:1140 src/commandsAndMenu.tsx:1144 src/commandsAndMenu.tsx:775 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:783 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:808 src/commandsAndMenu.tsx:809 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:974 src/components/FileList.tsx:1125 src/components/FileList.tsx:1151 src/components/FileList.tsx:457 src/components/FileList.tsx:466 src/components/FileList.tsx:534 src/components/FileList.tsx:535 src/components/FileList.tsx:655 src/components/FileList.tsx:664 src/components/FileList.tsx:681 src/components/FileList.tsx:690 src/components/FileList.tsx:733 src/components/FileList.tsx:759 src/components/FileList.tsx:810 src/components/FileList.tsx:836 src/components/FileList.tsx:837
+msgid "Discard changes"
+msgstr "Отменить изменения"
+
+#: src/commandsAndMenu.tsx:1036 src/commandsAndMenu.tsx:1037 src/commandsAndMenu.tsx:1105 src/commandsAndMenu.tsx:1121 src/commandsAndMenu.tsx:1143 src/commandsAndMenu.tsx:1147 src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:780 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:791 src/commandsAndMenu.tsx:811 src/commandsAndMenu.tsx:812 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:977
+msgid "Are you sure you want to permanently discard changes to the following files?               This action cannot be undone."
+msgstr "Вы уверены, что хотите отменить изменения в следующих файлах? Это действие нельзя отменить."
+
+#: src/commandsAndMenu.tsx:1043 src/commandsAndMenu.tsx:1103 src/commandsAndMenu.tsx:1104 src/commandsAndMenu.tsx:1172 src/commandsAndMenu.tsx:1188 src/commandsAndMenu.tsx:1210 src/commandsAndMenu.tsx:1214 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:846 src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:857 src/commandsAndMenu.tsx:877 src/commandsAndMenu.tsx:878 src/commandsAndMenu.tsx:979
+msgid "Ignore %2 extension (add to .gitignore)"
+msgid_plural "Ignore %2 extensions (add to .gitignore)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] "Игнорировать расширение %2 (добавить в .gitignore)"
+
+#: src/commandsAndMenu.tsx:1043 src/commandsAndMenu.tsx:1107 src/commandsAndMenu.tsx:1167 src/commandsAndMenu.tsx:1168 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1252 src/commandsAndMenu.tsx:1274 src/commandsAndMenu.tsx:1278 src/commandsAndMenu.tsx:889 src/commandsAndMenu.tsx:891 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:941 src/commandsAndMenu.tsx:942
+msgid "No actions available"
+msgstr "Действия недоступны"
+
+#: src/commandsAndMenu.tsx:1051 src/commandsAndMenu.tsx:1067 src/commandsAndMenu.tsx:1089 src/commandsAndMenu.tsx:1093 src/commandsAndMenu.tsx:724 src/commandsAndMenu.tsx:726 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:737 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:758 src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:923 src/commandsAndMenu.tsx:982 src/commandsAndMenu.tsx:983
+msgid "Delete this file"
+msgstr "Удалить этот файл"
+
+#: src/commandsAndMenu.tsx:1051 src/commandsAndMenu.tsx:1111 src/commandsAndMenu.tsx:1112 src/commandsAndMenu.tsx:1180 src/commandsAndMenu.tsx:1196 src/commandsAndMenu.tsx:1218 src/commandsAndMenu.tsx:1222 src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:854 src/commandsAndMenu.tsx:860 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:885 src/commandsAndMenu.tsx:886 src/commandsAndMenu.tsx:987
+msgid "Ignore this file extension (add to .gitignore)"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1052 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:1090 src/commandsAndMenu.tsx:1094 src/commandsAndMenu.tsx:725 src/commandsAndMenu.tsx:727 src/commandsAndMenu.tsx:733 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:758 src/commandsAndMenu.tsx:759 src/commandsAndMenu.tsx:860 src/commandsAndMenu.tsx:924 src/commandsAndMenu.tsx:983 src/commandsAndMenu.tsx:984
+msgid "Delete these files"
+msgstr "Удалить эти файлы"
+
+#: src/commandsAndMenu.tsx:1052 src/commandsAndMenu.tsx:1112 src/commandsAndMenu.tsx:1113 src/commandsAndMenu.tsx:1181 src/commandsAndMenu.tsx:1197 src/commandsAndMenu.tsx:1219 src/commandsAndMenu.tsx:1223 src/commandsAndMenu.tsx:853 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:861 src/commandsAndMenu.tsx:866 src/commandsAndMenu.tsx:886 src/commandsAndMenu.tsx:887 src/commandsAndMenu.tsx:988
+msgid "Ignore these files extension (add to .gitignore)"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1059 src/commandsAndMenu.tsx:1075 src/commandsAndMenu.tsx:1097 src/commandsAndMenu.tsx:1101 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:734 src/commandsAndMenu.tsx:740 src/commandsAndMenu.tsx:745 src/commandsAndMenu.tsx:765 src/commandsAndMenu.tsx:766 src/commandsAndMenu.tsx:867 src/commandsAndMenu.tsx:931 src/commandsAndMenu.tsx:990 src/commandsAndMenu.tsx:991
+msgid "Delete Files"
+msgstr "Удалить файлы"
+
+#: src/commandsAndMenu.tsx:1061 src/commandsAndMenu.tsx:1121 src/commandsAndMenu.tsx:1122 src/commandsAndMenu.tsx:1190 src/commandsAndMenu.tsx:1206 src/commandsAndMenu.tsx:1228 src/commandsAndMenu.tsx:1232 src/commandsAndMenu.tsx:862 src/commandsAndMenu.tsx:864 src/commandsAndMenu.tsx:870 src/commandsAndMenu.tsx:875 src/commandsAndMenu.tsx:895 src/commandsAndMenu.tsx:896 src/commandsAndMenu.tsx:997
+msgid "Ignore file extension"
+msgstr "Игнорировать расширение файла"
+
+#: src/commandsAndMenu.tsx:1062 src/commandsAndMenu.tsx:1078 src/commandsAndMenu.tsx:1100 src/commandsAndMenu.tsx:1104 src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:737 src/commandsAndMenu.tsx:743 src/commandsAndMenu.tsx:748 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:769 src/commandsAndMenu.tsx:870 src/commandsAndMenu.tsx:934 src/commandsAndMenu.tsx:993 src/commandsAndMenu.tsx:994
+msgid "Are you sure you want to permanently delete the following files?               This action cannot be undone."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1062 src/commandsAndMenu.tsx:1122 src/commandsAndMenu.tsx:1123 src/commandsAndMenu.tsx:1191 src/commandsAndMenu.tsx:1207 src/commandsAndMenu.tsx:1229 src/commandsAndMenu.tsx:1233 src/commandsAndMenu.tsx:863 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:871 src/commandsAndMenu.tsx:876 src/commandsAndMenu.tsx:896 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:998
+msgid "Are you sure you want to ignore all %1 files within this git repository?"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1062 src/commandsAndMenu.tsx:1126 src/commandsAndMenu.tsx:1186 src/commandsAndMenu.tsx:1187 src/commandsAndMenu.tsx:1255 src/commandsAndMenu.tsx:1271 src/commandsAndMenu.tsx:1293 src/commandsAndMenu.tsx:1297 src/commandsAndMenu.tsx:908 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:916 src/commandsAndMenu.tsx:940 src/commandsAndMenu.tsx:960 src/commandsAndMenu.tsx:961
+msgid "Set Up Remotes"
+msgstr "Настроить удалённые"
+
+#: src/commandsAndMenu.tsx:1066 src/commandsAndMenu.tsx:1130 src/commandsAndMenu.tsx:1190 src/commandsAndMenu.tsx:1191 src/commandsAndMenu.tsx:1259 src/commandsAndMenu.tsx:1275 src/commandsAndMenu.tsx:1297 src/commandsAndMenu.tsx:1301 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:914 src/commandsAndMenu.tsx:920 src/commandsAndMenu.tsx:944 src/commandsAndMenu.tsx:964 src/commandsAndMenu.tsx:965
+msgid "Git Documentation"
+msgstr "Документация Git"
+
+#: src/commandsAndMenu.tsx:1100 src/commandsAndMenu.tsx:1168 src/commandsAndMenu.tsx:1229 src/commandsAndMenu.tsx:1230 src/commandsAndMenu.tsx:1298 src/commandsAndMenu.tsx:1314 src/commandsAndMenu.tsx:1336 src/commandsAndMenu.tsx:1340 src/commandsAndMenu.tsx:943 src/commandsAndMenu.tsx:945 src/commandsAndMenu.tsx:951 src/commandsAndMenu.tsx:978 src/commandsAndMenu.tsx:998 src/commandsAndMenu.tsx:999
+msgid " Help "
+msgstr " Помощь "
+
+#: src/commandsAndMenu.tsx:117 src/commandsAndMenu.tsx:118 src/commandsAndMenu.tsx:119 src/commandsAndMenu.tsx:122 src/commandsAndMenu.tsx:124 src/commandsAndMenu.tsx:125 src/commandsAndMenu.tsx:126 src/commandsAndMenu.tsx:127 src/commandsAndMenu.tsx:133 src/commandsAndMenu.tsx:137
+msgid "Commit from the Commit Box"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:1172 src/commandsAndMenu.tsx:1174 src/commandsAndMenu.tsx:1180 src/commandsAndMenu.tsx:1203 src/commandsAndMenu.tsx:1232 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1241 src/commandsAndMenu.tsx:1338 src/commandsAndMenu.tsx:1404 src/commandsAndMenu.tsx:1465 src/commandsAndMenu.tsx:1470 src/commandsAndMenu.tsx:1538 src/commandsAndMenu.tsx:1562 src/commandsAndMenu.tsx:1590 src/commandsAndMenu.tsx:1596
+msgid "Git credentials required"
+msgstr "Требуются учетные данные Git"
+
+#: src/commandsAndMenu.tsx:1175 src/commandsAndMenu.tsx:1177 src/commandsAndMenu.tsx:1183 src/commandsAndMenu.tsx:1206 src/commandsAndMenu.tsx:1235 src/commandsAndMenu.tsx:1239 src/commandsAndMenu.tsx:1244 src/commandsAndMenu.tsx:1341 src/commandsAndMenu.tsx:1407 src/commandsAndMenu.tsx:1468 src/commandsAndMenu.tsx:1473 src/commandsAndMenu.tsx:1541 src/commandsAndMenu.tsx:1565 src/commandsAndMenu.tsx:1593 src/commandsAndMenu.tsx:1599 src/widgets/CredentialsBox.tsx:14 src/widgets/CredentialsBox.tsx:15
+msgid "Enter credentials for remote repository"
+msgstr "Введите учетные данные для удаленного репозитория"
+
+#: src/commandsAndMenu.tsx:1176 src/commandsAndMenu.tsx:1178 src/commandsAndMenu.tsx:1184 src/commandsAndMenu.tsx:1207 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1240 src/commandsAndMenu.tsx:1245 src/commandsAndMenu.tsx:1342 src/commandsAndMenu.tsx:1408 src/commandsAndMenu.tsx:1469 src/commandsAndMenu.tsx:1474 src/commandsAndMenu.tsx:1542 src/commandsAndMenu.tsx:1566 src/commandsAndMenu.tsx:1594 src/commandsAndMenu.tsx:1600
+msgid "Incorrect username or password."
+msgstr "Неверное имя пользователя или пароль."
+
+#: src/commandsAndMenu.tsx:118 src/commandsAndMenu.tsx:119 src/commandsAndMenu.tsx:120 src/commandsAndMenu.tsx:123 src/commandsAndMenu.tsx:125 src/commandsAndMenu.tsx:126 src/commandsAndMenu.tsx:127 src/commandsAndMenu.tsx:128 src/commandsAndMenu.tsx:134 src/commandsAndMenu.tsx:138
+msgid "Submit the commit using the summary and description from commit box"
+msgstr "Отправить коммит, используя краткое описание и описание из окна коммита"
+
+#: src/commandsAndMenu.tsx:129 src/commandsAndMenu.tsx:130 src/commandsAndMenu.tsx:131 src/commandsAndMenu.tsx:134 src/commandsAndMenu.tsx:136 src/commandsAndMenu.tsx:137 src/commandsAndMenu.tsx:138 src/commandsAndMenu.tsx:139 src/commandsAndMenu.tsx:145 src/commandsAndMenu.tsx:149
+msgid "Open Git Repository in Terminal"
+msgstr "Открыть Git репозиторий в терминале"
+
+#: src/commandsAndMenu.tsx:130 src/commandsAndMenu.tsx:131 src/commandsAndMenu.tsx:132 src/commandsAndMenu.tsx:135 src/commandsAndMenu.tsx:137 src/commandsAndMenu.tsx:138 src/commandsAndMenu.tsx:139 src/commandsAndMenu.tsx:140 src/commandsAndMenu.tsx:146 src/commandsAndMenu.tsx:150
+msgid "Open a New Terminal to the Git Repository"
+msgstr "Открыть новый терминал в репозиторий Git"
+
+#: src/commandsAndMenu.tsx:1303 src/commandsAndMenu.tsx:1307 src/commandsAndMenu.tsx:1509 src/commandsAndMenu.tsx:1513
+msgid "Git"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:159 src/commandsAndMenu.tsx:161 src/commandsAndMenu.tsx:162 src/commandsAndMenu.tsx:163 src/commandsAndMenu.tsx:166 src/commandsAndMenu.tsx:168 src/commandsAndMenu.tsx:169 src/commandsAndMenu.tsx:170 src/commandsAndMenu.tsx:171 src/commandsAndMenu.tsx:177 src/commandsAndMenu.tsx:181
+msgid "Git Interface"
+msgstr "Интерфейс Git"
+
+#: src/commandsAndMenu.tsx:160 src/commandsAndMenu.tsx:162 src/commandsAndMenu.tsx:163 src/commandsAndMenu.tsx:164 src/commandsAndMenu.tsx:167 src/commandsAndMenu.tsx:169 src/commandsAndMenu.tsx:170 src/commandsAndMenu.tsx:171 src/commandsAndMenu.tsx:172 src/commandsAndMenu.tsx:178 src/commandsAndMenu.tsx:182
+msgid "Go to Git user interface"
+msgstr "Перейти к пользовательскому интерфейсу Git"
+
+#: src/commandsAndMenu.tsx:172 src/commandsAndMenu.tsx:174 src/commandsAndMenu.tsx:175 src/commandsAndMenu.tsx:176 src/commandsAndMenu.tsx:179 src/commandsAndMenu.tsx:181 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:188 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:190 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:197 src/commandsAndMenu.tsx:201 src/components/GitPanel.tsx:445 src/components/GitPanel.tsx:461 src/components/GitPanel.tsx:466 src/components/GitPanel.tsx:473 src/components/GitPanel.tsx:487 src/components/GitPanel.tsx:495 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:595
+msgid "Initialize a Repository"
+msgstr "Инициализировать репозиторий"
+
+#: src/commandsAndMenu.tsx:173 src/commandsAndMenu.tsx:175 src/commandsAndMenu.tsx:176 src/commandsAndMenu.tsx:177 src/commandsAndMenu.tsx:180 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:195
+msgid "Create an empty Git repository or reinitialize an existing one"
+msgstr "Создание пустого репозитория Git или переинициализация существующего"
+
+#: src/commandsAndMenu.tsx:180 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:187 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:190 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:198 src/commandsAndMenu.tsx:202
+msgid "Do you really want to make this directory a Git Repo?"
+msgstr "Вы действительно хотите сделать эту директорию Git Repo?"
+
+#: src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:187 src/commandsAndMenu.tsx:190 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:195 src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:205
+msgid "Yes"
+msgstr "Да"
+
+#: src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:196
+msgid "Initializing..."
+msgstr "Инициализация..."
+
+#: src/commandsAndMenu.tsx:196 src/commandsAndMenu.tsx:198 src/commandsAndMenu.tsx:199 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:203 src/commandsAndMenu.tsx:205 src/commandsAndMenu.tsx:206 src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:208 src/commandsAndMenu.tsx:214 src/commandsAndMenu.tsx:218
+msgid "Git repository initialized."
+msgstr "Репозиторий Git инициализирован."
+
+#: src/commandsAndMenu.tsx:198 src/commandsAndMenu.tsx:199 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:211
+msgid "Initializing…"
+msgstr "Инициализация…"
+
+#: src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:203 src/commandsAndMenu.tsx:204 src/commandsAndMenu.tsx:205 src/commandsAndMenu.tsx:208 src/commandsAndMenu.tsx:210 src/commandsAndMenu.tsx:211 src/commandsAndMenu.tsx:212 src/commandsAndMenu.tsx:213 src/commandsAndMenu.tsx:219 src/commandsAndMenu.tsx:223
+msgid "Encountered an error when initializing the repository. Error: "
+msgstr ""
+
+#: src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:209 src/commandsAndMenu.tsx:210 src/commandsAndMenu.tsx:211 src/commandsAndMenu.tsx:214 src/commandsAndMenu.tsx:216 src/commandsAndMenu.tsx:217 src/commandsAndMenu.tsx:218 src/commandsAndMenu.tsx:219 src/commandsAndMenu.tsx:225 src/commandsAndMenu.tsx:229
+msgid "Failed to initialize the Git repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:228 src/commandsAndMenu.tsx:230 src/commandsAndMenu.tsx:231 src/commandsAndMenu.tsx:232 src/commandsAndMenu.tsx:235 src/commandsAndMenu.tsx:237 src/commandsAndMenu.tsx:238 src/commandsAndMenu.tsx:239 src/commandsAndMenu.tsx:240 src/commandsAndMenu.tsx:246 src/commandsAndMenu.tsx:250
+msgid "Simple staging"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:237 src/commandsAndMenu.tsx:239 src/commandsAndMenu.tsx:240 src/commandsAndMenu.tsx:241 src/commandsAndMenu.tsx:244 src/commandsAndMenu.tsx:246 src/commandsAndMenu.tsx:247 src/commandsAndMenu.tsx:248 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:255 src/commandsAndMenu.tsx:259
+msgid "Double click opens diff"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:246 src/commandsAndMenu.tsx:248 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:250 src/commandsAndMenu.tsx:253 src/commandsAndMenu.tsx:255 src/commandsAndMenu.tsx:256 src/commandsAndMenu.tsx:257
+msgid "Add Remote Repository"
+msgstr "Добавить удалённый репозиторий"
+
+#: src/commandsAndMenu.tsx:247 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:250 src/commandsAndMenu.tsx:251 src/commandsAndMenu.tsx:254 src/commandsAndMenu.tsx:256 src/commandsAndMenu.tsx:257 src/commandsAndMenu.tsx:258
+msgid "Add a Git remote repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:252 src/commandsAndMenu.tsx:254 src/commandsAndMenu.tsx:255 src/commandsAndMenu.tsx:256 src/commandsAndMenu.tsx:259 src/commandsAndMenu.tsx:261 src/commandsAndMenu.tsx:262 src/commandsAndMenu.tsx:263 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:270 src/commandsAndMenu.tsx:274
+msgid "Not in a Git repository. Unable to add a remote."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:258 src/commandsAndMenu.tsx:259 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:265 src/commandsAndMenu.tsx:268 src/commandsAndMenu.tsx:269
+msgid "Manage Remote Repositories"
+msgstr "Менеджер удалённых репозиториев"
+
+#: src/commandsAndMenu.tsx:261 src/commandsAndMenu.tsx:263 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:265 src/commandsAndMenu.tsx:268 src/commandsAndMenu.tsx:270 src/commandsAndMenu.tsx:271 src/commandsAndMenu.tsx:272
+msgid "Add a remote repository"
+msgstr "Добавить удалённый репозиторий"
+
+#: src/commandsAndMenu.tsx:262 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:265 src/commandsAndMenu.tsx:266 src/commandsAndMenu.tsx:269 src/commandsAndMenu.tsx:271 src/commandsAndMenu.tsx:272 src/commandsAndMenu.tsx:273 src/components/ManageRemoteDialogue.tsx:128
+msgid "Remote Git repository URL"
+msgstr "URL удалённого Git-репозитория"
+
+#: src/commandsAndMenu.tsx:276 src/commandsAndMenu.tsx:278 src/commandsAndMenu.tsx:279 src/commandsAndMenu.tsx:280 src/commandsAndMenu.tsx:283 src/commandsAndMenu.tsx:285 src/commandsAndMenu.tsx:286 src/commandsAndMenu.tsx:287 src/components/ManageRemoteDialogue.tsx:176
+msgid "Error when adding remote repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:292 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:296 src/commandsAndMenu.tsx:297 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:301 src/commandsAndMenu.tsx:302 src/commandsAndMenu.tsx:335 src/commandsAndMenu.tsx:336 src/commandsAndMenu.tsx:337 src/commandsAndMenu.tsx:338 src/commandsAndMenu.tsx:339 src/commandsAndMenu.tsx:340 src/commandsAndMenu.tsx:342 src/commandsAndMenu.tsx:343
+msgid "Open .gitignore"
+msgstr "Открыть .gitignore"
+
+#: src/commandsAndMenu.tsx:296 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:300 src/commandsAndMenu.tsx:303
+msgid "CLONE"
+msgstr "КЛОНИРОВАТЬ"
+
+#: src/commandsAndMenu.tsx:303 src/commandsAndMenu.tsx:305 src/commandsAndMenu.tsx:306 src/commandsAndMenu.tsx:307 src/commandsAndMenu.tsx:310
+msgid "Cloning..."
+msgstr "Клонирование..."
+
+#: src/commandsAndMenu.tsx:303 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:313
+msgid "Push to Remote (Advanced)"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:304 src/commandsAndMenu.tsx:308 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:310 src/commandsAndMenu.tsx:314 src/commandsAndMenu.tsx:345 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:352 src/commandsAndMenu.tsx:355
+msgid "Push to Remote"
+msgstr "Пуш на удаленный сервер"
+
+#: src/commandsAndMenu.tsx:305 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:310 src/commandsAndMenu.tsx:311 src/commandsAndMenu.tsx:315 src/commandsAndMenu.tsx:346 src/commandsAndMenu.tsx:348 src/commandsAndMenu.tsx:352 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:356
+msgid "Push code to remote repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:307 src/commandsAndMenu.tsx:308 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:350 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:354
+msgid "Push to Remote (Force)"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:314 src/commandsAndMenu.tsx:315 src/commandsAndMenu.tsx:316 src/commandsAndMenu.tsx:331 src/commandsAndMenu.tsx:337 src/commandsAndMenu.tsx:341
+msgid "Pushing…"
+msgstr "Отправка…"
+
+#: src/commandsAndMenu.tsx:314 src/commandsAndMenu.tsx:320 src/commandsAndMenu.tsx:324
+msgid "Please select push options."
+msgstr "Пожалуйста, выберите опции получения."
+
+#: src/commandsAndMenu.tsx:318 src/commandsAndMenu.tsx:324 src/commandsAndMenu.tsx:328 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:434 src/commandsAndMenu.tsx:450 src/commandsAndMenu.tsx:472 src/commandsAndMenu.tsx:476
+msgid "Proceed"
+msgstr "Продолжить"
+
+#: src/commandsAndMenu.tsx:323 src/commandsAndMenu.tsx:324 src/commandsAndMenu.tsx:325 src/commandsAndMenu.tsx:341 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:360 src/commandsAndMenu.tsx:362 src/commandsAndMenu.tsx:366 src/commandsAndMenu.tsx:367 src/commandsAndMenu.tsx:370
+msgid "Successfully pushed"
+msgstr "Успешно загружено"
+
+#: src/commandsAndMenu.tsx:329 src/commandsAndMenu.tsx:330 src/commandsAndMenu.tsx:331 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:354 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:366 src/commandsAndMenu.tsx:368 src/commandsAndMenu.tsx:372 src/commandsAndMenu.tsx:373 src/commandsAndMenu.tsx:376
+msgid "Encountered an error when pushing changes. Error: "
+msgstr ""
+
+#: src/commandsAndMenu.tsx:333 src/commandsAndMenu.tsx:334 src/commandsAndMenu.tsx:335 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:362 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:372 src/commandsAndMenu.tsx:376 src/commandsAndMenu.tsx:377 src/commandsAndMenu.tsx:380
+msgid "Failed to push"
+msgstr "Не удалось отправить"
+
+#: src/commandsAndMenu.tsx:345 src/commandsAndMenu.tsx:346 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:363 src/commandsAndMenu.tsx:377 src/commandsAndMenu.tsx:381
+msgid "Pull from Remote (Force)"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:346 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:348 src/commandsAndMenu.tsx:364 src/commandsAndMenu.tsx:378 src/commandsAndMenu.tsx:380 src/commandsAndMenu.tsx:382 src/commandsAndMenu.tsx:386 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:390
+msgid "Pull from Remote"
+msgstr "Получить с удалённого сервера"
+
+#: src/commandsAndMenu.tsx:349 src/commandsAndMenu.tsx:350 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:367 src/commandsAndMenu.tsx:381 src/commandsAndMenu.tsx:385
+msgid "Discard all current changes and pull from remote repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:357 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:361
+msgid "Pushing..."
+msgstr "Отправка..."
+
+#: src/commandsAndMenu.tsx:352 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:354 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:381 src/commandsAndMenu.tsx:383 src/commandsAndMenu.tsx:384 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:388 src/commandsAndMenu.tsx:391
+msgid "Pull latest code from remote repository"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:361 src/commandsAndMenu.tsx:362 src/commandsAndMenu.tsx:363 src/commandsAndMenu.tsx:379 src/commandsAndMenu.tsx:393 src/commandsAndMenu.tsx:397
+msgid "Pulling…"
+msgstr "Получение…"
+
+#: src/commandsAndMenu.tsx:369 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:371 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:395 src/commandsAndMenu.tsx:397 src/commandsAndMenu.tsx:401 src/commandsAndMenu.tsx:402 src/commandsAndMenu.tsx:405
+msgid "Successfully pulled"
+msgstr "Успешно выгружено"
+
+#: src/commandsAndMenu.tsx:386 src/commandsAndMenu.tsx:388 src/commandsAndMenu.tsx:392 src/commandsAndMenu.tsx:393 src/commandsAndMenu.tsx:396
+msgid "Pulling..."
+msgstr "Получение..."
+
+#: src/commandsAndMenu.tsx:403 src/commandsAndMenu.tsx:404 src/commandsAndMenu.tsx:405 src/commandsAndMenu.tsx:407 src/commandsAndMenu.tsx:411 src/commandsAndMenu.tsx:412 src/commandsAndMenu.tsx:415 src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:436 src/commandsAndMenu.tsx:440
+msgid "Failed to pull"
+msgstr "Не удалось получить"
+
+#: src/commandsAndMenu.tsx:416 src/commandsAndMenu.tsx:417 src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:438 src/commandsAndMenu.tsx:455 src/commandsAndMenu.tsx:459 src/commandsAndMenu.tsx:460 src/commandsAndMenu.tsx:464
+msgid "Reset to Remote"
+msgstr "Сброс на удалённые сервер"
+
+#: src/commandsAndMenu.tsx:417 src/commandsAndMenu.tsx:418 src/commandsAndMenu.tsx:434 src/commandsAndMenu.tsx:456 src/commandsAndMenu.tsx:460
+msgid "Reset Current Branch to Remote State"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:423 src/commandsAndMenu.tsx:427 src/commandsAndMenu.tsx:428 src/commandsAndMenu.tsx:432 src/commandsAndMenu.tsx:481 src/commandsAndMenu.tsx:482 src/commandsAndMenu.tsx:498 src/commandsAndMenu.tsx:520 src/commandsAndMenu.tsx:524
+msgid "Show Diff"
+msgstr "Показать разницу"
+
+#: src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:423 src/commandsAndMenu.tsx:424 src/commandsAndMenu.tsx:428 src/commandsAndMenu.tsx:429 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:482 src/commandsAndMenu.tsx:483 src/commandsAndMenu.tsx:499 src/commandsAndMenu.tsx:521 src/commandsAndMenu.tsx:525
+msgid "Display a file diff."
+msgstr "Отображать разницу файла."
+
+#: src/commandsAndMenu.tsx:423 src/commandsAndMenu.tsx:424 src/commandsAndMenu.tsx:440 src/commandsAndMenu.tsx:462 src/commandsAndMenu.tsx:466
+msgid "To bring the current branch to the state of its corresponding remote tracking branch,             a hard reset will be performed, which may result in some files being permanently deleted             and some changes being permanently discarded. Are you sure you want to proceed?             This action cannot be undone."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:429 src/commandsAndMenu.tsx:430 src/commandsAndMenu.tsx:446 src/commandsAndMenu.tsx:468 src/commandsAndMenu.tsx:472
+msgid "Close all opened files to avoid conflicts"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:440 src/commandsAndMenu.tsx:441 src/commandsAndMenu.tsx:457 src/commandsAndMenu.tsx:479 src/commandsAndMenu.tsx:483
+msgid "Closing all opened files..."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:446 src/commandsAndMenu.tsx:447 src/commandsAndMenu.tsx:463 src/commandsAndMenu.tsx:485 src/commandsAndMenu.tsx:489
+msgid "Resetting..."
+msgstr "Сброс..."
+
+#: src/commandsAndMenu.tsx:451 src/commandsAndMenu.tsx:452 src/commandsAndMenu.tsx:468 src/commandsAndMenu.tsx:490 src/commandsAndMenu.tsx:494
+msgid "Successfully reset"
+msgstr "Успешный сброс"
+
+#: src/commandsAndMenu.tsx:453 src/commandsAndMenu.tsx:454 src/commandsAndMenu.tsx:470 src/commandsAndMenu.tsx:492 src/commandsAndMenu.tsx:496
+msgid "Successfully reset the current branch to its remote state"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:463 src/commandsAndMenu.tsx:464 src/commandsAndMenu.tsx:480 src/commandsAndMenu.tsx:502 src/commandsAndMenu.tsx:506
+msgid "Reset failed"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:468 src/commandsAndMenu.tsx:470 src/commandsAndMenu.tsx:474 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:519 src/commandsAndMenu.tsx:529 src/commandsAndMenu.tsx:578 src/commandsAndMenu.tsx:579 src/commandsAndMenu.tsx:580 src/commandsAndMenu.tsx:596 src/commandsAndMenu.tsx:618 src/commandsAndMenu.tsx:622
+msgid "Refresh"
+msgstr "Обновить"
+
+#: src/commandsAndMenu.tsx:473 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:479 src/commandsAndMenu.tsx:480 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:534 src/commandsAndMenu.tsx:583 src/commandsAndMenu.tsx:584 src/commandsAndMenu.tsx:585 src/commandsAndMenu.tsx:601 src/commandsAndMenu.tsx:623 src/commandsAndMenu.tsx:627
+msgid "Refresh diff widget"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:480 src/commandsAndMenu.tsx:490 src/commandsAndMenu.tsx:539 src/commandsAndMenu.tsx:540 src/commandsAndMenu.tsx:541 src/commandsAndMenu.tsx:557 src/commandsAndMenu.tsx:579 src/commandsAndMenu.tsx:583
+msgid "Mark as resolved"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:484 src/commandsAndMenu.tsx:494 src/commandsAndMenu.tsx:543 src/commandsAndMenu.tsx:544 src/commandsAndMenu.tsx:545 src/commandsAndMenu.tsx:561 src/commandsAndMenu.tsx:583 src/commandsAndMenu.tsx:587
+msgid "Resolve with conflicts"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:485 src/commandsAndMenu.tsx:495 src/commandsAndMenu.tsx:544 src/commandsAndMenu.tsx:545 src/commandsAndMenu.tsx:546 src/commandsAndMenu.tsx:562 src/commandsAndMenu.tsx:584 src/commandsAndMenu.tsx:588
+msgid "Are you sure you want to mark this file as resolved with merge conflicts?"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:496 src/commandsAndMenu.tsx:498 src/commandsAndMenu.tsx:503 src/commandsAndMenu.tsx:507 src/commandsAndMenu.tsx:508 src/commandsAndMenu.tsx:554 src/commandsAndMenu.tsx:564 src/commandsAndMenu.tsx:613 src/commandsAndMenu.tsx:614 src/commandsAndMenu.tsx:633 src/commandsAndMenu.tsx:649 src/commandsAndMenu.tsx:671 src/commandsAndMenu.tsx:675
+msgid "Diff Not Supported"
+msgstr "Разница не поддерживается"
+
+#: src/commandsAndMenu.tsx:497 src/commandsAndMenu.tsx:499 src/commandsAndMenu.tsx:504 src/commandsAndMenu.tsx:508 src/commandsAndMenu.tsx:509 src/commandsAndMenu.tsx:555 src/commandsAndMenu.tsx:565 src/commandsAndMenu.tsx:614 src/commandsAndMenu.tsx:615 src/commandsAndMenu.tsx:634 src/commandsAndMenu.tsx:650 src/commandsAndMenu.tsx:672 src/commandsAndMenu.tsx:676
+msgid "Diff is not supported for %1 files."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:511 src/commandsAndMenu.tsx:513 src/commandsAndMenu.tsx:518 src/commandsAndMenu.tsx:522 src/commandsAndMenu.tsx:523 src/commandsAndMenu.tsx:579 src/commandsAndMenu.tsx:643 src/commandsAndMenu.tsx:702 src/commandsAndMenu.tsx:703 src/commandsAndMenu.tsx:722 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:760 src/commandsAndMenu.tsx:764
+msgid "Open"
+msgstr "Открыть"
+
+#: src/commandsAndMenu.tsx:512 src/commandsAndMenu.tsx:522 src/commandsAndMenu.tsx:571 src/commandsAndMenu.tsx:572 src/commandsAndMenu.tsx:573 src/commandsAndMenu.tsx:589 src/commandsAndMenu.tsx:611 src/commandsAndMenu.tsx:615
+msgid "Mark file as resolved"
+msgstr "Пометить файл как решённый"
+
+#: src/commandsAndMenu.tsx:513 src/commandsAndMenu.tsx:515 src/commandsAndMenu.tsx:520 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:581 src/commandsAndMenu.tsx:645 src/commandsAndMenu.tsx:704 src/commandsAndMenu.tsx:705 src/commandsAndMenu.tsx:724 src/commandsAndMenu.tsx:740 src/commandsAndMenu.tsx:762 src/commandsAndMenu.tsx:766
+msgid "Open selected file"
+msgstr "Открыть выбранный файл"
+
+#: src/commandsAndMenu.tsx:514 src/commandsAndMenu.tsx:516 src/commandsAndMenu.tsx:521 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:526 src/commandsAndMenu.tsx:582 src/commandsAndMenu.tsx:646 src/commandsAndMenu.tsx:705 src/commandsAndMenu.tsx:706 src/commandsAndMenu.tsx:725 src/commandsAndMenu.tsx:741 src/commandsAndMenu.tsx:763 src/commandsAndMenu.tsx:767
+msgid "Open selected files"
+msgstr "Открыть выбранные файлы"
+
+#: src/commandsAndMenu.tsx:522 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:529 src/commandsAndMenu.tsx:533 src/commandsAndMenu.tsx:534 src/commandsAndMenu.tsx:590 src/commandsAndMenu.tsx:654 src/commandsAndMenu.tsx:713 src/commandsAndMenu.tsx:714 src/commandsAndMenu.tsx:733 src/commandsAndMenu.tsx:749 src/commandsAndMenu.tsx:771 src/commandsAndMenu.tsx:775
+msgid "Open File Failed"
+msgstr "Не удалось открыть файл"
+
+#: src/commandsAndMenu.tsx:523 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:530 src/commandsAndMenu.tsx:534 src/commandsAndMenu.tsx:535 src/commandsAndMenu.tsx:591 src/commandsAndMenu.tsx:655 src/commandsAndMenu.tsx:714 src/commandsAndMenu.tsx:715 src/commandsAndMenu.tsx:734 src/commandsAndMenu.tsx:750 src/commandsAndMenu.tsx:772 src/commandsAndMenu.tsx:776
+msgid "This file has been deleted!"
+msgstr "Этот файл был удалён!"
+
+#: src/commandsAndMenu.tsx:544 src/commandsAndMenu.tsx:546 src/commandsAndMenu.tsx:551 src/commandsAndMenu.tsx:555 src/commandsAndMenu.tsx:556 src/commandsAndMenu.tsx:612 src/commandsAndMenu.tsx:676 src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:736 src/commandsAndMenu.tsx:804 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:842 src/commandsAndMenu.tsx:846
+msgid "Diff"
+msgstr "Разница"
+
+#: src/commandsAndMenu.tsx:546 src/commandsAndMenu.tsx:548 src/commandsAndMenu.tsx:553 src/commandsAndMenu.tsx:557 src/commandsAndMenu.tsx:558 src/commandsAndMenu.tsx:614 src/commandsAndMenu.tsx:678 src/commandsAndMenu.tsx:737 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:806 src/commandsAndMenu.tsx:822 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:848
+msgid "Diff selected file"
+msgstr "Разница в выбранном файле"
+
+#: src/commandsAndMenu.tsx:547 src/commandsAndMenu.tsx:549 src/commandsAndMenu.tsx:554 src/commandsAndMenu.tsx:558 src/commandsAndMenu.tsx:559 src/commandsAndMenu.tsx:615 src/commandsAndMenu.tsx:679 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:739 src/commandsAndMenu.tsx:807 src/commandsAndMenu.tsx:823 src/commandsAndMenu.tsx:845 src/commandsAndMenu.tsx:849
+msgid "Diff selected files"
+msgstr "Разница в выбранных файлов"
+
+#: src/commandsAndMenu.tsx:568 src/commandsAndMenu.tsx:627 src/commandsAndMenu.tsx:628 src/commandsAndMenu.tsx:647 src/commandsAndMenu.tsx:663 src/commandsAndMenu.tsx:685 src/commandsAndMenu.tsx:689
+msgid "Merge Branch…"
+msgstr "Объединить ветку…"
+
+#: src/commandsAndMenu.tsx:569 src/commandsAndMenu.tsx:628 src/commandsAndMenu.tsx:629 src/commandsAndMenu.tsx:648 src/commandsAndMenu.tsx:664 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:690
+msgid "Merge selected branch in the current branch"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:608 src/commandsAndMenu.tsx:667 src/commandsAndMenu.tsx:668 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:703 src/commandsAndMenu.tsx:725 src/commandsAndMenu.tsx:729
+msgid "Merging branch '%1'…"
+msgstr ""
+
+#: src/commandsAndMenu.tsx:615 src/commandsAndMenu.tsx:674 src/commandsAndMenu.tsx:675 src/commandsAndMenu.tsx:694 src/commandsAndMenu.tsx:710 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:736
+msgid "Failed to merge branch '%1' into '%2'."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:627 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:706 src/commandsAndMenu.tsx:722 src/commandsAndMenu.tsx:744 src/commandsAndMenu.tsx:748
+msgid "Branch '%1' merged into '%2'."
+msgstr ""
+
+#: src/commandsAndMenu.tsx:704
+msgid "CURRENT"
+msgstr "ТЕКУЩИЙ"
+
+#: src/commandsAndMenu.tsx:705
+msgid "INCOMING"
+msgstr "ВХОДЯЩИЙ"
+
+#: src/commandsAndMenu.tsx:721
+msgid "RESULT"
+msgstr "РЕЗУЛЬТАТ"
+
+#: src/commandsAndMenu.tsx:755 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:763 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:810 src/commandsAndMenu.tsx:812 src/commandsAndMenu.tsx:818 src/commandsAndMenu.tsx:823 src/commandsAndMenu.tsx:843 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:890 src/commandsAndMenu.tsx:945 src/components/Alert.tsx:123 src/index.ts:128 src/index.ts:132 src/index.ts:134
+msgid "DISMISS"
+msgstr "ОТКЛОНЯТЬ"
+
+#: src/commandsAndMenu.tsx:755 src/commandsAndMenu.tsx:771 src/commandsAndMenu.tsx:793 src/commandsAndMenu.tsx:797
+msgid "Open File"
+msgstr "Открыть файл"
+
+#: src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:772 src/commandsAndMenu.tsx:794 src/commandsAndMenu.tsx:798
+msgid "Open file from its diff view"
+msgstr "Открыть файл в виде разницы"
+
+#: src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:827 src/commandsAndMenu.tsx:828 src/commandsAndMenu.tsx:896 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:934 src/commandsAndMenu.tsx:938
+msgid "Current"
+msgstr "Текущий"
+
+#: src/commandsAndMenu.tsx:769 src/commandsAndMenu.tsx:828 src/commandsAndMenu.tsx:829 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:935 src/commandsAndMenu.tsx:939
+msgid "Incoming"
+msgstr "Входящий"
+
+#: src/commandsAndMenu.tsx:785 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:845 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:929 src/commandsAndMenu.tsx:951 src/commandsAndMenu.tsx:955
+msgid "Result"
+msgstr "Результат"
+
+#: src/components/Alert.tsx:105
+msgid "Error"
+msgstr "Ошибка"
+
+#: src/components/Alert.tsx:110
+msgid "SHOW"
+msgstr "ПОКАЗАТЬ"
+
+#: src/components/Alert.tsx:110
+msgid "Show"
+msgstr "Показать"
+
+#: src/components/Alert.tsx:120
+msgid "Detailed message"
+msgstr "Подробное сообщения"
+
+#: src/components/Alert.tsx:128
+msgid "Details"
+msgstr "Детали"
+
+#: src/components/Alert.tsx:148
+msgid "(missing message)"
+msgstr "(отсутствует сообщение)"
+
+#: src/components/BranchMenu.tsx:148 src/components/BranchMenu.tsx:154
+msgid "The current branch contains files with uncommitted changes. Please commit or discard these changes before switching to or creating another branch."
+msgstr "Текущая ветка содержит файлы с незафиксированными изменениями. Пожалуйста, подтвердите или отмените эти изменения перед переключением или созданием другой ветки."
+
+#: src/components/BranchMenu.tsx:195 src/components/BranchMenu.tsx:201 src/components/MergeBranchDialog.tsx:138 src/components/NewBranchDialog.tsx:177 src/components/NewBranchDialog.tsx:184 src/components/TagMenu.tsx:189
+msgid "Filter"
+msgstr "Фильтр"
+
+#: src/components/BranchMenu.tsx:196 src/components/BranchMenu.tsx:202 src/components/NewBranchDialog.tsx:178 src/components/NewBranchDialog.tsx:185 src/components/TagMenu.tsx:190
+msgid "Filter branch menu"
+msgstr "Фильтровать ветви"
+
+#: src/components/BranchMenu.tsx:201 src/components/BranchMenu.tsx:207 src/components/MergeBranchDialog.tsx:144 src/components/NewBranchDialog.tsx:183 src/components/NewBranchDialog.tsx:190 src/components/TagMenu.tsx:195
+msgid "Clear the current filter"
+msgstr "Очистить текущий фильтр"
+
+#: src/components/BranchMenu.tsx:211 src/components/BranchMenu.tsx:217 src/components/NewBranchDialog.tsx:208 src/components/NewBranchDialog.tsx:215
+msgid "Create a new branch"
+msgstr "Создание новой ветки"
+
+#: src/components/BranchMenu.tsx:212 src/components/BranchMenu.tsx:218
+msgid "New Branch"
+msgstr "Новая ветка"
+
+#: src/components/BranchMenu.tsx:261 src/components/BranchMenu.tsx:269
+msgid "Switch to branch: %1"
+msgstr "Переключение на ветвь: %1"
+
+#: src/components/BranchMenu.tsx:275 src/components/BranchMenu.tsx:286
+msgid "Delete this branch locally"
+msgstr "Удалить эту ветку локально"
+
+#: src/components/BranchMenu.tsx:295
+msgid "Merge this branch into the current one"
+msgstr "Объединить эту ветку в текущую"
+
+#: src/components/BranchMenu.tsx:332 src/components/BranchMenu.tsx:355
+msgid "Delete branch"
+msgstr "Удалить ветку"
+
+#: src/components/BranchMenu.tsx:335 src/components/BranchMenu.tsx:358
+msgid "Are you sure you want to permanently delete the branch "
+msgstr ""
+
+#: src/components/BranchMenu.tsx:340 src/components/BranchMenu.tsx:363
+msgid "This action cannot be undone."
+msgstr ""
+
+#: src/components/BranchMenu.tsx:366 src/components/BranchMenu.tsx:398
+msgid "Creating a new branch is disabled"
+msgstr ""
+
+#: src/components/BranchMenu.tsx:51 src/components/BranchMenu.tsx:52
+msgid "Unable to switch branch"
+msgstr ""
+
+#: src/components/BranchMenu.tsx:55 src/components/BranchMenu.tsx:56 src/components/TagMenu.tsx:49
+msgid "Your changes to the following files would be overwritten by switching:"
+msgstr ""
+
+#: src/components/BranchMenu.tsx:63 src/components/BranchMenu.tsx:64
+msgid "Please commit, stash, or discard your changes before you switch branches."
+msgstr ""
+
+#: src/components/BranchMenu.tsx:74 src/components/BranchMenu.tsx:75
+msgid "Failed to switch branch."
+msgstr ""
+
+#: src/components/CommitBox.tsx:100 src/components/CommitBox.tsx:101 src/components/CommitBox.tsx:178 src/components/CommitBox.tsx:183 src/components/CommitBox.tsx:185
+msgid "Disabled: No commit message summary"
+msgstr ""
+
+#: src/components/CommitBox.tsx:106 src/components/CommitBox.tsx:107 src/components/CommitBox.tsx:184 src/components/CommitBox.tsx:189 src/components/CommitBox.tsx:191
+msgid "Summary (%1 to commit)"
+msgstr ""
+
+#: src/components/CommitBox.tsx:116 src/components/CommitBox.tsx:117 src/components/CommitMessage.tsx:117 src/components/CommitMessage.tsx:123 src/components/ResetRevertDialog.tsx:155
+msgid "Enter a commit message summary (a single line, preferably less than 50 characters)"
+msgstr ""
+
+#: src/components/CommitBox.tsx:126 src/components/CommitBox.tsx:127 src/components/CommitMessage.tsx:140 src/components/CommitMessage.tsx:146
+msgid "Description (optional)"
+msgstr "Описание (необязательно)"
+
+#: src/components/CommitBox.tsx:127 src/components/CommitBox.tsx:128 src/components/CommitMessage.tsx:147 src/components/CommitMessage.tsx:153 src/components/ResetRevertDialog.tsx:165
+msgid "Enter a commit message description"
+msgstr ""
+
+#: src/components/CommitBox.tsx:141 src/components/CommitBox.tsx:146 src/components/CommitBox.tsx:148
+msgid "Create a new commit"
+msgstr "Создание нового коммита"
+
+#: src/components/CommitBox.tsx:142 src/components/CommitBox.tsx:147 src/components/CommitBox.tsx:149
+msgid "New commit will be created and show up as a next one after the previous commit (default)."
+msgstr ""
+
+#: src/components/CommitBox.tsx:147 src/components/CommitBox.tsx:152 src/components/CommitBox.tsx:154
+msgid "Amend previous commit"
+msgstr ""
+
+#: src/components/CommitBox.tsx:148 src/components/CommitBox.tsx:153 src/components/CommitBox.tsx:155
+msgid "Staged changes will be added to the previous commit and its date will be updated."
+msgstr ""
+
+#: src/components/CommitBox.tsx:176 src/components/CommitBox.tsx:181 src/components/CommitBox.tsx:183 src/components/CommitBox.tsx:98 src/components/CommitBox.tsx:99
+msgid "Disabled: No files are staged for commit"
+msgstr ""
+
+#: src/components/CommitBox.tsx:195 src/components/GitPanel.tsx:440 src/components/GitPanel.tsx:441
+msgid "Warning"
+msgstr "Предупреждение"
+
+#: src/components/CommitBox.tsx:196
+msgid "Looks like you still have unsaved staged files. Remember to save and stage all needed changes before committing!"
+msgstr ""
+
+#: src/components/CommitComparisonBox.tsx:163
+msgid "Close"
+msgstr "Закрыть"
+
+#: src/components/CommitComparisonBox.tsx:184
+msgid "No changes"
+msgstr "Без изменений"
+
+#: src/components/CommitComparisonBox.tsx:185
+msgid "No challenger commit selected."
+msgstr ""
+
+#: src/components/CommitDiff.tsx:103 src/components/SinglePastCommitInfo.tsx:179 src/components/SinglePastCommitInfo.tsx:190 src/components/SinglePastCommitInfo.tsx:192
+msgid "# Insertions"
+msgstr "# Вставки"
+
+#: src/components/CommitDiff.tsx:110 src/components/SinglePastCommitInfo.tsx:186 src/components/SinglePastCommitInfo.tsx:197 src/components/SinglePastCommitInfo.tsx:199
+msgid "# Deletions"
+msgstr "# Удаления"
+
+#: src/components/CommitDiff.tsx:121 src/components/FileList.tsx:1211 src/components/FileList.tsx:518 src/components/FileList.tsx:527 src/components/FileList.tsx:595 src/components/FileList.tsx:596 src/components/FileList.tsx:728 src/components/FileList.tsx:737 src/components/FileList.tsx:806 src/components/FileList.tsx:883 src/components/FileList.tsx:906 src/components/SinglePastCommitInfo.tsx:197 src/components/SinglePastCommitInfo.tsx:208 src/components/SinglePastCommitInfo.tsx:210
+msgid "Changed"
+msgstr "Изменено"
+
+#: src/components/CommitDiff.tsx:164 src/components/PastCommitNode.tsx:112 src/components/PastCommitNode.tsx:153 src/components/PastCommitNode.tsx:157 src/components/SinglePastCommitInfo.tsx:273 src/components/SinglePastCommitInfo.tsx:284 src/components/SinglePastCommitInfo.tsx:287
+msgid "View file changes"
+msgstr "Просмотр изменений файла"
+
+#: src/components/CommitDiff.tsx:99 src/components/SinglePastCommitInfo.tsx:175 src/components/SinglePastCommitInfo.tsx:186 src/components/SinglePastCommitInfo.tsx:188
+msgid "# Files Changed"
+msgstr "# Файлы изменены"
+
+#: src/components/CommitMessage.tsx:114 src/components/CommitMessage.tsx:120 src/components/CommitMessage.tsx:144 src/components/CommitMessage.tsx:150
+msgid "Amending the commit will re-use the previous commit summary"
+msgstr ""
+
+#: src/components/CommitMessage.tsx:66 src/components/CommitMessage.tsx:71
+msgid "Summary"
+msgstr "В целом"
+
+#: src/components/FileList.tsx:1027 src/components/FileList.tsx:1105 src/components/FileList.tsx:1118 src/components/FileList.tsx:1144 src/components/FileList.tsx:363 src/components/FileList.tsx:372 src/components/FileList.tsx:440 src/components/FileList.tsx:441 src/components/FileList.tsx:450 src/components/FileList.tsx:459 src/components/FileList.tsx:527 src/components/FileList.tsx:528 src/components/FileList.tsx:549 src/components/FileList.tsx:558 src/components/FileList.tsx:626 src/components/FileList.tsx:627 src/components/FileList.tsx:635 src/components/FileList.tsx:644 src/components/FileList.tsx:648 src/components/FileList.tsx:657 src/components/FileList.tsx:674 src/components/FileList.tsx:683 src/components/FileList.tsx:710 src/components/FileList.tsx:713 src/components/FileList.tsx:726 src/components/FileList.tsx:744 src/components/FileList.tsx:752 src/components/FileList.tsx:790 src/components/FileList.tsx:803 src/components/FileList.tsx:828 src/components/FileList.tsx:829 src/components/FileList.tsx:937
+msgid "Open this file"
+msgstr "Открыть этот файл"
+
+#: src/components/FileList.tsx:1066 src/components/FileList.tsx:751
+msgid "Pull from remote branch"
+msgstr ""
+
+#: src/components/FileList.tsx:1071 src/components/FileList.tsx:756
+msgid "Remote Changes"
+msgstr "Удалённые изменения"
+
+#: src/components/FileList.tsx:1207 src/components/FileList.tsx:505 src/components/FileList.tsx:514 src/components/FileList.tsx:582 src/components/FileList.tsx:583 src/components/FileList.tsx:724 src/components/FileList.tsx:733 src/components/FileList.tsx:802 src/components/FileList.tsx:879 src/components/FileList.tsx:893
+msgid "Discard All Changes"
+msgstr "Отменить все изменения"
+
+#: src/components/FileList.tsx:1244 src/components/FileList.tsx:749 src/components/FileList.tsx:758 src/components/FileList.tsx:827 src/components/FileList.tsx:904
+msgid "Diff this file"
+msgstr "Разница этого файла"
+
+#: src/components/FileList.tsx:177 src/components/FileList.tsx:186 src/components/FileList.tsx:188 src/components/FileList.tsx:191 src/components/FileList.tsx:202 src/components/FileList.tsx:211 src/components/FileList.tsx:213 src/components/FileList.tsx:262 src/widgets/discardAllChanges.ts:16
+msgid "Discard all changes"
+msgstr ""
+
+#: src/components/FileList.tsx:178 src/components/FileList.tsx:187 src/components/FileList.tsx:189 src/components/FileList.tsx:203 src/components/FileList.tsx:212 src/components/FileList.tsx:214 src/widgets/discardAllChanges.ts:21
+msgid "Are you sure you want to permanently discard changes to all files? This action cannot be undone."
+msgstr ""
+
+#: src/components/FileList.tsx:191 src/components/FileList.tsx:200 src/components/FileList.tsx:202 src/components/FileList.tsx:205 src/components/FileList.tsx:276
+msgid "Discard all unstaged changes failed."
+msgstr ""
+
+#: src/components/FileList.tsx:192 src/components/FileList.tsx:263
+msgid "Are you sure you want to permanently discard changes to all unstaged files? This action cannot be undone."
+msgstr ""
+
+#: src/components/FileList.tsx:216 src/components/FileList.tsx:225 src/components/FileList.tsx:227 src/widgets/discardAllChanges.ts:34
+msgid "Discard all changes failed."
+msgstr ""
+
+#: src/components/FileList.tsx:370 src/components/FileList.tsx:379 src/components/FileList.tsx:447 src/components/FileList.tsx:448 src/components/FileList.tsx:753
+msgid "Unstage this change"
+msgstr ""
+
+#: src/components/FileList.tsx:404 src/components/FileList.tsx:405 src/components/FileList.tsx:713
+msgid "Conflicted"
+msgstr ""
+
+#: src/components/FileList.tsx:408 src/components/FileList.tsx:417 src/components/FileList.tsx:485 src/components/FileList.tsx:486 src/components/FileList.tsx:791
+msgid "Unstage all changes"
+msgstr ""
+
+#: src/components/FileList.tsx:414 src/components/FileList.tsx:423 src/components/FileList.tsx:491 src/components/FileList.tsx:492 src/components/FileList.tsx:797
+msgid "Staged"
+msgstr "Поэтапный"
+
+#: src/components/FileList.tsx:465 src/components/FileList.tsx:474 src/components/FileList.tsx:542 src/components/FileList.tsx:543 src/components/FileList.tsx:845
+msgid "Stage this change"
+msgstr "Внесите это изменение"
+
+#: src/components/FileList.tsx:512 src/components/FileList.tsx:521 src/components/FileList.tsx:589 src/components/FileList.tsx:590 src/components/FileList.tsx:900
+msgid "Stage all changes"
+msgstr ""
+
+#: src/components/FileList.tsx:559 src/components/FileList.tsx:568 src/components/FileList.tsx:636 src/components/FileList.tsx:637 src/components/FileList.tsx:945
+msgid "Track this file"
+msgstr ""
+
+#: src/components/FileList.tsx:597 src/components/FileList.tsx:606 src/components/FileList.tsx:674 src/components/FileList.tsx:675 src/components/FileList.tsx:991
+msgid "Track all untracked files"
+msgstr ""
+
+#: src/components/FileList.tsx:602 src/components/FileList.tsx:611 src/components/FileList.tsx:679 src/components/FileList.tsx:680 src/components/FileList.tsx:996
+msgid "Untracked"
+msgstr ""
+
+#: src/components/GitPanel.tsx:216 src/components/GitPanel.tsx:506 src/components/GitPanel.tsx:533 src/components/GitPanel.tsx:547 src/components/GitPanel.tsx:561 src/components/GitPanel.tsx:569 src/components/GitPanel.tsx:668 src/components/GitPanel.tsx:669
+msgid "Staging files..."
+msgstr ""
+
+#: src/components/GitPanel.tsx:237 src/components/GitPanel.tsx:523 src/components/GitPanel.tsx:550 src/components/GitPanel.tsx:564 src/components/GitPanel.tsx:578 src/components/GitPanel.tsx:586 src/components/GitPanel.tsx:685 src/components/GitPanel.tsx:686
+msgid "Failed to commit changes."
+msgstr ""
+
+#: src/components/GitPanel.tsx:250 src/components/GitPanel.tsx:531 src/components/GitPanel.tsx:558 src/components/GitPanel.tsx:572 src/components/GitPanel.tsx:586 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:693 src/components/GitPanel.tsx:694
+msgid "Committing changes..."
+msgstr "Зафиксировуйте изменения..."
+
+#: src/components/GitPanel.tsx:257 src/components/GitPanel.tsx:538 src/components/GitPanel.tsx:569 src/components/GitPanel.tsx:583 src/components/GitPanel.tsx:597 src/components/GitPanel.tsx:605 src/components/GitPanel.tsx:704 src/components/GitPanel.tsx:705
+msgid "Committed changes."
+msgstr ""
+
+#: src/components/GitPanel.tsx:333 src/components/GitPanel.tsx:347 src/components/GitPanel.tsx:352 src/components/GitPanel.tsx:359 src/components/GitPanel.tsx:372 src/components/GitPanel.tsx:380 src/components/GitPanel.tsx:403 src/components/GitPanel.tsx:404
+msgid "View changed files"
+msgstr ""
+
+#: src/components/GitPanel.tsx:334 src/components/GitPanel.tsx:348 src/components/GitPanel.tsx:353 src/components/GitPanel.tsx:360 src/components/GitPanel.tsx:373 src/components/GitPanel.tsx:381 src/components/GitPanel.tsx:404 src/components/GitPanel.tsx:405
+msgid "Changes"
+msgstr "Изменения"
+
+#: src/components/GitPanel.tsx:343 src/components/GitPanel.tsx:357 src/components/GitPanel.tsx:362 src/components/GitPanel.tsx:369 src/components/GitPanel.tsx:382 src/components/GitPanel.tsx:390 src/components/GitPanel.tsx:413 src/components/GitPanel.tsx:414
+msgid "View commit history"
+msgstr ""
+
+#: src/components/GitPanel.tsx:364 src/components/GitPanel.tsx:378 src/components/GitPanel.tsx:383 src/components/GitPanel.tsx:390 src/components/GitPanel.tsx:403 src/components/GitPanel.tsx:411 src/components/GitPanel.tsx:436 src/components/GitPanel.tsx:437
+msgid "Commit and Push"
+msgstr ""
+
+#: src/components/GitPanel.tsx:365 src/components/GitPanel.tsx:379 src/components/GitPanel.tsx:384 src/components/GitPanel.tsx:391 src/components/GitPanel.tsx:404 src/components/GitPanel.tsx:412 src/components/GitPanel.tsx:439 src/components/GitPanel.tsx:440
+msgid "Commit"
+msgstr "Коммит"
+
+#: src/components/GitPanel.tsx:426 src/components/GitPanel.tsx:442 src/components/GitPanel.tsx:447 src/components/GitPanel.tsx:454 src/components/GitPanel.tsx:468 src/components/GitPanel.tsx:476 src/components/GitPanel.tsx:575 src/components/GitPanel.tsx:576
+msgid "is not"
+msgstr "не"
+
+#: src/components/GitPanel.tsx:429 src/components/GitPanel.tsx:445 src/components/GitPanel.tsx:450 src/components/GitPanel.tsx:457 src/components/GitPanel.tsx:471 src/components/GitPanel.tsx:479 src/components/GitPanel.tsx:578 src/components/GitPanel.tsx:579
+msgid "You are not currently in"
+msgstr ""
+
+#: src/components/GitPanel.tsx:431 src/components/GitPanel.tsx:447 src/components/GitPanel.tsx:452 src/components/GitPanel.tsx:459 src/components/GitPanel.tsx:473 src/components/GitPanel.tsx:481 src/components/GitPanel.tsx:580 src/components/GitPanel.tsx:581
+msgid " a Git repository. To use Git, navigate to a local repository, initialize a repository here, or clone an existing repository."
+msgstr ""
+
+#: src/components/GitPanel.tsx:435 src/components/GitPanel.tsx:436
+msgid "Commit (Amend) and Push"
+msgstr ""
+
+#: src/components/GitPanel.tsx:438 src/components/GitPanel.tsx:439
+msgid "Commit (Amend)"
+msgstr ""
+
+#: src/components/GitPanel.tsx:439 src/components/GitPanel.tsx:455 src/components/GitPanel.tsx:460 src/components/GitPanel.tsx:467 src/components/GitPanel.tsx:481 src/components/GitPanel.tsx:489 src/components/GitPanel.tsx:588 src/components/GitPanel.tsx:589
+msgid "Open the FileBrowser"
+msgstr ""
+
+#: src/components/GitPanel.tsx:445 src/components/GitPanel.tsx:446
+msgid "You have unsaved tracked files. You probably want to save all changes before committing."
+msgstr ""
+
+#: src/components/GitPanel.tsx:448 src/components/GitPanel.tsx:449
+msgid "You have unsaved staged files. You probably want to save and stage all needed changes before committing."
+msgstr ""
+
+#: src/components/GitPanel.tsx:513 src/components/GitPanel.tsx:571 src/components/GitPanel.tsx:602 src/components/GitPanel.tsx:616 src/components/GitPanel.tsx:630 src/components/GitPanel.tsx:638 src/components/GitPanel.tsx:737 src/components/GitPanel.tsx:738
+msgid "Who is committing?"
+msgstr ""
+
+#: src/components/GitPanel.tsx:524 src/components/GitPanel.tsx:525
+msgid "Compare %1 and %2"
+msgstr ""
+
+#: src/components/GitPanel.tsx:537 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:625 src/components/GitPanel.tsx:639 src/components/GitPanel.tsx:653 src/components/GitPanel.tsx:661 src/components/GitPanel.tsx:760 src/components/GitPanel.tsx:761
+msgid "Failed to set your identity. %1"
+msgstr ""
+
+#: src/components/GitPanel.tsx:577 src/components/GitPanel.tsx:608 src/components/GitPanel.tsx:622 src/components/GitPanel.tsx:636 src/components/GitPanel.tsx:644 src/components/GitPanel.tsx:743 src/components/GitPanel.tsx:744
+msgid "User refused to set identity."
+msgstr ""
+
+#: src/components/GitPanel.tsx:685 src/components/GitPanel.tsx:699 src/components/GitPanel.tsx:707 src/components/GitPanel.tsx:806 src/components/GitPanel.tsx:807
+msgid "One or more open files are behind %1 head. Do you want to pull the latest remote version?"
+msgstr ""
+
+#: src/components/GitPanel.tsx:694 src/components/GitPanel.tsx:708 src/components/GitPanel.tsx:716 src/components/GitPanel.tsx:815 src/components/GitPanel.tsx:816
+msgid "Continue Without Pulling"
+msgstr "Продолжить без получения"
+
+#: src/components/GitPanel.tsx:697 src/components/GitPanel.tsx:711 src/components/GitPanel.tsx:719 src/components/GitPanel.tsx:818 src/components/GitPanel.tsx:819
+msgid "Pull"
+msgstr "Вытащить"
+
+#: src/components/GitPanel.tsx:698 src/components/GitPanel.tsx:712 src/components/GitPanel.tsx:720 src/components/GitPanel.tsx:819 src/components/GitPanel.tsx:820
+msgid "Git Pull from Remote Branch"
+msgstr ""
+
+#: src/components/GitPanel.tsx:722 src/components/GitPanel.tsx:736 src/components/GitPanel.tsx:744 src/components/GitPanel.tsx:843 src/components/GitPanel.tsx:844
+msgid "The following open files remain behind:"
+msgstr ""
+
+#: src/components/HistorySideBar.tsx:104 src/components/HistorySideBar.tsx:106 src/components/HistorySideBar.tsx:122 src/components/HistorySideBar.tsx:124
+msgid "Uncommitted Changes"
+msgstr "Незафиксированные изменения"
+
+#: src/components/HistorySideBar.tsx:105 src/components/HistorySideBar.tsx:107 src/components/HistorySideBar.tsx:123 src/components/HistorySideBar.tsx:125
+msgid "now"
+msgstr "сейчас"
+
+#: src/components/HistorySideBar.tsx:114 src/components/HistorySideBar.tsx:116 src/components/HistorySideBar.tsx:96 src/components/HistorySideBar.tsx:98
+msgid "You"
+msgstr "Вы"
+
+#: src/components/HistorySideBar.tsx:126 src/components/HistorySideBar.tsx:144 src/components/HistorySideBar.tsx:146 src/components/HistorySideBar.tsx:165
+msgid "Discard file history"
+msgstr "Отменить историю файла"
+
+#: src/components/HistorySideBar.tsx:187 src/components/HistorySideBar.tsx:189 src/components/HistorySideBar.tsx:192 src/components/HistorySideBar.tsx:241
+msgid "No history found."
+msgstr "История не найдена."
+
+#: src/components/ManageRemoteDialogue.tsx:104
+msgid "Enter a new remote repository name and URL"
+msgstr ""
+
+#: src/components/ManageRemoteDialogue.tsx:104
+msgid "Enter a new remote repository name and url"
+msgstr ""
+
+#: src/components/ManageRemoteDialogue.tsx:113
+msgid "name"
+msgstr "имя"
+
+#: src/components/ManageRemoteDialogue.tsx:158
+msgid "Add Remote"
+msgstr "Добавить удалённый источник"
+
+#: src/components/ManageRemoteDialogue.tsx:186
+msgid "Existing Remotes:"
+msgstr ""
+
+#: src/components/ManageRemoteDialogue.tsx:198
+msgid "Remove this remote"
+msgstr "Удалить этот удалённый источник"
+
+#: src/components/ManageRemoteDialogue.tsx:92
+msgid "Manage Remotes"
+msgstr ""
+
+#: src/components/ManageRemoteDialogue.tsx:95 src/components/MergeBranchDialog.tsx:117 src/components/NewBranchDialog.tsx:150 src/components/NewBranchDialog.tsx:157 src/components/ResetRevertDialog.tsx:130 src/components/ResetRevertDialog.tsx:132
+msgid "Close this dialog"
+msgstr ""
+
+#: src/components/MergeBranchDialog.tsx:114
+msgid "Merge Branch"
+msgstr "Объединить ветку"
+
+#: src/components/MergeBranchDialog.tsx:127
+msgid "Select the branch to merge in %1"
+msgstr ""
+
+#: src/components/MergeBranchDialog.tsx:139
+msgid "Filter branch list"
+msgstr ""
+
+#: src/components/MergeBranchDialog.tsx:172
+msgid "Close this dialog without merging a branch"
+msgstr ""
+
+#: src/components/MergeBranchDialog.tsx:181
+msgid "Merge branch"
+msgstr "Объединить ветку"
+
+#: src/components/MergeBranchDialog.tsx:182
+msgid "Merge"
+msgstr "Объединить"
+
+#: src/components/MergeBranchDialog.tsx:87 src/components/NewBranchDialog.tsx:309 src/components/NewBranchDialog.tsx:313 src/components/NewBranchDialog.tsx:315
+msgid "Create a new branch based on: %1"
+msgstr ""
+
+#: src/components/NewBranchDialog.tsx:147 src/components/NewBranchDialog.tsx:154
+msgid "Create a Branch"
+msgstr "Создать ветвь"
+
+#: src/components/NewBranchDialog.tsx:160 src/components/NewBranchDialog.tsx:167
+msgid "Name"
+msgstr "Имя"
+
+#: src/components/NewBranchDialog.tsx:167 src/components/NewBranchDialog.tsx:174
+msgid "Enter a branch name"
+msgstr "Введите имя ветки"
+
+#: src/components/NewBranchDialog.tsx:169
+msgid "Create branch based on…"
+msgstr ""
+
+#: src/components/NewBranchDialog.tsx:169 src/components/NewBranchDialog.tsx:176
+msgid "Create branch based on..."
+msgstr ""
+
+#: src/components/NewBranchDialog.tsx:199 src/components/NewBranchDialog.tsx:206
+msgid "Close this dialog without creating a new branch"
+msgstr ""
+
+#: src/components/NewBranchDialog.tsx:209 src/components/NewBranchDialog.tsx:216
+msgid "Create Branch"
+msgstr "Создать ветку"
+
+#: src/components/NewBranchDialog.tsx:300 src/components/NewBranchDialog.tsx:302
+msgid "The current branch. Pick this if you want to build on work done in this branch."
+msgstr ""
+
+#: src/components/NewBranchDialog.tsx:305 src/components/NewBranchDialog.tsx:307
+msgid "The default branch. Pick this if you want to start fresh from the default branch."
+msgstr ""
+
+#: src/components/NewBranchDialog.tsx:427 src/components/NewBranchDialog.tsx:434
+msgid "Creating branch…"
+msgstr ""
+
+#: src/components/NewBranchDialog.tsx:433 src/components/NewBranchDialog.tsx:434
+msgid "Creating branch..."
+msgstr "Cоздание ветки..."
+
+#: src/components/NewBranchDialog.tsx:437 src/components/NewBranchDialog.tsx:443 src/components/NewBranchDialog.tsx:444
+msgid "Failed to create branch."
+msgstr "Не удалось создать ветку."
+
+#: src/components/NewBranchDialog.tsx:444 src/components/NewBranchDialog.tsx:450 src/components/NewBranchDialog.tsx:451
+msgid "Branch created."
+msgstr "Ветка создана."
+
+#: src/components/PastCommitNode.tsx:111 src/components/PastCommitNode.tsx:152 src/components/PastCommitNode.tsx:156
+msgid "View commit details"
+msgstr ""
+
+#: src/components/PastCommitNode.tsx:175 src/components/PastCommitNode.tsx:179
+msgid "Select for compare"
+msgstr ""
+
+#: src/components/PastCommitNode.tsx:182 src/components/PastCommitNode.tsx:186
+msgid "Compare with selected"
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:125 src/components/ResetRevertDialog.tsx:127
+msgid "Revert Changes"
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:126 src/components/ResetRevertDialog.tsx:128
+msgid "Reset Changes"
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:139 src/components/ResetRevertDialog.tsx:141
+msgid "These changes will be reverted. Only commit if you're sure you're okay losing these changes."
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:142 src/components/ResetRevertDialog.tsx:144
+msgid "All changes after commit %1 will be gone forever (hard reset). Are you sure?"
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:166 src/components/ResetRevertDialog.tsx:179
+msgid "Cancel changes"
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:174 src/components/ResetRevertDialog.tsx:187
+msgid "Submit changes"
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:229
+msgid "Discarding changes…"
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:229 src/components/ResetRevertDialog.tsx:246
+msgid "Discarding changes..."
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:235 src/components/ResetRevertDialog.tsx:252
+msgid "Successfully discarded changes."
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:240 src/components/ResetRevertDialog.tsx:257
+msgid "Failed to discard changes."
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:256
+msgid "Reverting changes…"
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:256 src/components/ResetRevertDialog.tsx:273
+msgid "Reverting changes..."
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:262 src/components/ResetRevertDialog.tsx:279
+msgid "Successfully reverted changes."
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:267 src/components/ResetRevertDialog.tsx:284
+msgid "Failed to revert changes."
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:299 src/components/ResetRevertDialog.tsx:316
+msgid "Revert '%1'"
+msgstr ""
+
+#: src/components/ResetRevertDialog.tsx:308 src/components/ResetRevertDialog.tsx:325
+msgid "This reverts commit %1"
+msgstr ""
+
+#: src/components/SinglePastCommitInfo.tsx:159 src/components/SinglePastCommitInfo.tsx:169 src/components/SinglePastCommitInfo.tsx:180 src/components/SinglePastCommitInfo.tsx:182
+msgid "Error loading commit data"
+msgstr ""
+
+#: src/components/SinglePastCommitInfo.tsx:168 src/components/SinglePastCommitInfo.tsx:180 src/components/SinglePastCommitInfo.tsx:201 src/components/SinglePastCommitInfo.tsx:212 src/components/SinglePastCommitInfo.tsx:214
+msgid "Revert changes introduced by this commit"
+msgstr ""
+
+#: src/components/SinglePastCommitInfo.tsx:176 src/components/SinglePastCommitInfo.tsx:188 src/components/SinglePastCommitInfo.tsx:209 src/components/SinglePastCommitInfo.tsx:220 src/components/SinglePastCommitInfo.tsx:222
+msgid "Discard changes introduced *after* this commit (hard reset)"
+msgstr ""
+
+#: src/components/StatusWidget.tsx:70 src/components/StatusWidget.tsx:74
+msgid "credentials required"
+msgstr ""
+
+#: src/components/TagMenu.tsx:157
+msgid "Fail to get the tags."
+msgstr ""
+
+#: src/components/TagMenu.tsx:246
+msgid "Checkout to tag: %1"
+msgstr ""
+
+#: src/components/TagMenu.tsx:45
+msgid "Unable to checkout tag"
+msgstr ""
+
+#: src/components/TagMenu.tsx:57
+msgid "Please commit, stash, or discard your changes before you checkout tags."
+msgstr ""
+
+#: src/components/TagMenu.tsx:68
+msgid "Failed to checkout tag."
+msgstr ""
+
+#: src/components/Toolbar.tsx:173
+msgid "Pull latest changes"
+msgstr ""
+
+#: src/components/Toolbar.tsx:175
+msgid " (behind by %1 commits)"
+msgstr ""
+
+#: src/components/Toolbar.tsx:180 src/components/Toolbar.tsx:208
+msgid "No remote repository defined"
+msgstr ""
+
+#: src/components/Toolbar.tsx:200
+msgid "Push committed changes"
+msgstr ""
+
+#: src/components/Toolbar.tsx:202
+msgid " (ahead by %1 commits)"
+msgstr ""
+
+#: src/components/Toolbar.tsx:207
+msgid "Publish branch"
+msgstr ""
+
+#: src/components/Toolbar.tsx:217
+msgid "Refresh the repository to detect local and remote changes"
+msgstr ""
+
+#: src/components/Toolbar.tsx:236 src/components/Toolbar.tsx:240
+msgid "Current repository: %1"
+msgstr ""
+
+#: src/components/Toolbar.tsx:245 src/components/Toolbar.tsx:248
+msgid "Current Repository"
+msgstr ""
+
+#: src/components/Toolbar.tsx:272 src/components/Toolbar.tsx:273
+msgid "Manage branches and tags"
+msgstr ""
+
+#: src/components/Toolbar.tsx:278 src/components/Toolbar.tsx:279
+msgid "Current Branch"
+msgstr ""
+
+#: src/components/Toolbar.tsx:315 src/components/Toolbar.tsx:316
+msgid "View branches"
+msgstr ""
+
+#: src/components/Toolbar.tsx:316 src/components/Toolbar.tsx:317
+msgid "Branches"
+msgstr ""
+
+#: src/components/Toolbar.tsx:325 src/components/Toolbar.tsx:326
+msgid "View tags"
+msgstr ""
+
+#: src/components/Toolbar.tsx:326 src/components/Toolbar.tsx:327
+msgid "Tags"
+msgstr ""
+
+#: src/components/Toolbar.tsx:401 src/components/Toolbar.tsx:402
+msgid "Refreshing..."
+msgstr ""
+
+#: src/components/Toolbar.tsx:403
+msgid "Refreshing…"
+msgstr ""
+
+#: src/components/Toolbar.tsx:408 src/components/Toolbar.tsx:409 src/components/Toolbar.tsx:410
+msgid "Successfully refreshed."
+msgstr ""
+
+#: src/components/Toolbar.tsx:414 src/components/Toolbar.tsx:415 src/components/Toolbar.tsx:416
+msgid "Failed to refresh."
+msgstr ""
+
+#: src/components/diff/NotebookDiff.ts:103
+msgid "Hide unchanged cells"
+msgstr ""
+
+#: src/components/diff/NotebookDiff.ts:147
+msgid "Failed to refresh Notebook diff."
+msgstr ""
+
+#: src/components/diff/NotebookDiff.ts:238
+msgid "COMMON ANCESTOR"
+msgstr ""
+
+#: src/components/diff/NotebookDiff.ts:238 src/components/diff/NotebookDiff.ts:245
+msgid "Common Ancestor"
+msgstr ""
+
+#: src/components/diff/NotebookDiff.ts:277 src/components/diff/NotebookDiff.ts:284
+msgid "Failed to init notebook diff view: %1"
+msgstr ""
+
+#: src/components/diff/NotebookDiff.ts:336 src/components/diff/NotebookDiff.ts:343 src/components/diff/PlainTextDiff.ts:244 src/components/diff/PlainTextDiff.ts:251 src/components/diff/PlainTextDiff.ts:294
+msgid "Failed to load file diff."
+msgstr ""
+
+#: src/components/diff/NotebookDiff.ts:347 src/components/diff/NotebookDiff.ts:354
+msgid "Error Loading Notebook Diff:"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:104 src/components/diff/PlainTextDiff.ts:111 src/components/diff/PlainTextDiff.ts:150
+msgid "Failed to get a valid file value."
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:250 src/components/diff/PlainTextDiff.ts:257 src/components/diff/PlainTextDiff.ts:300
+msgid "Error Loading File Diff:"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:53
+msgid "Control character"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:55
+msgid "Selection deleted"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:57
+msgid "Folded lines"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:58
+msgid "Unfolded lines"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:59
+msgid "to"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:60
+msgid "folded code"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:61
+msgid "unfold"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:62
+msgid "Fold line"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:63
+msgid "Unfold line"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:65
+msgid "Go to line"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:66
+msgid "go"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:67
+msgid "Find"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:68
+msgid "Replace"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:69
+msgid "next"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:70
+msgid "previous"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:71
+msgid "all"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:72
+msgid "match case"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:73
+msgid "replace"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:74
+msgid "replace all"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:75
+msgid "close"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:76
+msgid "current match"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:77
+msgid "replaced $ matches"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:78
+msgid "replaced match on line $"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:79
+msgid "on line"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:81
+msgid "Identical text collapsed. Click to expand."
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:84
+msgid "Toggle locked scrolling"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:85
+msgid "Push to left"
+msgstr ""
+
+#: src/components/diff/PlainTextDiff.ts:86
+msgid "Revert chunk"
+msgstr ""
+
+#: src/index.ts:100 src/index.ts:101 src/index.ts:102 src/index.ts:94 src/index.ts:98
+msgid "git command not found - please ensure you have Git > 2 installed"
+msgstr ""
+
+#: src/index.ts:102 src/index.ts:106 src/index.ts:108 src/index.ts:109 src/index.ts:110
+msgid "git command version must be > 2; got %1."
+msgstr ""
+
+#: src/index.ts:109 src/index.ts:113 src/index.ts:115 src/index.ts:116 src/index.ts:117
+msgid "The versions of the JupyterLab Git server frontend and backend do not match. The @jupyterlab/git frontend extension has version: %1 while the python package has version %2. Please install identical version of jupyterlab-git Python package and the @jupyterlab/git extension. Try running: pip install --upgrade jupyterlab-git"
+msgstr ""
+
+#: src/index.ts:126 src/index.ts:130 src/index.ts:132 src/index.ts:133 src/index.ts:134
+msgid "Failed to load the jupyterlab-git server extension"
+msgstr ""
+
+#: src/index.ts:128 src/index.ts:129 src/index.ts:130
+msgid "Failed to load the jupyterlab-git server extension settings"
+msgstr ""
+
+#: src/index.ts:90 src/index.ts:91 src/index.ts:92
+msgid "Failed to load settings for the Git Extension.\n"
+"%1"
+msgstr ""
+
+#: src/server.ts:27
+msgid "Git server extension is unavailable. Please ensure you have installed the JupyterLab Git server extension by running: pip install --upgrade jupyterlab-git. To confirm that the server extension is installed, run: jupyter server extension list."
+msgstr ""
+
+#: src/widgets/AdvancedPushForm.tsx:104
+msgid "This repository has no known remotes."
+msgstr ""
+
+#: src/widgets/AdvancedPushForm.tsx:43
+msgid "Choose a remote to push to."
+msgstr ""
+
+#: src/widgets/AdvancedPushForm.tsx:49
+msgid "Loading remote repositories..."
+msgstr ""
+
+#: src/widgets/AdvancedPushForm.tsx:64
+msgid "Force Push"
+msgstr ""
+
+#: src/widgets/CredentialsBox.tsx:36 src/widgets/CredentialsBox.tsx:37 src/widgets/CredentialsBox.tsx:43
+msgid "username"
+msgstr ""
+
+#: src/widgets/CredentialsBox.tsx:37 src/widgets/CredentialsBox.tsx:38 src/widgets/CredentialsBox.tsx:44
+msgid "password / personal access token"
+msgstr ""
+
+#: src/widgets/CredentialsBox.tsx:50
+msgid "Save my login temporarily"
+msgstr ""
+
+#: src/widgets/GitCloneForm.ts:30
+msgid "Enter the Clone URI of the repository"
+msgstr ""
+
+#: src/widgets/GitCloneForm.ts:60
+msgid "Enter the URI of the remote Git repository"
+msgstr ""
+
+#: src/widgets/GitCloneForm.ts:65
+msgid "Include submodules"
+msgstr ""
+
+#: src/widgets/GitCloneForm.ts:66
+msgid "If checked, the remote submodules in the repository will be cloned recursively"
+msgstr ""
+
+#: src/widgets/GitCloneForm.ts:72
+msgid "Download the repository"
+msgstr ""
+
+#: src/widgets/GitCloneForm.ts:73
+msgid "If checked, the remote repository default branch will be downloaded instead of cloned"
+msgstr ""
+
+#: src/widgets/discardAllChanges.ts:18
+msgid "Your current changes forbid pulling the latest changes. Do you want to permanently discard those changes? This action cannot be undone."
+msgstr ""
+
+#: src/widgets/gitClone.tsx:38
+msgid "Git Clone"
+msgstr ""
+
