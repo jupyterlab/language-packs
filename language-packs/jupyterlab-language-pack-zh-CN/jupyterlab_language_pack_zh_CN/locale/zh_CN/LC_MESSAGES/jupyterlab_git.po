@@ -1,0 +1,1637 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jupyterlab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: jupyterlab\n"
+"X-Crowdin-Project-ID: 409874\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /main/extensions/jupyterlab_git/locale/jupyterlab_git.pot\n"
+"X-Crowdin-File-ID: 197\n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"PO-Revision-Date: 2022-12-11 22:49\n"
+
+#: /schema/plugin.json:/description
+msgctxt "schema"
+msgid "jupyterlab-git settings."
+msgstr "jupyterlab-git 设置。"
+
+#: /schema/plugin.json:/jupyter.lab.menus/context[0]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/label
+msgctxt "menu"
+msgid "Git"
+msgstr "Git"
+
+#: /schema/plugin.json:/jupyter.lab.menus/main[0]/items[12]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/items[15]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/items[16]/submenu/label
+msgctxt "menu"
+msgid "Help"
+msgstr "帮助"
+
+#: /schema/plugin.json:/jupyter.lab.menus/main[0]/items[16]/submenu/items[0]/args/text
+msgctxt "schema"
+msgid "Set Up Remotes"
+msgstr "设置远程版本"
+
+#: /schema/plugin.json:/jupyter.lab.menus/main[0]/items[16]/submenu/items[1]/args/text
+msgctxt "schema"
+msgid "Git Documentation"
+msgstr "Git 文档"
+
+#: /schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Git"
+msgstr "Git"
+
+#: /schema/plugin.json:/properties/blockWhileCommandExecutes/description
+msgctxt "settings"
+msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
+msgstr "暂停 JupyterLab 用户交互，直到 Git 命令（例如，commit、pull、reset、revert）执行完毕。将本选项设置为 true，有助于消除有可能导致数据丢失、冲突和破坏 Git 历史的竞争条件。除非是在慢速的网络上运行，用户界面暂停应该不影响标准的工作流。如果将本选项设置为 false，意味着允许引发多个并行 Git 动作的操作。"
+
+#: /schema/plugin.json:/properties/blockWhileCommandExecutes/title
+msgctxt "settings"
+msgid "Suspend user interaction until commands finish"
+msgstr "暂停用户交互，直到命令完成"
+
+#: /schema/plugin.json:/properties/cancelPullMergeConflict/description
+msgctxt "settings"
+msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
+msgstr "如果本选项设置为 true，当从远程仓库获取和集成更改时，引起冲突的合并将被取消，工作树保持不变。"
+
+#: /schema/plugin.json:/properties/cancelPullMergeConflict/title
+msgctxt "settings"
+msgid "Cancel pull merge conflict"
+msgstr "取消拉取操作的合并冲突"
+
+#: /schema/plugin.json:/properties/commitAndPush/description
+msgctxt "settings"
+msgid "Whether to trigger or not a push for each commit."
+msgstr "是否在每次提交后触发推送。"
+
+#: /schema/plugin.json:/properties/commitAndPush/title
+msgctxt "settings"
+msgid "Trigger push on commit"
+msgstr "提交代码后触发推送"
+
+#: /schema/plugin.json:/properties/disableBranchWithChanges/description
+msgctxt "settings"
+msgid "Disable all branch operations (new, switch) when there are changed/staged files"
+msgstr "如果有文件被修改或者暂存，禁止所有的分支操作（new、switch）"
+
+#: /schema/plugin.json:/properties/disableBranchWithChanges/title
+msgctxt "settings"
+msgid "Disable branch with changes"
+msgstr "有更改时禁止分支操作"
+
+#: /schema/plugin.json:/properties/displayStatus/description
+msgctxt "settings"
+msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
+msgstr "是否在 JupyterLab 状态栏显示 Git 扩展的状态更新信息。如果设置为 true，本扩展将在 JupyterLab 状态栏显示状态的更新信息，例如当拉取和推送更改、切换分支和轮询更改时。根据扩展的活动频度，有些用户觉得状态更新信息会让人分散注意力。如果是这种情况，将本选项设置为 false，这有助于减少视觉干扰。"
+
+#: /schema/plugin.json:/properties/displayStatus/title
+msgctxt "settings"
+msgid "Display Git status updates"
+msgstr "显示 Git 状态更新信息"
+
+#: /schema/plugin.json:/properties/doubleClickDiff/description
+msgctxt "settings"
+msgid "If true, double clicking a file in the list of changed files will open a diff."
+msgstr "如果设置为 true，双击已更改文件列表中的某个文件，将会显示新旧版本的差异。"
+
+#: /schema/plugin.json:/properties/doubleClickDiff/description
+msgctxt "settings"
+msgid "If true, doubling clicking a file in the list of changed files will open a diff."
+msgstr "如果设置为 true，双击已更改文件列表中的某个文件，将会显示新旧版本的差异。"
+
+#: /schema/plugin.json:/properties/doubleClickDiff/title
+msgctxt "settings"
+msgid "Show diff on double click"
+msgstr "双击以显示差异"
+
+#: /schema/plugin.json:/properties/historyCount/description
+msgctxt "settings"
+msgid "Number of (most recent) commits shown in the history log"
+msgstr "在历史日志中显示的（最新）提交数量"
+
+#: /schema/plugin.json:/properties/historyCount/title
+msgctxt "settings"
+msgid "History count"
+msgstr "历史计数"
+
+#: /schema/plugin.json:/properties/openFilesBehindWarning/description
+msgctxt "settings"
+msgid "If true, a popup dialog will be displayed if a user opens a file that is behind its remote branch version, or if an opened file has updates on the remote branch."
+msgstr "如果开启，当一个用户打开了一个文件落后于远程分支的版本，或者该文件在远程分支有更新，则弹出对话框进行提醒。"
+
+#: /schema/plugin.json:/properties/openFilesBehindWarning/title
+msgctxt "settings"
+msgid "Open files behind warning"
+msgstr "打开中的文件落后版本时发出警告"
+
+#: /schema/plugin.json:/properties/refreshIfHidden/description
+msgctxt "settings"
+msgid "Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance."
+msgstr "当 Git 标签页不可见时，是否检查 Git 状态。选择 `false` 以提高性能。"
+
+#: /schema/plugin.json:/properties/refreshIfHidden/title
+msgctxt "settings"
+msgid "Refresh if the Git tab is hidden"
+msgstr "如果 Git 标签页隐藏则刷新"
+
+#: /schema/plugin.json:/properties/refreshInterval/description
+msgctxt "settings"
+msgid "Number of milliseconds between polling the file system for changes."
+msgstr "为了找出已经更改的文件，需要定时轮询文件系统。本选项是轮询间隔的设置，单位是毫秒。"
+
+#: /schema/plugin.json:/properties/refreshInterval/title
+msgctxt "settings"
+msgid "Refresh interval"
+msgstr "刷新间隔"
+
+#: /schema/plugin.json:/properties/simpleStaging/description
+msgctxt "settings"
+msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
+msgstr "如果设置为 true，使用简化的暂存概念。只显示已经更改的文件（默认显示暂存的、更改的和不再跟踪的文件），所有已经更改的文件将被自动暂存。"
+
+#: /schema/plugin.json:/properties/simpleStaging/title
+msgctxt "settings"
+msgid "Simple staging flag"
+msgstr "简易暂存模式"
+
+#: /schema/plugin.json:/title
+msgctxt "schema"
+msgid "Git"
+msgstr "Git"
+
+#: src/cloneCommand.ts:35 src/commandsAndMenu.tsx:286 src/commandsAndMenu.tsx:288 src/commandsAndMenu.tsx:289 src/commandsAndMenu.tsx:290 src/commandsAndMenu.tsx:293 src/components/GitPanel.tsx:454 src/components/GitPanel.tsx:470 src/components/GitPanel.tsx:475 src/components/GitPanel.tsx:483 src/components/GitPanel.tsx:497 src/components/GitPanel.tsx:505 src/components/GitPanel.tsx:604 src/components/GitPanel.tsx:605
+msgid "Clone a Repository"
+msgstr "克隆一个仓库"
+
+#: src/cloneCommand.ts:36 src/commandsAndMenu.tsx:287 src/commandsAndMenu.tsx:289 src/commandsAndMenu.tsx:290 src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:294
+msgid "Clone a repository from a URL"
+msgstr "从 URL 克隆一个仓库"
+
+#: src/cloneCommand.ts:40 src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:293 src/commandsAndMenu.tsx:294 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:298
+msgid "Clone a repo"
+msgstr "克隆一个仓库"
+
+#: src/cloneCommand.ts:44 src/commandsAndMenu.tsx:1001 src/commandsAndMenu.tsx:1002 src/commandsAndMenu.tsx:1044 src/commandsAndMenu.tsx:1045 src/commandsAndMenu.tsx:1070 src/commandsAndMenu.tsx:1086 src/commandsAndMenu.tsx:1108 src/commandsAndMenu.tsx:1112 src/commandsAndMenu.tsx:1113 src/commandsAndMenu.tsx:1129 src/commandsAndMenu.tsx:1151 src/commandsAndMenu.tsx:1155 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:204 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:297 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:302 src/commandsAndMenu.tsx:317 src/commandsAndMenu.tsx:323 src/commandsAndMenu.tsx:327 src/commandsAndMenu.tsx:432 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:449 src/commandsAndMenu.tsx:471 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:743 src/commandsAndMenu.tsx:745 src/commandsAndMenu.tsx:751 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:794 src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:819 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:878 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:942 src/commandsAndMenu.tsx:985 src/components/BranchMenu.tsx:344 src/components/BranchMenu.tsx:367 src/components/FileList.tsx:182 src/components/FileList.tsx:191 src/components/FileList.tsx:193 src/components/FileList.tsx:196 src/components/FileList.tsx:207 src/components/FileList.tsx:216 src/components/FileList.tsx:218 src/components/FileList.tsx:267 src/components/MergeBranchDialog.tsx:173 src/components/NewBranchDialog.tsx:202 src/components/NewBranchDialog.tsx:209 src/widgets/discardAllChanges.ts:25
+msgid "Cancel"
+msgstr "取消"
+
+#: src/cloneCommand.ts:45
+msgid "Clone"
+msgstr "克隆"
+
+#: src/cloneCommand.ts:52
+msgid "Cloning…"
+msgstr "正在克隆…"
+
+#: src/cloneCommand.ts:62 src/cloneCommand.ts:66 src/cloneCommand.ts:67 src/commandsAndMenu.tsx:313 src/commandsAndMenu.tsx:315 src/commandsAndMenu.tsx:316 src/commandsAndMenu.tsx:317 src/commandsAndMenu.tsx:320
+msgid "Successfully cloned"
+msgstr "克隆成功"
+
+#: src/cloneCommand.ts:73 src/cloneCommand.ts:77 src/cloneCommand.ts:78 src/commandsAndMenu.tsx:324 src/commandsAndMenu.tsx:326 src/commandsAndMenu.tsx:327 src/commandsAndMenu.tsx:328 src/commandsAndMenu.tsx:331
+msgid "Failed to clone"
+msgstr "克隆失败"
+
+#: src/commandsAndMenu.tsx:1002 src/commandsAndMenu.tsx:1003 src/commandsAndMenu.tsx:1049 src/commandsAndMenu.tsx:1065 src/commandsAndMenu.tsx:1071 src/commandsAndMenu.tsx:1087 src/commandsAndMenu.tsx:1091 src/commandsAndMenu.tsx:1109 src/commandsAndMenu.tsx:1113 src/commandsAndMenu.tsx:722 src/commandsAndMenu.tsx:724 src/commandsAndMenu.tsx:730 src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:744 src/commandsAndMenu.tsx:746 src/commandsAndMenu.tsx:752 src/commandsAndMenu.tsx:755 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:857 src/commandsAndMenu.tsx:879 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:943 src/commandsAndMenu.tsx:980 src/commandsAndMenu.tsx:981 src/components/BranchMenu.tsx:345 src/components/BranchMenu.tsx:368
+msgid "Delete"
+msgstr "删除"
+
+#: src/commandsAndMenu.tsx:1004 src/commandsAndMenu.tsx:1007 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:1071 src/commandsAndMenu.tsx:1128 src/commandsAndMenu.tsx:1129 src/commandsAndMenu.tsx:1131 src/commandsAndMenu.tsx:1132 src/commandsAndMenu.tsx:1197 src/commandsAndMenu.tsx:1200 src/commandsAndMenu.tsx:1213 src/commandsAndMenu.tsx:1216 src/commandsAndMenu.tsx:1235 src/commandsAndMenu.tsx:1238 src/commandsAndMenu.tsx:1239 src/commandsAndMenu.tsx:1242 src/commandsAndMenu.tsx:869 src/commandsAndMenu.tsx:871 src/commandsAndMenu.tsx:872 src/commandsAndMenu.tsx:874 src/commandsAndMenu.tsx:877 src/commandsAndMenu.tsx:880 src/commandsAndMenu.tsx:882 src/commandsAndMenu.tsx:885 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:905 src/commandsAndMenu.tsx:906
+msgid "Ignore"
+msgstr "忽略"
+
+#: src/commandsAndMenu.tsx:1007 src/commandsAndMenu.tsx:1066 src/commandsAndMenu.tsx:1067 src/commandsAndMenu.tsx:1135 src/commandsAndMenu.tsx:1151 src/commandsAndMenu.tsx:1173 src/commandsAndMenu.tsx:1177 src/commandsAndMenu.tsx:808 src/commandsAndMenu.tsx:810 src/commandsAndMenu.tsx:816 src/commandsAndMenu.tsx:821 src/commandsAndMenu.tsx:841 src/commandsAndMenu.tsx:842 src/commandsAndMenu.tsx:943
+msgid "Discard changes for %1 failed."
+msgstr "放弃对 %1 的更改失败。"
+
+#: src/commandsAndMenu.tsx:1008 src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1046 src/commandsAndMenu.tsx:1050 src/commandsAndMenu.tsx:681 src/commandsAndMenu.tsx:683 src/commandsAndMenu.tsx:689 src/commandsAndMenu.tsx:694 src/commandsAndMenu.tsx:714 src/commandsAndMenu.tsx:715 src/commandsAndMenu.tsx:816 src/commandsAndMenu.tsx:880 src/commandsAndMenu.tsx:939 src/commandsAndMenu.tsx:940
+msgid "Track"
+msgstr "追踪"
+
+#: src/commandsAndMenu.tsx:1009 src/commandsAndMenu.tsx:1013 src/commandsAndMenu.tsx:1014 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:1069 src/commandsAndMenu.tsx:1082 src/commandsAndMenu.tsx:1098 src/commandsAndMenu.tsx:1120 src/commandsAndMenu.tsx:1124 src/commandsAndMenu.tsx:1137 src/commandsAndMenu.tsx:1153 src/commandsAndMenu.tsx:1175 src/commandsAndMenu.tsx:1179 src/commandsAndMenu.tsx:954 src/components/Alert.tsx:106 src/components/Alert.tsx:123 src/components/BranchMenu.tsx:69 src/components/BranchMenu.tsx:70 src/components/TagMenu.tsx:63 src/index.ts:135 src/index.ts:136
+msgid "Dismiss"
+msgstr "忽略"
+
+#: src/commandsAndMenu.tsx:1009 src/commandsAndMenu.tsx:1031 src/commandsAndMenu.tsx:1035 src/commandsAndMenu.tsx:666 src/commandsAndMenu.tsx:668 src/commandsAndMenu.tsx:674 src/commandsAndMenu.tsx:679 src/commandsAndMenu.tsx:699 src/commandsAndMenu.tsx:700 src/commandsAndMenu.tsx:801 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:924 src/commandsAndMenu.tsx:925 src/commandsAndMenu.tsx:993
+msgid "Stage"
+msgstr "暂存"
+
+#: src/commandsAndMenu.tsx:1010 src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1048 src/commandsAndMenu.tsx:1052 src/commandsAndMenu.tsx:683 src/commandsAndMenu.tsx:685 src/commandsAndMenu.tsx:691 src/commandsAndMenu.tsx:696 src/commandsAndMenu.tsx:716 src/commandsAndMenu.tsx:717 src/commandsAndMenu.tsx:818 src/commandsAndMenu.tsx:882 src/commandsAndMenu.tsx:941 src/commandsAndMenu.tsx:942
+msgid "Start tracking selected file"
+msgstr "开始跟踪选定的文件"
+
+#: src/commandsAndMenu.tsx:1011 src/commandsAndMenu.tsx:1027 src/commandsAndMenu.tsx:1049 src/commandsAndMenu.tsx:1053 src/commandsAndMenu.tsx:684 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:692 src/commandsAndMenu.tsx:697 src/commandsAndMenu.tsx:717 src/commandsAndMenu.tsx:718 src/commandsAndMenu.tsx:819 src/commandsAndMenu.tsx:883 src/commandsAndMenu.tsx:942 src/commandsAndMenu.tsx:943
+msgid "Start tracking selected files"
+msgstr "开始跟踪选定的文件"
+
+#: src/commandsAndMenu.tsx:1011 src/commandsAndMenu.tsx:1033 src/commandsAndMenu.tsx:1037 src/commandsAndMenu.tsx:668 src/commandsAndMenu.tsx:670 src/commandsAndMenu.tsx:676 src/commandsAndMenu.tsx:681 src/commandsAndMenu.tsx:701 src/commandsAndMenu.tsx:702 src/commandsAndMenu.tsx:803 src/commandsAndMenu.tsx:867 src/commandsAndMenu.tsx:926 src/commandsAndMenu.tsx:927 src/commandsAndMenu.tsx:995
+msgid "Stage the changes of selected file"
+msgstr "暂存选定文件的改动"
+
+#: src/commandsAndMenu.tsx:1012 src/commandsAndMenu.tsx:1013 src/commandsAndMenu.tsx:1081 src/commandsAndMenu.tsx:1097 src/commandsAndMenu.tsx:1119 src/commandsAndMenu.tsx:1123 src/commandsAndMenu.tsx:754 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:762 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:787 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:889 src/commandsAndMenu.tsx:953
+msgid "Deleting %1 failed."
+msgstr "删除 %1 失败。"
+
+#: src/commandsAndMenu.tsx:1012 src/commandsAndMenu.tsx:1034 src/commandsAndMenu.tsx:1038 src/commandsAndMenu.tsx:669 src/commandsAndMenu.tsx:671 src/commandsAndMenu.tsx:677 src/commandsAndMenu.tsx:682 src/commandsAndMenu.tsx:702 src/commandsAndMenu.tsx:703 src/commandsAndMenu.tsx:804 src/commandsAndMenu.tsx:868 src/commandsAndMenu.tsx:927 src/commandsAndMenu.tsx:928 src/commandsAndMenu.tsx:996
+msgid "Stage the changes of selected files"
+msgstr "暂存选定文件的改动"
+
+#: src/commandsAndMenu.tsx:1016 src/commandsAndMenu.tsx:1020 src/commandsAndMenu.tsx:651 src/commandsAndMenu.tsx:653 src/commandsAndMenu.tsx:659 src/commandsAndMenu.tsx:664 src/commandsAndMenu.tsx:684 src/commandsAndMenu.tsx:685 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:850 src/commandsAndMenu.tsx:909 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:978 src/commandsAndMenu.tsx:994 src/components/ManageRemoteDialogue.tsx:159
+msgid "Add"
+msgstr "添加"
+
+#: src/commandsAndMenu.tsx:1018 src/commandsAndMenu.tsx:1022 src/commandsAndMenu.tsx:653 src/commandsAndMenu.tsx:655 src/commandsAndMenu.tsx:661 src/commandsAndMenu.tsx:666 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:911 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:980 src/commandsAndMenu.tsx:996
+msgid "Stage or track the changes to selected file"
+msgstr "暂存或追踪选定文件的改动"
+
+#: src/commandsAndMenu.tsx:1019 src/commandsAndMenu.tsx:1023 src/commandsAndMenu.tsx:654 src/commandsAndMenu.tsx:656 src/commandsAndMenu.tsx:662 src/commandsAndMenu.tsx:667 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:688 src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:853 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:981 src/commandsAndMenu.tsx:997
+msgid "Stage or track the changes of selected files"
+msgstr "暂存或追踪选定文件的改动"
+
+#: src/commandsAndMenu.tsx:1020 src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1079 src/commandsAndMenu.tsx:1080 src/commandsAndMenu.tsx:1083 src/commandsAndMenu.tsx:1084 src/commandsAndMenu.tsx:1148 src/commandsAndMenu.tsx:1152 src/commandsAndMenu.tsx:1164 src/commandsAndMenu.tsx:1168 src/commandsAndMenu.tsx:1186 src/commandsAndMenu.tsx:1190 src/commandsAndMenu.tsx:1194 src/commandsAndMenu.tsx:821 src/commandsAndMenu.tsx:823 src/commandsAndMenu.tsx:825 src/commandsAndMenu.tsx:827 src/commandsAndMenu.tsx:829 src/commandsAndMenu.tsx:833 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:838 src/commandsAndMenu.tsx:854 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:858 src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:956 src/commandsAndMenu.tsx:960
+msgid "Ignore this file (add to .gitignore)"
+msgstr "忽略此文件（添加到 .gitignore）"
+
+#: src/commandsAndMenu.tsx:1021 src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1080 src/commandsAndMenu.tsx:1081 src/commandsAndMenu.tsx:1084 src/commandsAndMenu.tsx:1085 src/commandsAndMenu.tsx:1149 src/commandsAndMenu.tsx:1153 src/commandsAndMenu.tsx:1165 src/commandsAndMenu.tsx:1169 src/commandsAndMenu.tsx:1187 src/commandsAndMenu.tsx:1191 src/commandsAndMenu.tsx:1195 src/commandsAndMenu.tsx:822 src/commandsAndMenu.tsx:824 src/commandsAndMenu.tsx:826 src/commandsAndMenu.tsx:828 src/commandsAndMenu.tsx:830 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:835 src/commandsAndMenu.tsx:839 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:856 src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:860 src/commandsAndMenu.tsx:957 src/commandsAndMenu.tsx:961
+msgid "Ignore these files (add to .gitignore)"
+msgstr "忽略此文件（添加到 .gitignore）"
+
+#: src/commandsAndMenu.tsx:1023 src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1045 src/commandsAndMenu.tsx:1046 src/commandsAndMenu.tsx:1092 src/commandsAndMenu.tsx:1108 src/commandsAndMenu.tsx:1114 src/commandsAndMenu.tsx:1130 src/commandsAndMenu.tsx:1134 src/commandsAndMenu.tsx:1152 src/commandsAndMenu.tsx:1156 src/commandsAndMenu.tsx:765 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:773 src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:787 src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:795 src/commandsAndMenu.tsx:798 src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:800 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:821 src/commandsAndMenu.tsx:900 src/commandsAndMenu.tsx:922 src/commandsAndMenu.tsx:964 src/commandsAndMenu.tsx:986 src/components/FileList.tsx:183 src/components/FileList.tsx:192 src/components/FileList.tsx:194 src/components/FileList.tsx:197 src/components/FileList.tsx:208 src/components/FileList.tsx:217 src/components/FileList.tsx:219 src/components/FileList.tsx:268 src/widgets/discardAllChanges.ts:26
+msgid "Discard"
+msgstr "丢弃"
+
+#: src/commandsAndMenu.tsx:1023 src/commandsAndMenu.tsx:1039 src/commandsAndMenu.tsx:1061 src/commandsAndMenu.tsx:1065 src/commandsAndMenu.tsx:696 src/commandsAndMenu.tsx:698 src/commandsAndMenu.tsx:704 src/commandsAndMenu.tsx:709 src/commandsAndMenu.tsx:729 src/commandsAndMenu.tsx:730 src/commandsAndMenu.tsx:831 src/commandsAndMenu.tsx:895 src/commandsAndMenu.tsx:954 src/commandsAndMenu.tsx:955
+msgid "Unstage"
+msgstr "取消暂存"
+
+#: src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1088 src/commandsAndMenu.tsx:1148 src/commandsAndMenu.tsx:1149 src/commandsAndMenu.tsx:1217 src/commandsAndMenu.tsx:1233 src/commandsAndMenu.tsx:1255 src/commandsAndMenu.tsx:1259 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:922 src/commandsAndMenu.tsx:923 src/components/GitPanel.tsx:344 src/components/GitPanel.tsx:358 src/components/GitPanel.tsx:363 src/components/GitPanel.tsx:370 src/components/GitPanel.tsx:383 src/components/GitPanel.tsx:391 src/components/GitPanel.tsx:414 src/components/GitPanel.tsx:415
+msgid "History"
+msgstr "历史"
+
+#: src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1094 src/commandsAndMenu.tsx:1110 src/commandsAndMenu.tsx:1132 src/commandsAndMenu.tsx:1136 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:769 src/commandsAndMenu.tsx:775 src/commandsAndMenu.tsx:780 src/commandsAndMenu.tsx:800 src/commandsAndMenu.tsx:801 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:966
+msgid "Discard recent changes of selected file"
+msgstr "放弃选定文件的改动"
+
+#: src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1041 src/commandsAndMenu.tsx:1063 src/commandsAndMenu.tsx:1067 src/commandsAndMenu.tsx:698 src/commandsAndMenu.tsx:700 src/commandsAndMenu.tsx:706 src/commandsAndMenu.tsx:711 src/commandsAndMenu.tsx:731 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:833 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:956 src/commandsAndMenu.tsx:957
+msgid "Unstage the changes of selected file"
+msgstr "取消暂存选定文件的改动"
+
+#: src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1089 src/commandsAndMenu.tsx:1149 src/commandsAndMenu.tsx:1150 src/commandsAndMenu.tsx:1218 src/commandsAndMenu.tsx:1234 src/commandsAndMenu.tsx:1256 src/commandsAndMenu.tsx:1260 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:923 src/commandsAndMenu.tsx:924
+msgid "View the history of this file"
+msgstr "查看此文件的历史"
+
+#: src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1027 src/commandsAndMenu.tsx:1095 src/commandsAndMenu.tsx:1111 src/commandsAndMenu.tsx:1133 src/commandsAndMenu.tsx:1137 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:770 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:781 src/commandsAndMenu.tsx:801 src/commandsAndMenu.tsx:802 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:967
+msgid "Discard recent changes of selected files"
+msgstr "放弃选定文件的更改"
+
+#: src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1042 src/commandsAndMenu.tsx:1064 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:699 src/commandsAndMenu.tsx:701 src/commandsAndMenu.tsx:707 src/commandsAndMenu.tsx:712 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:733 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:898 src/commandsAndMenu.tsx:957 src/commandsAndMenu.tsx:958
+msgid "Unstage the changes of selected files"
+msgstr "取消暂存选定文件的改动"
+
+#: src/commandsAndMenu.tsx:1033 src/commandsAndMenu.tsx:1034 src/commandsAndMenu.tsx:1102 src/commandsAndMenu.tsx:1118 src/commandsAndMenu.tsx:1140 src/commandsAndMenu.tsx:1144 src/commandsAndMenu.tsx:775 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:783 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:808 src/commandsAndMenu.tsx:809 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:974 src/components/FileList.tsx:1125 src/components/FileList.tsx:1151 src/components/FileList.tsx:457 src/components/FileList.tsx:466 src/components/FileList.tsx:534 src/components/FileList.tsx:535 src/components/FileList.tsx:655 src/components/FileList.tsx:664 src/components/FileList.tsx:681 src/components/FileList.tsx:690 src/components/FileList.tsx:733 src/components/FileList.tsx:759 src/components/FileList.tsx:810 src/components/FileList.tsx:836 src/components/FileList.tsx:837
+msgid "Discard changes"
+msgstr "丢弃更改"
+
+#: src/commandsAndMenu.tsx:1036 src/commandsAndMenu.tsx:1037 src/commandsAndMenu.tsx:1105 src/commandsAndMenu.tsx:1121 src/commandsAndMenu.tsx:1143 src/commandsAndMenu.tsx:1147 src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:780 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:791 src/commandsAndMenu.tsx:811 src/commandsAndMenu.tsx:812 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:977
+msgid "Are you sure you want to permanently discard changes to the following files?               This action cannot be undone."
+msgstr "您确定要永久放弃对以下文件的改动？               此操作无法撤消。"
+
+#: src/commandsAndMenu.tsx:1043 src/commandsAndMenu.tsx:1103 src/commandsAndMenu.tsx:1104 src/commandsAndMenu.tsx:1172 src/commandsAndMenu.tsx:1188 src/commandsAndMenu.tsx:1210 src/commandsAndMenu.tsx:1214 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:846 src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:857 src/commandsAndMenu.tsx:877 src/commandsAndMenu.tsx:878 src/commandsAndMenu.tsx:979
+msgid "Ignore %2 extension (add to .gitignore)"
+msgid_plural "Ignore %2 extensions (add to .gitignore)"
+msgstr[0] "忽略 %2 文件扩展（添加到 .gitignore）"
+
+#: src/commandsAndMenu.tsx:1043 src/commandsAndMenu.tsx:1107 src/commandsAndMenu.tsx:1167 src/commandsAndMenu.tsx:1168 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1252 src/commandsAndMenu.tsx:1274 src/commandsAndMenu.tsx:1278 src/commandsAndMenu.tsx:889 src/commandsAndMenu.tsx:891 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:941 src/commandsAndMenu.tsx:942
+msgid "No actions available"
+msgstr "无可用操作"
+
+#: src/commandsAndMenu.tsx:1051 src/commandsAndMenu.tsx:1067 src/commandsAndMenu.tsx:1089 src/commandsAndMenu.tsx:1093 src/commandsAndMenu.tsx:724 src/commandsAndMenu.tsx:726 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:737 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:758 src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:923 src/commandsAndMenu.tsx:982 src/commandsAndMenu.tsx:983
+msgid "Delete this file"
+msgstr "删除此文件"
+
+#: src/commandsAndMenu.tsx:1051 src/commandsAndMenu.tsx:1111 src/commandsAndMenu.tsx:1112 src/commandsAndMenu.tsx:1180 src/commandsAndMenu.tsx:1196 src/commandsAndMenu.tsx:1218 src/commandsAndMenu.tsx:1222 src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:854 src/commandsAndMenu.tsx:860 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:885 src/commandsAndMenu.tsx:886 src/commandsAndMenu.tsx:987
+msgid "Ignore this file extension (add to .gitignore)"
+msgstr "忽略此文件扩展（添加到 .gitignore）"
+
+#: src/commandsAndMenu.tsx:1052 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:1090 src/commandsAndMenu.tsx:1094 src/commandsAndMenu.tsx:725 src/commandsAndMenu.tsx:727 src/commandsAndMenu.tsx:733 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:758 src/commandsAndMenu.tsx:759 src/commandsAndMenu.tsx:860 src/commandsAndMenu.tsx:924 src/commandsAndMenu.tsx:983 src/commandsAndMenu.tsx:984
+msgid "Delete these files"
+msgstr "删除此文件"
+
+#: src/commandsAndMenu.tsx:1052 src/commandsAndMenu.tsx:1112 src/commandsAndMenu.tsx:1113 src/commandsAndMenu.tsx:1181 src/commandsAndMenu.tsx:1197 src/commandsAndMenu.tsx:1219 src/commandsAndMenu.tsx:1223 src/commandsAndMenu.tsx:853 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:861 src/commandsAndMenu.tsx:866 src/commandsAndMenu.tsx:886 src/commandsAndMenu.tsx:887 src/commandsAndMenu.tsx:988
+msgid "Ignore these files extension (add to .gitignore)"
+msgstr "忽略此文件扩展（添加到 .gitignore）"
+
+#: src/commandsAndMenu.tsx:1059 src/commandsAndMenu.tsx:1075 src/commandsAndMenu.tsx:1097 src/commandsAndMenu.tsx:1101 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:734 src/commandsAndMenu.tsx:740 src/commandsAndMenu.tsx:745 src/commandsAndMenu.tsx:765 src/commandsAndMenu.tsx:766 src/commandsAndMenu.tsx:867 src/commandsAndMenu.tsx:931 src/commandsAndMenu.tsx:990 src/commandsAndMenu.tsx:991
+msgid "Delete Files"
+msgstr "删除文件"
+
+#: src/commandsAndMenu.tsx:1061 src/commandsAndMenu.tsx:1121 src/commandsAndMenu.tsx:1122 src/commandsAndMenu.tsx:1190 src/commandsAndMenu.tsx:1206 src/commandsAndMenu.tsx:1228 src/commandsAndMenu.tsx:1232 src/commandsAndMenu.tsx:862 src/commandsAndMenu.tsx:864 src/commandsAndMenu.tsx:870 src/commandsAndMenu.tsx:875 src/commandsAndMenu.tsx:895 src/commandsAndMenu.tsx:896 src/commandsAndMenu.tsx:997
+msgid "Ignore file extension"
+msgstr "忽略文件扩展"
+
+#: src/commandsAndMenu.tsx:1062 src/commandsAndMenu.tsx:1078 src/commandsAndMenu.tsx:1100 src/commandsAndMenu.tsx:1104 src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:737 src/commandsAndMenu.tsx:743 src/commandsAndMenu.tsx:748 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:769 src/commandsAndMenu.tsx:870 src/commandsAndMenu.tsx:934 src/commandsAndMenu.tsx:993 src/commandsAndMenu.tsx:994
+msgid "Are you sure you want to permanently delete the following files?               This action cannot be undone."
+msgstr "您确定要永久删除以下文件吗？               此操作无法撤消。"
+
+#: src/commandsAndMenu.tsx:1062 src/commandsAndMenu.tsx:1122 src/commandsAndMenu.tsx:1123 src/commandsAndMenu.tsx:1191 src/commandsAndMenu.tsx:1207 src/commandsAndMenu.tsx:1229 src/commandsAndMenu.tsx:1233 src/commandsAndMenu.tsx:863 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:871 src/commandsAndMenu.tsx:876 src/commandsAndMenu.tsx:896 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:998
+msgid "Are you sure you want to ignore all %1 files within this git repository?"
+msgstr "您确定要忽略此 git 仓库中的所有 %1 个文件吗？"
+
+#: src/commandsAndMenu.tsx:1062 src/commandsAndMenu.tsx:1126 src/commandsAndMenu.tsx:1186 src/commandsAndMenu.tsx:1187 src/commandsAndMenu.tsx:1255 src/commandsAndMenu.tsx:1271 src/commandsAndMenu.tsx:1293 src/commandsAndMenu.tsx:1297 src/commandsAndMenu.tsx:908 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:916 src/commandsAndMenu.tsx:940 src/commandsAndMenu.tsx:960 src/commandsAndMenu.tsx:961
+msgid "Set Up Remotes"
+msgstr "设置远程版本"
+
+#: src/commandsAndMenu.tsx:1066 src/commandsAndMenu.tsx:1130 src/commandsAndMenu.tsx:1190 src/commandsAndMenu.tsx:1191 src/commandsAndMenu.tsx:1259 src/commandsAndMenu.tsx:1275 src/commandsAndMenu.tsx:1297 src/commandsAndMenu.tsx:1301 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:914 src/commandsAndMenu.tsx:920 src/commandsAndMenu.tsx:944 src/commandsAndMenu.tsx:964 src/commandsAndMenu.tsx:965
+msgid "Git Documentation"
+msgstr "Git 文档"
+
+#: src/commandsAndMenu.tsx:1100 src/commandsAndMenu.tsx:1168 src/commandsAndMenu.tsx:1229 src/commandsAndMenu.tsx:1230 src/commandsAndMenu.tsx:1298 src/commandsAndMenu.tsx:1314 src/commandsAndMenu.tsx:1336 src/commandsAndMenu.tsx:1340 src/commandsAndMenu.tsx:943 src/commandsAndMenu.tsx:945 src/commandsAndMenu.tsx:951 src/commandsAndMenu.tsx:978 src/commandsAndMenu.tsx:998 src/commandsAndMenu.tsx:999
+msgid " Help "
+msgstr " 帮助 "
+
+#: src/commandsAndMenu.tsx:117 src/commandsAndMenu.tsx:118 src/commandsAndMenu.tsx:119 src/commandsAndMenu.tsx:122 src/commandsAndMenu.tsx:124 src/commandsAndMenu.tsx:125 src/commandsAndMenu.tsx:126 src/commandsAndMenu.tsx:127 src/commandsAndMenu.tsx:133 src/commandsAndMenu.tsx:137
+msgid "Commit from the Commit Box"
+msgstr "从提交框提交"
+
+#: src/commandsAndMenu.tsx:1172 src/commandsAndMenu.tsx:1174 src/commandsAndMenu.tsx:1180 src/commandsAndMenu.tsx:1203 src/commandsAndMenu.tsx:1232 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1241 src/commandsAndMenu.tsx:1338 src/commandsAndMenu.tsx:1404 src/commandsAndMenu.tsx:1465 src/commandsAndMenu.tsx:1470 src/commandsAndMenu.tsx:1538 src/commandsAndMenu.tsx:1562 src/commandsAndMenu.tsx:1590 src/commandsAndMenu.tsx:1596
+msgid "Git credentials required"
+msgstr "需要 Git 凭据"
+
+#: src/commandsAndMenu.tsx:1175 src/commandsAndMenu.tsx:1177 src/commandsAndMenu.tsx:1183 src/commandsAndMenu.tsx:1206 src/commandsAndMenu.tsx:1235 src/commandsAndMenu.tsx:1239 src/commandsAndMenu.tsx:1244 src/commandsAndMenu.tsx:1341 src/commandsAndMenu.tsx:1407 src/commandsAndMenu.tsx:1468 src/commandsAndMenu.tsx:1473 src/commandsAndMenu.tsx:1541 src/commandsAndMenu.tsx:1565 src/commandsAndMenu.tsx:1593 src/commandsAndMenu.tsx:1599 src/widgets/CredentialsBox.tsx:14 src/widgets/CredentialsBox.tsx:15
+msgid "Enter credentials for remote repository"
+msgstr "输入远程仓库的登录凭据"
+
+#: src/commandsAndMenu.tsx:1176 src/commandsAndMenu.tsx:1178 src/commandsAndMenu.tsx:1184 src/commandsAndMenu.tsx:1207 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1240 src/commandsAndMenu.tsx:1245 src/commandsAndMenu.tsx:1342 src/commandsAndMenu.tsx:1408 src/commandsAndMenu.tsx:1469 src/commandsAndMenu.tsx:1474 src/commandsAndMenu.tsx:1542 src/commandsAndMenu.tsx:1566 src/commandsAndMenu.tsx:1594 src/commandsAndMenu.tsx:1600
+msgid "Incorrect username or password."
+msgstr "用户名或密码错误。"
+
+#: src/commandsAndMenu.tsx:118 src/commandsAndMenu.tsx:119 src/commandsAndMenu.tsx:120 src/commandsAndMenu.tsx:123 src/commandsAndMenu.tsx:125 src/commandsAndMenu.tsx:126 src/commandsAndMenu.tsx:127 src/commandsAndMenu.tsx:128 src/commandsAndMenu.tsx:134 src/commandsAndMenu.tsx:138
+msgid "Submit the commit using the summary and description from commit box"
+msgstr "使用提交框中的摘要和描述进行提交"
+
+#: src/commandsAndMenu.tsx:129 src/commandsAndMenu.tsx:130 src/commandsAndMenu.tsx:131 src/commandsAndMenu.tsx:134 src/commandsAndMenu.tsx:136 src/commandsAndMenu.tsx:137 src/commandsAndMenu.tsx:138 src/commandsAndMenu.tsx:139 src/commandsAndMenu.tsx:145 src/commandsAndMenu.tsx:149
+msgid "Open Git Repository in Terminal"
+msgstr "在终端中打开 Git 仓库"
+
+#: src/commandsAndMenu.tsx:130 src/commandsAndMenu.tsx:131 src/commandsAndMenu.tsx:132 src/commandsAndMenu.tsx:135 src/commandsAndMenu.tsx:137 src/commandsAndMenu.tsx:138 src/commandsAndMenu.tsx:139 src/commandsAndMenu.tsx:140 src/commandsAndMenu.tsx:146 src/commandsAndMenu.tsx:150
+msgid "Open a New Terminal to the Git Repository"
+msgstr "打开一个新的终端到 Git 仓库"
+
+#: src/commandsAndMenu.tsx:1303 src/commandsAndMenu.tsx:1307 src/commandsAndMenu.tsx:1509 src/commandsAndMenu.tsx:1513
+msgid "Git"
+msgstr "Git"
+
+#: src/commandsAndMenu.tsx:159 src/commandsAndMenu.tsx:161 src/commandsAndMenu.tsx:162 src/commandsAndMenu.tsx:163 src/commandsAndMenu.tsx:166 src/commandsAndMenu.tsx:168 src/commandsAndMenu.tsx:169 src/commandsAndMenu.tsx:170 src/commandsAndMenu.tsx:171 src/commandsAndMenu.tsx:177 src/commandsAndMenu.tsx:181
+msgid "Git Interface"
+msgstr "Git 界面"
+
+#: src/commandsAndMenu.tsx:160 src/commandsAndMenu.tsx:162 src/commandsAndMenu.tsx:163 src/commandsAndMenu.tsx:164 src/commandsAndMenu.tsx:167 src/commandsAndMenu.tsx:169 src/commandsAndMenu.tsx:170 src/commandsAndMenu.tsx:171 src/commandsAndMenu.tsx:172 src/commandsAndMenu.tsx:178 src/commandsAndMenu.tsx:182
+msgid "Go to Git user interface"
+msgstr "转到 Git 用户界面"
+
+#: src/commandsAndMenu.tsx:172 src/commandsAndMenu.tsx:174 src/commandsAndMenu.tsx:175 src/commandsAndMenu.tsx:176 src/commandsAndMenu.tsx:179 src/commandsAndMenu.tsx:181 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:188 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:190 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:197 src/commandsAndMenu.tsx:201 src/components/GitPanel.tsx:445 src/components/GitPanel.tsx:461 src/components/GitPanel.tsx:466 src/components/GitPanel.tsx:473 src/components/GitPanel.tsx:487 src/components/GitPanel.tsx:495 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:595
+msgid "Initialize a Repository"
+msgstr "初始化仓库"
+
+#: src/commandsAndMenu.tsx:173 src/commandsAndMenu.tsx:175 src/commandsAndMenu.tsx:176 src/commandsAndMenu.tsx:177 src/commandsAndMenu.tsx:180 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:195
+msgid "Create an empty Git repository or reinitialize an existing one"
+msgstr "创建一个空的 Git 仓库或重新初始化一个现有的库"
+
+#: src/commandsAndMenu.tsx:180 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:187 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:190 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:198 src/commandsAndMenu.tsx:202
+msgid "Do you really want to make this directory a Git Repo?"
+msgstr "您真的要将这个目录作为 Git 仓库吗？"
+
+#: src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:187 src/commandsAndMenu.tsx:190 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:195 src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:205
+msgid "Yes"
+msgstr "是"
+
+#: src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:196
+msgid "Initializing..."
+msgstr "正在初始化..."
+
+#: src/commandsAndMenu.tsx:196 src/commandsAndMenu.tsx:198 src/commandsAndMenu.tsx:199 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:203 src/commandsAndMenu.tsx:205 src/commandsAndMenu.tsx:206 src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:208 src/commandsAndMenu.tsx:214 src/commandsAndMenu.tsx:218
+msgid "Git repository initialized."
+msgstr "Git 仓库已初始化。"
+
+#: src/commandsAndMenu.tsx:198 src/commandsAndMenu.tsx:199 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:211
+msgid "Initializing…"
+msgstr "正在初始化…"
+
+#: src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:203 src/commandsAndMenu.tsx:204 src/commandsAndMenu.tsx:205 src/commandsAndMenu.tsx:208 src/commandsAndMenu.tsx:210 src/commandsAndMenu.tsx:211 src/commandsAndMenu.tsx:212 src/commandsAndMenu.tsx:213 src/commandsAndMenu.tsx:219 src/commandsAndMenu.tsx:223
+msgid "Encountered an error when initializing the repository. Error: "
+msgstr "初始化仓库时出现错误。错误："
+
+#: src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:209 src/commandsAndMenu.tsx:210 src/commandsAndMenu.tsx:211 src/commandsAndMenu.tsx:214 src/commandsAndMenu.tsx:216 src/commandsAndMenu.tsx:217 src/commandsAndMenu.tsx:218 src/commandsAndMenu.tsx:219 src/commandsAndMenu.tsx:225 src/commandsAndMenu.tsx:229
+msgid "Failed to initialize the Git repository"
+msgstr "初始化 Git 仓库失败"
+
+#: src/commandsAndMenu.tsx:228 src/commandsAndMenu.tsx:230 src/commandsAndMenu.tsx:231 src/commandsAndMenu.tsx:232 src/commandsAndMenu.tsx:235 src/commandsAndMenu.tsx:237 src/commandsAndMenu.tsx:238 src/commandsAndMenu.tsx:239 src/commandsAndMenu.tsx:240 src/commandsAndMenu.tsx:246 src/commandsAndMenu.tsx:250
+msgid "Simple staging"
+msgstr "简易暂存模式"
+
+#: src/commandsAndMenu.tsx:237 src/commandsAndMenu.tsx:239 src/commandsAndMenu.tsx:240 src/commandsAndMenu.tsx:241 src/commandsAndMenu.tsx:244 src/commandsAndMenu.tsx:246 src/commandsAndMenu.tsx:247 src/commandsAndMenu.tsx:248 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:255 src/commandsAndMenu.tsx:259
+msgid "Double click opens diff"
+msgstr "双击打开差异对比"
+
+#: src/commandsAndMenu.tsx:246 src/commandsAndMenu.tsx:248 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:250 src/commandsAndMenu.tsx:253 src/commandsAndMenu.tsx:255 src/commandsAndMenu.tsx:256 src/commandsAndMenu.tsx:257
+msgid "Add Remote Repository"
+msgstr "添加远程仓库"
+
+#: src/commandsAndMenu.tsx:247 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:250 src/commandsAndMenu.tsx:251 src/commandsAndMenu.tsx:254 src/commandsAndMenu.tsx:256 src/commandsAndMenu.tsx:257 src/commandsAndMenu.tsx:258
+msgid "Add a Git remote repository"
+msgstr "添加一个 Git 远程仓库"
+
+#: src/commandsAndMenu.tsx:252 src/commandsAndMenu.tsx:254 src/commandsAndMenu.tsx:255 src/commandsAndMenu.tsx:256 src/commandsAndMenu.tsx:259 src/commandsAndMenu.tsx:261 src/commandsAndMenu.tsx:262 src/commandsAndMenu.tsx:263 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:270 src/commandsAndMenu.tsx:274
+msgid "Not in a Git repository. Unable to add a remote."
+msgstr "不在 Git 仓库中。无法添加远程版本。"
+
+#: src/commandsAndMenu.tsx:258 src/commandsAndMenu.tsx:259 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:265 src/commandsAndMenu.tsx:268 src/commandsAndMenu.tsx:269
+msgid "Manage Remote Repositories"
+msgstr "管理远程仓库"
+
+#: src/commandsAndMenu.tsx:261 src/commandsAndMenu.tsx:263 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:265 src/commandsAndMenu.tsx:268 src/commandsAndMenu.tsx:270 src/commandsAndMenu.tsx:271 src/commandsAndMenu.tsx:272
+msgid "Add a remote repository"
+msgstr "添加一个远程仓库"
+
+#: src/commandsAndMenu.tsx:262 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:265 src/commandsAndMenu.tsx:266 src/commandsAndMenu.tsx:269 src/commandsAndMenu.tsx:271 src/commandsAndMenu.tsx:272 src/commandsAndMenu.tsx:273 src/components/ManageRemoteDialogue.tsx:128
+msgid "Remote Git repository URL"
+msgstr "远程 Git 仓库 URL"
+
+#: src/commandsAndMenu.tsx:276 src/commandsAndMenu.tsx:278 src/commandsAndMenu.tsx:279 src/commandsAndMenu.tsx:280 src/commandsAndMenu.tsx:283 src/commandsAndMenu.tsx:285 src/commandsAndMenu.tsx:286 src/commandsAndMenu.tsx:287 src/components/ManageRemoteDialogue.tsx:176
+msgid "Error when adding remote repository"
+msgstr "添加远程仓库时出错"
+
+#: src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:292 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:296 src/commandsAndMenu.tsx:297 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:301 src/commandsAndMenu.tsx:302 src/commandsAndMenu.tsx:335 src/commandsAndMenu.tsx:336 src/commandsAndMenu.tsx:337 src/commandsAndMenu.tsx:338 src/commandsAndMenu.tsx:339 src/commandsAndMenu.tsx:340 src/commandsAndMenu.tsx:342 src/commandsAndMenu.tsx:343
+msgid "Open .gitignore"
+msgstr "打开 .gitignore"
+
+#: src/commandsAndMenu.tsx:296 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:300 src/commandsAndMenu.tsx:303
+msgid "CLONE"
+msgstr "克隆"
+
+#: src/commandsAndMenu.tsx:303 src/commandsAndMenu.tsx:305 src/commandsAndMenu.tsx:306 src/commandsAndMenu.tsx:307 src/commandsAndMenu.tsx:310
+msgid "Cloning..."
+msgstr "正在克隆..."
+
+#: src/commandsAndMenu.tsx:303 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:313
+msgid "Push to Remote (Advanced)"
+msgstr "推送至远程（高级）"
+
+#: src/commandsAndMenu.tsx:304 src/commandsAndMenu.tsx:308 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:310 src/commandsAndMenu.tsx:314 src/commandsAndMenu.tsx:345 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:352 src/commandsAndMenu.tsx:355
+msgid "Push to Remote"
+msgstr "推送至远程"
+
+#: src/commandsAndMenu.tsx:305 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:310 src/commandsAndMenu.tsx:311 src/commandsAndMenu.tsx:315 src/commandsAndMenu.tsx:346 src/commandsAndMenu.tsx:348 src/commandsAndMenu.tsx:352 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:356
+msgid "Push code to remote repository"
+msgstr "推送代码到远程仓库"
+
+#: src/commandsAndMenu.tsx:307 src/commandsAndMenu.tsx:308 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:350 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:354
+msgid "Push to Remote (Force)"
+msgstr "推送至远程（强制）"
+
+#: src/commandsAndMenu.tsx:314 src/commandsAndMenu.tsx:315 src/commandsAndMenu.tsx:316 src/commandsAndMenu.tsx:331 src/commandsAndMenu.tsx:337 src/commandsAndMenu.tsx:341
+msgid "Pushing…"
+msgstr "正在推送…"
+
+#: src/commandsAndMenu.tsx:314 src/commandsAndMenu.tsx:320 src/commandsAndMenu.tsx:324
+msgid "Please select push options."
+msgstr "请选择推送选项。"
+
+#: src/commandsAndMenu.tsx:318 src/commandsAndMenu.tsx:324 src/commandsAndMenu.tsx:328 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:434 src/commandsAndMenu.tsx:450 src/commandsAndMenu.tsx:472 src/commandsAndMenu.tsx:476
+msgid "Proceed"
+msgstr "继续"
+
+#: src/commandsAndMenu.tsx:323 src/commandsAndMenu.tsx:324 src/commandsAndMenu.tsx:325 src/commandsAndMenu.tsx:341 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:360 src/commandsAndMenu.tsx:362 src/commandsAndMenu.tsx:366 src/commandsAndMenu.tsx:367 src/commandsAndMenu.tsx:370
+msgid "Successfully pushed"
+msgstr "推送成功"
+
+#: src/commandsAndMenu.tsx:329 src/commandsAndMenu.tsx:330 src/commandsAndMenu.tsx:331 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:354 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:366 src/commandsAndMenu.tsx:368 src/commandsAndMenu.tsx:372 src/commandsAndMenu.tsx:373 src/commandsAndMenu.tsx:376
+msgid "Encountered an error when pushing changes. Error: "
+msgstr "在推送更改时出现错误。错误："
+
+#: src/commandsAndMenu.tsx:333 src/commandsAndMenu.tsx:334 src/commandsAndMenu.tsx:335 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:362 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:372 src/commandsAndMenu.tsx:376 src/commandsAndMenu.tsx:377 src/commandsAndMenu.tsx:380
+msgid "Failed to push"
+msgstr "推送失败"
+
+#: src/commandsAndMenu.tsx:345 src/commandsAndMenu.tsx:346 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:363 src/commandsAndMenu.tsx:377 src/commandsAndMenu.tsx:381
+msgid "Pull from Remote (Force)"
+msgstr "推送至远程（强制）"
+
+#: src/commandsAndMenu.tsx:346 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:348 src/commandsAndMenu.tsx:364 src/commandsAndMenu.tsx:378 src/commandsAndMenu.tsx:380 src/commandsAndMenu.tsx:382 src/commandsAndMenu.tsx:386 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:390
+msgid "Pull from Remote"
+msgstr "从远程拉取"
+
+#: src/commandsAndMenu.tsx:349 src/commandsAndMenu.tsx:350 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:367 src/commandsAndMenu.tsx:381 src/commandsAndMenu.tsx:385
+msgid "Discard all current changes and pull from remote repository"
+msgstr "放弃所有当前改动并从远程仓库拉取"
+
+#: src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:357 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:361
+msgid "Pushing..."
+msgstr "正在推送..."
+
+#: src/commandsAndMenu.tsx:352 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:354 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:381 src/commandsAndMenu.tsx:383 src/commandsAndMenu.tsx:384 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:388 src/commandsAndMenu.tsx:391
+msgid "Pull latest code from remote repository"
+msgstr "从远程仓库拉取最新代码"
+
+#: src/commandsAndMenu.tsx:361 src/commandsAndMenu.tsx:362 src/commandsAndMenu.tsx:363 src/commandsAndMenu.tsx:379 src/commandsAndMenu.tsx:393 src/commandsAndMenu.tsx:397
+msgid "Pulling…"
+msgstr "正在拉取…"
+
+#: src/commandsAndMenu.tsx:369 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:371 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:395 src/commandsAndMenu.tsx:397 src/commandsAndMenu.tsx:401 src/commandsAndMenu.tsx:402 src/commandsAndMenu.tsx:405
+msgid "Successfully pulled"
+msgstr "拉取成功"
+
+#: src/commandsAndMenu.tsx:386 src/commandsAndMenu.tsx:388 src/commandsAndMenu.tsx:392 src/commandsAndMenu.tsx:393 src/commandsAndMenu.tsx:396
+msgid "Pulling..."
+msgstr "正在拉取..."
+
+#: src/commandsAndMenu.tsx:403 src/commandsAndMenu.tsx:404 src/commandsAndMenu.tsx:405 src/commandsAndMenu.tsx:407 src/commandsAndMenu.tsx:411 src/commandsAndMenu.tsx:412 src/commandsAndMenu.tsx:415 src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:436 src/commandsAndMenu.tsx:440
+msgid "Failed to pull"
+msgstr "拉取失败"
+
+#: src/commandsAndMenu.tsx:416 src/commandsAndMenu.tsx:417 src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:438 src/commandsAndMenu.tsx:455 src/commandsAndMenu.tsx:459 src/commandsAndMenu.tsx:460 src/commandsAndMenu.tsx:464
+msgid "Reset to Remote"
+msgstr "重置到远程"
+
+#: src/commandsAndMenu.tsx:417 src/commandsAndMenu.tsx:418 src/commandsAndMenu.tsx:434 src/commandsAndMenu.tsx:456 src/commandsAndMenu.tsx:460
+msgid "Reset Current Branch to Remote State"
+msgstr "重置当前分支至远程状态"
+
+#: src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:423 src/commandsAndMenu.tsx:427 src/commandsAndMenu.tsx:428 src/commandsAndMenu.tsx:432 src/commandsAndMenu.tsx:481 src/commandsAndMenu.tsx:482 src/commandsAndMenu.tsx:498 src/commandsAndMenu.tsx:520 src/commandsAndMenu.tsx:524
+msgid "Show Diff"
+msgstr "显示差异对比"
+
+#: src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:423 src/commandsAndMenu.tsx:424 src/commandsAndMenu.tsx:428 src/commandsAndMenu.tsx:429 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:482 src/commandsAndMenu.tsx:483 src/commandsAndMenu.tsx:499 src/commandsAndMenu.tsx:521 src/commandsAndMenu.tsx:525
+msgid "Display a file diff."
+msgstr "显示一个文件的差异对比。"
+
+#: src/commandsAndMenu.tsx:423 src/commandsAndMenu.tsx:424 src/commandsAndMenu.tsx:440 src/commandsAndMenu.tsx:462 src/commandsAndMenu.tsx:466
+msgid "To bring the current branch to the state of its corresponding remote tracking branch,             a hard reset will be performed, which may result in some files being permanently deleted             and some changes being permanently discarded. Are you sure you want to proceed?             This action cannot be undone."
+msgstr "为了将当前分支恢复至相应的远程跟踪分支，程序将会执行一次强制重置，此操作会导致部文件被永久删除，并且抛弃所有未保存的改动。您确定要继续吗？此操作不可撤消。"
+
+#: src/commandsAndMenu.tsx:429 src/commandsAndMenu.tsx:430 src/commandsAndMenu.tsx:446 src/commandsAndMenu.tsx:468 src/commandsAndMenu.tsx:472
+msgid "Close all opened files to avoid conflicts"
+msgstr "关闭所有打开的文件以避免冲突"
+
+#: src/commandsAndMenu.tsx:440 src/commandsAndMenu.tsx:441 src/commandsAndMenu.tsx:457 src/commandsAndMenu.tsx:479 src/commandsAndMenu.tsx:483
+msgid "Closing all opened files..."
+msgstr "关闭所有打开的文件..."
+
+#: src/commandsAndMenu.tsx:446 src/commandsAndMenu.tsx:447 src/commandsAndMenu.tsx:463 src/commandsAndMenu.tsx:485 src/commandsAndMenu.tsx:489
+msgid "Resetting..."
+msgstr "正在重置..."
+
+#: src/commandsAndMenu.tsx:451 src/commandsAndMenu.tsx:452 src/commandsAndMenu.tsx:468 src/commandsAndMenu.tsx:490 src/commandsAndMenu.tsx:494
+msgid "Successfully reset"
+msgstr "重置成功"
+
+#: src/commandsAndMenu.tsx:453 src/commandsAndMenu.tsx:454 src/commandsAndMenu.tsx:470 src/commandsAndMenu.tsx:492 src/commandsAndMenu.tsx:496
+msgid "Successfully reset the current branch to its remote state"
+msgstr "成功重置当前分支为远程状态"
+
+#: src/commandsAndMenu.tsx:463 src/commandsAndMenu.tsx:464 src/commandsAndMenu.tsx:480 src/commandsAndMenu.tsx:502 src/commandsAndMenu.tsx:506
+msgid "Reset failed"
+msgstr "重置失败"
+
+#: src/commandsAndMenu.tsx:468 src/commandsAndMenu.tsx:470 src/commandsAndMenu.tsx:474 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:519 src/commandsAndMenu.tsx:529 src/commandsAndMenu.tsx:578 src/commandsAndMenu.tsx:579 src/commandsAndMenu.tsx:580 src/commandsAndMenu.tsx:596 src/commandsAndMenu.tsx:618 src/commandsAndMenu.tsx:622
+msgid "Refresh"
+msgstr "刷新"
+
+#: src/commandsAndMenu.tsx:473 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:479 src/commandsAndMenu.tsx:480 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:534 src/commandsAndMenu.tsx:583 src/commandsAndMenu.tsx:584 src/commandsAndMenu.tsx:585 src/commandsAndMenu.tsx:601 src/commandsAndMenu.tsx:623 src/commandsAndMenu.tsx:627
+msgid "Refresh diff widget"
+msgstr "刷新差异小部件"
+
+#: src/commandsAndMenu.tsx:480 src/commandsAndMenu.tsx:490 src/commandsAndMenu.tsx:539 src/commandsAndMenu.tsx:540 src/commandsAndMenu.tsx:541 src/commandsAndMenu.tsx:557 src/commandsAndMenu.tsx:579 src/commandsAndMenu.tsx:583
+msgid "Mark as resolved"
+msgstr "标记为已解决"
+
+#: src/commandsAndMenu.tsx:484 src/commandsAndMenu.tsx:494 src/commandsAndMenu.tsx:543 src/commandsAndMenu.tsx:544 src/commandsAndMenu.tsx:545 src/commandsAndMenu.tsx:561 src/commandsAndMenu.tsx:583 src/commandsAndMenu.tsx:587
+msgid "Resolve with conflicts"
+msgstr "无视冲突并标记为已解决"
+
+#: src/commandsAndMenu.tsx:485 src/commandsAndMenu.tsx:495 src/commandsAndMenu.tsx:544 src/commandsAndMenu.tsx:545 src/commandsAndMenu.tsx:546 src/commandsAndMenu.tsx:562 src/commandsAndMenu.tsx:584 src/commandsAndMenu.tsx:588
+msgid "Are you sure you want to mark this file as resolved with merge conflicts?"
+msgstr "您确定要将这个带有合并冲突的文件标记为已解决吗？"
+
+#: src/commandsAndMenu.tsx:496 src/commandsAndMenu.tsx:498 src/commandsAndMenu.tsx:503 src/commandsAndMenu.tsx:507 src/commandsAndMenu.tsx:508 src/commandsAndMenu.tsx:554 src/commandsAndMenu.tsx:564 src/commandsAndMenu.tsx:613 src/commandsAndMenu.tsx:614 src/commandsAndMenu.tsx:633 src/commandsAndMenu.tsx:649 src/commandsAndMenu.tsx:671 src/commandsAndMenu.tsx:675
+msgid "Diff Not Supported"
+msgstr "不支持差异对比"
+
+#: src/commandsAndMenu.tsx:497 src/commandsAndMenu.tsx:499 src/commandsAndMenu.tsx:504 src/commandsAndMenu.tsx:508 src/commandsAndMenu.tsx:509 src/commandsAndMenu.tsx:555 src/commandsAndMenu.tsx:565 src/commandsAndMenu.tsx:614 src/commandsAndMenu.tsx:615 src/commandsAndMenu.tsx:634 src/commandsAndMenu.tsx:650 src/commandsAndMenu.tsx:672 src/commandsAndMenu.tsx:676
+msgid "Diff is not supported for %1 files."
+msgstr "%1 文件不支持差异对比。"
+
+#: src/commandsAndMenu.tsx:511 src/commandsAndMenu.tsx:513 src/commandsAndMenu.tsx:518 src/commandsAndMenu.tsx:522 src/commandsAndMenu.tsx:523 src/commandsAndMenu.tsx:579 src/commandsAndMenu.tsx:643 src/commandsAndMenu.tsx:702 src/commandsAndMenu.tsx:703 src/commandsAndMenu.tsx:722 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:760 src/commandsAndMenu.tsx:764
+msgid "Open"
+msgstr "打开"
+
+#: src/commandsAndMenu.tsx:512 src/commandsAndMenu.tsx:522 src/commandsAndMenu.tsx:571 src/commandsAndMenu.tsx:572 src/commandsAndMenu.tsx:573 src/commandsAndMenu.tsx:589 src/commandsAndMenu.tsx:611 src/commandsAndMenu.tsx:615
+msgid "Mark file as resolved"
+msgstr "标记文件为已解决"
+
+#: src/commandsAndMenu.tsx:513 src/commandsAndMenu.tsx:515 src/commandsAndMenu.tsx:520 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:581 src/commandsAndMenu.tsx:645 src/commandsAndMenu.tsx:704 src/commandsAndMenu.tsx:705 src/commandsAndMenu.tsx:724 src/commandsAndMenu.tsx:740 src/commandsAndMenu.tsx:762 src/commandsAndMenu.tsx:766
+msgid "Open selected file"
+msgstr "打开选中的文件"
+
+#: src/commandsAndMenu.tsx:514 src/commandsAndMenu.tsx:516 src/commandsAndMenu.tsx:521 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:526 src/commandsAndMenu.tsx:582 src/commandsAndMenu.tsx:646 src/commandsAndMenu.tsx:705 src/commandsAndMenu.tsx:706 src/commandsAndMenu.tsx:725 src/commandsAndMenu.tsx:741 src/commandsAndMenu.tsx:763 src/commandsAndMenu.tsx:767
+msgid "Open selected files"
+msgstr "打开选中的文件"
+
+#: src/commandsAndMenu.tsx:522 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:529 src/commandsAndMenu.tsx:533 src/commandsAndMenu.tsx:534 src/commandsAndMenu.tsx:590 src/commandsAndMenu.tsx:654 src/commandsAndMenu.tsx:713 src/commandsAndMenu.tsx:714 src/commandsAndMenu.tsx:733 src/commandsAndMenu.tsx:749 src/commandsAndMenu.tsx:771 src/commandsAndMenu.tsx:775
+msgid "Open File Failed"
+msgstr "打开文件失败"
+
+#: src/commandsAndMenu.tsx:523 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:530 src/commandsAndMenu.tsx:534 src/commandsAndMenu.tsx:535 src/commandsAndMenu.tsx:591 src/commandsAndMenu.tsx:655 src/commandsAndMenu.tsx:714 src/commandsAndMenu.tsx:715 src/commandsAndMenu.tsx:734 src/commandsAndMenu.tsx:750 src/commandsAndMenu.tsx:772 src/commandsAndMenu.tsx:776
+msgid "This file has been deleted!"
+msgstr "该文件已删除"
+
+#: src/commandsAndMenu.tsx:544 src/commandsAndMenu.tsx:546 src/commandsAndMenu.tsx:551 src/commandsAndMenu.tsx:555 src/commandsAndMenu.tsx:556 src/commandsAndMenu.tsx:612 src/commandsAndMenu.tsx:676 src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:736 src/commandsAndMenu.tsx:804 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:842 src/commandsAndMenu.tsx:846
+msgid "Diff"
+msgstr "差异对比"
+
+#: src/commandsAndMenu.tsx:546 src/commandsAndMenu.tsx:548 src/commandsAndMenu.tsx:553 src/commandsAndMenu.tsx:557 src/commandsAndMenu.tsx:558 src/commandsAndMenu.tsx:614 src/commandsAndMenu.tsx:678 src/commandsAndMenu.tsx:737 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:806 src/commandsAndMenu.tsx:822 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:848
+msgid "Diff selected file"
+msgstr "比较选中的文件"
+
+#: src/commandsAndMenu.tsx:547 src/commandsAndMenu.tsx:549 src/commandsAndMenu.tsx:554 src/commandsAndMenu.tsx:558 src/commandsAndMenu.tsx:559 src/commandsAndMenu.tsx:615 src/commandsAndMenu.tsx:679 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:739 src/commandsAndMenu.tsx:807 src/commandsAndMenu.tsx:823 src/commandsAndMenu.tsx:845 src/commandsAndMenu.tsx:849
+msgid "Diff selected files"
+msgstr "比较选中的文件"
+
+#: src/commandsAndMenu.tsx:568 src/commandsAndMenu.tsx:627 src/commandsAndMenu.tsx:628 src/commandsAndMenu.tsx:647 src/commandsAndMenu.tsx:663 src/commandsAndMenu.tsx:685 src/commandsAndMenu.tsx:689
+msgid "Merge Branch…"
+msgstr "合并分支…"
+
+#: src/commandsAndMenu.tsx:569 src/commandsAndMenu.tsx:628 src/commandsAndMenu.tsx:629 src/commandsAndMenu.tsx:648 src/commandsAndMenu.tsx:664 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:690
+msgid "Merge selected branch in the current branch"
+msgstr "合并已选分支到当前分支"
+
+#: src/commandsAndMenu.tsx:608 src/commandsAndMenu.tsx:667 src/commandsAndMenu.tsx:668 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:703 src/commandsAndMenu.tsx:725 src/commandsAndMenu.tsx:729
+msgid "Merging branch '%1'…"
+msgstr "正在合并分支「%1」…"
+
+#: src/commandsAndMenu.tsx:615 src/commandsAndMenu.tsx:674 src/commandsAndMenu.tsx:675 src/commandsAndMenu.tsx:694 src/commandsAndMenu.tsx:710 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:736
+msgid "Failed to merge branch '%1' into '%2'."
+msgstr "合并分支「%1」到「%2」失败。"
+
+#: src/commandsAndMenu.tsx:627 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:706 src/commandsAndMenu.tsx:722 src/commandsAndMenu.tsx:744 src/commandsAndMenu.tsx:748
+msgid "Branch '%1' merged into '%2'."
+msgstr "分支「%1」已合并至「%2」。"
+
+#: src/commandsAndMenu.tsx:704
+msgid "CURRENT"
+msgstr "当前"
+
+#: src/commandsAndMenu.tsx:705
+msgid "INCOMING"
+msgstr "外来改动"
+
+#: src/commandsAndMenu.tsx:721
+msgid "RESULT"
+msgstr "结果"
+
+#: src/commandsAndMenu.tsx:755 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:763 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:810 src/commandsAndMenu.tsx:812 src/commandsAndMenu.tsx:818 src/commandsAndMenu.tsx:823 src/commandsAndMenu.tsx:843 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:890 src/commandsAndMenu.tsx:945 src/components/Alert.tsx:123 src/index.ts:128 src/index.ts:132 src/index.ts:134
+msgid "DISMISS"
+msgstr "忽略"
+
+#: src/commandsAndMenu.tsx:755 src/commandsAndMenu.tsx:771 src/commandsAndMenu.tsx:793 src/commandsAndMenu.tsx:797
+msgid "Open File"
+msgstr "打开文件"
+
+#: src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:772 src/commandsAndMenu.tsx:794 src/commandsAndMenu.tsx:798
+msgid "Open file from its diff view"
+msgstr "从文件的差异视图中打开该文件"
+
+#: src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:827 src/commandsAndMenu.tsx:828 src/commandsAndMenu.tsx:896 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:934 src/commandsAndMenu.tsx:938
+msgid "Current"
+msgstr "当前"
+
+#: src/commandsAndMenu.tsx:769 src/commandsAndMenu.tsx:828 src/commandsAndMenu.tsx:829 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:935 src/commandsAndMenu.tsx:939
+msgid "Incoming"
+msgstr "外来改动"
+
+#: src/commandsAndMenu.tsx:785 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:845 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:929 src/commandsAndMenu.tsx:951 src/commandsAndMenu.tsx:955
+msgid "Result"
+msgstr "结果"
+
+#: src/components/Alert.tsx:105
+msgid "Error"
+msgstr "错误"
+
+#: src/components/Alert.tsx:110
+msgid "SHOW"
+msgstr "显示"
+
+#: src/components/Alert.tsx:110
+msgid "Show"
+msgstr "显示"
+
+#: src/components/Alert.tsx:120
+msgid "Detailed message"
+msgstr "详细信息"
+
+#: src/components/Alert.tsx:128
+msgid "Details"
+msgstr "详情"
+
+#: src/components/Alert.tsx:148
+msgid "(missing message)"
+msgstr "（缺少消息）"
+
+#: src/components/BranchMenu.tsx:148 src/components/BranchMenu.tsx:154
+msgid "The current branch contains files with uncommitted changes. Please commit or discard these changes before switching to or creating another branch."
+msgstr "当前分支包含未提交的文件改动。请在切换到或创建另一个分支之前提交或丢弃这些改动。"
+
+#: src/components/BranchMenu.tsx:195 src/components/BranchMenu.tsx:201 src/components/MergeBranchDialog.tsx:138 src/components/NewBranchDialog.tsx:177 src/components/NewBranchDialog.tsx:184 src/components/TagMenu.tsx:189
+msgid "Filter"
+msgstr "筛选器"
+
+#: src/components/BranchMenu.tsx:196 src/components/BranchMenu.tsx:202 src/components/NewBranchDialog.tsx:178 src/components/NewBranchDialog.tsx:185 src/components/TagMenu.tsx:190
+msgid "Filter branch menu"
+msgstr "筛选分支菜单"
+
+#: src/components/BranchMenu.tsx:201 src/components/BranchMenu.tsx:207 src/components/MergeBranchDialog.tsx:144 src/components/NewBranchDialog.tsx:183 src/components/NewBranchDialog.tsx:190 src/components/TagMenu.tsx:195
+msgid "Clear the current filter"
+msgstr "清除当前筛选器"
+
+#: src/components/BranchMenu.tsx:211 src/components/BranchMenu.tsx:217 src/components/NewBranchDialog.tsx:208 src/components/NewBranchDialog.tsx:215
+msgid "Create a new branch"
+msgstr "创建一个新分支"
+
+#: src/components/BranchMenu.tsx:212 src/components/BranchMenu.tsx:218
+msgid "New Branch"
+msgstr "新建分支"
+
+#: src/components/BranchMenu.tsx:261 src/components/BranchMenu.tsx:269
+msgid "Switch to branch: %1"
+msgstr "切换到分支 %1"
+
+#: src/components/BranchMenu.tsx:275 src/components/BranchMenu.tsx:286
+msgid "Delete this branch locally"
+msgstr "删除本地分支"
+
+#: src/components/BranchMenu.tsx:295
+msgid "Merge this branch into the current one"
+msgstr "合并此分支到当前分支"
+
+#: src/components/BranchMenu.tsx:332 src/components/BranchMenu.tsx:355
+msgid "Delete branch"
+msgstr "删除分支"
+
+#: src/components/BranchMenu.tsx:335 src/components/BranchMenu.tsx:358
+msgid "Are you sure you want to permanently delete the branch "
+msgstr "确定要永久删除分支 "
+
+#: src/components/BranchMenu.tsx:340 src/components/BranchMenu.tsx:363
+msgid "This action cannot be undone."
+msgstr "此操作无法撤消。"
+
+#: src/components/BranchMenu.tsx:366 src/components/BranchMenu.tsx:398
+msgid "Creating a new branch is disabled"
+msgstr "新建分支已禁用"
+
+#: src/components/BranchMenu.tsx:51 src/components/BranchMenu.tsx:52
+msgid "Unable to switch branch"
+msgstr "无法切换分支"
+
+#: src/components/BranchMenu.tsx:55 src/components/BranchMenu.tsx:56 src/components/TagMenu.tsx:49
+msgid "Your changes to the following files would be overwritten by switching:"
+msgstr "您对以下文件的改动将通过切换被覆盖："
+
+#: src/components/BranchMenu.tsx:63 src/components/BranchMenu.tsx:64
+msgid "Please commit, stash, or discard your changes before you switch branches."
+msgstr "请在切换分支之前提交、发布或放弃您的改动。"
+
+#: src/components/BranchMenu.tsx:74 src/components/BranchMenu.tsx:75
+msgid "Failed to switch branch."
+msgstr "切换分支失败。"
+
+#: src/components/CommitBox.tsx:100 src/components/CommitBox.tsx:101 src/components/CommitBox.tsx:178 src/components/CommitBox.tsx:183 src/components/CommitBox.tsx:185
+msgid "Disabled: No commit message summary"
+msgstr "已禁用：没有提交消息摘要"
+
+#: src/components/CommitBox.tsx:106 src/components/CommitBox.tsx:107 src/components/CommitBox.tsx:184 src/components/CommitBox.tsx:189 src/components/CommitBox.tsx:191
+msgid "Summary (%1 to commit)"
+msgstr "摘要（%1 待提交）"
+
+#: src/components/CommitBox.tsx:116 src/components/CommitBox.tsx:117 src/components/CommitMessage.tsx:117 src/components/CommitMessage.tsx:123 src/components/ResetRevertDialog.tsx:155
+msgid "Enter a commit message summary (a single line, preferably less than 50 characters)"
+msgstr "输入一个提交消息摘要（单行，最好少于 50 个字符）"
+
+#: src/components/CommitBox.tsx:126 src/components/CommitBox.tsx:127 src/components/CommitMessage.tsx:140 src/components/CommitMessage.tsx:146
+msgid "Description (optional)"
+msgstr "描述（可选）"
+
+#: src/components/CommitBox.tsx:127 src/components/CommitBox.tsx:128 src/components/CommitMessage.tsx:147 src/components/CommitMessage.tsx:153 src/components/ResetRevertDialog.tsx:165
+msgid "Enter a commit message description"
+msgstr "输入提交消息描述"
+
+#: src/components/CommitBox.tsx:141 src/components/CommitBox.tsx:146 src/components/CommitBox.tsx:148
+msgid "Create a new commit"
+msgstr "创建一个新提交"
+
+#: src/components/CommitBox.tsx:142 src/components/CommitBox.tsx:147 src/components/CommitBox.tsx:149
+msgid "New commit will be created and show up as a next one after the previous commit (default)."
+msgstr "新的提交将被创建，并在上次提交后显示为下一个（默认）。"
+
+#: src/components/CommitBox.tsx:147 src/components/CommitBox.tsx:152 src/components/CommitBox.tsx:154
+msgid "Amend previous commit"
+msgstr "修改上一次提交"
+
+#: src/components/CommitBox.tsx:148 src/components/CommitBox.tsx:153 src/components/CommitBox.tsx:155
+msgid "Staged changes will be added to the previous commit and its date will be updated."
+msgstr "暂存的改动将会被添加到上一次提交，并且提交日期将被更新。"
+
+#: src/components/CommitBox.tsx:176 src/components/CommitBox.tsx:181 src/components/CommitBox.tsx:183 src/components/CommitBox.tsx:98 src/components/CommitBox.tsx:99
+msgid "Disabled: No files are staged for commit"
+msgstr "已禁用：没有待提交的文件"
+
+#: src/components/CommitBox.tsx:195 src/components/GitPanel.tsx:440 src/components/GitPanel.tsx:441
+msgid "Warning"
+msgstr "警告"
+
+#: src/components/CommitBox.tsx:196
+msgid "Looks like you still have unsaved staged files. Remember to save and stage all needed changes before committing!"
+msgstr "似乎您仍然有尚未保存的暂存文件。请记得在提交之前保存并暂存所有需要的改动！"
+
+#: src/components/CommitComparisonBox.tsx:163
+msgid "Close"
+msgstr "关闭"
+
+#: src/components/CommitComparisonBox.tsx:184
+msgid "No changes"
+msgstr "没有不同"
+
+#: src/components/CommitComparisonBox.tsx:185
+msgid "No challenger commit selected."
+msgstr "没有选择用来比较的目标提交"
+
+#: src/components/CommitDiff.tsx:103 src/components/SinglePastCommitInfo.tsx:179 src/components/SinglePastCommitInfo.tsx:190 src/components/SinglePastCommitInfo.tsx:192
+msgid "# Insertions"
+msgstr "# 新增"
+
+#: src/components/CommitDiff.tsx:110 src/components/SinglePastCommitInfo.tsx:186 src/components/SinglePastCommitInfo.tsx:197 src/components/SinglePastCommitInfo.tsx:199
+msgid "# Deletions"
+msgstr "# 删除"
+
+#: src/components/CommitDiff.tsx:121 src/components/FileList.tsx:1211 src/components/FileList.tsx:518 src/components/FileList.tsx:527 src/components/FileList.tsx:595 src/components/FileList.tsx:596 src/components/FileList.tsx:728 src/components/FileList.tsx:737 src/components/FileList.tsx:806 src/components/FileList.tsx:883 src/components/FileList.tsx:906 src/components/SinglePastCommitInfo.tsx:197 src/components/SinglePastCommitInfo.tsx:208 src/components/SinglePastCommitInfo.tsx:210
+msgid "Changed"
+msgstr "已更改"
+
+#: src/components/CommitDiff.tsx:164 src/components/PastCommitNode.tsx:112 src/components/PastCommitNode.tsx:153 src/components/PastCommitNode.tsx:157 src/components/SinglePastCommitInfo.tsx:273 src/components/SinglePastCommitInfo.tsx:284 src/components/SinglePastCommitInfo.tsx:287
+msgid "View file changes"
+msgstr "查看文件改动"
+
+#: src/components/CommitDiff.tsx:99 src/components/SinglePastCommitInfo.tsx:175 src/components/SinglePastCommitInfo.tsx:186 src/components/SinglePastCommitInfo.tsx:188
+msgid "# Files Changed"
+msgstr "# 文件已改动"
+
+#: src/components/CommitMessage.tsx:114 src/components/CommitMessage.tsx:120 src/components/CommitMessage.tsx:144 src/components/CommitMessage.tsx:150
+msgid "Amending the commit will re-use the previous commit summary"
+msgstr "修改提交将会重新使用上一次的提交摘要"
+
+#: src/components/CommitMessage.tsx:66 src/components/CommitMessage.tsx:71
+msgid "Summary"
+msgstr "概要"
+
+#: src/components/FileList.tsx:1027 src/components/FileList.tsx:1105 src/components/FileList.tsx:1118 src/components/FileList.tsx:1144 src/components/FileList.tsx:363 src/components/FileList.tsx:372 src/components/FileList.tsx:440 src/components/FileList.tsx:441 src/components/FileList.tsx:450 src/components/FileList.tsx:459 src/components/FileList.tsx:527 src/components/FileList.tsx:528 src/components/FileList.tsx:549 src/components/FileList.tsx:558 src/components/FileList.tsx:626 src/components/FileList.tsx:627 src/components/FileList.tsx:635 src/components/FileList.tsx:644 src/components/FileList.tsx:648 src/components/FileList.tsx:657 src/components/FileList.tsx:674 src/components/FileList.tsx:683 src/components/FileList.tsx:710 src/components/FileList.tsx:713 src/components/FileList.tsx:726 src/components/FileList.tsx:744 src/components/FileList.tsx:752 src/components/FileList.tsx:790 src/components/FileList.tsx:803 src/components/FileList.tsx:828 src/components/FileList.tsx:829 src/components/FileList.tsx:937
+msgid "Open this file"
+msgstr "打开此文件"
+
+#: src/components/FileList.tsx:1066 src/components/FileList.tsx:751
+msgid "Pull from remote branch"
+msgstr "从远程拉取分支"
+
+#: src/components/FileList.tsx:1071 src/components/FileList.tsx:756
+msgid "Remote Changes"
+msgstr "远程改动"
+
+#: src/components/FileList.tsx:1207 src/components/FileList.tsx:505 src/components/FileList.tsx:514 src/components/FileList.tsx:582 src/components/FileList.tsx:583 src/components/FileList.tsx:724 src/components/FileList.tsx:733 src/components/FileList.tsx:802 src/components/FileList.tsx:879 src/components/FileList.tsx:893
+msgid "Discard All Changes"
+msgstr "放弃所有改动"
+
+#: src/components/FileList.tsx:1244 src/components/FileList.tsx:749 src/components/FileList.tsx:758 src/components/FileList.tsx:827 src/components/FileList.tsx:904
+msgid "Diff this file"
+msgstr "对比此文件"
+
+#: src/components/FileList.tsx:177 src/components/FileList.tsx:186 src/components/FileList.tsx:188 src/components/FileList.tsx:191 src/components/FileList.tsx:202 src/components/FileList.tsx:211 src/components/FileList.tsx:213 src/components/FileList.tsx:262 src/widgets/discardAllChanges.ts:16
+msgid "Discard all changes"
+msgstr "放弃所有改动"
+
+#: src/components/FileList.tsx:178 src/components/FileList.tsx:187 src/components/FileList.tsx:189 src/components/FileList.tsx:203 src/components/FileList.tsx:212 src/components/FileList.tsx:214 src/widgets/discardAllChanges.ts:21
+msgid "Are you sure you want to permanently discard changes to all files? This action cannot be undone."
+msgstr "您确定想要永久放弃所有文件的改动？此操作无法撤消。"
+
+#: src/components/FileList.tsx:191 src/components/FileList.tsx:200 src/components/FileList.tsx:202 src/components/FileList.tsx:205 src/components/FileList.tsx:276
+msgid "Discard all unstaged changes failed."
+msgstr "放弃所有未暂存改动失败。"
+
+#: src/components/FileList.tsx:192 src/components/FileList.tsx:263
+msgid "Are you sure you want to permanently discard changes to all unstaged files? This action cannot be undone."
+msgstr "您确定想要永久放弃所有未暂存文件的改动？此操作无法撤消。"
+
+#: src/components/FileList.tsx:216 src/components/FileList.tsx:225 src/components/FileList.tsx:227 src/widgets/discardAllChanges.ts:34
+msgid "Discard all changes failed."
+msgstr "放弃所有改动失败。"
+
+#: src/components/FileList.tsx:370 src/components/FileList.tsx:379 src/components/FileList.tsx:447 src/components/FileList.tsx:448 src/components/FileList.tsx:753
+msgid "Unstage this change"
+msgstr "取消暂存此改动"
+
+#: src/components/FileList.tsx:404 src/components/FileList.tsx:405 src/components/FileList.tsx:713
+msgid "Conflicted"
+msgstr "有冲突的"
+
+#: src/components/FileList.tsx:408 src/components/FileList.tsx:417 src/components/FileList.tsx:485 src/components/FileList.tsx:486 src/components/FileList.tsx:791
+msgid "Unstage all changes"
+msgstr "取消暂存所有改动"
+
+#: src/components/FileList.tsx:414 src/components/FileList.tsx:423 src/components/FileList.tsx:491 src/components/FileList.tsx:492 src/components/FileList.tsx:797
+msgid "Staged"
+msgstr "已暂存"
+
+#: src/components/FileList.tsx:465 src/components/FileList.tsx:474 src/components/FileList.tsx:542 src/components/FileList.tsx:543 src/components/FileList.tsx:845
+msgid "Stage this change"
+msgstr "暂存此改动"
+
+#: src/components/FileList.tsx:512 src/components/FileList.tsx:521 src/components/FileList.tsx:589 src/components/FileList.tsx:590 src/components/FileList.tsx:900
+msgid "Stage all changes"
+msgstr "暂存所有改动"
+
+#: src/components/FileList.tsx:559 src/components/FileList.tsx:568 src/components/FileList.tsx:636 src/components/FileList.tsx:637 src/components/FileList.tsx:945
+msgid "Track this file"
+msgstr "追踪此文件"
+
+#: src/components/FileList.tsx:597 src/components/FileList.tsx:606 src/components/FileList.tsx:674 src/components/FileList.tsx:675 src/components/FileList.tsx:991
+msgid "Track all untracked files"
+msgstr "追踪所有未跟踪的文件"
+
+#: src/components/FileList.tsx:602 src/components/FileList.tsx:611 src/components/FileList.tsx:679 src/components/FileList.tsx:680 src/components/FileList.tsx:996
+msgid "Untracked"
+msgstr "未跟踪"
+
+#: src/components/GitPanel.tsx:216 src/components/GitPanel.tsx:506 src/components/GitPanel.tsx:533 src/components/GitPanel.tsx:547 src/components/GitPanel.tsx:561 src/components/GitPanel.tsx:569 src/components/GitPanel.tsx:668 src/components/GitPanel.tsx:669
+msgid "Staging files..."
+msgstr "暂存文件..."
+
+#: src/components/GitPanel.tsx:237 src/components/GitPanel.tsx:523 src/components/GitPanel.tsx:550 src/components/GitPanel.tsx:564 src/components/GitPanel.tsx:578 src/components/GitPanel.tsx:586 src/components/GitPanel.tsx:685 src/components/GitPanel.tsx:686
+msgid "Failed to commit changes."
+msgstr "无法提交改动。"
+
+#: src/components/GitPanel.tsx:250 src/components/GitPanel.tsx:531 src/components/GitPanel.tsx:558 src/components/GitPanel.tsx:572 src/components/GitPanel.tsx:586 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:693 src/components/GitPanel.tsx:694
+msgid "Committing changes..."
+msgstr "正在提交改动..."
+
+#: src/components/GitPanel.tsx:257 src/components/GitPanel.tsx:538 src/components/GitPanel.tsx:569 src/components/GitPanel.tsx:583 src/components/GitPanel.tsx:597 src/components/GitPanel.tsx:605 src/components/GitPanel.tsx:704 src/components/GitPanel.tsx:705
+msgid "Committed changes."
+msgstr "已提交的改动。"
+
+#: src/components/GitPanel.tsx:333 src/components/GitPanel.tsx:347 src/components/GitPanel.tsx:352 src/components/GitPanel.tsx:359 src/components/GitPanel.tsx:372 src/components/GitPanel.tsx:380 src/components/GitPanel.tsx:403 src/components/GitPanel.tsx:404
+msgid "View changed files"
+msgstr "查看改动的文件"
+
+#: src/components/GitPanel.tsx:334 src/components/GitPanel.tsx:348 src/components/GitPanel.tsx:353 src/components/GitPanel.tsx:360 src/components/GitPanel.tsx:373 src/components/GitPanel.tsx:381 src/components/GitPanel.tsx:404 src/components/GitPanel.tsx:405
+msgid "Changes"
+msgstr "改动"
+
+#: src/components/GitPanel.tsx:343 src/components/GitPanel.tsx:357 src/components/GitPanel.tsx:362 src/components/GitPanel.tsx:369 src/components/GitPanel.tsx:382 src/components/GitPanel.tsx:390 src/components/GitPanel.tsx:413 src/components/GitPanel.tsx:414
+msgid "View commit history"
+msgstr "查看提交历史"
+
+#: src/components/GitPanel.tsx:364 src/components/GitPanel.tsx:378 src/components/GitPanel.tsx:383 src/components/GitPanel.tsx:390 src/components/GitPanel.tsx:403 src/components/GitPanel.tsx:411 src/components/GitPanel.tsx:436 src/components/GitPanel.tsx:437
+msgid "Commit and Push"
+msgstr "提交并推送"
+
+#: src/components/GitPanel.tsx:365 src/components/GitPanel.tsx:379 src/components/GitPanel.tsx:384 src/components/GitPanel.tsx:391 src/components/GitPanel.tsx:404 src/components/GitPanel.tsx:412 src/components/GitPanel.tsx:439 src/components/GitPanel.tsx:440
+msgid "Commit"
+msgstr "提交"
+
+#: src/components/GitPanel.tsx:426 src/components/GitPanel.tsx:442 src/components/GitPanel.tsx:447 src/components/GitPanel.tsx:454 src/components/GitPanel.tsx:468 src/components/GitPanel.tsx:476 src/components/GitPanel.tsx:575 src/components/GitPanel.tsx:576
+msgid "is not"
+msgstr "不是"
+
+#: src/components/GitPanel.tsx:429 src/components/GitPanel.tsx:445 src/components/GitPanel.tsx:450 src/components/GitPanel.tsx:457 src/components/GitPanel.tsx:471 src/components/GitPanel.tsx:479 src/components/GitPanel.tsx:578 src/components/GitPanel.tsx:579
+msgid "You are not currently in"
+msgstr "您当前并不在"
+
+#: src/components/GitPanel.tsx:431 src/components/GitPanel.tsx:447 src/components/GitPanel.tsx:452 src/components/GitPanel.tsx:459 src/components/GitPanel.tsx:473 src/components/GitPanel.tsx:481 src/components/GitPanel.tsx:580 src/components/GitPanel.tsx:581
+msgid " a Git repository. To use Git, navigate to a local repository, initialize a repository here, or clone an existing repository."
+msgstr " 一个 Git 仓库。要使用 Git，切换到到本地仓库，在该处初始化仓库，或克隆现有的仓库。"
+
+#: src/components/GitPanel.tsx:435 src/components/GitPanel.tsx:436
+msgid "Commit (Amend) and Push"
+msgstr "提交（修正）并推送"
+
+#: src/components/GitPanel.tsx:438 src/components/GitPanel.tsx:439
+msgid "Commit (Amend)"
+msgstr "提交（修正）"
+
+#: src/components/GitPanel.tsx:439 src/components/GitPanel.tsx:455 src/components/GitPanel.tsx:460 src/components/GitPanel.tsx:467 src/components/GitPanel.tsx:481 src/components/GitPanel.tsx:489 src/components/GitPanel.tsx:588 src/components/GitPanel.tsx:589
+msgid "Open the FileBrowser"
+msgstr "打开文件浏览器"
+
+#: src/components/GitPanel.tsx:445 src/components/GitPanel.tsx:446
+msgid "You have unsaved tracked files. You probably want to save all changes before committing."
+msgstr "跟踪的某些文件包含尚未保存的更改，您可能想要在提交之前先保存这些更改。"
+
+#: src/components/GitPanel.tsx:448 src/components/GitPanel.tsx:449
+msgid "You have unsaved staged files. You probably want to save and stage all needed changes before committing."
+msgstr "暂存区的某些文件包含尚未保存的更改，您可能想要在提交之前先保存和暂存这些更改。"
+
+#: src/components/GitPanel.tsx:513 src/components/GitPanel.tsx:571 src/components/GitPanel.tsx:602 src/components/GitPanel.tsx:616 src/components/GitPanel.tsx:630 src/components/GitPanel.tsx:638 src/components/GitPanel.tsx:737 src/components/GitPanel.tsx:738
+msgid "Who is committing?"
+msgstr "谁提交的？"
+
+#: src/components/GitPanel.tsx:524 src/components/GitPanel.tsx:525
+msgid "Compare %1 and %2"
+msgstr "比较 %1 和 %2"
+
+#: src/components/GitPanel.tsx:537 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:625 src/components/GitPanel.tsx:639 src/components/GitPanel.tsx:653 src/components/GitPanel.tsx:661 src/components/GitPanel.tsx:760 src/components/GitPanel.tsx:761
+msgid "Failed to set your identity. %1"
+msgstr "无法设置您的身份。%1"
+
+#: src/components/GitPanel.tsx:577 src/components/GitPanel.tsx:608 src/components/GitPanel.tsx:622 src/components/GitPanel.tsx:636 src/components/GitPanel.tsx:644 src/components/GitPanel.tsx:743 src/components/GitPanel.tsx:744
+msgid "User refused to set identity."
+msgstr "用户拒绝设置身份。"
+
+#: src/components/GitPanel.tsx:685 src/components/GitPanel.tsx:699 src/components/GitPanel.tsx:707 src/components/GitPanel.tsx:806 src/components/GitPanel.tsx:807
+msgid "One or more open files are behind %1 head. Do you want to pull the latest remote version?"
+msgstr "一个或多个已打开的文件已落后于头部 %1。您想要拉取最新的远程版本吗？"
+
+#: src/components/GitPanel.tsx:694 src/components/GitPanel.tsx:708 src/components/GitPanel.tsx:716 src/components/GitPanel.tsx:815 src/components/GitPanel.tsx:816
+msgid "Continue Without Pulling"
+msgstr "不拉取并继续"
+
+#: src/components/GitPanel.tsx:697 src/components/GitPanel.tsx:711 src/components/GitPanel.tsx:719 src/components/GitPanel.tsx:818 src/components/GitPanel.tsx:819
+msgid "Pull"
+msgstr "拉取"
+
+#: src/components/GitPanel.tsx:698 src/components/GitPanel.tsx:712 src/components/GitPanel.tsx:720 src/components/GitPanel.tsx:819 src/components/GitPanel.tsx:820
+msgid "Git Pull from Remote Branch"
+msgstr "Git 从远程分支拉取"
+
+#: src/components/GitPanel.tsx:722 src/components/GitPanel.tsx:736 src/components/GitPanel.tsx:744 src/components/GitPanel.tsx:843 src/components/GitPanel.tsx:844
+msgid "The following open files remain behind:"
+msgstr "下列打开的文件仍然落后最新版本："
+
+#: src/components/HistorySideBar.tsx:104 src/components/HistorySideBar.tsx:106 src/components/HistorySideBar.tsx:122 src/components/HistorySideBar.tsx:124
+msgid "Uncommitted Changes"
+msgstr "未提交改动"
+
+#: src/components/HistorySideBar.tsx:105 src/components/HistorySideBar.tsx:107 src/components/HistorySideBar.tsx:123 src/components/HistorySideBar.tsx:125
+msgid "now"
+msgstr "现在"
+
+#: src/components/HistorySideBar.tsx:114 src/components/HistorySideBar.tsx:116 src/components/HistorySideBar.tsx:96 src/components/HistorySideBar.tsx:98
+msgid "You"
+msgstr "你"
+
+#: src/components/HistorySideBar.tsx:126 src/components/HistorySideBar.tsx:144 src/components/HistorySideBar.tsx:146 src/components/HistorySideBar.tsx:165
+msgid "Discard file history"
+msgstr "放弃文件历史"
+
+#: src/components/HistorySideBar.tsx:187 src/components/HistorySideBar.tsx:189 src/components/HistorySideBar.tsx:192 src/components/HistorySideBar.tsx:241
+msgid "No history found."
+msgstr "未找到历史。"
+
+#: src/components/ManageRemoteDialogue.tsx:104
+msgid "Enter a new remote repository name and URL"
+msgstr "输入一个新的远程仓库名称和 URL"
+
+#: src/components/ManageRemoteDialogue.tsx:104
+msgid "Enter a new remote repository name and url"
+msgstr "输入一个新的远程仓库名称和 URL"
+
+#: src/components/ManageRemoteDialogue.tsx:113
+msgid "name"
+msgstr "名称"
+
+#: src/components/ManageRemoteDialogue.tsx:158
+msgid "Add Remote"
+msgstr "添加远程仓库"
+
+#: src/components/ManageRemoteDialogue.tsx:186
+msgid "Existing Remotes:"
+msgstr "当前远程仓库："
+
+#: src/components/ManageRemoteDialogue.tsx:198
+msgid "Remove this remote"
+msgstr "移除此远程仓库"
+
+#: src/components/ManageRemoteDialogue.tsx:92
+msgid "Manage Remotes"
+msgstr "管理远程仓库"
+
+#: src/components/ManageRemoteDialogue.tsx:95 src/components/MergeBranchDialog.tsx:117 src/components/NewBranchDialog.tsx:150 src/components/NewBranchDialog.tsx:157 src/components/ResetRevertDialog.tsx:130 src/components/ResetRevertDialog.tsx:132
+msgid "Close this dialog"
+msgstr "关闭此对话框"
+
+#: src/components/MergeBranchDialog.tsx:114
+msgid "Merge Branch"
+msgstr "合并分支"
+
+#: src/components/MergeBranchDialog.tsx:127
+msgid "Select the branch to merge in %1"
+msgstr "选择要合并至 %1 的分支"
+
+#: src/components/MergeBranchDialog.tsx:139
+msgid "Filter branch list"
+msgstr "筛选分支列表"
+
+#: src/components/MergeBranchDialog.tsx:172
+msgid "Close this dialog without merging a branch"
+msgstr "关闭当前对话框而不合并分支"
+
+#: src/components/MergeBranchDialog.tsx:181
+msgid "Merge branch"
+msgstr "合并分支"
+
+#: src/components/MergeBranchDialog.tsx:182
+msgid "Merge"
+msgstr "合并"
+
+#: src/components/MergeBranchDialog.tsx:87 src/components/NewBranchDialog.tsx:309 src/components/NewBranchDialog.tsx:313 src/components/NewBranchDialog.tsx:315
+msgid "Create a new branch based on: %1"
+msgstr "基于 %1 创建一个新分支"
+
+#: src/components/NewBranchDialog.tsx:147 src/components/NewBranchDialog.tsx:154
+msgid "Create a Branch"
+msgstr "创建一个分支"
+
+#: src/components/NewBranchDialog.tsx:160 src/components/NewBranchDialog.tsx:167
+msgid "Name"
+msgstr "名称"
+
+#: src/components/NewBranchDialog.tsx:167 src/components/NewBranchDialog.tsx:174
+msgid "Enter a branch name"
+msgstr "输入新分支名称"
+
+#: src/components/NewBranchDialog.tsx:169
+msgid "Create branch based on…"
+msgstr "基于其他分支创建新分支…"
+
+#: src/components/NewBranchDialog.tsx:169 src/components/NewBranchDialog.tsx:176
+msgid "Create branch based on..."
+msgstr "创建分支基于..."
+
+#: src/components/NewBranchDialog.tsx:199 src/components/NewBranchDialog.tsx:206
+msgid "Close this dialog without creating a new branch"
+msgstr "关闭此对话框而不新建分支"
+
+#: src/components/NewBranchDialog.tsx:209 src/components/NewBranchDialog.tsx:216
+msgid "Create Branch"
+msgstr "新建分支"
+
+#: src/components/NewBranchDialog.tsx:300 src/components/NewBranchDialog.tsx:302
+msgid "The current branch. Pick this if you want to build on work done in this branch."
+msgstr "当前分支。如果您想要在此分支内完成的工作基础上继续，请选此项。"
+
+#: src/components/NewBranchDialog.tsx:305 src/components/NewBranchDialog.tsx:307
+msgid "The default branch. Pick this if you want to start fresh from the default branch."
+msgstr "默认分支。如果您想要从默认分支开始，请选此项。"
+
+#: src/components/NewBranchDialog.tsx:427 src/components/NewBranchDialog.tsx:434
+msgid "Creating branch…"
+msgstr "正在创建分支…"
+
+#: src/components/NewBranchDialog.tsx:433 src/components/NewBranchDialog.tsx:434
+msgid "Creating branch..."
+msgstr "正在创建分支..."
+
+#: src/components/NewBranchDialog.tsx:437 src/components/NewBranchDialog.tsx:443 src/components/NewBranchDialog.tsx:444
+msgid "Failed to create branch."
+msgstr "创建分支失败。"
+
+#: src/components/NewBranchDialog.tsx:444 src/components/NewBranchDialog.tsx:450 src/components/NewBranchDialog.tsx:451
+msgid "Branch created."
+msgstr "分支已创建。"
+
+#: src/components/PastCommitNode.tsx:111 src/components/PastCommitNode.tsx:152 src/components/PastCommitNode.tsx:156
+msgid "View commit details"
+msgstr "查看提交详情"
+
+#: src/components/PastCommitNode.tsx:175 src/components/PastCommitNode.tsx:179
+msgid "Select for compare"
+msgstr "选择要比较的提交"
+
+#: src/components/PastCommitNode.tsx:182 src/components/PastCommitNode.tsx:186
+msgid "Compare with selected"
+msgstr "与选中的提交比较"
+
+#: src/components/ResetRevertDialog.tsx:125 src/components/ResetRevertDialog.tsx:127
+msgid "Revert Changes"
+msgstr "撤回改动"
+
+#: src/components/ResetRevertDialog.tsx:126 src/components/ResetRevertDialog.tsx:128
+msgid "Reset Changes"
+msgstr "重置改动"
+
+#: src/components/ResetRevertDialog.tsx:139 src/components/ResetRevertDialog.tsx:141
+msgid "These changes will be reverted. Only commit if you're sure you're okay losing these changes."
+msgstr "这些改动将被撤回。请确认可以放弃这些改动后再进行提交。"
+
+#: src/components/ResetRevertDialog.tsx:142 src/components/ResetRevertDialog.tsx:144
+msgid "All changes after commit %1 will be gone forever (hard reset). Are you sure?"
+msgstr "所有提交 %1 后的改动都将被丢弃（硬重置）。您确定吗？"
+
+#: src/components/ResetRevertDialog.tsx:166 src/components/ResetRevertDialog.tsx:179
+msgid "Cancel changes"
+msgstr "取消改动"
+
+#: src/components/ResetRevertDialog.tsx:174 src/components/ResetRevertDialog.tsx:187
+msgid "Submit changes"
+msgstr "提交改动"
+
+#: src/components/ResetRevertDialog.tsx:229
+msgid "Discarding changes…"
+msgstr "这在放弃改动…"
+
+#: src/components/ResetRevertDialog.tsx:229 src/components/ResetRevertDialog.tsx:246
+msgid "Discarding changes..."
+msgstr "这在放弃改动..."
+
+#: src/components/ResetRevertDialog.tsx:235 src/components/ResetRevertDialog.tsx:252
+msgid "Successfully discarded changes."
+msgstr "成功放弃改动。"
+
+#: src/components/ResetRevertDialog.tsx:240 src/components/ResetRevertDialog.tsx:257
+msgid "Failed to discard changes."
+msgstr "无法放弃改动。"
+
+#: src/components/ResetRevertDialog.tsx:256
+msgid "Reverting changes…"
+msgstr "正在撤回改动…"
+
+#: src/components/ResetRevertDialog.tsx:256 src/components/ResetRevertDialog.tsx:273
+msgid "Reverting changes..."
+msgstr "正在撤回改动..."
+
+#: src/components/ResetRevertDialog.tsx:262 src/components/ResetRevertDialog.tsx:279
+msgid "Successfully reverted changes."
+msgstr "成功撤回改动。"
+
+#: src/components/ResetRevertDialog.tsx:267 src/components/ResetRevertDialog.tsx:284
+msgid "Failed to revert changes."
+msgstr "撤回改动失败。"
+
+#: src/components/ResetRevertDialog.tsx:299 src/components/ResetRevertDialog.tsx:316
+msgid "Revert '%1'"
+msgstr "撤回「%1」"
+
+#: src/components/ResetRevertDialog.tsx:308 src/components/ResetRevertDialog.tsx:325
+msgid "This reverts commit %1"
+msgstr "浙江撤回提交 %1"
+
+#: src/components/SinglePastCommitInfo.tsx:159 src/components/SinglePastCommitInfo.tsx:169 src/components/SinglePastCommitInfo.tsx:180 src/components/SinglePastCommitInfo.tsx:182
+msgid "Error loading commit data"
+msgstr "载入提交数据时出错"
+
+#: src/components/SinglePastCommitInfo.tsx:168 src/components/SinglePastCommitInfo.tsx:180 src/components/SinglePastCommitInfo.tsx:201 src/components/SinglePastCommitInfo.tsx:212 src/components/SinglePastCommitInfo.tsx:214
+msgid "Revert changes introduced by this commit"
+msgstr "撤回此次提交引入的改动"
+
+#: src/components/SinglePastCommitInfo.tsx:176 src/components/SinglePastCommitInfo.tsx:188 src/components/SinglePastCommitInfo.tsx:209 src/components/SinglePastCommitInfo.tsx:220 src/components/SinglePastCommitInfo.tsx:222
+msgid "Discard changes introduced *after* this commit (hard reset)"
+msgstr "放弃在此提交*之后*引入的改动（硬重置）"
+
+#: src/components/StatusWidget.tsx:70 src/components/StatusWidget.tsx:74
+msgid "credentials required"
+msgstr "需要提供凭证"
+
+#: src/components/TagMenu.tsx:157
+msgid "Fail to get the tags."
+msgstr "无法获取标签。"
+
+#: src/components/TagMenu.tsx:246
+msgid "Checkout to tag: %1"
+msgstr "检出到标签：%1"
+
+#: src/components/TagMenu.tsx:45
+msgid "Unable to checkout tag"
+msgstr "无法检出标签"
+
+#: src/components/TagMenu.tsx:57
+msgid "Please commit, stash, or discard your changes before you checkout tags."
+msgstr "请在检出标签之前提交、发布或放弃您的改动。"
+
+#: src/components/TagMenu.tsx:68
+msgid "Failed to checkout tag."
+msgstr "检出标签失败。"
+
+#: src/components/Toolbar.tsx:173
+msgid "Pull latest changes"
+msgstr "拉去最新改动"
+
+#: src/components/Toolbar.tsx:175
+msgid " (behind by %1 commits)"
+msgstr "（落后 %1 个提交）"
+
+#: src/components/Toolbar.tsx:180 src/components/Toolbar.tsx:208
+msgid "No remote repository defined"
+msgstr "未定义远程仓库"
+
+#: src/components/Toolbar.tsx:200
+msgid "Push committed changes"
+msgstr "推送已提交的改动"
+
+#: src/components/Toolbar.tsx:202
+msgid " (ahead by %1 commits)"
+msgstr "（超前 %1 个提交）"
+
+#: src/components/Toolbar.tsx:207
+msgid "Publish branch"
+msgstr "发布分支"
+
+#: src/components/Toolbar.tsx:217
+msgid "Refresh the repository to detect local and remote changes"
+msgstr "刷新仓库以检测本地和远程改动"
+
+#: src/components/Toolbar.tsx:236 src/components/Toolbar.tsx:240
+msgid "Current repository: %1"
+msgstr "当前仓库：%1"
+
+#: src/components/Toolbar.tsx:245 src/components/Toolbar.tsx:248
+msgid "Current Repository"
+msgstr "当前仓库"
+
+#: src/components/Toolbar.tsx:272 src/components/Toolbar.tsx:273
+msgid "Manage branches and tags"
+msgstr "管理分支和标签"
+
+#: src/components/Toolbar.tsx:278 src/components/Toolbar.tsx:279
+msgid "Current Branch"
+msgstr "当前分支"
+
+#: src/components/Toolbar.tsx:315 src/components/Toolbar.tsx:316
+msgid "View branches"
+msgstr "查看分支"
+
+#: src/components/Toolbar.tsx:316 src/components/Toolbar.tsx:317
+msgid "Branches"
+msgstr "分支"
+
+#: src/components/Toolbar.tsx:325 src/components/Toolbar.tsx:326
+msgid "View tags"
+msgstr "查看标签"
+
+#: src/components/Toolbar.tsx:326 src/components/Toolbar.tsx:327
+msgid "Tags"
+msgstr "标签"
+
+#: src/components/Toolbar.tsx:401 src/components/Toolbar.tsx:402
+msgid "Refreshing..."
+msgstr "正在刷新..."
+
+#: src/components/Toolbar.tsx:403
+msgid "Refreshing…"
+msgstr "正在刷新…"
+
+#: src/components/Toolbar.tsx:408 src/components/Toolbar.tsx:409 src/components/Toolbar.tsx:410
+msgid "Successfully refreshed."
+msgstr "刷新成功。"
+
+#: src/components/Toolbar.tsx:414 src/components/Toolbar.tsx:415 src/components/Toolbar.tsx:416
+msgid "Failed to refresh."
+msgstr "刷新失败。"
+
+#: src/components/diff/NotebookDiff.ts:103
+msgid "Hide unchanged cells"
+msgstr "隐藏未改变单元格"
+
+#: src/components/diff/NotebookDiff.ts:147
+msgid "Failed to refresh Notebook diff."
+msgstr "无法刷新笔记本差异对比。"
+
+#: src/components/diff/NotebookDiff.ts:238
+msgid "COMMON ANCESTOR"
+msgstr "共同祖先"
+
+#: src/components/diff/NotebookDiff.ts:238 src/components/diff/NotebookDiff.ts:245
+msgid "Common Ancestor"
+msgstr "共同祖先"
+
+#: src/components/diff/NotebookDiff.ts:277 src/components/diff/NotebookDiff.ts:284
+msgid "Failed to init notebook diff view: %1"
+msgstr "无法初始化笔记本差异对比试图：%1"
+
+#: src/components/diff/NotebookDiff.ts:336 src/components/diff/NotebookDiff.ts:343 src/components/diff/PlainTextDiff.ts:244 src/components/diff/PlainTextDiff.ts:251 src/components/diff/PlainTextDiff.ts:294
+msgid "Failed to load file diff."
+msgstr "无法载入文件差异对比。"
+
+#: src/components/diff/NotebookDiff.ts:347 src/components/diff/NotebookDiff.ts:354
+msgid "Error Loading Notebook Diff:"
+msgstr "载入笔记本差异对比时发生错误："
+
+#: src/components/diff/PlainTextDiff.ts:104 src/components/diff/PlainTextDiff.ts:111 src/components/diff/PlainTextDiff.ts:150
+msgid "Failed to get a valid file value."
+msgstr "无法获取一个合法的文件值。"
+
+#: src/components/diff/PlainTextDiff.ts:250 src/components/diff/PlainTextDiff.ts:257 src/components/diff/PlainTextDiff.ts:300
+msgid "Error Loading File Diff:"
+msgstr "载入文件差异对比时发生错误："
+
+#: src/components/diff/PlainTextDiff.ts:53
+msgid "Control character"
+msgstr "控制字符"
+
+#: src/components/diff/PlainTextDiff.ts:55
+msgid "Selection deleted"
+msgstr "选区已删除"
+
+#: src/components/diff/PlainTextDiff.ts:57
+msgid "Folded lines"
+msgstr "折叠的行"
+
+#: src/components/diff/PlainTextDiff.ts:58
+msgid "Unfolded lines"
+msgstr "展开的行"
+
+#: src/components/diff/PlainTextDiff.ts:59
+msgid "to"
+msgstr "至"
+
+#: src/components/diff/PlainTextDiff.ts:60
+msgid "folded code"
+msgstr "折叠的代码"
+
+#: src/components/diff/PlainTextDiff.ts:61
+msgid "unfold"
+msgstr "展开"
+
+#: src/components/diff/PlainTextDiff.ts:62
+msgid "Fold line"
+msgstr "折叠一行"
+
+#: src/components/diff/PlainTextDiff.ts:63
+msgid "Unfold line"
+msgstr "展开一行"
+
+#: src/components/diff/PlainTextDiff.ts:65
+msgid "Go to line"
+msgstr "跳转到行"
+
+#: src/components/diff/PlainTextDiff.ts:66
+msgid "go"
+msgstr "转至"
+
+#: src/components/diff/PlainTextDiff.ts:67
+msgid "Find"
+msgstr "查找"
+
+#: src/components/diff/PlainTextDiff.ts:68
+msgid "Replace"
+msgstr "替换"
+
+#: src/components/diff/PlainTextDiff.ts:69
+msgid "next"
+msgstr "下一个"
+
+#: src/components/diff/PlainTextDiff.ts:70
+msgid "previous"
+msgstr "上一个"
+
+#: src/components/diff/PlainTextDiff.ts:71
+msgid "all"
+msgstr "全部"
+
+#: src/components/diff/PlainTextDiff.ts:72
+msgid "match case"
+msgstr "区分大小写"
+
+#: src/components/diff/PlainTextDiff.ts:73
+msgid "replace"
+msgstr "替换"
+
+#: src/components/diff/PlainTextDiff.ts:74
+msgid "replace all"
+msgstr "全部替换"
+
+#: src/components/diff/PlainTextDiff.ts:75
+msgid "close"
+msgstr "关闭"
+
+#: src/components/diff/PlainTextDiff.ts:76
+msgid "current match"
+msgstr "当前匹配项"
+
+#: src/components/diff/PlainTextDiff.ts:77
+msgid "replaced $ matches"
+msgstr "已替换 $ 个匹配项"
+
+#: src/components/diff/PlainTextDiff.ts:78
+msgid "replaced match on line $"
+msgstr "已替换第 $ 行的匹配项"
+
+#: src/components/diff/PlainTextDiff.ts:79
+msgid "on line"
+msgstr "在行上"
+
+#: src/components/diff/PlainTextDiff.ts:81
+msgid "Identical text collapsed. Click to expand."
+msgstr "相同文本已折叠。单击以展开。"
+
+#: src/components/diff/PlainTextDiff.ts:84
+msgid "Toggle locked scrolling"
+msgstr "切换锁定滚动"
+
+#: src/components/diff/PlainTextDiff.ts:85
+msgid "Push to left"
+msgstr "推送至远程"
+
+#: src/components/diff/PlainTextDiff.ts:86
+msgid "Revert chunk"
+msgstr "撤回片段"
+
+#: src/index.ts:100 src/index.ts:101 src/index.ts:102 src/index.ts:94 src/index.ts:98
+msgid "git command not found - please ensure you have Git > 2 installed"
+msgstr "git 命令未找到 - 请确保您已安装 Git 2 或更高版本"
+
+#: src/index.ts:102 src/index.ts:106 src/index.ts:108 src/index.ts:109 src/index.ts:110
+msgid "git command version must be > 2; got %1."
+msgstr "git 命令版本必大于 2；当前版本为 %1。"
+
+#: src/index.ts:109 src/index.ts:113 src/index.ts:115 src/index.ts:116 src/index.ts:117
+msgid "The versions of the JupyterLab Git server frontend and backend do not match. The @jupyterlab/git frontend extension has version: %1 while the python package has version %2. Please install identical version of jupyterlab-git Python package and the @jupyterlab/git extension. Try running: pip install --upgrade jupyterlab-git"
+msgstr "JupyterLab Git 服务器的前端和后端版本不匹配。@jupyterlab/git 前端扩展版本为：%1。而 Python 包版本为 %2。请安装相同版本的 jupyterlab-git Python 包和 @jupyterlab/git 扩展。尝试运行：pip install --jupyterlab-git"
+
+#: src/index.ts:126 src/index.ts:130 src/index.ts:132 src/index.ts:133 src/index.ts:134
+msgid "Failed to load the jupyterlab-git server extension"
+msgstr "加载 jupyterlab-git 服务器扩展失败"
+
+#: src/index.ts:128 src/index.ts:129 src/index.ts:130
+msgid "Failed to load the jupyterlab-git server extension settings"
+msgstr "无法载入 jupyterlab-git 服务器扩展设置"
+
+#: src/index.ts:90 src/index.ts:91 src/index.ts:92
+msgid "Failed to load settings for the Git Extension.\n"
+"%1"
+msgstr "无法载入 Git 扩展设置。\n"
+"%1"
+
+#: src/server.ts:27
+msgid "Git server extension is unavailable. Please ensure you have installed the JupyterLab Git server extension by running: pip install --upgrade jupyterlab-git. To confirm that the server extension is installed, run: jupyter server extension list."
+msgstr "Git 服务器扩展不可用。请确保您已经通过运行 pip install --upyterlab-git 安装了 JupyterLab Git 服务器扩展。要确认服务器扩展已安装，请运行：jupyter server extension list。"
+
+#: src/widgets/AdvancedPushForm.tsx:104
+msgid "This repository has no known remotes."
+msgstr "当前仓库没有已知的远程版本。"
+
+#: src/widgets/AdvancedPushForm.tsx:43
+msgid "Choose a remote to push to."
+msgstr "选择一个要推送的远程仓库。"
+
+#: src/widgets/AdvancedPushForm.tsx:49
+msgid "Loading remote repositories..."
+msgstr "载入远程仓库..."
+
+#: src/widgets/AdvancedPushForm.tsx:64
+msgid "Force Push"
+msgstr "强制推送"
+
+#: src/widgets/CredentialsBox.tsx:36 src/widgets/CredentialsBox.tsx:37 src/widgets/CredentialsBox.tsx:43
+msgid "username"
+msgstr "用户名"
+
+#: src/widgets/CredentialsBox.tsx:37 src/widgets/CredentialsBox.tsx:38 src/widgets/CredentialsBox.tsx:44
+msgid "password / personal access token"
+msgstr "密码 / 个人访问令牌"
+
+#: src/widgets/CredentialsBox.tsx:50
+msgid "Save my login temporarily"
+msgstr "暂时缓存登录凭证"
+
+#: src/widgets/GitCloneForm.ts:30
+msgid "Enter the Clone URI of the repository"
+msgstr "输入仓库的克隆 URI"
+
+#: src/widgets/GitCloneForm.ts:60
+msgid "Enter the URI of the remote Git repository"
+msgstr "输入远程 Git 仓库的 URI"
+
+#: src/widgets/GitCloneForm.ts:65
+msgid "Include submodules"
+msgstr "包含子模块"
+
+#: src/widgets/GitCloneForm.ts:66
+msgid "If checked, the remote submodules in the repository will be cloned recursively"
+msgstr "如果选中，仓库中的远程子仓库将被递归克隆"
+
+#: src/widgets/GitCloneForm.ts:72
+msgid "Download the repository"
+msgstr "下载仓库"
+
+#: src/widgets/GitCloneForm.ts:73
+msgid "If checked, the remote repository default branch will be downloaded instead of cloned"
+msgstr "如果选中此项，将会下载而不是复制远程仓库的默认分支"
+
+#: src/widgets/discardAllChanges.ts:18
+msgid "Your current changes forbid pulling the latest changes. Do you want to permanently discard those changes? This action cannot be undone."
+msgstr "您当前的改动阻止您拉取最新改动。您是否想永久放弃当前改动？此操作无法撤销。"
+
+#: src/widgets/gitClone.tsx:38
+msgid "Git Clone"
+msgstr "Git 克隆"
+

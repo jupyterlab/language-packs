@@ -1,0 +1,162 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jupyterlab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: jupyterlab\n"
+"X-Crowdin-Project-ID: 409874\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /main/extensions/jupyterlab_search_replace/locale/jupyterlab_search_replace.pot\n"
+"X-Crowdin-File-ID: 201\n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"PO-Revision-Date: 2022-12-09 17:13\n"
+
+#: /schema/plugin.json:/description
+msgctxt "schema"
+msgid "Search and Replace across Files Settings"
+msgstr "在文件设置中搜索并替换"
+
+#: /schema/plugin.json:/properties/askReplaceAllConfirmation/description
+msgctxt "settings"
+msgid "Whether to display a confirmation dialog before replacing all matches or not."
+msgstr "在替换所有匹配之前是否显示确认对话框。"
+
+#: /schema/plugin.json:/properties/askReplaceAllConfirmation/title
+msgctxt "settings"
+msgid "Ask confirmation before replacing all"
+msgstr "在替换所有之前进行确认"
+
+#: /schema/plugin.json:/properties/exclude/description
+msgctxt "settings"
+msgid "Configure glob patterns for excluding files and folders in full text searches."
+msgstr "配置在全文搜索中用来排除文件和文件夹的通配模式。"
+
+#: /schema/plugin.json:/properties/exclude/title
+msgctxt "settings"
+msgid "Exclude"
+msgstr "排除"
+
+#: /schema/plugin.json:/properties/maxLinesPerFile/description
+msgctxt "settings"
+msgid "Maximal number of matching lines per file to report. The total number of matches per file can be greater if there are multiple matches per line."
+msgstr "每个文件的匹配行数最大值。 如果每个文件有多个匹配项，匹配总数可能会更高。"
+
+#: /schema/plugin.json:/properties/maxLinesPerFile/title
+msgctxt "settings"
+msgid "Maximal lines count per file"
+msgstr "每个文件的最大行数"
+
+#: /schema/plugin.json:/title
+msgctxt "schema"
+msgid "Search across Files"
+msgstr "在文件中搜索"
+
+#: src/index.ts:89 src/index.ts:92
+msgid "Search and Replace"
+msgstr "搜索和替换"
+
+#: src/view.tsx:119 src/view.tsx:126
+msgid "Replace All in File"
+msgstr "替换文件中的所有匹配项"
+
+#: src/view.tsx:139 src/view.tsx:146
+msgid "Maximal number of matches is reached for this file. You can increase it in the settings."
+msgstr "已达到此文件的最大匹配次数。您可以在设置中提高它。"
+
+#: src/view.tsx:175 src/view.tsx:182 src/view.tsx:303 src/view.tsx:311 src/view.tsx:662 src/view.tsx:691
+msgid "Replace"
+msgstr "替换"
+
+#: src/view.tsx:290 src/view.tsx:298 src/view.tsx:671 src/view.tsx:700
+msgid "Replace All"
+msgstr "替换全部"
+
+#: src/view.tsx:292 src/view.tsx:300
+msgid "Replace %2 matche(s) accross %1 file with %3? This cannot be undone."
+msgid_plural "Replace %2 matches accross %1 files with %3? This cannot be undone."
+msgstr[0] "将 %1 个文件中匹配到的 %2 替换为 %3 吗？此操作无法撤消。"
+
+#: src/view.tsx:299 src/view.tsx:307
+msgid "Skip confirmation next time."
+msgstr "下次跳过确认。"
+
+#: src/view.tsx:302 src/view.tsx:310
+msgid "Cancel"
+msgstr "取消"
+
+#: src/view.tsx:335 src/view.tsx:343
+msgid "Match Case"
+msgstr "匹配大小写"
+
+#: src/view.tsx:345 src/view.tsx:353
+msgid "Match Whole Word"
+msgstr "全字匹配"
+
+#: src/view.tsx:355 src/view.tsx:363
+msgid "Use Regular Expression"
+msgstr "使用正则表达式"
+
+#: src/view.tsx:381 src/view.tsx:408
+msgid "You have unsaved changes. The result(s) may be inexact. Save your work and refresh."
+msgstr "您有未保存的改动。结果可能不准确。保存您的改动并刷新。"
+
+#: src/view.tsx:390 src/view.tsx:417
+msgid "%2 result(s) in %1 file"
+msgid_plural "%2 results in %1 files"
+msgstr[0] "%1 个文件中的 %2 个结果"
+
+#: src/view.tsx:393
+msgid "<a href=\"%1\" target=\"_blank\">ripgrep</a> command was not found. You can install it using e.g. the <a href=\"%2\" target=\"_blank\">conda package manager</a>."
+msgstr "<a href=\"%1\" target=\"_blank\">ripgrep</a> 命令未找到。您可以通过例如 <a href=\"%2\" target=\"_blank\">conda 软件包管理器</a> 安装它。"
+
+#: src/view.tsx:396 src/view.tsx:423
+msgid "No results found."
+msgstr "未找到結果。"
+
+#: src/view.tsx:583 src/view.tsx:612 src/view.tsx:646 src/view.tsx:675
+msgid "Search"
+msgstr "搜索"
+
+#: src/view.tsx:589 src/view.tsx:618
+msgid "Refresh"
+msgstr "刷新"
+
+#: src/view.tsx:601 src/view.tsx:630
+msgid "Collapse All"
+msgstr "全部折叠"
+
+#: src/view.tsx:602 src/view.tsx:631
+msgid "Expand All"
+msgstr "全部展开"
+
+#: src/view.tsx:629 src/view.tsx:658
+msgid "Toggle Replace"
+msgstr "切换替换"
+
+#: src/view.tsx:647 src/view.tsx:676
+msgid "Search Files for Text"
+msgstr "搜索文本的文件"
+
+#: src/view.tsx:726 src/view.tsx:755
+msgid "Toggle Search Filters"
+msgstr "切换搜索过滤器"
+
+#: src/view.tsx:736 src/view.tsx:765
+msgid "Include file filters"
+msgstr "包含文件过滤器"
+
+#: src/view.tsx:739 src/view.tsx:768
+msgid "e.g. *.py, src/**/include"
+msgstr "例如：*.py, src/**/include"
+
+#: src/view.tsx:750 src/view.tsx:779
+msgid "Exclude file filters"
+msgstr "排除文件过滤器"
+
+#: src/view.tsx:753 src/view.tsx:782
+msgid "e.g. *.py, src/**/exclude"
+msgstr "例如：*.py, src/**/exclude"
+

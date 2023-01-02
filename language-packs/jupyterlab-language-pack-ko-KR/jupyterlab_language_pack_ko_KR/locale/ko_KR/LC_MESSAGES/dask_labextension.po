@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jupyterlab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: jupyterlab\n"
+"X-Crowdin-Project-ID: 409874\n"
+"X-Crowdin-Language: ko\n"
+"X-Crowdin-File: /main/extensions/dask_labextension/locale/dask_labextension.pot\n"
+"X-Crowdin-File-ID: 193\n"
+"Language-Team: Korean\n"
+"Language: ko_KR\n"
+"PO-Revision-Date: 2022-12-12 00:01\n"
+
+#: /schema/plugin.json:/description
+msgctxt "schema"
+msgid "Settings for the Dask Dashboard plugin."
+msgstr "Dask Dashboard 플러그인 설정"
+
+#: /schema/plugin.json:/description
+msgctxt "schema"
+msgid "Settings for the Dask plugin."
+msgstr "Dask 플러그인 설정"
+
+#: /schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Dask"
+msgstr "Dask"
+
+#: /schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Dask Dashboard"
+msgstr "Dask 대시보드"
+
+#: /schema/plugin.json:/properties/autoStartClient/description
+msgctxt "settings"
+msgid "If set to true, every notebook and console will automatically have a dask client for the active cluster injected into the kernel under the name 'client'"
+msgstr "Ture로 설정하면 모든 노트북 및 콘솔에 활성 클러스터에 대한 dask 클라이언트가 자동으로 '클라이언트'라는 이름으로 커널에 추가됩니다."
+
+#: /schema/plugin.json:/properties/autoStartClient/title
+msgctxt "settings"
+msgid "Auto-Start Client"
+msgstr "자동 시작 클라이언트"
+
+#: /schema/plugin.json:/properties/browserDashboardCheck/description
+msgctxt "settings"
+msgid "If set to true, the extension will check for the Dask dashboard from the user's browser. This is useful for testing the dashboard when behind a browser-cookie based authentication."
+msgstr "True로 설정하면 확장자는 사용자의 브라우저에서 Dask 대시보를 확인합니다. 브라우저 쿠키 기반 인증 이전에 대시보드를 테스트하는 데 유용할 수 있습니다."
+
+#: /schema/plugin.json:/properties/browserDashboardCheck/description
+msgctxt "settings"
+msgid "If set to true, the test dashboard will be validated within the browser environment. This is useful for testing the dashboard when behind a browser-cookie based authentication."
+msgstr "True로 설정하면 테스트 대시보드가 브라우저 환경에서 검증됩니다. 브라우저 쿠키 기반 인증 이전에 대시보드를 테스트하는 데 유용할 수 있습니다."
+
+#: /schema/plugin.json:/properties/browserDashboardCheck/title
+msgctxt "settings"
+msgid "Check dashboards via browser."
+msgstr "브라우저를 통해 대시보드를 확인합니다."
+
+#: /schema/plugin.json:/properties/browserDashboardCheck/title
+msgctxt "settings"
+msgid "Determine whether to validate dashboards via browser check."
+msgstr "브라우저 검사를 통해 대시보드의 유효성 검증 여부를 결정합니다."
+
+#: /schema/plugin.json:/properties/defaultLayout/description
+msgctxt "settings"
+msgid "This allows you to store a default layout for your Dask dashboard panels. It is stored as an object keyed by the individual chart names. Each value in the object is an object storing `mode`, which specifies how the chart is to be added to the main area, and `ref`, which is an (optional) reference to another chart. If `ref` is supplied, then `mode` will be with respect to that chart, if it is not supplied, then `mode` will be with respect to the main area. The default value for this option provides a relatively simple example specification."
+msgstr "Dask 대시보드 패널의 기본 레이아웃을 저장할 수 있습니다. 개별 차트 이름에 따라 키가 지정된 개체로 저장됩니다. 개체의 각 값은 차트를 메인 영역에 추가하는 방법을 지정하는 'mode'와 다른 차트에 대한 (선택적) 참조인 'ref'를 저장하는 개체입니다. 'ref'가 제공되면 'mode'는 해당 차트와 관련된 것이고, 제공되지 않으면 'mode'는 메인 영역과 관련된 것입니다. 이 옵션의 기본값은 비교적 간단한 예제 설명을 제공합니다."
+
+#: /schema/plugin.json:/properties/defaultLayout/title
+msgctxt "settings"
+msgid "Default layout for Dask Dashboard panels"
+msgstr "Dask 대시보드 패널의 기본 레이아웃"
+
+#: /schema/plugin.json:/properties/defaultURL/title
+msgctxt "settings"
+msgid "Default URL for the Dask Dashboard Webserver"
+msgstr "Dask 대시보드 웹 서버의 기본 URL"
+
+#: /schema/plugin.json:/properties/hideClusterManager/description
+msgctxt "settings"
+msgid "Some deployments don't want to or are unable to use the cluster manager feature. Toggle to hide it from the user interface (note: this does not disable the underlying functionality)."
+msgstr "일부 배포에서는 클러스터 관리자 기능을 사용하지 않거나 사용할 수 없습니다. 토글하여 사용자 인터페이스에서 보이지 않도록 합니다. (참고: 기본 기능은 비활성화되지 않습니다.)"
+
+#: /schema/plugin.json:/properties/hideClusterManager/title
+msgctxt "settings"
+msgid "Hide Cluster Manager"
+msgstr "클러스터 관리자 숨기기"
+
+#: /schema/plugin.json:/title
+msgctxt "schema"
+msgid "Dask"
+msgstr "Dask"
+
+#: /schema/plugin.json:/title
+msgctxt "schema"
+msgid "Dask Dashboard"
+msgstr "Dask 대시보드"
+

@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jupyterlab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: jupyterlab\n"
+"X-Crowdin-Project-ID: 409874\n"
+"X-Crowdin-Language: ko\n"
+"X-Crowdin-File: /main/extensions/jupyterlab_tour/locale/jupyterlab_tour.pot\n"
+"X-Crowdin-File-ID: 205\n"
+"Language-Team: Korean\n"
+"Language: ko_KR\n"
+"PO-Revision-Date: 2022-12-09 17:14\n"
+
+#: /schema/user-tours.json:/description
+msgctxt "schema"
+msgid "Configuration for user-defined tours. This schema is generated from https://github.com/gilbarbara/react-joyride/blob/master/types/index.d.ts"
+msgstr "사용자 정의 설명에 대한 구성입니다. 개요는 다음 링크에서 생성됩니다.\n"
+"https://github.com/gilbarbara/react-joyride/blob/master/types/index.d.ts"
+
+#: /schema/user-tours.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Tours"
+msgstr "설명"
+
+#: /schema/user-tours.json:/properties/tours/description
+msgctxt "settings"
+msgid "An array of a tours. Each requires an `id`, `label` and `steps[]`, and may have `options`, see https://docs.react-joyride.com"
+msgstr "둘러보기의 배열입니다. 각각`id`, `label`, `steps[]`가 필요하며 'options'를 가질 수 있습니다. (참조: https://docs.react-joyride.com)"
+
+#: /schema/user-tours.json:/properties/tours/items/properties/hasHelpEntry/description
+msgctxt "settings"
+msgid "Whether to add a Help Menu item with the label to launch the tour"
+msgstr "둘러보기를 시작하기 위해 도움말 메뉴 항목을 레이블과 함께 추가할지 여부"
+
+#: /schema/user-tours.json:/properties/tours/items/properties/id/description
+msgctxt "settings"
+msgid "A machine-readable ID to identify this tour, will be prefixed. Should be unique within this document."
+msgstr "이 둘러보기를 식별하기 위해 컴퓨터로 해독 가능한 ID가 앞에 붙습니다. ID는 문서 내에서 고유해야 합니다."
+
+#: /schema/user-tours.json:/properties/tours/items/properties/label/description
+msgctxt "settings"
+msgid "A human-readable name for the tour"
+msgstr "사람이 읽을 수 있는 둘러보기 이름"
+
+#: /schema/user-tours.json:/properties/tours/items/properties/options/description
+msgctxt "settings"
+msgid "Other options for the tour"
+msgstr "둘러보기의 다른 옵션"
+
+#: /schema/user-tours.json:/properties/tours/items/properties/steps/description
+msgctxt "settings"
+msgid "The definition of the steps of a tour"
+msgstr "둘러보기 단계의 정의"
+
+#: /schema/user-tours.json:/properties/tours/items/properties/translation/description
+msgctxt "settings"
+msgid "Translation domain containing for this tour"
+msgstr "이 둘러보기에 포함된 번역 도메인"
+
+#: /schema/user-tours.json:/properties/tours/items/properties/translation/description
+msgctxt "settings"
+msgid "Translation domain containing strings for this tour"
+msgstr "이 둘러보기의 문자열이 포함된 변환 도메인"
+
+#: /schema/user-tours.json:/title
+msgctxt "schema"
+msgid "Tours"
+msgstr "둘러보기"
+
+#: src/tourManager.ts:139 src/tourManager.ts:145
+msgid "Fail to add tour '%1' (%2)"
+msgstr "둘러보기 '%1'(%2) 을(를) 추가하는데 실패했습니다."
+
+#: src/tourManager.ts:166 src/tourManager.ts:172
+msgid "Error creating new tour. TourHandler id's must be unique.\n"
+"Tutorial with the id: '%1' already exists."
+msgstr "새 둘러보기를 만드는 동안 오류가 발생했습니다. 둘러보기 Handler id는 고유해야 합니다."
+
+#: src/tourManager.ts:249 src/tourManager.ts:255
+msgid "Try the %1."
+msgstr "%1 을(를) 시도해 보십시오."
+
+#: src/tourManager.ts:253 src/tourManager.ts:259
+msgid "Start now"
+msgstr "바로 시작"
+
+#: src/tourManager.ts:257 src/tourManager.ts:263
+msgid "Don't show me again"
+msgstr "더 이상 표시하지 않음"
+
+#: src/tourManager.ts:41 src/tourManager.ts:47
+msgid "Back"
+msgstr "뒤로"
+
+#: src/tourManager.ts:42 src/tourManager.ts:48
+msgid "Close"
+msgstr "닫기"
+
+#: src/tourManager.ts:43 src/tourManager.ts:49
+msgid "Done"
+msgstr "완료"
+
+#: src/tourManager.ts:44 src/tourManager.ts:50
+msgid "Next"
+msgstr "다음"
+
+#: src/tourManager.ts:45 src/tourManager.ts:51
+msgid "Open"
+msgstr "열기"
+
+#: src/tourManager.ts:46 src/tourManager.ts:52
+msgid "Skip"
+msgstr "건너뛰기"
+
+#: src/userTourManager.ts:69
+msgid "Error encountered adding user tour %1 (%2)"
+msgstr "사용자 둘러보기 %1(%2) 을(를) 추가하는 동안 오류가 발생했습니다."
+
