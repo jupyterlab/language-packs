@@ -37,6 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CURRENT_LOCALE: ${{ matrix.locale }}
+      CURRENT_LOCALE_DIR: language-packs/jupyterlab-language-pack-${{ matrix.locale }}
     strategy:
       fail-fast: false
       matrix:
@@ -81,20 +82,21 @@ jobs:
       run: |
         python -m pip install --upgrade pip build twine
     - name: Prepare env variables
+      shell: bash
+      working-directory: "${{ env.CURRENT_LOCALE_DIR }}"
       run: |
         echo "CURRENT_TAG=${CURRENT_LOCALE}@v$(python -m hatch version)" >> $GITHUB_ENV
-        echo "CURRENT_LOCALE_DIR=language-packs/jupyterlab-language-pack-${CURRENT_LOCALE}" >> $GITHUB_ENV
+        cat $GITHUB_ENV
     - name: Build release artifacts
       shell: bash
+      working-directory: "${{ env.CURRENT_LOCALE_DIR }}"
       run: |
         # Create global dist folder if it does not exist
-        mkdir -p dist
-        pushd ${{ env.CURRENT_LOCALE_DIR }}
+        mkdir -p ../dist
         python -m build
         python -m twine check dist/*
         # Copy the artifacts to the global repository
-        popd
-        cp -r ./${{ env.CURRENT_LOCALE_DIR }}/dist/* ./dist
+        cp -r ./dist/* ../dist
     - name: Upload language pack artifacts
       uses: actions/upload-artifact@v3
       with:
