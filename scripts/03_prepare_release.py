@@ -10,7 +10,6 @@ This script will prepare a release by:
 # Standard library imports
 import argparse
 import os
-import re
 import subprocess
 import sys
 import traceback
@@ -26,17 +25,20 @@ HERE = Path(__file__).parent.resolve()
 REPO_ROOT = HERE.parent
 LANG_PACKS_PATH = REPO_ROOT / "language-packs"
 PYPROJECT_FILE = "pyproject.toml"
-VERSION_REGEX = re.compile(r"\d+\.\d+\.post\d+")
 
 
-def bumpversion(path: Path, new_version: Optional[str] = "rev") -> None:
+def bumpversion(path: Path, new_version: Optional[str] = "rev") -> str:
     """Update the package version.
 
     Args:
         path: Package path
         release: Is the new version a release or a patch version.
+    Returns:
+        Newest version
     """
     subprocess.check_call(["hatch", "version", new_version], cwd=path)
+
+    return subprocess.check_output(["hatch", "version"], encoding="utf-8", cwd=path).strip()
 
 
 def prepare_jupyterlab_lp_release(
@@ -50,8 +52,14 @@ def prepare_jupyterlab_lp_release(
         crowding_key: Crowdin API key
         new_version: [optional] New version of the package - default "rev"
     """
+    final_version = None
     # This assumes the JupyterLab folder is the source of truth for available locales
     for package_dir in sorted(filter(lambda i: i.is_dir(), LANG_PACKS_PATH.iterdir())):
+        if final_version is None:
+            final_version = bumpversion(package_dir, new_version)
+            # Restore changes as we use copier to update the version
+            subprocess.check_call(["git", "restore", "."])
+
         print(f"Prepare release for {package_dir.name}")
         locale_name = package_dir.name[-5:]
         locale = locale_name.replace("-", "_")
@@ -67,6 +75,8 @@ def prepare_jupyterlab_lp_release(
                         "--force",
                         "--vcs-ref",
                         "HEAD",
+                        "--data",
+                        f"version=\"{final_version}\"",
                         "update",
                     ],
                     cwd=package_dir,
@@ -74,16 +84,16 @@ def prepare_jupyterlab_lp_release(
             except subprocess.CalledProcessError:
                 print(f"Failed to update the package template for {package_dir.name}.")
                 traceback.print_exc()
+                bumpversion(package_dir, new_version)
 
-            bumpversion(package_dir, new_version)
         else:
-            if VERSION_REGEX.fullmatch(new_version) is None:
+            if final_version is None:
                 api.create_new_language_pack(LANG_PACKS_PATH, locale)
             else:
                 api.create_new_language_pack(
                     LANG_PACKS_PATH,
                     locale,
-                    version=new_version,
+                    version=final_version,
                 )
 
         try:
@@ -100,6 +110,9 @@ def prepare_jupyterlab_lp_release(
                 f"An error occurred when generating the contributors list for '{locale_name}'."
             )
             traceback.print_exc()
+
+        # Copier does not support updating a dirty project
+        subprocess.check_call(["git", "commit", "-am", f"Update {package_dir.name}"])
 
 
 if __name__ == "__main__":
