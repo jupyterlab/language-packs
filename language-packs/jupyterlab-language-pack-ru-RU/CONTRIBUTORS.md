@@ -13,3 +13,4 @@
 * Иван Ястребов ([@esim.i2p](https://crowdin.com/profile/esim.i2p))
 * Pishunick ([@Pishunick](https://crowdin.com/profile/Pishunick))
 * Frédéric Collonval ([@fcollonval](https://crowdin.com/profile/fcollonval))
+* Michael Tulskikh ([@MichaelTulskikh](https://crowdin.com/profile/MichaelTulskikh))
