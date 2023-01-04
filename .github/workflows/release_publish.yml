@@ -80,7 +80,7 @@ jobs:
         python-version: '3.9'
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip build twine
+        python -m pip install --upgrade pip build hatch twine
     - name: Prepare env variables
       shell: bash
       working-directory: "${{ env.CURRENT_LOCALE_DIR }}"
@@ -89,14 +89,15 @@ jobs:
         cat $GITHUB_ENV
     - name: Build release artifacts
       shell: bash
-      working-directory: "${{ env.CURRENT_LOCALE_DIR }}"
       run: |
         # Create global dist folder if it does not exist
-        mkdir -p ../dist
+        mkdir -p dist
+        pushd ${{ env.CURRENT_LOCALE_DIR }}
         python -m build
         python -m twine check dist/*
         # Copy the artifacts to the global repository
-        cp -r ./dist/* ../dist
+        popd
+        cp -r ./${{ env.CURRENT_LOCALE_DIR }}/dist/* ./dist
     - name: Upload language pack artifacts
       uses: actions/upload-artifact@v3
       with:
