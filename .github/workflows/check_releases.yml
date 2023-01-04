@@ -49,5 +49,5 @@ jobs:
             git commit -m "New releases"
             
             git push --set-upstream origin "${BRANCH_NAME}"
-            hub pull-request -m "New releases available at ${SHA}"
+            hub pull-request -b "main" -m "New releases available at ${SHA}"
           fi
