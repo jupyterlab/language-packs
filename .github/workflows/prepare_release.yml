@@ -29,9 +29,6 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install -r requirements.txt
-      - name: Update the language packages
-        run: |
-          python scripts/03_prepare_release.py --new-version "${{ github.event.inputs.version }}"
       - name: Set branch name and get hash
         run: |
           echo "BRANCH_NAME=pack-update-$(git rev-parse --short HEAD)" >> $GITHUB_ENV
@@ -42,10 +39,9 @@ jobs:
         run: |
           git config user.name "JupyterLab Language Packs Bot"
           git config user.email 'jupyterlab-bot@users.noreply.github.com'
-      - name: Commit changes
+      - name: Update the language packages
         run: |
-          git add language-packs
-          git commit -m "Update language packs"
+          python scripts/03_prepare_release.py --new-version "${{ github.event.inputs.version }}"
       - name: Push the changes
         run: |
           git push --set-upstream origin "${{ env.BRANCH_NAME }}"
