@@ -2,6 +2,7 @@
 
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * LeeSeongGyu ([@LeeSeongGyu](https://crowdin.com/profile/LeeSeongGyu))
+* Hwanyong Lee ([@grbear](https://crowdin.com/profile/grbear))
 * 민섭정 ([@jungminseob2](https://crowdin.com/profile/jungminseob2))
 * Little Penguin ([@littlepenguin486](https://crowdin.com/profile/littlepenguin486))
 * Dongook Son ([@donny-son](https://crowdin.com/profile/donny-son))
