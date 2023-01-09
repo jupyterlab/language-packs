@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2023-01-09 10:35\n"
+"PO-Revision-Date: 2023-01-09 11:30\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -886,12 +886,12 @@ msgstr "문서 검색 플러그인."
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/searchDebounceTime/description
 msgctxt "settings"
 msgid "The debounce time in milliseconds applied to the search input field. The already opened input files will not be updated if you change that value"
-msgstr ""
+msgstr "디바운스 시간은 밀리초 단위로 정의되어 검색 입력 필드에 적용된다. 이미 열린 입력 파일에는 값을 변경하였다고 하더라도 갱신되지 않는다."
 
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/searchDebounceTime/title
 msgctxt "settings"
 msgid "Search debounce time (ms)"
-msgstr ""
+msgstr "검색 디바운스 타임 (ms)"
 
 #: /packages/documentsearch-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -911,7 +911,7 @@ msgstr "확장 관리자"
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/disclaimed/description
 msgctxt "settings"
 msgid "Whether the user understand that extensions managed through this interface run arbitrary code that may be dangerous"
-msgstr ""
+msgstr "사용자가 이 인터페이스를 이용해 관리하는 확장 프로그램이 위험할 수 있다는 것을 이해하고 있는지 여부."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/disclaimed/title
 msgctxt "settings"
@@ -921,7 +921,7 @@ msgstr "면책 조건"
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enableCdn/description
 msgctxt "settings"
 msgid "Enables using the CDN to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry"
-msgstr ""
+msgstr "CDN을 통해 전체 패키지 데이터를 가져오는 것을 활성화 한다. 이를 활성화하지 않으면 구성된 NPM 레지스트리가 사용된다. CORS가 NPM 레지스트리에서는 지원되지 않으므로, 커스텀 레지스트리를 적용하는 경우 비활성화만 가능하다."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enableCdn/title
 msgctxt "settings"
@@ -943,7 +943,7 @@ msgstr "활성화된 상태"
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/description
 msgctxt "settings"
 msgid "The URI of the CDN to use for fetching full package data"
-msgstr ""
+msgstr "전체 패키지 데이터를 가져오기 위해 사용될 CDN의 URI."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/title
 msgctxt "settings"
@@ -953,7 +953,7 @@ msgstr "NPM CDN"
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmRegistry/description
 msgctxt "settings"
 msgid "The URI of the NPM registry to use for searching for jupyterlab extensions"
-msgstr ""
+msgstr "Jupyterlab 확장프로그램을 검색하는데 사용될 NPM 레지스트리의 URI."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmRegistry/title
 msgctxt "settings"
@@ -1018,12 +1018,12 @@ msgstr "최근 수정된 열 보기"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/useFuzzyFilter/description
 msgctxt "settings"
 msgid "Whether to apply fuzzy algorithm while filtering on file names"
-msgstr ""
+msgstr "파일명을 필터링 할때 퍼지 알고리즘을 적용할지 여부."
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/useFuzzyFilter/title
 msgctxt "settings"
 msgid "Filter on file name with a fuzzy search"
-msgstr ""
+msgstr "퍼지 검색을 이용할때 사용하는 파일 명 필터"
 
 #: /packages/filebrowser-extension/schema/browser.json:/title
 msgctxt "schema"
@@ -1143,7 +1143,9 @@ msgctxt "settings"
 msgid "The configuration for all text editors.\n"
 "If `fontFamily`, `fontSize` or `lineHeight` are `null`,\n"
 "values from current theme are used."
-msgstr ""
+msgstr "모든 텍스트 편집기를 위한 구성.\n"
+"만일 `fontFamily`, `fontSize`, `lineHeight` 가 `null` 이면,\n"
+"현재 테마가 지정한 값이 사용된다."
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/title
 msgctxt "settings"
@@ -1285,7 +1287,7 @@ msgstr "로그 콘솔"
 #: /packages/logconsole-extension/schema/plugin.json:/properties/flash/description
 msgctxt "settings"
 msgid "Whether to flash on new log message or not"
-msgstr ""
+msgstr "새로운 로그 메시지가 있을 경우 깜박임 여부"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/flash/title
 msgctxt "settings"
@@ -1522,17 +1524,17 @@ msgstr "기본 셀 유형"
 #: /packages/notebook-extension/schema/tracker.json:/properties/experimentalDisableDocumentWideUndoRedo/description
 msgctxt "settings"
 msgid "Disable the undo/redo on the notebook document level, so actions independent cells can have their own history. The undo/redo never applies on the outputs, in other words, outputs don't have history. A moved cell completely looses history capability for now."
-msgstr ""
+msgstr "노트북 문서 수준에서의 취소/재실행 비활성화하여, 작업에 독립적인 셀이 자신의 작업 기록을 가질 수 있습니다. 취소/재실행은 출력에 적용되지 않습니다. 즉, 출력은 작업 기록을 가질 수 없습니다. 지금부터 이동된 셀은 작업 기록 기능을 완전히 잃게 됩니다."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/experimentalDisableDocumentWideUndoRedo/title
 msgctxt "settings"
 msgid "Experimental settings to enable the undo/redo on the notebook document level."
-msgstr ""
+msgstr "실험적인 설정으로 노트북 문서 수준에서 취소/재실행 기능을 활성화 합니다."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/description
 msgctxt "settings"
 msgid "Whether to shut down or not the kernel when closing a notebook."
-msgstr ""
+msgstr "노트북을 닫을때 커널을 종료할 지 여부."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/title
 msgctxt "settings"
@@ -1542,7 +1544,7 @@ msgstr "커널 종료"
 #: /packages/notebook-extension/schema/tracker.json:/properties/kernelStatus/description
 msgctxt "settings"
 msgid "Defines the position and components of execution progress indicator."
-msgstr ""
+msgstr "실행 진행 상황을 나타낼 위치와 요소를 정의."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/kernelStatus/title
 msgctxt "settings"
@@ -1562,17 +1564,18 @@ msgstr "마크다운 셀 구성"
 #: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/description
 msgctxt "settings"
 msgid "Defines the maximum number of output cells to be rendered in the output area for cells with many outputs. The output area will have a head and the remaining outputs will be trimmed and not displayed unless the user clicks on the information message. Set to 0 to have the complete display."
-msgstr ""
+msgstr "많은 출력을 갖고 있는 셀들이 출력 영영에서 렌더링을 할때, 최대 출력 셀을 정의 한다. \n"
+"출력 영역은 머릿들과 나머지 출력 부분으로 구성되어 나머지 영역을 보여지지 않고, 사용자가 정보 메시지를 클릭하여야 만 보여지게 된다. 만일 모두 보여지기를 원하는 경우 0으로 설정한다."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/title
 msgctxt "settings"
 msgid "The maximum number of output cells to be rendered in the output area."
-msgstr ""
+msgstr "출력 영역에서 렌더링될 출력 셀의 최대 개수."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/numberCellsToRenderDirectly/description
 msgctxt "settings"
 msgid "Define the number of cells to render directly when virtual notebook intersection observer is available"
-msgstr ""
+msgstr "가상 노트북 검사 옵저버가 활성화 되어 있을때, 직접 렌더링을 할 셀의 개수를 정의"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/numberCellsToRenderDirectly/title
 msgctxt "settings"
@@ -1612,7 +1615,7 @@ msgstr "Raw 셀 구성"
 #: /packages/notebook-extension/schema/tracker.json:/properties/recordTiming/description
 msgctxt "settings"
 msgid "Should timing data be recorded in cell metadata"
-msgstr ""
+msgstr "타이밍 데이터가 셀의 메타데이터에 저장되어야 하는지 여부"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/recordTiming/title
 msgctxt "settings"
@@ -1622,27 +1625,27 @@ msgstr "기록 시간"
 #: /packages/notebook-extension/schema/tracker.json:/properties/remainingTimeBeforeRescheduling/description
 msgctxt "settings"
 msgid "Define the remaining time in milliseconds before virtual notebook rendering is rescheduled. Set 0 if you want to disable any rescheduling"
-msgstr ""
+msgstr "가상 노트북 렌더링이 리스케줄링될때까지 남은 시간을 정의. 0으로 설정하면 어떤 리스케줄링도 작동하지 않는다."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/remainingTimeBeforeRescheduling/title
 msgctxt "settings"
 msgid "Remaining time in milliseconds before virtual notebook rendering is rescheduled"
-msgstr ""
+msgstr "가상 노트북 렌더링이 리스케줄링될때까지 남은 시간"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/renderCellOnIdle/description
 msgctxt "settings"
 msgid "Defines if the placeholder cells should be rendered when the browser is idle"
-msgstr ""
+msgstr "브라우저가 쉬는 상태 플레이스 홀더 셀을 렌더링해야 하는지 여부를 정의합니다."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/renderCellOnIdle/title
 msgctxt "settings"
 msgid "Render cell on browser idle time"
-msgstr ""
+msgstr "한가한 시간에 브라우저에 셀을 렌더링"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/renderingLayout/description
 msgctxt "settings"
 msgid "Global setting to define the rendering layout in notebooks. 'default' or 'side-by-side' are supported."
-msgstr ""
+msgstr "노트북의 렌더링 레이아웃을 정의하는 전역 설정. 'default' 또는 'side-by-site' 가 지원됨."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/renderingLayout/title
 msgctxt "settings"
@@ -1652,7 +1655,7 @@ msgstr "렌더링 레이아웃"
 #: /packages/notebook-extension/schema/tracker.json:/properties/scrollPastEnd/description
 msgctxt "settings"
 msgid "Whether to be able to scroll so the last cell is at the top of the panel"
-msgstr ""
+msgstr "마지막 셀이 패널의 맨 위에 오도록 스크롤되도록 하는 여부"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/scrollPastEnd/title
 msgctxt "settings"
@@ -1662,7 +1665,7 @@ msgstr "마지막 셀 다음으로 스크롤"
 #: /packages/notebook-extension/schema/tracker.json:/properties/showEditorForReadOnlyMarkdown/description
 msgctxt "settings"
 msgid "Should an editor be shown for read-only markdown"
-msgstr ""
+msgstr "읽기 전용 마크다운에 에디터를 통해 표시되어야 한다."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/showEditorForReadOnlyMarkdown/title
 msgctxt "settings"
@@ -1682,7 +1685,7 @@ msgstr "나란히 보기 오른쪽 여백 무시"
 #: /packages/notebook-extension/schema/tracker.json:/properties/sideBySideOutputRatio/description
 msgctxt "settings"
 msgid "For the side-by-side rendering, the side-by-side output ratio defines the width of the output vs the input. Set 1 for same size, > 1 for larger output, < 1 for smaller output."
-msgstr ""
+msgstr "나란히 비교 렌더링에서, 나란히 출력 비율은 입력에 대한 출력의 폭 비율을 정의한다. 1로 설정하면 같은 크기이고, > 1 이면 출력이 크고, < 1 이면 출력이 더 작다."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/sideBySideOutputRatio/title
 msgctxt "settings"
@@ -1712,7 +1715,7 @@ msgstr "설정 편집기 폼 Ui 설정."
 #: /packages/settingeditor-extension/schema/form-ui.json:/properties/settingEditorType/description
 msgctxt "settings"
 msgid "Set the type of editor to use while editing your settings."
-msgstr ""
+msgstr "설정을 편집할때 사용할 편집기의 유형을 설정"
 
 #: /packages/settingeditor-extension/schema/form-ui.json:/properties/settingEditorType/title
 msgctxt "settings"
@@ -1767,12 +1770,12 @@ msgstr "상태 바"
 #: /packages/statusbar-extension/schema/plugin.json:/properties/startMode/description
 msgctxt "settings"
 msgid "The mode under which JupyterLab should start. If empty, the mode will be imposed by the URL"
-msgstr ""
+msgstr "JupyterLab이 시작하는 모드입니다. 비어 있으면 URL에 의해 모드가 적용됩니다."
 
 #: /packages/statusbar-extension/schema/plugin.json:/properties/startMode/title
 msgctxt "settings"
 msgid "Start mode: ``, `single`or `multiple`"
-msgstr ""
+msgstr "시작 모드: ``, `single`or `multiple`"
 
 #: /packages/statusbar-extension/schema/plugin.json:/properties/visible/description
 msgctxt "settings"
@@ -1802,7 +1805,7 @@ msgstr "터미널"
 #: /packages/terminal-extension/schema/plugin.json:/properties/closeOnExit/description
 msgctxt "settings"
 msgid "Close the widget when exiting the terminal."
-msgstr ""
+msgstr "터미널을 종료하면 위젯도 닫기."
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/closeOnExit/title
 msgctxt "settings"
@@ -1842,7 +1845,7 @@ msgstr "줄 간격"
 #: /packages/terminal-extension/schema/plugin.json:/properties/macOptionIsMeta/description
 msgctxt "settings"
 msgid "Option key on macOS can be used as meta key. This enables to use shortcuts such as option + f to move cursor forward one word"
-msgstr ""
+msgstr "MacOS에서는 Option 키가 meta 키 역할을 하게 된다. 이를 통해 option + f 를 통해 커서를 한 단어 앞으로 보내는 것과 같은 단축 키를 사용할 수 있다."
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/macOptionIsMeta/title
 msgctxt "settings"
@@ -1862,7 +1865,7 @@ msgstr "붙여넣기 Ctrl+V"
 #: /packages/terminal-extension/schema/plugin.json:/properties/screenReaderMode/description
 msgctxt "settings"
 msgid "Add accessibility elements for use with screen readers."
-msgstr ""
+msgstr "스크린을 통해 읽는 사람들에게 도움을 주는 접근성 요소를 추가한다."
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/screenReaderMode/title
 msgctxt "settings"
@@ -1872,17 +1875,17 @@ msgstr "화면 읽기 모드"
 #: /packages/terminal-extension/schema/plugin.json:/properties/scrollback/description
 msgctxt "settings"
 msgid "The amount of scrollback beyond initial viewport"
-msgstr ""
+msgstr "초기 뷰포트에서 뒤로 스크롤 할 수 최대 양"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/scrollback/title
 msgctxt "settings"
 msgid "Scrollback Buffer"
-msgstr ""
+msgstr "스크롤백 버퍼 "
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/shutdownOnClose/description
 msgctxt "settings"
 msgid "Shut down the session when closing the terminal."
-msgstr ""
+msgstr "터미널을 닫으면 세션을 종료."
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/shutdownOnClose/title
 msgctxt "settings"
@@ -1932,12 +1935,12 @@ msgstr "h1 번호 활성화"
 #: /packages/toc-extension/schema/plugin.json:/properties/syncCollapseState/description
 msgctxt "settings"
 msgid "If set to true, when a header is collapsed in the table of contents the corresponding section in the notebook is collapsed as well and vice versa."
-msgstr ""
+msgstr "True로 설정하면, 목차에서 제목이 접힘/펼침이 되면, 해당되는 노트북의 섹션이 접힘/펼침이 된다."
 
 #: /packages/toc-extension/schema/plugin.json:/properties/syncCollapseState/title
 msgctxt "settings"
 msgid "Synchronize collapse state"
-msgstr ""
+msgstr "축소 상태를 동기화"
 
 #: /packages/toc-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1992,17 +1995,17 @@ msgstr "언어"
 #: /packages/translation-extension/schema/plugin.json:/properties/displayStringsPrefix/description
 msgctxt "settings"
 msgid "Display the `stringsPrefix` on localized strings."
-msgstr ""
+msgstr "현지화 문자열에 `stringsPrefix`를 표시."
 
 #: /packages/translation-extension/schema/plugin.json:/properties/displayStringsPrefix/title
 msgctxt "settings"
 msgid "Display localized strings prefix"
-msgstr ""
+msgstr "현지화 문자열 접두사 표시"
 
 #: /packages/translation-extension/schema/plugin.json:/properties/locale/description
 msgctxt "settings"
 msgid "Set the interface display language. Examples: 'es_CO', 'fr'."
-msgstr ""
+msgstr "인터페이스 표시 언어 설정. 예: 'ko_KR', 'fr'"
 
 #: /packages/translation-extension/schema/plugin.json:/properties/locale/title
 msgctxt "settings"
@@ -2840,7 +2843,17 @@ msgid "Overrides for the default viewers for file types.\n"
 "%1\n\n"
 "Available file types:\n"
 "%2"
-msgstr ""
+msgstr "파일 유형에 따른 기본 뷰어를 재정의.\n"
+"파일 유형 이름에서 문서 뷰어 이름으로의 매핑을 지정합니다. 예를 들면:\n\n"
+"defaultViewers: {\n"
+"  markdown: \"Markdown Preview\"\n"
+"}\n\n"
+"만일 존재하지 않는 파일 유형이나 뷰어를 지정하거나, 혹은 뷰어가 주어진 파일 유형에서 \n"
+"파일을 열수 없는 경우, 이러한 재정의는 작동하지 않는다. \n\n"
+"사용가능한 뷰어:\n"
+"%1\n\n"
+"사용가능한 파일 유형:\n"
+"%2"
 
 #: packages/docmanager-extension/src/index.tsx:368 packages/filebrowser-extension/src/index.ts:336
 msgid "Download"
@@ -2944,7 +2957,7 @@ msgstr "다시 묻지 않기"
 
 #: packages/docmanager-extension/src/index.tsx:746
 msgid "If checked, you will not be asked to rename future untitled files when saving them."
-msgstr ""
+msgstr "활성화되면, untitled 파일을 저장할 때 이름을 바꿀것을 요청하지 않는다."
 
 #: packages/docmanager-extension/src/index.tsx:803
 msgid "Save All"
@@ -3231,15 +3244,17 @@ msgstr "확장 관리자 섹션"
 msgid "This package has indicated that it needs a corresponding server\n"
 "extension. Please contact your Administrator to update the server with\n"
 "one of the following commands:"
-msgstr ""
+msgstr "이 패키지는 해당하는 커널 패키지를 특별히 요구하고 있습니다.\n"
+"관리자와 협의하여 서버를 업데이트 하기를 권장합니다. \n"
+"서버 업데이트는 다음 명령 중 하나로 할 수 있습니다."
 
 #: packages/extensionmanager/src/companions.tsx:153
 msgid "This package has indicated that it needs a corresponding package for the kernel."
-msgstr ""
+msgstr "이 패키지는 커널에 해당되는 패키지가 필요한 것으로 판단됩니다."
 
 #: packages/extensionmanager/src/companions.tsx:161
 msgid "The package <code>%1</code>, is required by the following kernels:"
-msgstr ""
+msgstr "이 패키지 <code>%1</code>는 다음과 같은 커널을 요구합니다:"
 
 #: packages/extensionmanager/src/companions.tsx:178
 msgid "This package has indicated that it needs a corresponding kernel\n"
