@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2023-01-09 06:07\n"
+"PO-Revision-Date: 2023-01-09 07:09\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -201,12 +201,24 @@ msgid "Note: To disable a context menu item,\n"
 "  ]\n"
 "}\n\n"
 "Context menu description:"
-msgstr ""
+msgstr "주의: 컨텍스트 메뉴 아이템을 비활성화 하려면 \n"
+"다음을 복사하여 \"사용자 개인 설정\"에 \"disabled\" 키를 추가합니다. \n"
+"다음 예제는 파일에 대한 아이템 다운로드를 비활성화하는 예 입니다. \n"
+"{\n"
+"  \"contextMenu\": [\n"
+"    {\n"
+"      \"command\": \"filebrowser:download\",\n"
+"      \"selector\": \".jp-DirListing-item[data-isdir=\\\"false\\\"]\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"컨텍스트 메뉴 설명:"
 
 #: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/items/allOf[1]/properties/selector/description
 msgctxt "settings"
 msgid "The CSS selector for the context menu item."
-msgstr "상황에 맞는 메뉴 항목의 CSS 선택기입니다."
+msgstr "상황에 맞는 메뉴 항목의 CSS 선택창입니다."
 
 #: /packages/application-extension/schema/context-menu.json:/properties/contextMenu/title
 msgctxt "settings"
@@ -458,7 +470,7 @@ msgstr ""
 #: /packages/codemirror-extension/schema/commands.json:/properties/lineWiseCopyCut/title /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/lineWiseCopyCut/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/lineWiseCopyCut/title
 msgctxt "settings"
 msgid "Line-wise Ctrl-C"
-msgstr ""
+msgstr "줄단위로 Ctrl-C"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/scrollPastEnd/description
 msgctxt "settings"
@@ -589,7 +601,7 @@ msgstr ""
 #: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/cursorBlinkRate/title
 msgctxt "settings"
 msgid "Cursor Blinking Rate"
-msgstr ""
+msgstr "커서 깜박임 속도"
 
 #: /packages/console-extension/schema/tracker.json:/definitions/editorConfig/properties/insertSpaces/title /packages/fileeditor-extension/schema/plugin.json:/definitions/editorConfig/properties/insertSpaces/title /packages/notebook-extension/schema/tracker.json:/definitions/editorConfig/properties/insertSpaces/title
 msgctxt "settings"
@@ -639,7 +651,7 @@ msgstr "코드 콘솔 설정."
 #: /packages/console-extension/schema/tracker.json:/jupyter.lab.menus/main[1]/items[1]/submenu/label
 msgctxt "menu"
 msgid "Console Run Keystroke"
-msgstr ""
+msgstr "콘솔 실행 키"
 
 #: /packages/console-extension/schema/tracker.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -702,7 +714,19 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "주의: 툴바 아이템을 비활성화 하려면, \n"
+"다음을 복사하여 \"사용자  개인 설정\"에\n"
+"\"disabled\" 키를 추가하세요. \n"
+"다음은 구분자 선택 아이템을 비활성화하는 예제 입니다:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"delimiter\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"툴바 설명:"
 
 #: /packages/csvviewer-extension/schema/csv.json:/properties/toolbar/title
 msgctxt "settings"
@@ -852,7 +876,7 @@ msgstr "문서 관리자"
 #: /packages/documentsearch-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Document search plugin."
-msgstr ""
+msgstr "문서 검색 플러그인."
 
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/searchDebounceTime/description
 msgctxt "settings"
@@ -908,7 +932,7 @@ msgstr ""
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/title
 msgctxt "settings"
 msgid "Enabled Status"
-msgstr ""
+msgstr "활성화된 상태"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/description
 msgctxt "settings"
@@ -973,7 +997,7 @@ msgstr ""
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/title
 msgctxt "settings"
 msgid "Show hidden files"
-msgstr ""
+msgstr "숨긴 파일 표시"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showLastModifiedColumn/description
 msgctxt "settings"
@@ -1008,7 +1032,7 @@ msgstr ""
 #: /packages/filebrowser-extension/schema/download.json:/title
 msgctxt "schema"
 msgid "File Browser Download"
-msgstr ""
+msgstr "파일 브라우저 다운로드"
 
 #: /packages/filebrowser-extension/schema/open-browser-tab.json:/description
 msgctxt "schema"
@@ -1054,7 +1078,19 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "주의: 툴바 아이템을 비활성화 하려면, \n"
+"다음을 복사하여 \"사용자  개인 설정\"에\n"
+"\"disabled\" 키를 추가하세요. \n"
+"다음은 업로드 버튼을 비활성화하는 예제 입니다:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"uploader\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"툴바 설명:"
 
 #: /packages/filebrowser-extension/schema/widget.json:/properties/toolbar/title
 msgctxt "settings"
@@ -1113,7 +1149,9 @@ msgctxt "settings"
 msgid "Note: To disable a toolbar item,\n"
 "copy it to User Preferences and add the\n"
 "\"disabled\" key. Toolbar description:"
-msgstr ""
+msgstr "주의: 툴바 아이템을 비활성화 하려면, \n"
+"다음을 복사하여 \"사용자 개인 설정\"에\n"
+"\"disabled\" 키를 추가하세요. 툴바 설명:"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
@@ -1154,7 +1192,19 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "주의: 툴바 아이템을 비활성화 하려면, \n"
+"다음을 복사하여 \"사용자  개인 설정\"에\n"
+"\"disabled\" 키를 추가하세요. \n"
+"다음은 리프레쉬 아이템을 비활성화하는 예제 입니다:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"refresh\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"툴바 설명:"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
@@ -1326,7 +1376,29 @@ msgid "Note: To disable a menu or a menu item,\n"
 "  ]\n"
 "}\n\n"
 "Menu description:"
-msgstr ""
+msgstr "주의: 메뉴 혹은 메뉴 아이템을 비활성화 하려면, \n"
+"다음을 복사하여 사용자 개인 설정에 \n"
+"\"disabled\" 키를 추가합니다. \n"
+"다음 예제는 \"탭\" 메뉴와 \"Restart Kernel and Run up to Selected Cell\" \n"
+"아이템을 비활성화 합니다:\n"
+"{\n"
+"  \"menus\": [\n"
+"    {\n"
+"      \"id\": \"jp-mainmenu-tabs\",\n"
+"      \"disabled\": true\n"
+"    },\n"
+"    {\n"
+"      \"id\": \"jp-mainmenu-kernel\",\n"
+"      \"items\": [\n"
+"        {\n"
+"          \"command\": \"notebook:restart-and-run-to-selected\",\n"
+"          \"disabled\": true\n"
+"        }\n"
+"      ]\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"메뉴 설명:"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/properties/menus/title
 msgctxt "settings"
@@ -1372,7 +1444,19 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "주의: 툴바 아이템을 비활성화 하려면, \n"
+"다음을 복사하여 \"사용자  개인 설정\"에\n"
+"\"disabled\" 키를 추가하세요. \n"
+"다음은 인터럽트 버튼을 비활성화하는 예제 입니다:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"interrupt\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"툴바 설명:"
 
 #: /packages/notebook-extension/schema/panel.json:/properties/toolbar/title
 msgctxt "settings"
@@ -1527,7 +1611,7 @@ msgstr ""
 #: /packages/notebook-extension/schema/tracker.json:/properties/recordTiming/title
 msgctxt "settings"
 msgid "Recording timing"
-msgstr ""
+msgstr "기록 시간"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/remainingTimeBeforeRescheduling/description
 msgctxt "settings"
@@ -1557,7 +1641,7 @@ msgstr ""
 #: /packages/notebook-extension/schema/tracker.json:/properties/renderingLayout/title
 msgctxt "settings"
 msgid "Rendering Layout"
-msgstr ""
+msgstr "렌더링 레이아웃"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/scrollPastEnd/description
 msgctxt "settings"
@@ -1657,7 +1741,7 @@ msgstr "단축키"
 #: /packages/shortcuts-extension/schema/shortcuts.json:/properties/shortcuts/description
 msgctxt "settings"
 msgid "The list of keyboard shortcuts."
-msgstr ""
+msgstr "키보드 단축키 리스트."
 
 #: /packages/shortcuts-extension/schema/shortcuts.json:/title
 msgctxt "schema"
@@ -1717,7 +1801,7 @@ msgstr ""
 #: /packages/terminal-extension/schema/plugin.json:/properties/closeOnExit/title
 msgctxt "settings"
 msgid "Close on exit"
-msgstr ""
+msgstr "종료시 닫기"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontFamily/description
 msgctxt "settings"
@@ -1727,22 +1811,22 @@ msgstr ""
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontFamily/title
 msgctxt "settings"
 msgid "Font family"
-msgstr ""
+msgstr "글꼴 모음"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontSize/description
 msgctxt "settings"
 msgid "The font size used to render text."
-msgstr ""
+msgstr "텍스트를 렌더링하는데 사용될 글꼴 크기"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontSize/title
 msgctxt "settings"
 msgid "Font size"
-msgstr ""
+msgstr "글꼴 크기"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/lineHeight/description
 msgctxt "settings"
 msgid "The line height used to render text."
-msgstr ""
+msgstr "텍스트를 렌더링하는데 사용될 라인의 높이"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/lineHeight/title
 msgctxt "settings"
@@ -1857,27 +1941,27 @@ msgstr ""
 #: /packages/tooltip-extension/schema/consoles.json:/description
 msgctxt "schema"
 msgid "Console tooltip settings."
-msgstr ""
+msgstr "콘솔 도구모음 설정"
 
 #: /packages/tooltip-extension/schema/consoles.json:/title
 msgctxt "schema"
 msgid "Console Tooltips"
-msgstr ""
+msgstr "콘솔 도구모음"
 
 #: /packages/tooltip-extension/schema/files.json:/description
 msgctxt "schema"
 msgid "File editor tooltip settings."
-msgstr ""
+msgstr "파일 편집기 도구모움 설정."
 
 #: /packages/tooltip-extension/schema/files.json:/title
 msgctxt "schema"
 msgid "File Editor Tooltips"
-msgstr ""
+msgstr "파일 편집기 도구모음"
 
 #: /packages/tooltip-extension/schema/notebooks.json:/description
 msgctxt "schema"
 msgid "Notebook tooltip settings."
-msgstr ""
+msgstr "노트북 도구모움 설정."
 
 #: /packages/tooltip-extension/schema/notebooks.json:/title
 msgctxt "schema"
@@ -2323,7 +2407,7 @@ msgstr ""
 
 #: packages/apputils/src/sessioncontext.tsx:1687
 msgid "Use No Kernel"
-msgstr ""
+msgstr "커널 사용하지 않음"
 
 #: packages/apputils/src/sessioncontext.tsx:1689 packages/apputils/src/sessioncontext.tsx:613 packages/statusbar/src/defaults/kernelStatus.tsx:185
 msgid "No Kernel"
@@ -2331,31 +2415,31 @@ msgstr "커널 선택 안함"
 
 #: packages/apputils/src/sessioncontext.tsx:1711
 msgid "Path:"
-msgstr ""
+msgstr "경로:"
 
 #: packages/apputils/src/sessioncontext.tsx:1712
 msgid "Name:"
-msgstr ""
+msgstr "이름:"
 
 #: packages/apputils/src/sessioncontext.tsx:1713
 msgid "Kernel Name:"
-msgstr ""
+msgstr "커널 이름:"
 
 #: packages/apputils/src/sessioncontext.tsx:1714
 msgid "Kernel Id:"
-msgstr ""
+msgstr "커널 Id:"
 
 #: packages/apputils/src/thememanager.ts:362
 msgid "Neither theme %1 nor default %2 loaded."
-msgstr ""
+msgstr "테마 %1 혹은 기본 %2 모두 로딩되지 않았습니다."
 
 #: packages/apputils/src/thememanager.ts:446
 msgid "Error Loading Theme"
-msgstr ""
+msgstr "테마 로딩 오류"
 
 #: packages/apputils/src/thememanager.ts:448 packages/docmanager-extension/src/index.tsx:379 packages/extensionmanager/src/companions.tsx:218 packages/extensionmanager/src/dialog.tsx:39 packages/extensionmanager/src/widget.tsx:354 packages/extensionmanager/src/widget.tsx:355
 msgid "OK"
-msgstr ""
+msgstr "확인"
 
 #: packages/apputils/src/toolbar/factory.ts:29
 msgid "Toolbar customization has changed. You will need to reload JupyterLab to see the changes."
@@ -2367,7 +2451,7 @@ msgstr "커널 변경"
 
 #: packages/apputils/src/toolbar/widget.tsx:1311
 msgid "Kernel %1"
-msgstr ""
+msgstr "커널 %1"
 
 #: packages/apputils/src/toolbar/widget.tsx:610 packages/mainmenu-extension/src/index.ts:472
 msgid "Interrupt the kernel"
@@ -2379,7 +2463,7 @@ msgstr "커널 재시작"
 
 #: packages/celltags/src/addwidget.ts:159 packages/celltags/src/addwidget.ts:31
 msgid "Add Tag"
-msgstr ""
+msgstr "태그 추가"
 
 #: packages/celltags/src/tool.ts:200
 msgid "Cell Tags"
@@ -2515,11 +2599,11 @@ msgstr ""
 
 #: packages/console/src/panel.ts:314
 msgid "Name: %1\n"
-msgstr ""
+msgstr "이름: %1\n"
 
 #: packages/console/src/panel.ts:315
 msgid "Directory: %1\n"
-msgstr ""
+msgstr "디렉토리: %1\n"
 
 #: packages/console/src/panel.ts:316
 msgid "Kernel: %1"
@@ -2528,36 +2612,38 @@ msgstr "커널: %1"
 #: packages/console/src/panel.ts:319
 msgid "\n"
 "Connected: %1"
-msgstr ""
+msgstr "\n"
+"연결됨: %1"
 
 #: packages/console/src/panel.ts:326
 msgid "\n"
 "Last Execution: %1"
-msgstr ""
+msgstr "\n"
+"최근 실행: %1"
 
 #: packages/console/src/panel.ts:67
 msgid "Console %1"
-msgstr ""
+msgstr "콘솔 %1"
 
 #: packages/csvviewer-extension/src/index.ts:92
 msgid "Go to Line"
-msgstr ""
+msgstr "라인으로 가기"
 
 #: packages/csvviewer/src/toolbar.ts:133
 msgid "tab"
-msgstr ""
+msgstr "탭"
 
 #: packages/csvviewer/src/toolbar.ts:134
 msgid "pipe"
-msgstr ""
+msgstr "파이프"
 
 #: packages/csvviewer/src/toolbar.ts:135
 msgid "hash"
-msgstr ""
+msgstr "해시"
 
 #: packages/csvviewer/src/toolbar.ts:141
 msgid "Delimiter: "
-msgstr ""
+msgstr "구분자: "
 
 #: packages/debugger-extension/src/index.ts:192 packages/debugger-extension/src/index.ts:193
 msgid "Restart Kernel and Debug…"
@@ -2687,11 +2773,11 @@ msgstr ""
 
 #: packages/debugger/src/panels/kernelSources/index.tsx:70
 msgid "Refresh kernel sources"
-msgstr "모든 소스 새로고침"
+msgstr "커널 소스 새로 고침"
 
 #: packages/debugger/src/panels/sources/header.tsx:34 packages/shortcuts-extension/src/components/TopNav.tsx:277
 msgid "Source"
-msgstr ""
+msgstr "소스"
 
 #: packages/debugger/src/panels/sources/index.ts:48
 msgid "Open in the Main Area"
@@ -2905,7 +2991,7 @@ msgstr ""
 
 #: packages/docmanager/src/dialogs.ts:116 packages/docregistry/src/context.ts:825 packages/docregistry/src/context.ts:837 packages/docregistry/src/context.ts:859 packages/docregistry/src/context.ts:870 packages/shortcuts-extension/src/components/ShortcutInput.tsx:499 packages/shortcuts-extension/src/components/ShortcutItem.tsx:254
 msgid "Overwrite"
-msgstr ""
+msgstr "덮어쓰기"
 
 #: packages/docmanager/src/dialogs.ts:180
 msgid "File Path"
@@ -3004,15 +3090,15 @@ msgstr ""
 
 #: packages/docregistry/src/mimedocument.ts:174 packages/docregistry/src/mimedocument.ts:70 packages/markdownviewer/src/widget.ts:201
 msgid "Renderer Failure: %1"
-msgstr ""
+msgstr "렌더링 실패: %1"
 
 #: packages/docregistry/src/registry.ts:1328
 msgid "default"
-msgstr ""
+msgstr "기본값"
 
 #: packages/docregistry/src/registry.ts:1351
 msgid "Text"
-msgstr ""
+msgstr "텍스트"
 
 #: packages/docregistry/src/registry.ts:1374 packages/launcher/src/index.tsx:149 packages/launcher/src/index.tsx:154 packages/notebook-extension/src/index.ts:1481 packages/notebook-extension/src/index.ts:1518 packages/notebook-extension/src/index.ts:760
 msgid "Notebook"
@@ -3020,7 +3106,7 @@ msgstr "노트북"
 
 #: packages/docregistry/src/registry.ts:1399
 msgid "Directory"
-msgstr ""
+msgstr "디렉토리"
 
 #: packages/docregistry/src/registry.ts:1426 packages/fileeditor-extension/src/commands.ts:989
 msgid "Markdown File"
@@ -3028,7 +3114,7 @@ msgstr "마크다운 파일"
 
 #: packages/docregistry/src/registry.ts:1433
 msgid "PDF File"
-msgstr ""
+msgstr "PDF 파일"
 
 #: packages/docregistry/src/registry.ts:1440 packages/fileeditor-extension/src/index.ts:209
 msgid "Python File"
@@ -3036,31 +3122,31 @@ msgstr "파이썬 파일"
 
 #: packages/docregistry/src/registry.ts:1447
 msgid "JSON File"
-msgstr ""
+msgstr "JSON 파일"
 
 #: packages/docregistry/src/registry.ts:1454 packages/fileeditor-extension/src/index.ts:221
 msgid "Julia File"
-msgstr ""
+msgstr "Julia 파일"
 
 #: packages/docregistry/src/registry.ts:1461
 msgid "CSV File"
-msgstr ""
+msgstr "CSV 파일"
 
 #: packages/docregistry/src/registry.ts:1468
 msgid "TSV File"
-msgstr ""
+msgstr "TSV 파일"
 
 #: packages/docregistry/src/registry.ts:1475 packages/fileeditor-extension/src/index.ts:233
 msgid "R File"
-msgstr ""
+msgstr "R 파일"
 
 #: packages/docregistry/src/registry.ts:1482
 msgid "YAML File"
-msgstr ""
+msgstr "YAML 파일"
 
 #: packages/docregistry/src/registry.ts:1489 packages/docregistry/src/registry.ts:1497 packages/docregistry/src/registry.ts:1505 packages/docregistry/src/registry.ts:1513 packages/docregistry/src/registry.ts:1521 packages/docregistry/src/registry.ts:1529 packages/docregistry/src/registry.ts:1537
 msgid "Image"
-msgstr ""
+msgstr "이미지"
 
 #: packages/documentsearch-extension/src/index.ts:183
 msgid "Find and Replace…"
@@ -3080,31 +3166,31 @@ msgstr "찾기"
 
 #: packages/documentsearch/src/searchoverlay.tsx:173 packages/documentsearch/src/searchoverlay.tsx:191
 msgid "Replace"
-msgstr ""
+msgstr "바꾸기"
 
 #: packages/documentsearch/src/searchoverlay.tsx:203
 msgid "Replace All"
-msgstr ""
+msgstr "모두 바꾸기"
 
 #: packages/documentsearch/src/searchoverlay.tsx:321
 msgid "Search Cell Outputs"
-msgstr ""
+msgstr "셀 출력 검색"
 
 #: packages/documentsearch/src/searchoverlay.tsx:338
 msgid "Search Selected Cell(s)"
-msgstr ""
+msgstr "선택한 셀 검색"
 
 #: packages/extensionmanager-extension/src/index.ts:107
 msgid "Enable Extension Manager"
-msgstr ""
+msgstr "확장 프로그램 관리자 활성화"
 
 #: packages/extensionmanager-extension/src/index.ts:117 packages/extensionmanager-extension/src/index.ts:56
 msgid "Extension Manager"
-msgstr ""
+msgstr "확장 프로그램 관리자"
 
 #: packages/extensionmanager-extension/src/index.ts:143
 msgid "Enable Extension Manager?"
-msgstr ""
+msgstr "확장 프로그램 관리자 활성화?"
 
 #: packages/extensionmanager-extension/src/index.ts:144
 msgid "Thanks for trying out JupyterLab's extension manager.\n"
@@ -3119,15 +3205,15 @@ msgstr "JupyterLab의 확장 플러그인 관리자를 사용해주셔서 감사
 
 #: packages/extensionmanager-extension/src/index.ts:151 packages/extensionmanager/src/widget.tsx:329 packages/extensionmanager/src/widget.tsx:798
 msgid "Disable"
-msgstr ""
+msgstr "비활성화"
 
 #: packages/extensionmanager-extension/src/index.ts:152 packages/extensionmanager/src/widget.tsx:338 packages/extensionmanager/src/widget.tsx:813
 msgid "Enable"
-msgstr ""
+msgstr "활성화"
 
 #: packages/extensionmanager-extension/src/index.ts:68 packages/extensionmanager-extension/src/index.ts:89
 msgid "Extension Manager section"
-msgstr ""
+msgstr "확장 관리자 섹션"
 
 #: packages/extensionmanager/src/companions.tsx:137
 msgid "This package has indicated that it needs a corresponding server\n"
@@ -3285,7 +3371,7 @@ msgstr "설치됨"
 
 #: packages/extensionmanager/src/widget.tsx:898
 msgid "Refresh extension list"
-msgstr ""
+msgstr "확장 프로그램 리스트 새로 고침"
 
 #: packages/extensionmanager/src/widget.tsx:943
 msgid "Search Results"
@@ -3321,7 +3407,7 @@ msgstr "파일 탐색창 새로고침"
 
 #: packages/filebrowser-extension/src/index.ts:1070 packages/filebrowser/src/opendialog.ts:171
 msgid "Refresh File List"
-msgstr "목록 새로 고침"
+msgstr "파일 목록 새로 고침"
 
 #: packages/filebrowser-extension/src/index.ts:1103
 msgid "Copy Path"
@@ -3807,7 +3893,7 @@ msgstr ""
 
 #: packages/help-extension/src/index.tsx:488
 msgid "Refresh Licenses"
-msgstr ""
+msgstr "라이센스 새로 고침"
 
 #: packages/help-extension/src/index.tsx:93
 msgid "About %1"
@@ -4083,7 +4169,7 @@ msgstr ""
 
 #: packages/mainmenu-extension/src/index.ts:209
 msgid "Open Tabs Menu"
-msgstr ""
+msgstr "탭 메뉴 열기"
 
 #: packages/mainmenu-extension/src/index.ts:213
 msgid "Open Help Menu"
@@ -4718,7 +4804,7 @@ msgstr "모드: %1"
 
 #: packages/notebook/src/modestatus.tsx:66 packages/shortcuts-extension/src/components/TopNav.tsx:273
 msgid "Command"
-msgstr "명령"
+msgstr "명령어"
 
 #: packages/notebook/src/modestatus.tsx:67 packages/shortcuts-extension/src/components/ShortcutItem.tsx:80
 msgid "Edit"
@@ -4839,7 +4925,7 @@ msgstr "열려있는 모든 탭을 닫으시겠습니까?"
 
 #: packages/running/src/index.tsx:288
 msgid "Refresh List"
-msgstr "목록 새로고침"
+msgstr "목록 새로 고침"
 
 #: packages/settingeditor-extension/src/index.ts:141
 msgid "JSON Settings Editor"
@@ -4879,7 +4965,7 @@ msgstr ""
 
 #: packages/settingeditor/src/SettingsFormEditor.tsx:183 packages/settingeditor/src/SettingsFormEditor.tsx:225 packages/shortcuts-extension/src/components/ShortcutItem.tsx:432 packages/shortcuts-extension/src/components/ShortcutItem.tsx:85 packages/shortcuts-extension/src/components/ShortcutItem.tsx:90
 msgid "Add"
-msgstr ""
+msgstr "추가"
 
 #: packages/settingeditor/src/SettingsFormEditor.tsx:356
 msgid "Default: %1"
@@ -4911,15 +4997,15 @@ msgstr ""
 
 #: packages/settingeditor/src/inspector.ts:125
 msgid "error"
-msgstr ""
+msgstr "오류"
 
 #: packages/settingeditor/src/inspector.ts:34
 msgid "Any errors will be listed here"
-msgstr ""
+msgstr "모든 오류가 여기 표시될 것입니다."
 
 #: packages/settingeditor/src/inspector.ts:90
 msgid "No errors found"
-msgstr ""
+msgstr "발견된 오류가 없습니다."
 
 #: packages/settingeditor/src/jsonsettingeditor.tsx:71
 msgid "Select a plugin from the list to view and edit its preferences."
@@ -4939,15 +5025,15 @@ msgstr ""
 
 #: packages/settingeditor/src/pluginlist.tsx:440
 msgid "Search…"
-msgstr ""
+msgstr "검색중..."
 
 #: packages/settingeditor/src/pluginlist.tsx:447
 msgid "Modified"
-msgstr ""
+msgstr "수정됨"
 
 #: packages/settingeditor/src/pluginlist.tsx:459
 msgid "No items match your search."
-msgstr ""
+msgstr "일치하는 항목이 없습니다."
 
 #: packages/settingeditor/src/raweditor.ts:377
 msgid "System Defaults"
@@ -4967,83 +5053,83 @@ msgstr ""
 
 #: packages/shortcuts-extension/src/components/ShortcutInput.tsx:451
 msgid "press keys"
-msgstr ""
+msgstr "키를 누르세요"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:241
 msgid "Shortcut already in use by %1. Overwrite it?"
-msgstr ""
+msgstr "단축키가 %1에 의해 사용되고 있습니다. 덮어 쓸까요?"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:281 packages/shortcuts-extension/src/components/ShortcutItem.tsx:95
 msgid "Reset"
-msgstr ""
+msgstr "초기화"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:348
 msgid "or"
-msgstr ""
+msgstr "또는"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:70
 msgid "Edit First"
-msgstr ""
+msgstr "첫 번째 편집"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:71 packages/shortcuts-extension/src/components/ShortcutItem.tsx:76 packages/shortcuts-extension/src/components/ShortcutItem.tsx:81
 msgid "Edit existing shortcut"
-msgstr ""
+msgstr "사용중인 단축키 편집"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:75
 msgid "Edit Second"
-msgstr ""
+msgstr "두 번째 편집"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:86
 msgid "Add new shortcut"
-msgstr ""
+msgstr "새 단축키 추가"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:91
 msgid "Add another shortcut"
-msgstr ""
+msgstr "다른 단축기 추가"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:96
 msgid "Reset shortcut back to default"
-msgstr ""
+msgstr "모든 단축키를 기본값으로 재설정"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:142 packages/shortcuts-extension/src/components/TopNav.tsx:164
 msgid "Hide Selectors"
-msgstr ""
+msgstr "선택창 숨기기"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:143 packages/shortcuts-extension/src/components/TopNav.tsx:165
 msgid "Show Selectors"
-msgstr ""
+msgstr "선택창 보이기"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:149 packages/shortcuts-extension/src/components/TopNav.tsx:171 packages/shortcuts-extension/src/components/TopNav.tsx:217
 msgid "Reset All"
-msgstr ""
+msgstr "모두 초기화"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:207
 msgid "Toggle Selectors"
-msgstr ""
+msgstr "선택도구 토글"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:208
 msgid "Toggle command selectors"
-msgstr ""
+msgstr "명령 선택도구 열기"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:218
 msgid "Reset all shortcuts"
-msgstr ""
+msgstr "단축키 초기화"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:258
 msgid "Search"
-msgstr ""
+msgstr "검색"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:272
 msgid "Category"
-msgstr ""
+msgstr "카테고리"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:275
 msgid "Shortcut"
-msgstr ""
+msgstr "단축키"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:279
 msgid "Selectors"
-msgstr ""
+msgstr "선택도구"
 
 #: packages/shortcuts-extension/src/index.ts:136
 msgid "Note: To disable a system default shortcut,\n"
@@ -5060,7 +5146,21 @@ msgid "Note: To disable a system default shortcut,\n"
 "List of commands followed by keyboard shortcuts:\n"
 "%1\n\n"
 "List of keyboard shortcuts:"
-msgstr ""
+msgstr "주: 시스템 기본 단축키 설정을 끄려면\n"
+"다음을 복사하여 \"사용자  개인 설정\"에\n"
+"\"disabled\" 키를 추가하세요. \n"
+"예를 들면:\n"
+"{\n"
+"    \"command\": \"application:activate-next-tab\",\n"
+"    \"keys\": [\n"
+"        \"Ctrl Shift ]\"\n"
+"    ],\n"
+"    \"selector\": \"body\",\n"
+"    \"disabled\": true\n"
+"}\n\n"
+"키보드 단축키에 연관된 명령어 리스트:\n"
+"%1\n\n"
+"키보드 단축키 리스트:"
 
 #: packages/statusbar-extension/src/index.ts:381
 msgid "Simple Interface (%1)"
@@ -5141,11 +5241,11 @@ msgstr "새 터미널 세션 시작"
 
 #: packages/terminal-extension/src/index.ts:401
 msgid "Refresh Terminal"
-msgstr ""
+msgstr "터미널 새로 고침"
 
 #: packages/terminal-extension/src/index.ts:402
 msgid "Refresh the current terminal session"
-msgstr ""
+msgstr "현재 터미널 세션 새로 고침"
 
 #: packages/terminal-extension/src/index.ts:422
 msgid "Increase Terminal Font Size"
@@ -5173,11 +5273,11 @@ msgstr ""
 
 #: packages/theme-light-extension/src/index.ts:30
 msgid "JupyterLab Light"
-msgstr ""
+msgstr "JupyterLab Light"
 
 #: packages/toc-extension/src/index.ts:129
 msgid "Run Cell(s)"
-msgstr ""
+msgstr "셀 실행하기"
 
 #: packages/toc-extension/src/index.ts:83 packages/toc/src/toc.tsx:130
 msgid "Table of Contents"
@@ -5185,11 +5285,11 @@ msgstr "차례"
 
 #: packages/toc-extension/src/index.ts:86
 msgid "Table of Contents section"
-msgstr ""
+msgstr "목차 선택"
 
 #: packages/toc/src/generators/markdown/toolbar_generator.tsx:64 packages/toc/src/generators/markdown/toolbar_generator.tsx:65 packages/toc/src/generators/notebook/toolbar_generator.tsx:214 packages/toc/src/generators/notebook/toolbar_generator.tsx:215
 msgid "Toggle Auto-Numbering"
-msgstr ""
+msgstr "자동 번호 붙이기 토글"
 
 #: packages/toc/src/generators/notebook/tagstool/index.tsx:217
 msgid "No Tags Available"
@@ -5201,19 +5301,19 @@ msgstr "필터 초기화"
 
 #: packages/toc/src/generators/notebook/tagstool/index.tsx:255 packages/toc/src/generators/notebook/tagstool/index.tsx:256 packages/toc/src/generators/notebook/tagstool/index.tsx:258 packages/toc/src/generators/notebook/tagstool/index.tsx:266 packages/toc/src/generators/notebook/tagstool/index.tsx:267 packages/toc/src/generators/notebook/tagstool/index.tsx:271
 msgid "Select All Cells With Current Tags"
-msgstr ""
+msgstr "현재 탭의 모든 셀을 선택"
 
 #: packages/toc/src/generators/notebook/toolbar_generator.tsx:182 packages/toc/src/generators/notebook/toolbar_generator.tsx:183
 msgid "Toggle Code Cells"
-msgstr ""
+msgstr "코드 셀 토글"
 
 #: packages/toc/src/generators/notebook/toolbar_generator.tsx:198 packages/toc/src/generators/notebook/toolbar_generator.tsx:199
 msgid "Toggle Markdown Text Cells"
-msgstr ""
+msgstr "마크다운 텍스트 셀을 토글"
 
 #: packages/toc/src/generators/notebook/toolbar_generator.tsx:230 packages/toc/src/generators/notebook/toolbar_generator.tsx:231
 msgid "Show Tags Menu"
-msgstr ""
+msgstr "태그 메뉴 표시"
 
 #: packages/translation-extension/src/index.ts:132
 msgid "Change interface language?"
@@ -5221,7 +5321,7 @@ msgstr "표시 언어를 변경하시겠습니가?"
 
 #: packages/translation-extension/src/index.ts:133
 msgid "After changing the interface language to %1, you will need to reload JupyterLab to see the changes."
-msgstr ""
+msgstr "인터페이스 언어를 %1로 변경한 후에는 변경 내용을 확인하기 위해서는 JupyterLab 을 릴로드 해야합니다."
 
 #: packages/translation-extension/src/index.ts:139
 msgid "Change and reload"
