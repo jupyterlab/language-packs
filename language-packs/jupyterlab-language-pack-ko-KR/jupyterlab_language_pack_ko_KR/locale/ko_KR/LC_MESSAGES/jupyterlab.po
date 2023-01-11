@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2023-01-10 02:05\n"
+"PO-Revision-Date: 2023-01-11 06:30\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -54,7 +54,7 @@ msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr "YAML 머리말(front matter) 를 숨길 지 결정합니다.\n"
+msgstr "YAML 머리말(front matter) 를 숨길지 여부.\n"
 "머리말은 문서의 최상단에 위치해야 하며, 세개의 대쉬(---) 로 시작하고 세개의 대쉬(---) 또는 세개의 점(...) 으로 끝나야 합니다."
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/hideFrontMatter/title /packages/markdownviewer-extension/schema/plugin.json:/properties/hideFrontMatter/title
@@ -104,7 +104,7 @@ msgstr "마크다운 뷰어"
 #: /packages/application-extension/schema/commands.json:/description
 msgctxt "schema"
 msgid "Application commands settings."
-msgstr "어플리케이션 명령어 설정"
+msgstr "어플리케이션 명령어 설정."
 
 #: /packages/application-extension/schema/commands.json:/title
 msgctxt "schema"
@@ -159,7 +159,7 @@ msgstr "명령어 ID"
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/disabled/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/disabled/description
 msgctxt "settings"
 msgid "Whether the item is disabled or not"
-msgstr "아이템 활성화/비활성화 선택"
+msgstr "아이템 활성화 여부"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/rank/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/rank/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/rank/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/rank/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/rank/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/rank/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/rank/title /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/rank/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/rank/title
 msgctxt "settings"
@@ -477,7 +477,7 @@ msgstr "줄단위로 Ctrl-C"
 #: /packages/codemirror-extension/schema/commands.json:/properties/scrollPastEnd/description
 msgctxt "settings"
 msgid "Whether to scroll past the end of text document"
-msgstr "텍스트 문서의 끝을 지나서 스크롤 할 수 있는지 설정"
+msgstr "텍스트 문서의 끝을 지나서 스크롤 할 수 있는지 여부"
 
 #: /packages/codemirror-extension/schema/commands.json:/properties/scrollPastEnd/title
 msgctxt "settings"
@@ -688,7 +688,7 @@ msgctxt "settings"
 msgid "Whether the console defaults to showing all\n"
 "kernel activity or just kernel activity originating from itself."
 msgstr "기본 값으로 콘솔이 커널의 모든 활동을 보여 줄지 \n"
-"혹은 자신이 만든 활동만을 보여 줄지를 결정"
+"혹은 자신이 만든 활동만을 보여 줄 것인지 여부"
 
 #: /packages/console-extension/schema/tracker.json:/properties/showAllKernelActivity/title
 msgctxt "settings"
@@ -866,7 +866,7 @@ msgstr "최근 수정 타임스탬프 점검을 위한 허용 오차"
 #: /packages/docmanager-extension/schema/plugin.json:/properties/renameUntitledFileOnSave/description
 msgctxt "settings"
 msgid "Whether to prompt to rename untitled file on first manual save."
-msgstr "첫뻔째로 수동 저장을 할때 파일 명을 변경하도록 요청"
+msgstr "첫번째로 수동 저장을 할때 파일 명을 변경하도록 요청할지 여부"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/renameUntitledFileOnSave/title
 msgctxt "settings"
@@ -998,7 +998,7 @@ msgstr "현재 디렉토리 둘러보기"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/description
 msgctxt "settings"
 msgid "Whether to show hidden files"
-msgstr "감추어진 파일을 보여줄지 여부"
+msgstr "숨긴 파일을 보열줄 지 여부"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/title
 msgctxt "settings"
@@ -1820,7 +1820,7 @@ msgstr "텍스트를 렌더링하는데 사용될 글꼴 집합"
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontFamily/title
 msgctxt "settings"
 msgid "Font family"
-msgstr "글꼴 모음"
+msgstr "글꼴 집합"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontSize/description
 msgctxt "settings"
@@ -2253,7 +2253,7 @@ msgstr "테마 스크롤바"
 
 #: packages/apputils-extension/src/themesplugins.ts:110
 msgid "waiting for fonts"
-msgstr "폰트 로딩 중"
+msgstr "글꼴 로딩 중"
 
 #: packages/apputils-extension/src/themesplugins.ts:121
 msgid "Increase Code Font Size"
@@ -3986,8 +3986,8 @@ msgid "Whether the HTML file is trusted.\n"
 "    Trusting the file allows scripts to run in it,\n"
 "    which may result in security risks.\n"
 "    Only enable for files you trust."
-msgstr "HTML 파일이 신뢰함으로 설정되면.\n"
-"    파일내의 스크립트가 실행될 수 있습니다.  \n"
+msgstr "HTML 파일을 신뢰하는 파일로 설정할지 여부.\n"
+"    파일내의 스크립트를 실행할 수 있게 됩니다.  \n"
 "    이는 보안상 위험을 초래할 수 있으므로 \n"
 "    확실히 신뢰할 수 있는 경우에만 설정하십시오."
 
@@ -4000,7 +4000,7 @@ msgid "Whether the HTML file is trusted.\n"
 "Trusting the file allows scripts to run in it,\n"
 "which may result in security risks.\n"
 "Only enable for files you trust."
-msgstr "HTML 파일이 신뢰함으로 설정되면.\n"
+msgstr "HTML 파일이 신뢰하는 파일로 설정할지 여부.\n"
 "파일내의 스크립트가 실행될 수 있습니다. \n"
 "이는 보안상 위험을 초래할 수 있으므로 \n"
 "확실히 신뢰할 수 있는 경우에만 설정하십시오."
