@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-02-08 07:53\n"
+"PO-Revision-Date: 2023-02-08 12:13\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -308,7 +308,7 @@ msgstr "关闭所有通知"
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/description
 msgctxt "settings"
 msgid "Whether to fetch news from Jupyter news feed. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "是否从 Jupyter 新闻源获取新闻。如果设置为 `true`，它将向网站提出请求。"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/title
 msgctxt "settings"
@@ -772,7 +772,7 @@ msgstr "CSV 查看器设置。"
 #: /packages/csvviewer-extension/schema/csv.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "CSV Viewer"
-msgstr ""
+msgstr "CSV 查看器"
 
 #: /packages/csvviewer-extension/schema/csv.json:/properties/toolbar/description /packages/csvviewer-extension/schema/tsv.json:/properties/toolbar/description
 msgctxt "settings"
@@ -817,7 +817,7 @@ msgstr "TSV 查看器设置。"
 #: /packages/csvviewer-extension/schema/tsv.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "TSV Viewer"
-msgstr ""
+msgstr "TSV 查看器"
 
 #: /packages/csvviewer-extension/schema/tsv.json:/properties/toolbar/title
 msgctxt "settings"
@@ -967,7 +967,7 @@ msgstr "文档搜索插件。"
 #: /packages/documentsearch-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Document Search"
-msgstr ""
+msgstr "文档搜索"
 
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/searchDebounceTime/description
 msgctxt "settings"
@@ -1012,7 +1012,7 @@ msgstr ""
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enableCdn/title
 msgctxt "settings"
 msgid "Enable Content Delivery Network (CDN)"
-msgstr ""
+msgstr "启用内容发送网络 (CDN)"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/description
 msgctxt "settings"
@@ -1029,12 +1029,12 @@ msgstr "启用状态"
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/description
 msgctxt "settings"
 msgid "The URI of the Content Delivery Network (CDN) to use for fetching full package data"
-msgstr ""
+msgstr "用于获取完整软件包的内容分发网络 (CDN) URI"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/title
 msgctxt "settings"
 msgid "NPM Content Delivery Network (CDN)"
-msgstr ""
+msgstr "NPM 内容分发网络 (CDN)"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmRegistry/description
 msgctxt "settings"
@@ -1270,7 +1270,7 @@ msgstr "HTML 查看器设置。"
 #: /packages/htmlviewer-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "HTML Viewer"
-msgstr ""
+msgstr "HTML 查看器"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/toolbar/description
 msgctxt "settings"
@@ -2082,7 +2082,7 @@ msgstr "显示本地化字符串前缀"
 #: /packages/translation-extension/schema/plugin.json:/properties/locale/description
 msgctxt "settings"
 msgid "Set the interface display language. Examples: 'es_CO', 'fr_FR'. Set 'default' to use the server default locale. Requires corresponding language pack to be installed."
-msgstr ""
+msgstr "设置界面显示语言。例如: 'es_CO', 'fr_FR'。设置 'default' 使用服务器默认语言。需要安装与设置对应的语言包。"
 
 #: /packages/translation-extension/schema/plugin.json:/properties/locale/title
 msgctxt "settings"
@@ -2263,40 +2263,41 @@ msgstr "备选侧边栏"
 
 #: packages/apputils-extension/src/announcements.ts:103
 msgid "Open privacy policy"
-msgstr ""
+msgstr "打开隐私政策"
 
 #: packages/apputils-extension/src/announcements.ts:109
 msgid "Privacy policies"
-msgstr ""
+msgstr "隐私政策"
 
 #: packages/apputils-extension/src/announcements.ts:119
 msgid "Yes"
-msgstr ""
+msgstr "是"
 
 #: packages/apputils-extension/src/announcements.ts:136
 msgid "No"
-msgstr ""
+msgstr "否"
 
 #: packages/apputils-extension/src/announcements.ts:171
 msgid "Hide"
-msgstr ""
+msgstr "隐藏"
 
 #: packages/apputils-extension/src/announcements.ts:172
 msgid "Never show this notification again."
-msgstr ""
+msgstr "不再显示此通知。"
 
 #: packages/apputils-extension/src/announcements.ts:232
 msgid "Do not check for updates"
-msgstr ""
+msgstr "不要检查更新"
 
 #: packages/apputils-extension/src/announcements.ts:233
 msgid "If pressed, you will not be prompted if a new JupyterLab version is found."
-msgstr ""
+msgstr "如果选中此项，即使发现有新版本的 JupyterLab，也不会提示您。"
 
 #: packages/apputils-extension/src/announcements.ts:95
 msgid "Would you like to receive official Jupyter news?\n"
 "Please read the privacy policy."
-msgstr ""
+msgstr "您想要接收官方的Jupyter新闻吗？\n"
+"请阅读隐私政策。"
 
 #: packages/apputils-extension/src/index.ts:210
 msgid "Loading…"
@@ -2338,51 +2339,51 @@ msgstr "运行所有从参数传递过来的已启用的命令"
 #: packages/apputils-extension/src/notificationplugin.tsx:156 packages/apputils-extension/src/notificationplugin.tsx:347
 msgid "%1 notification"
 msgid_plural "%1 notifications"
-msgstr[0] ""
+msgstr[0] "%1 条通知"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:157 packages/apputils-extension/src/notificationplugin.tsx:348
 msgid "No notifications"
-msgstr ""
+msgstr "无通知"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:166
 msgid "Dismiss all notifications"
-msgstr ""
+msgstr "清除所有通知"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:173
 msgid "Hide notifications"
-msgstr ""
+msgstr "隐藏通知"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:218
 msgid "Dismiss notification"
-msgstr ""
+msgstr "清除通知"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:395
 msgid "Emit a notification"
-msgstr ""
+msgstr "发出一条通知"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:396
 msgid "Notification is described by {message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
-msgstr ""
+msgstr "描述通知的格式是 {message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}。"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:433
 msgid "Update a notification"
-msgstr ""
+msgstr "更新通知"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:434
 msgid "Notification is described by {id: string, message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
-msgstr ""
+msgstr "描述通知的格式是{id: string, message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}。"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:473
 msgid "Dismiss a notification"
-msgstr ""
+msgstr "忽略这条通知"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:597
 msgid "Show Notifications"
-msgstr ""
+msgstr "显示通知"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:647
 msgid "Hide notification"
-msgstr ""
+msgstr "隐藏通知"
 
 #: packages/apputils-extension/src/palette.ts:101
 msgid "Command Palette Section"
@@ -2682,15 +2683,15 @@ msgstr "更改文本编辑器语法高亮显示"
 
 #: packages/collaboration-extension/src/index.ts:163
 msgid "User info"
-msgstr ""
+msgstr "用户信息"
 
 #: packages/collaboration-extension/src/index.ts:164
 msgid "User information"
-msgstr ""
+msgstr "用户信息"
 
 #: packages/collaboration-extension/src/index.ts:176
 msgid "Online Collaborators"
-msgstr ""
+msgstr "在线协作者"
 
 #: packages/console-extension/src/foreign.ts:65 packages/console-extension/src/index.ts:155 packages/console-extension/src/index.ts:203 packages/console-extension/src/index.ts:483 packages/console/src/panel.ts:331 packages/launcher/src/index.tsx:150 packages/launcher/src/index.tsx:155
 msgid "Console"
@@ -2858,7 +2859,7 @@ msgstr "继续"
 
 #: packages/debugger-extension/src/index.ts:654 packages/debugger-extension/src/index.ts:659
 msgid "Pause"
-msgstr ""
+msgstr "暂停"
 
 #: packages/debugger-extension/src/index.ts:678 packages/debugger-extension/src/index.ts:679
 msgid "Terminate"
@@ -3104,7 +3105,7 @@ msgstr "撤回"
 
 #: packages/docmanager-extension/src/index.tsx:725
 msgid "In collaborative mode, the document is saved automatically after every change"
-msgstr ""
+msgstr "在协作模式下，文档在每次更改后都自动保存"
 
 #: packages/docmanager-extension/src/index.tsx:731
 msgid "Save and create checkpoint"
@@ -3136,7 +3137,7 @@ msgstr "文件名"
 
 #: packages/docmanager-extension/src/index.tsx:781 packages/docmanager/src/widgetmanager.ts:416
 msgid "Do not ask me again."
-msgstr ""
+msgstr "不再询问"
 
 #: packages/docmanager-extension/src/index.tsx:782
 msgid "If checked, you will not be asked to rename future untitled files when saving them."
@@ -3246,7 +3247,7 @@ msgstr "上一检查点: %1"
 
 #: packages/docmanager/src/widgetmanager.ts:399
 msgid "Close and save"
-msgstr ""
+msgstr "关闭并保存"
 
 #: packages/docmanager/src/widgetmanager.ts:399 packages/filebrowser/src/listing.ts:1140 packages/running-extension/src/opentabs.ts:87
 msgid "Close"
@@ -3254,19 +3255,19 @@ msgstr "关闭"
 
 #: packages/docmanager/src/widgetmanager.ts:406
 msgid "Close without saving"
-msgstr ""
+msgstr "不保存并关闭"
 
 #: packages/docmanager/src/widgetmanager.ts:411
 msgid "Confirmation"
-msgstr ""
+msgstr "确认"
 
 #: packages/docmanager/src/widgetmanager.ts:412
 msgid "Please confirm you want to close \"%1\"."
-msgstr ""
+msgstr "请确认您想要关闭“%1”。"
 
 #: packages/docmanager/src/widgetmanager.ts:417
 msgid "If checked, no confirmation to close a document will be asked in the future."
-msgstr ""
+msgstr "如果选中此项，以后关闭文档不再要求确认。"
 
 #: packages/docmanager/src/widgetmanager.ts:439
 msgid "Save as"
@@ -3569,11 +3570,11 @@ msgid "The JupyterLab development team is excited to have a robust\n"
 "third-party extensions, and some extensions may introduce security\n"
 "risks or contain malicious code that runs on your machine. Moreover in order\n"
 "to work, this panel needs to fetch data from web services."
-msgstr ""
+msgstr "JupyterLab 开发团队很高兴有一个强大的第三方扩展社区。然而，我们并不会审查第三方扩展，某些扩展可能会带来安全风险或者包含能在您机器上运行的恶意代码。此外，为了正常工作，当前扩展需要从外部 Web 服务获取数据。"
 
 #: packages/extensionmanager/src/widget.tsx:792
 msgid "Please read the privacy policy."
-msgstr ""
+msgstr "请阅读隐私政策。"
 
 #: packages/extensionmanager/src/widget.tsx:832
 msgid "Updating extensions list"
@@ -4075,7 +4076,7 @@ msgstr "关于 JUPYTER 项目"
 
 #: packages/help-extension/src/index.tsx:138
 msgid "© 2015-2023 Project Jupyter Contributors"
-msgstr ""
+msgstr "© 2015-2023 Jupyter 项目贡献者"
 
 #: packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:395 packages/hub-extension/src/index.ts:161 packages/mainmenu-extension/src/index.ts:551
 msgid "Dismiss"
@@ -4566,7 +4567,7 @@ msgstr "运行选中的单元格"
 
 #: packages/notebook-extension/src/index.ts:1630
 msgid "Run Selected Cells and Do not Advance"
-msgstr ""
+msgstr "运行选定的所有单元格且不再继续"
 
 #: packages/notebook-extension/src/index.ts:1643
 msgid "Run Selected Cells and Insert Below"
