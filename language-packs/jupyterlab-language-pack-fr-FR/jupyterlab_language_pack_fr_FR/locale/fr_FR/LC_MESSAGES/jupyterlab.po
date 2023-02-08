@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2023-02-07 16:07\n"
+"PO-Revision-Date: 2023-02-08 13:33\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -240,7 +240,7 @@ msgstr "Paramètres de mise en page de JupyterLab."
 #: /packages/application-extension/schema/shell.json:/properties/hiddenMode/description
 msgctxt "settings"
 msgid "The method for hiding widgets in the main dock panel. Using `scale` will increase performance on Firefox but don't use it with Chrome, Chromium or Edge. Similar performance gains are seen with `contentVisibility` which is only available in Chromium-based browsers."
-msgstr ""
+msgstr "La méthode pour masquer les widgets dans le panneau principal du dock. L'utilisation de `scale` augmentera les performances sur Firefox, mais est incompatible avec Chrome, Chromium ou Edge. Pour ces navigateurs utilisés plutôt `contentVisibility`; non compatible avec Firefox ou Safari."
 
 #: /packages/application-extension/schema/shell.json:/properties/hiddenMode/title
 msgctxt "settings"
@@ -284,42 +284,42 @@ msgstr "Barre latérale"
 #: /packages/apputils-extension/schema/notification.json:/description
 msgctxt "schema"
 msgid "Notifications settings."
-msgstr ""
+msgstr "Paramètres des notifications."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
 msgctxt "settings"
 msgid "Whether to check for newer version of JupyterLab or not. It requires `fechNews` to be `true` to be active. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "Vérifier si une nouvelle version de JupyterLab est disponible ou non. Il faut que `fechNews` soit `true` pour être actif. Si `true`, une requête à un site web sera envoyée."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/title
 msgctxt "settings"
 msgid "Check for JupyterLab updates"
-msgstr ""
+msgstr "Vérifier les mises à jour de JupyterLab"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/doNotDisturbMode/description
 msgctxt "settings"
 msgid "If `true`, no toast notifications will be automatically displayed."
-msgstr ""
+msgstr "Si `true`, aucun pop-up ne sera affichée pour les notifications."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/doNotDisturbMode/title
 msgctxt "settings"
 msgid "Silence all notifications"
-msgstr ""
+msgstr "Notifications silencieuses"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/description
 msgctxt "settings"
 msgid "Whether to fetch news from Jupyter news feed. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "Récupérer les actualités depuis le fil de nouvelles Jupyter. Si `true`, une requête à un site web sera envoyée."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/title
 msgctxt "settings"
 msgid "Fetch official Jupyter news"
-msgstr ""
+msgstr "Récupérer les actualités officielles de Jupyter"
 
 #: /packages/apputils-extension/schema/notification.json:/title
 msgctxt "schema"
 msgid "Notifications"
-msgstr ""
+msgstr "Notifications"
 
 #: /packages/apputils-extension/schema/palette.json:/description
 msgctxt "schema"
@@ -329,7 +329,7 @@ msgstr "Paramètres de la palette de commandes."
 #: /packages/apputils-extension/schema/palette.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Command Palette"
-msgstr ""
+msgstr "Palette de commandes"
 
 #: /packages/apputils-extension/schema/palette.json:/properties/modal/description
 msgctxt "settings"
@@ -359,22 +359,22 @@ msgstr "Imprimer"
 #: /packages/apputils-extension/schema/sanitizer.json:/description
 msgctxt "schema"
 msgid "HTML Sanitizer settings."
-msgstr ""
+msgstr "Paramètres d'assainissement HTML."
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/description
 msgctxt "settings"
 msgid "Scheme allowed by the HTML sanitizer."
-msgstr ""
+msgstr "Schéma autorisé lors de l'assainissement HTML."
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/title
 msgctxt "settings"
 msgid "Allowed URL Scheme"
-msgstr ""
+msgstr "Schéma d'URL autorisé"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/title
 msgctxt "schema"
 msgid "HTML Sanitizer"
-msgstr ""
+msgstr "Assainisseur HTML"
 
 #: /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/code-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/content-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/ui-font-family/description
 msgctxt "settings"
@@ -775,7 +775,7 @@ msgstr "Paramètres de la visionneuse CSV."
 #: /packages/csvviewer-extension/schema/csv.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "CSV Viewer"
-msgstr ""
+msgstr "Visionneuse CSV"
 
 #: /packages/csvviewer-extension/schema/csv.json:/properties/toolbar/description /packages/csvviewer-extension/schema/tsv.json:/properties/toolbar/description
 msgctxt "settings"
@@ -822,7 +822,7 @@ msgstr "Paramètres de la visionneuse TSV."
 #: /packages/csvviewer-extension/schema/tsv.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "TSV Viewer"
-msgstr ""
+msgstr "Visionneuse TSV"
 
 #: /packages/csvviewer-extension/schema/tsv.json:/properties/toolbar/title
 msgctxt "settings"
@@ -922,12 +922,12 @@ msgstr "Intervalle entre les sauvegardes automatiques"
 #: /packages/docmanager-extension/schema/plugin.json:/properties/confirmClosingDocument/description
 msgctxt "settings"
 msgid "Whether to ask for confirmation to close a document or not."
-msgstr ""
+msgstr "Demander une confirmation pour fermer un document ou non."
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/confirmClosingDocument/title
 msgctxt "settings"
 msgid "Ask for confirmation to close a document"
-msgstr ""
+msgstr "Demander une confirmation pour fermer un document"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/defaultViewers/description
 msgctxt "settings"
@@ -972,7 +972,7 @@ msgstr "Plugin de recherche de documents."
 #: /packages/documentsearch-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Document Search"
-msgstr ""
+msgstr "Chercher dans un document"
 
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/searchDebounceTime/description
 msgctxt "settings"
@@ -1002,7 +1002,7 @@ msgstr "Gestionnaire d'extensions"
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/disclaimed/description
 msgctxt "settings"
 msgid "Whether the user agrees the access to external web services and understands extensions may introduce security risks or contain malicious code that runs on his machine."
-msgstr ""
+msgstr "L'utilisateur accepte-t-il l'accès à des services web externes et comprend-il que les extensions peuvent introduire des risques de sécurité ou contenir du code malveillant qui s'exécute sur sa machine?"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/disclaimed/title
 msgctxt "settings"
@@ -1012,12 +1012,12 @@ msgstr "Statut de renonciation"
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enableCdn/description
 msgctxt "settings"
 msgid "Enables using the Content Delivery Network (CDN) to fetch full package data.  Otherwise, the configured NPM registry will be used. Due to a lack of CORS support by NPM registry, only disable if supplying a custom registry"
-msgstr ""
+msgstr "Active l'utilisation du réseau de distribution de contenu (CDN) pour récupérer les données complètes du package. Sinon, le registre NPM configuré sera utilisé. En raison d'un manque de support de CORS par le registre NPM, désactiver uniquement si vous fournissez un registre personnalisé"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enableCdn/title
 msgctxt "settings"
 msgid "Enable Content Delivery Network (CDN)"
-msgstr ""
+msgstr "Activer un réseau de distribution de contenu (CDN)"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/description
 msgctxt "settings"
@@ -1034,12 +1034,12 @@ msgstr "Statut activé"
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/description
 msgctxt "settings"
 msgid "The URI of the Content Delivery Network (CDN) to use for fetching full package data"
-msgstr ""
+msgstr "L'URI du réseau de distribution de contenu (CDN) à utiliser pour récupérer toutes les données du paquet"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmCdn/title
 msgctxt "settings"
 msgid "NPM Content Delivery Network (CDN)"
-msgstr ""
+msgstr "Réseau de distribution de contenu NPM (CDN)"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/npmRegistry/description
 msgctxt "settings"
@@ -1279,7 +1279,7 @@ msgstr "Paramètres de la visionneuse HTML."
 #: /packages/htmlviewer-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "HTML Viewer"
-msgstr ""
+msgstr "Visionneuse HTML"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/toolbar/description
 msgctxt "settings"
@@ -2097,7 +2097,7 @@ msgstr "Afficher le préfixe des chaînes localisées"
 #: /packages/translation-extension/schema/plugin.json:/properties/locale/description
 msgctxt "settings"
 msgid "Set the interface display language. Examples: 'es_CO', 'fr_FR'. Set 'default' to use the server default locale. Requires corresponding language pack to be installed."
-msgstr ""
+msgstr "Définit la langue d'affichage de l'interface. Exemples: 'es_CO', 'fr_FR'. Définissez 'default' pour utiliser la langue par défaut du serveur. Nécessite l'installation du pack de langue correspondant."
 
 #: /packages/translation-extension/schema/plugin.json:/properties/locale/title
 msgctxt "settings"
@@ -2279,40 +2279,41 @@ msgstr "barre latérale alternative"
 
 #: packages/apputils-extension/src/announcements.ts:103
 msgid "Open privacy policy"
-msgstr ""
+msgstr "Ouvrir la politique de confidentialité"
 
 #: packages/apputils-extension/src/announcements.ts:109
 msgid "Privacy policies"
-msgstr ""
+msgstr "Politiques de confidentialité"
 
 #: packages/apputils-extension/src/announcements.ts:119
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #: packages/apputils-extension/src/announcements.ts:136
 msgid "No"
-msgstr ""
+msgstr "Non"
 
 #: packages/apputils-extension/src/announcements.ts:171
 msgid "Hide"
-msgstr ""
+msgstr "Masquer"
 
 #: packages/apputils-extension/src/announcements.ts:172
 msgid "Never show this notification again."
-msgstr ""
+msgstr "Ne plus afficher cette notification."
 
 #: packages/apputils-extension/src/announcements.ts:232
 msgid "Do not check for updates"
-msgstr ""
+msgstr "Ne pas vérifier les mises à jour"
 
 #: packages/apputils-extension/src/announcements.ts:233
 msgid "If pressed, you will not be prompted if a new JupyterLab version is found."
-msgstr ""
+msgstr "En cas de clic, vous ne serez plus notifié si une nouvelle version de JupyterLab est disponible."
 
 #: packages/apputils-extension/src/announcements.ts:95
 msgid "Would you like to receive official Jupyter news?\n"
 "Please read the privacy policy."
-msgstr ""
+msgstr "Voulez-vous recevoir les actualités officielles de Jupyter ?\n"
+"Veuillez lire la politique de confidentialité."
 
 #: packages/apputils-extension/src/index.ts:210
 msgid "Loading…"
@@ -2355,52 +2356,52 @@ msgstr "Exécuter toutes les commandes activées passées en args"
 #: packages/apputils-extension/src/notificationplugin.tsx:156 packages/apputils-extension/src/notificationplugin.tsx:347
 msgid "%1 notification"
 msgid_plural "%1 notifications"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 notification"
+msgstr[1] "%1 notifications"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:157 packages/apputils-extension/src/notificationplugin.tsx:348
 msgid "No notifications"
-msgstr ""
+msgstr "Pas de notifications"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:166
 msgid "Dismiss all notifications"
-msgstr ""
+msgstr "Effacer toutes les notifications"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:173
 msgid "Hide notifications"
-msgstr ""
+msgstr "Masquer les notifications"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:218
 msgid "Dismiss notification"
-msgstr ""
+msgstr "Effacer la notification"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:395
 msgid "Emit a notification"
-msgstr ""
+msgstr "Émettre une notification"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:396
 msgid "Notification is described by {message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
-msgstr ""
+msgstr "Une notification est décrite par {message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args? ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
 
 #: packages/apputils-extension/src/notificationplugin.tsx:433
 msgid "Update a notification"
-msgstr ""
+msgstr "Mise à jour d'une notification"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:434
 msgid "Notification is described by {id: string, message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
-msgstr ""
+msgstr "Une notification est décrite par {message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args? ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
 
 #: packages/apputils-extension/src/notificationplugin.tsx:473
 msgid "Dismiss a notification"
-msgstr ""
+msgstr "Effacer une notification"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:597
 msgid "Show Notifications"
-msgstr ""
+msgstr "Afficher les notifications"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:647
 msgid "Hide notification"
-msgstr ""
+msgstr "Masquer les notifications"
 
 #: packages/apputils-extension/src/palette.ts:101
 msgid "Command Palette Section"
@@ -2700,15 +2701,15 @@ msgstr "Modifier la coloration syntaxique de l'éditeur de texte"
 
 #: packages/collaboration-extension/src/index.ts:163
 msgid "User info"
-msgstr ""
+msgstr "Informations utilisateur"
 
 #: packages/collaboration-extension/src/index.ts:164
 msgid "User information"
-msgstr ""
+msgstr "Informations de l'utilisateur"
 
 #: packages/collaboration-extension/src/index.ts:176
 msgid "Online Collaborators"
-msgstr ""
+msgstr "Collaborateurs en ligne"
 
 #: packages/console-extension/src/foreign.ts:65 packages/console-extension/src/index.ts:155 packages/console-extension/src/index.ts:203 packages/console-extension/src/index.ts:483 packages/console/src/panel.ts:331 packages/launcher/src/index.tsx:150 packages/launcher/src/index.tsx:155
 msgid "Console"
@@ -2876,7 +2877,7 @@ msgstr "Continuer"
 
 #: packages/debugger-extension/src/index.ts:654 packages/debugger-extension/src/index.ts:659
 msgid "Pause"
-msgstr ""
+msgstr "Suspendre"
 
 #: packages/debugger-extension/src/index.ts:678 packages/debugger-extension/src/index.ts:679
 msgid "Terminate"
@@ -3124,7 +3125,7 @@ msgstr "Rétablir"
 
 #: packages/docmanager-extension/src/index.tsx:725
 msgid "In collaborative mode, the document is saved automatically after every change"
-msgstr ""
+msgstr "En mode collaboratif, le document est sauvegardé automatiquement après chaque modification"
 
 #: packages/docmanager-extension/src/index.tsx:731
 msgid "Save and create checkpoint"
@@ -3156,7 +3157,7 @@ msgstr "Nom du fichier"
 
 #: packages/docmanager-extension/src/index.tsx:781 packages/docmanager/src/widgetmanager.ts:416
 msgid "Do not ask me again."
-msgstr ""
+msgstr "Ne plus demander."
 
 #: packages/docmanager-extension/src/index.tsx:782
 msgid "If checked, you will not be asked to rename future untitled files when saving them."
@@ -3266,7 +3267,7 @@ msgstr "Dernier point de contrôle : %1"
 
 #: packages/docmanager/src/widgetmanager.ts:399
 msgid "Close and save"
-msgstr ""
+msgstr "Fermer et sauvegarder"
 
 #: packages/docmanager/src/widgetmanager.ts:399 packages/filebrowser/src/listing.ts:1140 packages/running-extension/src/opentabs.ts:87
 msgid "Close"
@@ -3274,19 +3275,19 @@ msgstr "Fermer"
 
 #: packages/docmanager/src/widgetmanager.ts:406
 msgid "Close without saving"
-msgstr ""
+msgstr "Fermer sans sauvegarder"
 
 #: packages/docmanager/src/widgetmanager.ts:411
 msgid "Confirmation"
-msgstr ""
+msgstr "Confirmation"
 
 #: packages/docmanager/src/widgetmanager.ts:412
 msgid "Please confirm you want to close \"%1\"."
-msgstr ""
+msgstr "Veuillez confirmer que vous voulez fermer \"%1\"."
 
 #: packages/docmanager/src/widgetmanager.ts:417
 msgid "If checked, no confirmation to close a document will be asked in the future."
-msgstr ""
+msgstr "Si coché, aucune confirmation de fermeture d'un document ne sera demandée dans le futur."
 
 #: packages/docmanager/src/widgetmanager.ts:439
 msgid "Save as"
@@ -3601,11 +3602,14 @@ msgid "The JupyterLab development team is excited to have a robust\n"
 "third-party extensions, and some extensions may introduce security\n"
 "risks or contain malicious code that runs on your machine. Moreover in order\n"
 "to work, this panel needs to fetch data from web services."
-msgstr ""
+msgstr "L'équipe de développement de JupyterLab est heureuse d'avoir une communauté d'extension\n"
+"tiers robuste. Cependant, nous ne révisons pas les extensions\n"
+"tierces, et certaines extensions peuvent introduire des risques de sécurité\n"
+"ou contenir du code malveillant qui s'exécute sur votre machine. De plus ce panneau doit récupérer des données sur des services web pour fonctionner."
 
 #: packages/extensionmanager/src/widget.tsx:792
 msgid "Please read the privacy policy."
-msgstr ""
+msgstr "Veuillez lire la politique de confidentialité."
 
 #: packages/extensionmanager/src/widget.tsx:832
 msgid "Updating extensions list"
@@ -4110,7 +4114,7 @@ msgstr "A PROPOS DU PROJET JUPYTER"
 
 #: packages/help-extension/src/index.tsx:138
 msgid "© 2015-2023 Project Jupyter Contributors"
-msgstr ""
+msgstr "© 2015-2023 Contributeurs du projet Jupyter"
 
 #: packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:395 packages/hub-extension/src/index.ts:161 packages/mainmenu-extension/src/index.ts:551
 msgid "Dismiss"
@@ -4601,7 +4605,7 @@ msgstr "Exécuter les cellules sélectionnées"
 
 #: packages/notebook-extension/src/index.ts:1630
 msgid "Run Selected Cells and Do not Advance"
-msgstr ""
+msgstr "Exécuter les cellules sélectionnées et ne pas avancer"
 
 #: packages/notebook-extension/src/index.ts:1643
 msgid "Run Selected Cells and Insert Below"
