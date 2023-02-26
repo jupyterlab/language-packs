@@ -12,13 +12,13 @@ msgstr ""
 "X-Crowdin-File-ID: 219\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2023-01-08 16:52\n"
+"PO-Revision-Date: 2023-02-21 08:17\n"
 
-#: packages/labextension/src/index.ts:60
+#: packages/labextension/src/index.ts:60 packages/labextension/src/index.ts:65
 msgid "Kernel Resource"
 msgstr ""
 
-#: packages/labextension/src/index.ts:76 packages/labextension/src/index.ts:77 packages/labextension/src/panel.ts:21
+#: packages/labextension/src/index.ts:76 packages/labextension/src/index.ts:77 packages/labextension/src/index.ts:86 packages/labextension/src/index.ts:87 packages/labextension/src/panel.ts:21 packages/labextension/src/panel.ts:22
 msgid "Kernel Usage"
 msgstr ""
 
@@ -34,93 +34,133 @@ msgstr ""
 msgid "Current memory usage"
 msgstr ""
 
+#: packages/labextension/src/widget.tsx:105
+msgid "Switch to a notebook or console to see kernel usage details."
+msgstr ""
+
+#: packages/labextension/src/widget.tsx:113
+msgid "No active kernel found."
+msgstr ""
+
+#: packages/labextension/src/widget.tsx:119
+msgid "Reason: %1."
+msgstr ""
+
 #: packages/labextension/src/widget.tsx:149
 msgid "Kernel usage details are not available"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:152
+#: packages/labextension/src/widget.tsx:152 packages/labextension/src/widget.tsx:91
 msgid "Please check with your system administrator that you are running IPyKernel version 6.10.0 or above."
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:160
+#: packages/labextension/src/widget.tsx:160 packages/labextension/src/widget.tsx:265
 msgid "Kernel usage"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:163
+#: packages/labextension/src/widget.tsx:163 packages/labextension/src/widget.tsx:286
 msgid "Kernel Host:"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:166
+#: packages/labextension/src/widget.tsx:166 packages/labextension/src/widget.tsx:273
 msgid "Notebook:"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:169
+#: packages/labextension/src/widget.tsx:169 packages/labextension/src/widget.tsx:276
 msgid "Kernel ID:"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:172
+#: packages/labextension/src/widget.tsx:172 packages/labextension/src/widget.tsx:289
 msgid "Timestamp:"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:175
+#: packages/labextension/src/widget.tsx:175 packages/labextension/src/widget.tsx:293
 msgid "Process ID:"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:178
+#: packages/labextension/src/widget.tsx:178 packages/labextension/src/widget.tsx:296
 msgid "CPU:"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:181
+#: packages/labextension/src/widget.tsx:181 packages/labextension/src/widget.tsx:299
 msgid "Memory:"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:185
+#: packages/labextension/src/widget.tsx:185 packages/labextension/src/widget.tsx:304
 msgid "Host CPU"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:189
+#: packages/labextension/src/widget.tsx:189 packages/labextension/src/widget.tsx:308
 msgid "%2%% used on %1 CPU"
 msgid_plural "%2%% used on %1 CPUs"
 msgstr[0] ""
 msgstr[1] ""
 
-#: packages/labextension/src/widget.tsx:198
+#: packages/labextension/src/widget.tsx:198 packages/labextension/src/widget.tsx:317
 msgid "Host Virtual Memory"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:201
+#: packages/labextension/src/widget.tsx:201 packages/labextension/src/widget.tsx:320
 msgid "Active:"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:205
+#: packages/labextension/src/widget.tsx:205 packages/labextension/src/widget.tsx:324
 msgid "Available:"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:209
+#: packages/labextension/src/widget.tsx:209 packages/labextension/src/widget.tsx:328
 msgid "Free:"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:213
+#: packages/labextension/src/widget.tsx:213 packages/labextension/src/widget.tsx:332
 msgid "Inactive:"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:218
+#: packages/labextension/src/widget.tsx:218 packages/labextension/src/widget.tsx:337
 msgid "Percent used:"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:223
+#: packages/labextension/src/widget.tsx:223 packages/labextension/src/widget.tsx:342
 msgid "Total:"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:227
+#: packages/labextension/src/widget.tsx:227 packages/labextension/src/widget.tsx:346
 msgid "Used:"
 msgstr ""
 
-#: packages/labextension/src/widget.tsx:231
+#: packages/labextension/src/widget.tsx:231 packages/labextension/src/widget.tsx:350
 msgid "Wired:"
 msgstr ""
 
 #: packages/labextension/src/widget.tsx:238
 msgid "Kernel usage is not available"
+msgstr ""
+
+#: packages/labextension/src/widget.tsx:255
+msgid "Kernel usage not available"
+msgstr ""
+
+#: packages/labextension/src/widget.tsx:269
+msgid "Timed out in: %1 ms"
+msgstr ""
+
+#: packages/labextension/src/widget.tsx:356
+msgid "Loading…"
+msgstr ""
+
+#: packages/labextension/src/widget.tsx:360
+msgid "Usage data is missing"
+msgstr ""
+
+#: packages/labextension/src/widget.tsx:367
+msgid "Kernel usage is missing"
+msgstr ""
+
+#: packages/labextension/src/widget.tsx:95
+msgid "Detected IPyKernel version: %1"
+msgstr ""
+
+#: packages/labextension/src/widget.tsx:99
+msgid "No IPyKernel installation detected."
 msgstr ""
 
