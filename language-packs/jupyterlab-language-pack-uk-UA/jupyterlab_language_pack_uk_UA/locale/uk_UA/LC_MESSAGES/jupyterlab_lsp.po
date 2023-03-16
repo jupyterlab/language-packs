@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 199\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2022-12-09 17:13\n"
+"PO-Revision-Date: 2023-03-16 08:13\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
@@ -264,6 +264,16 @@ msgctxt "schema"
 msgid "LSP Hover over the code tooltip settings."
 msgstr "LSP Hover над налаштуваннями підказок коду."
 
+#: /packages/jupyterlab-lsp/schema/hover.json:/properties/autoActivate/description
+msgctxt "settings"
+msgid "Automatic activation of hover without pressing a key. It will still be possible to show up tooltips with the modifier key."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/hover.json:/properties/autoActivate/title
+msgctxt "settings"
+msgid "Automatic hover"
+msgstr ""
+
 #: /packages/jupyterlab-lsp/schema/hover.json:/properties/cacheSize/description
 msgctxt "settings"
 msgid "Up to how many hover responses should be cached at any given time. The cache being is invalidated after any change in the editor."
@@ -273,6 +283,16 @@ msgstr "До скількох наведених нижче відповідей
 msgctxt "settings"
 msgid "Cache size"
 msgstr "Розмір кешу"
+
+#: /packages/jupyterlab-lsp/schema/hover.json:/properties/delay/description
+msgctxt "settings"
+msgid "Number of milliseconds after which the hover tooltip should be shown. Ignored if 'Automatic hover' is off."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/hover.json:/properties/delay/title
+msgctxt "settings"
+msgid "Hover delay"
+msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/hover.json:/properties/modifierKey/description
 msgctxt "settings"
@@ -500,7 +520,7 @@ msgctxt "schema"
 msgid "Code Syntax"
 msgstr "Синтаксис коду"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:238 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:243
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:238 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:243 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259
 msgid "Failed to load language server spec finder `{}`: \n"
 "{}"
 msgstr "Не вдалося завантажити мовний сервер специфікації пошуку `{}`: \n"
@@ -510,43 +530,43 @@ msgstr "Не вдалося завантажити мовний сервер с�
 msgid "Skipping non-installed server: `{}`"
 msgstr "Пропускати невстановлений сервер: `{}`"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:275
 msgid "Failed to fetch commands from language server spec finder `{}`:\n"
 "{}"
 msgstr "Не вдалося отримати команди від мовного серверу специфікації пошуку `{}`:\n"
 "{}"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:272
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:272 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:288
 msgid "Failed to validate commands from language server spec finder `{}`:\n"
 "{}"
 msgstr "Не вдалося підтвердити команди від мовного серверу специфікації пошуку `{}`:\n"
 "{}"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:279 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:284
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:279 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:284 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:300
 msgid "Skipped non-installed server(s): {}"
 msgstr "Пропущені невстановлені сервер(и): {}"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:41 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:41 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:54
 msgid "extra language server specs, keyed by implementation, from conf.d"
 msgstr "додаткові специфікації мовного серверу з conf.d, запрограмовані в реалізацї"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:51
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:51 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:59
 msgid "a dict of language server specs, keyed by implementation"
 msgstr "словник специфікації мовного сервера, запрограмовані в реалізацї"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:52 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:57
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:52 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:57 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:65
 msgid "try to find known language servers in sys.prefix (and elsewhere)"
 msgstr "спроба знайти відомі мовні сервери в sys.prefix (і в інших місцях)"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:193 /python_packages/jupyter_lsp/jupyter_lsp/types.py:196
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:193 /python_packages/jupyter_lsp/jupyter_lsp/types.py:196 /python_packages/jupyter_lsp/jupyter_lsp/types.py:198
 msgid "path to nodejs executable"
 msgstr "шлях до виконуваного вузла"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:195 /python_packages/jupyter_lsp/jupyter_lsp/types.py:198
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:195 /python_packages/jupyter_lsp/jupyter_lsp/types.py:198 /python_packages/jupyter_lsp/jupyter_lsp/types.py:200
 msgid "absolute paths in which to seek node_modules"
 msgstr "абсолютні шляхи, в яких будуть знаходитися модулі node_modules"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:200 /python_packages/jupyter_lsp/jupyter_lsp/types.py:203
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:200 /python_packages/jupyter_lsp/jupyter_lsp/types.py:203 /python_packages/jupyter_lsp/jupyter_lsp/types.py:205
 msgid "additional absolute paths to seek node_modules first"
 msgstr "додаткові абсолютні шляхи для початку пошуку node_modules"
 
@@ -562,17 +582,21 @@ msgstr "Ліцензія: "
 msgid "Includes dedicated dark mode icons set"
 msgstr "Включає в себе набір іконок для темного режиму"
 
-#: packages/completion-theme/src/index.ts:152 packages/completion-theme/src/index.ts:154
+#: packages/completion-theme/src/index.ts:152 packages/completion-theme/src/index.ts:154 packages/completion-theme/src/index.ts:155
 msgid "LSP Completer Themes"
 msgstr "Теми доповнювача LSP"
 
-#: packages/completion-theme/src/index.ts:158 packages/completion-theme/src/index.ts:160
+#: packages/completion-theme/src/index.ts:158 packages/completion-theme/src/index.ts:160 packages/completion-theme/src/index.ts:161
 msgid "OK"
 msgstr ""
 
-#: packages/completion-theme/src/index.ts:189 packages/completion-theme/src/index.ts:190 packages/completion-theme/src/index.ts:192
+#: packages/completion-theme/src/index.ts:189 packages/completion-theme/src/index.ts:190 packages/completion-theme/src/index.ts:191 packages/completion-theme/src/index.ts:192
 msgid "Display the completer themes"
 msgstr "Відображати теми доповнювача"
+
+#: packages/completion-theme/src/index.ts:197
+msgid "Language server protocol"
+msgstr ""
 
 #: packages/jupyterlab-lsp/src/adapters/adapter.ts:388 packages/jupyterlab-lsp/src/adapters/adapter.ts:397 packages/jupyterlab-lsp/src/adapters/adapter.ts:409 packages/jupyterlab-lsp/src/adapters/adapter.ts:412 packages/jupyterlab-lsp/src/adapters/adapter.ts:418 packages/jupyterlab-lsp/src/adapters/adapter.ts:435
 msgid "Message from "
@@ -582,27 +606,63 @@ msgstr "Повідомлення від "
 msgid "Dismiss"
 msgstr "Відхилити"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:150
+#: packages/jupyterlab-lsp/src/components/serverSettings.tsx:103
+msgid "allowed values: %1"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/serverSettings.tsx:114
+msgid "Language servers"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/serverSettings.tsx:119
+msgid "Validation of user settings for language server failed"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/serverSettings.tsx:124
+msgid "Your language server settings do not follow current schema. The LSP configuration graphical interface will run in schema-free mode to enable you to continue using the current settings as-is (in case if the schema is outdated). If this is however an earlier configuration mistake (settings were not validated in earlier versions of jupyterlab-lsp), please correct the following validation errors in JSON Settings Editor, save, and reload application:"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/serverSettings.tsx:225
+msgid "Default values set programatically for: "
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/serverSettings.tsx:242 packages/jupyterlab-lsp/src/components/statusbar.tsx:343 packages/jupyterlab-lsp/src/components/statusbar.tsx:352
+msgid "Available"
+msgstr "Доступно"
+
+#: packages/jupyterlab-lsp/src/components/serverSettings.tsx:247
+msgid "Not installed"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/serverSettings.tsx:55
+msgid "Multiple distinct values detected for:"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/serverSettings.tsx:57
+msgid "Retaining the last value for each of the settings. Please remove the additional values in JSON Settings Editor."
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:141 packages/jupyterlab-lsp/src/components/statusbar.tsx:150
 msgid "Troubleshooting"
 msgstr "Вирішення проблем"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:154
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:145 packages/jupyterlab-lsp/src/components/statusbar.tsx:154
 msgid "In case of issues with installation feel welcome to ask a question on GitHub."
 msgstr "У разі виникнення проблем з установкою, звертайтесь з питаннями на GitHub."
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:158
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:149 packages/jupyterlab-lsp/src/components/statusbar.tsx:158
 msgid "Installation"
 msgstr "Встановлення"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:168
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:159 packages/jupyterlab-lsp/src/components/statusbar.tsx:168
 msgid "No installation instructions were provided with this specification."
 msgstr "Інструкції з встановлення не були надані цією схемою."
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:183
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:174 packages/jupyterlab-lsp/src/components/statusbar.tsx:183
 msgid "No language server for %1 detected"
 msgstr "Не знайдено жодного сервера мови для %1"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:192
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:183 packages/jupyterlab-lsp/src/components/statusbar.tsx:192
 msgid "There is %1 language server you can easily install that supports %2."
 msgid_plural "There are %1 language servers you can easily install that supports %2."
 msgstr[0] "Існує %1 мовний сервер, який ви можете легко встановити що підтримує %2."
@@ -610,63 +670,59 @@ msgstr[1] "Існує %1 мовний сервер, який ви можете �
 msgstr[2] ""
 msgstr[3] ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:211
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:202 packages/jupyterlab-lsp/src/components/statusbar.tsx:211
 msgid "We do not have an auto-detection ready for a language servers supporting %1 yet."
 msgstr "У нас поки не готове автоматичне виявлення для мовних серверів, на яких підтримує %1."
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:217
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:208 packages/jupyterlab-lsp/src/components/statusbar.tsx:217
 msgid "You may contribute a specification for auto-detection as described in our "
 msgstr "Ви можете надати перевагу автовиявленню, як описано в нашому описі "
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:225
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:216 packages/jupyterlab-lsp/src/components/statusbar.tsx:225
 msgid "documentation"
 msgstr "документація"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:347
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:338 packages/jupyterlab-lsp/src/components/statusbar.tsx:347
 msgid "LSP servers"
 msgstr "LSP сервери"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:352
-msgid "Available"
-msgstr "Доступно"
-
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:362
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:353 packages/jupyterlab-lsp/src/components/statusbar.tsx:362
 msgid "Running"
 msgstr "Запущено"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:371
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:362 packages/jupyterlab-lsp/src/components/statusbar.tsx:371
 msgid "Missing"
 msgstr "Відсутньо"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:380
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:371 packages/jupyterlab-lsp/src/components/statusbar.tsx:380
 msgid "Documentation:"
 msgstr "Документація:"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:388
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:379 packages/jupyterlab-lsp/src/components/statusbar.tsx:388
 msgid "Language Servers"
 msgstr "Мови серверів"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:417 packages/jupyterlab-lsp/src/components/statusbar.tsx:418 packages/jupyterlab-lsp/src/components/statusbar.tsx:419
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:408 packages/jupyterlab-lsp/src/components/statusbar.tsx:417 packages/jupyterlab-lsp/src/components/statusbar.tsx:418 packages/jupyterlab-lsp/src/components/statusbar.tsx:419
 msgid "LSP status"
 msgstr "Статус LSP"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:467 packages/jupyterlab-lsp/src/components/statusbar.tsx:468 packages/jupyterlab-lsp/src/components/statusbar.tsx:469
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:458 packages/jupyterlab-lsp/src/components/statusbar.tsx:467 packages/jupyterlab-lsp/src/components/statusbar.tsx:468 packages/jupyterlab-lsp/src/components/statusbar.tsx:469
 msgid "LSP Code Intelligence"
 msgstr "розвідка LSP-коду"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:486 packages/jupyterlab-lsp/src/components/statusbar.tsx:487 packages/jupyterlab-lsp/src/components/statusbar.tsx:488
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:479 packages/jupyterlab-lsp/src/components/statusbar.tsx:486 packages/jupyterlab-lsp/src/components/statusbar.tsx:487 packages/jupyterlab-lsp/src/components/statusbar.tsx:488
 msgid "LSP server extension not found"
 msgstr "Розширення сервера LSP не знайдено"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:813 packages/jupyterlab-lsp/src/components/statusbar.tsx:815 packages/jupyterlab-lsp/src/components/statusbar.tsx:816 packages/jupyterlab-lsp/src/components/statusbar.tsx:818 packages/jupyterlab-lsp/src/components/statusbar.tsx:824 packages/jupyterlab-lsp/src/components/statusbar.tsx:826 packages/jupyterlab-lsp/src/components/statusbar.tsx:827 packages/jupyterlab-lsp/src/components/statusbar.tsx:829
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:809 packages/jupyterlab-lsp/src/components/statusbar.tsx:813 packages/jupyterlab-lsp/src/components/statusbar.tsx:815 packages/jupyterlab-lsp/src/components/statusbar.tsx:816 packages/jupyterlab-lsp/src/components/statusbar.tsx:818 packages/jupyterlab-lsp/src/components/statusbar.tsx:820 packages/jupyterlab-lsp/src/components/statusbar.tsx:824 packages/jupyterlab-lsp/src/components/statusbar.tsx:826 packages/jupyterlab-lsp/src/components/statusbar.tsx:827 packages/jupyterlab-lsp/src/components/statusbar.tsx:829
 msgid "not initialized"
 msgstr "не ініціалізовано"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:829 packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:832 packages/jupyterlab-lsp/src/components/statusbar.tsx:834
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:825 packages/jupyterlab-lsp/src/components/statusbar.tsx:829 packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:832 packages/jupyterlab-lsp/src/components/statusbar.tsx:834
 msgid "Waiting for documents initialization..."
 msgstr "Очікування ініціалізації документів..."
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:833 packages/jupyterlab-lsp/src/components/statusbar.tsx:834 packages/jupyterlab-lsp/src/components/statusbar.tsx:836
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:827 packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:833 packages/jupyterlab-lsp/src/components/statusbar.tsx:834 packages/jupyterlab-lsp/src/components/statusbar.tsx:836
 msgid "Fully connected & initialized (%2 virtual document)"
 msgid_plural "Fully connected & initialized (%2 virtual document)"
 msgstr[0] "Повністю підключено та ініціалізовано (%2 віртуальний документ)"
@@ -674,11 +730,7 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] "Повністю підключено та ініціалізовано (%2 віртуальний документ)"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:845 packages/jupyterlab-lsp/src/components/statusbar.tsx:848
-msgid "Fully connected, but %2/%3 virtual document stuck uninitialized: %4"
-msgstr "Повністю підключено, але %2/%3 віртуальний документ не ініціалізовано: %4"
-
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:847 packages/jupyterlab-lsp/src/components/statusbar.tsx:850
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:841 packages/jupyterlab-lsp/src/components/statusbar.tsx:847 packages/jupyterlab-lsp/src/components/statusbar.tsx:850
 msgctxt "pluralized"
 msgid "Fully connected, but %2/%3 virtual document stuck uninitialized: %4"
 msgid_plural "Fully connected, but %2/%3 virtual documents stuck uninitialized: %4"
@@ -687,11 +739,11 @@ msgstr[1] "Повністю під'єднано, але віртуальні д�
 msgstr[2] "Повністю під'єднано, але віртуальні документи %2/%3 застрягли неініціалізованими: %4"
 msgstr[3] "Повністю під'єднано, але віртуальні документи %2/%3 застрягли неініціалізованими: %4"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:859 packages/jupyterlab-lsp/src/components/statusbar.tsx:862
-msgid "%2/%3 virtual document connected (%4 connections; waiting for: %5)"
-msgstr "%2/%3 віртуальний документ підключено (%4 підключення; очікується: %5)"
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:845 packages/jupyterlab-lsp/src/components/statusbar.tsx:848
+msgid "Fully connected, but %2/%3 virtual document stuck uninitialized: %4"
+msgstr "Повністю підключено, але %2/%3 віртуальний документ не ініціалізовано: %4"
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:862 packages/jupyterlab-lsp/src/components/statusbar.tsx:865
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:856 packages/jupyterlab-lsp/src/components/statusbar.tsx:862 packages/jupyterlab-lsp/src/components/statusbar.tsx:865
 msgctxt "pluralized"
 msgid "%2/%3 virtual document connected (%4 connections; waiting for: %5)"
 msgid_plural "%2/%3 virtual documents connected (%4 connections; waiting for: %5)"
@@ -699,6 +751,10 @@ msgstr[0] "%2/%3 віртуальний документ під'єднано (%4
 msgstr[1] "%2/%3 віртуальні документи під'єднано (%4 підключення; очікується: %5)"
 msgstr[2] "%2/%3 віртуальні документи під'єднано (%4 підключення; очікується: %5)"
 msgstr[3] "%2/%3 віртуальні документи під'єднано (%4 підключення; очікується: %5)"
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:859 packages/jupyterlab-lsp/src/components/statusbar.tsx:862
+msgid "%2/%3 virtual document connected (%4 connections; waiting for: %5)"
+msgstr "%2/%3 віртуальний документ підключено (%4 підключення; очікується: %5)"
 
 #: packages/jupyterlab-lsp/src/components/utils.tsx:54
 msgid "cell %1"
@@ -808,17 +864,33 @@ msgstr "Виділяти посилання"
 msgid "Highlight type definition"
 msgstr "Визначати тип підсвічування"
 
-#: packages/jupyterlab-lsp/src/features/jump_to.ts:128 packages/jupyterlab-lsp/src/features/jump_to.ts:129 packages/jupyterlab-lsp/src/features/jump_to.ts:141
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:128 packages/jupyterlab-lsp/src/features/jump_to.ts:129 packages/jupyterlab-lsp/src/features/jump_to.ts:141 packages/jupyterlab-lsp/src/features/jump_to.ts:236
 msgid "No jump targets found"
 msgstr "Не знайдено цілі для переходу"
 
-#: packages/jupyterlab-lsp/src/features/jump_to.ts:258 packages/jupyterlab-lsp/src/features/jump_to.ts:260 packages/jupyterlab-lsp/src/features/jump_to.ts:284 packages/jupyterlab-lsp/src/features/jump_to.ts:288
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:188
+msgid "Choose the jump target"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:189
+msgid "Jump"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:258 packages/jupyterlab-lsp/src/features/jump_to.ts:260 packages/jupyterlab-lsp/src/features/jump_to.ts:284 packages/jupyterlab-lsp/src/features/jump_to.ts:288 packages/jupyterlab-lsp/src/features/jump_to.ts:399
 msgid "Jump to definition"
 msgstr "Перейти до визначення"
 
-#: packages/jupyterlab-lsp/src/features/jump_to.ts:268 packages/jupyterlab-lsp/src/features/jump_to.ts:270 packages/jupyterlab-lsp/src/features/jump_to.ts:295 packages/jupyterlab-lsp/src/features/jump_to.ts:299
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:268 packages/jupyterlab-lsp/src/features/jump_to.ts:270 packages/jupyterlab-lsp/src/features/jump_to.ts:295 packages/jupyterlab-lsp/src/features/jump_to.ts:299 packages/jupyterlab-lsp/src/features/jump_to.ts:444
 msgid "Jump back"
 msgstr "Повернутися назад"
+
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:377 packages/jupyterlab-lsp/src/features/jump_to.ts:408
+msgid "Connection not found for jump"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:430
+msgid "Jump to references"
+msgstr ""
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:103 packages/jupyterlab-lsp/src/features/rename.ts:104 packages/jupyterlab-lsp/src/features/rename.ts:109
 msgid "Rename symbol"
