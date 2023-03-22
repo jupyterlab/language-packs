@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
-"PO-Revision-Date: 2023-03-13 08:36\n"
+"PO-Revision-Date: 2023-03-22 14:51\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -2154,7 +2154,7 @@ msgstr ""
 msgid "Context menu customization has changed. You will need to reload JupyterLab to see the changes."
 msgstr ""
 
-#: packages/application-extension/src/index.tsx:995 packages/apputils/src/toolbar/factory.ts:34 packages/docmanager-extension/src/index.tsx:654 packages/mainmenu-extension/src/index.ts:948
+#: packages/application-extension/src/index.tsx:995 packages/apputils/src/toolbar/factory.ts:34 packages/docmanager-extension/src/index.tsx:654 packages/docprovider/src/yprovider.ts:135 packages/mainmenu-extension/src/index.ts:948
 msgid "Reload"
 msgstr "重新載入"
 
@@ -2381,7 +2381,7 @@ msgstr "使用主題：%1"
 msgid "Workspace loader"
 msgstr ""
 
-#: packages/apputils-extension/src/workspacesplugin.ts:274 packages/apputils-extension/src/workspacesplugin.ts:280 packages/docmanager/src/widgetmanager.ts:438 packages/docregistry/src/context.ts:1035 packages/docregistry/src/context.ts:1042
+#: packages/apputils-extension/src/workspacesplugin.ts:274 packages/apputils-extension/src/workspacesplugin.ts:280 packages/docmanager/src/widgetmanager.ts:438 packages/docregistry/src/context.ts:1035 packages/docregistry/src/context.ts:1042 packages/docregistry/src/context.ts:1101 packages/docregistry/src/context.ts:1108
 msgid "Save"
 msgstr "儲存"
 
@@ -2389,7 +2389,7 @@ msgstr "儲存"
 msgid "Save Current Workspace As…"
 msgstr "儲存當前工作區為..."
 
-#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1292 packages/debugger-extension/src/index.ts:625 packages/debugger/src/panels/breakpoints/index.ts:66 packages/docmanager-extension/src/index.tsx:653 packages/docmanager-extension/src/index.tsx:703 packages/docmanager-extension/src/index.tsx:994 packages/docmanager/src/dialogs.ts:115 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:444 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:415 packages/filebrowser/src/model.ts:456 packages/filebrowser/src/opendialog.ts:87 packages/notebook/src/actions.tsx:1911 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/shortcuts-extension/src/components/ShortcutItem.tsx:247 packages/translation-extension/src/index.ts:138
+#: packages/apputils-extension/src/workspacesplugin.ts:278 packages/apputils/src/sessioncontext.tsx:1292 packages/debugger-extension/src/index.ts:625 packages/debugger/src/panels/breakpoints/index.ts:66 packages/docmanager-extension/src/index.tsx:1015 packages/docmanager-extension/src/index.tsx:653 packages/docmanager-extension/src/index.tsx:703 packages/docmanager-extension/src/index.tsx:994 packages/docmanager/src/dialogs.ts:115 packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/widgetmanager.ts:444 packages/extensionmanager/src/companions.tsx:216 packages/filebrowser/src/listing.ts:415 packages/filebrowser/src/model.ts:456 packages/filebrowser/src/opendialog.ts:87 packages/notebook/src/actions.tsx:1911 packages/running/src/index.tsx:232 packages/settingeditor/src/plugineditor.ts:137 packages/shortcuts-extension/src/components/ShortcutItem.tsx:247 packages/translation-extension/src/index.ts:138
 msgid "Cancel"
 msgstr "取消"
 
@@ -2521,15 +2521,15 @@ msgstr "核心名稱："
 msgid "Kernel Id:"
 msgstr "核心 Id："
 
-#: packages/apputils/src/thememanager.ts:362
+#: packages/apputils/src/thememanager.ts:362 packages/apputils/src/thememanager.ts:373
 msgid "Neither theme %1 nor default %2 loaded."
 msgstr "主題 %1 和預設 %2 皆未載入"
 
-#: packages/apputils/src/thememanager.ts:446
+#: packages/apputils/src/thememanager.ts:446 packages/apputils/src/thememanager.ts:457
 msgid "Error Loading Theme"
 msgstr "載入主題時發生錯誤"
 
-#: packages/apputils/src/thememanager.ts:448 packages/docmanager-extension/src/index.tsx:406 packages/extensionmanager/src/companions.tsx:218 packages/extensionmanager/src/dialog.tsx:39 packages/extensionmanager/src/widget.tsx:354 packages/extensionmanager/src/widget.tsx:355
+#: packages/apputils/src/thememanager.ts:448 packages/apputils/src/thememanager.ts:459 packages/docmanager-extension/src/index.tsx:406 packages/extensionmanager/src/companions.tsx:218 packages/extensionmanager/src/dialog.tsx:39 packages/extensionmanager/src/widget.tsx:354 packages/extensionmanager/src/widget.tsx:355
 msgid "OK"
 msgstr "確定"
 
@@ -2914,19 +2914,31 @@ msgstr ""
 msgid "Render variable"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:1009
+#: packages/docmanager-extension/src/index.tsx:1002 packages/docmanager-extension/src/index.tsx:981
+msgid "Delete %1"
+msgstr "删除 %1"
+
+#: packages/docmanager-extension/src/index.tsx:1009 packages/docmanager-extension/src/index.tsx:1030
 msgid "Show in File Browser"
 msgstr "在檔案總管中顯示"
 
-#: packages/docmanager-extension/src/index.tsx:1075
+#: packages/docmanager-extension/src/index.tsx:1012 packages/docmanager-extension/src/index.tsx:1016 packages/docmanager-extension/src/index.tsx:991 packages/docmanager-extension/src/index.tsx:995 packages/filebrowser-extension/src/index.ts:819 packages/filebrowser/src/listing.ts:412 packages/filebrowser/src/listing.ts:416
+msgid "Delete"
+msgstr "刪除"
+
+#: packages/docmanager-extension/src/index.tsx:1013 packages/docmanager-extension/src/index.tsx:992
+msgid "Are you sure you want to delete %1"
+msgstr "確定要刪除 %1？"
+
+#: packages/docmanager-extension/src/index.tsx:1075 packages/docmanager-extension/src/index.tsx:1096
 msgid "Are you sure you want to revert the %1 to the latest checkpoint? "
 msgstr "確定要還原 %1 至最新的檢查點? "
 
-#: packages/docmanager-extension/src/index.tsx:1081
+#: packages/docmanager-extension/src/index.tsx:1081 packages/docmanager-extension/src/index.tsx:1102
 msgid "This cannot be undone."
 msgstr "此操作將不能被復原。"
 
-#: packages/docmanager-extension/src/index.tsx:1088
+#: packages/docmanager-extension/src/index.tsx:1088 packages/docmanager-extension/src/index.tsx:1109
 msgid "The checkpoint was last updated at: "
 msgstr "檢查點最後更新於： "
 
@@ -3008,7 +3020,7 @@ msgstr "無法復原"
 msgid "Revert %1 to checkpoint"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:704 packages/docregistry/src/context.ts:851 packages/docregistry/src/context.ts:869
+#: packages/docmanager-extension/src/index.tsx:704 packages/docregistry/src/context.ts:851 packages/docregistry/src/context.ts:869 packages/docregistry/src/context.ts:874 packages/docregistry/src/context.ts:892
 msgid "Revert"
 msgstr "復原"
 
@@ -3068,29 +3080,17 @@ msgstr "另存 %1 為…"
 msgid "Save with new path"
 msgstr "使用新路徑儲存"
 
-#: packages/docmanager-extension/src/index.tsx:883
+#: packages/docmanager-extension/src/index.tsx:883 packages/docmanager-extension/src/index.tsx:904
 msgid "Autosave Documents"
 msgstr "自動儲存文件"
 
-#: packages/docmanager-extension/src/index.tsx:943
+#: packages/docmanager-extension/src/index.tsx:943 packages/docmanager-extension/src/index.tsx:964
 msgid "New View for %1"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:967
+#: packages/docmanager-extension/src/index.tsx:967 packages/docmanager-extension/src/index.tsx:988
 msgid "Rename%1…"
 msgstr ""
-
-#: packages/docmanager-extension/src/index.tsx:981
-msgid "Delete %1"
-msgstr "删除 %1"
-
-#: packages/docmanager-extension/src/index.tsx:991 packages/docmanager-extension/src/index.tsx:995 packages/filebrowser-extension/src/index.ts:819 packages/filebrowser/src/listing.ts:412 packages/filebrowser/src/listing.ts:416
-msgid "Delete"
-msgstr "刪除"
-
-#: packages/docmanager-extension/src/index.tsx:992
-msgid "Are you sure you want to delete %1"
-msgstr "確定要刪除 %1？"
 
 #: packages/docmanager/src/dialogs.ts:112
 msgid "Overwrite file?"
@@ -3100,7 +3100,7 @@ msgstr "覆蓋檔案?"
 msgid "\"%1\" already exists, overwrite?"
 msgstr "\"%1\" 檔案已經存在，要覆寫嗎？"
 
-#: packages/docmanager/src/dialogs.ts:116 packages/docregistry/src/context.ts:853 packages/docregistry/src/context.ts:865 packages/docregistry/src/context.ts:887 packages/docregistry/src/context.ts:898 packages/shortcuts-extension/src/components/ShortcutInput.tsx:499 packages/shortcuts-extension/src/components/ShortcutItem.tsx:254
+#: packages/docmanager/src/dialogs.ts:116 packages/docregistry/src/context.ts:853 packages/docregistry/src/context.ts:865 packages/docregistry/src/context.ts:876 packages/docregistry/src/context.ts:887 packages/docregistry/src/context.ts:888 packages/docregistry/src/context.ts:898 packages/docregistry/src/context.ts:910 packages/docregistry/src/context.ts:921 packages/shortcuts-extension/src/components/ShortcutInput.tsx:499 packages/shortcuts-extension/src/components/ShortcutItem.tsx:254
 msgid "Overwrite"
 msgstr "覆寫"
 
@@ -3194,33 +3194,41 @@ msgstr "在關閉之前，儲存變更到 \"%1\" 中？"
 msgid "Discard"
 msgstr "捨棄"
 
-#: packages/docregistry/src/context.ts:1037
+#: packages/docprovider/src/yprovider.ts:131
+msgid "Session expired"
+msgstr ""
+
+#: packages/docprovider/src/yprovider.ts:132
+msgid "The document session expired. You need to reload this browser tab."
+msgstr ""
+
+#: packages/docregistry/src/context.ts:1037 packages/docregistry/src/context.ts:1103
 msgid "Save File As.."
 msgstr "另存檔案為.."
 
-#: packages/docregistry/src/context.ts:642
+#: packages/docregistry/src/context.ts:642 packages/docregistry/src/context.ts:665 packages/docregistry/src/context.ts:958
 msgid "File Save Error for %1"
 msgstr "儲存檔案 %1 時發生錯誤"
 
-#: packages/docregistry/src/context.ts:686 packages/docregistry/src/context.ts:744
+#: packages/docregistry/src/context.ts:686 packages/docregistry/src/context.ts:709 packages/docregistry/src/context.ts:744 packages/docregistry/src/context.ts:767
 msgid "File Load Error for %1"
 msgstr "載入檔案 %1 時發生錯誤"
 
-#: packages/docregistry/src/context.ts:845
+#: packages/docregistry/src/context.ts:845 packages/docregistry/src/context.ts:868
 msgid "\"%1\" has changed on disk since the last time it was opened or saved.\n"
 "Do you want to overwrite the file on disk with the version open here,\n"
 "or load the version on disk (revert)?"
 msgstr ""
 
-#: packages/docregistry/src/context.ts:857
+#: packages/docregistry/src/context.ts:857 packages/docregistry/src/context.ts:880
 msgid "File Changed"
 msgstr "檔案已變更"
 
-#: packages/docregistry/src/context.ts:882
+#: packages/docregistry/src/context.ts:882 packages/docregistry/src/context.ts:905
 msgid "\"%1\" already exists. Do you want to replace it?"
 msgstr "\"%1\" 已經存在了，您確定要取代它嗎?"
 
-#: packages/docregistry/src/context.ts:890
+#: packages/docregistry/src/context.ts:890 packages/docregistry/src/context.ts:913
 msgid "File Overwrite?"
 msgstr "是否覆寫檔案？"
 
