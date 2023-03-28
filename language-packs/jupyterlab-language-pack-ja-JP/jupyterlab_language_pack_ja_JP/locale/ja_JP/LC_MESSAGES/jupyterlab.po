@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2023-03-22 14:52\n"
+"PO-Revision-Date: 2023-03-25 10:23\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -176,7 +176,7 @@ msgstr "サブメニュー定義"
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/type/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/type/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/type/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/type/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/type/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/type/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/type/title /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/type/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/type/title
 msgctxt "settings"
 msgid "Item type"
-msgstr ""
+msgstr "アイテムの種類"
 
 #: /packages/application-extension/schema/context-menu.json:/description
 msgctxt "schema"
@@ -239,7 +239,7 @@ msgstr "JupyterLabシェルレイアウトの設定。"
 #: /packages/application-extension/schema/shell.json:/properties/hiddenMode/description
 msgctxt "settings"
 msgid "The method for hiding widgets in the main dock panel. Using `scale` will increase performance on Firefox but don't use it with Chrome, Chromium or Edge. Similar performance gains are seen with `contentVisibility` which is only available in Chromium-based browsers."
-msgstr ""
+msgstr "メインのドックパネルにウィジェットを非表示にする方法。 `scale`を使用すると、Firefoxのパフォーマンスが向上しますが、Chrome、Chromium、Edgeでは使用しません。 同様のパフォーマンス向上は、Chromiumベースのブラウザでのみ利用可能な`contentVisibility`でも見られます。"
 
 #: /packages/application-extension/schema/shell.json:/properties/hiddenMode/title
 msgctxt "settings"
@@ -283,42 +283,42 @@ msgstr "サイドバー"
 #: /packages/apputils-extension/schema/notification.json:/description
 msgctxt "schema"
 msgid "Notifications settings."
-msgstr ""
+msgstr "通知設定"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
 msgctxt "settings"
 msgid "Whether to check for newer version of JupyterLab or not. It requires `fechNews` to be `true` to be active. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "JupyterLabの新しいバージョンを確認するかどうか。 `fechNews`を有効にするには`true`が必要です。`true`の場合、ウェブサイトへのリクエストを行います。"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/title
 msgctxt "settings"
 msgid "Check for JupyterLab updates"
-msgstr ""
+msgstr "JupyterLab の更新を確認する"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/doNotDisturbMode/description
 msgctxt "settings"
 msgid "If `true`, no toast notifications will be automatically displayed."
-msgstr ""
+msgstr "`true` の場合、トースト通知は自動的に表示されません。"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/doNotDisturbMode/title
 msgctxt "settings"
 msgid "Silence all notifications"
-msgstr ""
+msgstr "通知オフにする"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/description
 msgctxt "settings"
 msgid "Whether to fetch news from Jupyter news feed. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "Jupyter news feedからニュースを取得するかどうか。`true` の場合、ウェブサイトにリクエストを送信します。"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/title
 msgctxt "settings"
 msgid "Fetch official Jupyter news"
-msgstr ""
+msgstr "Jupyter公式ニュースを取得"
 
 #: /packages/apputils-extension/schema/notification.json:/title
 msgctxt "schema"
 msgid "Notifications"
-msgstr ""
+msgstr "お知らせ"
 
 #: /packages/apputils-extension/schema/palette.json:/description
 msgctxt "schema"
@@ -328,7 +328,7 @@ msgstr "コマンドパレットの設定。"
 #: /packages/apputils-extension/schema/palette.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Command Palette"
-msgstr ""
+msgstr "コマンドパレット"
 
 #: /packages/apputils-extension/schema/palette.json:/properties/modal/description
 msgctxt "settings"
@@ -358,22 +358,22 @@ msgstr "印刷"
 #: /packages/apputils-extension/schema/sanitizer.json:/description
 msgctxt "schema"
 msgid "HTML Sanitizer settings."
-msgstr ""
+msgstr "HTMLサニタイザーの設定"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/description
 msgctxt "settings"
 msgid "Scheme allowed by the HTML sanitizer."
-msgstr ""
+msgstr "HTML サニタイザーによって許可されたスキーム。"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/title
 msgctxt "settings"
 msgid "Allowed URL Scheme"
-msgstr ""
+msgstr "許可されたURLスキーム"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/title
 msgctxt "schema"
 msgid "HTML Sanitizer"
-msgstr ""
+msgstr "HTML Sanitizer"
 
 #: /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/code-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/content-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/ui-font-family/description
 msgctxt "settings"
@@ -403,17 +403,17 @@ msgstr "テーママネージャ"
 #: /packages/apputils-extension/schema/themes.json:/properties/overrides/description
 msgctxt "settings"
 msgid "Override theme CSS variables by setting key-value pairs here"
-msgstr ""
+msgstr "ここでキーと値のペアを設定してテーマ CSS 変数を上書きします"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/overrides/title
 msgctxt "settings"
 msgid "Theme CSS Overrides"
-msgstr ""
+msgstr "テーマ CSS のオーバーライド"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme-scrollbars/description
 msgctxt "settings"
 msgid "Enable/disable styling of the application scrollbars"
-msgstr ""
+msgstr "アプリのスクロールバーのスタイルを有効/無効にする"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme-scrollbars/title
 msgctxt "settings"
