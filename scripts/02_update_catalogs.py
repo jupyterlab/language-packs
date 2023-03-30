@@ -255,6 +255,32 @@ if __name__ == "__main__":
                     #     print(f"\nNext available version {semversion!s} for `{package_name}` is below the supported range {range!s}.\n")
                     #     break
 
+        # FIXME Add temporary 4.0.0 beta pre releases
+        if package_name == "jupyterlab":
+            try:
+                tags = get_tags(repo["owner"], repo["repo"], filter="v4.0.0b")
+            except ValueError:
+                pass
+            else:
+                for tag in tags:
+                    try:
+                        version = parse(tag)
+                    except InvalidVersion:
+                        version = None
+                    if version is None or version.release is None:
+                        continue
+
+                    print(f"\nMerge version {version!s} for `{package_name}`.\n")
+                    try:
+                        update_repo(package_name, url, tag)
+                        update_catalog(package_name, current_version, should_merge)
+                    except subprocess.CalledProcessError as e:
+                        print(e.stdout)
+                        print(e.stderr)
+                        raise e
+
+                    break  # Only process the most recent tag
+
         # The final step is to merge the current version so the POT file is tagged accordingly
         # This is suboptimal as it was probably already extracted but it ensures strings are
         # the latest one including white space changes (that apparently are ignored see https://github.com/jupyterlab/language-packs/pull/116)
