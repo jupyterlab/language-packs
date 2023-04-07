@@ -262,7 +262,7 @@ if __name__ == "__main__":
             except ValueError:
                 pass
             else:
-                for tag in tags:
+                for tag in filter(lambda t: t != "v4.0.0b0", tags):
                     try:
                         version = parse(tag)
                     except InvalidVersion:
