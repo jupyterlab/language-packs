@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-04-15 00:56\n"
+"PO-Revision-Date: 2023-04-15 02:06\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -376,17 +376,26 @@ msgid "Note: To disable a item,\n"
 "  ]\n"
 "}\n\n"
 "Top bar description:"
-msgstr ""
+msgstr "注意：要禁用一个项目，请将其复制到用户首选项中并添加“disabled”键。以下示例将禁用用户菜单：\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"user-menu\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"顶栏描述："
 
 #: /packages/application-extension/schema/top-bar.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "Top bar items"
-msgstr ""
+msgstr "顶栏项"
 
 #: /packages/application-extension/schema/top-bar.json:/title
 msgctxt "schema"
 msgid "Top Bar"
-msgstr ""
+msgstr "顶栏"
 
 #: /packages/apputils-extension/schema/notification.json:/description
 msgctxt "schema"
@@ -481,12 +490,12 @@ msgstr "允许的 URL 协议"
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/autolink/description
 msgctxt "settings"
 msgid "Whether to replace URLs with links or not."
-msgstr ""
+msgstr "是否用链接替换网址。"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/autolink/title
 msgctxt "settings"
 msgid "Autolink URL replacement"
-msgstr ""
+msgstr "自动链接 URL 替换"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/title
 msgctxt "schema"
@@ -556,12 +565,12 @@ msgstr "主题"
 #: /packages/apputils-extension/schema/utilityCommands.json:/description
 msgctxt "schema"
 msgid "Shortcut help settings."
-msgstr ""
+msgstr "快捷键帮助设置。"
 
 #: /packages/apputils-extension/schema/utilityCommands.json:/title
 msgctxt "schema"
 msgid "Shortcuts Help"
-msgstr ""
+msgstr "快捷键帮助"
 
 #: /packages/apputils-extension/schema/workspaces.json:/description
 msgctxt "schema"
@@ -1531,7 +1540,7 @@ msgstr ""
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/trustByDefault/title
 msgctxt "settings"
 msgid "Trust HTML by default"
-msgstr ""
+msgstr "默认信任HTML"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1631,7 +1640,7 @@ msgstr ""
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/configuration/title
 msgctxt "settings"
 msgid "Language Server Configurations"
-msgstr ""
+msgstr "语言服务器配置"
 
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/rank/description
 msgctxt "settings"
@@ -1646,12 +1655,12 @@ msgstr ""
 #: /packages/lsp-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Language Server Protocol settings."
-msgstr ""
+msgstr "语言服务器协议设置。"
 
 #: /packages/lsp-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Language integration"
-msgstr ""
+msgstr "语言集成"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/activate/description
 msgctxt "settings"
@@ -1661,7 +1670,7 @@ msgstr ""
 #: /packages/lsp-extension/schema/plugin.json:/properties/activate/title
 msgctxt "settings"
 msgid "Activate"
-msgstr ""
+msgstr "激活"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/languageServers/description
 msgctxt "settings"
@@ -1671,7 +1680,7 @@ msgstr ""
 #: /packages/lsp-extension/schema/plugin.json:/properties/languageServers/title
 msgctxt "settings"
 msgid "Language Server"
-msgstr ""
+msgstr "语言服务器"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/logAllCommunication/description
 msgctxt "settings"
@@ -1696,7 +1705,7 @@ msgstr ""
 #: /packages/lsp-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Language Servers (Experimental)"
-msgstr ""
+msgstr "语言服务器 (实验性)"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1808,12 +1817,12 @@ msgstr "主菜单"
 #: /packages/mathjax-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "MathJax math renderer for JupyterLab"
-msgstr ""
+msgstr "JupyterLab 使用的 MathJax 数学渲染器"
 
 #: /packages/mathjax-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "MathJax Plugin"
-msgstr ""
+msgstr "MathJax 插件"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/id/description
 msgctxt "settings"
@@ -2163,7 +2172,7 @@ msgstr ""
 #: /packages/notebook-extension/schema/tracker.json:/properties/showHiddenCellsButton/title
 msgctxt "settings"
 msgid "Show hidden cells button if collapsed"
-msgstr ""
+msgstr "折叠时显示隐藏单元格按钮"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/sideBySideLeftMarginOverride/description
 msgctxt "settings"
@@ -2866,11 +2875,11 @@ msgstr "运行所有从参数传递过来的已启用的命令"
 
 #: packages/apputils-extension/src/index.ts:625
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "显示键盘快捷键"
 
 #: packages/apputils-extension/src/index.ts:626
 msgid "Show relevant keyboard shortcuts for the current active widget"
-msgstr ""
+msgstr "显示当前活动小部件的相关键盘快捷键"
 
 #: packages/apputils-extension/src/index.ts:646 packages/help-extension/src/index.tsx:181 packages/help-extension/src/index.tsx:182 packages/help-extension/src/index.tsx:212 packages/help-extension/src/index.tsx:214 packages/help-extension/src/index.tsx:244 packages/help-extension/src/index.tsx:475 packages/help-extension/src/index.tsx:485 packages/help-extension/src/index.tsx:89 packages/help-extension/src/index.tsx:90
 msgid "Help"
@@ -2951,7 +2960,7 @@ msgstr "命令面板"
 
 #: packages/apputils-extension/src/shortcuts.tsx:183
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "键盘快捷键"
 
 #: packages/apputils-extension/src/shortcuts.tsx:187 packages/docmanager/src/widgetmanager.ts:397 packages/docmanager/src/widgetmanager.ts:399 packages/filebrowser/src/listing.ts:1140 packages/filebrowser/src/listing.ts:1227 packages/running-extension/src/opentabs.ts:86 packages/running-extension/src/opentabs.ts:87
 msgid "Close"
@@ -3215,19 +3224,19 @@ msgstr "重启内核"
 
 #: packages/cells/src/placeholder.ts:85
 msgid "Click to expand"
-msgstr ""
+msgstr "点击展开"
 
 #: packages/cells/src/widget.ts:1009 packages/cells/src/widget.ts:1094 packages/cells/src/widget.ts:1466
 msgid "Code Cell Content"
-msgstr ""
+msgstr "代码单元格内容"
 
 #: packages/cells/src/widget.ts:1010 packages/cells/src/widget.ts:1095 packages/cells/src/widget.ts:1467
 msgid "Code Cell Content with Output"
-msgstr ""
+msgstr "代码单元格内容及其输出"
 
 #: packages/cells/src/widget.ts:1875
 msgid "Markdown Cell Content"
-msgstr ""
+msgstr "Markdown 单元格内容"
 
 #: packages/cells/src/widget.ts:2118
 msgid "%1 cell hidden"
@@ -3236,7 +3245,7 @@ msgstr[0] ""
 
 #: packages/cells/src/widget.ts:2338
 msgid "Raw Cell Content"
-msgstr ""
+msgstr "原始单元格内容"
 
 #: packages/celltags-extension/src/celltag.tsx:211 packages/celltags/src/addwidget.ts:159 packages/celltags/src/addwidget.ts:31
 msgid "Add Tag"
@@ -3296,11 +3305,11 @@ msgstr "请打开您的浏览器 JavaScript 控制台以获取错误报告说明
 
 #: packages/codemirror/src/extension.ts:606
 msgid "Auto Closing Brackets"
-msgstr ""
+msgstr "自动闭合括号"
 
 #: packages/codemirror/src/extension.ts:615
 msgid "Code Folding"
-msgstr ""
+msgstr "代码折叠"
 
 #: packages/codemirror/src/extension.ts:627
 msgid "Cursor blinking rate"
@@ -3344,11 +3353,11 @@ msgstr "高亮显示括号对"
 
 #: packages/codemirror/src/extension.ts:741
 msgid "Rulers"
-msgstr ""
+msgstr "标尺"
 
 #: packages/codemirror/src/extension.ts:760
 msgid "Smart Indentation"
-msgstr ""
+msgstr "智能缩进"
 
 #: packages/codemirror/src/extension.ts:772
 msgid "Tab size"
