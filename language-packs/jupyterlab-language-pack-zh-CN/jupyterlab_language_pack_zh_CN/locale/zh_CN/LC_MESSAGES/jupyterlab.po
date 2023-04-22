@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-04-22 02:44\n"
+"PO-Revision-Date: 2023-04-22 04:13\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -931,7 +931,7 @@ msgstr "所有提示符单元格配置。"
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all prompt cells; it will override the CodeMirror default configuration."
-msgstr ""
+msgstr "所有提示单元格的配置；它将覆盖 CodeMirror 默认配置。"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/title
 msgctxt "settings"
@@ -1457,7 +1457,9 @@ msgctxt "settings"
 msgid "The configuration for all text editors; it will override the CodeMirror default configuration.\n"
 "If `fontFamily`, `fontSize` or `lineHeight` are `null`,\n"
 "values from current theme are used."
-msgstr ""
+msgstr "所有文本编辑器的配置；它将覆盖CodeMirror默认配置。\n"
+"如果`fontFamily`，`fontSize`或者 `lineHeight`为 `null`,\n"
+"则使用当前主题的值。"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/title
 msgctxt "settings"
@@ -1467,7 +1469,7 @@ msgstr "编辑器配置"
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/scrollPastEnd/description
 msgctxt "settings"
 msgid "Whether to scroll past the end of text document."
-msgstr ""
+msgstr "是否滚动超过文本文档的末端."
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/toolbar/description
 msgctxt "settings"
@@ -1539,7 +1541,7 @@ msgstr "HTML 查看器工具栏项目"
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/trustByDefault/description
 msgctxt "settings"
 msgid "Whether to trust HTML files upon opening"
-msgstr ""
+msgstr "是否信任打开的 HTML 文件"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/trustByDefault/title
 msgctxt "settings"
@@ -1639,7 +1641,7 @@ msgstr "日志控制台"
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/configuration/description
 msgctxt "settings"
 msgid "Configuration to be sent to language server over LSP when initialized: see the specific language server's documentation for more"
-msgstr ""
+msgstr "初始化时通过 LSP 发送到语言服务器的配置：请参阅特定语言服务器的文档获取更多信息。"
 
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/configuration/title
 msgctxt "settings"
@@ -1649,7 +1651,7 @@ msgstr "语言服务器配置"
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/rank/description
 msgctxt "settings"
 msgid "When multiple servers match specific document/language, the server with the highest rank will be used"
-msgstr ""
+msgstr "当多个服务器匹配特定的文档/语言时，将使用排名最高的服务器。"
 
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/rank/title
 msgctxt "settings"
@@ -1679,7 +1681,7 @@ msgstr "激活"
 #: /packages/lsp-extension/schema/plugin.json:/properties/languageServers/description
 msgctxt "settings"
 msgid "Language-server specific configuration, keyed by implementation"
-msgstr ""
+msgstr "语言服务器相关配置，由实现作为键名"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/languageServers/title
 msgctxt "settings"
@@ -1689,22 +1691,22 @@ msgstr "语言服务器"
 #: /packages/lsp-extension/schema/plugin.json:/properties/logAllCommunication/description
 msgctxt "settings"
 msgid "Enable or disable the logging feature of the language servers."
-msgstr ""
+msgstr "启用或禁用语言服务器的日志功能。"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/logAllCommunication/title
 msgctxt "settings"
 msgid "Log communication"
-msgstr ""
+msgstr "日志通信"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/setTrace/description
 msgctxt "settings"
 msgid "Whether to ask server to send logs with execution trace (for debugging). Accepted values are: \"off\", \"messages\", \"verbose\". Servers are allowed to ignore this request."
-msgstr ""
+msgstr "是否要求服务器发送带有执行跟踪的日志（用于调试）。接受的值为：“off”，“messages”，“verbose”。服务器可以忽略此请求。"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/setTrace/title
 msgctxt "settings"
 msgid "Ask servers to send trace notifications"
-msgstr ""
+msgstr "向服务器请求发送追踪通知"
 
 #: /packages/lsp-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1831,32 +1833,32 @@ msgstr "MathJax 插件"
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/id/description
 msgctxt "settings"
 msgid "The section ID"
-msgstr ""
+msgstr "版块 ID"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/label/description
 msgctxt "settings"
 msgid "The section label"
-msgstr ""
+msgstr "版块标签"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/rank/description
 msgctxt "settings"
 msgid "The rank of the section in the right panel"
-msgstr ""
+msgstr "右侧面板中该部分的排名"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/showModified/description
 msgctxt "settings"
 msgid "Whether to show that values have been modified from defaults"
-msgstr ""
+msgstr "是否显示已从默认值修改的值"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataSchema/properties/properties/description
 msgctxt "settings"
 msgid "The property set up by extension"
-msgstr ""
+msgstr "由扩展设置的属性"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/description
 msgctxt "schema"
 msgid "Settings of the metadata form extension."
-msgstr ""
+msgstr "元数据表单扩展的设置。"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/title
 msgctxt "schema"
@@ -1946,12 +1948,12 @@ msgstr "笔记本"
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoStartDefaultKernel/description
 msgctxt "settings"
 msgid "Whether to automatically start the preferred kernel."
-msgstr ""
+msgstr "是否自动启动首选内核。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoStartDefaultKernel/title
 msgctxt "settings"
 msgid "Automatically Start Preferred Kernel"
-msgstr ""
+msgstr "自动启动首选内核。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/description
 msgctxt "settings"
@@ -1961,7 +1963,7 @@ msgstr "所有代码单元格的配置。"
 #: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all code cells; it will override the CodeMirror default configuration."
-msgstr ""
+msgstr "所有代码单元格的配置；它将覆盖 CodeMirror 的默认配置。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/title
 msgctxt "settings"
@@ -1981,12 +1983,12 @@ msgstr "单元格默认类型"
 #: /packages/notebook-extension/schema/tracker.json:/properties/documentWideUndoRedo/description
 msgctxt "settings"
 msgid "Enables the undo/redo actions at the notebook document level; aka undoing within a cell may undo the latest notebook change that happen in another cell. This is deprecated and will be removed in 5.0.0."
-msgstr ""
+msgstr "在笔记本文档级别启用撤销/重做操作；也就是说，在单元格内进行撤销可能会撤消在另一个单元格中发生的最新笔记本更改。这已被弃用，并将在5.0.0中删除。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/documentWideUndoRedo/title
 msgctxt "settings"
 msgid "Enable undo/redo actions at the notebook document level."
-msgstr ""
+msgstr "在笔记本文档级别启用撤销/重做操作。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/experimentalDisableDocumentWideUndoRedo/description
 msgctxt "settings"
@@ -2001,7 +2003,7 @@ msgstr "用于开启笔记本文档级别撤销/重做的实验性设置。"
 #: /packages/notebook-extension/schema/tracker.json:/properties/inputHistoryScope/description
 msgctxt "settings"
 msgid "Whether the line history for standard input (e.g. the ipdb prompt) should kept separately for different kernel sessions (`session`) or combined (`global`)."
-msgstr ""
+msgstr "是否应该将标准输入的行历史记录（例如ipdb提示）分别保留在不同的内核会话中（`session`），还是合并在一起（`global`）。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/inputHistoryScope/title
 msgctxt "settings"
@@ -2036,7 +2038,7 @@ msgstr "所有 Markdown 单元格的配置。"
 #: /packages/notebook-extension/schema/tracker.json:/properties/markdownCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all markdown cells; it will override the CodeMirror default configuration."
-msgstr ""
+msgstr "所有Markdown单元格的配置；它将覆盖CodeMirror的默认配置。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/markdownCellConfig/title
 msgctxt "settings"
@@ -2086,12 +2088,12 @@ msgstr "观察到的上边距"
 #: /packages/notebook-extension/schema/tracker.json:/properties/overscanCount/description
 msgctxt "settings"
 msgid "In 'full' windowing mode, this is the number of cells above and below the viewport."
-msgstr ""
+msgstr "在“完整”窗口模式下，这是视口上方和下方的单元格数量。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/overscanCount/title
 msgctxt "settings"
 msgid "Number of cells to render outside de the viewport"
-msgstr ""
+msgstr "在视口外渲染的单元格数量"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/description
 msgctxt "settings"
@@ -2101,7 +2103,7 @@ msgstr "所有纯文本单元格的配置。"
 #: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all raw cells; it will override the CodeMirror default configuration."
-msgstr ""
+msgstr "所有原始单元格的配置；它将覆盖 CodeMirror 的默认配置。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/title
 msgctxt "settings"
@@ -2171,7 +2173,7 @@ msgstr "为只读的 Markdown 单元格显示编辑器"
 #: /packages/notebook-extension/schema/tracker.json:/properties/showHiddenCellsButton/description
 msgctxt "settings"
 msgid "If set to true, a button is shown below collapsed headings, indicating how many cells are hidden beneath the collapsed heading."
-msgstr ""
+msgstr "如果设置为true，则在折叠的标题下方显示一个按钮，用以指示隐藏在折叠标题下面的单元格数量。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/showHiddenCellsButton/title
 msgctxt "settings"
@@ -2211,12 +2213,12 @@ msgstr "并排显示右边距覆盖"
 #: /packages/notebook-extension/schema/tracker.json:/properties/windowingMode/description
 msgctxt "settings"
 msgid "'defer': Wait for idle CPU cycles to attach out of viewport cells - 'full': Attach to the DOM only cells in viewport - 'none': Attach all cells to the viewport"
-msgstr ""
+msgstr "'延迟': 等待空闲的 CPU 周期以附加视口外的单元格 - '完整': 仅将视口中的单元格附加到 DOM 中 - '无': 将所有单元格都附加到视口中"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/windowingMode/title
 msgctxt "settings"
 msgid "Windowing mode"
-msgstr ""
+msgstr "窗口模式"
 
 #: /packages/notebook-extension/schema/tracker.json:/title
 msgctxt "schema"
@@ -2511,7 +2513,7 @@ msgstr "启用第一级标题编号"
 #: /packages/toc-extension/schema/registry.json:/properties/syncCollapseState/description
 msgctxt "settings"
 msgid "If set to true, when a heading is collapsed in the table of contents the corresponding section in the document is collapsed as well and vice versa. This inhibits the cell output headings."
-msgstr ""
+msgstr "如果设置为true，则在目录中折叠标题时，文档中对应的部分也会被折叠，反之亦然。这将阻止单元格输出标题。"
 
 #: /packages/tooltip-extension/schema/consoles.json:/description
 msgctxt "schema"
@@ -2671,7 +2673,7 @@ msgstr "显示左侧边栏"
 
 #: packages/application-extension/src/index.tsx:288
 msgid "Show Header"
-msgstr ""
+msgstr "显示页头"
 
 #: packages/application-extension/src/index.tsx:300 packages/application-extension/src/index.tsx:315
 msgid "Show Right Sidebar"
@@ -2691,19 +2693,19 @@ msgstr "显示左侧活动栏"
 
 #: packages/application-extension/src/index.tsx:364
 msgid "Set %1 mode."
-msgstr ""
+msgstr "设定 %1 模式。"
 
 #: packages/application-extension/src/index.tsx:365
 msgid "Set the layout `mode`."
-msgstr ""
+msgstr "设置布局`模式'。"
 
 #: packages/application-extension/src/index.tsx:366
 msgid "The layout `mode` can be \"single-document\" or \"multiple-document\"."
-msgstr ""
+msgstr "布局 `模式` 可以是“单文档”或“多文档”。"
 
 #: packages/application-extension/src/index.tsx:396
 msgid "Reset Default Layout"
-msgstr ""
+msgstr "重置为默认布局"
 
 #: packages/application-extension/src/index.tsx:431 packages/application-extension/src/index.tsx:524
 msgid "Error Registering Plugins"
@@ -2760,7 +2762,7 @@ msgstr "路径：%1 未找到。JupyterLab 将会重定向到：%2"
 
 #: packages/application-extension/src/index.tsx:785
 msgid "User layout customization has changed. You may need to reload JupyterLab to see the changes."
-msgstr ""
+msgstr "用户布局自定义已更改。您可能需要重新加载JupyterLab才能看到更改。"
 
 #: packages/application-extension/src/index.tsx:790 packages/application-extension/src/index.tsx:924
 msgid "Path Not Found"
@@ -3493,11 +3495,11 @@ msgstr "补全"
 
 #: packages/codemirror/src/extension.ts:877
 msgid "Diagnostics"
-msgstr ""
+msgstr "诊断信息"
 
 #: packages/codemirror/src/extension.ts:878
 msgid "No diagnostics"
-msgstr ""
+msgstr "无诊断信息"
 
 #: packages/codemirror/src/language.ts:1006
 msgid "JSON-LD"
@@ -3545,7 +3547,7 @@ msgstr "MUMPS"
 
 #: packages/codemirror/src/language.ts:1117
 msgid "mbox"
-msgstr ""
+msgstr "mbox"
 
 #: packages/codemirror/src/language.ts:1127
 msgid "Nginx"
@@ -3557,7 +3559,7 @@ msgstr "NSIS"
 
 #: packages/codemirror/src/language.ts:1147
 msgid "NTriples"
-msgstr ""
+msgstr "NTriples"
 
 #: packages/codemirror/src/language.ts:1161
 msgid "Objective-C"
@@ -3577,7 +3579,7 @@ msgstr "Octave"
 
 #: packages/codemirror/src/language.ts:1203
 msgid "Oz"
-msgstr ""
+msgstr "Oz"
 
 #: packages/codemirror/src/language.ts:1213
 msgid "Pascal"
@@ -3621,7 +3623,7 @@ msgstr "RPM 更改"
 
 #: packages/codemirror/src/language.ts:1314
 msgid "RPM Spec"
-msgstr ""
+msgstr "RPM 规范"
 
 #: packages/codemirror/src/language.ts:1324
 msgid "Ruby"
@@ -4141,7 +4143,7 @@ msgstr "更改内核…"
 
 #: packages/console-extension/src/index.ts:679
 msgid "Inject some code in a console."
-msgstr ""
+msgstr "在控制台中注入一些代码。"
 
 #: packages/console-extension/src/index.ts:681
 msgid "Shutdown Console"
@@ -4157,7 +4159,7 @@ msgstr "重启内核并清空控制台"
 
 #: packages/console-extension/src/index.ts:712 packages/mainmenu-extension/src/index.ts:753 packages/notebook-extension/src/index.ts:3048
 msgid "Get Kernel"
-msgstr ""
+msgstr "获取内核"
 
 #: packages/console-extension/src/index.ts:737
 msgid "Run Cell"
@@ -4341,7 +4343,7 @@ msgstr "断点"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:38
 msgid "Pause on exception filter"
-msgstr ""
+msgstr "激发异常筛选器时暂停"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:51 packages/debugger/src/panels/breakpoints/index.ts:62 packages/debugger/src/panels/breakpoints/index.ts:63 packages/debugger/src/panels/breakpoints/index.ts:74
 msgid "Remove All Breakpoints"
@@ -4433,7 +4435,7 @@ msgstr "范围"
 
 #: packages/debugger/src/panels/variables/tree.tsx:268
 msgid "Render variable: %1"
-msgstr ""
+msgstr "渲染变量：%1"
 
 #: packages/debugger/src/panels/variables/tree.tsx:282
 msgid "Render variable"
@@ -4441,7 +4443,7 @@ msgstr "渲染变量"
 
 #: packages/debugger/src/service.ts:343
 msgid "Globals"
-msgstr ""
+msgstr "全局"
 
 #: packages/docmanager-extension/src/index.tsx:1002 packages/docmanager-extension/src/index.tsx:1105 packages/docmanager-extension/src/index.tsx:981
 msgid "Delete %1"
@@ -4481,7 +4483,7 @@ msgstr "检查点最后一次更新于: "
 
 #: packages/docmanager-extension/src/index.tsx:1090
 msgid "Duplicate %1"
-msgstr ""
+msgstr "创建 %1 副本"
 
 #: packages/docmanager-extension/src/index.tsx:1199
 msgid "Are you sure you want to revert the %1 to checkpoint? "
@@ -4867,7 +4869,7 @@ msgstr "查找上一个"
 
 #: packages/documentsearch-extension/src/index.ts:296
 msgid "End Search"
-msgstr ""
+msgstr "结束搜索"
 
 #: packages/documentsearch/src/searchoverlay.tsx:203 packages/documentsearch/src/searchview.tsx:230
 msgid "Replace All"
@@ -5006,7 +5008,7 @@ msgstr "扩展安装出错"
 
 #: packages/extensionmanager/src/model.ts:505
 msgid "You will need to restart JupyterLab to apply the changes."
-msgstr ""
+msgstr "您需要重新启动JupyterLab才能让更改生效。"
 
 #: packages/extensionmanager/src/model.ts:516
 msgid "reload JupyterLab"
@@ -5014,27 +5016,27 @@ msgstr "重新加载 JupyterLab"
 
 #: packages/extensionmanager/src/model.ts:517
 msgid "refresh the web page"
-msgstr ""
+msgstr "刷新网页"
 
 #: packages/extensionmanager/src/model.ts:522
 msgid "install the extension in all kernels and restart them"
-msgstr ""
+msgstr "在所有内核中安装扩展并重新启动内核"
 
 #: packages/extensionmanager/src/model.ts:527
 msgid "You will need to %1 to apply the changes."
-msgstr ""
+msgstr "您需要 %1 让更改生效。"
 
 #: packages/extensionmanager/src/model.ts:529
 msgid " and "
-msgstr ""
+msgstr " 和 "
 
 #: packages/extensionmanager/src/widget.tsx:114
 msgid "This extension is approved by your security team."
-msgstr ""
+msgstr "该扩展已获得您的安全团队批准。"
 
 #: packages/extensionmanager/src/widget.tsx:133
 msgid "Update \"%1\" to \"%2\""
-msgstr ""
+msgstr "将“%1”更新为“%2”。"
 
 #: packages/extensionmanager/src/widget.tsx:135
 msgid "A build is needed to include the latest changes"
@@ -5050,11 +5052,11 @@ msgstr "忽略"
 
 #: packages/extensionmanager/src/widget.tsx:141
 msgid "Update to %1"
-msgstr ""
+msgstr "更新为 %1"
 
 #: packages/extensionmanager/src/widget.tsx:146
 msgid "Uninstall \"%1\""
-msgstr ""
+msgstr "卸载 \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:150 packages/extensionmanager/src/widget.tsx:320
 msgid "Uninstall"
@@ -5062,15 +5064,15 @@ msgstr "卸载"
 
 #: packages/extensionmanager/src/widget.tsx:157
 msgid "Disable \"%1\""
-msgstr ""
+msgstr "禁用 \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:166
 msgid "Enable \"%1\""
-msgstr ""
+msgstr "启用 \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:178
 msgid "Install \"%1\""
-msgstr ""
+msgstr "安装 \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:182 packages/extensionmanager/src/widget.tsx:298
 msgid "Install"
@@ -5098,11 +5100,11 @@ msgstr "更新"
 
 #: packages/extensionmanager/src/widget.tsx:350
 msgid "%1 Manager"
-msgstr ""
+msgstr "%1 管理器"
 
 #: packages/extensionmanager/src/widget.tsx:355
 msgid "Extension installation path: %1"
-msgstr ""
+msgstr "扩展安装路径：%1"
 
 #: packages/extensionmanager/src/widget.tsx:363 packages/shortcuts-extension/src/components/TopNav.tsx:258
 msgid "Search"
@@ -5114,7 +5116,7 @@ msgstr "关于"
 
 #: packages/extensionmanager/src/widget.tsx:379
 msgid "Error when performing an action."
-msgstr ""
+msgstr "执行操作时出错。"
 
 #: packages/extensionmanager/src/widget.tsx:380 packages/extensionmanager/src/widget.tsx:844
 msgid "Reason given:"
@@ -5139,7 +5141,7 @@ msgid "The JupyterLab development team is excited to have a robust\n"
 "risks or contain malicious code that runs on your machine. Moreover in order\n"
 "to work, this panel needs to fetch data from web services. Do you agree to\n"
 "activate this feature?"
-msgstr ""
+msgstr "JupyterLab开发团队很高兴拥有强大的第三方扩展社区。然而，我们不会审核第三方扩展程序，某些扩展可能会引入安全风险或包含在您的计算机上运行的恶意代码。此外，为了正常工作，该面板需要从Web服务获取数据。您同意激活此功能吗？"
 
 #: packages/extensionmanager/src/widget.tsx:413 packages/extensionmanager/src/widget.tsx:792
 msgid "Please read the privacy policy."
@@ -5351,7 +5353,7 @@ msgstr "按文件名过滤"
 
 #: packages/filebrowser-extension/src/index.ts:497
 msgid "Open the file browser for the provided `path`."
-msgstr ""
+msgstr "打开文件浏览器，查看提供的 `路径`。"
 
 #: packages/filebrowser-extension/src/index.ts:529
 msgid "Hide the file browser."
@@ -5978,7 +5980,7 @@ msgstr "Hub"
 
 #: packages/imageviewer-extension/src/index.ts:127
 msgid "Image (Text)"
-msgstr ""
+msgstr "图像（文本）"
 
 #: packages/imageviewer-extension/src/index.ts:158 packages/imageviewer-extension/src/index.ts:160
 msgid "Image Viewer"
@@ -6079,7 +6081,7 @@ msgstr "将日志级别设为 %1"
 
 #: packages/logconsole-extension/src/index.tsx:246
 msgid "Set log level to `level`."
-msgstr ""
+msgstr "将日志级别设为`级别`。"
 
 #: packages/logconsole-extension/src/index.tsx:366 packages/logconsole-extension/src/index.tsx:376
 msgid "Log Level:"
@@ -6732,12 +6734,12 @@ msgstr[0] "复制单元格至下方"
 #: packages/notebook-extension/src/index.ts:2597
 msgid "Create a duplicate of this cell below"
 msgid_plural "Create duplicates of %1 cells below"
-msgstr[0] ""
+msgstr[0] "在下方创建 %1 单元格的副本"
 
 #: packages/notebook-extension/src/index.ts:2616
 msgid "Paste Cell and Replace"
 msgid_plural "Paste Cells and Replace"
-msgstr[0] ""
+msgstr[0] "粘贴单元格并替换"
 
 #: packages/notebook-extension/src/index.ts:2633
 msgid "Clear Output"
@@ -6779,19 +6781,19 @@ msgstr "重启内核，然后重新运行整个笔记本"
 
 #: packages/notebook-extension/src/index.ts:2751
 msgid "Insert Heading Above Current Heading"
-msgstr ""
+msgstr "在当前标题上方插入标题"
 
 #: packages/notebook-extension/src/index.ts:2762
 msgid "Insert Heading Below Current Heading"
-msgstr ""
+msgstr "在当前标题下方插入标题"
 
 #: packages/notebook-extension/src/index.ts:2773
 msgid "Select Heading Above or Collapse Heading"
-msgstr ""
+msgstr "选择上面的标题或折叠标题。"
 
 #: packages/notebook-extension/src/index.ts:2786
 msgid "Select Heading Below or Expand Heading"
-msgstr ""
+msgstr "选择下面的标题或展开标题"
 
 #: packages/notebook-extension/src/index.ts:2867
 msgid "Move Cell Up"
@@ -6821,7 +6823,7 @@ msgstr[0] "把这 %1 个单元格上移"
 
 #: packages/notebook-extension/src/index.ts:2887
 msgid "Notebook cell shifted up successfully"
-msgstr ""
+msgstr "笔记本单元格已成功上移"
 
 #: packages/notebook-extension/src/index.ts:2891 packages/notebook-extension/src/index.ts:3715
 msgid "For Notebook: %1"
@@ -6834,20 +6836,20 @@ msgstr "对 Notebook:"
 #: packages/notebook-extension/src/index.ts:2904
 msgid "Move Cell Down"
 msgid_plural "Move Cells Down"
-msgstr[0] ""
+msgstr[0] "下移单元格"
 
 #: packages/notebook-extension/src/index.ts:2912
 msgid "Move this cell down"
 msgid_plural "Move these %1 cells down"
-msgstr[0] ""
+msgstr[0] "把这 %1 个单元格下移"
 
 #: packages/notebook-extension/src/index.ts:2924
 msgid "Notebook cell shifted down successfully"
-msgstr ""
+msgstr "笔记本单元格已成功下移"
 
 #: packages/notebook-extension/src/index.ts:3298
 msgid "Toggle Collapse Notebook Heading"
-msgstr ""
+msgstr "切换折叠笔记本标题"
 
 #: packages/notebook-extension/src/index.ts:3308 packages/toc-extension/src/index.ts:141
 msgid "Collapse All Headings"
@@ -6859,7 +6861,7 @@ msgstr "展开全部标题"
 
 #: packages/notebook-extension/src/index.ts:3327
 msgid "Select and Run Cell(s) for this Heading"
-msgstr ""
+msgstr "选择并运行此标题下的单元格。"
 
 #: packages/notebook-extension/src/index.ts:504 packages/notebook-extension/src/index.ts:567
 msgid "Save and Export Notebook: %1"
