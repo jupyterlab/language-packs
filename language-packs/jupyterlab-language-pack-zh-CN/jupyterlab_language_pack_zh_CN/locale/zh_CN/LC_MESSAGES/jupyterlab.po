@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-04-12 15:47\n"
+"PO-Revision-Date: 2023-04-22 04:13\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -104,11 +104,11 @@ msgstr "Markdown 查看器"
 
 #: /jupyterlab/extensions/readonly.py:63
 msgid "Extension installation not supported."
-msgstr ""
+msgstr "不支持安装扩展。"
 
 #: /jupyterlab/extensions/readonly.py:81
 msgid "Extension removal not supported."
-msgstr ""
+msgstr "不支持删除扩展。"
 
 #: /packages/application-extension/schema/commands.json:/description
 msgctxt "schema"
@@ -118,7 +118,7 @@ msgstr "应用命令设置。"
 #: /packages/application-extension/schema/commands.json:/jupyter.lab.menus/main[1]/items[0]/submenu/label
 msgctxt "menu"
 msgid "Appearance"
-msgstr ""
+msgstr "外观"
 
 #: /packages/application-extension/schema/commands.json:/title
 msgctxt "schema"
@@ -247,12 +247,12 @@ msgstr "应用上下文菜单"
 #: /packages/application-extension/schema/property-inspector.json:/description
 msgctxt "schema"
 msgid "Property Inspector Settings."
-msgstr ""
+msgstr "属性检查器设置。"
 
 #: /packages/application-extension/schema/property-inspector.json:/title
 msgctxt "schema"
 msgid "Property Inspector"
-msgstr ""
+msgstr "属性检查器"
 
 #: /packages/application-extension/schema/shell.json:/description
 msgctxt "schema"
@@ -276,12 +276,15 @@ msgid "Overrides default widget position in the application layout\n"
 "  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
 "  \"multiple\": { \"Terminal\": { \"area\": \"right\" } }\n"
 "}."
-msgstr ""
+msgstr "覆盖应用程序布局中的默认小部件位置，例如，在多文档模式下将终端放置在右侧边栏中，在单个文档模式下则放置在底部区域，{\n"
+"  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
+"  \"multiple\": { \"Terminal\": { \"area\": \"right\" } }\n"
+"}。"
 
 #: /packages/application-extension/schema/shell.json:/properties/layout/title
 msgctxt "settings"
 msgid "Customize shell widget positioning"
-msgstr ""
+msgstr "自定义 shell 小部件定位"
 
 #: /packages/application-extension/schema/shell.json:/properties/startMode/description /packages/statusbar-extension/schema/plugin.json:/properties/startMode/description
 msgctxt "settings"
@@ -291,7 +294,7 @@ msgstr "JupyterLab 的启动模式。如果为空，该模式将从链接获取"
 #: /packages/application-extension/schema/shell.json:/properties/startMode/title
 msgctxt "settings"
 msgid "Start mode: ``, `single` or `multiple`"
-msgstr ""
+msgstr "启动模式：``、`single` 或 `multiple`"
 
 #: /packages/application-extension/schema/shell.json:/title
 msgctxt "schema"
@@ -360,7 +363,7 @@ msgstr "唯一名称"
 #: /packages/application-extension/schema/top-bar.json:/description
 msgctxt "schema"
 msgid "Top Bar settings."
-msgstr ""
+msgstr "顶栏设置。"
 
 #: /packages/application-extension/schema/top-bar.json:/properties/toolbar/description
 msgctxt "settings"
@@ -376,17 +379,26 @@ msgid "Note: To disable a item,\n"
 "  ]\n"
 "}\n\n"
 "Top bar description:"
-msgstr ""
+msgstr "注意：要禁用一个项目，请将其复制到用户首选项中并添加“disabled”键。以下示例将禁用用户菜单：\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"user-menu\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"顶栏描述："
 
 #: /packages/application-extension/schema/top-bar.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "Top bar items"
-msgstr ""
+msgstr "顶栏项"
 
 #: /packages/application-extension/schema/top-bar.json:/title
 msgctxt "schema"
 msgid "Top Bar"
-msgstr ""
+msgstr "顶栏"
 
 #: /packages/apputils-extension/schema/notification.json:/description
 msgctxt "schema"
@@ -481,12 +493,12 @@ msgstr "允许的 URL 协议"
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/autolink/description
 msgctxt "settings"
 msgid "Whether to replace URLs with links or not."
-msgstr ""
+msgstr "是否用链接替换网址。"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/autolink/title
 msgctxt "settings"
 msgid "Autolink URL replacement"
-msgstr ""
+msgstr "自动链接 URL 替换"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/title
 msgctxt "schema"
@@ -556,12 +568,12 @@ msgstr "主题"
 #: /packages/apputils-extension/schema/utilityCommands.json:/description
 msgctxt "schema"
 msgid "Shortcut help settings."
-msgstr ""
+msgstr "快捷键帮助设置。"
 
 #: /packages/apputils-extension/schema/utilityCommands.json:/title
 msgctxt "schema"
 msgid "Shortcuts Help"
-msgstr ""
+msgstr "快捷键帮助"
 
 #: /packages/apputils-extension/schema/workspaces.json:/description
 msgctxt "schema"
@@ -596,12 +608,12 @@ msgstr "单元格工具栏"
 #: /packages/celltags-extension/schema/plugin.json:/description /packages/notebook-extension/schema/tools.json:/description
 msgctxt "schema"
 msgid "Setting for the common tools"
-msgstr ""
+msgstr "常用工具设置"
 
 #: /packages/celltags-extension/schema/plugin.json:/title /packages/notebook-extension/schema/tools.json:/title
 msgctxt "schema"
 msgid "Common tools"
-msgstr ""
+msgstr "常用工具"
 
 #: /packages/codemirror-extension/schema/commands.json:/description /packages/codemirror-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -723,12 +735,12 @@ msgstr "CodeMirror"
 #: /packages/codemirror-extension/schema/plugin.json:/properties/defaultConfig/description
 msgctxt "settings"
 msgid "Base configuration used by all CodeMirror editors."
-msgstr ""
+msgstr "所有 CodeMirror 编辑器使用的基本配置。"
 
 #: /packages/codemirror-extension/schema/plugin.json:/properties/defaultConfig/title
 msgctxt "settings"
 msgid "Default editor configuration"
-msgstr ""
+msgstr "默认编辑器配置"
 
 #: /packages/completer-extension/schema/consoles.json:/description /packages/console-extension/schema/completer.json:/description
 msgctxt "schema"
@@ -753,57 +765,57 @@ msgstr "文件编辑器补全"
 #: /packages/completer-extension/schema/manager.json:/description
 msgctxt "schema"
 msgid "Code Completion settings."
-msgstr ""
+msgstr "代码补全设置。"
 
 #: /packages/completer-extension/schema/manager.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Code Completion settings"
-msgstr ""
+msgstr "代码补全设置"
 
 #: /packages/completer-extension/schema/manager.json:/properties/autoCompletion/description
 msgctxt "settings"
 msgid "Autocompletion setting."
-msgstr ""
+msgstr "自动补全设置。"
 
 #: /packages/completer-extension/schema/manager.json:/properties/autoCompletion/title
 msgctxt "settings"
 msgid "Enable autocompletion."
-msgstr ""
+msgstr "启用自动补全。"
 
 #: /packages/completer-extension/schema/manager.json:/properties/availableProviders/description
 msgctxt "settings"
 msgid "Providers with higher rank will be shown before the ones with lower rank, providers with negative rank are disabled."
-msgstr ""
+msgstr "排名较高的提供者将在排名较低的提供者之前显示，排名为负的提供者将被禁用。"
 
 #: /packages/completer-extension/schema/manager.json:/properties/availableProviders/title
 msgctxt "settings"
 msgid "Completion providers rank setting."
-msgstr ""
+msgstr "补全提供者排名设置。"
 
 #: /packages/completer-extension/schema/manager.json:/properties/providerTimeout/description
 msgctxt "settings"
 msgid "If a provider can not return the response for a completer request before timeout, the result of this provider will be ignored. Value is in millisecond"
-msgstr ""
+msgstr "如果一个提供者无法在超时之前返回补全请求的响应，那么此提供者的结果将被忽略。 值以毫秒为单位"
 
 #: /packages/completer-extension/schema/manager.json:/properties/providerTimeout/title
 msgctxt "settings"
 msgid "Default timeout for a provider."
-msgstr ""
+msgstr "提供者默认超时。"
 
 #: /packages/completer-extension/schema/manager.json:/properties/showDocumentationPanel/description
 msgctxt "settings"
 msgid "Documentation panel setting."
-msgstr ""
+msgstr "文档面板设置。"
 
 #: /packages/completer-extension/schema/manager.json:/properties/showDocumentationPanel/title
 msgctxt "settings"
 msgid "Show the documentation panel."
-msgstr ""
+msgstr "显示文档面板。"
 
 #: /packages/completer-extension/schema/manager.json:/title
 msgctxt "schema"
 msgid "Code Completion"
-msgstr ""
+msgstr "代码补全"
 
 #: /packages/completer-extension/schema/notebooks.json:/description /packages/notebook-extension/schema/completer.json:/description
 msgctxt "schema"
@@ -919,7 +931,7 @@ msgstr "所有提示符单元格配置。"
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all prompt cells; it will override the CodeMirror default configuration."
-msgstr ""
+msgstr "所有提示单元格的配置；它将覆盖 CodeMirror 默认配置。"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/title
 msgctxt "settings"
@@ -1203,7 +1215,8 @@ msgstr "启用扩展管理器（需要 Node.js/npm）。\n"
 msgctxt "settings"
 msgid "Enables extension manager.\n"
 "WARNING: installing untrusted extensions may be unsafe."
-msgstr ""
+msgstr "启用扩展管理器。\n"
+"警告：安装不受信任的扩展可能存在风险。"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/title
 msgctxt "settings"
@@ -1268,22 +1281,22 @@ msgstr "导航到当前目录"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFileCheckboxes/description
 msgctxt "settings"
 msgid "Whether to show checkboxes next to files and folders"
-msgstr ""
+msgstr "是否显示文件和文件夹旁边的复选框"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFileCheckboxes/title
 msgctxt "settings"
 msgid "Use checkboxes to select items"
-msgstr ""
+msgstr "使用复选框选择项目"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFileSizeColumn/description
 msgctxt "settings"
 msgid "Whether to show the file size column"
-msgstr ""
+msgstr "是否显示文件大小栏"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFileSizeColumn/title
 msgctxt "settings"
 msgid "Show file size column"
-msgstr ""
+msgstr "显示文件大小栏"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/description
 msgctxt "settings"
@@ -1293,7 +1306,7 @@ msgstr "是否显示隐藏文件"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/description
 msgctxt "settings"
 msgid "Whether to show hidden files. The server parameter `ContentsManager.allow_hidden` must be set to `True` to display hidden files."
-msgstr ""
+msgstr "是否显示隐藏文件。服务器参数 `ContentsManager.allow_hidden` 必须设置为 `True` 以显示隐藏文件。"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/title
 msgctxt "settings"
@@ -1444,7 +1457,9 @@ msgctxt "settings"
 msgid "The configuration for all text editors; it will override the CodeMirror default configuration.\n"
 "If `fontFamily`, `fontSize` or `lineHeight` are `null`,\n"
 "values from current theme are used."
-msgstr ""
+msgstr "所有文本编辑器的配置；它将覆盖CodeMirror默认配置。\n"
+"如果`fontFamily`，`fontSize`或者 `lineHeight`为 `null`,\n"
+"则使用当前主题的值。"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/title
 msgctxt "settings"
@@ -1454,7 +1469,7 @@ msgstr "编辑器配置"
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/scrollPastEnd/description
 msgctxt "settings"
 msgid "Whether to scroll past the end of text document."
-msgstr ""
+msgstr "是否滚动超过文本文档的末端."
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/toolbar/description
 msgctxt "settings"
@@ -1526,12 +1541,12 @@ msgstr "HTML 查看器工具栏项目"
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/trustByDefault/description
 msgctxt "settings"
 msgid "Whether to trust HTML files upon opening"
-msgstr ""
+msgstr "是否信任打开的 HTML 文件"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/trustByDefault/title
 msgctxt "settings"
 msgid "Trust HTML by default"
-msgstr ""
+msgstr "默认信任HTML"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1626,77 +1641,77 @@ msgstr "日志控制台"
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/configuration/description
 msgctxt "settings"
 msgid "Configuration to be sent to language server over LSP when initialized: see the specific language server's documentation for more"
-msgstr ""
+msgstr "初始化时通过 LSP 发送到语言服务器的配置：请参阅特定语言服务器的文档获取更多信息。"
 
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/configuration/title
 msgctxt "settings"
 msgid "Language Server Configurations"
-msgstr ""
+msgstr "语言服务器配置"
 
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/rank/description
 msgctxt "settings"
 msgid "When multiple servers match specific document/language, the server with the highest rank will be used"
-msgstr ""
+msgstr "当多个服务器匹配特定的文档/语言时，将使用排名最高的服务器。"
 
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/rank/title
 msgctxt "settings"
 msgid "Rank of the server"
-msgstr ""
+msgstr "服务器排名"
 
 #: /packages/lsp-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Language Server Protocol settings."
-msgstr ""
+msgstr "语言服务器协议设置。"
 
 #: /packages/lsp-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Language integration"
-msgstr ""
+msgstr "语言集成"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/activate/description
 msgctxt "settings"
 msgid "Enable or disable the language server services."
-msgstr ""
+msgstr "启用或禁用语言服务器服务。"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/activate/title
 msgctxt "settings"
 msgid "Activate"
-msgstr ""
+msgstr "激活"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/languageServers/description
 msgctxt "settings"
 msgid "Language-server specific configuration, keyed by implementation"
-msgstr ""
+msgstr "语言服务器相关配置，由实现作为键名"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/languageServers/title
 msgctxt "settings"
 msgid "Language Server"
-msgstr ""
+msgstr "语言服务器"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/logAllCommunication/description
 msgctxt "settings"
 msgid "Enable or disable the logging feature of the language servers."
-msgstr ""
+msgstr "启用或禁用语言服务器的日志功能。"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/logAllCommunication/title
 msgctxt "settings"
 msgid "Log communication"
-msgstr ""
+msgstr "日志通信"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/setTrace/description
 msgctxt "settings"
 msgid "Whether to ask server to send logs with execution trace (for debugging). Accepted values are: \"off\", \"messages\", \"verbose\". Servers are allowed to ignore this request."
-msgstr ""
+msgstr "是否要求服务器发送带有执行跟踪的日志（用于调试）。接受的值为：“off”，“messages”，“verbose”。服务器可以忽略此请求。"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/setTrace/title
 msgctxt "settings"
 msgid "Ask servers to send trace notifications"
-msgstr ""
+msgstr "向服务器请求发送追踪通知"
 
 #: /packages/lsp-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Language Servers (Experimental)"
-msgstr ""
+msgstr "语言服务器 (实验性)"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1808,47 +1823,47 @@ msgstr "主菜单"
 #: /packages/mathjax-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "MathJax math renderer for JupyterLab"
-msgstr ""
+msgstr "JupyterLab 使用的 MathJax 数学渲染器"
 
 #: /packages/mathjax-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "MathJax Plugin"
-msgstr ""
+msgstr "MathJax 插件"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/id/description
 msgctxt "settings"
 msgid "The section ID"
-msgstr ""
+msgstr "版块 ID"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/label/description
 msgctxt "settings"
 msgid "The section label"
-msgstr ""
+msgstr "版块标签"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/rank/description
 msgctxt "settings"
 msgid "The rank of the section in the right panel"
-msgstr ""
+msgstr "右侧面板中该部分的排名"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/showModified/description
 msgctxt "settings"
 msgid "Whether to show that values have been modified from defaults"
-msgstr ""
+msgstr "是否显示已从默认值修改的值"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataSchema/properties/properties/description
 msgctxt "settings"
 msgid "The property set up by extension"
-msgstr ""
+msgstr "由扩展设置的属性"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/description
 msgctxt "schema"
 msgid "Settings of the metadata form extension."
-msgstr ""
+msgstr "元数据表单扩展的设置。"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/title
 msgctxt "schema"
 msgid "Metadata Form"
-msgstr ""
+msgstr "元数据表单"
 
 #: /packages/notebook-extension/schema/export.json:/description
 msgctxt "schema"
@@ -1933,12 +1948,12 @@ msgstr "笔记本"
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoStartDefaultKernel/description
 msgctxt "settings"
 msgid "Whether to automatically start the preferred kernel."
-msgstr ""
+msgstr "是否自动启动首选内核。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoStartDefaultKernel/title
 msgctxt "settings"
 msgid "Automatically Start Preferred Kernel"
-msgstr ""
+msgstr "自动启动首选内核。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/description
 msgctxt "settings"
@@ -1948,7 +1963,7 @@ msgstr "所有代码单元格的配置。"
 #: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all code cells; it will override the CodeMirror default configuration."
-msgstr ""
+msgstr "所有代码单元格的配置；它将覆盖 CodeMirror 的默认配置。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/title
 msgctxt "settings"
@@ -1968,12 +1983,12 @@ msgstr "单元格默认类型"
 #: /packages/notebook-extension/schema/tracker.json:/properties/documentWideUndoRedo/description
 msgctxt "settings"
 msgid "Enables the undo/redo actions at the notebook document level; aka undoing within a cell may undo the latest notebook change that happen in another cell. This is deprecated and will be removed in 5.0.0."
-msgstr ""
+msgstr "在笔记本文档级别启用撤销/重做操作；也就是说，在单元格内进行撤销可能会撤消在另一个单元格中发生的最新笔记本更改。这已被弃用，并将在5.0.0中删除。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/documentWideUndoRedo/title
 msgctxt "settings"
 msgid "Enable undo/redo actions at the notebook document level."
-msgstr ""
+msgstr "在笔记本文档级别启用撤销/重做操作。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/experimentalDisableDocumentWideUndoRedo/description
 msgctxt "settings"
@@ -1988,12 +2003,12 @@ msgstr "用于开启笔记本文档级别撤销/重做的实验性设置。"
 #: /packages/notebook-extension/schema/tracker.json:/properties/inputHistoryScope/description
 msgctxt "settings"
 msgid "Whether the line history for standard input (e.g. the ipdb prompt) should kept separately for different kernel sessions (`session`) or combined (`global`)."
-msgstr ""
+msgstr "是否应该将标准输入的行历史记录（例如ipdb提示）分别保留在不同的内核会话中（`session`），还是合并在一起（`global`）。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/inputHistoryScope/title
 msgctxt "settings"
 msgid "Input History Scope"
-msgstr ""
+msgstr "输入记录范围"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/description
 msgctxt "settings"
@@ -2023,7 +2038,7 @@ msgstr "所有 Markdown 单元格的配置。"
 #: /packages/notebook-extension/schema/tracker.json:/properties/markdownCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all markdown cells; it will override the CodeMirror default configuration."
-msgstr ""
+msgstr "所有Markdown单元格的配置；它将覆盖CodeMirror的默认配置。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/markdownCellConfig/title
 msgctxt "settings"
@@ -2073,12 +2088,12 @@ msgstr "观察到的上边距"
 #: /packages/notebook-extension/schema/tracker.json:/properties/overscanCount/description
 msgctxt "settings"
 msgid "In 'full' windowing mode, this is the number of cells above and below the viewport."
-msgstr ""
+msgstr "在“完整”窗口模式下，这是视口上方和下方的单元格数量。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/overscanCount/title
 msgctxt "settings"
 msgid "Number of cells to render outside de the viewport"
-msgstr ""
+msgstr "在视口外渲染的单元格数量"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/description
 msgctxt "settings"
@@ -2088,7 +2103,7 @@ msgstr "所有纯文本单元格的配置。"
 #: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all raw cells; it will override the CodeMirror default configuration."
-msgstr ""
+msgstr "所有原始单元格的配置；它将覆盖 CodeMirror 的默认配置。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/title
 msgctxt "settings"
@@ -2158,12 +2173,12 @@ msgstr "为只读的 Markdown 单元格显示编辑器"
 #: /packages/notebook-extension/schema/tracker.json:/properties/showHiddenCellsButton/description
 msgctxt "settings"
 msgid "If set to true, a button is shown below collapsed headings, indicating how many cells are hidden beneath the collapsed heading."
-msgstr ""
+msgstr "如果设置为true，则在折叠的标题下方显示一个按钮，用以指示隐藏在折叠标题下面的单元格数量。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/showHiddenCellsButton/title
 msgctxt "settings"
 msgid "Show hidden cells button if collapsed"
-msgstr ""
+msgstr "折叠时显示隐藏单元格按钮"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/sideBySideLeftMarginOverride/description
 msgctxt "settings"
@@ -2198,12 +2213,12 @@ msgstr "并排显示右边距覆盖"
 #: /packages/notebook-extension/schema/tracker.json:/properties/windowingMode/description
 msgctxt "settings"
 msgid "'defer': Wait for idle CPU cycles to attach out of viewport cells - 'full': Attach to the DOM only cells in viewport - 'none': Attach all cells to the viewport"
-msgstr ""
+msgstr "'延迟': 等待空闲的 CPU 周期以附加视口外的单元格 - '完整': 仅将视口中的单元格附加到 DOM 中 - '无': 将所有单元格都附加到视口中"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/windowingMode/title
 msgctxt "settings"
 msgid "Windowing mode"
-msgstr ""
+msgstr "窗口模式"
 
 #: /packages/notebook-extension/schema/tracker.json:/title
 msgctxt "schema"
@@ -2213,17 +2228,17 @@ msgstr "笔记本"
 #: /packages/running-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Sessions Settings"
-msgstr ""
+msgstr "会话设置"
 
 #: /packages/running-extension/schema/plugin.json:/jupyter.lab.menus/context[3]/submenu/label
 msgctxt "menu"
 msgid "Connected Sessions…"
-msgstr ""
+msgstr "已连接的会话…"
 
 #: /packages/running-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Sessions"
-msgstr ""
+msgstr "会话"
 
 #: /packages/settingeditor-extension/schema/form-ui.json:/description
 msgctxt "schema"
@@ -2463,42 +2478,42 @@ msgstr "目录"
 #: /packages/toc-extension/schema/registry.json:/description
 msgctxt "schema"
 msgid "Default table of contents settings."
-msgstr ""
+msgstr "默认目录设置。"
 
 #: /packages/toc-extension/schema/registry.json:/properties/includeOutput/description
 msgctxt "settings"
 msgid "Whether to include cell output in headings or not."
-msgstr ""
+msgstr "是否在标题中包括单元格输出。"
 
 #: /packages/toc-extension/schema/registry.json:/properties/maximalDepth/title
 msgctxt "settings"
 msgid "Maximal headings depth"
-msgstr ""
+msgstr "标题深度最大值"
 
 #: /packages/toc-extension/schema/registry.json:/properties/numberHeaders/description
 msgctxt "settings"
 msgid "Whether to automatically number the headings or not."
-msgstr ""
+msgstr "是否自动对标题编号。"
 
 #: /packages/toc-extension/schema/registry.json:/properties/numberHeaders/title
 msgctxt "settings"
 msgid "Enable headings numbering"
-msgstr ""
+msgstr "启用标题编号"
 
 #: /packages/toc-extension/schema/registry.json:/properties/numberingH1/description
 msgctxt "settings"
 msgid "Whether to number first-level headings or not."
-msgstr ""
+msgstr "是否为第一级标题编号。"
 
 #: /packages/toc-extension/schema/registry.json:/properties/numberingH1/title
 msgctxt "settings"
 msgid "Enable 1st headings numbering"
-msgstr ""
+msgstr "启用第一级标题编号"
 
 #: /packages/toc-extension/schema/registry.json:/properties/syncCollapseState/description
 msgctxt "settings"
 msgid "If set to true, when a heading is collapsed in the table of contents the corresponding section in the document is collapsed as well and vice versa. This inhibits the cell output headings."
-msgstr ""
+msgstr "如果设置为true，则在目录中折叠标题时，文档中对应的部分也会被折叠，反之亦然。这将阻止单元格输出标题。"
 
 #: /packages/tooltip-extension/schema/consoles.json:/description
 msgctxt "schema"
@@ -2658,7 +2673,7 @@ msgstr "显示左侧边栏"
 
 #: packages/application-extension/src/index.tsx:288
 msgid "Show Header"
-msgstr ""
+msgstr "显示页头"
 
 #: packages/application-extension/src/index.tsx:300 packages/application-extension/src/index.tsx:315
 msgid "Show Right Sidebar"
@@ -2670,27 +2685,27 @@ msgstr "演示模式"
 
 #: packages/application-extension/src/index.tsx:333
 msgid "Show Right Activity Bar"
-msgstr ""
+msgstr "显示右侧活动栏"
 
 #: packages/application-extension/src/index.tsx:334
 msgid "Show Left Activity Bar"
-msgstr ""
+msgstr "显示左侧活动栏"
 
 #: packages/application-extension/src/index.tsx:364
 msgid "Set %1 mode."
-msgstr ""
+msgstr "设定 %1 模式。"
 
 #: packages/application-extension/src/index.tsx:365
 msgid "Set the layout `mode`."
-msgstr ""
+msgstr "设置布局`模式'。"
 
 #: packages/application-extension/src/index.tsx:366
 msgid "The layout `mode` can be \"single-document\" or \"multiple-document\"."
-msgstr ""
+msgstr "布局 `模式` 可以是“单文档”或“多文档”。"
 
 #: packages/application-extension/src/index.tsx:396
 msgid "Reset Default Layout"
-msgstr ""
+msgstr "重置为默认布局"
 
 #: packages/application-extension/src/index.tsx:431 packages/application-extension/src/index.tsx:524
 msgid "Error Registering Plugins"
@@ -2747,7 +2762,7 @@ msgstr "路径：%1 未找到。JupyterLab 将会重定向到：%2"
 
 #: packages/application-extension/src/index.tsx:785
 msgid "User layout customization has changed. You may need to reload JupyterLab to see the changes."
-msgstr ""
+msgstr "用户布局自定义已更改。您可能需要重新加载JupyterLab才能看到更改。"
 
 #: packages/application-extension/src/index.tsx:790 packages/application-extension/src/index.tsx:924
 msgid "Path Not Found"
@@ -2779,7 +2794,7 @@ msgstr "备选侧边栏"
 
 #: packages/application/src/utils.ts:148
 msgid "%1 and %2"
-msgstr ""
+msgstr "%1 和 %2"
 
 #: packages/apputils-extension/src/announcements.ts:100 packages/apputils-extension/src/announcements.ts:95
 msgid "Would you like to receive official Jupyter news?\n"
@@ -2846,7 +2861,7 @@ msgstr "在内容上方显示页头"
 
 #: packages/apputils-extension/src/index.ts:422
 msgid "Load state for the current workspace."
-msgstr ""
+msgstr "加载当前工作区的状态。"
 
 #: packages/apputils-extension/src/index.ts:477 packages/apputils-extension/src/index.ts:486
 msgid "Reset Application State"
@@ -2854,7 +2869,7 @@ msgstr "重置应用程序状态"
 
 #: packages/apputils-extension/src/index.ts:497
 msgid "Reset state when loading for the workspace."
-msgstr ""
+msgstr "重置工作区加载时的状态。"
 
 #: packages/apputils-extension/src/index.ts:568 packages/apputils-extension/src/index.ts:586
 msgid "Run First Enabled Command"
@@ -2866,11 +2881,11 @@ msgstr "运行所有从参数传递过来的已启用的命令"
 
 #: packages/apputils-extension/src/index.ts:625
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "显示键盘快捷键"
 
 #: packages/apputils-extension/src/index.ts:626
 msgid "Show relevant keyboard shortcuts for the current active widget"
-msgstr ""
+msgstr "显示当前活动小部件的相关键盘快捷键"
 
 #: packages/apputils-extension/src/index.ts:646 packages/help-extension/src/index.tsx:181 packages/help-extension/src/index.tsx:182 packages/help-extension/src/index.tsx:212 packages/help-extension/src/index.tsx:214 packages/help-extension/src/index.tsx:244 packages/help-extension/src/index.tsx:475 packages/help-extension/src/index.tsx:485 packages/help-extension/src/index.tsx:89 packages/help-extension/src/index.tsx:90
 msgid "Help"
@@ -2951,7 +2966,7 @@ msgstr "命令面板"
 
 #: packages/apputils-extension/src/shortcuts.tsx:183
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "键盘快捷键"
 
 #: packages/apputils-extension/src/shortcuts.tsx:187 packages/docmanager/src/widgetmanager.ts:397 packages/docmanager/src/widgetmanager.ts:399 packages/filebrowser/src/listing.ts:1140 packages/filebrowser/src/listing.ts:1227 packages/running-extension/src/opentabs.ts:86 packages/running-extension/src/opentabs.ts:87
 msgid "Close"
@@ -2967,7 +2982,7 @@ msgstr "正在等待字体"
 
 #: packages/apputils-extension/src/themesplugins.ts:111
 msgid "Switch to the provided `theme`."
-msgstr ""
+msgstr "切换到提供的`主题`。"
 
 #: packages/apputils-extension/src/themesplugins.ts:116 packages/apputils-extension/src/themesplugins.ts:89
 msgid "Use Theme: %1"
@@ -3123,11 +3138,11 @@ msgstr "选择内核"
 
 #: packages/apputils/src/sessioncontext.tsx:1353
 msgid "Always start the preferred kernel"
-msgstr ""
+msgstr "总是启动首选内核"
 
 #: packages/apputils/src/sessioncontext.tsx:1354
 msgid "Remember my choice and always start the preferred kernel"
-msgstr ""
+msgstr "记住我的选择：总是启动首选内核"
 
 #: packages/apputils/src/sessioncontext.tsx:1355 packages/apputils/src/sessioncontext.tsx:1415
 msgid "Restart Kernel?"
@@ -3143,7 +3158,7 @@ msgstr "选择内核："
 
 #: packages/apputils/src/sessioncontext.tsx:1416
 msgid "Do you want to restart the kernel of %1? All variables will be lost."
-msgstr ""
+msgstr "您想要重启 %1的内核吗？所有变量都将丢失。"
 
 #: packages/apputils/src/sessioncontext.tsx:1550 packages/apputils/src/sessioncontext.tsx:1607
 msgid "Start Preferred Kernel"
@@ -3215,28 +3230,28 @@ msgstr "重启内核"
 
 #: packages/cells/src/placeholder.ts:85
 msgid "Click to expand"
-msgstr ""
+msgstr "点击展开"
 
 #: packages/cells/src/widget.ts:1009 packages/cells/src/widget.ts:1094 packages/cells/src/widget.ts:1466
 msgid "Code Cell Content"
-msgstr ""
+msgstr "代码单元格内容"
 
 #: packages/cells/src/widget.ts:1010 packages/cells/src/widget.ts:1095 packages/cells/src/widget.ts:1467
 msgid "Code Cell Content with Output"
-msgstr ""
+msgstr "代码单元格内容及其输出"
 
 #: packages/cells/src/widget.ts:1875
 msgid "Markdown Cell Content"
-msgstr ""
+msgstr "Markdown 单元格内容"
 
 #: packages/cells/src/widget.ts:2118
 msgid "%1 cell hidden"
 msgid_plural "%1 cells hidden"
-msgstr[0] ""
+msgstr[0] "已隐藏第 %1 个单元格"
 
 #: packages/cells/src/widget.ts:2338
 msgid "Raw Cell Content"
-msgstr ""
+msgstr "原始单元格内容"
 
 #: packages/celltags-extension/src/celltag.tsx:211 packages/celltags/src/addwidget.ts:159 packages/celltags/src/addwidget.ts:31
 msgid "Add Tag"
@@ -3296,39 +3311,39 @@ msgstr "请打开您的浏览器 JavaScript 控制台以获取错误报告说明
 
 #: packages/codemirror/src/extension.ts:606
 msgid "Auto Closing Brackets"
-msgstr ""
+msgstr "自动闭合括号"
 
 #: packages/codemirror/src/extension.ts:615
 msgid "Code Folding"
-msgstr ""
+msgstr "代码折叠"
 
 #: packages/codemirror/src/extension.ts:627
 msgid "Cursor blinking rate"
-msgstr ""
+msgstr "光标闪烁频率"
 
 #: packages/codemirror/src/extension.ts:628
 msgid "Half-period in milliseconds used for cursor blinking. The default blink rate is 1200ms. By setting this to zero, blinking can be disabled."
-msgstr ""
+msgstr "光标闪烁所用的半个时间段，以毫秒为单位。默认闪烁率是1200毫秒。通过设置这个为零，闪烁可以被禁用。"
 
 #: packages/codemirror/src/extension.ts:639
 msgid "Highlight the active line"
-msgstr ""
+msgstr "高亮显示活动行"
 
 #: packages/codemirror/src/extension.ts:649
 msgid "Highlight trailing white spaces"
-msgstr ""
+msgstr "高亮尾随的空格"
 
 #: packages/codemirror/src/extension.ts:658
 msgid "Highlight white spaces"
-msgstr ""
+msgstr "突出显示空格"
 
 #: packages/codemirror/src/extension.ts:672
 msgid "Indentation unit"
-msgstr ""
+msgstr "缩进单位"
 
 #: packages/codemirror/src/extension.ts:673
 msgid "The indentation is a `Tab` or the number of spaces. This defaults to 2 spaces."
-msgstr ""
+msgstr "缩进是一个 `Tab` 或空格数。默认为 2 空格。"
 
 #: packages/codemirror/src/extension.ts:700 packages/fileeditor-extension/src/commands.ts:329
 msgid "Line Numbers"
@@ -3336,7 +3351,7 @@ msgstr "行号"
 
 #: packages/codemirror/src/extension.ts:709
 msgid "Line Wrap"
-msgstr ""
+msgstr "换行"
 
 #: packages/codemirror/src/extension.ts:718 packages/fileeditor-extension/src/commands.ts:420 packages/fileeditor-extension/src/commands.ts:421 packages/fileeditor-extension/src/commands.ts:428 packages/mainmenu-extension/src/index.ts:587 packages/mainmenu-extension/src/index.ts:593
 msgid "Match Brackets"
@@ -3344,83 +3359,83 @@ msgstr "高亮显示括号对"
 
 #: packages/codemirror/src/extension.ts:741
 msgid "Rulers"
-msgstr ""
+msgstr "标尺"
 
 #: packages/codemirror/src/extension.ts:760
 msgid "Smart Indentation"
-msgstr ""
+msgstr "智能缩进"
 
 #: packages/codemirror/src/extension.ts:772
 msgid "Tab size"
-msgstr ""
+msgstr "制表符宽度"
 
 #: packages/codemirror/src/extension.ts:784
 msgid "Multiple selections"
-msgstr ""
+msgstr "多重选择"
 
 #: packages/codemirror/src/extension.ts:799
 msgid "Custom editor styles"
-msgstr ""
+msgstr "自定义编辑器样式"
 
 #: packages/codemirror/src/extension.ts:804
 msgid "Font Family"
-msgstr ""
+msgstr "字体集"
 
 #: packages/codemirror/src/extension.ts:810
 msgid "Font Size"
-msgstr ""
+msgstr "字体大小"
 
 #: packages/codemirror/src/extension.ts:814
 msgid "Line Height"
-msgstr ""
+msgstr "行高"
 
 #: packages/codemirror/src/extension.ts:834
 msgid "CodeMirror theme"
-msgstr ""
+msgstr "CodeMirror 主题"
 
 #: packages/codemirror/src/extension.ts:847
 msgid "Control character"
-msgstr ""
+msgstr "控制字符"
 
 #: packages/codemirror/src/extension.ts:849
 msgid "Selection deleted"
-msgstr ""
+msgstr "选区已删除"
 
 #: packages/codemirror/src/extension.ts:851
 msgid "Folded lines"
-msgstr ""
+msgstr "折叠的行"
 
 #: packages/codemirror/src/extension.ts:852
 msgid "Unfolded lines"
-msgstr ""
+msgstr "展开的行"
 
 #: packages/codemirror/src/extension.ts:853
 msgid "to"
-msgstr ""
+msgstr "至"
 
 #: packages/codemirror/src/extension.ts:854
 msgid "folded code"
-msgstr ""
+msgstr "折叠的代码"
 
 #: packages/codemirror/src/extension.ts:855
 msgid "unfold"
-msgstr ""
+msgstr "展开"
 
 #: packages/codemirror/src/extension.ts:856
 msgid "Fold line"
-msgstr ""
+msgstr "折叠一行"
 
 #: packages/codemirror/src/extension.ts:857
 msgid "Unfold line"
-msgstr ""
+msgstr "展开一行"
 
 #: packages/codemirror/src/extension.ts:859
 msgid "Go to line"
-msgstr ""
+msgstr "跳转到行"
 
 #: packages/codemirror/src/extension.ts:860
 msgid "go"
-msgstr ""
+msgstr "转至"
 
 #: packages/codemirror/src/extension.ts:861 packages/documentsearch/src/searchoverlay.tsx:124 packages/documentsearch/src/searchview.tsx:126 packages/documentsearch/src/searchview.tsx:131
 msgid "Find"
@@ -3432,247 +3447,247 @@ msgstr "替换"
 
 #: packages/codemirror/src/extension.ts:863
 msgid "next"
-msgstr ""
+msgstr "下一个"
 
 #: packages/codemirror/src/extension.ts:864
 msgid "previous"
-msgstr ""
+msgstr "上一个"
 
 #: packages/codemirror/src/extension.ts:865
 msgid "all"
-msgstr ""
+msgstr "全部"
 
 #: packages/codemirror/src/extension.ts:866
 msgid "match case"
-msgstr ""
+msgstr "区分大小写"
 
 #: packages/codemirror/src/extension.ts:867
 msgid "replace"
-msgstr ""
+msgstr "替换"
 
 #: packages/codemirror/src/extension.ts:868
 msgid "replace all"
-msgstr ""
+msgstr "全部替换"
 
 #: packages/codemirror/src/extension.ts:869
 msgid "close"
-msgstr ""
+msgstr "关闭"
 
 #: packages/codemirror/src/extension.ts:870
 msgid "current match"
-msgstr ""
+msgstr "当前匹配项"
 
 #: packages/codemirror/src/extension.ts:871
 msgid "replaced $ matches"
-msgstr ""
+msgstr "已替换 $ 个匹配项"
 
 #: packages/codemirror/src/extension.ts:872
 msgid "replaced match on line $"
-msgstr ""
+msgstr "已替换第 $ 行的匹配项"
 
 #: packages/codemirror/src/extension.ts:873
 msgid "on line"
-msgstr ""
+msgstr "在行上"
 
 #: packages/codemirror/src/extension.ts:875
 msgid "Completions"
-msgstr ""
+msgstr "补全"
 
 #: packages/codemirror/src/extension.ts:877
 msgid "Diagnostics"
-msgstr ""
+msgstr "诊断信息"
 
 #: packages/codemirror/src/extension.ts:878
 msgid "No diagnostics"
-msgstr ""
+msgstr "无诊断信息"
 
 #: packages/codemirror/src/language.ts:1006
 msgid "JSON-LD"
-msgstr ""
+msgstr "JSON-LD"
 
 #: packages/codemirror/src/language.ts:1017
 msgid "Jinja2"
-msgstr ""
+msgstr "Jinja2"
 
 #: packages/codemirror/src/language.ts:1027
 msgid "Julia"
-msgstr ""
+msgstr "Julia"
 
 #: packages/codemirror/src/language.ts:1037
 msgid "Kotlin"
-msgstr ""
+msgstr "Kotlin"
 
 #: packages/codemirror/src/language.ts:1047
 msgid "LESS"
-msgstr ""
+msgstr "LESS"
 
 #: packages/codemirror/src/language.ts:1057
 msgid "LiveScript"
-msgstr ""
+msgstr "LiveScript"
 
 #: packages/codemirror/src/language.ts:1068
 msgid "Lua"
-msgstr ""
+msgstr "Lua"
 
 #: packages/codemirror/src/language.ts:1078
 msgid "mIRC"
-msgstr ""
+msgstr "mIRC"
 
 #: packages/codemirror/src/language.ts:1087
 msgid "Mathematica"
-msgstr ""
+msgstr "Mathematica"
 
 #: packages/codemirror/src/language.ts:1097
 msgid "Modelica"
-msgstr ""
+msgstr "Modelica"
 
 #: packages/codemirror/src/language.ts:1107
 msgid "MUMPS"
-msgstr ""
+msgstr "MUMPS"
 
 #: packages/codemirror/src/language.ts:1117
 msgid "mbox"
-msgstr ""
+msgstr "mbox"
 
 #: packages/codemirror/src/language.ts:1127
 msgid "Nginx"
-msgstr ""
+msgstr "Nginx"
 
 #: packages/codemirror/src/language.ts:1137
 msgid "NSIS"
-msgstr ""
+msgstr "NSIS"
 
 #: packages/codemirror/src/language.ts:1147
 msgid "NTriples"
-msgstr ""
+msgstr "NTriples"
 
 #: packages/codemirror/src/language.ts:1161
 msgid "Objective-C"
-msgstr ""
+msgstr "Objective-C"
 
 #: packages/codemirror/src/language.ts:1172
 msgid "Objective-C++"
-msgstr ""
+msgstr "Objective-C++"
 
 #: packages/codemirror/src/language.ts:1183
 msgid "OCaml"
-msgstr ""
+msgstr "OCaml"
 
 #: packages/codemirror/src/language.ts:1193
 msgid "Octave"
-msgstr ""
+msgstr "Octave"
 
 #: packages/codemirror/src/language.ts:1203
 msgid "Oz"
-msgstr ""
+msgstr "Oz"
 
 #: packages/codemirror/src/language.ts:1213
 msgid "Pascal"
-msgstr ""
+msgstr "Pascal"
 
 #: packages/codemirror/src/language.ts:1223
 msgid "Perl"
-msgstr ""
+msgstr "Perl"
 
 #: packages/codemirror/src/language.ts:1233
 msgid "Pig"
-msgstr ""
+msgstr "Pig"
 
 #: packages/codemirror/src/language.ts:1243
 msgid "PowerShell"
-msgstr ""
+msgstr "PowerShell"
 
 #: packages/codemirror/src/language.ts:1253
 msgid "Properties files"
-msgstr ""
+msgstr "属性文件"
 
 #: packages/codemirror/src/language.ts:1264
 msgid "ProtoBuf"
-msgstr ""
+msgstr "ProtoBuf"
 
 #: packages/codemirror/src/language.ts:1274
 msgid "Puppet"
-msgstr ""
+msgstr "Puppet"
 
 #: packages/codemirror/src/language.ts:1284
 msgid "Q"
-msgstr ""
+msgstr "Q"
 
 #: packages/codemirror/src/language.ts:1294
 msgid "R"
-msgstr ""
+msgstr "R"
 
 #: packages/codemirror/src/language.ts:1305
 msgid "RPM Changes"
-msgstr ""
+msgstr "RPM 更改"
 
 #: packages/codemirror/src/language.ts:1314
 msgid "RPM Spec"
-msgstr ""
+msgstr "RPM 规范"
 
 #: packages/codemirror/src/language.ts:1324
 msgid "Ruby"
-msgstr ""
+msgstr "Ruby"
 
 #: packages/codemirror/src/language.ts:1335
 msgid "SAS"
-msgstr ""
+msgstr "SAS"
 
 #: packages/codemirror/src/language.ts:1345
 msgid "Scala"
-msgstr ""
+msgstr "Scata"
 
 #: packages/codemirror/src/language.ts:1355
 msgid "Scheme"
-msgstr ""
+msgstr "Scheme"
 
 #: packages/codemirror/src/language.ts:1365
 msgid "SCSS"
-msgstr ""
+msgstr "SCSS"
 
 #: packages/codemirror/src/language.ts:1375
 msgid "Shell"
-msgstr ""
+msgstr "Shell"
 
 #: packages/codemirror/src/language.ts:1387
 msgid "Sieve"
-msgstr ""
+msgstr "Sieve"
 
 #: packages/codemirror/src/language.ts:1397
 msgid "Smalltalk"
-msgstr ""
+msgstr "Smalltalk"
 
 #: packages/codemirror/src/language.ts:1407
 msgid "Solr"
-msgstr ""
+msgstr "Solr"
 
 #: packages/codemirror/src/language.ts:1416
 msgid "SML"
-msgstr ""
+msgstr "SML"
 
 #: packages/codemirror/src/language.ts:1426
 msgid "SPARQL"
-msgstr ""
+msgstr "SPARQL"
 
 #: packages/codemirror/src/language.ts:1437
 msgid "Spreadsheet"
-msgstr ""
+msgstr "电子表格"
 
 #: packages/codemirror/src/language.ts:1447
 msgid "Squirrel"
-msgstr ""
+msgstr "Squirrel"
 
 #: packages/codemirror/src/language.ts:1457
 msgid "Stylus"
-msgstr ""
+msgstr "Stylus"
 
 #: packages/codemirror/src/language.ts:1467
 msgid "Swift"
-msgstr ""
+msgstr "Swift"
 
 #: packages/codemirror/src/language.ts:1477
 msgid "sTeX"
-msgstr ""
+msgstr "sTeX"
 
 #: packages/codemirror/src/language.ts:1486 packages/notebook-extension/src/index.ts:2868 packages/notebook-extension/src/index.ts:3656
 msgid "LaTeX"
@@ -3680,111 +3695,111 @@ msgstr "LaTeX"
 
 #: packages/codemirror/src/language.ts:1497
 msgid "SystemVerilog"
-msgstr ""
+msgstr "SystemVerilog"
 
 #: packages/codemirror/src/language.ts:1507
 msgid "Tcl"
-msgstr ""
+msgstr "Tcl"
 
 #: packages/codemirror/src/language.ts:1517
 msgid "Textile"
-msgstr ""
+msgstr "家纺"
 
 #: packages/codemirror/src/language.ts:1527
 msgid "TiddlyWiki"
-msgstr ""
+msgstr "TiddlyWiki"
 
 #: packages/codemirror/src/language.ts:1536
 msgid "Tiki wiki"
-msgstr ""
+msgstr "Tiki wiki"
 
 #: packages/codemirror/src/language.ts:1545
 msgid "TOML"
-msgstr ""
+msgstr "TOML"
 
 #: packages/codemirror/src/language.ts:1555
 msgid "troff"
-msgstr ""
+msgstr "troff"
 
 #: packages/codemirror/src/language.ts:1565
 msgid "TTCN"
-msgstr ""
+msgstr "TTCN"
 
 #: packages/codemirror/src/language.ts:1575
 msgid "TTCN_CFG"
-msgstr ""
+msgstr "TTCN_CFG"
 
 #: packages/codemirror/src/language.ts:1585
 msgid "Turtle"
-msgstr ""
+msgstr "Turtle"
 
 #: packages/codemirror/src/language.ts:1595
 msgid "Web IDL"
-msgstr ""
+msgstr "Web IDL"
 
 #: packages/codemirror/src/language.ts:1605
 msgid "VB.NET"
-msgstr ""
+msgstr "VB.NET"
 
 #: packages/codemirror/src/language.ts:1615
 msgid "VBScript"
-msgstr ""
+msgstr "VBScript"
 
 #: packages/codemirror/src/language.ts:1625
 msgid "Velocity"
-msgstr ""
+msgstr "Velocity"
 
 #: packages/codemirror/src/language.ts:1635
 msgid "Verilog"
-msgstr ""
+msgstr "Verilog"
 
 #: packages/codemirror/src/language.ts:1645
 msgid "VHDL"
-msgstr ""
+msgstr "VHDL"
 
 #: packages/codemirror/src/language.ts:1655
 msgid "XQuery"
-msgstr ""
+msgstr "XQuery"
 
 #: packages/codemirror/src/language.ts:1665
 msgid "Yacas"
-msgstr ""
+msgstr "Yacas"
 
 #: packages/codemirror/src/language.ts:1675
 msgid "YAML"
-msgstr ""
+msgstr "YAML"
 
 #: packages/codemirror/src/language.ts:1686
 msgid "Z80"
-msgstr ""
+msgstr "Z80"
 
 #: packages/codemirror/src/language.ts:1696
 msgid "mscgen"
-msgstr ""
+msgstr "mscgen"
 
 #: packages/codemirror/src/language.ts:1706
 msgid "xu"
-msgstr ""
+msgstr "xu"
 
 #: packages/codemirror/src/language.ts:1716
 msgid "msgenny"
-msgstr ""
+msgstr "msgenny"
 
 #: packages/codemirror/src/language.ts:307
 msgid "C"
-msgstr ""
+msgstr "C"
 
 #: packages/codemirror/src/language.ts:317
 msgid "C++"
-msgstr ""
+msgstr "C++"
 
 #: packages/codemirror/src/language.ts:327
 msgid "CQL"
-msgstr ""
+msgstr "CQL"
 
 #: packages/codemirror/src/language.ts:336
 msgid "CSS"
-msgstr ""
+msgstr "CSS"
 
 #: packages/codemirror/src/language.ts:346 packages/notebook-extension/src/index.ts:2867 packages/notebook-extension/src/index.ts:3655
 msgid "HTML"
@@ -3792,23 +3807,23 @@ msgstr "HTML"
 
 #: packages/codemirror/src/language.ts:357
 msgid "Java"
-msgstr ""
+msgstr "Java"
 
 #: packages/codemirror/src/language.ts:367
 msgid "Javascript"
-msgstr ""
+msgstr "JavaScript"
 
 #: packages/codemirror/src/language.ts:384
 msgid "JSON"
-msgstr ""
+msgstr "JSON"
 
 #: packages/codemirror/src/language.ts:395
 msgid "JSX"
-msgstr ""
+msgstr "JSX"
 
 #: packages/codemirror/src/language.ts:405
 msgid "MariaDB SQL"
-msgstr ""
+msgstr "MariaDB SQL"
 
 #: packages/codemirror/src/language.ts:413 packages/notebook-extension/src/index.ts:2869 packages/notebook-extension/src/index.ts:3657 packages/notebook/src/default-toolbar.tsx:360 packages/notebook/src/default-toolbar.tsx:379
 msgid "Markdown"
@@ -3816,231 +3831,231 @@ msgstr "Markdown"
 
 #: packages/codemirror/src/language.ts:423
 msgid "MS SQL"
-msgstr ""
+msgstr "MS SQL"
 
 #: packages/codemirror/src/language.ts:431
 msgid "MySQL"
-msgstr ""
+msgstr "MySQL"
 
 #: packages/codemirror/src/language.ts:439
 msgid "PHP"
-msgstr ""
+msgstr "PHP"
 
 #: packages/codemirror/src/language.ts:453
 msgid "PLSQL"
-msgstr ""
+msgstr "PLSQL"
 
 #: packages/codemirror/src/language.ts:462
 msgid "PostgreSQL"
-msgstr ""
+msgstr "PostgreSQL"
 
 #: packages/codemirror/src/language.ts:470
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: packages/codemirror/src/language.ts:481
 msgid "ipython"
-msgstr ""
+msgstr "ipython"
 
 #: packages/codemirror/src/language.ts:493
 msgid "Rust"
-msgstr ""
+msgstr "Rust"
 
 #: packages/codemirror/src/language.ts:503
 msgid "SQL"
-msgstr ""
+msgstr "SQL"
 
 #: packages/codemirror/src/language.ts:512
 msgid "SQLite"
-msgstr ""
+msgstr "SQLite"
 
 #: packages/codemirror/src/language.ts:520
 msgid "TSX"
-msgstr ""
+msgstr "TSX"
 
 #: packages/codemirror/src/language.ts:531
 msgid "TypeScript"
-msgstr ""
+msgstr "TypeScript"
 
 #: packages/codemirror/src/language.ts:542
 msgid "WebAssembly"
-msgstr ""
+msgstr "WebAssembly"
 
 #: packages/codemirror/src/language.ts:552
 msgid "XML"
-msgstr ""
+msgstr "XML"
 
 #: packages/codemirror/src/language.ts:564
 msgid "APL"
-msgstr ""
+msgstr "APL"
 
 #: packages/codemirror/src/language.ts:574
 msgid "PGP"
-msgstr ""
+msgstr "PGP"
 
 #: packages/codemirror/src/language.ts:590
 msgid "ASN.1"
-msgstr ""
+msgstr "ASN.1"
 
 #: packages/codemirror/src/language.ts:600
 msgid "Asterisk"
-msgstr ""
+msgstr "Asterisk"
 
 #: packages/codemirror/src/language.ts:610
 msgid "Brainfuck"
-msgstr ""
+msgstr "Brainfuck"
 
 #: packages/codemirror/src/language.ts:620
 msgid "Cobol"
-msgstr ""
+msgstr "Cobol"
 
 #: packages/codemirror/src/language.ts:630
 msgid "C#"
-msgstr ""
+msgstr "C#"
 
 #: packages/codemirror/src/language.ts:641
 msgid "Clojure"
-msgstr ""
+msgstr "Clojure"
 
 #: packages/codemirror/src/language.ts:651
 msgid "ClojureScript"
-msgstr ""
+msgstr "ClojureScript"
 
 #: packages/codemirror/src/language.ts:661
 msgid "Closure Stylesheets (GSS)"
-msgstr ""
+msgstr "Closure Stylesheets (GSS)"
 
 #: packages/codemirror/src/language.ts:671
 msgid "CMake"
-msgstr ""
+msgstr "CMake"
 
 #: packages/codemirror/src/language.ts:682
 msgid "CoffeScript"
-msgstr ""
+msgstr "CoffeScript"
 
 #: packages/codemirror/src/language.ts:697
 msgid "Common Lisp"
-msgstr ""
+msgstr "Common Lisp"
 
 #: packages/codemirror/src/language.ts:708
 msgid "Cypher"
-msgstr ""
+msgstr "Cypher"
 
 #: packages/codemirror/src/language.ts:718
 msgid "Cython"
-msgstr ""
+msgstr "Cython"
 
 #: packages/codemirror/src/language.ts:728
 msgid "Crystal"
-msgstr ""
+msgstr "Crystal"
 
 #: packages/codemirror/src/language.ts:738
 msgid "D"
-msgstr ""
+msgstr "D"
 
 #: packages/codemirror/src/language.ts:748
 msgid "Dart"
-msgstr ""
+msgstr "Dart"
 
 #: packages/codemirror/src/language.ts:758
 msgid "diff"
-msgstr ""
+msgstr "差异对比"
 
 #: packages/codemirror/src/language.ts:768
 msgid "Dockerfile"
-msgstr ""
+msgstr "Dockerfile"
 
 #: packages/codemirror/src/language.ts:778
 msgid "DTD"
-msgstr ""
+msgstr "DTD"
 
 #: packages/codemirror/src/language.ts:788
 msgid "Dylan"
-msgstr ""
+msgstr "Dylan"
 
 #: packages/codemirror/src/language.ts:798
 msgid "EBNF"
-msgstr ""
+msgstr "EBNF"
 
 #: packages/codemirror/src/language.ts:807
 msgid "ECL"
-msgstr ""
+msgstr "ECL"
 
 #: packages/codemirror/src/language.ts:817
 msgid "edn"
-msgstr ""
+msgstr "edn"
 
 #: packages/codemirror/src/language.ts:827
 msgid "Eiffel"
-msgstr ""
+msgstr "Eiffel"
 
 #: packages/codemirror/src/language.ts:837
 msgid "Elm"
-msgstr ""
+msgstr "Elm"
 
 #: packages/codemirror/src/language.ts:847
 msgid "Erlang"
-msgstr ""
+msgstr "Erlang"
 
 #: packages/codemirror/src/language.ts:857
 msgid "Esper"
-msgstr ""
+msgstr "Esper"
 
 #: packages/codemirror/src/language.ts:866
 msgid "Factor"
-msgstr ""
+msgstr "Factor"
 
 #: packages/codemirror/src/language.ts:876
 msgid "FCL"
-msgstr ""
+msgstr "FCL"
 
 #: packages/codemirror/src/language.ts:885
 msgid "Forth"
-msgstr ""
+msgstr "Forth"
 
 #: packages/codemirror/src/language.ts:895
 msgid "Fortran"
-msgstr ""
+msgstr "Fortran"
 
 #: packages/codemirror/src/language.ts:905
 msgid "F#"
-msgstr ""
+msgstr "F#"
 
 #: packages/codemirror/src/language.ts:916
 msgid "Gas"
-msgstr ""
+msgstr "Gas"
 
 #: packages/codemirror/src/language.ts:926
 msgid "Gherkin"
-msgstr ""
+msgstr "Gherkin"
 
 #: packages/codemirror/src/language.ts:936
 msgid "Go"
-msgstr ""
+msgstr "Go"
 
 #: packages/codemirror/src/language.ts:946
 msgid "Groovy"
-msgstr ""
+msgstr "Groovy"
 
 #: packages/codemirror/src/language.ts:957
 msgid "Haskell"
-msgstr ""
+msgstr "Haskell"
 
 #: packages/codemirror/src/language.ts:967
 msgid "Haxe"
-msgstr ""
+msgstr "Haxe"
 
 #: packages/codemirror/src/language.ts:977
 msgid "HXML"
-msgstr ""
+msgstr "HXML"
 
 #: packages/codemirror/src/language.ts:987
 msgid "HTTP"
-msgstr ""
+msgstr "HTTP"
 
 #: packages/codemirror/src/language.ts:996
 msgid "IDL"
-msgstr ""
+msgstr "IDL"
 
 #: packages/codemirror/src/syntaxstatus.tsx:66 packages/fileeditor/src/syntaxstatus.tsx:66
 msgid "Change text editor syntax highlighting"
@@ -4076,7 +4091,7 @@ msgstr "新建控制台"
 
 #: packages/console-extension/src/index.ts:485
 msgid "Open a console for the provided `path`."
-msgstr ""
+msgstr "为提供的`路径`打开控制台。"
 
 #: packages/console-extension/src/index.ts:507 packages/console-extension/src/index.ts:549
 msgid "Clear Console Cells"
@@ -4128,7 +4143,7 @@ msgstr "更改内核…"
 
 #: packages/console-extension/src/index.ts:679
 msgid "Inject some code in a console."
-msgstr ""
+msgstr "在控制台中注入一些代码。"
 
 #: packages/console-extension/src/index.ts:681
 msgid "Shutdown Console"
@@ -4144,7 +4159,7 @@ msgstr "重启内核并清空控制台"
 
 #: packages/console-extension/src/index.ts:712 packages/mainmenu-extension/src/index.ts:753 packages/notebook-extension/src/index.ts:3048
 msgid "Get Kernel"
-msgstr ""
+msgstr "获取内核"
 
 #: packages/console-extension/src/index.ts:737
 msgid "Run Cell"
@@ -4164,11 +4179,11 @@ msgstr "用 Enter 执行"
 
 #: packages/console-extension/src/index.ts:839 packages/fileeditor-extension/src/commands.ts:1005 packages/notebook-extension/src/index.ts:1951
 msgid "Display the completion helper."
-msgstr ""
+msgstr "显示补全助手。"
 
 #: packages/console-extension/src/index.ts:850 packages/fileeditor-extension/src/commands.ts:1016 packages/notebook-extension/src/index.ts:1961
 msgid "Select the completion suggestion."
-msgstr ""
+msgstr "选择补全建议。"
 
 #: packages/console/src/panel.ts:314 packages/console/src/panel.ts:315
 msgid "Name: %1\n"
@@ -4200,7 +4215,7 @@ msgstr "控制台 %1"
 
 #: packages/csvviewer-extension/src/index.ts:132
 msgid "CSV Viewer"
-msgstr ""
+msgstr "CSV 查看器"
 
 #: packages/csvviewer-extension/src/index.ts:210 packages/csvviewer-extension/src/index.ts:217 packages/csvviewer-extension/src/index.ts:360 packages/csvviewer-extension/src/index.ts:367 packages/csvviewer-extension/src/index.ts:92
 msgid "Go to Line"
@@ -4208,7 +4223,7 @@ msgstr "跳转到行"
 
 #: packages/csvviewer-extension/src/index.ts:282
 msgid "TSV Viewer"
-msgstr ""
+msgstr "TSV 查看器"
 
 #: packages/csvviewer/src/toolbar.ts:119 packages/csvviewer/src/toolbar.ts:133
 msgid "tab"
@@ -4244,11 +4259,11 @@ msgstr "根据它的 mime 类型渲染变量"
 
 #: packages/debugger-extension/src/index.ts:506
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "复制到剪贴板"
 
 #: packages/debugger-extension/src/index.ts:507
 msgid "Copy text representation of the value to clipboard"
-msgstr ""
+msgstr "将该值的文本表示复制到剪贴板"
 
 #: packages/debugger-extension/src/index.ts:616 packages/debugger-extension/src/index.ts:617 packages/debugger-extension/src/index.ts:623 packages/debugger-extension/src/index.ts:660 packages/debugger-extension/src/index.ts:661 packages/debugger-extension/src/index.ts:667
 msgid "Evaluate Code"
@@ -4308,7 +4323,7 @@ msgstr "调试器"
 
 #: packages/debugger-extension/src/index.ts:784
 msgid "Select a filter for breakpoints on exception"
-msgstr ""
+msgstr "选择异常时断点的过滤器"
 
 #: packages/debugger/src/handler.ts:39 packages/debugger/src/handler.ts:57
 msgid "Enable Debugger"
@@ -4328,7 +4343,7 @@ msgstr "断点"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:38
 msgid "Pause on exception filter"
-msgstr ""
+msgstr "激发异常筛选器时暂停"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:51 packages/debugger/src/panels/breakpoints/index.ts:62 packages/debugger/src/panels/breakpoints/index.ts:63 packages/debugger/src/panels/breakpoints/index.ts:74
 msgid "Remove All Breakpoints"
@@ -4388,11 +4403,11 @@ msgstr "在主区域打开"
 
 #: packages/debugger/src/panels/variables/gridpanel.ts:218
 msgid "Type"
-msgstr ""
+msgstr "类型"
 
 #: packages/debugger/src/panels/variables/gridpanel.ts:218
 msgid "Value"
-msgstr ""
+msgstr "值"
 
 #: packages/debugger/src/panels/variables/gridpanel.ts:221 packages/filebrowser/src/listing.ts:1878 packages/filebrowser/src/listing.ts:1990
 msgid "Name"
@@ -4420,7 +4435,7 @@ msgstr "范围"
 
 #: packages/debugger/src/panels/variables/tree.tsx:268
 msgid "Render variable: %1"
-msgstr ""
+msgstr "渲染变量：%1"
 
 #: packages/debugger/src/panels/variables/tree.tsx:282
 msgid "Render variable"
@@ -4428,7 +4443,7 @@ msgstr "渲染变量"
 
 #: packages/debugger/src/service.ts:343
 msgid "Globals"
-msgstr ""
+msgstr "全局"
 
 #: packages/docmanager-extension/src/index.tsx:1002 packages/docmanager-extension/src/index.tsx:1105 packages/docmanager-extension/src/index.tsx:981
 msgid "Delete %1"
@@ -4468,15 +4483,15 @@ msgstr "检查点最后一次更新于: "
 
 #: packages/docmanager-extension/src/index.tsx:1090
 msgid "Duplicate %1"
-msgstr ""
+msgstr "创建 %1 副本"
 
 #: packages/docmanager-extension/src/index.tsx:1199
 msgid "Are you sure you want to revert the %1 to checkpoint? "
-msgstr ""
+msgstr "您确定要将 %1 还原到检查点吗？ "
 
 #: packages/docmanager-extension/src/index.tsx:1246
 msgid "Choose a checkpoint"
-msgstr ""
+msgstr "选择一个检查点"
 
 #: packages/docmanager-extension/src/index.tsx:271 packages/docmanager-extension/src/index.tsx:340
 msgid "Overrides for the default viewers for file types.\n"
@@ -4558,7 +4573,7 @@ msgstr "无法撤回"
 
 #: packages/docmanager-extension/src/index.tsx:696
 msgid "Open the provided `path`."
-msgstr ""
+msgstr "打开提供的`路径`。"
 
 #: packages/docmanager-extension/src/index.tsx:700 packages/docmanager-extension/src/index.tsx:785
 msgid "Revert %1 to checkpoint"
@@ -4582,7 +4597,7 @@ msgstr "保存 %1"
 
 #: packages/docmanager-extension/src/index.tsx:748
 msgid "Revert %1 to Checkpoint…"
-msgstr ""
+msgstr "恢复 %1 到检查点…"
 
 #: packages/docmanager-extension/src/index.tsx:748 packages/docmanager-extension/src/index.tsx:759 packages/docmanager-extension/src/index.tsx:835 packages/docmanager-extension/src/index.tsx:846 packages/docmanager-extension/src/index.tsx:872 packages/docmanager-extension/src/index.tsx:959 packages/notebook/src/default-toolbar.tsx:68
 msgid "Cannot Save"
@@ -4594,11 +4609,11 @@ msgstr "文档为只读状态"
 
 #: packages/docmanager-extension/src/index.tsx:771
 msgid "No checkpoints"
-msgstr ""
+msgstr "无检查点"
 
 #: packages/docmanager-extension/src/index.tsx:772
 msgid "No checkpoints are available for this %1."
-msgstr ""
+msgstr "%1 没有可用的检查站。"
 
 #: packages/docmanager-extension/src/index.tsx:775 packages/docmanager-extension/src/index.tsx:862
 msgid "Rename file"
@@ -4748,7 +4763,7 @@ msgstr "文档会话已过期。您需要重新载入当前的浏览器标签页
 
 #: packages/docregistry/src/context.ts:1021
 msgid "Save File As…"
-msgstr ""
+msgstr "文件另存为..."
 
 #: packages/docregistry/src/context.ts:1037 packages/docregistry/src/context.ts:1103
 msgid "Save File As.."
@@ -4854,7 +4869,7 @@ msgstr "查找上一个"
 
 #: packages/documentsearch-extension/src/index.ts:296
 msgid "End Search"
-msgstr ""
+msgstr "结束搜索"
 
 #: packages/documentsearch/src/searchoverlay.tsx:203 packages/documentsearch/src/searchview.tsx:230
 msgid "Replace All"
@@ -4870,39 +4885,39 @@ msgstr "搜索已选单元格"
 
 #: packages/documentsearch/src/searchview.tsx:140
 msgid "Match Case"
-msgstr ""
+msgstr "区分大小写"
 
 #: packages/documentsearch/src/searchview.tsx:148
 msgid "Match Whole Word"
-msgstr ""
+msgstr "全字匹配"
 
 #: packages/documentsearch/src/searchview.tsx:156
 msgid "Use Regular Expression"
-msgstr ""
+msgstr "使用正则表达式"
 
 #: packages/documentsearch/src/searchview.tsx:200
 msgid "Preserve Case"
-msgstr ""
+msgstr "保留大小写"
 
 #: packages/documentsearch/src/searchview.tsx:250
 msgid "Previous Match"
-msgstr ""
+msgstr "上一个匹配"
 
 #: packages/documentsearch/src/searchview.tsx:261
 msgid "Next Match"
-msgstr ""
+msgstr "下一个匹配"
 
 #: packages/documentsearch/src/searchview.tsx:311
 msgid "Hide Search Filters"
-msgstr ""
+msgstr "隐藏搜索筛选器"
 
 #: packages/documentsearch/src/searchview.tsx:312
 msgid "Show Search Filters"
-msgstr ""
+msgstr "显示搜索筛选器"
 
 #: packages/documentsearch/src/searchview.tsx:607
 msgid "Toggle Replace"
-msgstr ""
+msgstr "切换替换"
 
 #: packages/extensionmanager-extension/src/index.ts:107 packages/extensionmanager-extension/src/index.ts:140
 msgid "Enable Extension Manager"
@@ -4993,35 +5008,35 @@ msgstr "扩展安装出错"
 
 #: packages/extensionmanager/src/model.ts:505
 msgid "You will need to restart JupyterLab to apply the changes."
-msgstr ""
+msgstr "您需要重新启动JupyterLab才能让更改生效。"
 
 #: packages/extensionmanager/src/model.ts:516
 msgid "reload JupyterLab"
-msgstr ""
+msgstr "重新加载 JupyterLab"
 
 #: packages/extensionmanager/src/model.ts:517
 msgid "refresh the web page"
-msgstr ""
+msgstr "刷新网页"
 
 #: packages/extensionmanager/src/model.ts:522
 msgid "install the extension in all kernels and restart them"
-msgstr ""
+msgstr "在所有内核中安装扩展并重新启动内核"
 
 #: packages/extensionmanager/src/model.ts:527
 msgid "You will need to %1 to apply the changes."
-msgstr ""
+msgstr "您需要 %1 让更改生效。"
 
 #: packages/extensionmanager/src/model.ts:529
 msgid " and "
-msgstr ""
+msgstr " 和 "
 
 #: packages/extensionmanager/src/widget.tsx:114
 msgid "This extension is approved by your security team."
-msgstr ""
+msgstr "该扩展已获得您的安全团队批准。"
 
 #: packages/extensionmanager/src/widget.tsx:133
 msgid "Update \"%1\" to \"%2\""
-msgstr ""
+msgstr "将“%1”更新为“%2”。"
 
 #: packages/extensionmanager/src/widget.tsx:135
 msgid "A build is needed to include the latest changes"
@@ -5037,11 +5052,11 @@ msgstr "忽略"
 
 #: packages/extensionmanager/src/widget.tsx:141
 msgid "Update to %1"
-msgstr ""
+msgstr "更新为 %1"
 
 #: packages/extensionmanager/src/widget.tsx:146
 msgid "Uninstall \"%1\""
-msgstr ""
+msgstr "卸载 \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:150 packages/extensionmanager/src/widget.tsx:320
 msgid "Uninstall"
@@ -5049,15 +5064,15 @@ msgstr "卸载"
 
 #: packages/extensionmanager/src/widget.tsx:157
 msgid "Disable \"%1\""
-msgstr ""
+msgstr "禁用 \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:166
 msgid "Enable \"%1\""
-msgstr ""
+msgstr "启用 \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:178
 msgid "Install \"%1\""
-msgstr ""
+msgstr "安装 \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:182 packages/extensionmanager/src/widget.tsx:298
 msgid "Install"
@@ -5085,11 +5100,11 @@ msgstr "更新"
 
 #: packages/extensionmanager/src/widget.tsx:350
 msgid "%1 Manager"
-msgstr ""
+msgstr "%1 管理器"
 
 #: packages/extensionmanager/src/widget.tsx:355
 msgid "Extension installation path: %1"
-msgstr ""
+msgstr "扩展安装路径：%1"
 
 #: packages/extensionmanager/src/widget.tsx:363 packages/shortcuts-extension/src/components/TopNav.tsx:258
 msgid "Search"
@@ -5101,7 +5116,7 @@ msgstr "关于"
 
 #: packages/extensionmanager/src/widget.tsx:379
 msgid "Error when performing an action."
-msgstr ""
+msgstr "执行操作时出错。"
 
 #: packages/extensionmanager/src/widget.tsx:380 packages/extensionmanager/src/widget.tsx:844
 msgid "Reason given:"
@@ -5126,7 +5141,7 @@ msgid "The JupyterLab development team is excited to have a robust\n"
 "risks or contain malicious code that runs on your machine. Moreover in order\n"
 "to work, this panel needs to fetch data from web services. Do you agree to\n"
 "activate this feature?"
-msgstr ""
+msgstr "JupyterLab开发团队很高兴拥有强大的第三方扩展社区。然而，我们不会审核第三方扩展程序，某些扩展可能会引入安全风险或包含在您的计算机上运行的恶意代码。此外，为了正常工作，该面板需要从Web服务获取数据。您同意激活此功能吗？"
 
 #: packages/extensionmanager/src/widget.tsx:413 packages/extensionmanager/src/widget.tsx:792
 msgid "Please read the privacy policy."
@@ -5134,19 +5149,19 @@ msgstr "请阅读隐私政策。"
 
 #: packages/extensionmanager/src/widget.tsx:422
 msgid "This will withdraw your consent."
-msgstr ""
+msgstr "这将撤回您的同意。"
 
 #: packages/extensionmanager/src/widget.tsx:441
 msgid "This will disable the extension manager panel; including the listing of installed extension."
-msgstr ""
+msgstr "这将禁用扩展管理面板；包括已安装扩展的列表。"
 
 #: packages/extensionmanager/src/widget.tsx:445
 msgid "No, disable"
-msgstr ""
+msgstr "否，禁用"
 
 #: packages/extensionmanager/src/widget.tsx:471 packages/extensionmanager/src/widget.tsx:565
 msgid "Updating extensions list…"
-msgstr ""
+msgstr "正在更新扩展列表…"
 
 #: packages/extensionmanager/src/widget.tsx:591 packages/extensionmanager/src/widget.tsx:952
 msgid "Search Results"
@@ -5166,7 +5181,7 @@ msgstr "已安装"
 
 #: packages/extensionmanager/src/widget.tsx:636
 msgid "Refresh extensions list"
-msgstr ""
+msgstr "刷新扩展列表"
 
 #: packages/extensionmanager/src/widget.tsx:722
 msgid "The extension manager is disabled. Please contact your system\n"
@@ -5188,7 +5203,7 @@ msgstr "JupyterLab 开发团队很高兴有一个强大的第三方扩展社区�
 
 #: packages/extensionmanager/src/widget.tsx:81
 msgid "%1 extension home page"
-msgstr ""
+msgstr "%1 扩展主页"
 
 #: packages/extensionmanager/src/widget.tsx:832
 msgid "Updating extensions list"
@@ -5210,7 +5225,7 @@ msgstr "详细信息："
 
 #: packages/extensionmanager/src/widget.tsx:90
 msgid "Version: %1"
-msgstr ""
+msgstr "版本: %1"
 
 #: packages/extensionmanager/src/widget.tsx:907
 msgid "Refresh extension list"
@@ -5218,7 +5233,7 @@ msgstr "刷新扩展列表"
 
 #: packages/extensionmanager/src/widget.tsx:97
 msgid "%1 extension is not allowed anymore. Please uninstall it immediately or contact your administrator."
-msgstr ""
+msgstr "不再允许使用扩展 %1。请立即卸载它或联系您的管理员。"
 
 #: packages/filebrowser-extension/src/index.ts:1007 packages/filebrowser-extension/src/index.ts:1009 packages/filebrowser-extension/src/index.ts:735 packages/filebrowser-extension/src/index.ts:737 packages/filebrowser-extension/src/index.ts:819 packages/filebrowser-extension/src/index.ts:821 packages/filebrowser-extension/src/index.ts:912 packages/filebrowser-extension/src/index.ts:914
 msgid "Open %1"
@@ -5306,11 +5321,11 @@ msgstr "搜索文件名"
 
 #: packages/filebrowser-extension/src/index.ts:1238
 msgid "Show File Size Column"
-msgstr ""
+msgstr "显示文件大小栏"
 
 #: packages/filebrowser-extension/src/index.ts:1271
 msgid "Show File Checkboxes"
-msgstr ""
+msgstr "显示文件复选框"
 
 #: packages/filebrowser-extension/src/index.ts:1272 packages/filebrowser-extension/src/index.ts:1356
 msgid "No browser for path"
@@ -5338,11 +5353,11 @@ msgstr "按文件名过滤"
 
 #: packages/filebrowser-extension/src/index.ts:497
 msgid "Open the file browser for the provided `path`."
-msgstr ""
+msgstr "打开文件浏览器，查看提供的 `路径`。"
 
 #: packages/filebrowser-extension/src/index.ts:529
 msgid "Hide the file browser."
-msgstr ""
+msgstr "隐藏文件浏览器。"
 
 #: packages/filebrowser-extension/src/index.ts:549 packages/filebrowser-extension/src/index.ts:634
 msgid "Copy Shareable Link"
@@ -5395,7 +5410,7 @@ msgstr "创建副本"
 
 #: packages/filebrowser-extension/src/index.ts:946
 msgid "Update the file browser to display the provided `path`."
-msgstr ""
+msgstr "更新文件浏览器以显示提供的 `路径`。"
 
 #: packages/filebrowser/src/browser.ts:371 packages/filebrowser/src/browser.ts:400
 msgid "Directory not found"
@@ -5456,7 +5471,7 @@ msgstr "修改时间"
 
 #: packages/filebrowser/src/listing.ts:1993
 msgid "File Size"
-msgstr ""
+msgstr "文件大小"
 
 #: packages/filebrowser/src/listing.ts:2051 packages/filebrowser/src/listing.ts:2281
 msgid "Name: %1"
@@ -5499,19 +5514,19 @@ msgstr[0] "%1 项"
 
 #: packages/filebrowser/src/listing.ts:2340
 msgid "Deselect directory \"%1\""
-msgstr ""
+msgstr "取消选择目录“%1”"
 
 #: packages/filebrowser/src/listing.ts:2341
 msgid "Select directory \"%1\""
-msgstr ""
+msgstr "选择目录“%1”"
 
 #: packages/filebrowser/src/listing.ts:2344
 msgid "Deselect file \"%1\""
-msgstr ""
+msgstr "取消选择文件 \"%1\""
 
 #: packages/filebrowser/src/listing.ts:2345
 msgid "Select file \"%1\""
-msgstr ""
+msgstr "选择文件 \"%1\""
 
 #: packages/filebrowser/src/listing.ts:382 packages/filebrowser/src/listing.ts:396
 msgctxt "showErrorMessage"
@@ -5539,11 +5554,11 @@ msgstr "终止内核"
 
 #: packages/filebrowser/src/listing.ts:833
 msgid "Deselect all files and directories"
-msgstr ""
+msgstr "取消选择全部文件和目录"
 
 #: packages/filebrowser/src/listing.ts:834
 msgid "Select all files and directories"
-msgstr ""
+msgstr "选择全部文件和目录"
 
 #: packages/filebrowser/src/listing.ts:845 packages/filebrowser/src/listing.ts:889
 msgid "%1\n"
@@ -5553,7 +5568,7 @@ msgstr "%1\n"
 
 #: packages/filebrowser/src/listing.ts:887
 msgid "unknown"
-msgstr ""
+msgstr "未知"
 
 #: packages/filebrowser/src/model.ts:414 packages/filebrowser/src/model.ts:421
 msgid "Cannot upload file (>%1 MB). %2"
@@ -5613,11 +5628,11 @@ msgstr "重启内核并运行所有代码"
 
 #: packages/fileeditor-extension/src/commands.ts:1358
 msgid "Code Viewer"
-msgstr ""
+msgstr "代码查看器"
 
 #: packages/fileeditor-extension/src/commands.ts:1377
 msgid "Open Code Viewer"
-msgstr ""
+msgstr "打开代码查看器"
 
 #: packages/fileeditor-extension/src/commands.ts:279 packages/fileeditor-extension/src/commands.ts:297
 msgid "Increase Text Editor Font Size"
@@ -5633,7 +5648,7 @@ msgstr "显示行号"
 
 #: packages/fileeditor-extension/src/commands.ts:311
 msgid "Show the line numbers for the current file."
-msgstr ""
+msgstr "显示当前文件的行号。"
 
 #: packages/fileeditor-extension/src/commands.ts:351 packages/fileeditor-extension/src/commands.ts:359
 msgid "Word Wrap"
@@ -5645,7 +5660,7 @@ msgstr "换行"
 
 #: packages/fileeditor-extension/src/commands.ts:356
 msgid "Wrap words for the current file."
-msgstr ""
+msgstr "将当前文件中的单词换行。"
 
 #: packages/fileeditor-extension/src/commands.ts:375 packages/fileeditor-extension/src/index.ts:102
 msgid "Spaces: %1"
@@ -5659,11 +5674,11 @@ msgstr "使用 Tab 缩进"
 #: packages/fileeditor-extension/src/commands.ts:382 packages/fileeditor-extension/src/index.ts:143
 msgctxt "v4"
 msgid "Spaces: %1"
-msgstr ""
+msgstr "空格：%1"
 
 #: packages/fileeditor-extension/src/commands.ts:429
 msgid "Change match brackets for the current file."
-msgstr ""
+msgstr "更改当前文件的匹配括号。"
 
 #: packages/fileeditor-extension/src/commands.ts:446
 msgid "Auto Close Brackets for Text Editor"
@@ -5671,7 +5686,7 @@ msgstr "文本编辑器自动关闭括号"
 
 #: packages/fileeditor-extension/src/commands.ts:467
 msgid "Auto Close Brackets in Text Editor"
-msgstr ""
+msgstr "在文本编辑器中自动关闭括号"
 
 #: packages/fileeditor-extension/src/commands.ts:472 packages/fileeditor-extension/src/commands.ts:495
 msgid "Auto Close Brackets"
@@ -5683,15 +5698,15 @@ msgstr "在编辑器中替换选择"
 
 #: packages/fileeditor-extension/src/commands.ts:510
 msgid "Editor Theme"
-msgstr ""
+msgstr "编辑器主题"
 
 #: packages/fileeditor-extension/src/commands.ts:563
 msgid "Change editor language."
-msgstr ""
+msgstr "更改编辑器语言。"
 
 #: packages/fileeditor-extension/src/commands.ts:640
 msgid "Restart Kernel"
-msgstr ""
+msgstr "重启内核"
 
 #: packages/fileeditor-extension/src/commands.ts:673 packages/fileeditor-extension/src/commands.ts:770
 msgid "Show Markdown Preview"
@@ -5699,7 +5714,7 @@ msgstr "显示 Markdown 预览"
 
 #: packages/fileeditor-extension/src/commands.ts:705
 msgid "Run Selected Code"
-msgstr ""
+msgstr "运行选中的代码"
 
 #: packages/fileeditor-extension/src/commands.ts:711 packages/fileeditor-extension/src/commands.ts:847 packages/mainmenu-extension/src/index.ts:264 packages/mainmenu-extension/src/index.ts:276 packages/notebook-extension/src/index.ts:3023
 msgid "Undo"
@@ -5755,7 +5770,7 @@ msgstr "新建一个 R 文件"
 
 #: packages/fileeditor-extension/src/index.ts:301
 msgid "Editor"
-msgstr ""
+msgstr "编辑器"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:48 packages/fileeditor/src/tabspacestatus.tsx:57
 msgid "Spaces"
@@ -5763,11 +5778,11 @@ msgstr "空格"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:49
 msgid "Tab Indent"
-msgstr ""
+msgstr "制表符缩进"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:58
 msgid "Change the indentation…"
-msgstr ""
+msgstr "更改缩进…"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:58
 msgid "Tab Size"
@@ -5815,7 +5830,7 @@ msgstr "Markdown 参考文档"
 
 #: packages/help-extension/src/index.tsx:265
 msgid "Open the provided `url` in a tab."
-msgstr ""
+msgstr "在标签页中打开提供的`url`。"
 
 #: packages/help-extension/src/index.tsx:375 packages/help-extension/src/index.tsx:381
 msgid "About the %1 Kernel"
@@ -5883,7 +5898,7 @@ msgstr "HTML 文件"
 
 #: packages/htmlviewer-extension/src/index.tsx:114
 msgid "HTML Viewer"
-msgstr ""
+msgstr "HTML 查看器"
 
 #: packages/htmlviewer-extension/src/index.tsx:155 packages/htmlviewer-extension/src/index.tsx:180
 msgid "Trust HTML File"
@@ -5965,7 +5980,7 @@ msgstr "Hub"
 
 #: packages/imageviewer-extension/src/index.ts:127
 msgid "Image (Text)"
-msgstr ""
+msgstr "图像（文本）"
 
 #: packages/imageviewer-extension/src/index.ts:158 packages/imageviewer-extension/src/index.ts:160
 msgid "Image Viewer"
@@ -6009,7 +6024,7 @@ msgstr "显示上下文帮助"
 
 #: packages/inspector-extension/src/index.ts:125
 msgid "Hide Contextual Help"
-msgstr ""
+msgstr "隐藏上下文帮助"
 
 #: packages/inspector-extension/src/index.ts:58 packages/inspector-extension/src/index.ts:91
 msgid "Live updating code documentation from the active kernel"
@@ -6017,7 +6032,7 @@ msgstr "从活动内核中实时更新代码文档"
 
 #: packages/inspector-extension/src/index.ts:61
 msgid "Contextual Help"
-msgstr ""
+msgstr "上下文帮助"
 
 #: packages/inspector/src/inspector.ts:51 packages/inspector/src/inspector.ts:52
 msgid "Click on a function to see documentation."
@@ -6066,7 +6081,7 @@ msgstr "将日志级别设为 %1"
 
 #: packages/logconsole-extension/src/index.tsx:246
 msgid "Set log level to `level`."
-msgstr ""
+msgstr "将日志级别设为`级别`。"
 
 #: packages/logconsole-extension/src/index.tsx:366 packages/logconsole-extension/src/index.tsx:376
 msgid "Log Level:"
@@ -6110,7 +6125,7 @@ msgstr "无日志消息。"
 
 #: packages/lsp-extension/src/index.ts:254
 msgid "Language servers"
-msgstr ""
+msgstr "语言服务器"
 
 #: packages/lsp-extension/src/index.ts:273 packages/mainmenu-extension/src/index.ts:548 packages/mainmenu-extension/src/index.ts:552 packages/running-extension/src/kernels.ts:40 packages/running-extension/src/kernels.ts:67 packages/running/src/index.tsx:222 packages/running/src/index.tsx:356 packages/terminal-extension/src/index.ts:303 packages/terminal-extension/src/index.ts:322
 msgid "Shut Down All"
@@ -6118,31 +6133,31 @@ msgstr "全部关闭"
 
 #: packages/lsp-extension/src/index.ts:274
 msgid "Are you sure you want to permanently shut down all running language servers?"
-msgstr ""
+msgstr "您确定要永久关闭所有正在运行的语言服务器吗？"
 
 #: packages/lsp-extension/src/renderer.tsx:216
 msgid "Server name:"
-msgstr ""
+msgstr "服务器名称:"
 
 #: packages/lsp-extension/src/renderer.tsx:233
 msgid "is a required property"
-msgstr ""
+msgstr "是必填属性"
 
 #: packages/lsp-extension/src/renderer.tsx:296
 msgid "Add property"
-msgstr ""
+msgstr "添加属性"
 
 #: packages/lsp-extension/src/renderer.tsx:302
 msgid "Remove server"
-msgstr ""
+msgstr "移除服务器"
 
 #: packages/lsp-extension/src/renderer.tsx:573
 msgid "Add server"
-msgstr ""
+msgstr "添加服务器"
 
 #: packages/lsp/src/adapters/adapter.ts:455 packages/lsp/src/adapters/adapter.ts:473
 msgid "Message from "
-msgstr ""
+msgstr "信息来源 "
 
 #: packages/mainmenu-extension/src/index.ts:185 packages/mainmenu-extension/src/index.ts:192
 msgid "Open Edit Menu"
@@ -6242,7 +6257,7 @@ msgstr "重启内核并清除…"
 
 #: packages/mainmenu-extension/src/index.ts:531
 msgid "Shut down kernel"
-msgstr ""
+msgstr "终止内核"
 
 #: packages/mainmenu-extension/src/index.ts:538 packages/mainmenu-extension/src/index.ts:542
 msgid "Shut Down All Kernels…"
@@ -6270,7 +6285,7 @@ msgstr "重启内核并运行所有"
 
 #: packages/mainmenu-extension/src/index.ts:676
 msgid "Activate a widget by its `id`."
-msgstr ""
+msgstr "通过它的`id`激活一个小部件。"
 
 #: packages/mainmenu-extension/src/index.ts:693 packages/mainmenu-extension/src/index.ts:774
 msgid "Activate Previously Used Tab"
@@ -6290,7 +6305,7 @@ msgstr "显示 Markdown 编辑器"
 
 #: packages/metadataform/src/metadataform.ts:54
 msgid "No metadata."
-msgstr ""
+msgstr "没有元数据。"
 
 #: packages/notebook-extension/src/index.ts:1012 packages/notebook-extension/src/index.ts:1312 packages/notebook-extension/src/index.ts:2705
 msgid "New Console for Notebook"
@@ -6310,7 +6325,7 @@ msgstr "复制输出到剪贴板"
 
 #: packages/notebook-extension/src/index.ts:1242
 msgid "Create New View for Cell Output"
-msgstr ""
+msgstr "为单元格输出创建新视图"
 
 #: packages/notebook-extension/src/index.ts:1283 packages/notebook-extension/src/index.ts:1650
 msgid "Auto Close Brackets for All Notebook Cell Types"
@@ -6503,7 +6518,7 @@ msgstr "选择所有单元格"
 #: packages/notebook-extension/src/index.ts:2135
 msgid "Run Selected Cell"
 msgid_plural "Run Selected Cells"
-msgstr[0] ""
+msgstr[0] "运行选中的单元格"
 
 #: packages/notebook-extension/src/index.ts:2135 packages/notebook-extension/src/index.ts:2854
 msgid "Deselect All Cells"
@@ -6512,7 +6527,7 @@ msgstr "取消选择所有单元格"
 #: packages/notebook-extension/src/index.ts:2143
 msgid "Run this cell and advance"
 msgid_plural "Run these %1 cells and advance"
-msgstr[0] ""
+msgstr[0] "运行这 %1 个单元格并向前移动"
 
 #: packages/notebook-extension/src/index.ts:2146
 msgid "Move Cells Up"
@@ -6525,7 +6540,7 @@ msgstr "下移单元格"
 #: packages/notebook-extension/src/index.ts:2168
 msgid "Run Selected Cell and Do not Advance"
 msgid_plural "Run Selected Cells and Do not Advance"
-msgstr[0] ""
+msgstr[0] "运行选定的所有单元格且不再继续"
 
 #: packages/notebook-extension/src/index.ts:2170
 msgid "Toggle All Line Numbers"
@@ -6542,7 +6557,7 @@ msgstr "进入编辑模式"
 #: packages/notebook-extension/src/index.ts:2193
 msgid "Run Selected Cell and Insert Below"
 msgid_plural "Run Selected Cells and Insert Below"
-msgstr[0] ""
+msgstr[0] "运行选中的单元格并在下面插入"
 
 #: packages/notebook-extension/src/index.ts:2203 packages/notebook-extension/src/index.ts:2987
 msgid "Undo Cell Operation"
@@ -6554,7 +6569,7 @@ msgstr "重做单元格操作"
 
 #: packages/notebook-extension/src/index.ts:2217
 msgid "Run all cells"
-msgstr ""
+msgstr "运行所有单元格"
 
 #: packages/notebook-extension/src/index.ts:2239
 msgid "Reconnect To Kernel"
@@ -6586,7 +6601,7 @@ msgstr "更改为标题 6"
 
 #: packages/notebook-extension/src/index.ts:2322
 msgid "Close and Shut Down Notebook"
-msgstr ""
+msgstr "关闭并终止笔记本服务"
 
 #: packages/notebook-extension/src/index.ts:2322 packages/notebook-extension/src/index.ts:3142
 msgid "Collapse Selected Code"
@@ -6606,11 +6621,11 @@ msgstr "展开所有代码"
 
 #: packages/notebook-extension/src/index.ts:2360
 msgid "Restart Kernel and Clear Outputs of All Cells…"
-msgstr ""
+msgstr "重新启动内核并清除所有单元格的输出…"
 
 #: packages/notebook-extension/src/index.ts:2361
 msgid "Restart the kernel and clear all outputs of all cells"
-msgstr ""
+msgstr "重新启动内核并清除全部单元格的所有输出"
 
 #: packages/notebook-extension/src/index.ts:2366 packages/notebook-extension/src/index.ts:3186
 msgid "Collapse Selected Outputs"
@@ -6626,7 +6641,7 @@ msgstr "折叠全部输出"
 
 #: packages/notebook-extension/src/index.ts:2392
 msgid "Restart the kernel and run all cells"
-msgstr ""
+msgstr "重启内核并运行所有单元格"
 
 #: packages/notebook-extension/src/index.ts:2400 packages/notebook-extension/src/index.ts:3220
 msgid "Render Side-by-Side"
@@ -6634,19 +6649,19 @@ msgstr "并排渲染"
 
 #: packages/notebook-extension/src/index.ts:2405
 msgid "Clear Outputs of All Cells"
-msgstr ""
+msgstr "清除所有单元格的输出"
 
 #: packages/notebook-extension/src/index.ts:2406
 msgid "Clear all outputs of all cells"
-msgstr ""
+msgstr "清除所有单元格的全部输出"
 
 #: packages/notebook-extension/src/index.ts:2417
 msgid "Clear Cell Output"
-msgstr ""
+msgstr "清除单元格输出"
 
 #: packages/notebook-extension/src/index.ts:2418
 msgid "Clear outputs for the selected cells"
-msgstr ""
+msgstr "清除选中单元格的输出"
 
 #: packages/notebook-extension/src/index.ts:2422 packages/notebook-extension/src/index.ts:3242
 msgid "Expand All Outputs"
@@ -6671,17 +6686,17 @@ msgstr "在笔记本单元格中替换选择"
 #: packages/notebook-extension/src/index.ts:2482
 msgid "Cut Cell"
 msgid_plural "Cut Cells"
-msgstr[0] ""
+msgstr[0] "剪切单元格"
 
 #: packages/notebook-extension/src/index.ts:2490
 msgid "Cut this cell"
 msgid_plural "Cut these %1 cells"
-msgstr[0] ""
+msgstr[0] "剪切这 %1 个单元格"
 
 #: packages/notebook-extension/src/index.ts:2509
 msgid "Copy Cell"
 msgid_plural "Copy Cells"
-msgstr[0] ""
+msgstr[0] "复制单元格"
 
 #: packages/notebook-extension/src/index.ts:2514 packages/notebook-extension/src/index.ts:3377 packages/notebook-extension/src/index.ts:572 packages/notebook-extension/src/index.ts:651
 msgid "Notebook Operations"
@@ -6690,17 +6705,17 @@ msgstr "笔记本操作"
 #: packages/notebook-extension/src/index.ts:2517
 msgid "Copy this cell"
 msgid_plural "Copy these %1 cells"
-msgstr[0] ""
+msgstr[0] "复制这 %1 个单元格"
 
 #: packages/notebook-extension/src/index.ts:2536
 msgid "Paste Cell Below"
 msgid_plural "Paste Cells Below"
-msgstr[0] ""
+msgstr[0] "在下面粘贴单元格"
 
 #: packages/notebook-extension/src/index.ts:2544 packages/notebook-extension/src/index.ts:2571
 msgid "Paste this cell from the clipboard"
 msgid_plural "Paste these %1 cells from the clipboard"
-msgstr[0] ""
+msgstr[0] "从剪贴板粘贴这 %1 个单元格"
 
 #: packages/notebook-extension/src/index.ts:2550 packages/notebook-extension/src/index.ts:3413
 msgid "Notebook Cell Operations"
@@ -6709,22 +6724,22 @@ msgstr "笔记本单元格操作"
 #: packages/notebook-extension/src/index.ts:2563
 msgid "Paste Cell Above"
 msgid_plural "Paste Cells Above"
-msgstr[0] ""
+msgstr[0] "在上方粘贴单元格"
 
 #: packages/notebook-extension/src/index.ts:2589
 msgid "Duplicate Cell Below"
 msgid_plural "Duplicate Cells Below"
-msgstr[0] ""
+msgstr[0] "复制单元格至下方"
 
 #: packages/notebook-extension/src/index.ts:2597
 msgid "Create a duplicate of this cell below"
 msgid_plural "Create duplicates of %1 cells below"
-msgstr[0] ""
+msgstr[0] "在下方创建 %1 单元格的副本"
 
 #: packages/notebook-extension/src/index.ts:2616
 msgid "Paste Cell and Replace"
 msgid_plural "Paste Cells and Replace"
-msgstr[0] ""
+msgstr[0] "粘贴单元格并替换"
 
 #: packages/notebook-extension/src/index.ts:2633
 msgid "Clear Output"
@@ -6733,12 +6748,12 @@ msgstr "清空输出"
 #: packages/notebook-extension/src/index.ts:2634
 msgid "Delete Cell"
 msgid_plural "Delete Cells"
-msgstr[0] ""
+msgstr[0] "删除单元格"
 
 #: packages/notebook-extension/src/index.ts:2642
 msgid "Delete this cell"
 msgid_plural "Delete these %1 cells"
-msgstr[0] ""
+msgstr[0] "删除这 %1 个单元格"
 
 #: packages/notebook-extension/src/index.ts:2649
 msgid "Close and Shutdown Notebook"
@@ -6750,7 +6765,7 @@ msgstr "关闭此笔记本？"
 
 #: packages/notebook-extension/src/index.ts:2704
 msgid "Insert a cell above"
-msgstr ""
+msgstr "上方插入单元格"
 
 #: packages/notebook-extension/src/index.ts:2729 packages/notebook/src/default-toolbar.tsx:200 packages/notebook/src/default-toolbar.tsx:207
 msgid "Run the selected cells and advance"
@@ -6766,24 +6781,24 @@ msgstr "重启内核，然后重新运行整个笔记本"
 
 #: packages/notebook-extension/src/index.ts:2751
 msgid "Insert Heading Above Current Heading"
-msgstr ""
+msgstr "在当前标题上方插入标题"
 
 #: packages/notebook-extension/src/index.ts:2762
 msgid "Insert Heading Below Current Heading"
-msgstr ""
+msgstr "在当前标题下方插入标题"
 
 #: packages/notebook-extension/src/index.ts:2773
 msgid "Select Heading Above or Collapse Heading"
-msgstr ""
+msgstr "选择上面的标题或折叠标题。"
 
 #: packages/notebook-extension/src/index.ts:2786
 msgid "Select Heading Below or Expand Heading"
-msgstr ""
+msgstr "选择下面的标题或展开标题"
 
 #: packages/notebook-extension/src/index.ts:2867
 msgid "Move Cell Up"
 msgid_plural "Move Cells Up"
-msgstr[0] ""
+msgstr[0] "上移单元格"
 
 #: packages/notebook-extension/src/index.ts:2870 packages/notebook-extension/src/index.ts:3658 packages/notebook-extension/src/index.ts:757
 msgid "PDF"
@@ -6804,11 +6819,11 @@ msgstr "Reveal.js 幻灯片"
 #: packages/notebook-extension/src/index.ts:2875
 msgid "Move this cell up"
 msgid_plural "Move these %1 cells up"
-msgstr[0] ""
+msgstr[0] "把这 %1 个单元格上移"
 
 #: packages/notebook-extension/src/index.ts:2887
 msgid "Notebook cell shifted up successfully"
-msgstr ""
+msgstr "笔记本单元格已成功上移"
 
 #: packages/notebook-extension/src/index.ts:2891 packages/notebook-extension/src/index.ts:3715
 msgid "For Notebook: %1"
@@ -6821,32 +6836,32 @@ msgstr "对 Notebook:"
 #: packages/notebook-extension/src/index.ts:2904
 msgid "Move Cell Down"
 msgid_plural "Move Cells Down"
-msgstr[0] ""
+msgstr[0] "下移单元格"
 
 #: packages/notebook-extension/src/index.ts:2912
 msgid "Move this cell down"
 msgid_plural "Move these %1 cells down"
-msgstr[0] ""
+msgstr[0] "把这 %1 个单元格下移"
 
 #: packages/notebook-extension/src/index.ts:2924
 msgid "Notebook cell shifted down successfully"
-msgstr ""
+msgstr "笔记本单元格已成功下移"
 
 #: packages/notebook-extension/src/index.ts:3298
 msgid "Toggle Collapse Notebook Heading"
-msgstr ""
+msgstr "切换折叠笔记本标题"
 
 #: packages/notebook-extension/src/index.ts:3308 packages/toc-extension/src/index.ts:141
 msgid "Collapse All Headings"
-msgstr ""
+msgstr "折叠全部标题"
 
 #: packages/notebook-extension/src/index.ts:3317 packages/toc-extension/src/index.ts:140
 msgid "Expand All Headings"
-msgstr ""
+msgstr "展开全部标题"
 
 #: packages/notebook-extension/src/index.ts:3327
 msgid "Select and Run Cell(s) for this Heading"
-msgstr ""
+msgstr "选择并运行此标题下的单元格。"
 
 #: packages/notebook-extension/src/index.ts:504 packages/notebook-extension/src/index.ts:567
 msgid "Save and Export Notebook: %1"
@@ -6854,7 +6869,7 @@ msgstr "保存并导出笔记本：%1"
 
 #: packages/notebook-extension/src/index.ts:563
 msgid "Save and Export Notebook to the given `format`."
-msgstr ""
+msgstr "保存并导出笔记本为指定的 `格式`。"
 
 #: packages/notebook-extension/src/index.ts:758
 msgid "Slides"
@@ -6904,11 +6919,11 @@ msgstr "正在渲染笔记本，还有 (%1) 的单元格需要渲染。\n\n"
 
 #: packages/notebook/src/actions.tsx:1994
 msgid "Selecting \"Trust\" will re-render this notebook in a trusted state."
-msgstr ""
+msgstr "选择“信任”将使此笔记本在受信任的状态下重新渲染。"
 
 #: packages/notebook/src/actions.tsx:2022
 msgid "Trust"
-msgstr ""
+msgstr "信任"
 
 #: packages/notebook/src/actions.tsx:2150 packages/notebook/src/actions.tsx:2237
 msgid "Kernel Terminating"
@@ -6958,7 +6973,7 @@ msgstr[0] "已执行 %1 单元格"
 
 #: packages/notebook/src/executionindicator.tsx:71
 msgid "Kernel status"
-msgstr ""
+msgstr "内核状态"
 
 #: packages/notebook/src/executionindicator.tsx:73 packages/notebook/src/executionindicator.tsx:75
 msgid "Kernel status: %1"
@@ -7050,25 +7065,25 @@ msgstr "%1 的内核似乎已经死亡。它将自动重启。"
 
 #: packages/notebook/src/searchprovider.ts:222
 msgid "Search in the cell outputs."
-msgstr ""
+msgstr "在单元格输出中搜索。"
 
 #: packages/notebook/src/searchprovider.ts:229
 msgid "Search in %1 Selected Cell"
 msgid_plural "Search in %1 Selected Cells"
-msgstr[0] ""
+msgstr[0] "在 %1 个选中的单元格中搜索"
 
 #: packages/notebook/src/searchprovider.ts:234
 msgid "Search in %1 Selected Line"
 msgid_plural "Search in %1 Selected Lines"
-msgstr[0] ""
+msgstr[0] "在选中的 %1 行中搜索"
 
 #: packages/notebook/src/searchprovider.ts:239
 msgid "Search only in the selected cells or text (depending on edit/command mode)."
-msgstr ""
+msgstr "只在选定的单元格或文本中搜索(取决于编辑/命令模式)。"
 
 #: packages/notebook/src/searchprovider.ts:499
 msgid "Searching outputs is expensive and requires to first rendered all outputs. Are you sure you want to search in the cell outputs?"
-msgstr ""
+msgstr "搜索输出结果是比较耗费资源的，需要先渲染所有输出。您确定要在单元格输出中搜索吗？"
 
 #: packages/notebook/src/truststatus.tsx:21 packages/notebook/src/truststatus.tsx:29
 msgid "Notebook trusted: %1 of %2 cells trusted."
@@ -7084,19 +7099,19 @@ msgstr "未受信任的笔记本：%2 个单元格中的 %1 个受到信任。"
 
 #: packages/notebook/src/widget.ts:438
 msgid "The notebook is empty. Click the + button on the toolbar to add a new cell."
-msgstr ""
+msgstr "笔记本为空。点击工具栏上的 + 按钮添加一个新的单元格。"
 
 #: packages/outputarea/src/widget.ts:1054
 msgid "↑↓ for history. Search history with c-↑/c-↓"
-msgstr ""
+msgstr "使用↑↓键翻阅历史记录。使用c-↑/c-↓键搜索历史记录。"
 
 #: packages/outputarea/src/widget.ts:320
 msgid "Toggle output scrolling"
-msgstr ""
+msgstr "输出滚动开关"
 
 #: packages/outputarea/src/widget.ts:605
 msgid "Javascript Error: %1"
-msgstr ""
+msgstr "JavaScript 错误：%1"
 
 #: packages/property-inspector/src/index.ts:170 packages/property-inspector/src/index.ts:171
 msgid "No properties to inspect."
@@ -7124,16 +7139,16 @@ msgstr "正在运行的会话部分"
 
 #: packages/running-extension/src/index.ts:85
 msgid "Sessions and Tabs"
-msgstr ""
+msgstr "会话和标签"
 
 #: packages/running-extension/src/kernels.ts:107
 msgid "Unknown Session"
-msgstr ""
+msgstr "未知会话"
 
 #: packages/running-extension/src/kernels.ts:250
 msgid "%1\n"
 "Path: %2"
-msgstr ""
+msgstr "%1 路径： %2"
 
 #: packages/running-extension/src/kernels.ts:30 packages/running-extension/src/kernels.ts:49
 msgid "Kernels"
@@ -7145,7 +7160,7 @@ msgstr "您确定要永久关闭所有正在运行的内核吗？"
 
 #: packages/running-extension/src/kernels.ts:77
 msgid "New Console for Kernel"
-msgstr ""
+msgstr "内核的新控制台"
 
 #: packages/running-extension/src/kernels.ts:80
 msgid "Path: %1\n"
@@ -7155,7 +7170,7 @@ msgstr "路径：%1\n"
 
 #: packages/running-extension/src/kernels.ts:88
 msgid "New Notebook for Kernel"
-msgstr ""
+msgstr "内核的新笔记本"
 
 #: packages/running-extension/src/opentabs.ts:70 packages/running-extension/src/opentabs.ts:71
 msgid "Open Tabs"
@@ -7187,7 +7202,7 @@ msgstr "高级设置编辑器"
 
 #: packages/settingeditor-extension/src/index.ts:180
 msgid "Settings Editor"
-msgstr ""
+msgstr "设置编辑器"
 
 #: packages/settingeditor-extension/src/index.ts:308
 msgid "Advanced JSON Settings Editor"
@@ -7458,7 +7473,7 @@ msgstr "开始一个新终端会话"
 
 #: packages/terminal-extension/src/index.ts:388
 msgid "Open a terminal by its `name`."
-msgstr ""
+msgstr "用 `name` 打开一个终端。"
 
 #: packages/terminal-extension/src/index.ts:406 packages/terminal-extension/src/index.ts:415
 msgid "Refresh Terminal"
@@ -7478,7 +7493,7 @@ msgstr "减小终端字体大小"
 
 #: packages/terminal-extension/src/index.ts:541
 msgid "Set terminal theme to the provided `theme`."
-msgstr ""
+msgstr "将终端主题设为提供的`主题`。"
 
 #: packages/terminal-extension/src/index.ts:549 packages/terminal-extension/src/index.ts:557
 msgid "Use Terminal Theme: %1"
@@ -7502,7 +7517,7 @@ msgstr "JupyterLab 亮色"
 
 #: packages/toc-extension/src/index.ts:113
 msgid "Show output headings"
-msgstr ""
+msgstr "显示输出标题"
 
 #: packages/toc-extension/src/index.ts:127 packages/toc-extension/src/index.ts:77 packages/toc-extension/src/index.ts:83 packages/toc/src/panel.ts:28 packages/toc/src/panel.ts:79 packages/toc/src/toc.tsx:130
 msgid "Table of Contents"
@@ -7514,7 +7529,7 @@ msgstr "运行单元格"
 
 #: packages/toc-extension/src/index.ts:242
 msgid "More actions…"
-msgstr ""
+msgstr "更多操作..."
 
 #: packages/toc-extension/src/index.ts:80 packages/toc-extension/src/index.ts:86
 msgid "Table of Contents section"
@@ -7522,11 +7537,11 @@ msgstr "目录部分"
 
 #: packages/toc-extension/src/index.ts:83
 msgid "Show first-level heading number"
-msgstr ""
+msgstr "显示第一级标题编号"
 
 #: packages/toc-extension/src/index.ts:97
 msgid "Show heading number in the document"
-msgstr ""
+msgstr "在文档中显示标题编号"
 
 #: packages/toc/src/generators/markdown/toolbar_generator.tsx:64 packages/toc/src/generators/markdown/toolbar_generator.tsx:65 packages/toc/src/generators/notebook/toolbar_generator.tsx:214 packages/toc/src/generators/notebook/toolbar_generator.tsx:215
 msgid "Toggle Auto-Numbering"
@@ -7558,19 +7573,19 @@ msgstr "显示标签菜单"
 
 #: packages/toc/src/panel.ts:32
 msgid "No Headings"
-msgstr ""
+msgstr "无标题"
 
 #: packages/toc/src/panel.ts:33
 msgid "The table of contents shows headings in notebooks and supported files."
-msgstr ""
+msgstr "目录显示笔记本和支持的文件中的标题。"
 
 #: packages/tooltip-extension/src/index.ts:105 packages/tooltip-extension/src/index.ts:145 packages/tooltip-extension/src/index.ts:240
 msgid "Open the tooltip"
-msgstr ""
+msgstr "打开工具提示"
 
 #: packages/tooltip-extension/src/index.ts:55
 msgid "Dismiss the tooltip"
-msgstr ""
+msgstr "忽略工具提示"
 
 #: packages/translation-extension/src/index.ts:132 packages/translation-extension/src/index.ts:139
 msgid "Change interface language?"
@@ -7586,25 +7601,25 @@ msgstr "更改并重新加载"
 
 #: packages/translation-extension/src/index.ts:173
 msgid "Display Languages"
-msgstr ""
+msgstr "显示语言"
 
 #: packages/ui-components/src/components/form.tsx:146
 msgid "Move down"
-msgstr ""
+msgstr "下移"
 
 #: packages/ui-components/src/components/form.tsx:146
 msgid "Move up"
-msgstr ""
+msgstr "上移"
 
 #: packages/ui-components/src/components/sidepanel.ts:118
 msgid "side panel actions"
-msgstr ""
+msgstr "侧面板操作"
 
 #: packages/ui-components/src/components/sidepanel.ts:41
 msgid "side panel content"
-msgstr ""
+msgstr "侧面板内容"
 
 #: packages/ui-components/src/components/toolbar.tsx:971
 msgid "More commands"
-msgstr ""
+msgstr "更多命令"
 
