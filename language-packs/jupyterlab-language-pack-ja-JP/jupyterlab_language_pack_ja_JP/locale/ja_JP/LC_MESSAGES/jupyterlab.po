@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2023-04-27 12:40\n"
+"PO-Revision-Date: 2023-04-28 14:29\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -105,11 +105,11 @@ msgstr "Markdown ビューア"
 
 #: /jupyterlab/extensions/readonly.py:63
 msgid "Extension installation not supported."
-msgstr ""
+msgstr "拡張機能のインストールはサポートされていません。"
 
 #: /jupyterlab/extensions/readonly.py:81
 msgid "Extension removal not supported."
-msgstr ""
+msgstr "拡張機能の削除はサポートされていません。"
 
 #: /packages/application-extension/schema/commands.json:/description
 msgctxt "schema"
@@ -119,7 +119,7 @@ msgstr "アプリケーションコマンドの設定。"
 #: /packages/application-extension/schema/commands.json:/jupyter.lab.menus/main[1]/items[0]/submenu/label
 msgctxt "menu"
 msgid "Appearance"
-msgstr ""
+msgstr "表示設定"
 
 #: /packages/application-extension/schema/commands.json:/title
 msgctxt "schema"
@@ -247,12 +247,12 @@ msgstr "アプリケーションコンテキストメニュー"
 #: /packages/application-extension/schema/property-inspector.json:/description
 msgctxt "schema"
 msgid "Property Inspector Settings."
-msgstr ""
+msgstr "プロパティインスペクターの設定"
 
 #: /packages/application-extension/schema/property-inspector.json:/title
 msgctxt "schema"
 msgid "Property Inspector"
-msgstr ""
+msgstr "プロパティーインスペクタ"
 
 #: /packages/application-extension/schema/shell.json:/description
 msgctxt "schema"
@@ -276,22 +276,27 @@ msgid "Overrides default widget position in the application layout\n"
 "  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
 "  \"multiple\": { \"Terminal\": { \"area\": \"right\" } }\n"
 "}."
-msgstr ""
+msgstr "アプリケーションレイアウトでデフォルトのウィジェット位置を上書きします。\n"
+"例: 複数ドキュメントモードで右サイドバーにターミナルを配置し、シングルドキュメントモードでは下部に配置する場合、\n"
+"{\n"
+"\"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
+"\"multiple\": { \"Terminal\": { \"area\": \"right\" } }\n"
+"}。"
 
 #: /packages/application-extension/schema/shell.json:/properties/layout/title
 msgctxt "settings"
 msgid "Customize shell widget positioning"
-msgstr ""
+msgstr "シェルウィジェットの位置をカスタマイズする"
 
 #: /packages/application-extension/schema/shell.json:/properties/startMode/description /packages/statusbar-extension/schema/plugin.json:/properties/startMode/description
 msgctxt "settings"
 msgid "The mode under which JupyterLab should start. If empty, the mode will be imposed by the URL"
-msgstr ""
+msgstr "JupyterLabが起動するモード。空の場合、モードはURLによって設定されます。"
 
 #: /packages/application-extension/schema/shell.json:/properties/startMode/title
 msgctxt "settings"
 msgid "Start mode: ``, `single` or `multiple`"
-msgstr ""
+msgstr "起動モード: ``, `single` または `multiple`"
 
 #: /packages/application-extension/schema/shell.json:/title
 msgctxt "schema"
@@ -330,7 +335,7 @@ msgstr "サイドバー"
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/disabled/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/disabled/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/disabled/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/disabled/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/disabled/title
 msgctxt "settings"
 msgid "Whether the item is ignored or not"
-msgstr ""
+msgstr "メニューが無効かどうか"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/icon/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/description /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/icon/description /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/icon/description /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/icon/description /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/description /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/icon/description
 msgctxt "settings"
