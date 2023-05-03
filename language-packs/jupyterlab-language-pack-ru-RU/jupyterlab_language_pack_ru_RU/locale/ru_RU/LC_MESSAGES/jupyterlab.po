@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2023-05-03 10:22\n"
+"PO-Revision-Date: 2023-05-03 11:25\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -286,7 +286,7 @@ msgstr "Переопределяет положение виджета по ум
 #: /packages/application-extension/schema/shell.json:/properties/layout/title
 msgctxt "settings"
 msgid "Customize shell widget positioning"
-msgstr ""
+msgstr "Настройка местоположения виджета оболочки"
 
 #: /packages/application-extension/schema/shell.json:/properties/startMode/description /packages/statusbar-extension/schema/plugin.json:/properties/startMode/description
 msgctxt "settings"
@@ -379,7 +379,17 @@ msgid "Note: To disable a item,\n"
 "  ]\n"
 "}\n\n"
 "Top bar description:"
-msgstr ""
+msgstr "Примечание. Чтобы отключить элемент панели инструментов,\n"
+"скопируйте его в пользовательские настройки и добавьте ключ \"disabled\". В следующем примере будет отключён элемент кнопки «прерывание»:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"interrupt\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Описание панели инструментов:"
 
 #: /packages/application-extension/schema/top-bar.json:/properties/toolbar/title
 msgctxt "settings"
@@ -484,12 +494,12 @@ msgstr "Разрешенная схема URL"
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/autolink/description
 msgctxt "settings"
 msgid "Whether to replace URLs with links or not."
-msgstr ""
+msgstr "Заменять ли URL-адреса ссылками или нет."
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/autolink/title
 msgctxt "settings"
 msgid "Autolink URL replacement"
-msgstr ""
+msgstr "Замена URL автоссылки"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/title
 msgctxt "schema"
@@ -1272,7 +1282,7 @@ msgstr "Перейти в текущий каталог"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFileCheckboxes/description
 msgctxt "settings"
 msgid "Whether to show checkboxes next to files and folders"
-msgstr ""
+msgstr "Показывать ли флажки рядом с файлами и папками"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFileCheckboxes/title
 msgctxt "settings"
@@ -1672,7 +1682,7 @@ msgstr "Активировать"
 #: /packages/lsp-extension/schema/plugin.json:/properties/languageServers/description
 msgctxt "settings"
 msgid "Language-server specific configuration, keyed by implementation"
-msgstr ""
+msgstr "Конфигурация для языкового сервера, ключевое значение в реализации"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/languageServers/title
 msgctxt "settings"
@@ -1692,7 +1702,7 @@ msgstr "Журнал связи"
 #: /packages/lsp-extension/schema/plugin.json:/properties/setTrace/description
 msgctxt "settings"
 msgid "Whether to ask server to send logs with execution trace (for debugging). Accepted values are: \"off\", \"messages\", \"verbose\". Servers are allowed to ignore this request."
-msgstr ""
+msgstr "Попросить ли сервер отправить логи выполнения (для отладки). Принимаемые значения: \"выкл\", \"сообщения\", \"verbose\". Серверу разрешено игнорировать этот запрос."
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/setTrace/title
 msgctxt "settings"
@@ -1811,7 +1821,7 @@ msgstr "Главное меню"
 #: /packages/mathjax-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "MathJax math renderer for JupyterLab"
-msgstr ""
+msgstr "Математический рендерер MathJax для JupyterLab"
 
 #: /packages/mathjax-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1996,7 +2006,7 @@ msgstr ""
 #: /packages/notebook-extension/schema/tracker.json:/properties/inputHistoryScope/title
 msgctxt "settings"
 msgid "Input History Scope"
-msgstr ""
+msgstr "Область истории ввода"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/description
 msgctxt "settings"
@@ -2858,7 +2868,7 @@ msgstr "Сбросить состояние приложения"
 
 #: packages/apputils-extension/src/index.ts:504
 msgid "Reset state when loading for the workspace."
-msgstr ""
+msgstr "Сбросить состояние при загрузке для рабочей области."
 
 #: packages/apputils-extension/src/index.ts:568 packages/apputils-extension/src/index.ts:595
 msgid "Run First Enabled Command"
@@ -2874,7 +2884,7 @@ msgstr "Показать горячие клавиши"
 
 #: packages/apputils-extension/src/index.ts:635
 msgid "Show relevant keyboard shortcuts for the current active widget"
-msgstr ""
+msgstr "Показать соответствующие сочетания клавиш для текущего активного виджета"
 
 #: packages/apputils-extension/src/index.ts:655 packages/help-extension/src/index.tsx:182 packages/help-extension/src/index.tsx:183 packages/help-extension/src/index.tsx:212 packages/help-extension/src/index.tsx:217 packages/help-extension/src/index.tsx:244 packages/help-extension/src/index.tsx:479 packages/help-extension/src/index.tsx:485 packages/help-extension/src/index.tsx:90
 msgid "Help"
@@ -2974,7 +2984,7 @@ msgstr "ожидание шрифтов"
 
 #: packages/apputils-extension/src/themesplugins.ts:112
 msgid "Switch to the provided `theme`."
-msgstr ""
+msgstr "Переключиться на предоставленную `theme`."
 
 #: packages/apputils-extension/src/themesplugins.ts:117 packages/apputils-extension/src/themesplugins.ts:89
 msgid "Use Theme: %1"
@@ -3130,11 +3140,11 @@ msgstr "Выбрать Ядро"
 
 #: packages/apputils/src/sessioncontext.tsx:1353
 msgid "Always start the preferred kernel"
-msgstr ""
+msgstr "Всегда запускать предпочтительное ядро"
 
 #: packages/apputils/src/sessioncontext.tsx:1354
 msgid "Remember my choice and always start the preferred kernel"
-msgstr ""
+msgstr "Запомнить мой выбор и всегда запускать предпочтительное ядро"
 
 #: packages/apputils/src/sessioncontext.tsx:1355 packages/apputils/src/sessioncontext.tsx:1415
 msgid "Restart Kernel?"
@@ -3150,7 +3160,7 @@ msgstr "Выбрать ядро для:"
 
 #: packages/apputils/src/sessioncontext.tsx:1416
 msgid "Do you want to restart the kernel of %1? All variables will be lost."
-msgstr ""
+msgstr "Вы хотите перезапустить ядро %1? Все переменные будут потеряны."
 
 #: packages/apputils/src/sessioncontext.tsx:1550 packages/apputils/src/sessioncontext.tsx:1607
 msgid "Start Preferred Kernel"
@@ -3326,7 +3336,7 @@ msgstr "Выделите активную строку"
 
 #: packages/codemirror/src/extension.ts:651
 msgid "Highlight trailing white spaces"
-msgstr ""
+msgstr "Выделять конечные пробелы"
 
 #: packages/codemirror/src/extension.ts:660
 msgid "Highlight white spaces"
@@ -5679,7 +5689,7 @@ msgstr "Показывать номера строк"
 
 #: packages/fileeditor-extension/src/commands.ts:311
 msgid "Show the line numbers for the current file."
-msgstr ""
+msgstr "Показывать номера строк текущего файла."
 
 #: packages/fileeditor-extension/src/commands.ts:351 packages/fileeditor-extension/src/commands.ts:359
 msgid "Word Wrap"
@@ -6919,7 +6929,7 @@ msgstr[3] ""
 
 #: packages/notebook-extension/src/index.ts:2909
 msgid "Notebook cell shifted up successfully"
-msgstr ""
+msgstr "Ячейка блокнота успешно перемещена"
 
 #: packages/notebook-extension/src/index.ts:2926
 msgid "Move Cell Down"
