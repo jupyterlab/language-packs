@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2023-05-03 09:26\n"
+"PO-Revision-Date: 2023-05-03 10:22\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -109,7 +109,7 @@ msgstr "Установка расширения не поддерживаетс�
 
 #: /jupyterlab/extensions/readonly.py:81
 msgid "Extension removal not supported."
-msgstr ""
+msgstr "Удаление расширения не поддерживается."
 
 #: /packages/application-extension/schema/commands.json:/description
 msgctxt "schema"
@@ -248,12 +248,12 @@ msgstr "Контекстное меню приложения"
 #: /packages/application-extension/schema/property-inspector.json:/description
 msgctxt "schema"
 msgid "Property Inspector Settings."
-msgstr ""
+msgstr "Настройки инспектора свойств."
 
 #: /packages/application-extension/schema/property-inspector.json:/title
 msgctxt "schema"
 msgid "Property Inspector"
-msgstr ""
+msgstr "Инспектор свойств"
 
 #: /packages/application-extension/schema/shell.json:/description
 msgctxt "schema"
@@ -277,7 +277,11 @@ msgid "Overrides default widget position in the application layout\n"
 "  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
 "  \"multiple\": { \"Terminal\": { \"area\": \"right\" } }\n"
 "}."
-msgstr ""
+msgstr "Переопределяет положение виджета по умолчанию в макете приложения\n"
+"например, позиционирование терминалов в правой боковой панели в режиме нескольких документов и внизу находятся в одном режиме документа, {\n"
+"  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
+"  \"multiple\": { \"Terminal\": { \"area\": \"right\" }\n"
+"}."
 
 #: /packages/application-extension/schema/shell.json:/properties/layout/title
 msgctxt "settings"
@@ -555,7 +559,7 @@ msgstr "Тема"
 #: /packages/apputils-extension/schema/utilityCommands.json:/description
 msgctxt "schema"
 msgid "Shortcut help settings."
-msgstr ""
+msgstr "Настройки ярлыка помощи."
 
 #: /packages/apputils-extension/schema/utilityCommands.json:/title
 msgctxt "schema"
@@ -595,7 +599,7 @@ msgstr "Панель инструментов ячейки"
 #: /packages/celltags-extension/schema/plugin.json:/description /packages/notebook-extension/schema/tools.json:/description
 msgctxt "schema"
 msgid "Setting for the common tools"
-msgstr ""
+msgstr "Настройка обычных инструментов"
 
 #: /packages/celltags-extension/schema/plugin.json:/title /packages/notebook-extension/schema/tools.json:/title
 msgctxt "schema"
@@ -722,12 +726,12 @@ msgstr "Зеркало кода"
 #: /packages/codemirror-extension/schema/plugin.json:/properties/defaultConfig/description
 msgctxt "settings"
 msgid "Base configuration used by all CodeMirror editors."
-msgstr ""
+msgstr "Базовая конфигурация, используемая всеми редакторами CodeMirror."
 
 #: /packages/codemirror-extension/schema/plugin.json:/properties/defaultConfig/title
 msgctxt "settings"
 msgid "Default editor configuration"
-msgstr ""
+msgstr "Конфигурация редактора по умолчанию"
 
 #: /packages/completer-extension/schema/consoles.json:/description /packages/console-extension/schema/completer.json:/description
 msgctxt "schema"
@@ -752,17 +756,17 @@ msgstr "Автодополнение редактора файлов"
 #: /packages/completer-extension/schema/manager.json:/description
 msgctxt "schema"
 msgid "Code Completion settings."
-msgstr ""
+msgstr "Настройки завершения кода."
 
 #: /packages/completer-extension/schema/manager.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Code Completion settings"
-msgstr ""
+msgstr "Настройки завершения кода"
 
 #: /packages/completer-extension/schema/manager.json:/properties/autoCompletion/description
 msgctxt "settings"
 msgid "Autocompletion setting."
-msgstr ""
+msgstr "Настройки автодополнения."
 
 #: /packages/completer-extension/schema/manager.json:/properties/autoCompletion/title
 msgctxt "settings"
@@ -777,7 +781,7 @@ msgstr ""
 #: /packages/completer-extension/schema/manager.json:/properties/availableProviders/title
 msgctxt "settings"
 msgid "Completion providers rank setting."
-msgstr ""
+msgstr "Настройка ранга провайдеров выполнения."
 
 #: /packages/completer-extension/schema/manager.json:/properties/providerTimeout/description
 msgctxt "settings"
@@ -787,17 +791,17 @@ msgstr ""
 #: /packages/completer-extension/schema/manager.json:/properties/providerTimeout/title
 msgctxt "settings"
 msgid "Default timeout for a provider."
-msgstr ""
+msgstr "Тайм-аут по умолчанию для провайдера."
 
 #: /packages/completer-extension/schema/manager.json:/properties/showDocumentationPanel/description
 msgctxt "settings"
 msgid "Documentation panel setting."
-msgstr ""
+msgstr "Настройка панели документации."
 
 #: /packages/completer-extension/schema/manager.json:/properties/showDocumentationPanel/title
 msgctxt "settings"
 msgid "Show the documentation panel."
-msgstr ""
+msgstr "Показать панель документации."
 
 #: /packages/completer-extension/schema/manager.json:/title
 msgctxt "schema"
@@ -1273,12 +1277,12 @@ msgstr ""
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFileCheckboxes/title
 msgctxt "settings"
 msgid "Use checkboxes to select items"
-msgstr ""
+msgstr "Используйте флажки для выбора элементов"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFileSizeColumn/description
 msgctxt "settings"
 msgid "Whether to show the file size column"
-msgstr ""
+msgstr "Показывать ли столбец размера файла"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFileSizeColumn/title
 msgctxt "settings"
@@ -1293,7 +1297,7 @@ msgstr "Показывать ли скрытые файлы"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/description
 msgctxt "settings"
 msgid "Whether to show hidden files. The server parameter `ContentsManager.allow_hidden` must be set to `True` to display hidden files."
-msgstr ""
+msgstr "Должны ли отображаться скрытые файлы. Параметр сервера `ContentsManager.allow_hidden` должен быть установлен в `True` для отображения скрытых файлов."
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/title
 msgctxt "settings"
@@ -1444,7 +1448,9 @@ msgctxt "settings"
 msgid "The configuration for all text editors; it will override the CodeMirror default configuration.\n"
 "If `fontFamily`, `fontSize` or `lineHeight` are `null`,\n"
 "values from current theme are used."
-msgstr ""
+msgstr "Конфигурация для всех текстовых редакторов; она заменит конфигурацию CodeMirror по умолчанию.\n"
+"Если `fontFamily`, `fontSize` или `lineHeight` являются `null`,\n"
+"используются значения из текущей темы."
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/editorConfig/title
 msgctxt "settings"
@@ -1454,7 +1460,7 @@ msgstr "Конфигурация редактора"
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/scrollPastEnd/description
 msgctxt "settings"
 msgid "Whether to scroll past the end of text document."
-msgstr ""
+msgstr "Прокручивать ли после конца текстового документа."
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/toolbar/description
 msgctxt "settings"
@@ -1526,7 +1532,7 @@ msgstr "Элементы панели средства просмотра HTML"
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/trustByDefault/description
 msgctxt "settings"
 msgid "Whether to trust HTML files upon opening"
-msgstr ""
+msgstr "Доверять ли HTML файлам при открытии"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/trustByDefault/title
 msgctxt "settings"
@@ -1626,12 +1632,12 @@ msgstr "Консоль журнала"
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/configuration/description
 msgctxt "settings"
 msgid "Configuration to be sent to language server over LSP when initialized: see the specific language server's documentation for more"
-msgstr ""
+msgstr "Конфигурация для отправки на языковой сервер поверх LSP при инициализации: подробнее см. в документации по конкретному серверу"
 
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/configuration/title
 msgctxt "settings"
 msgid "Language Server Configurations"
-msgstr ""
+msgstr "Конфигурация языкового сервера"
 
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/rank/description
 msgctxt "settings"
@@ -1691,7 +1697,7 @@ msgstr ""
 #: /packages/lsp-extension/schema/plugin.json:/properties/setTrace/title
 msgctxt "settings"
 msgid "Ask servers to send trace notifications"
-msgstr ""
+msgstr "Спрашивать серверы для отправки уведомления о трассировке"
 
 #: /packages/lsp-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1845,7 +1851,7 @@ msgstr "Настройки расширения формы метаданных.
 #: /packages/metadataform-extension/schema/metadataforms.json:/title
 msgctxt "schema"
 msgid "Metadata Form"
-msgstr ""
+msgstr "Форма метаданных"
 
 #: /packages/notebook-extension/schema/export.json:/description
 msgctxt "schema"
@@ -2460,17 +2466,17 @@ msgstr "Оглавление"
 #: /packages/toc-extension/schema/registry.json:/description
 msgctxt "schema"
 msgid "Default table of contents settings."
-msgstr ""
+msgstr "Таблица по умолчанию настроек контента."
 
 #: /packages/toc-extension/schema/registry.json:/properties/includeOutput/description
 msgctxt "settings"
 msgid "Whether to include cell output in headings or not."
-msgstr ""
+msgstr "Включать ли выводы ячейки в заголовки или нет."
 
 #: /packages/toc-extension/schema/registry.json:/properties/maximalDepth/title
 msgctxt "settings"
 msgid "Maximal headings depth"
-msgstr ""
+msgstr "Максимальная глубина заголовков"
 
 #: /packages/toc-extension/schema/registry.json:/properties/numberHeaders/description
 msgctxt "settings"
@@ -2480,17 +2486,17 @@ msgstr ""
 #: /packages/toc-extension/schema/registry.json:/properties/numberHeaders/title
 msgctxt "settings"
 msgid "Enable headings numbering"
-msgstr ""
+msgstr "Включить нумерацию заголовков"
 
 #: /packages/toc-extension/schema/registry.json:/properties/numberingH1/description
 msgctxt "settings"
 msgid "Whether to number first-level headings or not."
-msgstr ""
+msgstr "Нумеровать ли заголовки первого уровня или нет."
 
 #: /packages/toc-extension/schema/registry.json:/properties/numberingH1/title
 msgctxt "settings"
 msgid "Enable 1st headings numbering"
-msgstr ""
+msgstr "Включить нумерацию 1-го заголовка"
 
 #: /packages/toc-extension/schema/registry.json:/properties/syncCollapseState/description
 msgctxt "settings"
@@ -2667,19 +2673,19 @@ msgstr "Режим презентации"
 
 #: packages/application-extension/src/index.tsx:334
 msgid "Show Right Activity Bar"
-msgstr ""
+msgstr "Показать правую панель активности"
 
 #: packages/application-extension/src/index.tsx:335
 msgid "Show Left Activity Bar"
-msgstr ""
+msgstr "Показать левую панель активности"
 
 #: packages/application-extension/src/index.tsx:365
 msgid "Set %1 mode."
-msgstr ""
+msgstr "Установить режим %1."
 
 #: packages/application-extension/src/index.tsx:366
 msgid "Set the layout `mode`."
-msgstr ""
+msgstr "Установите макет `mode`."
 
 #: packages/application-extension/src/index.tsx:367
 msgid "The layout `mode` can be \"single-document\" or \"multiple-document\"."
@@ -2687,7 +2693,7 @@ msgstr ""
 
 #: packages/application-extension/src/index.tsx:397
 msgid "Reset Default Layout"
-msgstr ""
+msgstr "Сбросить макет по умолчанию"
 
 #: packages/application-extension/src/index.tsx:431 packages/application-extension/src/index.tsx:527
 msgid "Error Registering Plugins"
@@ -2864,7 +2870,7 @@ msgstr "Выполнить все команды, передаваемые ка�
 
 #: packages/apputils-extension/src/index.ts:634
 msgid "Show Keyboard Shortcuts"
-msgstr ""
+msgstr "Показать горячие клавиши"
 
 #: packages/apputils-extension/src/index.ts:635
 msgid "Show relevant keyboard shortcuts for the current active widget"
@@ -2952,7 +2958,7 @@ msgstr "Палитра команд"
 
 #: packages/apputils-extension/src/shortcuts.tsx:183
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Горячие клавиши"
 
 #: packages/apputils-extension/src/shortcuts.tsx:187 packages/docmanager/src/widgetmanager.ts:397 packages/docmanager/src/widgetmanager.ts:399 packages/filebrowser/src/listing.ts:1140 packages/filebrowser/src/listing.ts:1399 packages/running-extension/src/opentabs.ts:86 packages/running-extension/src/opentabs.ts:87
 msgid "Close"
@@ -3324,11 +3330,11 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:660
 msgid "Highlight white spaces"
-msgstr ""
+msgstr "Выделить белые пробелы"
 
 #: packages/codemirror/src/extension.ts:674
 msgid "Indentation unit"
-msgstr ""
+msgstr "Единица отступа"
 
 #: packages/codemirror/src/extension.ts:675
 msgid "The indentation is a `Tab` or the number of spaces. This defaults to 4 spaces."
@@ -3356,7 +3362,7 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:759
 msgid "Rulers"
-msgstr ""
+msgstr "Линейки"
 
 #: packages/codemirror/src/extension.ts:778
 msgid "Smart Indentation"
@@ -3368,11 +3374,11 @@ msgstr "Размер вкладки"
 
 #: packages/codemirror/src/extension.ts:802
 msgid "Multiple selections"
-msgstr ""
+msgstr "Множественный выбор"
 
 #: packages/codemirror/src/extension.ts:817
 msgid "Custom editor styles"
-msgstr ""
+msgstr "Пользовательские стили редактора"
 
 #: packages/codemirror/src/extension.ts:822
 msgid "Font Family"
@@ -3700,7 +3706,7 @@ msgstr "Tcl"
 
 #: packages/codemirror/src/language.ts:1517
 msgid "Textile"
-msgstr ""
+msgstr "Textile"
 
 #: packages/codemirror/src/language.ts:1527
 msgid "TiddlyWiki"
@@ -3708,51 +3714,51 @@ msgstr "TiddlyWiki"
 
 #: packages/codemirror/src/language.ts:1536
 msgid "Tiki wiki"
-msgstr ""
+msgstr "Tiki wiki"
 
 #: packages/codemirror/src/language.ts:1545
 msgid "TOML"
-msgstr ""
+msgstr "TOML"
 
 #: packages/codemirror/src/language.ts:1555
 msgid "troff"
-msgstr ""
+msgstr "troff"
 
 #: packages/codemirror/src/language.ts:1565
 msgid "TTCN"
-msgstr ""
+msgstr "TTCN"
 
 #: packages/codemirror/src/language.ts:1575
 msgid "TTCN_CFG"
-msgstr ""
+msgstr "TTCN_CFG"
 
 #: packages/codemirror/src/language.ts:1585
 msgid "Turtle"
-msgstr ""
+msgstr "Turtle"
 
 #: packages/codemirror/src/language.ts:1595
 msgid "Web IDL"
-msgstr ""
+msgstr "Web IDL"
 
 #: packages/codemirror/src/language.ts:1605
 msgid "VB.NET"
-msgstr ""
+msgstr "VB.NET"
 
 #: packages/codemirror/src/language.ts:1615
 msgid "VBScript"
-msgstr ""
+msgstr "VBScript"
 
 #: packages/codemirror/src/language.ts:1625
 msgid "Velocity"
-msgstr ""
+msgstr "Velocity"
 
 #: packages/codemirror/src/language.ts:1635
 msgid "Verilog"
-msgstr ""
+msgstr "Verilog"
 
 #: packages/codemirror/src/language.ts:1645
 msgid "VHDL"
-msgstr ""
+msgstr "VHDL"
 
 #: packages/codemirror/src/language.ts:1655
 msgid "XQuery"
@@ -4176,11 +4182,11 @@ msgstr "Выполнение с помощью Enter"
 
 #: packages/console-extension/src/index.ts:844 packages/fileeditor-extension/src/commands.ts:1005 packages/notebook-extension/src/index.ts:1974
 msgid "Display the completion helper."
-msgstr ""
+msgstr "Отобразить помощника завершения."
 
 #: packages/console-extension/src/index.ts:855 packages/fileeditor-extension/src/commands.ts:1016 packages/notebook-extension/src/index.ts:1984
 msgid "Select the completion suggestion."
-msgstr ""
+msgstr "Выберите вариант завершения."
 
 #: packages/console/src/panel.ts:314 packages/console/src/panel.ts:316
 msgid "Name: %1\n"
@@ -4260,15 +4266,15 @@ msgstr "Скопировать в буфер обмена"
 
 #: packages/debugger-extension/src/index.ts:519
 msgid "Copy text representation of the value to clipboard"
-msgstr ""
+msgstr "Копировать текстовое представление значения в буфер обмена"
 
 #: packages/debugger-extension/src/index.ts:536
 msgid "Copy Variable to Globals"
-msgstr ""
+msgstr "Копировать переменную в глобальную"
 
 #: packages/debugger-extension/src/index.ts:537
 msgid "Copy variable to globals scope"
-msgstr ""
+msgstr "Копировать переменную в глобальную область"
 
 #: packages/debugger-extension/src/index.ts:616 packages/debugger-extension/src/index.ts:617 packages/debugger-extension/src/index.ts:623 packages/debugger-extension/src/index.ts:687 packages/debugger-extension/src/index.ts:688 packages/debugger-extension/src/index.ts:694
 msgid "Evaluate Code"
@@ -4328,7 +4334,7 @@ msgstr "Отладчик"
 
 #: packages/debugger-extension/src/index.ts:811
 msgid "Select a filter for breakpoints on exception"
-msgstr ""
+msgstr "Выберите фильтр для точек остановки при исключении"
 
 #: packages/debugger/src/handler.ts:39 packages/debugger/src/handler.ts:57
 msgid "Enable Debugger"
@@ -4348,7 +4354,7 @@ msgstr "Точки останова"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:38
 msgid "Pause on exception filter"
-msgstr ""
+msgstr "Пауза при фильтрации исключений"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:51 packages/debugger/src/panels/breakpoints/index.ts:62 packages/debugger/src/panels/breakpoints/index.ts:63 packages/debugger/src/panels/breakpoints/index.ts:74
 msgid "Remove All Breakpoints"
@@ -4447,7 +4453,7 @@ msgstr "Рендер переменной"
 
 #: packages/debugger/src/service.ts:378
 msgid "Globals"
-msgstr ""
+msgstr "Глобальные значения"
 
 #: packages/docmanager-extension/src/index.tsx:1002 packages/docmanager-extension/src/index.tsx:1113 packages/docmanager-extension/src/index.tsx:981
 msgid "Delete %1"
@@ -4487,15 +4493,15 @@ msgstr "Контрольная точка была последний раз о�
 
 #: packages/docmanager-extension/src/index.tsx:1098
 msgid "Duplicate %1"
-msgstr ""
+msgstr "Дублировать %1"
 
 #: packages/docmanager-extension/src/index.tsx:1207
 msgid "Are you sure you want to revert the %1 to checkpoint? "
-msgstr ""
+msgstr "Вы уверены, что хотите вернуть %1 к контрольной точке? "
 
 #: packages/docmanager-extension/src/index.tsx:1254
 msgid "Choose a checkpoint"
-msgstr ""
+msgstr "Выберите контрольную точку"
 
 #: packages/docmanager-extension/src/index.tsx:271 packages/docmanager-extension/src/index.tsx:344
 msgid "Overrides for the default viewers for file types.\n"
@@ -4582,7 +4588,7 @@ msgstr "Вернуть %1 к контрольной точке"
 
 #: packages/docmanager-extension/src/index.tsx:704
 msgid "Open the provided `path`."
-msgstr ""
+msgstr "Откройте указанный путь `path`."
 
 #: packages/docmanager-extension/src/index.tsx:704 packages/docmanager-extension/src/index.tsx:797 packages/docregistry/src/context.ts:805 packages/docregistry/src/context.ts:851 packages/docregistry/src/context.ts:869 packages/docregistry/src/context.ts:874 packages/docregistry/src/context.ts:892
 msgid "Revert"
@@ -4606,7 +4612,7 @@ msgstr "Не удается сохранить"
 
 #: packages/docmanager-extension/src/index.tsx:756
 msgid "Revert %1 to Checkpoint…"
-msgstr ""
+msgstr "Вернуть %1 к контрольной точке…"
 
 #: packages/docmanager-extension/src/index.tsx:760 packages/docmanager-extension/src/index.tsx:855 packages/notebook/src/default-toolbar.tsx:69
 msgid "Document is read-only"
@@ -4630,7 +4636,7 @@ msgstr "Нет контрольных точек"
 
 #: packages/docmanager-extension/src/index.tsx:780
 msgid "No checkpoints are available for this %1."
-msgstr ""
+msgstr "Для %1 нет доступных контрольных точек."
 
 #: packages/docmanager-extension/src/index.tsx:781 packages/docmanager-extension/src/index.tsx:876 packages/docmanager/src/widgetmanager.ts:414 packages/docmanager/src/widgetmanager.ts:416
 msgid "Do not ask me again."
@@ -4896,19 +4902,19 @@ msgstr "Учитывать регистр"
 
 #: packages/documentsearch/src/searchview.tsx:177
 msgid "Match Whole Word"
-msgstr ""
+msgstr "Учитывать всё слово"
 
 #: packages/documentsearch/src/searchview.tsx:185
 msgid "Use Regular Expression"
-msgstr ""
+msgstr "Использовать регулярные выражения"
 
 #: packages/documentsearch/src/searchview.tsx:230
 msgid "Preserve Case"
-msgstr ""
+msgstr "Сохранить кейс"
 
 #: packages/documentsearch/src/searchview.tsx:280
 msgid "Previous Match"
-msgstr ""
+msgstr "Предыдущее соответствие"
 
 #: packages/documentsearch/src/searchview.tsx:291
 msgid "Next Match"
@@ -5024,7 +5030,7 @@ msgstr "Ошибка установки расширения"
 
 #: packages/extensionmanager/src/model.ts:505
 msgid "You will need to restart JupyterLab to apply the changes."
-msgstr ""
+msgstr "Вам нужно будет перезапустить JupyterLab, чтобы применить изменения."
 
 #: packages/extensionmanager/src/model.ts:516
 msgid "reload JupyterLab"
@@ -5032,15 +5038,15 @@ msgstr "перезагрузить JupyterLab"
 
 #: packages/extensionmanager/src/model.ts:517
 msgid "refresh the web page"
-msgstr ""
+msgstr "обновить веб-страницу"
 
 #: packages/extensionmanager/src/model.ts:522
 msgid "install the extension in all kernels and restart them"
-msgstr ""
+msgstr "установить расширение во всех ядрах и перезапустить их"
 
 #: packages/extensionmanager/src/model.ts:527
 msgid "You will need to %1 to apply the changes."
-msgstr ""
+msgstr "Вам нужно %1 чтобы применить изменения."
 
 #: packages/extensionmanager/src/model.ts:529
 msgid " and "
@@ -5048,11 +5054,11 @@ msgstr " и "
 
 #: packages/extensionmanager/src/widget.tsx:114
 msgid "This extension is approved by your security team."
-msgstr ""
+msgstr "Это расширение одобрено вашей командой безопасности."
 
 #: packages/extensionmanager/src/widget.tsx:133
 msgid "Update \"%1\" to \"%2\""
-msgstr ""
+msgstr "Обновить \"%1\" до \"%2\""
 
 #: packages/extensionmanager/src/widget.tsx:135
 msgid "A build is needed to include the latest changes"
@@ -5068,11 +5074,11 @@ msgstr "Игнорировать"
 
 #: packages/extensionmanager/src/widget.tsx:141
 msgid "Update to %1"
-msgstr ""
+msgstr "Обновить до %1"
 
 #: packages/extensionmanager/src/widget.tsx:146
 msgid "Uninstall \"%1\""
-msgstr ""
+msgstr "Удалить \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:150 packages/extensionmanager/src/widget.tsx:320
 msgid "Uninstall"
@@ -5080,15 +5086,15 @@ msgstr "Удалить"
 
 #: packages/extensionmanager/src/widget.tsx:157
 msgid "Disable \"%1\""
-msgstr ""
+msgstr "Отключить \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:166
 msgid "Enable \"%1\""
-msgstr ""
+msgstr "Включить \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:178
 msgid "Install \"%1\""
-msgstr ""
+msgstr "Установить \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:182 packages/extensionmanager/src/widget.tsx:298
 msgid "Install"
@@ -5120,7 +5126,7 @@ msgstr "%1 менеджер"
 
 #: packages/extensionmanager/src/widget.tsx:355
 msgid "Extension installation path: %1"
-msgstr ""
+msgstr "Путь установки расширения: %1"
 
 #: packages/extensionmanager/src/widget.tsx:363 packages/shortcuts-extension/src/components/TopNav.tsx:258
 msgid "Search"
@@ -5132,7 +5138,7 @@ msgstr "О приложении"
 
 #: packages/extensionmanager/src/widget.tsx:379
 msgid "Error when performing an action."
-msgstr ""
+msgstr "Ошибка при выполнении действия."
 
 #: packages/extensionmanager/src/widget.tsx:380 packages/extensionmanager/src/widget.tsx:844
 msgid "Reason given:"
@@ -5165,7 +5171,7 @@ msgstr "Пожалуйста, прочтите политику конфиден
 
 #: packages/extensionmanager/src/widget.tsx:422
 msgid "This will withdraw your consent."
-msgstr ""
+msgstr "Это отзовёт ваше согласие."
 
 #: packages/extensionmanager/src/widget.tsx:441
 msgid "This will disable the extension manager panel; including the listing of installed extension."
@@ -5173,11 +5179,11 @@ msgstr ""
 
 #: packages/extensionmanager/src/widget.tsx:445
 msgid "No, disable"
-msgstr ""
+msgstr "Нет, отключить"
 
 #: packages/extensionmanager/src/widget.tsx:471 packages/extensionmanager/src/widget.tsx:565
 msgid "Updating extensions list…"
-msgstr ""
+msgstr "Обновление списка расширений…"
 
 #: packages/extensionmanager/src/widget.tsx:591 packages/extensionmanager/src/widget.tsx:952
 msgid "Search Results"
@@ -5197,7 +5203,7 @@ msgstr "Установлено"
 
 #: packages/extensionmanager/src/widget.tsx:636
 msgid "Refresh extensions list"
-msgstr ""
+msgstr "Обновить список расширений"
 
 #: packages/extensionmanager/src/widget.tsx:722
 msgid "The extension manager is disabled. Please contact your system\n"
@@ -5222,7 +5228,7 @@ msgstr "Команда разработчиков JupyterLab рада созда
 
 #: packages/extensionmanager/src/widget.tsx:81
 msgid "%1 extension home page"
-msgstr ""
+msgstr "Домашняя страница расширения %1"
 
 #: packages/extensionmanager/src/widget.tsx:832
 msgid "Updating extensions list"
@@ -5244,7 +5250,7 @@ msgstr "Подробности:"
 
 #: packages/extensionmanager/src/widget.tsx:90
 msgid "Version: %1"
-msgstr ""
+msgstr "Версия: %1"
 
 #: packages/extensionmanager/src/widget.tsx:907
 msgid "Refresh extension list"
@@ -5340,7 +5346,7 @@ msgstr "Поиск по именам файлов"
 
 #: packages/filebrowser-extension/src/index.ts:1252
 msgid "Show File Size Column"
-msgstr ""
+msgstr "Показать столбец размера файла"
 
 #: packages/filebrowser-extension/src/index.ts:1272 packages/filebrowser-extension/src/index.ts:1370
 msgid "No browser for path"
@@ -5348,7 +5354,7 @@ msgstr "Нет браузера для пути"
 
 #: packages/filebrowser-extension/src/index.ts:1285
 msgid "Show File Checkboxes"
-msgstr ""
+msgstr "Показать флажки для файлов"
 
 #: packages/filebrowser-extension/src/index.ts:196 packages/filebrowser-extension/src/index.ts:443
 msgid "File Browser (%1)"
@@ -5372,11 +5378,11 @@ msgstr "Фильтровать файлы по имени"
 
 #: packages/filebrowser-extension/src/index.ts:508
 msgid "Open the file browser for the provided `path`."
-msgstr ""
+msgstr "Откройте файловый браузер для пути `path`."
 
 #: packages/filebrowser-extension/src/index.ts:540
 msgid "Hide the file browser."
-msgstr ""
+msgstr "Скрыть файловый браузер."
 
 #: packages/filebrowser-extension/src/index.ts:549 packages/filebrowser-extension/src/index.ts:647
 msgid "Copy Shareable Link"
@@ -5429,7 +5435,7 @@ msgstr "Дублировать"
 
 #: packages/filebrowser-extension/src/index.ts:964
 msgid "Update the file browser to display the provided `path`."
-msgstr ""
+msgstr "Обновите файловый браузер, чтобы отобразить указанный путь `path`."
 
 #: packages/filebrowser/src/browser.ts:372 packages/filebrowser/src/browser.ts:400
 msgid "Directory not found"
@@ -5532,15 +5538,15 @@ msgstr[3] "%1 элементов"
 
 #: packages/filebrowser/src/listing.ts:2261
 msgid "File Size"
-msgstr ""
+msgstr "Размер файла"
 
 #: packages/filebrowser/src/listing.ts:2608
 msgid "Deselect directory \"%1\""
-msgstr ""
+msgstr "Отменить выбор директории \"%1\""
 
 #: packages/filebrowser/src/listing.ts:2609
 msgid "Select directory \"%1\""
-msgstr ""
+msgstr "Выберите директорию \"%1\""
 
 #: packages/filebrowser/src/listing.ts:2612
 msgid "Deselect file \"%1\""
@@ -5685,7 +5691,7 @@ msgstr "Переносить по словам"
 
 #: packages/fileeditor-extension/src/commands.ts:356
 msgid "Wrap words for the current file."
-msgstr ""
+msgstr "Перенос слов для текущего файла."
 
 #: packages/fileeditor-extension/src/commands.ts:375 packages/fileeditor-extension/src/index.ts:102
 msgid "Spaces: %1"
@@ -5706,7 +5712,7 @@ msgstr "Пробелы: %1"
 
 #: packages/fileeditor-extension/src/commands.ts:429
 msgid "Change match brackets for the current file."
-msgstr ""
+msgstr "Измените скобки соответствия для текущего файла."
 
 #: packages/fileeditor-extension/src/commands.ts:446
 msgid "Auto Close Brackets for Text Editor"
@@ -5714,7 +5720,7 @@ msgstr "Автоматически закрывать скобки в текст
 
 #: packages/fileeditor-extension/src/commands.ts:467
 msgid "Auto Close Brackets in Text Editor"
-msgstr ""
+msgstr "Автоматически закрывать скобки в текстовом редакторе"
 
 #: packages/fileeditor-extension/src/commands.ts:472 packages/fileeditor-extension/src/commands.ts:495
 msgid "Auto Close Brackets"
@@ -5806,11 +5812,11 @@ msgstr "Пробелы"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:49
 msgid "Tab Indent"
-msgstr ""
+msgstr "Отступ табуляции"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:58
 msgid "Change the indentation…"
-msgstr ""
+msgstr "Изменить отступ…"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:58
 msgid "Tab Size"
@@ -5858,7 +5864,7 @@ msgstr "Документация по Markdown"
 
 #: packages/help-extension/src/index.tsx:268
 msgid "Open the provided `url` in a tab."
-msgstr ""
+msgstr "Откройте `url` в вкладке."
 
 #: packages/help-extension/src/index.tsx:375 packages/help-extension/src/index.tsx:384
 msgid "About the %1 Kernel"
@@ -6052,7 +6058,7 @@ msgstr "Показать контекстную справку"
 
 #: packages/inspector-extension/src/index.ts:126
 msgid "Hide Contextual Help"
-msgstr ""
+msgstr "Спрятать контекстную справку"
 
 #: packages/inspector-extension/src/index.ts:59 packages/inspector-extension/src/index.ts:91
 msgid "Live updating code documentation from the active kernel"
@@ -6109,7 +6115,7 @@ msgstr "Установить уровень журнала %1"
 
 #: packages/logconsole-extension/src/index.tsx:247
 msgid "Set log level to `level`."
-msgstr ""
+msgstr "Установить уровень логгирования на `level`."
 
 #: packages/logconsole-extension/src/index.tsx:366 packages/logconsole-extension/src/index.tsx:377
 msgid "Log Level:"
@@ -6161,7 +6167,7 @@ msgstr "Завершить все"
 
 #: packages/lsp-extension/src/index.ts:277
 msgid "Are you sure you want to permanently shut down all running language servers?"
-msgstr ""
+msgstr "Вы уверены, что хотите навсегда выключить все работающие языковые серверы?"
 
 #: packages/lsp-extension/src/renderer.tsx:216
 msgid "Server name:"
@@ -6313,7 +6319,7 @@ msgstr "Перезапустить ядро и выполнить всё"
 
 #: packages/mainmenu-extension/src/index.ts:677
 msgid "Activate a widget by its `id`."
-msgstr ""
+msgstr "Активируйте виджет по его `id`."
 
 #: packages/mainmenu-extension/src/index.ts:694 packages/mainmenu-extension/src/index.ts:774
 msgid "Activate Previously Used Tab"
@@ -6353,7 +6359,7 @@ msgstr "Скопировать Output в буфер обмена"
 
 #: packages/notebook-extension/src/index.ts:1265
 msgid "Create New View for Cell Output"
-msgstr ""
+msgstr "Создать новый вид для результата ячейки"
 
 #: packages/notebook-extension/src/index.ts:1283 packages/notebook-extension/src/index.ts:1673
 msgid "Auto Close Brackets for All Notebook Cell Types"
@@ -6669,11 +6675,11 @@ msgstr "Развернуть выбранные выходные данные"
 
 #: packages/notebook-extension/src/index.ts:2383
 msgid "Restart Kernel and Clear Outputs of All Cells…"
-msgstr ""
+msgstr "Перезапустите ядро и очистите выводы всех ячеек…"
 
 #: packages/notebook-extension/src/index.ts:2384
 msgid "Restart the kernel and clear all outputs of all cells"
-msgstr ""
+msgstr "Перезапустите ядро и очистите все выводы всех ячеек"
 
 #: packages/notebook-extension/src/index.ts:2388 packages/notebook-extension/src/index.ts:3230
 msgid "Collapse All Outputs"
@@ -6685,7 +6691,7 @@ msgstr "Рендер бок о бок"
 
 #: packages/notebook-extension/src/index.ts:2415
 msgid "Restart the kernel and run all cells"
-msgstr ""
+msgstr "Перезапустите ядро и запустите все ячейки"
 
 #: packages/notebook-extension/src/index.ts:2422 packages/notebook-extension/src/index.ts:3264
 msgid "Expand All Outputs"
@@ -6693,11 +6699,11 @@ msgstr "Развернуть весь вывод"
 
 #: packages/notebook-extension/src/index.ts:2428
 msgid "Clear Outputs of All Cells"
-msgstr ""
+msgstr "Очистить результаты всех ячеек"
 
 #: packages/notebook-extension/src/index.ts:2429
 msgid "Clear all outputs of all cells"
-msgstr ""
+msgstr "Очистить все результаты всех ячеек"
 
 #: packages/notebook-extension/src/index.ts:2433 packages/notebook-extension/src/index.ts:3275
 msgid "Enable Scrolling for Outputs"
@@ -6709,7 +6715,7 @@ msgstr "Очистить вывод ячейки"
 
 #: packages/notebook-extension/src/index.ts:2441
 msgid "Clear outputs for the selected cells"
-msgstr ""
+msgstr "Очистить результаты для выбранных ячеек"
 
 #: packages/notebook-extension/src/index.ts:2444 packages/notebook-extension/src/index.ts:3286
 msgid "Disable Scrolling for Outputs"
@@ -6729,7 +6735,7 @@ msgid_plural "Cut Cells"
 msgstr[0] "Вырезать ячейку"
 msgstr[1] "Вырезать ячейки"
 msgstr[2] "Вырезать ячеек"
-msgstr[3] ""
+msgstr[3] "Вырезать ячеек"
 
 #: packages/notebook-extension/src/index.ts:2513
 msgid "Cut this cell"
@@ -6841,7 +6847,7 @@ msgstr[3] ""
 
 #: packages/notebook-extension/src/index.ts:2727
 msgid "Insert a cell above"
-msgstr ""
+msgstr "Вставить ячейку выше"
 
 #: packages/notebook-extension/src/index.ts:2729 packages/notebook/src/default-toolbar.tsx:200 packages/notebook/src/default-toolbar.tsx:207
 msgid "Run the selected cells and advance"
@@ -6857,19 +6863,19 @@ msgstr "Перезапустите ядро, затем перезапустит
 
 #: packages/notebook-extension/src/index.ts:2773
 msgid "Insert Heading Above Current Heading"
-msgstr ""
+msgstr "Вставить заголовок выше текущего заголовка"
 
 #: packages/notebook-extension/src/index.ts:2784
 msgid "Insert Heading Below Current Heading"
-msgstr ""
+msgstr "Вставить заголовок ниже текущего заголовка"
 
 #: packages/notebook-extension/src/index.ts:2795
 msgid "Select Heading Above or Collapse Heading"
-msgstr ""
+msgstr "Выбрать заголовок выше или свернуть заголовок"
 
 #: packages/notebook-extension/src/index.ts:2808
 msgid "Select Heading Below or Expand Heading"
-msgstr ""
+msgstr "Выбрать заголовок ниже или развернуть заголовок"
 
 #: packages/notebook-extension/src/index.ts:2870 packages/notebook-extension/src/index.ts:3680 packages/notebook-extension/src/index.ts:757
 msgid "PDF"
@@ -6933,11 +6939,11 @@ msgstr[3] ""
 
 #: packages/notebook-extension/src/index.ts:2946
 msgid "Notebook cell shifted down successfully"
-msgstr ""
+msgstr "Ячейка блокнота успешно перемещена вниз"
 
 #: packages/notebook-extension/src/index.ts:3320
 msgid "Toggle Collapse Notebook Heading"
-msgstr ""
+msgstr "Свернуть заголовок блокнота"
 
 #: packages/notebook-extension/src/index.ts:3330 packages/toc-extension/src/index.ts:141
 msgid "Collapse All Headings"
@@ -7119,7 +7125,7 @@ msgstr "Блокнот в режиме %1"
 
 #: packages/notebook/src/notebookfooter.ts:24
 msgid "Click to add a cell."
-msgstr ""
+msgstr "Нажмите для добавления ячейки."
 
 #: packages/notebook/src/notebooktools.ts:614
 msgid "Notebook Metadata"
@@ -7191,11 +7197,11 @@ msgstr[3] ""
 
 #: packages/notebook/src/searchprovider.ts:240
 msgid "Search only in the selected cells or text (depending on edit/command mode)."
-msgstr ""
+msgstr "Искать только в выбранных ячейках или тексте (в зависимости от режима редактирования/команды)."
 
 #: packages/notebook/src/searchprovider.ts:500
 msgid "Searching outputs is expensive and requires to first rendered all outputs. Are you sure you want to search in the cell outputs?"
-msgstr ""
+msgstr "Поиск результатов является дорогостоящим и требует первого рендеринга всех выводов. Вы уверены, что хотите найти данные в выводах?"
 
 #: packages/notebook/src/truststatus.tsx:21
 msgid "Notebook trusted: %1 of %2 cells trusted."
@@ -7203,15 +7209,15 @@ msgstr "Блокнот является доверенным: %1 из %2 кле�
 
 #: packages/notebook/src/truststatus.tsx:30
 msgid "Active cell trusted: %1 of %2 cells trusted."
-msgstr "Блокнот является доверенным: %1 из %2 клеток являются доверенными."
+msgstr "Активная ячейка является доверенной: %1 из %2 ячеек являются доверенными."
 
 #: packages/notebook/src/truststatus.tsx:30
 msgid "Notebook trusted: %1 of %2 code cells trusted."
-msgstr ""
+msgstr "Блокнот является доверенным: %1 из %2 ячеек кода являются доверенными."
 
 #: packages/notebook/src/truststatus.tsx:36
 msgid "Active cell trusted: %1 of %2 code cells trusted."
-msgstr ""
+msgstr "Активная ячейка является доверенной: %1 из %2 ячеек кода являются доверенными."
 
 #: packages/notebook/src/truststatus.tsx:39
 msgid "Notebook not trusted: %1 of %2 cells trusted."
@@ -7219,23 +7225,23 @@ msgstr "Блокнот не является доверенным: %1 из %2 к
 
 #: packages/notebook/src/truststatus.tsx:42
 msgid "Notebook not trusted: %1 of %2 code cells trusted."
-msgstr ""
+msgstr "Блокнот не является доверенным: %1 из %2 ячеек кода являются доверенными."
 
 #: packages/notebook/src/widget.ts:439
 msgid "The notebook is empty. Click the + button on the toolbar to add a new cell."
-msgstr ""
+msgstr "Блокнот пуст. Нажмите кнопку +, чтобы добавить новую ячейку."
 
 #: packages/outputarea/src/widget.ts:1054
 msgid "↑↓ for history. Search history with c-↑/c-↓"
-msgstr ""
+msgstr "↑↓ для истории. Поиск истории с c-↑/c-↓"
 
 #: packages/outputarea/src/widget.ts:320
 msgid "Toggle output scrolling"
-msgstr ""
+msgstr "Переключить прокрутку вывода"
 
 #: packages/outputarea/src/widget.ts:605
 msgid "Javascript Error: %1"
-msgstr ""
+msgstr "Ошибка Javascript: %1"
 
 #: packages/property-inspector/src/index.ts:170 packages/property-inspector/src/index.ts:189
 msgid "No properties to inspect."
@@ -7263,7 +7269,7 @@ msgstr "Раздел \"Запуск сессий\""
 
 #: packages/running-extension/src/index.ts:86
 msgid "Sessions and Tabs"
-msgstr ""
+msgstr "Сессии и вкладки"
 
 #: packages/running-extension/src/kernels.ts:107
 msgid "Unknown Session"
@@ -7272,7 +7278,8 @@ msgstr "Неизвестная сессия"
 #: packages/running-extension/src/kernels.ts:250
 msgid "%1\n"
 "Path: %2"
-msgstr ""
+msgstr "%1\n"
+"Путь: %2"
 
 #: packages/running-extension/src/kernels.ts:30 packages/running-extension/src/kernels.ts:49
 msgid "Kernels"
@@ -7284,7 +7291,7 @@ msgstr "Вы уверены, что хотите навсегда выключи
 
 #: packages/running-extension/src/kernels.ts:77
 msgid "New Console for Kernel"
-msgstr ""
+msgstr "Новая консоль для ядра"
 
 #: packages/running-extension/src/kernels.ts:80
 msgid "Path: %1\n"
@@ -7294,7 +7301,7 @@ msgstr "Путь: %1\n"
 
 #: packages/running-extension/src/kernels.ts:88
 msgid "New Notebook for Kernel"
-msgstr ""
+msgstr "Новый блокнот для ядра"
 
 #: packages/running-extension/src/opentabs.ts:70 packages/running-extension/src/opentabs.ts:71
 msgid "Open Tabs"
@@ -7342,7 +7349,7 @@ msgstr "Сохранить пользовательские настройки"
 
 #: packages/settingeditor/src/InstructionsPlaceholder.tsx:21
 msgid "No Plugin Selected"
-msgstr ""
+msgstr "Плагин не выбран"
 
 #: packages/settingeditor/src/InstructionsPlaceholder.tsx:23 packages/settingeditor/src/jsonsettingeditor.tsx:71
 msgid "Select a plugin from the list to view and edit its preferences."
@@ -7619,7 +7626,7 @@ msgstr "Уменьшить размер шрифта терминала"
 
 #: packages/terminal-extension/src/index.ts:542
 msgid "Set terminal theme to the provided `theme`."
-msgstr ""
+msgstr "Установите тему терминала для указанной `theme`."
 
 #: packages/terminal-extension/src/index.ts:550 packages/terminal-extension/src/index.ts:557
 msgid "Use Terminal Theme: %1"
@@ -7643,7 +7650,7 @@ msgstr "Светлая JupyterLab"
 
 #: packages/toc-extension/src/index.ts:113
 msgid "Show output headings"
-msgstr ""
+msgstr "Показать выводимые заголовки"
 
 #: packages/toc-extension/src/index.ts:127 packages/toc-extension/src/index.ts:77 packages/toc-extension/src/index.ts:83 packages/toc/src/panel.ts:28 packages/toc/src/panel.ts:79 packages/toc/src/toc.tsx:130
 msgid "Table of Contents"
@@ -7663,11 +7670,11 @@ msgstr "Раздел \"Содержимое\""
 
 #: packages/toc-extension/src/index.ts:83
 msgid "Show first-level heading number"
-msgstr ""
+msgstr "Показывать заголовок первого уровня"
 
 #: packages/toc-extension/src/index.ts:97
 msgid "Show heading number in the document"
-msgstr ""
+msgstr "Показывать номер заголовка в документе"
 
 #: packages/toc/src/generators/markdown/toolbar_generator.tsx:64 packages/toc/src/generators/markdown/toolbar_generator.tsx:65 packages/toc/src/generators/notebook/toolbar_generator.tsx:214 packages/toc/src/generators/notebook/toolbar_generator.tsx:215
 msgid "Toggle Auto-Numbering"
@@ -7699,19 +7706,19 @@ msgstr "Показать меню тегов"
 
 #: packages/toc/src/panel.ts:32
 msgid "No Headings"
-msgstr ""
+msgstr "Нет заголовков"
 
 #: packages/toc/src/panel.ts:33
 msgid "The table of contents shows headings in notebooks and supported files."
-msgstr ""
+msgstr "В таблице контента приведены заголовки в блокнотах и поддерживаемых файлах."
 
 #: packages/tooltip-extension/src/index.ts:108 packages/tooltip-extension/src/index.ts:150 packages/tooltip-extension/src/index.ts:247
 msgid "Open the tooltip"
-msgstr ""
+msgstr "Открыть подсказку"
 
 #: packages/tooltip-extension/src/index.ts:56
 msgid "Dismiss the tooltip"
-msgstr ""
+msgstr "Закрыть подсказку"
 
 #: packages/translation-extension/src/index.ts:132 packages/translation-extension/src/index.ts:141
 msgid "Change interface language?"
