@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 231\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2023-05-05 17:31\n"
+"PO-Revision-Date: 2023-05-05 18:30\n"
 
 #: /packages/application-extension/schema/menus.json:/description /packages/application-extension/schema/menus.json:/title
 msgctxt "schema"
@@ -37,12 +37,12 @@ msgstr "Виджет заголовка"
 #: /packages/application-extension/schema/top.json:/description
 msgctxt "schema"
 msgid "Jupyter Notebook Top Area settings"
-msgstr ""
+msgstr "Настройки верхнего участка Jupyter Notebook"
 
 #: /packages/application-extension/schema/top.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Jupyter Notebook Top Area"
-msgstr ""
+msgstr "Верхний участок Jupyter Notebook"
 
 #: /packages/application-extension/schema/top.json:/properties/visible/description
 msgctxt "settings"
@@ -57,52 +57,52 @@ msgstr "Видимость верхнего бара"
 #: /packages/application-extension/schema/top.json:/title
 msgctxt "schema"
 msgid "Jupyter Notebook Top Area"
-msgstr ""
+msgstr "Верхний участок Jupyter Notebook"
 
 #: /packages/application-extension/schema/zen.json:/description /packages/application-extension/schema/zen.json:/title
 msgctxt "schema"
 msgid "Jupyter Notebook Zen Mode"
-msgstr ""
+msgstr "Режим Zen Jupyter Notebook"
 
 #: /packages/documentsearch-extension/schema/notebookShellWidgetListener.json:/description /packages/documentsearch-extension/schema/notebookShellWidgetListener.json:/title
 msgctxt "schema"
 msgid "Jupyter Notebook DocumentSearch Settings"
-msgstr ""
+msgstr "Настройки поиска документов Jupyter Notebook"
 
 #: /packages/help-extension/schema/open.json:/description /packages/help-extension/schema/open.json:/title
 msgctxt "schema"
 msgid "Jupyter Notebook Help Menu Entries"
-msgstr ""
+msgstr "Пункты меню справки Jupyter Notebook"
 
 #: /packages/lab-extension/schema/interface-switcher.json:/description
 msgctxt "schema"
 msgid "Interface Switcher settings."
-msgstr ""
+msgstr "Настройки переключения интерфейсов."
 
 #: /packages/lab-extension/schema/interface-switcher.json:/title
 msgctxt "schema"
 msgid "Interface Switcher"
-msgstr ""
+msgstr "Переключатель интерфейса"
 
 #: /packages/lab-extension/schema/launch-tree.json:/description
 msgctxt "schema"
 msgid "Launch Shortcuts."
-msgstr ""
+msgstr "Запустить ярлыки."
 
 #: /packages/lab-extension/schema/launch-tree.json:/title
 msgctxt "schema"
 msgid "Launch Shortcuts"
-msgstr ""
+msgstr "Запустить ярлыки"
 
 #: /packages/notebook-extension/schema/checkpoints.json:/description /packages/notebook-extension/schema/checkpoints.json:/title
 msgctxt "schema"
 msgid "Notebook checkpoint indicator"
-msgstr ""
+msgstr "Индикатор контрольной точки блокнота"
 
 #: /packages/notebook-extension/schema/kernel-logo.json:/description
 msgctxt "schema"
 msgid "Kernel logo in the top area"
-msgstr ""
+msgstr "Логотип ядра в верхней области"
 
 #: /packages/notebook-extension/schema/kernel-logo.json:/title
 msgctxt "schema"
@@ -112,32 +112,32 @@ msgstr "Логотип ядра"
 #: /packages/notebook-extension/schema/scroll-output.json:/description
 msgctxt "schema"
 msgid "Jupyter Notebook Notebook settings"
-msgstr ""
+msgstr "Настройки блокнота Jupyter Notebook"
 
 #: /packages/notebook-extension/schema/scroll-output.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Jupyter Notebook Notebook"
-msgstr ""
+msgstr "Блокнот Jupyter Notebook"
 
 #: /packages/notebook-extension/schema/scroll-output.json:/properties/autoScrollOutputs/description
 msgctxt "settings"
 msgid "Whether to auto scroll the output area when the outputs become too long"
-msgstr ""
+msgstr "Следует ли автоматически прокручивать область вывода, когда вывод становятся слишком длинными"
 
 #: /packages/notebook-extension/schema/scroll-output.json:/properties/autoScrollOutputs/title
 msgctxt "settings"
 msgid "Auto Scroll Outputs"
-msgstr ""
+msgstr "Автопрокрутка выводов"
 
 #: /packages/notebook-extension/schema/scroll-output.json:/title
 msgctxt "schema"
 msgid "Jupyter Notebook Notebook"
-msgstr ""
+msgstr "Блокнот Jupyter Notebook"
 
 #: /packages/tree-extension/schema/widget.json:/definitions/toolbarItem/properties/args/title
 msgctxt "settings"
 msgid "Command arguments"
-msgstr ""
+msgstr "Аргументы команды"
 
 #: /packages/tree-extension/schema/widget.json:/definitions/toolbarItem/properties/command/title
 msgctxt "settings"
@@ -152,7 +152,7 @@ msgstr "Игнорируется элемент или нет"
 #: /packages/tree-extension/schema/widget.json:/definitions/toolbarItem/properties/icon/description
 msgctxt "settings"
 msgid "If defined, it will override the command icon"
-msgstr ""
+msgstr "Если определён, он переопределит значок команды"
 
 #: /packages/tree-extension/schema/widget.json:/definitions/toolbarItem/properties/icon/title
 msgctxt "settings"
@@ -187,7 +187,7 @@ msgstr "Тип предмета"
 #: /packages/tree-extension/schema/widget.json:/description
 msgctxt "schema"
 msgid "File Browser widget settings."
-msgstr ""
+msgstr "Настройки виджета файлового браузера."
 
 #: /packages/tree-extension/schema/widget.json:/properties/toolbar/description
 msgctxt "settings"
@@ -203,22 +203,34 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "Примечание. Чтобы отключить элемент панели инструментов,\n"
+"скопируйте его в пользовательские настройки и добавьте\n"
+"ключ \"disabled\". В следующем примере отключается кнопка загрузки:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"uploader\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Описание панели инструментов:"
 
 #: /packages/tree-extension/schema/widget.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "File browser toolbar items"
-msgstr ""
+msgstr "Элементы панели инструментов файлового браузера"
 
 #: /packages/tree-extension/schema/widget.json:/title
 msgctxt "schema"
 msgid "File Browser Widget"
-msgstr ""
+msgstr "Виджет файлового браузера"
 
 #: packages/application-extension/src/index.ts:119
 msgid "Are you sure you want to exit Jupyter Notebook?\n\n"
 "Any unsaved changes will be lost."
-msgstr ""
+msgstr "Вы уверены, что хотите выйти из Jupyter Notebook?\n\n"
+"Все несохранённые изменения будут потеряны."
 
 #: packages/application-extension/src/index.ts:258
 msgid "Open JupyterLab"
@@ -238,15 +250,15 @@ msgstr "Показать заголовок"
 
 #: packages/application-extension/src/index.ts:564
 msgid "Show %1 in the left sidebar"
-msgstr ""
+msgstr "Показать %1 на левой боковой панели"
 
 #: packages/application-extension/src/index.ts:569
 msgid "Show %1 in the right sidebar"
-msgstr ""
+msgstr "Показать %1 на правой боковой панели"
 
 #: packages/application-extension/src/index.ts:574
 msgid "Show %1 in the sidebar"
-msgstr ""
+msgstr "Показать %1 на боковой панели"
 
 #: packages/application-extension/src/index.ts:689
 msgid "Left Sidebar"
@@ -262,7 +274,7 @@ msgstr "Переключить режим Zen"
 
 #: packages/application/src/shell.ts:196 packages/application/src/shell.ts:200
 msgid "Collapse %1 side panel"
-msgstr ""
+msgstr "Свернуть боковую панель %1"
 
 #: packages/help-extension/src/index.tsx:116
 msgid "Version: %1"
@@ -282,7 +294,7 @@ msgstr "Помощь"
 
 #: packages/help-extension/src/index.tsx:177 packages/help-extension/src/index.tsx:182
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Горячие клавиши"
 
 #: packages/help-extension/src/index.tsx:191
 msgid "Name"
@@ -310,53 +322,53 @@ msgstr "Открыть с помощью %1"
 
 #: packages/lab-extension/src/index.ts:165
 msgid "Launch Jupyter Notebook File Browser"
-msgstr ""
+msgstr "Запустите файловый браузер Jupyter Notebook"
 
 #: packages/lab-extension/src/index.ts:81
 msgid "Interface"
-msgstr ""
+msgstr "Интерфейс"
 
 #: packages/notebook-extension/src/index.ts:107
 msgid "Last Checkpoint: %1"
-msgstr ""
+msgstr "Последняя контрольная точка: %1"
 
 #: packages/notebook-extension/src/trusted.tsx:75
 msgid "JavaScript enabled for notebook display"
-msgstr ""
+msgstr "JavaScript включён для отображения блокнота"
 
 #: packages/notebook-extension/src/trusted.tsx:76
 msgid "JavaScript disabled for notebook display"
-msgstr ""
+msgstr "JavaScript отключён для отображения блокнота"
 
 #: packages/notebook-extension/src/trusted.tsx:79
 msgid "Not Trusted"
-msgstr ""
+msgstr "Не доверенный"
 
 #: packages/notebook-extension/src/trusted.tsx:79
 msgid "Trusted"
-msgstr ""
+msgstr "Доверенный"
 
 #: packages/tree-extension/src/index.ts:232
 msgid "Files"
-msgstr ""
+msgstr "Файлы"
 
 #: packages/tree-extension/src/index.ts:234
 msgid "File Browser Section"
-msgstr ""
+msgstr "Секция файлового менеджера"
 
 #: packages/tree-extension/src/index.ts:249
 msgid "Upload"
-msgstr ""
+msgstr "Загрузить"
 
 #: packages/tree-extension/src/index.ts:267
 msgid "Filter files by name"
-msgstr ""
+msgstr "Фильтровать файлы по имени"
 
 #: packages/tree-extension/src/index.ts:289
 msgid "Running"
-msgstr ""
+msgstr "Запущено"
 
 #: packages/tree-extension/src/index.ts:91
 msgid "New"
-msgstr ""
+msgstr "Новый"
 
