@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2023-04-27 15:40\n"
+"PO-Revision-Date: 2023-05-06 12:25\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -277,7 +277,11 @@ msgid "Overrides default widget position in the application layout\n"
 "  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
 "  \"multiple\": { \"Terminal\": { \"area\": \"right\" } }\n"
 "}."
-msgstr ""
+msgstr "Remplace la position par défaut du widget dans la disposition de l'application\n"
+"par ex. pour positionner les terminaux dans la barre latérale droite en mode documents multiples et dans le bas sont en mode document unique, {\n"
+"  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
+"  \"multiple\": { \"Terminal\": { \"area\": \"right\" }\n"
+"}."
 
 #: /packages/application-extension/schema/shell.json:/properties/layout/title
 msgctxt "settings"
@@ -377,7 +381,18 @@ msgid "Note: To disable a item,\n"
 "  ]\n"
 "}\n\n"
 "Top bar description:"
-msgstr ""
+msgstr "Remarque : Pour désactiver un élément,\n"
+"copiez le dans les préférences utilisateur et ajoutez la touche\n"
+"\"désactivé\". L'exemple suivant désactivera le menu utilisateur:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"user-menu\",\n"
+"      \"disabled\" : true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Description de la barre supérieure :"
 
 #: /packages/application-extension/schema/top-bar.json:/properties/toolbar/title
 msgctxt "settings"
@@ -774,22 +789,22 @@ msgstr "Activer l'auto-complétion."
 #: /packages/completer-extension/schema/manager.json:/properties/availableProviders/description
 msgctxt "settings"
 msgid "Providers with higher rank will be shown before the ones with lower rank, providers with negative rank are disabled."
-msgstr ""
+msgstr "Les compléteurs de rang supérieur seront affichés avant ceux qui ont un rang inférieur, les compléteurs avec un rang négatif sont désactivés."
 
 #: /packages/completer-extension/schema/manager.json:/properties/availableProviders/title
 msgctxt "settings"
 msgid "Completion providers rank setting."
-msgstr ""
+msgstr "Paramètres de classement des compléteurs."
 
 #: /packages/completer-extension/schema/manager.json:/properties/providerTimeout/description
 msgctxt "settings"
 msgid "If a provider can not return the response for a completer request before timeout, the result of this provider will be ignored. Value is in millisecond"
-msgstr ""
+msgstr "Si un compléteur ne peut pas renvoyer la réponse pour une requête dans un certain délai, le résultat de ce compléteur sera ignoré. La valeur du délai est en milliseconde"
 
 #: /packages/completer-extension/schema/manager.json:/properties/providerTimeout/title
 msgctxt "settings"
 msgid "Default timeout for a provider."
-msgstr ""
+msgstr "Délai par défaut pour un compléteur."
 
 #: /packages/completer-extension/schema/manager.json:/properties/showDocumentationPanel/description
 msgctxt "settings"
@@ -804,7 +819,7 @@ msgstr ""
 #: /packages/completer-extension/schema/manager.json:/title
 msgctxt "schema"
 msgid "Code Completion"
-msgstr ""
+msgstr "Complétion du code"
 
 #: /packages/completer-extension/schema/notebooks.json:/description /packages/notebook-extension/schema/completer.json:/description
 msgctxt "schema"
@@ -1542,7 +1557,7 @@ msgstr ""
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/trustByDefault/title
 msgctxt "settings"
 msgid "Trust HTML by default"
-msgstr ""
+msgstr "Faire confiance au code HTML par défaut"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/title
 msgctxt "schema"
