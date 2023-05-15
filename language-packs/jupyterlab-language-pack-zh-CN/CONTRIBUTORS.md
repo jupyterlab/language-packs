@@ -2,8 +2,8 @@
 
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * Tunghsiao Liu ([@sparanoid](https://crowdin.com/profile/sparanoid))
-* Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * bnuhero ([@bnuhero](https://crowdin.com/profile/bnuhero))
+* Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * agateriver ([@agateriver](https://crowdin.com/profile/agateriver))
 * MountLation ([@MountLation](https://crowdin.com/profile/MountLation))
 * wolfpan ([@panhaoyu](https://crowdin.com/profile/panhaoyu))
