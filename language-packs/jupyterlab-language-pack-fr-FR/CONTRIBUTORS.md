@@ -13,6 +13,7 @@
 * Matthias Bussonnier ([@mbussonnier](https://crowdin.com/profile/mbussonnier))
 * eupha ([@eupha](https://crowdin.com/profile/eupha))
 * Jeremy Tuloup ([@jtpio](https://crowdin.com/profile/jtpio))
+* Alexis Mignon ([@AlexisMignon](https://crowdin.com/profile/AlexisMignon))
 * Éric Gaspar ([@erga](https://crowdin.com/profile/erga))
 * Loïc Houpert ([@lhoupert](https://crowdin.com/profile/lhoupert))
 * Pierre Poulain ([@pierrepo](https://crowdin.com/profile/pierrepo))

@@ -1,7 +1,7 @@
 # Contributors
 
-* JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * Дмитрий Кондрашов ([@D1moncheck](https://crowdin.com/profile/D1moncheck))
+* JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * Igor Mahov ([@Igormahov](https://crowdin.com/profile/Igormahov))
 * Konstantin Taletskiy ([@ktaletsk](https://crowdin.com/profile/ktaletsk))

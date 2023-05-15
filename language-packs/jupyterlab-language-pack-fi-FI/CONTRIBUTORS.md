@@ -1,5 +1,6 @@
 # Contributors
 
+* theof ([@theof](https://crowdin.com/profile/theof))
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * JaanaHelminen ([@JaanaHelminen](https://crowdin.com/profile/JaanaHelminen))
@@ -13,6 +14,7 @@
 * anniinel ([@anniinel](https://crowdin.com/profile/anniinel))
 * viljavp ([@viljavp](https://crowdin.com/profile/viljavp))
 * Tiiu M ([@Tiiu](https://crowdin.com/profile/Tiiu))
+* Delingua ([@Delingua](https://crowdin.com/profile/Delingua))
 * maija.hannunkari ([@maija.hannunkari](https://crowdin.com/profile/maija.hannunkari))
 * maija.ylonen ([@maija.ylonen](https://crowdin.com/profile/maija.ylonen))
 * lainejo ([@lainejo](https://crowdin.com/profile/lainejo))
