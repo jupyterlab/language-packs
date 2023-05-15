@@ -2,8 +2,8 @@
 
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * Jens Henrik Goebbert ([@jhgoebbert](https://crowdin.com/profile/jhgoebbert))
-* Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * beweta ([@beweta](https://crowdin.com/profile/beweta))
+* Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * Frédéric Collonval ([@fcollonval](https://crowdin.com/profile/fcollonval))
 * Alek Cesarz ([@alek-cesarz](https://crowdin.com/profile/alek-cesarz))
 * r4 ([@r4](https://crowdin.com/profile/r4))
@@ -13,6 +13,7 @@
 * mueslo ([@mueslo](https://crowdin.com/profile/mueslo))
 * infinityspace ([@infinityspace](https://crowdin.com/profile/infinityspace))
 * Gonzalo Peña-Castellanos ([@goanpeca](https://crowdin.com/profile/goanpeca))
+* Sahra-Marie ([@sahra-marie](https://crowdin.com/profile/sahra-marie))
 * cmaass ([@ccmaass](https://crowdin.com/profile/ccmaass))
 * Michał Krassowski ([@krassowski](https://crowdin.com/profile/krassowski))
 * Kyle Goodrick ([@kjgoodrick](https://crowdin.com/profile/kjgoodrick))
