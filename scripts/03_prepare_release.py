@@ -76,7 +76,7 @@ def prepare_jupyterlab_lp_release(
                         "--vcs-ref",
                         "HEAD",
                         "--data",
-                        f"version=\"{final_version}\"",
+                        f"version={final_version}",
                         "update",
                     ],
                     cwd=package_dir,
