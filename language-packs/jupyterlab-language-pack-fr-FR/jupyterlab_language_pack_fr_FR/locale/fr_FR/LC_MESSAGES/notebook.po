@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 231\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2023-05-14 17:02\n"
+"PO-Revision-Date: 2023-05-21 14:17\n"
 
 #: /packages/application-extension/schema/menus.json:/description /packages/application-extension/schema/menus.json:/title
 msgctxt "schema"
@@ -46,8 +46,8 @@ msgstr "Zone supérieure de Jupyter Notebook"
 
 #: /packages/application-extension/schema/top.json:/properties/visible/description
 msgctxt "settings"
-msgid "Whether to show the top bar or not"
-msgstr "Afficher ou non la barre supérieure"
+msgid "Whether to show the top bar or not, yes for always showing, no for always not showing, automatic for adjusting to screen size"
+msgstr "Si vous voulez afficher la barre supérieure ou non, 'yes' pour toujours la montrer, 'no' pour toujours la cacher, 'automatic' pour ajuster la visibilité selon la taille de l'écran"
 
 #: /packages/application-extension/schema/top.json:/properties/visible/title
 msgctxt "settings"
@@ -248,85 +248,81 @@ msgstr "Renommer…"
 msgid "Show Header"
 msgstr "Afficher l'en-tête"
 
-#: packages/application-extension/src/index.ts:564
+#: packages/application-extension/src/index.ts:571
 msgid "Show %1 in the left sidebar"
 msgstr "Afficher %1 dans la barre latérale de gauche"
 
-#: packages/application-extension/src/index.ts:569
+#: packages/application-extension/src/index.ts:576
 msgid "Show %1 in the right sidebar"
 msgstr "Afficher %1 dans la barre latérale de droite"
 
-#: packages/application-extension/src/index.ts:574
+#: packages/application-extension/src/index.ts:581
 msgid "Show %1 in the sidebar"
 msgstr "Afficher %1 dans la barre latérale"
 
-#: packages/application-extension/src/index.ts:689
+#: packages/application-extension/src/index.ts:696
 msgid "Left Sidebar"
 msgstr "Barre latérale gauche"
 
-#: packages/application-extension/src/index.ts:691
+#: packages/application-extension/src/index.ts:698
 msgid "Right Sidebar"
 msgstr "Barre latérale droite"
 
-#: packages/application-extension/src/index.ts:880
+#: packages/application-extension/src/index.ts:887
 msgid "Toggle Zen Mode"
 msgstr "Activer/désactiver le mode Zen"
 
-#: packages/application/src/shell.ts:196 packages/application/src/shell.ts:200
+#: packages/application/src/shell.ts:203 packages/application/src/shell.ts:207
 msgid "Collapse %1 side panel"
 msgstr "Réduire le panneau latéral %1"
 
-#: packages/help-extension/src/index.tsx:116
+#: packages/help-extension/src/index.tsx:114
 msgid "Version: %1"
 msgstr "Version : %1"
 
-#: packages/help-extension/src/index.tsx:117
+#: packages/help-extension/src/index.tsx:115
 msgid "© 2021-2023 Jupyter Notebook Contributors"
 msgstr "©️ 2021-2023 Jupyter Notebook Contributeurs"
 
-#: packages/help-extension/src/index.tsx:133 packages/help-extension/src/index.tsx:215
+#: packages/help-extension/src/index.tsx:131
 msgid "Dismiss"
 msgstr "Ignorer"
 
-#: packages/help-extension/src/index.tsx:174 packages/help-extension/src/index.tsx:79 packages/lab-extension/src/index.ts:162
+#: packages/help-extension/src/index.tsx:77 packages/lab-extension/src/index.ts:178
 msgid "Help"
 msgstr "Aide"
 
-#: packages/help-extension/src/index.tsx:177 packages/help-extension/src/index.tsx:182
-msgid "Keyboard Shortcuts"
-msgstr "Raccourcis clavier"
-
-#: packages/help-extension/src/index.tsx:191
-msgid "Name"
-msgstr "Nom"
-
-#: packages/help-extension/src/index.tsx:192
-msgid "Shortcut"
-msgstr "Raccourci"
-
-#: packages/help-extension/src/index.tsx:82
+#: packages/help-extension/src/index.tsx:80
 msgid "About %1"
 msgstr "À propos de %1"
 
-#: packages/help-extension/src/index.tsx:94
+#: packages/help-extension/src/index.tsx:92
 msgid "JUPYTER NOTEBOOK ON GITHUB"
 msgstr "JUPYTER NOTEBOOK SUR GITHUB"
 
-#: packages/help-extension/src/index.tsx:95
+#: packages/help-extension/src/index.tsx:93
 msgid "CONTRIBUTOR LIST"
 msgstr "LISTE DES CONTRIBUTEURS"
 
-#: packages/lab-extension/src/index.ts:117 packages/lab-extension/src/index.ts:126
-msgid "Open With %1"
-msgstr "Ouvrir avec %1"
+#: packages/lab-extension/src/index.ts:131
+msgid "Notebook"
+msgstr "Notebook"
 
-#: packages/lab-extension/src/index.ts:165
+#: packages/lab-extension/src/index.ts:132 packages/lab-extension/src/index.ts:142
+msgid "Open in %1"
+msgstr "Ouvrir dans %1"
+
+#: packages/lab-extension/src/index.ts:141
+msgid "JupyterLab"
+msgstr "JupyterLab"
+
+#: packages/lab-extension/src/index.ts:181
 msgid "Launch Jupyter Notebook File Browser"
 msgstr "Ouvrir le navigateur de fichiers Jupyter Notebook"
 
-#: packages/lab-extension/src/index.ts:81
-msgid "Interface"
-msgstr "Interface"
+#: packages/lab-extension/src/index.ts:82
+msgid "Open in..."
+msgstr "Ouvrir dans..."
 
 #: packages/notebook-extension/src/index.ts:107
 msgid "Last Checkpoint: %1"
