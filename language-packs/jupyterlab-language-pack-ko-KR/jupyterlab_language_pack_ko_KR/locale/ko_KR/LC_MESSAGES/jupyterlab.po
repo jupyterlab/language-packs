@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2023-05-21 14:17\n"
+"PO-Revision-Date: 2023-05-24 02:35\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -103,11 +103,11 @@ msgstr "마크다운 뷰어"
 
 #: /jupyterlab/extensions/readonly.py:63
 msgid "Extension installation not supported."
-msgstr ""
+msgstr "확장 프로그램 설치는 지원되지 않습니다."
 
 #: /jupyterlab/extensions/readonly.py:81
 msgid "Extension removal not supported."
-msgstr ""
+msgstr "확장 프로그램 제거는 지원되지 않습니다."
 
 #: /packages/application-extension/schema/commands.json:/description
 msgctxt "schema"
@@ -117,7 +117,7 @@ msgstr "어플리케이션 명령어 설정."
 #: /packages/application-extension/schema/commands.json:/jupyter.lab.menus/main[1]/items[0]/submenu/label
 msgctxt "menu"
 msgid "Appearance"
-msgstr ""
+msgstr "디자인"
 
 #: /packages/application-extension/schema/commands.json:/title
 msgctxt "schema"
@@ -246,12 +246,12 @@ msgstr "응용 프로그램 컨텍스트 메뉴"
 #: /packages/application-extension/schema/property-inspector.json:/description
 msgctxt "schema"
 msgid "Property Inspector Settings."
-msgstr ""
+msgstr "속성 점검 도구 설정"
 
 #: /packages/application-extension/schema/property-inspector.json:/title
 msgctxt "schema"
 msgid "Property Inspector"
-msgstr ""
+msgstr "속성 점검"
 
 #: /packages/application-extension/schema/shell.json:/description
 msgctxt "schema"
@@ -261,7 +261,7 @@ msgstr "JupyterLab 쉘 레이아웃 설정."
 #: /packages/application-extension/schema/shell.json:/properties/hiddenMode/description
 msgctxt "settings"
 msgid "The method for hiding widgets in the main dock panel. Using `scale` will increase performance on Firefox but don't use it with Chrome, Chromium or Edge. Similar performance gains are seen with `contentVisibility` which is only available in Chromium-based browsers."
-msgstr ""
+msgstr "메인 도크 패널에서 위젯을 숨기는 방법입니다. '스케일'을 사용하면 Firefox에서 성능이 향상되지만 Chrome, Chromium 또는 Edge에서는 사용을 금지합니다. 대신, Chromium 기반 브라우저에서만 사용할 수 있는 '콘텐츠 가시성'을 사용하면 비슷한 성능 향상을 볼 수 있습니다."
 
 #: /packages/application-extension/schema/shell.json:/properties/hiddenMode/title
 msgctxt "settings"
@@ -275,12 +275,17 @@ msgid "Overrides default widget position in the application layout\n"
 "  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
 "  \"multiple\": { \"Terminal\": { \"area\": \"right\" } }\n"
 "}."
-msgstr ""
+msgstr "애플리케이션 레이아웃에서 기본 위젯 위치를 재정의합니다.\n"
+"예를 들어 오른쪽 사이드바에는 여러 문서 모드에서 터미널을 배치하고 아래쪽에는 단일 문서 모드에서 터미널을 배치합니다.\n"
+"{\n"
+"  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
+"  \"multiple\": { \"Terminal\": { \"area\": \"right\" } }\n"
+"}."
 
 #: /packages/application-extension/schema/shell.json:/properties/layout/title
 msgctxt "settings"
 msgid "Customize shell widget positioning"
-msgstr ""
+msgstr "셸 위젯 위치 맞춤 설정"
 
 #: /packages/application-extension/schema/shell.json:/properties/startMode/description
 msgctxt "settings"
@@ -290,7 +295,7 @@ msgstr "JupyterLab이 시작하는 모드입니다. 비어 있으면 URL에 의�
 #: /packages/application-extension/schema/shell.json:/properties/startMode/title
 msgctxt "settings"
 msgid "Start mode: ``, `single` or `multiple`"
-msgstr ""
+msgstr "시작 모드: ``, `single` or `multiple`"
 
 #: /packages/application-extension/schema/shell.json:/title
 msgctxt "schema"
@@ -330,7 +335,7 @@ msgstr "고유 이름"
 #: /packages/application-extension/schema/top-bar.json:/description
 msgctxt "schema"
 msgid "Top Bar settings."
-msgstr ""
+msgstr "상태 바 설정."
 
 #: /packages/application-extension/schema/top-bar.json:/properties/toolbar/description
 msgctxt "settings"
@@ -346,17 +351,27 @@ msgid "Note: To disable a item,\n"
 "  ]\n"
 "}\n\n"
 "Top bar description:"
-msgstr ""
+msgstr "참고: 항목을 비활성화하려면\n"
+"사용자 환경설정에 복사하고 \"disabled\" 키를 추가합니다.\n"
+"다음 예는 사용자 메뉴를 비활성화하는 예입니다:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"user-menu\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}"
 
 #: /packages/application-extension/schema/top-bar.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "Top bar items"
-msgstr ""
+msgstr "상단 표시줄 항목"
 
 #: /packages/application-extension/schema/top-bar.json:/title
 msgctxt "schema"
 msgid "Top Bar"
-msgstr ""
+msgstr "상단 표시줄"
 
 #: /packages/apputils-extension/schema/notification.json:/description
 msgctxt "schema"
@@ -406,7 +421,7 @@ msgstr "명령어 팔레트 설정."
 #: /packages/apputils-extension/schema/palette.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Command Palette"
-msgstr ""
+msgstr "명령어 팔레트"
 
 #: /packages/apputils-extension/schema/palette.json:/properties/modal/description
 msgctxt "settings"
@@ -436,32 +451,32 @@ msgstr "인쇄"
 #: /packages/apputils-extension/schema/sanitizer.json:/description
 msgctxt "schema"
 msgid "HTML Sanitizer settings."
-msgstr ""
+msgstr "HTML XSS 방지도구 설정."
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/description
 msgctxt "settings"
 msgid "Scheme allowed by the HTML sanitizer."
-msgstr ""
+msgstr "HTML XSS 방지도구가 허용하는 스키마."
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/title
 msgctxt "settings"
 msgid "Allowed URL Scheme"
-msgstr ""
+msgstr "허용된 URL 스키마"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/autolink/description
 msgctxt "settings"
 msgid "Whether to replace URLs with links or not."
-msgstr ""
+msgstr "URL을 링크로 대체할지 여부를 설정합니다."
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/autolink/title
 msgctxt "settings"
 msgid "Autolink URL replacement"
-msgstr ""
+msgstr "자동 링크 URL 교체"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/title
 msgctxt "schema"
 msgid "HTML Sanitizer"
-msgstr ""
+msgstr "HTML XSS 방지도구"
 
 #: /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/code-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/content-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/ui-font-family/description
 msgctxt "settings"
@@ -531,7 +546,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/utilityCommands.json:/title
 msgctxt "schema"
 msgid "Shortcuts Help"
-msgstr ""
+msgstr "단축키 도움말"
 
 #: /packages/apputils-extension/schema/workspaces.json:/description
 msgctxt "schema"
