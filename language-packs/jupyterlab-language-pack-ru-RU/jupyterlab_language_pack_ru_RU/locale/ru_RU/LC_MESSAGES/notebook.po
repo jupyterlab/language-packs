@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 231\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2023-05-05 18:30\n"
+"PO-Revision-Date: 2023-05-21 14:18\n"
 
 #: /packages/application-extension/schema/menus.json:/description /packages/application-extension/schema/menus.json:/title
 msgctxt "schema"
@@ -46,8 +46,8 @@ msgstr "Верхний участок Jupyter Notebook"
 
 #: /packages/application-extension/schema/top.json:/properties/visible/description
 msgctxt "settings"
-msgid "Whether to show the top bar or not"
-msgstr "Показывать ли верхний бар"
+msgid "Whether to show the top bar or not, yes for always showing, no for always not showing, automatic for adjusting to screen size"
+msgstr ""
 
 #: /packages/application-extension/schema/top.json:/properties/visible/title
 msgctxt "settings"
@@ -248,85 +248,81 @@ msgstr "Переименовать…"
 msgid "Show Header"
 msgstr "Показать заголовок"
 
-#: packages/application-extension/src/index.ts:564
+#: packages/application-extension/src/index.ts:571
 msgid "Show %1 in the left sidebar"
 msgstr "Показать %1 на левой боковой панели"
 
-#: packages/application-extension/src/index.ts:569
+#: packages/application-extension/src/index.ts:576
 msgid "Show %1 in the right sidebar"
 msgstr "Показать %1 на правой боковой панели"
 
-#: packages/application-extension/src/index.ts:574
+#: packages/application-extension/src/index.ts:581
 msgid "Show %1 in the sidebar"
 msgstr "Показать %1 на боковой панели"
 
-#: packages/application-extension/src/index.ts:689
+#: packages/application-extension/src/index.ts:696
 msgid "Left Sidebar"
 msgstr "Левая боковая панель"
 
-#: packages/application-extension/src/index.ts:691
+#: packages/application-extension/src/index.ts:698
 msgid "Right Sidebar"
 msgstr "Правая боковая панель"
 
-#: packages/application-extension/src/index.ts:880
+#: packages/application-extension/src/index.ts:887
 msgid "Toggle Zen Mode"
 msgstr "Переключить режим Zen"
 
-#: packages/application/src/shell.ts:196 packages/application/src/shell.ts:200
+#: packages/application/src/shell.ts:203 packages/application/src/shell.ts:207
 msgid "Collapse %1 side panel"
 msgstr "Свернуть боковую панель %1"
 
-#: packages/help-extension/src/index.tsx:116
+#: packages/help-extension/src/index.tsx:114
 msgid "Version: %1"
 msgstr "Версия: %1"
 
-#: packages/help-extension/src/index.tsx:117
+#: packages/help-extension/src/index.tsx:115
 msgid "© 2021-2023 Jupyter Notebook Contributors"
 msgstr "©️ 2021-2023 Соавторы Jupyter Notebook"
 
-#: packages/help-extension/src/index.tsx:133 packages/help-extension/src/index.tsx:215
+#: packages/help-extension/src/index.tsx:131
 msgid "Dismiss"
 msgstr "Отклонить"
 
-#: packages/help-extension/src/index.tsx:174 packages/help-extension/src/index.tsx:79 packages/lab-extension/src/index.ts:162
+#: packages/help-extension/src/index.tsx:77 packages/lab-extension/src/index.ts:178
 msgid "Help"
 msgstr "Помощь"
 
-#: packages/help-extension/src/index.tsx:177 packages/help-extension/src/index.tsx:182
-msgid "Keyboard Shortcuts"
-msgstr "Горячие клавиши"
-
-#: packages/help-extension/src/index.tsx:191
-msgid "Name"
-msgstr "Имя"
-
-#: packages/help-extension/src/index.tsx:192
-msgid "Shortcut"
-msgstr "Ярлык"
-
-#: packages/help-extension/src/index.tsx:82
+#: packages/help-extension/src/index.tsx:80
 msgid "About %1"
 msgstr "О %1"
 
-#: packages/help-extension/src/index.tsx:94
+#: packages/help-extension/src/index.tsx:92
 msgid "JUPYTER NOTEBOOK ON GITHUB"
 msgstr "JUPYTER NOTEBOOK НА GITHUB"
 
-#: packages/help-extension/src/index.tsx:95
+#: packages/help-extension/src/index.tsx:93
 msgid "CONTRIBUTOR LIST"
 msgstr "Список внесших вклад в разработку"
 
-#: packages/lab-extension/src/index.ts:117 packages/lab-extension/src/index.ts:126
-msgid "Open With %1"
-msgstr "Открыть с помощью %1"
+#: packages/lab-extension/src/index.ts:131
+msgid "Notebook"
+msgstr ""
 
-#: packages/lab-extension/src/index.ts:165
+#: packages/lab-extension/src/index.ts:132 packages/lab-extension/src/index.ts:142
+msgid "Open in %1"
+msgstr ""
+
+#: packages/lab-extension/src/index.ts:141
+msgid "JupyterLab"
+msgstr ""
+
+#: packages/lab-extension/src/index.ts:181
 msgid "Launch Jupyter Notebook File Browser"
 msgstr "Запустите файловый браузер Jupyter Notebook"
 
-#: packages/lab-extension/src/index.ts:81
-msgid "Interface"
-msgstr "Интерфейс"
+#: packages/lab-extension/src/index.ts:82
+msgid "Open in..."
+msgstr ""
 
 #: packages/notebook-extension/src/index.ts:107
 msgid "Last Checkpoint: %1"

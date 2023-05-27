@@ -12,7 +12,17 @@ msgstr ""
 "X-Crowdin-File-ID: 229\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2023-05-05 18:30\n"
+"PO-Revision-Date: 2023-05-21 14:18\n"
+
+#: /packages/collaboration-extension/schema/shared-link.json:/description
+msgctxt "schema"
+msgid "Shared link settings"
+msgstr ""
+
+#: /packages/collaboration-extension/schema/shared-link.json:/title
+msgctxt "schema"
+msgid "Shared link"
+msgstr ""
 
 #: /packages/collaboration-extension/schema/user-menu-bar.json:/description
 msgctxt "schema"
@@ -24,29 +34,91 @@ msgctxt "schema"
 msgid "User Menu Bar"
 msgstr "Панель меню пользователя"
 
-#: packages/collaboration-extension/src/collaboration.ts:147
+#: packages/collaboration-extension/src/collaboration.ts:151
 msgid "Collaboration"
 msgstr "Совместная работа"
 
-#: packages/collaboration-extension/src/collaboration.ts:152
+#: packages/collaboration-extension/src/collaboration.ts:156
 msgid "User info"
 msgstr "Информация о пользователе"
 
-#: packages/collaboration-extension/src/collaboration.ts:153
+#: packages/collaboration-extension/src/collaboration.ts:157
 msgid "User information"
 msgstr "Информация о пользователе"
 
-#: packages/collaboration-extension/src/collaboration.ts:165
+#: packages/collaboration-extension/src/collaboration.ts:169
 msgid "Online Collaborators"
 msgstr "Онлайн соавторы"
 
-#: packages/docprovider/src/ydrive.ts:153
+#: packages/collaboration-extension/src/filebrowser.ts:199 packages/collaboration-extension/src/filebrowser.ts:248
 msgid "Warning"
 msgstr "Предупреждение"
 
-#: packages/docprovider/src/ydrive.ts:154
-msgid "Opening a document with multiple views simultaneously is not supported.Please, close one view otherwise, you might lose some of your changes."
-msgstr "Открытие документа в несколькими просмотрами одновременно не поддерживается. Пожалуйста, закройте одно вид, иначе вы можете потерять некоторые изменения."
+#: packages/collaboration-extension/src/filebrowser.ts:249
+msgid "Two collaborative sessions are accessing the file %1 simultaneously.\n"
+"                \n"
+"'Opening a document with multiple views simultaneously is not supported. Please close one view; otherwise, you might lose some of your progress."
+msgstr ""
+
+#: packages/collaboration-extension/src/filebrowser.ts:254
+msgid "Ok"
+msgstr ""
+
+#: packages/collaboration-extension/src/sharedlink.ts:37
+msgid "Generate a Shared Link"
+msgstr ""
+
+#: packages/collaboration-extension/src/sharedlink.ts:52
+msgid "Server"
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:118
+msgid "Security warning!"
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:121
+msgid "Anyone with this link has full access to your notebook server, including all your files!"
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:128
+msgid "Please be careful who you share it with."
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:134
+msgid "They will be able to access this server AS YOU."
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:139
+msgid "To revoke access, go to File -> Hub Control Panel, and restart your server."
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:147
+msgid "Currently, there is no way to revoke access other than shutting down your server."
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:159
+msgid "Only users with `access:servers` permissions for this server will be able to use this link."
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:166
+msgid "Only authenticated users will be able to use this link."
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:191
+msgid "Include token in URL"
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:49
+msgid "Share Jupyter Server Link"
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:59
+msgid "Copy Link"
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:60
+msgid "Copy the link to the Jupyter Server"
+msgstr ""
 
 #: packages/docprovider/src/yprovider.ts:125
 msgid "Session expired"
