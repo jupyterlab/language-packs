@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 199\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2023-04-27 12:40\n"
+"PO-Revision-Date: 2023-05-29 08:42\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
@@ -224,6 +224,16 @@ msgctxt "settings"
 msgid "Diagnostic messages to ignore"
 msgstr "무시할 진단 메시지"
 
+#: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/ignoreSeverities/description
+msgctxt "settings"
+msgid "Severities of diagnostics which should not be shown in the panel nor highlighted in the editor."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/ignoreSeverities/title
+msgctxt "settings"
+msgid "Diagnostic severity levels to ignore"
+msgstr ""
+
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/title
 msgctxt "schema"
 msgid "Code Diagnostics"
@@ -408,6 +418,36 @@ msgstr "구현에 따른 언어 서버별 구성. 예:\n\n"
 "    \"pyls.plugins.flake8.enabled\": true\n"
 "  }\n"
 "}"
+
+#: /packages/jupyterlab-lsp/schema/plugin.json:/properties/language_servers/description
+msgctxt "settings"
+msgid "Language-server specific configuration, keyed by implementation, e.g: \n\n"
+"pyls: {\n"
+"  serverSettings: {\n"
+"    pyls: {\n"
+"      plugins: {\n"
+"        pydocstyle: {\n"
+"          enabled: true\n"
+"        },\n"
+"        pyflakes: {\n"
+"          enabled: false\n"
+"        },\n"
+"        flake8: {\n"
+"          enabled: true\n"
+"        }\n"
+"      }\n"
+"    }\n"
+"  }\n"
+"}\n\n"
+"Alternatively, using dotted naming convention:\n\n"
+"pyls: {\n"
+"  serverSettings: {\n"
+"    \"pyls.plugins.pydocstyle.enabled\": true,\n"
+"    \"pyls.plugins.pyflakes.enabled\": false,\n"
+"    \"pyls.plugins.flake8.enabled\": true\n"
+"  }\n"
+"}"
+msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/plugin.json:/properties/language_servers/title
 msgctxt "settings"

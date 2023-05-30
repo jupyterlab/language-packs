@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 231\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2023-05-21 14:18\n"
+"PO-Revision-Date: 2023-05-29 16:36\n"
 
 #: /packages/application-extension/schema/menus.json:/description /packages/application-extension/schema/menus.json:/title
 msgctxt "schema"
@@ -47,7 +47,7 @@ msgstr "Верхний участок Jupyter Notebook"
 #: /packages/application-extension/schema/top.json:/properties/visible/description
 msgctxt "settings"
 msgid "Whether to show the top bar or not, yes for always showing, no for always not showing, automatic for adjusting to screen size"
-msgstr ""
+msgstr "Показывать ли верхнюю панель или нет, да для всегда показывать, не для всегда не показывается, автоматически для настройки размера экрана"
 
 #: /packages/application-extension/schema/top.json:/properties/visible/title
 msgctxt "settings"
@@ -226,49 +226,53 @@ msgctxt "schema"
 msgid "File Browser Widget"
 msgstr "Виджет файлового браузера"
 
-#: packages/application-extension/src/index.ts:119
+#: packages/application-extension/src/index.ts:134
 msgid "Are you sure you want to exit Jupyter Notebook?\n\n"
 "Any unsaved changes will be lost."
 msgstr "Вы уверены, что хотите выйти из Jupyter Notebook?\n\n"
 "Все несохранённые изменения будут потеряны."
 
-#: packages/application-extension/src/index.ts:258
+#: packages/application-extension/src/index.ts:273
 msgid "Open JupyterLab"
 msgstr "Открыть JupyterLab"
 
-#: packages/application-extension/src/index.ts:266
+#: packages/application-extension/src/index.ts:281
 msgid "File Browser"
 msgstr "Файловый менеджер"
 
-#: packages/application-extension/src/index.ts:415
+#: packages/application-extension/src/index.ts:339
+msgid "Handle Local Link"
+msgstr "Обработка локальной ссылки"
+
+#: packages/application-extension/src/index.ts:498
 msgid "Rename…"
 msgstr "Переименовать…"
 
-#: packages/application-extension/src/index.ts:481
+#: packages/application-extension/src/index.ts:564
 msgid "Show Header"
 msgstr "Показать заголовок"
 
-#: packages/application-extension/src/index.ts:571
+#: packages/application-extension/src/index.ts:654
 msgid "Show %1 in the left sidebar"
 msgstr "Показать %1 на левой боковой панели"
 
-#: packages/application-extension/src/index.ts:576
+#: packages/application-extension/src/index.ts:659
 msgid "Show %1 in the right sidebar"
 msgstr "Показать %1 на правой боковой панели"
 
-#: packages/application-extension/src/index.ts:581
+#: packages/application-extension/src/index.ts:664
 msgid "Show %1 in the sidebar"
 msgstr "Показать %1 на боковой панели"
 
-#: packages/application-extension/src/index.ts:696
+#: packages/application-extension/src/index.ts:779
 msgid "Left Sidebar"
 msgstr "Левая боковая панель"
 
-#: packages/application-extension/src/index.ts:698
+#: packages/application-extension/src/index.ts:781
 msgid "Right Sidebar"
 msgstr "Правая боковая панель"
 
-#: packages/application-extension/src/index.ts:887
+#: packages/application-extension/src/index.ts:970
 msgid "Toggle Zen Mode"
 msgstr "Переключить режим Zen"
 
@@ -306,15 +310,15 @@ msgstr "Список внесших вклад в разработку"
 
 #: packages/lab-extension/src/index.ts:131
 msgid "Notebook"
-msgstr ""
+msgstr "Блокнот"
 
 #: packages/lab-extension/src/index.ts:132 packages/lab-extension/src/index.ts:142
 msgid "Open in %1"
-msgstr ""
+msgstr "Открыть в %1"
 
 #: packages/lab-extension/src/index.ts:141
 msgid "JupyterLab"
-msgstr ""
+msgstr "JupyterLab"
 
 #: packages/lab-extension/src/index.ts:181
 msgid "Launch Jupyter Notebook File Browser"
@@ -322,7 +326,7 @@ msgstr "Запустите файловый браузер Jupyter Notebook"
 
 #: packages/lab-extension/src/index.ts:82
 msgid "Open in..."
-msgstr ""
+msgstr "Открыть в..."
 
 #: packages/notebook-extension/src/index.ts:107
 msgid "Last Checkpoint: %1"
