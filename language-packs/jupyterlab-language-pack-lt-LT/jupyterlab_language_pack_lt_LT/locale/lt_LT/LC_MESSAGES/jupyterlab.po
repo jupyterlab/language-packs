@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Lithuanian\n"
 "Language: lt_LT\n"
-"PO-Revision-Date: 2023-05-21 14:18\n"
+"PO-Revision-Date: 2023-05-31 09:46\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1025,6 +1025,16 @@ msgctxt "settings"
 msgid "Show last modified column"
 msgstr ""
 
+#: /packages/filebrowser-extension/schema/browser.json:/properties/sortNotebooksFirst/description
+msgctxt "settings"
+msgid "Whether to group the notebooks away from files"
+msgstr ""
+
+#: /packages/filebrowser-extension/schema/browser.json:/properties/sortNotebooksFirst/title
+msgctxt "settings"
+msgid "When sorting by name, group notebooks before other files"
+msgstr ""
+
 #: /packages/filebrowser-extension/schema/browser.json:/properties/useFuzzyFilter/description
 msgctxt "settings"
 msgid "Whether to apply fuzzy algorithm while filtering on file names"
@@ -2029,6 +2039,16 @@ msgctxt "settings"
 msgid "Table of Contents"
 msgstr ""
 
+#: /packages/toc-extension/schema/registry.json:/properties/baseNumbering/description
+msgctxt "settings"
+msgid "The number headings start at."
+msgstr ""
+
+#: /packages/toc-extension/schema/registry.json:/properties/baseNumbering/title
+msgctxt "settings"
+msgid "Base level for the highest headings"
+msgstr ""
+
 #: /packages/toc-extension/schema/registry.json:/properties/includeOutput/description
 msgctxt "settings"
 msgid "Whether to include cell output in headings or not."
@@ -2476,31 +2496,31 @@ msgstr ""
 msgid "Dismiss notification"
 msgstr ""
 
-#: packages/apputils-extension/src/notificationplugin.tsx:402
+#: packages/apputils-extension/src/notificationplugin.tsx:401 packages/apputils-extension/src/notificationplugin.tsx:402
 msgid "Emit a notification"
 msgstr ""
 
-#: packages/apputils-extension/src/notificationplugin.tsx:403
+#: packages/apputils-extension/src/notificationplugin.tsx:402 packages/apputils-extension/src/notificationplugin.tsx:403
 msgid "Notification is described by {message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
 msgstr ""
 
-#: packages/apputils-extension/src/notificationplugin.tsx:440
+#: packages/apputils-extension/src/notificationplugin.tsx:439 packages/apputils-extension/src/notificationplugin.tsx:440
 msgid "Update a notification"
 msgstr ""
 
-#: packages/apputils-extension/src/notificationplugin.tsx:441
+#: packages/apputils-extension/src/notificationplugin.tsx:440 packages/apputils-extension/src/notificationplugin.tsx:441
 msgid "Notification is described by {id: string, message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
 msgstr ""
 
-#: packages/apputils-extension/src/notificationplugin.tsx:480
+#: packages/apputils-extension/src/notificationplugin.tsx:479 packages/apputils-extension/src/notificationplugin.tsx:480
 msgid "Dismiss a notification"
 msgstr ""
 
-#: packages/apputils-extension/src/notificationplugin.tsx:601
+#: packages/apputils-extension/src/notificationplugin.tsx:600 packages/apputils-extension/src/notificationplugin.tsx:601
 msgid "Show Notifications"
 msgstr ""
 
-#: packages/apputils-extension/src/notificationplugin.tsx:688
+#: packages/apputils-extension/src/notificationplugin.tsx:688 packages/apputils-extension/src/notificationplugin.tsx:689
 msgid "Hide notification"
 msgstr ""
 
@@ -2528,11 +2548,11 @@ msgstr ""
 msgid "Command Palette"
 msgstr ""
 
-#: packages/apputils-extension/src/shortcuts.tsx:183
+#: packages/apputils-extension/src/shortcuts.tsx:183 packages/apputils-extension/src/shortcuts.tsx:193
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: packages/apputils-extension/src/shortcuts.tsx:187 packages/docmanager/src/widgetmanager.ts:397 packages/filebrowser/src/listing.ts:1399 packages/running-extension/src/opentabs.ts:86
+#: packages/apputils-extension/src/shortcuts.tsx:187 packages/apputils-extension/src/shortcuts.tsx:197 packages/docmanager/src/widgetmanager.ts:397 packages/filebrowser/src/listing.ts:1399 packages/filebrowser/src/listing.ts:1415 packages/running-extension/src/opentabs.ts:86
 msgid "Close"
 msgstr ""
 
@@ -2592,35 +2612,35 @@ msgstr ""
 msgid "Workspace loader"
 msgstr ""
 
-#: packages/apputils-extension/src/workspacesplugin.ts:266 packages/apputils-extension/src/workspacesplugin.ts:272 packages/docmanager/src/widgetmanager.ts:436 packages/docregistry/src/context.ts:1019
+#: packages/apputils-extension/src/workspacesplugin.ts:266 packages/apputils-extension/src/workspacesplugin.ts:267 packages/apputils-extension/src/workspacesplugin.ts:272 packages/apputils-extension/src/workspacesplugin.ts:275 packages/docmanager/src/widgetmanager.ts:436 packages/docmanager/src/widgetmanager.ts:442 packages/docregistry/src/context.ts:1015 packages/docregistry/src/context.ts:1019
 msgid "Save"
 msgstr "Išsaugoti"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:268 packages/apputils-extension/src/workspacesplugin.ts:79
+#: packages/apputils-extension/src/workspacesplugin.ts:268 packages/apputils-extension/src/workspacesplugin.ts:271 packages/apputils-extension/src/workspacesplugin.ts:79
 msgid "Save Current Workspace As…"
+msgstr ""
+
+#: packages/apputils-extension/src/workspacesplugin.ts:268 packages/apputils-extension/src/workspacesplugin.ts:93
+msgid "Save Current Workspace"
 msgstr ""
 
 #: packages/apputils-extension/src/workspacesplugin.ts:72
 msgid "JupyterLab workspace File"
 msgstr ""
 
-#: packages/apputils-extension/src/workspacesplugin.ts:93
-msgid "Save Current Workspace"
-msgstr ""
-
 #: packages/apputils/src/dialog.tsx:47 packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:404 packages/hub-extension/src/index.ts:173 packages/lsp/src/adapters/adapter.ts:470 packages/mainmenu-extension/src/index.ts:548
 msgid "Dismiss"
 msgstr ""
 
-#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:862 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:696 packages/filebrowser/src/listing.ts:429 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:514 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/translation-extension/src/index.ts:147
+#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:862 packages/apputils/src/dialog.tsx:870 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:696 packages/filebrowser/src/listing.ts:429 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:514 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/translation-extension/src/index.ts:147
 msgid "Cancel"
 msgstr ""
 
-#: packages/apputils/src/dialog.tsx:763 packages/extensionmanager/src/dialog.tsx:37 packages/extensionmanager/src/model.ts:508 packages/extensionmanager/src/model.ts:531 packages/notebook/src/model.ts:377 packages/notebook/src/panel.ts:234 packages/notebook/src/searchprovider.ts:515 packages/settingeditor/src/plugineditor.ts:133
+#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/extensionmanager/src/dialog.tsx:37 packages/extensionmanager/src/model.ts:508 packages/extensionmanager/src/model.ts:531 packages/notebook/src/model.ts:377 packages/notebook/src/panel.ts:234 packages/notebook/src/searchprovider.ts:515 packages/settingeditor/src/plugineditor.ts:133
 msgid "Ok"
 msgstr ""
 
-#: packages/apputils/src/kernelstatuses.tsx:210 packages/apputils/src/sessioncontext.tsx:1746 packages/apputils/src/sessioncontext.tsx:631
+#: packages/apputils/src/kernelstatuses.tsx:210 packages/apputils/src/sessioncontext.tsx:1746 packages/apputils/src/sessioncontext.tsx:1757 packages/apputils/src/sessioncontext.tsx:631
 msgid "No Kernel"
 msgstr ""
 
@@ -2692,67 +2712,79 @@ msgstr ""
 msgid "Error Starting Kernel"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1341 packages/filebrowser/src/opendialog.ts:83
+#: packages/apputils/src/sessioncontext.tsx:1341 packages/apputils/src/sessioncontext.tsx:1344 packages/filebrowser/src/opendialog.ts:83
 msgid "Select"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1348
+#: packages/apputils/src/sessioncontext.tsx:1345 packages/apputils/src/sessioncontext.tsx:1348 packages/apputils/src/sessioncontext.tsx:1353
 msgid "Select Kernel"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1353
+#: packages/apputils/src/sessioncontext.tsx:1353 packages/apputils/src/sessioncontext.tsx:1358
 msgid "Always start the preferred kernel"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1354
+#: packages/apputils/src/sessioncontext.tsx:1354 packages/apputils/src/sessioncontext.tsx:1359
 msgid "Remember my choice and always start the preferred kernel"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1415
+#: packages/apputils/src/sessioncontext.tsx:1415 packages/apputils/src/sessioncontext.tsx:1423
 msgid "Restart Kernel?"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1416
+#: packages/apputils/src/sessioncontext.tsx:1416 packages/apputils/src/sessioncontext.tsx:1424
 msgid "Do you want to restart the kernel of %1? All variables will be lost."
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1473
+#: packages/apputils/src/sessioncontext.tsx:1419 packages/hub-extension/src/index.ts:172
+msgid "Restart"
+msgstr ""
+
+#: packages/apputils/src/sessioncontext.tsx:1420
+msgid "Confirm Kernel Restart"
+msgstr ""
+
+#: packages/apputils/src/sessioncontext.tsx:1429
+msgid "Cancel Kernel Restart"
+msgstr ""
+
+#: packages/apputils/src/sessioncontext.tsx:1473 packages/apputils/src/sessioncontext.tsx:1484
 msgid "Select kernel for:"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1607
+#: packages/apputils/src/sessioncontext.tsx:1607 packages/apputils/src/sessioncontext.tsx:1618
 msgid "Start Preferred Kernel"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1622
+#: packages/apputils/src/sessioncontext.tsx:1622 packages/apputils/src/sessioncontext.tsx:1633
 msgid "Start Other Kernel"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1679
+#: packages/apputils/src/sessioncontext.tsx:1679 packages/apputils/src/sessioncontext.tsx:1690
 msgid "Use Kernel from Preferred Session"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1694
+#: packages/apputils/src/sessioncontext.tsx:1694 packages/apputils/src/sessioncontext.tsx:1705
 msgid "Use Kernel from Other Session"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1744
+#: packages/apputils/src/sessioncontext.tsx:1744 packages/apputils/src/sessioncontext.tsx:1755
 msgid "Use No Kernel"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1768
+#: packages/apputils/src/sessioncontext.tsx:1768 packages/apputils/src/sessioncontext.tsx:1779
 msgid "Path:"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1769
+#: packages/apputils/src/sessioncontext.tsx:1769 packages/apputils/src/sessioncontext.tsx:1780
 msgid "Name:"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1770
+#: packages/apputils/src/sessioncontext.tsx:1770 packages/apputils/src/sessioncontext.tsx:1781
 msgid "Kernel Name:"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1771
+#: packages/apputils/src/sessioncontext.tsx:1771 packages/apputils/src/sessioncontext.tsx:1782
 msgid "Kernel Id:"
 msgstr ""
 
@@ -3600,7 +3632,7 @@ msgstr ""
 msgid "IDL"
 msgstr ""
 
-#: packages/codemirror/src/theme.ts:215
+#: packages/codemirror/src/theme.ts:215 packages/codemirror/src/theme.ts:225
 msgid "codemirror"
 msgstr ""
 
@@ -3668,31 +3700,39 @@ msgstr ""
 msgid "Are you sure you want to close \"%1\"?"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:684
+#: packages/console-extension/src/index.ts:668
+msgid "Cancel console Shut Down"
+msgstr ""
+
+#: packages/console-extension/src/index.ts:671
+msgid "Confirm console Shut Down"
+msgstr ""
+
+#: packages/console-extension/src/index.ts:684 packages/console-extension/src/index.ts:691
 msgid "Inject some code in a console."
 msgstr ""
 
-#: packages/console-extension/src/index.ts:705 packages/mainmenu-extension/src/index.ts:519 packages/notebook-extension/src/index.ts:3059
+#: packages/console-extension/src/index.ts:705 packages/console-extension/src/index.ts:712 packages/mainmenu-extension/src/index.ts:519 packages/notebook-extension/src/index.ts:3059
 msgid "Change Kernel…"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:717 packages/mainmenu-extension/src/index.ts:754 packages/notebook-extension/src/index.ts:3070
+#: packages/console-extension/src/index.ts:717 packages/console-extension/src/index.ts:724 packages/mainmenu-extension/src/index.ts:754 packages/notebook-extension/src/index.ts:3070
 msgid "Get Kernel"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:799
+#: packages/console-extension/src/index.ts:799 packages/console-extension/src/index.ts:806
 msgid "Execute with Shift+Enter"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:800
+#: packages/console-extension/src/index.ts:800 packages/console-extension/src/index.ts:807
 msgid "Execute with Enter"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:844 packages/fileeditor-extension/src/commands.ts:1005 packages/notebook-extension/src/index.ts:1974
+#: packages/console-extension/src/index.ts:844 packages/console-extension/src/index.ts:851 packages/fileeditor-extension/src/commands.ts:1005 packages/notebook-extension/src/index.ts:1974
 msgid "Display the completion helper."
 msgstr ""
 
-#: packages/console-extension/src/index.ts:855 packages/fileeditor-extension/src/commands.ts:1016 packages/notebook-extension/src/index.ts:1984
+#: packages/console-extension/src/index.ts:855 packages/console-extension/src/index.ts:862 packages/fileeditor-extension/src/commands.ts:1016 packages/notebook-extension/src/index.ts:1984
 msgid "Select the completion suggestion."
 msgstr ""
 
@@ -3912,7 +3952,7 @@ msgstr ""
 msgid "Value"
 msgstr ""
 
-#: packages/debugger/src/panels/variables/gridpanel.ts:221 packages/filebrowser/src/listing.ts:2258
+#: packages/debugger/src/panels/variables/gridpanel.ts:221 packages/filebrowser/src/listing.ts:2258 packages/filebrowser/src/listing.ts:2275
 msgid "Name"
 msgstr ""
 
@@ -3944,47 +3984,51 @@ msgstr ""
 msgid "Globals"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:1060
+#: packages/docmanager-extension/src/index.tsx:1002 packages/docmanager-extension/src/index.tsx:999
+msgid "Autosave Documents"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.tsx:1060 packages/docmanager-extension/src/index.tsx:1063
 msgid "New View for %1"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:1084
+#: packages/docmanager-extension/src/index.tsx:1084 packages/docmanager-extension/src/index.tsx:1087
 msgid "Rename%1…"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:1098
+#: packages/docmanager-extension/src/index.tsx:1098 packages/docmanager-extension/src/index.tsx:1101
 msgid "Duplicate %1"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:1113
+#: packages/docmanager-extension/src/index.tsx:1113 packages/docmanager-extension/src/index.tsx:1116
 msgid "Delete %1"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:1123 packages/docmanager-extension/src/index.tsx:1127 packages/filebrowser-extension/src/index.ts:922 packages/filebrowser/src/listing.ts:426 packages/filebrowser/src/listing.ts:430
+#: packages/docmanager-extension/src/index.tsx:1123 packages/docmanager-extension/src/index.tsx:1126 packages/docmanager-extension/src/index.tsx:1127 packages/docmanager-extension/src/index.tsx:1130 packages/filebrowser-extension/src/index.ts:922 packages/filebrowser-extension/src/index.ts:926 packages/filebrowser/src/listing.ts:426 packages/filebrowser/src/listing.ts:430 packages/filebrowser/src/listing.ts:434
 msgid "Delete"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:1124
+#: packages/docmanager-extension/src/index.tsx:1124 packages/docmanager-extension/src/index.tsx:1127
 msgid "Are you sure you want to delete %1"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:1141
+#: packages/docmanager-extension/src/index.tsx:1141 packages/docmanager-extension/src/index.tsx:1144
 msgid "Show in File Browser"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:1207
+#: packages/docmanager-extension/src/index.tsx:1207 packages/docmanager-extension/src/index.tsx:1210
 msgid "Are you sure you want to revert the %1 to checkpoint? "
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:1213
+#: packages/docmanager-extension/src/index.tsx:1213 packages/docmanager-extension/src/index.tsx:1216
 msgid "This cannot be undone."
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:1220
+#: packages/docmanager-extension/src/index.tsx:1220 packages/docmanager-extension/src/index.tsx:1223
 msgid "The checkpoint was last updated at: "
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:1254
+#: packages/docmanager-extension/src/index.tsx:1254 packages/docmanager-extension/src/index.tsx:1257
 msgid "Choose a checkpoint"
 msgstr ""
 
@@ -4002,7 +4046,7 @@ msgid "Overrides for the default viewers for file types.\n"
 "%2"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:474 packages/filebrowser-extension/src/index.ts:367
+#: packages/docmanager-extension/src/index.tsx:474 packages/filebrowser-extension/src/index.ts:367 packages/filebrowser-extension/src/index.ts:371
 msgid "Download"
 msgstr ""
 
@@ -4014,19 +4058,19 @@ msgstr ""
 msgid "Cannot Download"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:484 packages/docmanager-extension/src/index.tsx:726 packages/docmanager-extension/src/index.tsx:771 packages/docmanager-extension/src/index.tsx:844 packages/docmanager-extension/src/index.tsx:968
+#: packages/docmanager-extension/src/index.tsx:484 packages/docmanager-extension/src/index.tsx:726 packages/docmanager-extension/src/index.tsx:771 packages/docmanager-extension/src/index.tsx:844 packages/docmanager-extension/src/index.tsx:847 packages/docmanager-extension/src/index.tsx:968 packages/docmanager-extension/src/index.tsx:971
 msgid "No context found for current widget!"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:493 packages/docmanager-extension/src/index.tsx:634 packages/filebrowser-extension/src/index.ts:1074 packages/filebrowser-extension/src/index.ts:566 packages/filebrowser-extension/src/index.ts:892 packages/htmlviewer-extension/src/index.tsx:206
+#: packages/docmanager-extension/src/index.tsx:493 packages/docmanager-extension/src/index.tsx:634 packages/filebrowser-extension/src/index.ts:1074 packages/filebrowser-extension/src/index.ts:1078 packages/filebrowser-extension/src/index.ts:566 packages/filebrowser-extension/src/index.ts:570 packages/filebrowser-extension/src/index.ts:892 packages/filebrowser-extension/src/index.ts:896 packages/htmlviewer-extension/src/index.tsx:206
 msgid "File Operations"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:542 packages/filebrowser-extension/src/index.ts:772
+#: packages/docmanager-extension/src/index.tsx:542 packages/filebrowser-extension/src/index.ts:772 packages/filebrowser-extension/src/index.ts:776
 msgid "Open in New Browser Tab"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:670 packages/filebrowser/src/browser.ts:236 packages/logconsole-extension/src/index.tsx:376
+#: packages/docmanager-extension/src/index.tsx:670 packages/filebrowser/src/browser.ts:236 packages/filebrowser/src/browser.ts:252 packages/logconsole-extension/src/index.tsx:376
 msgid "Error"
 msgstr ""
 
@@ -4074,99 +4118,103 @@ msgstr ""
 msgid "Revert %1 to checkpoint"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:797 packages/docregistry/src/context.ts:805
+#: packages/docmanager-extension/src/index.tsx:797 packages/docmanager-extension/src/index.tsx:798 packages/docregistry/src/context.ts:801 packages/docregistry/src/context.ts:805
 msgid "Revert"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:820
+#: packages/docmanager-extension/src/index.tsx:799
+msgid "Revert to Checkpoint"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.tsx:820 packages/docmanager-extension/src/index.tsx:823
 msgid "In collaborative mode, the document is saved automatically after every change"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:826
+#: packages/docmanager-extension/src/index.tsx:826 packages/docmanager-extension/src/index.tsx:829
 msgid "Save and create checkpoint"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:832
+#: packages/docmanager-extension/src/index.tsx:832 packages/docmanager-extension/src/index.tsx:835
 msgid "Save %1"
 msgstr "Išsaugoti %1"
 
-#: packages/docmanager-extension/src/index.tsx:843 packages/docmanager-extension/src/index.tsx:854 packages/docmanager-extension/src/index.tsx:967 packages/notebook/src/default-toolbar.tsx:68
+#: packages/docmanager-extension/src/index.tsx:843 packages/docmanager-extension/src/index.tsx:846 packages/docmanager-extension/src/index.tsx:854 packages/docmanager-extension/src/index.tsx:857 packages/docmanager-extension/src/index.tsx:967 packages/docmanager-extension/src/index.tsx:970 packages/notebook/src/default-toolbar.tsx:68
 msgid "Cannot Save"
 msgstr "Negalima išsaugoti"
 
-#: packages/docmanager-extension/src/index.tsx:855 packages/notebook/src/default-toolbar.tsx:69
+#: packages/docmanager-extension/src/index.tsx:855 packages/docmanager-extension/src/index.tsx:858 packages/notebook/src/default-toolbar.tsx:69
 msgid "Document is read-only"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:870
+#: packages/docmanager-extension/src/index.tsx:870 packages/docmanager-extension/src/index.tsx:873
 msgid "Rename file"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:871 packages/docmanager/src/dialogs.ts:57 packages/filebrowser-extension/src/index.ts:1197
+#: packages/docmanager-extension/src/index.tsx:871 packages/docmanager-extension/src/index.tsx:874 packages/docmanager/src/dialogs.ts:57 packages/docmanager/src/dialogs.ts:58 packages/filebrowser-extension/src/index.ts:1197 packages/filebrowser-extension/src/index.ts:1201
 msgid "Rename"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:872
+#: packages/docmanager-extension/src/index.tsx:872 packages/docmanager-extension/src/index.tsx:875
 msgid "File name"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:876 packages/docmanager/src/widgetmanager.ts:414
+#: packages/docmanager-extension/src/index.tsx:876 packages/docmanager-extension/src/index.tsx:879 packages/docmanager/src/widgetmanager.ts:414 packages/docmanager/src/widgetmanager.ts:420
 msgid "Do not ask me again."
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:877
+#: packages/docmanager-extension/src/index.tsx:877 packages/docmanager-extension/src/index.tsx:880
 msgid "If checked, you will not be asked to rename future untitled files when saving them."
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:934
+#: packages/docmanager-extension/src/index.tsx:934 packages/docmanager-extension/src/index.tsx:937
 msgid "Save All"
 msgstr "Išsaugoti viską"
 
-#: packages/docmanager-extension/src/index.tsx:935
+#: packages/docmanager-extension/src/index.tsx:935 packages/docmanager-extension/src/index.tsx:938
 msgid "Save all open documents"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:958
+#: packages/docmanager-extension/src/index.tsx:958 packages/docmanager-extension/src/index.tsx:961
 msgid "Save %1 As…"
 msgstr "Išsaugoti %1 kaip…"
 
-#: packages/docmanager-extension/src/index.tsx:959
+#: packages/docmanager-extension/src/index.tsx:959 packages/docmanager-extension/src/index.tsx:962
 msgid "Save with new path"
 msgstr ""
 
-#: packages/docmanager-extension/src/index.tsx:999
-msgid "Autosave Documents"
-msgstr ""
-
-#: packages/docmanager/src/dialogs.ts:114
+#: packages/docmanager/src/dialogs.ts:114 packages/docmanager/src/dialogs.ts:117
 msgid "Overwrite file?"
 msgstr ""
 
-#: packages/docmanager/src/dialogs.ts:115
+#: packages/docmanager/src/dialogs.ts:115 packages/docmanager/src/dialogs.ts:118
 msgid "\"%1\" already exists, overwrite?"
 msgstr ""
 
-#: packages/docmanager/src/dialogs.ts:118 packages/docregistry/src/context.ts:809 packages/docregistry/src/context.ts:845 packages/shortcuts-extension/src/components/ShortcutInput.tsx:495 packages/shortcuts-extension/src/components/ShortcutItem.tsx:231
+#: packages/docmanager/src/dialogs.ts:118 packages/docmanager/src/dialogs.ts:122 packages/docregistry/src/context.ts:805 packages/docregistry/src/context.ts:809 packages/docregistry/src/context.ts:841 packages/docregistry/src/context.ts:845 packages/shortcuts-extension/src/components/ShortcutInput.tsx:495 packages/shortcuts-extension/src/components/ShortcutItem.tsx:231
 msgid "Overwrite"
 msgstr ""
 
-#: packages/docmanager/src/dialogs.ts:182
+#: packages/docmanager/src/dialogs.ts:123
+msgid "Overwrite Existing File"
+msgstr ""
+
+#: packages/docmanager/src/dialogs.ts:182 packages/docmanager/src/dialogs.ts:188
 msgid "File Path"
 msgstr ""
 
-#: packages/docmanager/src/dialogs.ts:187
+#: packages/docmanager/src/dialogs.ts:187 packages/docmanager/src/dialogs.ts:193
 msgid "New Name"
 msgstr ""
 
-#: packages/docmanager/src/dialogs.ts:52
+#: packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/dialogs.ts:59
 msgid "Rename File"
 msgstr ""
 
-#: packages/docmanager/src/dialogs.ts:65 packages/filebrowser/src/listing.ts:1875
+#: packages/docmanager/src/dialogs.ts:65 packages/docmanager/src/dialogs.ts:68 packages/filebrowser/src/listing.ts:1875 packages/filebrowser/src/listing.ts:1891
 msgid "Rename Error"
 msgstr ""
 
-#: packages/docmanager/src/dialogs.ts:67
+#: packages/docmanager/src/dialogs.ts:67 packages/docmanager/src/dialogs.ts:70
 msgid "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\""
 msgstr ""
 
@@ -4203,65 +4251,81 @@ msgstr ""
 msgid "Close and save"
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:404
+#: packages/docmanager/src/widgetmanager.ts:399
+msgid "Close and save Document"
+msgstr ""
+
+#: packages/docmanager/src/widgetmanager.ts:400
+msgid "Close Document"
+msgstr ""
+
+#: packages/docmanager/src/widgetmanager.ts:404 packages/docmanager/src/widgetmanager.ts:408
 msgid "Close without saving"
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:409 packages/notebook/src/searchprovider.ts:509
+#: packages/docmanager/src/widgetmanager.ts:409
+msgid "Close Document without saving"
+msgstr ""
+
+#: packages/docmanager/src/widgetmanager.ts:409 packages/docmanager/src/widgetmanager.ts:415 packages/notebook/src/searchprovider.ts:509
 msgid "Confirmation"
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:410
+#: packages/docmanager/src/widgetmanager.ts:410 packages/docmanager/src/widgetmanager.ts:416
 msgid "Please confirm you want to close \"%1\"."
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:415
+#: packages/docmanager/src/widgetmanager.ts:415 packages/docmanager/src/widgetmanager.ts:421
 msgid "If checked, no confirmation to close a document will be asked in the future."
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:437
+#: packages/docmanager/src/widgetmanager.ts:437 packages/docmanager/src/widgetmanager.ts:443
 msgid "Save as"
 msgstr "Išsaugoti kaip"
 
-#: packages/docmanager/src/widgetmanager.ts:439
+#: packages/docmanager/src/widgetmanager.ts:439 packages/docmanager/src/widgetmanager.ts:445
 msgid "Save your work"
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:440
+#: packages/docmanager/src/widgetmanager.ts:440 packages/docmanager/src/widgetmanager.ts:446
 msgid "Save changes in \"%1\" before closing?"
 msgstr ""
 
-#: packages/docmanager/src/widgetmanager.ts:443
+#: packages/docmanager/src/widgetmanager.ts:443 packages/docmanager/src/widgetmanager.ts:450
 msgid "Discard"
 msgstr ""
 
-#: packages/docregistry/src/context.ts:1021
+#: packages/docmanager/src/widgetmanager.ts:451
+msgid "Discard changes to file"
+msgstr ""
+
+#: packages/docregistry/src/context.ts:1017 packages/docregistry/src/context.ts:1021
 msgid "Save File As…"
 msgstr ""
 
-#: packages/docregistry/src/context.ts:631 packages/docregistry/src/context.ts:894
+#: packages/docregistry/src/context.ts:627 packages/docregistry/src/context.ts:631 packages/docregistry/src/context.ts:890 packages/docregistry/src/context.ts:894
 msgid "File Save Error for %1"
 msgstr ""
 
-#: packages/docregistry/src/context.ts:695
+#: packages/docregistry/src/context.ts:691 packages/docregistry/src/context.ts:695
 msgid "File Load Error for %1"
 msgstr ""
 
-#: packages/docregistry/src/context.ts:798
+#: packages/docregistry/src/context.ts:794 packages/docregistry/src/context.ts:798
 msgid "\"%1\" has changed on disk since the last time it was opened or saved.\n"
 "Do you want to overwrite the file on disk with the version open here,\n"
 "or load the version on disk (revert)?"
 msgstr ""
 
-#: packages/docregistry/src/context.ts:814
+#: packages/docregistry/src/context.ts:810 packages/docregistry/src/context.ts:814
 msgid "File Changed"
 msgstr ""
 
-#: packages/docregistry/src/context.ts:840
+#: packages/docregistry/src/context.ts:836 packages/docregistry/src/context.ts:840
 msgid "\"%1\" already exists. Do you want to replace it?"
 msgstr ""
 
-#: packages/docregistry/src/context.ts:849
+#: packages/docregistry/src/context.ts:845 packages/docregistry/src/context.ts:849
 msgid "File Overwrite?"
 msgstr ""
 
@@ -4571,184 +4635,188 @@ msgstr ""
 msgid "%1 extension is not allowed anymore. Please uninstall it immediately or contact your administrator."
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1014
-msgid "Open from Path…"
-msgstr ""
-
-#: packages/filebrowser-extension/src/index.ts:1014 packages/filebrowser-extension/src/index.ts:1016 packages/filebrowser-extension/src/index.ts:837 packages/filebrowser-extension/src/index.ts:839
+#: packages/filebrowser-extension/src/index.ts:1014 packages/filebrowser-extension/src/index.ts:1016 packages/filebrowser-extension/src/index.ts:1018 packages/filebrowser-extension/src/index.ts:1020 packages/filebrowser-extension/src/index.ts:837 packages/filebrowser-extension/src/index.ts:839 packages/filebrowser-extension/src/index.ts:841 packages/filebrowser-extension/src/index.ts:843
 msgid "Open %1"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1016
+#: packages/filebrowser-extension/src/index.ts:1014 packages/filebrowser-extension/src/index.ts:1018
+msgid "Open from Path…"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:1016 packages/filebrowser-extension/src/index.ts:1020
 msgid "Open from path"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1025
+#: packages/filebrowser-extension/src/index.ts:1025 packages/filebrowser-extension/src/index.ts:1029
 msgid "Path"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1027
+#: packages/filebrowser-extension/src/index.ts:1027 packages/filebrowser-extension/src/index.ts:1031
 msgid "Open Path"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1028 packages/filebrowser-extension/src/index.ts:1117 packages/filebrowser-extension/src/index.ts:849
+#: packages/filebrowser-extension/src/index.ts:1028 packages/filebrowser-extension/src/index.ts:1032 packages/filebrowser-extension/src/index.ts:1117 packages/filebrowser-extension/src/index.ts:1121 packages/filebrowser-extension/src/index.ts:849 packages/filebrowser-extension/src/index.ts:853
 msgid "Open"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1063
+#: packages/filebrowser-extension/src/index.ts:1063 packages/filebrowser-extension/src/index.ts:1067
 msgid "Could not find path: %1"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1065
+#: packages/filebrowser-extension/src/index.ts:1065 packages/filebrowser-extension/src/index.ts:1069
 msgid "Cannot open"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1130 packages/fileeditor-extension/src/commands.ts:974 packages/terminal-extension/src/index.ts:488
+#: packages/filebrowser-extension/src/index.ts:1130 packages/filebrowser-extension/src/index.ts:1134 packages/fileeditor-extension/src/commands.ts:974 packages/terminal-extension/src/index.ts:488 packages/terminal-extension/src/index.ts:494
 msgid "Paste"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1143 packages/filebrowser/src/opendialog.ts:153
+#: packages/filebrowser-extension/src/index.ts:1143 packages/filebrowser-extension/src/index.ts:1147 packages/filebrowser/src/opendialog.ts:153
 msgid "New Folder"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1155
+#: packages/filebrowser-extension/src/index.ts:1155 packages/filebrowser-extension/src/index.ts:1159
 msgid "New File"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1167 packages/fileeditor-extension/src/commands.ts:809
+#: packages/filebrowser-extension/src/index.ts:1167 packages/filebrowser-extension/src/index.ts:1171 packages/fileeditor-extension/src/commands.ts:809
 msgid "New Markdown File"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1179
+#: packages/filebrowser-extension/src/index.ts:1179 packages/filebrowser-extension/src/index.ts:1183
 msgid "Refresh the file browser."
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1180 packages/filebrowser/src/opendialog.ts:168
+#: packages/filebrowser-extension/src/index.ts:1180 packages/filebrowser-extension/src/index.ts:1184 packages/filebrowser/src/opendialog.ts:168
 msgid "Refresh File List"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1220
+#: packages/filebrowser-extension/src/index.ts:1220 packages/filebrowser-extension/src/index.ts:1224
 msgid "Copy Path"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1232 packages/mainmenu-extension/src/index.ts:531 packages/notebook-extension/src/index.ts:2332 packages/running-extension/src/kernels.ts:118 packages/running-extension/src/kernels.ts:66
+#: packages/filebrowser-extension/src/index.ts:1232 packages/filebrowser-extension/src/index.ts:1236 packages/mainmenu-extension/src/index.ts:531 packages/notebook-extension/src/index.ts:2332 packages/running-extension/src/kernels.ts:118 packages/running-extension/src/kernels.ts:66
 msgid "Shut Down Kernel"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1236
+#: packages/filebrowser-extension/src/index.ts:1236 packages/filebrowser-extension/src/index.ts:1240
 msgid "Show Last Modified Column"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1252
+#: packages/filebrowser-extension/src/index.ts:1252 packages/filebrowser-extension/src/index.ts:1272
 msgid "Show File Size Column"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1268
+#: packages/filebrowser-extension/src/index.ts:1256
+msgid "Sort Notebooks Above Files"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:1268 packages/filebrowser-extension/src/index.ts:1288
 msgid "Show Hidden Files"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1285
+#: packages/filebrowser-extension/src/index.ts:1285 packages/filebrowser-extension/src/index.ts:1305
 msgid "Show File Checkboxes"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1301
+#: packages/filebrowser-extension/src/index.ts:1301 packages/filebrowser-extension/src/index.ts:1321
 msgid "Search on File Names"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:1370
+#: packages/filebrowser-extension/src/index.ts:1370 packages/filebrowser-extension/src/index.ts:1390
 msgid "No browser for path"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:389
+#: packages/filebrowser-extension/src/index.ts:389 packages/filebrowser-extension/src/index.ts:393
 msgid "Copy Download Link"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:432
+#: packages/filebrowser-extension/src/index.ts:432 packages/filebrowser-extension/src/index.ts:436
 msgid "File Browser Section"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:443
+#: packages/filebrowser-extension/src/index.ts:443 packages/filebrowser-extension/src/index.ts:447
 msgid "File Browser (%1)"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:445 packages/filebrowser-extension/src/index.ts:497 packages/filebrowser/src/browser.ts:75
+#: packages/filebrowser-extension/src/index.ts:445 packages/filebrowser-extension/src/index.ts:449 packages/filebrowser-extension/src/index.ts:497 packages/filebrowser-extension/src/index.ts:501 packages/filebrowser/src/browser.ts:75
 msgid "File Browser"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:475
+#: packages/filebrowser-extension/src/index.ts:475 packages/filebrowser-extension/src/index.ts:479
 msgid "Filter files by name"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:508
+#: packages/filebrowser-extension/src/index.ts:508 packages/filebrowser-extension/src/index.ts:512
 msgid "Open the file browser for the provided `path`."
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:540
+#: packages/filebrowser-extension/src/index.ts:540 packages/filebrowser-extension/src/index.ts:544
 msgid "Hide the file browser."
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:550
+#: packages/filebrowser-extension/src/index.ts:550 packages/filebrowser-extension/src/index.ts:554
 msgid "Show Active File in File Browser"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:647
+#: packages/filebrowser-extension/src/index.ts:647 packages/filebrowser-extension/src/index.ts:651
 msgid "Copy Shareable Link"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:771
+#: packages/filebrowser-extension/src/index.ts:771 packages/filebrowser-extension/src/index.ts:775
 msgid "Open in Simple Mode"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:837
+#: packages/filebrowser-extension/src/index.ts:837 packages/filebrowser-extension/src/index.ts:841
 msgid "Open from URL…"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:839
+#: packages/filebrowser-extension/src/index.ts:839 packages/filebrowser-extension/src/index.ts:843
 msgid "Open from URL"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:846
+#: packages/filebrowser-extension/src/index.ts:846 packages/filebrowser-extension/src/index.ts:850
 msgid "URL"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:848
+#: packages/filebrowser-extension/src/index.ts:848 packages/filebrowser-extension/src/index.ts:852
 msgid "Open URL"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:867
+#: packages/filebrowser-extension/src/index.ts:867 packages/filebrowser-extension/src/index.ts:871
 msgid "Could not open URL: %1"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:869
+#: packages/filebrowser-extension/src/index.ts:869 packages/filebrowser-extension/src/index.ts:873
 msgid "Cannot fetch"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:882 packages/filebrowser/src/upload.ts:52
+#: packages/filebrowser-extension/src/index.ts:882 packages/filebrowser-extension/src/index.ts:886 packages/filebrowser/src/upload.ts:52
 msgctxt "showErrorMessage"
 msgid "Upload Error"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:935 packages/fileeditor-extension/src/commands.ts:947 packages/terminal-extension/src/index.ts:463
+#: packages/filebrowser-extension/src/index.ts:935 packages/filebrowser-extension/src/index.ts:939 packages/fileeditor-extension/src/commands.ts:947 packages/terminal-extension/src/index.ts:463 packages/terminal-extension/src/index.ts:469
 msgid "Copy"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:948 packages/fileeditor-extension/src/commands.ts:913
+#: packages/filebrowser-extension/src/index.ts:948 packages/filebrowser-extension/src/index.ts:952 packages/fileeditor-extension/src/commands.ts:913
 msgid "Cut"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:960
+#: packages/filebrowser-extension/src/index.ts:960 packages/filebrowser-extension/src/index.ts:964
 msgid "Duplicate"
 msgstr ""
 
-#: packages/filebrowser-extension/src/index.ts:964
+#: packages/filebrowser-extension/src/index.ts:964 packages/filebrowser-extension/src/index.ts:968
 msgid "Update the file browser to display the provided `path`."
 msgstr ""
 
-#: packages/filebrowser/src/browser.ts:372
+#: packages/filebrowser/src/browser.ts:372 packages/filebrowser/src/browser.ts:388
 msgid "Directory not found"
 msgstr ""
 
-#: packages/filebrowser/src/browser.ts:373 packages/filebrowser/src/model.ts:298
+#: packages/filebrowser/src/browser.ts:373 packages/filebrowser/src/browser.ts:389 packages/filebrowser/src/model.ts:298
 msgid "Directory not found: \"%1\""
 msgstr ""
 
@@ -4764,93 +4832,93 @@ msgstr ""
 msgid "Move Error"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1120
+#: packages/filebrowser/src/listing.ts:1120 packages/filebrowser/src/listing.ts:1136
 msgctxt "showErrorMessage"
 msgid "Open directory"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1395
+#: packages/filebrowser/src/listing.ts:1395 packages/filebrowser/src/listing.ts:1411
 msgid "Error Uploading Folder"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1396
+#: packages/filebrowser/src/listing.ts:1396 packages/filebrowser/src/listing.ts:1412
 msgid "Drag and Drop is currently not supported for folders"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1515
+#: packages/filebrowser/src/listing.ts:1515 packages/filebrowser/src/listing.ts:1531
 msgctxt "showErrorMessage"
 msgid "Error while copying/moving files"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1814
+#: packages/filebrowser/src/listing.ts:1814 packages/filebrowser/src/listing.ts:1830
 msgctxt "showErrorMessage"
 msgid "Delete Failed"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1877
+#: packages/filebrowser/src/listing.ts:1877 packages/filebrowser/src/listing.ts:1893
 msgctxt "showErrorMessage"
 msgid "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\""
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:1896
+#: packages/filebrowser/src/listing.ts:1896 packages/filebrowser/src/listing.ts:1912
 msgctxt "showErrorMessage"
 msgid "Rename Error"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:2260
+#: packages/filebrowser/src/listing.ts:2260 packages/filebrowser/src/listing.ts:2277
 msgid "Last Modified"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:2261
+#: packages/filebrowser/src/listing.ts:2261 packages/filebrowser/src/listing.ts:2278
 msgid "File Size"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:2549
+#: packages/filebrowser/src/listing.ts:2549 packages/filebrowser/src/listing.ts:2566
 msgid "Name: %1"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:2555
+#: packages/filebrowser/src/listing.ts:2555 packages/filebrowser/src/listing.ts:2572
 msgid "\n"
 "Size: %1"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:2565
+#: packages/filebrowser/src/listing.ts:2565 packages/filebrowser/src/listing.ts:2582
 msgid "\n"
 "Path: %1"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:2572
+#: packages/filebrowser/src/listing.ts:2572 packages/filebrowser/src/listing.ts:2589
 msgid "\n"
 "Created: %1"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:2578
+#: packages/filebrowser/src/listing.ts:2578 packages/filebrowser/src/listing.ts:2595
 msgid "\n"
 "Modified: %1"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:2583
+#: packages/filebrowser/src/listing.ts:2583 packages/filebrowser/src/listing.ts:2600
 msgid "\n"
 "Writable: %1"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:2608
+#: packages/filebrowser/src/listing.ts:2608 packages/filebrowser/src/listing.ts:2625
 msgid "Deselect directory \"%1\""
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:2609
+#: packages/filebrowser/src/listing.ts:2609 packages/filebrowser/src/listing.ts:2626
 msgid "Select directory \"%1\""
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:2612
+#: packages/filebrowser/src/listing.ts:2612 packages/filebrowser/src/listing.ts:2629
 msgid "Deselect file \"%1\""
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:2613
+#: packages/filebrowser/src/listing.ts:2613 packages/filebrowser/src/listing.ts:2630
 msgid "Select file \"%1\""
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:2687
+#: packages/filebrowser/src/listing.ts:2687 packages/filebrowser/src/listing.ts:2704
 msgid "%1 Item"
 msgid_plural "%1 Items"
 msgstr[0] ""
@@ -4858,16 +4926,16 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: packages/filebrowser/src/listing.ts:396
+#: packages/filebrowser/src/listing.ts:396 packages/filebrowser/src/listing.ts:400
 msgctxt "showErrorMessage"
 msgid "Paste Error"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:416
+#: packages/filebrowser/src/listing.ts:416 packages/filebrowser/src/listing.ts:420
 msgid "Are you sure you want to permanently delete: %1?"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:420
+#: packages/filebrowser/src/listing.ts:420 packages/filebrowser/src/listing.ts:424
 msgid "Are you sure you want to permanently delete the %1 selected item?"
 msgid_plural "Are you sure you want to permanently delete the %1 selected items?"
 msgstr[0] ""
@@ -4875,29 +4943,29 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: packages/filebrowser/src/listing.ts:472
+#: packages/filebrowser/src/listing.ts:472 packages/filebrowser/src/listing.ts:476
 msgctxt "showErrorMessage"
 msgid "Duplicate file"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:512
+#: packages/filebrowser/src/listing.ts:512 packages/filebrowser/src/listing.ts:516
 msgctxt "showErrorMessage"
 msgid "Shut down kernel"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:852
+#: packages/filebrowser/src/listing.ts:852 packages/filebrowser/src/listing.ts:856
 msgid "Deselect all files and directories"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:853
+#: packages/filebrowser/src/listing.ts:853 packages/filebrowser/src/listing.ts:857
 msgid "Select all files and directories"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:906
+#: packages/filebrowser/src/listing.ts:906 packages/filebrowser/src/listing.ts:910
 msgid "unknown"
 msgstr ""
 
-#: packages/filebrowser/src/listing.ts:908
+#: packages/filebrowser/src/listing.ts:908 packages/filebrowser/src/listing.ts:912
 msgid "%1\n"
 "Kernel: %2"
 msgstr ""
@@ -5248,10 +5316,6 @@ msgstr ""
 #: packages/hub-extension/src/index.ts:167
 msgid "Your server at %1 is not running.\n"
 "Would you like to restart it?"
-msgstr ""
-
-#: packages/hub-extension/src/index.ts:172
-msgid "Restart"
 msgstr ""
 
 #: packages/hub-extension/src/index.ts:67
@@ -6151,23 +6215,27 @@ msgstr ""
 msgid "Trust this notebook?"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:2064
+#: packages/notebook/src/actions.tsx:2064 packages/notebook/src/actions.tsx:2065
 msgid "Trust"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:2279
+#: packages/notebook/src/actions.tsx:2066
+msgid "Confirm Trusting this notebook"
+msgstr ""
+
+#: packages/notebook/src/actions.tsx:2279 packages/notebook/src/actions.tsx:2282
 msgid "Kernel Terminating"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:2280
+#: packages/notebook/src/actions.tsx:2280 packages/notebook/src/actions.tsx:2283
 msgid "The kernel for %1 appears to be terminating. You can not run any cell for now."
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:2290
+#: packages/notebook/src/actions.tsx:2290 packages/notebook/src/actions.tsx:2293
 msgid "Cell not executed due to pending input"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:2291
+#: packages/notebook/src/actions.tsx:2291 packages/notebook/src/actions.tsx:2294
 msgid "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again."
 msgstr ""
 
@@ -6355,7 +6423,7 @@ msgstr ""
 msgid "This HTML output contains inline scripts. Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
 msgstr ""
 
-#: packages/rendermime/src/widgets.ts:428
+#: packages/rendermime/src/widgets.ts:428 packages/rendermime/src/widgets.ts:446
 msgid "JavaScript output is disabled in JupyterLab"
 msgstr ""
 
@@ -6630,15 +6698,15 @@ msgctxt "menu"
 msgid "Terminal Theme"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:196 packages/terminal-extension/src/index.ts:251 packages/terminal-extension/src/index.ts:534
+#: packages/terminal-extension/src/index.ts:196 packages/terminal-extension/src/index.ts:251 packages/terminal-extension/src/index.ts:534 packages/terminal-extension/src/index.ts:540
 msgid "Inherit"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:204 packages/terminal-extension/src/index.ts:258 packages/terminal-extension/src/index.ts:535
+#: packages/terminal-extension/src/index.ts:204 packages/terminal-extension/src/index.ts:258 packages/terminal-extension/src/index.ts:535 packages/terminal-extension/src/index.ts:541
 msgid "Light"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:210 packages/terminal-extension/src/index.ts:263 packages/terminal-extension/src/index.ts:536
+#: packages/terminal-extension/src/index.ts:210 packages/terminal-extension/src/index.ts:263 packages/terminal-extension/src/index.ts:536 packages/terminal-extension/src/index.ts:542
 msgid "Dark"
 msgstr ""
 
@@ -6658,39 +6726,39 @@ msgstr ""
 msgid "Start a new terminal session"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:389
+#: packages/terminal-extension/src/index.ts:389 packages/terminal-extension/src/index.ts:395
 msgid "Open a terminal by its `name`."
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:407
+#: packages/terminal-extension/src/index.ts:407 packages/terminal-extension/src/index.ts:413
 msgid "Refresh Terminal"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:408
+#: packages/terminal-extension/src/index.ts:408 packages/terminal-extension/src/index.ts:414
 msgid "Refresh the current terminal session"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:492
+#: packages/terminal-extension/src/index.ts:492 packages/terminal-extension/src/index.ts:498
 msgid "Shutdown Terminal"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:506
+#: packages/terminal-extension/src/index.ts:506 packages/terminal-extension/src/index.ts:512
 msgid "Increase Terminal Font Size"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:520
+#: packages/terminal-extension/src/index.ts:520 packages/terminal-extension/src/index.ts:526
 msgid "Decrease Terminal Font Size"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:542
+#: packages/terminal-extension/src/index.ts:542 packages/terminal-extension/src/index.ts:548
 msgid "Set terminal theme to the provided `theme`."
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:550
+#: packages/terminal-extension/src/index.ts:550 packages/terminal-extension/src/index.ts:556
 msgid "Use Terminal Theme: %1"
 msgstr ""
 
-#: packages/terminal-extension/src/index.ts:553
+#: packages/terminal-extension/src/index.ts:553 packages/terminal-extension/src/index.ts:559
 msgid "Set the terminal theme"
 msgstr ""
 
