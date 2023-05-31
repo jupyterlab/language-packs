@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-05-22 01:46\n"
+"PO-Revision-Date: 2023-05-31 09:45\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1064,6 +1064,16 @@ msgstr "是否显示最后修改列"
 msgctxt "settings"
 msgid "Show last modified column"
 msgstr "显示最后修改列"
+
+#: /packages/filebrowser-extension/schema/browser.json:/properties/sortNotebooksFirst/description
+msgctxt "settings"
+msgid "Whether to group the notebooks away from files"
+msgstr ""
+
+#: /packages/filebrowser-extension/schema/browser.json:/properties/sortNotebooksFirst/title
+msgctxt "settings"
+msgid "When sorting by name, group notebooks before other files"
+msgstr ""
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/useFuzzyFilter/description
 msgctxt "settings"
@@ -2118,6 +2128,16 @@ msgctxt "settings"
 msgid "Table of Contents"
 msgstr "目录"
 
+#: /packages/toc-extension/schema/registry.json:/properties/baseNumbering/description
+msgctxt "settings"
+msgid "The number headings start at."
+msgstr ""
+
+#: /packages/toc-extension/schema/registry.json:/properties/baseNumbering/title
+msgctxt "settings"
+msgid "Base level for the highest headings"
+msgstr ""
+
 #: /packages/toc-extension/schema/registry.json:/properties/includeOutput/description
 msgctxt "settings"
 msgid "Whether to include cell output in headings or not."
@@ -2565,31 +2585,31 @@ msgstr "隐藏通知"
 msgid "Dismiss notification"
 msgstr "清除通知"
 
-#: packages/apputils-extension/src/notificationplugin.tsx:402
+#: packages/apputils-extension/src/notificationplugin.tsx:401 packages/apputils-extension/src/notificationplugin.tsx:402
 msgid "Emit a notification"
 msgstr "发出一条通知"
 
-#: packages/apputils-extension/src/notificationplugin.tsx:403
+#: packages/apputils-extension/src/notificationplugin.tsx:402 packages/apputils-extension/src/notificationplugin.tsx:403
 msgid "Notification is described by {message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
 msgstr "描述通知的格式是 {message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}。"
 
-#: packages/apputils-extension/src/notificationplugin.tsx:440
+#: packages/apputils-extension/src/notificationplugin.tsx:439 packages/apputils-extension/src/notificationplugin.tsx:440
 msgid "Update a notification"
 msgstr "更新通知"
 
-#: packages/apputils-extension/src/notificationplugin.tsx:441
+#: packages/apputils-extension/src/notificationplugin.tsx:440 packages/apputils-extension/src/notificationplugin.tsx:441
 msgid "Notification is described by {id: string, message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
 msgstr "描述通知的格式是{id: string, message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}。"
 
-#: packages/apputils-extension/src/notificationplugin.tsx:480
+#: packages/apputils-extension/src/notificationplugin.tsx:479 packages/apputils-extension/src/notificationplugin.tsx:480
 msgid "Dismiss a notification"
 msgstr "忽略这条通知"
 
-#: packages/apputils-extension/src/notificationplugin.tsx:601
+#: packages/apputils-extension/src/notificationplugin.tsx:600 packages/apputils-extension/src/notificationplugin.tsx:601
 msgid "Show Notifications"
 msgstr "显示通知"
 
-#: packages/apputils-extension/src/notificationplugin.tsx:688
+#: packages/apputils-extension/src/notificationplugin.tsx:688 packages/apputils-extension/src/notificationplugin.tsx:689
 msgid "Hide notification"
 msgstr "隐藏通知"
 
@@ -2617,11 +2637,11 @@ msgstr "搜索"
 msgid "Command Palette"
 msgstr "命令面板"
 
-#: packages/apputils-extension/src/shortcuts.tsx:183
+#: packages/apputils-extension/src/shortcuts.tsx:183 packages/apputils-extension/src/shortcuts.tsx:193
 msgid "Keyboard Shortcuts"
 msgstr "键盘快捷键"
 
-#: packages/apputils-extension/src/shortcuts.tsx:187 packages/docmanager/src/widgetmanager.ts:397 packages/filebrowser/src/listing.ts:1399 packages/running-extension/src/opentabs.ts:86
+#: packages/apputils-extension/src/shortcuts.tsx:187 packages/apputils-extension/src/shortcuts.tsx:197 packages/docmanager/src/widgetmanager.ts:397 packages/filebrowser/src/listing.ts:1399 packages/filebrowser/src/listing.ts:1415 packages/running-extension/src/opentabs.ts:86
 msgid "Close"
 msgstr "关闭"
 
@@ -2681,35 +2701,35 @@ msgstr "主题"
 msgid "Workspace loader"
 msgstr "工作区加载器"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:266 packages/apputils-extension/src/workspacesplugin.ts:272 packages/docmanager/src/widgetmanager.ts:436 packages/docregistry/src/context.ts:1019
+#: packages/apputils-extension/src/workspacesplugin.ts:266 packages/apputils-extension/src/workspacesplugin.ts:267 packages/apputils-extension/src/workspacesplugin.ts:272 packages/apputils-extension/src/workspacesplugin.ts:275 packages/docmanager/src/widgetmanager.ts:436 packages/docmanager/src/widgetmanager.ts:442 packages/docregistry/src/context.ts:1015 packages/docregistry/src/context.ts:1019
 msgid "Save"
 msgstr "保存"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:268 packages/apputils-extension/src/workspacesplugin.ts:79
+#: packages/apputils-extension/src/workspacesplugin.ts:268 packages/apputils-extension/src/workspacesplugin.ts:271 packages/apputils-extension/src/workspacesplugin.ts:79
 msgid "Save Current Workspace As…"
 msgstr "保存当前工作区为…"
+
+#: packages/apputils-extension/src/workspacesplugin.ts:268 packages/apputils-extension/src/workspacesplugin.ts:93
+msgid "Save Current Workspace"
+msgstr "保存当前工作区"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:72
 msgid "JupyterLab workspace File"
 msgstr "JupyterLab 工作区文件"
 
-#: packages/apputils-extension/src/workspacesplugin.ts:93
-msgid "Save Current Workspace"
-msgstr "保存当前工作区"
-
 #: packages/apputils/src/dialog.tsx:47 packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:404 packages/hub-extension/src/index.ts:173 packages/lsp/src/adapters/adapter.ts:470 packages/mainmenu-extension/src/index.ts:548
 msgid "Dismiss"
 msgstr "忽略"
 
-#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:862 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:696 packages/filebrowser/src/listing.ts:429 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:514 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/translation-extension/src/index.ts:147
+#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:862 packages/apputils/src/dialog.tsx:870 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:696 packages/filebrowser/src/listing.ts:429 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:514 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/translation-extension/src/index.ts:147
 msgid "Cancel"
 msgstr "取消"
 
-#: packages/apputils/src/dialog.tsx:763 packages/extensionmanager/src/dialog.tsx:37 packages/extensionmanager/src/model.ts:508 packages/extensionmanager/src/model.ts:531 packages/notebook/src/model.ts:377 packages/notebook/src/panel.ts:234 packages/notebook/src/searchprovider.ts:515 packages/settingeditor/src/plugineditor.ts:133
+#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/extensionmanager/src/dialog.tsx:37 packages/extensionmanager/src/model.ts:508 packages/extensionmanager/src/model.ts:531 packages/notebook/src/model.ts:377 packages/notebook/src/panel.ts:234 packages/notebook/src/searchprovider.ts:515 packages/settingeditor/src/plugineditor.ts:133
 msgid "Ok"
 msgstr "确认"
 
-#: packages/apputils/src/kernelstatuses.tsx:210 packages/apputils/src/sessioncontext.tsx:1746 packages/apputils/src/sessioncontext.tsx:631
+#: packages/apputils/src/kernelstatuses.tsx:210 packages/apputils/src/sessioncontext.tsx:1746 packages/apputils/src/sessioncontext.tsx:1757 packages/apputils/src/sessioncontext.tsx:631
 msgid "No Kernel"
 msgstr "无内核"
 
@@ -2781,67 +2801,79 @@ msgstr "%1 个终端，%2 个内核会话"
 msgid "Error Starting Kernel"
 msgstr "启动内核时出错"
 
-#: packages/apputils/src/sessioncontext.tsx:1341 packages/filebrowser/src/opendialog.ts:83
+#: packages/apputils/src/sessioncontext.tsx:1341 packages/apputils/src/sessioncontext.tsx:1344 packages/filebrowser/src/opendialog.ts:83
 msgid "Select"
 msgstr "选择"
 
-#: packages/apputils/src/sessioncontext.tsx:1348
+#: packages/apputils/src/sessioncontext.tsx:1345 packages/apputils/src/sessioncontext.tsx:1348 packages/apputils/src/sessioncontext.tsx:1353
 msgid "Select Kernel"
 msgstr "选择内核"
 
-#: packages/apputils/src/sessioncontext.tsx:1353
+#: packages/apputils/src/sessioncontext.tsx:1353 packages/apputils/src/sessioncontext.tsx:1358
 msgid "Always start the preferred kernel"
 msgstr "总是启动首选内核"
 
-#: packages/apputils/src/sessioncontext.tsx:1354
+#: packages/apputils/src/sessioncontext.tsx:1354 packages/apputils/src/sessioncontext.tsx:1359
 msgid "Remember my choice and always start the preferred kernel"
 msgstr "记住我的选择：总是启动首选内核"
 
-#: packages/apputils/src/sessioncontext.tsx:1415
+#: packages/apputils/src/sessioncontext.tsx:1415 packages/apputils/src/sessioncontext.tsx:1423
 msgid "Restart Kernel?"
 msgstr "重启内核？"
 
-#: packages/apputils/src/sessioncontext.tsx:1416
+#: packages/apputils/src/sessioncontext.tsx:1416 packages/apputils/src/sessioncontext.tsx:1424
 msgid "Do you want to restart the kernel of %1? All variables will be lost."
 msgstr "您想要重启 %1的内核吗？所有变量都将丢失。"
 
-#: packages/apputils/src/sessioncontext.tsx:1473
+#: packages/apputils/src/sessioncontext.tsx:1419 packages/hub-extension/src/index.ts:172
+msgid "Restart"
+msgstr "重新启动"
+
+#: packages/apputils/src/sessioncontext.tsx:1420
+msgid "Confirm Kernel Restart"
+msgstr ""
+
+#: packages/apputils/src/sessioncontext.tsx:1429
+msgid "Cancel Kernel Restart"
+msgstr ""
+
+#: packages/apputils/src/sessioncontext.tsx:1473 packages/apputils/src/sessioncontext.tsx:1484
 msgid "Select kernel for:"
 msgstr "选择内核："
 
-#: packages/apputils/src/sessioncontext.tsx:1607
+#: packages/apputils/src/sessioncontext.tsx:1607 packages/apputils/src/sessioncontext.tsx:1618
 msgid "Start Preferred Kernel"
 msgstr "启动首选内核"
 
-#: packages/apputils/src/sessioncontext.tsx:1622
+#: packages/apputils/src/sessioncontext.tsx:1622 packages/apputils/src/sessioncontext.tsx:1633
 msgid "Start Other Kernel"
 msgstr "启动其他内核"
 
-#: packages/apputils/src/sessioncontext.tsx:1679
+#: packages/apputils/src/sessioncontext.tsx:1679 packages/apputils/src/sessioncontext.tsx:1690
 msgid "Use Kernel from Preferred Session"
 msgstr "使用首选会话的内核"
 
-#: packages/apputils/src/sessioncontext.tsx:1694
+#: packages/apputils/src/sessioncontext.tsx:1694 packages/apputils/src/sessioncontext.tsx:1705
 msgid "Use Kernel from Other Session"
 msgstr "使用来自其他会话的内核"
 
-#: packages/apputils/src/sessioncontext.tsx:1744
+#: packages/apputils/src/sessioncontext.tsx:1744 packages/apputils/src/sessioncontext.tsx:1755
 msgid "Use No Kernel"
 msgstr "不使用内核"
 
-#: packages/apputils/src/sessioncontext.tsx:1768
+#: packages/apputils/src/sessioncontext.tsx:1768 packages/apputils/src/sessioncontext.tsx:1779
 msgid "Path:"
 msgstr "路径:"
 
-#: packages/apputils/src/sessioncontext.tsx:1769
+#: packages/apputils/src/sessioncontext.tsx:1769 packages/apputils/src/sessioncontext.tsx:1780
 msgid "Name:"
 msgstr "名称:"
 
-#: packages/apputils/src/sessioncontext.tsx:1770
+#: packages/apputils/src/sessioncontext.tsx:1770 packages/apputils/src/sessioncontext.tsx:1781
 msgid "Kernel Name:"
 msgstr "内核名称："
 
-#: packages/apputils/src/sessioncontext.tsx:1771
+#: packages/apputils/src/sessioncontext.tsx:1771 packages/apputils/src/sessioncontext.tsx:1782
 msgid "Kernel Id:"
 msgstr "内核 ID："
 
@@ -3686,7 +3718,7 @@ msgstr "HTTP"
 msgid "IDL"
 msgstr "IDL"
 
-#: packages/codemirror/src/theme.ts:215
+#: packages/codemirror/src/theme.ts:215 packages/codemirror/src/theme.ts:225
 msgid "codemirror"
 msgstr "codemirror"
 
@@ -3754,31 +3786,39 @@ msgstr "关闭控制台？"
 msgid "Are you sure you want to close \"%1\"?"
 msgstr "您确定要关闭「%1」吗？"
 
-#: packages/console-extension/src/index.ts:684
+#: packages/console-extension/src/index.ts:668
+msgid "Cancel console Shut Down"
+msgstr ""
+
+#: packages/console-extension/src/index.ts:671
+msgid "Confirm console Shut Down"
+msgstr ""
+
+#: packages/console-extension/src/index.ts:684 packages/console-extension/src/index.ts:691
 msgid "Inject some code in a console."
 msgstr "在控制台中注入一些代码。"
 
-#: packages/console-extension/src/index.ts:705 packages/mainmenu-extension/src/index.ts:519 packages/notebook-extension/src/index.ts:3059
+#: packages/console-extension/src/index.ts:705 packages/console-extension/src/index.ts:712 packages/mainmenu-extension/src/index.ts:519 packages/notebook-extension/src/index.ts:3059
 msgid "Change Kernel…"
 msgstr "更改内核…"
 
-#: packages/console-extension/src/index.ts:717 packages/mainmenu-extension/src/index.ts:754 packages/notebook-extension/src/index.ts:3070
+#: packages/console-extension/src/index.ts:717 packages/console-extension/src/index.ts:724 packages/mainmenu-extension/src/index.ts:754 packages/notebook-extension/src/index.ts:3070
 msgid "Get Kernel"
 msgstr "获取内核"
 
-#: packages/console-extension/src/index.ts:799
+#: packages/console-extension/src/index.ts:799 packages/console-extension/src/index.ts:806
 msgid "Execute with Shift+Enter"
 msgstr "用 Shift+Enter 执行"
 
-#: packages/console-extension/src/index.ts:800
+#: packages/console-extension/src/index.ts:800 packages/console-extension/src/index.ts:807
 msgid "Execute with Enter"
 msgstr "用 Enter 执行"
 
-#: packages/console-extension/src/index.ts:844 packages/fileeditor-extension/src/commands.ts:1005 packages/notebook-extension/src/index.ts:1974
+#: packages/console-extension/src/index.ts:844 packages/console-extension/src/index.ts:851 packages/fileeditor-extension/src/commands.ts:1005 packages/notebook-extension/src/index.ts:1974
 msgid "Display the completion helper."
 msgstr "显示补全助手。"
 
-#: packages/console-extension/src/index.ts:855 packages/fileeditor-extension/src/commands.ts:1016 packages/notebook-extension/src/index.ts:1984
+#: packages/console-extension/src/index.ts:855 packages/console-extension/src/index.ts:862 packages/fileeditor-extension/src/commands.ts:1016 packages/notebook-extension/src/index.ts:1984
 msgid "Select the completion suggestion."
 msgstr "选择补全建议。"
 
@@ -4002,7 +4042,7 @@ msgstr "类型"
 msgid "Value"
 msgstr "值"
 
-#: packages/debugger/src/panels/variables/gridpanel.ts:221 packages/filebrowser/src/listing.ts:2258
+#: packages/debugger/src/panels/variables/gridpanel.ts:221 packages/filebrowser/src/listing.ts:2258 packages/filebrowser/src/listing.ts:2275
 msgid "Name"
 msgstr "名称"
 
@@ -4034,47 +4074,51 @@ msgstr "渲染变量：%1"
 msgid "Globals"
 msgstr "全局"
 
-#: packages/docmanager-extension/src/index.tsx:1060
+#: packages/docmanager-extension/src/index.tsx:1002 packages/docmanager-extension/src/index.tsx:999
+msgid "Autosave Documents"
+msgstr "自动保存文档"
+
+#: packages/docmanager-extension/src/index.tsx:1060 packages/docmanager-extension/src/index.tsx:1063
 msgid "New View for %1"
 msgstr "%1 新建视图"
 
-#: packages/docmanager-extension/src/index.tsx:1084
+#: packages/docmanager-extension/src/index.tsx:1084 packages/docmanager-extension/src/index.tsx:1087
 msgid "Rename%1…"
 msgstr "重命名%1…"
 
-#: packages/docmanager-extension/src/index.tsx:1098
+#: packages/docmanager-extension/src/index.tsx:1098 packages/docmanager-extension/src/index.tsx:1101
 msgid "Duplicate %1"
 msgstr "创建 %1 副本"
 
-#: packages/docmanager-extension/src/index.tsx:1113
+#: packages/docmanager-extension/src/index.tsx:1113 packages/docmanager-extension/src/index.tsx:1116
 msgid "Delete %1"
 msgstr "删除 %1"
 
-#: packages/docmanager-extension/src/index.tsx:1123 packages/docmanager-extension/src/index.tsx:1127 packages/filebrowser-extension/src/index.ts:922 packages/filebrowser/src/listing.ts:426 packages/filebrowser/src/listing.ts:430
+#: packages/docmanager-extension/src/index.tsx:1123 packages/docmanager-extension/src/index.tsx:1126 packages/docmanager-extension/src/index.tsx:1127 packages/docmanager-extension/src/index.tsx:1130 packages/filebrowser-extension/src/index.ts:922 packages/filebrowser-extension/src/index.ts:926 packages/filebrowser/src/listing.ts:426 packages/filebrowser/src/listing.ts:430 packages/filebrowser/src/listing.ts:434
 msgid "Delete"
 msgstr "删除"
 
-#: packages/docmanager-extension/src/index.tsx:1124
+#: packages/docmanager-extension/src/index.tsx:1124 packages/docmanager-extension/src/index.tsx:1127
 msgid "Are you sure you want to delete %1"
 msgstr "您确定要删除 %1 吗？"
 
-#: packages/docmanager-extension/src/index.tsx:1141
+#: packages/docmanager-extension/src/index.tsx:1141 packages/docmanager-extension/src/index.tsx:1144
 msgid "Show in File Browser"
 msgstr "在文件浏览器中显示"
 
-#: packages/docmanager-extension/src/index.tsx:1207
+#: packages/docmanager-extension/src/index.tsx:1207 packages/docmanager-extension/src/index.tsx:1210
 msgid "Are you sure you want to revert the %1 to checkpoint? "
 msgstr "您确定要将 %1 还原到检查点吗？ "
 
-#: packages/docmanager-extension/src/index.tsx:1213
+#: packages/docmanager-extension/src/index.tsx:1213 packages/docmanager-extension/src/index.tsx:1216
 msgid "This cannot be undone."
 msgstr "此操作不可撤销。"
 
-#: packages/docmanager-extension/src/index.tsx:1220
+#: packages/docmanager-extension/src/index.tsx:1220 packages/docmanager-extension/src/index.tsx:1223
 msgid "The checkpoint was last updated at: "
 msgstr "检查点最后一次更新于: "
 
-#: packages/docmanager-extension/src/index.tsx:1254
+#: packages/docmanager-extension/src/index.tsx:1254 packages/docmanager-extension/src/index.tsx:1257
 msgid "Choose a checkpoint"
 msgstr "选择一个检查点"
 
@@ -4100,7 +4144,7 @@ msgstr "覆盖文件类型对应的默认查看器。请指定从文件类型到
 "可用的文件类型：\n"
 "%2"
 
-#: packages/docmanager-extension/src/index.tsx:474 packages/filebrowser-extension/src/index.ts:367
+#: packages/docmanager-extension/src/index.tsx:474 packages/filebrowser-extension/src/index.ts:367 packages/filebrowser-extension/src/index.ts:371
 msgid "Download"
 msgstr "下载"
 
@@ -4112,19 +4156,19 @@ msgstr "将文件下载到您的计算机"
 msgid "Cannot Download"
 msgstr "无法下载"
 
-#: packages/docmanager-extension/src/index.tsx:484 packages/docmanager-extension/src/index.tsx:726 packages/docmanager-extension/src/index.tsx:771 packages/docmanager-extension/src/index.tsx:844 packages/docmanager-extension/src/index.tsx:968
+#: packages/docmanager-extension/src/index.tsx:484 packages/docmanager-extension/src/index.tsx:726 packages/docmanager-extension/src/index.tsx:771 packages/docmanager-extension/src/index.tsx:844 packages/docmanager-extension/src/index.tsx:847 packages/docmanager-extension/src/index.tsx:968 packages/docmanager-extension/src/index.tsx:971
 msgid "No context found for current widget!"
 msgstr "没有找到当前小组件的上下文！"
 
-#: packages/docmanager-extension/src/index.tsx:493 packages/docmanager-extension/src/index.tsx:634 packages/filebrowser-extension/src/index.ts:1074 packages/filebrowser-extension/src/index.ts:566 packages/filebrowser-extension/src/index.ts:892 packages/htmlviewer-extension/src/index.tsx:206
+#: packages/docmanager-extension/src/index.tsx:493 packages/docmanager-extension/src/index.tsx:634 packages/filebrowser-extension/src/index.ts:1074 packages/filebrowser-extension/src/index.ts:1078 packages/filebrowser-extension/src/index.ts:566 packages/filebrowser-extension/src/index.ts:570 packages/filebrowser-extension/src/index.ts:892 packages/filebrowser-extension/src/index.ts:896 packages/htmlviewer-extension/src/index.tsx:206
 msgid "File Operations"
 msgstr "文件操作"
 
-#: packages/docmanager-extension/src/index.tsx:542 packages/filebrowser-extension/src/index.ts:772
+#: packages/docmanager-extension/src/index.tsx:542 packages/filebrowser-extension/src/index.ts:772 packages/filebrowser-extension/src/index.ts:776
 msgid "Open in New Browser Tab"
 msgstr "在新的浏览器标签页中打开"
 
-#: packages/docmanager-extension/src/index.tsx:670 packages/filebrowser/src/browser.ts:236 packages/logconsole-extension/src/index.tsx:376
+#: packages/docmanager-extension/src/index.tsx:670 packages/filebrowser/src/browser.ts:236 packages/filebrowser/src/browser.ts:252 packages/logconsole-extension/src/index.tsx:376
 msgid "Error"
 msgstr "错误"
 
@@ -4172,99 +4216,103 @@ msgstr "%1 没有可用的检查站。"
 msgid "Revert %1 to checkpoint"
 msgstr "将 %1 撤回至检查点"
 
-#: packages/docmanager-extension/src/index.tsx:797 packages/docregistry/src/context.ts:805
+#: packages/docmanager-extension/src/index.tsx:797 packages/docmanager-extension/src/index.tsx:798 packages/docregistry/src/context.ts:801 packages/docregistry/src/context.ts:805
 msgid "Revert"
 msgstr "撤回"
 
-#: packages/docmanager-extension/src/index.tsx:820
+#: packages/docmanager-extension/src/index.tsx:799
+msgid "Revert to Checkpoint"
+msgstr ""
+
+#: packages/docmanager-extension/src/index.tsx:820 packages/docmanager-extension/src/index.tsx:823
 msgid "In collaborative mode, the document is saved automatically after every change"
 msgstr "在协作模式下，文档在每次更改后都自动保存"
 
-#: packages/docmanager-extension/src/index.tsx:826
+#: packages/docmanager-extension/src/index.tsx:826 packages/docmanager-extension/src/index.tsx:829
 msgid "Save and create checkpoint"
 msgstr "保存并创建检查点"
 
-#: packages/docmanager-extension/src/index.tsx:832
+#: packages/docmanager-extension/src/index.tsx:832 packages/docmanager-extension/src/index.tsx:835
 msgid "Save %1"
 msgstr "保存 %1"
 
-#: packages/docmanager-extension/src/index.tsx:843 packages/docmanager-extension/src/index.tsx:854 packages/docmanager-extension/src/index.tsx:967 packages/notebook/src/default-toolbar.tsx:68
+#: packages/docmanager-extension/src/index.tsx:843 packages/docmanager-extension/src/index.tsx:846 packages/docmanager-extension/src/index.tsx:854 packages/docmanager-extension/src/index.tsx:857 packages/docmanager-extension/src/index.tsx:967 packages/docmanager-extension/src/index.tsx:970 packages/notebook/src/default-toolbar.tsx:68
 msgid "Cannot Save"
 msgstr "无法保存"
 
-#: packages/docmanager-extension/src/index.tsx:855 packages/notebook/src/default-toolbar.tsx:69
+#: packages/docmanager-extension/src/index.tsx:855 packages/docmanager-extension/src/index.tsx:858 packages/notebook/src/default-toolbar.tsx:69
 msgid "Document is read-only"
 msgstr "文档为只读状态"
 
-#: packages/docmanager-extension/src/index.tsx:870
+#: packages/docmanager-extension/src/index.tsx:870 packages/docmanager-extension/src/index.tsx:873
 msgid "Rename file"
 msgstr "重命名文件"
 
-#: packages/docmanager-extension/src/index.tsx:871 packages/docmanager/src/dialogs.ts:57 packages/filebrowser-extension/src/index.ts:1197
+#: packages/docmanager-extension/src/index.tsx:871 packages/docmanager-extension/src/index.tsx:874 packages/docmanager/src/dialogs.ts:57 packages/docmanager/src/dialogs.ts:58 packages/filebrowser-extension/src/index.ts:1197 packages/filebrowser-extension/src/index.ts:1201
 msgid "Rename"
 msgstr "重命名"
 
-#: packages/docmanager-extension/src/index.tsx:872
+#: packages/docmanager-extension/src/index.tsx:872 packages/docmanager-extension/src/index.tsx:875
 msgid "File name"
 msgstr "文件名"
 
-#: packages/docmanager-extension/src/index.tsx:876 packages/docmanager/src/widgetmanager.ts:414
+#: packages/docmanager-extension/src/index.tsx:876 packages/docmanager-extension/src/index.tsx:879 packages/docmanager/src/widgetmanager.ts:414 packages/docmanager/src/widgetmanager.ts:420
 msgid "Do not ask me again."
 msgstr "不再询问"
 
-#: packages/docmanager-extension/src/index.tsx:877
+#: packages/docmanager-extension/src/index.tsx:877 packages/docmanager-extension/src/index.tsx:880
 msgid "If checked, you will not be asked to rename future untitled files when saving them."
 msgstr "如果选中此项，之后保存无标题文件时不会被要求重命名。"
 
-#: packages/docmanager-extension/src/index.tsx:934
+#: packages/docmanager-extension/src/index.tsx:934 packages/docmanager-extension/src/index.tsx:937
 msgid "Save All"
 msgstr "保存全部"
 
-#: packages/docmanager-extension/src/index.tsx:935
+#: packages/docmanager-extension/src/index.tsx:935 packages/docmanager-extension/src/index.tsx:938
 msgid "Save all open documents"
 msgstr "保存全部打开的文档"
 
-#: packages/docmanager-extension/src/index.tsx:958
+#: packages/docmanager-extension/src/index.tsx:958 packages/docmanager-extension/src/index.tsx:961
 msgid "Save %1 As…"
 msgstr "将 %1 另存为…"
 
-#: packages/docmanager-extension/src/index.tsx:959
+#: packages/docmanager-extension/src/index.tsx:959 packages/docmanager-extension/src/index.tsx:962
 msgid "Save with new path"
 msgstr "使用新路径保存"
 
-#: packages/docmanager-extension/src/index.tsx:999
-msgid "Autosave Documents"
-msgstr "自动保存文档"
-
-#: packages/docmanager/src/dialogs.ts:114
+#: packages/docmanager/src/dialogs.ts:114 packages/docmanager/src/dialogs.ts:117
 msgid "Overwrite file?"
 msgstr "覆盖文件？"
 
-#: packages/docmanager/src/dialogs.ts:115
+#: packages/docmanager/src/dialogs.ts:115 packages/docmanager/src/dialogs.ts:118
 msgid "\"%1\" already exists, overwrite?"
 msgstr "文件「%1」已存在，是否覆盖？"
 
-#: packages/docmanager/src/dialogs.ts:118 packages/docregistry/src/context.ts:809 packages/docregistry/src/context.ts:845 packages/shortcuts-extension/src/components/ShortcutInput.tsx:495 packages/shortcuts-extension/src/components/ShortcutItem.tsx:231
+#: packages/docmanager/src/dialogs.ts:118 packages/docmanager/src/dialogs.ts:122 packages/docregistry/src/context.ts:805 packages/docregistry/src/context.ts:809 packages/docregistry/src/context.ts:841 packages/docregistry/src/context.ts:845 packages/shortcuts-extension/src/components/ShortcutInput.tsx:495 packages/shortcuts-extension/src/components/ShortcutItem.tsx:231
 msgid "Overwrite"
 msgstr "覆盖"
 
-#: packages/docmanager/src/dialogs.ts:182
+#: packages/docmanager/src/dialogs.ts:123
+msgid "Overwrite Existing File"
+msgstr ""
+
+#: packages/docmanager/src/dialogs.ts:182 packages/docmanager/src/dialogs.ts:188
 msgid "File Path"
 msgstr "文件路径"
 
-#: packages/docmanager/src/dialogs.ts:187
+#: packages/docmanager/src/dialogs.ts:187 packages/docmanager/src/dialogs.ts:193
 msgid "New Name"
 msgstr "新名称"
 
-#: packages/docmanager/src/dialogs.ts:52
+#: packages/docmanager/src/dialogs.ts:52 packages/docmanager/src/dialogs.ts:59
 msgid "Rename File"
 msgstr "重命名文件"
 
-#: packages/docmanager/src/dialogs.ts:65 packages/filebrowser/src/listing.ts:1875
+#: packages/docmanager/src/dialogs.ts:65 packages/docmanager/src/dialogs.ts:68 packages/filebrowser/src/listing.ts:1875 packages/filebrowser/src/listing.ts:1891
 msgid "Rename Error"
 msgstr "重命名错误"
 
-#: packages/docmanager/src/dialogs.ts:67
+#: packages/docmanager/src/dialogs.ts:67 packages/docmanager/src/dialogs.ts:70
 msgid "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\""
 msgstr "「%1」不是一个有效的文件名。文件名必须具有非零长度，且不包含「/」、「\\」或「:」"
 
@@ -4302,65 +4350,81 @@ msgstr "上一检查点: %1"
 msgid "Close and save"
 msgstr "关闭并保存"
 
-#: packages/docmanager/src/widgetmanager.ts:404
+#: packages/docmanager/src/widgetmanager.ts:399
+msgid "Close and save Document"
+msgstr ""
+
+#: packages/docmanager/src/widgetmanager.ts:400
+msgid "Close Document"
+msgstr ""
+
+#: packages/docmanager/src/widgetmanager.ts:404 packages/docmanager/src/widgetmanager.ts:408
 msgid "Close without saving"
 msgstr "不保存并关闭"
 
-#: packages/docmanager/src/widgetmanager.ts:409 packages/notebook/src/searchprovider.ts:509
+#: packages/docmanager/src/widgetmanager.ts:409
+msgid "Close Document without saving"
+msgstr ""
+
+#: packages/docmanager/src/widgetmanager.ts:409 packages/docmanager/src/widgetmanager.ts:415 packages/notebook/src/searchprovider.ts:509
 msgid "Confirmation"
 msgstr "确认"
 
-#: packages/docmanager/src/widgetmanager.ts:410
+#: packages/docmanager/src/widgetmanager.ts:410 packages/docmanager/src/widgetmanager.ts:416
 msgid "Please confirm you want to close \"%1\"."
 msgstr "请确认您想要关闭“%1”。"
 
-#: packages/docmanager/src/widgetmanager.ts:415
+#: packages/docmanager/src/widgetmanager.ts:415 packages/docmanager/src/widgetmanager.ts:421
 msgid "If checked, no confirmation to close a document will be asked in the future."
 msgstr "如果选中此项，以后关闭文档不再要求确认。"
 
-#: packages/docmanager/src/widgetmanager.ts:437
+#: packages/docmanager/src/widgetmanager.ts:437 packages/docmanager/src/widgetmanager.ts:443
 msgid "Save as"
 msgstr "另存为"
 
-#: packages/docmanager/src/widgetmanager.ts:439
+#: packages/docmanager/src/widgetmanager.ts:439 packages/docmanager/src/widgetmanager.ts:445
 msgid "Save your work"
 msgstr "保存您的工作"
 
-#: packages/docmanager/src/widgetmanager.ts:440
+#: packages/docmanager/src/widgetmanager.ts:440 packages/docmanager/src/widgetmanager.ts:446
 msgid "Save changes in \"%1\" before closing?"
 msgstr "关闭前是否要保存对「%1」的修改？"
 
-#: packages/docmanager/src/widgetmanager.ts:443
+#: packages/docmanager/src/widgetmanager.ts:443 packages/docmanager/src/widgetmanager.ts:450
 msgid "Discard"
 msgstr "丢弃"
 
-#: packages/docregistry/src/context.ts:1021
+#: packages/docmanager/src/widgetmanager.ts:451
+msgid "Discard changes to file"
+msgstr ""
+
+#: packages/docregistry/src/context.ts:1017 packages/docregistry/src/context.ts:1021
 msgid "Save File As…"
 msgstr "文件另存为..."
 
-#: packages/docregistry/src/context.ts:631 packages/docregistry/src/context.ts:894
+#: packages/docregistry/src/context.ts:627 packages/docregistry/src/context.ts:631 packages/docregistry/src/context.ts:890 packages/docregistry/src/context.ts:894
 msgid "File Save Error for %1"
 msgstr "保存文件 %1 时出错"
 
-#: packages/docregistry/src/context.ts:695
+#: packages/docregistry/src/context.ts:691 packages/docregistry/src/context.ts:695
 msgid "File Load Error for %1"
 msgstr "加载文件 %1 时出错"
 
-#: packages/docregistry/src/context.ts:798
+#: packages/docregistry/src/context.ts:794 packages/docregistry/src/context.ts:798
 msgid "\"%1\" has changed on disk since the last time it was opened or saved.\n"
 "Do you want to overwrite the file on disk with the version open here,\n"
 "or load the version on disk (revert)?"
 msgstr "「%1」自上次打开或保存后在磁盘上已经改变。您想要用这里打开的版本覆盖磁盘上的文件， 还是加载磁盘上的版本（复原）？"
 
-#: packages/docregistry/src/context.ts:814
+#: packages/docregistry/src/context.ts:810 packages/docregistry/src/context.ts:814
 msgid "File Changed"
 msgstr "文件已更改"
 
-#: packages/docregistry/src/context.ts:840
+#: packages/docregistry/src/context.ts:836 packages/docregistry/src/context.ts:840
 msgid "\"%1\" already exists. Do you want to replace it?"
 msgstr "「%1」已经存在。您想要替换它么？"
 
-#: packages/docregistry/src/context.ts:849
+#: packages/docregistry/src/context.ts:845 packages/docregistry/src/context.ts:849
 msgid "File Overwrite?"
 msgstr "要覆盖文件吗？"
 
@@ -4670,184 +4734,188 @@ msgstr "版本: %1"
 msgid "%1 extension is not allowed anymore. Please uninstall it immediately or contact your administrator."
 msgstr "不再允许使用扩展 %1。请立即卸载它或联系您的管理员。"
 
-#: packages/filebrowser-extension/src/index.ts:1014
-msgid "Open from Path…"
-msgstr "从路径打开…"
-
-#: packages/filebrowser-extension/src/index.ts:1014 packages/filebrowser-extension/src/index.ts:1016 packages/filebrowser-extension/src/index.ts:837 packages/filebrowser-extension/src/index.ts:839
+#: packages/filebrowser-extension/src/index.ts:1014 packages/filebrowser-extension/src/index.ts:1016 packages/filebrowser-extension/src/index.ts:1018 packages/filebrowser-extension/src/index.ts:1020 packages/filebrowser-extension/src/index.ts:837 packages/filebrowser-extension/src/index.ts:839 packages/filebrowser-extension/src/index.ts:841 packages/filebrowser-extension/src/index.ts:843
 msgid "Open %1"
 msgstr "打开 %1"
 
-#: packages/filebrowser-extension/src/index.ts:1016
+#: packages/filebrowser-extension/src/index.ts:1014 packages/filebrowser-extension/src/index.ts:1018
+msgid "Open from Path…"
+msgstr "从路径打开…"
+
+#: packages/filebrowser-extension/src/index.ts:1016 packages/filebrowser-extension/src/index.ts:1020
 msgid "Open from path"
 msgstr "从路径打开"
 
-#: packages/filebrowser-extension/src/index.ts:1025
+#: packages/filebrowser-extension/src/index.ts:1025 packages/filebrowser-extension/src/index.ts:1029
 msgid "Path"
 msgstr "路径"
 
-#: packages/filebrowser-extension/src/index.ts:1027
+#: packages/filebrowser-extension/src/index.ts:1027 packages/filebrowser-extension/src/index.ts:1031
 msgid "Open Path"
 msgstr "打开路径"
 
-#: packages/filebrowser-extension/src/index.ts:1028 packages/filebrowser-extension/src/index.ts:1117 packages/filebrowser-extension/src/index.ts:849
+#: packages/filebrowser-extension/src/index.ts:1028 packages/filebrowser-extension/src/index.ts:1032 packages/filebrowser-extension/src/index.ts:1117 packages/filebrowser-extension/src/index.ts:1121 packages/filebrowser-extension/src/index.ts:849 packages/filebrowser-extension/src/index.ts:853
 msgid "Open"
 msgstr "打开"
 
-#: packages/filebrowser-extension/src/index.ts:1063
+#: packages/filebrowser-extension/src/index.ts:1063 packages/filebrowser-extension/src/index.ts:1067
 msgid "Could not find path: %1"
 msgstr "找不到路径 %1"
 
-#: packages/filebrowser-extension/src/index.ts:1065
+#: packages/filebrowser-extension/src/index.ts:1065 packages/filebrowser-extension/src/index.ts:1069
 msgid "Cannot open"
 msgstr "无法打开"
 
-#: packages/filebrowser-extension/src/index.ts:1130 packages/fileeditor-extension/src/commands.ts:974 packages/terminal-extension/src/index.ts:488
+#: packages/filebrowser-extension/src/index.ts:1130 packages/filebrowser-extension/src/index.ts:1134 packages/fileeditor-extension/src/commands.ts:974 packages/terminal-extension/src/index.ts:488 packages/terminal-extension/src/index.ts:494
 msgid "Paste"
 msgstr "粘贴"
 
-#: packages/filebrowser-extension/src/index.ts:1143 packages/filebrowser/src/opendialog.ts:153
+#: packages/filebrowser-extension/src/index.ts:1143 packages/filebrowser-extension/src/index.ts:1147 packages/filebrowser/src/opendialog.ts:153
 msgid "New Folder"
 msgstr "新建文件夹"
 
-#: packages/filebrowser-extension/src/index.ts:1155
+#: packages/filebrowser-extension/src/index.ts:1155 packages/filebrowser-extension/src/index.ts:1159
 msgid "New File"
 msgstr "新建文件"
 
-#: packages/filebrowser-extension/src/index.ts:1167 packages/fileeditor-extension/src/commands.ts:809
+#: packages/filebrowser-extension/src/index.ts:1167 packages/filebrowser-extension/src/index.ts:1171 packages/fileeditor-extension/src/commands.ts:809
 msgid "New Markdown File"
 msgstr "新建Markdown文件"
 
-#: packages/filebrowser-extension/src/index.ts:1179
+#: packages/filebrowser-extension/src/index.ts:1179 packages/filebrowser-extension/src/index.ts:1183
 msgid "Refresh the file browser."
 msgstr "刷新文件浏览器。"
 
-#: packages/filebrowser-extension/src/index.ts:1180 packages/filebrowser/src/opendialog.ts:168
+#: packages/filebrowser-extension/src/index.ts:1180 packages/filebrowser-extension/src/index.ts:1184 packages/filebrowser/src/opendialog.ts:168
 msgid "Refresh File List"
 msgstr "刷新文件列表"
 
-#: packages/filebrowser-extension/src/index.ts:1220
+#: packages/filebrowser-extension/src/index.ts:1220 packages/filebrowser-extension/src/index.ts:1224
 msgid "Copy Path"
 msgstr "复制路径"
 
-#: packages/filebrowser-extension/src/index.ts:1232 packages/mainmenu-extension/src/index.ts:531 packages/notebook-extension/src/index.ts:2332 packages/running-extension/src/kernels.ts:118 packages/running-extension/src/kernels.ts:66
+#: packages/filebrowser-extension/src/index.ts:1232 packages/filebrowser-extension/src/index.ts:1236 packages/mainmenu-extension/src/index.ts:531 packages/notebook-extension/src/index.ts:2332 packages/running-extension/src/kernels.ts:118 packages/running-extension/src/kernels.ts:66
 msgid "Shut Down Kernel"
 msgstr "关闭内核"
 
-#: packages/filebrowser-extension/src/index.ts:1236
+#: packages/filebrowser-extension/src/index.ts:1236 packages/filebrowser-extension/src/index.ts:1240
 msgid "Show Last Modified Column"
 msgstr "切换最后修改列"
 
-#: packages/filebrowser-extension/src/index.ts:1252
+#: packages/filebrowser-extension/src/index.ts:1252 packages/filebrowser-extension/src/index.ts:1272
 msgid "Show File Size Column"
 msgstr "显示文件大小栏"
 
-#: packages/filebrowser-extension/src/index.ts:1268
+#: packages/filebrowser-extension/src/index.ts:1256
+msgid "Sort Notebooks Above Files"
+msgstr ""
+
+#: packages/filebrowser-extension/src/index.ts:1268 packages/filebrowser-extension/src/index.ts:1288
 msgid "Show Hidden Files"
 msgstr "显示隐藏文件"
 
-#: packages/filebrowser-extension/src/index.ts:1285
+#: packages/filebrowser-extension/src/index.ts:1285 packages/filebrowser-extension/src/index.ts:1305
 msgid "Show File Checkboxes"
 msgstr "显示文件复选框"
 
-#: packages/filebrowser-extension/src/index.ts:1301
+#: packages/filebrowser-extension/src/index.ts:1301 packages/filebrowser-extension/src/index.ts:1321
 msgid "Search on File Names"
 msgstr "搜索文件名"
 
-#: packages/filebrowser-extension/src/index.ts:1370
+#: packages/filebrowser-extension/src/index.ts:1370 packages/filebrowser-extension/src/index.ts:1390
 msgid "No browser for path"
 msgstr "路径没有浏览器"
 
-#: packages/filebrowser-extension/src/index.ts:389
+#: packages/filebrowser-extension/src/index.ts:389 packages/filebrowser-extension/src/index.ts:393
 msgid "Copy Download Link"
 msgstr "复制下载链接"
 
-#: packages/filebrowser-extension/src/index.ts:432
+#: packages/filebrowser-extension/src/index.ts:432 packages/filebrowser-extension/src/index.ts:436
 msgid "File Browser Section"
 msgstr "文件浏览器部分"
 
-#: packages/filebrowser-extension/src/index.ts:443
+#: packages/filebrowser-extension/src/index.ts:443 packages/filebrowser-extension/src/index.ts:447
 msgid "File Browser (%1)"
 msgstr "文件浏览器 (%1)"
 
-#: packages/filebrowser-extension/src/index.ts:445 packages/filebrowser-extension/src/index.ts:497 packages/filebrowser/src/browser.ts:75
+#: packages/filebrowser-extension/src/index.ts:445 packages/filebrowser-extension/src/index.ts:449 packages/filebrowser-extension/src/index.ts:497 packages/filebrowser-extension/src/index.ts:501 packages/filebrowser/src/browser.ts:75
 msgid "File Browser"
 msgstr "文件管理器"
 
-#: packages/filebrowser-extension/src/index.ts:475
+#: packages/filebrowser-extension/src/index.ts:475 packages/filebrowser-extension/src/index.ts:479
 msgid "Filter files by name"
 msgstr "按文件名过滤"
 
-#: packages/filebrowser-extension/src/index.ts:508
+#: packages/filebrowser-extension/src/index.ts:508 packages/filebrowser-extension/src/index.ts:512
 msgid "Open the file browser for the provided `path`."
 msgstr "打开文件浏览器，查看提供的 `路径`。"
 
-#: packages/filebrowser-extension/src/index.ts:540
+#: packages/filebrowser-extension/src/index.ts:540 packages/filebrowser-extension/src/index.ts:544
 msgid "Hide the file browser."
 msgstr "隐藏文件浏览器。"
 
-#: packages/filebrowser-extension/src/index.ts:550
+#: packages/filebrowser-extension/src/index.ts:550 packages/filebrowser-extension/src/index.ts:554
 msgid "Show Active File in File Browser"
 msgstr "在文件浏览器中显示活动文件"
 
-#: packages/filebrowser-extension/src/index.ts:647
+#: packages/filebrowser-extension/src/index.ts:647 packages/filebrowser-extension/src/index.ts:651
 msgid "Copy Shareable Link"
 msgstr "复制共享链接"
 
-#: packages/filebrowser-extension/src/index.ts:771
+#: packages/filebrowser-extension/src/index.ts:771 packages/filebrowser-extension/src/index.ts:775
 msgid "Open in Simple Mode"
 msgstr "以简易模式打开"
 
-#: packages/filebrowser-extension/src/index.ts:837
+#: packages/filebrowser-extension/src/index.ts:837 packages/filebrowser-extension/src/index.ts:841
 msgid "Open from URL…"
 msgstr "从 URL 打开…"
 
-#: packages/filebrowser-extension/src/index.ts:839
+#: packages/filebrowser-extension/src/index.ts:839 packages/filebrowser-extension/src/index.ts:843
 msgid "Open from URL"
 msgstr "从链接打开"
 
-#: packages/filebrowser-extension/src/index.ts:846
+#: packages/filebrowser-extension/src/index.ts:846 packages/filebrowser-extension/src/index.ts:850
 msgid "URL"
 msgstr "链接"
 
-#: packages/filebrowser-extension/src/index.ts:848
+#: packages/filebrowser-extension/src/index.ts:848 packages/filebrowser-extension/src/index.ts:852
 msgid "Open URL"
 msgstr "打开链接"
 
-#: packages/filebrowser-extension/src/index.ts:867
+#: packages/filebrowser-extension/src/index.ts:867 packages/filebrowser-extension/src/index.ts:871
 msgid "Could not open URL: %1"
 msgstr "无法打开 URL：%1"
 
-#: packages/filebrowser-extension/src/index.ts:869
+#: packages/filebrowser-extension/src/index.ts:869 packages/filebrowser-extension/src/index.ts:873
 msgid "Cannot fetch"
 msgstr "无法获取"
 
-#: packages/filebrowser-extension/src/index.ts:882 packages/filebrowser/src/upload.ts:52
+#: packages/filebrowser-extension/src/index.ts:882 packages/filebrowser-extension/src/index.ts:886 packages/filebrowser/src/upload.ts:52
 msgctxt "showErrorMessage"
 msgid "Upload Error"
 msgstr "上传错误"
 
-#: packages/filebrowser-extension/src/index.ts:935 packages/fileeditor-extension/src/commands.ts:947 packages/terminal-extension/src/index.ts:463
+#: packages/filebrowser-extension/src/index.ts:935 packages/filebrowser-extension/src/index.ts:939 packages/fileeditor-extension/src/commands.ts:947 packages/terminal-extension/src/index.ts:463 packages/terminal-extension/src/index.ts:469
 msgid "Copy"
 msgstr "复制"
 
-#: packages/filebrowser-extension/src/index.ts:948 packages/fileeditor-extension/src/commands.ts:913
+#: packages/filebrowser-extension/src/index.ts:948 packages/filebrowser-extension/src/index.ts:952 packages/fileeditor-extension/src/commands.ts:913
 msgid "Cut"
 msgstr "剪切"
 
-#: packages/filebrowser-extension/src/index.ts:960
+#: packages/filebrowser-extension/src/index.ts:960 packages/filebrowser-extension/src/index.ts:964
 msgid "Duplicate"
 msgstr "创建副本"
 
-#: packages/filebrowser-extension/src/index.ts:964
+#: packages/filebrowser-extension/src/index.ts:964 packages/filebrowser-extension/src/index.ts:968
 msgid "Update the file browser to display the provided `path`."
 msgstr "更新文件浏览器以显示提供的 `路径`。"
 
-#: packages/filebrowser/src/browser.ts:372
+#: packages/filebrowser/src/browser.ts:372 packages/filebrowser/src/browser.ts:388
 msgid "Directory not found"
 msgstr "找不到目录"
 
-#: packages/filebrowser/src/browser.ts:373 packages/filebrowser/src/model.ts:298
+#: packages/filebrowser/src/browser.ts:373 packages/filebrowser/src/browser.ts:389 packages/filebrowser/src/model.ts:298
 msgid "Directory not found: \"%1\""
 msgstr "找不到目录：「%1」"
 
@@ -4863,139 +4931,139 @@ msgstr "打开出错"
 msgid "Move Error"
 msgstr "移动出错"
 
-#: packages/filebrowser/src/listing.ts:1120
+#: packages/filebrowser/src/listing.ts:1120 packages/filebrowser/src/listing.ts:1136
 msgctxt "showErrorMessage"
 msgid "Open directory"
 msgstr "打开目录"
 
-#: packages/filebrowser/src/listing.ts:1395
+#: packages/filebrowser/src/listing.ts:1395 packages/filebrowser/src/listing.ts:1411
 msgid "Error Uploading Folder"
 msgstr "上传文件夹时出错"
 
-#: packages/filebrowser/src/listing.ts:1396
+#: packages/filebrowser/src/listing.ts:1396 packages/filebrowser/src/listing.ts:1412
 msgid "Drag and Drop is currently not supported for folders"
 msgstr "文件夹目前不支持拖放。"
 
-#: packages/filebrowser/src/listing.ts:1515
+#: packages/filebrowser/src/listing.ts:1515 packages/filebrowser/src/listing.ts:1531
 msgctxt "showErrorMessage"
 msgid "Error while copying/moving files"
 msgstr "复制或移动文件时出错"
 
-#: packages/filebrowser/src/listing.ts:1814
+#: packages/filebrowser/src/listing.ts:1814 packages/filebrowser/src/listing.ts:1830
 msgctxt "showErrorMessage"
 msgid "Delete Failed"
 msgstr "删除失败"
 
-#: packages/filebrowser/src/listing.ts:1877
+#: packages/filebrowser/src/listing.ts:1877 packages/filebrowser/src/listing.ts:1893
 msgctxt "showErrorMessage"
 msgid "\"%1\" is not a valid name for a file. Names must have nonzero length, and cannot include \"/\", \"\\\", or \":\""
 msgstr "「%1」不是一个有效的文件名。文件名必须具有非零长度，且不包含「/」、「\\」或「:」"
 
-#: packages/filebrowser/src/listing.ts:1896
+#: packages/filebrowser/src/listing.ts:1896 packages/filebrowser/src/listing.ts:1912
 msgctxt "showErrorMessage"
 msgid "Rename Error"
 msgstr "重命名错误"
 
-#: packages/filebrowser/src/listing.ts:2260
+#: packages/filebrowser/src/listing.ts:2260 packages/filebrowser/src/listing.ts:2277
 msgid "Last Modified"
 msgstr "修改时间"
 
-#: packages/filebrowser/src/listing.ts:2261
+#: packages/filebrowser/src/listing.ts:2261 packages/filebrowser/src/listing.ts:2278
 msgid "File Size"
 msgstr "文件大小"
 
-#: packages/filebrowser/src/listing.ts:2549
+#: packages/filebrowser/src/listing.ts:2549 packages/filebrowser/src/listing.ts:2566
 msgid "Name: %1"
 msgstr "名称：%1"
 
-#: packages/filebrowser/src/listing.ts:2555
+#: packages/filebrowser/src/listing.ts:2555 packages/filebrowser/src/listing.ts:2572
 msgid "\n"
 "Size: %1"
 msgstr "\n"
 "大小: %1"
 
-#: packages/filebrowser/src/listing.ts:2565
+#: packages/filebrowser/src/listing.ts:2565 packages/filebrowser/src/listing.ts:2582
 msgid "\n"
 "Path: %1"
 msgstr "\n"
 "路径: %1"
 
-#: packages/filebrowser/src/listing.ts:2572
+#: packages/filebrowser/src/listing.ts:2572 packages/filebrowser/src/listing.ts:2589
 msgid "\n"
 "Created: %1"
 msgstr "\n"
 "创建时间：%1"
 
-#: packages/filebrowser/src/listing.ts:2578
+#: packages/filebrowser/src/listing.ts:2578 packages/filebrowser/src/listing.ts:2595
 msgid "\n"
 "Modified: %1"
 msgstr "\n"
 "修改时间：%1"
 
-#: packages/filebrowser/src/listing.ts:2583
+#: packages/filebrowser/src/listing.ts:2583 packages/filebrowser/src/listing.ts:2600
 msgid "\n"
 "Writable: %1"
 msgstr "\n"
 "可写：%1"
 
-#: packages/filebrowser/src/listing.ts:2608
+#: packages/filebrowser/src/listing.ts:2608 packages/filebrowser/src/listing.ts:2625
 msgid "Deselect directory \"%1\""
 msgstr "取消选择目录“%1”"
 
-#: packages/filebrowser/src/listing.ts:2609
+#: packages/filebrowser/src/listing.ts:2609 packages/filebrowser/src/listing.ts:2626
 msgid "Select directory \"%1\""
 msgstr "选择目录“%1”"
 
-#: packages/filebrowser/src/listing.ts:2612
+#: packages/filebrowser/src/listing.ts:2612 packages/filebrowser/src/listing.ts:2629
 msgid "Deselect file \"%1\""
 msgstr "取消选择文件 \"%1\""
 
-#: packages/filebrowser/src/listing.ts:2613
+#: packages/filebrowser/src/listing.ts:2613 packages/filebrowser/src/listing.ts:2630
 msgid "Select file \"%1\""
 msgstr "选择文件 \"%1\""
 
-#: packages/filebrowser/src/listing.ts:2687
+#: packages/filebrowser/src/listing.ts:2687 packages/filebrowser/src/listing.ts:2704
 msgid "%1 Item"
 msgid_plural "%1 Items"
 msgstr[0] "%1 项"
 
-#: packages/filebrowser/src/listing.ts:396
+#: packages/filebrowser/src/listing.ts:396 packages/filebrowser/src/listing.ts:400
 msgctxt "showErrorMessage"
 msgid "Paste Error"
 msgstr "粘贴出错"
 
-#: packages/filebrowser/src/listing.ts:416
+#: packages/filebrowser/src/listing.ts:416 packages/filebrowser/src/listing.ts:420
 msgid "Are you sure you want to permanently delete: %1?"
 msgstr "您确定要删除「%1」吗？"
 
-#: packages/filebrowser/src/listing.ts:420
+#: packages/filebrowser/src/listing.ts:420 packages/filebrowser/src/listing.ts:424
 msgid "Are you sure you want to permanently delete the %1 selected item?"
 msgid_plural "Are you sure you want to permanently delete the %1 selected items?"
 msgstr[0] "您确实要永久删除 %1 个选定的项目吗？"
 
-#: packages/filebrowser/src/listing.ts:472
+#: packages/filebrowser/src/listing.ts:472 packages/filebrowser/src/listing.ts:476
 msgctxt "showErrorMessage"
 msgid "Duplicate file"
 msgstr "重复的文件"
 
-#: packages/filebrowser/src/listing.ts:512
+#: packages/filebrowser/src/listing.ts:512 packages/filebrowser/src/listing.ts:516
 msgctxt "showErrorMessage"
 msgid "Shut down kernel"
 msgstr "终止内核"
 
-#: packages/filebrowser/src/listing.ts:852
+#: packages/filebrowser/src/listing.ts:852 packages/filebrowser/src/listing.ts:856
 msgid "Deselect all files and directories"
 msgstr "取消选择全部文件和目录"
 
-#: packages/filebrowser/src/listing.ts:853
+#: packages/filebrowser/src/listing.ts:853 packages/filebrowser/src/listing.ts:857
 msgid "Select all files and directories"
 msgstr "选择全部文件和目录"
 
-#: packages/filebrowser/src/listing.ts:906
+#: packages/filebrowser/src/listing.ts:906 packages/filebrowser/src/listing.ts:910
 msgid "unknown"
 msgstr "未知"
 
-#: packages/filebrowser/src/listing.ts:908
+#: packages/filebrowser/src/listing.ts:908 packages/filebrowser/src/listing.ts:912
 msgid "%1\n"
 "Kernel: %2"
 msgstr "%1\n"
@@ -5355,10 +5423,6 @@ msgid "Your server at %1 is not running.\n"
 "Would you like to restart it?"
 msgstr "您在 %1 的服务器未运行。\n"
 "您想重新启动吗？"
-
-#: packages/hub-extension/src/index.ts:172
-msgid "Restart"
-msgstr "重新启动"
 
 #: packages/hub-extension/src/index.ts:67
 msgid "Restart Server"
@@ -6197,23 +6261,27 @@ msgstr "笔记本已被信任。"
 msgid "Trust this notebook?"
 msgstr "信任此笔记本？"
 
-#: packages/notebook/src/actions.tsx:2064
+#: packages/notebook/src/actions.tsx:2064 packages/notebook/src/actions.tsx:2065
 msgid "Trust"
 msgstr "信任"
 
-#: packages/notebook/src/actions.tsx:2279
+#: packages/notebook/src/actions.tsx:2066
+msgid "Confirm Trusting this notebook"
+msgstr ""
+
+#: packages/notebook/src/actions.tsx:2279 packages/notebook/src/actions.tsx:2282
 msgid "Kernel Terminating"
 msgstr "正在终止内核"
 
-#: packages/notebook/src/actions.tsx:2280
+#: packages/notebook/src/actions.tsx:2280 packages/notebook/src/actions.tsx:2283
 msgid "The kernel for %1 appears to be terminating. You can not run any cell for now."
 msgstr "%1 的内核似乎正在终止。您现在不能运行任何单元格。"
 
-#: packages/notebook/src/actions.tsx:2290
+#: packages/notebook/src/actions.tsx:2290 packages/notebook/src/actions.tsx:2293
 msgid "Cell not executed due to pending input"
 msgstr "由于包含待定输入，单元格未被执行"
 
-#: packages/notebook/src/actions.tsx:2291
+#: packages/notebook/src/actions.tsx:2291 packages/notebook/src/actions.tsx:2294
 msgid "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again."
 msgstr "当前含有未被执行的输入内容，为了防止内核死锁，此单元格尚未被执行。清提交您当前未执行的输入然后再试。"
 
@@ -6389,7 +6457,7 @@ msgstr "处理本地链接"
 msgid "This HTML output contains inline scripts. Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
 msgstr "此 HTML 输出包含内嵌脚本。您确定要在您的 JupyterLab 会话中运行任意的 JavaScript 吗？"
 
-#: packages/rendermime/src/widgets.ts:428
+#: packages/rendermime/src/widgets.ts:428 packages/rendermime/src/widgets.ts:446
 msgid "JavaScript output is disabled in JupyterLab"
 msgstr "JavaScript 输出在 JupyterLab 中被禁用"
 
@@ -6677,15 +6745,15 @@ msgctxt "menu"
 msgid "Terminal Theme"
 msgstr "终端主题"
 
-#: packages/terminal-extension/src/index.ts:196 packages/terminal-extension/src/index.ts:251 packages/terminal-extension/src/index.ts:534
+#: packages/terminal-extension/src/index.ts:196 packages/terminal-extension/src/index.ts:251 packages/terminal-extension/src/index.ts:534 packages/terminal-extension/src/index.ts:540
 msgid "Inherit"
 msgstr "繼承"
 
-#: packages/terminal-extension/src/index.ts:204 packages/terminal-extension/src/index.ts:258 packages/terminal-extension/src/index.ts:535
+#: packages/terminal-extension/src/index.ts:204 packages/terminal-extension/src/index.ts:258 packages/terminal-extension/src/index.ts:535 packages/terminal-extension/src/index.ts:541
 msgid "Light"
 msgstr "亮色"
 
-#: packages/terminal-extension/src/index.ts:210 packages/terminal-extension/src/index.ts:263 packages/terminal-extension/src/index.ts:536
+#: packages/terminal-extension/src/index.ts:210 packages/terminal-extension/src/index.ts:263 packages/terminal-extension/src/index.ts:536 packages/terminal-extension/src/index.ts:542
 msgid "Dark"
 msgstr "暗色"
 
@@ -6705,39 +6773,39 @@ msgstr "新建终端"
 msgid "Start a new terminal session"
 msgstr "开始一个新终端会话"
 
-#: packages/terminal-extension/src/index.ts:389
+#: packages/terminal-extension/src/index.ts:389 packages/terminal-extension/src/index.ts:395
 msgid "Open a terminal by its `name`."
 msgstr "用 `name` 打开一个终端。"
 
-#: packages/terminal-extension/src/index.ts:407
+#: packages/terminal-extension/src/index.ts:407 packages/terminal-extension/src/index.ts:413
 msgid "Refresh Terminal"
 msgstr "刷新终端"
 
-#: packages/terminal-extension/src/index.ts:408
+#: packages/terminal-extension/src/index.ts:408 packages/terminal-extension/src/index.ts:414
 msgid "Refresh the current terminal session"
 msgstr "刷新当前终端会话"
 
-#: packages/terminal-extension/src/index.ts:492
+#: packages/terminal-extension/src/index.ts:492 packages/terminal-extension/src/index.ts:498
 msgid "Shutdown Terminal"
 msgstr "关闭终端"
 
-#: packages/terminal-extension/src/index.ts:506
+#: packages/terminal-extension/src/index.ts:506 packages/terminal-extension/src/index.ts:512
 msgid "Increase Terminal Font Size"
 msgstr "增加终端字体大小"
 
-#: packages/terminal-extension/src/index.ts:520
+#: packages/terminal-extension/src/index.ts:520 packages/terminal-extension/src/index.ts:526
 msgid "Decrease Terminal Font Size"
 msgstr "减小终端字体大小"
 
-#: packages/terminal-extension/src/index.ts:542
+#: packages/terminal-extension/src/index.ts:542 packages/terminal-extension/src/index.ts:548
 msgid "Set terminal theme to the provided `theme`."
 msgstr "将终端主题设为提供的`主题`。"
 
-#: packages/terminal-extension/src/index.ts:550
+#: packages/terminal-extension/src/index.ts:550 packages/terminal-extension/src/index.ts:556
 msgid "Use Terminal Theme: %1"
 msgstr "使用终端主题：%1"
 
-#: packages/terminal-extension/src/index.ts:553
+#: packages/terminal-extension/src/index.ts:553 packages/terminal-extension/src/index.ts:559
 msgid "Set the terminal theme"
 msgstr "设置终端主题"
 
