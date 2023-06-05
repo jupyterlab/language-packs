@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 231\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2023-05-29 08:41\n"
+"PO-Revision-Date: 2023-05-31 11:17\n"
 
 #: /packages/application-extension/schema/menus.json:/description /packages/application-extension/schema/menus.json:/title
 msgctxt "schema"
@@ -133,6 +133,16 @@ msgstr "Défilement automatique des sorties de cellules"
 msgctxt "schema"
 msgid "Jupyter Notebook Notebook"
 msgstr "Notebooks de Jupyter Notebook"
+
+#: /packages/tree-extension/schema/file-actions.json:/description
+msgctxt "schema"
+msgid "File Browser widget - File Actions settings."
+msgstr "Navigateur de fichiers - Paramètres des actions de fichiers."
+
+#: /packages/tree-extension/schema/file-actions.json:/title
+msgctxt "schema"
+msgid "File Browser Widget - File Actions"
+msgstr "Navigateur de fichiers - Actions de fichiers"
 
 #: /packages/tree-extension/schema/widget.json:/definitions/toolbarItem/properties/args/title
 msgctxt "settings"
@@ -348,27 +358,31 @@ msgstr "Non fiable"
 msgid "Trusted"
 msgstr "Fiable"
 
-#: packages/tree-extension/src/index.ts:232
+#: packages/tree-extension/src/fileactions.tsx:39
+msgid "Select items to perform actions on them."
+msgstr "Sélectionnez les éléments sur lesquels effectuer des actions."
+
+#: packages/tree-extension/src/index.ts:284
 msgid "Files"
 msgstr "Fichiers"
 
-#: packages/tree-extension/src/index.ts:234
+#: packages/tree-extension/src/index.ts:286
 msgid "File Browser Section"
 msgstr "Section du navigateur de fichiers"
 
-#: packages/tree-extension/src/index.ts:249
+#: packages/tree-extension/src/index.ts:300
 msgid "Upload"
 msgstr "Importer"
 
-#: packages/tree-extension/src/index.ts:267
+#: packages/tree-extension/src/index.ts:318
 msgid "Filter files by name"
 msgstr "Filtrer les fichiers par nom"
 
-#: packages/tree-extension/src/index.ts:289
+#: packages/tree-extension/src/index.ts:340
 msgid "Running"
 msgstr "En cours"
 
-#: packages/tree-extension/src/index.ts:91
+#: packages/tree-extension/src/index.ts:95
 msgid "New"
 msgstr "Nouveau"
 
