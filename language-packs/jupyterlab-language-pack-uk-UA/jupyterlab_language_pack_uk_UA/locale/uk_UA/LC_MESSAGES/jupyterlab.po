@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2023-06-24 16:32\n"
+"PO-Revision-Date: 2023-06-24 17:47\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1055,7 +1055,7 @@ msgstr "Показувати стовпець розміру файлу"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/description
 msgctxt "settings"
 msgid "Whether to show hidden files. The server parameter `ContentsManager.allow_hidden` must be set to `True` to display hidden files."
-msgstr ""
+msgstr "Чи показати приховані файли. Параметр сервера `ContentsManager.allow_hidden` має бути встановленим, як `True`, щоб показати приховані файли."
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/title
 msgctxt "settings"
@@ -1151,7 +1151,18 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "Примітка: Щоб вимкнути елемент панелі інструментів,\n"
+"скопіюйте його до Параметрів користувача і \n"
+"додайте ключ \"disabled\". Приклад нижче вимкне завантаження елемента: \n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"uploader\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n"
+"Опис панелі інструментів:"
 
 #: /packages/filebrowser-extension/schema/widget.json:/properties/toolbar/title
 msgctxt "settings"
@@ -1273,7 +1284,16 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "Примітка. Щоб вимкнути елемент панелі інструментів, скопіюйте його в налаштування користувача і додайте ключ \"disabled\".  Приклад нижче вимкне оновлення елемента:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"refresh\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Опис панелі інструментів:"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
@@ -1288,7 +1308,7 @@ msgstr "Чи можна довіряти HTML-файлам в разі відк�
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/trustByDefault/title
 msgctxt "settings"
 msgid "Trust HTML by default"
-msgstr ""
+msgstr "Довіряти HTML за замовчуванням"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1413,7 +1433,7 @@ msgstr "Мовна інтеграція"
 #: /packages/lsp-extension/schema/plugin.json:/properties/activate/description
 msgctxt "settings"
 msgid "Enable or disable the language server services."
-msgstr ""
+msgstr "Увімкнути або вимкнути служби мовного сервера."
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/activate/title
 msgctxt "settings"
@@ -1423,7 +1443,7 @@ msgstr "Активувати"
 #: /packages/lsp-extension/schema/plugin.json:/properties/languageServers/description
 msgctxt "settings"
 msgid "Language-server specific configuration, keyed by implementation"
-msgstr ""
+msgstr "Конфігурація указаного мовного сервера, що залежить від упровадження"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/languageServers/title
 msgctxt "settings"
@@ -1433,27 +1453,27 @@ msgstr "Мовний сервер"
 #: /packages/lsp-extension/schema/plugin.json:/properties/logAllCommunication/description
 msgctxt "settings"
 msgid "Enable or disable the logging feature of the language servers."
-msgstr ""
+msgstr "Увімкніть або вимкніть функцію ведення журналу мовних серверів."
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/logAllCommunication/title
 msgctxt "settings"
 msgid "Log communication"
-msgstr ""
+msgstr "Журнал комунікації"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/setTrace/description
 msgctxt "settings"
 msgid "Whether to ask server to send logs with execution trace (for debugging). Accepted values are: \"off\", \"messages\", \"verbose\". Servers are allowed to ignore this request."
-msgstr ""
+msgstr "Чи запитувати сервер надіслати журнали з виконанням трасування (для налагоджування). Прийняті значення: \"off\", \"messages\", \"verbose\". Серверам дозволено ігнорувати цей запит."
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/setTrace/title
 msgctxt "settings"
 msgid "Ask servers to send trace notifications"
-msgstr ""
+msgstr "Надсилання запиту серверів на отримання сповіщень про трасування"
 
 #: /packages/lsp-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Language Servers (Experimental)"
-msgstr ""
+msgstr "Мовні сервери (експериментальна версія)"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1567,22 +1587,22 @@ msgstr "Головне меню"
 #: /packages/mathjax-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "MathJax math renderer for JupyterLab"
-msgstr ""
+msgstr "Математичний рендерер MathJax для JupyterLab"
 
 #: /packages/mathjax-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "MathJax Plugin"
-msgstr ""
+msgstr "Плагін MathJax"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/id/description
 msgctxt "settings"
 msgid "The section ID"
-msgstr ""
+msgstr "ID розділу"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/label/description
 msgctxt "settings"
 msgid "The section label"
-msgstr ""
+msgstr "Мітка розділу"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/rank/description
 msgctxt "settings"
@@ -1592,22 +1612,22 @@ msgstr "Рейтинг розділу на правій панелі"
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/showModified/description
 msgctxt "settings"
 msgid "Whether to show that values have been modified from defaults"
-msgstr ""
+msgstr "Чи показувати зміни значень за замовчуванням"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataSchema/properties/properties/description
 msgctxt "settings"
 msgid "The property set up by extension"
-msgstr ""
+msgstr "Властивість, встановлена за допомогою розширення"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/description
 msgctxt "schema"
 msgid "Settings of the metadata form extension."
-msgstr ""
+msgstr "Налаштування розширення форми метаданих."
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/title
 msgctxt "schema"
 msgid "Metadata Form"
-msgstr ""
+msgstr "Форма метаданих"
 
 #: /packages/notebook-extension/schema/completer.json:/description
 msgctxt "schema"
@@ -1637,7 +1657,7 @@ msgstr "Експорт блокноту"
 #: /packages/notebook-extension/schema/panel.json:/description
 msgctxt "schema"
 msgid "Notebook Panel settings."
-msgstr ""
+msgstr "Налаштування панелі ноутбука."
 
 #: /packages/notebook-extension/schema/panel.json:/properties/toolbar/description
 msgctxt "settings"
@@ -1653,32 +1673,42 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "Примітка: Щоб вимкнути елемент панелі інструментів,\n"
+"скопіюйте його в налаштування користувача і додайте ключ \"disabled\". Приклад нижче вимкне кнопку переривання:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"interrupt\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Опис панелі інструментів:"
 
 #: /packages/notebook-extension/schema/panel.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "Notebook panel toolbar items"
-msgstr ""
+msgstr "Елементи панелі інструментів ноутбука"
 
 #: /packages/notebook-extension/schema/panel.json:/title
 msgctxt "schema"
 msgid "Notebook Panel"
-msgstr ""
+msgstr "Панель ноутбука"
 
 #: /packages/notebook-extension/schema/tracker.json:/definitions/kernelStatusConfig/properties/showOnStatusBar/description
 msgctxt "settings"
 msgid "If `true`, the kernel status progression will be displayed in the status bar otherwise it will be in the toolbar."
-msgstr ""
+msgstr "Якщо так, прогрес стану ядра буде показано у рядку стану, інакше він буде показаний на панелі інструментів."
 
 #: /packages/notebook-extension/schema/tracker.json:/definitions/kernelStatusConfig/properties/showOnStatusBar/title
 msgctxt "settings"
 msgid "Show kernel status on toolbar or status bar."
-msgstr ""
+msgstr "Показати стан ядра на панелі інструментів або у рядку стану."
 
 #: /packages/notebook-extension/schema/tracker.json:/definitions/kernelStatusConfig/properties/showProgress/title
 msgctxt "settings"
 msgid "Show execution progress."
-msgstr ""
+msgstr "Показати хід виконання."
 
 #: /packages/notebook-extension/schema/tracker.json:/description
 msgctxt "schema"
@@ -1693,17 +1723,17 @@ msgstr "Блокнот"
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoStartDefaultKernel/description
 msgctxt "settings"
 msgid "Whether to automatically start the preferred kernel."
-msgstr ""
+msgstr "Чи автоматично запускати основне ядро."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoStartDefaultKernel/title
 msgctxt "settings"
 msgid "Automatically Start Preferred Kernel"
-msgstr ""
+msgstr "Автоматично запускати основне ядро"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all code cells; it will override the CodeMirror default configuration."
-msgstr ""
+msgstr "Конфігурація для всіх кодових клітинок; вона замінить конфігурацію CodeMirror за замовчуванням."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/title
 msgctxt "settings"
@@ -1723,12 +1753,12 @@ msgstr "Стандартний тип клітинки"
 #: /packages/notebook-extension/schema/tracker.json:/properties/documentWideUndoRedo/description
 msgctxt "settings"
 msgid "Enables the undo/redo actions at the notebook document level; aka undoing within a cell may undo the latest notebook change that happen in another cell. This is deprecated and will be removed in 5.0.0."
-msgstr ""
+msgstr "Дозволяє скасувати/повторити дії на рівні документа блокнота; скасовування в клітинці може скасувати останні зміни в блокноті, які відбулися в іншій клітинці. Цей параметр застарілий і буде вилучений у версії 5.0.0."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/documentWideUndoRedo/title
 msgctxt "settings"
 msgid "Enable undo/redo actions at the notebook document level."
-msgstr ""
+msgstr "Увімкнути скасування/повторення дій на рівні документа блокнота."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/inputHistoryScope/description
 msgctxt "settings"
@@ -1913,7 +1943,7 @@ msgstr "Сеанси"
 #: /packages/settingeditor-extension/schema/form-ui.json:/description
 msgctxt "schema"
 msgid "Settings editor form ui settings."
-msgstr ""
+msgstr "Параметри інтерфейсу редактора налаштувань."
 
 #: /packages/settingeditor-extension/schema/form-ui.json:/properties/settingEditorType/description
 msgctxt "settings"
@@ -1923,12 +1953,12 @@ msgstr ""
 #: /packages/settingeditor-extension/schema/form-ui.json:/properties/settingEditorType/title
 msgctxt "settings"
 msgid "Type of editor for the setting."
-msgstr ""
+msgstr "Тип редактора для налаштувань."
 
 #: /packages/settingeditor-extension/schema/form-ui.json:/title
 msgctxt "schema"
 msgid "Settings Editor Form UI"
-msgstr ""
+msgstr "Інтерфейс редактора налаштувань"
 
 #: /packages/settingeditor-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1998,7 +2028,7 @@ msgstr "Термінал"
 #: /packages/terminal-extension/schema/plugin.json:/properties/closeOnExit/description
 msgctxt "settings"
 msgid "Close the widget when exiting the terminal."
-msgstr ""
+msgstr "Закрити віджет при виході з термінала."
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/closeOnExit/title
 msgctxt "settings"
@@ -2103,7 +2133,7 @@ msgstr "Термінал"
 #: /packages/toc-extension/schema/registry.json:/description
 msgctxt "schema"
 msgid "Default table of contents settings."
-msgstr ""
+msgstr "Налаштування змісту за замовчуванням."
 
 #: /packages/toc-extension/schema/registry.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -2113,12 +2143,12 @@ msgstr "Зміст"
 #: /packages/toc-extension/schema/registry.json:/properties/baseNumbering/description
 msgctxt "settings"
 msgid "The number headings start at."
-msgstr ""
+msgstr "Заголовки цифр починаються."
 
 #: /packages/toc-extension/schema/registry.json:/properties/baseNumbering/title
 msgctxt "settings"
 msgid "Base level for the highest headings"
-msgstr ""
+msgstr "Базовий рівень для найвищих заголовків"
 
 #: /packages/toc-extension/schema/registry.json:/properties/includeOutput/description
 msgctxt "settings"
@@ -2133,7 +2163,7 @@ msgstr "Включати ємність клітинки в заголовки"
 #: /packages/toc-extension/schema/registry.json:/properties/maximalDepth/title
 msgctxt "settings"
 msgid "Maximal headings depth"
-msgstr ""
+msgstr "Максимальна глибина заголовків"
 
 #: /packages/toc-extension/schema/registry.json:/properties/numberHeaders/description
 msgctxt "settings"
@@ -2143,7 +2173,7 @@ msgstr ""
 #: /packages/toc-extension/schema/registry.json:/properties/numberHeaders/title
 msgctxt "settings"
 msgid "Enable headings numbering"
-msgstr ""
+msgstr "Увімкнути нумерацію заголовків"
 
 #: /packages/toc-extension/schema/registry.json:/properties/numberingH1/description
 msgctxt "settings"
@@ -2324,7 +2354,7 @@ msgstr "Закрити всі вкладки"
 
 #: packages/application-extension/src/index.tsx:289
 msgid "Show Header"
-msgstr ""
+msgstr "Показати заголовок"
 
 #: packages/application-extension/src/index.tsx:300
 msgid "Show Left Sidebar"
@@ -2336,11 +2366,11 @@ msgstr "Закрити праву бічну панель"
 
 #: packages/application-extension/src/index.tsx:334
 msgid "Show Right Activity Bar"
-msgstr ""
+msgstr "Показати праву панель активності"
 
 #: packages/application-extension/src/index.tsx:335
 msgid "Show Left Activity Bar"
-msgstr ""
+msgstr "Показати ліву панель активності"
 
 #: packages/application-extension/src/index.tsx:354
 msgid "Presentation Mode"
@@ -2348,11 +2378,11 @@ msgstr "Режим презентації"
 
 #: packages/application-extension/src/index.tsx:365
 msgid "Set %1 mode."
-msgstr ""
+msgstr "Встановити режим %1."
 
 #: packages/application-extension/src/index.tsx:366
 msgid "Set the layout `mode`."
-msgstr ""
+msgstr "Встановити макет `mode`."
 
 #: packages/application-extension/src/index.tsx:367
 msgid "The layout `mode` can be \"single-document\" or \"multiple-document\"."
@@ -2360,7 +2390,7 @@ msgstr ""
 
 #: packages/application-extension/src/index.tsx:397
 msgid "Reset Default Layout"
-msgstr ""
+msgstr "Відновити макет за замовчуванням"
 
 #: packages/application-extension/src/index.tsx:527
 msgid "Error Registering Plugins"
@@ -2450,7 +2480,7 @@ msgstr "альтернативна бічна панель"
 
 #: packages/application/src/utils.ts:148
 msgid "%1 and %2"
-msgstr ""
+msgstr "%1 та %2"
 
 #: packages/apputils-extension/src/announcements.ts:102
 msgid "Would you like to receive official Jupyter news?\n"
@@ -2459,31 +2489,31 @@ msgstr ""
 
 #: packages/apputils-extension/src/announcements.ts:110
 msgid "Open privacy policy"
-msgstr ""
+msgstr "Відкрита політика конфіденційності"
 
 #: packages/apputils-extension/src/announcements.ts:116
 msgid "Privacy policies"
-msgstr ""
+msgstr "Політика конфіденційності"
 
 #: packages/apputils-extension/src/announcements.ts:126 packages/extensionmanager/src/widget.tsx:434
 msgid "Yes"
-msgstr ""
+msgstr "Так"
 
 #: packages/apputils-extension/src/announcements.ts:143 packages/extensionmanager/src/widget.tsx:424
 msgid "No"
-msgstr ""
+msgstr "Ні"
 
 #: packages/apputils-extension/src/announcements.ts:180
 msgid "Hide"
-msgstr ""
+msgstr "Приховати"
 
 #: packages/apputils-extension/src/announcements.ts:181
 msgid "Never show this notification again."
-msgstr ""
+msgstr "Більше не показувати це сповіщення."
 
 #: packages/apputils-extension/src/announcements.ts:243
 msgid "Do not check for updates"
-msgstr ""
+msgstr "Не перевіряти наявність оновлень"
 
 #: packages/apputils-extension/src/announcements.ts:244
 msgid "If pressed, you will not be prompted if a new JupyterLab version is found."
@@ -2993,7 +3023,7 @@ msgstr "Номери рядків"
 
 #: packages/codemirror/src/extension.ts:711
 msgid "Line Wrap"
-msgstr ""
+msgstr "Перенесення рядків"
 
 #: packages/codemirror/src/extension.ts:720 packages/fileeditor-extension/src/commands.ts:421 packages/fileeditor-extension/src/commands.ts:428 packages/mainmenu-extension/src/index.ts:588
 msgid "Match Brackets"
@@ -3001,7 +3031,7 @@ msgstr "Виділяти дужки"
 
 #: packages/codemirror/src/extension.ts:733
 msgid "Rectangular selection"
-msgstr ""
+msgstr "Прямокутне виділення"
 
 #: packages/codemirror/src/extension.ts:734
 msgid "Rectangular (block) selection can be created by dragging the mouse pointer while holding the left mouse button and the Alt key. When the Alt key is pressed, a crosshair cursor will appear, indicating that the rectangular selection mode is active."
@@ -3009,7 +3039,7 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:759
 msgid "Rulers"
-msgstr ""
+msgstr "Лінійки"
 
 #: packages/codemirror/src/extension.ts:778
 msgid "Smart Indentation"
@@ -3017,11 +3047,11 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:790
 msgid "Tab size"
-msgstr ""
+msgstr "Розмір вкладки"
 
 #: packages/codemirror/src/extension.ts:802
 msgid "Multiple selections"
-msgstr ""
+msgstr "Вибір кількох елементів"
 
 #: packages/codemirror/src/extension.ts:817
 msgid "Custom editor styles"
@@ -3029,23 +3059,23 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:822
 msgid "Font Family"
-msgstr ""
+msgstr "Сімейство шрифтів"
 
 #: packages/codemirror/src/extension.ts:828
 msgid "Font Size"
-msgstr ""
+msgstr "Розмір шрифту"
 
 #: packages/codemirror/src/extension.ts:832
 msgid "Line Height"
-msgstr ""
+msgstr "Висота рядка"
 
 #: packages/codemirror/src/extension.ts:852
 msgid "CodeMirror theme"
-msgstr ""
+msgstr "Тема CodeMirror"
 
 #: packages/codemirror/src/extension.ts:865
 msgid "Control character"
-msgstr ""
+msgstr "Керівний символ"
 
 #: packages/codemirror/src/extension.ts:867
 msgid "Selection deleted"
@@ -3061,11 +3091,11 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:871
 msgid "to"
-msgstr ""
+msgstr "кому"
 
 #: packages/codemirror/src/extension.ts:872
 msgid "folded code"
-msgstr ""
+msgstr "згорнутий код"
 
 #: packages/codemirror/src/extension.ts:873
 msgid "unfold"
@@ -3081,11 +3111,11 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:877
 msgid "Go to line"
-msgstr ""
+msgstr "Перейти до рядка"
 
 #: packages/codemirror/src/extension.ts:878
 msgid "go"
-msgstr ""
+msgstr "перейти"
 
 #: packages/codemirror/src/extension.ts:879 packages/documentsearch/src/searchview.tsx:154 packages/documentsearch/src/searchview.tsx:159
 msgid "Find"
@@ -3097,31 +3127,31 @@ msgstr "Замінити"
 
 #: packages/codemirror/src/extension.ts:881
 msgid "next"
-msgstr ""
+msgstr "далі"
 
 #: packages/codemirror/src/extension.ts:882
 msgid "previous"
-msgstr ""
+msgstr "попередній"
 
 #: packages/codemirror/src/extension.ts:883
 msgid "all"
-msgstr ""
+msgstr "усі"
 
 #: packages/codemirror/src/extension.ts:884
 msgid "match case"
-msgstr ""
+msgstr "враховувати регістр"
 
 #: packages/codemirror/src/extension.ts:885
 msgid "replace"
-msgstr ""
+msgstr "замінити"
 
 #: packages/codemirror/src/extension.ts:886
 msgid "replace all"
-msgstr ""
+msgstr "замінити все"
 
 #: packages/codemirror/src/extension.ts:887
 msgid "close"
-msgstr ""
+msgstr "закрити"
 
 #: packages/codemirror/src/extension.ts:888
 msgid "current match"
@@ -3145,31 +3175,31 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:895
 msgid "Diagnostics"
-msgstr ""
+msgstr "Діагностика"
 
 #: packages/codemirror/src/extension.ts:896
 msgid "No diagnostics"
-msgstr ""
+msgstr "Без діагностики"
 
 #: packages/codemirror/src/language.ts:1006
 msgid "JSON-LD"
-msgstr ""
+msgstr "JSON-LD"
 
 #: packages/codemirror/src/language.ts:1017
 msgid "Jinja2"
-msgstr ""
+msgstr "Jinja2"
 
 #: packages/codemirror/src/language.ts:1027
 msgid "Julia"
-msgstr ""
+msgstr "Julia"
 
 #: packages/codemirror/src/language.ts:1037
 msgid "Kotlin"
-msgstr ""
+msgstr "Kotlin"
 
 #: packages/codemirror/src/language.ts:1047
 msgid "LESS"
-msgstr ""
+msgstr "МЕНШЕ"
 
 #: packages/codemirror/src/language.ts:1057
 msgid "LiveScript"
@@ -3177,7 +3207,7 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1068
 msgid "Lua"
-msgstr ""
+msgstr "Lua"
 
 #: packages/codemirror/src/language.ts:1078
 msgid "mIRC"
@@ -3185,7 +3215,7 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1087
 msgid "Mathematica"
-msgstr ""
+msgstr "Математика"
 
 #: packages/codemirror/src/language.ts:1097
 msgid "Modelica"
