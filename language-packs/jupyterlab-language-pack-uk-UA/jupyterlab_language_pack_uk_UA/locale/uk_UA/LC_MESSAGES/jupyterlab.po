@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2023-06-24 15:20\n"
+"PO-Revision-Date: 2023-06-24 16:32\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -276,27 +276,31 @@ msgid "Overrides default widget position in the application layout\n"
 "  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
 "  \"multiple\": { \"Terminal\": { \"area\": \"right\" } }\n"
 "}."
-msgstr ""
+msgstr "Змінює положення віджета за замовчуванням у макеті програми,\n"
+"наприклад, положення терміналів у правій бічній панелі в режимі декількох документів і внизу в режимі одного документа, {\n"
+"  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
+"  \"multiple\": { \"Terminal\": { \"area\": \"right\" } }\n"
+"}.\n"
 
 #: /packages/application-extension/schema/shell.json:/properties/layout/title
 msgctxt "settings"
 msgid "Customize shell widget positioning"
-msgstr ""
+msgstr "Налаштувати розміщення віджетів оболонки"
 
 #: /packages/application-extension/schema/shell.json:/properties/startMode/description
 msgctxt "settings"
 msgid "The mode under which JupyterLab should start. If empty, the mode will be imposed by the URL"
-msgstr ""
+msgstr "Режим, у якому має запускатися JupyterLab. Якщо значення порожнє, режим буде задано за URL-адресою"
 
 #: /packages/application-extension/schema/shell.json:/properties/startMode/title
 msgctxt "settings"
 msgid "Start mode: ``, `single` or `multiple`"
-msgstr ""
+msgstr "Початковий режим: ``, `single` або `multiple`"
 
 #: /packages/application-extension/schema/shell.json:/title
 msgctxt "schema"
 msgid "JupyterLab Shell"
-msgstr ""
+msgstr "Оболонка JupyterLab"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/disabled/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/disabled/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/disabled/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/disabled/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/disabled/title
 msgctxt "settings"
@@ -347,7 +351,18 @@ msgid "Note: To disable a item,\n"
 "  ]\n"
 "}\n\n"
 "Top bar description:"
-msgstr ""
+msgstr "Примітка. Щоб вимкнути елемент панелі інструментів,\n"
+"скопіюйте його в налаштування користувача та додайте\n"
+"ключ \"disabled\". Приклад нижче вимкне меню користувача:\n"
+"{\n"
+"\"toolbar\": [\n"
+"{\n"
+"\"name\": \"user-menu\",\n"
+"\"disabled\": true\n"
+"}\n"
+"]\n"
+"}\n\n"
+"Опис верхньої панелі:"
 
 #: /packages/application-extension/schema/top-bar.json:/properties/toolbar/title
 msgctxt "settings"
@@ -367,17 +382,17 @@ msgstr "Налаштування сповіщень."
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
 msgctxt "settings"
 msgid "Whether to check for newer version of JupyterLab or not. It requires `fechNews` to be `true` to be active. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "Перевірити новішу версію JupyterLab чи ні. Щоб активувати `fechNews`, потрібно встановити значення `true`. Якщо значення `true` встановлене, буде створено запит на вебсайт."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/title
 msgctxt "settings"
 msgid "Check for JupyterLab updates"
-msgstr ""
+msgstr "Перевірити оновлення JupyterLab"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/doNotDisturbMode/description
 msgctxt "settings"
 msgid "If `true`, no toast notifications will be automatically displayed."
-msgstr ""
+msgstr "Якщо так, то спливаючі сповіщення не будуть відображені автоматично."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/doNotDisturbMode/title
 msgctxt "settings"
@@ -387,12 +402,12 @@ msgstr "Вимкнути всі сповіщення"
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/description
 msgctxt "settings"
 msgid "Whether to fetch news from Jupyter news feed. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "Чи отримувати новини зі стрічки новин Jupyter. Якщо так, то буде зроблено запит на сайт."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/title
 msgctxt "settings"
 msgid "Fetch official Jupyter news"
-msgstr ""
+msgstr "Отримати офіційні новини Jupyter"
 
 #: /packages/apputils-extension/schema/notification.json:/title
 msgctxt "schema"
@@ -437,12 +452,12 @@ msgstr "Друк"
 #: /packages/apputils-extension/schema/sanitizer.json:/description
 msgctxt "schema"
 msgid "HTML Sanitizer settings."
-msgstr ""
+msgstr "Налаштування Дезінфектора HTML."
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/description
 msgctxt "settings"
 msgid "Scheme allowed by the HTML sanitizer."
-msgstr ""
+msgstr "Схема, дозволена дезінфікатором HTML."
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/title
 msgctxt "settings"
@@ -457,12 +472,12 @@ msgstr "Чи заміняти URL-адреси посиланнями чи ні.
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/autolink/title
 msgctxt "settings"
 msgid "Autolink URL replacement"
-msgstr ""
+msgstr "Заміна URL-адреси автопосилання"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/title
 msgctxt "schema"
 msgid "HTML Sanitizer"
-msgstr ""
+msgstr "Дезінфектор HTML"
 
 #: /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/code-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/content-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/ui-font-family/description
 msgctxt "settings"
@@ -527,12 +542,12 @@ msgstr "Тема"
 #: /packages/apputils-extension/schema/utilityCommands.json:/description
 msgctxt "schema"
 msgid "Shortcut help settings."
-msgstr ""
+msgstr "Налаштувати настройки довідки."
 
 #: /packages/apputils-extension/schema/utilityCommands.json:/title
 msgctxt "schema"
 msgid "Shortcuts Help"
-msgstr ""
+msgstr "Довідка сполучень клавіш"
 
 #: /packages/apputils-extension/schema/workspaces.json:/description
 msgctxt "schema"
@@ -627,17 +642,17 @@ msgstr "Провайдери з вищим рейтингом будуть по�
 #: /packages/completer-extension/schema/manager.json:/properties/availableProviders/title
 msgctxt "settings"
 msgid "Completion providers rank setting."
-msgstr ""
+msgstr "Визначення настроювання рівня послуг провайдерів."
 
 #: /packages/completer-extension/schema/manager.json:/properties/providerTimeout/description
 msgctxt "settings"
 msgid "If a provider can not return the response for a completer request before timeout, the result of this provider will be ignored. Value is in millisecond"
-msgstr ""
+msgstr "Якщо провайдер не може повернути відповідь на запит до завершення часу очікування, результат цього провайдера буде пропущено. Значення в мілісекундах"
 
 #: /packages/completer-extension/schema/manager.json:/properties/providerTimeout/title
 msgctxt "settings"
 msgid "Default timeout for a provider."
-msgstr ""
+msgstr "Час очікування для постачальника за замовчуванням."
 
 #: /packages/completer-extension/schema/manager.json:/properties/showDocumentationPanel/description
 msgctxt "settings"
@@ -752,37 +767,48 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "Примітка. Щоб вимкнути елемент панелі інструментів,\n"
+"скопіюйте його в Користувацькі налаштування та додайте\n"
+"«вимкнений» ключ. Наведений нижче приклад вимкне елемент селектора роздільника:\n"
+"  \"contextMenu\": [\n"
+"    {\n"
+"      \"command\": \"filebrowser:download\",\n"
+"      \"selector\": \".jp-DirListing-item[data-isdir=\\\"false\\\"]\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n"
+"Опис панелі інструментів:"
 
 #: /packages/csvviewer-extension/schema/csv.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "CSV viewer toolbar items"
-msgstr ""
+msgstr "Перегляд елементів панелі інструментів переглядача CSV"
 
 #: /packages/csvviewer-extension/schema/csv.json:/title
 msgctxt "schema"
 msgid "CSV Viewer"
-msgstr ""
+msgstr "Переглядач CSV"
 
 #: /packages/csvviewer-extension/schema/tsv.json:/description
 msgctxt "schema"
 msgid "TSV Viewer settings."
-msgstr ""
+msgstr "Налаштування Переглядача TSV."
 
 #: /packages/csvviewer-extension/schema/tsv.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "TSV Viewer"
-msgstr ""
+msgstr "Переглядач TSV"
 
 #: /packages/csvviewer-extension/schema/tsv.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "TSV viewer toolbar items"
-msgstr ""
+msgstr "Перегляд елементів панелі інструментів переглядача TSV"
 
 #: /packages/csvviewer-extension/schema/tsv.json:/title
 msgctxt "schema"
 msgid "TSV Viewer"
-msgstr ""
+msgstr "Переглядач TSV"
 
 #: /packages/debugger-extension/schema/main.json:/description
 msgctxt "schema"
@@ -797,22 +823,22 @@ msgstr "Налагоджувач"
 #: /packages/debugger-extension/schema/main.json:/properties/autoCollapseDebuggerSidebar/description
 msgctxt "settings"
 msgid "Collapse the debugger sidebar when disabling the debugger on a document."
-msgstr ""
+msgstr "Згорнути бічну панель налагоджувача при вимкненні налагоджувача у документі."
 
 #: /packages/debugger-extension/schema/main.json:/properties/autoCollapseDebuggerSidebar/title
 msgctxt "settings"
 msgid "Auto Collapse Debugger Sidebar"
-msgstr ""
+msgstr "Автоматично згорнути бічну панель налагоджувача"
 
 #: /packages/debugger-extension/schema/main.json:/properties/defaultKernelSourcesFilter/description
 msgctxt "settings"
 msgid "A regular expression filter to apply by default when showing the kernel sources"
-msgstr ""
+msgstr "Фільтр регулярних виразів, який застосовується за замовчуванням під час відображення джерел ядра"
 
 #: /packages/debugger-extension/schema/main.json:/properties/defaultKernelSourcesFilter/title
 msgctxt "settings"
 msgid "Default kernel sources regexp filter"
-msgstr ""
+msgstr "Фільтр regexp для джерел ядра за замовчуванням"
 
 #: /packages/debugger-extension/schema/main.json:/properties/variableFilters/description
 msgctxt "settings"
@@ -1049,12 +1075,12 @@ msgstr "Відображати останню змінену колонку"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/sortNotebooksFirst/description
 msgctxt "settings"
 msgid "Whether to group the notebooks away from files"
-msgstr ""
+msgstr "Чи групувати блокноти окремо від файлів"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/sortNotebooksFirst/title
 msgctxt "settings"
 msgid "When sorting by name, group notebooks before other files"
-msgstr ""
+msgstr "Під час сортування за назвою групувати блокноти перед іншими файлами"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/useFuzzyFilter/description
 msgctxt "settings"
@@ -1109,7 +1135,7 @@ msgstr "Відкрити оглядач файлів за допомогою"
 #: /packages/filebrowser-extension/schema/widget.json:/description
 msgctxt "schema"
 msgid "File Browser widget settings."
-msgstr ""
+msgstr "Налаштування віджету файлового провідника."
 
 #: /packages/filebrowser-extension/schema/widget.json:/properties/toolbar/description
 msgctxt "settings"
@@ -1130,12 +1156,12 @@ msgstr ""
 #: /packages/filebrowser-extension/schema/widget.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "File browser toolbar items"
-msgstr ""
+msgstr "Елементи панелі інструментів файлового провідника"
 
 #: /packages/filebrowser-extension/schema/widget.json:/title
 msgctxt "schema"
 msgid "File Browser Widget"
-msgstr ""
+msgstr "Віджет файлового провідника"
 
 #: /packages/fileeditor-extension/schema/completer.json:/description
 msgctxt "schema"
@@ -1187,7 +1213,7 @@ msgstr "Конфігурація редактора"
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/scrollPastEnd/description
 msgctxt "settings"
 msgid "Whether to scroll past the end of text document."
-msgstr ""
+msgstr "Чи прокручувати до кінця текстового документа."
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/scrollPastEnd/title
 msgctxt "settings"
@@ -1199,12 +1225,14 @@ msgctxt "settings"
 msgid "Note: To disable a toolbar item,\n"
 "copy it to User Preferences and add the\n"
 "\"disabled\" key. Toolbar description:"
-msgstr ""
+msgstr "Примітка: Щоб вимкнути елемент панелі інструментів,\n"
+"скопіюйте його до Параметрів користувача і додайте\n"
+"ключ \"disabled\". Опис панелі інструментів:"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "Text editor toolbar items"
-msgstr ""
+msgstr "Елементи панелі інструментів текстового редактора"
 
 #: /packages/fileeditor-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1224,7 +1252,7 @@ msgstr "Довідка"
 #: /packages/htmlviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "HTML Viewer settings."
-msgstr ""
+msgstr "Налаштування HTML-переглядача."
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -1250,12 +1278,12 @@ msgstr ""
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "HTML viewer toolbar items"
-msgstr ""
+msgstr "Елементи панелі інструментів HTML-переглядача"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/trustByDefault/description
 msgctxt "settings"
 msgid "Whether to trust HTML files upon opening"
-msgstr ""
+msgstr "Чи можна довіряти HTML-файлам в разі відкриття"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/trustByDefault/title
 msgctxt "settings"
@@ -1265,7 +1293,7 @@ msgstr ""
 #: /packages/htmlviewer-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "HTML Viewer"
-msgstr ""
+msgstr "Переглядач HTML"
 
 #: /packages/hub-extension/schema/menu.json:/description
 msgctxt "schema"
@@ -1275,7 +1303,7 @@ msgstr "Налаштування JupyterHub."
 #: /packages/hub-extension/schema/menu.json:/title
 msgctxt "schema"
 msgid "JupyterHub"
-msgstr ""
+msgstr "JupyterHub"
 
 #: /packages/imageviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1355,7 +1383,7 @@ msgstr "Консоль журналу"
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/configuration/description
 msgctxt "settings"
 msgid "Configuration to be sent to language server over LSP when initialized: see the specific language server's documentation for more"
-msgstr ""
+msgstr "При ініціалізації конфігурації на сервер конкретної мови дивіться документацію сервера конкретної мови для більшої інформації"
 
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/configuration/title
 msgctxt "settings"
@@ -1790,7 +1818,7 @@ msgstr ""
 #: /packages/notebook-extension/schema/tracker.json:/properties/renderingLayout/title
 msgctxt "settings"
 msgid "Rendering Layout"
-msgstr ""
+msgstr "Обробка макета"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/scrollPastEnd/description
 msgctxt "settings"
@@ -1860,7 +1888,7 @@ msgstr ""
 #: /packages/notebook-extension/schema/tracker.json:/properties/windowingMode/title
 msgctxt "settings"
 msgid "Windowing mode"
-msgstr ""
+msgstr "Режим показу"
 
 #: /packages/notebook-extension/schema/tracker.json:/title
 msgctxt "schema"
@@ -1870,17 +1898,17 @@ msgstr "Блокнот"
 #: /packages/running-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Sessions Settings"
-msgstr ""
+msgstr "Налаштування сесії"
 
 #: /packages/running-extension/schema/plugin.json:/jupyter.lab.menus/context[3]/submenu/label
 msgctxt "menu"
 msgid "Connected Sessions…"
-msgstr ""
+msgstr "Підключені сеанси…"
 
 #: /packages/running-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Sessions"
-msgstr ""
+msgstr "Сеанси"
 
 #: /packages/settingeditor-extension/schema/form-ui.json:/description
 msgctxt "schema"
@@ -1975,7 +2003,7 @@ msgstr ""
 #: /packages/terminal-extension/schema/plugin.json:/properties/closeOnExit/title
 msgctxt "settings"
 msgid "Close on exit"
-msgstr ""
+msgstr "Закрити при виході"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontFamily/description
 msgctxt "settings"
