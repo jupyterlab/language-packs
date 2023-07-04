@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 231\n"
 "Language-Team: Finnish\n"
 "Language: fi_FI\n"
-"PO-Revision-Date: 2023-06-12 10:20\n"
+"PO-Revision-Date: 2023-07-04 11:34\n"
 
 #: /packages/application-extension/schema/menus.json:/description /packages/application-extension/schema/menus.json:/title
 msgctxt "schema"
@@ -28,6 +28,26 @@ msgstr "Solun tyyppi"
 msgctxt "schema"
 msgid "Jupyter Notebook Pages"
 msgstr "Jupyter-muistikirjan sivut"
+
+#: /packages/application-extension/schema/shell.json:/description
+msgctxt "schema"
+msgid "Notebook Shell layout settings."
+msgstr ""
+
+#: /packages/application-extension/schema/shell.json:/properties/layout/description
+msgctxt "settings"
+msgid "Overrides default widget position in the application layout"
+msgstr ""
+
+#: /packages/application-extension/schema/shell.json:/properties/layout/title
+msgctxt "settings"
+msgid "Customize shell widget positioning"
+msgstr ""
+
+#: /packages/application-extension/schema/shell.json:/title
+msgctxt "schema"
+msgid "Notebook Shell"
+msgstr ""
 
 #: /packages/application-extension/schema/title.json:/description /packages/application-extension/schema/title.json:/title
 msgctxt "schema"
@@ -63,11 +83,6 @@ msgstr "Jupyter-muistikirjan yläalue"
 msgctxt "schema"
 msgid "Jupyter Notebook Zen Mode"
 msgstr "Jupyter-muistikirjan Zen-tila"
-
-#: /packages/documentsearch-extension/schema/notebookShellWidgetListener.json:/description /packages/documentsearch-extension/schema/notebookShellWidgetListener.json:/title
-msgctxt "schema"
-msgid "Jupyter Notebook DocumentSearch Settings"
-msgstr "Jupyter-muistikirjan asiakirjahaun asetukset"
 
 #: /packages/help-extension/schema/open.json:/description /packages/help-extension/schema/open.json:/title
 msgctxt "schema"
@@ -225,57 +240,57 @@ msgctxt "schema"
 msgid "File Browser Widget"
 msgstr "Tiedostoselaimen pienohjelma"
 
-#: packages/application-extension/src/index.ts:1000
+#: packages/application-extension/src/index.ts:1058
 msgid "Toggle Zen Mode"
 msgstr "Vaihda Zen-tila päälle / pois"
 
-#: packages/application-extension/src/index.ts:135
+#: packages/application-extension/src/index.ts:141
 msgid "Are you sure you want to exit Jupyter Notebook?\n\n"
 "Any unsaved changes will be lost."
 msgstr "Haluatko varmasti poistua Jupyter-muistikirjasta?\n\n"
 "Kaikki tallentamattomat muutokset menetetään."
 
-#: packages/application-extension/src/index.ts:274
+#: packages/application-extension/src/index.ts:310
 msgid "Open JupyterLab"
 msgstr "Avaa JupyterLab"
 
-#: packages/application-extension/src/index.ts:282
+#: packages/application-extension/src/index.ts:318
 msgid "File Browser"
 msgstr "Tiedostoselain"
 
-#: packages/application-extension/src/index.ts:340
+#: packages/application-extension/src/index.ts:376
 msgid "Handle Local Link"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:528
+#: packages/application-extension/src/index.ts:586
 msgid "Rename…"
 msgstr "Nimeä uudelleen…"
 
-#: packages/application-extension/src/index.ts:594
+#: packages/application-extension/src/index.ts:652
 msgid "Show Header"
 msgstr "Näytä yläpalkki"
 
-#: packages/application-extension/src/index.ts:684
+#: packages/application-extension/src/index.ts:742
 msgid "Show %1 in the left sidebar"
 msgstr "Näytä %1 vasemmassa sivupalkissa"
 
-#: packages/application-extension/src/index.ts:689
+#: packages/application-extension/src/index.ts:747
 msgid "Show %1 in the right sidebar"
 msgstr "Näytä %1 oikeassa sivupalkissa"
 
-#: packages/application-extension/src/index.ts:694
+#: packages/application-extension/src/index.ts:752
 msgid "Show %1 in the sidebar"
 msgstr "Näytä %1 sivupalkissa"
 
-#: packages/application-extension/src/index.ts:809
+#: packages/application-extension/src/index.ts:867
 msgid "Left Sidebar"
 msgstr "Vasen sivupalkki"
 
-#: packages/application-extension/src/index.ts:811
+#: packages/application-extension/src/index.ts:869
 msgid "Right Sidebar"
 msgstr "Oikea sivupalkki"
 
-#: packages/application/src/shell.ts:203 packages/application/src/shell.ts:207
+#: packages/application/src/shell.ts:238 packages/application/src/shell.ts:242
 msgid "Collapse %1 side panel"
 msgstr "Tiivistä %1 sivupaneeli"
 
@@ -331,9 +346,13 @@ msgstr "Käynnistä Jupyter-muistikirjan tiedostoselain"
 msgid "Notebook"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:107
+#: packages/notebook-extension/src/index.ts:109
 msgid "Last Checkpoint: %1"
 msgstr "Viimeisin automaattitallennus: %1"
+
+#: packages/notebook-extension/src/index.ts:150
+msgid "Close and Shut Down Notebook"
+msgstr ""
 
 #: packages/notebook-extension/src/trusted.tsx:75
 msgid "JavaScript enabled for notebook display"
