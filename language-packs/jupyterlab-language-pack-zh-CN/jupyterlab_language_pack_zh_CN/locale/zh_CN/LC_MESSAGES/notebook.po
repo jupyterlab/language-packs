@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 231\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-06-13 09:09\n"
+"PO-Revision-Date: 2023-07-04 11:35\n"
 
 #: /packages/application-extension/schema/menus.json:/description /packages/application-extension/schema/menus.json:/title
 msgctxt "schema"
@@ -28,6 +28,26 @@ msgstr "单元格类型"
 msgctxt "schema"
 msgid "Jupyter Notebook Pages"
 msgstr "Jupyter 笔记本页面"
+
+#: /packages/application-extension/schema/shell.json:/description
+msgctxt "schema"
+msgid "Notebook Shell layout settings."
+msgstr "笔记本 Shell 布局设置。"
+
+#: /packages/application-extension/schema/shell.json:/properties/layout/description
+msgctxt "settings"
+msgid "Overrides default widget position in the application layout"
+msgstr "覆盖应用程序布局中的默认小部件位置"
+
+#: /packages/application-extension/schema/shell.json:/properties/layout/title
+msgctxt "settings"
+msgid "Customize shell widget positioning"
+msgstr "自定义 shell 小部件位置"
+
+#: /packages/application-extension/schema/shell.json:/title
+msgctxt "schema"
+msgid "Notebook Shell"
+msgstr "笔记本 Shell"
 
 #: /packages/application-extension/schema/title.json:/description /packages/application-extension/schema/title.json:/title
 msgctxt "schema"
@@ -63,11 +83,6 @@ msgstr "Jupyter 笔记本顶部区域"
 msgctxt "schema"
 msgid "Jupyter Notebook Zen Mode"
 msgstr "Jupyter 笔记本禅模式"
-
-#: /packages/documentsearch-extension/schema/notebookShellWidgetListener.json:/description /packages/documentsearch-extension/schema/notebookShellWidgetListener.json:/title
-msgctxt "schema"
-msgid "Jupyter Notebook DocumentSearch Settings"
-msgstr "Jupyter 笔记本文档搜索设置"
 
 #: /packages/help-extension/schema/open.json:/description /packages/help-extension/schema/open.json:/title
 msgctxt "schema"
@@ -234,56 +249,56 @@ msgctxt "schema"
 msgid "File Browser Widget"
 msgstr "文件浏览器小部件"
 
-#: packages/application-extension/src/index.ts:1000
+#: packages/application-extension/src/index.ts:1058
 msgid "Toggle Zen Mode"
 msgstr "切换禅模式"
 
-#: packages/application-extension/src/index.ts:135
+#: packages/application-extension/src/index.ts:141
 msgid "Are you sure you want to exit Jupyter Notebook?\n\n"
 "Any unsaved changes will be lost."
 msgstr "您确定要退出 Jupyter 笔记本吗？所有未保存的更改都会丢失。"
 
-#: packages/application-extension/src/index.ts:274
+#: packages/application-extension/src/index.ts:310
 msgid "Open JupyterLab"
 msgstr "打开 JupyterLab"
 
-#: packages/application-extension/src/index.ts:282
+#: packages/application-extension/src/index.ts:318
 msgid "File Browser"
 msgstr "文件浏览器"
 
-#: packages/application-extension/src/index.ts:340
+#: packages/application-extension/src/index.ts:376
 msgid "Handle Local Link"
 msgstr "处理本地链接"
 
-#: packages/application-extension/src/index.ts:528
+#: packages/application-extension/src/index.ts:586
 msgid "Rename…"
 msgstr "重命名…"
 
-#: packages/application-extension/src/index.ts:594
+#: packages/application-extension/src/index.ts:652
 msgid "Show Header"
 msgstr "显示页头"
 
-#: packages/application-extension/src/index.ts:684
+#: packages/application-extension/src/index.ts:742
 msgid "Show %1 in the left sidebar"
 msgstr "在左侧边栏显示 %1"
 
-#: packages/application-extension/src/index.ts:689
+#: packages/application-extension/src/index.ts:747
 msgid "Show %1 in the right sidebar"
 msgstr "在右侧边栏显示 %1"
 
-#: packages/application-extension/src/index.ts:694
+#: packages/application-extension/src/index.ts:752
 msgid "Show %1 in the sidebar"
 msgstr "在侧边栏显示 %1"
 
-#: packages/application-extension/src/index.ts:809
+#: packages/application-extension/src/index.ts:867
 msgid "Left Sidebar"
 msgstr "左侧边栏"
 
-#: packages/application-extension/src/index.ts:811
+#: packages/application-extension/src/index.ts:869
 msgid "Right Sidebar"
 msgstr "右侧边栏"
 
-#: packages/application/src/shell.ts:203 packages/application/src/shell.ts:207
+#: packages/application/src/shell.ts:238 packages/application/src/shell.ts:242
 msgid "Collapse %1 side panel"
 msgstr "折叠 %1 侧面板"
 
@@ -339,9 +354,13 @@ msgstr "启动 Jupyter 笔记本文件浏览器"
 msgid "Notebook"
 msgstr "笔记本"
 
-#: packages/notebook-extension/src/index.ts:107
+#: packages/notebook-extension/src/index.ts:109
 msgid "Last Checkpoint: %1"
 msgstr "上一检查点: %1"
+
+#: packages/notebook-extension/src/index.ts:150
+msgid "Close and Shut Down Notebook"
+msgstr "关闭并终止笔记本"
 
 #: packages/notebook-extension/src/trusted.tsx:75
 msgid "JavaScript enabled for notebook display"
