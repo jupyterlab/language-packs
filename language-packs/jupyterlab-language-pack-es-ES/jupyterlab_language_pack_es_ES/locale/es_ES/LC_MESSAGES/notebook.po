@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 231\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2023-06-12 10:19\n"
+"PO-Revision-Date: 2023-07-04 11:34\n"
 
 #: /packages/application-extension/schema/menus.json:/description /packages/application-extension/schema/menus.json:/title
 msgctxt "schema"
@@ -27,6 +27,26 @@ msgstr ""
 #: /packages/application-extension/schema/pages.json:/description /packages/application-extension/schema/pages.json:/title
 msgctxt "schema"
 msgid "Jupyter Notebook Pages"
+msgstr ""
+
+#: /packages/application-extension/schema/shell.json:/description
+msgctxt "schema"
+msgid "Notebook Shell layout settings."
+msgstr ""
+
+#: /packages/application-extension/schema/shell.json:/properties/layout/description
+msgctxt "settings"
+msgid "Overrides default widget position in the application layout"
+msgstr ""
+
+#: /packages/application-extension/schema/shell.json:/properties/layout/title
+msgctxt "settings"
+msgid "Customize shell widget positioning"
+msgstr ""
+
+#: /packages/application-extension/schema/shell.json:/title
+msgctxt "schema"
+msgid "Notebook Shell"
 msgstr ""
 
 #: /packages/application-extension/schema/title.json:/description /packages/application-extension/schema/title.json:/title
@@ -62,11 +82,6 @@ msgstr ""
 #: /packages/application-extension/schema/zen.json:/description /packages/application-extension/schema/zen.json:/title
 msgctxt "schema"
 msgid "Jupyter Notebook Zen Mode"
-msgstr ""
-
-#: /packages/documentsearch-extension/schema/notebookShellWidgetListener.json:/description /packages/documentsearch-extension/schema/notebookShellWidgetListener.json:/title
-msgctxt "schema"
-msgid "Jupyter Notebook DocumentSearch Settings"
 msgstr ""
 
 #: /packages/help-extension/schema/open.json:/description /packages/help-extension/schema/open.json:/title
@@ -225,56 +240,56 @@ msgctxt "schema"
 msgid "File Browser Widget"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:1000
+#: packages/application-extension/src/index.ts:1058
 msgid "Toggle Zen Mode"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:135
+#: packages/application-extension/src/index.ts:141
 msgid "Are you sure you want to exit Jupyter Notebook?\n\n"
 "Any unsaved changes will be lost."
 msgstr ""
 
-#: packages/application-extension/src/index.ts:274
+#: packages/application-extension/src/index.ts:310
 msgid "Open JupyterLab"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:282
+#: packages/application-extension/src/index.ts:318
 msgid "File Browser"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:340
+#: packages/application-extension/src/index.ts:376
 msgid "Handle Local Link"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:528
+#: packages/application-extension/src/index.ts:586
 msgid "Rename…"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:594
+#: packages/application-extension/src/index.ts:652
 msgid "Show Header"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:684
+#: packages/application-extension/src/index.ts:742
 msgid "Show %1 in the left sidebar"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:689
+#: packages/application-extension/src/index.ts:747
 msgid "Show %1 in the right sidebar"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:694
+#: packages/application-extension/src/index.ts:752
 msgid "Show %1 in the sidebar"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:809
+#: packages/application-extension/src/index.ts:867
 msgid "Left Sidebar"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:811
+#: packages/application-extension/src/index.ts:869
 msgid "Right Sidebar"
 msgstr ""
 
-#: packages/application/src/shell.ts:203 packages/application/src/shell.ts:207
+#: packages/application/src/shell.ts:238 packages/application/src/shell.ts:242
 msgid "Collapse %1 side panel"
 msgstr ""
 
@@ -330,8 +345,12 @@ msgstr ""
 msgid "Notebook"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:107
+#: packages/notebook-extension/src/index.ts:109
 msgid "Last Checkpoint: %1"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:150
+msgid "Close and Shut Down Notebook"
 msgstr ""
 
 #: packages/notebook-extension/src/trusted.tsx:75
