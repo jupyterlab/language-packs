@@ -13,9 +13,6 @@ on:
         type: boolean
         default: false
 
-permissions:
-  contents: write
-
 jobs:
   # First of all check that all language packs have homogeneous version.
   check-version:
@@ -35,6 +32,8 @@ jobs:
     name: 'Build ${{ matrix.locale }}'
     needs: check-version
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     env:
       CURRENT_LOCALE: ${{ matrix.locale }}
       CURRENT_LOCALE_DIR: language-packs/jupyterlab-language-pack-${{ matrix.locale }}
@@ -80,7 +79,7 @@ jobs:
         python-version: '3.9'
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip build hatch twine
+        python -m pip install --upgrade pip build hatch twine "pydantic<2.0.0"
     - name: Prepare env variables
       shell: bash
       working-directory: "${{ env.CURRENT_LOCALE_DIR }}"
@@ -118,7 +117,12 @@ jobs:
     name: Publish all language packs at once
     needs: build-artifacts
     runs-on: ubuntu-latest
+#     permissions:
+#       id-token: write
     steps:
+#       - name: Publish package distributions to PyPI
+#         uses: pypa/gh-action-pypi-publish@release/v1
+    
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
