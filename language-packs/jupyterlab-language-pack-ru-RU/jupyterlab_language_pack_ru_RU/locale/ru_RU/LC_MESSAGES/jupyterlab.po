@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2023-05-31 12:21\n"
+"PO-Revision-Date: 2023-07-17 06:01\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -383,6 +383,11 @@ msgstr "Настройки уведомлений."
 msgctxt "settings"
 msgid "Whether to check for newer version of JupyterLab or not. It requires `fechNews` to be `true` to be active. If `true`, it will make a request to a website."
 msgstr "Проверять ли новую версию JupyterLab или нет. Он требует активации `fechNews`. Если `true`, он отправит запрос на сайт."
+
+#: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
+msgctxt "settings"
+msgid "Whether to check for newer version of JupyterLab or not. It requires `fetchNews` to be `true` to be active. If `true`, it will make a request to a website."
+msgstr ""
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/title
 msgctxt "settings"
@@ -2726,7 +2731,7 @@ msgstr "Файл рабочей области JupyterLab"
 msgid "Dismiss"
 msgstr "Отклонить"
 
-#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:862 packages/apputils/src/dialog.tsx:870 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:696 packages/filebrowser/src/listing.ts:429 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:514 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/translation-extension/src/index.ts:147
+#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:862 packages/apputils/src/dialog.tsx:870 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:696 packages/filebrowser/src/listing.ts:429 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:514 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/translation-extension/src/index.ts:147 packages/translation-extension/src/index.ts:156
 msgid "Cancel"
 msgstr "Отмена"
 
@@ -3778,7 +3783,7 @@ msgstr "Прервать выполнение ядра"
 msgid "Restart Kernel…"
 msgstr "Перезапустить ядро…"
 
-#: packages/console-extension/src/index.ts:642 packages/lsp-extension/src/index.ts:275 packages/mainmenu-extension/src/index.ts:375 packages/mainmenu-extension/src/index.ts:385 packages/running/src/index.tsx:161 packages/terminal-extension/src/index.ts:322
+#: packages/console-extension/src/index.ts:642 packages/lsp-extension/src/index.ts:275 packages/lsp-extension/src/index.ts:298 packages/mainmenu-extension/src/index.ts:375 packages/mainmenu-extension/src/index.ts:385 packages/running/src/index.tsx:161 packages/terminal-extension/src/index.ts:322
 msgid "Shut Down"
 msgstr "Завершить работу"
 
@@ -5627,15 +5632,15 @@ msgstr "Источник не выбран."
 msgid "No log messages."
 msgstr "В журнале нет сообщений."
 
-#: packages/lsp-extension/src/index.ts:257
+#: packages/lsp-extension/src/index.ts:257 packages/lsp-extension/src/index.ts:280
 msgid "Language servers"
 msgstr "Языковой сервер"
 
-#: packages/lsp-extension/src/index.ts:276 packages/mainmenu-extension/src/index.ts:549 packages/running-extension/src/kernels.ts:67 packages/running/src/index.tsx:357 packages/terminal-extension/src/index.ts:323
+#: packages/lsp-extension/src/index.ts:276 packages/lsp-extension/src/index.ts:299 packages/mainmenu-extension/src/index.ts:549 packages/running-extension/src/kernels.ts:67 packages/running/src/index.tsx:357 packages/terminal-extension/src/index.ts:323
 msgid "Shut Down All"
 msgstr "Завершить все"
 
-#: packages/lsp-extension/src/index.ts:277
+#: packages/lsp-extension/src/index.ts:277 packages/lsp-extension/src/index.ts:300
 msgid "Are you sure you want to permanently shut down all running language servers?"
 msgstr "Вы уверены, что хотите навсегда выключить все работающие языковые серверы?"
 
@@ -6966,19 +6971,19 @@ msgstr "Открыть подсказку"
 msgid "Dismiss the tooltip"
 msgstr "Закрыть подсказку"
 
-#: packages/translation-extension/src/index.ts:141
+#: packages/translation-extension/src/index.ts:141 packages/translation-extension/src/index.ts:150
 msgid "Change interface language?"
 msgstr "Изменить язык интерфейса?"
 
-#: packages/translation-extension/src/index.ts:142
+#: packages/translation-extension/src/index.ts:142 packages/translation-extension/src/index.ts:151
 msgid "After changing the interface language to %1, you will need to reload JupyterLab to see the changes."
 msgstr "После изменения языка интерфейса на %1, вам нужно будет перезагрузить JupyterLab для просмотра изменений."
 
-#: packages/translation-extension/src/index.ts:148
+#: packages/translation-extension/src/index.ts:148 packages/translation-extension/src/index.ts:157
 msgid "Change and reload"
 msgstr "Изменить и перезагрузить"
 
-#: packages/translation-extension/src/index.ts:175
+#: packages/translation-extension/src/index.ts:175 packages/translation-extension/src/index.ts:184
 msgid "Display Languages"
 msgstr "Показывать языки"
 
