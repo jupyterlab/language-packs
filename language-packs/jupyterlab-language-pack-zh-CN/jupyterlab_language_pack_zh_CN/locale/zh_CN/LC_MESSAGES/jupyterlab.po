@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-06-01 00:58\n"
+"PO-Revision-Date: 2023-07-17 08:36\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -380,6 +380,11 @@ msgstr "通知设置"
 msgctxt "settings"
 msgid "Whether to check for newer version of JupyterLab or not. It requires `fechNews` to be `true` to be active. If `true`, it will make a request to a website."
 msgstr "是否检查 JupyterLab 的更新版本。需要 `fetchNews` 为 `true` 才能激活。如果为 `true`，它将向一个网站发送请求。"
+
+#: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
+msgctxt "settings"
+msgid "Whether to check for newer version of JupyterLab or not. It requires `fetchNews` to be `true` to be active. If `true`, it will make a request to a website."
+msgstr "是否检查 JupyterLab 的新版本。需要将 `fetchNews` 设置为 `true` 才能生效。如果设置为 `true`，它将向一个网站发出请求。"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/title
 msgctxt "settings"
@@ -2721,7 +2726,7 @@ msgstr "JupyterLab 工作区文件"
 msgid "Dismiss"
 msgstr "忽略"
 
-#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:862 packages/apputils/src/dialog.tsx:870 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:696 packages/filebrowser/src/listing.ts:429 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:514 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/translation-extension/src/index.ts:147
+#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:862 packages/apputils/src/dialog.tsx:870 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:696 packages/filebrowser/src/listing.ts:429 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:514 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/translation-extension/src/index.ts:147 packages/translation-extension/src/index.ts:156
 msgid "Cancel"
 msgstr "取消"
 
@@ -3770,7 +3775,7 @@ msgstr "中断内核"
 msgid "Restart Kernel…"
 msgstr "重启内核…"
 
-#: packages/console-extension/src/index.ts:642 packages/lsp-extension/src/index.ts:275 packages/mainmenu-extension/src/index.ts:375 packages/mainmenu-extension/src/index.ts:385 packages/running/src/index.tsx:161 packages/terminal-extension/src/index.ts:322
+#: packages/console-extension/src/index.ts:642 packages/lsp-extension/src/index.ts:275 packages/lsp-extension/src/index.ts:298 packages/mainmenu-extension/src/index.ts:375 packages/mainmenu-extension/src/index.ts:385 packages/running/src/index.tsx:161 packages/terminal-extension/src/index.ts:322
 msgid "Shut Down"
 msgstr "关闭"
 
@@ -5601,15 +5606,15 @@ msgstr "未选择源文件"
 msgid "No log messages."
 msgstr "无日志消息。"
 
-#: packages/lsp-extension/src/index.ts:257
+#: packages/lsp-extension/src/index.ts:257 packages/lsp-extension/src/index.ts:280
 msgid "Language servers"
 msgstr "语言服务器"
 
-#: packages/lsp-extension/src/index.ts:276 packages/mainmenu-extension/src/index.ts:549 packages/running-extension/src/kernels.ts:67 packages/running/src/index.tsx:357 packages/terminal-extension/src/index.ts:323
+#: packages/lsp-extension/src/index.ts:276 packages/lsp-extension/src/index.ts:299 packages/mainmenu-extension/src/index.ts:549 packages/running-extension/src/kernels.ts:67 packages/running/src/index.tsx:357 packages/terminal-extension/src/index.ts:323
 msgid "Shut Down All"
 msgstr "全部关闭"
 
-#: packages/lsp-extension/src/index.ts:277
+#: packages/lsp-extension/src/index.ts:277 packages/lsp-extension/src/index.ts:300
 msgid "Are you sure you want to permanently shut down all running language servers?"
 msgstr "您确定要永久关闭所有正在运行的语言服务器吗？"
 
@@ -6861,19 +6866,19 @@ msgstr "打开工具提示"
 msgid "Dismiss the tooltip"
 msgstr "忽略工具提示"
 
-#: packages/translation-extension/src/index.ts:141
+#: packages/translation-extension/src/index.ts:141 packages/translation-extension/src/index.ts:150
 msgid "Change interface language?"
 msgstr "更改界面语言？"
 
-#: packages/translation-extension/src/index.ts:142
+#: packages/translation-extension/src/index.ts:142 packages/translation-extension/src/index.ts:151
 msgid "After changing the interface language to %1, you will need to reload JupyterLab to see the changes."
 msgstr "在将界面语言更改为 %1 后，您需要重新加载 JupyterLab 方可生效。"
 
-#: packages/translation-extension/src/index.ts:148
+#: packages/translation-extension/src/index.ts:148 packages/translation-extension/src/index.ts:157
 msgid "Change and reload"
 msgstr "更改并重新加载"
 
-#: packages/translation-extension/src/index.ts:175
+#: packages/translation-extension/src/index.ts:175 packages/translation-extension/src/index.ts:184
 msgid "Display Languages"
 msgstr "显示语言"
 

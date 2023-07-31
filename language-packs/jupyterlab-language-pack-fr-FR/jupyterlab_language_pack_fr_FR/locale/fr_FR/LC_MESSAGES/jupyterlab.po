@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2023-05-31 11:17\n"
+"PO-Revision-Date: 2023-07-17 10:02\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -384,6 +384,11 @@ msgstr "Paramètres des notifications."
 msgctxt "settings"
 msgid "Whether to check for newer version of JupyterLab or not. It requires `fechNews` to be `true` to be active. If `true`, it will make a request to a website."
 msgstr "Vérifier si une nouvelle version de JupyterLab est disponible ou non. Il faut que `fechNews` soit `true` pour être actif. Si `true`, une requête à un site web sera envoyée."
+
+#: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
+msgctxt "settings"
+msgid "Whether to check for newer version of JupyterLab or not. It requires `fetchNews` to be `true` to be active. If `true`, it will make a request to a website."
+msgstr "Vérifier si une nouvelle version de JupyterLab est disponible ou non. Il faut que `fetchNews` soit `true` pour être actif. Si `true`, une requête à un site web sera envoyée."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/title
 msgctxt "settings"
@@ -2742,7 +2747,7 @@ msgstr "Fichier d'espace de travail JupyterLab"
 msgid "Dismiss"
 msgstr "Ignorer"
 
-#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:862 packages/apputils/src/dialog.tsx:870 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:696 packages/filebrowser/src/listing.ts:429 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:514 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/translation-extension/src/index.ts:147
+#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:862 packages/apputils/src/dialog.tsx:870 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:696 packages/filebrowser/src/listing.ts:429 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:514 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/translation-extension/src/index.ts:147 packages/translation-extension/src/index.ts:156
 msgid "Cancel"
 msgstr "Annuler"
 
@@ -3792,7 +3797,7 @@ msgstr "Interrompre le noyau"
 msgid "Restart Kernel…"
 msgstr "Redémarrer le noyau…"
 
-#: packages/console-extension/src/index.ts:642 packages/lsp-extension/src/index.ts:275 packages/mainmenu-extension/src/index.ts:375 packages/mainmenu-extension/src/index.ts:385 packages/running/src/index.tsx:161 packages/terminal-extension/src/index.ts:322
+#: packages/console-extension/src/index.ts:642 packages/lsp-extension/src/index.ts:275 packages/lsp-extension/src/index.ts:298 packages/mainmenu-extension/src/index.ts:375 packages/mainmenu-extension/src/index.ts:385 packages/running/src/index.tsx:161 packages/terminal-extension/src/index.ts:322
 msgid "Shut Down"
 msgstr "Arrêter"
 
@@ -5639,15 +5644,15 @@ msgstr "Aucune source sélectionnée."
 msgid "No log messages."
 msgstr "Aucun message de journal."
 
-#: packages/lsp-extension/src/index.ts:257
+#: packages/lsp-extension/src/index.ts:257 packages/lsp-extension/src/index.ts:280
 msgid "Language servers"
 msgstr "Serveurs de langage"
 
-#: packages/lsp-extension/src/index.ts:276 packages/mainmenu-extension/src/index.ts:549 packages/running-extension/src/kernels.ts:67 packages/running/src/index.tsx:357 packages/terminal-extension/src/index.ts:323
+#: packages/lsp-extension/src/index.ts:276 packages/lsp-extension/src/index.ts:299 packages/mainmenu-extension/src/index.ts:549 packages/running-extension/src/kernels.ts:67 packages/running/src/index.tsx:357 packages/terminal-extension/src/index.ts:323
 msgid "Shut Down All"
 msgstr "Tout arrêter"
 
-#: packages/lsp-extension/src/index.ts:277
+#: packages/lsp-extension/src/index.ts:277 packages/lsp-extension/src/index.ts:300
 msgid "Are you sure you want to permanently shut down all running language servers?"
 msgstr "Êtes-vous sûr de vouloir éteindre définitivement tous les serveurs de langage actifs ?"
 
@@ -6932,19 +6937,19 @@ msgstr "Ouvrir l'info-bulle"
 msgid "Dismiss the tooltip"
 msgstr "Ignorer l'info-bulle"
 
-#: packages/translation-extension/src/index.ts:141
+#: packages/translation-extension/src/index.ts:141 packages/translation-extension/src/index.ts:150
 msgid "Change interface language?"
 msgstr "Changer la langue de l'interface ?"
 
-#: packages/translation-extension/src/index.ts:142
+#: packages/translation-extension/src/index.ts:142 packages/translation-extension/src/index.ts:151
 msgid "After changing the interface language to %1, you will need to reload JupyterLab to see the changes."
 msgstr "Après avoir changé la langue de l'interface en %1, vous devrez recharger JupyterLab pour voir les modifications."
 
-#: packages/translation-extension/src/index.ts:148
+#: packages/translation-extension/src/index.ts:148 packages/translation-extension/src/index.ts:157
 msgid "Change and reload"
 msgstr "Sauvegarder et Actualiser"
 
-#: packages/translation-extension/src/index.ts:175
+#: packages/translation-extension/src/index.ts:175 packages/translation-extension/src/index.ts:184
 msgid "Display Languages"
 msgstr "Afficher les langues"
 

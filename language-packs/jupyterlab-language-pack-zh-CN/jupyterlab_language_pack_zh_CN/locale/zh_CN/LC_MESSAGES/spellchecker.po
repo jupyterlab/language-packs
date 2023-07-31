@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 213\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2022-12-11 21:47\n"
+"PO-Revision-Date: 2023-07-06 09:02\n"
 
 #: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/aff/title
 msgctxt "settings"
@@ -43,6 +43,21 @@ msgstr "拼写检查器设置。"
 msgctxt "settings"
 msgid "Spellchecker"
 msgstr "拼写检查器"
+
+#: /schema/plugin.json:/properties/checkComments/title
+msgctxt "settings"
+msgid "Check spelling in comments"
+msgstr "检查评论中的拼写"
+
+#: /schema/plugin.json:/properties/checkStrings/title
+msgctxt "settings"
+msgid "Check spelling in strings"
+msgstr "检查字符串中的拼写"
+
+#: /schema/plugin.json:/properties/debounceTime/title
+msgctxt "settings"
+msgid "Time delay before spellchecking starts (debouncer)."
+msgstr "拼写检查开始前的延迟时间（延时器）。"
 
 #: /schema/plugin.json:/properties/ignore/description
 msgctxt "settings"
@@ -121,43 +136,71 @@ msgctxt "schema"
 msgid "Spellchecker"
 msgstr "拼写检查器"
 
-#: src/index.ts:242
+#: src/index.ts:242 src/index.ts:251 src/index.ts:253
 msgid "Dictionary not loaded"
 msgstr "字典未加载"
 
-#: src/index.ts:243
+#: src/index.ts:243 src/index.ts:252 src/index.ts:254
 msgid "Adjust spelling to"
 msgstr "调整拼写为"
 
-#: src/index.ts:244
+#: src/index.ts:244 src/index.ts:253 src/index.ts:255
 msgid "No spellcheck suggestions"
 msgstr "没有拼写建议"
 
-#: src/index.ts:245
+#: src/index.ts:245 src/index.ts:254 src/index.ts:256
 msgid "Spell Checker"
 msgstr "拼写检查器"
 
-#: src/index.ts:374
+#: src/index.ts:266 src/index.ts:268
+msgid "Spellcheck off"
+msgstr "拼写检查关闭"
+
+#: src/index.ts:374 src/index.ts:442 src/index.ts:467
 msgid "Toggle spellchecker"
 msgstr "切换拼写检查器"
 
-#: src/index.ts:473
+#: src/index.ts:473 src/index.ts:535 src/index.ts:560
 msgid "Ignore"
 msgstr "忽略"
 
-#: src/index.ts:560
+#: src/index.ts:560 src/index.ts:628 src/index.ts:653
 msgid "Loading dictionary…"
 msgstr "正在载入字典…"
 
-#: src/index.ts:630
+#: src/index.ts:630 src/index.ts:651 src/index.ts:676
 msgid "%1 [%2] (online)"
 msgstr "%1 [%2]（在线）"
 
-#: src/index.ts:631
+#: src/index.ts:631 src/index.ts:652 src/index.ts:677
 msgid "%1 [%2]"
 msgstr "%1 [%2]"
 
-#: src/index.ts:635 src/index.ts:663
+#: src/index.ts:635 src/index.ts:656 src/index.ts:663 src/index.ts:681 src/index.ts:711 src/index.ts:749
 msgid "Choose spellchecker language"
 msgstr "选择拼写检查器语言"
+
+#: src/index.ts:679 src/index.ts:716
+msgid "Enable spellchecking in %1?"
+msgstr "在 %1 种开启拼写检查？"
+
+#: src/index.ts:680
+msgid "The decision will apply to all editors with this content type."
+msgstr "该决定将适用于所有具有此内容类型的编辑器。"
+
+#: src/index.ts:684 src/index.ts:722
+msgid "Enable"
+msgstr "启用"
+
+#: src/index.ts:688
+msgid "Remember this decision (updates settings)."
+msgstr "记住此决定（更新设置）。"
+
+#: src/index.ts:717
+msgid "The will apply to all editors with %1 content type."
+msgstr "将 %1 内容类型应用至所有编辑器。"
+
+#: src/index.ts:726
+msgid "Remember this decision."
+msgstr "记住此决定。"
 
