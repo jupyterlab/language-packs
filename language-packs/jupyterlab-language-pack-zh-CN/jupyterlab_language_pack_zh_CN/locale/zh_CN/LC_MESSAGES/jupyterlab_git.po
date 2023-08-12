@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 197\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-08-11 07:45\n"
+"PO-Revision-Date: 2023-08-12 04:14\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
@@ -132,7 +132,7 @@ msgstr "打开中的文件落后版本时发出警告"
 #: /schema/plugin.json:/properties/promptUserIdentity/description
 msgctxt "settings"
 msgid "Whether to prompt for user name and email for each commit."
-msgstr ""
+msgstr "是否在每次提交时提示用户输入用户名和电子邮件地址。"
 
 #: /schema/plugin.json:/properties/promptUserIdentity/title
 msgctxt "settings"
@@ -749,11 +749,11 @@ msgstr "正在变基当前分支为「%1」…"
 
 #: src/commandsAndMenu.tsx:834
 msgid "Failed to rebase branch '%1' onto '%2'."
-msgstr ""
+msgstr "无法将分支 '%1' 变基到 '%2'。"
 
 #: src/commandsAndMenu.tsx:846
 msgid "Branch '%1' rebase onto '%2'."
-msgstr ""
+msgstr "分支 '%1' 已经变基到 '%2'。"
 
 #: src/commandsAndMenu.tsx:864
 msgid "Continue rebase"
@@ -773,11 +773,11 @@ msgstr "解决变基"
 
 #: src/commandsAndMenu.tsx:876
 msgid "Continue the rebase by committing the current state."
-msgstr ""
+msgstr "通过提交当前状态来继续变基。"
 
 #: src/commandsAndMenu.tsx:880
 msgid "Skip current commit and continue the rebase."
-msgstr ""
+msgstr "跳过当前提交并继续变基。"
 
 #: src/commandsAndMenu.tsx:882
 msgid "Abort the rebase"
@@ -809,11 +809,11 @@ msgstr "终止变基失败。"
 
 #: src/commandsAndMenu.tsx:930
 msgid "Commit submitted continuing rebase."
-msgstr ""
+msgstr "提交已提出的继续变基。"
 
 #: src/commandsAndMenu.tsx:932
 msgid "Current commit skipped."
-msgstr ""
+msgstr "已跳过当前的提交。"
 
 #: src/commandsAndMenu.tsx:934
 msgid "Rebase aborted."
@@ -973,7 +973,7 @@ msgstr "选择要合并至 %1 的分支"
 
 #: src/components/BranchPicker.tsx:143
 msgid "Select the branch to rebase %1 onto"
-msgstr ""
+msgstr "选择要将 %1 变基到的分支。"
 
 #: src/components/BranchPicker.tsx:158 src/components/MergeBranchDialog.tsx:139
 msgid "Filter branch list"
@@ -985,7 +985,7 @@ msgstr "关闭当前对话框而不合并分支"
 
 #: src/components/BranchPicker.tsx:194
 msgid "Close this dialog without rebasing the branch"
-msgstr ""
+msgstr "不进行分支的变基操作，关闭此对话框"
 
 #: src/components/BranchPicker.tsx:206 src/components/MergeBranchDialog.tsx:181
 msgid "Merge branch"
@@ -1593,11 +1593,11 @@ msgstr "当前仓库"
 
 #: src/components/Toolbar.tsx:269
 msgid "Cherry picking in"
-msgstr ""
+msgstr "拣选于"
 
 #: src/components/Toolbar.tsx:272
 msgid "Detached Head at"
-msgstr ""
+msgstr "分离头部于"
 
 #: src/components/Toolbar.tsx:272 src/components/Toolbar.tsx:273 src/components/Toolbar.tsx:291
 msgid "Manage branches and tags"
@@ -1605,7 +1605,7 @@ msgstr "管理分支和标签"
 
 #: src/components/Toolbar.tsx:275
 msgid "Merging in"
-msgstr ""
+msgstr "合并于"
 
 #: src/components/Toolbar.tsx:278
 msgid "Rebasing"
@@ -1649,31 +1649,31 @@ msgstr "刷新失败。"
 
 #: src/components/diff/ImageDiff.tsx:142
 msgid "View Image Diff in 2-up Mode"
-msgstr ""
+msgstr "在两列并排模式下查看图像差异对比"
 
 #: src/components/diff/ImageDiff.tsx:143
 msgid "2-up"
-msgstr ""
+msgstr "两列并排"
 
 #: src/components/diff/ImageDiff.tsx:151
 msgid "View Image Diff in Swipe Mode"
-msgstr ""
+msgstr "在滑动模式下查看图像差异对比"
 
 #: src/components/diff/ImageDiff.tsx:152
 msgid "Swipe"
-msgstr ""
+msgstr "滑动"
 
 #: src/components/diff/ImageDiff.tsx:160
 msgid "View Image Diff in Onion Skin Mode"
-msgstr ""
+msgstr "在洋葱皮模式下查看图像差异对比"
 
 #: src/components/diff/ImageDiff.tsx:161
 msgid "Onion Skin"
-msgstr ""
+msgstr "洋葱皮"
 
 #: src/components/diff/ImageDiff.tsx:441
 msgid "Failed to refresh Image diff."
-msgstr ""
+msgstr "无法刷新图像差异对比。"
 
 #: src/components/diff/ImageDiff.tsx:514 src/components/diff/NotebookDiff.ts:336 src/components/diff/NotebookDiff.ts:343 src/components/diff/PlainTextDiff.ts:244 src/components/diff/PlainTextDiff.ts:251 src/components/diff/PlainTextDiff.ts:294
 msgid "Failed to load file diff."
@@ -1681,7 +1681,7 @@ msgstr "无法载入文件差异对比。"
 
 #: src/components/diff/ImageDiff.tsx:525
 msgid "Error Loading Image Diff:"
-msgstr ""
+msgstr "载入图像差异对比时发生错误："
 
 #: src/components/diff/NotebookDiff.ts:103
 msgid "Hide unchanged cells"
