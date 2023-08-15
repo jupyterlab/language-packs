@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-08-09 02:06\n"
+"PO-Revision-Date: 2023-08-15 12:17\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -5407,7 +5407,7 @@ msgstr "无论 HTML 文件是否被信任。\n"
 "    可能会带来安全风险。\n"
 "    请只为您信任的文件开启。"
 
-#: packages/htmlviewer/src/widget.tsx:240
+#: packages/htmlviewer/src/widget.tsx:240 packages/htmlviewer/src/widget.tsx:280
 msgid "Rerender HTML Document"
 msgstr "渲染 HTML 文档"
 
@@ -5421,13 +5421,20 @@ msgstr "HTML 文件是否可信。\n"
 "这可能导致安全风险。\n"
 "请仅对您信任的文件启用。"
 
-#: packages/htmlviewer/src/widget.tsx:321
+#: packages/htmlviewer/src/widget.tsx:321 packages/htmlviewer/src/widget.tsx:364
 msgid "Distrust HTML"
 msgstr "不信任的 HTML"
 
-#: packages/htmlviewer/src/widget.tsx:322
+#: packages/htmlviewer/src/widget.tsx:322 packages/htmlviewer/src/widget.tsx:365
 msgid "Trust HTML"
 msgstr "信任 HTML"
+
+#: packages/htmlviewer/src/widget.tsx:358
+msgid "Whether the HTML file is trusted.\n"
+"Trusting the file allows opening pop-ups and running scripts\n"
+"which may result in security risks.\n"
+"Only enable for files you trust."
+msgstr ""
 
 #: packages/hub-extension/src/index.ts:166
 msgid "Server unavailable or unreachable"
@@ -6448,7 +6455,7 @@ msgstr "未受信任的笔记本：%2 个代码单元格中的 %1 个受到信�
 msgid "The notebook is empty. Click the + button on the toolbar to add a new cell."
 msgstr "笔记本为空。点击工具栏上的 + 按钮添加一个新的单元格。"
 
-#: packages/outputarea/src/widget.ts:1054
+#: packages/outputarea/src/widget.ts:1054 packages/outputarea/src/widget.ts:1060
 msgid "↑↓ for history. Search history with c-↑/c-↓"
 msgstr "使用↑↓键翻阅历史记录。使用c-↑/c-↓键搜索历史记录。"
 

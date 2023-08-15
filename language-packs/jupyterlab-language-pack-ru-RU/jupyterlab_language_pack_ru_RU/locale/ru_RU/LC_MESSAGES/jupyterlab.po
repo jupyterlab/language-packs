@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2023-08-08 06:19\n"
+"PO-Revision-Date: 2023-08-15 12:17\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -5433,7 +5433,7 @@ msgstr "Доверять ли HTML-файлу.\n"
 "    что может привести к рискам безопасности.\n"
 "    Включите только для файлов которым вы доверяете."
 
-#: packages/htmlviewer/src/widget.tsx:240
+#: packages/htmlviewer/src/widget.tsx:240 packages/htmlviewer/src/widget.tsx:280
 msgid "Rerender HTML Document"
 msgstr "Перерисовать HTML документа"
 
@@ -5447,13 +5447,20 @@ msgstr "Доверять ли HTML-файлу.\n"
 "что может привести к рискам безопасности.\n"
 "Включите только для файлов которым вы доверяете."
 
-#: packages/htmlviewer/src/widget.tsx:321
+#: packages/htmlviewer/src/widget.tsx:321 packages/htmlviewer/src/widget.tsx:364
 msgid "Distrust HTML"
 msgstr "Не доверять HTML"
 
-#: packages/htmlviewer/src/widget.tsx:322
+#: packages/htmlviewer/src/widget.tsx:322 packages/htmlviewer/src/widget.tsx:365
 msgid "Trust HTML"
 msgstr "Доверять HTML"
+
+#: packages/htmlviewer/src/widget.tsx:358
+msgid "Whether the HTML file is trusted.\n"
+"Trusting the file allows opening pop-ups and running scripts\n"
+"which may result in security risks.\n"
+"Only enable for files you trust."
+msgstr ""
 
 #: packages/hub-extension/src/index.ts:166
 msgid "Server unavailable or unreachable"
@@ -6554,7 +6561,7 @@ msgstr "Блокнот не является доверенным: %1 из %2 я
 msgid "The notebook is empty. Click the + button on the toolbar to add a new cell."
 msgstr "Блокнот пуст. Нажмите кнопку +, чтобы добавить новую ячейку."
 
-#: packages/outputarea/src/widget.ts:1054
+#: packages/outputarea/src/widget.ts:1054 packages/outputarea/src/widget.ts:1060
 msgid "↑↓ for history. Search history with c-↑/c-↓"
 msgstr "↑↓ для истории. Поиск истории с c-↑/c-↓"
 

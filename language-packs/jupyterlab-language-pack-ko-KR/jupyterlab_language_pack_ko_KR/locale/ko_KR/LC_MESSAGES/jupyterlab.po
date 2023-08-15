@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2023-08-08 06:19\n"
+"PO-Revision-Date: 2023-08-15 12:17\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -5434,7 +5434,7 @@ msgstr "HTML 파일을 신뢰하는 파일로 설정할지 여부.\n"
 "    이는 보안상 위험을 초래할 수 있으므로 \n"
 "    확실히 신뢰할 수 있는 경우에만 설정하십시오."
 
-#: packages/htmlviewer/src/widget.tsx:240
+#: packages/htmlviewer/src/widget.tsx:240 packages/htmlviewer/src/widget.tsx:280
 msgid "Rerender HTML Document"
 msgstr "HTML 문서 렌더러"
 
@@ -5448,13 +5448,20 @@ msgstr "HTML 파일이 신뢰하는 파일로 설정할지 여부.\n"
 "이는 보안상 위험을 초래할 수 있으므로 \n"
 "확실히 신뢰할 수 있는 경우에만 설정하십시오."
 
-#: packages/htmlviewer/src/widget.tsx:321
+#: packages/htmlviewer/src/widget.tsx:321 packages/htmlviewer/src/widget.tsx:364
 msgid "Distrust HTML"
 msgstr "HTML 신뢰하지 않음"
 
-#: packages/htmlviewer/src/widget.tsx:322
+#: packages/htmlviewer/src/widget.tsx:322 packages/htmlviewer/src/widget.tsx:365
 msgid "Trust HTML"
 msgstr "HTML 신뢰함"
+
+#: packages/htmlviewer/src/widget.tsx:358
+msgid "Whether the HTML file is trusted.\n"
+"Trusting the file allows opening pop-ups and running scripts\n"
+"which may result in security risks.\n"
+"Only enable for files you trust."
+msgstr ""
 
 #: packages/hub-extension/src/index.ts:166
 msgid "Server unavailable or unreachable"
@@ -6482,7 +6489,7 @@ msgstr ""
 msgid "The notebook is empty. Click the + button on the toolbar to add a new cell."
 msgstr ""
 
-#: packages/outputarea/src/widget.ts:1054
+#: packages/outputarea/src/widget.ts:1054 packages/outputarea/src/widget.ts:1060
 msgid "↑↓ for history. Search history with c-↑/c-↓"
 msgstr ""
 
