@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2023-08-08 16:12\n"
+"PO-Revision-Date: 2023-08-15 12:16\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -5445,7 +5445,7 @@ msgstr "Si le fichier HTML est fiable.\n"
 "  ce qui peut entraîner des risques de sécurité.\n"
 "  Activer uniquement pour les fichiers de confiance."
 
-#: packages/htmlviewer/src/widget.tsx:240
+#: packages/htmlviewer/src/widget.tsx:240 packages/htmlviewer/src/widget.tsx:280
 msgid "Rerender HTML Document"
 msgstr "Réexécuter un rendu du document HTML"
 
@@ -5459,13 +5459,20 @@ msgstr "Si le fichier HTML est fiable.\n"
 "ce qui peut entraîner des risques de sécurité.\n"
 "Activer uniquement pour les fichiers de confiance."
 
-#: packages/htmlviewer/src/widget.tsx:321
+#: packages/htmlviewer/src/widget.tsx:321 packages/htmlviewer/src/widget.tsx:364
 msgid "Distrust HTML"
 msgstr "Se méfier du HTML"
 
-#: packages/htmlviewer/src/widget.tsx:322
+#: packages/htmlviewer/src/widget.tsx:322 packages/htmlviewer/src/widget.tsx:365
 msgid "Trust HTML"
 msgstr "Faire confiance au HTML"
+
+#: packages/htmlviewer/src/widget.tsx:358
+msgid "Whether the HTML file is trusted.\n"
+"Trusting the file allows opening pop-ups and running scripts\n"
+"which may result in security risks.\n"
+"Only enable for files you trust."
+msgstr ""
 
 #: packages/hub-extension/src/index.ts:166
 msgid "Server unavailable or unreachable"
@@ -6518,7 +6525,7 @@ msgstr "Notebook non approuvé : %1 sur %2 cellules approuvées."
 msgid "The notebook is empty. Click the + button on the toolbar to add a new cell."
 msgstr "Le notebook ne contient aucune cellule. Cliquez sur le bouton + de la barre d'outils pour ajouter une nouvelle cellule."
 
-#: packages/outputarea/src/widget.ts:1054
+#: packages/outputarea/src/widget.ts:1054 packages/outputarea/src/widget.ts:1060
 msgid "↑↓ for history. Search history with c-↑/c-↓"
 msgstr "↑↓ pour naviguer dans l'historique. Rechercher dans l'historique avec c-↑/c-↓"
 
