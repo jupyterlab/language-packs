@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2023-08-15 12:17\n"
+"PO-Revision-Date: 2023-08-24 16:12\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -54,12 +54,15 @@ msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr ""
+msgstr "Se deve ocultar ou mostrar o cabeçalho YAML.\n"
+"O cabeçalho YAML deve ser colocado no topo do documento,\n"
+"começando com uma linha de três traços (---) e terminando\n"
+"com uma linha de três traços (---) ou três pontos (...)."
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/hideFrontMatter/title /packages/markdownviewer-extension/schema/plugin.json:/properties/hideFrontMatter/title
 msgctxt "settings"
 msgid "Hide Front Matter"
-msgstr ""
+msgstr "Ocultar cabeçalho"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/lineHeight/description /packages/markdownviewer-extension/schema/plugin.json:/properties/lineHeight/description
 msgctxt "settings"
@@ -102,11 +105,11 @@ msgstr "Visualizador de Markdown"
 
 #: /jupyterlab/extensions/readonly.py:63
 msgid "Extension installation not supported."
-msgstr ""
+msgstr "Instalação da extensão não suportada."
 
 #: /jupyterlab/extensions/readonly.py:81
 msgid "Extension removal not supported."
-msgstr ""
+msgstr "Remoção de extensão não suportada."
 
 #: /packages/application-extension/schema/commands.json:/description
 msgctxt "schema"
@@ -116,7 +119,7 @@ msgstr "Configurações de comandos de aplicativo."
 #: /packages/application-extension/schema/commands.json:/jupyter.lab.menus/main[1]/items[0]/submenu/label
 msgctxt "menu"
 msgid "Appearance"
-msgstr ""
+msgstr "Aparência"
 
 #: /packages/application-extension/schema/commands.json:/title
 msgctxt "schema"
@@ -245,12 +248,12 @@ msgstr "Menu de contexto do aplicativo"
 #: /packages/application-extension/schema/property-inspector.json:/description
 msgctxt "schema"
 msgid "Property Inspector Settings."
-msgstr ""
+msgstr "Configurações do Inspetor de Propriedades."
 
 #: /packages/application-extension/schema/property-inspector.json:/title
 msgctxt "schema"
 msgid "Property Inspector"
-msgstr ""
+msgstr "Inspetor de Propriedades"
 
 #: /packages/application-extension/schema/shell.json:/description
 msgctxt "schema"
@@ -274,22 +277,26 @@ msgid "Overrides default widget position in the application layout\n"
 "  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
 "  \"multiple\": { \"Terminal\": { \"area\": \"right\" } }\n"
 "}."
-msgstr ""
+msgstr "Substitui a posição de widget padrão no layout do aplicativo\n"
+"Por exemplo, para posicionar terminais na barra lateral direita em modo de vários documentos e em baixo estão em modo de documento único, {\n"
+"  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
+"  \"multiple\": { \"Terminal\": { \"area\": \"right\" }\n"
+"}."
 
 #: /packages/application-extension/schema/shell.json:/properties/layout/title
 msgctxt "settings"
 msgid "Customize shell widget positioning"
-msgstr ""
+msgstr "Personalizar posicionamento de widget do shell"
 
 #: /packages/application-extension/schema/shell.json:/properties/startMode/description
 msgctxt "settings"
 msgid "The mode under which JupyterLab should start. If empty, the mode will be imposed by the URL"
-msgstr ""
+msgstr "O modo que o JupyterLab deve iniciar. Se vazio, o modo será imposto pela URL"
 
 #: /packages/application-extension/schema/shell.json:/properties/startMode/title
 msgctxt "settings"
 msgid "Start mode: ``, `single` or `multiple`"
-msgstr ""
+msgstr "Modo de início: ``, `single` ou `multiple`"
 
 #: /packages/application-extension/schema/shell.json:/title
 msgctxt "schema"
@@ -299,32 +306,32 @@ msgstr "Shell do JupyterLab"
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/caption/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/caption/description /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/caption/description /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/caption/description /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/caption/description
 msgctxt "settings"
 msgid "If defined, it will override the command caption"
-msgstr ""
+msgstr "Se definido, substituirá a legenda do comando"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/caption/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/caption/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/caption/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/caption/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/caption/title
 msgctxt "settings"
 msgid "Item caption"
-msgstr ""
+msgstr "Legenda do item"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/disabled/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/disabled/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/disabled/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/disabled/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/disabled/title
 msgctxt "settings"
 msgid "Whether the item is ignored or not"
-msgstr ""
+msgstr "Se o item é ignorado ou não"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/icon/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/description /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/icon/description /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/icon/description /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/icon/description /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/description /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/icon/description
 msgctxt "settings"
 msgid "If defined, it will override the command icon"
-msgstr ""
+msgstr "Se definido, substituirá o ícone do comando"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/icon/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/icon/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/icon/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/icon/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/icon/title
 msgctxt "settings"
 msgid "Item icon id"
-msgstr ""
+msgstr "Id do ícone do item"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/label/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/description /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/label/description /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/label/description /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/label/description /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/description /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/label/description
 msgctxt "settings"
 msgid "If defined, it will override the command label"
-msgstr ""
+msgstr "Se definido, substituirá o rótulo do comando"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/label/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/label/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/label/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/label/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/label/title
 msgctxt "settings"
@@ -339,7 +346,7 @@ msgstr "Nome exclusivo"
 #: /packages/application-extension/schema/top-bar.json:/description
 msgctxt "schema"
 msgid "Top Bar settings."
-msgstr ""
+msgstr "Configurações da Barra Superior."
 
 #: /packages/application-extension/schema/top-bar.json:/properties/toolbar/description
 msgctxt "settings"
@@ -355,17 +362,29 @@ msgid "Note: To disable a item,\n"
 "  ]\n"
 "}\n\n"
 "Top bar description:"
-msgstr ""
+msgstr "Nota: Para desativar um item,\n"
+"copie-o para as Preferências do Usuário\n"
+"e adicione a chave \"disabled\".\n"
+"O seguinte exemplo desativará o menu de usuário:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"user-menu\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Descrição da Barra Superior:"
 
 #: /packages/application-extension/schema/top-bar.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "Top bar items"
-msgstr ""
+msgstr "Itens da Barra Superior"
 
 #: /packages/application-extension/schema/top-bar.json:/title
 msgctxt "schema"
 msgid "Top Bar"
-msgstr ""
+msgstr "Barra Superior"
 
 #: /packages/apputils-extension/schema/notification.json:/description
 msgctxt "schema"
@@ -375,12 +394,12 @@ msgstr "Configurações de notificações."
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
 msgctxt "settings"
 msgid "Whether to check for newer version of JupyterLab or not. It requires `fechNews` to be `true` to be active. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "Se deve verificar ou não por versão mais recente do JupyterLab. Exige que o `fechNews` seja 'true' (verdadeiro) para ativar. Se verdadeiro, fará uma requisição para um site."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
 msgctxt "settings"
 msgid "Whether to check for newer version of JupyterLab or not. It requires `fetchNews` to be `true` to be active. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "Se deve verificar ou não por versão mais recente do JupyterLab. Exige que o `fechNews` seja `true` (verdadeiro) para ativar. Se verdadeiro, fará uma requisição para um site."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/title
 msgctxt "settings"
@@ -400,17 +419,17 @@ msgstr "Silenciar todas as notificações"
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/description
 msgctxt "settings"
 msgid "Whether to fetch news from Jupyter news feed. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "Se deve buscar ou não novidades do feed de notícias do JupyterLab. Se verdadeiro, fará uma requisição a um site."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/title
 msgctxt "settings"
 msgid "Fetch official Jupyter news"
-msgstr ""
+msgstr "Buscar notícias oficiais de Jupyter"
 
 #: /packages/apputils-extension/schema/notification.json:/title
 msgctxt "schema"
 msgid "Notifications"
-msgstr ""
+msgstr "Notificações"
 
 #: /packages/apputils-extension/schema/palette.json:/description
 msgctxt "schema"
@@ -420,7 +439,7 @@ msgstr "Configurações da paleta de comando."
 #: /packages/apputils-extension/schema/palette.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Command Palette"
-msgstr ""
+msgstr "Paleta de comandos"
 
 #: /packages/apputils-extension/schema/palette.json:/properties/modal/description
 msgctxt "settings"
@@ -450,32 +469,32 @@ msgstr "Imprimir"
 #: /packages/apputils-extension/schema/sanitizer.json:/description
 msgctxt "schema"
 msgid "HTML Sanitizer settings."
-msgstr ""
+msgstr "Configurações do sanitizador HTML."
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/description
 msgctxt "settings"
 msgid "Scheme allowed by the HTML sanitizer."
-msgstr ""
+msgstr "Esquema permitido pelo sanitizador HTML."
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/title
 msgctxt "settings"
 msgid "Allowed URL Scheme"
-msgstr ""
+msgstr "Esquema de URL permitido"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/autolink/description
 msgctxt "settings"
 msgid "Whether to replace URLs with links or not."
-msgstr ""
+msgstr "Se deve substituir URLs por links ou não."
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/autolink/title
 msgctxt "settings"
 msgid "Autolink URL replacement"
-msgstr ""
+msgstr "Substituir URL por links automaticamente"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/title
 msgctxt "schema"
 msgid "HTML Sanitizer"
-msgstr ""
+msgstr "Sanitizador HTML"
 
 #: /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/code-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/content-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/ui-font-family/description
 msgctxt "settings"
@@ -540,12 +559,12 @@ msgstr "Tema"
 #: /packages/apputils-extension/schema/utilityCommands.json:/description
 msgctxt "schema"
 msgid "Shortcut help settings."
-msgstr ""
+msgstr "Configurações de ajuda com atalhos."
 
 #: /packages/apputils-extension/schema/utilityCommands.json:/title
 msgctxt "schema"
 msgid "Shortcuts Help"
-msgstr ""
+msgstr "Ajuda com Atalhos"
 
 #: /packages/apputils-extension/schema/workspaces.json:/description
 msgctxt "schema"
@@ -560,12 +579,12 @@ msgstr "Espaços de Trabalho"
 #: /packages/cell-toolbar-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Cell Toolbar Settings."
-msgstr ""
+msgstr "Configuração da barra de ferramentas de Células."
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/properties/toolbar/description
 msgctxt "settings"
 msgid "An item is defined by a 'name', a 'command' name, and an 'icon' name"
-msgstr ""
+msgstr "Um item é definido por um 'nome', um nome de 'comando', e um nome de 'ícone'"
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
@@ -575,17 +594,17 @@ msgstr "Lista de itens da barra de ferramentas"
 #: /packages/cell-toolbar-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Cell Toolbar"
-msgstr ""
+msgstr "Barra de ferramentas de Células"
 
 #: /packages/celltags-extension/schema/plugin.json:/description /packages/notebook-extension/schema/tools.json:/description
 msgctxt "schema"
 msgid "Setting for the common tools"
-msgstr ""
+msgstr "Configuração para as ferramentas comuns"
 
 #: /packages/celltags-extension/schema/plugin.json:/title /packages/notebook-extension/schema/tools.json:/title
 msgctxt "schema"
 msgid "Common tools"
-msgstr ""
+msgstr "Ferramentas comuns"
 
 #: /packages/codemirror-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -595,17 +614,17 @@ msgstr "Configurações do editor de texto para todos os editores CodeMirror."
 #: /packages/codemirror-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "CodeMirror"
-msgstr ""
+msgstr "CodeMirror"
 
 #: /packages/codemirror-extension/schema/plugin.json:/properties/defaultConfig/description
 msgctxt "settings"
 msgid "Base configuration used by all CodeMirror editors."
-msgstr ""
+msgstr "Configuração base usada por todos os editores CodeMirror."
 
 #: /packages/codemirror-extension/schema/plugin.json:/properties/defaultConfig/title
 msgctxt "settings"
 msgid "Default editor configuration"
-msgstr ""
+msgstr "Configuração padrão do editor"
 
 #: /packages/codemirror-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -615,57 +634,57 @@ msgstr "CodeMirror"
 #: /packages/completer-extension/schema/manager.json:/description
 msgctxt "schema"
 msgid "Code Completion settings."
-msgstr ""
+msgstr "Configurações de Conclusão de Código."
 
 #: /packages/completer-extension/schema/manager.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Code Completion settings"
-msgstr ""
+msgstr "Configurações de Conclusão de Código"
 
 #: /packages/completer-extension/schema/manager.json:/properties/autoCompletion/description
 msgctxt "settings"
 msgid "Autocompletion setting."
-msgstr ""
+msgstr "Configuração de autocomplemento."
 
 #: /packages/completer-extension/schema/manager.json:/properties/autoCompletion/title
 msgctxt "settings"
 msgid "Enable autocompletion."
-msgstr ""
+msgstr "Ativar autocomplemento."
 
 #: /packages/completer-extension/schema/manager.json:/properties/availableProviders/description
 msgctxt "settings"
 msgid "Providers with higher rank will be shown before the ones with lower rank, providers with negative rank are disabled."
-msgstr ""
+msgstr "Provedores com classificação mais alta serão mostrados antes daqueles com classificação mais baixa, provedores com classificação negativa são desabilitados."
 
 #: /packages/completer-extension/schema/manager.json:/properties/availableProviders/title
 msgctxt "settings"
 msgid "Completion providers rank setting."
-msgstr ""
+msgstr "Configuração de classificação dos provedores de Conclusão."
 
 #: /packages/completer-extension/schema/manager.json:/properties/providerTimeout/description
 msgctxt "settings"
 msgid "If a provider can not return the response for a completer request before timeout, the result of this provider will be ignored. Value is in millisecond"
-msgstr ""
+msgstr "Se um provedor não puder retornar a resposta para uma requisição de complemento antes do tempo limite, o resultado desse provedor será ignorado. Valor em milissegundos"
 
 #: /packages/completer-extension/schema/manager.json:/properties/providerTimeout/title
 msgctxt "settings"
 msgid "Default timeout for a provider."
-msgstr ""
+msgstr "Tempo limite padrão para um provedor."
 
 #: /packages/completer-extension/schema/manager.json:/properties/showDocumentationPanel/description
 msgctxt "settings"
 msgid "Documentation panel setting."
-msgstr ""
+msgstr "Configuração do painel de documentação."
 
 #: /packages/completer-extension/schema/manager.json:/properties/showDocumentationPanel/title
 msgctxt "settings"
 msgid "Show the documentation panel."
-msgstr ""
+msgstr "Mostrar o painel de documentação."
 
 #: /packages/completer-extension/schema/manager.json:/title
 msgctxt "schema"
 msgid "Code Completion"
-msgstr ""
+msgstr "Conclusão de Código"
 
 #: /packages/console-extension/schema/completer.json:/description
 msgctxt "schema"
@@ -959,28 +978,29 @@ msgstr "Configurações do gerenciador de extensões."
 #: /packages/extensionmanager-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Extension Manager"
-msgstr ""
+msgstr "Gerenciador de extensões"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/disclaimed/description
 msgctxt "settings"
 msgid "Whether the user agrees the access to external web services and understands extensions may introduce security risks or contain malicious code that runs on his machine."
-msgstr ""
+msgstr "Se o usuário concorda com o acesso a serviços web externos e compreende que as extensões podem apresentar riscos de segurança ou conter código malicioso que roda em seu computador."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/disclaimed/title
 msgctxt "settings"
 msgid "Disclaimed Status"
-msgstr ""
+msgstr "Status do aviso"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/description
 msgctxt "settings"
 msgid "Enables extension manager.\n"
 "WARNING: installing untrusted extensions may be unsafe."
-msgstr ""
+msgstr "Habilita o gerenciador de extensões.\n"
+"AVISO: instalar extensões não confiáveis pode ser inseguro."
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/properties/enabled/title
 msgctxt "settings"
 msgid "Enabled Status"
-msgstr ""
+msgstr "Status de ativação"
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1583,7 +1603,7 @@ msgstr "Função Autocompletar do Notebook"
 #: /packages/notebook-extension/schema/export.json:/description
 msgctxt "schema"
 msgid "Notebook Export settings."
-msgstr ""
+msgstr "Configurações de exportação de caderno."
 
 #: /packages/notebook-extension/schema/export.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
 msgctxt "menu"
@@ -2229,7 +2249,7 @@ msgstr ""
 
 #: packages/application-extension/src/index.tsx:1220 packages/application-extension/src/index.tsx:791 packages/apputils/src/toolbar/factory.ts:33 packages/extensionmanager/src/model.ts:504 packages/extensionmanager/src/model.ts:526 packages/mainmenu-extension/src/index.ts:770
 msgid "Information"
-msgstr ""
+msgstr "Informação"
 
 #: packages/application-extension/src/index.tsx:1221
 msgid "Context menu customization has changed. You will need to reload JupyterLab to see the changes."
@@ -2428,11 +2448,11 @@ msgstr ""
 
 #: packages/apputils-extension/src/announcements.ts:126 packages/extensionmanager/src/widget.tsx:434 packages/extensionmanager/src/widget.tsx:437
 msgid "Yes"
-msgstr ""
+msgstr "Sim"
 
 #: packages/apputils-extension/src/announcements.ts:143 packages/extensionmanager/src/widget.tsx:424 packages/extensionmanager/src/widget.tsx:427
 msgid "No"
-msgstr ""
+msgstr "Não"
 
 #: packages/apputils-extension/src/announcements.ts:180
 msgid "Hide"
@@ -2671,7 +2691,7 @@ msgstr "Cancelar"
 
 #: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/extensionmanager/src/dialog.tsx:37 packages/extensionmanager/src/model.ts:508 packages/extensionmanager/src/model.ts:531 packages/notebook/src/model.ts:377 packages/notebook/src/panel.ts:234 packages/notebook/src/searchprovider.ts:515 packages/settingeditor/src/plugineditor.ts:133
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: packages/apputils/src/kernelstatuses.tsx:210 packages/apputils/src/sessioncontext.tsx:1746 packages/apputils/src/sessioncontext.tsx:1757 packages/apputils/src/sessioncontext.tsx:631
 msgid "No Kernel"
@@ -3109,119 +3129,119 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1006
 msgid "JSON-LD"
-msgstr ""
+msgstr "JSON-LD"
 
 #: packages/codemirror/src/language.ts:1017
 msgid "Jinja2"
-msgstr ""
+msgstr "Jinja2"
 
 #: packages/codemirror/src/language.ts:1027
 msgid "Julia"
-msgstr ""
+msgstr "Julia"
 
 #: packages/codemirror/src/language.ts:1037
 msgid "Kotlin"
-msgstr ""
+msgstr "Kotlin"
 
 #: packages/codemirror/src/language.ts:1047
 msgid "LESS"
-msgstr ""
+msgstr "LESS"
 
 #: packages/codemirror/src/language.ts:1057
 msgid "LiveScript"
-msgstr ""
+msgstr "LiveScript"
 
 #: packages/codemirror/src/language.ts:1068
 msgid "Lua"
-msgstr ""
+msgstr "Lua"
 
 #: packages/codemirror/src/language.ts:1078
 msgid "mIRC"
-msgstr ""
+msgstr "mIRC"
 
 #: packages/codemirror/src/language.ts:1087
 msgid "Mathematica"
-msgstr ""
+msgstr "Mathematica"
 
 #: packages/codemirror/src/language.ts:1097
 msgid "Modelica"
-msgstr ""
+msgstr "Modelica"
 
 #: packages/codemirror/src/language.ts:1107
 msgid "MUMPS"
-msgstr ""
+msgstr "MUMPS"
 
 #: packages/codemirror/src/language.ts:1117
 msgid "mbox"
-msgstr ""
+msgstr "mbox"
 
 #: packages/codemirror/src/language.ts:1127
 msgid "Nginx"
-msgstr ""
+msgstr "Nginx"
 
 #: packages/codemirror/src/language.ts:1137
 msgid "NSIS"
-msgstr ""
+msgstr "NSIS"
 
 #: packages/codemirror/src/language.ts:1147
 msgid "NTriples"
-msgstr ""
+msgstr "NTriples"
 
 #: packages/codemirror/src/language.ts:1161
 msgid "Objective-C"
-msgstr ""
+msgstr "Objective-C"
 
 #: packages/codemirror/src/language.ts:1172
 msgid "Objective-C++"
-msgstr ""
+msgstr "Objective-C++"
 
 #: packages/codemirror/src/language.ts:1183
 msgid "OCaml"
-msgstr ""
+msgstr "OCaml"
 
 #: packages/codemirror/src/language.ts:1193
 msgid "Octave"
-msgstr ""
+msgstr "Octave"
 
 #: packages/codemirror/src/language.ts:1203
 msgid "Oz"
-msgstr ""
+msgstr "Oz"
 
 #: packages/codemirror/src/language.ts:1213
 msgid "Pascal"
-msgstr ""
+msgstr "Pascal"
 
 #: packages/codemirror/src/language.ts:1223
 msgid "Perl"
-msgstr ""
+msgstr "Perl"
 
 #: packages/codemirror/src/language.ts:1233
 msgid "Pig"
-msgstr ""
+msgstr "Pig"
 
 #: packages/codemirror/src/language.ts:1243
 msgid "PowerShell"
-msgstr ""
+msgstr "PowerShell"
 
 #: packages/codemirror/src/language.ts:1253
 msgid "Properties files"
-msgstr ""
+msgstr "Arquivos de propriedades"
 
 #: packages/codemirror/src/language.ts:1264
 msgid "ProtoBuf"
-msgstr ""
+msgstr "ProtoBuf"
 
 #: packages/codemirror/src/language.ts:1274
 msgid "Puppet"
-msgstr ""
+msgstr "Puppet"
 
 #: packages/codemirror/src/language.ts:1284
 msgid "Q"
-msgstr ""
+msgstr "Q"
 
 #: packages/codemirror/src/language.ts:1294
 msgid "R"
-msgstr ""
+msgstr "R"
 
 #: packages/codemirror/src/language.ts:1305
 msgid "RPM Changes"
@@ -3233,47 +3253,47 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1324
 msgid "Ruby"
-msgstr ""
+msgstr "Ruby"
 
 #: packages/codemirror/src/language.ts:1335
 msgid "SAS"
-msgstr ""
+msgstr "SAS"
 
 #: packages/codemirror/src/language.ts:1345
 msgid "Scala"
-msgstr ""
+msgstr "Scala"
 
 #: packages/codemirror/src/language.ts:1355
 msgid "Scheme"
-msgstr ""
+msgstr "Scheme"
 
 #: packages/codemirror/src/language.ts:1365
 msgid "SCSS"
-msgstr ""
+msgstr "SCSS"
 
 #: packages/codemirror/src/language.ts:1375
 msgid "Shell"
-msgstr ""
+msgstr "Shell"
 
 #: packages/codemirror/src/language.ts:1387
 msgid "Sieve"
-msgstr ""
+msgstr "Sieve"
 
 #: packages/codemirror/src/language.ts:1397
 msgid "Smalltalk"
-msgstr ""
+msgstr "Smalltalk"
 
 #: packages/codemirror/src/language.ts:1407
 msgid "Solr"
-msgstr ""
+msgstr "Solr"
 
 #: packages/codemirror/src/language.ts:1416
 msgid "SML"
-msgstr ""
+msgstr "SML"
 
 #: packages/codemirror/src/language.ts:1426
 msgid "SPARQL"
-msgstr ""
+msgstr "SPARQL"
 
 #: packages/codemirror/src/language.ts:1437
 msgid "Spreadsheet"
@@ -3281,387 +3301,387 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1447
 msgid "Squirrel"
-msgstr ""
+msgstr "Squirrel"
 
 #: packages/codemirror/src/language.ts:1457
 msgid "Stylus"
-msgstr ""
+msgstr "Stylus"
 
 #: packages/codemirror/src/language.ts:1467
 msgid "Swift"
-msgstr ""
+msgstr "Swift"
 
 #: packages/codemirror/src/language.ts:1477
 msgid "sTeX"
-msgstr ""
+msgstr "sTeX"
 
 #: packages/codemirror/src/language.ts:1486 packages/notebook-extension/src/index.ts:3678 packages/notebook-extension/src/index.ts:3684
 msgid "LaTeX"
-msgstr ""
+msgstr "LaTeX"
 
 #: packages/codemirror/src/language.ts:1497
 msgid "SystemVerilog"
-msgstr ""
+msgstr "SystemVerilog"
 
 #: packages/codemirror/src/language.ts:1507
 msgid "Tcl"
-msgstr ""
+msgstr "Tcl"
 
 #: packages/codemirror/src/language.ts:1517
 msgid "Textile"
-msgstr ""
+msgstr "Textile"
 
 #: packages/codemirror/src/language.ts:1527
 msgid "TiddlyWiki"
-msgstr ""
+msgstr "TiddlyWiki"
 
 #: packages/codemirror/src/language.ts:1536
 msgid "Tiki wiki"
-msgstr ""
+msgstr "Tiki wiki"
 
 #: packages/codemirror/src/language.ts:1545
 msgid "TOML"
-msgstr ""
+msgstr "TOML"
 
 #: packages/codemirror/src/language.ts:1555
 msgid "troff"
-msgstr ""
+msgstr "troff"
 
 #: packages/codemirror/src/language.ts:1565
 msgid "TTCN"
-msgstr ""
+msgstr "TTCN"
 
 #: packages/codemirror/src/language.ts:1575
 msgid "TTCN_CFG"
-msgstr ""
+msgstr "TTCN_CFG"
 
 #: packages/codemirror/src/language.ts:1585
 msgid "Turtle"
-msgstr ""
+msgstr "Turtle"
 
 #: packages/codemirror/src/language.ts:1595
 msgid "Web IDL"
-msgstr ""
+msgstr "Web IDL"
 
 #: packages/codemirror/src/language.ts:1605
 msgid "VB.NET"
-msgstr ""
+msgstr "VB.NET"
 
 #: packages/codemirror/src/language.ts:1615
 msgid "VBScript"
-msgstr ""
+msgstr "VBScript"
 
 #: packages/codemirror/src/language.ts:1625
 msgid "Velocity"
-msgstr ""
+msgstr "Velocity"
 
 #: packages/codemirror/src/language.ts:1635
 msgid "Verilog"
-msgstr ""
+msgstr "Verilog"
 
 #: packages/codemirror/src/language.ts:1645
 msgid "VHDL"
-msgstr ""
+msgstr "VHDL"
 
 #: packages/codemirror/src/language.ts:1655
 msgid "XQuery"
-msgstr ""
+msgstr "XQuery"
 
 #: packages/codemirror/src/language.ts:1665
 msgid "Yacas"
-msgstr ""
+msgstr "Yacas"
 
 #: packages/codemirror/src/language.ts:1675
 msgid "YAML"
-msgstr ""
+msgstr "YAML"
 
 #: packages/codemirror/src/language.ts:1686
 msgid "Z80"
-msgstr ""
+msgstr "Z80"
 
 #: packages/codemirror/src/language.ts:1696
 msgid "mscgen"
-msgstr ""
+msgstr "mscgen"
 
 #: packages/codemirror/src/language.ts:1706
 msgid "xu"
-msgstr ""
+msgstr "xu"
 
 #: packages/codemirror/src/language.ts:1716
 msgid "msgenny"
-msgstr ""
+msgstr "msgenny"
 
 #: packages/codemirror/src/language.ts:307
 msgid "C"
-msgstr ""
+msgstr "C"
 
 #: packages/codemirror/src/language.ts:317
 msgid "C++"
-msgstr ""
+msgstr "C++"
 
 #: packages/codemirror/src/language.ts:327
 msgid "CQL"
-msgstr ""
+msgstr "CQL"
 
 #: packages/codemirror/src/language.ts:336
 msgid "CSS"
-msgstr ""
+msgstr "CSS"
 
 #: packages/codemirror/src/language.ts:346 packages/notebook-extension/src/index.ts:3677 packages/notebook-extension/src/index.ts:3683
 msgid "HTML"
-msgstr ""
+msgstr "HTML"
 
 #: packages/codemirror/src/language.ts:357
 msgid "Java"
-msgstr ""
+msgstr "Java"
 
 #: packages/codemirror/src/language.ts:367
 msgid "Javascript"
-msgstr ""
+msgstr "Javascript"
 
 #: packages/codemirror/src/language.ts:384
 msgid "JSON"
-msgstr ""
+msgstr "JSON"
 
 #: packages/codemirror/src/language.ts:395
 msgid "JSX"
-msgstr ""
+msgstr "JSX"
 
 #: packages/codemirror/src/language.ts:405
 msgid "MariaDB SQL"
-msgstr ""
+msgstr "MariaDB SQL"
 
 #: packages/codemirror/src/language.ts:413 packages/notebook-extension/src/index.ts:3679 packages/notebook-extension/src/index.ts:3685 packages/notebook/src/default-toolbar.tsx:379
 msgid "Markdown"
-msgstr ""
+msgstr "Markdown"
 
 #: packages/codemirror/src/language.ts:423
 msgid "MS SQL"
-msgstr ""
+msgstr "MS SQL"
 
 #: packages/codemirror/src/language.ts:431
 msgid "MySQL"
-msgstr ""
+msgstr "MySQL"
 
 #: packages/codemirror/src/language.ts:439
 msgid "PHP"
-msgstr ""
+msgstr "PHP"
 
 #: packages/codemirror/src/language.ts:453
 msgid "PLSQL"
-msgstr ""
+msgstr "PLSQL"
 
 #: packages/codemirror/src/language.ts:462
 msgid "PostgreSQL"
-msgstr ""
+msgstr "PostgreSQL"
 
 #: packages/codemirror/src/language.ts:470
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: packages/codemirror/src/language.ts:481
 msgid "ipython"
-msgstr ""
+msgstr "ipython"
 
 #: packages/codemirror/src/language.ts:493
 msgid "Rust"
-msgstr ""
+msgstr "Rust"
 
 #: packages/codemirror/src/language.ts:503
 msgid "SQL"
-msgstr ""
+msgstr "SQL"
 
 #: packages/codemirror/src/language.ts:512
 msgid "SQLite"
-msgstr ""
+msgstr "SQLite"
 
 #: packages/codemirror/src/language.ts:520
 msgid "TSX"
-msgstr ""
+msgstr "TSX"
 
 #: packages/codemirror/src/language.ts:531
 msgid "TypeScript"
-msgstr ""
+msgstr "TypeScript"
 
 #: packages/codemirror/src/language.ts:542
 msgid "WebAssembly"
-msgstr ""
+msgstr "WebAssembly"
 
 #: packages/codemirror/src/language.ts:552
 msgid "XML"
-msgstr ""
+msgstr "XML"
 
 #: packages/codemirror/src/language.ts:564
 msgid "APL"
-msgstr ""
+msgstr "APL"
 
 #: packages/codemirror/src/language.ts:574
 msgid "PGP"
-msgstr ""
+msgstr "PGP"
 
 #: packages/codemirror/src/language.ts:590
 msgid "ASN.1"
-msgstr ""
+msgstr "ASN.1"
 
 #: packages/codemirror/src/language.ts:600
 msgid "Asterisk"
-msgstr ""
+msgstr "Asterisk"
 
 #: packages/codemirror/src/language.ts:610
 msgid "Brainfuck"
-msgstr ""
+msgstr "Brainfuck"
 
 #: packages/codemirror/src/language.ts:620
 msgid "Cobol"
-msgstr ""
+msgstr "Cobol"
 
 #: packages/codemirror/src/language.ts:630
 msgid "C#"
-msgstr ""
+msgstr "C#"
 
 #: packages/codemirror/src/language.ts:641
 msgid "Clojure"
-msgstr ""
+msgstr "Clojure"
 
 #: packages/codemirror/src/language.ts:651
 msgid "ClojureScript"
-msgstr ""
+msgstr "ClojureScript"
 
 #: packages/codemirror/src/language.ts:661
 msgid "Closure Stylesheets (GSS)"
-msgstr ""
+msgstr "Closure Stylesheets (GSS)"
 
 #: packages/codemirror/src/language.ts:671
 msgid "CMake"
-msgstr ""
+msgstr "CMake"
 
 #: packages/codemirror/src/language.ts:682
 msgid "CoffeeScript"
-msgstr ""
+msgstr "CoffeeScript"
 
 #: packages/codemirror/src/language.ts:697
 msgid "Common Lisp"
-msgstr ""
+msgstr "Common Lisp"
 
 #: packages/codemirror/src/language.ts:708
 msgid "Cypher"
-msgstr ""
+msgstr "Cypher"
 
 #: packages/codemirror/src/language.ts:718
 msgid "Cython"
-msgstr ""
+msgstr "Cython"
 
 #: packages/codemirror/src/language.ts:728
 msgid "Crystal"
-msgstr ""
+msgstr "Crystal"
 
 #: packages/codemirror/src/language.ts:738
 msgid "D"
-msgstr ""
+msgstr "D"
 
 #: packages/codemirror/src/language.ts:748
 msgid "Dart"
-msgstr ""
+msgstr "Dart"
 
 #: packages/codemirror/src/language.ts:758
 msgid "diff"
-msgstr ""
+msgstr "diff"
 
 #: packages/codemirror/src/language.ts:768
 msgid "Dockerfile"
-msgstr ""
+msgstr "Dockerfile"
 
 #: packages/codemirror/src/language.ts:778
 msgid "DTD"
-msgstr ""
+msgstr "DTD"
 
 #: packages/codemirror/src/language.ts:788
 msgid "Dylan"
-msgstr ""
+msgstr "Dylan"
 
 #: packages/codemirror/src/language.ts:798
 msgid "EBNF"
-msgstr ""
+msgstr "EBNF"
 
 #: packages/codemirror/src/language.ts:807
 msgid "ECL"
-msgstr ""
+msgstr "ECL"
 
 #: packages/codemirror/src/language.ts:817
 msgid "edn"
-msgstr ""
+msgstr "edn"
 
 #: packages/codemirror/src/language.ts:827
 msgid "Eiffel"
-msgstr ""
+msgstr "Eiffel"
 
 #: packages/codemirror/src/language.ts:837
 msgid "Elm"
-msgstr ""
+msgstr "Elm"
 
 #: packages/codemirror/src/language.ts:847
 msgid "Erlang"
-msgstr ""
+msgstr "Erlang"
 
 #: packages/codemirror/src/language.ts:857
 msgid "Esper"
-msgstr ""
+msgstr "Esper"
 
 #: packages/codemirror/src/language.ts:866
 msgid "Factor"
-msgstr ""
+msgstr "Factor"
 
 #: packages/codemirror/src/language.ts:876
 msgid "FCL"
-msgstr ""
+msgstr "FCL"
 
 #: packages/codemirror/src/language.ts:885
 msgid "Forth"
-msgstr ""
+msgstr "Forth"
 
 #: packages/codemirror/src/language.ts:895
 msgid "Fortran"
-msgstr ""
+msgstr "Fortran"
 
 #: packages/codemirror/src/language.ts:905
 msgid "F#"
-msgstr ""
+msgstr "F#"
 
 #: packages/codemirror/src/language.ts:916
 msgid "Gas"
-msgstr ""
+msgstr "Gas"
 
 #: packages/codemirror/src/language.ts:926
 msgid "Gherkin"
-msgstr ""
+msgstr "Gherkin"
 
 #: packages/codemirror/src/language.ts:936
 msgid "Go"
-msgstr ""
+msgstr "Go"
 
 #: packages/codemirror/src/language.ts:946
 msgid "Groovy"
-msgstr ""
+msgstr "Groovy"
 
 #: packages/codemirror/src/language.ts:957
 msgid "Haskell"
-msgstr ""
+msgstr "Haskell"
 
 #: packages/codemirror/src/language.ts:967
 msgid "Haxe"
-msgstr ""
+msgstr "Haxe"
 
 #: packages/codemirror/src/language.ts:977
 msgid "HXML"
-msgstr ""
+msgstr "HXML"
 
 #: packages/codemirror/src/language.ts:987
 msgid "HTTP"
-msgstr ""
+msgstr "HTTP"
 
 #: packages/codemirror/src/language.ts:996
 msgid "IDL"
-msgstr ""
+msgstr "IDL"
 
 #: packages/codemirror/src/theme.ts:215 packages/codemirror/src/theme.ts:225 packages/codemirror/src/theme.ts:229
 msgid "codemirror"
@@ -4410,7 +4430,7 @@ msgstr "Arquivo JSON"
 
 #: packages/docregistry/src/registry.ts:1413 packages/fileeditor-extension/src/index.ts:341
 msgid "Julia File"
-msgstr ""
+msgstr "Arquivo Julia"
 
 #: packages/docregistry/src/registry.ts:1420
 msgid "CSV File"
@@ -4512,10 +4532,10 @@ msgid "Thanks for trying out JupyterLab's extension manager.\n"
 "and some may introduce security risks.\n"
 "Do you want to continue?"
 msgstr "Obrigado por experimentar o gerenciador de extensões do JupyterLab.\n"
-"A equipe de desenvolvimento do JupyterLab está animada em ter uma grande\n"
-"comunidade de extensões feitas por terceiros.\n"
-"No entanto, não podemos atestar cada extensão,\n"
-"e algumas podem possuir riscos de segurança.\n"
+"A equipe de desenvolvimento do JupyterLab se anima\n"
+"em ter uma comunidade robusta de extensões feitas por terceiros.\n"
+"No entanto, não podemos atestar por cada extensão,\n"
+"e algumas podem apresentar riscos de segurança.\n"
 "Você quer continuar?"
 
 #: packages/extensionmanager-extension/src/index.ts:185 packages/extensionmanager/src/widget.tsx:161
@@ -4528,7 +4548,7 @@ msgstr "Habilitar"
 
 #: packages/extensionmanager-extension/src/index.ts:61
 msgid "Extension Manager section"
-msgstr ""
+msgstr "Seção Gerenciador de extensões"
 
 #: packages/extensionmanager/src/dialog.tsx:27
 msgid "Error message:"
@@ -4540,43 +4560,43 @@ msgstr "Erro de Instalação de Extensão"
 
 #: packages/extensionmanager/src/model.ts:505
 msgid "You will need to restart JupyterLab to apply the changes."
-msgstr ""
+msgstr "Você precisará reiniciar o JupyterLab para aplicar as alterações."
 
 #: packages/extensionmanager/src/model.ts:516
 msgid "reload JupyterLab"
-msgstr ""
+msgstr "recarregar o JupyterLab"
 
 #: packages/extensionmanager/src/model.ts:517
 msgid "refresh the web page"
-msgstr ""
+msgstr "atualizar a página"
 
 #: packages/extensionmanager/src/model.ts:522
 msgid "install the extension in all kernels and restart them"
-msgstr ""
+msgstr "instalar a extensão em todos os kernels e reiniciá-los"
 
 #: packages/extensionmanager/src/model.ts:527
 msgid "You will need to %1 to apply the changes."
-msgstr ""
+msgstr "Você precisará %1 para aplicar as alterações."
 
 #: packages/extensionmanager/src/model.ts:529
 msgid " and "
-msgstr ""
+msgstr " e "
 
 #: packages/extensionmanager/src/widget.tsx:114
 msgid "This extension is approved by your security team."
-msgstr ""
+msgstr "Esta extensão é aprovada por sua equipe de segurança."
 
 #: packages/extensionmanager/src/widget.tsx:133
 msgid "Update \"%1\" to \"%2\""
-msgstr ""
+msgstr "Atualizar \"%1\" para \"%2\""
 
 #: packages/extensionmanager/src/widget.tsx:141
 msgid "Update to %1"
-msgstr ""
+msgstr "Atualizar para %1"
 
 #: packages/extensionmanager/src/widget.tsx:146
 msgid "Uninstall \"%1\""
-msgstr ""
+msgstr "Desinstalar \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:150
 msgid "Uninstall"
@@ -4584,15 +4604,15 @@ msgstr "Desinstalar"
 
 #: packages/extensionmanager/src/widget.tsx:157
 msgid "Disable \"%1\""
-msgstr ""
+msgstr "Desativar \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:166
 msgid "Enable \"%1\""
-msgstr ""
+msgstr "Ativar \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:178
 msgid "Install \"%1\""
-msgstr ""
+msgstr "Instalar \"%1\""
 
 #: packages/extensionmanager/src/widget.tsx:182
 msgid "Install"
@@ -4604,19 +4624,19 @@ msgstr "Nenhuma entrada"
 
 #: packages/extensionmanager/src/widget.tsx:350
 msgid "%1 Manager"
-msgstr ""
+msgstr "Gerenciador de %1"
 
 #: packages/extensionmanager/src/widget.tsx:355
 msgid "Extension installation path: %1"
-msgstr ""
+msgstr "Caminho de instalação da extensão: %1"
 
 #: packages/extensionmanager/src/widget.tsx:363
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: packages/extensionmanager/src/widget.tsx:379
 msgid "Error when performing an action."
-msgstr ""
+msgstr "Erro ao realizar uma ação."
 
 #: packages/extensionmanager/src/widget.tsx:380
 msgid "Reason given:"
@@ -4629,27 +4649,33 @@ msgid "The JupyterLab development team is excited to have a robust\n"
 "risks or contain malicious code that runs on your machine. Moreover in order\n"
 "to work, this panel needs to fetch data from web services. Do you agree to\n"
 "activate this feature?"
-msgstr ""
+msgstr "A equipe de desenvolvimento do JupyterLab se anima\n"
+"em ter uma comunidade robusta de extensões feitas por terceiros.\n"
+"No entanto, nós não revisamos extensões de terceiros,\n"
+"e algumas extensões podem apresentar riscos de segurança\n"
+"ou conter código malicioso que roda em seu computador.\n"
+"Além disso, para funcionar, este painel precisa acessar dados de serviços da web.\n"
+"Você concorda em ativar este recurso?"
 
 #: packages/extensionmanager/src/widget.tsx:413 packages/extensionmanager/src/widget.tsx:416
 msgid "Please read the privacy policy."
-msgstr ""
+msgstr "Por favor leia a política de privacidade."
 
 #: packages/extensionmanager/src/widget.tsx:422 packages/extensionmanager/src/widget.tsx:425
 msgid "This will withdraw your consent."
-msgstr ""
+msgstr "Isso retirará seu consentimento."
 
 #: packages/extensionmanager/src/widget.tsx:441 packages/extensionmanager/src/widget.tsx:444
 msgid "This will disable the extension manager panel; including the listing of installed extension."
-msgstr ""
+msgstr "Isto desativará o painel do gerenciador de extensões, incluindo a listagem de extensão instalada."
 
 #: packages/extensionmanager/src/widget.tsx:445 packages/extensionmanager/src/widget.tsx:448
 msgid "No, disable"
-msgstr ""
+msgstr "Não, desativar"
 
 #: packages/extensionmanager/src/widget.tsx:471 packages/extensionmanager/src/widget.tsx:477 packages/extensionmanager/src/widget.tsx:565 packages/extensionmanager/src/widget.tsx:574
 msgid "Updating extensions list…"
-msgstr ""
+msgstr "Atualizando lista de extensões…"
 
 #: packages/extensionmanager/src/widget.tsx:591 packages/extensionmanager/src/widget.tsx:600
 msgid "Search Results"
@@ -4669,19 +4695,19 @@ msgstr "Instalado"
 
 #: packages/extensionmanager/src/widget.tsx:636 packages/extensionmanager/src/widget.tsx:645
 msgid "Refresh extensions list"
-msgstr ""
+msgstr "Atualizar lista de extensões"
 
 #: packages/extensionmanager/src/widget.tsx:81
 msgid "%1 extension home page"
-msgstr ""
+msgstr "%1 página da extensão"
 
 #: packages/extensionmanager/src/widget.tsx:90
 msgid "Version: %1"
-msgstr ""
+msgstr "Versão: %1"
 
 #: packages/extensionmanager/src/widget.tsx:97
 msgid "%1 extension is not allowed anymore. Please uninstall it immediately or contact your administrator."
-msgstr ""
+msgstr "A extensão %1 não é mais permitida. Por favor, desinstale-a imediatamente ou contate seu administrador."
 
 #: packages/filebrowser-extension/src/index.ts:1014 packages/filebrowser-extension/src/index.ts:1016 packages/filebrowser-extension/src/index.ts:1018 packages/filebrowser-extension/src/index.ts:1020 packages/filebrowser-extension/src/index.ts:837 packages/filebrowser-extension/src/index.ts:839 packages/filebrowser-extension/src/index.ts:841 packages/filebrowser-extension/src/index.ts:843
 msgid "Open %1"
@@ -5222,7 +5248,7 @@ msgstr ""
 
 #: packages/fileeditor/src/tabspacestatus.tsx:58
 msgid "Change the indentation…"
-msgstr ""
+msgstr "Alterar a indentação…"
 
 #: packages/help-extension/src/index.tsx:124
 msgid "CONTRIBUTOR LIST"
@@ -5448,11 +5474,11 @@ msgstr "Inverter cores"
 
 #: packages/inspector-extension/src/index.ts:106 packages/inspector-extension/src/index.ts:137
 msgid "Show Contextual Help"
-msgstr "Exibir ajuda contextual"
+msgstr "Mostrar ajuda contextual"
 
 #: packages/inspector-extension/src/index.ts:127
 msgid "Hide Contextual Help"
-msgstr ""
+msgstr "Ocultar ajuda contextual"
 
 #: packages/inspector-extension/src/index.ts:60
 msgid "Live updating code documentation from the active kernel"
@@ -5460,7 +5486,7 @@ msgstr "Documentação de código ao vivo atualizada a partir do kernel ativo"
 
 #: packages/inspector-extension/src/index.ts:63
 msgid "Contextual Help"
-msgstr ""
+msgstr "Ajuda contextual"
 
 #: packages/inspector/src/inspector.ts:52
 msgid "Click on a function to see documentation."
