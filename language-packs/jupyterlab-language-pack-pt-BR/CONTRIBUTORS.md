@@ -3,6 +3,7 @@
 * JupyterLab Bot ([@jupyterlab-bot](https://crowdin.com/profile/jupyterlab-bot))
 * Steven Silvester ([@blink1073](https://crowdin.com/profile/blink1073))
 * REMOVED_USER ([@REMOVED_USER](https://crowdin.com/profile/REMOVED_USER))
+* Gervásio Júnior ([@gervasiocaj](https://crowdin.com/profile/gervasiocaj))
 * Melissa Weber Mendonça ([@melissawm](https://crowdin.com/profile/melissawm))
 * Itanú Romero ([@ItanuRomero](https://crowdin.com/profile/ItanuRomero))
 * Julio Batista Silva ([@jbsilva](https://crowdin.com/profile/jbsilva))
