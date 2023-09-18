@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2023-08-08 06:19\n"
+"PO-Revision-Date: 2023-09-15 09:37\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -5378,7 +5378,11 @@ msgid "Whether the HTML file is trusted.\n"
 "    Only enable for files you trust."
 msgstr ""
 
-#: packages/htmlviewer/src/widget.tsx:240
+#: packages/htmlviewer/src/widget.tsx:205
+msgid "Action disabled as the file is not trusted."
+msgstr ""
+
+#: packages/htmlviewer/src/widget.tsx:240 packages/htmlviewer/src/widget.tsx:279 packages/htmlviewer/src/widget.tsx:280
 msgid "Rerender HTML Document"
 msgstr "Renderuj dokument HTML"
 
@@ -5392,13 +5396,20 @@ msgstr "Czy ufać plikowi HTML.\n"
 "co może się wiązać z ryzykiem bezpieczeństwa.\n"
 "Aktywuj tylko dla plików, którym ufasz."
 
-#: packages/htmlviewer/src/widget.tsx:321
+#: packages/htmlviewer/src/widget.tsx:321 packages/htmlviewer/src/widget.tsx:363 packages/htmlviewer/src/widget.tsx:364
 msgid "Distrust HTML"
 msgstr "Wstrzymaj zaufanie do HTML"
 
-#: packages/htmlviewer/src/widget.tsx:322
+#: packages/htmlviewer/src/widget.tsx:322 packages/htmlviewer/src/widget.tsx:364 packages/htmlviewer/src/widget.tsx:365
 msgid "Trust HTML"
 msgstr "Zaufaj HTML"
+
+#: packages/htmlviewer/src/widget.tsx:357 packages/htmlviewer/src/widget.tsx:358
+msgid "Whether the HTML file is trusted.\n"
+"Trusting the file allows opening pop-ups and running scripts\n"
+"which may result in security risks.\n"
+"Only enable for files you trust."
+msgstr ""
 
 #: packages/hub-extension/src/index.ts:166
 msgid "Server unavailable or unreachable"
@@ -6499,7 +6510,7 @@ msgstr ""
 msgid "The notebook is empty. Click the + button on the toolbar to add a new cell."
 msgstr ""
 
-#: packages/outputarea/src/widget.ts:1054
+#: packages/outputarea/src/widget.ts:1054 packages/outputarea/src/widget.ts:1060
 msgid "↑↓ for history. Search history with c-↑/c-↓"
 msgstr ""
 
@@ -6969,5 +6980,13 @@ msgstr ""
 
 #: packages/ui-components/src/components/toolbar.tsx:971 packages/ui-components/src/components/toolbar.tsx:975
 msgid "More commands"
+msgstr ""
+
+#: packages/ui-components/src/icon/widgets/tabbarsvg.ts:51
+msgid "Close %1"
+msgstr ""
+
+#: packages/ui-components/src/icon/widgets/tabbarsvg.ts:52
+msgid "Close tab"
 msgstr ""
 

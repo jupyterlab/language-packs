@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-08-25 02:20\n"
+"PO-Revision-Date: 2023-09-15 11:18\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -5407,7 +5407,11 @@ msgstr "无论 HTML 文件是否被信任。\n"
 "    可能会带来安全风险。\n"
 "    请只为您信任的文件开启。"
 
-#: packages/htmlviewer/src/widget.tsx:240 packages/htmlviewer/src/widget.tsx:280
+#: packages/htmlviewer/src/widget.tsx:205
+msgid "Action disabled as the file is not trusted."
+msgstr "由于该文件未受信任，操作已被禁用。"
+
+#: packages/htmlviewer/src/widget.tsx:240 packages/htmlviewer/src/widget.tsx:279 packages/htmlviewer/src/widget.tsx:280
 msgid "Rerender HTML Document"
 msgstr "渲染 HTML 文档"
 
@@ -5421,15 +5425,15 @@ msgstr "HTML 文件是否可信。\n"
 "这可能导致安全风险。\n"
 "请仅对您信任的文件启用。"
 
-#: packages/htmlviewer/src/widget.tsx:321 packages/htmlviewer/src/widget.tsx:364
+#: packages/htmlviewer/src/widget.tsx:321 packages/htmlviewer/src/widget.tsx:363 packages/htmlviewer/src/widget.tsx:364
 msgid "Distrust HTML"
 msgstr "不信任的 HTML"
 
-#: packages/htmlviewer/src/widget.tsx:322 packages/htmlviewer/src/widget.tsx:365
+#: packages/htmlviewer/src/widget.tsx:322 packages/htmlviewer/src/widget.tsx:364 packages/htmlviewer/src/widget.tsx:365
 msgid "Trust HTML"
 msgstr "信任 HTML"
 
-#: packages/htmlviewer/src/widget.tsx:358
+#: packages/htmlviewer/src/widget.tsx:357 packages/htmlviewer/src/widget.tsx:358
 msgid "Whether the HTML file is trusted.\n"
 "Trusting the file allows opening pop-ups and running scripts\n"
 "which may result in security risks.\n"
@@ -6928,4 +6932,12 @@ msgstr "侧面板内容"
 #: packages/ui-components/src/components/toolbar.tsx:971 packages/ui-components/src/components/toolbar.tsx:975
 msgid "More commands"
 msgstr "更多命令"
+
+#: packages/ui-components/src/icon/widgets/tabbarsvg.ts:51
+msgid "Close %1"
+msgstr "关闭 %1"
+
+#: packages/ui-components/src/icon/widgets/tabbarsvg.ts:52
+msgid "Close tab"
+msgstr "关闭标签页"
 
