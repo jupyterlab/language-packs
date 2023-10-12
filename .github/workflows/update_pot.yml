@@ -51,7 +51,7 @@ jobs:
           git push --set-upstream origin "${{ env.BRANCH_NAME }}"
       - name: Create a PR
         run: |
-          gh pull-request -b "main" -m "Update pot files" -m "New changes to pot files were detected in ${{ env.COMMIT_SHA }} commit."
+          gh pr create -b "main" -m "Update pot files" -m "New changes to pot files were detected in ${{ env.COMMIT_SHA }} commit."
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
