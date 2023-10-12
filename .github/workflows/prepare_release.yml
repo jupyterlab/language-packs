@@ -47,7 +47,7 @@ jobs:
           git push --set-upstream origin "${{ env.BRANCH_NAME }}"
       - name: Create a PR
         run: |
-          gh pull-request -b "main" -m "Update language packs to '${TARGET_VERSION:-auto}'"
+          gh pr create -B "main" -t "Update language packs to '${TARGET_VERSION:-auto}'"
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
