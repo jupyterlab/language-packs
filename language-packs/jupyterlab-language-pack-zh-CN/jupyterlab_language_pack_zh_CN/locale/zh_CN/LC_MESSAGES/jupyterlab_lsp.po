@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 199\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-10-16 12:51\n"
+"PO-Revision-Date: 2023-10-27 12:34\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
@@ -42,7 +42,7 @@ msgstr "是否启用连续提示（Hinterland 模式）。"
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/continuousHinting/description
 msgctxt "settings"
 msgid "Whether to enable continuous hinting (Hinterland mode). Requires enabling autocompletion in the other 'Code completion' settings"
-msgstr ""
+msgstr "是否启用连续提示（即 Hinterland 模式）。需要在“代码完成”设置中启用自动完成。"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/properties/continuousHinting/title
 msgctxt "settings"
@@ -202,7 +202,7 @@ msgstr "LSP 诊断（检查器结果）选项。"
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/debounceDelay/title
 msgctxt "settings"
 msgid "Delay between typing and refreshing diagnostic (requires restart)"
-msgstr ""
+msgstr "键入和刷新诊断之间的延迟时间（需要重新启动）"
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/defaultSeverity/description
 msgctxt "settings"
@@ -217,7 +217,7 @@ msgstr "默认严重等级"
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/gutter/title
 msgctxt "settings"
 msgid "Show guttter (experimental, requires restart)"
-msgstr ""
+msgstr "显示侧边栏（实验性功能，需要重新启动）"
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/ignoreCodes/description
 msgctxt "settings"
@@ -542,7 +542,7 @@ msgstr "语言服务器"
 #: /packages/jupyterlab-lsp/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Language Servers"
-msgstr ""
+msgstr "语言服务器"
 
 #: /packages/jupyterlab-lsp/schema/rename.json:/description
 msgctxt "schema"
@@ -797,31 +797,31 @@ msgstr "未找到 LSP 服务器扩展"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:557
 msgid "Server extension missing"
-msgstr ""
+msgstr "缺少服务器扩展"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:558
 msgid "Waiting…"
-msgstr ""
+msgstr "正在等待…"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:559
 msgid "Fully initialized"
-msgstr ""
+msgstr "已完全初始化"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:560
 msgid "Initialized (additional servers needed)"
-msgstr ""
+msgstr "已初始化（需要额外的服务器）"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:563
 msgid "Initializing…"
-msgstr ""
+msgstr "正在初始化…"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:564
 msgid "Connecting…"
-msgstr ""
+msgstr "正在连接…"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:761
 msgid "Not initialized"
-msgstr ""
+msgstr "尚未初始化"
 
 #: packages/jupyterlab-lsp/src/components/statusbar.tsx:768 packages/jupyterlab-lsp/src/components/statusbar.tsx:809 packages/jupyterlab-lsp/src/components/statusbar.tsx:813 packages/jupyterlab-lsp/src/components/statusbar.tsx:815 packages/jupyterlab-lsp/src/components/statusbar.tsx:816 packages/jupyterlab-lsp/src/components/statusbar.tsx:818 packages/jupyterlab-lsp/src/components/statusbar.tsx:820 packages/jupyterlab-lsp/src/components/statusbar.tsx:824 packages/jupyterlab-lsp/src/components/statusbar.tsx:826 packages/jupyterlab-lsp/src/components/statusbar.tsx:827 packages/jupyterlab-lsp/src/components/statusbar.tsx:829
 msgid "not initialized"
@@ -906,7 +906,7 @@ msgstr "显示诊断面板"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/index.ts:134 packages/jupyterlab-lsp/src/features/jump_to.ts:703 packages/jupyterlab-lsp/src/features/rename.ts:358
 msgid "Language Server Protocol"
-msgstr ""
+msgstr "语言服务器协议"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:146 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:161 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:162 packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:163
 msgid "Error"
@@ -958,7 +958,7 @@ msgstr "行:列"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:269
 msgid "Diagnostics panel shows linting results in notebooks and files connected to a language server."
-msgstr ""
+msgstr "诊断面板会显示与语言服务器连接的笔记本和文件的代码检查结果。"
 
 #: packages/jupyterlab-lsp/src/features/diagnostics/listing.tsx:286
 msgid "Diagnostics are not available"
@@ -1036,15 +1036,15 @@ msgstr[0] "已在 %3 处重命名 %2"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:176
 msgid "%1 in cell %2 at line %3"
-msgstr ""
+msgstr "第 %3 行的单元格 %2 的 %1"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:183
 msgid "%1 at line %2"
-msgstr ""
+msgstr "在 第 %2 行的 %1"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:188
 msgid "Syntax error(s) prevents rename: %1"
-msgstr ""
+msgstr "语法错误阻止了重命名：%1"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:281 packages/jupyterlab-lsp/src/features/rename.ts:75 packages/jupyterlab-lsp/src/features/rename.ts:76
 msgid "Rename to"
@@ -1060,7 +1060,7 @@ msgstr "取消"
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:294
 msgid "Renaming %1 to %2…"
-msgstr ""
+msgstr "正在将 %1 重命名为 %2..."
 
 #: packages/jupyterlab-lsp/src/features/rename.ts:88 packages/jupyterlab-lsp/src/features/rename.ts:89
 msgid "Renaming %1 to %2..."
