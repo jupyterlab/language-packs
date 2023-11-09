@@ -106,9 +106,9 @@ jobs:
       if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.skipRelease == 'false' }}
       run: |
         gh release create \
-        ${{ env.CURRENT_TAG }} \
-        -m "Release ${{ env.CURRENT_TAG }}" \
-        -a ${{ env.CURRENT_LOCALE_DIR }}/dist/* 
+          ${{ env.CURRENT_TAG }} \
+          -t "Release ${{ env.CURRENT_TAG }}" \
+          ${{ env.CURRENT_LOCALE_DIR }}/dist/*
       env:
         GITHUB_USER: ${{ secrets.GITHUB_USER }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
