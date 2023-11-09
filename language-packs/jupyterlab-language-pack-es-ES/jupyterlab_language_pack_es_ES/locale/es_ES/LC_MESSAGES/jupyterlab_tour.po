@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 205\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2022-12-09 17:14\n"
+"PO-Revision-Date: 2023-11-09 13:38\n"
 
 #: /schema/user-tours.json:/description
 msgctxt "schema"
@@ -32,6 +32,11 @@ msgstr ""
 #: /schema/user-tours.json:/properties/tours/items/properties/hasHelpEntry/description
 msgctxt "settings"
 msgid "Whether to add a Help Menu item with the label to launch the tour"
+msgstr ""
+
+#: /schema/user-tours.json:/properties/tours/items/properties/icon/description
+msgctxt "settings"
+msgid "The name of an already-registered LabIcon to display next to this tour"
 msgstr ""
 
 #: /schema/user-tours.json:/properties/tours/items/properties/id/description
@@ -56,12 +61,17 @@ msgstr ""
 
 #: /schema/user-tours.json:/properties/tours/items/properties/translation/description
 msgctxt "settings"
-msgid "Translation domain containing for this tour"
+msgid "Translation domain containing strings for this tour"
 msgstr ""
 
-#: /schema/user-tours.json:/properties/tours/items/properties/translation/description
+#: /schema/user-tours.json:/properties/tours/items/properties/version/description
 msgctxt "settings"
-msgid "Translation domain containing strings for this tour"
+msgid "The tour version (prefer calendar versioning YYYYMMDD) to determine if an user should see it again or not."
+msgstr ""
+
+#: /schema/user-tours.json:/properties/tours/items/properties/version/title
+msgctxt "settings"
+msgid "The tour version"
 msgstr ""
 
 #: /schema/user-tours.json:/title
@@ -69,52 +79,396 @@ msgctxt "schema"
 msgid "Tours"
 msgstr ""
 
-#: src/tourManager.ts:139 src/tourManager.ts:145
+#: src/defaults.tsx:103 src/defaults.tsx:620
+msgid "This is the top menu bar where you can access several menus."
+msgstr ""
+
+#: src/defaults.tsx:107 src/defaults.tsx:624
+msgid "File"
+msgstr ""
+
+#: src/defaults.tsx:108 src/defaults.tsx:625
+msgid ": actions related to files and directories"
+msgstr ""
+
+#: src/defaults.tsx:111
+msgid "Edit"
+msgstr ""
+
+#: src/defaults.tsx:112
+msgid ": actions related to editing documents and other activities"
+msgstr ""
+
+#: src/defaults.tsx:117 src/defaults.tsx:628
+msgid "View"
+msgstr ""
+
+#: src/defaults.tsx:118
+msgid ": actions that alter the appearance of JupyterLab"
+msgstr ""
+
+#: src/defaults.tsx:121
+msgid "Run"
+msgstr ""
+
+#: src/defaults.tsx:122
+msgid ": actions for running code in notebooks and code consoles for example"
+msgstr ""
+
+#: src/defaults.tsx:127
+msgid "Kernel"
+msgstr ""
+
+#: src/defaults.tsx:128
+msgid ": actions for managing kernels (i.e. separate processes for running code)"
+msgstr ""
+
+#: src/defaults.tsx:133
+msgid "Tabs"
+msgstr ""
+
+#: src/defaults.tsx:134
+msgid ": a list of the open documents and activities"
+msgstr ""
+
+#: src/defaults.tsx:137 src/defaults.tsx:632
+msgid "Settings"
+msgstr ""
+
+#: src/defaults.tsx:138
+msgid ": common settings and an advanced settings editor"
+msgstr ""
+
+#: src/defaults.tsx:141 src/defaults.tsx:636 src/plugin.tsx:143
+msgid "Help"
+msgstr ""
+
+#: src/defaults.tsx:142 src/defaults.tsx:637
+msgid ": help links"
+msgstr ""
+
+#: src/defaults.tsx:149 src/defaults.tsx:644
+msgid "Top Menu Options"
+msgstr ""
+
+#: src/defaults.tsx:162
+msgid "The main area enables you to arrange documents and activities into\n"
+"            panels of tabs that can be resized or subdivided."
+msgstr ""
+
+#: src/defaults.tsx:168
+msgid "Drag a tab to the center of a tab panel to move the tab to the panel."
+msgstr ""
+
+#: src/defaults.tsx:172
+msgid "Subdivide a tab panel by dragging a tab to the left, right, top, or bottom of the panel."
+msgstr ""
+
+#: src/defaults.tsx:177
+msgid "The tab for the current activity is marked with a colored top border."
+msgstr ""
+
+#: src/defaults.tsx:185
+msgid "Main Work Area"
+msgstr ""
+
+#: src/defaults.tsx:191
+msgid "Various information are reported on the status bar."
+msgstr ""
+
+#: src/defaults.tsx:194
+msgid "Status Bar"
+msgstr ""
+
+#: src/defaults.tsx:201
+msgid "This sidebar contains a number of tabs: a file browser, a list of tabs, running kernels and terminals,..."
+msgstr ""
+
+#: src/defaults.tsx:207
+msgid "Tip: The sidebar can be collapsed or expanded by selecting\n"
+"              \"Show Left Sidebar\" in the View menu or by\n"
+"              clicking on the active sidebar tab."
+msgstr ""
+
+#: src/defaults.tsx:218
+msgid "Left Side Bar"
+msgstr ""
+
+#: src/defaults.tsx:225
+msgid "The file browser enable you to work with files and directories on your\n"
+"            system. This includes opening, creating, deleting, renaming,\n"
+"            downloading, copying, and sharing files and directories."
+msgstr ""
+
+#: src/defaults.tsx:233 src/defaults.tsx:685
+msgid "Tip: Actions can be triggered through the context menu."
+msgstr ""
+
+#: src/defaults.tsx:240 src/defaults.tsx:692
+msgid "File Browser"
+msgstr ""
+
+#: src/defaults.tsx:247
+msgid "All user actions in JupyterLab are processed through a centralized\n"
+"            command system, called command palette. It provides a keyboard-driven\n"
+"            way to search for and run JupyterLab commands."
+msgstr ""
+
+#: src/defaults.tsx:255 src/defaults.tsx:707
+msgid "Tip: To open it, the default shortcut is \"Ctrl + Shift + C\""
+msgstr ""
+
+#: src/defaults.tsx:264 src/defaults.tsx:716
+msgid "Command Palette"
+msgstr ""
+
+#: src/defaults.tsx:28 src/defaults.tsx:546
+msgid "Welcome Tour"
+msgstr ""
+
+#: src/defaults.tsx:297
+msgid "Notebook Tour"
+msgstr ""
+
+#: src/defaults.tsx:316
+msgid "Notebooks are documents combining live runnable code with narrative text (i.e. text, images,...)."
+msgstr ""
+
+#: src/defaults.tsx:322
+msgid "Working with notebooks!"
+msgstr ""
+
+#: src/defaults.tsx:329
+msgid "Notebook consists of one cells list."
+msgstr ""
+
+#: src/defaults.tsx:331
+msgid "This is the first cell."
+msgstr ""
+
+#: src/defaults.tsx:341
+msgid "A cell can have different type"
+msgstr ""
+
+#: src/defaults.tsx:344
+msgid "Code"
+msgstr ""
+
+#: src/defaults.tsx:345
+msgid ": Executable code"
+msgstr ""
+
+#: src/defaults.tsx:348
+msgid "Markdown"
+msgstr ""
+
+#: src/defaults.tsx:349
+msgid ": Markdown formatted text"
+msgstr ""
+
+#: src/defaults.tsx:352
+msgid "Raw"
+msgstr ""
+
+#: src/defaults.tsx:353
+msgid ": Plain text"
+msgstr ""
+
+#: src/defaults.tsx:364
+msgid "A cell has an input and an output area. This is the input area that you can edit with\n"
+"          the proper syntax depending on the type."
+msgstr ""
+
+#: src/defaults.tsx:377
+msgid "Hitting the Play button (or pressing Shift+Enter) will execute the cell content."
+msgstr ""
+
+#: src/defaults.tsx:389
+msgid "Once a cell has been executed. Its result is display in the output cell area."
+msgstr ""
+
+#: src/defaults.tsx:401
+msgid "When executing a \"Code\" cell, its code is sent to a execution kernel."
+msgstr ""
+
+#: src/defaults.tsx:405
+msgid "Its name and its status are displayed here."
+msgstr ""
+
+#: src/defaults.tsx:41
+msgid "The following tour will point out some of the main UI components within JupyterLab."
+msgstr ""
+
+#: src/defaults.tsx:416
+msgid "The running kernels are listed on this tab."
+msgstr ""
+
+#: src/defaults.tsx:418
+msgid " It can be used to open the associated document or to shut them down."
+msgstr ""
+
+#: src/defaults.tsx:430
+msgid "Metadata (like tags) can be added to cells through this tab."
+msgstr ""
+
+#: src/defaults.tsx:45
+msgid "Welcome to JupyterLab!"
+msgstr ""
+
+#: src/defaults.tsx:52 src/defaults.tsx:569
+msgid "Pause the tour by clicking anywhere outside of the tooltip."
+msgstr ""
+
+#: src/defaults.tsx:54 src/defaults.tsx:571
+msgid "Resume the tour by clicking on the symbol:"
+msgstr ""
+
+#: src/defaults.tsx:558
+msgid "The following tour will point out some of the main UI components within Jupyter Notebook."
+msgstr ""
+
+#: src/defaults.tsx:562
+msgid "Welcome to Jupyter Notebook!"
+msgstr ""
+
+#: src/defaults.tsx:606 src/defaults.tsx:89
+msgid "Tip: Tours can be restarted from the Help menu."
+msgstr ""
+
+#: src/defaults.tsx:613 src/defaults.tsx:96
+msgid "Some information on the tour, first."
+msgstr ""
+
+#: src/defaults.tsx:629
+msgid ": actions that alter the appearance of Jupyter Notebook"
+msgstr ""
+
+#: src/defaults.tsx:633
+msgid ": common settings and an settings editor"
+msgstr ""
+
+#: src/defaults.tsx:657
+msgid "The notebook dashboard enables you to arrange documents and monitor running kernels."
+msgstr ""
+
+#: src/defaults.tsx:662
+msgid "This tab panel contains a number of tabs: a file browser, a list of running kernels and terminals,..."
+msgstr ""
+
+#: src/defaults.tsx:670
+msgid "Noteboook Dashboard"
+msgstr ""
+
+#: src/defaults.tsx:677
+msgid "The file browser enable you to work with files and directories on your\n"
+"                system. This includes opening, creating, deleting, renaming,\n"
+"                downloading, copying, and sharing files and directories."
+msgstr ""
+
+#: src/defaults.tsx:699
+msgid "All user actions in Jupyter Notebook are processed through a centralized\n"
+"                command system, called command palette. It provides a keyboard-driven\n"
+"                way to search for and run Jupyter Notebook commands."
+msgstr ""
+
+#: src/notebookButton.tsx:36
+msgid "Start a Notebook Tour"
+msgstr ""
+
+#: src/notebookButton.tsx:55 src/notebookButton.tsx:73
+msgid "Notebook Tours"
+msgstr ""
+
+#: src/notebookButton.tsx:62
+msgid "Tour metadata is not valid: see the browser console!"
+msgstr ""
+
+#: src/notebookButton.tsx:68
+msgid "Run all Tours"
+msgstr ""
+
+#: src/notebookButton.tsx:70
+msgid "No Tours found in this Notebook"
+msgstr ""
+
+#: src/notebookTourManager.ts:113
+msgid "Validation errors found: fix them in Advanced Settings"
+msgstr ""
+
+#: src/notebookTourManager.ts:124
+msgid "Error encountered adding notebook tour %1 (%2)"
+msgstr ""
+
+#: src/plugin.tsx:104
+msgid "Launch a tour.\n"
+"If no id provided, prompt the user.\n"
+"Arguments {id: Tour ID}"
+msgstr ""
+
+#: src/plugin.tsx:115
+msgid "Choose a tour"
+msgstr ""
+
+#: src/plugin.tsx:132
+msgid "Add a tour"
+msgstr ""
+
+#: src/plugin.tsx:133
+msgid "Add a tour and returns it.\n"
+"Arguments {tour: ITour}\n"
+"Returns `null` if a failure occurs."
+msgstr ""
+
+#: src/plugin.tsx:99
+msgid "Launch a Tour"
+msgstr ""
+
+#: src/tourManager.ts:142
 msgid "Fail to add tour '%1' (%2)"
 msgstr ""
 
-#: src/tourManager.ts:166 src/tourManager.ts:172
+#: src/tourManager.ts:172
 msgid "Error creating new tour. TourHandler id's must be unique.\n"
 "Tutorial with the id: '%1' already exists."
 msgstr ""
 
-#: src/tourManager.ts:249 src/tourManager.ts:255
+#: src/tourManager.ts:262
 msgid "Try the %1."
 msgstr ""
 
-#: src/tourManager.ts:253 src/tourManager.ts:259
+#: src/tourManager.ts:266
 msgid "Start now"
 msgstr ""
 
-#: src/tourManager.ts:257 src/tourManager.ts:263
+#: src/tourManager.ts:270
 msgid "Don't show me again"
 msgstr ""
 
-#: src/tourManager.ts:41 src/tourManager.ts:47
+#: src/tourManager.ts:35
 msgid "Back"
 msgstr ""
 
-#: src/tourManager.ts:42 src/tourManager.ts:48
+#: src/tourManager.ts:36
 msgid "Close"
 msgstr ""
 
-#: src/tourManager.ts:43 src/tourManager.ts:49
+#: src/tourManager.ts:37
 msgid "Done"
 msgstr ""
 
-#: src/tourManager.ts:44 src/tourManager.ts:50
+#: src/tourManager.ts:38
 msgid "Next"
 msgstr ""
 
-#: src/tourManager.ts:45 src/tourManager.ts:51
+#: src/tourManager.ts:39
 msgid "Open"
 msgstr ""
 
-#: src/tourManager.ts:46 src/tourManager.ts:52
+#: src/tourManager.ts:40
 msgid "Skip"
 msgstr ""
 
-#: src/userTourManager.ts:69
+#: src/userTourManager.ts:61
 msgid "Error encountered adding user tour %1 (%2)"
 msgstr ""
 
