@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 197\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-11-24 15:07\n"
+"PO-Revision-Date: 2023-11-26 00:53\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
@@ -112,12 +112,12 @@ msgstr "双击以显示差异"
 #: /schema/plugin.json:/properties/hideHiddenFileWarning/description
 msgctxt "settings"
 msgid "If true, the warning popup when opening the .gitignore file without hidden files will not be displayed."
-msgstr ""
+msgstr "如果为真，则在打开没有隐藏文件的 .gitignore 文件时不会显示警告弹窗。"
 
 #: /schema/plugin.json:/properties/hideHiddenFileWarning/title
 msgctxt "settings"
 msgid "Hide hidden file warning"
-msgstr ""
+msgstr "不显示隐藏文件的警告"
 
 #: /schema/plugin.json:/properties/historyCount/description
 msgctxt "settings"
@@ -523,7 +523,7 @@ msgstr "成功暂存"
 
 #: src/commandsAndMenu.tsx:1157
 msgid "Failed to stash"
-msgstr ""
+msgstr "存储失败"
 
 #: src/commandsAndMenu.tsx:117 src/commandsAndMenu.tsx:118 src/commandsAndMenu.tsx:119 src/commandsAndMenu.tsx:122 src/commandsAndMenu.tsx:124 src/commandsAndMenu.tsx:125 src/commandsAndMenu.tsx:126 src/commandsAndMenu.tsx:127 src/commandsAndMenu.tsx:133 src/commandsAndMenu.tsx:137 src/commandsAndMenu.tsx:139 src/commandsAndMenu.tsx:140 src/commandsAndMenu.tsx:145 src/commandsAndMenu.tsx:152
 msgid "Commit from the Commit Box"
@@ -767,7 +767,7 @@ msgstr "正在拉取…"
 
 #: src/commandsAndMenu.tsx:369
 msgid "Saves .gitignore"
-msgstr ""
+msgstr "保存 .gitignore"
 
 #: src/commandsAndMenu.tsx:369 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:371 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:395 src/commandsAndMenu.tsx:397 src/commandsAndMenu.tsx:401 src/commandsAndMenu.tsx:402 src/commandsAndMenu.tsx:405 src/commandsAndMenu.tsx:411 src/commandsAndMenu.tsx:412 src/commandsAndMenu.tsx:417 src/commandsAndMenu.tsx:552
 msgid "Successfully pulled"
@@ -779,15 +779,15 @@ msgstr "正在拉取..."
 
 #: src/commandsAndMenu.tsx:388
 msgid "Warning: The .gitignore file is a hidden file."
-msgstr ""
+msgstr "警告：.gitignore 文件是一个隐藏文件。"
 
 #: src/commandsAndMenu.tsx:391
 msgid "Hidden files by default cannot be accessed with the regular code editor. In order to open the .gitignore file you must:"
-msgstr ""
+msgstr "默认情况下，无法使用常规代码编辑器访问隐藏文件。为了打开 .gitignore 文件，您必须："
 
 #: src/commandsAndMenu.tsx:396
 msgid "Print the command below to create a jupyter_server_config.py file with defaults commented out. If you already have the file located in .jupyter, skip this step."
-msgstr ""
+msgstr "打印出新建一个 jupyter_server_config.py 文件的命令，该文件包含注释格式的默认配置及其解释。如果在您的 .jupyter 文件下已经存在该文件，请跳过此步骤。"
 
 #: src/commandsAndMenu.tsx:403 src/commandsAndMenu.tsx:404 src/commandsAndMenu.tsx:405 src/commandsAndMenu.tsx:407 src/commandsAndMenu.tsx:411 src/commandsAndMenu.tsx:412 src/commandsAndMenu.tsx:415 src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:436 src/commandsAndMenu.tsx:440 src/commandsAndMenu.tsx:446 src/commandsAndMenu.tsx:447 src/commandsAndMenu.tsx:452 src/commandsAndMenu.tsx:584
 msgid "Failed to pull"
@@ -795,11 +795,11 @@ msgstr "拉取失败"
 
 #: src/commandsAndMenu.tsx:404
 msgid "Open jupyter_server_config.py, uncomment out the following line and set it to True:"
-msgstr ""
+msgstr "打开 jupyter_server_config.py 文件，取消下面这行的注释，并将其设置为 True："
 
 #: src/commandsAndMenu.tsx:416
 msgid "Show .gitignore file anyways"
-msgstr ""
+msgstr "无论如何都显示 .gitignore 文件"
 
 #: src/commandsAndMenu.tsx:416 src/commandsAndMenu.tsx:417 src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:438 src/commandsAndMenu.tsx:455 src/commandsAndMenu.tsx:459 src/commandsAndMenu.tsx:460 src/commandsAndMenu.tsx:464 src/commandsAndMenu.tsx:465 src/commandsAndMenu.tsx:466 src/commandsAndMenu.tsx:470 src/commandsAndMenu.tsx:471 src/commandsAndMenu.tsx:476 src/commandsAndMenu.tsx:608 src/commandsAndMenu.tsx:613
 msgid "Reset to Remote"
@@ -811,7 +811,7 @@ msgstr "重置当前分支至远程状态"
 
 #: src/commandsAndMenu.tsx:419
 msgid "Do not show this warning again"
-msgstr ""
+msgstr "不再显示此警告"
 
 #: src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:423 src/commandsAndMenu.tsx:427 src/commandsAndMenu.tsx:428 src/commandsAndMenu.tsx:432 src/commandsAndMenu.tsx:481 src/commandsAndMenu.tsx:482 src/commandsAndMenu.tsx:498 src/commandsAndMenu.tsx:520 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:530 src/commandsAndMenu.tsx:531 src/commandsAndMenu.tsx:536 src/commandsAndMenu.tsx:690
 msgid "Show Diff"
@@ -1007,15 +1007,15 @@ msgstr "新建分支已禁用"
 
 #: src/components/BranchMenu.tsx:439
 msgid "Switching branches is disabled"
-msgstr ""
+msgstr "切换分支已被禁用"
 
 #: src/components/BranchMenu.tsx:449
 msgid "Switching branch…"
-msgstr ""
+msgstr "正在切换分支..."
 
 #: src/components/BranchMenu.tsx:462
 msgid "Switched branch."
-msgstr ""
+msgstr "已切换分支。"
 
 #: src/components/BranchMenu.tsx:50 src/components/BranchMenu.tsx:51 src/components/BranchMenu.tsx:52
 msgid "Unable to switch branch"
@@ -1179,7 +1179,7 @@ msgstr "概要"
 
 #: src/components/FileItem.tsx:162
 msgid "Unmodified"
-msgstr ""
+msgstr "未修改"
 
 #: src/components/FileItem.tsx:208 src/components/FileList.tsx:404 src/components/FileList.tsx:405 src/components/FileList.tsx:703 src/components/FileList.tsx:713 src/components/FileList.tsx:727
 msgid "Conflicted"
@@ -1187,31 +1187,31 @@ msgstr "有冲突的"
 
 #: src/components/FileItem.tsx:268
 msgid "Modified"
-msgstr ""
+msgstr "已修改"
 
 #: src/components/FileItem.tsx:269
 msgid "Added"
-msgstr ""
+msgstr "已添加"
 
 #: src/components/FileItem.tsx:270
 msgid "Deleted"
-msgstr ""
+msgstr "已删除"
 
 #: src/components/FileItem.tsx:271
 msgid "Renamed"
-msgstr ""
+msgstr "已重命名"
 
 #: src/components/FileItem.tsx:272
 msgid "Copied"
-msgstr ""
+msgstr "已复制"
 
 #: src/components/FileItem.tsx:273
 msgid "Updated"
-msgstr ""
+msgstr "已更新"
 
 #: src/components/FileItem.tsx:274
 msgid "Behind"
-msgstr ""
+msgstr "落后"
 
 #: src/components/FileItem.tsx:275 src/components/FileList.tsx:1000 src/components/FileList.tsx:1024 src/components/FileList.tsx:602 src/components/FileList.tsx:611 src/components/FileList.tsx:679 src/components/FileList.tsx:680 src/components/FileList.tsx:996
 msgid "Untracked"
@@ -1219,7 +1219,7 @@ msgstr "未跟踪"
 
 #: src/components/FileItem.tsx:276
 msgid "Ignored"
-msgstr ""
+msgstr "已忽略"
 
 #: src/components/FileList.tsx:1019 src/components/FileList.tsx:597 src/components/FileList.tsx:606 src/components/FileList.tsx:674 src/components/FileList.tsx:675 src/components/FileList.tsx:991 src/components/FileList.tsx:995
 msgid "Track all untracked files"
@@ -1723,19 +1723,19 @@ msgstr "新建标签时出错"
 
 #: src/components/TagMenu.tsx:340
 msgid "Checkout tags is disabled"
-msgstr ""
+msgstr "禁用了检出标签"
 
 #: src/components/TagMenu.tsx:341
 msgid "The repository contains files with uncommitted changes. Please commit or discard these changes before switching to a tag."
-msgstr ""
+msgstr "该仓库包含有未提交的更改。请在切换到标签之前提交或丢弃这些更改。"
 
 #: src/components/TagMenu.tsx:349
 msgid "Checking tag out…"
-msgstr ""
+msgstr "正在检出标签..."
 
 #: src/components/TagMenu.tsx:362
 msgid "Tag checkout."
-msgstr ""
+msgstr "标签已检出。"
 
 #: src/components/TagMenu.tsx:45 src/components/TagMenu.tsx:46 src/components/TagMenu.tsx:47
 msgid "Unable to checkout tag"

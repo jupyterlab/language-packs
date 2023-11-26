@@ -1,0 +1,228 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jupyterlab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: jupyterlab\n"
+"X-Crowdin-Project-ID: 409874\n"
+"X-Crowdin-Language: uk\n"
+"X-Crowdin-File: /main/extensions/nbdime/locale/nbdime.pot\n"
+"X-Crowdin-File-ID: 242\n"
+"Language-Team: Ukrainian\n"
+"Language: uk_UA\n"
+"PO-Revision-Date: 2023-11-24 16:55\n"
+
+#: /packages/labextension/schema/plugin.json:/description
+msgctxt "schema"
+msgid "Settings for the nbdime extension."
+msgstr ""
+
+#: /packages/labextension/schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Nbdime"
+msgstr ""
+
+#: /packages/labextension/schema/plugin.json:/properties/hideUnchanged/description
+msgctxt "settings"
+msgid "Whether unchanged cells should be hidden by default."
+msgstr ""
+
+#: /packages/labextension/schema/plugin.json:/properties/hideUnchanged/title
+msgctxt "settings"
+msgid "Hide Unchanged Cells"
+msgstr ""
+
+#: /packages/labextension/schema/plugin.json:/title
+msgctxt "schema"
+msgid "Nbdime"
+msgstr ""
+
+#: packages/labextension/src/actions.ts:32
+msgid "Diff: %1 ↔ %2"
+msgstr ""
+
+#: packages/labextension/src/actions.ts:33
+msgid "Local: '%1'\n"
+"Remote: '%2'"
+msgstr ""
+
+#: packages/labextension/src/actions.ts:54
+msgid "Checkpoint"
+msgstr ""
+
+#: packages/labextension/src/actions.ts:58
+msgid "Diff checkpoint: %1"
+msgstr ""
+
+#: packages/labextension/src/actions.ts:59
+msgid "Local: latest checkpoint\n"
+"Remote: '%1'"
+msgstr ""
+
+#: packages/labextension/src/actions.ts:84
+msgid "Diff git: %1"
+msgstr ""
+
+#: packages/labextension/src/actions.ts:85
+msgid "Local: git HEAD\n"
+"Remote: '%1'"
+msgstr ""
+
+#: packages/labextension/src/plugin.ts:126
+msgid "Unable to query nbdime API. Is the server extension enabled?"
+msgstr ""
+
+#: packages/labextension/src/plugin.ts:204
+msgid "Notebook diff"
+msgstr ""
+
+#: packages/labextension/src/plugin.ts:205
+msgid "Display nbdiff between two notebooks"
+msgstr ""
+
+#: packages/labextension/src/plugin.ts:230
+msgid "Notebook checkpoint diff"
+msgstr ""
+
+#: packages/labextension/src/plugin.ts:232
+msgid "Display nbdiff from checkpoint to currently saved version"
+msgstr ""
+
+#: packages/labextension/src/plugin.ts:257
+msgid "Notebook Git diff"
+msgstr ""
+
+#: packages/labextension/src/plugin.ts:259
+msgid "Display nbdiff from git HEAD to currently saved version"
+msgstr ""
+
+#: packages/labextension/src/widget.ts:129 packages/nbdime/src/merge/widget/metadata.ts:55
+msgid "Notebook metadata changed"
+msgstr ""
+
+#: packages/labextension/src/widget.ts:153
+msgid "Failed to fetch diff: %1"
+msgstr ""
+
+#: packages/labextension/src/widget.ts:255
+msgid "Hide unchanged cells"
+msgstr ""
+
+#: packages/labextension/src/widget.ts:257
+msgid "Export diff"
+msgstr ""
+
+#: packages/nbdime/src/common/mergeview.ts:1485
+msgid "(…$ unchanged lines…)"
+msgstr ""
+
+#: packages/nbdime/src/common/mergeview.ts:1517 packages/nbdime/src/common/mergeview.ts:1549
+msgid "Value missing"
+msgstr ""
+
+#: packages/nbdime/src/common/mergeview.ts:739
+msgid "Toggle locked scrolling"
+msgstr ""
+
+#: packages/nbdime/src/diff/widget/cell.ts:222 packages/nbdime/src/merge/widget/cell.ts:382 packages/nbdime/src/merge/widget/cell.ts:399
+msgid "Outputs changed"
+msgstr ""
+
+#: packages/nbdime/src/diff/widget/cell.ts:223 packages/nbdime/src/merge/widget/cell.ts:383
+msgid "Outputs unchanged"
+msgstr ""
+
+#: packages/nbdime/src/diff/widget/output.ts:128
+msgid "Output added"
+msgstr ""
+
+#: packages/nbdime/src/diff/widget/output.ts:137
+msgid "Output deleted"
+msgstr ""
+
+#: packages/nbdime/src/diff/widget/output.ts:268
+msgid "Render"
+msgstr ""
+
+#: packages/nbdime/src/diff/widget/output.ts:268
+msgid "Show source"
+msgstr ""
+
+#: packages/nbdime/src/diff/widget/output.ts:281
+msgid "Trust"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/cell.ts:195
+msgid "Cell added locally"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/cell.ts:196
+msgid "Cell deleted locally"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/cell.ts:199
+msgid "Cell added remotely"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/cell.ts:200
+msgid "Cell deleted remotely"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/cell.ts:230
+msgid "Deleted on both sides"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/cell.ts:233
+msgid "Added on both sides"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/cell.ts:264
+msgid "Execution count will be cleared."
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/cell.ts:272
+msgid "Cell has conflicting IDs! Use a text editor to edit the value (base value kept)."
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/cell.ts:349
+msgid "Metadata changed"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/cell.ts:381
+msgid "Outputs conflicted"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/cell.ts:404
+msgid "Mark resolved"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/cell.ts:446
+msgid "Clear outputs"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/cell.ts:468
+msgid "Delete cell"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/dragdrop.ts:95
+msgid "Conflicting cell operations"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/dragdrop.ts:97
+msgid "Resolve Conflict"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/metadata.ts:55
+msgid "Notebook metadata unchanged"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/notebook.ts:239
+msgid "Clear all cell outputs"
+msgstr ""
+
+#: packages/nbdime/src/merge/widget/notebook.ts:244
+msgid "Clear conflicted cell outputs"
+msgstr ""
+
