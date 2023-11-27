@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 199\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2023-10-16 12:51\n"
+"PO-Revision-Date: 2023-11-27 11:17\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
@@ -213,6 +213,11 @@ msgstr "언어 서버에서 제공하는 진단의 심각도 기본 수준입니
 msgctxt "settings"
 msgid "Default severity level"
 msgstr "기본 심각도 수준"
+
+#: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/gutter/title
+msgctxt "settings"
+msgid "Show gutter (experimental, requires restart)"
+msgstr ""
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/gutter/title
 msgctxt "settings"
@@ -579,7 +584,7 @@ msgctxt "schema"
 msgid "Code Syntax"
 msgstr "코드 구문"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:238 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:243 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:262
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:238 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:243 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:262 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:265
 msgid "Failed to load language server spec finder `{}`: \n"
 "{}"
 msgstr "언어 서버 사양 검색기를 로드하지 못했습니다 `{}`: \n"
@@ -589,19 +594,19 @@ msgstr "언어 서버 사양 검색기를 로드하지 못했습니다 `{}`: \n"
 msgid "Skipping non-installed server: `{}`"
 msgstr "설치되지 않은 서버 건너뛰기: `{}`"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:275 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:278
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:275 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:278 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:281
 msgid "Failed to fetch commands from language server spec finder `{}`:\n"
 "{}"
 msgstr "언어 서버 사양 검색기에서 명령을 가져오지 못했습니다 `{}`:\n"
 "{}"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:272 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:288 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:291
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:272 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:288 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:291 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:294
 msgid "Failed to validate commands from language server spec finder `{}`:\n"
 "{}"
 msgstr "언어 서버 사양 검색기에서 명령의 유효성을 검사하지 못했습니다 `{}`:\n"
 "{}"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:279 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:284 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:300 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:303
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:279 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:284 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:300 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:303 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:306
 msgid "Skipped non-installed server(s): {}"
 msgstr "설치되지 않은 서버를 건너뜁니다: {}"
 
@@ -621,11 +626,11 @@ msgstr "sys.dll(및 다른 곳)에서 알려진 언어 서버 찾기 시도"
 msgid "path to nodejs executable"
 msgstr "nodejs 실행 파일의 경로"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:195 /python_packages/jupyter_lsp/jupyter_lsp/types.py:198 /python_packages/jupyter_lsp/jupyter_lsp/types.py:200 /python_packages/jupyter_lsp/jupyter_lsp/types.py:203 /python_packages/jupyter_lsp/jupyter_lsp/types.py:204
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:195 /python_packages/jupyter_lsp/jupyter_lsp/types.py:198 /python_packages/jupyter_lsp/jupyter_lsp/types.py:200 /python_packages/jupyter_lsp/jupyter_lsp/types.py:203 /python_packages/jupyter_lsp/jupyter_lsp/types.py:204 /python_packages/jupyter_lsp/jupyter_lsp/types.py:207
 msgid "absolute paths in which to seek node_modules"
 msgstr "node_messages를 검색할 절대 경로"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:200 /python_packages/jupyter_lsp/jupyter_lsp/types.py:203 /python_packages/jupyter_lsp/jupyter_lsp/types.py:205 /python_packages/jupyter_lsp/jupyter_lsp/types.py:208 /python_packages/jupyter_lsp/jupyter_lsp/types.py:209
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:200 /python_packages/jupyter_lsp/jupyter_lsp/types.py:203 /python_packages/jupyter_lsp/jupyter_lsp/types.py:205 /python_packages/jupyter_lsp/jupyter_lsp/types.py:208 /python_packages/jupyter_lsp/jupyter_lsp/types.py:209 /python_packages/jupyter_lsp/jupyter_lsp/types.py:213
 msgid "additional absolute paths to seek node_modules first"
 msgstr "node_messages를 찾는 첫번째 추가 절대 경로"
 
