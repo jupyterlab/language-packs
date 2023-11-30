@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 199\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2023-10-27 12:34\n"
+"PO-Revision-Date: 2023-11-27 13:05\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
@@ -213,6 +213,11 @@ msgstr "语言服务器提供的诊断信息未指定显示严重等级时，缺
 msgctxt "settings"
 msgid "Default severity level"
 msgstr "默认严重等级"
+
+#: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/gutter/title
+msgctxt "settings"
+msgid "Show gutter (experimental, requires restart)"
+msgstr "显示侧边栏（实验性功能，需要重新启动）"
 
 #: /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/gutter/title
 msgctxt "settings"
@@ -604,7 +609,7 @@ msgctxt "schema"
 msgid "Code Syntax"
 msgstr "代码语法"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:238 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:243 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:262
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:238 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:243 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:262 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:265
 msgid "Failed to load language server spec finder `{}`: \n"
 "{}"
 msgstr "载入语言服务器规范查找器失败 `{}`：\n"
@@ -614,19 +619,19 @@ msgstr "载入语言服务器规范查找器失败 `{}`：\n"
 msgid "Skipping non-installed server: `{}`"
 msgstr "跳过未安装的服务器：`{}`"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:275 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:278
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:275 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:278 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:281
 msgid "Failed to fetch commands from language server spec finder `{}`:\n"
 "{}"
 msgstr "从语言服务器规范查找器获取命令失败 `{}`：\n"
 "{}"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:272 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:288 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:291
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:272 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:288 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:291 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:294
 msgid "Failed to validate commands from language server spec finder `{}`:\n"
 "{}"
 msgstr "从语言服务器规范查找器验证命令失败 `{}`：\n"
 "{}"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:279 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:284 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:300 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:303
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:279 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:284 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:300 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:303 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:306
 msgid "Skipped non-installed server(s): {}"
 msgstr "跳过未安装的服务器：`{}`"
 
@@ -646,11 +651,11 @@ msgstr "尝试在 sys.prefix（和其他地方）中查找已知的语言服务�
 msgid "path to nodejs executable"
 msgstr "nodejs 可执行文件路径"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:195 /python_packages/jupyter_lsp/jupyter_lsp/types.py:198 /python_packages/jupyter_lsp/jupyter_lsp/types.py:200 /python_packages/jupyter_lsp/jupyter_lsp/types.py:203 /python_packages/jupyter_lsp/jupyter_lsp/types.py:204
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:195 /python_packages/jupyter_lsp/jupyter_lsp/types.py:198 /python_packages/jupyter_lsp/jupyter_lsp/types.py:200 /python_packages/jupyter_lsp/jupyter_lsp/types.py:203 /python_packages/jupyter_lsp/jupyter_lsp/types.py:204 /python_packages/jupyter_lsp/jupyter_lsp/types.py:207
 msgid "absolute paths in which to seek node_modules"
 msgstr "可寻找 node_modules 的绝对路径"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:200 /python_packages/jupyter_lsp/jupyter_lsp/types.py:203 /python_packages/jupyter_lsp/jupyter_lsp/types.py:205 /python_packages/jupyter_lsp/jupyter_lsp/types.py:208 /python_packages/jupyter_lsp/jupyter_lsp/types.py:209
+#: /python_packages/jupyter_lsp/jupyter_lsp/types.py:200 /python_packages/jupyter_lsp/jupyter_lsp/types.py:203 /python_packages/jupyter_lsp/jupyter_lsp/types.py:205 /python_packages/jupyter_lsp/jupyter_lsp/types.py:208 /python_packages/jupyter_lsp/jupyter_lsp/types.py:209 /python_packages/jupyter_lsp/jupyter_lsp/types.py:213
 msgid "additional absolute paths to seek node_modules first"
 msgstr "额外用于首先寻找 node_modules 的绝对路径"
 
