@@ -117,27 +117,15 @@ jobs:
     name: Publish all language packs at once
     needs: build-artifacts
     runs-on: ubuntu-latest
-#     permissions:
-#       id-token: write
+    permissions:
+      id-token: write
     steps:
-#       - name: Publish package distributions to PyPI
-#         uses: pypa/gh-action-pypi-publish@release/v1
-    
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip twine
       - name: Get the artifacts
         uses: actions/download-artifact@v3
         with:
           name: pip_packages
           path: dist
-      - name: Publish PyPI Packages
-        env:
-          TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
-        run: |
-          python -m twine upload --skip-existing dist/*
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          skip-existing: true
