@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2023-11-21 11:17\n"
+"PO-Revision-Date: 2023-12-29 22:41\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1871,6 +1871,16 @@ msgctxt "settings"
 msgid "Rendering Layout"
 msgstr "Mise en page du rendu"
 
+#: /packages/notebook-extension/schema/tracker.json:/properties/scrollHeadingToTop/description
+msgctxt "settings"
+msgid "Whether to scroll heading to the document top when selecting it in the table of contents. Starting with JupyterLab 4.1 this setting will be enabled by default."
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/scrollHeadingToTop/title
+msgctxt "settings"
+msgid "Scroll heading to top"
+msgstr ""
+
 #: /packages/notebook-extension/schema/tracker.json:/properties/scrollPastEnd/description
 msgctxt "settings"
 msgid "Whether to be able to scroll so the last cell is at the top of the panel"
@@ -2329,7 +2339,7 @@ msgstr "La personnalisation du menu contextuel a changé. Vous devrez recharger 
 msgid "Reload"
 msgstr "Recharger"
 
-#: packages/application-extension/src/index.tsx:132 packages/apputils-extension/src/index.ts:319 packages/documentsearch-extension/src/index.ts:326 packages/logconsole-extension/src/index.tsx:246 packages/mainmenu-extension/src/index.ts:236 packages/mainmenu-extension/src/index.ts:240 packages/mainmenu-extension/src/index.ts:250 packages/statusbar-extension/src/index.ts:48
+#: packages/application-extension/src/index.tsx:132 packages/apputils-extension/src/index.ts:319 packages/documentsearch-extension/src/index.ts:325 packages/documentsearch-extension/src/index.ts:326 packages/logconsole-extension/src/index.tsx:246 packages/mainmenu-extension/src/index.ts:236 packages/mainmenu-extension/src/index.ts:240 packages/mainmenu-extension/src/index.ts:250 packages/statusbar-extension/src/index.ts:48
 msgid "Main Area"
 msgstr "Zone principale"
 
@@ -2757,11 +2767,11 @@ msgstr "Fichier d'espace de travail JupyterLab"
 msgid "Dismiss"
 msgstr "Ignorer"
 
-#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:862 packages/apputils/src/dialog.tsx:870 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:696 packages/filebrowser/src/listing.ts:429 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:514 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/translation-extension/src/index.ts:147 packages/translation-extension/src/index.ts:156
+#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:862 packages/apputils/src/dialog.tsx:870 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:696 packages/filebrowser/src/listing.ts:429 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:514 packages/notebook/src/searchprovider.ts:516 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/translation-extension/src/index.ts:147 packages/translation-extension/src/index.ts:156
 msgid "Cancel"
 msgstr "Annuler"
 
-#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/extensionmanager/src/dialog.tsx:37 packages/extensionmanager/src/model.ts:508 packages/extensionmanager/src/model.ts:531 packages/extensionmanager/src/model.ts:533 packages/extensionmanager/src/model.ts:556 packages/notebook/src/model.ts:377 packages/notebook/src/panel.ts:234 packages/notebook/src/searchprovider.ts:515 packages/settingeditor/src/plugineditor.ts:133
+#: packages/apputils/src/dialog.tsx:763 packages/apputils/src/dialog.tsx:770 packages/extensionmanager/src/dialog.tsx:37 packages/extensionmanager/src/model.ts:508 packages/extensionmanager/src/model.ts:531 packages/extensionmanager/src/model.ts:533 packages/extensionmanager/src/model.ts:556 packages/notebook/src/model.ts:377 packages/notebook/src/panel.ts:234 packages/notebook/src/searchprovider.ts:515 packages/notebook/src/searchprovider.ts:517 packages/settingeditor/src/plugineditor.ts:133
 msgid "Ok"
 msgstr "Ok"
 
@@ -2937,11 +2947,11 @@ msgstr "Changer de noyau"
 msgid "Kernel %1"
 msgstr "Noyau %1"
 
-#: packages/apputils/src/toolbar/widget.tsx:56 packages/mainmenu-extension/src/index.ts:469 packages/notebook-extension/src/index.ts:2453 packages/notebook-extension/src/index.ts:2458
+#: packages/apputils/src/toolbar/widget.tsx:56 packages/mainmenu-extension/src/index.ts:469 packages/notebook-extension/src/index.ts:2453 packages/notebook-extension/src/index.ts:2458 packages/notebook-extension/src/index.ts:2477
 msgid "Interrupt the kernel"
 msgstr "Interrompre le noyau"
 
-#: packages/apputils/src/toolbar/widget.tsx:80 packages/mainmenu-extension/src/index.ts:494 packages/notebook-extension/src/index.ts:2321 packages/notebook-extension/src/index.ts:2325
+#: packages/apputils/src/toolbar/widget.tsx:80 packages/mainmenu-extension/src/index.ts:494 packages/notebook-extension/src/index.ts:2321 packages/notebook-extension/src/index.ts:2325 packages/notebook-extension/src/index.ts:2344
 msgid "Restart the kernel"
 msgstr "Redémarrer le noyau"
 
@@ -3387,7 +3397,7 @@ msgstr "Swift"
 msgid "sTeX"
 msgstr "sTeX"
 
-#: packages/codemirror/src/language.ts:1486 packages/notebook-extension/src/index.ts:3678 packages/notebook-extension/src/index.ts:3684
+#: packages/codemirror/src/language.ts:1486 packages/notebook-extension/src/index.ts:3678 packages/notebook-extension/src/index.ts:3684 packages/notebook-extension/src/index.ts:3703
 msgid "LaTeX"
 msgstr "LaTeX"
 
@@ -3499,7 +3509,7 @@ msgstr "CQL"
 msgid "CSS"
 msgstr "CSS"
 
-#: packages/codemirror/src/language.ts:346 packages/notebook-extension/src/index.ts:3677 packages/notebook-extension/src/index.ts:3683
+#: packages/codemirror/src/language.ts:346 packages/notebook-extension/src/index.ts:3677 packages/notebook-extension/src/index.ts:3683 packages/notebook-extension/src/index.ts:3702
 msgid "HTML"
 msgstr "HTML"
 
@@ -3523,7 +3533,7 @@ msgstr "JSX"
 msgid "MariaDB SQL"
 msgstr "MariaDB SQL"
 
-#: packages/codemirror/src/language.ts:413 packages/notebook-extension/src/index.ts:3679 packages/notebook-extension/src/index.ts:3685 packages/notebook/src/default-toolbar.tsx:379
+#: packages/codemirror/src/language.ts:413 packages/notebook-extension/src/index.ts:3679 packages/notebook-extension/src/index.ts:3685 packages/notebook-extension/src/index.ts:3704 packages/notebook/src/default-toolbar.tsx:379
 msgid "Markdown"
 msgstr "Markdown"
 
@@ -3799,11 +3809,11 @@ msgstr "Insérer un saut de ligne"
 msgid "Replace Selection in Console"
 msgstr "Remplacer la sélection dans la console"
 
-#: packages/console-extension/src/index.ts:615 packages/mainmenu-extension/src/index.ts:468 packages/notebook-extension/src/index.ts:2452 packages/notebook-extension/src/index.ts:2457
+#: packages/console-extension/src/index.ts:615 packages/mainmenu-extension/src/index.ts:468 packages/notebook-extension/src/index.ts:2452 packages/notebook-extension/src/index.ts:2457 packages/notebook-extension/src/index.ts:2476
 msgid "Interrupt Kernel"
 msgstr "Interrompre le noyau"
 
-#: packages/console-extension/src/index.ts:630 packages/mainmenu-extension/src/index.ts:493 packages/notebook-extension/src/index.ts:2320 packages/notebook-extension/src/index.ts:2324
+#: packages/console-extension/src/index.ts:630 packages/mainmenu-extension/src/index.ts:493 packages/notebook-extension/src/index.ts:2320 packages/notebook-extension/src/index.ts:2324 packages/notebook-extension/src/index.ts:2343
 msgid "Restart Kernel…"
 msgstr "Redémarrer le noyau…"
 
@@ -3819,7 +3829,7 @@ msgstr "Fermer et Arrêter…"
 msgid "Shut down the console?"
 msgstr "Arrêter la console ?"
 
-#: packages/console-extension/src/index.ts:662 packages/notebook-extension/src/index.ts:2357 packages/notebook-extension/src/index.ts:2362
+#: packages/console-extension/src/index.ts:662 packages/notebook-extension/src/index.ts:2357 packages/notebook-extension/src/index.ts:2362 packages/notebook-extension/src/index.ts:2381
 msgid "Are you sure you want to close \"%1\"?"
 msgstr "Êtes-vous sûr de vouloir fermer \"%1\"?"
 
@@ -3835,11 +3845,11 @@ msgstr "Confirmer l'arrêt de la console"
 msgid "Inject some code in a console."
 msgstr "Copie du code dans une console."
 
-#: packages/console-extension/src/index.ts:705 packages/console-extension/src/index.ts:712 packages/mainmenu-extension/src/index.ts:519 packages/notebook-extension/src/index.ts:3059 packages/notebook-extension/src/index.ts:3065
+#: packages/console-extension/src/index.ts:705 packages/console-extension/src/index.ts:712 packages/mainmenu-extension/src/index.ts:519 packages/notebook-extension/src/index.ts:3059 packages/notebook-extension/src/index.ts:3065 packages/notebook-extension/src/index.ts:3084
 msgid "Change Kernel…"
 msgstr "Changer de noyau…"
 
-#: packages/console-extension/src/index.ts:717 packages/console-extension/src/index.ts:724 packages/mainmenu-extension/src/index.ts:754 packages/notebook-extension/src/index.ts:3070 packages/notebook-extension/src/index.ts:3076
+#: packages/console-extension/src/index.ts:717 packages/console-extension/src/index.ts:724 packages/mainmenu-extension/src/index.ts:754 packages/notebook-extension/src/index.ts:3070 packages/notebook-extension/src/index.ts:3076 packages/notebook-extension/src/index.ts:3095
 msgid "Get Kernel"
 msgstr "Fournit le noyau d'exécution"
 
@@ -3851,11 +3861,11 @@ msgstr "Exécuter avec Maj + Entrée"
 msgid "Execute with Enter"
 msgstr "Exécuter avec Entrée"
 
-#: packages/console-extension/src/index.ts:844 packages/console-extension/src/index.ts:851 packages/fileeditor-extension/src/commands.ts:1005 packages/fileeditor-extension/src/commands.ts:1012 packages/notebook-extension/src/index.ts:1974 packages/notebook-extension/src/index.ts:1977
+#: packages/console-extension/src/index.ts:844 packages/console-extension/src/index.ts:851 packages/fileeditor-extension/src/commands.ts:1005 packages/fileeditor-extension/src/commands.ts:1012 packages/notebook-extension/src/index.ts:1974 packages/notebook-extension/src/index.ts:1977 packages/notebook-extension/src/index.ts:1996
 msgid "Display the completion helper."
 msgstr "Afficher l'aide de complétion."
 
-#: packages/console-extension/src/index.ts:855 packages/console-extension/src/index.ts:862 packages/fileeditor-extension/src/commands.ts:1016 packages/fileeditor-extension/src/commands.ts:1023 packages/notebook-extension/src/index.ts:1984 packages/notebook-extension/src/index.ts:1987
+#: packages/console-extension/src/index.ts:855 packages/console-extension/src/index.ts:862 packages/fileeditor-extension/src/commands.ts:1016 packages/fileeditor-extension/src/commands.ts:1023 packages/notebook-extension/src/index.ts:1984 packages/notebook-extension/src/index.ts:1987 packages/notebook-extension/src/index.ts:2006
 msgid "Select the completion suggestion."
 msgstr "Sélectionne la suggestion de complétion."
 
@@ -4405,7 +4415,7 @@ msgstr "Fermer sans sauvegarder"
 msgid "Close Document without saving"
 msgstr "Fermer le document sans sauvegarder"
 
-#: packages/docmanager/src/widgetmanager.ts:409 packages/docmanager/src/widgetmanager.ts:415 packages/notebook/src/searchprovider.ts:509
+#: packages/docmanager/src/widgetmanager.ts:409 packages/docmanager/src/widgetmanager.ts:415 packages/notebook/src/searchprovider.ts:509 packages/notebook/src/searchprovider.ts:511
 msgid "Confirmation"
 msgstr "Confirmation"
 
@@ -4481,7 +4491,7 @@ msgstr "défaut"
 msgid "Text"
 msgstr "Texte"
 
-#: packages/docregistry/src/registry.ts:1333 packages/launcher/src/widget.tsx:115 packages/launcher/src/widget.tsx:120 packages/notebook-extension/src/index.ts:1210 packages/notebook-extension/src/index.ts:1213 packages/notebook-extension/src/index.ts:1902 packages/notebook-extension/src/index.ts:1905 packages/notebook-extension/src/index.ts:1938 packages/notebook-extension/src/index.ts:1941
+#: packages/docregistry/src/registry.ts:1333 packages/launcher/src/widget.tsx:115 packages/launcher/src/widget.tsx:120 packages/notebook-extension/src/index.ts:1210 packages/notebook-extension/src/index.ts:1213 packages/notebook-extension/src/index.ts:1232 packages/notebook-extension/src/index.ts:1902 packages/notebook-extension/src/index.ts:1905 packages/notebook-extension/src/index.ts:1924 packages/notebook-extension/src/index.ts:1938 packages/notebook-extension/src/index.ts:1941 packages/notebook-extension/src/index.ts:1960
 msgid "Notebook"
 msgstr "Notebook"
 
@@ -4845,7 +4855,7 @@ msgstr "Actualiser la liste des fichiers"
 msgid "Copy Path"
 msgstr "Copier le chemin"
 
-#: packages/filebrowser-extension/src/index.ts:1232 packages/filebrowser-extension/src/index.ts:1236 packages/mainmenu-extension/src/index.ts:531 packages/notebook-extension/src/index.ts:2332 packages/notebook-extension/src/index.ts:2337 packages/running-extension/src/kernels.ts:118 packages/running-extension/src/kernels.ts:66
+#: packages/filebrowser-extension/src/index.ts:1232 packages/filebrowser-extension/src/index.ts:1236 packages/mainmenu-extension/src/index.ts:531 packages/notebook-extension/src/index.ts:2332 packages/notebook-extension/src/index.ts:2337 packages/notebook-extension/src/index.ts:2356 packages/running-extension/src/kernels.ts:118 packages/running-extension/src/kernels.ts:66
 msgid "Shut Down Kernel"
 msgstr "Arrêter le noyau"
 
@@ -5178,7 +5188,7 @@ msgstr "Augmenter la taille de police de l'éditeur de texte"
 msgid "Decrease Text Editor Font Size"
 msgstr "Diminuer la taille de police de l'éditeur de texte"
 
-#: packages/fileeditor-extension/src/commands.ts:306 packages/fileeditor-extension/src/commands.ts:307 packages/fileeditor-extension/src/commands.ts:310 packages/fileeditor-extension/src/commands.ts:311 packages/mainmenu-extension/src/index.ts:576 packages/notebook-extension/src/index.ts:2963 packages/notebook-extension/src/index.ts:2969
+#: packages/fileeditor-extension/src/commands.ts:306 packages/fileeditor-extension/src/commands.ts:307 packages/fileeditor-extension/src/commands.ts:310 packages/fileeditor-extension/src/commands.ts:311 packages/mainmenu-extension/src/index.ts:576 packages/notebook-extension/src/index.ts:2963 packages/notebook-extension/src/index.ts:2969 packages/notebook-extension/src/index.ts:2988
 msgid "Show Line Numbers"
 msgstr "Afficher les numéros de ligne"
 
@@ -5271,11 +5281,11 @@ msgstr "Créer un nouveau fichier texte"
 msgid "Create a new markdown file"
 msgstr "Créer un nouveau fichier markdown"
 
-#: packages/fileeditor-extension/src/commands.ts:847 packages/fileeditor-extension/src/commands.ts:854 packages/mainmenu-extension/src/index.ts:277 packages/notebook-extension/src/index.ts:3045 packages/notebook-extension/src/index.ts:3051
+#: packages/fileeditor-extension/src/commands.ts:847 packages/fileeditor-extension/src/commands.ts:854 packages/mainmenu-extension/src/index.ts:277 packages/notebook-extension/src/index.ts:3045 packages/notebook-extension/src/index.ts:3051 packages/notebook-extension/src/index.ts:3070
 msgid "Undo"
 msgstr "Annuler"
 
-#: packages/fileeditor-extension/src/commands.ts:878 packages/fileeditor-extension/src/commands.ts:885 packages/mainmenu-extension/src/index.ts:288 packages/notebook-extension/src/index.ts:3031 packages/notebook-extension/src/index.ts:3037
+#: packages/fileeditor-extension/src/commands.ts:878 packages/fileeditor-extension/src/commands.ts:885 packages/mainmenu-extension/src/index.ts:288 packages/notebook-extension/src/index.ts:3031 packages/notebook-extension/src/index.ts:3037 packages/notebook-extension/src/index.ts:3056
 msgid "Redo"
 msgstr "Rétablir"
 
@@ -5788,7 +5798,7 @@ msgstr "Server arrêté"
 msgid "Log out of JupyterLab"
 msgstr "Se déconnecter de JupyterLab"
 
-#: packages/mainmenu-extension/src/index.ts:482 packages/notebook-extension/src/index.ts:3081 packages/notebook-extension/src/index.ts:3087
+#: packages/mainmenu-extension/src/index.ts:482 packages/notebook-extension/src/index.ts:3081 packages/notebook-extension/src/index.ts:3087 packages/notebook-extension/src/index.ts:3106
 msgid "Reconnect to Kernel"
 msgstr "Reconnecter au noyau"
 
@@ -5848,471 +5858,471 @@ msgstr "Montrer l'éditeur Markdown"
 msgid "No metadata."
 msgstr "Aucunes métadonnées."
 
-#: packages/notebook-extension/src/index.ts:1113 packages/notebook-extension/src/index.ts:1116
+#: packages/notebook-extension/src/index.ts:1113 packages/notebook-extension/src/index.ts:1116 packages/notebook-extension/src/index.ts:1135
 msgid "Notebook Tools"
 msgstr "Outils du notebook"
 
-#: packages/notebook-extension/src/index.ts:1265 packages/notebook-extension/src/index.ts:1268
+#: packages/notebook-extension/src/index.ts:1265 packages/notebook-extension/src/index.ts:1268 packages/notebook-extension/src/index.ts:1287
 msgid "Create New View for Cell Output"
 msgstr "Créer une nouvelle vue pour la sortie de cellule"
 
-#: packages/notebook-extension/src/index.ts:1335 packages/notebook-extension/src/index.ts:1338
+#: packages/notebook-extension/src/index.ts:1335 packages/notebook-extension/src/index.ts:1338 packages/notebook-extension/src/index.ts:1357
 msgid "New Console for Notebook"
 msgstr "Nouvelle console pour le notebook"
 
-#: packages/notebook-extension/src/index.ts:1353 packages/notebook-extension/src/index.ts:1356
+#: packages/notebook-extension/src/index.ts:1353 packages/notebook-extension/src/index.ts:1356 packages/notebook-extension/src/index.ts:1375
 msgid "Run Selected Text or Current Line in Console"
 msgstr "Exécuter le texte sélectionné ou la ligne actuelle dans la console"
 
-#: packages/notebook-extension/src/index.ts:1517 packages/notebook-extension/src/index.ts:1520
+#: packages/notebook-extension/src/index.ts:1517 packages/notebook-extension/src/index.ts:1520 packages/notebook-extension/src/index.ts:1539
 msgid "Copy Output to Clipboard"
 msgstr "Copier dans le Presse-papiers"
 
-#: packages/notebook-extension/src/index.ts:1673 packages/notebook-extension/src/index.ts:1676
+#: packages/notebook-extension/src/index.ts:1673 packages/notebook-extension/src/index.ts:1676 packages/notebook-extension/src/index.ts:1695
 msgid "Auto Close Brackets for All Notebook Cell Types"
 msgstr "Fermeture automatique des parenthèses pour tous les types de cellules du Notebook"
 
-#: packages/notebook-extension/src/index.ts:1682 packages/notebook-extension/src/index.ts:1685
+#: packages/notebook-extension/src/index.ts:1682 packages/notebook-extension/src/index.ts:1685 packages/notebook-extension/src/index.ts:1704
 msgid "Set side-by-side ratio"
 msgstr "Régler le ratio côte à côte"
 
-#: packages/notebook-extension/src/index.ts:1685 packages/notebook-extension/src/index.ts:1688
+#: packages/notebook-extension/src/index.ts:1685 packages/notebook-extension/src/index.ts:1688 packages/notebook-extension/src/index.ts:1707
 msgid "Width of the output in side-by-side mode"
 msgstr "Largeur de la sortie en mode côte à côte"
 
-#: packages/notebook-extension/src/index.ts:1900 packages/notebook-extension/src/index.ts:1903
+#: packages/notebook-extension/src/index.ts:1900 packages/notebook-extension/src/index.ts:1903 packages/notebook-extension/src/index.ts:1922
 msgid "New Notebook"
 msgstr "Nouveau notebook"
 
-#: packages/notebook-extension/src/index.ts:1904 packages/notebook-extension/src/index.ts:1907
+#: packages/notebook-extension/src/index.ts:1904 packages/notebook-extension/src/index.ts:1907 packages/notebook-extension/src/index.ts:1926
 msgid "Create a new notebook"
 msgstr "Créer un nouveau notebook"
 
-#: packages/notebook-extension/src/index.ts:2158 packages/notebook-extension/src/index.ts:2161
+#: packages/notebook-extension/src/index.ts:2158 packages/notebook-extension/src/index.ts:2161 packages/notebook-extension/src/index.ts:2180
 msgid "Run Selected Cell"
 msgid_plural "Run Selected Cells"
 msgstr[0] "Exécuter la cellule sélectionnée"
 msgstr[1] "Exécuter les cellules sélectionnées"
 
-#: packages/notebook-extension/src/index.ts:2166 packages/notebook-extension/src/index.ts:2169
+#: packages/notebook-extension/src/index.ts:2166 packages/notebook-extension/src/index.ts:2169 packages/notebook-extension/src/index.ts:2188
 msgid "Run this cell and advance"
 msgid_plural "Run these %1 cells and advance"
 msgstr[0] "Exécuter cette cellule et avancer"
 msgstr[1] "Exécuter ces %1 cellules et avancer"
 
-#: packages/notebook-extension/src/index.ts:2191 packages/notebook-extension/src/index.ts:2195
+#: packages/notebook-extension/src/index.ts:2191 packages/notebook-extension/src/index.ts:2195 packages/notebook-extension/src/index.ts:2214
 msgid "Run Selected Cell and Do not Advance"
 msgid_plural "Run Selected Cells and Do not Advance"
 msgstr[0] "Exécuter la cellule sélectionnée sans passer à la suivante"
 msgstr[1] "Exécuter les cellules sélectionnées sans passer à la suivante"
 
-#: packages/notebook-extension/src/index.ts:2216 packages/notebook-extension/src/index.ts:2220
+#: packages/notebook-extension/src/index.ts:2216 packages/notebook-extension/src/index.ts:2220 packages/notebook-extension/src/index.ts:2239
 msgid "Run Selected Cell and Insert Below"
 msgid_plural "Run Selected Cells and Insert Below"
 msgstr[0] "Exécuter la cellule sélectionnée et insérer une nouvelle en dessous"
 msgstr[1] "Exécuter les cellules sélectionnées et insérer une nouvelle en dessous"
 
-#: packages/notebook-extension/src/index.ts:2239 packages/notebook-extension/src/index.ts:2243
+#: packages/notebook-extension/src/index.ts:2239 packages/notebook-extension/src/index.ts:2243 packages/notebook-extension/src/index.ts:2262
 msgid "Run All Cells"
 msgstr "Exécuter toutes les cellules"
 
-#: packages/notebook-extension/src/index.ts:2240 packages/notebook-extension/src/index.ts:2244
+#: packages/notebook-extension/src/index.ts:2240 packages/notebook-extension/src/index.ts:2244 packages/notebook-extension/src/index.ts:2263
 msgid "Run all cells"
 msgstr "Exécuter toutes les cellules"
 
-#: packages/notebook-extension/src/index.ts:2258 packages/notebook-extension/src/index.ts:2262
+#: packages/notebook-extension/src/index.ts:2258 packages/notebook-extension/src/index.ts:2262 packages/notebook-extension/src/index.ts:2281
 msgid "Run All Above Selected Cell"
 msgstr "Exécuter tout au-dessus de la cellule sélectionnée"
 
-#: packages/notebook-extension/src/index.ts:2283 packages/notebook-extension/src/index.ts:2287
+#: packages/notebook-extension/src/index.ts:2283 packages/notebook-extension/src/index.ts:2287 packages/notebook-extension/src/index.ts:2306
 msgid "Run Selected Cell and All Below"
 msgstr "Exécuter la cellule sélectionnée et toutes les suivantes"
 
-#: packages/notebook-extension/src/index.ts:2309 packages/notebook-extension/src/index.ts:2313
+#: packages/notebook-extension/src/index.ts:2309 packages/notebook-extension/src/index.ts:2313 packages/notebook-extension/src/index.ts:2332
 msgid "Render All Markdown Cells"
 msgstr "Effectuer le rendu de toutes les cellules Markdown"
 
-#: packages/notebook-extension/src/index.ts:2345 packages/notebook-extension/src/index.ts:2350
+#: packages/notebook-extension/src/index.ts:2345 packages/notebook-extension/src/index.ts:2350 packages/notebook-extension/src/index.ts:2369
 msgid "Close and Shut Down Notebook"
 msgstr "Fermer et arrêter le notebook"
 
-#: packages/notebook-extension/src/index.ts:2356 packages/notebook-extension/src/index.ts:2361
+#: packages/notebook-extension/src/index.ts:2356 packages/notebook-extension/src/index.ts:2361 packages/notebook-extension/src/index.ts:2380
 msgid "Shut down the notebook?"
 msgstr "Arrêter le notebook?"
 
-#: packages/notebook-extension/src/index.ts:2372 packages/notebook-extension/src/index.ts:2377
+#: packages/notebook-extension/src/index.ts:2372 packages/notebook-extension/src/index.ts:2377 packages/notebook-extension/src/index.ts:2396
 msgid "Trust Notebook"
 msgstr "Faire confiance au notebook"
 
-#: packages/notebook-extension/src/index.ts:2383 packages/notebook-extension/src/index.ts:2388
+#: packages/notebook-extension/src/index.ts:2383 packages/notebook-extension/src/index.ts:2388 packages/notebook-extension/src/index.ts:2407
 msgid "Restart Kernel and Clear Outputs of All Cells…"
 msgstr "Redémarrer le noyau et effacer les sorties de toutes les cellules…"
 
-#: packages/notebook-extension/src/index.ts:2384 packages/notebook-extension/src/index.ts:2389
+#: packages/notebook-extension/src/index.ts:2384 packages/notebook-extension/src/index.ts:2389 packages/notebook-extension/src/index.ts:2408
 msgid "Restart the kernel and clear all outputs of all cells"
 msgstr "Redémarrer le noyau et effacer les sorties de toutes les cellules"
 
-#: packages/notebook-extension/src/index.ts:2396 packages/notebook-extension/src/index.ts:2401
+#: packages/notebook-extension/src/index.ts:2396 packages/notebook-extension/src/index.ts:2401 packages/notebook-extension/src/index.ts:2420
 msgid "Restart Kernel and Run up to Selected Cell…"
 msgstr "Redémarrez le noyau et exécutez jusqu'à la cellule sélectionnée…"
 
-#: packages/notebook-extension/src/index.ts:2414 packages/notebook-extension/src/index.ts:2419
+#: packages/notebook-extension/src/index.ts:2414 packages/notebook-extension/src/index.ts:2419 packages/notebook-extension/src/index.ts:2438
 msgid "Restart Kernel and Run All Cells…"
 msgstr "Redémarrer le noyau et exécuter toutes les cellules…"
 
-#: packages/notebook-extension/src/index.ts:2415 packages/notebook-extension/src/index.ts:2420
+#: packages/notebook-extension/src/index.ts:2415 packages/notebook-extension/src/index.ts:2420 packages/notebook-extension/src/index.ts:2439
 msgid "Restart the kernel and run all cells"
 msgstr "Redémarrer le noyau et exécuter toutes les cellules"
 
-#: packages/notebook-extension/src/index.ts:2428 packages/notebook-extension/src/index.ts:2433
+#: packages/notebook-extension/src/index.ts:2428 packages/notebook-extension/src/index.ts:2433 packages/notebook-extension/src/index.ts:2452
 msgid "Clear Outputs of All Cells"
 msgstr "Effacer les sorties de toutes les cellules"
 
-#: packages/notebook-extension/src/index.ts:2429 packages/notebook-extension/src/index.ts:2434
+#: packages/notebook-extension/src/index.ts:2429 packages/notebook-extension/src/index.ts:2434 packages/notebook-extension/src/index.ts:2453
 msgid "Clear all outputs of all cells"
 msgstr "Effacer les sorties de toutes les cellules"
 
-#: packages/notebook-extension/src/index.ts:2440 packages/notebook-extension/src/index.ts:2445
+#: packages/notebook-extension/src/index.ts:2440 packages/notebook-extension/src/index.ts:2445 packages/notebook-extension/src/index.ts:2464
 msgid "Clear Cell Output"
 msgstr "Effacer toutes les sorties"
 
-#: packages/notebook-extension/src/index.ts:2441 packages/notebook-extension/src/index.ts:2446
+#: packages/notebook-extension/src/index.ts:2441 packages/notebook-extension/src/index.ts:2446 packages/notebook-extension/src/index.ts:2465
 msgid "Clear outputs for the selected cells"
 msgstr "Effacer les sorties des cellules sélectionnées"
 
-#: packages/notebook-extension/src/index.ts:2470 packages/notebook-extension/src/index.ts:2476
+#: packages/notebook-extension/src/index.ts:2470 packages/notebook-extension/src/index.ts:2476 packages/notebook-extension/src/index.ts:2495
 msgid "Change to Code Cell Type"
 msgstr "Changer pour le type de cellule Code"
 
-#: packages/notebook-extension/src/index.ts:2481 packages/notebook-extension/src/index.ts:2487
+#: packages/notebook-extension/src/index.ts:2481 packages/notebook-extension/src/index.ts:2487 packages/notebook-extension/src/index.ts:2506
 msgid "Change to Markdown Cell Type"
 msgstr "Changer pour le type de cellule Markdown"
 
-#: packages/notebook-extension/src/index.ts:2492 packages/notebook-extension/src/index.ts:2498
+#: packages/notebook-extension/src/index.ts:2492 packages/notebook-extension/src/index.ts:2498 packages/notebook-extension/src/index.ts:2517
 msgid "Change to Raw Cell Type"
 msgstr "Changer pour le type de cellule Raw"
 
-#: packages/notebook-extension/src/index.ts:2505 packages/notebook-extension/src/index.ts:2511
+#: packages/notebook-extension/src/index.ts:2505 packages/notebook-extension/src/index.ts:2511 packages/notebook-extension/src/index.ts:2530
 msgid "Cut Cell"
 msgid_plural "Cut Cells"
 msgstr[0] "Couper la cellule"
 msgstr[1] "Couper les cellules"
 
-#: packages/notebook-extension/src/index.ts:2513 packages/notebook-extension/src/index.ts:2519
+#: packages/notebook-extension/src/index.ts:2513 packages/notebook-extension/src/index.ts:2519 packages/notebook-extension/src/index.ts:2538
 msgid "Cut this cell"
 msgid_plural "Cut these %1 cells"
 msgstr[0] "Couper cette cellule"
 msgstr[1] "Couper ces %1 cellules"
 
-#: packages/notebook-extension/src/index.ts:2532 packages/notebook-extension/src/index.ts:2538
+#: packages/notebook-extension/src/index.ts:2532 packages/notebook-extension/src/index.ts:2538 packages/notebook-extension/src/index.ts:2557
 msgid "Copy Cell"
 msgid_plural "Copy Cells"
 msgstr[0] "Copier la cellule"
 msgstr[1] "Copier les cellules"
 
-#: packages/notebook-extension/src/index.ts:2540 packages/notebook-extension/src/index.ts:2546
+#: packages/notebook-extension/src/index.ts:2540 packages/notebook-extension/src/index.ts:2546 packages/notebook-extension/src/index.ts:2565
 msgid "Copy this cell"
 msgid_plural "Copy these %1 cells"
 msgstr[0] "Couper cette cellule"
 msgstr[1] "Couper ces %1 cellules"
 
-#: packages/notebook-extension/src/index.ts:2559 packages/notebook-extension/src/index.ts:2565
+#: packages/notebook-extension/src/index.ts:2559 packages/notebook-extension/src/index.ts:2565 packages/notebook-extension/src/index.ts:2584
 msgid "Paste Cell Below"
 msgid_plural "Paste Cells Below"
 msgstr[0] "Coller la cellule en dessous"
 msgstr[1] "Coller les cellules en dessous"
 
-#: packages/notebook-extension/src/index.ts:2567 packages/notebook-extension/src/index.ts:2573 packages/notebook-extension/src/index.ts:2594 packages/notebook-extension/src/index.ts:2600
+#: packages/notebook-extension/src/index.ts:2567 packages/notebook-extension/src/index.ts:2573 packages/notebook-extension/src/index.ts:2592 packages/notebook-extension/src/index.ts:2594 packages/notebook-extension/src/index.ts:2600 packages/notebook-extension/src/index.ts:2619
 msgid "Paste this cell from the clipboard"
 msgid_plural "Paste these %1 cells from the clipboard"
 msgstr[0] "Coller cette cellule depuis le presse-papiers"
 msgstr[1] "Coller ces %1 cellules depuis le presse-papiers"
 
-#: packages/notebook-extension/src/index.ts:2586 packages/notebook-extension/src/index.ts:2592
+#: packages/notebook-extension/src/index.ts:2586 packages/notebook-extension/src/index.ts:2592 packages/notebook-extension/src/index.ts:2611
 msgid "Paste Cell Above"
 msgid_plural "Paste Cells Above"
 msgstr[0] "Coller les cellules au-dessus"
 msgstr[1] "Coller les cellules au-dessus"
 
-#: packages/notebook-extension/src/index.ts:2612 packages/notebook-extension/src/index.ts:2618
+#: packages/notebook-extension/src/index.ts:2612 packages/notebook-extension/src/index.ts:2618 packages/notebook-extension/src/index.ts:2637
 msgid "Duplicate Cell Below"
 msgid_plural "Duplicate Cells Below"
 msgstr[0] "Dupliquer la cellule en dessous"
 msgstr[1] "Dupliquer les cellules en dessous"
 
-#: packages/notebook-extension/src/index.ts:2620 packages/notebook-extension/src/index.ts:2626
+#: packages/notebook-extension/src/index.ts:2620 packages/notebook-extension/src/index.ts:2626 packages/notebook-extension/src/index.ts:2645
 msgid "Create a duplicate of this cell below"
 msgid_plural "Create duplicates of %1 cells below"
 msgstr[0] "Créer un doublon de cette cellule en dessous"
 msgstr[1] "Créer les doublons de %1 cellules en dessous"
 
-#: packages/notebook-extension/src/index.ts:2639 packages/notebook-extension/src/index.ts:2645
+#: packages/notebook-extension/src/index.ts:2639 packages/notebook-extension/src/index.ts:2645 packages/notebook-extension/src/index.ts:2664
 msgid "Paste Cell and Replace"
 msgid_plural "Paste Cells and Replace"
 msgstr[0] "Coller la cellule et remplacer"
 msgstr[1] "Coller les cellules et remplacer"
 
-#: packages/notebook-extension/src/index.ts:2657 packages/notebook-extension/src/index.ts:2663
+#: packages/notebook-extension/src/index.ts:2657 packages/notebook-extension/src/index.ts:2663 packages/notebook-extension/src/index.ts:2682
 msgid "Delete Cell"
 msgid_plural "Delete Cells"
 msgstr[0] "Supprimer la cellule"
 msgstr[1] "Supprimer les cellules"
 
-#: packages/notebook-extension/src/index.ts:2665 packages/notebook-extension/src/index.ts:2671
+#: packages/notebook-extension/src/index.ts:2665 packages/notebook-extension/src/index.ts:2671 packages/notebook-extension/src/index.ts:2690
 msgid "Delete this cell"
 msgid_plural "Delete these %1 cells"
 msgstr[0] "Supprimer cette cellule"
 msgstr[1] "Supprimer ces %1 cellules"
 
-#: packages/notebook-extension/src/index.ts:2682 packages/notebook-extension/src/index.ts:2688
+#: packages/notebook-extension/src/index.ts:2682 packages/notebook-extension/src/index.ts:2688 packages/notebook-extension/src/index.ts:2707
 msgid "Split Cell"
 msgstr "Scinder une cellule"
 
-#: packages/notebook-extension/src/index.ts:2693 packages/notebook-extension/src/index.ts:2699
+#: packages/notebook-extension/src/index.ts:2693 packages/notebook-extension/src/index.ts:2699 packages/notebook-extension/src/index.ts:2718
 msgid "Merge Selected Cells"
 msgstr "Fusionner les cellules sélectionnées"
 
-#: packages/notebook-extension/src/index.ts:2704 packages/notebook-extension/src/index.ts:2710
+#: packages/notebook-extension/src/index.ts:2704 packages/notebook-extension/src/index.ts:2710 packages/notebook-extension/src/index.ts:2729
 msgid "Merge Cell Above"
 msgstr "Fusionner la cellule au-dessus"
 
-#: packages/notebook-extension/src/index.ts:2715 packages/notebook-extension/src/index.ts:2721
+#: packages/notebook-extension/src/index.ts:2715 packages/notebook-extension/src/index.ts:2721 packages/notebook-extension/src/index.ts:2740
 msgid "Merge Cell Below"
 msgstr "Fusionner la cellule au-dessous"
 
-#: packages/notebook-extension/src/index.ts:2726 packages/notebook-extension/src/index.ts:2732
+#: packages/notebook-extension/src/index.ts:2726 packages/notebook-extension/src/index.ts:2732 packages/notebook-extension/src/index.ts:2751
 msgid "Insert Cell Above"
 msgstr "Insérer une cellule au dessus"
 
-#: packages/notebook-extension/src/index.ts:2727 packages/notebook-extension/src/index.ts:2733
+#: packages/notebook-extension/src/index.ts:2727 packages/notebook-extension/src/index.ts:2733 packages/notebook-extension/src/index.ts:2752
 msgid "Insert a cell above"
 msgstr "Insérer une cellule au dessus"
 
-#: packages/notebook-extension/src/index.ts:2739 packages/notebook-extension/src/index.ts:2745
+#: packages/notebook-extension/src/index.ts:2739 packages/notebook-extension/src/index.ts:2745 packages/notebook-extension/src/index.ts:2764
 msgid "Insert Cell Below"
 msgstr "Insérer une cellule en-dessous"
 
-#: packages/notebook-extension/src/index.ts:2740 packages/notebook-extension/src/index.ts:2746 packages/notebook/src/default-toolbar.tsx:121
+#: packages/notebook-extension/src/index.ts:2740 packages/notebook-extension/src/index.ts:2746 packages/notebook-extension/src/index.ts:2765 packages/notebook/src/default-toolbar.tsx:121
 msgid "Insert a cell below"
 msgstr "Insérer une cellule en-dessous"
 
-#: packages/notebook-extension/src/index.ts:2752 packages/notebook-extension/src/index.ts:2758
+#: packages/notebook-extension/src/index.ts:2752 packages/notebook-extension/src/index.ts:2758 packages/notebook-extension/src/index.ts:2777
 msgid "Select Cell Above"
 msgstr "Sélectionner la cellule au dessus"
 
-#: packages/notebook-extension/src/index.ts:2763 packages/notebook-extension/src/index.ts:2769
+#: packages/notebook-extension/src/index.ts:2763 packages/notebook-extension/src/index.ts:2769 packages/notebook-extension/src/index.ts:2788
 msgid "Select Cell Below"
 msgstr "Sélectionner la cellule en dessous"
 
-#: packages/notebook-extension/src/index.ts:2773 packages/notebook-extension/src/index.ts:2779
+#: packages/notebook-extension/src/index.ts:2773 packages/notebook-extension/src/index.ts:2779 packages/notebook-extension/src/index.ts:2798
 msgid "Insert Heading Above Current Heading"
 msgstr "Insérer un titre au-dessus du titre actuel"
 
-#: packages/notebook-extension/src/index.ts:2784 packages/notebook-extension/src/index.ts:2790
+#: packages/notebook-extension/src/index.ts:2784 packages/notebook-extension/src/index.ts:2790 packages/notebook-extension/src/index.ts:2809
 msgid "Insert Heading Below Current Heading"
 msgstr "Insérer un titre sous le titre actuel"
 
-#: packages/notebook-extension/src/index.ts:2795 packages/notebook-extension/src/index.ts:2801
+#: packages/notebook-extension/src/index.ts:2795 packages/notebook-extension/src/index.ts:2801 packages/notebook-extension/src/index.ts:2820
 msgid "Select Heading Above or Collapse Heading"
 msgstr "Sélectionner le titre au-dessus ou réduire le titre"
 
-#: packages/notebook-extension/src/index.ts:2808 packages/notebook-extension/src/index.ts:2814
+#: packages/notebook-extension/src/index.ts:2808 packages/notebook-extension/src/index.ts:2814 packages/notebook-extension/src/index.ts:2833
 msgid "Select Heading Below or Expand Heading"
 msgstr "Sélectionner le titre en dessous ou développer le titre"
 
-#: packages/notebook-extension/src/index.ts:2821 packages/notebook-extension/src/index.ts:2827
+#: packages/notebook-extension/src/index.ts:2821 packages/notebook-extension/src/index.ts:2827 packages/notebook-extension/src/index.ts:2846
 msgid "Extend Selection Above"
 msgstr "Étendre la sélection au dessus"
 
-#: packages/notebook-extension/src/index.ts:2832 packages/notebook-extension/src/index.ts:2838
+#: packages/notebook-extension/src/index.ts:2832 packages/notebook-extension/src/index.ts:2838 packages/notebook-extension/src/index.ts:2857
 msgid "Extend Selection to Top"
 msgstr "Étendre la sélection au début"
 
-#: packages/notebook-extension/src/index.ts:2843 packages/notebook-extension/src/index.ts:2849
+#: packages/notebook-extension/src/index.ts:2843 packages/notebook-extension/src/index.ts:2849 packages/notebook-extension/src/index.ts:2868
 msgid "Extend Selection Below"
 msgstr "Étendre la sélection en dessous"
 
-#: packages/notebook-extension/src/index.ts:2854 packages/notebook-extension/src/index.ts:2860
+#: packages/notebook-extension/src/index.ts:2854 packages/notebook-extension/src/index.ts:2860 packages/notebook-extension/src/index.ts:2879
 msgid "Extend Selection to Bottom"
 msgstr "Étendre la sélection à la fin"
 
-#: packages/notebook-extension/src/index.ts:2865 packages/notebook-extension/src/index.ts:2871
+#: packages/notebook-extension/src/index.ts:2865 packages/notebook-extension/src/index.ts:2871 packages/notebook-extension/src/index.ts:2890
 msgid "Select All Cells"
 msgstr "Sélectionner toutes les cellules"
 
-#: packages/notebook-extension/src/index.ts:2876 packages/notebook-extension/src/index.ts:2882
+#: packages/notebook-extension/src/index.ts:2876 packages/notebook-extension/src/index.ts:2882 packages/notebook-extension/src/index.ts:2901
 msgid "Deselect All Cells"
 msgstr "Désélectionner toutes les cellules"
 
-#: packages/notebook-extension/src/index.ts:2889 packages/notebook-extension/src/index.ts:2895
+#: packages/notebook-extension/src/index.ts:2889 packages/notebook-extension/src/index.ts:2895 packages/notebook-extension/src/index.ts:2914
 msgid "Move Cell Up"
 msgid_plural "Move Cells Up"
 msgstr[0] "Déplacer la cellule vers le haut"
 msgstr[1] "Déplacer les cellules vers le haut"
 
-#: packages/notebook-extension/src/index.ts:2897 packages/notebook-extension/src/index.ts:2903
+#: packages/notebook-extension/src/index.ts:2897 packages/notebook-extension/src/index.ts:2903 packages/notebook-extension/src/index.ts:2922
 msgid "Move this cell up"
 msgid_plural "Move these %1 cells up"
 msgstr[0] "Déplacer cette cellule vers le haut"
 msgstr[1] "Déplacer ces %1 cellules vers le haut"
 
-#: packages/notebook-extension/src/index.ts:2909 packages/notebook-extension/src/index.ts:2915
+#: packages/notebook-extension/src/index.ts:2909 packages/notebook-extension/src/index.ts:2915 packages/notebook-extension/src/index.ts:2934
 msgid "Notebook cell shifted up successfully"
 msgstr "Cellule de notebook déplacée avec succès"
 
-#: packages/notebook-extension/src/index.ts:2926 packages/notebook-extension/src/index.ts:2932
+#: packages/notebook-extension/src/index.ts:2926 packages/notebook-extension/src/index.ts:2932 packages/notebook-extension/src/index.ts:2951
 msgid "Move Cell Down"
 msgid_plural "Move Cells Down"
 msgstr[0] "Déplacer la cellule vers le bas"
 msgstr[1] "Déplacer les cellules vers le bas"
 
-#: packages/notebook-extension/src/index.ts:2934 packages/notebook-extension/src/index.ts:2940
+#: packages/notebook-extension/src/index.ts:2934 packages/notebook-extension/src/index.ts:2940 packages/notebook-extension/src/index.ts:2959
 msgid "Move this cell down"
 msgid_plural "Move these %1 cells down"
 msgstr[0] "Déplacer cette cellule vers le bas"
 msgstr[1] "Déplacer ces %1 cellules vers le bas"
 
-#: packages/notebook-extension/src/index.ts:2946 packages/notebook-extension/src/index.ts:2952
+#: packages/notebook-extension/src/index.ts:2946 packages/notebook-extension/src/index.ts:2952 packages/notebook-extension/src/index.ts:2971
 msgid "Notebook cell shifted down successfully"
 msgstr "Cellule de notebook déplacée avec succès"
 
-#: packages/notebook-extension/src/index.ts:2987 packages/notebook-extension/src/index.ts:2993
+#: packages/notebook-extension/src/index.ts:2987 packages/notebook-extension/src/index.ts:2993 packages/notebook-extension/src/index.ts:3012
 msgid "Enter Command Mode"
 msgstr "Passer en mode commande"
 
-#: packages/notebook-extension/src/index.ts:2998 packages/notebook-extension/src/index.ts:3004
+#: packages/notebook-extension/src/index.ts:2998 packages/notebook-extension/src/index.ts:3004 packages/notebook-extension/src/index.ts:3023
 msgid "Enter Edit Mode"
 msgstr "Passer en mode d'édition"
 
-#: packages/notebook-extension/src/index.ts:3009 packages/notebook-extension/src/index.ts:3015
+#: packages/notebook-extension/src/index.ts:3009 packages/notebook-extension/src/index.ts:3015 packages/notebook-extension/src/index.ts:3034
 msgid "Undo Cell Operation"
 msgstr "Annuler l'opération de cellule"
 
-#: packages/notebook-extension/src/index.ts:3020 packages/notebook-extension/src/index.ts:3026
+#: packages/notebook-extension/src/index.ts:3020 packages/notebook-extension/src/index.ts:3026 packages/notebook-extension/src/index.ts:3045
 msgid "Redo Cell Operation"
 msgstr "Refaire l'opération de cellule"
 
-#: packages/notebook-extension/src/index.ts:3098 packages/notebook-extension/src/index.ts:3104
+#: packages/notebook-extension/src/index.ts:3098 packages/notebook-extension/src/index.ts:3104 packages/notebook-extension/src/index.ts:3123
 msgid "Change to Heading 1"
 msgstr "Changer pour le Titre 1"
 
-#: packages/notebook-extension/src/index.ts:3109 packages/notebook-extension/src/index.ts:3115
+#: packages/notebook-extension/src/index.ts:3109 packages/notebook-extension/src/index.ts:3115 packages/notebook-extension/src/index.ts:3134
 msgid "Change to Heading 2"
 msgstr "Changer pour le Titre 2"
 
-#: packages/notebook-extension/src/index.ts:3120 packages/notebook-extension/src/index.ts:3126
+#: packages/notebook-extension/src/index.ts:3120 packages/notebook-extension/src/index.ts:3126 packages/notebook-extension/src/index.ts:3145
 msgid "Change to Heading 3"
 msgstr "Changer pour le Titre 3"
 
-#: packages/notebook-extension/src/index.ts:3131 packages/notebook-extension/src/index.ts:3137
+#: packages/notebook-extension/src/index.ts:3131 packages/notebook-extension/src/index.ts:3137 packages/notebook-extension/src/index.ts:3156
 msgid "Change to Heading 4"
 msgstr "Changer pour le Titre 4"
 
-#: packages/notebook-extension/src/index.ts:3142 packages/notebook-extension/src/index.ts:3148
+#: packages/notebook-extension/src/index.ts:3142 packages/notebook-extension/src/index.ts:3148 packages/notebook-extension/src/index.ts:3167
 msgid "Change to Heading 5"
 msgstr "Changer pour le Titre 5"
 
-#: packages/notebook-extension/src/index.ts:3153 packages/notebook-extension/src/index.ts:3159
+#: packages/notebook-extension/src/index.ts:3153 packages/notebook-extension/src/index.ts:3159 packages/notebook-extension/src/index.ts:3178
 msgid "Change to Heading 6"
 msgstr "Changer pour le Titre 6"
 
-#: packages/notebook-extension/src/index.ts:3164 packages/notebook-extension/src/index.ts:3170
+#: packages/notebook-extension/src/index.ts:3164 packages/notebook-extension/src/index.ts:3170 packages/notebook-extension/src/index.ts:3189
 msgid "Collapse Selected Code"
 msgstr "Réduire le code sélectionné"
 
-#: packages/notebook-extension/src/index.ts:3175 packages/notebook-extension/src/index.ts:3181
+#: packages/notebook-extension/src/index.ts:3175 packages/notebook-extension/src/index.ts:3181 packages/notebook-extension/src/index.ts:3200
 msgid "Expand Selected Code"
 msgstr "Développer le code sélectionné"
 
-#: packages/notebook-extension/src/index.ts:3186 packages/notebook-extension/src/index.ts:3192
+#: packages/notebook-extension/src/index.ts:3186 packages/notebook-extension/src/index.ts:3192 packages/notebook-extension/src/index.ts:3211
 msgid "Collapse All Code"
 msgstr "Réduire tout le code"
 
-#: packages/notebook-extension/src/index.ts:3197 packages/notebook-extension/src/index.ts:3203
+#: packages/notebook-extension/src/index.ts:3197 packages/notebook-extension/src/index.ts:3203 packages/notebook-extension/src/index.ts:3222
 msgid "Expand All Code"
 msgstr "Développer tout le code"
 
-#: packages/notebook-extension/src/index.ts:3208 packages/notebook-extension/src/index.ts:3214
+#: packages/notebook-extension/src/index.ts:3208 packages/notebook-extension/src/index.ts:3214 packages/notebook-extension/src/index.ts:3233
 msgid "Collapse Selected Outputs"
 msgstr "Réduire les sorties sélectionnées"
 
-#: packages/notebook-extension/src/index.ts:3219 packages/notebook-extension/src/index.ts:3225
+#: packages/notebook-extension/src/index.ts:3219 packages/notebook-extension/src/index.ts:3225 packages/notebook-extension/src/index.ts:3244
 msgid "Expand Selected Outputs"
 msgstr "Développer les sorties sélectionnées"
 
-#: packages/notebook-extension/src/index.ts:3230 packages/notebook-extension/src/index.ts:3236
+#: packages/notebook-extension/src/index.ts:3230 packages/notebook-extension/src/index.ts:3236 packages/notebook-extension/src/index.ts:3255
 msgid "Collapse All Outputs"
 msgstr "Réduire toutes les sorties"
 
-#: packages/notebook-extension/src/index.ts:3242 packages/notebook-extension/src/index.ts:3248
+#: packages/notebook-extension/src/index.ts:3242 packages/notebook-extension/src/index.ts:3248 packages/notebook-extension/src/index.ts:3267
 msgid "Render Side-by-Side"
 msgstr "Afficher le code et la sortie côte à côte"
 
-#: packages/notebook-extension/src/index.ts:3264 packages/notebook-extension/src/index.ts:3270
+#: packages/notebook-extension/src/index.ts:3264 packages/notebook-extension/src/index.ts:3270 packages/notebook-extension/src/index.ts:3289
 msgid "Expand All Outputs"
 msgstr "Développer toutes les sorties"
 
-#: packages/notebook-extension/src/index.ts:3275 packages/notebook-extension/src/index.ts:3281
+#: packages/notebook-extension/src/index.ts:3275 packages/notebook-extension/src/index.ts:3281 packages/notebook-extension/src/index.ts:3300
 msgid "Enable Scrolling for Outputs"
 msgstr "Activer le défilement pour les sorties"
 
-#: packages/notebook-extension/src/index.ts:3286 packages/notebook-extension/src/index.ts:3292
+#: packages/notebook-extension/src/index.ts:3286 packages/notebook-extension/src/index.ts:3292 packages/notebook-extension/src/index.ts:3311
 msgid "Disable Scrolling for Outputs"
 msgstr "Désactiver le défilement pour les sorties"
 
-#: packages/notebook-extension/src/index.ts:3297 packages/notebook-extension/src/index.ts:3303
+#: packages/notebook-extension/src/index.ts:3297 packages/notebook-extension/src/index.ts:3303 packages/notebook-extension/src/index.ts:3322
 msgid "Select current running or last run cell"
 msgstr "Sélectionnez la cellule en cours d'exécution ou la dernière exécution"
 
-#: packages/notebook-extension/src/index.ts:3308 packages/notebook-extension/src/index.ts:3314
+#: packages/notebook-extension/src/index.ts:3308 packages/notebook-extension/src/index.ts:3314 packages/notebook-extension/src/index.ts:3333
 msgid "Replace Selection in Notebook Cell"
 msgstr "Remplacer la sélection dans la cellule du notebook"
 
-#: packages/notebook-extension/src/index.ts:3320 packages/notebook-extension/src/index.ts:3326
+#: packages/notebook-extension/src/index.ts:3320 packages/notebook-extension/src/index.ts:3326 packages/notebook-extension/src/index.ts:3345
 msgid "Toggle Collapse Notebook Heading"
 msgstr "Afficher/Masquer le titre du notebook"
 
-#: packages/notebook-extension/src/index.ts:3330 packages/notebook-extension/src/index.ts:3336 packages/toc-extension/src/index.ts:141
+#: packages/notebook-extension/src/index.ts:3330 packages/notebook-extension/src/index.ts:3336 packages/notebook-extension/src/index.ts:3355 packages/toc-extension/src/index.ts:141
 msgid "Collapse All Headings"
 msgstr "Réduire tous les titres"
 
-#: packages/notebook-extension/src/index.ts:3339 packages/notebook-extension/src/index.ts:3345 packages/toc-extension/src/index.ts:140
+#: packages/notebook-extension/src/index.ts:3339 packages/notebook-extension/src/index.ts:3345 packages/notebook-extension/src/index.ts:3364 packages/toc-extension/src/index.ts:140
 msgid "Expand All Headings"
 msgstr "Développer tous les titres"
 
-#: packages/notebook-extension/src/index.ts:3349 packages/notebook-extension/src/index.ts:3355
+#: packages/notebook-extension/src/index.ts:3349 packages/notebook-extension/src/index.ts:3355 packages/notebook-extension/src/index.ts:3374
 msgid "Select and Run Cell(s) for this Heading"
 msgstr "Sélectionner et exécuter le(s) cellule(s) pour ce titre"
 
-#: packages/notebook-extension/src/index.ts:3399 packages/notebook-extension/src/index.ts:3405 packages/notebook-extension/src/index.ts:657 packages/notebook-extension/src/index.ts:660
+#: packages/notebook-extension/src/index.ts:3399 packages/notebook-extension/src/index.ts:3405 packages/notebook-extension/src/index.ts:3424 packages/notebook-extension/src/index.ts:657 packages/notebook-extension/src/index.ts:660
 msgid "Notebook Operations"
 msgstr "Opérations du notebook"
 
-#: packages/notebook-extension/src/index.ts:3435 packages/notebook-extension/src/index.ts:3441
+#: packages/notebook-extension/src/index.ts:3435 packages/notebook-extension/src/index.ts:3441 packages/notebook-extension/src/index.ts:3460
 msgid "Notebook Cell Operations"
 msgstr "Opérations des cellules du notebook"
 
-#: packages/notebook-extension/src/index.ts:3680 packages/notebook-extension/src/index.ts:3686
+#: packages/notebook-extension/src/index.ts:3680 packages/notebook-extension/src/index.ts:3686 packages/notebook-extension/src/index.ts:3705
 msgid "PDF"
 msgstr "PDF"
 
-#: packages/notebook-extension/src/index.ts:3681 packages/notebook-extension/src/index.ts:3687
+#: packages/notebook-extension/src/index.ts:3681 packages/notebook-extension/src/index.ts:3687 packages/notebook-extension/src/index.ts:3706
 msgid "ReStructured Text"
 msgstr "Texte ReStructured"
 
-#: packages/notebook-extension/src/index.ts:3682 packages/notebook-extension/src/index.ts:3688
+#: packages/notebook-extension/src/index.ts:3682 packages/notebook-extension/src/index.ts:3688 packages/notebook-extension/src/index.ts:3707
 msgid "Executable Script"
 msgstr "Script exécutable"
 
-#: packages/notebook-extension/src/index.ts:3683 packages/notebook-extension/src/index.ts:3689
+#: packages/notebook-extension/src/index.ts:3683 packages/notebook-extension/src/index.ts:3689 packages/notebook-extension/src/index.ts:3708
 msgid "Reveal.js Slides"
 msgstr "Diapositives Reveal.js"
 
-#: packages/notebook-extension/src/index.ts:3737 packages/notebook-extension/src/index.ts:3743
+#: packages/notebook-extension/src/index.ts:3737 packages/notebook-extension/src/index.ts:3743 packages/notebook-extension/src/index.ts:3762
 msgid "For Notebook: %1"
 msgstr "Pour le notebook: %1"
 
-#: packages/notebook-extension/src/index.ts:3738 packages/notebook-extension/src/index.ts:3744
+#: packages/notebook-extension/src/index.ts:3738 packages/notebook-extension/src/index.ts:3744 packages/notebook-extension/src/index.ts:3763
 msgid "For Notebook:"
 msgstr "Pour le notebook:"
 
@@ -6512,7 +6522,7 @@ msgstr[1] "Rechercher dans les %1 lignes sélectionnées"
 msgid "Search only in the selected cells or text (depending on edit/command mode)."
 msgstr "Rechercher uniquement dans les cellules ou le texte sélectionnés (selon le mode édition/commande)."
 
-#: packages/notebook/src/searchprovider.ts:510
+#: packages/notebook/src/searchprovider.ts:510 packages/notebook/src/searchprovider.ts:512
 msgid "Searching outputs is expensive and requires to first rendered all outputs. Are you sure you want to search in the cell outputs?"
 msgstr "La recherche dans les sorties est coûteuse et nécessite un premier rendu de celles-ci. Êtes-vous sûr de vouloir rechercher dans les sorties des cellules ?"
 
@@ -6532,15 +6542,15 @@ msgstr "Notebook non approuvé : %1 sur %2 cellules approuvées."
 msgid "The notebook is empty. Click the + button on the toolbar to add a new cell."
 msgstr "Le notebook ne contient aucune cellule. Cliquez sur le bouton + de la barre d'outils pour ajouter une nouvelle cellule."
 
-#: packages/outputarea/src/widget.ts:1054 packages/outputarea/src/widget.ts:1060
+#: packages/outputarea/src/widget.ts:1054 packages/outputarea/src/widget.ts:1060 packages/outputarea/src/widget.ts:1087
 msgid "↑↓ for history. Search history with c-↑/c-↓"
 msgstr "↑↓ pour naviguer dans l'historique. Rechercher dans l'historique avec c-↑/c-↓"
 
-#: packages/outputarea/src/widget.ts:320
+#: packages/outputarea/src/widget.ts:320 packages/outputarea/src/widget.ts:322
 msgid "Toggle output scrolling"
 msgstr "Activer/désactiver le défilement des sorties"
 
-#: packages/outputarea/src/widget.ts:605
+#: packages/outputarea/src/widget.ts:605 packages/outputarea/src/widget.ts:632
 msgid "Javascript Error: %1"
 msgstr "Erreur JavaScript : %1"
 
