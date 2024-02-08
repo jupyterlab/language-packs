@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2024-02-08 03:50\n"
+"PO-Revision-Date: 2024-02-08 04:47\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -542,22 +542,22 @@ msgstr "主题 CSS 覆盖"
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-dark-theme/description
 msgctxt "settings"
 msgid "Application-level dark visual styling theme. Ignored when Adaptive Theme is disabled."
-msgstr ""
+msgstr "应用级别的暗色可视化样式主题。当自适应主题被禁用时，将被忽略。"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-dark-theme/title
 msgctxt "settings"
 msgid "Preferred Dark Theme"
-msgstr "首选深色主题"
+msgstr "首选暗色主题"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-light-theme/description
 msgctxt "settings"
 msgid "Application-level light visual styling theme. Ignored when Adaptive Theme is disabled."
-msgstr ""
+msgstr "应用级别的亮色可视化样式主题。当自适应主题被禁用时，将被忽略。"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-light-theme/title
 msgctxt "settings"
 msgid "Preferred Light Theme"
-msgstr ""
+msgstr "首选亮色主题"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme-scrollbars/description
 msgctxt "settings"
@@ -572,7 +572,7 @@ msgstr "滚动条主题"
 #: /packages/apputils-extension/schema/themes.json:/properties/theme/description
 msgctxt "settings"
 msgid "Application-level visual styling theme. Ignored when Adaptive Theme is enabled."
-msgstr ""
+msgstr "应用级别的可视化样式主题。当启用自适应主题时，将被忽略。"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme/title
 msgctxt "settings"
@@ -662,77 +662,77 @@ msgstr "CodeMirror"
 #: /packages/completer-extension/schema/inline-completer.json:/description
 msgctxt "schema"
 msgid "Inline completer settings."
-msgstr ""
+msgstr "内联补全设置。"
 
 #: /packages/completer-extension/schema/inline-completer.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Inline Completer"
-msgstr ""
+msgstr "内联补全器"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/providers/title
 msgctxt "settings"
 msgid "Inline completion providers"
-msgstr ""
+msgstr "内联补全提供者"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showShortcuts/description
 msgctxt "settings"
 msgid "Whether to show shortcuts in the inline completer widget."
-msgstr ""
+msgstr "是否在内联补全器部件中显示快捷键。"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showShortcuts/title
 msgctxt "settings"
 msgid "Show shortcuts in the widget"
-msgstr ""
+msgstr "在部件中显示快捷键"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/description
 msgctxt "settings"
 msgid "When to show the inline completer widget."
-msgstr ""
+msgstr "何时显示内联补全器部件。"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[0]/title
 msgctxt "settings"
 msgid "Always"
-msgstr ""
+msgstr "始终显示"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[1]/title
 msgctxt "settings"
 msgid "On hover"
-msgstr ""
+msgstr "鼠标悬停时显示"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[2]/title
 msgctxt "settings"
 msgid "Never"
-msgstr ""
+msgstr "从不显示"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/title
 msgctxt "settings"
 msgid "Show widget"
-msgstr ""
+msgstr "显示部件"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/description
 msgctxt "settings"
 msgid "Transition effect used when streaming tokens from model."
-msgstr ""
+msgstr "补全的过渡效果"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/oneOf[0]/title
 msgctxt "settings"
 msgid "None"
-msgstr ""
+msgstr "无"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/oneOf[1]/title
 msgctxt "settings"
 msgid "Uncover"
-msgstr ""
+msgstr "展示效果"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/title
 msgctxt "settings"
 msgid "Streaming animation"
-msgstr ""
+msgstr "补全动画效果"
 
 #: /packages/completer-extension/schema/inline-completer.json:/title
 msgctxt "schema"
 msgid "Inline Completer"
-msgstr ""
+msgstr "内联补全器"
 
 #: /packages/completer-extension/schema/manager.json:/description
 msgctxt "schema"
@@ -742,7 +742,7 @@ msgstr "代码补全设置。"
 #: /packages/completer-extension/schema/manager.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Code Completer"
-msgstr ""
+msgstr "代码补全器"
 
 #: /packages/completer-extension/schema/manager.json:/properties/autoCompletion/description
 msgctxt "settings"
@@ -1069,12 +1069,12 @@ msgstr "文档搜索"
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/autoSearchInSelection/description
 msgctxt "settings"
 msgid "When starting search, the 'search in selection' mode will be enabled if `any` text/cell is selected, or when `multiple` lines or cells are selected, or `never`."
-msgstr ""
+msgstr "在开始搜索时，如果选择了`任何`文本/`单个`单元格，或选择了`多`行或`多个`单元格，则将启用“在选择中搜索”模式，否则将选择`从不`。"
 
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/autoSearchInSelection/title
 msgctxt "settings"
 msgid "Search in selection automatically"
-msgstr ""
+msgstr "自动在选择中搜索"
 
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/searchDebounceTime/description
 msgctxt "settings"
@@ -1181,12 +1181,12 @@ msgstr "显示文件大小栏"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFullPath/description
 msgctxt "settings"
 msgid "Whether to show full path in browser bread crumbs"
-msgstr ""
+msgstr "是否在文件浏览器导航中显示完整路径"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFullPath/title
 msgctxt "settings"
 msgid "Show full path in browser bread crumbs"
-msgstr ""
+msgstr "在文件浏览器导航中显示完整路径"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/description
 msgctxt "settings"
@@ -1854,12 +1854,12 @@ msgstr "笔记本"
 #: /packages/notebook-extension/schema/tracker.json:/properties/accessKernelHistory/description
 msgctxt "settings"
 msgid "Enable kernel history access from notebook cells. Enabling this allows you to scroll through kernel history from a given notebook cell."
-msgstr ""
+msgstr "启用从笔记本单元格访问内核历史记录。启用此功能可以让您从给定的笔记本单元格中滚动查看内核历史记录。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/accessKernelHistory/title
 msgctxt "settings"
 msgid "Kernel history access"
-msgstr ""
+msgstr "内核历史记录访问"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoStartDefaultKernel/description
 msgctxt "settings"
@@ -1904,12 +1904,12 @@ msgstr "在笔记本文档级别启用撤销/重做操作。"
 #: /packages/notebook-extension/schema/tracker.json:/properties/enableKernelInitNotification/description
 msgctxt "settings"
 msgid "Display notification if code cells are run while kernel is initializing."
-msgstr ""
+msgstr "如果在内核初始化过程中运行代码单元格，则显示通知。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/enableKernelInitNotification/title
 msgctxt "settings"
 msgid "Notify about code execution if kernel is initializing"
-msgstr ""
+msgstr "如果内核正在初始化，通知关于代码执行的情况。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/inputHistoryScope/description
 msgctxt "settings"
@@ -2004,7 +2004,7 @@ msgstr "渲染布局"
 #: /packages/notebook-extension/schema/tracker.json:/properties/scrollHeadingToTop/description
 msgctxt "settings"
 msgid "Whether to scroll heading to the document top when selecting it in the table of contents."
-msgstr ""
+msgstr "在目录中选择标题时，是否将其滚动到文档顶部。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/scrollHeadingToTop/title
 msgctxt "settings"
@@ -2199,12 +2199,12 @@ msgstr "退出时关闭"
 #: /packages/terminal-extension/schema/plugin.json:/properties/cursorBlink/description
 msgctxt "settings"
 msgid "Whether to blink the cursor. Changes require reopening the terminal."
-msgstr ""
+msgstr "是否闪烁光标。更改需要重新打开终端。"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/cursorBlink/title
 msgctxt "settings"
 msgid "Blinking cursor"
-msgstr ""
+msgstr "闪烁光标"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontFamily/description
 msgctxt "settings"
@@ -2537,7 +2537,7 @@ msgstr "显示右侧边栏"
 
 #: packages/application-extension/src/index.tsx:366
 msgid "Toggle Sidebar Element"
-msgstr ""
+msgstr "切换侧边栏元素"
 
 #: packages/application-extension/src/index.tsx:399
 msgid "Show Right Activity Bar"
@@ -2642,7 +2642,7 @@ msgstr "无法连接到 Jupyter 服务器。\n"
 
 #: packages/application/src/shell.ts:734
 msgid "main menu"
-msgstr ""
+msgstr "主菜单"
 
 #: packages/application/src/shell.ts:738 packages/application/src/shell.ts:742
 msgid "main sidebar"
@@ -2842,27 +2842,27 @@ msgstr "使用主题: %1"
 
 #: packages/apputils-extension/src/themesplugins.ts:143
 msgid "Switch to the provided light `theme`."
-msgstr ""
+msgstr "切换到提供的亮色`主题`。"
 
 #: packages/apputils-extension/src/themesplugins.ts:148
 msgid "Set Preferred Light Theme: %1"
-msgstr ""
+msgstr "设置首选的亮色主题为：%1"
 
 #: packages/apputils-extension/src/themesplugins.ts:164
 msgid "Switch to the provided dark `theme`."
-msgstr ""
+msgstr "切换到提供的暗色`主题`。"
 
 #: packages/apputils-extension/src/themesplugins.ts:169
 msgid "Set Preferred Dark Theme: %1"
-msgstr ""
+msgstr "设置首选的暗色主题为：%1"
 
 #: packages/apputils-extension/src/themesplugins.ts:186
 msgid "Synchronize Styling Theme with System Settings"
-msgstr ""
+msgstr "将样式主题与系统设置同步"
 
 #: packages/apputils-extension/src/themesplugins.ts:187
 msgid "Synchronize with System Settings"
-msgstr ""
+msgstr "与系统设置同步"
 
 #: packages/apputils-extension/src/themesplugins.ts:195
 msgid "Theme Scrollbars"
@@ -3295,7 +3295,7 @@ msgstr "高亮显示活动行"
 
 #: packages/codemirror/src/extension.ts:661
 msgid "Highlight special characters"
-msgstr ""
+msgstr "高亮显示特殊字符"
 
 #: packages/codemirror/src/extension.ts:671
 msgid "Highlight trailing white spaces"
@@ -3939,7 +3939,7 @@ msgstr "codemirror"
 
 #: packages/completer-extension/src/index.ts:138
 msgid "Previous"
-msgstr ""
+msgstr "上一个"
 
 #: packages/completer-extension/src/index.ts:148 packages/debugger-extension/src/index.ts:908 packages/debugger-extension/src/index.ts:909
 msgid "Next"
@@ -3947,39 +3947,39 @@ msgstr "下一步"
 
 #: packages/completer-extension/src/index.ts:158
 msgid "Accept"
-msgstr ""
+msgstr "接受"
 
 #: packages/completer-extension/src/index.ts:192
 msgid "Next Inline Completion"
-msgstr ""
+msgstr "下一个内联补全"
 
 #: packages/completer-extension/src/index.ts:202
 msgid "Previous Inline Completion"
-msgstr ""
+msgstr "上一个内联补全"
 
 #: packages/completer-extension/src/index.ts:209
 msgid "Accept Inline Completion"
-msgstr ""
+msgstr "接受内联补全"
 
 #: packages/completer-extension/src/index.ts:216
 msgid "Invoke Inline Completer"
-msgstr ""
+msgstr "调用内联补全器"
 
 #: packages/completer-extension/src/index.ts:263
 msgid "%1 provider"
-msgstr ""
+msgstr "%1 提供者"
 
 #: packages/completer-extension/src/index.ts:267
 msgid "Timeout"
-msgstr ""
+msgstr "超时"
 
 #: packages/completer-extension/src/index.ts:268
 msgid "Timeout for %1 provider (in milliseconds)."
-msgstr ""
+msgstr "%1 提供者的超时时间（以毫秒为单位）。"
 
 #: packages/completer-extension/src/index.ts:276
 msgid "Debouncer delay"
-msgstr ""
+msgstr "防抖延迟时间"
 
 #: packages/completer-extension/src/index.ts:278
 msgid "Time since the last key press to wait before requesting completions from %1 provider (in milliseconds)."
@@ -6873,43 +6873,43 @@ msgstr ""
 
 #: packages/pluginmanager/src/widget.tsx:182
 msgid "To enable/disable, please acknowledge the disclaimer."
-msgstr ""
+msgstr "为了启用/禁用，请确认您已阅读免责声明。"
 
 #: packages/pluginmanager/src/widget.tsx:186
 msgid "Disable %1 plugin"
-msgstr ""
+msgstr "禁用 %1 插件"
 
 #: packages/pluginmanager/src/widget.tsx:187
 msgid "Enable %1 plugin"
-msgstr ""
+msgstr "启用 %1 插件"
 
 #: packages/pluginmanager/src/widget.tsx:205
 msgid "This plugin was locked by system administrator or is a critical dependency and cannot be enabled/disabled."
-msgstr ""
+msgstr "此插件已被系统管理员锁定或者它是一个关键依赖项，无法启用/禁用。"
 
 #: packages/pluginmanager/src/widget.tsx:253
 msgid "Customise your experience/improve performance by disabling plugins you do not need. To disable or uninstall an entire extension use the Extension Manager instead. Changes will apply after reloading JupyterLab."
-msgstr ""
+msgstr "通过禁用不需要的插件，定制您的体验/提高性能。要禁用或卸载整个扩展，请使用扩展管理器。更改将在重新加载 JupyterLab 后生效。"
 
 #: packages/pluginmanager/src/widget.tsx:266
 msgid "I understand that disabling core application plugins may render features and parts of the user interface unavailable and recovery using `jupyter labextension enable <plugin-name>` command may be required"
-msgstr ""
+msgstr "我了解禁用核心应用程序插件可能会导致某些功能和用户界面部分不可用，并且可能需要使用 `jupyter labextension enable <插件名称>` 命令进行恢复。"
 
 #: packages/pluginmanager/src/widget.tsx:288
 msgid "Filter"
-msgstr ""
+msgstr "筛选器"
 
 #: packages/pluginmanager/src/widget.tsx:64
 msgid "Error querying installed extensions%1"
-msgstr ""
+msgstr "查询已安装扩展%1时出错"
 
 #: packages/pluginmanager/src/widget.tsx:71
 msgid "Updating plugin list…"
-msgstr ""
+msgstr "正在更新插件列表..."
 
 #: packages/pluginmanager/src/widget.tsx:97
 msgid "Plugin"
-msgstr ""
+msgstr "插件"
 
 #: packages/property-inspector/src/index.ts:189
 msgid "No properties to inspect."
@@ -7062,7 +7062,7 @@ msgstr "您的更改没有保存。"
 
 #: packages/settingeditor/src/pluginlist.tsx:454
 msgid "Search settings…"
-msgstr ""
+msgstr "搜索设置..."
 
 #: packages/settingeditor/src/pluginlist.tsx:461
 msgid "Modified"
@@ -7150,7 +7150,7 @@ msgstr "重设所有快速键"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:165
 msgid "Search shortcuts"
-msgstr ""
+msgstr "搜索快捷键..."
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:168
 msgid "Search…"
