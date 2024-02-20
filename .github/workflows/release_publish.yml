@@ -98,7 +98,7 @@ jobs:
         popd
         cp -r ./${{ env.CURRENT_LOCALE_DIR }}/dist/* ./dist
     - name: Upload language pack artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: pip_packages
         path: dist/*
