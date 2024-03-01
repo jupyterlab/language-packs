@@ -12,14 +12,14 @@ msgstr ""
 "X-Crowdin-File-ID: 199\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2023-11-27 11:17\n"
+"PO-Revision-Date: 2024-02-27 12:10\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
 msgid "LSP Completion settings."
 msgstr ""
 
-#: /packages/jupyterlab-lsp/schema/completion.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/diagnostics.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/highlights.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/hover.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/jump_to.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/plugin.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/rename.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/signature.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/jupyter.lab.setting-icon-label
+#: /packages/jupyterlab-lsp/schema/completion.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/diagnostics.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/highlights.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/hover.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/jump_to.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/plugin.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/rename.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/signature.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/symbol.json:/jupyter.lab.setting-icon-label /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Language integration"
 msgstr ""
@@ -49,12 +49,12 @@ msgctxt "settings"
 msgid "Continuous hinting"
 msgstr ""
 
-#: /packages/jupyterlab-lsp/schema/completion.json:/properties/disable/description /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/disable/description /packages/jupyterlab-lsp/schema/highlights.json:/properties/disable/description /packages/jupyterlab-lsp/schema/hover.json:/properties/disable/description /packages/jupyterlab-lsp/schema/jump_to.json:/properties/disable/description /packages/jupyterlab-lsp/schema/rename.json:/properties/disable/description /packages/jupyterlab-lsp/schema/signature.json:/properties/disable/description /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/properties/disable/description
+#: /packages/jupyterlab-lsp/schema/completion.json:/properties/disable/description /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/disable/description /packages/jupyterlab-lsp/schema/highlights.json:/properties/disable/description /packages/jupyterlab-lsp/schema/hover.json:/properties/disable/description /packages/jupyterlab-lsp/schema/jump_to.json:/properties/disable/description /packages/jupyterlab-lsp/schema/rename.json:/properties/disable/description /packages/jupyterlab-lsp/schema/signature.json:/properties/disable/description /packages/jupyterlab-lsp/schema/symbol.json:/properties/disable/description /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/properties/disable/description
 msgctxt "settings"
 msgid "Disable this feature. Requires reloading JupyterLab to apply changes."
 msgstr ""
 
-#: /packages/jupyterlab-lsp/schema/completion.json:/properties/disable/title /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/disable/title /packages/jupyterlab-lsp/schema/highlights.json:/properties/disable/title /packages/jupyterlab-lsp/schema/hover.json:/properties/disable/title /packages/jupyterlab-lsp/schema/jump_to.json:/properties/disable/title /packages/jupyterlab-lsp/schema/rename.json:/properties/disable/title /packages/jupyterlab-lsp/schema/signature.json:/properties/disable/title /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/properties/disable/title
+#: /packages/jupyterlab-lsp/schema/completion.json:/properties/disable/title /packages/jupyterlab-lsp/schema/diagnostics.json:/properties/disable/title /packages/jupyterlab-lsp/schema/highlights.json:/properties/disable/title /packages/jupyterlab-lsp/schema/hover.json:/properties/disable/title /packages/jupyterlab-lsp/schema/jump_to.json:/properties/disable/title /packages/jupyterlab-lsp/schema/rename.json:/properties/disable/title /packages/jupyterlab-lsp/schema/signature.json:/properties/disable/title /packages/jupyterlab-lsp/schema/symbol.json:/properties/disable/title /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/properties/disable/title
 msgctxt "settings"
 msgid "Disable"
 msgstr "Deaktivieren"
@@ -339,7 +339,7 @@ msgctxt "settings"
 msgid "Number of milliseconds to delay sending out the hover request to the language server; you can get better responsiveness adjusting this value, but setting it to zero can actually slow it down as the server might get overwhelmed when moving the mouse over the code."
 msgstr ""
 
-#: /packages/jupyterlab-lsp/schema/hover.json:/properties/throttlerDelay/title
+#: /packages/jupyterlab-lsp/schema/hover.json:/properties/throttlerDelay/title /packages/jupyterlab-lsp/schema/symbol.json:/properties/throttlerDelay/title
 msgctxt "settings"
 msgid "Throttler delay"
 msgstr ""
@@ -539,6 +539,21 @@ msgctxt "schema"
 msgid "Code Signature"
 msgstr "Code-Signatur"
 
+#: /packages/jupyterlab-lsp/schema/symbol.json:/description
+msgctxt "schema"
+msgid "LSP Symbols (table of contents integration)."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/symbol.json:/properties/throttlerDelay/description
+msgctxt "settings"
+msgid "Number of milliseconds to delay sending out the hover request to the language server."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/symbol.json:/title
+msgctxt "schema"
+msgid "Code Symbols"
+msgstr ""
+
 #: /packages/jupyterlab-lsp/schema/syntax_highlighting.json:/description
 msgctxt "schema"
 msgid "LSP code syntax highlighting settings."
@@ -559,7 +574,7 @@ msgctxt "schema"
 msgid "Code Syntax"
 msgstr "Code-Syntax"
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:238 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:243 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:262 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:265
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:236 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:238 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:243 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:262 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:265 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:266
 msgid "Failed to load language server spec finder `{}`: \n"
 "{}"
 msgstr ""
@@ -568,29 +583,29 @@ msgstr ""
 msgid "Skipping non-installed server: `{}`"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:275 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:278 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:281
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:254 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:259 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:275 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:278 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:281 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:282
 msgid "Failed to fetch commands from language server spec finder `{}`:\n"
 "{}"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:272 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:288 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:291 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:294
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:267 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:272 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:288 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:291 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:294 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:295
 msgid "Failed to validate commands from language server spec finder `{}`:\n"
 "{}"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:279 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:284 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:300 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:303 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:306
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:279 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:284 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:300 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:303 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:306 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:307
 msgid "Skipped non-installed server(s): {}"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:41 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:54 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:57
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:41 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:54 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:55 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:57
 msgid "extra language server specs, keyed by implementation, from conf.d"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:51 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:59 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:62
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:46 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:51 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:59 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:60 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:62
 msgid "a dict of language server specs, keyed by implementation"
 msgstr ""
 
-#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:52 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:57 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:65 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:68
+#: /python_packages/jupyter_lsp/jupyter_lsp/manager.py:52 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:57 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:65 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:66 /python_packages/jupyter_lsp/jupyter_lsp/manager.py:68
 msgid "try to find known language servers in sys.prefix (and elsewhere)"
 msgstr ""
 
@@ -860,7 +875,7 @@ msgstr ""
 msgid "Show diagnostics panel"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/diagnostics/index.ts:134 packages/jupyterlab-lsp/src/features/jump_to.ts:703 packages/jupyterlab-lsp/src/features/rename.ts:358
+#: packages/jupyterlab-lsp/src/features/diagnostics/index.ts:134 packages/jupyterlab-lsp/src/features/jump_to.ts:689 packages/jupyterlab-lsp/src/features/jump_to.ts:703 packages/jupyterlab-lsp/src/features/rename.ts:358
 msgid "Language Server Protocol"
 msgstr ""
 
@@ -928,31 +943,31 @@ msgstr ""
 msgid "Highlight type definition"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/jump_to.ts:128 packages/jupyterlab-lsp/src/features/jump_to.ts:129 packages/jupyterlab-lsp/src/features/jump_to.ts:141 packages/jupyterlab-lsp/src/features/jump_to.ts:236 packages/jupyterlab-lsp/src/features/jump_to.ts:261 packages/jupyterlab-lsp/src/features/jump_to.ts:372
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:128 packages/jupyterlab-lsp/src/features/jump_to.ts:129 packages/jupyterlab-lsp/src/features/jump_to.ts:141 packages/jupyterlab-lsp/src/features/jump_to.ts:236 packages/jupyterlab-lsp/src/features/jump_to.ts:261 packages/jupyterlab-lsp/src/features/jump_to.ts:362 packages/jupyterlab-lsp/src/features/jump_to.ts:372
 msgid "No jump targets found"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/jump_to.ts:188 packages/jupyterlab-lsp/src/features/jump_to.ts:213 packages/jupyterlab-lsp/src/features/jump_to.ts:321
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:188 packages/jupyterlab-lsp/src/features/jump_to.ts:213 packages/jupyterlab-lsp/src/features/jump_to.ts:311 packages/jupyterlab-lsp/src/features/jump_to.ts:321
 msgid "Choose the jump target"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/jump_to.ts:189 packages/jupyterlab-lsp/src/features/jump_to.ts:214 packages/jupyterlab-lsp/src/features/jump_to.ts:322
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:189 packages/jupyterlab-lsp/src/features/jump_to.ts:214 packages/jupyterlab-lsp/src/features/jump_to.ts:312 packages/jupyterlab-lsp/src/features/jump_to.ts:322
 msgid "Jump"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/jump_to.ts:258 packages/jupyterlab-lsp/src/features/jump_to.ts:260 packages/jupyterlab-lsp/src/features/jump_to.ts:284 packages/jupyterlab-lsp/src/features/jump_to.ts:288 packages/jupyterlab-lsp/src/features/jump_to.ts:399 packages/jupyterlab-lsp/src/features/jump_to.ts:424 packages/jupyterlab-lsp/src/features/jump_to.ts:593
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:258 packages/jupyterlab-lsp/src/features/jump_to.ts:260 packages/jupyterlab-lsp/src/features/jump_to.ts:284 packages/jupyterlab-lsp/src/features/jump_to.ts:288 packages/jupyterlab-lsp/src/features/jump_to.ts:399 packages/jupyterlab-lsp/src/features/jump_to.ts:424 packages/jupyterlab-lsp/src/features/jump_to.ts:579 packages/jupyterlab-lsp/src/features/jump_to.ts:593
 msgid "Jump to definition"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/jump_to.ts:268 packages/jupyterlab-lsp/src/features/jump_to.ts:270 packages/jupyterlab-lsp/src/features/jump_to.ts:295 packages/jupyterlab-lsp/src/features/jump_to.ts:299 packages/jupyterlab-lsp/src/features/jump_to.ts:444 packages/jupyterlab-lsp/src/features/jump_to.ts:469 packages/jupyterlab-lsp/src/features/jump_to.ts:661
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:268 packages/jupyterlab-lsp/src/features/jump_to.ts:270 packages/jupyterlab-lsp/src/features/jump_to.ts:295 packages/jupyterlab-lsp/src/features/jump_to.ts:299 packages/jupyterlab-lsp/src/features/jump_to.ts:444 packages/jupyterlab-lsp/src/features/jump_to.ts:469 packages/jupyterlab-lsp/src/features/jump_to.ts:647 packages/jupyterlab-lsp/src/features/jump_to.ts:661
 msgid "Jump back"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/jump_to.ts:377 packages/jupyterlab-lsp/src/features/jump_to.ts:402 packages/jupyterlab-lsp/src/features/jump_to.ts:408 packages/jupyterlab-lsp/src/features/jump_to.ts:433 packages/jupyterlab-lsp/src/features/jump_to.ts:573 packages/jupyterlab-lsp/src/features/jump_to.ts:616
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:377 packages/jupyterlab-lsp/src/features/jump_to.ts:402 packages/jupyterlab-lsp/src/features/jump_to.ts:408 packages/jupyterlab-lsp/src/features/jump_to.ts:433 packages/jupyterlab-lsp/src/features/jump_to.ts:559 packages/jupyterlab-lsp/src/features/jump_to.ts:573 packages/jupyterlab-lsp/src/features/jump_to.ts:602 packages/jupyterlab-lsp/src/features/jump_to.ts:616
 msgid "Connection not found for jump"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/features/jump_to.ts:430 packages/jupyterlab-lsp/src/features/jump_to.ts:455 packages/jupyterlab-lsp/src/features/jump_to.ts:639
+#: packages/jupyterlab-lsp/src/features/jump_to.ts:430 packages/jupyterlab-lsp/src/features/jump_to.ts:455 packages/jupyterlab-lsp/src/features/jump_to.ts:625 packages/jupyterlab-lsp/src/features/jump_to.ts:639
 msgid "Jump to references"
 msgstr ""
 
@@ -1026,5 +1041,17 @@ msgstr ""
 
 #: packages/jupyterlab-lsp/src/features/syntax_highlighting.ts:150
 msgid "Syntax highlighting"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/settings.ts:364
+msgid "Settings that would be passed to `%1` server (this server was not detected as installed during startup) in `workspace/didChangeConfiguration` notification."
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/settings.ts:369
+msgid "Settings to be passed to %1 in `workspace/didChangeConfiguration` notification."
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/settings.ts:374
+msgid "Workspace Configuration"
 msgstr ""
 
