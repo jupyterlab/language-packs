@@ -100,7 +100,7 @@ jobs:
     - name: Upload language pack artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: pip_packages
+        name: py-package-${{ matrix.locale }}
         path: dist/*
     - name: Create Release
       if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.skipRelease == 'false' }}
@@ -123,8 +123,9 @@ jobs:
       - name: Get the artifacts
         uses: actions/download-artifact@v4
         with:
-          name: pip_packages
           path: dist
+          pattern: py-package-*
+          merge-multiple: true
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
