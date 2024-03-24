@@ -31,28 +31,26 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python scripts/02_update_catalogs.py
-      - name: Set branch name and get hash
-        run: |
-          echo "BRANCH_NAME=pot-update-$(git rev-parse --short HEAD)" >> $GITHUB_ENV
-          echo "COMMIT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
-      - name: Create a new branch
-        run: |
-          git checkout -b "${{ env.BRANCH_NAME }}"
-      - name: Set up git identity
-        run: |
-          git config user.name "JupyterLab Language Packs Bot"
-          git config user.email 'jupyterlab-bot@users.noreply.github.com'
-      - name: Commit changes
-        run: |
-          git add *.pot crowdin.yml
-          git commit -m "Update pot files"
-      - name: Push the changes
-        run: |
-          git push --set-upstream origin "${{ env.BRANCH_NAME }}"
-      - name: Create a PR
-        run: |
-          gh pr create -B "main" -t "Update pot files" -b "New changes to pot files were detected in ${{ env.COMMIT_SHA }} commit."
+      - name: Create a PR optionally
+        shell: bash
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -eux
+          if [[ ! -z "$(git status --porcelain *.pot crowdin.yml)" ]]; then
+            export COMMIT_SHA=$(git rev-parse --short HEAD)
+            export BRANCH_NAME=pot-update-${COMMIT_SHA}
 
+            git checkout -b "${BRANCH_NAME}"
+
+            git config user.name "JupyterLab Language Packs Bot"
+            git config user.email 'jupyterlab-bot@users.noreply.github.com'
+
+            git add *.pot crowdin.yml
+            git commit -m "Update pot files"
+
+            git push --set-upstream origin "${BRANCH_NAME}"
+
+            gh pr create -B "main" -t "Update pot files" -b "New changes to pot files were detected in ${COMMIT_SHA} commit."
+          fi
