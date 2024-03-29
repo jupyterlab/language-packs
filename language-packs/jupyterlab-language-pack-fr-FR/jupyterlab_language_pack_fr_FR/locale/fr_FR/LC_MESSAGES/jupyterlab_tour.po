@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 205\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2023-11-09 16:13\n"
+"PO-Revision-Date: 2024-03-29 11:18\n"
 
 #: /schema/user-tours.json:/description
 msgctxt "schema"
@@ -139,7 +139,7 @@ msgstr "Paramètres"
 msgid ": common settings and an advanced settings editor"
 msgstr ": paramètres communs et éditeur de paramètres avancés"
 
-#: src/defaults.tsx:141 src/defaults.tsx:636 src/plugin.tsx:143
+#: src/defaults.tsx:141 src/defaults.tsx:636 src/plugin.tsx:143 src/plugin.tsx:144
 msgid "Help"
 msgstr "Aide"
 
@@ -400,7 +400,11 @@ msgstr "Erreurs lors de la validation des paramètres : corrigez-les dans les pa
 msgid "Error encountered adding notebook tour %1 (%2)"
 msgstr "Une erreur s'est produite lors de l'ajout d'un tour utilisateur %1 (%2)"
 
-#: src/plugin.tsx:104
+#: src/plugin.tsx:100 src/plugin.tsx:99
+msgid "Launch a Tour"
+msgstr "Lancer un tour"
+
+#: src/plugin.tsx:104 src/plugin.tsx:105
 msgid "Launch a tour.\n"
 "If no id provided, prompt the user.\n"
 "Arguments {id: Tour ID}"
@@ -408,25 +412,21 @@ msgstr "Lancer un tour.\n"
 "Si aucun id n'est fourni, demander à l'utilisateur d'en sélectionner un.\n"
 "Arguments {id: Tour ID}"
 
-#: src/plugin.tsx:115
+#: src/plugin.tsx:115 src/plugin.tsx:116
 msgid "Choose a tour"
 msgstr "Choisir un tour"
 
-#: src/plugin.tsx:132
+#: src/plugin.tsx:132 src/plugin.tsx:133
 msgid "Add a tour"
 msgstr "Ajouter un tour"
 
-#: src/plugin.tsx:133
+#: src/plugin.tsx:133 src/plugin.tsx:134
 msgid "Add a tour and returns it.\n"
 "Arguments {tour: ITour}\n"
 "Returns `null` if a failure occurs."
 msgstr "Ajoute un tour et la renvoie .\n"
 "Arguments {tour: ITour}\n"
 "Renvoie `null` en cas d'échec."
-
-#: src/plugin.tsx:99
-msgid "Launch a Tour"
-msgstr "Lancer un tour"
 
 #: src/tourManager.ts:142
 msgid "Fail to add tour '%1' (%2)"
