@@ -13,9 +13,3 @@ not install it explicitly.
 ```bash
 pip install jupyterlab-pseudo-language-pack
 ```
-
-### conda
-
-```bash
-conda install -c conda-forge jupyterlab-pseudo-language-pack
-```
