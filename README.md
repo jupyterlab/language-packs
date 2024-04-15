@@ -57,3 +57,8 @@ When translations are completed for a given set of packages a new language pack 
 ## Contributing
 
 Please visit [Crowdin](https://crowdin.com/project/jupyterlab) to contribute to a language pack.
+
+## Important note
+
+The language Acholi (ach-UG) is a pseudo-language to enable translating the string
+withing JupyterLab through the [_in-context_ Crowdin feature](https://developer.crowdin.com/in-context-localization/).

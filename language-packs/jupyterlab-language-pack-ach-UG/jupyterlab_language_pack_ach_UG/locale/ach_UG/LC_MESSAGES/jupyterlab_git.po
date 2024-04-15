@@ -1,0 +1,2113 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jupyterlab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: jupyterlab\n"
+"X-Crowdin-Project-ID: 409874\n"
+"X-Crowdin-Language: ach\n"
+"X-Crowdin-File: /main/extensions/jupyterlab_git/locale/jupyterlab_git.pot\n"
+"X-Crowdin-File-ID: 197\n"
+"Language-Team: Acholi\n"
+"Language: ach_UG\n"
+"PO-Revision-Date: 2024-04-15 14:16\n"
+
+#: /schema/plugin.json:/description
+msgctxt "schema"
+msgid "jupyterlab-git settings."
+msgstr "crwdns13023:0crwdne13023:0"
+
+#: /schema/plugin.json:/jupyter.lab.menus/context[0]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/label
+msgctxt "menu"
+msgid "Git"
+msgstr "crwdns13025:0crwdne13025:0"
+
+#: /schema/plugin.json:/jupyter.lab.menus/main[0]/items[12]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/items[15]/submenu/label /schema/plugin.json:/jupyter.lab.menus/main[0]/items[16]/submenu/label
+msgctxt "menu"
+msgid "Help"
+msgstr "crwdns13027:0crwdne13027:0"
+
+#: /schema/plugin.json:/jupyter.lab.menus/main[0]/items[16]/submenu/items[0]/args/text
+msgctxt "schema"
+msgid "Set Up Remotes"
+msgstr "crwdns13029:0crwdne13029:0"
+
+#: /schema/plugin.json:/jupyter.lab.menus/main[0]/items[16]/submenu/items[1]/args/text
+msgctxt "schema"
+msgid "Git Documentation"
+msgstr "crwdns13031:0crwdne13031:0"
+
+#: /schema/plugin.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Git"
+msgstr "crwdns13033:0crwdne13033:0"
+
+#: /schema/plugin.json:/properties/blockWhileCommandExecutes/description
+msgctxt "settings"
+msgid "Suspend JupyterLab user interaction until Git commands (e.g., commit, pull, reset, revert) finish executing. Setting this to true helps mitigate potential race conditions leading to data loss, conflicts, and a broken Git history. Unless running a slow network, UI suspension should not interfere with standard workflows. Setting this to false allows for actions to trigger multiple concurrent Git actions."
+msgstr "crwdns13035:0crwdne13035:0"
+
+#: /schema/plugin.json:/properties/blockWhileCommandExecutes/title
+msgctxt "settings"
+msgid "Suspend user interaction until commands finish"
+msgstr "crwdns13037:0crwdne13037:0"
+
+#: /schema/plugin.json:/properties/cancelPullMergeConflict/description
+msgctxt "settings"
+msgid "If true, when fetching and integrating changes from a remote repository, a conflicting merge is canceled and the working tree left untouched."
+msgstr "crwdns13039:0crwdne13039:0"
+
+#: /schema/plugin.json:/properties/cancelPullMergeConflict/title
+msgctxt "settings"
+msgid "Cancel pull merge conflict"
+msgstr "crwdns13041:0crwdne13041:0"
+
+#: /schema/plugin.json:/properties/commitAndPush/description
+msgctxt "settings"
+msgid "Whether to trigger or not a push for each commit."
+msgstr "crwdns13043:0crwdne13043:0"
+
+#: /schema/plugin.json:/properties/commitAndPush/title
+msgctxt "settings"
+msgid "Trigger push on commit"
+msgstr "crwdns13045:0crwdne13045:0"
+
+#: /schema/plugin.json:/properties/disableBranchWithChanges/description
+msgctxt "settings"
+msgid "Disable all branch operations (new, switch) when there are changed/staged files"
+msgstr "crwdns13047:0crwdne13047:0"
+
+#: /schema/plugin.json:/properties/disableBranchWithChanges/title
+msgctxt "settings"
+msgid "Disable branch with changes"
+msgstr "crwdns13049:0crwdne13049:0"
+
+#: /schema/plugin.json:/properties/displayStatus/description
+msgctxt "settings"
+msgid "Display Git extension status updates in the JupyterLab status bar. If true, the extension displays status updates in the JupyterLab status bar, such as when pulling and pushing changes, switching branches, and polling for changes. Depending on the level of extension activity, some users may find the status updates distracting. In which case, setting this to false should reduce visual noise."
+msgstr "crwdns13051:0crwdne13051:0"
+
+#: /schema/plugin.json:/properties/displayStatus/title
+msgctxt "settings"
+msgid "Display Git status updates"
+msgstr "crwdns13053:0crwdne13053:0"
+
+#: /schema/plugin.json:/properties/doubleClickDiff/description
+msgctxt "settings"
+msgid "If true, double clicking a file in the list of changed files will open a diff."
+msgstr "crwdns13055:0crwdne13055:0"
+
+#: /schema/plugin.json:/properties/doubleClickDiff/description
+msgctxt "settings"
+msgid "If true, doubling clicking a file in the list of changed files will open a diff."
+msgstr "crwdns13057:0crwdne13057:0"
+
+#: /schema/plugin.json:/properties/doubleClickDiff/title
+msgctxt "settings"
+msgid "Show diff on double click"
+msgstr "crwdns13059:0crwdne13059:0"
+
+#: /schema/plugin.json:/properties/hideHiddenFileWarning/description
+msgctxt "settings"
+msgid "If true, the warning popup when opening the .gitignore file without hidden files will not be displayed."
+msgstr "crwdns16440:0crwdne16440:0"
+
+#: /schema/plugin.json:/properties/hideHiddenFileWarning/title
+msgctxt "settings"
+msgid "Hide hidden file warning"
+msgstr "crwdns16442:0crwdne16442:0"
+
+#: /schema/plugin.json:/properties/historyCount/description
+msgctxt "settings"
+msgid "Number of (most recent) commits shown in the history log"
+msgstr "crwdns13061:0crwdne13061:0"
+
+#: /schema/plugin.json:/properties/historyCount/title
+msgctxt "settings"
+msgid "History count"
+msgstr "crwdns13063:0crwdne13063:0"
+
+#: /schema/plugin.json:/properties/openFilesBehindWarning/description
+msgctxt "settings"
+msgid "If true, a popup dialog will be displayed if a user opens a file that is behind its remote branch version, or if an opened file has updates on the remote branch."
+msgstr "crwdns13065:0crwdne13065:0"
+
+#: /schema/plugin.json:/properties/openFilesBehindWarning/title
+msgctxt "settings"
+msgid "Open files behind warning"
+msgstr "crwdns13067:0crwdne13067:0"
+
+#: /schema/plugin.json:/properties/promptUserIdentity/description
+msgctxt "settings"
+msgid "Whether to prompt for user name and email for each commit."
+msgstr "crwdns16043:0crwdne16043:0"
+
+#: /schema/plugin.json:/properties/promptUserIdentity/title
+msgctxt "settings"
+msgid "Prompt user identity on commit"
+msgstr "crwdns16045:0crwdne16045:0"
+
+#: /schema/plugin.json:/properties/refreshIfHidden/description
+msgctxt "settings"
+msgid "Whether to check Git status when the Git tab is not visible. Choose `false` for higher performance."
+msgstr "crwdns13069:0crwdne13069:0"
+
+#: /schema/plugin.json:/properties/refreshIfHidden/title
+msgctxt "settings"
+msgid "Refresh if the Git tab is hidden"
+msgstr "crwdns13071:0crwdne13071:0"
+
+#: /schema/plugin.json:/properties/refreshInterval/description
+msgctxt "settings"
+msgid "Number of milliseconds between polling the file system for changes."
+msgstr "crwdns13073:0crwdne13073:0"
+
+#: /schema/plugin.json:/properties/refreshInterval/title
+msgctxt "settings"
+msgid "Refresh interval"
+msgstr "crwdns13075:0crwdne13075:0"
+
+#: /schema/plugin.json:/properties/simpleStaging/description
+msgctxt "settings"
+msgid "If true, use a simplified concept of staging. Only files with changes are shown (instead of showing staged/changed/untracked), and all files with changes will be automatically staged"
+msgstr "crwdns13077:0crwdne13077:0"
+
+#: /schema/plugin.json:/properties/simpleStaging/title
+msgctxt "settings"
+msgid "Simple staging flag"
+msgstr "crwdns13079:0crwdne13079:0"
+
+#: /schema/plugin.json:/title
+msgctxt "schema"
+msgid "Git"
+msgstr "crwdns13081:0crwdne13081:0"
+
+#: src/cloneCommand.ts:35 src/cloneCommand.ts:37 src/cloneCommand.tsx:48 src/commandsAndMenu.tsx:286 src/commandsAndMenu.tsx:288 src/commandsAndMenu.tsx:289 src/commandsAndMenu.tsx:290 src/commandsAndMenu.tsx:293 src/components/GitPanel.tsx:454 src/components/GitPanel.tsx:470 src/components/GitPanel.tsx:475 src/components/GitPanel.tsx:483 src/components/GitPanel.tsx:497 src/components/GitPanel.tsx:505 src/components/GitPanel.tsx:604 src/components/GitPanel.tsx:605 src/components/GitPanel.tsx:688 src/components/GitPanel.tsx:701 src/components/GitPanel.tsx:707 src/components/GitPanel.tsx:708
+msgid "Clone a Repository"
+msgstr "crwdns13083:0crwdne13083:0"
+
+#: src/cloneCommand.ts:36 src/cloneCommand.ts:38 src/cloneCommand.tsx:49 src/commandsAndMenu.tsx:287 src/commandsAndMenu.tsx:289 src/commandsAndMenu.tsx:290 src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:294
+msgid "Clone a repository from a URL"
+msgstr "crwdns13085:0crwdne13085:0"
+
+#: src/cloneCommand.ts:40 src/cloneCommand.ts:42 src/cloneCommand.tsx:53 src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:293 src/commandsAndMenu.tsx:294 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:298
+msgid "Clone a repo"
+msgstr "crwdns13087:0crwdne13087:0"
+
+#: src/cloneCommand.ts:44 src/cloneCommand.ts:46 src/cloneCommand.tsx:57 src/commandsAndMenu.tsx:1001 src/commandsAndMenu.tsx:1002 src/commandsAndMenu.tsx:1044 src/commandsAndMenu.tsx:1045 src/commandsAndMenu.tsx:1070 src/commandsAndMenu.tsx:1086 src/commandsAndMenu.tsx:1108 src/commandsAndMenu.tsx:1112 src/commandsAndMenu.tsx:1113 src/commandsAndMenu.tsx:1129 src/commandsAndMenu.tsx:1141 src/commandsAndMenu.tsx:1151 src/commandsAndMenu.tsx:1155 src/commandsAndMenu.tsx:1184 src/commandsAndMenu.tsx:1370 src/commandsAndMenu.tsx:1375 src/commandsAndMenu.tsx:1413 src/commandsAndMenu.tsx:1418 src/commandsAndMenu.tsx:1558 src/commandsAndMenu.tsx:1601 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:204 src/commandsAndMenu.tsx:210 src/commandsAndMenu.tsx:211 src/commandsAndMenu.tsx:216 src/commandsAndMenu.tsx:225 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:297 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:302 src/commandsAndMenu.tsx:317 src/commandsAndMenu.tsx:323 src/commandsAndMenu.tsx:327 src/commandsAndMenu.tsx:333 src/commandsAndMenu.tsx:334 src/commandsAndMenu.tsx:339 src/commandsAndMenu.tsx:415 src/commandsAndMenu.tsx:432 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:449 src/commandsAndMenu.tsx:467 src/commandsAndMenu.tsx:471 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:481 src/commandsAndMenu.tsx:482 src/commandsAndMenu.tsx:487 src/commandsAndMenu.tsx:624 src/commandsAndMenu.tsx:743 src/commandsAndMenu.tsx:745 src/commandsAndMenu.tsx:751 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:794 src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:819 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:878 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:942 src/commandsAndMenu.tsx:985 src/components/BranchMenu.tsx:344 src/components/BranchMenu.tsx:367 src/components/BranchMenu.tsx:372 src/components/BranchMenu.tsx:374 src/components/BranchPicker.tsx:196 src/components/BranchPicker.tsx:198 src/components/FileList.tsx:182 src/components/FileList.tsx:191 src/components/FileList.tsx:193 src/components/FileList.tsx:196 src/components/FileList.tsx:207 src/components/FileList.tsx:216 src/components/FileList.tsx:218 src/components/FileList.tsx:257 src/components/FileList.tsx:267 src/components/FileList.tsx:268 src/components/MergeBranchDialog.tsx:173 src/components/NewBranchDialog.tsx:197 src/components/NewBranchDialog.tsx:202 src/components/NewBranchDialog.tsx:209 src/components/NewTagDialog.tsx:468 src/components/NewTagDialog.tsx:479 src/components/NewTagDialog.tsx:485 src/widgets/discardAllChanges.ts:25
+msgid "Cancel"
+msgstr "crwdns13089:0crwdne13089:0"
+
+#: src/cloneCommand.ts:45 src/cloneCommand.ts:47 src/cloneCommand.tsx:58
+msgid "Clone"
+msgstr "crwdns13091:0crwdne13091:0"
+
+#: src/cloneCommand.ts:52 src/cloneCommand.ts:54 src/cloneCommand.tsx:63
+msgid "Cloning…"
+msgstr "crwdns13093:0crwdne13093:0"
+
+#: src/cloneCommand.ts:62 src/cloneCommand.ts:66 src/cloneCommand.ts:67 src/cloneCommand.ts:69 src/cloneCommand.tsx:82 src/commandsAndMenu.tsx:313 src/commandsAndMenu.tsx:315 src/commandsAndMenu.tsx:316 src/commandsAndMenu.tsx:317 src/commandsAndMenu.tsx:320
+msgid "Successfully cloned"
+msgstr "crwdns13095:0crwdne13095:0"
+
+#: src/cloneCommand.ts:73 src/cloneCommand.ts:77 src/cloneCommand.ts:78 src/cloneCommand.ts:80 src/cloneCommand.tsx:94 src/commandsAndMenu.tsx:324 src/commandsAndMenu.tsx:326 src/commandsAndMenu.tsx:327 src/commandsAndMenu.tsx:328 src/commandsAndMenu.tsx:331
+msgid "Failed to clone"
+msgstr "crwdns13097:0crwdne13097:0"
+
+#: src/cloneCommand.tsx:122 src/widgets/gitClone.tsx:38
+msgid "Git Clone"
+msgstr "crwdns13815:0crwdne13815:0"
+
+#: src/commandsAndMenu.tsx:1002 src/commandsAndMenu.tsx:1003 src/commandsAndMenu.tsx:1049 src/commandsAndMenu.tsx:1065 src/commandsAndMenu.tsx:1071 src/commandsAndMenu.tsx:1087 src/commandsAndMenu.tsx:1091 src/commandsAndMenu.tsx:1109 src/commandsAndMenu.tsx:1113 src/commandsAndMenu.tsx:1120 src/commandsAndMenu.tsx:1142 src/commandsAndMenu.tsx:1349 src/commandsAndMenu.tsx:1354 src/commandsAndMenu.tsx:1371 src/commandsAndMenu.tsx:1376 src/commandsAndMenu.tsx:1537 src/commandsAndMenu.tsx:1559 src/commandsAndMenu.tsx:722 src/commandsAndMenu.tsx:724 src/commandsAndMenu.tsx:730 src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:744 src/commandsAndMenu.tsx:746 src/commandsAndMenu.tsx:752 src/commandsAndMenu.tsx:755 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:857 src/commandsAndMenu.tsx:879 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:943 src/commandsAndMenu.tsx:980 src/commandsAndMenu.tsx:981 src/components/BranchMenu.tsx:345 src/components/BranchMenu.tsx:368 src/components/BranchMenu.tsx:373 src/components/BranchMenu.tsx:375
+msgid "Delete"
+msgstr "crwdns13099:0crwdne13099:0"
+
+#: src/commandsAndMenu.tsx:1004 src/commandsAndMenu.tsx:1007 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:1071 src/commandsAndMenu.tsx:1128 src/commandsAndMenu.tsx:1129 src/commandsAndMenu.tsx:1131 src/commandsAndMenu.tsx:1132 src/commandsAndMenu.tsx:1197 src/commandsAndMenu.tsx:1200 src/commandsAndMenu.tsx:1213 src/commandsAndMenu.tsx:1216 src/commandsAndMenu.tsx:1235 src/commandsAndMenu.tsx:1238 src/commandsAndMenu.tsx:1239 src/commandsAndMenu.tsx:1242 src/commandsAndMenu.tsx:1268 src/commandsAndMenu.tsx:1271 src/commandsAndMenu.tsx:1497 src/commandsAndMenu.tsx:1500 src/commandsAndMenu.tsx:1502 src/commandsAndMenu.tsx:1505 src/commandsAndMenu.tsx:1694 src/commandsAndMenu.tsx:1697 src/commandsAndMenu.tsx:869 src/commandsAndMenu.tsx:871 src/commandsAndMenu.tsx:872 src/commandsAndMenu.tsx:874 src/commandsAndMenu.tsx:877 src/commandsAndMenu.tsx:880 src/commandsAndMenu.tsx:882 src/commandsAndMenu.tsx:885 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:905 src/commandsAndMenu.tsx:906
+msgid "Ignore"
+msgstr "crwdns13101:0crwdne13101:0"
+
+#: src/commandsAndMenu.tsx:1004 src/commandsAndMenu.tsx:1181 src/commandsAndMenu.tsx:999
+msgid "Failed to get the stash"
+msgstr "crwdns16111:0crwdne16111:0"
+
+#: src/commandsAndMenu.tsx:1004 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:839
+msgid "Failed to rebase branch '%1' onto '%2'."
+msgstr "crwdns16055:0%1crwdnd16055:0%2crwdne16055:0"
+
+#: src/commandsAndMenu.tsx:1007 src/commandsAndMenu.tsx:1066 src/commandsAndMenu.tsx:1067 src/commandsAndMenu.tsx:1135 src/commandsAndMenu.tsx:1151 src/commandsAndMenu.tsx:1173 src/commandsAndMenu.tsx:1177 src/commandsAndMenu.tsx:1206 src/commandsAndMenu.tsx:1435 src/commandsAndMenu.tsx:1440 src/commandsAndMenu.tsx:1623 src/commandsAndMenu.tsx:808 src/commandsAndMenu.tsx:810 src/commandsAndMenu.tsx:816 src/commandsAndMenu.tsx:821 src/commandsAndMenu.tsx:841 src/commandsAndMenu.tsx:842 src/commandsAndMenu.tsx:943
+msgid "Discard changes for %1 failed."
+msgstr "crwdns13103:0%1crwdne13103:0"
+
+#: src/commandsAndMenu.tsx:1008 src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1046 src/commandsAndMenu.tsx:1050 src/commandsAndMenu.tsx:1079 src/commandsAndMenu.tsx:1308 src/commandsAndMenu.tsx:1313 src/commandsAndMenu.tsx:1496 src/commandsAndMenu.tsx:681 src/commandsAndMenu.tsx:683 src/commandsAndMenu.tsx:689 src/commandsAndMenu.tsx:694 src/commandsAndMenu.tsx:714 src/commandsAndMenu.tsx:715 src/commandsAndMenu.tsx:816 src/commandsAndMenu.tsx:880 src/commandsAndMenu.tsx:939 src/commandsAndMenu.tsx:940
+msgid "Track"
+msgstr "crwdns13105:0crwdne13105:0"
+
+#: src/commandsAndMenu.tsx:1009 src/commandsAndMenu.tsx:1013 src/commandsAndMenu.tsx:1014 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:1069 src/commandsAndMenu.tsx:1082 src/commandsAndMenu.tsx:1098 src/commandsAndMenu.tsx:1120 src/commandsAndMenu.tsx:1124 src/commandsAndMenu.tsx:1137 src/commandsAndMenu.tsx:1153 src/commandsAndMenu.tsx:1175 src/commandsAndMenu.tsx:1179 src/commandsAndMenu.tsx:1208 src/commandsAndMenu.tsx:1382 src/commandsAndMenu.tsx:1387 src/commandsAndMenu.tsx:1437 src/commandsAndMenu.tsx:1442 src/commandsAndMenu.tsx:1570 src/commandsAndMenu.tsx:1625 src/commandsAndMenu.tsx:954 src/components/Alert.tsx:106 src/components/Alert.tsx:123 src/components/BranchMenu.tsx:68 src/components/BranchMenu.tsx:69 src/components/BranchMenu.tsx:70 src/components/TagMenu.tsx:63 src/components/TagMenu.tsx:64 src/components/TagMenu.tsx:65 src/index.ts:135 src/index.ts:136 src/index.ts:141 src/index.ts:142 src/notifications.ts:22 src/notifications.ts:53
+msgid "Dismiss"
+msgstr "crwdns13107:0crwdne13107:0"
+
+#: src/commandsAndMenu.tsx:1009 src/commandsAndMenu.tsx:1014 src/commandsAndMenu.tsx:1190 src/commandsAndMenu.tsx:511 src/commandsAndMenu.tsx:513 src/commandsAndMenu.tsx:518 src/commandsAndMenu.tsx:522 src/commandsAndMenu.tsx:523 src/commandsAndMenu.tsx:579 src/commandsAndMenu.tsx:643 src/commandsAndMenu.tsx:702 src/commandsAndMenu.tsx:703 src/commandsAndMenu.tsx:722 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:760 src/commandsAndMenu.tsx:764 src/commandsAndMenu.tsx:785
+msgid "Open"
+msgstr "crwdns13313:0crwdne13313:0"
+
+#: src/commandsAndMenu.tsx:1009 src/commandsAndMenu.tsx:1031 src/commandsAndMenu.tsx:1035 src/commandsAndMenu.tsx:1064 src/commandsAndMenu.tsx:1293 src/commandsAndMenu.tsx:1298 src/commandsAndMenu.tsx:1481 src/commandsAndMenu.tsx:666 src/commandsAndMenu.tsx:668 src/commandsAndMenu.tsx:674 src/commandsAndMenu.tsx:679 src/commandsAndMenu.tsx:699 src/commandsAndMenu.tsx:700 src/commandsAndMenu.tsx:801 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:924 src/commandsAndMenu.tsx:925 src/commandsAndMenu.tsx:993
+msgid "Stage"
+msgstr "crwdns13109:0crwdne13109:0"
+
+#: src/commandsAndMenu.tsx:1010 src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1048 src/commandsAndMenu.tsx:1052 src/commandsAndMenu.tsx:1081 src/commandsAndMenu.tsx:1310 src/commandsAndMenu.tsx:1315 src/commandsAndMenu.tsx:1498 src/commandsAndMenu.tsx:683 src/commandsAndMenu.tsx:685 src/commandsAndMenu.tsx:691 src/commandsAndMenu.tsx:696 src/commandsAndMenu.tsx:716 src/commandsAndMenu.tsx:717 src/commandsAndMenu.tsx:818 src/commandsAndMenu.tsx:882 src/commandsAndMenu.tsx:941 src/commandsAndMenu.tsx:942
+msgid "Start tracking selected file"
+msgstr "crwdns13111:0crwdne13111:0"
+
+#: src/commandsAndMenu.tsx:1011 src/commandsAndMenu.tsx:1016 src/commandsAndMenu.tsx:1192 src/commandsAndMenu.tsx:513 src/commandsAndMenu.tsx:515 src/commandsAndMenu.tsx:520 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:581 src/commandsAndMenu.tsx:645 src/commandsAndMenu.tsx:704 src/commandsAndMenu.tsx:705 src/commandsAndMenu.tsx:724 src/commandsAndMenu.tsx:740 src/commandsAndMenu.tsx:762 src/commandsAndMenu.tsx:766 src/commandsAndMenu.tsx:787
+msgid "Open selected file"
+msgstr "crwdns13317:0crwdne13317:0"
+
+#: src/commandsAndMenu.tsx:1011 src/commandsAndMenu.tsx:1027 src/commandsAndMenu.tsx:1049 src/commandsAndMenu.tsx:1053 src/commandsAndMenu.tsx:1082 src/commandsAndMenu.tsx:1311 src/commandsAndMenu.tsx:1316 src/commandsAndMenu.tsx:1499 src/commandsAndMenu.tsx:684 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:692 src/commandsAndMenu.tsx:697 src/commandsAndMenu.tsx:717 src/commandsAndMenu.tsx:718 src/commandsAndMenu.tsx:819 src/commandsAndMenu.tsx:883 src/commandsAndMenu.tsx:942 src/commandsAndMenu.tsx:943
+msgid "Start tracking selected files"
+msgstr "crwdns13113:0crwdne13113:0"
+
+#: src/commandsAndMenu.tsx:1011 src/commandsAndMenu.tsx:1033 src/commandsAndMenu.tsx:1037 src/commandsAndMenu.tsx:1066 src/commandsAndMenu.tsx:1295 src/commandsAndMenu.tsx:1300 src/commandsAndMenu.tsx:1483 src/commandsAndMenu.tsx:668 src/commandsAndMenu.tsx:670 src/commandsAndMenu.tsx:676 src/commandsAndMenu.tsx:681 src/commandsAndMenu.tsx:701 src/commandsAndMenu.tsx:702 src/commandsAndMenu.tsx:803 src/commandsAndMenu.tsx:867 src/commandsAndMenu.tsx:926 src/commandsAndMenu.tsx:927 src/commandsAndMenu.tsx:995
+msgid "Stage the changes of selected file"
+msgstr "crwdns13115:0crwdne13115:0"
+
+#: src/commandsAndMenu.tsx:1012 src/commandsAndMenu.tsx:1013 src/commandsAndMenu.tsx:1081 src/commandsAndMenu.tsx:1097 src/commandsAndMenu.tsx:1119 src/commandsAndMenu.tsx:1123 src/commandsAndMenu.tsx:1152 src/commandsAndMenu.tsx:1381 src/commandsAndMenu.tsx:1386 src/commandsAndMenu.tsx:1569 src/commandsAndMenu.tsx:754 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:762 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:787 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:889 src/commandsAndMenu.tsx:953
+msgid "Deleting %1 failed."
+msgstr "crwdns13117:0%1crwdne13117:0"
+
+#: src/commandsAndMenu.tsx:1012 src/commandsAndMenu.tsx:1017 src/commandsAndMenu.tsx:1193 src/commandsAndMenu.tsx:514 src/commandsAndMenu.tsx:516 src/commandsAndMenu.tsx:521 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:526 src/commandsAndMenu.tsx:582 src/commandsAndMenu.tsx:646 src/commandsAndMenu.tsx:705 src/commandsAndMenu.tsx:706 src/commandsAndMenu.tsx:725 src/commandsAndMenu.tsx:741 src/commandsAndMenu.tsx:763 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:788
+msgid "Open selected files"
+msgstr "crwdns13319:0crwdne13319:0"
+
+#: src/commandsAndMenu.tsx:1012 src/commandsAndMenu.tsx:1034 src/commandsAndMenu.tsx:1038 src/commandsAndMenu.tsx:1067 src/commandsAndMenu.tsx:1296 src/commandsAndMenu.tsx:1301 src/commandsAndMenu.tsx:1484 src/commandsAndMenu.tsx:669 src/commandsAndMenu.tsx:671 src/commandsAndMenu.tsx:677 src/commandsAndMenu.tsx:682 src/commandsAndMenu.tsx:702 src/commandsAndMenu.tsx:703 src/commandsAndMenu.tsx:804 src/commandsAndMenu.tsx:868 src/commandsAndMenu.tsx:927 src/commandsAndMenu.tsx:928 src/commandsAndMenu.tsx:996
+msgid "Stage the changes of selected files"
+msgstr "crwdns13119:0crwdne13119:0"
+
+#: src/commandsAndMenu.tsx:1016 src/commandsAndMenu.tsx:1020 src/commandsAndMenu.tsx:1049 src/commandsAndMenu.tsx:1278 src/commandsAndMenu.tsx:1283 src/commandsAndMenu.tsx:1466 src/commandsAndMenu.tsx:651 src/commandsAndMenu.tsx:653 src/commandsAndMenu.tsx:659 src/commandsAndMenu.tsx:664 src/commandsAndMenu.tsx:684 src/commandsAndMenu.tsx:685 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:850 src/commandsAndMenu.tsx:909 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:978 src/commandsAndMenu.tsx:994 src/components/ManageRemoteDialogue.tsx:159
+msgid "Add"
+msgstr "crwdns13121:0crwdne13121:0"
+
+#: src/commandsAndMenu.tsx:1017 src/commandsAndMenu.tsx:846 src/commandsAndMenu.tsx:851
+msgid "Branch '%1' rebase onto '%2'."
+msgstr "crwdns16057:0%1crwdnd16057:0%2crwdne16057:0"
+
+#: src/commandsAndMenu.tsx:1018 src/commandsAndMenu.tsx:1022 src/commandsAndMenu.tsx:1051 src/commandsAndMenu.tsx:1280 src/commandsAndMenu.tsx:1285 src/commandsAndMenu.tsx:1468 src/commandsAndMenu.tsx:653 src/commandsAndMenu.tsx:655 src/commandsAndMenu.tsx:661 src/commandsAndMenu.tsx:666 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:911 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:980 src/commandsAndMenu.tsx:996
+msgid "Stage or track the changes to selected file"
+msgstr "crwdns13123:0crwdne13123:0"
+
+#: src/commandsAndMenu.tsx:1019 src/commandsAndMenu.tsx:1023 src/commandsAndMenu.tsx:1052 src/commandsAndMenu.tsx:1281 src/commandsAndMenu.tsx:1286 src/commandsAndMenu.tsx:1469 src/commandsAndMenu.tsx:654 src/commandsAndMenu.tsx:656 src/commandsAndMenu.tsx:662 src/commandsAndMenu.tsx:667 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:688 src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:853 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:981 src/commandsAndMenu.tsx:997
+msgid "Stage or track the changes of selected files"
+msgstr "crwdns13125:0crwdne13125:0"
+
+#: src/commandsAndMenu.tsx:1020 src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1079 src/commandsAndMenu.tsx:1080 src/commandsAndMenu.tsx:1083 src/commandsAndMenu.tsx:1084 src/commandsAndMenu.tsx:1148 src/commandsAndMenu.tsx:1152 src/commandsAndMenu.tsx:1164 src/commandsAndMenu.tsx:1168 src/commandsAndMenu.tsx:1186 src/commandsAndMenu.tsx:1190 src/commandsAndMenu.tsx:1194 src/commandsAndMenu.tsx:1219 src/commandsAndMenu.tsx:1223 src/commandsAndMenu.tsx:1448 src/commandsAndMenu.tsx:1452 src/commandsAndMenu.tsx:1453 src/commandsAndMenu.tsx:1457 src/commandsAndMenu.tsx:1636 src/commandsAndMenu.tsx:1640 src/commandsAndMenu.tsx:821 src/commandsAndMenu.tsx:823 src/commandsAndMenu.tsx:825 src/commandsAndMenu.tsx:827 src/commandsAndMenu.tsx:829 src/commandsAndMenu.tsx:833 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:838 src/commandsAndMenu.tsx:854 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:858 src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:956 src/commandsAndMenu.tsx:960
+msgid "Ignore this file (add to .gitignore)"
+msgstr "crwdns13127:0crwdne13127:0"
+
+#: src/commandsAndMenu.tsx:1020 src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1201 src/commandsAndMenu.tsx:522 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:529 src/commandsAndMenu.tsx:533 src/commandsAndMenu.tsx:534 src/commandsAndMenu.tsx:590 src/commandsAndMenu.tsx:654 src/commandsAndMenu.tsx:713 src/commandsAndMenu.tsx:714 src/commandsAndMenu.tsx:733 src/commandsAndMenu.tsx:749 src/commandsAndMenu.tsx:771 src/commandsAndMenu.tsx:775 src/commandsAndMenu.tsx:796
+msgid "Open File Failed"
+msgstr "crwdns13321:0crwdne13321:0"
+
+#: src/commandsAndMenu.tsx:1021 src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1080 src/commandsAndMenu.tsx:1081 src/commandsAndMenu.tsx:1084 src/commandsAndMenu.tsx:1085 src/commandsAndMenu.tsx:1149 src/commandsAndMenu.tsx:1153 src/commandsAndMenu.tsx:1165 src/commandsAndMenu.tsx:1169 src/commandsAndMenu.tsx:1187 src/commandsAndMenu.tsx:1191 src/commandsAndMenu.tsx:1195 src/commandsAndMenu.tsx:1220 src/commandsAndMenu.tsx:1224 src/commandsAndMenu.tsx:1449 src/commandsAndMenu.tsx:1453 src/commandsAndMenu.tsx:1454 src/commandsAndMenu.tsx:1458 src/commandsAndMenu.tsx:1637 src/commandsAndMenu.tsx:1641 src/commandsAndMenu.tsx:822 src/commandsAndMenu.tsx:824 src/commandsAndMenu.tsx:826 src/commandsAndMenu.tsx:828 src/commandsAndMenu.tsx:830 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:835 src/commandsAndMenu.tsx:839 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:856 src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:860 src/commandsAndMenu.tsx:957 src/commandsAndMenu.tsx:961
+msgid "Ignore these files (add to .gitignore)"
+msgstr "crwdns13129:0crwdne13129:0"
+
+#: src/commandsAndMenu.tsx:1021 src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1202 src/commandsAndMenu.tsx:523 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:530 src/commandsAndMenu.tsx:534 src/commandsAndMenu.tsx:535 src/commandsAndMenu.tsx:591 src/commandsAndMenu.tsx:655 src/commandsAndMenu.tsx:714 src/commandsAndMenu.tsx:715 src/commandsAndMenu.tsx:734 src/commandsAndMenu.tsx:750 src/commandsAndMenu.tsx:772 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:797
+msgid "This file has been deleted!"
+msgstr "crwdns13323:0crwdne13323:0"
+
+#: src/commandsAndMenu.tsx:1023 src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1045 src/commandsAndMenu.tsx:1046 src/commandsAndMenu.tsx:1092 src/commandsAndMenu.tsx:1108 src/commandsAndMenu.tsx:1114 src/commandsAndMenu.tsx:1130 src/commandsAndMenu.tsx:1134 src/commandsAndMenu.tsx:1152 src/commandsAndMenu.tsx:1156 src/commandsAndMenu.tsx:1163 src/commandsAndMenu.tsx:1185 src/commandsAndMenu.tsx:1392 src/commandsAndMenu.tsx:1397 src/commandsAndMenu.tsx:1414 src/commandsAndMenu.tsx:1419 src/commandsAndMenu.tsx:1580 src/commandsAndMenu.tsx:1602 src/commandsAndMenu.tsx:765 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:773 src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:787 src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:795 src/commandsAndMenu.tsx:798 src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:800 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:821 src/commandsAndMenu.tsx:900 src/commandsAndMenu.tsx:922 src/commandsAndMenu.tsx:964 src/commandsAndMenu.tsx:986 src/components/FileList.tsx:183 src/components/FileList.tsx:192 src/components/FileList.tsx:194 src/components/FileList.tsx:197 src/components/FileList.tsx:208 src/components/FileList.tsx:217 src/components/FileList.tsx:219 src/components/FileList.tsx:258 src/components/FileList.tsx:268 src/components/FileList.tsx:269 src/widgets/discardAllChanges.ts:26
+msgid "Discard"
+msgstr "crwdns13131:0crwdne13131:0"
+
+#: src/commandsAndMenu.tsx:1023 src/commandsAndMenu.tsx:1039 src/commandsAndMenu.tsx:1061 src/commandsAndMenu.tsx:1065 src/commandsAndMenu.tsx:1094 src/commandsAndMenu.tsx:1323 src/commandsAndMenu.tsx:1328 src/commandsAndMenu.tsx:1511 src/commandsAndMenu.tsx:696 src/commandsAndMenu.tsx:698 src/commandsAndMenu.tsx:704 src/commandsAndMenu.tsx:709 src/commandsAndMenu.tsx:729 src/commandsAndMenu.tsx:730 src/commandsAndMenu.tsx:831 src/commandsAndMenu.tsx:895 src/commandsAndMenu.tsx:954 src/commandsAndMenu.tsx:955
+msgid "Unstage"
+msgstr "crwdns13133:0crwdne13133:0"
+
+#: src/commandsAndMenu.tsx:1024 src/commandsAndMenu.tsx:1088 src/commandsAndMenu.tsx:1148 src/commandsAndMenu.tsx:1149 src/commandsAndMenu.tsx:1217 src/commandsAndMenu.tsx:1233 src/commandsAndMenu.tsx:1255 src/commandsAndMenu.tsx:1259 src/commandsAndMenu.tsx:1288 src/commandsAndMenu.tsx:1517 src/commandsAndMenu.tsx:1522 src/commandsAndMenu.tsx:1714 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:922 src/commandsAndMenu.tsx:923 src/components/GitPanel.tsx:344 src/components/GitPanel.tsx:358 src/components/GitPanel.tsx:363 src/components/GitPanel.tsx:370 src/components/GitPanel.tsx:383 src/components/GitPanel.tsx:391 src/components/GitPanel.tsx:414 src/components/GitPanel.tsx:415 src/components/GitPanel.tsx:449 src/components/GitPanel.tsx:462 src/components/GitPanel.tsx:468
+msgid "History"
+msgstr "crwdns13135:0crwdne13135:0"
+
+#: src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1094 src/commandsAndMenu.tsx:1110 src/commandsAndMenu.tsx:1132 src/commandsAndMenu.tsx:1136 src/commandsAndMenu.tsx:1165 src/commandsAndMenu.tsx:1394 src/commandsAndMenu.tsx:1399 src/commandsAndMenu.tsx:1582 src/commandsAndMenu.tsx:767 src/commandsAndMenu.tsx:769 src/commandsAndMenu.tsx:775 src/commandsAndMenu.tsx:780 src/commandsAndMenu.tsx:800 src/commandsAndMenu.tsx:801 src/commandsAndMenu.tsx:902 src/commandsAndMenu.tsx:966
+msgid "Discard recent changes of selected file"
+msgstr "crwdns13137:0crwdne13137:0"
+
+#: src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1041 src/commandsAndMenu.tsx:1063 src/commandsAndMenu.tsx:1067 src/commandsAndMenu.tsx:1096 src/commandsAndMenu.tsx:1325 src/commandsAndMenu.tsx:1330 src/commandsAndMenu.tsx:1513 src/commandsAndMenu.tsx:698 src/commandsAndMenu.tsx:700 src/commandsAndMenu.tsx:706 src/commandsAndMenu.tsx:711 src/commandsAndMenu.tsx:731 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:833 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:956 src/commandsAndMenu.tsx:957
+msgid "Unstage the changes of selected file"
+msgstr "crwdns13139:0crwdne13139:0"
+
+#: src/commandsAndMenu.tsx:1025 src/commandsAndMenu.tsx:1089 src/commandsAndMenu.tsx:1149 src/commandsAndMenu.tsx:1150 src/commandsAndMenu.tsx:1218 src/commandsAndMenu.tsx:1234 src/commandsAndMenu.tsx:1256 src/commandsAndMenu.tsx:1260 src/commandsAndMenu.tsx:1289 src/commandsAndMenu.tsx:1518 src/commandsAndMenu.tsx:1523 src/commandsAndMenu.tsx:1715 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:923 src/commandsAndMenu.tsx:924
+msgid "View the history of this file"
+msgstr "crwdns13141:0crwdne13141:0"
+
+#: src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1027 src/commandsAndMenu.tsx:1095 src/commandsAndMenu.tsx:1111 src/commandsAndMenu.tsx:1133 src/commandsAndMenu.tsx:1137 src/commandsAndMenu.tsx:1166 src/commandsAndMenu.tsx:1395 src/commandsAndMenu.tsx:1400 src/commandsAndMenu.tsx:1583 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:770 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:781 src/commandsAndMenu.tsx:801 src/commandsAndMenu.tsx:802 src/commandsAndMenu.tsx:903 src/commandsAndMenu.tsx:967
+msgid "Discard recent changes of selected files"
+msgstr "crwdns13143:0crwdne13143:0"
+
+#: src/commandsAndMenu.tsx:1026 src/commandsAndMenu.tsx:1042 src/commandsAndMenu.tsx:1064 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:1097 src/commandsAndMenu.tsx:1326 src/commandsAndMenu.tsx:1331 src/commandsAndMenu.tsx:1514 src/commandsAndMenu.tsx:699 src/commandsAndMenu.tsx:701 src/commandsAndMenu.tsx:707 src/commandsAndMenu.tsx:712 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:733 src/commandsAndMenu.tsx:834 src/commandsAndMenu.tsx:898 src/commandsAndMenu.tsx:957 src/commandsAndMenu.tsx:958
+msgid "Unstage the changes of selected files"
+msgstr "crwdns13145:0crwdne13145:0"
+
+#: src/commandsAndMenu.tsx:1033 src/commandsAndMenu.tsx:1034 src/commandsAndMenu.tsx:1102 src/commandsAndMenu.tsx:1118 src/commandsAndMenu.tsx:1140 src/commandsAndMenu.tsx:1144 src/commandsAndMenu.tsx:1173 src/commandsAndMenu.tsx:1402 src/commandsAndMenu.tsx:1407 src/commandsAndMenu.tsx:1590 src/commandsAndMenu.tsx:775 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:783 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:808 src/commandsAndMenu.tsx:809 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:974 src/components/FileList.tsx:1125 src/components/FileList.tsx:1129 src/components/FileList.tsx:1151 src/components/FileList.tsx:1153 src/components/FileList.tsx:1155 src/components/FileList.tsx:1179 src/components/FileList.tsx:457 src/components/FileList.tsx:466 src/components/FileList.tsx:534 src/components/FileList.tsx:535 src/components/FileList.tsx:655 src/components/FileList.tsx:664 src/components/FileList.tsx:681 src/components/FileList.tsx:690 src/components/FileList.tsx:733 src/components/FileList.tsx:759 src/components/FileList.tsx:810 src/components/FileList.tsx:835 src/components/FileList.tsx:836 src/components/FileList.tsx:837 src/components/FileList.tsx:859
+msgid "Discard changes"
+msgstr "crwdns13147:0crwdne13147:0"
+
+#: src/commandsAndMenu.tsx:1035 src/commandsAndMenu.tsx:864 src/commandsAndMenu.tsx:869
+msgid "Continue rebase"
+msgstr "crwdns16059:0crwdne16059:0"
+
+#: src/commandsAndMenu.tsx:1036 src/commandsAndMenu.tsx:1037 src/commandsAndMenu.tsx:1105 src/commandsAndMenu.tsx:1121 src/commandsAndMenu.tsx:1143 src/commandsAndMenu.tsx:1147 src/commandsAndMenu.tsx:1176 src/commandsAndMenu.tsx:1405 src/commandsAndMenu.tsx:1410 src/commandsAndMenu.tsx:1593 src/commandsAndMenu.tsx:778 src/commandsAndMenu.tsx:780 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:791 src/commandsAndMenu.tsx:811 src/commandsAndMenu.tsx:812 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:977
+msgid "Are you sure you want to permanently discard changes to the following files?               This action cannot be undone."
+msgstr "crwdns13149:0crwdne13149:0"
+
+#: src/commandsAndMenu.tsx:1037 src/commandsAndMenu.tsx:866 src/commandsAndMenu.tsx:871
+msgid "Skip current commit"
+msgstr "crwdns16061:0crwdne16061:0"
+
+#: src/commandsAndMenu.tsx:1039 src/commandsAndMenu.tsx:868 src/commandsAndMenu.tsx:873 src/components/RebaseAction.tsx:72 src/components/RebaseAction.tsx:76
+msgid "Abort rebase"
+msgstr "crwdns16063:0crwdne16063:0"
+
+#: src/commandsAndMenu.tsx:1041 src/commandsAndMenu.tsx:1055 src/commandsAndMenu.tsx:870 src/commandsAndMenu.tsx:875 src/commandsAndMenu.tsx:884 src/commandsAndMenu.tsx:889
+msgid "Resolve rebase"
+msgstr "crwdns16065:0crwdne16065:0"
+
+#: src/commandsAndMenu.tsx:1042 src/commandsAndMenu.tsx:1047 src/commandsAndMenu.tsx:1223 src/commandsAndMenu.tsx:755 src/commandsAndMenu.tsx:771 src/commandsAndMenu.tsx:793 src/commandsAndMenu.tsx:797 src/commandsAndMenu.tsx:818
+msgid "Open File"
+msgstr "crwdns13349:0crwdne13349:0"
+
+#: src/commandsAndMenu.tsx:1043 src/commandsAndMenu.tsx:1048 src/commandsAndMenu.tsx:1224 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:772 src/commandsAndMenu.tsx:794 src/commandsAndMenu.tsx:798 src/commandsAndMenu.tsx:819
+msgid "Open file from its diff view"
+msgstr "crwdns13351:0crwdne13351:0"
+
+#: src/commandsAndMenu.tsx:1043 src/commandsAndMenu.tsx:1103 src/commandsAndMenu.tsx:1104 src/commandsAndMenu.tsx:1172 src/commandsAndMenu.tsx:1188 src/commandsAndMenu.tsx:1210 src/commandsAndMenu.tsx:1214 src/commandsAndMenu.tsx:1243 src/commandsAndMenu.tsx:1472 src/commandsAndMenu.tsx:1477 src/commandsAndMenu.tsx:1669 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:846 src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:857 src/commandsAndMenu.tsx:877 src/commandsAndMenu.tsx:878 src/commandsAndMenu.tsx:979
+msgid "Ignore %2 extension (add to .gitignore)"
+msgid_plural "Ignore %2 extensions (add to .gitignore)"
+msgstr[0] "crwdns13151:1%2crwdne13151:1"
+msgstr[1] "crwdns13151:5%2crwdne13151:5"
+
+#: src/commandsAndMenu.tsx:1043 src/commandsAndMenu.tsx:1107 src/commandsAndMenu.tsx:1167 src/commandsAndMenu.tsx:1168 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1252 src/commandsAndMenu.tsx:1274 src/commandsAndMenu.tsx:1278 src/commandsAndMenu.tsx:1307 src/commandsAndMenu.tsx:1536 src/commandsAndMenu.tsx:1541 src/commandsAndMenu.tsx:1733 src/commandsAndMenu.tsx:889 src/commandsAndMenu.tsx:891 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:941 src/commandsAndMenu.tsx:942
+msgid "No actions available"
+msgstr "crwdns13153:0crwdne13153:0"
+
+#: src/commandsAndMenu.tsx:1047 src/commandsAndMenu.tsx:876 src/commandsAndMenu.tsx:881
+msgid "Continue the rebase by committing the current state."
+msgstr "crwdns16067:0crwdne16067:0"
+
+#: src/commandsAndMenu.tsx:1051 src/commandsAndMenu.tsx:1067 src/commandsAndMenu.tsx:1089 src/commandsAndMenu.tsx:1093 src/commandsAndMenu.tsx:1122 src/commandsAndMenu.tsx:1351 src/commandsAndMenu.tsx:1356 src/commandsAndMenu.tsx:1539 src/commandsAndMenu.tsx:724 src/commandsAndMenu.tsx:726 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:737 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:758 src/commandsAndMenu.tsx:859 src/commandsAndMenu.tsx:923 src/commandsAndMenu.tsx:982 src/commandsAndMenu.tsx:983
+msgid "Delete this file"
+msgstr "crwdns13155:0crwdne13155:0"
+
+#: src/commandsAndMenu.tsx:1051 src/commandsAndMenu.tsx:1111 src/commandsAndMenu.tsx:1112 src/commandsAndMenu.tsx:1180 src/commandsAndMenu.tsx:1196 src/commandsAndMenu.tsx:1218 src/commandsAndMenu.tsx:1222 src/commandsAndMenu.tsx:1251 src/commandsAndMenu.tsx:1480 src/commandsAndMenu.tsx:1485 src/commandsAndMenu.tsx:1677 src/commandsAndMenu.tsx:852 src/commandsAndMenu.tsx:854 src/commandsAndMenu.tsx:860 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:885 src/commandsAndMenu.tsx:886 src/commandsAndMenu.tsx:987
+msgid "Ignore this file extension (add to .gitignore)"
+msgstr "crwdns13157:0crwdne13157:0"
+
+#: src/commandsAndMenu.tsx:1051 src/commandsAndMenu.tsx:880 src/commandsAndMenu.tsx:885
+msgid "Skip current commit and continue the rebase."
+msgstr "crwdns16069:0crwdne16069:0"
+
+#: src/commandsAndMenu.tsx:1052 src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:1090 src/commandsAndMenu.tsx:1094 src/commandsAndMenu.tsx:1123 src/commandsAndMenu.tsx:1352 src/commandsAndMenu.tsx:1357 src/commandsAndMenu.tsx:1540 src/commandsAndMenu.tsx:725 src/commandsAndMenu.tsx:727 src/commandsAndMenu.tsx:733 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:758 src/commandsAndMenu.tsx:759 src/commandsAndMenu.tsx:860 src/commandsAndMenu.tsx:924 src/commandsAndMenu.tsx:983 src/commandsAndMenu.tsx:984
+msgid "Delete these files"
+msgstr "crwdns13159:0crwdne13159:0"
+
+#: src/commandsAndMenu.tsx:1052 src/commandsAndMenu.tsx:1112 src/commandsAndMenu.tsx:1113 src/commandsAndMenu.tsx:1181 src/commandsAndMenu.tsx:1197 src/commandsAndMenu.tsx:1219 src/commandsAndMenu.tsx:1223 src/commandsAndMenu.tsx:1252 src/commandsAndMenu.tsx:1481 src/commandsAndMenu.tsx:1486 src/commandsAndMenu.tsx:1678 src/commandsAndMenu.tsx:853 src/commandsAndMenu.tsx:855 src/commandsAndMenu.tsx:861 src/commandsAndMenu.tsx:866 src/commandsAndMenu.tsx:886 src/commandsAndMenu.tsx:887 src/commandsAndMenu.tsx:988
+msgid "Ignore these files extension (add to .gitignore)"
+msgstr "crwdns13161:0crwdne13161:0"
+
+#: src/commandsAndMenu.tsx:1053 src/commandsAndMenu.tsx:882 src/commandsAndMenu.tsx:887
+msgid "Abort the rebase"
+msgstr "crwdns16071:0crwdne16071:0"
+
+#: src/commandsAndMenu.tsx:1059 src/commandsAndMenu.tsx:1075 src/commandsAndMenu.tsx:1097 src/commandsAndMenu.tsx:1101 src/commandsAndMenu.tsx:1130 src/commandsAndMenu.tsx:1359 src/commandsAndMenu.tsx:1364 src/commandsAndMenu.tsx:1547 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:734 src/commandsAndMenu.tsx:740 src/commandsAndMenu.tsx:745 src/commandsAndMenu.tsx:765 src/commandsAndMenu.tsx:766 src/commandsAndMenu.tsx:867 src/commandsAndMenu.tsx:931 src/commandsAndMenu.tsx:990 src/commandsAndMenu.tsx:991
+msgid "Delete Files"
+msgstr "crwdns13163:0crwdne13163:0"
+
+#: src/commandsAndMenu.tsx:1061 src/commandsAndMenu.tsx:1121 src/commandsAndMenu.tsx:1122 src/commandsAndMenu.tsx:1190 src/commandsAndMenu.tsx:1206 src/commandsAndMenu.tsx:1228 src/commandsAndMenu.tsx:1232 src/commandsAndMenu.tsx:1261 src/commandsAndMenu.tsx:1490 src/commandsAndMenu.tsx:1495 src/commandsAndMenu.tsx:1687 src/commandsAndMenu.tsx:862 src/commandsAndMenu.tsx:864 src/commandsAndMenu.tsx:870 src/commandsAndMenu.tsx:875 src/commandsAndMenu.tsx:895 src/commandsAndMenu.tsx:896 src/commandsAndMenu.tsx:997
+msgid "Ignore file extension"
+msgstr "crwdns13165:0crwdne13165:0"
+
+#: src/commandsAndMenu.tsx:1062 src/commandsAndMenu.tsx:1078 src/commandsAndMenu.tsx:1100 src/commandsAndMenu.tsx:1104 src/commandsAndMenu.tsx:1133 src/commandsAndMenu.tsx:1362 src/commandsAndMenu.tsx:1367 src/commandsAndMenu.tsx:1550 src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:737 src/commandsAndMenu.tsx:743 src/commandsAndMenu.tsx:748 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:769 src/commandsAndMenu.tsx:870 src/commandsAndMenu.tsx:934 src/commandsAndMenu.tsx:993 src/commandsAndMenu.tsx:994
+msgid "Are you sure you want to permanently delete the following files?               This action cannot be undone."
+msgstr "crwdns13167:0crwdne13167:0"
+
+#: src/commandsAndMenu.tsx:1062 src/commandsAndMenu.tsx:1122 src/commandsAndMenu.tsx:1123 src/commandsAndMenu.tsx:1191 src/commandsAndMenu.tsx:1207 src/commandsAndMenu.tsx:1229 src/commandsAndMenu.tsx:1233 src/commandsAndMenu.tsx:1262 src/commandsAndMenu.tsx:1491 src/commandsAndMenu.tsx:1496 src/commandsAndMenu.tsx:1688 src/commandsAndMenu.tsx:863 src/commandsAndMenu.tsx:865 src/commandsAndMenu.tsx:871 src/commandsAndMenu.tsx:876 src/commandsAndMenu.tsx:896 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:998
+msgid "Are you sure you want to ignore all %1 files within this git repository?"
+msgstr "crwdns13169:0%1crwdne13169:0"
+
+#: src/commandsAndMenu.tsx:1062 src/commandsAndMenu.tsx:1126 src/commandsAndMenu.tsx:1186 src/commandsAndMenu.tsx:1187 src/commandsAndMenu.tsx:1255 src/commandsAndMenu.tsx:1271 src/commandsAndMenu.tsx:1293 src/commandsAndMenu.tsx:1297 src/commandsAndMenu.tsx:1326 src/commandsAndMenu.tsx:1555 src/commandsAndMenu.tsx:1633 src/commandsAndMenu.tsx:1823 src/commandsAndMenu.tsx:908 src/commandsAndMenu.tsx:910 src/commandsAndMenu.tsx:916 src/commandsAndMenu.tsx:940 src/commandsAndMenu.tsx:960 src/commandsAndMenu.tsx:961
+msgid "Set Up Remotes"
+msgstr "crwdns13171:0crwdne13171:0"
+
+#: src/commandsAndMenu.tsx:1066 src/commandsAndMenu.tsx:1130 src/commandsAndMenu.tsx:1190 src/commandsAndMenu.tsx:1191 src/commandsAndMenu.tsx:1259 src/commandsAndMenu.tsx:1275 src/commandsAndMenu.tsx:1297 src/commandsAndMenu.tsx:1301 src/commandsAndMenu.tsx:1330 src/commandsAndMenu.tsx:1559 src/commandsAndMenu.tsx:1637 src/commandsAndMenu.tsx:1827 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:914 src/commandsAndMenu.tsx:920 src/commandsAndMenu.tsx:944 src/commandsAndMenu.tsx:964 src/commandsAndMenu.tsx:965
+msgid "Git Documentation"
+msgstr "crwdns13173:0crwdne13173:0"
+
+#: src/commandsAndMenu.tsx:1066 src/commandsAndMenu.tsx:894 src/commandsAndMenu.tsx:899
+msgid "Continue the rebase…"
+msgstr "crwdns16073:0crwdne16073:0"
+
+#: src/commandsAndMenu.tsx:1068 src/commandsAndMenu.tsx:896 src/commandsAndMenu.tsx:901
+msgid "Skip current commit…"
+msgstr "crwdns16075:0crwdne16075:0"
+
+#: src/commandsAndMenu.tsx:1070 src/commandsAndMenu.tsx:898 src/commandsAndMenu.tsx:903
+msgid "Abort the rebase…"
+msgstr "crwdns16077:0crwdne16077:0"
+
+#: src/commandsAndMenu.tsx:1084 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:917
+msgid "Fail to continue rebasing."
+msgstr "crwdns16079:0crwdne16079:0"
+
+#: src/commandsAndMenu.tsx:1086 src/commandsAndMenu.tsx:914 src/commandsAndMenu.tsx:919
+msgid "Fail to skip current commit when rebasing."
+msgstr "crwdns16081:0crwdne16081:0"
+
+#: src/commandsAndMenu.tsx:1088 src/commandsAndMenu.tsx:916 src/commandsAndMenu.tsx:921
+msgid "Fail to abort the rebase."
+msgstr "crwdns16083:0crwdne16083:0"
+
+#: src/commandsAndMenu.tsx:1091 src/commandsAndMenu.tsx:1096 src/commandsAndMenu.tsx:1272 src/commandsAndMenu.tsx:544 src/commandsAndMenu.tsx:546 src/commandsAndMenu.tsx:551 src/commandsAndMenu.tsx:555 src/commandsAndMenu.tsx:556 src/commandsAndMenu.tsx:612 src/commandsAndMenu.tsx:676 src/commandsAndMenu.tsx:735 src/commandsAndMenu.tsx:736 src/commandsAndMenu.tsx:804 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:842 src/commandsAndMenu.tsx:846 src/commandsAndMenu.tsx:867
+msgid "Diff"
+msgstr "crwdns13325:0crwdne13325:0"
+
+#: src/commandsAndMenu.tsx:1093 src/commandsAndMenu.tsx:1098 src/commandsAndMenu.tsx:1274 src/commandsAndMenu.tsx:546 src/commandsAndMenu.tsx:548 src/commandsAndMenu.tsx:553 src/commandsAndMenu.tsx:557 src/commandsAndMenu.tsx:558 src/commandsAndMenu.tsx:614 src/commandsAndMenu.tsx:678 src/commandsAndMenu.tsx:737 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:806 src/commandsAndMenu.tsx:822 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:848 src/commandsAndMenu.tsx:869
+msgid "Diff selected file"
+msgstr "crwdns13327:0crwdne13327:0"
+
+#: src/commandsAndMenu.tsx:1094 src/commandsAndMenu.tsx:1099 src/commandsAndMenu.tsx:1275 src/commandsAndMenu.tsx:547 src/commandsAndMenu.tsx:549 src/commandsAndMenu.tsx:554 src/commandsAndMenu.tsx:558 src/commandsAndMenu.tsx:559 src/commandsAndMenu.tsx:615 src/commandsAndMenu.tsx:679 src/commandsAndMenu.tsx:738 src/commandsAndMenu.tsx:739 src/commandsAndMenu.tsx:807 src/commandsAndMenu.tsx:823 src/commandsAndMenu.tsx:845 src/commandsAndMenu.tsx:849 src/commandsAndMenu.tsx:870
+msgid "Diff selected files"
+msgstr "crwdns13329:0crwdne13329:0"
+
+#: src/commandsAndMenu.tsx:1100 src/commandsAndMenu.tsx:1168 src/commandsAndMenu.tsx:1229 src/commandsAndMenu.tsx:1230 src/commandsAndMenu.tsx:1298 src/commandsAndMenu.tsx:1314 src/commandsAndMenu.tsx:1336 src/commandsAndMenu.tsx:1340 src/commandsAndMenu.tsx:1369 src/commandsAndMenu.tsx:1599 src/commandsAndMenu.tsx:1677 src/commandsAndMenu.tsx:1867 src/commandsAndMenu.tsx:943 src/commandsAndMenu.tsx:945 src/commandsAndMenu.tsx:951 src/commandsAndMenu.tsx:978 src/commandsAndMenu.tsx:998 src/commandsAndMenu.tsx:999
+msgid " Help "
+msgstr "crwdns13175:0crwdne13175:0"
+
+#: src/commandsAndMenu.tsx:1104 src/commandsAndMenu.tsx:930 src/commandsAndMenu.tsx:935
+msgid "Commit submitted continuing rebase."
+msgstr "crwdns16085:0crwdne16085:0"
+
+#: src/commandsAndMenu.tsx:1106 src/commandsAndMenu.tsx:932 src/commandsAndMenu.tsx:937
+msgid "Current commit skipped."
+msgstr "crwdns16087:0crwdne16087:0"
+
+#: src/commandsAndMenu.tsx:1108 src/commandsAndMenu.tsx:934 src/commandsAndMenu.tsx:939
+msgid "Rebase aborted."
+msgstr "crwdns16089:0crwdne16089:0"
+
+#: src/commandsAndMenu.tsx:1123 src/commandsAndMenu.tsx:947 src/commandsAndMenu.tsx:952
+msgid "Stash Changes"
+msgstr "crwdns16091:0crwdne16091:0"
+
+#: src/commandsAndMenu.tsx:1124 src/commandsAndMenu.tsx:948 src/commandsAndMenu.tsx:953
+msgid "Stash all current changes"
+msgstr "crwdns16093:0crwdne16093:0"
+
+#: src/commandsAndMenu.tsx:1129 src/commandsAndMenu.tsx:953 src/commandsAndMenu.tsx:958
+msgid "Do you want to stash your changes? "
+msgstr "crwdns16095:0crwdne16095:0"
+
+#: src/commandsAndMenu.tsx:1130 src/commandsAndMenu.tsx:954 src/commandsAndMenu.tsx:959
+msgid "Stash message (optional)"
+msgstr "crwdns16097:0crwdne16097:0"
+
+#: src/commandsAndMenu.tsx:1131 src/commandsAndMenu.tsx:955 src/commandsAndMenu.tsx:960 src/components/GitStash.tsx:240 src/components/GitStash.tsx:241
+msgid "Stash"
+msgstr "crwdns16099:0crwdne16099:0"
+
+#: src/commandsAndMenu.tsx:1137 src/commandsAndMenu.tsx:962 src/commandsAndMenu.tsx:967
+msgid "Stashing changes"
+msgstr "crwdns16101:0crwdne16101:0"
+
+#: src/commandsAndMenu.tsx:1146 src/commandsAndMenu.tsx:968 src/commandsAndMenu.tsx:973
+msgid "Successfully stashed"
+msgstr "crwdns16103:0crwdne16103:0"
+
+#: src/commandsAndMenu.tsx:1157
+msgid "Failed to stash"
+msgstr "crwdns16444:0crwdne16444:0"
+
+#: src/commandsAndMenu.tsx:117 src/commandsAndMenu.tsx:118 src/commandsAndMenu.tsx:119 src/commandsAndMenu.tsx:122 src/commandsAndMenu.tsx:124 src/commandsAndMenu.tsx:125 src/commandsAndMenu.tsx:126 src/commandsAndMenu.tsx:127 src/commandsAndMenu.tsx:133 src/commandsAndMenu.tsx:137 src/commandsAndMenu.tsx:139 src/commandsAndMenu.tsx:140 src/commandsAndMenu.tsx:145 src/commandsAndMenu.tsx:152
+msgid "Commit from the Commit Box"
+msgstr "crwdns13177:0crwdne13177:0"
+
+#: src/commandsAndMenu.tsx:1171 src/commandsAndMenu.tsx:986 src/commandsAndMenu.tsx:991
+msgid "Stash List"
+msgstr "crwdns16105:0crwdne16105:0"
+
+#: src/commandsAndMenu.tsx:1172 src/commandsAndMenu.tsx:1174 src/commandsAndMenu.tsx:1180 src/commandsAndMenu.tsx:1203 src/commandsAndMenu.tsx:1232 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1241 src/commandsAndMenu.tsx:1338 src/commandsAndMenu.tsx:1404 src/commandsAndMenu.tsx:1465 src/commandsAndMenu.tsx:1470 src/commandsAndMenu.tsx:1538 src/commandsAndMenu.tsx:1562 src/commandsAndMenu.tsx:1590 src/commandsAndMenu.tsx:1596 src/commandsAndMenu.tsx:1625 src/commandsAndMenu.tsx:1928 src/commandsAndMenu.tsx:2021 src/commandsAndMenu.tsx:2216
+msgid "Git credentials required"
+msgstr "crwdns13179:0crwdne13179:0"
+
+#: src/commandsAndMenu.tsx:1172 src/commandsAndMenu.tsx:987 src/commandsAndMenu.tsx:992
+msgid "Get all the stashed changes"
+msgstr "crwdns16107:0crwdne16107:0"
+
+#: src/commandsAndMenu.tsx:1175 src/commandsAndMenu.tsx:1177 src/commandsAndMenu.tsx:1183 src/commandsAndMenu.tsx:1206 src/commandsAndMenu.tsx:1235 src/commandsAndMenu.tsx:1239 src/commandsAndMenu.tsx:1244 src/commandsAndMenu.tsx:1341 src/commandsAndMenu.tsx:1407 src/commandsAndMenu.tsx:1468 src/commandsAndMenu.tsx:1473 src/commandsAndMenu.tsx:1541 src/commandsAndMenu.tsx:1565 src/commandsAndMenu.tsx:1593 src/commandsAndMenu.tsx:1599 src/commandsAndMenu.tsx:1628 src/commandsAndMenu.tsx:1931 src/commandsAndMenu.tsx:2024 src/commandsAndMenu.tsx:2219 src/widgets/CredentialsBox.tsx:14 src/widgets/CredentialsBox.tsx:15 src/widgets/CredentialsBox.tsx:16
+msgid "Enter credentials for remote repository"
+msgstr "crwdns13181:0crwdne13181:0"
+
+#: src/commandsAndMenu.tsx:1176 src/commandsAndMenu.tsx:1178 src/commandsAndMenu.tsx:1184 src/commandsAndMenu.tsx:1207 src/commandsAndMenu.tsx:1236 src/commandsAndMenu.tsx:1240 src/commandsAndMenu.tsx:1245 src/commandsAndMenu.tsx:1342 src/commandsAndMenu.tsx:1408 src/commandsAndMenu.tsx:1469 src/commandsAndMenu.tsx:1474 src/commandsAndMenu.tsx:1542 src/commandsAndMenu.tsx:1566 src/commandsAndMenu.tsx:1594 src/commandsAndMenu.tsx:1600 src/commandsAndMenu.tsx:1629 src/commandsAndMenu.tsx:1932 src/commandsAndMenu.tsx:2025 src/commandsAndMenu.tsx:2220
+msgid "Incorrect username or password."
+msgstr "crwdns13183:0crwdne13183:0"
+
+#: src/commandsAndMenu.tsx:1178 src/commandsAndMenu.tsx:994 src/commandsAndMenu.tsx:999
+msgid "Got the stash list"
+msgstr "crwdns16109:0crwdne16109:0"
+
+#: src/commandsAndMenu.tsx:118 src/commandsAndMenu.tsx:119 src/commandsAndMenu.tsx:120 src/commandsAndMenu.tsx:123 src/commandsAndMenu.tsx:125 src/commandsAndMenu.tsx:126 src/commandsAndMenu.tsx:127 src/commandsAndMenu.tsx:128 src/commandsAndMenu.tsx:134 src/commandsAndMenu.tsx:138 src/commandsAndMenu.tsx:140 src/commandsAndMenu.tsx:141 src/commandsAndMenu.tsx:146 src/commandsAndMenu.tsx:153
+msgid "Submit the commit using the summary and description from commit box"
+msgstr "crwdns13185:0crwdne13185:0"
+
+#: src/commandsAndMenu.tsx:1195 src/commandsAndMenu.tsx:1200 src/commandsAndMenu.tsx:1381 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:827 src/commandsAndMenu.tsx:828 src/commandsAndMenu.tsx:896 src/commandsAndMenu.tsx:912 src/commandsAndMenu.tsx:934 src/commandsAndMenu.tsx:938 src/commandsAndMenu.tsx:966
+msgid "Current"
+msgstr "crwdns13353:0crwdne13353:0"
+
+#: src/commandsAndMenu.tsx:1196 src/commandsAndMenu.tsx:1201 src/commandsAndMenu.tsx:1382 src/commandsAndMenu.tsx:769 src/commandsAndMenu.tsx:828 src/commandsAndMenu.tsx:829 src/commandsAndMenu.tsx:897 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:935 src/commandsAndMenu.tsx:939 src/commandsAndMenu.tsx:967
+msgid "Incoming"
+msgstr "crwdns13355:0crwdne13355:0"
+
+#: src/commandsAndMenu.tsx:1212 src/commandsAndMenu.tsx:1217 src/commandsAndMenu.tsx:1398 src/commandsAndMenu.tsx:785 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:845 src/commandsAndMenu.tsx:913 src/commandsAndMenu.tsx:929 src/commandsAndMenu.tsx:951 src/commandsAndMenu.tsx:955 src/commandsAndMenu.tsx:983
+msgid "Result"
+msgstr "crwdns13357:0crwdne13357:0"
+
+#: src/commandsAndMenu.tsx:129 src/commandsAndMenu.tsx:130 src/commandsAndMenu.tsx:131 src/commandsAndMenu.tsx:134 src/commandsAndMenu.tsx:136 src/commandsAndMenu.tsx:137 src/commandsAndMenu.tsx:138 src/commandsAndMenu.tsx:139 src/commandsAndMenu.tsx:145 src/commandsAndMenu.tsx:149 src/commandsAndMenu.tsx:151 src/commandsAndMenu.tsx:152 src/commandsAndMenu.tsx:157 src/commandsAndMenu.tsx:164
+msgid "Open Git Repository in Terminal"
+msgstr "crwdns13187:0crwdne13187:0"
+
+#: src/commandsAndMenu.tsx:130 src/commandsAndMenu.tsx:131 src/commandsAndMenu.tsx:132 src/commandsAndMenu.tsx:135 src/commandsAndMenu.tsx:137 src/commandsAndMenu.tsx:138 src/commandsAndMenu.tsx:139 src/commandsAndMenu.tsx:140 src/commandsAndMenu.tsx:146 src/commandsAndMenu.tsx:150 src/commandsAndMenu.tsx:152 src/commandsAndMenu.tsx:153 src/commandsAndMenu.tsx:158 src/commandsAndMenu.tsx:165
+msgid "Open a New Terminal to the Git Repository"
+msgstr "crwdns13189:0crwdne13189:0"
+
+#: src/commandsAndMenu.tsx:1303 src/commandsAndMenu.tsx:1307 src/commandsAndMenu.tsx:1336 src/commandsAndMenu.tsx:1509 src/commandsAndMenu.tsx:1513 src/commandsAndMenu.tsx:1542 src/commandsAndMenu.tsx:1565 src/commandsAndMenu.tsx:1643 src/commandsAndMenu.tsx:1772 src/commandsAndMenu.tsx:1833 src/commandsAndMenu.tsx:1865 src/commandsAndMenu.tsx:2060
+msgid "Git"
+msgstr "crwdns13191:0crwdne13191:0"
+
+#: src/commandsAndMenu.tsx:1547 src/commandsAndMenu.tsx:1739
+msgid "Add Tag"
+msgstr "crwdns16260:0crwdne16260:0"
+
+#: src/commandsAndMenu.tsx:1548 src/commandsAndMenu.tsx:1740
+msgid "Add tag pointing to selected commit"
+msgstr "crwdns16262:0crwdne16262:0"
+
+#: src/commandsAndMenu.tsx:1586 src/commandsAndMenu.tsx:1776
+msgid "Create tag pointing to '%1'..."
+msgstr "crwdns16264:0%1crwdne16264:0"
+
+#: src/commandsAndMenu.tsx:159 src/commandsAndMenu.tsx:161 src/commandsAndMenu.tsx:162 src/commandsAndMenu.tsx:163 src/commandsAndMenu.tsx:166 src/commandsAndMenu.tsx:168 src/commandsAndMenu.tsx:169 src/commandsAndMenu.tsx:170 src/commandsAndMenu.tsx:171 src/commandsAndMenu.tsx:177 src/commandsAndMenu.tsx:181 src/commandsAndMenu.tsx:187 src/commandsAndMenu.tsx:188 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:200
+msgid "Git Interface"
+msgstr "crwdns13193:0crwdne13193:0"
+
+#: src/commandsAndMenu.tsx:1596 src/commandsAndMenu.tsx:1784
+msgid "Failed to create tag '%1' poining to '%2'."
+msgstr "crwdns16266:0%1crwdnd16266:0%2crwdne16266:0"
+
+#: src/commandsAndMenu.tsx:160 src/commandsAndMenu.tsx:162 src/commandsAndMenu.tsx:163 src/commandsAndMenu.tsx:164 src/commandsAndMenu.tsx:167 src/commandsAndMenu.tsx:169 src/commandsAndMenu.tsx:170 src/commandsAndMenu.tsx:171 src/commandsAndMenu.tsx:172 src/commandsAndMenu.tsx:178 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:188 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:201
+msgid "Go to Git user interface"
+msgstr "crwdns13195:0crwdne13195:0"
+
+#: src/commandsAndMenu.tsx:1608 src/commandsAndMenu.tsx:1797
+msgid "Created tag '%1' pointing to '%2'."
+msgstr "crwdns16268:0%1crwdnd16268:0%2crwdne16268:0"
+
+#: src/commandsAndMenu.tsx:172 src/commandsAndMenu.tsx:174 src/commandsAndMenu.tsx:175 src/commandsAndMenu.tsx:176 src/commandsAndMenu.tsx:179 src/commandsAndMenu.tsx:181 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:188 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:190 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:197 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:206 src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:208 src/commandsAndMenu.tsx:213 src/commandsAndMenu.tsx:222 src/components/GitPanel.tsx:445 src/components/GitPanel.tsx:461 src/components/GitPanel.tsx:466 src/components/GitPanel.tsx:473 src/components/GitPanel.tsx:487 src/components/GitPanel.tsx:495 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:595 src/components/GitPanel.tsx:678 src/components/GitPanel.tsx:691 src/components/GitPanel.tsx:697 src/components/GitPanel.tsx:698
+msgid "Initialize a Repository"
+msgstr "crwdns13197:0crwdne13197:0"
+
+#: src/commandsAndMenu.tsx:173 src/commandsAndMenu.tsx:175 src/commandsAndMenu.tsx:176 src/commandsAndMenu.tsx:177 src/commandsAndMenu.tsx:180 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:195 src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:202 src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:214
+msgid "Create an empty Git repository or reinitialize an existing one"
+msgstr "crwdns13199:0crwdne13199:0"
+
+#: src/commandsAndMenu.tsx:180 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:187 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:190 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:198 src/commandsAndMenu.tsx:202 src/commandsAndMenu.tsx:208 src/commandsAndMenu.tsx:209 src/commandsAndMenu.tsx:214 src/commandsAndMenu.tsx:223
+msgid "Do you really want to make this directory a Git Repo?"
+msgstr "crwdns13201:0crwdne13201:0"
+
+#: src/commandsAndMenu.tsx:183 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:187 src/commandsAndMenu.tsx:190 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:195 src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:205 src/commandsAndMenu.tsx:211 src/commandsAndMenu.tsx:212 src/commandsAndMenu.tsx:217 src/commandsAndMenu.tsx:226
+msgid "Yes"
+msgstr "crwdns13203:0crwdne13203:0"
+
+#: src/commandsAndMenu.tsx:1883 src/commandsAndMenu.tsx:1976 src/commandsAndMenu.tsx:2171 src/widgets/CredentialsBox.tsx:18 src/widgets/CredentialsBox.tsx:37 src/widgets/CredentialsBox.tsx:38 src/widgets/CredentialsBox.tsx:44
+msgid "password / personal access token"
+msgstr "crwdns13797:0crwdne13797:0"
+
+#: src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:196
+msgid "Initializing..."
+msgstr "crwdns13205:0crwdne13205:0"
+
+#: src/commandsAndMenu.tsx:1924 src/commandsAndMenu.tsx:2017 src/commandsAndMenu.tsx:2212
+msgid "personal access token"
+msgstr "crwdns16047:0crwdne16047:0"
+
+#: src/commandsAndMenu.tsx:196 src/commandsAndMenu.tsx:198 src/commandsAndMenu.tsx:199 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:203 src/commandsAndMenu.tsx:205 src/commandsAndMenu.tsx:206 src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:208 src/commandsAndMenu.tsx:214 src/commandsAndMenu.tsx:218 src/commandsAndMenu.tsx:224 src/commandsAndMenu.tsx:225 src/commandsAndMenu.tsx:230 src/commandsAndMenu.tsx:239
+msgid "Git repository initialized."
+msgstr "crwdns13207:0crwdne13207:0"
+
+#: src/commandsAndMenu.tsx:198 src/commandsAndMenu.tsx:199 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:211 src/commandsAndMenu.tsx:217 src/commandsAndMenu.tsx:218 src/commandsAndMenu.tsx:223 src/commandsAndMenu.tsx:231
+msgid "Initializing…"
+msgstr "crwdns13209:0crwdne13209:0"
+
+#: src/commandsAndMenu.tsx:201 src/commandsAndMenu.tsx:203 src/commandsAndMenu.tsx:204 src/commandsAndMenu.tsx:205 src/commandsAndMenu.tsx:208 src/commandsAndMenu.tsx:210 src/commandsAndMenu.tsx:211 src/commandsAndMenu.tsx:212 src/commandsAndMenu.tsx:213 src/commandsAndMenu.tsx:219 src/commandsAndMenu.tsx:223 src/commandsAndMenu.tsx:229 src/commandsAndMenu.tsx:230 src/commandsAndMenu.tsx:235 src/commandsAndMenu.tsx:245
+msgid "Encountered an error when initializing the repository. Error: "
+msgstr "crwdns13211:0crwdne13211:0"
+
+#: src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:209 src/commandsAndMenu.tsx:210 src/commandsAndMenu.tsx:211 src/commandsAndMenu.tsx:214 src/commandsAndMenu.tsx:216 src/commandsAndMenu.tsx:217 src/commandsAndMenu.tsx:218 src/commandsAndMenu.tsx:219 src/commandsAndMenu.tsx:225 src/commandsAndMenu.tsx:229 src/commandsAndMenu.tsx:235 src/commandsAndMenu.tsx:236 src/commandsAndMenu.tsx:241 src/commandsAndMenu.tsx:252
+msgid "Failed to initialize the Git repository"
+msgstr "crwdns13213:0crwdne13213:0"
+
+#: src/commandsAndMenu.tsx:228 src/commandsAndMenu.tsx:230 src/commandsAndMenu.tsx:231 src/commandsAndMenu.tsx:232 src/commandsAndMenu.tsx:235 src/commandsAndMenu.tsx:237 src/commandsAndMenu.tsx:238 src/commandsAndMenu.tsx:239 src/commandsAndMenu.tsx:240 src/commandsAndMenu.tsx:246 src/commandsAndMenu.tsx:250 src/commandsAndMenu.tsx:256 src/commandsAndMenu.tsx:257 src/commandsAndMenu.tsx:262 src/commandsAndMenu.tsx:273
+msgid "Simple staging"
+msgstr "crwdns13215:0crwdne13215:0"
+
+#: src/commandsAndMenu.tsx:237 src/commandsAndMenu.tsx:239 src/commandsAndMenu.tsx:240 src/commandsAndMenu.tsx:241 src/commandsAndMenu.tsx:244 src/commandsAndMenu.tsx:246 src/commandsAndMenu.tsx:247 src/commandsAndMenu.tsx:248 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:255 src/commandsAndMenu.tsx:259 src/commandsAndMenu.tsx:265 src/commandsAndMenu.tsx:266 src/commandsAndMenu.tsx:271 src/commandsAndMenu.tsx:282
+msgid "Double click opens diff"
+msgstr "crwdns13217:0crwdne13217:0"
+
+#: src/commandsAndMenu.tsx:246 src/commandsAndMenu.tsx:248 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:250 src/commandsAndMenu.tsx:253 src/commandsAndMenu.tsx:255 src/commandsAndMenu.tsx:256 src/commandsAndMenu.tsx:257
+msgid "Add Remote Repository"
+msgstr "crwdns13219:0crwdne13219:0"
+
+#: src/commandsAndMenu.tsx:247 src/commandsAndMenu.tsx:249 src/commandsAndMenu.tsx:250 src/commandsAndMenu.tsx:251 src/commandsAndMenu.tsx:254 src/commandsAndMenu.tsx:256 src/commandsAndMenu.tsx:257 src/commandsAndMenu.tsx:258
+msgid "Add a Git remote repository"
+msgstr "crwdns13221:0crwdne13221:0"
+
+#: src/commandsAndMenu.tsx:252 src/commandsAndMenu.tsx:254 src/commandsAndMenu.tsx:255 src/commandsAndMenu.tsx:256 src/commandsAndMenu.tsx:259 src/commandsAndMenu.tsx:261 src/commandsAndMenu.tsx:262 src/commandsAndMenu.tsx:263 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:270 src/commandsAndMenu.tsx:274 src/commandsAndMenu.tsx:280 src/commandsAndMenu.tsx:281 src/commandsAndMenu.tsx:286 src/commandsAndMenu.tsx:297
+msgid "Not in a Git repository. Unable to add a remote."
+msgstr "crwdns13223:0crwdne13223:0"
+
+#: src/commandsAndMenu.tsx:258 src/commandsAndMenu.tsx:259 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:265 src/commandsAndMenu.tsx:268 src/commandsAndMenu.tsx:269 src/commandsAndMenu.tsx:274 src/commandsAndMenu.tsx:275 src/commandsAndMenu.tsx:276 src/commandsAndMenu.tsx:280 src/commandsAndMenu.tsx:281 src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:292
+msgid "Manage Remote Repositories"
+msgstr "crwdns13225:0crwdne13225:0"
+
+#: src/commandsAndMenu.tsx:261 src/commandsAndMenu.tsx:263 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:265 src/commandsAndMenu.tsx:268 src/commandsAndMenu.tsx:270 src/commandsAndMenu.tsx:271 src/commandsAndMenu.tsx:272
+msgid "Add a remote repository"
+msgstr "crwdns13227:0crwdne13227:0"
+
+#: src/commandsAndMenu.tsx:262 src/commandsAndMenu.tsx:264 src/commandsAndMenu.tsx:265 src/commandsAndMenu.tsx:266 src/commandsAndMenu.tsx:269 src/commandsAndMenu.tsx:271 src/commandsAndMenu.tsx:272 src/commandsAndMenu.tsx:273 src/components/ManageRemoteDialogue.tsx:128
+msgid "Remote Git repository URL"
+msgstr "crwdns13229:0crwdne13229:0"
+
+#: src/commandsAndMenu.tsx:276 src/commandsAndMenu.tsx:278 src/commandsAndMenu.tsx:279 src/commandsAndMenu.tsx:280 src/commandsAndMenu.tsx:283 src/commandsAndMenu.tsx:285 src/commandsAndMenu.tsx:286 src/commandsAndMenu.tsx:287 src/components/ManageRemoteDialogue.tsx:176
+msgid "Error when adding remote repository"
+msgstr "crwdns13231:0crwdne13231:0"
+
+#: src/commandsAndMenu.tsx:291 src/commandsAndMenu.tsx:292 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:296 src/commandsAndMenu.tsx:297 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:301 src/commandsAndMenu.tsx:302 src/commandsAndMenu.tsx:307 src/commandsAndMenu.tsx:308 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:313 src/commandsAndMenu.tsx:314 src/commandsAndMenu.tsx:335 src/commandsAndMenu.tsx:336 src/commandsAndMenu.tsx:337 src/commandsAndMenu.tsx:338 src/commandsAndMenu.tsx:339 src/commandsAndMenu.tsx:340 src/commandsAndMenu.tsx:342 src/commandsAndMenu.tsx:343 src/commandsAndMenu.tsx:431 src/commandsAndMenu.tsx:432
+msgid "Open .gitignore"
+msgstr "crwdns13233:0crwdne13233:0"
+
+#: src/commandsAndMenu.tsx:296 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:300 src/commandsAndMenu.tsx:303
+msgid "CLONE"
+msgstr "crwdns13235:0crwdne13235:0"
+
+#: src/commandsAndMenu.tsx:303 src/commandsAndMenu.tsx:305 src/commandsAndMenu.tsx:306 src/commandsAndMenu.tsx:307 src/commandsAndMenu.tsx:310
+msgid "Cloning..."
+msgstr "crwdns13237:0crwdne13237:0"
+
+#: src/commandsAndMenu.tsx:303 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:313 src/commandsAndMenu.tsx:319 src/commandsAndMenu.tsx:320 src/commandsAndMenu.tsx:325 src/commandsAndMenu.tsx:452
+msgid "Push to Remote (Advanced)"
+msgstr "crwdns13239:0crwdne13239:0"
+
+#: src/commandsAndMenu.tsx:304 src/commandsAndMenu.tsx:308 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:310 src/commandsAndMenu.tsx:314 src/commandsAndMenu.tsx:320 src/commandsAndMenu.tsx:321 src/commandsAndMenu.tsx:326 src/commandsAndMenu.tsx:345 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:352 src/commandsAndMenu.tsx:355 src/commandsAndMenu.tsx:453
+msgid "Push to Remote"
+msgstr "crwdns13241:0crwdne13241:0"
+
+#: src/commandsAndMenu.tsx:305 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:310 src/commandsAndMenu.tsx:311 src/commandsAndMenu.tsx:315 src/commandsAndMenu.tsx:321 src/commandsAndMenu.tsx:322 src/commandsAndMenu.tsx:327 src/commandsAndMenu.tsx:346 src/commandsAndMenu.tsx:348 src/commandsAndMenu.tsx:352 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:356 src/commandsAndMenu.tsx:454
+msgid "Push code to remote repository"
+msgstr "crwdns13243:0crwdne13243:0"
+
+#: src/commandsAndMenu.tsx:307 src/commandsAndMenu.tsx:308 src/commandsAndMenu.tsx:309 src/commandsAndMenu.tsx:350 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:354
+msgid "Push to Remote (Force)"
+msgstr "crwdns13245:0crwdne13245:0"
+
+#: src/commandsAndMenu.tsx:314 src/commandsAndMenu.tsx:315 src/commandsAndMenu.tsx:316 src/commandsAndMenu.tsx:331 src/commandsAndMenu.tsx:337 src/commandsAndMenu.tsx:341 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:348 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:479
+msgid "Pushing…"
+msgstr "crwdns13247:0crwdne13247:0"
+
+#: src/commandsAndMenu.tsx:314 src/commandsAndMenu.tsx:320 src/commandsAndMenu.tsx:324 src/commandsAndMenu.tsx:330 src/commandsAndMenu.tsx:331 src/commandsAndMenu.tsx:336 src/commandsAndMenu.tsx:464
+msgid "Please select push options."
+msgstr "crwdns13249:0crwdne13249:0"
+
+#: src/commandsAndMenu.tsx:318 src/commandsAndMenu.tsx:324 src/commandsAndMenu.tsx:328 src/commandsAndMenu.tsx:334 src/commandsAndMenu.tsx:335 src/commandsAndMenu.tsx:340 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:434 src/commandsAndMenu.tsx:450 src/commandsAndMenu.tsx:468 src/commandsAndMenu.tsx:472 src/commandsAndMenu.tsx:476 src/commandsAndMenu.tsx:482 src/commandsAndMenu.tsx:483 src/commandsAndMenu.tsx:488 src/commandsAndMenu.tsx:625
+msgid "Proceed"
+msgstr "crwdns13251:0crwdne13251:0"
+
+#: src/commandsAndMenu.tsx:323 src/commandsAndMenu.tsx:324 src/commandsAndMenu.tsx:325 src/commandsAndMenu.tsx:341 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:357 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:360 src/commandsAndMenu.tsx:362 src/commandsAndMenu.tsx:363 src/commandsAndMenu.tsx:366 src/commandsAndMenu.tsx:367 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:491
+msgid "Successfully pushed"
+msgstr "crwdns13253:0crwdne13253:0"
+
+#: src/commandsAndMenu.tsx:329 src/commandsAndMenu.tsx:330 src/commandsAndMenu.tsx:331 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:354 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:364 src/commandsAndMenu.tsx:365 src/commandsAndMenu.tsx:366 src/commandsAndMenu.tsx:368 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:372 src/commandsAndMenu.tsx:373 src/commandsAndMenu.tsx:376 src/commandsAndMenu.tsx:498
+msgid "Encountered an error when pushing changes. Error: "
+msgstr "crwdns13255:0crwdne13255:0"
+
+#: src/commandsAndMenu.tsx:333 src/commandsAndMenu.tsx:334 src/commandsAndMenu.tsx:335 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:362 src/commandsAndMenu.tsx:368 src/commandsAndMenu.tsx:369 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:372 src/commandsAndMenu.tsx:374 src/commandsAndMenu.tsx:376 src/commandsAndMenu.tsx:377 src/commandsAndMenu.tsx:380 src/commandsAndMenu.tsx:502
+msgid "Failed to push"
+msgstr "crwdns13257:0crwdne13257:0"
+
+#: src/commandsAndMenu.tsx:345 src/commandsAndMenu.tsx:346 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:363 src/commandsAndMenu.tsx:377 src/commandsAndMenu.tsx:381 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:388 src/commandsAndMenu.tsx:393 src/commandsAndMenu.tsx:527
+msgid "Pull from Remote (Force)"
+msgstr "crwdns13259:0crwdne13259:0"
+
+#: src/commandsAndMenu.tsx:346 src/commandsAndMenu.tsx:347 src/commandsAndMenu.tsx:348 src/commandsAndMenu.tsx:364 src/commandsAndMenu.tsx:378 src/commandsAndMenu.tsx:380 src/commandsAndMenu.tsx:382 src/commandsAndMenu.tsx:386 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:388 src/commandsAndMenu.tsx:389 src/commandsAndMenu.tsx:390 src/commandsAndMenu.tsx:394 src/commandsAndMenu.tsx:528
+msgid "Pull from Remote"
+msgstr "crwdns13261:0crwdne13261:0"
+
+#: src/commandsAndMenu.tsx:349 src/commandsAndMenu.tsx:350 src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:367 src/commandsAndMenu.tsx:381 src/commandsAndMenu.tsx:385 src/commandsAndMenu.tsx:391 src/commandsAndMenu.tsx:392 src/commandsAndMenu.tsx:397 src/commandsAndMenu.tsx:531
+msgid "Discard all current changes and pull from remote repository"
+msgstr "crwdns13263:0crwdne13263:0"
+
+#: src/commandsAndMenu.tsx:351 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:357 src/commandsAndMenu.tsx:358 src/commandsAndMenu.tsx:361
+msgid "Pushing..."
+msgstr "crwdns13265:0crwdne13265:0"
+
+#: src/commandsAndMenu.tsx:352 src/commandsAndMenu.tsx:353 src/commandsAndMenu.tsx:354 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:381 src/commandsAndMenu.tsx:383 src/commandsAndMenu.tsx:384 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:388 src/commandsAndMenu.tsx:391 src/commandsAndMenu.tsx:394 src/commandsAndMenu.tsx:395 src/commandsAndMenu.tsx:400 src/commandsAndMenu.tsx:534
+msgid "Pull latest code from remote repository"
+msgstr "crwdns13267:0crwdne13267:0"
+
+#: src/commandsAndMenu.tsx:361 src/commandsAndMenu.tsx:362 src/commandsAndMenu.tsx:363 src/commandsAndMenu.tsx:379 src/commandsAndMenu.tsx:393 src/commandsAndMenu.tsx:397 src/commandsAndMenu.tsx:403 src/commandsAndMenu.tsx:404 src/commandsAndMenu.tsx:409 src/commandsAndMenu.tsx:542
+msgid "Pulling…"
+msgstr "crwdns13269:0crwdne13269:0"
+
+#: src/commandsAndMenu.tsx:369
+msgid "Saves .gitignore"
+msgstr "crwdns16446:0crwdne16446:0"
+
+#: src/commandsAndMenu.tsx:369 src/commandsAndMenu.tsx:370 src/commandsAndMenu.tsx:371 src/commandsAndMenu.tsx:387 src/commandsAndMenu.tsx:395 src/commandsAndMenu.tsx:397 src/commandsAndMenu.tsx:401 src/commandsAndMenu.tsx:402 src/commandsAndMenu.tsx:405 src/commandsAndMenu.tsx:411 src/commandsAndMenu.tsx:412 src/commandsAndMenu.tsx:417 src/commandsAndMenu.tsx:552
+msgid "Successfully pulled"
+msgstr "crwdns13271:0crwdne13271:0"
+
+#: src/commandsAndMenu.tsx:386 src/commandsAndMenu.tsx:388 src/commandsAndMenu.tsx:392 src/commandsAndMenu.tsx:393 src/commandsAndMenu.tsx:396
+msgid "Pulling..."
+msgstr "crwdns13273:0crwdne13273:0"
+
+#: src/commandsAndMenu.tsx:388
+msgid "Warning: The .gitignore file is a hidden file."
+msgstr "crwdns16448:0crwdne16448:0"
+
+#: src/commandsAndMenu.tsx:391
+msgid "Hidden files by default cannot be accessed with the regular code editor. In order to open the .gitignore file you must:"
+msgstr "crwdns16450:0crwdne16450:0"
+
+#: src/commandsAndMenu.tsx:396
+msgid "Print the command below to create a jupyter_server_config.py file with defaults commented out. If you already have the file located in .jupyter, skip this step."
+msgstr "crwdns16452:0crwdne16452:0"
+
+#: src/commandsAndMenu.tsx:403 src/commandsAndMenu.tsx:404 src/commandsAndMenu.tsx:405 src/commandsAndMenu.tsx:407 src/commandsAndMenu.tsx:411 src/commandsAndMenu.tsx:412 src/commandsAndMenu.tsx:415 src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:436 src/commandsAndMenu.tsx:440 src/commandsAndMenu.tsx:446 src/commandsAndMenu.tsx:447 src/commandsAndMenu.tsx:452 src/commandsAndMenu.tsx:584
+msgid "Failed to pull"
+msgstr "crwdns13275:0crwdne13275:0"
+
+#: src/commandsAndMenu.tsx:404
+msgid "Open jupyter_server_config.py, uncomment out the following line and set it to True:"
+msgstr "crwdns16454:0crwdne16454:0"
+
+#: src/commandsAndMenu.tsx:416
+msgid "Show .gitignore file anyways"
+msgstr "crwdns16456:0crwdne16456:0"
+
+#: src/commandsAndMenu.tsx:416 src/commandsAndMenu.tsx:417 src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:438 src/commandsAndMenu.tsx:455 src/commandsAndMenu.tsx:459 src/commandsAndMenu.tsx:460 src/commandsAndMenu.tsx:464 src/commandsAndMenu.tsx:465 src/commandsAndMenu.tsx:466 src/commandsAndMenu.tsx:470 src/commandsAndMenu.tsx:471 src/commandsAndMenu.tsx:476 src/commandsAndMenu.tsx:608 src/commandsAndMenu.tsx:613
+msgid "Reset to Remote"
+msgstr "crwdns13277:0crwdne13277:0"
+
+#: src/commandsAndMenu.tsx:417 src/commandsAndMenu.tsx:418 src/commandsAndMenu.tsx:434 src/commandsAndMenu.tsx:456 src/commandsAndMenu.tsx:460 src/commandsAndMenu.tsx:466 src/commandsAndMenu.tsx:467 src/commandsAndMenu.tsx:472 src/commandsAndMenu.tsx:609
+msgid "Reset Current Branch to Remote State"
+msgstr "crwdns13279:0crwdne13279:0"
+
+#: src/commandsAndMenu.tsx:419
+msgid "Do not show this warning again"
+msgstr "crwdns16458:0crwdne16458:0"
+
+#: src/commandsAndMenu.tsx:421 src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:423 src/commandsAndMenu.tsx:427 src/commandsAndMenu.tsx:428 src/commandsAndMenu.tsx:432 src/commandsAndMenu.tsx:481 src/commandsAndMenu.tsx:482 src/commandsAndMenu.tsx:498 src/commandsAndMenu.tsx:520 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:530 src/commandsAndMenu.tsx:531 src/commandsAndMenu.tsx:536 src/commandsAndMenu.tsx:690
+msgid "Show Diff"
+msgstr "crwdns13281:0crwdne13281:0"
+
+#: src/commandsAndMenu.tsx:422 src/commandsAndMenu.tsx:423 src/commandsAndMenu.tsx:424 src/commandsAndMenu.tsx:428 src/commandsAndMenu.tsx:429 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:482 src/commandsAndMenu.tsx:483 src/commandsAndMenu.tsx:499 src/commandsAndMenu.tsx:521 src/commandsAndMenu.tsx:525 src/commandsAndMenu.tsx:531 src/commandsAndMenu.tsx:532 src/commandsAndMenu.tsx:537 src/commandsAndMenu.tsx:691
+msgid "Display a file diff."
+msgstr "crwdns13283:0crwdne13283:0"
+
+#: src/commandsAndMenu.tsx:423 src/commandsAndMenu.tsx:424 src/commandsAndMenu.tsx:440 src/commandsAndMenu.tsx:462 src/commandsAndMenu.tsx:466 src/commandsAndMenu.tsx:472 src/commandsAndMenu.tsx:473 src/commandsAndMenu.tsx:478 src/commandsAndMenu.tsx:615
+msgid "To bring the current branch to the state of its corresponding remote tracking branch,             a hard reset will be performed, which may result in some files being permanently deleted             and some changes being permanently discarded. Are you sure you want to proceed?             This action cannot be undone."
+msgstr "crwdns13285:0crwdne13285:0"
+
+#: src/commandsAndMenu.tsx:429 src/commandsAndMenu.tsx:430 src/commandsAndMenu.tsx:446 src/commandsAndMenu.tsx:468 src/commandsAndMenu.tsx:472 src/commandsAndMenu.tsx:478 src/commandsAndMenu.tsx:479 src/commandsAndMenu.tsx:484 src/commandsAndMenu.tsx:621
+msgid "Close all opened files to avoid conflicts"
+msgstr "crwdns13287:0crwdne13287:0"
+
+#: src/commandsAndMenu.tsx:440 src/commandsAndMenu.tsx:441 src/commandsAndMenu.tsx:457 src/commandsAndMenu.tsx:479 src/commandsAndMenu.tsx:483 src/commandsAndMenu.tsx:489 src/commandsAndMenu.tsx:490 src/commandsAndMenu.tsx:495 src/commandsAndMenu.tsx:633
+msgid "Closing all opened files..."
+msgstr "crwdns13289:0crwdne13289:0"
+
+#: src/commandsAndMenu.tsx:446 src/commandsAndMenu.tsx:447 src/commandsAndMenu.tsx:463 src/commandsAndMenu.tsx:485 src/commandsAndMenu.tsx:489 src/commandsAndMenu.tsx:495 src/commandsAndMenu.tsx:496 src/commandsAndMenu.tsx:501 src/commandsAndMenu.tsx:638
+msgid "Resetting..."
+msgstr "crwdns13291:0crwdne13291:0"
+
+#: src/commandsAndMenu.tsx:451 src/commandsAndMenu.tsx:452 src/commandsAndMenu.tsx:468 src/commandsAndMenu.tsx:490 src/commandsAndMenu.tsx:494 src/commandsAndMenu.tsx:500 src/commandsAndMenu.tsx:501 src/commandsAndMenu.tsx:506 src/commandsAndMenu.tsx:650
+msgid "Successfully reset"
+msgstr "crwdns13293:0crwdne13293:0"
+
+#: src/commandsAndMenu.tsx:453 src/commandsAndMenu.tsx:454 src/commandsAndMenu.tsx:470 src/commandsAndMenu.tsx:492 src/commandsAndMenu.tsx:496 src/commandsAndMenu.tsx:502 src/commandsAndMenu.tsx:503 src/commandsAndMenu.tsx:508 src/commandsAndMenu.tsx:653
+msgid "Successfully reset the current branch to its remote state"
+msgstr "crwdns13295:0crwdne13295:0"
+
+#: src/commandsAndMenu.tsx:463 src/commandsAndMenu.tsx:464 src/commandsAndMenu.tsx:480 src/commandsAndMenu.tsx:502 src/commandsAndMenu.tsx:506 src/commandsAndMenu.tsx:512 src/commandsAndMenu.tsx:513 src/commandsAndMenu.tsx:518 src/commandsAndMenu.tsx:664
+msgid "Reset failed"
+msgstr "crwdns13297:0crwdne13297:0"
+
+#: src/commandsAndMenu.tsx:468 src/commandsAndMenu.tsx:470 src/commandsAndMenu.tsx:474 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:519 src/commandsAndMenu.tsx:529 src/commandsAndMenu.tsx:578 src/commandsAndMenu.tsx:579 src/commandsAndMenu.tsx:580 src/commandsAndMenu.tsx:596 src/commandsAndMenu.tsx:618 src/commandsAndMenu.tsx:622 src/commandsAndMenu.tsx:643 src/commandsAndMenu.tsx:644 src/commandsAndMenu.tsx:649 src/commandsAndMenu.tsx:811
+msgid "Refresh"
+msgstr "crwdns13299:0crwdne13299:0"
+
+#: src/commandsAndMenu.tsx:473 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:479 src/commandsAndMenu.tsx:480 src/commandsAndMenu.tsx:524 src/commandsAndMenu.tsx:534 src/commandsAndMenu.tsx:583 src/commandsAndMenu.tsx:584 src/commandsAndMenu.tsx:585 src/commandsAndMenu.tsx:601 src/commandsAndMenu.tsx:623 src/commandsAndMenu.tsx:627 src/commandsAndMenu.tsx:648 src/commandsAndMenu.tsx:649 src/commandsAndMenu.tsx:654 src/commandsAndMenu.tsx:816
+msgid "Refresh diff widget"
+msgstr "crwdns13301:0crwdne13301:0"
+
+#: src/commandsAndMenu.tsx:480 src/commandsAndMenu.tsx:490 src/commandsAndMenu.tsx:539 src/commandsAndMenu.tsx:540 src/commandsAndMenu.tsx:541 src/commandsAndMenu.tsx:557 src/commandsAndMenu.tsx:579 src/commandsAndMenu.tsx:583 src/commandsAndMenu.tsx:604 src/commandsAndMenu.tsx:605 src/commandsAndMenu.tsx:610 src/commandsAndMenu.tsx:773
+msgid "Mark as resolved"
+msgstr "crwdns13303:0crwdne13303:0"
+
+#: src/commandsAndMenu.tsx:484 src/commandsAndMenu.tsx:494 src/commandsAndMenu.tsx:543 src/commandsAndMenu.tsx:544 src/commandsAndMenu.tsx:545 src/commandsAndMenu.tsx:561 src/commandsAndMenu.tsx:583 src/commandsAndMenu.tsx:587 src/commandsAndMenu.tsx:608 src/commandsAndMenu.tsx:609 src/commandsAndMenu.tsx:614 src/commandsAndMenu.tsx:777
+msgid "Resolve with conflicts"
+msgstr "crwdns13305:0crwdne13305:0"
+
+#: src/commandsAndMenu.tsx:485 src/commandsAndMenu.tsx:495 src/commandsAndMenu.tsx:544 src/commandsAndMenu.tsx:545 src/commandsAndMenu.tsx:546 src/commandsAndMenu.tsx:562 src/commandsAndMenu.tsx:584 src/commandsAndMenu.tsx:588 src/commandsAndMenu.tsx:609 src/commandsAndMenu.tsx:610 src/commandsAndMenu.tsx:615 src/commandsAndMenu.tsx:778
+msgid "Are you sure you want to mark this file as resolved with merge conflicts?"
+msgstr "crwdns13307:0crwdne13307:0"
+
+#: src/commandsAndMenu.tsx:496 src/commandsAndMenu.tsx:498 src/commandsAndMenu.tsx:503 src/commandsAndMenu.tsx:507 src/commandsAndMenu.tsx:508 src/commandsAndMenu.tsx:554 src/commandsAndMenu.tsx:564 src/commandsAndMenu.tsx:613 src/commandsAndMenu.tsx:614 src/commandsAndMenu.tsx:633 src/commandsAndMenu.tsx:649 src/commandsAndMenu.tsx:671 src/commandsAndMenu.tsx:675 src/commandsAndMenu.tsx:696 src/commandsAndMenu.tsx:697 src/commandsAndMenu.tsx:702 src/commandsAndMenu.tsx:864
+msgid "Diff Not Supported"
+msgstr "crwdns13309:0crwdne13309:0"
+
+#: src/commandsAndMenu.tsx:497 src/commandsAndMenu.tsx:499 src/commandsAndMenu.tsx:504 src/commandsAndMenu.tsx:508 src/commandsAndMenu.tsx:509 src/commandsAndMenu.tsx:555 src/commandsAndMenu.tsx:565 src/commandsAndMenu.tsx:614 src/commandsAndMenu.tsx:615 src/commandsAndMenu.tsx:634 src/commandsAndMenu.tsx:650 src/commandsAndMenu.tsx:672 src/commandsAndMenu.tsx:676 src/commandsAndMenu.tsx:697 src/commandsAndMenu.tsx:698 src/commandsAndMenu.tsx:703 src/commandsAndMenu.tsx:865
+msgid "Diff is not supported for %1 files."
+msgstr "crwdns13311:0%1crwdne13311:0"
+
+#: src/commandsAndMenu.tsx:512 src/commandsAndMenu.tsx:522 src/commandsAndMenu.tsx:571 src/commandsAndMenu.tsx:572 src/commandsAndMenu.tsx:573 src/commandsAndMenu.tsx:589 src/commandsAndMenu.tsx:611 src/commandsAndMenu.tsx:615 src/commandsAndMenu.tsx:636 src/commandsAndMenu.tsx:637 src/commandsAndMenu.tsx:642 src/commandsAndMenu.tsx:804
+msgid "Mark file as resolved"
+msgstr "crwdns13315:0crwdne13315:0"
+
+#: src/commandsAndMenu.tsx:568 src/commandsAndMenu.tsx:627 src/commandsAndMenu.tsx:628 src/commandsAndMenu.tsx:647 src/commandsAndMenu.tsx:663 src/commandsAndMenu.tsx:685 src/commandsAndMenu.tsx:689 src/commandsAndMenu.tsx:710 src/commandsAndMenu.tsx:711 src/commandsAndMenu.tsx:716 src/commandsAndMenu.tsx:878
+msgid "Merge Branch…"
+msgstr "crwdns13331:0crwdne13331:0"
+
+#: src/commandsAndMenu.tsx:569 src/commandsAndMenu.tsx:628 src/commandsAndMenu.tsx:629 src/commandsAndMenu.tsx:648 src/commandsAndMenu.tsx:664 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:690 src/commandsAndMenu.tsx:711 src/commandsAndMenu.tsx:712 src/commandsAndMenu.tsx:717 src/commandsAndMenu.tsx:879
+msgid "Merge selected branch in the current branch"
+msgstr "crwdns13333:0crwdne13333:0"
+
+#: src/commandsAndMenu.tsx:608 src/commandsAndMenu.tsx:667 src/commandsAndMenu.tsx:668 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:703 src/commandsAndMenu.tsx:725 src/commandsAndMenu.tsx:729 src/commandsAndMenu.tsx:750 src/commandsAndMenu.tsx:752 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:918
+msgid "Merging branch '%1'…"
+msgstr "crwdns13335:0%1crwdne13335:0"
+
+#: src/commandsAndMenu.tsx:615 src/commandsAndMenu.tsx:674 src/commandsAndMenu.tsx:675 src/commandsAndMenu.tsx:694 src/commandsAndMenu.tsx:710 src/commandsAndMenu.tsx:732 src/commandsAndMenu.tsx:736 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:759 src/commandsAndMenu.tsx:764 src/commandsAndMenu.tsx:927
+msgid "Failed to merge branch '%1' into '%2'."
+msgstr "crwdns13337:0%1crwdnd13337:0%2crwdne13337:0"
+
+#: src/commandsAndMenu.tsx:627 src/commandsAndMenu.tsx:686 src/commandsAndMenu.tsx:687 src/commandsAndMenu.tsx:706 src/commandsAndMenu.tsx:722 src/commandsAndMenu.tsx:744 src/commandsAndMenu.tsx:748 src/commandsAndMenu.tsx:769 src/commandsAndMenu.tsx:771 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:940
+msgid "Branch '%1' merged into '%2'."
+msgstr "crwdns13339:0%1crwdnd13339:0%2crwdne13339:0"
+
+#: src/commandsAndMenu.tsx:704
+msgid "CURRENT"
+msgstr "crwdns13341:0crwdne13341:0"
+
+#: src/commandsAndMenu.tsx:705
+msgid "INCOMING"
+msgstr "crwdns13343:0crwdne13343:0"
+
+#: src/commandsAndMenu.tsx:721
+msgid "RESULT"
+msgstr "crwdns13345:0crwdne13345:0"
+
+#: src/commandsAndMenu.tsx:755 src/commandsAndMenu.tsx:757 src/commandsAndMenu.tsx:763 src/commandsAndMenu.tsx:768 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:789 src/commandsAndMenu.tsx:810 src/commandsAndMenu.tsx:812 src/commandsAndMenu.tsx:818 src/commandsAndMenu.tsx:823 src/commandsAndMenu.tsx:843 src/commandsAndMenu.tsx:844 src/commandsAndMenu.tsx:890 src/commandsAndMenu.tsx:945 src/components/Alert.tsx:123 src/index.ts:128 src/index.ts:132 src/index.ts:134
+msgid "DISMISS"
+msgstr "crwdns13347:0crwdne13347:0"
+
+#: src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:791 src/commandsAndMenu.tsx:955
+msgid "Rebase branch…"
+msgstr "crwdns16049:0crwdne16049:0"
+
+#: src/commandsAndMenu.tsx:787 src/commandsAndMenu.tsx:792 src/commandsAndMenu.tsx:956
+msgid "Rebase current branch onto the selected branch"
+msgstr "crwdns16051:0crwdne16051:0"
+
+#: src/commandsAndMenu.tsx:827 src/commandsAndMenu.tsx:832 src/commandsAndMenu.tsx:995
+msgid "Rebasing current branch onto '%1'…"
+msgstr "crwdns16053:0%1crwdne16053:0"
+
+#: src/components/Alert.tsx:105 src/notifications.ts:21
+msgid "Error"
+msgstr "crwdns13359:0crwdne13359:0"
+
+#: src/components/Alert.tsx:110
+msgid "SHOW"
+msgstr "crwdns13361:0crwdne13361:0"
+
+#: src/components/Alert.tsx:110 src/notifications.ts:19
+msgid "Show"
+msgstr "crwdns13363:0crwdne13363:0"
+
+#: src/components/Alert.tsx:120 src/notifications.ts:52
+msgid "Detailed message"
+msgstr "crwdns13365:0crwdne13365:0"
+
+#: src/components/Alert.tsx:128 src/notifications.ts:50
+msgid "Details"
+msgstr "crwdns13367:0crwdne13367:0"
+
+#: src/components/Alert.tsx:148
+msgid "(missing message)"
+msgstr "crwdns13369:0crwdne13369:0"
+
+#: src/components/BranchMenu.tsx:148 src/components/BranchMenu.tsx:154
+msgid "The current branch contains files with uncommitted changes. Please commit or discard these changes before switching to or creating another branch."
+msgstr "crwdns13371:0crwdne13371:0"
+
+#: src/components/BranchMenu.tsx:195 src/components/BranchMenu.tsx:201 src/components/BranchPicker.tsx:157 src/components/BranchPicker.tsx:159 src/components/MergeBranchDialog.tsx:138 src/components/NewBranchDialog.tsx:172 src/components/NewBranchDialog.tsx:177 src/components/NewBranchDialog.tsx:184 src/components/TagMenu.tsx:180 src/components/TagMenu.tsx:185 src/components/TagMenu.tsx:189
+msgid "Filter"
+msgstr "crwdns13373:0crwdne13373:0"
+
+#: src/components/BranchMenu.tsx:196 src/components/BranchMenu.tsx:202 src/components/NewBranchDialog.tsx:173 src/components/NewBranchDialog.tsx:178 src/components/NewBranchDialog.tsx:185 src/components/TagMenu.tsx:190
+msgid "Filter branch menu"
+msgstr "crwdns13375:0crwdne13375:0"
+
+#: src/components/BranchMenu.tsx:201 src/components/BranchMenu.tsx:207 src/components/BranchPicker.tsx:163 src/components/BranchPicker.tsx:165 src/components/MergeBranchDialog.tsx:144 src/components/NewBranchDialog.tsx:178 src/components/NewBranchDialog.tsx:183 src/components/NewBranchDialog.tsx:190 src/components/NewTagDialog.tsx:443 src/components/NewTagDialog.tsx:453 src/components/NewTagDialog.tsx:458 src/components/TagMenu.tsx:186 src/components/TagMenu.tsx:191 src/components/TagMenu.tsx:195
+msgid "Clear the current filter"
+msgstr "crwdns13377:0crwdne13377:0"
+
+#: src/components/BranchMenu.tsx:211 src/components/BranchMenu.tsx:217 src/components/NewBranchDialog.tsx:203 src/components/NewBranchDialog.tsx:208 src/components/NewBranchDialog.tsx:215
+msgid "Create a new branch"
+msgstr "crwdns13379:0crwdne13379:0"
+
+#: src/components/BranchMenu.tsx:212 src/components/BranchMenu.tsx:218
+msgid "New Branch"
+msgstr "crwdns13381:0crwdne13381:0"
+
+#: src/components/BranchMenu.tsx:261 src/components/BranchMenu.tsx:269 src/components/BranchMenu.tsx:270 src/components/BranchMenu.tsx:276
+msgid "Switch to branch: %1"
+msgstr "crwdns13383:0%1crwdne13383:0"
+
+#: src/components/BranchMenu.tsx:275 src/components/BranchMenu.tsx:286 src/components/BranchMenu.tsx:288 src/components/BranchMenu.tsx:293
+msgid "Delete this branch locally"
+msgstr "crwdns13385:0crwdne13385:0"
+
+#: src/components/BranchMenu.tsx:295 src/components/BranchMenu.tsx:299 src/components/BranchMenu.tsx:302
+msgid "Merge this branch into the current one"
+msgstr "crwdns13387:0crwdne13387:0"
+
+#: src/components/BranchMenu.tsx:332 src/components/BranchMenu.tsx:355 src/components/BranchMenu.tsx:360 src/components/BranchMenu.tsx:362
+msgid "Delete branch"
+msgstr "crwdns13389:0crwdne13389:0"
+
+#: src/components/BranchMenu.tsx:335 src/components/BranchMenu.tsx:358 src/components/BranchMenu.tsx:363 src/components/BranchMenu.tsx:365
+msgid "Are you sure you want to permanently delete the branch "
+msgstr "crwdns13391:0crwdne13391:0"
+
+#: src/components/BranchMenu.tsx:340 src/components/BranchMenu.tsx:363 src/components/BranchMenu.tsx:368 src/components/BranchMenu.tsx:370
+msgid "This action cannot be undone."
+msgstr "crwdns13393:0crwdne13393:0"
+
+#: src/components/BranchMenu.tsx:366 src/components/BranchMenu.tsx:398 src/components/BranchMenu.tsx:403 src/components/BranchMenu.tsx:405
+msgid "Creating a new branch is disabled"
+msgstr "crwdns13395:0crwdne13395:0"
+
+#: src/components/BranchMenu.tsx:439
+msgid "Switching branches is disabled"
+msgstr "crwdns16460:0crwdne16460:0"
+
+#: src/components/BranchMenu.tsx:449
+msgid "Switching branch…"
+msgstr "crwdns16462:0crwdne16462:0"
+
+#: src/components/BranchMenu.tsx:462
+msgid "Switched branch."
+msgstr "crwdns16464:0crwdne16464:0"
+
+#: src/components/BranchMenu.tsx:50 src/components/BranchMenu.tsx:51 src/components/BranchMenu.tsx:52
+msgid "Unable to switch branch"
+msgstr "crwdns13397:0crwdne13397:0"
+
+#: src/components/BranchMenu.tsx:54 src/components/BranchMenu.tsx:55 src/components/BranchMenu.tsx:56 src/components/TagMenu.tsx:49 src/components/TagMenu.tsx:50 src/components/TagMenu.tsx:51
+msgid "Your changes to the following files would be overwritten by switching:"
+msgstr "crwdns13399:0crwdne13399:0"
+
+#: src/components/BranchMenu.tsx:62 src/components/BranchMenu.tsx:63 src/components/BranchMenu.tsx:64
+msgid "Please commit, stash, or discard your changes before you switch branches."
+msgstr "crwdns13401:0crwdne13401:0"
+
+#: src/components/BranchMenu.tsx:73 src/components/BranchMenu.tsx:74 src/components/BranchMenu.tsx:75
+msgid "Failed to switch branch."
+msgstr "crwdns13403:0crwdne13403:0"
+
+#: src/components/BranchPicker.tsx:126 src/components/BranchPicker.tsx:128 src/components/MergeBranchDialog.tsx:114
+msgid "Merge Branch"
+msgstr "crwdns13565:0crwdne13565:0"
+
+#: src/components/BranchPicker.tsx:127 src/components/BranchPicker.tsx:129
+msgid "Rebase Branch"
+msgstr "crwdns16113:0crwdne16113:0"
+
+#: src/components/BranchPicker.tsx:131 src/components/BranchPicker.tsx:133 src/components/ManageRemoteDialogue.tsx:95 src/components/MergeBranchDialog.tsx:117 src/components/NewBranchDialog.tsx:145 src/components/NewBranchDialog.tsx:150 src/components/NewBranchDialog.tsx:157 src/components/NewTagDialog.tsx:412 src/components/NewTagDialog.tsx:421 src/components/NewTagDialog.tsx:426 src/components/ResetRevertDialog.tsx:126 src/components/ResetRevertDialog.tsx:130 src/components/ResetRevertDialog.tsx:132
+msgid "Close this dialog"
+msgstr "crwdns13563:0crwdne13563:0"
+
+#: src/components/BranchPicker.tsx:142 src/components/BranchPicker.tsx:144 src/components/MergeBranchDialog.tsx:127
+msgid "Select the branch to merge in %1"
+msgstr "crwdns13567:0%1crwdne13567:0"
+
+#: src/components/BranchPicker.tsx:143 src/components/BranchPicker.tsx:145
+msgid "Select the branch to rebase %1 onto"
+msgstr "crwdns16115:0%1crwdne16115:0"
+
+#: src/components/BranchPicker.tsx:158 src/components/BranchPicker.tsx:160 src/components/MergeBranchDialog.tsx:139
+msgid "Filter branch list"
+msgstr "crwdns13569:0crwdne13569:0"
+
+#: src/components/BranchPicker.tsx:193 src/components/BranchPicker.tsx:195 src/components/MergeBranchDialog.tsx:172
+msgid "Close this dialog without merging a branch"
+msgstr "crwdns13571:0crwdne13571:0"
+
+#: src/components/BranchPicker.tsx:194 src/components/BranchPicker.tsx:196
+msgid "Close this dialog without rebasing the branch"
+msgstr "crwdns16117:0crwdne16117:0"
+
+#: src/components/BranchPicker.tsx:206 src/components/BranchPicker.tsx:208 src/components/MergeBranchDialog.tsx:181
+msgid "Merge branch"
+msgstr "crwdns13573:0crwdne13573:0"
+
+#: src/components/BranchPicker.tsx:207 src/components/BranchPicker.tsx:209
+msgid "Rebase branch"
+msgstr "crwdns16119:0crwdne16119:0"
+
+#: src/components/BranchPicker.tsx:209 src/components/BranchPicker.tsx:211
+msgid "Rebase"
+msgstr "crwdns16121:0crwdne16121:0"
+
+#: src/components/BranchPicker.tsx:209 src/components/BranchPicker.tsx:211 src/components/MergeBranchDialog.tsx:182
+msgid "Merge"
+msgstr "crwdns13575:0crwdne13575:0"
+
+#: src/components/BranchPicker.tsx:95
+msgid "Merge branch %1"
+msgstr "crwdns16123:0%1crwdne16123:0"
+
+#: src/components/BranchPicker.tsx:96
+msgid "Rebase branch %1"
+msgstr "crwdns16125:0%1crwdne16125:0"
+
+#: src/components/CommitBox.tsx:100 src/components/CommitBox.tsx:101 src/components/CommitBox.tsx:178 src/components/CommitBox.tsx:183 src/components/CommitBox.tsx:185
+msgid "Disabled: No commit message summary"
+msgstr "crwdns13405:0crwdne13405:0"
+
+#: src/components/CommitBox.tsx:106 src/components/CommitBox.tsx:107 src/components/CommitBox.tsx:184 src/components/CommitBox.tsx:189 src/components/CommitBox.tsx:191
+msgid "Summary (%1 to commit)"
+msgstr "crwdns13407:0%1crwdne13407:0"
+
+#: src/components/CommitBox.tsx:116 src/components/CommitBox.tsx:117 src/components/CommitMessage.tsx:117 src/components/CommitMessage.tsx:123 src/components/ResetRevertDialog.tsx:155
+msgid "Enter a commit message summary (a single line, preferably less than 50 characters)"
+msgstr "crwdns13409:0crwdne13409:0"
+
+#: src/components/CommitBox.tsx:126 src/components/CommitBox.tsx:127 src/components/CommitMessage.tsx:140 src/components/CommitMessage.tsx:145 src/components/CommitMessage.tsx:146
+msgid "Description (optional)"
+msgstr "crwdns13411:0crwdne13411:0"
+
+#: src/components/CommitBox.tsx:127 src/components/CommitBox.tsx:128 src/components/CommitMessage.tsx:147 src/components/CommitMessage.tsx:152 src/components/CommitMessage.tsx:153 src/components/ResetRevertDialog.tsx:165
+msgid "Enter a commit message description"
+msgstr "crwdns13413:0crwdne13413:0"
+
+#: src/components/CommitBox.tsx:141 src/components/CommitBox.tsx:146 src/components/CommitBox.tsx:148
+msgid "Create a new commit"
+msgstr "crwdns13415:0crwdne13415:0"
+
+#: src/components/CommitBox.tsx:142 src/components/CommitBox.tsx:147 src/components/CommitBox.tsx:149
+msgid "New commit will be created and show up as a next one after the previous commit (default)."
+msgstr "crwdns13417:0crwdne13417:0"
+
+#: src/components/CommitBox.tsx:147 src/components/CommitBox.tsx:152 src/components/CommitBox.tsx:154
+msgid "Amend previous commit"
+msgstr "crwdns13419:0crwdne13419:0"
+
+#: src/components/CommitBox.tsx:148 src/components/CommitBox.tsx:153 src/components/CommitBox.tsx:155
+msgid "Staged changes will be added to the previous commit and its date will be updated."
+msgstr "crwdns13421:0crwdne13421:0"
+
+#: src/components/CommitBox.tsx:176 src/components/CommitBox.tsx:181 src/components/CommitBox.tsx:183 src/components/CommitBox.tsx:98 src/components/CommitBox.tsx:99
+msgid "Disabled: No files are staged for commit"
+msgstr "crwdns13423:0crwdne13423:0"
+
+#: src/components/CommitBox.tsx:195 src/components/GitPanel.tsx:440 src/components/GitPanel.tsx:441 src/components/GitPanel.tsx:475 src/components/GitPanel.tsx:488 src/components/GitPanel.tsx:494
+msgid "Warning"
+msgstr "crwdns13425:0crwdne13425:0"
+
+#: src/components/CommitBox.tsx:196
+msgid "Looks like you still have unsaved staged files. Remember to save and stage all needed changes before committing!"
+msgstr "crwdns13427:0crwdne13427:0"
+
+#: src/components/CommitComparisonBox.tsx:159 src/components/CommitComparisonBox.tsx:163
+msgid "Close"
+msgstr "crwdns13429:0crwdne13429:0"
+
+#: src/components/CommitComparisonBox.tsx:184 src/components/CommitComparisonBox.tsx:185
+msgid "No changes"
+msgstr "crwdns13431:0crwdne13431:0"
+
+#: src/components/CommitComparisonBox.tsx:185 src/components/CommitComparisonBox.tsx:186
+msgid "No challenger commit selected."
+msgstr "crwdns13433:0crwdne13433:0"
+
+#: src/components/CommitDiff.tsx:103 src/components/SinglePastCommitInfo.tsx:179 src/components/SinglePastCommitInfo.tsx:190 src/components/SinglePastCommitInfo.tsx:192
+msgid "# Insertions"
+msgstr "crwdns13435:0crwdne13435:0"
+
+#: src/components/CommitDiff.tsx:110 src/components/SinglePastCommitInfo.tsx:186 src/components/SinglePastCommitInfo.tsx:197 src/components/SinglePastCommitInfo.tsx:199
+msgid "# Deletions"
+msgstr "crwdns13437:0crwdne13437:0"
+
+#: src/components/CommitDiff.tsx:121 src/components/FileList.tsx:1211 src/components/FileList.tsx:1215 src/components/FileList.tsx:1239 src/components/FileList.tsx:518 src/components/FileList.tsx:527 src/components/FileList.tsx:595 src/components/FileList.tsx:596 src/components/FileList.tsx:728 src/components/FileList.tsx:737 src/components/FileList.tsx:806 src/components/FileList.tsx:883 src/components/FileList.tsx:906 src/components/FileList.tsx:910 src/components/FileList.tsx:934 src/components/SinglePastCommitInfo.tsx:197 src/components/SinglePastCommitInfo.tsx:208 src/components/SinglePastCommitInfo.tsx:210
+msgid "Changed"
+msgstr "crwdns13439:0crwdne13439:0"
+
+#: src/components/CommitDiff.tsx:164 src/components/PastCommitNode.tsx:112 src/components/PastCommitNode.tsx:153 src/components/PastCommitNode.tsx:157 src/components/PastCommitNode.tsx:170 src/components/SinglePastCommitInfo.tsx:273 src/components/SinglePastCommitInfo.tsx:284 src/components/SinglePastCommitInfo.tsx:287
+msgid "View file changes"
+msgstr "crwdns13441:0crwdne13441:0"
+
+#: src/components/CommitDiff.tsx:99 src/components/SinglePastCommitInfo.tsx:175 src/components/SinglePastCommitInfo.tsx:186 src/components/SinglePastCommitInfo.tsx:188
+msgid "# Files Changed"
+msgstr "crwdns13443:0crwdne13443:0"
+
+#: src/components/CommitMessage.tsx:114 src/components/CommitMessage.tsx:120 src/components/CommitMessage.tsx:144 src/components/CommitMessage.tsx:149 src/components/CommitMessage.tsx:150
+msgid "Amending the commit will re-use the previous commit summary"
+msgstr "crwdns13445:0crwdne13445:0"
+
+#: src/components/CommitMessage.tsx:66 src/components/CommitMessage.tsx:71 src/components/CommitMessage.tsx:72
+msgid "Summary"
+msgstr "crwdns13447:0crwdne13447:0"
+
+#: src/components/FileItem.tsx:162
+msgid "Unmodified"
+msgstr "crwdns16466:0crwdne16466:0"
+
+#: src/components/FileItem.tsx:208 src/components/FileList.tsx:404 src/components/FileList.tsx:405 src/components/FileList.tsx:703 src/components/FileList.tsx:713 src/components/FileList.tsx:727
+msgid "Conflicted"
+msgstr "crwdns13471:0crwdne13471:0"
+
+#: src/components/FileItem.tsx:268
+msgid "Modified"
+msgstr "crwdns16468:0crwdne16468:0"
+
+#: src/components/FileItem.tsx:269
+msgid "Added"
+msgstr "crwdns16470:0crwdne16470:0"
+
+#: src/components/FileItem.tsx:270
+msgid "Deleted"
+msgstr "crwdns16472:0crwdne16472:0"
+
+#: src/components/FileItem.tsx:271
+msgid "Renamed"
+msgstr "crwdns16474:0crwdne16474:0"
+
+#: src/components/FileItem.tsx:272
+msgid "Copied"
+msgstr "crwdns16476:0crwdne16476:0"
+
+#: src/components/FileItem.tsx:273
+msgid "Updated"
+msgstr "crwdns16478:0crwdne16478:0"
+
+#: src/components/FileItem.tsx:274
+msgid "Behind"
+msgstr "crwdns16480:0crwdne16480:0"
+
+#: src/components/FileItem.tsx:275 src/components/FileList.tsx:1000 src/components/FileList.tsx:1024 src/components/FileList.tsx:602 src/components/FileList.tsx:611 src/components/FileList.tsx:679 src/components/FileList.tsx:680 src/components/FileList.tsx:996
+msgid "Untracked"
+msgstr "crwdns13485:0crwdne13485:0"
+
+#: src/components/FileItem.tsx:276
+msgid "Ignored"
+msgstr "crwdns16482:0crwdne16482:0"
+
+#: src/components/FileList.tsx:1019 src/components/FileList.tsx:597 src/components/FileList.tsx:606 src/components/FileList.tsx:674 src/components/FileList.tsx:675 src/components/FileList.tsx:991 src/components/FileList.tsx:995
+msgid "Track all untracked files"
+msgstr "crwdns13483:0crwdne13483:0"
+
+#: src/components/FileList.tsx:1027 src/components/FileList.tsx:1031 src/components/FileList.tsx:1055 src/components/FileList.tsx:1105 src/components/FileList.tsx:1109 src/components/FileList.tsx:1118 src/components/FileList.tsx:1122 src/components/FileList.tsx:1133 src/components/FileList.tsx:1144 src/components/FileList.tsx:1146 src/components/FileList.tsx:1148 src/components/FileList.tsx:1172 src/components/FileList.tsx:363 src/components/FileList.tsx:372 src/components/FileList.tsx:440 src/components/FileList.tsx:441 src/components/FileList.tsx:450 src/components/FileList.tsx:459 src/components/FileList.tsx:527 src/components/FileList.tsx:528 src/components/FileList.tsx:549 src/components/FileList.tsx:558 src/components/FileList.tsx:626 src/components/FileList.tsx:627 src/components/FileList.tsx:635 src/components/FileList.tsx:644 src/components/FileList.tsx:648 src/components/FileList.tsx:657 src/components/FileList.tsx:674 src/components/FileList.tsx:683 src/components/FileList.tsx:710 src/components/FileList.tsx:713 src/components/FileList.tsx:726 src/components/FileList.tsx:734 src/components/FileList.tsx:744 src/components/FileList.tsx:752 src/components/FileList.tsx:758 src/components/FileList.tsx:790 src/components/FileList.tsx:803 src/components/FileList.tsx:826 src/components/FileList.tsx:828 src/components/FileList.tsx:829 src/components/FileList.tsx:850 src/components/FileList.tsx:937 src/components/FileList.tsx:941 src/components/FileList.tsx:965
+msgid "Open this file"
+msgstr "crwdns13449:0crwdne13449:0"
+
+#: src/components/FileList.tsx:1066 src/components/FileList.tsx:1070 src/components/FileList.tsx:1094 src/components/FileList.tsx:751
+msgid "Pull from remote branch"
+msgstr "crwdns13451:0crwdne13451:0"
+
+#: src/components/FileList.tsx:1071 src/components/FileList.tsx:1075 src/components/FileList.tsx:1099 src/components/FileList.tsx:756
+msgid "Remote Changes"
+msgstr "crwdns13453:0crwdne13453:0"
+
+#: src/components/FileList.tsx:1207 src/components/FileList.tsx:1211 src/components/FileList.tsx:1235 src/components/FileList.tsx:505 src/components/FileList.tsx:514 src/components/FileList.tsx:582 src/components/FileList.tsx:583 src/components/FileList.tsx:724 src/components/FileList.tsx:733 src/components/FileList.tsx:802 src/components/FileList.tsx:879 src/components/FileList.tsx:893 src/components/FileList.tsx:897 src/components/FileList.tsx:921
+msgid "Discard All Changes"
+msgstr "crwdns13455:0crwdne13455:0"
+
+#: src/components/FileList.tsx:1244 src/components/FileList.tsx:1248 src/components/FileList.tsx:1272 src/components/FileList.tsx:749 src/components/FileList.tsx:758 src/components/FileList.tsx:827 src/components/FileList.tsx:904
+msgid "Diff this file"
+msgstr "crwdns13457:0crwdne13457:0"
+
+#: src/components/FileList.tsx:177 src/components/FileList.tsx:186 src/components/FileList.tsx:188 src/components/FileList.tsx:191 src/components/FileList.tsx:202 src/components/FileList.tsx:211 src/components/FileList.tsx:213 src/components/FileList.tsx:252 src/components/FileList.tsx:262 src/components/FileList.tsx:263 src/widgets/discardAllChanges.ts:16
+msgid "Discard all changes"
+msgstr "crwdns13459:0crwdne13459:0"
+
+#: src/components/FileList.tsx:178 src/components/FileList.tsx:187 src/components/FileList.tsx:189 src/components/FileList.tsx:203 src/components/FileList.tsx:212 src/components/FileList.tsx:214 src/widgets/discardAllChanges.ts:21
+msgid "Are you sure you want to permanently discard changes to all files? This action cannot be undone."
+msgstr "crwdns13461:0crwdne13461:0"
+
+#: src/components/FileList.tsx:191 src/components/FileList.tsx:200 src/components/FileList.tsx:202 src/components/FileList.tsx:205 src/components/FileList.tsx:266 src/components/FileList.tsx:276 src/components/FileList.tsx:277
+msgid "Discard all unstaged changes failed."
+msgstr "crwdns13463:0crwdne13463:0"
+
+#: src/components/FileList.tsx:192 src/components/FileList.tsx:253 src/components/FileList.tsx:263 src/components/FileList.tsx:264
+msgid "Are you sure you want to permanently discard changes to all unstaged files? This action cannot be undone."
+msgstr "crwdns13465:0crwdne13465:0"
+
+#: src/components/FileList.tsx:216 src/components/FileList.tsx:225 src/components/FileList.tsx:227 src/widgets/discardAllChanges.ts:34
+msgid "Discard all changes failed."
+msgstr "crwdns13467:0crwdne13467:0"
+
+#: src/components/FileList.tsx:370 src/components/FileList.tsx:379 src/components/FileList.tsx:447 src/components/FileList.tsx:448 src/components/FileList.tsx:743 src/components/FileList.tsx:753 src/components/FileList.tsx:767
+msgid "Unstage this change"
+msgstr "crwdns13469:0crwdne13469:0"
+
+#: src/components/FileList.tsx:408 src/components/FileList.tsx:417 src/components/FileList.tsx:485 src/components/FileList.tsx:486 src/components/FileList.tsx:788 src/components/FileList.tsx:791 src/components/FileList.tsx:812
+msgid "Unstage all changes"
+msgstr "crwdns13473:0crwdne13473:0"
+
+#: src/components/FileList.tsx:414 src/components/FileList.tsx:423 src/components/FileList.tsx:491 src/components/FileList.tsx:492 src/components/FileList.tsx:795 src/components/FileList.tsx:797 src/components/FileList.tsx:819
+msgid "Staged"
+msgstr "crwdns13475:0crwdne13475:0"
+
+#: src/components/FileList.tsx:465 src/components/FileList.tsx:474 src/components/FileList.tsx:542 src/components/FileList.tsx:543 src/components/FileList.tsx:843 src/components/FileList.tsx:845 src/components/FileList.tsx:867
+msgid "Stage this change"
+msgstr "crwdns13477:0crwdne13477:0"
+
+#: src/components/FileList.tsx:512 src/components/FileList.tsx:521 src/components/FileList.tsx:589 src/components/FileList.tsx:590 src/components/FileList.tsx:900 src/components/FileList.tsx:904 src/components/FileList.tsx:928
+msgid "Stage all changes"
+msgstr "crwdns13479:0crwdne13479:0"
+
+#: src/components/FileList.tsx:559 src/components/FileList.tsx:568 src/components/FileList.tsx:636 src/components/FileList.tsx:637 src/components/FileList.tsx:945 src/components/FileList.tsx:949 src/components/FileList.tsx:973
+msgid "Track this file"
+msgstr "crwdns13481:0crwdne13481:0"
+
+#: src/components/FileList.tsx:782 src/components/FileList.tsx:806 src/components/FileList.tsx:891 src/components/FileList.tsx:915 src/components/GitPanel.tsx:503 src/components/GitPanel.tsx:516 src/components/GitPanel.tsx:522
+msgid "Stash latest changes"
+msgstr "crwdns16127:0crwdne16127:0"
+
+#: src/components/GitPanel.tsx:216 src/components/GitPanel.tsx:506 src/components/GitPanel.tsx:533 src/components/GitPanel.tsx:547 src/components/GitPanel.tsx:561 src/components/GitPanel.tsx:569 src/components/GitPanel.tsx:668 src/components/GitPanel.tsx:669 src/components/GitPanel.tsx:752 src/components/GitPanel.tsx:766 src/components/GitPanel.tsx:771 src/components/GitPanel.tsx:772
+msgid "Staging files..."
+msgstr "crwdns13487:0crwdne13487:0"
+
+#: src/components/GitPanel.tsx:237 src/components/GitPanel.tsx:523 src/components/GitPanel.tsx:550 src/components/GitPanel.tsx:564 src/components/GitPanel.tsx:578 src/components/GitPanel.tsx:586 src/components/GitPanel.tsx:685 src/components/GitPanel.tsx:686 src/components/GitPanel.tsx:769 src/components/GitPanel.tsx:786 src/components/GitPanel.tsx:788 src/components/GitPanel.tsx:789
+msgid "Failed to commit changes."
+msgstr "crwdns13489:0crwdne13489:0"
+
+#: src/components/GitPanel.tsx:250 src/components/GitPanel.tsx:531 src/components/GitPanel.tsx:558 src/components/GitPanel.tsx:572 src/components/GitPanel.tsx:586 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:693 src/components/GitPanel.tsx:694 src/components/GitPanel.tsx:777 src/components/GitPanel.tsx:791 src/components/GitPanel.tsx:796 src/components/GitPanel.tsx:797
+msgid "Committing changes..."
+msgstr "crwdns13491:0crwdne13491:0"
+
+#: src/components/GitPanel.tsx:257 src/components/GitPanel.tsx:538 src/components/GitPanel.tsx:569 src/components/GitPanel.tsx:583 src/components/GitPanel.tsx:597 src/components/GitPanel.tsx:605 src/components/GitPanel.tsx:704 src/components/GitPanel.tsx:705 src/components/GitPanel.tsx:788 src/components/GitPanel.tsx:807 src/components/GitPanel.tsx:808 src/components/GitPanel.tsx:813
+msgid "Committed changes."
+msgstr "crwdns13493:0crwdne13493:0"
+
+#: src/components/GitPanel.tsx:333 src/components/GitPanel.tsx:347 src/components/GitPanel.tsx:352 src/components/GitPanel.tsx:359 src/components/GitPanel.tsx:372 src/components/GitPanel.tsx:380 src/components/GitPanel.tsx:403 src/components/GitPanel.tsx:404 src/components/GitPanel.tsx:438 src/components/GitPanel.tsx:451 src/components/GitPanel.tsx:457
+msgid "View changed files"
+msgstr "crwdns13495:0crwdne13495:0"
+
+#: src/components/GitPanel.tsx:334 src/components/GitPanel.tsx:348 src/components/GitPanel.tsx:353 src/components/GitPanel.tsx:360 src/components/GitPanel.tsx:373 src/components/GitPanel.tsx:381 src/components/GitPanel.tsx:404 src/components/GitPanel.tsx:405 src/components/GitPanel.tsx:439 src/components/GitPanel.tsx:452 src/components/GitPanel.tsx:458
+msgid "Changes"
+msgstr "crwdns13497:0crwdne13497:0"
+
+#: src/components/GitPanel.tsx:343 src/components/GitPanel.tsx:357 src/components/GitPanel.tsx:362 src/components/GitPanel.tsx:369 src/components/GitPanel.tsx:382 src/components/GitPanel.tsx:390 src/components/GitPanel.tsx:413 src/components/GitPanel.tsx:414 src/components/GitPanel.tsx:448 src/components/GitPanel.tsx:461 src/components/GitPanel.tsx:467
+msgid "View commit history"
+msgstr "crwdns13499:0crwdne13499:0"
+
+#: src/components/GitPanel.tsx:364 src/components/GitPanel.tsx:378 src/components/GitPanel.tsx:383 src/components/GitPanel.tsx:390 src/components/GitPanel.tsx:403 src/components/GitPanel.tsx:411 src/components/GitPanel.tsx:436 src/components/GitPanel.tsx:437 src/components/GitPanel.tsx:471 src/components/GitPanel.tsx:484 src/components/GitPanel.tsx:490
+msgid "Commit and Push"
+msgstr "crwdns13501:0crwdne13501:0"
+
+#: src/components/GitPanel.tsx:365 src/components/GitPanel.tsx:379 src/components/GitPanel.tsx:384 src/components/GitPanel.tsx:391 src/components/GitPanel.tsx:404 src/components/GitPanel.tsx:412 src/components/GitPanel.tsx:439 src/components/GitPanel.tsx:440 src/components/GitPanel.tsx:474 src/components/GitPanel.tsx:487 src/components/GitPanel.tsx:493
+msgid "Commit"
+msgstr "crwdns13503:0crwdne13503:0"
+
+#: src/components/GitPanel.tsx:426 src/components/GitPanel.tsx:442 src/components/GitPanel.tsx:447 src/components/GitPanel.tsx:454 src/components/GitPanel.tsx:468 src/components/GitPanel.tsx:476 src/components/GitPanel.tsx:575 src/components/GitPanel.tsx:576 src/components/GitPanel.tsx:659 src/components/GitPanel.tsx:672 src/components/GitPanel.tsx:678 src/components/GitPanel.tsx:679
+msgid "is not"
+msgstr "crwdns13505:0crwdne13505:0"
+
+#: src/components/GitPanel.tsx:429 src/components/GitPanel.tsx:445 src/components/GitPanel.tsx:450 src/components/GitPanel.tsx:457 src/components/GitPanel.tsx:471 src/components/GitPanel.tsx:479 src/components/GitPanel.tsx:578 src/components/GitPanel.tsx:579 src/components/GitPanel.tsx:662 src/components/GitPanel.tsx:675 src/components/GitPanel.tsx:681 src/components/GitPanel.tsx:682
+msgid "You are not currently in"
+msgstr "crwdns13507:0crwdne13507:0"
+
+#: src/components/GitPanel.tsx:431 src/components/GitPanel.tsx:447 src/components/GitPanel.tsx:452 src/components/GitPanel.tsx:459 src/components/GitPanel.tsx:473 src/components/GitPanel.tsx:481 src/components/GitPanel.tsx:580 src/components/GitPanel.tsx:581 src/components/GitPanel.tsx:664 src/components/GitPanel.tsx:677 src/components/GitPanel.tsx:683 src/components/GitPanel.tsx:684
+msgid " a Git repository. To use Git, navigate to a local repository, initialize a repository here, or clone an existing repository."
+msgstr "crwdns13509:0crwdne13509:0"
+
+#: src/components/GitPanel.tsx:435 src/components/GitPanel.tsx:436 src/components/GitPanel.tsx:470 src/components/GitPanel.tsx:483 src/components/GitPanel.tsx:489
+msgid "Commit (Amend) and Push"
+msgstr "crwdns13511:0crwdne13511:0"
+
+#: src/components/GitPanel.tsx:438 src/components/GitPanel.tsx:439 src/components/GitPanel.tsx:473 src/components/GitPanel.tsx:486 src/components/GitPanel.tsx:492
+msgid "Commit (Amend)"
+msgstr "crwdns13513:0crwdne13513:0"
+
+#: src/components/GitPanel.tsx:439 src/components/GitPanel.tsx:455 src/components/GitPanel.tsx:460 src/components/GitPanel.tsx:467 src/components/GitPanel.tsx:481 src/components/GitPanel.tsx:489 src/components/GitPanel.tsx:588 src/components/GitPanel.tsx:589 src/components/GitPanel.tsx:672 src/components/GitPanel.tsx:685 src/components/GitPanel.tsx:691 src/components/GitPanel.tsx:692
+msgid "Open the FileBrowser"
+msgstr "crwdns13515:0crwdne13515:0"
+
+#: src/components/GitPanel.tsx:445 src/components/GitPanel.tsx:446 src/components/GitPanel.tsx:480 src/components/GitPanel.tsx:493 src/components/GitPanel.tsx:499
+msgid "You have unsaved tracked files. You probably want to save all changes before committing."
+msgstr "crwdns13517:0crwdne13517:0"
+
+#: src/components/GitPanel.tsx:448 src/components/GitPanel.tsx:449 src/components/GitPanel.tsx:483 src/components/GitPanel.tsx:496 src/components/GitPanel.tsx:502
+msgid "You have unsaved staged files. You probably want to save and stage all needed changes before committing."
+msgstr "crwdns13519:0crwdne13519:0"
+
+#: src/components/GitPanel.tsx:509 src/components/GitPanel.tsx:522 src/components/GitPanel.tsx:528
+msgid "Apply the latest stash"
+msgstr "crwdns16129:0crwdne16129:0"
+
+#: src/components/GitPanel.tsx:513 src/components/GitPanel.tsx:571 src/components/GitPanel.tsx:602 src/components/GitPanel.tsx:616 src/components/GitPanel.tsx:630 src/components/GitPanel.tsx:638 src/components/GitPanel.tsx:737 src/components/GitPanel.tsx:738 src/components/GitPanel.tsx:840 src/components/GitPanel.tsx:859 src/components/GitPanel.tsx:860 src/components/GitPanel.tsx:878
+msgid "Who is committing?"
+msgstr "crwdns13521:0crwdne13521:0"
+
+#: src/components/GitPanel.tsx:517 src/components/GitPanel.tsx:530 src/components/GitPanel.tsx:536
+msgid "Clear the entire stash"
+msgstr "crwdns16131:0crwdne16131:0"
+
+#: src/components/GitPanel.tsx:524 src/components/GitPanel.tsx:525 src/components/GitPanel.tsx:608 src/components/GitPanel.tsx:622 src/components/GitPanel.tsx:627 src/components/GitPanel.tsx:628
+msgid "Compare %1 and %2"
+msgstr "crwdns13523:0%1crwdnd13523:0%2crwdne13523:0"
+
+#: src/components/GitPanel.tsx:537 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:625 src/components/GitPanel.tsx:639 src/components/GitPanel.tsx:653 src/components/GitPanel.tsx:661 src/components/GitPanel.tsx:760 src/components/GitPanel.tsx:761 src/components/GitPanel.tsx:871 src/components/GitPanel.tsx:890 src/components/GitPanel.tsx:891 src/components/GitPanel.tsx:910
+msgid "Failed to set your identity. %1"
+msgstr "crwdns13525:0%1crwdne13525:0"
+
+#: src/components/GitPanel.tsx:577 src/components/GitPanel.tsx:608 src/components/GitPanel.tsx:622 src/components/GitPanel.tsx:636 src/components/GitPanel.tsx:644 src/components/GitPanel.tsx:743 src/components/GitPanel.tsx:744 src/components/GitPanel.tsx:846 src/components/GitPanel.tsx:865 src/components/GitPanel.tsx:866 src/components/GitPanel.tsx:884
+msgid "User refused to set identity."
+msgstr "crwdns13527:0crwdne13527:0"
+
+#: src/components/GitPanel.tsx:685 src/components/GitPanel.tsx:699 src/components/GitPanel.tsx:707 src/components/GitPanel.tsx:806 src/components/GitPanel.tsx:807 src/components/GitPanel.tsx:917 src/components/GitPanel.tsx:936 src/components/GitPanel.tsx:937 src/components/GitPanel.tsx:958
+msgid "One or more open files are behind %1 head. Do you want to pull the latest remote version?"
+msgstr "crwdns13529:0%1crwdne13529:0"
+
+#: src/components/GitPanel.tsx:694 src/components/GitPanel.tsx:708 src/components/GitPanel.tsx:716 src/components/GitPanel.tsx:815 src/components/GitPanel.tsx:816 src/components/GitPanel.tsx:926 src/components/GitPanel.tsx:945 src/components/GitPanel.tsx:946 src/components/GitPanel.tsx:967
+msgid "Continue Without Pulling"
+msgstr "crwdns13531:0crwdne13531:0"
+
+#: src/components/GitPanel.tsx:697 src/components/GitPanel.tsx:711 src/components/GitPanel.tsx:719 src/components/GitPanel.tsx:818 src/components/GitPanel.tsx:819 src/components/GitPanel.tsx:929 src/components/GitPanel.tsx:948 src/components/GitPanel.tsx:949 src/components/GitPanel.tsx:970
+msgid "Pull"
+msgstr "crwdns13533:0crwdne13533:0"
+
+#: src/components/GitPanel.tsx:698 src/components/GitPanel.tsx:712 src/components/GitPanel.tsx:720 src/components/GitPanel.tsx:819 src/components/GitPanel.tsx:820 src/components/GitPanel.tsx:930 src/components/GitPanel.tsx:949 src/components/GitPanel.tsx:950 src/components/GitPanel.tsx:971
+msgid "Git Pull from Remote Branch"
+msgstr "crwdns13535:0crwdne13535:0"
+
+#: src/components/GitPanel.tsx:722 src/components/GitPanel.tsx:736 src/components/GitPanel.tsx:744 src/components/GitPanel.tsx:843 src/components/GitPanel.tsx:844 src/components/GitPanel.tsx:954 src/components/GitPanel.tsx:973 src/components/GitPanel.tsx:974 src/components/GitPanel.tsx:995
+msgid "The following open files remain behind:"
+msgstr "crwdns13537:0crwdne13537:0"
+
+#: src/components/GitStash.tsx:144 src/components/GitStash.tsx:145
+msgid "%1 (on %2)"
+msgstr "crwdns16133:0%1crwdnd16133:0%2crwdne16133:0"
+
+#: src/components/GitStash.tsx:282 src/components/GitStash.tsx:283
+msgid "Pop stash entry"
+msgstr "crwdns16135:0crwdne16135:0"
+
+#: src/components/GitStash.tsx:290 src/components/GitStash.tsx:291
+msgid "Apply stash entry"
+msgstr "crwdns16137:0crwdne16137:0"
+
+#: src/components/GitStash.tsx:298 src/components/GitStash.tsx:299
+msgid "Drop stash entry"
+msgstr "crwdns16139:0crwdne16139:0"
+
+#: src/components/HistorySideBar.tsx:104 src/components/HistorySideBar.tsx:106 src/components/HistorySideBar.tsx:115 src/components/HistorySideBar.tsx:122 src/components/HistorySideBar.tsx:124
+msgid "Uncommitted Changes"
+msgstr "crwdns13539:0crwdne13539:0"
+
+#: src/components/HistorySideBar.tsx:105 src/components/HistorySideBar.tsx:107 src/components/HistorySideBar.tsx:116 src/components/HistorySideBar.tsx:123 src/components/HistorySideBar.tsx:125
+msgid "now"
+msgstr "crwdns13541:0crwdne13541:0"
+
+#: src/components/HistorySideBar.tsx:107 src/components/HistorySideBar.tsx:114 src/components/HistorySideBar.tsx:116 src/components/HistorySideBar.tsx:96 src/components/HistorySideBar.tsx:98
+msgid "You"
+msgstr "crwdns13543:0crwdne13543:0"
+
+#: src/components/HistorySideBar.tsx:126 src/components/HistorySideBar.tsx:144 src/components/HistorySideBar.tsx:146 src/components/HistorySideBar.tsx:165 src/components/HistorySideBar.tsx:193
+msgid "Discard file history"
+msgstr "crwdns13545:0crwdne13545:0"
+
+#: src/components/HistorySideBar.tsx:187 src/components/HistorySideBar.tsx:189 src/components/HistorySideBar.tsx:192 src/components/HistorySideBar.tsx:241 src/components/HistorySideBar.tsx:271 src/components/HistorySideBar.tsx:273
+msgid "No history found."
+msgstr "crwdns13547:0crwdne13547:0"
+
+#: src/components/ManageRemoteDialogue.tsx:104
+msgid "Enter a new remote repository name and URL"
+msgstr "crwdns13549:0crwdne13549:0"
+
+#: src/components/ManageRemoteDialogue.tsx:104
+msgid "Enter a new remote repository name and url"
+msgstr "crwdns13551:0crwdne13551:0"
+
+#: src/components/ManageRemoteDialogue.tsx:113
+msgid "name"
+msgstr "crwdns13553:0crwdne13553:0"
+
+#: src/components/ManageRemoteDialogue.tsx:158
+msgid "Add Remote"
+msgstr "crwdns13555:0crwdne13555:0"
+
+#: src/components/ManageRemoteDialogue.tsx:186
+msgid "Existing Remotes:"
+msgstr "crwdns13557:0crwdne13557:0"
+
+#: src/components/ManageRemoteDialogue.tsx:198
+msgid "Remove this remote"
+msgstr "crwdns13559:0crwdne13559:0"
+
+#: src/components/ManageRemoteDialogue.tsx:92
+msgid "Manage Remotes"
+msgstr "crwdns13561:0crwdne13561:0"
+
+#: src/components/MergeBranchDialog.tsx:87 src/components/NewBranchDialog.tsx:309 src/components/NewBranchDialog.tsx:310 src/components/NewBranchDialog.tsx:313 src/components/NewBranchDialog.tsx:315
+msgid "Create a new branch based on: %1"
+msgstr "crwdns13577:0%1crwdne13577:0"
+
+#: src/components/NewBranchDialog.tsx:142 src/components/NewBranchDialog.tsx:147 src/components/NewBranchDialog.tsx:154
+msgid "Create a Branch"
+msgstr "crwdns13579:0crwdne13579:0"
+
+#: src/components/NewBranchDialog.tsx:155 src/components/NewBranchDialog.tsx:160 src/components/NewBranchDialog.tsx:167 src/components/NewTagDialog.tsx:420 src/components/NewTagDialog.tsx:429 src/components/NewTagDialog.tsx:434
+msgid "Name"
+msgstr "crwdns13581:0crwdne13581:0"
+
+#: src/components/NewBranchDialog.tsx:162 src/components/NewBranchDialog.tsx:167 src/components/NewBranchDialog.tsx:174
+msgid "Enter a branch name"
+msgstr "crwdns13583:0crwdne13583:0"
+
+#: src/components/NewBranchDialog.tsx:164 src/components/NewBranchDialog.tsx:169
+msgid "Create branch based on…"
+msgstr "crwdns13585:0crwdne13585:0"
+
+#: src/components/NewBranchDialog.tsx:169 src/components/NewBranchDialog.tsx:176
+msgid "Create branch based on..."
+msgstr "crwdns13587:0crwdne13587:0"
+
+#: src/components/NewBranchDialog.tsx:194 src/components/NewBranchDialog.tsx:199 src/components/NewBranchDialog.tsx:206
+msgid "Close this dialog without creating a new branch"
+msgstr "crwdns13589:0crwdne13589:0"
+
+#: src/components/NewBranchDialog.tsx:204 src/components/NewBranchDialog.tsx:209 src/components/NewBranchDialog.tsx:216
+msgid "Create Branch"
+msgstr "crwdns13591:0crwdne13591:0"
+
+#: src/components/NewBranchDialog.tsx:297 src/components/NewBranchDialog.tsx:300 src/components/NewBranchDialog.tsx:302
+msgid "The current branch. Pick this if you want to build on work done in this branch."
+msgstr "crwdns13593:0crwdne13593:0"
+
+#: src/components/NewBranchDialog.tsx:302 src/components/NewBranchDialog.tsx:305 src/components/NewBranchDialog.tsx:307
+msgid "The default branch. Pick this if you want to start fresh from the default branch."
+msgstr "crwdns13595:0crwdne13595:0"
+
+#: src/components/NewBranchDialog.tsx:419 src/components/NewBranchDialog.tsx:427 src/components/NewBranchDialog.tsx:434
+msgid "Creating branch…"
+msgstr "crwdns13597:0crwdne13597:0"
+
+#: src/components/NewBranchDialog.tsx:431 src/components/NewBranchDialog.tsx:437 src/components/NewBranchDialog.tsx:443 src/components/NewBranchDialog.tsx:444
+msgid "Failed to create branch."
+msgstr "crwdns13601:0crwdne13601:0"
+
+#: src/components/NewBranchDialog.tsx:433 src/components/NewBranchDialog.tsx:434
+msgid "Creating branch..."
+msgstr "crwdns13599:0crwdne13599:0"
+
+#: src/components/NewBranchDialog.tsx:440 src/components/NewBranchDialog.tsx:444 src/components/NewBranchDialog.tsx:450 src/components/NewBranchDialog.tsx:451
+msgid "Branch created."
+msgstr "crwdns13603:0crwdne13603:0"
+
+#: src/components/NewTagDialog.tsx:260 src/components/NewTagDialog.tsx:264 src/components/NewTagDialog.tsx:274
+msgid "Create a new tag pointing to commit %1: %2 by %3"
+msgstr "crwdns16194:0%1crwdnd16194:0%2crwdnd16194:0%3crwdne16194:0"
+
+#: src/components/NewTagDialog.tsx:376 src/components/NewTagDialog.tsx:379 src/components/NewTagDialog.tsx:390
+msgid "Creating tag…"
+msgstr "crwdns16196:0crwdne16196:0"
+
+#: src/components/NewTagDialog.tsx:384 src/components/NewTagDialog.tsx:389 src/components/NewTagDialog.tsx:398
+msgid "Failed to create tag."
+msgstr "crwdns16198:0crwdne16198:0"
+
+#: src/components/NewTagDialog.tsx:391 src/components/NewTagDialog.tsx:398 src/components/NewTagDialog.tsx:405
+msgid "Tag created."
+msgstr "crwdns16200:0crwdne16200:0"
+
+#: src/components/NewTagDialog.tsx:409 src/components/NewTagDialog.tsx:418 src/components/NewTagDialog.tsx:423
+msgid "Create a Tag"
+msgstr "crwdns16202:0crwdne16202:0"
+
+#: src/components/NewTagDialog.tsx:427 src/components/NewTagDialog.tsx:436 src/components/NewTagDialog.tsx:441
+msgid "Enter a tag name"
+msgstr "crwdns16204:0crwdne16204:0"
+
+#: src/components/NewTagDialog.tsx:429 src/components/NewTagDialog.tsx:438 src/components/NewTagDialog.tsx:443
+msgid "Create tag pointing to…"
+msgstr "crwdns16206:0crwdne16206:0"
+
+#: src/components/NewTagDialog.tsx:437 src/components/NewTagDialog.tsx:447 src/components/NewTagDialog.tsx:452
+msgid "Filter by commit message"
+msgstr "crwdns16208:0crwdne16208:0"
+
+#: src/components/NewTagDialog.tsx:438 src/components/NewTagDialog.tsx:448 src/components/NewTagDialog.tsx:453
+msgid "Filter history of commits menu"
+msgstr "crwdns16210:0crwdne16210:0"
+
+#: src/components/NewTagDialog.tsx:467 src/components/NewTagDialog.tsx:478 src/components/NewTagDialog.tsx:484
+msgid "Close this dialog without creating a new tag"
+msgstr "crwdns16212:0crwdne16212:0"
+
+#: src/components/NewTagDialog.tsx:474 src/components/NewTagDialog.tsx:485 src/components/NewTagDialog.tsx:491 src/components/TagMenu.tsx:196 src/components/TagMenu.tsx:201
+msgid "Create a new tag"
+msgstr "crwdns16214:0crwdne16214:0"
+
+#: src/components/NewTagDialog.tsx:475 src/components/NewTagDialog.tsx:486 src/components/NewTagDialog.tsx:492
+msgid "Create Tag"
+msgstr "crwdns16216:0crwdne16216:0"
+
+#: src/components/PastCommitNode.tsx:111 src/components/PastCommitNode.tsx:152 src/components/PastCommitNode.tsx:156 src/components/PastCommitNode.tsx:169
+msgid "View commit details"
+msgstr "crwdns13605:0crwdne13605:0"
+
+#: src/components/PastCommitNode.tsx:175 src/components/PastCommitNode.tsx:179 src/components/PastCommitNode.tsx:198
+msgid "Select for compare"
+msgstr "crwdns13607:0crwdne13607:0"
+
+#: src/components/PastCommitNode.tsx:182 src/components/PastCommitNode.tsx:186 src/components/PastCommitNode.tsx:205
+msgid "Compare with selected"
+msgstr "crwdns13609:0crwdne13609:0"
+
+#: src/components/RebaseAction.tsx:100 src/components/RebaseAction.tsx:96
+msgid "Continue the rebase."
+msgstr "crwdns16141:0crwdne16141:0"
+
+#: src/components/RebaseAction.tsx:102 src/components/RebaseAction.tsx:106
+msgid "Pick another rebase action."
+msgstr "crwdns16145:0crwdne16145:0"
+
+#: src/components/RebaseAction.tsx:103 src/components/RebaseAction.tsx:99
+msgid "Continue"
+msgstr "crwdns16143:0crwdne16143:0"
+
+#: src/components/RebaseAction.tsx:124 src/components/RebaseAction.tsx:129
+msgid "Skip the current commit."
+msgstr "crwdns16147:0crwdne16147:0"
+
+#: src/components/RebaseAction.tsx:126 src/components/RebaseAction.tsx:131
+msgid "Skip"
+msgstr "crwdns16149:0crwdne16149:0"
+
+#: src/components/RebaseAction.tsx:132 src/components/RebaseAction.tsx:137
+msgid "Abort the rebase."
+msgstr "crwdns16151:0crwdne16151:0"
+
+#: src/components/RebaseAction.tsx:134 src/components/RebaseAction.tsx:139 src/components/RebaseAction.tsx:76 src/components/RebaseAction.tsx:80
+msgid "Abort"
+msgstr "crwdns16153:0crwdne16153:0"
+
+#: src/components/RebaseAction.tsx:73 src/components/RebaseAction.tsx:77
+msgid "Are you sure you want to abort the rebase?"
+msgstr "crwdns16155:0crwdne16155:0"
+
+#: src/components/ResetRevertDialog.tsx:121 src/components/ResetRevertDialog.tsx:125 src/components/ResetRevertDialog.tsx:127
+msgid "Revert Changes"
+msgstr "crwdns13611:0crwdne13611:0"
+
+#: src/components/ResetRevertDialog.tsx:122 src/components/ResetRevertDialog.tsx:126 src/components/ResetRevertDialog.tsx:128
+msgid "Reset Changes"
+msgstr "crwdns13613:0crwdne13613:0"
+
+#: src/components/ResetRevertDialog.tsx:135 src/components/ResetRevertDialog.tsx:139 src/components/ResetRevertDialog.tsx:141
+msgid "These changes will be reverted. Only commit if you're sure you're okay losing these changes."
+msgstr "crwdns13615:0crwdne13615:0"
+
+#: src/components/ResetRevertDialog.tsx:138 src/components/ResetRevertDialog.tsx:142 src/components/ResetRevertDialog.tsx:144
+msgid "All changes after commit %1 will be gone forever (hard reset). Are you sure?"
+msgstr "crwdns13617:0%1crwdne13617:0"
+
+#: src/components/ResetRevertDialog.tsx:162 src/components/ResetRevertDialog.tsx:166 src/components/ResetRevertDialog.tsx:179
+msgid "Cancel changes"
+msgstr "crwdns13619:0crwdne13619:0"
+
+#: src/components/ResetRevertDialog.tsx:170 src/components/ResetRevertDialog.tsx:174 src/components/ResetRevertDialog.tsx:187
+msgid "Submit changes"
+msgstr "crwdns13621:0crwdne13621:0"
+
+#: src/components/ResetRevertDialog.tsx:224 src/components/ResetRevertDialog.tsx:229
+msgid "Discarding changes…"
+msgstr "crwdns13623:0crwdne13623:0"
+
+#: src/components/ResetRevertDialog.tsx:229 src/components/ResetRevertDialog.tsx:246
+msgid "Discarding changes..."
+msgstr "crwdns13625:0crwdne13625:0"
+
+#: src/components/ResetRevertDialog.tsx:232 src/components/ResetRevertDialog.tsx:235 src/components/ResetRevertDialog.tsx:252
+msgid "Successfully discarded changes."
+msgstr "crwdns13627:0crwdne13627:0"
+
+#: src/components/ResetRevertDialog.tsx:239 src/components/ResetRevertDialog.tsx:240 src/components/ResetRevertDialog.tsx:257
+msgid "Failed to discard changes."
+msgstr "crwdns13629:0crwdne13629:0"
+
+#: src/components/ResetRevertDialog.tsx:256 src/components/ResetRevertDialog.tsx:258
+msgid "Reverting changes…"
+msgstr "crwdns13631:0crwdne13631:0"
+
+#: src/components/ResetRevertDialog.tsx:256 src/components/ResetRevertDialog.tsx:273
+msgid "Reverting changes..."
+msgstr "crwdns13633:0crwdne13633:0"
+
+#: src/components/ResetRevertDialog.tsx:262 src/components/ResetRevertDialog.tsx:266 src/components/ResetRevertDialog.tsx:279
+msgid "Successfully reverted changes."
+msgstr "crwdns13635:0crwdne13635:0"
+
+#: src/components/ResetRevertDialog.tsx:267 src/components/ResetRevertDialog.tsx:273 src/components/ResetRevertDialog.tsx:284
+msgid "Failed to revert changes."
+msgstr "crwdns13637:0crwdne13637:0"
+
+#: src/components/ResetRevertDialog.tsx:299 src/components/ResetRevertDialog.tsx:309 src/components/ResetRevertDialog.tsx:316
+msgid "Revert '%1'"
+msgstr "crwdns13639:0%1crwdne13639:0"
+
+#: src/components/ResetRevertDialog.tsx:308 src/components/ResetRevertDialog.tsx:318 src/components/ResetRevertDialog.tsx:325
+msgid "This reverts commit %1"
+msgstr "crwdns13641:0%1crwdne13641:0"
+
+#: src/components/SinglePastCommitInfo.tsx:159 src/components/SinglePastCommitInfo.tsx:169 src/components/SinglePastCommitInfo.tsx:170 src/components/SinglePastCommitInfo.tsx:180 src/components/SinglePastCommitInfo.tsx:182
+msgid "Error loading commit data"
+msgstr "crwdns13643:0crwdne13643:0"
+
+#: src/components/SinglePastCommitInfo.tsx:168 src/components/SinglePastCommitInfo.tsx:180 src/components/SinglePastCommitInfo.tsx:181 src/components/SinglePastCommitInfo.tsx:201 src/components/SinglePastCommitInfo.tsx:212 src/components/SinglePastCommitInfo.tsx:214
+msgid "Revert changes introduced by this commit"
+msgstr "crwdns13645:0crwdne13645:0"
+
+#: src/components/SinglePastCommitInfo.tsx:176 src/components/SinglePastCommitInfo.tsx:188 src/components/SinglePastCommitInfo.tsx:189 src/components/SinglePastCommitInfo.tsx:209 src/components/SinglePastCommitInfo.tsx:220 src/components/SinglePastCommitInfo.tsx:222
+msgid "Discard changes introduced *after* this commit (hard reset)"
+msgstr "crwdns13647:0crwdne13647:0"
+
+#: src/components/StatusWidget.tsx:70 src/components/StatusWidget.tsx:74
+msgid "credentials required"
+msgstr "crwdns13649:0crwdne13649:0"
+
+#: src/components/TagMenu.tsx:157
+msgid "Fail to get the tags."
+msgstr "crwdns13651:0crwdne13651:0"
+
+#: src/components/TagMenu.tsx:181 src/components/TagMenu.tsx:186
+msgid "Filter tag menu"
+msgstr "crwdns16218:0crwdne16218:0"
+
+#: src/components/TagMenu.tsx:197 src/components/TagMenu.tsx:202
+msgid "New Tag"
+msgstr "crwdns16220:0crwdne16220:0"
+
+#: src/components/TagMenu.tsx:246 src/components/TagMenu.tsx:251
+msgid "Checkout to tag: %1"
+msgstr "crwdns13653:0%1crwdne13653:0"
+
+#: src/components/TagMenu.tsx:304 src/components/TagMenu.tsx:308 src/components/TagMenu.tsx:310
+msgid "Creating a new tag is disabled"
+msgstr "crwdns16222:0crwdne16222:0"
+
+#: src/components/TagMenu.tsx:305 src/components/TagMenu.tsx:309 src/components/TagMenu.tsx:311
+msgid "Error in creating new tag"
+msgstr "crwdns16224:0crwdne16224:0"
+
+#: src/components/TagMenu.tsx:340
+msgid "Checkout tags is disabled"
+msgstr "crwdns16484:0crwdne16484:0"
+
+#: src/components/TagMenu.tsx:341
+msgid "The repository contains files with uncommitted changes. Please commit or discard these changes before switching to a tag."
+msgstr "crwdns16486:0crwdne16486:0"
+
+#: src/components/TagMenu.tsx:349
+msgid "Checking tag out…"
+msgstr "crwdns16488:0crwdne16488:0"
+
+#: src/components/TagMenu.tsx:362
+msgid "Tag checkout."
+msgstr "crwdns16490:0crwdne16490:0"
+
+#: src/components/TagMenu.tsx:45 src/components/TagMenu.tsx:46 src/components/TagMenu.tsx:47
+msgid "Unable to checkout tag"
+msgstr "crwdns13655:0crwdne13655:0"
+
+#: src/components/TagMenu.tsx:57 src/components/TagMenu.tsx:58 src/components/TagMenu.tsx:59
+msgid "Please commit, stash, or discard your changes before you checkout tags."
+msgstr "crwdns13657:0crwdne13657:0"
+
+#: src/components/TagMenu.tsx:68 src/components/TagMenu.tsx:69 src/components/TagMenu.tsx:70
+msgid "Failed to checkout tag."
+msgstr "crwdns13659:0crwdne13659:0"
+
+#: src/components/Toolbar.tsx:173 src/components/Toolbar.tsx:178 src/components/Toolbar.tsx:183
+msgid "Pull latest changes"
+msgstr "crwdns13661:0crwdne13661:0"
+
+#: src/components/Toolbar.tsx:175 src/components/Toolbar.tsx:180 src/components/Toolbar.tsx:185
+msgid " (behind by %1 commits)"
+msgstr "crwdns13663:0%1crwdne13663:0"
+
+#: src/components/Toolbar.tsx:180 src/components/Toolbar.tsx:185 src/components/Toolbar.tsx:190 src/components/Toolbar.tsx:208 src/components/Toolbar.tsx:212 src/components/Toolbar.tsx:218
+msgid "No remote repository defined"
+msgstr "crwdns13665:0crwdne13665:0"
+
+#: src/components/Toolbar.tsx:200 src/components/Toolbar.tsx:204 src/components/Toolbar.tsx:210
+msgid "Push committed changes"
+msgstr "crwdns13667:0crwdne13667:0"
+
+#: src/components/Toolbar.tsx:202 src/components/Toolbar.tsx:206 src/components/Toolbar.tsx:212
+msgid " (ahead by %1 commits)"
+msgstr "crwdns13669:0%1crwdne13669:0"
+
+#: src/components/Toolbar.tsx:207 src/components/Toolbar.tsx:211 src/components/Toolbar.tsx:217
+msgid "Publish branch"
+msgstr "crwdns13671:0crwdne13671:0"
+
+#: src/components/Toolbar.tsx:217 src/components/Toolbar.tsx:221 src/components/Toolbar.tsx:227
+msgid "Refresh the repository to detect local and remote changes"
+msgstr "crwdns13673:0crwdne13673:0"
+
+#: src/components/Toolbar.tsx:236 src/components/Toolbar.tsx:240 src/components/Toolbar.tsx:244 src/components/Toolbar.tsx:250
+msgid "Current repository: %1"
+msgstr "crwdns13675:0%1crwdne13675:0"
+
+#: src/components/Toolbar.tsx:245 src/components/Toolbar.tsx:248 src/components/Toolbar.tsx:255 src/components/Toolbar.tsx:258
+msgid "Current Repository"
+msgstr "crwdns13677:0crwdne13677:0"
+
+#: src/components/Toolbar.tsx:269 src/components/Toolbar.tsx:276 src/components/Toolbar.tsx:279
+msgid "Cherry picking in"
+msgstr "crwdns16157:0crwdne16157:0"
+
+#: src/components/Toolbar.tsx:272 src/components/Toolbar.tsx:273 src/components/Toolbar.tsx:291 src/components/Toolbar.tsx:298 src/components/Toolbar.tsx:301
+msgid "Manage branches and tags"
+msgstr "crwdns13679:0crwdne13679:0"
+
+#: src/components/Toolbar.tsx:272 src/components/Toolbar.tsx:279 src/components/Toolbar.tsx:282
+msgid "Detached Head at"
+msgstr "crwdns16159:0crwdne16159:0"
+
+#: src/components/Toolbar.tsx:275 src/components/Toolbar.tsx:282 src/components/Toolbar.tsx:285
+msgid "Merging in"
+msgstr "crwdns16161:0crwdne16161:0"
+
+#: src/components/Toolbar.tsx:278 src/components/Toolbar.tsx:279 src/components/Toolbar.tsx:281 src/components/Toolbar.tsx:288 src/components/Toolbar.tsx:291
+msgid "Current Branch"
+msgstr "crwdns13681:0crwdne13681:0"
+
+#: src/components/Toolbar.tsx:278 src/components/Toolbar.tsx:285 src/components/Toolbar.tsx:288
+msgid "Rebasing"
+msgstr "crwdns16163:0crwdne16163:0"
+
+#: src/components/Toolbar.tsx:315 src/components/Toolbar.tsx:316 src/components/Toolbar.tsx:332 src/components/Toolbar.tsx:342 src/components/Toolbar.tsx:345
+msgid "View branches"
+msgstr "crwdns13683:0crwdne13683:0"
+
+#: src/components/Toolbar.tsx:316 src/components/Toolbar.tsx:317 src/components/Toolbar.tsx:333 src/components/Toolbar.tsx:343 src/components/Toolbar.tsx:346
+msgid "Branches"
+msgstr "crwdns13685:0crwdne13685:0"
+
+#: src/components/Toolbar.tsx:325 src/components/Toolbar.tsx:326 src/components/Toolbar.tsx:342 src/components/Toolbar.tsx:352 src/components/Toolbar.tsx:355
+msgid "View tags"
+msgstr "crwdns13687:0crwdne13687:0"
+
+#: src/components/Toolbar.tsx:326 src/components/Toolbar.tsx:327 src/components/Toolbar.tsx:343 src/components/Toolbar.tsx:353 src/components/Toolbar.tsx:356
+msgid "Tags"
+msgstr "crwdns13689:0crwdne13689:0"
+
+#: src/components/Toolbar.tsx:401 src/components/Toolbar.tsx:402
+msgid "Refreshing..."
+msgstr "crwdns13691:0crwdne13691:0"
+
+#: src/components/Toolbar.tsx:403 src/components/Toolbar.tsx:419 src/components/Toolbar.tsx:431
+msgid "Refreshing…"
+msgstr "crwdns13693:0crwdne13693:0"
+
+#: src/components/Toolbar.tsx:408 src/components/Toolbar.tsx:409 src/components/Toolbar.tsx:410 src/components/Toolbar.tsx:426 src/components/Toolbar.tsx:438 src/components/Toolbar.tsx:440
+msgid "Successfully refreshed."
+msgstr "crwdns13695:0crwdne13695:0"
+
+#: src/components/Toolbar.tsx:414 src/components/Toolbar.tsx:415 src/components/Toolbar.tsx:416 src/components/Toolbar.tsx:432 src/components/Toolbar.tsx:444 src/components/Toolbar.tsx:448
+msgid "Failed to refresh."
+msgstr "crwdns13697:0crwdne13697:0"
+
+#: src/components/diff/ImageDiff.tsx:138 src/components/diff/ImageDiff.tsx:142
+msgid "View Image Diff in 2-up Mode"
+msgstr "crwdns16165:0crwdne16165:0"
+
+#: src/components/diff/ImageDiff.tsx:139 src/components/diff/ImageDiff.tsx:143
+msgid "2-up"
+msgstr "crwdns16167:0crwdne16167:0"
+
+#: src/components/diff/ImageDiff.tsx:147 src/components/diff/ImageDiff.tsx:151
+msgid "View Image Diff in Swipe Mode"
+msgstr "crwdns16169:0crwdne16169:0"
+
+#: src/components/diff/ImageDiff.tsx:148 src/components/diff/ImageDiff.tsx:152
+msgid "Swipe"
+msgstr "crwdns16171:0crwdne16171:0"
+
+#: src/components/diff/ImageDiff.tsx:156 src/components/diff/ImageDiff.tsx:160
+msgid "View Image Diff in Onion Skin Mode"
+msgstr "crwdns16173:0crwdne16173:0"
+
+#: src/components/diff/ImageDiff.tsx:157 src/components/diff/ImageDiff.tsx:161
+msgid "Onion Skin"
+msgstr "crwdns16175:0crwdne16175:0"
+
+#: src/components/diff/ImageDiff.tsx:426 src/components/diff/ImageDiff.tsx:441
+msgid "Failed to refresh Image diff."
+msgstr "crwdns16177:0crwdne16177:0"
+
+#: src/components/diff/ImageDiff.tsx:501 src/components/diff/ImageDiff.tsx:514 src/components/diff/NotebookDiff.ts:336 src/components/diff/NotebookDiff.ts:337 src/components/diff/NotebookDiff.ts:343 src/components/diff/PlainTextDiff.ts:244 src/components/diff/PlainTextDiff.ts:251 src/components/diff/PlainTextDiff.ts:282 src/components/diff/PlainTextDiff.ts:294
+msgid "Failed to load file diff."
+msgstr "crwdns13709:0crwdne13709:0"
+
+#: src/components/diff/ImageDiff.tsx:512 src/components/diff/ImageDiff.tsx:525
+msgid "Error Loading Image Diff:"
+msgstr "crwdns16179:0crwdne16179:0"
+
+#: src/components/diff/NotebookDiff.ts:100 src/components/diff/NotebookDiff.ts:103
+msgid "Hide unchanged cells"
+msgstr "crwdns13699:0crwdne13699:0"
+
+#: src/components/diff/NotebookDiff.ts:147
+msgid "Failed to refresh Notebook diff."
+msgstr "crwdns13701:0crwdne13701:0"
+
+#: src/components/diff/NotebookDiff.ts:238
+msgid "COMMON ANCESTOR"
+msgstr "crwdns13703:0crwdne13703:0"
+
+#: src/components/diff/NotebookDiff.ts:238 src/components/diff/NotebookDiff.ts:245
+msgid "Common Ancestor"
+msgstr "crwdns13705:0crwdne13705:0"
+
+#: src/components/diff/NotebookDiff.ts:277 src/components/diff/NotebookDiff.ts:284
+msgid "Failed to init notebook diff view: %1"
+msgstr "crwdns13707:0%1crwdne13707:0"
+
+#: src/components/diff/NotebookDiff.ts:347 src/components/diff/NotebookDiff.ts:348 src/components/diff/NotebookDiff.ts:354
+msgid "Error Loading Notebook Diff:"
+msgstr "crwdns13711:0crwdne13711:0"
+
+#: src/components/diff/PlainTextDiff.ts:104 src/components/diff/PlainTextDiff.ts:111 src/components/diff/PlainTextDiff.ts:150
+msgid "Failed to get a valid file value."
+msgstr "crwdns13713:0crwdne13713:0"
+
+#: src/components/diff/PlainTextDiff.ts:250 src/components/diff/PlainTextDiff.ts:257 src/components/diff/PlainTextDiff.ts:293 src/components/diff/PlainTextDiff.ts:300
+msgid "Error Loading File Diff:"
+msgstr "crwdns13715:0crwdne13715:0"
+
+#: src/components/diff/PlainTextDiff.ts:53
+msgid "Control character"
+msgstr "crwdns13717:0crwdne13717:0"
+
+#: src/components/diff/PlainTextDiff.ts:55
+msgid "Selection deleted"
+msgstr "crwdns13719:0crwdne13719:0"
+
+#: src/components/diff/PlainTextDiff.ts:57
+msgid "Folded lines"
+msgstr "crwdns13721:0crwdne13721:0"
+
+#: src/components/diff/PlainTextDiff.ts:58
+msgid "Unfolded lines"
+msgstr "crwdns13723:0crwdne13723:0"
+
+#: src/components/diff/PlainTextDiff.ts:59
+msgid "to"
+msgstr "crwdns13725:0crwdne13725:0"
+
+#: src/components/diff/PlainTextDiff.ts:60
+msgid "folded code"
+msgstr "crwdns13727:0crwdne13727:0"
+
+#: src/components/diff/PlainTextDiff.ts:61
+msgid "unfold"
+msgstr "crwdns13729:0crwdne13729:0"
+
+#: src/components/diff/PlainTextDiff.ts:62
+msgid "Fold line"
+msgstr "crwdns13731:0crwdne13731:0"
+
+#: src/components/diff/PlainTextDiff.ts:63
+msgid "Unfold line"
+msgstr "crwdns13733:0crwdne13733:0"
+
+#: src/components/diff/PlainTextDiff.ts:65
+msgid "Go to line"
+msgstr "crwdns13735:0crwdne13735:0"
+
+#: src/components/diff/PlainTextDiff.ts:66
+msgid "go"
+msgstr "crwdns13737:0crwdne13737:0"
+
+#: src/components/diff/PlainTextDiff.ts:67
+msgid "Find"
+msgstr "crwdns13739:0crwdne13739:0"
+
+#: src/components/diff/PlainTextDiff.ts:68
+msgid "Replace"
+msgstr "crwdns13741:0crwdne13741:0"
+
+#: src/components/diff/PlainTextDiff.ts:69
+msgid "next"
+msgstr "crwdns13743:0crwdne13743:0"
+
+#: src/components/diff/PlainTextDiff.ts:70
+msgid "previous"
+msgstr "crwdns13745:0crwdne13745:0"
+
+#: src/components/diff/PlainTextDiff.ts:71
+msgid "all"
+msgstr "crwdns13747:0crwdne13747:0"
+
+#: src/components/diff/PlainTextDiff.ts:72
+msgid "match case"
+msgstr "crwdns13749:0crwdne13749:0"
+
+#: src/components/diff/PlainTextDiff.ts:73
+msgid "replace"
+msgstr "crwdns13751:0crwdne13751:0"
+
+#: src/components/diff/PlainTextDiff.ts:74
+msgid "replace all"
+msgstr "crwdns13753:0crwdne13753:0"
+
+#: src/components/diff/PlainTextDiff.ts:75
+msgid "close"
+msgstr "crwdns13755:0crwdne13755:0"
+
+#: src/components/diff/PlainTextDiff.ts:76
+msgid "current match"
+msgstr "crwdns13757:0crwdne13757:0"
+
+#: src/components/diff/PlainTextDiff.ts:77
+msgid "replaced $ matches"
+msgstr "crwdns13759:0crwdne13759:0"
+
+#: src/components/diff/PlainTextDiff.ts:78
+msgid "replaced match on line $"
+msgstr "crwdns13761:0crwdne13761:0"
+
+#: src/components/diff/PlainTextDiff.ts:79
+msgid "on line"
+msgstr "crwdns13763:0crwdne13763:0"
+
+#: src/components/diff/PlainTextDiff.ts:81
+msgid "Identical text collapsed. Click to expand."
+msgstr "crwdns13765:0crwdne13765:0"
+
+#: src/components/diff/PlainTextDiff.ts:84
+msgid "Toggle locked scrolling"
+msgstr "crwdns13767:0crwdne13767:0"
+
+#: src/components/diff/PlainTextDiff.ts:85
+msgid "Push to left"
+msgstr "crwdns13769:0crwdne13769:0"
+
+#: src/components/diff/PlainTextDiff.ts:86
+msgid "Revert chunk"
+msgstr "crwdns13771:0crwdne13771:0"
+
+#: src/index.ts:100 src/index.ts:101 src/index.ts:102 src/index.ts:107 src/index.ts:108 src/index.ts:94 src/index.ts:98
+msgid "git command not found - please ensure you have Git > 2 installed"
+msgstr "crwdns13773:0crwdne13773:0"
+
+#: src/index.ts:102 src/index.ts:106 src/index.ts:108 src/index.ts:109 src/index.ts:110 src/index.ts:115 src/index.ts:116
+msgid "git command version must be > 2; got %1."
+msgstr "crwdns13775:0%1crwdne13775:0"
+
+#: src/index.ts:109 src/index.ts:113 src/index.ts:115 src/index.ts:116 src/index.ts:117 src/index.ts:122 src/index.ts:123
+msgid "The versions of the JupyterLab Git server frontend and backend do not match. The @jupyterlab/git frontend extension has version: %1 while the python package has version %2. Please install identical version of jupyterlab-git Python package and the @jupyterlab/git extension. Try running: pip install --upgrade jupyterlab-git"
+msgstr "crwdns13777:0%1crwdnd13777:0%2crwdne13777:0"
+
+#: src/index.ts:126 src/index.ts:130 src/index.ts:132 src/index.ts:133 src/index.ts:134 src/index.ts:139 src/index.ts:140
+msgid "Failed to load the jupyterlab-git server extension"
+msgstr "crwdns13779:0crwdne13779:0"
+
+#: src/index.ts:128 src/index.ts:129 src/index.ts:130 src/index.ts:135 src/index.ts:136
+msgid "Failed to load the jupyterlab-git server extension settings"
+msgstr "crwdns13781:0crwdne13781:0"
+
+#: src/index.ts:90 src/index.ts:91 src/index.ts:92 src/index.ts:97 src/index.ts:98
+msgid "Failed to load settings for the Git Extension.\n"
+"%1"
+msgstr "crwdns13783:0%1crwdne13783:0"
+
+#: src/server.ts:27
+msgid "Git server extension is unavailable. Please ensure you have installed the JupyterLab Git server extension by running: pip install --upgrade jupyterlab-git. To confirm that the server extension is installed, run: jupyter server extension list."
+msgstr "crwdns13785:0crwdne13785:0"
+
+#: src/widgets/AdvancedPushForm.tsx:104
+msgid "This repository has no known remotes."
+msgstr "crwdns13787:0crwdne13787:0"
+
+#: src/widgets/AdvancedPushForm.tsx:43
+msgid "Choose a remote to push to."
+msgstr "crwdns13789:0crwdne13789:0"
+
+#: src/widgets/AdvancedPushForm.tsx:49
+msgid "Loading remote repositories..."
+msgstr "crwdns13791:0crwdne13791:0"
+
+#: src/widgets/AdvancedPushForm.tsx:64
+msgid "Force Push"
+msgstr "crwdns13793:0crwdne13793:0"
+
+#: src/widgets/AuthorBox.ts:29 src/widgets/AuthorBox.ts:30
+msgid "Committer name:"
+msgstr "crwdns16181:0crwdne16181:0"
+
+#: src/widgets/AuthorBox.ts:31 src/widgets/AuthorBox.ts:32
+msgid "Committer email:"
+msgstr "crwdns16183:0crwdne16183:0"
+
+#: src/widgets/CredentialsBox.tsx:36 src/widgets/CredentialsBox.tsx:37 src/widgets/CredentialsBox.tsx:43 src/widgets/CredentialsBox.tsx:46
+msgid "username"
+msgstr "crwdns13795:0crwdne13795:0"
+
+#: src/widgets/CredentialsBox.tsx:50 src/widgets/CredentialsBox.tsx:51
+msgid "Save my login temporarily"
+msgstr "crwdns13799:0crwdne13799:0"
+
+#: src/widgets/GitCloneForm.ts:30
+msgid "Enter the Clone URI of the repository"
+msgstr "crwdns13801:0crwdne13801:0"
+
+#: src/widgets/GitCloneForm.ts:60
+msgid "Enter the URI of the remote Git repository"
+msgstr "crwdns13803:0crwdne13803:0"
+
+#: src/widgets/GitCloneForm.ts:65
+msgid "Include submodules"
+msgstr "crwdns13805:0crwdne13805:0"
+
+#: src/widgets/GitCloneForm.ts:66
+msgid "If checked, the remote submodules in the repository will be cloned recursively"
+msgstr "crwdns13807:0crwdne13807:0"
+
+#: src/widgets/GitCloneForm.ts:72
+msgid "Download the repository"
+msgstr "crwdns13809:0crwdne13809:0"
+
+#: src/widgets/GitCloneForm.ts:73
+msgid "If checked, the remote repository default branch will be downloaded instead of cloned"
+msgstr "crwdns13811:0crwdne13811:0"
+
+#: src/widgets/discardAllChanges.ts:18
+msgid "Your current changes forbid pulling the latest changes. Do you want to permanently discard those changes? This action cannot be undone."
+msgstr "crwdns13813:0crwdne13813:0"
+
