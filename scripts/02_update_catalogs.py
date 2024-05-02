@@ -205,7 +205,7 @@ if __name__ == "__main__":
 
             # For JupyterLab we filter explicitly to catch version belonging to minor range
             ref_filter = (
-                f"v{cur_version.major}.{cur_version.minor}"
+                f"v{cur_version.major}."
                 if package_name == "jupyterlab"
                 else None
             )
