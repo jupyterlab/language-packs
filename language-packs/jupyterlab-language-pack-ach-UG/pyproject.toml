@@ -3,7 +3,7 @@ requires = ["hatchling>=1.4.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "jupyterlab-pseudo-language"
+name = "jupyterlab-pseudo-language-pack"
 description = "JupyterLab pseudo-language Pack"
 authors = [
     { name = "Project Jupyter Contributors", email = "jupyter@googlegroups.com" }
@@ -32,9 +32,10 @@ artifacts = [
 ]
 
 [tool.hatch.build.hooks.jupyter-translate]
-dependencies = ["jupyterlab-translate>=1.2.0"]
+dependencies = ["jupyterlab-translate>=1.3.7"]
 
 [tool.hatch.build.targets.wheel]
+packages = ["jupyterlab_language_pack_ach_UG"]
 artifacts = [
     "jupyterlab_language_pack_ach_UG/**/*.json",
     "jupyterlab_language_pack_ach_UG/**/*.mo",
