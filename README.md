@@ -8,6 +8,11 @@ Jupyterlab language packs.
 
 To install a specific language pack please see the [available packs](https://github.com/jupyterlab/language-packs/tree/master/language-packs).
 
+> [!WARNING]
+> The package `jupyterlab-language-pack-ach-UG` purpose is to allow translation of strings directly within JupyterLab using
+> the [in-context Crowdin feature](https://developer.crowdin.com/in-context-localization/). You should not install it
+> explicitly as it contains unmeaningful translation.
+
 ## Adding a new extension
 
 Follow the instructions described in the [developer documentation](https://jupyterlab.readthedocs.io/en/stable/extension/internationalization.html) of JupyterLab.
