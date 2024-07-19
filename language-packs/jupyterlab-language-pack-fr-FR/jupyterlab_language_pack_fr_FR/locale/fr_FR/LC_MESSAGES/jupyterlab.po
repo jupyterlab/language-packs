@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2024-05-13 15:24\n"
+"PO-Revision-Date: 2024-07-19 10:57\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -673,10 +673,50 @@ msgctxt "settings"
 msgid "Inline Completer"
 msgstr "Compléteur des éditeurs"
 
+#: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/description
+msgctxt "settings"
+msgid "When an inline completion gets cancelled the editor may change its size rapidly. When typing in the editor, the completions may get dismissed frequently causing a noticeable jitter of the editor height. Adding a delay prevents the jitter on typing. The value should be in milliseconds."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/title
+msgctxt "settings"
+msgid "Editor resize delay"
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/description
+msgctxt "settings"
+msgid "Number of lines of inline completion to show before collapsing. Setting zero disables the limit."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/title
+msgctxt "settings"
+msgid "Limit inline completion lines"
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/description
+msgctxt "settings"
+msgid "Number of lines to reserve for the ghost text with inline completion suggestion."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/title
+msgctxt "settings"
+msgid "Reserve lines for inline completion"
+msgstr ""
+
 #: /packages/completer-extension/schema/inline-completer.json:/properties/providers/title
 msgctxt "settings"
 msgid "Inline completion providers"
 msgstr "Fournisseurs de complétion pour les éditeurs"
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/reserveSpaceForLongest/description
+msgctxt "settings"
+msgid "When multiple completions are returned, reserve blank space for up to as many lines as in the longest completion candidate to avoid resizing editor when cycling between the suggestions."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/reserveSpaceForLongest/title
+msgctxt "settings"
+msgid "Reserve space for the longest candidate"
+msgstr ""
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showShortcuts/description
 msgctxt "settings"
@@ -3019,7 +3059,7 @@ msgstr "Fichier d'espace de travail JupyterLab"
 msgid "JupyterLab workspace File"
 msgstr "Fichier d'espace de travail JupyterLab"
 
-#: packages/apputils/src/dialog.tsx:47 packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:425 packages/hub-extension/src/index.ts:180 packages/lsp/src/adapters/adapter.ts:497 packages/mainmenu-extension/src/index.ts:545 packages/mainmenu-extension/src/index.ts:548
+#: packages/apputils/src/dialog.tsx:47 packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:425 packages/hub-extension/src/index.ts:179 packages/hub-extension/src/index.ts:180 packages/lsp/src/adapters/adapter.ts:497 packages/mainmenu-extension/src/index.ts:545 packages/mainmenu-extension/src/index.ts:548
 msgid "Dismiss"
 msgstr "Ignorer"
 
@@ -3119,7 +3159,7 @@ msgstr "Toujours démarrer le noyau d'exécution préféré"
 msgid "Remember my choice and always start the preferred kernel"
 msgstr "Mémoriser mon choix et toujours démarrer le noyau préféré"
 
-#: packages/apputils/src/sessioncontext.tsx:1419 packages/hub-extension/src/index.ts:179
+#: packages/apputils/src/sessioncontext.tsx:1419 packages/hub-extension/src/index.ts:178 packages/hub-extension/src/index.ts:179
 msgid "Restart"
 msgstr "Redémarrer"
 
@@ -4061,47 +4101,47 @@ msgstr "Suivant"
 msgid "Accept"
 msgstr "Accepter"
 
-#: packages/completer-extension/src/index.ts:192
+#: packages/completer-extension/src/index.ts:192 packages/completer-extension/src/index.ts:193
 msgid "Next Inline Completion"
 msgstr "Prochaine complétion"
 
-#: packages/completer-extension/src/index.ts:202
+#: packages/completer-extension/src/index.ts:202 packages/completer-extension/src/index.ts:203
 msgid "Previous Inline Completion"
 msgstr "Complétion précédente"
 
-#: packages/completer-extension/src/index.ts:209
+#: packages/completer-extension/src/index.ts:209 packages/completer-extension/src/index.ts:210
 msgid "Accept Inline Completion"
 msgstr "Accepter la complétion"
 
-#: packages/completer-extension/src/index.ts:216
+#: packages/completer-extension/src/index.ts:216 packages/completer-extension/src/index.ts:217
 msgid "Invoke Inline Completer"
 msgstr "Afficher les suggestions"
 
-#: packages/completer-extension/src/index.ts:263
+#: packages/completer-extension/src/index.ts:263 packages/completer-extension/src/index.ts:264
 msgid "%1 provider"
 msgstr "Fournisseur %1"
 
-#: packages/completer-extension/src/index.ts:267
+#: packages/completer-extension/src/index.ts:267 packages/completer-extension/src/index.ts:268
 msgid "Timeout"
 msgstr "Délai d'expiration"
 
-#: packages/completer-extension/src/index.ts:268
+#: packages/completer-extension/src/index.ts:268 packages/completer-extension/src/index.ts:269
 msgid "Timeout for %1 provider (in milliseconds)."
 msgstr "Délai pour le fournisseur %1 (en millisecondes)."
 
-#: packages/completer-extension/src/index.ts:276
+#: packages/completer-extension/src/index.ts:276 packages/completer-extension/src/index.ts:277
 msgid "Debouncer delay"
 msgstr "Délai d'activation"
 
-#: packages/completer-extension/src/index.ts:278
+#: packages/completer-extension/src/index.ts:278 packages/completer-extension/src/index.ts:279
 msgid "Time since the last key press to wait before requesting completions from %1 provider (in milliseconds)."
 msgstr "Temps d'attente depuis la dernière pression sur une touche avant de demander des complétions au fournisseur %1 (en millisecondes)."
 
-#: packages/completer-extension/src/index.ts:285 packages/pluginmanager/src/widget.tsx:171
+#: packages/completer-extension/src/index.ts:285 packages/completer-extension/src/index.ts:286 packages/pluginmanager/src/widget.tsx:171
 msgid "Enabled"
 msgstr "Activé"
 
-#: packages/completer-extension/src/index.ts:286
+#: packages/completer-extension/src/index.ts:286 packages/completer-extension/src/index.ts:287
 msgid "Whether to fetch completions %1 provider."
 msgstr "Récupérer ou non les suggestions du fournisseur %1."
 
@@ -4117,11 +4157,11 @@ msgstr "Nombre maximal de suggestions"
 msgid "The maximum number of suggestions to retrieve from history."
 msgstr "Le nombre maximal de suggestions à récupérer de l'historique."
 
-#: packages/completer/src/inline.ts:388
+#: packages/completer/src/inline.ts:388 packages/completer/src/inline.ts:399
 msgid "%1/%2"
 msgstr "%1/%2"
 
-#: packages/completer/src/inline.ts:393
+#: packages/completer/src/inline.ts:393 packages/completer/src/inline.ts:404
 msgid "Provider: %1"
 msgstr "Fournisseur : %1"
 
@@ -5917,41 +5957,41 @@ msgstr "Se méfier du HTML"
 msgid "Trust HTML"
 msgstr "Faire confiance au HTML"
 
-#: packages/hub-extension/src/index.ts:173
+#: packages/hub-extension/src/index.ts:172 packages/hub-extension/src/index.ts:173
 msgid "Server unavailable or unreachable"
 msgstr "Serveur indisponible ou inaccessible"
 
-#: packages/hub-extension/src/index.ts:174
+#: packages/hub-extension/src/index.ts:173 packages/hub-extension/src/index.ts:174
 msgid "Your server at %1 is not running.\n"
 "Would you like to restart it?"
 msgstr "Votre serveur à %1 n'est pas en cours d'exécution.\n"
 "Voulez-vous le redémarrer ?"
 
-#: packages/hub-extension/src/index.ts:74
+#: packages/hub-extension/src/index.ts:73 packages/hub-extension/src/index.ts:74
 msgid "Restart Server"
 msgstr "Redémarrer le serveur"
 
-#: packages/hub-extension/src/index.ts:75
+#: packages/hub-extension/src/index.ts:74 packages/hub-extension/src/index.ts:75
 msgid "Request that the Hub restart this server"
 msgstr "Demander au Hub de redémarrer ce serveur"
 
-#: packages/hub-extension/src/index.ts:82
+#: packages/hub-extension/src/index.ts:81 packages/hub-extension/src/index.ts:82
 msgid "Hub Control Panel"
 msgstr "Panneau de contrôle du Hub"
 
-#: packages/hub-extension/src/index.ts:83
+#: packages/hub-extension/src/index.ts:82 packages/hub-extension/src/index.ts:83
 msgid "Open the Hub control panel in a new browser tab"
 msgstr "Ouvrez le panneau de configuration du Hub dans un nouvel onglet du navigateur"
 
-#: packages/hub-extension/src/index.ts:90 packages/mainmenu-extension/src/index.ts:440 packages/mainmenu-extension/src/index.ts:443
+#: packages/hub-extension/src/index.ts:89 packages/hub-extension/src/index.ts:90 packages/mainmenu-extension/src/index.ts:440 packages/mainmenu-extension/src/index.ts:443
 msgid "Log Out"
 msgstr "Se déconnecter"
 
-#: packages/hub-extension/src/index.ts:91
+#: packages/hub-extension/src/index.ts:90 packages/hub-extension/src/index.ts:91
 msgid "Log out of the Hub"
 msgstr "Se déconnecter du Hub"
 
-#: packages/hub-extension/src/index.ts:99
+#: packages/hub-extension/src/index.ts:98 packages/hub-extension/src/index.ts:99
 msgid "Hub"
 msgstr "Hub"
 
