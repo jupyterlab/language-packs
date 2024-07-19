@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2024-05-10 05:59\n"
+"PO-Revision-Date: 2024-07-19 10:58\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -669,10 +669,50 @@ msgctxt "settings"
 msgid "Inline Completer"
 msgstr "内联补全器"
 
+#: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/description
+msgctxt "settings"
+msgid "When an inline completion gets cancelled the editor may change its size rapidly. When typing in the editor, the completions may get dismissed frequently causing a noticeable jitter of the editor height. Adding a delay prevents the jitter on typing. The value should be in milliseconds."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/title
+msgctxt "settings"
+msgid "Editor resize delay"
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/description
+msgctxt "settings"
+msgid "Number of lines of inline completion to show before collapsing. Setting zero disables the limit."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/title
+msgctxt "settings"
+msgid "Limit inline completion lines"
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/description
+msgctxt "settings"
+msgid "Number of lines to reserve for the ghost text with inline completion suggestion."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/title
+msgctxt "settings"
+msgid "Reserve lines for inline completion"
+msgstr ""
+
 #: /packages/completer-extension/schema/inline-completer.json:/properties/providers/title
 msgctxt "settings"
 msgid "Inline completion providers"
 msgstr "内联补全提供者"
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/reserveSpaceForLongest/description
+msgctxt "settings"
+msgid "When multiple completions are returned, reserve blank space for up to as many lines as in the longest completion candidate to avoid resizing editor when cycling between the suggestions."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/reserveSpaceForLongest/title
+msgctxt "settings"
+msgid "Reserve space for the longest candidate"
+msgstr ""
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showShortcuts/description
 msgctxt "settings"
@@ -2950,7 +2990,7 @@ msgstr "增大内容字号"
 msgid "Increase UI Font Size"
 msgstr "增大界面字号"
 
-#: packages/apputils-extension/src/themesplugins.ts:219 packages/fileeditor-extension/src/commands.ts:281 packages/fileeditor-extension/src/commands.ts:282
+#: packages/apputils-extension/src/themesplugins.ts:219 packages/fileeditor-extension/src/commands.ts:281 packages/fileeditor-extension/src/commands.ts:285
 msgid "Increase Font Size"
 msgstr "增大字号"
 
@@ -2966,7 +3006,7 @@ msgstr "减少内容字号"
 msgid "Decrease UI Font Size"
 msgstr "减小界面字号"
 
-#: packages/apputils-extension/src/themesplugins.ts:235 packages/fileeditor-extension/src/commands.ts:285 packages/fileeditor-extension/src/commands.ts:286
+#: packages/apputils-extension/src/themesplugins.ts:235 packages/fileeditor-extension/src/commands.ts:285 packages/fileeditor-extension/src/commands.ts:289
 msgid "Decrease Font Size"
 msgstr "减小字号"
 
@@ -2998,7 +3038,7 @@ msgstr "JupyterLab 工作区文件"
 msgid "JupyterLab workspace File"
 msgstr "JupyterLab 工作区文件"
 
-#: packages/apputils/src/dialog.tsx:47 packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:425 packages/hub-extension/src/index.ts:180 packages/lsp/src/adapters/adapter.ts:497 packages/mainmenu-extension/src/index.ts:545 packages/mainmenu-extension/src/index.ts:548
+#: packages/apputils/src/dialog.tsx:47 packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:425 packages/hub-extension/src/index.ts:179 packages/hub-extension/src/index.ts:180 packages/lsp/src/adapters/adapter.ts:497 packages/mainmenu-extension/src/index.ts:545 packages/mainmenu-extension/src/index.ts:548
 msgid "Dismiss"
 msgstr "忽略"
 
@@ -3098,7 +3138,7 @@ msgstr "总是启动首选内核"
 msgid "Remember my choice and always start the preferred kernel"
 msgstr "记住我的选择：总是启动首选内核"
 
-#: packages/apputils/src/sessioncontext.tsx:1419 packages/hub-extension/src/index.ts:179
+#: packages/apputils/src/sessioncontext.tsx:1419 packages/hub-extension/src/index.ts:178 packages/hub-extension/src/index.ts:179
 msgid "Restart"
 msgstr "重新启动"
 
@@ -3423,7 +3463,7 @@ msgstr "行号"
 msgid "Line Wrap"
 msgstr "换行"
 
-#: packages/codemirror/src/extension.ts:753 packages/codemirror/src/extension.ts:778 packages/fileeditor-extension/src/commands.ts:422 packages/fileeditor-extension/src/commands.ts:423 packages/fileeditor-extension/src/commands.ts:429 packages/fileeditor-extension/src/commands.ts:430 packages/mainmenu-extension/src/index.ts:584 packages/mainmenu-extension/src/index.ts:588
+#: packages/codemirror/src/extension.ts:753 packages/codemirror/src/extension.ts:778 packages/fileeditor-extension/src/commands.ts:422 packages/fileeditor-extension/src/commands.ts:426 packages/fileeditor-extension/src/commands.ts:429 packages/fileeditor-extension/src/commands.ts:433 packages/mainmenu-extension/src/index.ts:584 packages/mainmenu-extension/src/index.ts:588
 msgid "Match Brackets"
 msgstr "高亮显示括号对"
 
@@ -4039,47 +4079,47 @@ msgstr "下一步"
 msgid "Accept"
 msgstr "接受"
 
-#: packages/completer-extension/src/index.ts:192
+#: packages/completer-extension/src/index.ts:192 packages/completer-extension/src/index.ts:193
 msgid "Next Inline Completion"
 msgstr "下一个内联补全"
 
-#: packages/completer-extension/src/index.ts:202
+#: packages/completer-extension/src/index.ts:202 packages/completer-extension/src/index.ts:203
 msgid "Previous Inline Completion"
 msgstr "上一个内联补全"
 
-#: packages/completer-extension/src/index.ts:209
+#: packages/completer-extension/src/index.ts:209 packages/completer-extension/src/index.ts:210
 msgid "Accept Inline Completion"
 msgstr "接受内联补全"
 
-#: packages/completer-extension/src/index.ts:216
+#: packages/completer-extension/src/index.ts:216 packages/completer-extension/src/index.ts:217
 msgid "Invoke Inline Completer"
 msgstr "调用内联补全器"
 
-#: packages/completer-extension/src/index.ts:263
+#: packages/completer-extension/src/index.ts:263 packages/completer-extension/src/index.ts:264
 msgid "%1 provider"
 msgstr "%1 提供者"
 
-#: packages/completer-extension/src/index.ts:267
+#: packages/completer-extension/src/index.ts:267 packages/completer-extension/src/index.ts:268
 msgid "Timeout"
 msgstr "超时"
 
-#: packages/completer-extension/src/index.ts:268
+#: packages/completer-extension/src/index.ts:268 packages/completer-extension/src/index.ts:269
 msgid "Timeout for %1 provider (in milliseconds)."
 msgstr "%1 提供者的超时时间（以毫秒为单位）。"
 
-#: packages/completer-extension/src/index.ts:276
+#: packages/completer-extension/src/index.ts:276 packages/completer-extension/src/index.ts:277
 msgid "Debouncer delay"
 msgstr "防抖延迟时间"
 
-#: packages/completer-extension/src/index.ts:278
+#: packages/completer-extension/src/index.ts:278 packages/completer-extension/src/index.ts:279
 msgid "Time since the last key press to wait before requesting completions from %1 provider (in milliseconds)."
 msgstr "上次按键之后等待多长时间（以毫秒为单位），才向从 %1 提供商请求补全。"
 
-#: packages/completer-extension/src/index.ts:285 packages/pluginmanager/src/widget.tsx:171
+#: packages/completer-extension/src/index.ts:285 packages/completer-extension/src/index.ts:286 packages/pluginmanager/src/widget.tsx:171
 msgid "Enabled"
 msgstr "已启用"
 
-#: packages/completer-extension/src/index.ts:286
+#: packages/completer-extension/src/index.ts:286 packages/completer-extension/src/index.ts:287
 msgid "Whether to fetch completions %1 provider."
 msgstr "是否获取 %1 提供者的补全结果。"
 
@@ -4095,11 +4135,11 @@ msgstr "最大建议数量"
 msgid "The maximum number of suggestions to retrieve from history."
 msgstr "从历史记录中检索的最大建议数量。"
 
-#: packages/completer/src/inline.ts:388
+#: packages/completer/src/inline.ts:388 packages/completer/src/inline.ts:399
 msgid "%1/%2"
 msgstr "%1/%2"
 
-#: packages/completer/src/inline.ts:393
+#: packages/completer/src/inline.ts:393 packages/completer/src/inline.ts:404
 msgid "Provider: %1"
 msgstr "提供者：%1"
 
@@ -4139,7 +4179,7 @@ msgstr "运行单元格 (强制)"
 msgid "Insert Line Break"
 msgstr "插入换行符"
 
-#: packages/console-extension/src/index.ts:593 packages/console-extension/src/index.ts:596 packages/fileeditor-extension/src/commands.ts:853 packages/fileeditor-extension/src/commands.ts:854 packages/mainmenu-extension/src/index.ts:277 packages/notebook-extension/src/index.ts:3122 packages/notebook-extension/src/index.ts:3129 packages/notebook-extension/src/index.ts:3152
+#: packages/console-extension/src/index.ts:593 packages/console-extension/src/index.ts:596 packages/fileeditor-extension/src/commands.ts:853 packages/fileeditor-extension/src/commands.ts:854 packages/fileeditor-extension/src/commands.ts:857 packages/mainmenu-extension/src/index.ts:277 packages/notebook-extension/src/index.ts:3122 packages/notebook-extension/src/index.ts:3129 packages/notebook-extension/src/index.ts:3152
 msgid "Undo"
 msgstr "撤消"
 
@@ -4151,7 +4191,7 @@ msgstr "在控制台中替换选择"
 msgid "Interrupt Kernel"
 msgstr "中断内核"
 
-#: packages/console-extension/src/index.ts:627 packages/console-extension/src/index.ts:630 packages/fileeditor-extension/src/commands.ts:883 packages/fileeditor-extension/src/commands.ts:884 packages/fileeditor-extension/src/commands.ts:885 packages/mainmenu-extension/src/index.ts:287 packages/mainmenu-extension/src/index.ts:288 packages/notebook-extension/src/index.ts:3108 packages/notebook-extension/src/index.ts:3115 packages/notebook-extension/src/index.ts:3138
+#: packages/console-extension/src/index.ts:627 packages/console-extension/src/index.ts:630 packages/fileeditor-extension/src/commands.ts:883 packages/fileeditor-extension/src/commands.ts:885 packages/fileeditor-extension/src/commands.ts:887 packages/mainmenu-extension/src/index.ts:287 packages/mainmenu-extension/src/index.ts:288 packages/notebook-extension/src/index.ts:3108 packages/notebook-extension/src/index.ts:3115 packages/notebook-extension/src/index.ts:3138
 msgid "Redo"
 msgstr "重做"
 
@@ -4203,11 +4243,11 @@ msgstr "用 Shift+Enter 执行"
 msgid "Execute with Enter"
 msgstr "用 Enter 执行"
 
-#: packages/console-extension/src/index.ts:851 packages/console-extension/src/index.ts:938 packages/console-extension/src/index.ts:952 packages/fileeditor-extension/src/commands.ts:1010 packages/fileeditor-extension/src/commands.ts:1012 packages/fileeditor-extension/src/commands.ts:1041 packages/notebook-extension/src/index.ts:2027 packages/notebook-extension/src/index.ts:2034 packages/notebook-extension/src/index.ts:2045
+#: packages/console-extension/src/index.ts:851 packages/console-extension/src/index.ts:938 packages/console-extension/src/index.ts:952 packages/fileeditor-extension/src/commands.ts:1010 packages/fileeditor-extension/src/commands.ts:1012 packages/fileeditor-extension/src/commands.ts:1044 packages/notebook-extension/src/index.ts:2027 packages/notebook-extension/src/index.ts:2034 packages/notebook-extension/src/index.ts:2045
 msgid "Display the completion helper."
 msgstr "显示补全助手。"
 
-#: packages/console-extension/src/index.ts:862 packages/console-extension/src/index.ts:949 packages/console-extension/src/index.ts:963 packages/fileeditor-extension/src/commands.ts:1021 packages/fileeditor-extension/src/commands.ts:1023 packages/fileeditor-extension/src/commands.ts:1052 packages/notebook-extension/src/index.ts:2037 packages/notebook-extension/src/index.ts:2044 packages/notebook-extension/src/index.ts:2055
+#: packages/console-extension/src/index.ts:862 packages/console-extension/src/index.ts:949 packages/console-extension/src/index.ts:963 packages/fileeditor-extension/src/commands.ts:1021 packages/fileeditor-extension/src/commands.ts:1023 packages/fileeditor-extension/src/commands.ts:1055 packages/notebook-extension/src/index.ts:2037 packages/notebook-extension/src/index.ts:2044 packages/notebook-extension/src/index.ts:2055
 msgid "Select the completion suggestion."
 msgstr "选择补全建议。"
 
@@ -4885,7 +4925,7 @@ msgstr "笔记本"
 msgid "Directory"
 msgstr "目录"
 
-#: packages/docregistry/src/registry.ts:1385 packages/docregistry/src/registry.ts:1395 packages/fileeditor-extension/src/commands.ts:817 packages/fileeditor-extension/src/commands.ts:818
+#: packages/docregistry/src/registry.ts:1385 packages/docregistry/src/registry.ts:1395 packages/fileeditor-extension/src/commands.ts:817 packages/fileeditor-extension/src/commands.ts:821
 msgid "Markdown File"
 msgstr "Markdown 文件"
 
@@ -4929,7 +4969,7 @@ msgstr "YAML 文件"
 msgid "Image"
 msgstr "图片"
 
-#: packages/documentsearch-extension/src/index.ts:326 packages/fileeditor-extension/src/commands.ts:526 packages/fileeditor-extension/src/commands.ts:527 packages/json-extension/src/component.tsx:78
+#: packages/documentsearch-extension/src/index.ts:326 packages/fileeditor-extension/src/commands.ts:526 packages/fileeditor-extension/src/commands.ts:530 packages/json-extension/src/component.tsx:78
 msgid "Find…"
 msgstr "查找…"
 
@@ -5223,7 +5263,7 @@ msgstr "找不到路径 %1"
 msgid "Cannot open"
 msgstr "无法打开"
 
-#: packages/filebrowser-extension/src/index.ts:1137 packages/filebrowser-extension/src/index.ts:1145 packages/fileeditor-extension/src/commands.ts:979 packages/fileeditor-extension/src/commands.ts:980 packages/fileeditor-extension/src/commands.ts:981 packages/terminal-extension/src/index.ts:494
+#: packages/filebrowser-extension/src/index.ts:1137 packages/filebrowser-extension/src/index.ts:1145 packages/fileeditor-extension/src/commands.ts:979 packages/fileeditor-extension/src/commands.ts:981 packages/fileeditor-extension/src/commands.ts:983 packages/terminal-extension/src/index.ts:494
 msgid "Paste"
 msgstr "粘贴"
 
@@ -5235,7 +5275,7 @@ msgstr "新建文件夹"
 msgid "New File"
 msgstr "新建文件"
 
-#: packages/filebrowser-extension/src/index.ts:1174 packages/filebrowser-extension/src/index.ts:1182 packages/fileeditor-extension/src/commands.ts:816 packages/fileeditor-extension/src/commands.ts:817
+#: packages/filebrowser-extension/src/index.ts:1174 packages/filebrowser-extension/src/index.ts:1182 packages/fileeditor-extension/src/commands.ts:816 packages/fileeditor-extension/src/commands.ts:820
 msgid "New Markdown File"
 msgstr "新建Markdown文件"
 
@@ -5356,11 +5396,11 @@ msgctxt "showErrorMessage"
 msgid "Upload Error"
 msgstr "上传错误"
 
-#: packages/filebrowser-extension/src/index.ts:942 packages/filebrowser-extension/src/index.ts:950 packages/fileeditor-extension/src/commands.ts:952 packages/fileeditor-extension/src/commands.ts:953 packages/fileeditor-extension/src/commands.ts:954 packages/terminal-extension/src/index.ts:469
+#: packages/filebrowser-extension/src/index.ts:942 packages/filebrowser-extension/src/index.ts:950 packages/fileeditor-extension/src/commands.ts:952 packages/fileeditor-extension/src/commands.ts:954 packages/fileeditor-extension/src/commands.ts:956 packages/terminal-extension/src/index.ts:469
 msgid "Copy"
 msgstr "复制"
 
-#: packages/filebrowser-extension/src/index.ts:955 packages/filebrowser-extension/src/index.ts:963 packages/fileeditor-extension/src/commands.ts:918 packages/fileeditor-extension/src/commands.ts:919 packages/fileeditor-extension/src/commands.ts:920
+#: packages/filebrowser-extension/src/index.ts:955 packages/filebrowser-extension/src/index.ts:963 packages/fileeditor-extension/src/commands.ts:918 packages/fileeditor-extension/src/commands.ts:920 packages/fileeditor-extension/src/commands.ts:922
 msgid "Cut"
 msgstr "剪切"
 
@@ -5566,126 +5606,126 @@ msgstr "正在上传…"
 msgid "Complete!"
 msgstr "完成！"
 
-#: packages/fileeditor-extension/src/commands.ts:1105 packages/fileeditor-extension/src/commands.ts:1107 packages/fileeditor-extension/src/commands.ts:1119 packages/fileeditor-extension/src/commands.ts:1121 packages/fileeditor-extension/src/commands.ts:1135 packages/fileeditor-extension/src/commands.ts:1136 packages/fileeditor-extension/src/commands.ts:1137 packages/fileeditor-extension/src/commands.ts:1150 packages/fileeditor-extension/src/commands.ts:1166 packages/launcher/src/widget.tsx:117 packages/launcher/src/widget.tsx:127 packages/launcher/src/widget.tsx:296 packages/terminal-extension/src/index.ts:271
+#: packages/fileeditor-extension/src/commands.ts:1001 packages/fileeditor-extension/src/commands.ts:997 packages/fileeditor-extension/src/commands.ts:999
+msgid "Select All"
+msgstr "全选"
+
+#: packages/fileeditor-extension/src/commands.ts:1105 packages/fileeditor-extension/src/commands.ts:1107 packages/fileeditor-extension/src/commands.ts:1119 packages/fileeditor-extension/src/commands.ts:1121 packages/fileeditor-extension/src/commands.ts:1135 packages/fileeditor-extension/src/commands.ts:1137 packages/fileeditor-extension/src/commands.ts:1139 packages/fileeditor-extension/src/commands.ts:1153 packages/fileeditor-extension/src/commands.ts:1169 packages/launcher/src/widget.tsx:117 packages/launcher/src/widget.tsx:127 packages/launcher/src/widget.tsx:296 packages/terminal-extension/src/index.ts:271
 msgid "Other"
 msgstr "其他"
 
-#: packages/fileeditor-extension/src/commands.ts:1165 packages/fileeditor-extension/src/commands.ts:1167 packages/fileeditor-extension/src/commands.ts:1187 packages/fileeditor-extension/src/commands.ts:1189 packages/fileeditor-extension/src/commands.ts:1196 packages/fileeditor-extension/src/commands.ts:1202 packages/fileeditor-extension/src/commands.ts:1204 packages/fileeditor-extension/src/commands.ts:1217 packages/fileeditor-extension/src/commands.ts:1218 packages/fileeditor-extension/src/commands.ts:1219 packages/fileeditor-extension/src/commands.ts:1233 packages/fileeditor-extension/src/commands.ts:1235 packages/fileeditor-extension/src/commands.ts:1237 packages/fileeditor-extension/src/commands.ts:1248 packages/fileeditor-extension/src/commands.ts:1266
+#: packages/fileeditor-extension/src/commands.ts:1165 packages/fileeditor-extension/src/commands.ts:1167 packages/fileeditor-extension/src/commands.ts:1187 packages/fileeditor-extension/src/commands.ts:1189 packages/fileeditor-extension/src/commands.ts:1199 packages/fileeditor-extension/src/commands.ts:1202 packages/fileeditor-extension/src/commands.ts:1204 packages/fileeditor-extension/src/commands.ts:1217 packages/fileeditor-extension/src/commands.ts:1219 packages/fileeditor-extension/src/commands.ts:1221 packages/fileeditor-extension/src/commands.ts:1235 packages/fileeditor-extension/src/commands.ts:1236 packages/fileeditor-extension/src/commands.ts:1237 packages/fileeditor-extension/src/commands.ts:1251 packages/fileeditor-extension/src/commands.ts:1269
 msgid "Text Editor"
 msgstr "文本编辑器"
 
-#: packages/fileeditor-extension/src/commands.ts:1365 packages/fileeditor-extension/src/commands.ts:1367 packages/fileeditor-extension/src/commands.ts:1396
+#: packages/fileeditor-extension/src/commands.ts:1365 packages/fileeditor-extension/src/commands.ts:1367 packages/fileeditor-extension/src/commands.ts:1399
 msgid "Code Viewer"
 msgstr "代码查看器"
 
-#: packages/fileeditor-extension/src/commands.ts:1384 packages/fileeditor-extension/src/commands.ts:1386 packages/fileeditor-extension/src/commands.ts:1415
+#: packages/fileeditor-extension/src/commands.ts:1384 packages/fileeditor-extension/src/commands.ts:1386 packages/fileeditor-extension/src/commands.ts:1418
 msgid "Open Code Viewer"
 msgstr "打开代码查看器"
 
-#: packages/fileeditor-extension/src/commands.ts:280 packages/fileeditor-extension/src/commands.ts:281
+#: packages/fileeditor-extension/src/commands.ts:280 packages/fileeditor-extension/src/commands.ts:284
 msgid "Increase Text Editor Font Size"
 msgstr "增加文本编辑器字体大小"
 
-#: packages/fileeditor-extension/src/commands.ts:284 packages/fileeditor-extension/src/commands.ts:285
+#: packages/fileeditor-extension/src/commands.ts:284 packages/fileeditor-extension/src/commands.ts:288
 msgid "Decrease Text Editor Font Size"
 msgstr "减小文本编辑器字体大小"
 
-#: packages/fileeditor-extension/src/commands.ts:307 packages/fileeditor-extension/src/commands.ts:308 packages/fileeditor-extension/src/commands.ts:311 packages/fileeditor-extension/src/commands.ts:312 packages/mainmenu-extension/src/index.ts:573 packages/mainmenu-extension/src/index.ts:576 packages/notebook-extension/src/index.ts:3040 packages/notebook-extension/src/index.ts:3047 packages/notebook-extension/src/index.ts:3070
+#: packages/fileeditor-extension/src/commands.ts:307 packages/fileeditor-extension/src/commands.ts:311 packages/fileeditor-extension/src/commands.ts:315 packages/mainmenu-extension/src/index.ts:573 packages/mainmenu-extension/src/index.ts:576 packages/notebook-extension/src/index.ts:3040 packages/notebook-extension/src/index.ts:3047 packages/notebook-extension/src/index.ts:3070
 msgid "Show Line Numbers"
 msgstr "显示行号"
 
-#: packages/fileeditor-extension/src/commands.ts:312 packages/fileeditor-extension/src/commands.ts:313
+#: packages/fileeditor-extension/src/commands.ts:312 packages/fileeditor-extension/src/commands.ts:316
 msgid "Show the line numbers for the current file."
 msgstr "显示当前文件的行号。"
 
-#: packages/fileeditor-extension/src/commands.ts:352 packages/fileeditor-extension/src/commands.ts:353
+#: packages/fileeditor-extension/src/commands.ts:352 packages/fileeditor-extension/src/commands.ts:356
 msgid "Word Wrap"
 msgstr "换行"
 
-#: packages/fileeditor-extension/src/commands.ts:356 packages/fileeditor-extension/src/commands.ts:357 packages/mainmenu-extension/src/index.ts:595 packages/mainmenu-extension/src/index.ts:600
+#: packages/fileeditor-extension/src/commands.ts:356 packages/fileeditor-extension/src/commands.ts:360 packages/mainmenu-extension/src/index.ts:595 packages/mainmenu-extension/src/index.ts:600
 msgid "Wrap Words"
 msgstr "换行"
 
-#: packages/fileeditor-extension/src/commands.ts:357 packages/fileeditor-extension/src/commands.ts:358
+#: packages/fileeditor-extension/src/commands.ts:357 packages/fileeditor-extension/src/commands.ts:361
 msgid "Wrap words for the current file."
 msgstr "将当前文件中的单词换行。"
 
-#: packages/fileeditor-extension/src/commands.ts:383 packages/fileeditor-extension/src/commands.ts:384 packages/fileeditor-extension/src/index.ts:147
+#: packages/fileeditor-extension/src/commands.ts:383 packages/fileeditor-extension/src/commands.ts:387 packages/fileeditor-extension/src/index.ts:147
 msgctxt "v4"
 msgid "Spaces: %1"
 msgstr "空格：%1"
 
-#: packages/fileeditor-extension/src/commands.ts:385 packages/fileeditor-extension/src/commands.ts:386 packages/fileeditor-extension/src/index.ts:140
+#: packages/fileeditor-extension/src/commands.ts:385 packages/fileeditor-extension/src/commands.ts:389 packages/fileeditor-extension/src/index.ts:140
 msgid "Indent with Tab"
 msgstr "使用 Tab 缩进"
 
-#: packages/fileeditor-extension/src/commands.ts:430 packages/fileeditor-extension/src/commands.ts:431
+#: packages/fileeditor-extension/src/commands.ts:430 packages/fileeditor-extension/src/commands.ts:434
 msgid "Change match brackets for the current file."
 msgstr "更改当前文件的匹配括号。"
 
-#: packages/fileeditor-extension/src/commands.ts:468 packages/fileeditor-extension/src/commands.ts:469
+#: packages/fileeditor-extension/src/commands.ts:468 packages/fileeditor-extension/src/commands.ts:472
 msgid "Auto Close Brackets in Text Editor"
 msgstr "在文本编辑器中自动关闭括号"
 
-#: packages/fileeditor-extension/src/commands.ts:496 packages/fileeditor-extension/src/commands.ts:497
+#: packages/fileeditor-extension/src/commands.ts:496 packages/fileeditor-extension/src/commands.ts:500
 msgid "Auto Close Brackets"
 msgstr "自动关闭启动器"
 
-#: packages/fileeditor-extension/src/commands.ts:511 packages/fileeditor-extension/src/commands.ts:512
+#: packages/fileeditor-extension/src/commands.ts:511 packages/fileeditor-extension/src/commands.ts:515
 msgid "Editor Theme"
 msgstr "编辑器主题"
 
-#: packages/fileeditor-extension/src/commands.ts:539 packages/fileeditor-extension/src/commands.ts:540 packages/mainmenu-extension/src/index.ts:320 packages/mainmenu-extension/src/index.ts:324
+#: packages/fileeditor-extension/src/commands.ts:539 packages/fileeditor-extension/src/commands.ts:543 packages/mainmenu-extension/src/index.ts:320 packages/mainmenu-extension/src/index.ts:324
 msgid "Go to Line…"
 msgstr "跳至行..."
 
-#: packages/fileeditor-extension/src/commands.ts:564 packages/fileeditor-extension/src/commands.ts:565
+#: packages/fileeditor-extension/src/commands.ts:564 packages/fileeditor-extension/src/commands.ts:568
 msgid "Change editor language."
 msgstr "更改编辑器语言。"
 
-#: packages/fileeditor-extension/src/commands.ts:608 packages/fileeditor-extension/src/commands.ts:609
+#: packages/fileeditor-extension/src/commands.ts:608 packages/fileeditor-extension/src/commands.ts:612
 msgid "Replace Selection in Editor"
 msgstr "在编辑器中替换选择"
 
-#: packages/fileeditor-extension/src/commands.ts:626 packages/fileeditor-extension/src/commands.ts:627
+#: packages/fileeditor-extension/src/commands.ts:626 packages/fileeditor-extension/src/commands.ts:630
 msgid "Create Console for Editor"
 msgstr "为编辑器创建控制台"
 
-#: packages/fileeditor-extension/src/commands.ts:647 packages/fileeditor-extension/src/commands.ts:648
+#: packages/fileeditor-extension/src/commands.ts:647 packages/fileeditor-extension/src/commands.ts:651
 msgid "Restart Kernel"
 msgstr "重启内核"
 
-#: packages/fileeditor-extension/src/commands.ts:712 packages/fileeditor-extension/src/commands.ts:713
+#: packages/fileeditor-extension/src/commands.ts:712 packages/fileeditor-extension/src/commands.ts:716
 msgid "Run Selected Code"
 msgstr "运行选中的代码"
 
-#: packages/fileeditor-extension/src/commands.ts:750 packages/fileeditor-extension/src/commands.ts:751
+#: packages/fileeditor-extension/src/commands.ts:750 packages/fileeditor-extension/src/commands.ts:754
 msgid "Run All Code"
 msgstr "运行全部代码"
 
-#: packages/fileeditor-extension/src/commands.ts:777 packages/fileeditor-extension/src/commands.ts:778
+#: packages/fileeditor-extension/src/commands.ts:777 packages/fileeditor-extension/src/commands.ts:781
 msgid "Show Markdown Preview"
 msgstr "显示 Markdown 预览"
 
-#: packages/fileeditor-extension/src/commands.ts:788 packages/fileeditor-extension/src/commands.ts:789
+#: packages/fileeditor-extension/src/commands.ts:788 packages/fileeditor-extension/src/commands.ts:792
 msgid "New Text File"
 msgstr "新建文本文件"
 
-#: packages/fileeditor-extension/src/commands.ts:790 packages/fileeditor-extension/src/commands.ts:791
+#: packages/fileeditor-extension/src/commands.ts:790 packages/fileeditor-extension/src/commands.ts:794
 msgid "Text File"
 msgstr "文本文件"
 
-#: packages/fileeditor-extension/src/commands.ts:793 packages/fileeditor-extension/src/commands.ts:794
+#: packages/fileeditor-extension/src/commands.ts:793 packages/fileeditor-extension/src/commands.ts:797
 msgid "Create a new text file"
 msgstr "新建一个文本文件"
 
-#: packages/fileeditor-extension/src/commands.ts:818 packages/fileeditor-extension/src/commands.ts:819
+#: packages/fileeditor-extension/src/commands.ts:818 packages/fileeditor-extension/src/commands.ts:822
 msgid "Create a new markdown file"
 msgstr "新建一个 Markdown 文件"
-
-#: packages/fileeditor-extension/src/commands.ts:997 packages/fileeditor-extension/src/commands.ts:998 packages/fileeditor-extension/src/commands.ts:999
-msgid "Select All"
-msgstr "全选"
 
 #: packages/fileeditor-extension/src/index.ts:309
 msgid "Editor"
@@ -5878,41 +5918,41 @@ msgstr "不信任的 HTML"
 msgid "Trust HTML"
 msgstr "信任 HTML"
 
-#: packages/hub-extension/src/index.ts:173
+#: packages/hub-extension/src/index.ts:172 packages/hub-extension/src/index.ts:173
 msgid "Server unavailable or unreachable"
 msgstr "服务器不可用或无法访问"
 
-#: packages/hub-extension/src/index.ts:174
+#: packages/hub-extension/src/index.ts:173 packages/hub-extension/src/index.ts:174
 msgid "Your server at %1 is not running.\n"
 "Would you like to restart it?"
 msgstr "您在 %1 的服务器未运行。\n"
 "您想重新启动吗？"
 
-#: packages/hub-extension/src/index.ts:74
+#: packages/hub-extension/src/index.ts:73 packages/hub-extension/src/index.ts:74
 msgid "Restart Server"
 msgstr "重启服务器"
 
-#: packages/hub-extension/src/index.ts:75
+#: packages/hub-extension/src/index.ts:74 packages/hub-extension/src/index.ts:75
 msgid "Request that the Hub restart this server"
 msgstr "请求 Hub 重启此服务器"
 
-#: packages/hub-extension/src/index.ts:82
+#: packages/hub-extension/src/index.ts:81 packages/hub-extension/src/index.ts:82
 msgid "Hub Control Panel"
 msgstr "Hub 控制面板"
 
-#: packages/hub-extension/src/index.ts:83
+#: packages/hub-extension/src/index.ts:82 packages/hub-extension/src/index.ts:83
 msgid "Open the Hub control panel in a new browser tab"
 msgstr "在新的游览器选项卡中打开 Hub 控制面板"
 
-#: packages/hub-extension/src/index.ts:90 packages/mainmenu-extension/src/index.ts:440 packages/mainmenu-extension/src/index.ts:443
+#: packages/hub-extension/src/index.ts:89 packages/hub-extension/src/index.ts:90 packages/mainmenu-extension/src/index.ts:440 packages/mainmenu-extension/src/index.ts:443
 msgid "Log Out"
 msgstr "注销"
 
-#: packages/hub-extension/src/index.ts:91
+#: packages/hub-extension/src/index.ts:90 packages/hub-extension/src/index.ts:91
 msgid "Log out of the Hub"
 msgstr "退出 Hub"
 
-#: packages/hub-extension/src/index.ts:99
+#: packages/hub-extension/src/index.ts:98 packages/hub-extension/src/index.ts:99
 msgid "Hub"
 msgstr "Hub"
 
@@ -7661,7 +7701,7 @@ msgstr "侧面板操作"
 msgid "side panel content"
 msgstr "侧面板内容"
 
-#: packages/ui-components/src/components/toolbar.tsx:1140 packages/ui-components/src/components/toolbar.tsx:1180 packages/ui-components/src/components/toolbar.tsx:1191 packages/ui-components/src/components/toolbar.tsx:1192
+#: packages/ui-components/src/components/toolbar.tsx:1140 packages/ui-components/src/components/toolbar.tsx:1180 packages/ui-components/src/components/toolbar.tsx:1192 packages/ui-components/src/components/toolbar.tsx:1195
 msgid "More commands"
 msgstr "更多命令"
 
