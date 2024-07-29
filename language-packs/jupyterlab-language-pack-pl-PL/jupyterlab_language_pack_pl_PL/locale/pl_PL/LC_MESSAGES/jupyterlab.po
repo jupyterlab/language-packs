@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2024-07-18 13:27\n"
+"PO-Revision-Date: 2024-07-19 10:57\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -658,9 +658,49 @@ msgctxt "settings"
 msgid "Inline Completer"
 msgstr ""
 
+#: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/description
+msgctxt "settings"
+msgid "When an inline completion gets cancelled the editor may change its size rapidly. When typing in the editor, the completions may get dismissed frequently causing a noticeable jitter of the editor height. Adding a delay prevents the jitter on typing. The value should be in milliseconds."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/title
+msgctxt "settings"
+msgid "Editor resize delay"
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/description
+msgctxt "settings"
+msgid "Number of lines of inline completion to show before collapsing. Setting zero disables the limit."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/title
+msgctxt "settings"
+msgid "Limit inline completion lines"
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/description
+msgctxt "settings"
+msgid "Number of lines to reserve for the ghost text with inline completion suggestion."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/title
+msgctxt "settings"
+msgid "Reserve lines for inline completion"
+msgstr ""
+
 #: /packages/completer-extension/schema/inline-completer.json:/properties/providers/title
 msgctxt "settings"
 msgid "Inline completion providers"
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/reserveSpaceForLongest/description
+msgctxt "settings"
+msgid "When multiple completions are returned, reserve blank space for up to as many lines as in the longest completion candidate to avoid resizing editor when cycling between the suggestions."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/reserveSpaceForLongest/title
+msgctxt "settings"
+msgid "Reserve space for the longest candidate"
 msgstr ""
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showShortcuts/description
@@ -4056,11 +4096,11 @@ msgstr ""
 msgid "The maximum number of suggestions to retrieve from history."
 msgstr ""
 
-#: packages/completer/src/inline.ts:388
+#: packages/completer/src/inline.ts:388 packages/completer/src/inline.ts:399
 msgid "%1/%2"
 msgstr ""
 
-#: packages/completer/src/inline.ts:393
+#: packages/completer/src/inline.ts:393 packages/completer/src/inline.ts:404
 msgid "Provider: %1"
 msgstr ""
 

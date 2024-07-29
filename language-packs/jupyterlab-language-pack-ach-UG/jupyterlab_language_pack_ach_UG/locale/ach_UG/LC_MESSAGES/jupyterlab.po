@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Acholi\n"
 "Language: ach_UG\n"
-"PO-Revision-Date: 2024-07-06 08:59\n"
+"PO-Revision-Date: 2024-07-19 10:58\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -639,10 +639,50 @@ msgctxt "settings"
 msgid "Inline Completer"
 msgstr "crwdns16670:0crwdne16670:0"
 
+#: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/description
+msgctxt "settings"
+msgid "When an inline completion gets cancelled the editor may change its size rapidly. When typing in the editor, the completions may get dismissed frequently causing a noticeable jitter of the editor height. Adding a delay prevents the jitter on typing. The value should be in milliseconds."
+msgstr "crwdns17130:0crwdne17130:0"
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/title
+msgctxt "settings"
+msgid "Editor resize delay"
+msgstr "crwdns17132:0crwdne17132:0"
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/description
+msgctxt "settings"
+msgid "Number of lines of inline completion to show before collapsing. Setting zero disables the limit."
+msgstr "crwdns17134:0crwdne17134:0"
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/title
+msgctxt "settings"
+msgid "Limit inline completion lines"
+msgstr "crwdns17136:0crwdne17136:0"
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/description
+msgctxt "settings"
+msgid "Number of lines to reserve for the ghost text with inline completion suggestion."
+msgstr "crwdns17138:0crwdne17138:0"
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/title
+msgctxt "settings"
+msgid "Reserve lines for inline completion"
+msgstr "crwdns17140:0crwdne17140:0"
+
 #: /packages/completer-extension/schema/inline-completer.json:/properties/providers/title
 msgctxt "settings"
 msgid "Inline completion providers"
 msgstr "crwdns16672:0crwdne16672:0"
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/reserveSpaceForLongest/description
+msgctxt "settings"
+msgid "When multiple completions are returned, reserve blank space for up to as many lines as in the longest completion candidate to avoid resizing editor when cycling between the suggestions."
+msgstr "crwdns17142:0crwdne17142:0"
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/reserveSpaceForLongest/title
+msgctxt "settings"
+msgid "Reserve space for the longest candidate"
+msgstr "crwdns17144:0crwdne17144:0"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showShortcuts/description
 msgctxt "settings"
@@ -4005,11 +4045,11 @@ msgstr "crwdns16768:0crwdne16768:0"
 msgid "The maximum number of suggestions to retrieve from history."
 msgstr "crwdns16770:0crwdne16770:0"
 
-#: packages/completer/src/inline.ts:388
+#: packages/completer/src/inline.ts:388 packages/completer/src/inline.ts:399
 msgid "%1/%2"
 msgstr "crwdns16772:0%1crwdnd16772:0%2crwdne16772:0"
 
-#: packages/completer/src/inline.ts:393
+#: packages/completer/src/inline.ts:393 packages/completer/src/inline.ts:404
 msgid "Provider: %1"
 msgstr "crwdns16774:0%1crwdne16774:0"
 

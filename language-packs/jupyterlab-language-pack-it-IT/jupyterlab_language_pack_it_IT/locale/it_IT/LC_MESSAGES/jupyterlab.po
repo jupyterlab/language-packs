@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Italian\n"
 "Language: it_IT\n"
-"PO-Revision-Date: 2024-05-07 12:01\n"
+"PO-Revision-Date: 2024-07-19 10:57\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -640,10 +640,50 @@ msgctxt "settings"
 msgid "Inline Completer"
 msgstr "Completatore In Linea"
 
+#: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/description
+msgctxt "settings"
+msgid "When an inline completion gets cancelled the editor may change its size rapidly. When typing in the editor, the completions may get dismissed frequently causing a noticeable jitter of the editor height. Adding a delay prevents the jitter on typing. The value should be in milliseconds."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/title
+msgctxt "settings"
+msgid "Editor resize delay"
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/description
+msgctxt "settings"
+msgid "Number of lines of inline completion to show before collapsing. Setting zero disables the limit."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/title
+msgctxt "settings"
+msgid "Limit inline completion lines"
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/description
+msgctxt "settings"
+msgid "Number of lines to reserve for the ghost text with inline completion suggestion."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/title
+msgctxt "settings"
+msgid "Reserve lines for inline completion"
+msgstr ""
+
 #: /packages/completer-extension/schema/inline-completer.json:/properties/providers/title
 msgctxt "settings"
 msgid "Inline completion providers"
 msgstr "Fornitori del completamento in linea"
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/reserveSpaceForLongest/description
+msgctxt "settings"
+msgid "When multiple completions are returned, reserve blank space for up to as many lines as in the longest completion candidate to avoid resizing editor when cycling between the suggestions."
+msgstr ""
+
+#: /packages/completer-extension/schema/inline-completer.json:/properties/reserveSpaceForLongest/title
+msgctxt "settings"
+msgid "Reserve space for the longest candidate"
+msgstr ""
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showShortcuts/description
 msgctxt "settings"
@@ -2863,7 +2903,7 @@ msgstr "Aumenta la Dimensione del Font del Contenuto"
 msgid "Increase UI Font Size"
 msgstr "Aumenta la Dimensione del Font dell'UI"
 
-#: packages/apputils-extension/src/themesplugins.ts:219 packages/fileeditor-extension/src/commands.ts:281 packages/fileeditor-extension/src/commands.ts:282
+#: packages/apputils-extension/src/themesplugins.ts:219 packages/fileeditor-extension/src/commands.ts:281 packages/fileeditor-extension/src/commands.ts:285
 msgid "Increase Font Size"
 msgstr "Aumenta Dimensioni del File"
 
@@ -2879,7 +2919,7 @@ msgstr "Riduci la Dimensione del Font del Contenuto"
 msgid "Decrease UI Font Size"
 msgstr "Riduci la Dimensione del Font dell'UI"
 
-#: packages/apputils-extension/src/themesplugins.ts:235 packages/fileeditor-extension/src/commands.ts:285 packages/fileeditor-extension/src/commands.ts:286
+#: packages/apputils-extension/src/themesplugins.ts:235 packages/fileeditor-extension/src/commands.ts:285 packages/fileeditor-extension/src/commands.ts:289
 msgid "Decrease Font Size"
 msgstr "Riduci Dimensioni del File"
 
@@ -2911,7 +2951,7 @@ msgstr ""
 msgid "JupyterLab workspace File"
 msgstr "File dell'area di lavoro di JupyterLab"
 
-#: packages/apputils/src/dialog.tsx:47 packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:425 packages/hub-extension/src/index.ts:180 packages/lsp/src/adapters/adapter.ts:497 packages/mainmenu-extension/src/index.ts:545 packages/mainmenu-extension/src/index.ts:548
+#: packages/apputils/src/dialog.tsx:47 packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:425 packages/hub-extension/src/index.ts:179 packages/hub-extension/src/index.ts:180 packages/lsp/src/adapters/adapter.ts:497 packages/mainmenu-extension/src/index.ts:545 packages/mainmenu-extension/src/index.ts:548
 msgid "Dismiss"
 msgstr "Scarta"
 
@@ -3011,7 +3051,7 @@ msgstr ""
 msgid "Remember my choice and always start the preferred kernel"
 msgstr ""
 
-#: packages/apputils/src/sessioncontext.tsx:1419 packages/hub-extension/src/index.ts:179
+#: packages/apputils/src/sessioncontext.tsx:1419 packages/hub-extension/src/index.ts:178 packages/hub-extension/src/index.ts:179
 msgid "Restart"
 msgstr "Riavvia"
 
@@ -3337,7 +3377,7 @@ msgstr "Numeri della Linea"
 msgid "Line Wrap"
 msgstr ""
 
-#: packages/codemirror/src/extension.ts:753 packages/codemirror/src/extension.ts:778 packages/fileeditor-extension/src/commands.ts:422 packages/fileeditor-extension/src/commands.ts:423 packages/fileeditor-extension/src/commands.ts:429 packages/fileeditor-extension/src/commands.ts:430 packages/mainmenu-extension/src/index.ts:584 packages/mainmenu-extension/src/index.ts:588
+#: packages/codemirror/src/extension.ts:753 packages/codemirror/src/extension.ts:778 packages/fileeditor-extension/src/commands.ts:422 packages/fileeditor-extension/src/commands.ts:426 packages/fileeditor-extension/src/commands.ts:429 packages/fileeditor-extension/src/commands.ts:433 packages/mainmenu-extension/src/index.ts:584 packages/mainmenu-extension/src/index.ts:588
 msgid "Match Brackets"
 msgstr "Abbina Parentesi"
 
@@ -3953,47 +3993,47 @@ msgstr "Successivo"
 msgid "Accept"
 msgstr ""
 
-#: packages/completer-extension/src/index.ts:192
+#: packages/completer-extension/src/index.ts:192 packages/completer-extension/src/index.ts:193
 msgid "Next Inline Completion"
 msgstr ""
 
-#: packages/completer-extension/src/index.ts:202
+#: packages/completer-extension/src/index.ts:202 packages/completer-extension/src/index.ts:203
 msgid "Previous Inline Completion"
 msgstr ""
 
-#: packages/completer-extension/src/index.ts:209
+#: packages/completer-extension/src/index.ts:209 packages/completer-extension/src/index.ts:210
 msgid "Accept Inline Completion"
 msgstr ""
 
-#: packages/completer-extension/src/index.ts:216
+#: packages/completer-extension/src/index.ts:216 packages/completer-extension/src/index.ts:217
 msgid "Invoke Inline Completer"
 msgstr ""
 
-#: packages/completer-extension/src/index.ts:263
+#: packages/completer-extension/src/index.ts:263 packages/completer-extension/src/index.ts:264
 msgid "%1 provider"
 msgstr ""
 
-#: packages/completer-extension/src/index.ts:267
+#: packages/completer-extension/src/index.ts:267 packages/completer-extension/src/index.ts:268
 msgid "Timeout"
 msgstr ""
 
-#: packages/completer-extension/src/index.ts:268
+#: packages/completer-extension/src/index.ts:268 packages/completer-extension/src/index.ts:269
 msgid "Timeout for %1 provider (in milliseconds)."
 msgstr ""
 
-#: packages/completer-extension/src/index.ts:276
+#: packages/completer-extension/src/index.ts:276 packages/completer-extension/src/index.ts:277
 msgid "Debouncer delay"
 msgstr ""
 
-#: packages/completer-extension/src/index.ts:278
+#: packages/completer-extension/src/index.ts:278 packages/completer-extension/src/index.ts:279
 msgid "Time since the last key press to wait before requesting completions from %1 provider (in milliseconds)."
 msgstr ""
 
-#: packages/completer-extension/src/index.ts:285 packages/pluginmanager/src/widget.tsx:171
+#: packages/completer-extension/src/index.ts:285 packages/completer-extension/src/index.ts:286 packages/pluginmanager/src/widget.tsx:171
 msgid "Enabled"
 msgstr ""
 
-#: packages/completer-extension/src/index.ts:286
+#: packages/completer-extension/src/index.ts:286 packages/completer-extension/src/index.ts:287
 msgid "Whether to fetch completions %1 provider."
 msgstr ""
 
@@ -4009,11 +4049,11 @@ msgstr ""
 msgid "The maximum number of suggestions to retrieve from history."
 msgstr ""
 
-#: packages/completer/src/inline.ts:388
+#: packages/completer/src/inline.ts:388 packages/completer/src/inline.ts:399
 msgid "%1/%2"
 msgstr ""
 
-#: packages/completer/src/inline.ts:393
+#: packages/completer/src/inline.ts:393 packages/completer/src/inline.ts:404
 msgid "Provider: %1"
 msgstr ""
 
@@ -4053,7 +4093,7 @@ msgstr "Esegui Cella (forzata)"
 msgid "Insert Line Break"
 msgstr "Inserisci Rottura Linea"
 
-#: packages/console-extension/src/index.ts:593 packages/console-extension/src/index.ts:596 packages/fileeditor-extension/src/commands.ts:853 packages/fileeditor-extension/src/commands.ts:854 packages/mainmenu-extension/src/index.ts:277 packages/notebook-extension/src/index.ts:3122 packages/notebook-extension/src/index.ts:3129 packages/notebook-extension/src/index.ts:3152
+#: packages/console-extension/src/index.ts:593 packages/console-extension/src/index.ts:596 packages/fileeditor-extension/src/commands.ts:853 packages/fileeditor-extension/src/commands.ts:854 packages/fileeditor-extension/src/commands.ts:857 packages/mainmenu-extension/src/index.ts:277 packages/notebook-extension/src/index.ts:3122 packages/notebook-extension/src/index.ts:3129 packages/notebook-extension/src/index.ts:3152
 msgid "Undo"
 msgstr "Annulla"
 
@@ -4065,7 +4105,7 @@ msgstr "Sostituisci la Selezione nella Console"
 msgid "Interrupt Kernel"
 msgstr "Interrompi Kernel"
 
-#: packages/console-extension/src/index.ts:627 packages/console-extension/src/index.ts:630 packages/fileeditor-extension/src/commands.ts:883 packages/fileeditor-extension/src/commands.ts:884 packages/fileeditor-extension/src/commands.ts:885 packages/mainmenu-extension/src/index.ts:287 packages/mainmenu-extension/src/index.ts:288 packages/notebook-extension/src/index.ts:3108 packages/notebook-extension/src/index.ts:3115 packages/notebook-extension/src/index.ts:3138
+#: packages/console-extension/src/index.ts:627 packages/console-extension/src/index.ts:630 packages/fileeditor-extension/src/commands.ts:883 packages/fileeditor-extension/src/commands.ts:885 packages/fileeditor-extension/src/commands.ts:887 packages/mainmenu-extension/src/index.ts:287 packages/mainmenu-extension/src/index.ts:288 packages/notebook-extension/src/index.ts:3108 packages/notebook-extension/src/index.ts:3115 packages/notebook-extension/src/index.ts:3138
 msgid "Redo"
 msgstr "Ripeti"
 
@@ -4117,11 +4157,11 @@ msgstr "Esegui con Shift+Invio"
 msgid "Execute with Enter"
 msgstr "Esegui con Invio"
 
-#: packages/console-extension/src/index.ts:851 packages/console-extension/src/index.ts:938 packages/console-extension/src/index.ts:952 packages/fileeditor-extension/src/commands.ts:1010 packages/fileeditor-extension/src/commands.ts:1012 packages/fileeditor-extension/src/commands.ts:1041 packages/notebook-extension/src/index.ts:2027 packages/notebook-extension/src/index.ts:2034 packages/notebook-extension/src/index.ts:2045
+#: packages/console-extension/src/index.ts:851 packages/console-extension/src/index.ts:938 packages/console-extension/src/index.ts:952 packages/fileeditor-extension/src/commands.ts:1010 packages/fileeditor-extension/src/commands.ts:1012 packages/fileeditor-extension/src/commands.ts:1044 packages/notebook-extension/src/index.ts:2027 packages/notebook-extension/src/index.ts:2034 packages/notebook-extension/src/index.ts:2045
 msgid "Display the completion helper."
 msgstr ""
 
-#: packages/console-extension/src/index.ts:862 packages/console-extension/src/index.ts:949 packages/console-extension/src/index.ts:963 packages/fileeditor-extension/src/commands.ts:1021 packages/fileeditor-extension/src/commands.ts:1023 packages/fileeditor-extension/src/commands.ts:1052 packages/notebook-extension/src/index.ts:2037 packages/notebook-extension/src/index.ts:2044 packages/notebook-extension/src/index.ts:2055
+#: packages/console-extension/src/index.ts:862 packages/console-extension/src/index.ts:949 packages/console-extension/src/index.ts:963 packages/fileeditor-extension/src/commands.ts:1021 packages/fileeditor-extension/src/commands.ts:1023 packages/fileeditor-extension/src/commands.ts:1055 packages/notebook-extension/src/index.ts:2037 packages/notebook-extension/src/index.ts:2044 packages/notebook-extension/src/index.ts:2055
 msgid "Select the completion suggestion."
 msgstr ""
 
@@ -4798,7 +4838,7 @@ msgstr ""
 msgid "Directory"
 msgstr "Cartella"
 
-#: packages/docregistry/src/registry.ts:1385 packages/docregistry/src/registry.ts:1395 packages/fileeditor-extension/src/commands.ts:817 packages/fileeditor-extension/src/commands.ts:818
+#: packages/docregistry/src/registry.ts:1385 packages/docregistry/src/registry.ts:1395 packages/fileeditor-extension/src/commands.ts:817 packages/fileeditor-extension/src/commands.ts:821
 msgid "Markdown File"
 msgstr "File di Markdown"
 
@@ -4842,7 +4882,7 @@ msgstr "File YAML"
 msgid "Image"
 msgstr "Immagine"
 
-#: packages/documentsearch-extension/src/index.ts:326 packages/fileeditor-extension/src/commands.ts:526 packages/fileeditor-extension/src/commands.ts:527 packages/json-extension/src/component.tsx:78
+#: packages/documentsearch-extension/src/index.ts:326 packages/fileeditor-extension/src/commands.ts:526 packages/fileeditor-extension/src/commands.ts:530 packages/json-extension/src/component.tsx:78
 msgid "Find…"
 msgstr "Trova…"
 
@@ -5141,7 +5181,7 @@ msgstr "Impossibile trovare il percorso: %1"
 msgid "Cannot open"
 msgstr "Impossibile aprire"
 
-#: packages/filebrowser-extension/src/index.ts:1137 packages/filebrowser-extension/src/index.ts:1145 packages/fileeditor-extension/src/commands.ts:979 packages/fileeditor-extension/src/commands.ts:980 packages/fileeditor-extension/src/commands.ts:981 packages/terminal-extension/src/index.ts:494
+#: packages/filebrowser-extension/src/index.ts:1137 packages/filebrowser-extension/src/index.ts:1145 packages/fileeditor-extension/src/commands.ts:979 packages/fileeditor-extension/src/commands.ts:981 packages/fileeditor-extension/src/commands.ts:983 packages/terminal-extension/src/index.ts:494
 msgid "Paste"
 msgstr "Incolla"
 
@@ -5153,7 +5193,7 @@ msgstr "Nuova Cartella"
 msgid "New File"
 msgstr "Nuovo File"
 
-#: packages/filebrowser-extension/src/index.ts:1174 packages/filebrowser-extension/src/index.ts:1182 packages/fileeditor-extension/src/commands.ts:816 packages/fileeditor-extension/src/commands.ts:817
+#: packages/filebrowser-extension/src/index.ts:1174 packages/filebrowser-extension/src/index.ts:1182 packages/fileeditor-extension/src/commands.ts:816 packages/fileeditor-extension/src/commands.ts:820
 msgid "New Markdown File"
 msgstr "Nuovo File di Markdown"
 
@@ -5274,11 +5314,11 @@ msgctxt "showErrorMessage"
 msgid "Upload Error"
 msgstr "Errore di Caricamento"
 
-#: packages/filebrowser-extension/src/index.ts:942 packages/filebrowser-extension/src/index.ts:950 packages/fileeditor-extension/src/commands.ts:952 packages/fileeditor-extension/src/commands.ts:953 packages/fileeditor-extension/src/commands.ts:954 packages/terminal-extension/src/index.ts:469
+#: packages/filebrowser-extension/src/index.ts:942 packages/filebrowser-extension/src/index.ts:950 packages/fileeditor-extension/src/commands.ts:952 packages/fileeditor-extension/src/commands.ts:954 packages/fileeditor-extension/src/commands.ts:956 packages/terminal-extension/src/index.ts:469
 msgid "Copy"
 msgstr "Copia"
 
-#: packages/filebrowser-extension/src/index.ts:955 packages/filebrowser-extension/src/index.ts:963 packages/fileeditor-extension/src/commands.ts:918 packages/fileeditor-extension/src/commands.ts:919 packages/fileeditor-extension/src/commands.ts:920
+#: packages/filebrowser-extension/src/index.ts:955 packages/filebrowser-extension/src/index.ts:963 packages/fileeditor-extension/src/commands.ts:918 packages/fileeditor-extension/src/commands.ts:920 packages/fileeditor-extension/src/commands.ts:922
 msgid "Cut"
 msgstr "Taglia"
 
@@ -5485,126 +5525,126 @@ msgstr "Caricando…"
 msgid "Complete!"
 msgstr "Completo!"
 
-#: packages/fileeditor-extension/src/commands.ts:1105 packages/fileeditor-extension/src/commands.ts:1107 packages/fileeditor-extension/src/commands.ts:1119 packages/fileeditor-extension/src/commands.ts:1121 packages/fileeditor-extension/src/commands.ts:1135 packages/fileeditor-extension/src/commands.ts:1136 packages/fileeditor-extension/src/commands.ts:1137 packages/fileeditor-extension/src/commands.ts:1150 packages/fileeditor-extension/src/commands.ts:1166 packages/launcher/src/widget.tsx:117 packages/launcher/src/widget.tsx:127 packages/launcher/src/widget.tsx:296 packages/terminal-extension/src/index.ts:271
+#: packages/fileeditor-extension/src/commands.ts:1001 packages/fileeditor-extension/src/commands.ts:997 packages/fileeditor-extension/src/commands.ts:999
+msgid "Select All"
+msgstr "Seleziona Tutto"
+
+#: packages/fileeditor-extension/src/commands.ts:1105 packages/fileeditor-extension/src/commands.ts:1107 packages/fileeditor-extension/src/commands.ts:1119 packages/fileeditor-extension/src/commands.ts:1121 packages/fileeditor-extension/src/commands.ts:1135 packages/fileeditor-extension/src/commands.ts:1137 packages/fileeditor-extension/src/commands.ts:1139 packages/fileeditor-extension/src/commands.ts:1153 packages/fileeditor-extension/src/commands.ts:1169 packages/launcher/src/widget.tsx:117 packages/launcher/src/widget.tsx:127 packages/launcher/src/widget.tsx:296 packages/terminal-extension/src/index.ts:271
 msgid "Other"
 msgstr "Altro"
 
-#: packages/fileeditor-extension/src/commands.ts:1165 packages/fileeditor-extension/src/commands.ts:1167 packages/fileeditor-extension/src/commands.ts:1187 packages/fileeditor-extension/src/commands.ts:1189 packages/fileeditor-extension/src/commands.ts:1196 packages/fileeditor-extension/src/commands.ts:1202 packages/fileeditor-extension/src/commands.ts:1204 packages/fileeditor-extension/src/commands.ts:1217 packages/fileeditor-extension/src/commands.ts:1218 packages/fileeditor-extension/src/commands.ts:1219 packages/fileeditor-extension/src/commands.ts:1233 packages/fileeditor-extension/src/commands.ts:1235 packages/fileeditor-extension/src/commands.ts:1237 packages/fileeditor-extension/src/commands.ts:1248 packages/fileeditor-extension/src/commands.ts:1266
+#: packages/fileeditor-extension/src/commands.ts:1165 packages/fileeditor-extension/src/commands.ts:1167 packages/fileeditor-extension/src/commands.ts:1187 packages/fileeditor-extension/src/commands.ts:1189 packages/fileeditor-extension/src/commands.ts:1199 packages/fileeditor-extension/src/commands.ts:1202 packages/fileeditor-extension/src/commands.ts:1204 packages/fileeditor-extension/src/commands.ts:1217 packages/fileeditor-extension/src/commands.ts:1219 packages/fileeditor-extension/src/commands.ts:1221 packages/fileeditor-extension/src/commands.ts:1235 packages/fileeditor-extension/src/commands.ts:1236 packages/fileeditor-extension/src/commands.ts:1237 packages/fileeditor-extension/src/commands.ts:1251 packages/fileeditor-extension/src/commands.ts:1269
 msgid "Text Editor"
 msgstr "Editor di Testo"
 
-#: packages/fileeditor-extension/src/commands.ts:1365 packages/fileeditor-extension/src/commands.ts:1367 packages/fileeditor-extension/src/commands.ts:1396
+#: packages/fileeditor-extension/src/commands.ts:1365 packages/fileeditor-extension/src/commands.ts:1367 packages/fileeditor-extension/src/commands.ts:1399
 msgid "Code Viewer"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:1384 packages/fileeditor-extension/src/commands.ts:1386 packages/fileeditor-extension/src/commands.ts:1415
+#: packages/fileeditor-extension/src/commands.ts:1384 packages/fileeditor-extension/src/commands.ts:1386 packages/fileeditor-extension/src/commands.ts:1418
 msgid "Open Code Viewer"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:280 packages/fileeditor-extension/src/commands.ts:281
+#: packages/fileeditor-extension/src/commands.ts:280 packages/fileeditor-extension/src/commands.ts:284
 msgid "Increase Text Editor Font Size"
 msgstr "Aumenta Dimensione del Font dell'Editor di Testo"
 
-#: packages/fileeditor-extension/src/commands.ts:284 packages/fileeditor-extension/src/commands.ts:285
+#: packages/fileeditor-extension/src/commands.ts:284 packages/fileeditor-extension/src/commands.ts:288
 msgid "Decrease Text Editor Font Size"
 msgstr "Riduci Dimensione del Font dell'Editor di Testo"
 
-#: packages/fileeditor-extension/src/commands.ts:307 packages/fileeditor-extension/src/commands.ts:308 packages/fileeditor-extension/src/commands.ts:311 packages/fileeditor-extension/src/commands.ts:312 packages/mainmenu-extension/src/index.ts:573 packages/mainmenu-extension/src/index.ts:576 packages/notebook-extension/src/index.ts:3040 packages/notebook-extension/src/index.ts:3047 packages/notebook-extension/src/index.ts:3070
+#: packages/fileeditor-extension/src/commands.ts:307 packages/fileeditor-extension/src/commands.ts:311 packages/fileeditor-extension/src/commands.ts:315 packages/mainmenu-extension/src/index.ts:573 packages/mainmenu-extension/src/index.ts:576 packages/notebook-extension/src/index.ts:3040 packages/notebook-extension/src/index.ts:3047 packages/notebook-extension/src/index.ts:3070
 msgid "Show Line Numbers"
 msgstr "Mostra Numeri di Linea"
 
-#: packages/fileeditor-extension/src/commands.ts:312 packages/fileeditor-extension/src/commands.ts:313
+#: packages/fileeditor-extension/src/commands.ts:312 packages/fileeditor-extension/src/commands.ts:316
 msgid "Show the line numbers for the current file."
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:352 packages/fileeditor-extension/src/commands.ts:353
+#: packages/fileeditor-extension/src/commands.ts:352 packages/fileeditor-extension/src/commands.ts:356
 msgid "Word Wrap"
 msgstr "A Capo Automatico"
 
-#: packages/fileeditor-extension/src/commands.ts:356 packages/fileeditor-extension/src/commands.ts:357 packages/mainmenu-extension/src/index.ts:595 packages/mainmenu-extension/src/index.ts:600
+#: packages/fileeditor-extension/src/commands.ts:356 packages/fileeditor-extension/src/commands.ts:360 packages/mainmenu-extension/src/index.ts:595 packages/mainmenu-extension/src/index.ts:600
 msgid "Wrap Words"
 msgstr "A Capo Automatico"
 
-#: packages/fileeditor-extension/src/commands.ts:357 packages/fileeditor-extension/src/commands.ts:358
+#: packages/fileeditor-extension/src/commands.ts:357 packages/fileeditor-extension/src/commands.ts:361
 msgid "Wrap words for the current file."
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:383 packages/fileeditor-extension/src/commands.ts:384 packages/fileeditor-extension/src/index.ts:147
+#: packages/fileeditor-extension/src/commands.ts:383 packages/fileeditor-extension/src/commands.ts:387 packages/fileeditor-extension/src/index.ts:147
 msgctxt "v4"
 msgid "Spaces: %1"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:385 packages/fileeditor-extension/src/commands.ts:386 packages/fileeditor-extension/src/index.ts:140
+#: packages/fileeditor-extension/src/commands.ts:385 packages/fileeditor-extension/src/commands.ts:389 packages/fileeditor-extension/src/index.ts:140
 msgid "Indent with Tab"
 msgstr "Rientro con Tab"
 
-#: packages/fileeditor-extension/src/commands.ts:430 packages/fileeditor-extension/src/commands.ts:431
+#: packages/fileeditor-extension/src/commands.ts:430 packages/fileeditor-extension/src/commands.ts:434
 msgid "Change match brackets for the current file."
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:468 packages/fileeditor-extension/src/commands.ts:469
+#: packages/fileeditor-extension/src/commands.ts:468 packages/fileeditor-extension/src/commands.ts:472
 msgid "Auto Close Brackets in Text Editor"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:496 packages/fileeditor-extension/src/commands.ts:497
+#: packages/fileeditor-extension/src/commands.ts:496 packages/fileeditor-extension/src/commands.ts:500
 msgid "Auto Close Brackets"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:511 packages/fileeditor-extension/src/commands.ts:512
+#: packages/fileeditor-extension/src/commands.ts:511 packages/fileeditor-extension/src/commands.ts:515
 msgid "Editor Theme"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:539 packages/fileeditor-extension/src/commands.ts:540 packages/mainmenu-extension/src/index.ts:320 packages/mainmenu-extension/src/index.ts:324
+#: packages/fileeditor-extension/src/commands.ts:539 packages/fileeditor-extension/src/commands.ts:543 packages/mainmenu-extension/src/index.ts:320 packages/mainmenu-extension/src/index.ts:324
 msgid "Go to Line…"
 msgstr "Vai all Linea…"
 
-#: packages/fileeditor-extension/src/commands.ts:564 packages/fileeditor-extension/src/commands.ts:565
+#: packages/fileeditor-extension/src/commands.ts:564 packages/fileeditor-extension/src/commands.ts:568
 msgid "Change editor language."
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:608 packages/fileeditor-extension/src/commands.ts:609
+#: packages/fileeditor-extension/src/commands.ts:608 packages/fileeditor-extension/src/commands.ts:612
 msgid "Replace Selection in Editor"
 msgstr "Sostituisci la Selezione nell'Editor"
 
-#: packages/fileeditor-extension/src/commands.ts:626 packages/fileeditor-extension/src/commands.ts:627
+#: packages/fileeditor-extension/src/commands.ts:626 packages/fileeditor-extension/src/commands.ts:630
 msgid "Create Console for Editor"
 msgstr "Crea Console per l'Editor"
 
-#: packages/fileeditor-extension/src/commands.ts:647 packages/fileeditor-extension/src/commands.ts:648
+#: packages/fileeditor-extension/src/commands.ts:647 packages/fileeditor-extension/src/commands.ts:651
 msgid "Restart Kernel"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:712 packages/fileeditor-extension/src/commands.ts:713
+#: packages/fileeditor-extension/src/commands.ts:712 packages/fileeditor-extension/src/commands.ts:716
 msgid "Run Selected Code"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:750 packages/fileeditor-extension/src/commands.ts:751
+#: packages/fileeditor-extension/src/commands.ts:750 packages/fileeditor-extension/src/commands.ts:754
 msgid "Run All Code"
 msgstr "Esegui Tutto il Codice"
 
-#: packages/fileeditor-extension/src/commands.ts:777 packages/fileeditor-extension/src/commands.ts:778
+#: packages/fileeditor-extension/src/commands.ts:777 packages/fileeditor-extension/src/commands.ts:781
 msgid "Show Markdown Preview"
 msgstr "Mostra Anteprima di Markdown"
 
-#: packages/fileeditor-extension/src/commands.ts:788 packages/fileeditor-extension/src/commands.ts:789
+#: packages/fileeditor-extension/src/commands.ts:788 packages/fileeditor-extension/src/commands.ts:792
 msgid "New Text File"
 msgstr "Nuovo File di Testo"
 
-#: packages/fileeditor-extension/src/commands.ts:790 packages/fileeditor-extension/src/commands.ts:791
+#: packages/fileeditor-extension/src/commands.ts:790 packages/fileeditor-extension/src/commands.ts:794
 msgid "Text File"
 msgstr "File di Testo"
 
-#: packages/fileeditor-extension/src/commands.ts:793 packages/fileeditor-extension/src/commands.ts:794
+#: packages/fileeditor-extension/src/commands.ts:793 packages/fileeditor-extension/src/commands.ts:797
 msgid "Create a new text file"
 msgstr "Crea un nuovo file di testo"
 
-#: packages/fileeditor-extension/src/commands.ts:818 packages/fileeditor-extension/src/commands.ts:819
+#: packages/fileeditor-extension/src/commands.ts:818 packages/fileeditor-extension/src/commands.ts:822
 msgid "Create a new markdown file"
 msgstr "Crea un nuovo file di markdown"
-
-#: packages/fileeditor-extension/src/commands.ts:997 packages/fileeditor-extension/src/commands.ts:998 packages/fileeditor-extension/src/commands.ts:999
-msgid "Select All"
-msgstr "Seleziona Tutto"
 
 #: packages/fileeditor-extension/src/index.ts:309
 msgid "Editor"
@@ -5792,41 +5832,41 @@ msgstr "Non fidarti del HTML"
 msgid "Trust HTML"
 msgstr "Fidati del HTML"
 
-#: packages/hub-extension/src/index.ts:173
+#: packages/hub-extension/src/index.ts:172 packages/hub-extension/src/index.ts:173
 msgid "Server unavailable or unreachable"
 msgstr "Server non disponibile o irraggiungibile"
 
-#: packages/hub-extension/src/index.ts:174
+#: packages/hub-extension/src/index.ts:173 packages/hub-extension/src/index.ts:174
 msgid "Your server at %1 is not running.\n"
 "Would you like to restart it?"
 msgstr "Il tuo server a %1 non è in esecuzione.\n"
 "Vorresti riavviarlo?"
 
-#: packages/hub-extension/src/index.ts:74
+#: packages/hub-extension/src/index.ts:73 packages/hub-extension/src/index.ts:74
 msgid "Restart Server"
 msgstr "Riavvia Server"
 
-#: packages/hub-extension/src/index.ts:75
+#: packages/hub-extension/src/index.ts:74 packages/hub-extension/src/index.ts:75
 msgid "Request that the Hub restart this server"
 msgstr "Richiedi che l'Hub riavvii questo server"
 
-#: packages/hub-extension/src/index.ts:82
+#: packages/hub-extension/src/index.ts:81 packages/hub-extension/src/index.ts:82
 msgid "Hub Control Panel"
 msgstr "Pannello di Controllo dell'Hub"
 
-#: packages/hub-extension/src/index.ts:83
+#: packages/hub-extension/src/index.ts:82 packages/hub-extension/src/index.ts:83
 msgid "Open the Hub control panel in a new browser tab"
 msgstr "Apri il pannello di controllo dell'Hub in una nuova scheda del browser"
 
-#: packages/hub-extension/src/index.ts:90 packages/mainmenu-extension/src/index.ts:440 packages/mainmenu-extension/src/index.ts:443
+#: packages/hub-extension/src/index.ts:89 packages/hub-extension/src/index.ts:90 packages/mainmenu-extension/src/index.ts:440 packages/mainmenu-extension/src/index.ts:443
 msgid "Log Out"
 msgstr "Disconnettiti"
 
-#: packages/hub-extension/src/index.ts:91
+#: packages/hub-extension/src/index.ts:90 packages/hub-extension/src/index.ts:91
 msgid "Log out of the Hub"
 msgstr "Disconnettiti dall'Hub"
 
-#: packages/hub-extension/src/index.ts:99
+#: packages/hub-extension/src/index.ts:98 packages/hub-extension/src/index.ts:99
 msgid "Hub"
 msgstr ""
 
@@ -7601,7 +7641,7 @@ msgstr ""
 msgid "side panel content"
 msgstr ""
 
-#: packages/ui-components/src/components/toolbar.tsx:1140 packages/ui-components/src/components/toolbar.tsx:1180 packages/ui-components/src/components/toolbar.tsx:1191 packages/ui-components/src/components/toolbar.tsx:1192
+#: packages/ui-components/src/components/toolbar.tsx:1140 packages/ui-components/src/components/toolbar.tsx:1180 packages/ui-components/src/components/toolbar.tsx:1192 packages/ui-components/src/components/toolbar.tsx:1195
 msgid "More commands"
 msgstr ""
 
