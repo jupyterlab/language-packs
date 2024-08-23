@@ -12,12 +12,17 @@ msgstr ""
 "X-Crowdin-File-ID: 219\n"
 "Language-Team: Acholi\n"
 "Language: ach_UG\n"
-"PO-Revision-Date: 2024-04-15 14:16\n"
+"PO-Revision-Date: 2024-08-23 19:12\n"
 
 #: /packages/labextension/schema/topbar-item.json:/definitions/cpu/properties/label/description
 msgctxt "settings"
 msgid "Label for the cpu indicator"
 msgstr "crwdns16011:0crwdne16011:0"
+
+#: /packages/labextension/schema/topbar-item.json:/definitions/disk/properties/label/description
+msgctxt "settings"
+msgid "Label for the disk indicator"
+msgstr "crwdns17146:0crwdne17146:0"
 
 #: /packages/labextension/schema/topbar-item.json:/definitions/memory/properties/label/description
 msgctxt "settings"
@@ -38,6 +43,16 @@ msgstr "crwdns16017:0crwdne16017:0"
 msgctxt "settings"
 msgid "CPU Settings"
 msgstr "crwdns16019:0crwdne16019:0"
+
+#: /packages/labextension/schema/topbar-item.json:/properties/disk/description
+msgctxt "settings"
+msgid "Settings for the Disk indicator"
+msgstr "crwdns17148:0crwdne17148:0"
+
+#: /packages/labextension/schema/topbar-item.json:/properties/disk/title
+msgctxt "settings"
+msgid "Disk Settings"
+msgstr "crwdns17150:0crwdne17150:0"
 
 #: /packages/labextension/schema/topbar-item.json:/properties/enable/description
 msgctxt "settings"
@@ -74,11 +89,11 @@ msgctxt "schema"
 msgid "Resource Usage Indicator"
 msgstr "crwdns16033:0crwdne16033:0"
 
-#: packages/labextension/src/index.ts:162 packages/labextension/src/index.ts:60 packages/labextension/src/index.ts:65
+#: packages/labextension/src/index.ts:162 packages/labextension/src/index.ts:170 packages/labextension/src/index.ts:60 packages/labextension/src/index.ts:65
 msgid "Kernel Resource"
 msgstr "crwdns14507:0crwdne14507:0"
 
-#: packages/labextension/src/index.ts:183 packages/labextension/src/index.ts:184 packages/labextension/src/index.ts:76 packages/labextension/src/index.ts:77 packages/labextension/src/index.ts:86 packages/labextension/src/index.ts:87 packages/labextension/src/panel.ts:20 packages/labextension/src/panel.ts:21 packages/labextension/src/panel.ts:22
+#: packages/labextension/src/index.ts:183 packages/labextension/src/index.ts:184 packages/labextension/src/index.ts:191 packages/labextension/src/index.ts:192 packages/labextension/src/index.ts:76 packages/labextension/src/index.ts:77 packages/labextension/src/index.ts:86 packages/labextension/src/index.ts:87 packages/labextension/src/panel.ts:20 packages/labextension/src/panel.ts:21 packages/labextension/src/panel.ts:22
 msgid "Kernel Usage"
 msgstr "crwdns14509:0crwdne14509:0"
 
@@ -94,7 +109,15 @@ msgstr "crwdns14503:0%1crwdnd14503:0%2crwdnd14503:0%3crwdne14503:0"
 msgid "Current memory usage"
 msgstr "crwdns14505:0crwdne14505:0"
 
-#: packages/labextension/src/resourceUsage.tsx:58 packages/labextension/src/resourceUsage.tsx:65
+#: packages/labextension/src/resourceUsage.tsx:37
+msgid "%1 %2 %3"
+msgstr "crwdns17152:0%1crwdnd17152:0%2crwdnd17152:0%3crwdne17152:0"
+
+#: packages/labextension/src/resourceUsage.tsx:44
+msgid "%1 %2 / %3 %4"
+msgstr "crwdns17154:0%1crwdnd17154:0%2crwdnd17154:0%3crwdnd17154:0%4crwdne17154:0"
+
+#: packages/labextension/src/resourceUsage.tsx:58 packages/labextension/src/resourceUsage.tsx:65 packages/labextension/src/resourceUsage.tsx:67 packages/labextension/src/resourceUsage.tsx:74
 msgid "Current resource usage"
 msgstr "crwdns16035:0crwdne16035:0"
 
