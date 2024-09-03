@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
-"PO-Revision-Date: 2024-07-19 12:26\n"
+"PO-Revision-Date: 2024-08-18 16:35\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -722,7 +722,7 @@ msgstr "Reserve espaço para o candidato mais longo"
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showShortcuts/description
 msgctxt "settings"
 msgid "Whether to show shortcuts in the inline completer widget."
-msgstr ""
+msgstr "Mostrar ou não atalhos no widget de complemento inline."
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showShortcuts/title
 msgctxt "settings"
@@ -732,7 +732,7 @@ msgstr "Mostrar atalhos no widget"
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/description
 msgctxt "settings"
 msgid "When to show the inline completer widget."
-msgstr ""
+msgstr "Quando mostrar o widget completador em linha."
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[0]/title
 msgctxt "settings"
@@ -742,7 +742,7 @@ msgstr "Sempre"
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[1]/title
 msgctxt "settings"
 msgid "On hover"
-msgstr ""
+msgstr "Ao passar o mouse"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[2]/title
 msgctxt "settings"
@@ -752,17 +752,17 @@ msgstr "Nunca"
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/title
 msgctxt "settings"
 msgid "Show widget"
-msgstr ""
+msgstr "Exibir o widget"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/description
 msgctxt "settings"
 msgid "Transition effect used when streaming tokens from model."
-msgstr ""
+msgstr "Efeito de transição usado ao transmitir tokens de modelo."
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/oneOf[0]/title
 msgctxt "settings"
 msgid "None"
-msgstr ""
+msgstr "Nenhum"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/oneOf[1]/title
 msgctxt "settings"
@@ -787,7 +787,7 @@ msgstr "Configurações de Conclusão de Código."
 #: /packages/completer-extension/schema/manager.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Code Completer"
-msgstr ""
+msgstr "Complemento de Código"
 
 #: /packages/completer-extension/schema/manager.json:/properties/autoCompletion/description
 msgctxt "settings"
@@ -883,7 +883,7 @@ msgstr "Modo de interação"
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all prompt cells; it will override the CodeMirror default configuration."
-msgstr ""
+msgstr "A configuração para todas as células rápidas; ele irá substituir a configuração padrão do CodeMirror."
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/title
 msgctxt "settings"
@@ -931,12 +931,24 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "Nota: Para desativar um item,\n"
+"copie-o para as Preferências do Usuário\n"
+"e adicione a chave \"disabled\".\n"
+"O seguinte exemplo desativará o menu de usuário:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"user-menu\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Descrição da Barra Superior:"
 
 #: /packages/csvviewer-extension/schema/csv.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "CSV viewer toolbar items"
-msgstr ""
+msgstr "Visualizador de itens CSV"
 
 #: /packages/csvviewer-extension/schema/csv.json:/title
 msgctxt "schema"
@@ -956,7 +968,7 @@ msgstr "Visualizador de TSV"
 #: /packages/csvviewer-extension/schema/tsv.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "TSV viewer toolbar items"
-msgstr ""
+msgstr "Barra de ferramentas do visualizador TSV"
 
 #: /packages/csvviewer-extension/schema/tsv.json:/title
 msgctxt "schema"
@@ -991,17 +1003,17 @@ msgstr "Um filtro de expressão regular a ser aplicado por padrão quando mostra
 #: /packages/debugger-extension/schema/main.json:/properties/defaultKernelSourcesFilter/title
 msgctxt "settings"
 msgid "Default kernel sources regexp filter"
-msgstr ""
+msgstr "Filtro de regexp padrão do kernel"
 
 #: /packages/debugger-extension/schema/main.json:/properties/variableFilters/description
 msgctxt "settings"
 msgid "Variables to filter out in the tree and table viewers"
-msgstr ""
+msgstr "Variáveis para esconder nos visualizadores de árvore e tabela"
 
 #: /packages/debugger-extension/schema/main.json:/properties/variableFilters/title
 msgctxt "settings"
 msgid "Variable filter"
-msgstr ""
+msgstr "Filtro de variáveis"
 
 #: /packages/debugger-extension/schema/main.json:/title
 msgctxt "schema"
@@ -1011,12 +1023,12 @@ msgstr "Depurador"
 #: /packages/docmanager-extension/schema/download.json:/description
 msgctxt "schema"
 msgid "Document Manager Download settings."
-msgstr ""
+msgstr "Configurações do Gerenciador de Documentos."
 
 #: /packages/docmanager-extension/schema/download.json:/title
 msgctxt "schema"
 msgid "Document Manager Download"
-msgstr ""
+msgstr "Configurações do Gerenciador de Documentos"
 
 #: /packages/docmanager-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1031,7 +1043,7 @@ msgstr "Gerenciador de documentos"
 #: /packages/docmanager-extension/schema/plugin.json:/properties/autosave/description
 msgctxt "settings"
 msgid "Whether to autosave documents"
-msgstr ""
+msgstr "Salvar documentos automaticamente"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/autosave/title
 msgctxt "settings"
@@ -1051,7 +1063,7 @@ msgstr "Intervalo de salvamento automático"
 #: /packages/docmanager-extension/schema/plugin.json:/properties/confirmClosingDocument/description
 msgctxt "settings"
 msgid "Whether to ask for confirmation to close a document or not."
-msgstr ""
+msgstr "Se deseja obter confirmação para fechar um documento ou não."
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/confirmClosingDocument/title
 msgctxt "settings"
@@ -1061,7 +1073,7 @@ msgstr "Pedir confirmação para fechar um documento"
 #: /packages/docmanager-extension/schema/plugin.json:/properties/defaultViewers/description
 msgctxt "settings"
 msgid "Overrides for the default viewers for file types"
-msgstr ""
+msgstr "Substituições para os visualizadores padrão para os tipos de arquivos"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/defaultViewers/title
 msgctxt "settings"
@@ -1071,12 +1083,12 @@ msgstr "Visualizadores padrão"
 #: /packages/docmanager-extension/schema/plugin.json:/properties/lastModifiedCheckMargin/description
 msgctxt "settings"
 msgid "Max acceptable difference, in milliseconds, between last modified timestamps on disk and client"
-msgstr ""
+msgstr "Diferença máxima aceitável em milissegundos, entre as últimas modificações de timestamps no disco e cliente"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/lastModifiedCheckMargin/title
 msgctxt "settings"
 msgid "Margin for last modified timestamp check"
-msgstr ""
+msgstr "Margem da última verificação de timestamp modificada"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/maxNumberRecents/description
 msgctxt "settings"
@@ -1091,12 +1103,12 @@ msgstr "Número de Itens Recentes"
 #: /packages/docmanager-extension/schema/plugin.json:/properties/renameUntitledFileOnSave/description
 msgctxt "settings"
 msgid "Whether to prompt to rename untitled file on first manual save."
-msgstr ""
+msgstr "Caso solicite a renomeação de arquivo sem título na primeira gravação manual."
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/renameUntitledFileOnSave/title
 msgctxt "settings"
 msgid "Rename Untitled File On First Save"
-msgstr ""
+msgstr "Renomear o arquivo sem título no primeiro salvar"
 
 #: /packages/docmanager-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1111,17 +1123,17 @@ msgstr "Plugin de busca de documentos."
 #: /packages/documentsearch-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Document Search"
-msgstr ""
+msgstr "Busca de documentos"
 
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/autoSearchInSelection/description
 msgctxt "settings"
 msgid "When starting search, the 'search in selection' mode will be enabled if `any` text/cell is selected, or when `multiple` lines or cells are selected, or `never`."
-msgstr ""
+msgstr "Ao iniciar a pesquisa, o modo 'pesquisar na seleção' será ativado se `qualquer` texto/célula for selecionado, ou quando linhas ou células `múltiplos` são selecionadas, ou `nunca`."
 
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/autoSearchInSelection/title
 msgctxt "settings"
 msgid "Search in selection automatically"
-msgstr ""
+msgstr "Pesquisar automaticamente na seleção"
 
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/searchDebounceTime/description
 msgctxt "settings"

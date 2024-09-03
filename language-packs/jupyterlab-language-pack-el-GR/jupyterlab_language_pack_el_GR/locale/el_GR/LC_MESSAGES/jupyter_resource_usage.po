@@ -12,11 +12,16 @@ msgstr ""
 "X-Crowdin-File-ID: 219\n"
 "Language-Team: Greek\n"
 "Language: el_GR\n"
-"PO-Revision-Date: 2023-09-08 12:09\n"
+"PO-Revision-Date: 2024-08-23 19:12\n"
 
 #: /packages/labextension/schema/topbar-item.json:/definitions/cpu/properties/label/description
 msgctxt "settings"
 msgid "Label for the cpu indicator"
+msgstr ""
+
+#: /packages/labextension/schema/topbar-item.json:/definitions/disk/properties/label/description
+msgctxt "settings"
+msgid "Label for the disk indicator"
 msgstr ""
 
 #: /packages/labextension/schema/topbar-item.json:/definitions/memory/properties/label/description
@@ -37,6 +42,16 @@ msgstr ""
 #: /packages/labextension/schema/topbar-item.json:/properties/cpu/title
 msgctxt "settings"
 msgid "CPU Settings"
+msgstr ""
+
+#: /packages/labextension/schema/topbar-item.json:/properties/disk/description
+msgctxt "settings"
+msgid "Settings for the Disk indicator"
+msgstr ""
+
+#: /packages/labextension/schema/topbar-item.json:/properties/disk/title
+msgctxt "settings"
+msgid "Disk Settings"
 msgstr ""
 
 #: /packages/labextension/schema/topbar-item.json:/properties/enable/description
@@ -74,11 +89,11 @@ msgctxt "schema"
 msgid "Resource Usage Indicator"
 msgstr ""
 
-#: packages/labextension/src/index.ts:162 packages/labextension/src/index.ts:60 packages/labextension/src/index.ts:65
+#: packages/labextension/src/index.ts:162 packages/labextension/src/index.ts:170 packages/labextension/src/index.ts:60 packages/labextension/src/index.ts:65
 msgid "Kernel Resource"
 msgstr ""
 
-#: packages/labextension/src/index.ts:183 packages/labextension/src/index.ts:184 packages/labextension/src/index.ts:76 packages/labextension/src/index.ts:77 packages/labextension/src/index.ts:86 packages/labextension/src/index.ts:87 packages/labextension/src/panel.ts:20 packages/labextension/src/panel.ts:21 packages/labextension/src/panel.ts:22
+#: packages/labextension/src/index.ts:183 packages/labextension/src/index.ts:184 packages/labextension/src/index.ts:191 packages/labextension/src/index.ts:192 packages/labextension/src/index.ts:76 packages/labextension/src/index.ts:77 packages/labextension/src/index.ts:86 packages/labextension/src/index.ts:87 packages/labextension/src/panel.ts:20 packages/labextension/src/panel.ts:21 packages/labextension/src/panel.ts:22
 msgid "Kernel Usage"
 msgstr ""
 
@@ -94,7 +109,15 @@ msgstr ""
 msgid "Current memory usage"
 msgstr ""
 
-#: packages/labextension/src/resourceUsage.tsx:58 packages/labextension/src/resourceUsage.tsx:65
+#: packages/labextension/src/resourceUsage.tsx:37
+msgid "%1 %2 %3"
+msgstr ""
+
+#: packages/labextension/src/resourceUsage.tsx:44
+msgid "%1 %2 / %3 %4"
+msgstr ""
+
+#: packages/labextension/src/resourceUsage.tsx:58 packages/labextension/src/resourceUsage.tsx:65 packages/labextension/src/resourceUsage.tsx:67 packages/labextension/src/resourceUsage.tsx:74
 msgid "Current resource usage"
 msgstr ""
 
