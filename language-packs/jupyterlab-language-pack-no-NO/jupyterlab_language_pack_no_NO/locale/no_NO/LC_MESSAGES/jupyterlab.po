@@ -8,16 +8,16 @@ msgstr ""
 "X-Crowdin-Project: jupyterlab\n"
 "X-Crowdin-Project-ID: 409874\n"
 "X-Crowdin-Language: no\n"
-"X-Crowdin-File: /main/jupyterlab/locale/jupyterlab.pot\n"
-"X-Crowdin-File-ID: 191\n"
+"X-Crowdin-File: jupyterlab.pot\n"
+"X-Crowdin-File-ID: 244\n"
 "Language-Team: Norwegian\n"
 "Language: no_NO\n"
-"PO-Revision-Date: 2024-07-19 10:57\n"
+"PO-Revision-Date: 2024-09-11 14:53\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Markdown viewer settings."
-msgstr "Innstillinger for visning av Markdown."
+msgstr ""
 
 #: /examples/federated/md_package/schema/plugin.json:/jupyter.lab.setting-icon-label /packages/markdownviewer-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -33,19 +33,18 @@ msgstr ""
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontFamily/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontFamily/title
 msgctxt "settings"
 msgid "Font Family"
-msgstr "Skrifttype"
+msgstr ""
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontSize/description /packages/markdownviewer-extension/schema/plugin.json:/properties/fontSize/description
 msgctxt "settings"
 msgid "The size in pixel of the font used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr "Skriftstørrelsen, i piksler, av skriften som brukes for markdown.\n"
-"Hvis `null`, brukes verdi fra gjeldende stilprofil."
+msgstr ""
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontSize/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontSize/title
 msgctxt "settings"
 msgid "Font Size"
-msgstr "Skriftstørrelse"
+msgstr ""
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/hideFrontMatter/description /packages/markdownviewer-extension/schema/plugin.json:/properties/hideFrontMatter/description
 msgctxt "settings"
@@ -95,7 +94,7 @@ msgstr ""
 #: /examples/federated/md_package/schema/plugin.json:/title /packages/markdownviewer-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Markdown Viewer"
-msgstr "Visning av Markdown"
+msgstr ""
 
 #: /jupyterlab/extensions/manager.py:261
 msgid "The following plugins cannot be disabled as they are locked: "
@@ -181,17 +180,17 @@ msgstr ""
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/rank/description /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/rank/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/rank/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/rank/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/rank/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/rank/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/rank/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/rank/title /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/rank/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/rank/title
 msgctxt "settings"
 msgid "Item rank"
-msgstr "Element rangering"
+msgstr ""
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/submenu/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/submenu/description
 msgctxt "settings"
 msgid "Submenu definition"
-msgstr "Undermeny-definisjon"
+msgstr ""
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/type/description /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/type/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/type/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/type/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/type/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/type/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/type/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/type/title /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/type/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/type/title
 msgctxt "settings"
 msgid "Item type"
-msgstr "Elementtype"
+msgstr ""
 
 #: /packages/application-extension/schema/context-menu.json:/description
 msgctxt "schema"
@@ -403,7 +402,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/palette.json:/description
 msgctxt "schema"
 msgid "Command palette settings."
-msgstr "Innstillinger for kommandopalett."
+msgstr ""
 
 #: /packages/apputils-extension/schema/palette.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -423,21 +422,31 @@ msgstr ""
 #: /packages/apputils-extension/schema/palette.json:/title
 msgctxt "schema"
 msgid "Command Palette"
-msgstr "Kommandoutvalg"
+msgstr ""
 
 #: /packages/apputils-extension/schema/print.json:/description
 msgctxt "schema"
 msgid "Print settings."
-msgstr "Utskriftsinnstillinger."
+msgstr ""
 
 #: /packages/apputils-extension/schema/print.json:/title
 msgctxt "schema"
 msgid "Print"
-msgstr "Skriv ut"
+msgstr ""
 
 #: /packages/apputils-extension/schema/sanitizer.json:/description
 msgctxt "schema"
 msgid "HTML Sanitizer settings."
+msgstr ""
+
+#: /packages/apputils-extension/schema/sanitizer.json:/properties/allowNamedProperties/description
+msgctxt "settings"
+msgid "Whether to allow untrusted elements to include `name` and `id` attributes. These attributes are stripped by default to prevent DOM clobbering attacks."
+msgstr ""
+
+#: /packages/apputils-extension/schema/sanitizer.json:/properties/allowNamedProperties/title
+msgctxt "settings"
+msgid "Allow named properties"
 msgstr ""
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/description
@@ -478,7 +487,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/themes.json:/description
 msgctxt "schema"
 msgid "Theme manager settings."
-msgstr "Innstillinger for stilprofil."
+msgstr ""
 
 #: /packages/apputils-extension/schema/themes.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
 msgctxt "menu"
@@ -553,7 +562,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/themes.json:/title
 msgctxt "schema"
 msgid "Theme"
-msgstr "Stilprofil"
+msgstr ""
 
 #: /packages/apputils-extension/schema/utilityCommands.json:/description
 msgctxt "schema"
@@ -803,12 +812,12 @@ msgstr ""
 #: /packages/console-extension/schema/completer.json:/description
 msgctxt "schema"
 msgid "Console completer settings."
-msgstr "Instillinger for fullfører i konsoller."
+msgstr ""
 
 #: /packages/console-extension/schema/completer.json:/title
 msgctxt "schema"
 msgid "Console Completer"
-msgstr "Fullfører for konsoll"
+msgstr ""
 
 #: /packages/console-extension/schema/foreign.json:/description
 msgctxt "schema"
@@ -823,7 +832,7 @@ msgstr ""
 #: /packages/console-extension/schema/tracker.json:/description
 msgctxt "schema"
 msgid "Code Console settings."
-msgstr "Innstillinger til kommandolinje for kode."
+msgstr ""
 
 #: /packages/console-extension/schema/tracker.json:/jupyter.lab.menus/main[1]/items[1]/submenu/label
 msgctxt "menu"
@@ -870,7 +879,7 @@ msgstr ""
 #: /packages/console-extension/schema/tracker.json:/title
 msgctxt "schema"
 msgid "Code Console"
-msgstr "Kommandolinje for kode"
+msgstr ""
 
 #: /packages/csvviewer-extension/schema/csv.json:/description
 msgctxt "schema"
@@ -931,7 +940,7 @@ msgstr ""
 #: /packages/debugger-extension/schema/main.json:/description
 msgctxt "schema"
 msgid "Debugger settings"
-msgstr "Innstillinger for feilsøker"
+msgstr ""
 
 #: /packages/debugger-extension/schema/main.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -971,7 +980,7 @@ msgstr ""
 #: /packages/debugger-extension/schema/main.json:/title
 msgctxt "schema"
 msgid "Debugger"
-msgstr "Feilsøker"
+msgstr ""
 
 #: /packages/docmanager-extension/schema/download.json:/description
 msgctxt "schema"
@@ -986,7 +995,7 @@ msgstr ""
 #: /packages/docmanager-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Document Manager settings."
-msgstr "Innstillinger for dokumenthåndtering."
+msgstr ""
 
 #: /packages/docmanager-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -1066,12 +1075,12 @@ msgstr ""
 #: /packages/docmanager-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Document Manager"
-msgstr "Administrasjon av dokumenter"
+msgstr ""
 
 #: /packages/documentsearch-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Document search plugin."
-msgstr "Utvidelse for søk i dokumenter."
+msgstr ""
 
 #: /packages/documentsearch-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -1101,7 +1110,7 @@ msgstr ""
 #: /packages/documentsearch-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Document Search"
-msgstr "Søk i dokument"
+msgstr ""
 
 #: /packages/extensionmanager-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1137,12 +1146,12 @@ msgstr ""
 #: /packages/extensionmanager-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Extension Manager"
-msgstr "Behandle utvidelser"
+msgstr ""
 
 #: /packages/filebrowser-extension/schema/browser.json:/description
 msgctxt "schema"
 msgid "File Browser settings."
-msgstr "Innstillinger for filutforsker."
+msgstr ""
 
 #: /packages/filebrowser-extension/schema/browser.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -1262,7 +1271,7 @@ msgstr ""
 #: /packages/filebrowser-extension/schema/browser.json:/title
 msgctxt "schema"
 msgid "File Browser"
-msgstr "Filutforsker"
+msgstr ""
 
 #: /packages/filebrowser-extension/schema/download.json:/description
 msgctxt "schema"
@@ -1333,17 +1342,17 @@ msgstr ""
 #: /packages/fileeditor-extension/schema/completer.json:/description
 msgctxt "schema"
 msgid "File editor completer settings."
-msgstr "Innstillinger for fullfører i fil-verktøy."
+msgstr ""
 
 #: /packages/fileeditor-extension/schema/completer.json:/title
 msgctxt "schema"
 msgid "File Editor Completer"
-msgstr "Fullfører for fil-verktøy"
+msgstr ""
 
 #: /packages/fileeditor-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Text editor settings."
-msgstr "Innstillinger for tekstbehandler."
+msgstr ""
 
 #: /packages/fileeditor-extension/schema/plugin.json:/jupyter.lab.menus/main[1]/items[1]/submenu/label
 msgctxt "menu"
@@ -1402,7 +1411,7 @@ msgstr ""
 #: /packages/fileeditor-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Text Editor"
-msgstr "Tekstbehandler"
+msgstr ""
 
 #: /packages/help-extension/schema/about.json:/description
 msgctxt "schema"
@@ -1473,12 +1482,12 @@ msgstr ""
 #: /packages/imageviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Image viewer settings."
-msgstr "Bildeviser innstillinger."
+msgstr ""
 
 #: /packages/imageviewer-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Image Viewer"
-msgstr "Bildeviser"
+msgstr ""
 
 #: /packages/inspector-extension/schema/consoles.json:/description /packages/inspector-extension/schema/notebooks.json:/description
 msgctxt "schema"
@@ -1493,27 +1502,27 @@ msgstr ""
 #: /packages/inspector-extension/schema/inspector.json:/description
 msgctxt "schema"
 msgid "Inspector settings."
-msgstr "Instillinger for inspektør."
+msgstr ""
 
 #: /packages/inspector-extension/schema/inspector.json:/title
 msgctxt "schema"
 msgid "Inspector"
-msgstr "Inspektør"
+msgstr ""
 
 #: /packages/launcher-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Launcher settings."
-msgstr "Innstillinger for Startskjerm."
+msgstr ""
 
 #: /packages/launcher-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Launcher"
-msgstr "Startskjerm"
+msgstr ""
 
 #: /packages/logconsole-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Log Console settings."
-msgstr "Loggkonsollinnstillinger."
+msgstr ""
 
 #: /packages/logconsole-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -1543,7 +1552,7 @@ msgstr ""
 #: /packages/logconsole-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Log Console"
-msgstr "Loggkonsoll"
+msgstr ""
 
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/configuration/description
 msgctxt "settings"
@@ -1623,7 +1632,7 @@ msgstr ""
 #: /packages/mainmenu-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Main JupyterLab menu settings."
-msgstr "Hoverinstillinger for menyer."
+msgstr ""
 
 #: /packages/mainmenu-extension/schema/plugin.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
 msgctxt "menu"
@@ -1705,7 +1714,7 @@ msgstr ""
 #: /packages/mainmenu-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Main Menu"
-msgstr "Hovedmeny"
+msgstr ""
 
 #: /packages/mathjax-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1755,12 +1764,12 @@ msgstr ""
 #: /packages/notebook-extension/schema/completer.json:/description
 msgctxt "schema"
 msgid "Notebook completer settings."
-msgstr "Innstillinger for fullfører i notatblokk."
+msgstr ""
 
 #: /packages/notebook-extension/schema/completer.json:/title
 msgctxt "schema"
 msgid "Notebook Completer"
-msgstr "Fullfører for notatblokk"
+msgstr ""
 
 #: /packages/notebook-extension/schema/export.json:/description
 msgctxt "schema"
@@ -1831,7 +1840,7 @@ msgstr ""
 #: /packages/notebook-extension/schema/tracker.json:/description
 msgctxt "schema"
 msgid "Notebook settings."
-msgstr "Innstillinger for notisbok."
+msgstr ""
 
 #: /packages/notebook-extension/schema/tracker.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -2071,7 +2080,7 @@ msgstr ""
 #: /packages/notebook-extension/schema/tracker.json:/title
 msgctxt "schema"
 msgid "Notebook"
-msgstr "Notisblokk"
+msgstr ""
 
 #: /packages/running-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -2838,7 +2847,7 @@ msgstr ""
 
 #: packages/apputils-extension/src/palette.ts:42
 msgid "Command Palette"
-msgstr "Kommandopalette"
+msgstr ""
 
 #: packages/apputils-extension/src/shortcuts.tsx:193
 msgid "Keyboard Shortcuts"
@@ -2922,7 +2931,7 @@ msgstr ""
 
 #: packages/apputils-extension/src/themesplugins.ts:295 packages/codemirror/src/extension.ts:1006 packages/codemirror/src/extension.ts:982
 msgid "Theme"
-msgstr "Stilprofil"
+msgstr ""
 
 #: packages/apputils-extension/src/workspacesplugin.ts:181 packages/apputils-extension/src/workspacesplugin.ts:95
 msgid "Workspace loader"
@@ -2952,7 +2961,7 @@ msgstr ""
 msgid "Dismiss"
 msgstr ""
 
-#: packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:793 packages/apputils/src/dialog.tsx:870 packages/apputils/src/dialog.tsx:893 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:739 packages/debugger-extension/src/index.ts:840 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/listing.ts:436 packages/filebrowser/src/model.ts:442 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:516 packages/notebook/src/searchprovider.ts:519 packages/notebook/src/searchprovider.ts:527 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/shortcuts-extension/src/components/ShortcutItem.tsx:341 packages/translation-extension/src/index.ts:156
+#: packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:793 packages/apputils/src/dialog.tsx:870 packages/apputils/src/dialog.tsx:893 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:739 packages/debugger-extension/src/index.ts:840 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/listing.ts:436 packages/filebrowser/src/model.ts:442 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:516 packages/notebook/src/searchprovider.ts:519 packages/notebook/src/searchprovider.ts:527 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/shortcuts-extension/src/components/ShortcutItem.tsx:341 packages/translation-extension/src/index.ts:156 packages/translation-extension/src/index.ts:157
 msgid "Cancel"
 msgstr ""
 
@@ -4060,7 +4069,7 @@ msgstr ""
 
 #: packages/console-extension/src/foreign.ts:80
 msgid "Show All Kernel Activity"
-msgstr "Vis all kjerneaktivitet"
+msgstr ""
 
 #: packages/console-extension/src/index.ts:464 packages/console-extension/src/index.ts:473 packages/console-extension/src/index.ts:478
 msgid "Auto Close Brackets for Code Console Prompt"
@@ -4222,7 +4231,7 @@ msgstr ""
 
 #: packages/debugger-extension/src/index.ts:1005 packages/debugger-extension/src/index.ts:1017
 msgid "Debugger"
-msgstr "Feilsøker"
+msgstr ""
 
 #: packages/debugger-extension/src/index.ts:1010
 msgid "Debugger Panel"
@@ -4444,7 +4453,7 @@ msgstr ""
 
 #: packages/docmanager-extension/src/index.tsx:1039 packages/docmanager-extension/src/index.tsx:1063
 msgid "Autosave Documents"
-msgstr "Automatisk lagring av dokumenter"
+msgstr ""
 
 #: packages/docmanager-extension/src/index.tsx:1100 packages/docmanager-extension/src/index.tsx:1124
 msgid "New View for %1"
@@ -5850,7 +5859,7 @@ msgstr ""
 
 #: packages/imageviewer-extension/src/index.ts:161
 msgid "Image Viewer"
-msgstr "Bildeviser"
+msgstr ""
 
 #: packages/imageviewer-extension/src/index.ts:202
 msgid "Zoom In"
@@ -5927,7 +5936,7 @@ msgstr ""
 
 #: packages/logconsole-extension/src/index.tsx:136 packages/logconsole/src/widget.ts:389
 msgid "Log Console"
-msgstr "Loggkonsoll"
+msgstr ""
 
 #: packages/logconsole-extension/src/index.tsx:193
 msgid "Show Log Console"
@@ -6859,11 +6868,11 @@ msgstr ""
 
 #: packages/notebook/src/modestatus.tsx:71 packages/shortcuts-extension/src/components/TopNav.tsx:130 packages/shortcuts-extension/src/components/TopNav.tsx:182
 msgid "Command"
-msgstr "Kommando"
+msgstr ""
 
 #: packages/notebook/src/modestatus.tsx:72 packages/shortcuts-extension/src/components/ShortcutItem.tsx:61
 msgid "Edit"
-msgstr "Endre"
+msgstr ""
 
 #: packages/notebook/src/modestatus.tsx:83
 msgid "Notebook is in %1 mode"
@@ -7560,19 +7569,19 @@ msgstr ""
 msgid "Dismiss the tooltip"
 msgstr ""
 
-#: packages/translation-extension/src/index.ts:150
+#: packages/translation-extension/src/index.ts:150 packages/translation-extension/src/index.ts:151
 msgid "Change interface language?"
 msgstr ""
 
-#: packages/translation-extension/src/index.ts:151
+#: packages/translation-extension/src/index.ts:151 packages/translation-extension/src/index.ts:152
 msgid "After changing the interface language to %1, you will need to reload JupyterLab to see the changes."
-msgstr "Etter å ha endret grensesnittsspråket til %1, må du laste JupyterLab på nytt for å se endringene."
+msgstr ""
 
-#: packages/translation-extension/src/index.ts:157
+#: packages/translation-extension/src/index.ts:157 packages/translation-extension/src/index.ts:158
 msgid "Change and reload"
-msgstr "Endre og last på nytt"
+msgstr ""
 
-#: packages/translation-extension/src/index.ts:184
+#: packages/translation-extension/src/index.ts:184 packages/translation-extension/src/index.ts:185
 msgid "Display Languages"
 msgstr ""
 
