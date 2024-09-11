@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2024-07-20 00:09\n"
+"PO-Revision-Date: 2024-09-11 14:52\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -468,6 +468,16 @@ msgstr "打印"
 msgctxt "schema"
 msgid "HTML Sanitizer settings."
 msgstr "HTML 净化器设置。"
+
+#: /packages/apputils-extension/schema/sanitizer.json:/properties/allowNamedProperties/description
+msgctxt "settings"
+msgid "Whether to allow untrusted elements to include `name` and `id` attributes. These attributes are stripped by default to prevent DOM clobbering attacks."
+msgstr "是否允许不受信任的元素包含 name 和 id 属性。默认情况下，这些属性会被移除以防止 DOM 篡改攻击。"
+
+#: /packages/apputils-extension/schema/sanitizer.json:/properties/allowNamedProperties/title
+msgctxt "settings"
+msgid "Allow named properties"
+msgstr "允许命名属性"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/description
 msgctxt "settings"
@@ -3042,7 +3052,7 @@ msgstr "JupyterLab 工作区文件"
 msgid "Dismiss"
 msgstr "忽略"
 
-#: packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:793 packages/apputils/src/dialog.tsx:870 packages/apputils/src/dialog.tsx:893 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:739 packages/debugger-extension/src/index.ts:840 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/listing.ts:436 packages/filebrowser/src/model.ts:442 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:516 packages/notebook/src/searchprovider.ts:519 packages/notebook/src/searchprovider.ts:527 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/shortcuts-extension/src/components/ShortcutItem.tsx:341 packages/translation-extension/src/index.ts:156
+#: packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:793 packages/apputils/src/dialog.tsx:870 packages/apputils/src/dialog.tsx:893 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:739 packages/debugger-extension/src/index.ts:840 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/listing.ts:436 packages/filebrowser/src/model.ts:442 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:516 packages/notebook/src/searchprovider.ts:519 packages/notebook/src/searchprovider.ts:527 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/shortcuts-extension/src/components/ShortcutItem.tsx:341 packages/translation-extension/src/index.ts:156 packages/translation-extension/src/index.ts:157
 msgid "Cancel"
 msgstr "取消"
 
@@ -7661,19 +7671,19 @@ msgstr "打开工具提示"
 msgid "Dismiss the tooltip"
 msgstr "忽略工具提示"
 
-#: packages/translation-extension/src/index.ts:150
+#: packages/translation-extension/src/index.ts:150 packages/translation-extension/src/index.ts:151
 msgid "Change interface language?"
 msgstr "更改界面语言？"
 
-#: packages/translation-extension/src/index.ts:151
+#: packages/translation-extension/src/index.ts:151 packages/translation-extension/src/index.ts:152
 msgid "After changing the interface language to %1, you will need to reload JupyterLab to see the changes."
 msgstr "在将界面语言更改为 %1 后，您需要重新加载 JupyterLab 方可生效。"
 
-#: packages/translation-extension/src/index.ts:157
+#: packages/translation-extension/src/index.ts:157 packages/translation-extension/src/index.ts:158
 msgid "Change and reload"
 msgstr "更改并重新加载"
 
-#: packages/translation-extension/src/index.ts:184
+#: packages/translation-extension/src/index.ts:184 packages/translation-extension/src/index.ts:185
 msgid "Display Languages"
 msgstr "显示语言"
 

@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Hebrew\n"
 "Language: he_IL\n"
-"PO-Revision-Date: 2024-07-19 10:57\n"
+"PO-Revision-Date: 2024-09-11 14:52\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -446,6 +446,16 @@ msgctxt "schema"
 msgid "HTML Sanitizer settings."
 msgstr ""
 
+#: /packages/apputils-extension/schema/sanitizer.json:/properties/allowNamedProperties/description
+msgctxt "settings"
+msgid "Whether to allow untrusted elements to include `name` and `id` attributes. These attributes are stripped by default to prevent DOM clobbering attacks."
+msgstr ""
+
+#: /packages/apputils-extension/schema/sanitizer.json:/properties/allowNamedProperties/title
+msgctxt "settings"
+msgid "Allow named properties"
+msgstr ""
+
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/description
 msgctxt "settings"
 msgid "Scheme allowed by the HTML sanitizer."
@@ -649,32 +659,32 @@ msgstr ""
 #: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/description
 msgctxt "settings"
 msgid "When an inline completion gets cancelled the editor may change its size rapidly. When typing in the editor, the completions may get dismissed frequently causing a noticeable jitter of the editor height. Adding a delay prevents the jitter on typing. The value should be in milliseconds."
-msgstr ""
+msgstr "כאשר השלמה כחלק מהשורה מבוטלת העורך עלול לשנות את גודלו במהירות. בעת הקלדה בעורך, אפשר להתעלם מהשלמות במהירות מה שעלול לגרום לקרטוע מובהק בגובה העורך. הוספת השהיה מונעת את הקרטוע המהיר בזמן הלקדה. הערך אמור להיות במילישניות."
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/title
 msgctxt "settings"
 msgid "Editor resize delay"
-msgstr ""
+msgstr "השהיית שינוי גודל עורך"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/description
 msgctxt "settings"
 msgid "Number of lines of inline completion to show before collapsing. Setting zero disables the limit."
-msgstr ""
+msgstr "מספר השורות להשלמה בתוך השורה להצעה לפי הצמצום. הגדרה לאפס משביתה את ההגבלה."
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/title
 msgctxt "settings"
 msgid "Limit inline completion lines"
-msgstr ""
+msgstr "הגבלת שורות ההשלמה"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/description
 msgctxt "settings"
 msgid "Number of lines to reserve for the ghost text with inline completion suggestion."
-msgstr ""
+msgstr "מספר השורות לשמירה לטקסט הרפאים להצעות להשלמה כחלק מהשורה."
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/title
 msgctxt "settings"
 msgid "Reserve lines for inline completion"
-msgstr ""
+msgstr "שימור שורות להשלמה כחלק מהשורה"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/providers/title
 msgctxt "settings"
@@ -684,12 +694,12 @@ msgstr ""
 #: /packages/completer-extension/schema/inline-completer.json:/properties/reserveSpaceForLongest/description
 msgctxt "settings"
 msgid "When multiple completions are returned, reserve blank space for up to as many lines as in the longest completion candidate to avoid resizing editor when cycling between the suggestions."
-msgstr ""
+msgstr "כאשר מוחזרות מגוון אפשרויות להשלמה, להשאיר מקום ריק של כמות שורות המועמד הארוך ביותר להשלמה כדי למנוע את שינוי גודל העורך בעת מעבר בלולאה בין ההצעות."
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/reserveSpaceForLongest/title
 msgctxt "settings"
 msgid "Reserve space for the longest candidate"
-msgstr ""
+msgstr "שמירת מקום להצעה הארוכה ביותר"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showShortcuts/description
 msgctxt "settings"
@@ -2686,31 +2696,31 @@ msgstr ""
 
 #: packages/apputils-extension/src/announcements.ts:110
 msgid "Open privacy policy"
-msgstr ""
+msgstr "פתיחת מדיניות הפרטיות"
 
 #: packages/apputils-extension/src/announcements.ts:116
 msgid "Privacy policies"
-msgstr ""
+msgstr "מדיניויות פרטיות"
 
 #: packages/apputils-extension/src/announcements.ts:126 packages/extensionmanager/src/widget.tsx:443 packages/pluginmanager/src/widget.tsx:125
 msgid "Yes"
-msgstr ""
+msgstr "כן"
 
 #: packages/apputils-extension/src/announcements.ts:143 packages/extensionmanager/src/widget.tsx:433 packages/pluginmanager/src/widget.tsx:128
 msgid "No"
-msgstr ""
+msgstr "לא"
 
 #: packages/apputils-extension/src/announcements.ts:180
 msgid "Hide"
-msgstr ""
+msgstr "הסתרה"
 
 #: packages/apputils-extension/src/announcements.ts:181
 msgid "Never show this notification again."
-msgstr ""
+msgstr "לעולם לא להציג את ההתראה הזאת שוב."
 
 #: packages/apputils-extension/src/announcements.ts:243
 msgid "Do not check for updates"
-msgstr ""
+msgstr "לא לנסות לאתר עדכונים"
 
 #: packages/apputils-extension/src/announcements.ts:244
 msgid "If pressed, you will not be prompted if a new JupyterLab version is found."
@@ -2955,7 +2965,7 @@ msgstr "שמירת סביבת העבודה הנוכחית בשם…"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:72
 msgid "JupyterLab Workspace File"
-msgstr ""
+msgstr "קובץ סביבת עבודה של JupyterLab"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:72
 msgid "JupyterLab workspace File"
@@ -2965,7 +2975,7 @@ msgstr "קובץ סביבת עבודה של JupyterLab"
 msgid "Dismiss"
 msgstr "התעלמות"
 
-#: packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:793 packages/apputils/src/dialog.tsx:870 packages/apputils/src/dialog.tsx:893 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:739 packages/debugger-extension/src/index.ts:840 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/listing.ts:436 packages/filebrowser/src/model.ts:442 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:516 packages/notebook/src/searchprovider.ts:519 packages/notebook/src/searchprovider.ts:527 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/shortcuts-extension/src/components/ShortcutItem.tsx:341 packages/translation-extension/src/index.ts:156
+#: packages/apputils/src/dialog.tsx:770 packages/apputils/src/dialog.tsx:793 packages/apputils/src/dialog.tsx:870 packages/apputils/src/dialog.tsx:893 packages/apputils/src/sessioncontext.tsx:1335 packages/debugger-extension/src/index.ts:739 packages/debugger-extension/src/index.ts:840 packages/filebrowser/src/listing.ts:433 packages/filebrowser/src/listing.ts:436 packages/filebrowser/src/model.ts:442 packages/filebrowser/src/model.ts:449 packages/notebook/src/searchprovider.ts:516 packages/notebook/src/searchprovider.ts:519 packages/notebook/src/searchprovider.ts:527 packages/settingeditor/src/plugineditor.ts:132 packages/shortcuts-extension/src/components/ShortcutItem.tsx:224 packages/shortcuts-extension/src/components/ShortcutItem.tsx:341 packages/translation-extension/src/index.ts:156 packages/translation-extension/src/index.ts:157
 msgid "Cancel"
 msgstr "ביטול"
 
@@ -7674,19 +7684,19 @@ msgstr ""
 msgid "Dismiss the tooltip"
 msgstr ""
 
-#: packages/translation-extension/src/index.ts:150
+#: packages/translation-extension/src/index.ts:150 packages/translation-extension/src/index.ts:151
 msgid "Change interface language?"
 msgstr "להחליף את שפת המנשק?"
 
-#: packages/translation-extension/src/index.ts:151
+#: packages/translation-extension/src/index.ts:151 packages/translation-extension/src/index.ts:152
 msgid "After changing the interface language to %1, you will need to reload JupyterLab to see the changes."
 msgstr "לאחר החלפת שפת המנשק ל%1, יהי עליך לרענן את JupyterLab כדי לצפות בשינויים."
 
-#: packages/translation-extension/src/index.ts:157
+#: packages/translation-extension/src/index.ts:157 packages/translation-extension/src/index.ts:158
 msgid "Change and reload"
 msgstr "להחליף ולרענן"
 
-#: packages/translation-extension/src/index.ts:184
+#: packages/translation-extension/src/index.ts:184 packages/translation-extension/src/index.ts:185
 msgid "Display Languages"
 msgstr ""
 
