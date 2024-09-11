@@ -6,7 +6,8 @@ on:
     paths:
       - '**.pot'
   schedule:
-    - cron: '45 14 * * *'
+    - cron: '45 1 * * *'
+  workflow_dispatch:
 
 jobs:
   synchronize-with-crowdin:
