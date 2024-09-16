@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2024-09-11 14:53\n"
+"PO-Revision-Date: 2024-09-16 02:13\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -103,11 +103,11 @@ msgstr "마크다운 뷰어"
 
 #: /jupyterlab/extensions/manager.py:261
 msgid "The following plugins cannot be disabled as they are locked: "
-msgstr ""
+msgstr "다음 플러그인들은 잠겨있어서 비활성화 할 수 없습니다: "
 
 #: /jupyterlab/extensions/manager.py:287
 msgid "The following plugins cannot be enabled as they are locked: "
-msgstr ""
+msgstr "다음 플러그인들은 잠겨있어서 활성화 할 수 없습니다: "
 
 #: /jupyterlab/extensions/readonly.py:63
 msgid "Extension installation not supported."
@@ -313,12 +313,12 @@ msgstr "JupyterLab 쉘"
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/caption/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/caption/description /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/caption/description /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/caption/description /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/caption/description
 msgctxt "settings"
 msgid "If defined, it will override the command caption"
-msgstr ""
+msgstr "정의가 되면, 명령어 캡션을 변경합니다."
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/caption/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/caption/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/caption/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/caption/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/caption/title
 msgctxt "settings"
 msgid "Item caption"
-msgstr ""
+msgstr "아이템 캡션"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/disabled/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/disabled/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/disabled/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/disabled/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/disabled/title
 msgctxt "settings"
@@ -399,7 +399,7 @@ msgstr "알림 설정"
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
 msgctxt "settings"
 msgid "Whether to check for newer version of JupyterLab or not. It requires `fetchNews` to be `true` to be active. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "주피터랩 업데이트를 확인할지 결정합니다. `fetchNews`가 `true`로 되어 있어야 활성화될 수 있습니다. `true`로 설정되면 웹사이트에 요청을 보냅니다."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/title
 msgctxt "settings"
@@ -474,12 +474,12 @@ msgstr "HTML XSS 방지도구 설정."
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowNamedProperties/description
 msgctxt "settings"
 msgid "Whether to allow untrusted elements to include `name` and `id` attributes. These attributes are stripped by default to prevent DOM clobbering attacks."
-msgstr ""
+msgstr "신뢰할 수 없는 요소에 `name`과 `id` 속성을 포함할지 여부를 결정. 이 속성들은 DOM 클로버링 공격을 예방하기 위해 기본적으로 제거됩니다."
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowNamedProperties/title
 msgctxt "settings"
 msgid "Allow named properties"
-msgstr ""
+msgstr "이름있는 속성을 허용"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/description
 msgctxt "settings"
@@ -534,12 +534,12 @@ msgstr "테마 관리자"
 #: /packages/apputils-extension/schema/themes.json:/properties/adaptive-theme/description
 msgctxt "settings"
 msgid "Synchronize visual styling theme with system settings"
-msgstr ""
+msgstr "시스템 세팅과 동일하게 스타일 테마를 동기화"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/adaptive-theme/title
 msgctxt "settings"
 msgid "Adaptive Theme"
-msgstr ""
+msgstr "선택적인 테마"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/overrides/description
 msgctxt "settings"
@@ -554,22 +554,22 @@ msgstr "테마 CSS 재정의"
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-dark-theme/description
 msgctxt "settings"
 msgid "Application-level dark visual styling theme. Ignored when Adaptive Theme is disabled."
-msgstr ""
+msgstr "어플리케이션 레벨의 다크 스타일 테마. 선택적인 테마가 비활성화 된 경우 무시됨."
 
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-dark-theme/title
 msgctxt "settings"
 msgid "Preferred Dark Theme"
-msgstr ""
+msgstr "선호 다크 테마"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-light-theme/description
 msgctxt "settings"
 msgid "Application-level light visual styling theme. Ignored when Adaptive Theme is disabled."
-msgstr ""
+msgstr "어플리케이션 레벨의 밝은 스타일 테마. 선택적 테마가 비활성화 된 경우 무시됨."
 
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-light-theme/title
 msgctxt "settings"
 msgid "Preferred Light Theme"
-msgstr ""
+msgstr "선호 라이트 테마"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme-scrollbars/description
 msgctxt "settings"
@@ -584,7 +584,7 @@ msgstr "스크롤바에 테마 적용"
 #: /packages/apputils-extension/schema/themes.json:/properties/theme/description
 msgctxt "settings"
 msgid "Application-level visual styling theme. Ignored when Adaptive Theme is enabled."
-msgstr ""
+msgstr "어플레케이션 레벨 스타일 테마. 선택적 테마과 활성화 된 경우 무시됨."
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme/title
 msgctxt "settings"
@@ -609,12 +609,12 @@ msgstr "단축키 도움말"
 #: /packages/apputils-extension/schema/workspaces.json:/description
 msgctxt "schema"
 msgid "Workspaces settings."
-msgstr "작업 공간 설정."
+msgstr "워크스페이스 설정."
 
 #: /packages/apputils-extension/schema/workspaces.json:/title
 msgctxt "schema"
 msgid "Workspaces"
-msgstr "작업 공간"
+msgstr "워크스페이스"
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -674,12 +674,12 @@ msgstr "CodeMirror"
 #: /packages/completer-extension/schema/inline-completer.json:/description
 msgctxt "schema"
 msgid "Inline completer settings."
-msgstr ""
+msgstr "인라인 자동완성 설정."
 
 #: /packages/completer-extension/schema/inline-completer.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Inline Completer"
-msgstr ""
+msgstr "인라인 자동완성"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/description
 msgctxt "settings"
@@ -689,7 +689,7 @@ msgstr ""
 #: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/title
 msgctxt "settings"
 msgid "Editor resize delay"
-msgstr ""
+msgstr "에디터 크기변경 지연"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/description
 msgctxt "settings"
@@ -699,7 +699,7 @@ msgstr ""
 #: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/title
 msgctxt "settings"
 msgid "Limit inline completion lines"
-msgstr ""
+msgstr "인라인 자동완성 라인수 제한"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/description
 msgctxt "settings"
@@ -744,32 +744,32 @@ msgstr ""
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[0]/title
 msgctxt "settings"
 msgid "Always"
-msgstr ""
+msgstr "항상"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[1]/title
 msgctxt "settings"
 msgid "On hover"
-msgstr ""
+msgstr "커서가 올라갔을때"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[2]/title
 msgctxt "settings"
 msgid "Never"
-msgstr ""
+msgstr "안 함"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/title
 msgctxt "settings"
 msgid "Show widget"
-msgstr ""
+msgstr "위젯 표시"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/description
 msgctxt "settings"
 msgid "Transition effect used when streaming tokens from model."
-msgstr ""
+msgstr "모델로 부터 스트리밍 토큰이 있을때 전화 효과 사용"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/oneOf[0]/title
 msgctxt "settings"
 msgid "None"
-msgstr ""
+msgstr "없음"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/oneOf[1]/title
 msgctxt "settings"
@@ -779,12 +779,12 @@ msgstr ""
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/title
 msgctxt "settings"
 msgid "Streaming animation"
-msgstr ""
+msgstr "스트리밍 애니메이션"
 
 #: /packages/completer-extension/schema/inline-completer.json:/title
 msgctxt "schema"
 msgid "Inline Completer"
-msgstr ""
+msgstr "인라인 자동완성"
 
 #: /packages/completer-extension/schema/manager.json:/description
 msgctxt "schema"
@@ -794,7 +794,7 @@ msgstr "코드 자동완성 설정"
 #: /packages/completer-extension/schema/manager.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Code Completer"
-msgstr ""
+msgstr "코드 자동 완성"
 
 #: /packages/completer-extension/schema/manager.json:/properties/autoCompletion/description
 msgctxt "settings"
@@ -1106,7 +1106,7 @@ msgstr ""
 #: /packages/docmanager-extension/schema/plugin.json:/properties/maxNumberRecents/title
 msgctxt "settings"
 msgid "Recent Items Number"
-msgstr ""
+msgstr "최근 아이템 넘버"
 
 #: /packages/docmanager-extension/schema/plugin.json:/properties/renameUntitledFileOnSave/description
 msgctxt "settings"
@@ -1223,7 +1223,7 @@ msgstr "필터 디렉토리"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/filterDirectories/title
 msgctxt "settings"
 msgid "Filter folders"
-msgstr ""
+msgstr "폴더 필터"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/description
 msgctxt "settings"
@@ -1243,7 +1243,7 @@ msgstr "현재 디렉토리 둘러보기"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/title
 msgctxt "settings"
 msgid "Navigate to current folder"
-msgstr ""
+msgstr "현재 디렉토리 둘러보기"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFileCheckboxes/description
 msgctxt "settings"
@@ -1536,7 +1536,7 @@ msgstr ""
 #: /packages/htmlviewer-extension/schema/plugin.json:/properties/trustByDefault/title
 msgctxt "settings"
 msgid "Trust HTML by default"
-msgstr ""
+msgstr "기본으로 HTML 신뢰"
 
 #: /packages/htmlviewer-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1636,7 +1636,7 @@ msgstr ""
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/configuration/title
 msgctxt "settings"
 msgid "Language Server Configurations"
-msgstr ""
+msgstr "언어 서버 구성"
 
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/rank/description
 msgctxt "settings"
@@ -1646,17 +1646,17 @@ msgstr ""
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/rank/title
 msgctxt "settings"
 msgid "Rank of the server"
-msgstr ""
+msgstr "서버의 랭킹"
 
 #: /packages/lsp-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Language Server Protocol settings."
-msgstr ""
+msgstr "언어 서버 프로토콜 설정."
 
 #: /packages/lsp-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Language integration"
-msgstr ""
+msgstr "언어 통합"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/activate/description
 msgctxt "settings"
@@ -1686,7 +1686,7 @@ msgstr ""
 #: /packages/lsp-extension/schema/plugin.json:/properties/logAllCommunication/title
 msgctxt "settings"
 msgid "Log communication"
-msgstr ""
+msgstr "통신 기록"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/setTrace/description
 msgctxt "settings"
@@ -1696,12 +1696,12 @@ msgstr ""
 #: /packages/lsp-extension/schema/plugin.json:/properties/setTrace/title
 msgctxt "settings"
 msgid "Ask servers to send trace notifications"
-msgstr ""
+msgstr "서버에 추적 알림 전송 요청"
 
 #: /packages/lsp-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Language Servers (Experimental)"
-msgstr ""
+msgstr "언어 서버 (실험실 기능)"
 
 #: /packages/mainmenu-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -1815,7 +1815,7 @@ msgstr "메인 메뉴"
 #: /packages/mathjax-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "MathJax math renderer for JupyterLab"
-msgstr ""
+msgstr "JupyterLab용 MathJax 수식 렌더러"
 
 #: /packages/mathjax-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1855,7 +1855,7 @@ msgstr ""
 #: /packages/metadataform-extension/schema/metadataforms.json:/title
 msgctxt "schema"
 msgid "Metadata Form"
-msgstr ""
+msgstr "메타데이터 폼"
 
 #: /packages/notebook-extension/schema/completer.json:/description
 msgctxt "schema"
@@ -1875,7 +1875,7 @@ msgstr "노트북 내보내기 설정."
 #: /packages/notebook-extension/schema/export.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
 msgctxt "menu"
 msgid "Save and Export Notebook As"
-msgstr ""
+msgstr "노트북을 저장하고 내보내기"
 
 #: /packages/notebook-extension/schema/export.json:/jupyter.lab.menus/main[0]/items[1]/submenu/label
 msgctxt "menu"
@@ -1963,22 +1963,22 @@ msgstr ""
 #: /packages/notebook-extension/schema/tracker.json:/properties/accessKernelHistory/title
 msgctxt "settings"
 msgid "Kernel history access"
-msgstr ""
+msgstr "커널 히스토리 접근"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoStartDefaultKernel/description
 msgctxt "settings"
 msgid "Whether to automatically start the preferred kernel."
-msgstr ""
+msgstr "선호 커널을 자동으로 시작할지 여부."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoStartDefaultKernel/title
 msgctxt "settings"
 msgid "Automatically Start Preferred Kernel"
-msgstr ""
+msgstr "선호 커널을 자동으로 시작"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all code cells; it will override the CodeMirror default configuration."
-msgstr ""
+msgstr "모든 프롬프트 셀에 대한 구성을 CodeMirror 기본 구성으로 재정의."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/codeCellConfig/title
 msgctxt "settings"
@@ -2023,7 +2023,7 @@ msgstr ""
 #: /packages/notebook-extension/schema/tracker.json:/properties/inputHistoryScope/title
 msgctxt "settings"
 msgid "Input History Scope"
-msgstr ""
+msgstr "입력 히스토리 스코프"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/kernelShutdown/description
 msgctxt "settings"
@@ -2194,12 +2194,12 @@ msgstr "노트북"
 #: /packages/running-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Sessions Settings"
-msgstr ""
+msgstr "세션 설정"
 
 #: /packages/running-extension/schema/plugin.json:/jupyter.lab.menus/context[3]/submenu/label
 msgctxt "menu"
 msgid "Connected Sessions…"
-msgstr ""
+msgstr "연결된 세션..."
 
 #: /packages/running-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -2309,7 +2309,7 @@ msgstr ""
 #: /packages/terminal-extension/schema/plugin.json:/properties/cursorBlink/title
 msgctxt "settings"
 msgid "Blinking cursor"
-msgstr ""
+msgstr "커서 깜박임"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/fontFamily/description
 msgctxt "settings"
@@ -2409,7 +2409,7 @@ msgstr "터미널"
 #: /packages/toc-extension/schema/registry.json:/description
 msgctxt "schema"
 msgid "Default table of contents settings."
-msgstr ""
+msgstr "기본 목차 설정."
 
 #: /packages/toc-extension/schema/registry.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -2419,7 +2419,7 @@ msgstr "목차"
 #: /packages/toc-extension/schema/registry.json:/properties/baseNumbering/description
 msgctxt "settings"
 msgid "The number headings start at."
-msgstr ""
+msgstr "제목 번호 시작."
 
 #: /packages/toc-extension/schema/registry.json:/properties/baseNumbering/title
 msgctxt "settings"
@@ -2439,7 +2439,7 @@ msgstr "셀 출력을 제목에 포함"
 #: /packages/toc-extension/schema/registry.json:/properties/maximalDepth/title
 msgctxt "settings"
 msgid "Maximal headings depth"
-msgstr ""
+msgstr "최대 제목 깊이"
 
 #: /packages/toc-extension/schema/registry.json:/properties/numberHeaders/description
 msgctxt "settings"
@@ -2449,7 +2449,7 @@ msgstr ""
 #: /packages/toc-extension/schema/registry.json:/properties/numberHeaders/title
 msgctxt "settings"
 msgid "Enable headings numbering"
-msgstr ""
+msgstr "제목 번호 활성화"
 
 #: /packages/toc-extension/schema/registry.json:/properties/numberingH1/description
 msgctxt "settings"
@@ -2559,17 +2559,17 @@ msgstr "언어"
 #: /packages/workspaces-extension/schema/menu.json:/description /packages/workspaces-extension/schema/menu.json:/title
 msgctxt "schema"
 msgid "Workspaces Menu"
-msgstr ""
+msgstr "워크스페이스 메뉴"
 
 #: /packages/workspaces-extension/schema/menu.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
 msgctxt "menu"
 msgid "Workspaces"
-msgstr ""
+msgstr "워크스페이스"
 
 #: /packages/workspaces-extension/schema/sidebar.json:/description /packages/workspaces-extension/schema/sidebar.json:/title
 msgctxt "schema"
 msgid "Workspaces Sidebar"
-msgstr ""
+msgstr "워크스페이스 슬라이드바"
 
 #: packages/application-extension/src/index.tsx:1005 packages/application-extension/src/index.tsx:990
 msgid "The path: %1 was not found. JupyterLab redirected to: %2"
@@ -2665,7 +2665,7 @@ msgstr "우측 사이드바 표시"
 
 #: packages/application-extension/src/index.tsx:366 packages/application-extension/src/index.tsx:378
 msgid "Toggle Sidebar Element"
-msgstr ""
+msgstr "슬라이드바 요소 전환"
 
 #: packages/application-extension/src/index.tsx:380
 msgid "Toggle Element %1 in Right Sidebar"
@@ -2677,11 +2677,11 @@ msgstr ""
 
 #: packages/application-extension/src/index.tsx:399 packages/application-extension/src/index.tsx:420
 msgid "Show Right Activity Bar"
-msgstr ""
+msgstr "오른쪽 액티비티 바 표시"
 
 #: packages/application-extension/src/index.tsx:400 packages/application-extension/src/index.tsx:421
 msgid "Show Left Activity Bar"
-msgstr ""
+msgstr "왼쪽 액티비티 바 표시"
 
 #: packages/application-extension/src/index.tsx:419 packages/application-extension/src/index.tsx:440
 msgid "Presentation Mode"
@@ -2689,11 +2689,11 @@ msgstr "프레젠테이션 모드"
 
 #: packages/application-extension/src/index.tsx:430 packages/application-extension/src/index.tsx:451
 msgid "Set %1 mode."
-msgstr ""
+msgstr "%1 모드 설정."
 
 #: packages/application-extension/src/index.tsx:431 packages/application-extension/src/index.tsx:452
 msgid "Set the layout `mode`."
-msgstr ""
+msgstr "`mode` 레이아웃 설정."
 
 #: packages/application-extension/src/index.tsx:432 packages/application-extension/src/index.tsx:453
 msgid "The layout `mode` can be \"single-document\" or \"multiple-document\"."
@@ -2771,7 +2771,7 @@ msgstr "Jupyter 서버에 연결할 수 없습니다.\n"
 
 #: packages/application/src/shell.ts:734 packages/application/src/shell.ts:741
 msgid "main menu"
-msgstr ""
+msgstr "메인 메뉴"
 
 #: packages/application/src/shell.ts:738 packages/application/src/shell.ts:742 packages/application/src/shell.ts:745 packages/application/src/shell.ts:749
 msgid "main sidebar"
@@ -2783,7 +2783,7 @@ msgstr "대체 사이드바"
 
 #: packages/application/src/utils.ts:148 packages/application/src/utils.ts:253
 msgid "%1 and %2"
-msgstr ""
+msgstr "%1와 %2"
 
 #: packages/apputils-extension/src/announcements.ts:102
 msgid "Would you like to get notified about official Jupyter news?"
@@ -2800,7 +2800,7 @@ msgstr ""
 
 #: packages/apputils-extension/src/announcements.ts:116
 msgid "Privacy policies"
-msgstr ""
+msgstr "개인정보 보호정책"
 
 #: packages/apputils-extension/src/announcements.ts:126 packages/extensionmanager/src/widget.tsx:443 packages/pluginmanager/src/widget.tsx:125
 msgid "Yes"
@@ -2842,7 +2842,7 @@ msgstr "기다려주세요"
 
 #: packages/apputils-extension/src/index.ts:224
 msgid "Clear Workspace"
-msgstr "작업 공간 비우기"
+msgstr "워크스페이스 지우기"
 
 #: packages/apputils-extension/src/index.ts:290
 msgid "Print…"
@@ -2854,7 +2854,7 @@ msgstr "내용 위에 헤더 표시"
 
 #: packages/apputils-extension/src/index.ts:429 packages/apputils-extension/src/index.ts:438
 msgid "Load state for the current workspace."
-msgstr ""
+msgstr "현재 워크스페이스의 상태 로딩"
 
 #: packages/apputils-extension/src/index.ts:493 packages/apputils-extension/src/index.ts:502
 msgid "Reset Application State"
@@ -2862,7 +2862,7 @@ msgstr "애플리케이션 상태 리셋"
 
 #: packages/apputils-extension/src/index.ts:504 packages/apputils-extension/src/index.ts:513
 msgid "Reset state when loading for the workspace."
-msgstr ""
+msgstr "워크스페이스 로딩시 상태 리셋"
 
 #: packages/apputils-extension/src/index.ts:595 packages/apputils-extension/src/index.ts:604
 msgid "Run First Enabled Command"
@@ -2919,7 +2919,7 @@ msgstr ""
 
 #: packages/apputils-extension/src/notificationplugin.tsx:440
 msgid "Update a notification"
-msgstr ""
+msgstr "알림 업데이트"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:441
 msgid "Notification is described by {id: string, message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
@@ -2927,7 +2927,7 @@ msgstr ""
 
 #: packages/apputils-extension/src/notificationplugin.tsx:480
 msgid "Dismiss a notification"
-msgstr ""
+msgstr "알림 닫기"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:601
 msgid "Show Notifications"
@@ -2999,7 +2999,7 @@ msgstr ""
 
 #: packages/apputils-extension/src/themesplugins.ts:187
 msgid "Synchronize with System Settings"
-msgstr ""
+msgstr "시스템 설정과 동기화"
 
 #: packages/apputils-extension/src/themesplugins.ts:195
 msgid "Theme Scrollbars"
@@ -3047,7 +3047,7 @@ msgstr "테마"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:181 packages/apputils-extension/src/workspacesplugin.ts:95
 msgid "Workspace loader"
-msgstr "작업 공간 로더"
+msgstr "워크스페이스 로더"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:271 packages/apputils-extension/src/workspacesplugin.ts:279 packages/docmanager/src/widgetmanager.ts:442 packages/docmanager/src/widgetmanager.ts:513 packages/docregistry/src/context.ts:1041 packages/docregistry/src/context.ts:1043 packages/workspaces-extension/src/commands.ts:587
 msgid "Save"
@@ -3055,19 +3055,19 @@ msgstr "저장"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:272 packages/apputils-extension/src/workspacesplugin.ts:93 packages/workspaces-extension/src/commands.ts:458
 msgid "Save Current Workspace"
-msgstr "저장"
+msgstr "햔재 워크스페이스 저장"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:275 packages/apputils-extension/src/workspacesplugin.ts:79 packages/workspaces-extension/src/commands.ts:449 packages/workspaces-extension/src/commands.ts:584
 msgid "Save Current Workspace As…"
-msgstr "다른 이름으로 저장"
+msgstr "현재 워크스페이스를 다른 이름으로 저장.."
 
 #: packages/apputils-extension/src/workspacesplugin.ts:72
 msgid "JupyterLab Workspace File"
-msgstr ""
+msgstr "JupyterLab 워크스페이스 파일"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:72
 msgid "JupyterLab workspace File"
-msgstr "JupyterLab 작업 공간 파일"
+msgstr "JupyterLab 워크스페이스 파일"
 
 #: packages/apputils/src/dialog.tsx:47 packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:425 packages/hub-extension/src/index.ts:179 packages/hub-extension/src/index.ts:180 packages/lsp/src/adapters/adapter.ts:497 packages/mainmenu-extension/src/index.ts:545 packages/mainmenu-extension/src/index.ts:548
 msgid "Dismiss"
@@ -3175,7 +3175,7 @@ msgstr "재시작"
 
 #: packages/apputils/src/sessioncontext.tsx:1420
 msgid "Confirm Kernel Restart"
-msgstr ""
+msgstr "커널 재시작 확인"
 
 #: packages/apputils/src/sessioncontext.tsx:1423
 msgid "Restart Kernel?"
@@ -3187,7 +3187,7 @@ msgstr "%1의 커널을 재시작합니다. 저장된 모든 변수가 초기화
 
 #: packages/apputils/src/sessioncontext.tsx:1429
 msgid "Cancel Kernel Restart"
-msgstr ""
+msgstr "커널 재시작 취소"
 
 #: packages/apputils/src/sessioncontext.tsx:1484
 msgid "Select kernel for:"
@@ -3263,11 +3263,11 @@ msgstr "커널 재시작"
 
 #: packages/cells/src/placeholder.ts:85
 msgid "Click to expand"
-msgstr ""
+msgstr "클릭으로 펼침"
 
 #: packages/cells/src/widget.ts:1010 packages/cells/src/widget.ts:1012 packages/cells/src/widget.ts:1075 packages/cells/src/widget.ts:1099 packages/cells/src/widget.ts:1101 packages/cells/src/widget.ts:1225 packages/cells/src/widget.ts:1506 packages/cells/src/widget.ts:1508 packages/cells/src/widget.ts:1509 packages/cells/src/widget.ts:1646
 msgid "Code Cell Content"
-msgstr ""
+msgstr "코드 셀 콘텐츠"
 
 #: packages/cells/src/widget.ts:1011 packages/cells/src/widget.ts:1013 packages/cells/src/widget.ts:1076 packages/cells/src/widget.ts:1100 packages/cells/src/widget.ts:1102 packages/cells/src/widget.ts:1226 packages/cells/src/widget.ts:1507 packages/cells/src/widget.ts:1509 packages/cells/src/widget.ts:1510 packages/cells/src/widget.ts:1647
 msgid "Code Cell Content with Output"
@@ -3275,7 +3275,7 @@ msgstr ""
 
 #: packages/cells/src/widget.ts:1931 packages/cells/src/widget.ts:1933 packages/cells/src/widget.ts:1935 packages/cells/src/widget.ts:1936 packages/cells/src/widget.ts:2076
 msgid "Markdown Cell Content"
-msgstr ""
+msgstr "마크다운 셀 콘텐츠"
 
 #: packages/cells/src/widget.ts:2174 packages/cells/src/widget.ts:2176 packages/cells/src/widget.ts:2178 packages/cells/src/widget.ts:2179 packages/cells/src/widget.ts:2319
 msgid "%1 cell hidden"
@@ -3344,35 +3344,35 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:1002 packages/codemirror/src/extension.ts:1026
 msgid "to"
-msgstr ""
+msgstr "to"
 
 #: packages/codemirror/src/extension.ts:1003 packages/codemirror/src/extension.ts:1027
 msgid "folded code"
-msgstr ""
+msgstr "접힌 코드"
 
 #: packages/codemirror/src/extension.ts:1004 packages/codemirror/src/extension.ts:1028
 msgid "unfold"
-msgstr ""
+msgstr "펼침"
 
 #: packages/codemirror/src/extension.ts:1005 packages/codemirror/src/extension.ts:1029
 msgid "Fold line"
-msgstr ""
+msgstr "줄 접기"
 
 #: packages/codemirror/src/extension.ts:1006 packages/codemirror/src/extension.ts:1030
 msgid "Unfold line"
-msgstr ""
+msgstr "줄 펼치기"
 
 #: packages/codemirror/src/extension.ts:1007 packages/codemirror/src/extension.ts:983
 msgid "CodeMirror theme"
-msgstr ""
+msgstr "CodeMirror 테마"
 
 #: packages/codemirror/src/extension.ts:1008 packages/codemirror/src/extension.ts:1032
 msgid "Go to line"
-msgstr ""
+msgstr "라인으로 이동"
 
 #: packages/codemirror/src/extension.ts:1009 packages/codemirror/src/extension.ts:1033
 msgid "go"
-msgstr ""
+msgstr "이동"
 
 #: packages/codemirror/src/extension.ts:1010 packages/codemirror/src/extension.ts:1034 packages/documentsearch/src/searchview.tsx:173 packages/documentsearch/src/searchview.tsx:178
 msgid "Find"
@@ -3384,79 +3384,79 @@ msgstr "바꾸기"
 
 #: packages/codemirror/src/extension.ts:1012 packages/codemirror/src/extension.ts:1036
 msgid "next"
-msgstr ""
+msgstr "다음"
 
 #: packages/codemirror/src/extension.ts:1013 packages/codemirror/src/extension.ts:1037
 msgid "previous"
-msgstr ""
+msgstr "이전"
 
 #: packages/codemirror/src/extension.ts:1014 packages/codemirror/src/extension.ts:1038
 msgid "all"
-msgstr ""
+msgstr "전체"
 
 #: packages/codemirror/src/extension.ts:1015 packages/codemirror/src/extension.ts:1039
 msgid "match case"
-msgstr ""
+msgstr "대/소문자 일치"
 
 #: packages/codemirror/src/extension.ts:1016 packages/codemirror/src/extension.ts:1040
 msgid "replace"
-msgstr ""
+msgstr "바꾸기"
 
 #: packages/codemirror/src/extension.ts:1017 packages/codemirror/src/extension.ts:1041
 msgid "replace all"
-msgstr ""
+msgstr "모두 바꾸기"
 
 #: packages/codemirror/src/extension.ts:1018 packages/codemirror/src/extension.ts:1042
 msgid "close"
-msgstr ""
+msgstr "닫기"
 
 #: packages/codemirror/src/extension.ts:1019 packages/codemirror/src/extension.ts:1043
 msgid "current match"
-msgstr ""
+msgstr "현재 일치 사항"
 
 #: packages/codemirror/src/extension.ts:1020 packages/codemirror/src/extension.ts:1044
 msgid "replaced $ matches"
-msgstr ""
+msgstr "$ 일치 사항 바꾸기"
 
 #: packages/codemirror/src/extension.ts:1020 packages/codemirror/src/extension.ts:996
 msgid "Control character"
-msgstr ""
+msgstr "제어 문자"
 
 #: packages/codemirror/src/extension.ts:1021 packages/codemirror/src/extension.ts:1045
 msgid "replaced match on line $"
-msgstr ""
+msgstr "$ 줄에 있는 일치 사항 바꾸기"
 
 #: packages/codemirror/src/extension.ts:1022 packages/codemirror/src/extension.ts:1046
 msgid "on line"
-msgstr ""
+msgstr "현재 줄"
 
 #: packages/codemirror/src/extension.ts:1022 packages/codemirror/src/extension.ts:998
 msgid "Selection deleted"
-msgstr ""
+msgstr "선택 항목 삭제됨"
 
 #: packages/codemirror/src/extension.ts:1024 packages/codemirror/src/extension.ts:1048
 msgid "Completions"
-msgstr ""
+msgstr "자동완성"
 
 #: packages/codemirror/src/extension.ts:1026 packages/codemirror/src/extension.ts:1050
 msgid "Diagnostics"
-msgstr ""
+msgstr "진단"
 
 #: packages/codemirror/src/extension.ts:1027 packages/codemirror/src/extension.ts:1051
 msgid "No diagnostics"
-msgstr ""
+msgstr "진단 없음"
 
 #: packages/codemirror/src/extension.ts:618 packages/codemirror/src/extension.ts:619
 msgid "Auto Closing Brackets"
-msgstr ""
+msgstr "자동 괄호 닫기"
 
 #: packages/codemirror/src/extension.ts:627 packages/codemirror/src/extension.ts:628
 msgid "Code Folding"
-msgstr ""
+msgstr "코드 접기"
 
 #: packages/codemirror/src/extension.ts:639 packages/codemirror/src/extension.ts:640
 msgid "Cursor blinking rate"
-msgstr ""
+msgstr "커서 깜박임 속도"
 
 #: packages/codemirror/src/extension.ts:640 packages/codemirror/src/extension.ts:641
 msgid "Half-period in milliseconds used for cursor blinking. The default blink rate is 1200ms. By setting this to zero, blinking can be disabled."
@@ -3508,227 +3508,227 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:792 packages/codemirror/src/extension.ts:817
 msgid "Rulers"
-msgstr ""
+msgstr "눈금자"
 
 #: packages/codemirror/src/extension.ts:860 packages/codemirror/src/extension.ts:884
 msgid "Smart Indentation"
-msgstr ""
+msgstr "스마트 인덴테이션"
 
 #: packages/codemirror/src/extension.ts:908 packages/codemirror/src/extension.ts:932
 msgid "Tab size"
-msgstr ""
+msgstr "탭 크기"
 
 #: packages/codemirror/src/extension.ts:933 packages/codemirror/src/extension.ts:957
 msgid "Multiple selections"
-msgstr ""
+msgstr "다중 선택"
 
 #: packages/codemirror/src/extension.ts:948 packages/codemirror/src/extension.ts:972
 msgid "Custom editor styles"
-msgstr ""
+msgstr "사용자 정의 에디터 스타일"
 
 #: packages/codemirror/src/extension.ts:953 packages/codemirror/src/extension.ts:977
 msgid "Font Family"
-msgstr ""
+msgstr "폰트 패밀리"
 
 #: packages/codemirror/src/extension.ts:959 packages/codemirror/src/extension.ts:983
 msgid "Font Size"
-msgstr ""
+msgstr "글꼴 크기"
 
 #: packages/codemirror/src/extension.ts:963 packages/codemirror/src/extension.ts:987
 msgid "Line Height"
-msgstr ""
+msgstr "행 높이"
 
 #: packages/codemirror/src/language.ts:1003 packages/codemirror/src/language.ts:996
 msgid "IDL"
-msgstr ""
+msgstr "IDL"
 
 #: packages/codemirror/src/language.ts:1006 packages/codemirror/src/language.ts:1013
 msgid "JSON-LD"
-msgstr ""
+msgstr "JSON-LD"
 
 #: packages/codemirror/src/language.ts:1017 packages/codemirror/src/language.ts:1024
 msgid "Jinja2"
-msgstr ""
+msgstr "Jinja2"
 
 #: packages/codemirror/src/language.ts:1027 packages/codemirror/src/language.ts:1034
 msgid "Julia"
-msgstr ""
+msgstr "Julia"
 
 #: packages/codemirror/src/language.ts:1037 packages/codemirror/src/language.ts:1044
 msgid "Kotlin"
-msgstr ""
+msgstr "Kotlin"
 
 #: packages/codemirror/src/language.ts:1047 packages/codemirror/src/language.ts:1054
 msgid "LESS"
-msgstr ""
+msgstr "LESS"
 
 #: packages/codemirror/src/language.ts:1057 packages/codemirror/src/language.ts:1064
 msgid "LiveScript"
-msgstr ""
+msgstr "LiveScript"
 
 #: packages/codemirror/src/language.ts:1068 packages/codemirror/src/language.ts:1075
 msgid "Lua"
-msgstr ""
+msgstr "Lua"
 
 #: packages/codemirror/src/language.ts:1078 packages/codemirror/src/language.ts:1085
 msgid "mIRC"
-msgstr ""
+msgstr "mIRC"
 
 #: packages/codemirror/src/language.ts:1087 packages/codemirror/src/language.ts:1094
 msgid "Mathematica"
-msgstr ""
+msgstr "Mathematica"
 
 #: packages/codemirror/src/language.ts:1097 packages/codemirror/src/language.ts:1104
 msgid "Modelica"
-msgstr ""
+msgstr "Modelica"
 
 #: packages/codemirror/src/language.ts:1107 packages/codemirror/src/language.ts:1114
 msgid "MUMPS"
-msgstr ""
+msgstr "MUMPS"
 
 #: packages/codemirror/src/language.ts:1117 packages/codemirror/src/language.ts:1124
 msgid "mbox"
-msgstr ""
+msgstr "mbox"
 
 #: packages/codemirror/src/language.ts:1127 packages/codemirror/src/language.ts:1134
 msgid "Nginx"
-msgstr ""
+msgstr "Nginx"
 
 #: packages/codemirror/src/language.ts:1137 packages/codemirror/src/language.ts:1144
 msgid "NSIS"
-msgstr ""
+msgstr "NSIS"
 
 #: packages/codemirror/src/language.ts:1147 packages/codemirror/src/language.ts:1154
 msgid "NTriples"
-msgstr ""
+msgstr "NTriples"
 
 #: packages/codemirror/src/language.ts:1161 packages/codemirror/src/language.ts:1168
 msgid "Objective-C"
-msgstr ""
+msgstr "Objective-C"
 
 #: packages/codemirror/src/language.ts:1172 packages/codemirror/src/language.ts:1179
 msgid "Objective-C++"
-msgstr ""
+msgstr "Objective-C++"
 
 #: packages/codemirror/src/language.ts:1183 packages/codemirror/src/language.ts:1190
 msgid "OCaml"
-msgstr ""
+msgstr "OCaml"
 
 #: packages/codemirror/src/language.ts:1193 packages/codemirror/src/language.ts:1200
 msgid "Octave"
-msgstr ""
+msgstr "Octave"
 
 #: packages/codemirror/src/language.ts:1203 packages/codemirror/src/language.ts:1210
 msgid "Oz"
-msgstr ""
+msgstr "Oz"
 
 #: packages/codemirror/src/language.ts:1213 packages/codemirror/src/language.ts:1220
 msgid "Pascal"
-msgstr ""
+msgstr "Pascal"
 
 #: packages/codemirror/src/language.ts:1223 packages/codemirror/src/language.ts:1230
 msgid "Perl"
-msgstr ""
+msgstr "Perl"
 
 #: packages/codemirror/src/language.ts:1233 packages/codemirror/src/language.ts:1240
 msgid "Pig"
-msgstr ""
+msgstr "Pig"
 
 #: packages/codemirror/src/language.ts:1243 packages/codemirror/src/language.ts:1250
 msgid "PowerShell"
-msgstr ""
+msgstr "PowerShell"
 
 #: packages/codemirror/src/language.ts:1253 packages/codemirror/src/language.ts:1260
 msgid "Properties files"
-msgstr ""
+msgstr "속성 파일"
 
 #: packages/codemirror/src/language.ts:1264 packages/codemirror/src/language.ts:1271
 msgid "ProtoBuf"
-msgstr ""
+msgstr "ProtoBuf"
 
 #: packages/codemirror/src/language.ts:1274 packages/codemirror/src/language.ts:1281
 msgid "Puppet"
-msgstr ""
+msgstr "Puppet"
 
 #: packages/codemirror/src/language.ts:1284 packages/codemirror/src/language.ts:1291
 msgid "Q"
-msgstr ""
+msgstr "Q"
 
 #: packages/codemirror/src/language.ts:1294 packages/codemirror/src/language.ts:1301
 msgid "R"
-msgstr ""
+msgstr "R"
 
 #: packages/codemirror/src/language.ts:1305 packages/codemirror/src/language.ts:1312
 msgid "RPM Changes"
-msgstr ""
+msgstr "RPM 변경사항"
 
 #: packages/codemirror/src/language.ts:1314 packages/codemirror/src/language.ts:1321
 msgid "RPM Spec"
-msgstr ""
+msgstr "RPM 스펙"
 
 #: packages/codemirror/src/language.ts:1324 packages/codemirror/src/language.ts:1331
 msgid "Ruby"
-msgstr ""
+msgstr "Ruby"
 
 #: packages/codemirror/src/language.ts:1335 packages/codemirror/src/language.ts:1342
 msgid "SAS"
-msgstr ""
+msgstr "SAS"
 
 #: packages/codemirror/src/language.ts:1345 packages/codemirror/src/language.ts:1352
 msgid "Scala"
-msgstr ""
+msgstr "Scala"
 
 #: packages/codemirror/src/language.ts:1355 packages/codemirror/src/language.ts:1362
 msgid "Scheme"
-msgstr ""
+msgstr "Scheme"
 
 #: packages/codemirror/src/language.ts:1365 packages/codemirror/src/language.ts:1372
 msgid "SCSS"
-msgstr ""
+msgstr "SCSS"
 
 #: packages/codemirror/src/language.ts:1375 packages/codemirror/src/language.ts:1382
 msgid "Shell"
-msgstr ""
+msgstr "Shell"
 
 #: packages/codemirror/src/language.ts:1387 packages/codemirror/src/language.ts:1394
 msgid "Sieve"
-msgstr ""
+msgstr "Sieve"
 
 #: packages/codemirror/src/language.ts:1397 packages/codemirror/src/language.ts:1404
 msgid "Smalltalk"
-msgstr ""
+msgstr "Smalltalk"
 
 #: packages/codemirror/src/language.ts:1407 packages/codemirror/src/language.ts:1414
 msgid "Solr"
-msgstr ""
+msgstr "Solr"
 
 #: packages/codemirror/src/language.ts:1416 packages/codemirror/src/language.ts:1423
 msgid "SML"
-msgstr ""
+msgstr "SML"
 
 #: packages/codemirror/src/language.ts:1426 packages/codemirror/src/language.ts:1433
 msgid "SPARQL"
-msgstr ""
+msgstr "SPARQL"
 
 #: packages/codemirror/src/language.ts:1437 packages/codemirror/src/language.ts:1444
 msgid "Spreadsheet"
-msgstr ""
+msgstr "스프레드시트"
 
 #: packages/codemirror/src/language.ts:1447 packages/codemirror/src/language.ts:1454
 msgid "Squirrel"
-msgstr ""
+msgstr "Squirrel"
 
 #: packages/codemirror/src/language.ts:1457 packages/codemirror/src/language.ts:1464
 msgid "Stylus"
-msgstr ""
+msgstr "스타일러스"
 
 #: packages/codemirror/src/language.ts:1467 packages/codemirror/src/language.ts:1474
 msgid "Swift"
-msgstr ""
+msgstr "Swift"
 
 #: packages/codemirror/src/language.ts:1477 packages/codemirror/src/language.ts:1484
 msgid "sTeX"
-msgstr ""
+msgstr "sTeX"
 
 #: packages/codemirror/src/language.ts:1486 packages/codemirror/src/language.ts:1493 packages/notebook-extension/src/index.ts:3800 packages/notebook-extension/src/index.ts:3807 packages/notebook-extension/src/index.ts:3866
 msgid "LaTeX"
@@ -3736,39 +3736,39 @@ msgstr "LaTeX"
 
 #: packages/codemirror/src/language.ts:1497 packages/codemirror/src/language.ts:1504
 msgid "SystemVerilog"
-msgstr ""
+msgstr "SystemVerilog"
 
 #: packages/codemirror/src/language.ts:1507 packages/codemirror/src/language.ts:1514
 msgid "Tcl"
-msgstr ""
+msgstr "Tcl"
 
 #: packages/codemirror/src/language.ts:1517 packages/codemirror/src/language.ts:1524
 msgid "Textile"
-msgstr ""
+msgstr "Textile"
 
 #: packages/codemirror/src/language.ts:1527 packages/codemirror/src/language.ts:1534
 msgid "TiddlyWiki"
-msgstr ""
+msgstr "TiddlyWiki"
 
 #: packages/codemirror/src/language.ts:1536 packages/codemirror/src/language.ts:1543
 msgid "Tiki wiki"
-msgstr ""
+msgstr "Tiki wiki"
 
 #: packages/codemirror/src/language.ts:1545 packages/codemirror/src/language.ts:1552
 msgid "TOML"
-msgstr ""
+msgstr "TOML"
 
 #: packages/codemirror/src/language.ts:1555 packages/codemirror/src/language.ts:1562
 msgid "troff"
-msgstr ""
+msgstr "troff"
 
 #: packages/codemirror/src/language.ts:1565 packages/codemirror/src/language.ts:1572
 msgid "TTCN"
-msgstr ""
+msgstr "TTCN"
 
 #: packages/codemirror/src/language.ts:1575 packages/codemirror/src/language.ts:1582
 msgid "TTCN_CFG"
-msgstr ""
+msgstr "TTCN_CFG"
 
 #: packages/codemirror/src/language.ts:1585 packages/codemirror/src/language.ts:1592
 msgid "Turtle"
@@ -3776,71 +3776,71 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1595 packages/codemirror/src/language.ts:1602
 msgid "Web IDL"
-msgstr ""
+msgstr "Web IDL"
 
 #: packages/codemirror/src/language.ts:1605 packages/codemirror/src/language.ts:1612
 msgid "VB.NET"
-msgstr ""
+msgstr "VB.NET"
 
 #: packages/codemirror/src/language.ts:1615 packages/codemirror/src/language.ts:1622
 msgid "VBScript"
-msgstr ""
+msgstr "VBScript"
 
 #: packages/codemirror/src/language.ts:1625 packages/codemirror/src/language.ts:1632
 msgid "Velocity"
-msgstr ""
+msgstr "Velocity"
 
 #: packages/codemirror/src/language.ts:1635 packages/codemirror/src/language.ts:1642
 msgid "Verilog"
-msgstr ""
+msgstr "Verilog"
 
 #: packages/codemirror/src/language.ts:1645 packages/codemirror/src/language.ts:1652
 msgid "VHDL"
-msgstr ""
+msgstr "VHDL"
 
 #: packages/codemirror/src/language.ts:1655 packages/codemirror/src/language.ts:1662
 msgid "XQuery"
-msgstr ""
+msgstr "XQuery"
 
 #: packages/codemirror/src/language.ts:1665 packages/codemirror/src/language.ts:1672
 msgid "Yacas"
-msgstr ""
+msgstr "Yacas"
 
 #: packages/codemirror/src/language.ts:1675 packages/codemirror/src/language.ts:1682
 msgid "YAML"
-msgstr ""
+msgstr "YAML"
 
 #: packages/codemirror/src/language.ts:1686 packages/codemirror/src/language.ts:1693
 msgid "Z80"
-msgstr ""
+msgstr "Z80"
 
 #: packages/codemirror/src/language.ts:1696 packages/codemirror/src/language.ts:1703
 msgid "mscgen"
-msgstr ""
+msgstr "mscgen"
 
 #: packages/codemirror/src/language.ts:1706 packages/codemirror/src/language.ts:1713
 msgid "xu"
-msgstr ""
+msgstr "xu"
 
 #: packages/codemirror/src/language.ts:1716 packages/codemirror/src/language.ts:1723
 msgid "msgenny"
-msgstr ""
+msgstr "msgenny"
 
 #: packages/codemirror/src/language.ts:307 packages/codemirror/src/language.ts:308
 msgid "C"
-msgstr ""
+msgstr "C"
 
 #: packages/codemirror/src/language.ts:317 packages/codemirror/src/language.ts:318
 msgid "C++"
-msgstr ""
+msgstr "C++"
 
 #: packages/codemirror/src/language.ts:327 packages/codemirror/src/language.ts:328
 msgid "CQL"
-msgstr ""
+msgstr "CQL"
 
 #: packages/codemirror/src/language.ts:336 packages/codemirror/src/language.ts:337
 msgid "CSS"
-msgstr ""
+msgstr "CSS"
 
 #: packages/codemirror/src/language.ts:346 packages/codemirror/src/language.ts:347 packages/notebook-extension/src/index.ts:3799 packages/notebook-extension/src/index.ts:3806 packages/notebook-extension/src/index.ts:3865
 msgid "HTML"
@@ -3848,23 +3848,23 @@ msgstr "HTML"
 
 #: packages/codemirror/src/language.ts:357 packages/codemirror/src/language.ts:358
 msgid "Java"
-msgstr ""
+msgstr "Java"
 
 #: packages/codemirror/src/language.ts:367 packages/codemirror/src/language.ts:368
 msgid "Javascript"
-msgstr ""
+msgstr "Javascript"
 
 #: packages/codemirror/src/language.ts:384 packages/codemirror/src/language.ts:385
 msgid "JSON"
-msgstr ""
+msgstr "JSON"
 
 #: packages/codemirror/src/language.ts:395 packages/codemirror/src/language.ts:396
 msgid "JSX"
-msgstr ""
+msgstr "JSX"
 
 #: packages/codemirror/src/language.ts:405 packages/codemirror/src/language.ts:406
 msgid "MariaDB SQL"
-msgstr ""
+msgstr "MariaDB SQL"
 
 #: packages/codemirror/src/language.ts:413 packages/codemirror/src/language.ts:414 packages/notebook-extension/src/index.ts:3801 packages/notebook-extension/src/index.ts:3808 packages/notebook-extension/src/index.ts:3867 packages/notebook/src/default-toolbar.tsx:379
 msgid "Markdown"
@@ -3872,227 +3872,227 @@ msgstr "마크다운"
 
 #: packages/codemirror/src/language.ts:423 packages/codemirror/src/language.ts:424
 msgid "MS SQL"
-msgstr ""
+msgstr "MS SQL"
 
 #: packages/codemirror/src/language.ts:431 packages/codemirror/src/language.ts:432
 msgid "MySQL"
-msgstr ""
+msgstr "MySQL"
 
 #: packages/codemirror/src/language.ts:439 packages/codemirror/src/language.ts:440
 msgid "PHP"
-msgstr ""
+msgstr "PHP"
 
 #: packages/codemirror/src/language.ts:453 packages/codemirror/src/language.ts:454
 msgid "PLSQL"
-msgstr ""
+msgstr "PLSQL"
 
 #: packages/codemirror/src/language.ts:462 packages/codemirror/src/language.ts:463
 msgid "PostgreSQL"
-msgstr ""
+msgstr "PostgreSQL"
 
 #: packages/codemirror/src/language.ts:470 packages/codemirror/src/language.ts:471
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: packages/codemirror/src/language.ts:481 packages/codemirror/src/language.ts:485
 msgid "ipython"
-msgstr ""
+msgstr "ipython"
 
 #: packages/codemirror/src/language.ts:493 packages/codemirror/src/language.ts:500
 msgid "Rust"
-msgstr ""
+msgstr "Rust"
 
 #: packages/codemirror/src/language.ts:503 packages/codemirror/src/language.ts:510
 msgid "SQL"
-msgstr ""
+msgstr "SQL"
 
 #: packages/codemirror/src/language.ts:512 packages/codemirror/src/language.ts:519
 msgid "SQLite"
-msgstr ""
+msgstr "SQLite"
 
 #: packages/codemirror/src/language.ts:520 packages/codemirror/src/language.ts:527
 msgid "TSX"
-msgstr ""
+msgstr "TSX"
 
 #: packages/codemirror/src/language.ts:531 packages/codemirror/src/language.ts:538
 msgid "TypeScript"
-msgstr ""
+msgstr "TypeScript"
 
 #: packages/codemirror/src/language.ts:542 packages/codemirror/src/language.ts:549
 msgid "WebAssembly"
-msgstr ""
+msgstr "WebAssembly"
 
 #: packages/codemirror/src/language.ts:552 packages/codemirror/src/language.ts:559
 msgid "XML"
-msgstr ""
+msgstr "XML"
 
 #: packages/codemirror/src/language.ts:564 packages/codemirror/src/language.ts:571
 msgid "APL"
-msgstr ""
+msgstr "APL"
 
 #: packages/codemirror/src/language.ts:574 packages/codemirror/src/language.ts:581
 msgid "PGP"
-msgstr ""
+msgstr "PGP"
 
 #: packages/codemirror/src/language.ts:590 packages/codemirror/src/language.ts:597
 msgid "ASN.1"
-msgstr ""
+msgstr "ASN.1"
 
 #: packages/codemirror/src/language.ts:600 packages/codemirror/src/language.ts:607
 msgid "Asterisk"
-msgstr ""
+msgstr "Asterisk"
 
 #: packages/codemirror/src/language.ts:610 packages/codemirror/src/language.ts:617
 msgid "Brainfuck"
-msgstr ""
+msgstr "Brainfuck"
 
 #: packages/codemirror/src/language.ts:620 packages/codemirror/src/language.ts:627
 msgid "Cobol"
-msgstr ""
+msgstr "Cobol"
 
 #: packages/codemirror/src/language.ts:630 packages/codemirror/src/language.ts:637
 msgid "C#"
-msgstr ""
+msgstr "C#"
 
 #: packages/codemirror/src/language.ts:641 packages/codemirror/src/language.ts:648
 msgid "Clojure"
-msgstr ""
+msgstr "Clojure"
 
 #: packages/codemirror/src/language.ts:651 packages/codemirror/src/language.ts:658
 msgid "ClojureScript"
-msgstr ""
+msgstr "ClojureScript"
 
 #: packages/codemirror/src/language.ts:661 packages/codemirror/src/language.ts:668
 msgid "Closure Stylesheets (GSS)"
-msgstr ""
+msgstr "Closure Stylesheets (GSS)"
 
 #: packages/codemirror/src/language.ts:671 packages/codemirror/src/language.ts:678
 msgid "CMake"
-msgstr ""
+msgstr "CMake"
 
 #: packages/codemirror/src/language.ts:682 packages/codemirror/src/language.ts:689
 msgid "CoffeeScript"
-msgstr ""
+msgstr "CoffeeScript"
 
 #: packages/codemirror/src/language.ts:697 packages/codemirror/src/language.ts:704
 msgid "Common Lisp"
-msgstr ""
+msgstr "Common Lisp"
 
 #: packages/codemirror/src/language.ts:708 packages/codemirror/src/language.ts:715
 msgid "Cypher"
-msgstr ""
+msgstr "Cypher"
 
 #: packages/codemirror/src/language.ts:718 packages/codemirror/src/language.ts:725
 msgid "Cython"
-msgstr ""
+msgstr "Cython"
 
 #: packages/codemirror/src/language.ts:728 packages/codemirror/src/language.ts:735
 msgid "Crystal"
-msgstr ""
+msgstr "Crystal"
 
 #: packages/codemirror/src/language.ts:738 packages/codemirror/src/language.ts:745
 msgid "D"
-msgstr ""
+msgstr "D"
 
 #: packages/codemirror/src/language.ts:748 packages/codemirror/src/language.ts:755
 msgid "Dart"
-msgstr ""
+msgstr "Dart"
 
 #: packages/codemirror/src/language.ts:758 packages/codemirror/src/language.ts:765
 msgid "diff"
-msgstr ""
+msgstr "diff"
 
 #: packages/codemirror/src/language.ts:768 packages/codemirror/src/language.ts:775
 msgid "Dockerfile"
-msgstr ""
+msgstr "Dockerfile"
 
 #: packages/codemirror/src/language.ts:778 packages/codemirror/src/language.ts:785
 msgid "DTD"
-msgstr ""
+msgstr "DTD"
 
 #: packages/codemirror/src/language.ts:788 packages/codemirror/src/language.ts:795
 msgid "Dylan"
-msgstr ""
+msgstr "Dylan"
 
 #: packages/codemirror/src/language.ts:798 packages/codemirror/src/language.ts:805
 msgid "EBNF"
-msgstr ""
+msgstr "EBNF"
 
 #: packages/codemirror/src/language.ts:807 packages/codemirror/src/language.ts:814
 msgid "ECL"
-msgstr ""
+msgstr "ECL"
 
 #: packages/codemirror/src/language.ts:817 packages/codemirror/src/language.ts:824
 msgid "edn"
-msgstr ""
+msgstr "edn"
 
 #: packages/codemirror/src/language.ts:827 packages/codemirror/src/language.ts:834
 msgid "Eiffel"
-msgstr ""
+msgstr "Eiffel"
 
 #: packages/codemirror/src/language.ts:837 packages/codemirror/src/language.ts:844
 msgid "Elm"
-msgstr ""
+msgstr "Elm"
 
 #: packages/codemirror/src/language.ts:847 packages/codemirror/src/language.ts:854
 msgid "Erlang"
-msgstr ""
+msgstr "Erlang"
 
 #: packages/codemirror/src/language.ts:857 packages/codemirror/src/language.ts:864
 msgid "Esper"
-msgstr ""
+msgstr "Esper"
 
 #: packages/codemirror/src/language.ts:866 packages/codemirror/src/language.ts:873
 msgid "Factor"
-msgstr ""
+msgstr "Factor"
 
 #: packages/codemirror/src/language.ts:876 packages/codemirror/src/language.ts:883
 msgid "FCL"
-msgstr ""
+msgstr "FCL"
 
 #: packages/codemirror/src/language.ts:885 packages/codemirror/src/language.ts:892
 msgid "Forth"
-msgstr ""
+msgstr "Forth"
 
 #: packages/codemirror/src/language.ts:895 packages/codemirror/src/language.ts:902
 msgid "Fortran"
-msgstr ""
+msgstr "Fortran"
 
 #: packages/codemirror/src/language.ts:905 packages/codemirror/src/language.ts:912
 msgid "F#"
-msgstr ""
+msgstr "F#"
 
 #: packages/codemirror/src/language.ts:916 packages/codemirror/src/language.ts:923
 msgid "Gas"
-msgstr ""
+msgstr "Gas"
 
 #: packages/codemirror/src/language.ts:926 packages/codemirror/src/language.ts:933
 msgid "Gherkin"
-msgstr ""
+msgstr "Gherkin"
 
 #: packages/codemirror/src/language.ts:936 packages/codemirror/src/language.ts:943
 msgid "Go"
-msgstr ""
+msgstr "Go"
 
 #: packages/codemirror/src/language.ts:946 packages/codemirror/src/language.ts:953
 msgid "Groovy"
-msgstr ""
+msgstr "Groovy"
 
 #: packages/codemirror/src/language.ts:957 packages/codemirror/src/language.ts:964
 msgid "Haskell"
-msgstr ""
+msgstr "Haskell"
 
 #: packages/codemirror/src/language.ts:967 packages/codemirror/src/language.ts:974
 msgid "Haxe"
-msgstr ""
+msgstr "Haxe"
 
 #: packages/codemirror/src/language.ts:977 packages/codemirror/src/language.ts:984
 msgid "HXML"
-msgstr ""
+msgstr "HXML"
 
 #: packages/codemirror/src/language.ts:987 packages/codemirror/src/language.ts:994
 msgid "HTTP"
-msgstr ""
+msgstr "HTTP"
 
 #: packages/codemirror/src/theme.ts:234 packages/codemirror/src/theme.ts:238
 msgid "codemirror"
@@ -4100,7 +4100,7 @@ msgstr "codeMirror"
 
 #: packages/completer-extension/src/index.ts:138
 msgid "Previous"
-msgstr ""
+msgstr "이전"
 
 #: packages/completer-extension/src/index.ts:148 packages/debugger-extension/src/index.ts:908 packages/debugger-extension/src/index.ts:909
 msgid "Next"
@@ -4108,39 +4108,39 @@ msgstr "다음"
 
 #: packages/completer-extension/src/index.ts:158
 msgid "Accept"
-msgstr ""
+msgstr "수락"
 
 #: packages/completer-extension/src/index.ts:192 packages/completer-extension/src/index.ts:193
 msgid "Next Inline Completion"
-msgstr ""
+msgstr "다음 인라인 자동완성"
 
 #: packages/completer-extension/src/index.ts:202 packages/completer-extension/src/index.ts:203
 msgid "Previous Inline Completion"
-msgstr ""
+msgstr "이전 인라인 자동완성"
 
 #: packages/completer-extension/src/index.ts:209 packages/completer-extension/src/index.ts:210
 msgid "Accept Inline Completion"
-msgstr ""
+msgstr "인라인 자동완성 수락"
 
 #: packages/completer-extension/src/index.ts:216 packages/completer-extension/src/index.ts:217
 msgid "Invoke Inline Completer"
-msgstr ""
+msgstr "인라인 자동완성 수행"
 
 #: packages/completer-extension/src/index.ts:263 packages/completer-extension/src/index.ts:264
 msgid "%1 provider"
-msgstr ""
+msgstr "%1 제공자"
 
 #: packages/completer-extension/src/index.ts:267 packages/completer-extension/src/index.ts:268
 msgid "Timeout"
-msgstr ""
+msgstr "타임아웃"
 
 #: packages/completer-extension/src/index.ts:268 packages/completer-extension/src/index.ts:269
 msgid "Timeout for %1 provider (in milliseconds)."
-msgstr ""
+msgstr "%1 제공자 타임아웃 (milliseconds)."
 
 #: packages/completer-extension/src/index.ts:276 packages/completer-extension/src/index.ts:277
 msgid "Debouncer delay"
-msgstr ""
+msgstr "디바운서 딜레이"
 
 #: packages/completer-extension/src/index.ts:278 packages/completer-extension/src/index.ts:279
 msgid "Time since the last key press to wait before requesting completions from %1 provider (in milliseconds)."
@@ -4148,7 +4148,7 @@ msgstr ""
 
 #: packages/completer-extension/src/index.ts:285 packages/completer-extension/src/index.ts:286 packages/pluginmanager/src/widget.tsx:171
 msgid "Enabled"
-msgstr ""
+msgstr "활성화됨"
 
 #: packages/completer-extension/src/index.ts:286 packages/completer-extension/src/index.ts:287
 msgid "Whether to fetch completions %1 provider."
@@ -4156,7 +4156,7 @@ msgstr ""
 
 #: packages/completer/src/default/inlinehistoryprovider.ts:32
 msgid "History"
-msgstr ""
+msgstr "이력"
 
 #: packages/completer/src/default/inlinehistoryprovider.ts:43
 msgid "Maximum number of suggestions"
@@ -4168,7 +4168,7 @@ msgstr ""
 
 #: packages/completer/src/inline.ts:388 packages/completer/src/inline.ts:399
 msgid "%1/%2"
-msgstr ""
+msgstr "%1/%2"
 
 #: packages/completer/src/inline.ts:393 packages/completer/src/inline.ts:404
 msgid "Provider: %1"
@@ -4264,7 +4264,7 @@ msgstr "커널 변경"
 
 #: packages/console-extension/src/index.ts:724 packages/console-extension/src/index.ts:801 packages/console-extension/src/index.ts:804 packages/mainmenu-extension/src/index.ts:752 packages/mainmenu-extension/src/index.ts:754 packages/notebook-extension/src/index.ts:3147 packages/notebook-extension/src/index.ts:3154 packages/notebook-extension/src/index.ts:3177
 msgid "Get Kernel"
-msgstr ""
+msgstr "커널 가져오기"
 
 #: packages/console-extension/src/index.ts:806 packages/console-extension/src/index.ts:893 packages/console-extension/src/index.ts:907
 msgid "Execute with Shift+Enter"
@@ -4312,7 +4312,7 @@ msgstr "콘솔 %1"
 
 #: packages/csvviewer-extension/src/index.ts:134
 msgid "CSV Viewer"
-msgstr ""
+msgstr "CSV 뷰어"
 
 #: packages/csvviewer-extension/src/index.ts:216 packages/csvviewer-extension/src/index.ts:223 packages/csvviewer-extension/src/index.ts:370 packages/csvviewer-extension/src/index.ts:376 packages/csvviewer-extension/src/index.ts:377 packages/csvviewer-extension/src/index.ts:383
 msgid "Go to Line"
@@ -4320,7 +4320,7 @@ msgstr "라인으로 가기"
 
 #: packages/csvviewer-extension/src/index.ts:288 packages/csvviewer-extension/src/index.ts:294
 msgid "TSV Viewer"
-msgstr ""
+msgstr "TSV 뷰어"
 
 #: packages/csvviewer/src/toolbar.ts:119
 msgid "tab"
@@ -4348,7 +4348,7 @@ msgstr "디버거"
 
 #: packages/debugger-extension/src/index.ts:1010
 msgid "Debugger Panel"
-msgstr ""
+msgstr "디버거 패널"
 
 #: packages/debugger-extension/src/index.ts:217 packages/debugger-extension/src/index.ts:218
 msgid "Restart Kernel and Debug…"
@@ -4368,7 +4368,7 @@ msgstr "Mime 타입에 따라 변수 렌더링"
 
 #: packages/debugger-extension/src/index.ts:521
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "클립보드에 복사"
 
 #: packages/debugger-extension/src/index.ts:522
 msgid "Copy text representation of the value to clipboard"
@@ -4384,19 +4384,19 @@ msgstr ""
 
 #: packages/debugger-extension/src/index.ts:723 packages/debugger-extension/src/index.ts:724
 msgid "Open Source"
-msgstr ""
+msgstr "오픈소스"
 
 #: packages/debugger-extension/src/index.ts:733
 msgid "Start debugger?"
-msgstr ""
+msgstr "디버거를 시작할까요?"
 
 #: packages/debugger-extension/src/index.ts:734
 msgid "The debugger service is needed to open the source %1"
-msgstr ""
+msgstr "디버거 서비스를 위해서는 소스 %1을 열어야 합니다."
 
 #: packages/debugger-extension/src/index.ts:740
 msgid "Start debugger"
-msgstr ""
+msgstr "디버거 시작"
 
 #: packages/debugger-extension/src/index.ts:831 packages/debugger-extension/src/index.ts:832 packages/debugger-extension/src/index.ts:838
 msgid "Evaluate Code"
@@ -4412,7 +4412,7 @@ msgstr "계속"
 
 #: packages/debugger-extension/src/index.ts:873 packages/debugger-extension/src/index.ts:878
 msgid "Pause"
-msgstr ""
+msgstr "일시정지"
 
 #: packages/debugger-extension/src/index.ts:897 packages/debugger-extension/src/index.ts:898
 msgid "Terminate"
@@ -4428,7 +4428,7 @@ msgstr "나오기"
 
 #: packages/debugger-extension/src/index.ts:955
 msgid "Select a filter for breakpoints on exception"
-msgstr ""
+msgstr "예외가 발생하면 정지하기 위한 필터 선택"
 
 #: packages/debugger/src/handler.ts:39
 msgid "Enable Debugger"
@@ -4448,7 +4448,7 @@ msgstr "중단점"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:38
 msgid "Pause on exception filter"
-msgstr ""
+msgstr "예외 필터에서 일시정지"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:51 packages/debugger/src/panels/breakpoints/index.ts:63
 msgid "Remove All Breakpoints"
@@ -4478,7 +4478,7 @@ msgstr "'%1' 소스를 가져오는데 실패:\n"
 
 #: packages/debugger/src/panels/kernelSources/filter.tsx:33
 msgid "Filter the kernel sources"
-msgstr ""
+msgstr "커널 소스 필터"
 
 #: packages/debugger/src/panels/kernelSources/index.tsx:33
 msgid "Kernel Sources"
@@ -4512,11 +4512,11 @@ msgstr "메인 영역에서 오픈"
 
 #: packages/debugger/src/panels/variables/gridpanel.ts:218
 msgid "Type"
-msgstr ""
+msgstr "유형"
 
 #: packages/debugger/src/panels/variables/gridpanel.ts:218
 msgid "Value"
-msgstr ""
+msgstr "값"
 
 #: packages/debugger/src/panels/variables/gridpanel.ts:221 packages/filebrowser/src/listing.ts:2277 packages/filebrowser/src/listing.ts:2298 packages/filebrowser/src/listing.ts:2371
 msgid "Name"
@@ -4544,11 +4544,11 @@ msgstr "스코프"
 
 #: packages/debugger/src/panels/variables/tree.tsx:275
 msgid "Render variable: %1"
-msgstr ""
+msgstr "변수 레더링: %1"
 
 #: packages/debugger/src/service.ts:378
 msgid "Globals"
-msgstr ""
+msgstr "글로벌"
 
 #: packages/docmanager-extension/src/index.tsx:1007 packages/docmanager-extension/src/index.tsx:1019 packages/docmanager-extension/src/index.tsx:871 packages/docmanager-extension/src/index.tsx:883 packages/docmanager-extension/src/index.tsx:889 packages/docmanager-extension/src/index.tsx:901 packages/notebook/src/default-toolbar.tsx:68
 msgid "Cannot Save"
@@ -4704,11 +4704,11 @@ msgstr "복구할 수 없음"
 
 #: packages/docmanager-extension/src/index.tsx:790 packages/docmanager-extension/src/index.tsx:802
 msgid "No checkpoints"
-msgstr ""
+msgstr "중단점 없음"
 
 #: packages/docmanager-extension/src/index.tsx:791 packages/docmanager-extension/src/index.tsx:803
 msgid "No checkpoints are available for this %1."
-msgstr ""
+msgstr "이 %1에 가능한 중단점 없음."
 
 #: packages/docmanager-extension/src/index.tsx:804 packages/docmanager-extension/src/index.tsx:816
 msgid "Revert %1 to checkpoint"
@@ -4760,7 +4760,7 @@ msgstr "파일 이름"
 
 #: packages/docmanager-extension/src/index.tsx:912 packages/docmanager-extension/src/index.tsx:924 packages/docmanager/src/widgetmanager.ts:420 packages/docmanager/src/widgetmanager.ts:491
 msgid "Do not ask me again."
-msgstr ""
+msgstr "다시 묻지 않기"
 
 #: packages/docmanager-extension/src/index.tsx:913 packages/docmanager-extension/src/index.tsx:925
 msgid "If checked, you will not be asked to rename future untitled files when saving them."
@@ -4776,7 +4776,7 @@ msgstr "열린 문서 모두 저장하기"
 
 #: packages/docmanager-extension/src/recents.ts:73
 msgid "Clear Recent Documents"
-msgstr ""
+msgstr "최근 사용 문서 지우기"
 
 #: packages/docmanager-extension/src/recents.ts:74
 msgid "Clear the list of recently opened items."
@@ -4796,7 +4796,7 @@ msgstr "덮어쓰기"
 
 #: packages/docmanager/src/dialogs.ts:123
 msgid "Overwrite Existing File"
-msgstr ""
+msgstr "기존 파일 덮어쓰기"
 
 #: packages/docmanager/src/dialogs.ts:188
 msgid "File Path"
@@ -4850,31 +4850,31 @@ msgstr "최근 체크포인트: %1"
 
 #: packages/docmanager/src/widgetmanager.ts:397 packages/docmanager/src/widgetmanager.ts:468
 msgid "Close and save"
-msgstr ""
+msgstr "닫고 저장하기"
 
 #: packages/docmanager/src/widgetmanager.ts:399 packages/docmanager/src/widgetmanager.ts:470
 msgid "Close and save Document"
-msgstr ""
+msgstr "문서를 닫고 저장하기"
 
 #: packages/docmanager/src/widgetmanager.ts:400 packages/docmanager/src/widgetmanager.ts:471
 msgid "Close Document"
-msgstr ""
+msgstr "문서 닫기"
 
 #: packages/docmanager/src/widgetmanager.ts:408 packages/docmanager/src/widgetmanager.ts:479
 msgid "Close without saving"
-msgstr ""
+msgstr "저장하지 않고 닫기"
 
 #: packages/docmanager/src/widgetmanager.ts:409 packages/docmanager/src/widgetmanager.ts:480
 msgid "Close Document without saving"
-msgstr ""
+msgstr "저장하지 않고 닫기"
 
 #: packages/docmanager/src/widgetmanager.ts:415 packages/docmanager/src/widgetmanager.ts:486 packages/notebook/src/searchprovider.ts:511 packages/notebook/src/searchprovider.ts:514 packages/notebook/src/searchprovider.ts:522
 msgid "Confirmation"
-msgstr ""
+msgstr "확인"
 
 #: packages/docmanager/src/widgetmanager.ts:416 packages/docmanager/src/widgetmanager.ts:487
 msgid "Please confirm you want to close \"%1\"."
-msgstr ""
+msgstr "\"%1\"을 닫을 것인지 확인"
 
 #: packages/docmanager/src/widgetmanager.ts:421 packages/docmanager/src/widgetmanager.ts:492
 msgid "If checked, no confirmation to close a document will be asked in the future."
@@ -4898,7 +4898,7 @@ msgstr "버리기"
 
 #: packages/docmanager/src/widgetmanager.ts:451 packages/docmanager/src/widgetmanager.ts:522
 msgid "Discard changes to file"
-msgstr ""
+msgstr "변경 내용을 무시"
 
 #: packages/docregistry/src/components.tsx:25
 msgid "Document is permissioned read-only; \"save\" is disabled, use \"save as...\" instead"
@@ -4910,7 +4910,7 @@ msgstr ""
 
 #: packages/docregistry/src/context.ts:1043 packages/docregistry/src/context.ts:1045
 msgid "Save File As…"
-msgstr ""
+msgstr "새 이름으로 저장..."
 
 #: packages/docregistry/src/context.ts:614 packages/docregistry/src/context.ts:616 packages/docregistry/src/context.ts:914 packages/docregistry/src/context.ts:916
 msgid "File Save Error for %1"
@@ -4978,7 +4978,7 @@ msgstr "JSON 파일"
 
 #: packages/docregistry/src/registry.ts:1413 packages/docregistry/src/registry.ts:1423
 msgid "JSONLines File"
-msgstr ""
+msgstr "JSONLines 파일"
 
 #: packages/docregistry/src/registry.ts:1424 packages/docregistry/src/registry.ts:1434 packages/fileeditor-extension/src/index.ts:343
 msgid "Julia File"
@@ -5022,27 +5022,27 @@ msgstr "이전 찾기"
 
 #: packages/documentsearch-extension/src/index.ts:417
 msgid "End Search"
-msgstr ""
+msgstr "검색 종료"
 
 #: packages/documentsearch-extension/src/index.ts:431
 msgid "Search in Selection"
-msgstr ""
+msgstr "선택에서 검색"
 
 #: packages/documentsearch/src/searchview.tsx:188
 msgid "Match Case"
-msgstr ""
+msgstr "대소문자 구분"
 
 #: packages/documentsearch/src/searchview.tsx:196
 msgid "Match Whole Word"
-msgstr ""
+msgstr "전체 단어 일치"
 
 #: packages/documentsearch/src/searchview.tsx:204
 msgid "Use Regular Expression"
-msgstr ""
+msgstr "정규식 사용"
 
 #: packages/documentsearch/src/searchview.tsx:249
 msgid "Preserve Case"
-msgstr ""
+msgstr "대소문자 유지"
 
 #: packages/documentsearch/src/searchview.tsx:279
 msgid "Replace All"
@@ -5050,35 +5050,35 @@ msgstr "모두 바꾸기"
 
 #: packages/documentsearch/src/searchview.tsx:313
 msgid "Previous Match"
-msgstr ""
+msgstr "이전 일치항목"
 
 #: packages/documentsearch/src/searchview.tsx:324 packages/documentsearch/src/searchview.tsx:328
 msgid "Next Match"
-msgstr ""
+msgstr "다음 일치 항목"
 
 #: packages/documentsearch/src/searchview.tsx:374 packages/documentsearch/src/searchview.tsx:385
 msgid "Hide Search Filters"
-msgstr ""
+msgstr "검색 필터 숨기기"
 
 #: packages/documentsearch/src/searchview.tsx:375 packages/documentsearch/src/searchview.tsx:386
 msgid "Show Search Filters"
-msgstr ""
+msgstr "검색 필터 표시"
 
 #: packages/documentsearch/src/searchview.tsx:685
 msgid "Toggle Replace"
-msgstr ""
+msgstr "바꾸기 전환"
 
 #: packages/documentsearch/src/searchview.tsx:703
 msgid "Hide Replace"
-msgstr ""
+msgstr "바꾸지 숨김"
 
 #: packages/documentsearch/src/searchview.tsx:704
 msgid "Show Replace"
-msgstr ""
+msgstr "바꾸기 표시"
 
 #: packages/documentsearch/src/searchview.tsx:753
 msgid "Close Search Box"
-msgstr ""
+msgstr "검색 박스 닫기"
 
 #: packages/extensionmanager-extension/src/index.ts:131 packages/extensionmanager-extension/src/index.ts:153 packages/extensionmanager-extension/src/index.ts:59
 msgid "Extension Manager"
@@ -5129,11 +5129,11 @@ msgstr ""
 
 #: packages/extensionmanager/src/model.ts:541
 msgid "reload JupyterLab"
-msgstr ""
+msgstr "jupyterLab 다시 로딩"
 
 #: packages/extensionmanager/src/model.ts:542
 msgid "refresh the web page"
-msgstr ""
+msgstr "웹 페이지 새로고침"
 
 #: packages/extensionmanager/src/model.ts:547
 msgid "install the extension in all kernels and restart them"
@@ -5145,7 +5145,7 @@ msgstr ""
 
 #: packages/extensionmanager/src/model.ts:554
 msgid " and "
-msgstr ""
+msgstr " 그리고 "
 
 #: packages/extensionmanager/src/widget.tsx:114
 msgid "This extension is approved by your security team."
@@ -5153,15 +5153,15 @@ msgstr ""
 
 #: packages/extensionmanager/src/widget.tsx:137
 msgid "Update \"%1\" to \"%2\""
-msgstr ""
+msgstr "\"%1\" 을 \"%2\"로 업데이트"
 
 #: packages/extensionmanager/src/widget.tsx:145
 msgid "Update to %1"
-msgstr ""
+msgstr "%1 로 업데이트"
 
 #: packages/extensionmanager/src/widget.tsx:150
 msgid "Uninstall \"%1\""
-msgstr ""
+msgstr "%1 설치제거"
 
 #: packages/extensionmanager/src/widget.tsx:154
 msgid "Uninstall"
@@ -5169,15 +5169,15 @@ msgstr "설치 제거"
 
 #: packages/extensionmanager/src/widget.tsx:161
 msgid "Disable \"%1\""
-msgstr ""
+msgstr "\"%1\" 비활성화"
 
 #: packages/extensionmanager/src/widget.tsx:170
 msgid "Enable \"%1\""
-msgstr ""
+msgstr "\"%1\" 활성화"
 
 #: packages/extensionmanager/src/widget.tsx:182
 msgid "Install \"%1\""
-msgstr ""
+msgstr "\"%1\" 설치"
 
 #: packages/extensionmanager/src/widget.tsx:186
 msgid "Install"
@@ -5189,15 +5189,15 @@ msgstr "항목 없음"
 
 #: packages/extensionmanager/src/widget.tsx:356
 msgid "%1 Manager"
-msgstr ""
+msgstr "%1 관리자"
 
 #: packages/extensionmanager/src/widget.tsx:361
 msgid "Extension installation path: %1"
-msgstr ""
+msgstr "확장 프로그램 설치 경로: %1"
 
 #: packages/extensionmanager/src/widget.tsx:369
 msgid "Search extensions"
-msgstr ""
+msgstr "확장 프로그램 검색"
 
 #: packages/extensionmanager/src/widget.tsx:385 packages/pluginmanager/src/widget.tsx:302
 msgid "Error when performing an action."
@@ -5230,7 +5230,7 @@ msgstr ""
 
 #: packages/extensionmanager/src/widget.tsx:454
 msgid "No, disable"
-msgstr ""
+msgstr "아니오, 비활성화"
 
 #: packages/extensionmanager/src/widget.tsx:483 packages/extensionmanager/src/widget.tsx:590
 msgid "Updating extensions list…"
@@ -5258,15 +5258,15 @@ msgstr ""
 
 #: packages/extensionmanager/src/widget.tsx:81
 msgid "%1 extension home page"
-msgstr ""
+msgstr "%1 확장프로그램 홈페이지"
 
 #: packages/extensionmanager/src/widget.tsx:90
 msgid "Version: %1"
-msgstr ""
+msgstr "버전: %1"
 
 #: packages/extensionmanager/src/widget.tsx:97
 msgid "%1 extension is not allowed anymore. Please uninstall it immediately or contact your administrator."
-msgstr ""
+msgstr "%1 확장프로램은 더 이상 허용되지 않습니다. 즉시 설치제거 하거나 관리자에게 연락하십시오."
 
 #: packages/filebrowser-extension/src/index.ts:1021 packages/filebrowser-extension/src/index.ts:1023 packages/filebrowser-extension/src/index.ts:1029 packages/filebrowser-extension/src/index.ts:1031 packages/filebrowser-extension/src/index.ts:844 packages/filebrowser-extension/src/index.ts:846 packages/filebrowser-extension/src/index.ts:852 packages/filebrowser-extension/src/index.ts:854
 msgid "Open %1"
@@ -5338,7 +5338,7 @@ msgstr "최근 수정된 열 보기"
 
 #: packages/filebrowser-extension/src/index.ts:1267 packages/filebrowser-extension/src/index.ts:1275
 msgid "Show Full Path"
-msgstr ""
+msgstr "전체 경로 표시"
 
 #: packages/filebrowser-extension/src/index.ts:1283 packages/filebrowser-extension/src/index.ts:1291
 msgid "Sort Notebooks Above Files"
@@ -5508,7 +5508,7 @@ msgstr "마지막 수정"
 
 #: packages/filebrowser/src/listing.ts:2280 packages/filebrowser/src/listing.ts:2301 packages/filebrowser/src/listing.ts:2377
 msgid "File Size"
-msgstr ""
+msgstr "파일 크기"
 
 #: packages/filebrowser/src/listing.ts:2374 packages/settingeditor/src/pluginlist.tsx:461
 msgid "Modified"
@@ -5603,7 +5603,7 @@ msgstr ""
 
 #: packages/filebrowser/src/listing.ts:899 packages/filebrowser/src/listing.ts:910 packages/filebrowser/src/listing.ts:931
 msgid "unknown"
-msgstr ""
+msgstr "알 수 없음"
 
 #: packages/filebrowser/src/listing.ts:901 packages/filebrowser/src/listing.ts:912 packages/filebrowser/src/listing.ts:933
 msgid "%1\n"
@@ -5657,11 +5657,11 @@ msgstr "텍스트 편집기"
 
 #: packages/fileeditor-extension/src/commands.ts:1365 packages/fileeditor-extension/src/commands.ts:1367 packages/fileeditor-extension/src/commands.ts:1399
 msgid "Code Viewer"
-msgstr ""
+msgstr "코드 뷰어"
 
 #: packages/fileeditor-extension/src/commands.ts:1384 packages/fileeditor-extension/src/commands.ts:1386 packages/fileeditor-extension/src/commands.ts:1418
 msgid "Open Code Viewer"
-msgstr ""
+msgstr "코드 뷰어 열기"
 
 #: packages/fileeditor-extension/src/commands.ts:280 packages/fileeditor-extension/src/commands.ts:284
 msgid "Increase Text Editor Font Size"
@@ -5734,11 +5734,11 @@ msgstr "에디터를 위한 콘솔 생성"
 
 #: packages/fileeditor-extension/src/commands.ts:647 packages/fileeditor-extension/src/commands.ts:651
 msgid "Restart Kernel"
-msgstr ""
+msgstr "커널 재시작"
 
 #: packages/fileeditor-extension/src/commands.ts:712 packages/fileeditor-extension/src/commands.ts:716
 msgid "Run Selected Code"
-msgstr ""
+msgstr "선택된 코드 실행"
 
 #: packages/fileeditor-extension/src/commands.ts:750 packages/fileeditor-extension/src/commands.ts:754
 msgid "Run All Code"
@@ -5766,7 +5766,7 @@ msgstr "새 마크다운 파일 생성"
 
 #: packages/fileeditor-extension/src/index.ts:309
 msgid "Editor"
-msgstr ""
+msgstr "편집기"
 
 #: packages/fileeditor-extension/src/index.ts:332
 msgid "New Python File"
@@ -5802,11 +5802,11 @@ msgstr "공백"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:49
 msgid "Tab Indent"
-msgstr ""
+msgstr "탭 간격"
 
 #: packages/fileeditor/src/tabspacestatus.tsx:58
 msgid "Change the indentation…"
-msgstr ""
+msgstr "들여쓰기 변경..."
 
 #: packages/help-extension/src/index.tsx:124
 msgid "CONTRIBUTOR LIST"
@@ -5818,7 +5818,7 @@ msgstr "JUPTER 프로젝트에 대해"
 
 #: packages/help-extension/src/index.tsx:138
 msgid "© 2015-2023 Project Jupyter Contributors"
-msgstr ""
+msgstr "© 2015-2023 Project Jupyter Contributors"
 
 #: packages/help-extension/src/index.tsx:186
 msgid "Jupyter Forum"
@@ -5850,7 +5850,7 @@ msgstr "%1 커널에 대하여"
 
 #: packages/help-extension/src/index.tsx:409
 msgid "Kernel Icon"
-msgstr ""
+msgstr "Kernel 아이콘"
 
 #: packages/help-extension/src/index.tsx:501
 msgid "Download All Licenses as"
@@ -5914,7 +5914,7 @@ msgstr "HTML 파일"
 
 #: packages/htmlviewer-extension/src/index.tsx:115
 msgid "HTML Viewer"
-msgstr ""
+msgstr "HTML 뷰어"
 
 #: packages/htmlviewer-extension/src/index.tsx:181
 msgid "Trust HTML File"
@@ -5992,7 +5992,7 @@ msgstr "허브"
 
 #: packages/imageviewer-extension/src/index.ts:128
 msgid "Image (Text)"
-msgstr ""
+msgstr "이미지 (텍스트)"
 
 #: packages/imageviewer-extension/src/index.ts:161
 msgid "Image Viewer"
@@ -6036,7 +6036,7 @@ msgstr "컨텍스트 도움말"
 
 #: packages/inspector-extension/src/index.ts:127
 msgid "Hide Contextual Help"
-msgstr ""
+msgstr "컨텍스트 도움말 표시"
 
 #: packages/inspector-extension/src/index.ts:60
 msgid "Live updating code documentation from the active kernel"
@@ -6044,7 +6044,7 @@ msgstr "활성화된 커널로부터 실시간으로 코드 문서 갱신"
 
 #: packages/inspector-extension/src/index.ts:63
 msgid "Contextual Help"
-msgstr ""
+msgstr "컨텍스트 도움말"
 
 #: packages/inspector/src/inspector.ts:52
 msgid "Click on a function to see documentation."
@@ -6137,7 +6137,7 @@ msgstr "로그 메시지가 없습니다."
 
 #: packages/lsp-extension/src/index.ts:285
 msgid "Language servers"
-msgstr ""
+msgstr "언어 서버"
 
 #: packages/lsp-extension/src/index.ts:304 packages/mainmenu-extension/src/index.ts:546 packages/mainmenu-extension/src/index.ts:549 packages/running-extension/src/kernels.ts:67 packages/running-extension/src/kernels.tsx:87 packages/running/src/index.tsx:357 packages/running/src/index.tsx:573 packages/terminal-extension/src/index.ts:323
 msgid "Shut Down All"
@@ -6169,7 +6169,7 @@ msgstr ""
 
 #: packages/lsp/src/adapters/adapter.ts:482 packages/lsp/src/adapters/adapter.ts:500
 msgid "Message from "
-msgstr ""
+msgstr "메시지 보낸사람 "
 
 #: packages/mainmenu-extension/src/index.ts:193 packages/mainmenu-extension/src/index.ts:194
 msgid "Open Edit Menu"
@@ -6229,7 +6229,7 @@ msgstr "현재 활동을 위한 새 콘솔 열기"
 
 #: packages/mainmenu-extension/src/index.ts:372
 msgid "Shut down %1"
-msgstr ""
+msgstr "%1 종료"
 
 #: packages/mainmenu-extension/src/index.ts:376
 msgid "Shut down JupyterLab"
@@ -6241,7 +6241,7 @@ msgstr "종료 확인"
 
 #: packages/mainmenu-extension/src/index.ts:378
 msgid "Please confirm you want to shut down %1."
-msgstr ""
+msgstr "%1을 종료할 것인지 확인해 주십시오."
 
 #: packages/mainmenu-extension/src/index.ts:382
 msgid "Please confirm you want to shut down JupyterLab."
@@ -6265,7 +6265,7 @@ msgstr "서버 종료됨"
 
 #: packages/mainmenu-extension/src/index.ts:441
 msgid "Log out of %1"
-msgstr ""
+msgstr "%1 에서 로그 아웃"
 
 #: packages/mainmenu-extension/src/index.ts:444
 msgid "Log out of JupyterLab"
@@ -6281,7 +6281,7 @@ msgstr "커널 재시작 후 클리어"
 
 #: packages/mainmenu-extension/src/index.ts:530 packages/mainmenu-extension/src/index.ts:532
 msgid "Shut down kernel"
-msgstr ""
+msgstr "커널 종료"
 
 #: packages/mainmenu-extension/src/index.ts:536 packages/mainmenu-extension/src/index.ts:539
 msgid "Shut Down All Kernels…"
@@ -6361,7 +6361,7 @@ msgstr ""
 
 #: packages/metadataform/src/metadataform.ts:54
 msgid "No metadata."
-msgstr ""
+msgstr "메타데이터 없음."
 
 #: packages/notebook-extension/src/index.ts:1146 packages/notebook-extension/src/index.ts:1150 packages/notebook-extension/src/index.ts:1158
 msgid "Notebook Tools"
@@ -6453,7 +6453,7 @@ msgstr "노트북을 종료 하겠습니까?"
 
 #: packages/notebook-extension/src/index.ts:2420
 msgid "Close and Shut Down Notebook…"
-msgstr ""
+msgstr "노트북을 닫고 종료하기..."
 
 #: packages/notebook-extension/src/index.ts:2429 packages/notebook-extension/src/index.ts:2436 packages/notebook-extension/src/index.ts:2447
 msgid "Trust Notebook"
@@ -6589,7 +6589,7 @@ msgstr "셀 위로 추가하기"
 
 #: packages/notebook-extension/src/index.ts:2804 packages/notebook-extension/src/index.ts:2811 packages/notebook-extension/src/index.ts:2834
 msgid "Insert a cell above"
-msgstr ""
+msgstr "셀 위에 추가하기"
 
 #: packages/notebook-extension/src/index.ts:2816 packages/notebook-extension/src/index.ts:2823 packages/notebook-extension/src/index.ts:2846
 msgid "Insert Cell Below"
@@ -6609,11 +6609,11 @@ msgstr "블록 아래로 선택"
 
 #: packages/notebook-extension/src/index.ts:2850 packages/notebook-extension/src/index.ts:2857 packages/notebook-extension/src/index.ts:2880
 msgid "Insert Heading Above Current Heading"
-msgstr ""
+msgstr "현재 제목 위에 제목 삽입"
 
 #: packages/notebook-extension/src/index.ts:2861 packages/notebook-extension/src/index.ts:2868 packages/notebook-extension/src/index.ts:2891
 msgid "Insert Heading Below Current Heading"
-msgstr ""
+msgstr "현제 제목 아래에 제목 삽입"
 
 #: packages/notebook-extension/src/index.ts:2872 packages/notebook-extension/src/index.ts:2879 packages/notebook-extension/src/index.ts:2902
 msgid "Select Heading Above or Collapse Heading"
@@ -6773,11 +6773,11 @@ msgstr ""
 
 #: packages/notebook-extension/src/index.ts:3407 packages/notebook-extension/src/index.ts:3414 packages/notebook-extension/src/index.ts:3461 packages/toc-extension/src/index.ts:141
 msgid "Collapse All Headings"
-msgstr ""
+msgstr "모든 제목 접기"
 
 #: packages/notebook-extension/src/index.ts:3416 packages/notebook-extension/src/index.ts:3423 packages/notebook-extension/src/index.ts:3470 packages/toc-extension/src/index.ts:140
 msgid "Expand All Headings"
-msgstr ""
+msgstr "모든 제목 펼침"
 
 #: packages/notebook-extension/src/index.ts:3425 packages/notebook-extension/src/index.ts:3432 packages/notebook-extension/src/index.ts:3479
 msgid "Select and Run Cell(s) for this Heading"
@@ -6793,7 +6793,7 @@ msgstr ""
 
 #: packages/notebook-extension/src/index.ts:3484 packages/notebook-extension/src/index.ts:3491 packages/notebook-extension/src/index.ts:3539
 msgid "Virtual Scrollbar"
-msgstr ""
+msgstr "가상 스크롤바"
 
 #: packages/notebook-extension/src/index.ts:3485 packages/notebook-extension/src/index.ts:3492 packages/notebook-extension/src/index.ts:3540
 msgid "Toggle virtual scrollbar (enabled with windowing mode: full)"
@@ -6865,11 +6865,11 @@ msgstr "이 노트북을 신뢰함으로 설정하겠습니까?"
 
 #: packages/notebook/src/actions.tsx:2127 packages/notebook/src/actions.tsx:2132 packages/notebook/src/actions.tsx:2140
 msgid "Trust"
-msgstr ""
+msgstr "신뢰"
 
 #: packages/notebook/src/actions.tsx:2128 packages/notebook/src/actions.tsx:2133 packages/notebook/src/actions.tsx:2141
 msgid "Confirm Trusting this notebook"
-msgstr ""
+msgstr "이 노트북에 대한 신뢰 확인"
 
 #: packages/notebook/src/actions.tsx:2488 packages/notebook/src/actions.tsx:2493 packages/notebook/src/cellexecutor.ts:46
 msgid "Kernel Terminating"
@@ -6947,7 +6947,7 @@ msgstr[0] "%1 셀이 실행됨"
 
 #: packages/notebook/src/executionindicator.tsx:71
 msgid "Kernel status"
-msgstr ""
+msgstr "커널 상태"
 
 #: packages/notebook/src/executionindicator.tsx:75
 msgid "Kernel status: %1"
@@ -7073,19 +7073,19 @@ msgstr ""
 
 #: packages/pluginmanager-extension/src/index.ts:100 packages/pluginmanager-extension/src/index.ts:64 packages/settingeditor-extension/src/index.ts:154
 msgid "Plugin Manager"
-msgstr ""
+msgstr "플러그인 관리자"
 
 #: packages/pluginmanager-extension/src/index.ts:133
 msgid "Refresh plugins list"
-msgstr ""
+msgstr "플러그인 목록 새로고침"
 
 #: packages/pluginmanager-extension/src/index.ts:65
 msgid "Advanced Plugin Manager"
-msgstr ""
+msgstr "고급 플러그인 관리자"
 
 #: packages/pluginmanager-extension/src/index.ts:66
 msgid "Refresh Plugin List"
-msgstr ""
+msgstr "플러그인 목록 새로고침"
 
 #: packages/pluginmanager/src/dialogs.tsx:14
 msgid "The plugin \"%1\" cannot be disabled as it is required by other plugins:"
@@ -7117,31 +7117,31 @@ msgstr ""
 
 #: packages/pluginmanager/src/widget.tsx:109
 msgid "Description"
-msgstr ""
+msgstr "설명"
 
 #: packages/pluginmanager/src/widget.tsx:119
 msgid "Autostart?"
-msgstr ""
+msgstr "자동 실행?"
 
 #: packages/pluginmanager/src/widget.tsx:123
 msgid "Defer"
-msgstr ""
+msgstr "연기"
 
 #: packages/pluginmanager/src/widget.tsx:139
 msgid "Depends on"
-msgstr ""
+msgstr "종속 대상"
 
 #: packages/pluginmanager/src/widget.tsx:149
 msgid "Extension"
-msgstr ""
+msgstr "확장 프로그램"
 
 #: packages/pluginmanager/src/widget.tsx:156
 msgid "Provides"
-msgstr ""
+msgstr "제공"
 
 #: packages/pluginmanager/src/widget.tsx:181
 msgid "This plugin is locked."
-msgstr ""
+msgstr "이 플러그인은 잠김."
 
 #: packages/pluginmanager/src/widget.tsx:182
 msgid "To enable/disable, please acknowledge the disclaimer."
@@ -7149,11 +7149,11 @@ msgstr ""
 
 #: packages/pluginmanager/src/widget.tsx:186
 msgid "Disable %1 plugin"
-msgstr ""
+msgstr "%1 플러그인 비활성화"
 
 #: packages/pluginmanager/src/widget.tsx:187
 msgid "Enable %1 plugin"
-msgstr ""
+msgstr "%1 플러그인 활성화"
 
 #: packages/pluginmanager/src/widget.tsx:205
 msgid "This plugin was locked by system administrator or is a critical dependency and cannot be enabled/disabled."
@@ -7169,7 +7169,7 @@ msgstr ""
 
 #: packages/pluginmanager/src/widget.tsx:288
 msgid "Filter"
-msgstr ""
+msgstr "필터"
 
 #: packages/pluginmanager/src/widget.tsx:64
 msgid "Error querying installed extensions%1"
@@ -7181,7 +7181,7 @@ msgstr ""
 
 #: packages/pluginmanager/src/widget.tsx:97
 msgid "Plugin"
-msgstr ""
+msgstr "플러그인"
 
 #: packages/property-inspector/src/index.ts:189
 msgid "No properties to inspect."
@@ -7217,7 +7217,7 @@ msgstr ""
 
 #: packages/running-extension/src/index.ts:184
 msgid "Running"
-msgstr ""
+msgstr "실행중"
 
 #: packages/running-extension/src/index.ts:66 packages/running-extension/src/index.ts:96
 msgid "Running Terminals and Kernels"
@@ -7230,7 +7230,8 @@ msgstr ""
 #: packages/running-extension/src/kernels.ts:250 packages/running-extension/src/kernels.tsx:320
 msgid "%1\n"
 "Path: %2"
-msgstr ""
+msgstr "%1\n"
+"경로: %2"
 
 #: packages/running-extension/src/kernels.ts:49 packages/running-extension/src/kernels.tsx:54
 msgid "Kernels"
@@ -7242,19 +7243,19 @@ msgstr "현재 작동 중인 모든 커널들을 영구적으로 종료하시겠
 
 #: packages/running-extension/src/kernels.ts:77 packages/running-extension/src/kernels.tsx:98
 msgid "New Console for Kernel"
-msgstr ""
+msgstr "커널에 대한 새 콘솔"
 
 #: packages/running-extension/src/kernels.ts:88 packages/running-extension/src/kernels.tsx:109
 msgid "New Notebook for Kernel"
-msgstr ""
+msgstr "커널을 위한 새 노트북"
 
 #: packages/running-extension/src/kernels.tsx:329
 msgid "No sessions connected"
-msgstr ""
+msgstr "연결된 세션이 없습니다."
 
 #: packages/running-extension/src/kernels.tsx:333
 msgid "%1 and %2 more"
-msgstr ""
+msgstr "%1 과 추가 %2"
 
 #: packages/running-extension/src/opentabs.ts:70
 msgid "Open Tabs"
@@ -7270,23 +7271,23 @@ msgstr "열려있는 모든 탭을 닫으시겠습니까?"
 
 #: packages/running-extension/src/recents.ts:31
 msgid "Recently Closed"
-msgstr ""
+msgstr "최근에 닫힘"
 
 #: packages/running-extension/src/recents.ts:46
 msgid "Forget"
-msgstr ""
+msgstr "무시"
 
 #: packages/running-extension/src/recents.ts:47
 msgid "Forget All"
-msgstr ""
+msgstr "모두 무시"
 
 #: packages/running-extension/src/recents.ts:48
 msgid "Are you sure you want to clear recently closed tabs?"
-msgstr ""
+msgstr "최근에 닫은 탭을 지우겠습니까?"
 
 #: packages/running/src/index.tsx:366
 msgid "Search"
-msgstr ""
+msgstr "검색"
 
 #: packages/running/src/index.tsx:445 packages/running/src/index.tsx:765
 msgid "Refresh List"
@@ -7294,23 +7295,23 @@ msgstr "목록 새로 고침"
 
 #: packages/running/src/index.tsx:614
 msgid "Switch to List View"
-msgstr ""
+msgstr "목록 보기로 전환"
 
 #: packages/running/src/index.tsx:615
 msgid "Switch to Tree View"
-msgstr ""
+msgstr "트리 뷰로 전환"
 
 #: packages/running/src/index.tsx:627
 msgid "Collapse All"
-msgstr ""
+msgstr "모두 접기"
 
 #: packages/running/src/index.tsx:628
 msgid "Expand All"
-msgstr ""
+msgstr "모두 펼치기"
 
 #: packages/running/src/index.tsx:885
 msgid "No matches"
-msgstr ""
+msgstr "일치하는 항목 없음"
 
 #: packages/settingeditor-extension/src/index.ts:165
 msgid "JSON Settings Editor"
@@ -7394,7 +7395,7 @@ msgstr "변경한 내용이 저장되지 않았습니다."
 
 #: packages/settingeditor/src/pluginlist.tsx:454
 msgid "Search settings…"
-msgstr ""
+msgstr "검색 설정..."
 
 #: packages/settingeditor/src/pluginlist.tsx:473
 msgid "No items match your search."
@@ -7422,7 +7423,7 @@ msgstr "키를 누르세요"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:123
 msgid "(Command label missing)"
-msgstr ""
+msgstr "(명령어 레이블 없음)"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:135 packages/shortcuts-extension/src/components/ShortcutItem.tsx:260 packages/shortcuts-extension/src/components/ShortcutItem.tsx:76 packages/workspaces-extension/src/commands.ts:327
 msgid "Reset"
@@ -7430,11 +7431,11 @@ msgstr "초기화"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:147
 msgid "Custom"
-msgstr ""
+msgstr "사용자정의"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:147
 msgid "Default"
-msgstr ""
+msgstr "기본값"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:194 packages/shortcuts-extension/src/components/ShortcutItem.tsx:332
 msgid "or"
@@ -7474,7 +7475,7 @@ msgstr "모든 단축키를 기본값으로 재설정"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:113 packages/shortcuts-extension/src/components/TopNav.tsx:165
 msgid "Search shortcuts"
-msgstr ""
+msgstr "검색 단축키"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:117 packages/shortcuts-extension/src/components/TopNav.tsx:168
 msgid "Search…"
@@ -7518,23 +7519,23 @@ msgstr "선택창 보이기"
 
 #: packages/shortcuts-extension/src/index.ts:107
 msgid "Edit Keybinding"
-msgstr ""
+msgstr "키 바인딩 편집"
 
 #: packages/shortcuts-extension/src/index.ts:108
 msgid "Edit existing keybinding"
-msgstr ""
+msgstr "기존 키 바인딩 편집"
 
 #: packages/shortcuts-extension/src/index.ts:125
 msgid "Delete Keybinding"
-msgstr ""
+msgstr "키 바인딩 삭제"
 
 #: packages/shortcuts-extension/src/index.ts:126
 msgid "Delete chosen keybinding"
-msgstr ""
+msgstr "선택된 키 바인딩 삭제"
 
 #: packages/shortcuts-extension/src/index.ts:143
 msgid "Add Keybinding"
-msgstr ""
+msgstr "키 바인딩 추가"
 
 #: packages/shortcuts-extension/src/index.ts:144
 msgid "Add new keybinding for existing shortcut target"
@@ -7666,7 +7667,7 @@ msgstr "JupyterLab Light"
 
 #: packages/toc-extension/src/index.ts:113
 msgid "Show output headings"
-msgstr ""
+msgstr "출력 제목 표시"
 
 #: packages/toc-extension/src/index.ts:127 packages/toc-extension/src/index.ts:77 packages/toc/src/panel.ts:28 packages/toc/src/panel.ts:79
 msgid "Table of Contents"
@@ -7682,11 +7683,11 @@ msgstr "목차 선택"
 
 #: packages/toc-extension/src/index.ts:83
 msgid "Show first-level heading number"
-msgstr ""
+msgstr "첫번제 레벨의 제목 번호 표시"
 
 #: packages/toc-extension/src/index.ts:97
 msgid "Show heading number in the document"
-msgstr ""
+msgstr "문서내의 제목 번호 표시"
 
 #: packages/toc/src/panel.ts:32
 msgid "No Headings"
@@ -7722,11 +7723,11 @@ msgstr ""
 
 #: packages/ui-components/src/components/form.tsx:146
 msgid "Move down"
-msgstr ""
+msgstr "아래로 이동"
 
 #: packages/ui-components/src/components/form.tsx:146
 msgid "Move up"
-msgstr ""
+msgstr "위로 이동"
 
 #: packages/ui-components/src/components/form.tsx:183 packages/ui-components/src/components/form.tsx:570
 msgid "Remove"
@@ -7746,170 +7747,170 @@ msgstr ""
 
 #: packages/ui-components/src/components/toolbar.tsx:1140 packages/ui-components/src/components/toolbar.tsx:1180 packages/ui-components/src/components/toolbar.tsx:1192 packages/ui-components/src/components/toolbar.tsx:1195
 msgid "More commands"
-msgstr ""
+msgstr "더 많은 명령어"
 
 #: packages/ui-components/src/icon/widgets/tabbarsvg.ts:51
 msgid "Close %1"
-msgstr ""
+msgstr "%1 닫기"
 
 #: packages/ui-components/src/icon/widgets/tabbarsvg.ts:52
 msgid "Close tab"
-msgstr ""
+msgstr "탭 닫기"
 
 #: packages/workspaces-extension/src/commands.ts:104
 msgid "Naming the workspace will create a unique URL. The name may contain letters, numbers, hyphens (-), and underscores (_)."
-msgstr ""
+msgstr "워크스페이스의 이름은 유일한 URL을 생성합니다. 이름은 문자, 숫자, 하이픈 (-), 밑줄 (_) 을 포함할 수 있습니다."
 
 #: packages/workspaces-extension/src/commands.ts:120
 msgid "workspace-name"
-msgstr ""
+msgstr "워크스페이스-이름"
 
 #: packages/workspaces-extension/src/commands.ts:132
 msgid "Open Workspace"
-msgstr ""
+msgstr "워크스페이스 열기"
 
 #: packages/workspaces-extension/src/commands.ts:133
 msgid "Open Workspace…"
-msgstr ""
+msgstr "워크스페이스 열기..."
 
 #: packages/workspaces-extension/src/commands.ts:140
 msgid "Choose Workspace To Open"
-msgstr ""
+msgstr "열기위한 워크스페이스 선택"
 
 #: packages/workspaces-extension/src/commands.ts:141
 msgid "Choose an existing workspace to open."
-msgstr ""
+msgstr "열기를 할 기존 워크스페이스를 선택하십시오."
 
 #: packages/workspaces-extension/src/commands.ts:143 packages/workspaces-extension/src/commands.ts:180 packages/workspaces-extension/src/commands.ts:243 packages/workspaces-extension/src/commands.ts:406
 msgid "Choose"
-msgstr ""
+msgstr "선택"
 
 #: packages/workspaces-extension/src/commands.ts:169
 msgid "Delete Workspace…"
-msgstr ""
+msgstr "워크스페이스 삭제..."
 
 #: packages/workspaces-extension/src/commands.ts:177
 msgid "Choose Workspace To Delete"
-msgstr ""
+msgstr "삭제할 워크스페이스 선택"
 
 #: packages/workspaces-extension/src/commands.ts:178
 msgid "Choose an existing workspace to delete."
-msgstr ""
+msgstr "삭제할 워크스페이스를 선택하십시오."
 
 #: packages/workspaces-extension/src/commands.ts:192
 msgid "Delete workspace"
-msgstr ""
+msgstr "작업공간 삭제"
 
 #: packages/workspaces-extension/src/commands.ts:193
 msgid "Deleting workspace \"%1\" will also delete its URL. A deleted workspace cannot be recovered."
-msgstr ""
+msgstr "\"%1\" 워크스페이스를 삭제하면 해당 URL도 삭제됩니다. 워크스페이스 삭제는 되돌릴 수 없습니다."
 
 #: packages/workspaces-extension/src/commands.ts:211
 msgid "Create New Workspace…"
-msgstr ""
+msgstr "새 워크스페이스를 생성..."
 
 #: packages/workspaces-extension/src/commands.ts:217
 msgid "Create New Workspace"
-msgstr ""
+msgstr "새 워크스페이스 생성"
 
 #: packages/workspaces-extension/src/commands.ts:218
 msgid "Create"
-msgstr ""
+msgstr "생성"
 
 #: packages/workspaces-extension/src/commands.ts:233
 msgid "Clone Workspace…"
-msgstr ""
+msgstr "워크스페이스 복제..."
 
 #: packages/workspaces-extension/src/commands.ts:240
 msgid "Choose Workspace To Clone"
-msgstr ""
+msgstr "복제할 워크스페이스 선택"
 
 #: packages/workspaces-extension/src/commands.ts:241
 msgid "Choose an existing workspace to clone."
-msgstr ""
+msgstr "복제할 워크스페이스를 선택하십시오."
 
 #: packages/workspaces-extension/src/commands.ts:252
 msgid "Clone Workspace"
-msgstr ""
+msgstr "워크스페이스 복제"
 
 #: packages/workspaces-extension/src/commands.ts:253
 msgid "%1-clone"
-msgstr ""
+msgstr "%1-clone"
 
 #: packages/workspaces-extension/src/commands.ts:254
 msgid "Clone"
-msgstr ""
+msgstr "복제"
 
 #: packages/workspaces-extension/src/commands.ts:273
 msgid "Rename Workspace…"
-msgstr ""
+msgstr "워크스페이스 이름 변경..."
 
 #: packages/workspaces-extension/src/commands.ts:283
 msgid "Rename Workspace"
-msgstr ""
+msgstr "워크스페이스 이름 변경"
 
 #: packages/workspaces-extension/src/commands.ts:304
 msgid "Reset Workspace…"
-msgstr ""
+msgstr "워크스페이스 리셋..."
 
 #: packages/workspaces-extension/src/commands.ts:318
 msgid "Reset Workspace"
-msgstr ""
+msgstr "워크스페이스 리셋"
 
 #: packages/workspaces-extension/src/commands.ts:319
 msgid "Resetting workspace %2 will close its %1 tab and return to default layout."
 msgid_plural "Resetting workspace %2 will close its %1 tabs and return to default layout."
-msgstr[0] ""
+msgstr[0] "%2 워크스페이스를 리셋하면 %1 탭이 닫히고, 기본 레이아웃으로 돌아갑니다."
 
 #: packages/workspaces-extension/src/commands.ts:354
 msgid "Import Workspace…"
-msgstr ""
+msgstr "워크스페이스 가져오기..."
 
 #: packages/workspaces-extension/src/commands.ts:359
 msgid "Select Workspace Files to Import"
-msgstr ""
+msgstr "가져올 워크스페이스를 선택"
 
 #: packages/workspaces-extension/src/commands.ts:364
 msgid "You choose one or more workspace files to import. A Jupyter Workspace File has %1 extension."
-msgstr ""
+msgstr "하나 이상의 워크스페이스를 선택하십시오. Jupyter 워크스페이스 파일은 %1 확장 프로그램을 갖고 있습니다."
 
 #: packages/workspaces-extension/src/commands.ts:390
 msgid "Export Workspace…"
-msgstr ""
+msgstr "워크스페이스 내보내기..."
 
 #: packages/workspaces-extension/src/commands.ts:403
 msgid "Choose Workspace To Export"
-msgstr ""
+msgstr "내보낼 워크스페이스 선택"
 
 #: packages/workspaces-extension/src/commands.ts:404
 msgid "Choose an existing workspace to export."
-msgstr ""
+msgstr "내보낼 기존 워크스페이스를 선택하십시오."
 
 #: packages/workspaces-extension/src/commands.ts:417
 msgid "Choose Workspace Export Directory"
-msgstr ""
+msgstr "워크스페이스 내보내기를 위한 디렉토리 선택"
 
 #: packages/workspaces-extension/src/commands.ts:420
 msgid "The \"%1\" workspace will be saved in the chosen directory as \"%1%2\"."
-msgstr ""
+msgstr "%1 워크스페이스가 선택된 \"%1%2\" 디렉토리에 저장됩니다."
 
 #: packages/workspaces-extension/src/commands.ts:472 packages/workspaces-extension/src/sidebar.ts:81
 msgid "Workspaces"
-msgstr ""
+msgstr "워크스페이스"
 
 #: packages/workspaces-extension/src/commands.ts:586
 msgid "Path to save the workspace in"
-msgstr ""
+msgstr "워크스페이스가 저장될 경로"
 
 #: packages/workspaces-extension/src/sidebar.ts:100
 msgid "Delete All"
-msgstr ""
+msgstr "모두 삭제"
 
 #: packages/workspaces-extension/src/sidebar.ts:101
 msgid "Are you sure you want to delete all workspaces? Deleted workspaces cannot be recovered."
-msgstr ""
+msgstr "모든 워크스페이스를 삭제하시겠습니까? 삭제된 워크스페이스는 복구되지 않습니다."
 
 #: packages/workspaces-extension/src/sidebar.ts:69
 msgid "%1 workspace with %2 tabs, last modified on %3"
-msgstr ""
+msgstr "%1 워크스페이스 %2 탭, %3에 수정됨."
 
