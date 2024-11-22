@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 229\n"
 "Language-Team: Arabic\n"
 "Language: ar_SA\n"
-"PO-Revision-Date: 2024-10-16 11:58\n"
+"PO-Revision-Date: 2024-11-21 14:31\n"
 
 #: /packages/collaboration-extension/schema/shared-link.json:/description
 msgctxt "schema"
@@ -46,11 +46,11 @@ msgstr "معلومات المستخدم"
 msgid "User information"
 msgstr "معلومات المستخدم"
 
-#: packages/collaboration-extension/src/collaboration.ts:166
+#: packages/collaboration-extension/src/collaboration.ts:166 packages/collaboration-extension/src/collaboration.ts:167
 msgid "Online Collaborators"
 msgstr "المتعاونون عبر الإنترنت"
 
-#: packages/collaboration-extension/src/filebrowser.ts:199 packages/collaboration-extension/src/filebrowser.ts:248
+#: packages/collaboration-extension/src/filebrowser.ts:199 packages/collaboration-extension/src/filebrowser.ts:248 packages/docprovider-extension/src/filebrowser.ts:313 packages/docprovider-extension/src/filebrowser.ts:359
 msgid "Warning"
 msgstr "تحذير"
 
@@ -62,7 +62,7 @@ msgstr "هناك جلستان تعاونيتان تصلان إلى الملف %1
 "                \n"
 "فتح مستند بجلسات متعددة في نفس الوقت غير مدعوم. يرجى إغلاق إحدى الجلسات؛ أما غير ذلك فأنك قد تفقد بعض تقدمك."
 
-#: packages/collaboration-extension/src/filebrowser.ts:254
+#: packages/collaboration-extension/src/filebrowser.ts:254 packages/docprovider-extension/src/filebrowser.ts:361
 msgid "Ok"
 msgstr "حسناً"
 
@@ -122,7 +122,27 @@ msgstr "نسخ الرابط"
 msgid "Copy the link to the Jupyter Server"
 msgstr ""
 
-#: packages/docprovider/src/yprovider.ts:124
+#: packages/docprovider-extension/src/filebrowser.ts:268
+msgid "File Browser Section"
+msgstr ""
+
+#: packages/docprovider/src/notebookCellExecutor.ts:58
+msgid "Kernel Terminating"
+msgstr ""
+
+#: packages/docprovider/src/notebookCellExecutor.ts:59
+msgid "The kernel for %1 appears to be terminating. You can not run any cell for now."
+msgstr ""
+
+#: packages/docprovider/src/notebookCellExecutor.ts:69
+msgid "Cell not executed due to pending input"
+msgstr ""
+
+#: packages/docprovider/src/notebookCellExecutor.ts:70
+msgid "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again."
+msgstr ""
+
+#: packages/docprovider/src/yprovider.ts:124 packages/docprovider/src/yprovider.ts:152
 msgid "Document session error"
 msgstr ""
 

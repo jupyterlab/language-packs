@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 229\n"
 "Language-Team: Finnish\n"
 "Language: fi_FI\n"
-"PO-Revision-Date: 2024-10-16 11:58\n"
+"PO-Revision-Date: 2024-11-21 14:31\n"
 
 #: /packages/collaboration-extension/schema/shared-link.json:/description
 msgctxt "schema"
@@ -46,11 +46,11 @@ msgstr "Käyttäjätiedot"
 msgid "User information"
 msgstr "Käyttäjätiedot"
 
-#: packages/collaboration-extension/src/collaboration.ts:166
+#: packages/collaboration-extension/src/collaboration.ts:166 packages/collaboration-extension/src/collaboration.ts:167
 msgid "Online Collaborators"
 msgstr "Verkkoyhteistyökumppanit"
 
-#: packages/collaboration-extension/src/filebrowser.ts:199 packages/collaboration-extension/src/filebrowser.ts:248
+#: packages/collaboration-extension/src/filebrowser.ts:199 packages/collaboration-extension/src/filebrowser.ts:248 packages/docprovider-extension/src/filebrowser.ts:313 packages/docprovider-extension/src/filebrowser.ts:359
 msgid "Warning"
 msgstr "Varoitus"
 
@@ -60,7 +60,7 @@ msgid "Two collaborative sessions are accessing the file %1 simultaneously.\n"
 "Opening a document with multiple views simultaneously is not supported. Please close one view; otherwise, you might lose some of your progress."
 msgstr ""
 
-#: packages/collaboration-extension/src/filebrowser.ts:254
+#: packages/collaboration-extension/src/filebrowser.ts:254 packages/docprovider-extension/src/filebrowser.ts:361
 msgid "Ok"
 msgstr ""
 
@@ -120,7 +120,27 @@ msgstr ""
 msgid "Copy the link to the Jupyter Server"
 msgstr ""
 
-#: packages/docprovider/src/yprovider.ts:124
+#: packages/docprovider-extension/src/filebrowser.ts:268
+msgid "File Browser Section"
+msgstr ""
+
+#: packages/docprovider/src/notebookCellExecutor.ts:58
+msgid "Kernel Terminating"
+msgstr ""
+
+#: packages/docprovider/src/notebookCellExecutor.ts:59
+msgid "The kernel for %1 appears to be terminating. You can not run any cell for now."
+msgstr ""
+
+#: packages/docprovider/src/notebookCellExecutor.ts:69
+msgid "Cell not executed due to pending input"
+msgstr ""
+
+#: packages/docprovider/src/notebookCellExecutor.ts:70
+msgid "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again."
+msgstr ""
+
+#: packages/docprovider/src/yprovider.ts:124 packages/docprovider/src/yprovider.ts:152
 msgid "Document session error"
 msgstr ""
 
