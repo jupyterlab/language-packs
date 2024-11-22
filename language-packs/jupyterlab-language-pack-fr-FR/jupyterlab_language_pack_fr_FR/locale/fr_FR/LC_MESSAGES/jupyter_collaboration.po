@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 229\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2024-10-16 11:58\n"
+"PO-Revision-Date: 2024-11-22 07:22\n"
 
 #: /packages/collaboration-extension/schema/shared-link.json:/description
 msgctxt "schema"
@@ -46,11 +46,11 @@ msgstr "Informations utilisateur"
 msgid "User information"
 msgstr "Informations de l'utilisateur"
 
-#: packages/collaboration-extension/src/collaboration.ts:166
+#: packages/collaboration-extension/src/collaboration.ts:166 packages/collaboration-extension/src/collaboration.ts:167
 msgid "Online Collaborators"
 msgstr "Collaborateurs en ligne"
 
-#: packages/collaboration-extension/src/filebrowser.ts:199 packages/collaboration-extension/src/filebrowser.ts:248
+#: packages/collaboration-extension/src/filebrowser.ts:199 packages/collaboration-extension/src/filebrowser.ts:248 packages/docprovider-extension/src/filebrowser.ts:313 packages/docprovider-extension/src/filebrowser.ts:359
 msgid "Warning"
 msgstr "Avertissement"
 
@@ -62,7 +62,7 @@ msgstr "Deux sessions collaboratives accèdent simultanément au fichier %1 .\n"
 "                \n"
 "Ouvrir un document avec des vues multiples simultanément n'est pas pris en charge. Veuillez fermer une vue; sinon, vous risquez de perdre une partie de vos modifications."
 
-#: packages/collaboration-extension/src/filebrowser.ts:254
+#: packages/collaboration-extension/src/filebrowser.ts:254 packages/docprovider-extension/src/filebrowser.ts:361
 msgid "Ok"
 msgstr "Ok"
 
@@ -122,7 +122,27 @@ msgstr "Copier le lien"
 msgid "Copy the link to the Jupyter Server"
 msgstr "Copier le lien vers le serveur Jupyter"
 
-#: packages/docprovider/src/yprovider.ts:124
+#: packages/docprovider-extension/src/filebrowser.ts:268
+msgid "File Browser Section"
+msgstr "Section du navigateur de fichiers"
+
+#: packages/docprovider/src/notebookCellExecutor.ts:58
+msgid "Kernel Terminating"
+msgstr "Arrêt du noyau d'exécution"
+
+#: packages/docprovider/src/notebookCellExecutor.ts:59
+msgid "The kernel for %1 appears to be terminating. You can not run any cell for now."
+msgstr "Le noyau d'exécution pour %1 est en cours d'arrêt. Vous ne pouvez pas exécuter de cellule pour le moment."
+
+#: packages/docprovider/src/notebookCellExecutor.ts:69
+msgid "Cell not executed due to pending input"
+msgstr "La cellule n'a pas été exécutée en raison d'une entrée en attente"
+
+#: packages/docprovider/src/notebookCellExecutor.ts:70
+msgid "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again."
+msgstr "La cellule n'a pas été exécutée pour éviter de bloquer le noyau d'exécution car une autre entrée est en attente. Soumettez une valeur et réessayez."
+
+#: packages/docprovider/src/yprovider.ts:124 packages/docprovider/src/yprovider.ts:152
 msgid "Document session error"
 msgstr "Erreur de session du document"
 
