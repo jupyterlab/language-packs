@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 231\n"
 "Language-Team: Indonesian\n"
 "Language: id_ID\n"
-"PO-Revision-Date: 2024-09-11 14:53\n"
+"PO-Revision-Date: 2024-12-19 07:19\n"
 
 #: /packages/application-extension/schema/menus.json:/description /packages/application-extension/schema/menus.json:/title /packages/notebook-extension/schema/edit-notebook-metadata.json:/description /packages/notebook-extension/schema/edit-notebook-metadata.json:/title
 msgctxt "schema"
@@ -112,6 +112,26 @@ msgstr ""
 #: /packages/notebook-extension/schema/checkpoints.json:/description /packages/notebook-extension/schema/checkpoints.json:/title
 msgctxt "schema"
 msgid "Notebook checkpoint indicator"
+msgstr ""
+
+#: /packages/notebook-extension/schema/full-width-notebook.json:/description
+msgctxt "schema"
+msgid "Jupyter Notebook Notebook With settings"
+msgstr ""
+
+#: /packages/notebook-extension/schema/full-width-notebook.json:/properties/fullWidthNotebook/description
+msgctxt "settings"
+msgid "Whether to the notebook should take up the full width of the application"
+msgstr ""
+
+#: /packages/notebook-extension/schema/full-width-notebook.json:/properties/fullWidthNotebook/title
+msgctxt "settings"
+msgid "Full Width Notebook"
+msgstr ""
+
+#: /packages/notebook-extension/schema/full-width-notebook.json:/title
+msgctxt "schema"
+msgid "Jupyter Notebook Full Width Notebook"
 msgstr ""
 
 #: /packages/notebook-extension/schema/kernel-logo.json:/description
@@ -240,52 +260,56 @@ msgctxt "schema"
 msgid "File Browser Widget"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:1103
+#: packages/application-extension/src/index.ts:1103 packages/application-extension/src/index.ts:1122
 msgid "Toggle Zen Mode"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:145
+#: packages/application-extension/src/index.ts:145 packages/application-extension/src/index.ts:150
 msgid "Are you sure you want to exit Jupyter Notebook?\n\n"
 "Any unsaved changes will be lost."
 msgstr ""
 
-#: packages/application-extension/src/index.ts:319
+#: packages/application-extension/src/index.ts:319 packages/application-extension/src/index.ts:324
 msgid "Open JupyterLab"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:327
+#: packages/application-extension/src/index.ts:327 packages/application-extension/src/index.ts:332
 msgid "File Browser"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:402
+#: packages/application-extension/src/index.ts:402 packages/application-extension/src/index.ts:407
 msgid "Handle Local Link"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:619
+#: packages/application-extension/src/index.ts:619 packages/application-extension/src/index.ts:638
 msgid "Rename…"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:686
+#: packages/application-extension/src/index.ts:624
+msgid "Duplicate"
+msgstr ""
+
+#: packages/application-extension/src/index.ts:686 packages/application-extension/src/index.ts:705
 msgid "Show Header"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:777
+#: packages/application-extension/src/index.ts:777 packages/application-extension/src/index.ts:796
 msgid "Show %1 in the left sidebar"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:782
+#: packages/application-extension/src/index.ts:782 packages/application-extension/src/index.ts:801
 msgid "Show %1 in the right sidebar"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:787
+#: packages/application-extension/src/index.ts:787 packages/application-extension/src/index.ts:806
 msgid "Show %1 in the sidebar"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:902
+#: packages/application-extension/src/index.ts:902 packages/application-extension/src/index.ts:921
 msgid "Left Sidebar"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:904
+#: packages/application-extension/src/index.ts:904 packages/application-extension/src/index.ts:923
 msgid "Right Sidebar"
 msgstr ""
 
@@ -345,19 +369,27 @@ msgstr ""
 msgid "Launch Jupyter Notebook File Browser"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:121
+#: packages/notebook-extension/src/index.ts:121 packages/notebook-extension/src/index.ts:131
 msgid "Last Checkpoint: %1"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:164
+#: packages/notebook-extension/src/index.ts:164 packages/notebook-extension/src/index.ts:174
 msgid "Close and Shut Down Notebook"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:525
+#: packages/notebook-extension/src/index.ts:206
+msgid "Open…"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:272
+msgid "Enable Full Width Notebook"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:525 packages/notebook-extension/src/index.ts:639
 msgid "Edit Notebook Metadata"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:542
+#: packages/notebook-extension/src/index.ts:542 packages/notebook-extension/src/index.ts:656
 msgid "Advanced Tools"
 msgstr ""
 
@@ -381,15 +413,15 @@ msgstr ""
 msgid "Select items to perform actions on them."
 msgstr ""
 
-#: packages/tree-extension/src/index.ts:308
+#: packages/tree-extension/src/index.ts:308 packages/tree-extension/src/index.ts:378
 msgid "Files"
 msgstr ""
 
-#: packages/tree-extension/src/index.ts:310
+#: packages/tree-extension/src/index.ts:310 packages/tree-extension/src/index.ts:380
 msgid "File Browser Section"
 msgstr ""
 
-#: packages/tree-extension/src/index.ts:324
+#: packages/tree-extension/src/index.ts:324 packages/tree-extension/src/index.ts:394
 msgid "Upload"
 msgstr ""
 
@@ -397,11 +429,11 @@ msgstr ""
 msgid "Filter files by name"
 msgstr ""
 
-#: packages/tree-extension/src/index.ts:364
+#: packages/tree-extension/src/index.ts:364 packages/tree-extension/src/index.ts:412
 msgid "Running"
 msgstr ""
 
-#: packages/tree-extension/src/index.ts:98
+#: packages/tree-extension/src/index.ts:95 packages/tree-extension/src/index.ts:98
 msgid "New"
 msgstr ""
 
