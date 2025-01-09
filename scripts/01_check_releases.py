@@ -64,9 +64,9 @@ if __name__ == "__main__":
         if match is not None:
             repo = match.groupdict()
 
-            # For JupyterLab we filter explicitly to catch version belonging to minor range
+            # For JupyterLab we filter explicitly to catch version belonging to major range
             ref_filter = (
-                f"v{current_version.major}.{current_version.minor}"
+                f"v{current_version.major}."
                 if package_name == "jupyterlab"
                 else None
             )
