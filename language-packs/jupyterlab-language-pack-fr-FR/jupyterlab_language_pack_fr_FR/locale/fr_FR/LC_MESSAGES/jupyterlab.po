@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2025-04-10 06:30\n"
+"PO-Revision-Date: 2025-04-14 02:20\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -251,7 +251,7 @@ msgstr "Le menu contextuel de l'application."
 #: /packages/application-extension/schema/context-menu.json:/properties/disabled/description
 msgctxt "settings"
 msgid "Whether the application context (right-click) menu is disabled"
-msgstr ""
+msgstr "Le menu contextuel de l'application (clic droit) est-il désactivé?"
 
 #: /packages/application-extension/schema/context-menu.json:/title
 msgctxt "schema"
@@ -401,52 +401,52 @@ msgstr "Barre supérieure"
 #: /packages/apputils-extension/schema/kernels-settings.json:/description
 msgctxt "schema"
 msgid "Kernels and kernel sessions settings"
-msgstr ""
+msgstr "Configuration des noyaux et des sessions"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Kernel"
-msgstr ""
+msgstr "Noyau d'exécution"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/description
 msgctxt "settings"
 msgid "Whether comm messages should be sent to kernel subshells, if the kernel supports it."
-msgstr ""
+msgstr "Les messages \"comm\" doivent-ils être envoyés aux sous-interpréteurs du noyau, si le noyau d'exécution le supporte."
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/oneOf[0]/title
 msgctxt "settings"
 msgid "Disabled"
-msgstr ""
+msgstr "Désactivé"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/oneOf[1]/title
 msgctxt "settings"
 msgid "One subshell per comm"
-msgstr ""
+msgstr "Un sous-interpréteur par \"comm\""
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/oneOf[2]/title
 msgctxt "settings"
 msgid "One subshell per comm-target"
-msgstr ""
+msgstr "Un sous-interpréteur par cible \"comm\""
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/title
 msgctxt "settings"
 msgid "Kernel Comms over subshells"
-msgstr ""
+msgstr "Comms du noyau d'exécution vers les sous-interpréteurs"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/showStatusBarItem/description
 msgctxt "settings"
 msgid "Whether to show the running kernels item in the status bar"
-msgstr ""
+msgstr "Afficher/Masquer les noyaux en cours d'exécution dans la barre d'état"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/showStatusBarItem/title /packages/terminal-extension/schema/plugin.json:/properties/showStatusBarItem/title
 msgctxt "settings"
 msgid "Show the status bar item"
-msgstr ""
+msgstr "Afficher l'élément dans la barre d'état"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/title
 msgctxt "schema"
 msgid "Kernels"
-msgstr ""
+msgstr "Noyaux d'exécution"
 
 #: /packages/apputils-extension/schema/notification.json:/description
 msgctxt "schema"
@@ -466,7 +466,7 @@ msgstr "Vérifier si une nouvelle version de JupyterLab est disponible ou non. I
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
 msgctxt "settings"
 msgid "Whether to check for newer versions of JupyterLab or not. It requires `fetchNews` to be set to Always (`true`) to be active. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "Vérifier si une nouvelle version de JupyterLab est disponible ou non. Il faut que `fetchNews` soit `true` pour être actif. Si `true`, une requête à un site web sera envoyée."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/title
 msgctxt "settings"
@@ -491,7 +491,7 @@ msgstr "Récupérer les actualités depuis le fil de nouvelles Jupyter. Si `true
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/description
 msgctxt "settings"
 msgid "Whether to fetch news from the Jupyter news feed. If Always (`true`), it will make a request to a website."
-msgstr ""
+msgstr "Récupérer les actualités depuis le fil de nouvelles Jupyter. Si `true`, une requête à un site web sera envoyée."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/oneOf[0]/title /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[0]/title
 msgctxt "settings"
@@ -506,7 +506,7 @@ msgstr "Jamais"
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/oneOf[2]/title
 msgctxt "settings"
 msgid "Ask (None)"
-msgstr ""
+msgstr "Demander (None)"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/title
 msgctxt "settings"
@@ -1016,32 +1016,32 @@ msgstr "Paramètres de la console de code"
 #: /packages/console-extension/schema/tracker.json:/properties/clearCellsOnExecute/description
 msgctxt "settings"
 msgid "Whether to clear the console when code is executed."
-msgstr ""
+msgstr "Effacer ou non la console à l'exécution de code."
 
 #: /packages/console-extension/schema/tracker.json:/properties/clearCellsOnExecute/title
 msgctxt "settings"
 msgid "Clear Cells on Execute"
-msgstr ""
+msgstr "Effacer les cellules à l'exécution"
 
 #: /packages/console-extension/schema/tracker.json:/properties/clearCodeContentOnExecute/description
 msgctxt "settings"
 msgid "Whether to clear the code content of the console when code is executed."
-msgstr ""
+msgstr "Effacer ou non le code de la console à l'exécution."
 
 #: /packages/console-extension/schema/tracker.json:/properties/clearCodeContentOnExecute/title
 msgctxt "settings"
 msgid "Clear Code Content on Execute"
-msgstr ""
+msgstr "Effacer le code lors de l'exécution"
 
 #: /packages/console-extension/schema/tracker.json:/properties/hideCodeInput/description
 msgctxt "settings"
 msgid "Whether to hide the code input after a cell is executed."
-msgstr ""
+msgstr "Cacher ou non le code fourni après l'exécution d'une cellule."
 
 #: /packages/console-extension/schema/tracker.json:/properties/hideCodeInput/title
 msgctxt "settings"
 msgid "Hide Code Input"
-msgstr ""
+msgstr "Cacher le code fourni"
 
 #: /packages/console-extension/schema/tracker.json:/properties/interactionMode/description
 msgctxt "settings"
@@ -1068,32 +1068,32 @@ msgstr "Configuration des cellules de code"
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/description
 msgctxt "settings"
 msgid "Where to place the prompt cell of the console."
-msgstr ""
+msgstr "Où placer la cellule éditable de la console."
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/oneOf[0]/title
 msgctxt "settings"
 msgid "Bottom"
-msgstr ""
+msgstr "En bas"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/oneOf[1]/title
 msgctxt "settings"
 msgid "Top"
-msgstr ""
+msgstr "En haut"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/oneOf[2]/title
 msgctxt "settings"
 msgid "Left"
-msgstr ""
+msgstr "À gauche"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/oneOf[3]/title
 msgctxt "settings"
 msgid "Right"
-msgstr ""
+msgstr "À droite"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/title
 msgctxt "settings"
 msgid "Prompt Cell Position"
-msgstr ""
+msgstr "Position de la cellule éditable"
 
 #: /packages/console-extension/schema/tracker.json:/properties/showAllKernelActivity/description
 msgctxt "settings"
@@ -1110,12 +1110,12 @@ msgstr "Afficher toute l'activité du noyau"
 #: /packages/console-extension/schema/tracker.json:/properties/showBanner/description
 msgctxt "settings"
 msgid "Whether to show the kernel banner."
-msgstr ""
+msgstr "Afficher ou non la bannière du noyau d'exécution."
 
 #: /packages/console-extension/schema/tracker.json:/properties/showBanner/title
 msgctxt "settings"
 msgid "Show Banner"
-msgstr ""
+msgstr "Afficher la bannière"
 
 #: /packages/console-extension/schema/tracker.json:/properties/toolbar/description /packages/notebook-extension/schema/panel.json:/properties/toolbar/description
 msgctxt "settings"
@@ -1147,7 +1147,7 @@ msgstr "Remarque : Pour désactiver un élément de la barre d'outils,\n"
 #: /packages/console-extension/schema/tracker.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "Console panel toolbar items"
-msgstr ""
+msgstr "Éléments de la barre d'outils de la console"
 
 #: /packages/console-extension/schema/tracker.json:/title
 msgctxt "schema"
@@ -2187,12 +2187,12 @@ msgstr "Accès à l'historique d'exécution"
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoRenderMarkdownCells/description
 msgctxt "settings"
 msgid "Whether to render markdown cells when the cursor moves out of them."
-msgstr ""
+msgstr "Générer ou non le rendu des cellules markdown à la sortie du curseur."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoRenderMarkdownCells/title
 msgctxt "settings"
 msgid "Automatically render markdown when cursor leaves markdown cells"
-msgstr ""
+msgstr "Rendre automatiquement le markdown lorsque le curseur quitte les cellules markdown"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoStartDefaultKernel/description
 msgctxt "settings"
@@ -2307,7 +2307,7 @@ msgstr "Nombre de cellules à afficher en dehors de la fenêtre d'affichage"
 #: /packages/notebook-extension/schema/tracker.json:/properties/overscanCount/title
 msgctxt "settings"
 msgid "Number of cells to render outside the viewport"
-msgstr ""
+msgstr "Nombre de cellules à afficher en dehors de la fenêtre d'affichage"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/description
 msgctxt "settings"
@@ -2387,12 +2387,12 @@ msgstr "Afficher le bouton des cellules cachées si elles sont réduites"
 #: /packages/notebook-extension/schema/tracker.json:/properties/showInputPlaceholder/description
 msgctxt "settings"
 msgid "Show placeholder text for standard input fields (requires reload)"
-msgstr ""
+msgstr "Afficher les suggestions pour les champs de saisie standard (rechargement nécessaire)"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/showInputPlaceholder/title
 msgctxt "settings"
 msgid "Show input placeholder"
-msgstr ""
+msgstr "Afficher la suggestion dans le champ de saisie"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/sideBySideLeftMarginOverride/description
 msgctxt "settings"
@@ -2632,22 +2632,22 @@ msgstr "Tampon de défilement arrière"
 #: /packages/terminal-extension/schema/plugin.json:/properties/showStatusBarItem/description
 msgctxt "settings"
 msgid "Whether to show the running terminals item in the status bar"
-msgstr ""
+msgstr "Afficher/Masquer les terminaux en cours d'exécution dans la barre d'état"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/showStatusBarItem/oneOf[0]/title
 msgctxt "settings"
 msgid "Show if one or more"
-msgstr ""
+msgstr "Afficher si il y a des terminaux"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/showStatusBarItem/oneOf[1]/title
 msgctxt "settings"
 msgid "Always show"
-msgstr ""
+msgstr "Toujours afficher"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/showStatusBarItem/oneOf[2]/title
 msgctxt "settings"
 msgid "Don't show"
-msgstr ""
+msgstr "Ne pas afficher"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/shutdownOnClose/description
 msgctxt "settings"
@@ -2827,12 +2827,12 @@ msgstr "Langue"
 #: /packages/workspaces-extension/schema/indicator.json:/description
 msgctxt "schema"
 msgid "Workspace Indicator Settings"
-msgstr ""
+msgstr "Paramètres de l'indicateur d'espace de travail"
 
 #: /packages/workspaces-extension/schema/indicator.json:/title
 msgctxt "schema"
 msgid "Workspace Indicator"
-msgstr ""
+msgstr "Indicateur de l'espace de travail"
 
 #: /packages/workspaces-extension/schema/menu.json:/description /packages/workspaces-extension/schema/menu.json:/title
 msgctxt "schema"
@@ -2899,7 +2899,7 @@ msgstr "Changer le côté de la barre latérale"
 
 #: packages/application-extension/src/index.tsx:1535
 msgid "Enable Context Menu"
-msgstr ""
+msgstr "Activer le menu context"
 
 #: packages/application-extension/src/index.tsx:205 packages/application-extension/src/index.tsx:239 packages/application-extension/src/index.tsx:242 packages/application-extension/src/index.tsx:244
 msgid "Close Tab"
@@ -3049,7 +3049,7 @@ msgstr "Paramètres"
 
 #: packages/application-extension/src/topbar.ts:39
 msgid "Topbar toolbar"
-msgstr ""
+msgstr "Barre d'outils supérieure"
 
 #: packages/application/src/connectionlost.ts:19
 msgid "Server Connection Error"
@@ -3687,7 +3687,7 @@ msgstr "Redémarrer le noyau"
 
 #: packages/cell-toolbar/src/celltoolbartracker.ts:204
 msgid "Cell toolbar"
-msgstr ""
+msgstr "Barre d'outils des cellules"
 
 #: packages/cells/src/placeholder.ts:85
 msgid "Click to expand"
@@ -3749,11 +3749,11 @@ msgstr "Sélectionner l'occurrence suivante"
 
 #: packages/codemirror-extension/src/commands.ts:109
 msgid "Toggle Tab Focus Mode"
-msgstr ""
+msgstr "Activer/désactiver le mode focus par tabulation"
 
 #: packages/codemirror-extension/src/commands.ts:110
 msgid "Toggles behavior of Tab key between inserting indentation and moving to next focusable element"
-msgstr ""
+msgstr "Bascule le comportement de la touche Tab entre l'insertion de l'indentation et le passage à l'élément ciblable suivant"
 
 #: packages/codemirror-extension/src/commands.ts:68 packages/codemirror-extension/src/commands.ts:70
 msgid "Delete the current line"
@@ -3965,7 +3965,7 @@ msgstr "Indentation intelligente"
 
 #: packages/codemirror/src/extension.ts:786
 msgid "Drop Cursor"
-msgstr ""
+msgstr "Curseur de lâché"
 
 #: packages/codemirror/src/extension.ts:790 packages/codemirror/src/extension.ts:791 packages/codemirror/src/extension.ts:797 packages/codemirror/src/extension.ts:908 packages/codemirror/src/extension.ts:932 packages/codemirror/src/extension.ts:954
 msgid "Tab size"
@@ -4605,11 +4605,11 @@ msgstr "Récupérer ou non les suggestions du fournisseur %1."
 
 #: packages/completer-extension/src/index.ts:322
 msgid "Fill in middle on typing"
-msgstr ""
+msgstr "Remplir au milieu de la saisie"
 
 #: packages/completer-extension/src/index.ts:323
 msgid "Whether to show completions in the middle of the code line from %1 provider on typing."
-msgstr ""
+msgstr "Afficher/Masquer les complétions au milieu de la ligne de code du fournisseur %1 lors de la saisie."
 
 #: packages/completer/src/default/inlinehistoryprovider.ts:32
 msgid "History"
@@ -4657,7 +4657,7 @@ msgstr "Sélectionne la suggestion de complétion."
 
 #: packages/console-extension/src/index.ts:347
 msgid "Change Console Prompt Position"
-msgstr ""
+msgstr "Changer la position de la cellule éditable de la console"
 
 #: packages/console-extension/src/index.ts:464 packages/console-extension/src/index.ts:473 packages/console-extension/src/index.ts:478 packages/console-extension/src/index.ts:620
 msgid "Auto Close Brackets for Code Console Prompt"
@@ -4909,7 +4909,7 @@ msgstr "Points d'arrêt"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:38
 msgid "Breakpoints panel toolbar"
-msgstr ""
+msgstr "Barre d'outils du panneau des points d'arrêt"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:38 packages/debugger/src/panels/breakpoints/index.ts:46
 msgid "Pause on exception filter"
@@ -4933,7 +4933,7 @@ msgstr "Pile des appels"
 
 #: packages/debugger/src/panels/callstack/index.ts:32
 msgid "Callstack panel toolbar"
-msgstr ""
+msgstr "Barre d'outils du panneau de la hiérarchie d'appels"
 
 #: packages/debugger/src/panels/kernelSources/body.tsx:83 packages/debugger/src/panels/kernelSources/body.tsx:87 packages/debugger/src/panels/kernelSources/body.tsx:90
 msgid "Fail to get source"
@@ -4955,7 +4955,7 @@ msgstr "Sources du noyau"
 
 #: packages/debugger/src/panels/kernelSources/index.tsx:37
 msgid "Kernel sources panel toolbar"
-msgstr ""
+msgstr "Barre d'outils du panneau des sources du noyau"
 
 #: packages/debugger/src/panels/kernelSources/index.tsx:49 packages/debugger/src/panels/kernelSources/index.tsx:52
 msgid "Toggle search filter"
@@ -4981,7 +4981,7 @@ msgstr "Source"
 
 #: packages/debugger/src/panels/sources/index.tsx:37
 msgid "Sources preview panel toolbar"
-msgstr ""
+msgstr "Barre d'outils du panneau de prévisualisation des sources"
 
 #: packages/debugger/src/panels/sources/index.tsx:42 packages/debugger/src/panels/sources/index.tsx:49
 msgid "Open in the Main Area"
@@ -5009,7 +5009,7 @@ msgstr "Variables"
 
 #: packages/debugger/src/panels/variables/index.ts:35
 msgid "Variables toolbar"
-msgstr ""
+msgstr "Barre d'outils des variables"
 
 #: packages/debugger/src/panels/variables/index.ts:78 packages/debugger/src/panels/variables/index.ts:79
 msgid "Tree View"
@@ -5249,11 +5249,11 @@ msgstr "Si coché, il ne vous sera plus demandé de renommer les fichiers sans t
 
 #: packages/docmanager-extension/src/index.tsx:916
 msgid "Rename and Save"
-msgstr ""
+msgstr "Renommer et sauvegarder"
 
 #: packages/docmanager-extension/src/index.tsx:921
 msgid "Do not ask for rename on first save."
-msgstr ""
+msgstr "Ne pas demander le renommage lors de la première sauvegarde."
 
 #: packages/docmanager-extension/src/index.tsx:934 packages/docmanager-extension/src/index.tsx:937 packages/docmanager-extension/src/index.tsx:970 packages/docmanager-extension/src/index.tsx:979 packages/docmanager-extension/src/index.tsx:982
 msgid "Save All"
@@ -5759,7 +5759,7 @@ msgstr "Rafraîchir la liste des extensions"
 
 #: packages/extensionmanager/src/widget.tsx:650
 msgid "Extensions panel toolbar"
-msgstr ""
+msgstr "Barre d'outils du panneau d'extensions"
 
 #: packages/extensionmanager/src/widget.tsx:81
 msgid "%1 extension home page"
@@ -5948,7 +5948,7 @@ msgstr "Erreur lors du téléversement"
 
 #: packages/filebrowser-extension/src/index.ts:931 packages/filebrowser/src/listing.ts:461
 msgid "Move to Trash"
-msgstr ""
+msgstr "Déplacer dans la corbeille"
 
 #: packages/filebrowser-extension/src/index.ts:935 packages/filebrowser-extension/src/index.ts:939 packages/filebrowser-extension/src/index.ts:942 packages/filebrowser-extension/src/index.ts:943 packages/filebrowser-extension/src/index.ts:944 packages/filebrowser-extension/src/index.ts:950 packages/fileeditor-extension/src/commands.ts:947 packages/fileeditor-extension/src/commands.ts:952 packages/fileeditor-extension/src/commands.ts:954 packages/fileeditor-extension/src/commands.ts:956 packages/terminal-extension/src/index.ts:463 packages/terminal-extension/src/index.ts:469 packages/terminal-extension/src/index.ts:470 packages/terminal-extension/src/index.ts:472 packages/terminal-extension/src/index.ts:474
 msgid "Copy"
@@ -5968,7 +5968,7 @@ msgstr "Mettez à jour le navigateur de fichiers pour afficher le chemin (`path`
 
 #: packages/filebrowser/src/browser.ts:119
 msgid "File browser toolbar"
-msgstr ""
+msgstr "Barre d'outils du navigateur de fichiers"
 
 #: packages/filebrowser/src/browser.ts:372 packages/filebrowser/src/browser.ts:388 packages/filebrowser/src/browser.ts:397 packages/filebrowser/src/browser.ts:403 packages/filebrowser/src/browser.ts:494 packages/filebrowser/src/browser.ts:495 packages/filebrowser/src/browser.ts:499
 msgid "Directory not found"
@@ -6126,13 +6126,13 @@ msgstr[1] "Êtes-vous sûr de vouloir supprimer définitivement les éléments s
 
 #: packages/filebrowser/src/listing.ts:435
 msgid "Are you sure you want to move to trash: %1?"
-msgstr ""
+msgstr "Êtes-vous sûr de vouloir déplacer dans la corbeille %1?"
 
 #: packages/filebrowser/src/listing.ts:443
 msgid "Are you sure you want to move to trash the %1 selected item?"
 msgid_plural "Are you sure you want to move to trash the %1 selected items?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Êtes-vous sûr de vouloir déplacer dans la corbeille l'élément sélectionné %1?"
+msgstr[1] "Êtes-vous sûr de vouloir déplacer vers la corbeille les éléments sélectionnés %1?"
 
 #: packages/filebrowser/src/listing.ts:472 packages/filebrowser/src/listing.ts:476 packages/filebrowser/src/listing.ts:479 packages/filebrowser/src/listing.ts:492 packages/filebrowser/src/listing.ts:493 packages/filebrowser/src/listing.ts:511
 msgctxt "showErrorMessage"
@@ -6399,7 +6399,7 @@ msgstr "Icône du noyau"
 
 #: packages/help-extension/src/index.tsx:82
 msgid "Download All Licenses"
-msgstr ""
+msgstr "Télécharger toutes les licences"
 
 #: packages/htmlviewer-extension/src/index.tsx:105
 msgid "HTML File"
@@ -6906,7 +6906,7 @@ msgstr "Exécuter le texte sélectionné ou la ligne actuelle dans la console"
 
 #: packages/notebook-extension/src/index.ts:1403
 msgid "New Subshell Console for Notebook"
-msgstr ""
+msgstr "Nouvelle console de sous-interpréteur pour le notebook"
 
 #: packages/notebook-extension/src/index.ts:1517 packages/notebook-extension/src/index.ts:1520 packages/notebook-extension/src/index.ts:1539 packages/notebook-extension/src/index.ts:1550 packages/notebook-extension/src/index.ts:1554 packages/notebook-extension/src/index.ts:1562 packages/notebook-extension/src/index.ts:1564 packages/notebook-extension/src/index.ts:1591
 msgid "Copy Output to Clipboard"
@@ -7912,7 +7912,7 @@ msgstr "Tout développer"
 
 #: packages/running/src/index.tsx:671
 msgid "%1 toolbar"
-msgstr ""
+msgstr "Barre d'outils %1"
 
 #: packages/running/src/index.tsx:885 packages/running/src/index.tsx:928 packages/running/src/index.tsx:947
 msgid "No matches"
@@ -7920,11 +7920,11 @@ msgstr "Aucune correspondance"
 
 #: packages/settingeditor-extension/src/importSettingsWidget.tsx:53
 msgid "Select settings sections to import"
-msgstr ""
+msgstr "Sélectionnez les sections de paramètres à importer"
 
 #: packages/settingeditor-extension/src/importSettingsWidget.tsx:63 packages/settingeditor-extension/src/index.ts:179
 msgid "Import"
-msgstr ""
+msgstr "Importer"
 
 #: packages/settingeditor-extension/src/index.ts:145 packages/settingeditor-extension/src/index.ts:165 packages/settingeditor-extension/src/index.ts:204
 msgid "JSON Settings Editor"
@@ -7932,15 +7932,15 @@ msgstr "Éditeur JSON des paramètres"
 
 #: packages/settingeditor-extension/src/index.ts:168
 msgid "Export"
-msgstr ""
+msgstr "Exporter"
 
 #: packages/settingeditor-extension/src/index.ts:169
 msgid "Export settings to a JSON file"
-msgstr ""
+msgstr "Exporter les paramètres dans un fichier JSON"
 
 #: packages/settingeditor-extension/src/index.ts:180
 msgid "Import settings from a JSON file"
-msgstr ""
+msgstr "Importer les paramètres depuis un fichier JSON"
 
 #: packages/settingeditor-extension/src/index.ts:181 packages/settingeditor-extension/src/index.ts:201 packages/settingeditor-extension/src/index.ts:240
 msgid "Settings Editor"
@@ -7960,15 +7960,15 @@ msgstr "Enregistrer les paramètres de l'utilisateur"
 
 #: packages/settingeditor-extension/src/index.ts:405
 msgid "Export Settings"
-msgstr ""
+msgstr "Exporter les paramètres"
 
 #: packages/settingeditor-extension/src/index.ts:485
 msgid "Settings Imported"
-msgstr ""
+msgstr "Paramètres importés"
 
 #: packages/settingeditor-extension/src/index.ts:499 packages/settingeditor-extension/src/index.ts:511
 msgid "Import Settings"
-msgstr ""
+msgstr "Importer les paramètres"
 
 #: packages/settingeditor/src/InstructionsPlaceholder.tsx:21
 msgid "No Plugin Selected"
@@ -8040,7 +8040,7 @@ msgstr "Rechercher…"
 
 #: packages/settingeditor/src/raweditor.ts:368
 msgid "Default editor toolbar"
-msgstr ""
+msgstr "Barre d'outils par défaut de l'éditeur"
 
 #: packages/settingeditor/src/raweditor.ts:368 packages/settingeditor/src/raweditor.ts:369
 msgid "System Defaults"
@@ -8311,7 +8311,7 @@ msgstr "Table des Matières"
 
 #: packages/toc-extension/src/index.ts:220
 msgid "Table of contents sidepanel toolbar"
-msgstr ""
+msgstr "Barre d'outils de la table des matières"
 
 #: packages/toc-extension/src/index.ts:242 packages/toc-extension/src/index.ts:246
 msgid "More actions…"
@@ -8355,7 +8355,7 @@ msgstr "Après avoir changé la langue de l'interface en %1, vous devrez recharg
 
 #: packages/translation-extension/src/index.ts:145
 msgid "Change interface language to %1"
-msgstr ""
+msgstr "Changer la langue de l'interface en %1"
 
 #: packages/translation-extension/src/index.ts:148 packages/translation-extension/src/index.ts:157 packages/translation-extension/src/index.ts:158
 msgid "Change and reload"
@@ -8553,7 +8553,7 @@ msgstr "Chemin dans lequel enregistrer l'espace de travail"
 
 #: packages/workspaces-extension/src/index.ts:98
 msgid "Show Workspace Indicator"
-msgstr ""
+msgstr "Afficher l'indicateur d'espace de travail"
 
 #: packages/workspaces-extension/src/sidebar.ts:100 packages/workspaces-extension/src/sidebar.ts:101
 msgid "Delete All"
@@ -8569,9 +8569,9 @@ msgstr "Espace de travail %1 avec des onglets %2 , dernière modification sur %3
 
 #: packages/workspaces-extension/src/top_indicator.tsx:101
 msgid "Workspace"
-msgstr ""
+msgstr "Espace de travail"
 
 #: packages/workspaces-extension/src/top_indicator.tsx:89
 msgid "Search workspace"
-msgstr ""
+msgstr "Rechercher un espace de travail"
 
