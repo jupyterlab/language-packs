@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2025-04-10 06:30\n"
+"PO-Revision-Date: 2025-04-26 02:16\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -250,7 +250,7 @@ msgstr "应用程序的上下文菜单."
 #: /packages/application-extension/schema/context-menu.json:/properties/disabled/description
 msgctxt "settings"
 msgid "Whether the application context (right-click) menu is disabled"
-msgstr ""
+msgstr "应用程序上下文（右键）菜单是否被禁用"
 
 #: /packages/application-extension/schema/context-menu.json:/title
 msgctxt "schema"
@@ -397,52 +397,52 @@ msgstr "顶栏"
 #: /packages/apputils-extension/schema/kernels-settings.json:/description
 msgctxt "schema"
 msgid "Kernels and kernel sessions settings"
-msgstr ""
+msgstr "内核和内核会话设置"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Kernel"
-msgstr ""
+msgstr "内核"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/description
 msgctxt "settings"
 msgid "Whether comm messages should be sent to kernel subshells, if the kernel supports it."
-msgstr ""
+msgstr "是否应将通信消息发送到内核子 shell，如果内核支持的话。"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/oneOf[0]/title
 msgctxt "settings"
 msgid "Disabled"
-msgstr ""
+msgstr "已禁用"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/oneOf[1]/title
 msgctxt "settings"
 msgid "One subshell per comm"
-msgstr ""
+msgstr "每个通信对应一个子 shell"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/oneOf[2]/title
 msgctxt "settings"
 msgid "One subshell per comm-target"
-msgstr ""
+msgstr "每个通信目标对应一个子 shell"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/title
 msgctxt "settings"
 msgid "Kernel Comms over subshells"
-msgstr ""
+msgstr "内核通信通过子 Shell 传递"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/showStatusBarItem/description
 msgctxt "settings"
 msgid "Whether to show the running kernels item in the status bar"
-msgstr ""
+msgstr "是否在状态栏显示正在运行的内核项"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/showStatusBarItem/title /packages/terminal-extension/schema/plugin.json:/properties/showStatusBarItem/title
 msgctxt "settings"
 msgid "Show the status bar item"
-msgstr ""
+msgstr "显示状态栏项"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/title
 msgctxt "schema"
 msgid "Kernels"
-msgstr ""
+msgstr "内核"
 
 #: /packages/apputils-extension/schema/notification.json:/description
 msgctxt "schema"
@@ -462,7 +462,7 @@ msgstr "是否检查 JupyterLab 的新版本。需要将 `fetchNews` 设置为 `
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
 msgctxt "settings"
 msgid "Whether to check for newer versions of JupyterLab or not. It requires `fetchNews` to be set to Always (`true`) to be active. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "是否检查 JupyterLab 的新版本。需要将 `fetchNews` 设置为 Always（`true`）才能生效。如果为 `true`，将向一个网站发送请求。"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/title
 msgctxt "settings"
@@ -487,7 +487,7 @@ msgstr "是否从 Jupyter 新闻源获取新闻。如果设置为 `true`，它�
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/description
 msgctxt "settings"
 msgid "Whether to fetch news from the Jupyter news feed. If Always (`true`), it will make a request to a website."
-msgstr ""
+msgstr "是否从 Jupyter 新闻源获取新闻。如果设置为 Always（`true`），将向一个网站发送请求。"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/oneOf[0]/title /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[0]/title
 msgctxt "settings"
@@ -502,7 +502,7 @@ msgstr "从不显示"
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/oneOf[2]/title
 msgctxt "settings"
 msgid "Ask (None)"
-msgstr ""
+msgstr "询问(无)"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/title
 msgctxt "settings"
@@ -1012,32 +1012,32 @@ msgstr "代码控制台设置"
 #: /packages/console-extension/schema/tracker.json:/properties/clearCellsOnExecute/description
 msgctxt "settings"
 msgid "Whether to clear the console when code is executed."
-msgstr ""
+msgstr "是否在代码执行时清除控制台。"
 
 #: /packages/console-extension/schema/tracker.json:/properties/clearCellsOnExecute/title
 msgctxt "settings"
 msgid "Clear Cells on Execute"
-msgstr ""
+msgstr "执行时清除单元格"
 
 #: /packages/console-extension/schema/tracker.json:/properties/clearCodeContentOnExecute/description
 msgctxt "settings"
 msgid "Whether to clear the code content of the console when code is executed."
-msgstr ""
+msgstr "是否在代码执行时清除控制台的代码内容。"
 
 #: /packages/console-extension/schema/tracker.json:/properties/clearCodeContentOnExecute/title
 msgctxt "settings"
 msgid "Clear Code Content on Execute"
-msgstr ""
+msgstr "执行时清除代码内容"
 
 #: /packages/console-extension/schema/tracker.json:/properties/hideCodeInput/description
 msgctxt "settings"
 msgid "Whether to hide the code input after a cell is executed."
-msgstr ""
+msgstr "是否在单元格执行后隐藏代码输入。"
 
 #: /packages/console-extension/schema/tracker.json:/properties/hideCodeInput/title
 msgctxt "settings"
 msgid "Hide Code Input"
-msgstr ""
+msgstr "隐藏代码输入"
 
 #: /packages/console-extension/schema/tracker.json:/properties/interactionMode/description
 msgctxt "settings"
@@ -1063,32 +1063,32 @@ msgstr "提示符单元格配置"
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/description
 msgctxt "settings"
 msgid "Where to place the prompt cell of the console."
-msgstr ""
+msgstr "控制台的提示单元格的放置位置。"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/oneOf[0]/title
 msgctxt "settings"
 msgid "Bottom"
-msgstr ""
+msgstr "底部"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/oneOf[1]/title
 msgctxt "settings"
 msgid "Top"
-msgstr ""
+msgstr "顶部"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/oneOf[2]/title
 msgctxt "settings"
 msgid "Left"
-msgstr ""
+msgstr "左边"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/oneOf[3]/title
 msgctxt "settings"
 msgid "Right"
-msgstr ""
+msgstr "右边"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/title
 msgctxt "settings"
 msgid "Prompt Cell Position"
-msgstr ""
+msgstr "提示单元格的位置"
 
 #: /packages/console-extension/schema/tracker.json:/properties/showAllKernelActivity/description
 msgctxt "settings"
@@ -1104,12 +1104,12 @@ msgstr "显示所有内核动态"
 #: /packages/console-extension/schema/tracker.json:/properties/showBanner/description
 msgctxt "settings"
 msgid "Whether to show the kernel banner."
-msgstr ""
+msgstr "是否显示内核横幅。"
 
 #: /packages/console-extension/schema/tracker.json:/properties/showBanner/title
 msgctxt "settings"
 msgid "Show Banner"
-msgstr ""
+msgstr "显示横幅"
 
 #: /packages/console-extension/schema/tracker.json:/properties/toolbar/description /packages/notebook-extension/schema/panel.json:/properties/toolbar/description
 msgctxt "settings"
@@ -1139,7 +1139,7 @@ msgstr "注意：想要禁用一个工具栏项目，复制下面内容到用户
 #: /packages/console-extension/schema/tracker.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "Console panel toolbar items"
-msgstr ""
+msgstr "控制台面板工具栏项"
 
 #: /packages/console-extension/schema/tracker.json:/title
 msgctxt "schema"
@@ -2169,12 +2169,12 @@ msgstr "内核历史记录访问"
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoRenderMarkdownCells/description
 msgctxt "settings"
 msgid "Whether to render markdown cells when the cursor moves out of them."
-msgstr ""
+msgstr "是否在光标移出 Markdown 单元格时渲染它们。"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoRenderMarkdownCells/title
 msgctxt "settings"
 msgid "Automatically render markdown when cursor leaves markdown cells"
-msgstr ""
+msgstr "当光标离开 Markdown 单元格时，自动渲染 markdown"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoStartDefaultKernel/description
 msgctxt "settings"
@@ -2289,7 +2289,7 @@ msgstr "在视口外渲染的单元格数量"
 #: /packages/notebook-extension/schema/tracker.json:/properties/overscanCount/title
 msgctxt "settings"
 msgid "Number of cells to render outside the viewport"
-msgstr ""
+msgstr "视口外要渲染的单元格数量"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/description
 msgctxt "settings"
@@ -2369,12 +2369,12 @@ msgstr "折叠时显示隐藏单元格按钮"
 #: /packages/notebook-extension/schema/tracker.json:/properties/showInputPlaceholder/description
 msgctxt "settings"
 msgid "Show placeholder text for standard input fields (requires reload)"
-msgstr ""
+msgstr "显示标准输入字段的占位符文本（需要重新加载）"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/showInputPlaceholder/title
 msgctxt "settings"
 msgid "Show input placeholder"
-msgstr ""
+msgstr "显示输入占位符"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/sideBySideLeftMarginOverride/description
 msgctxt "settings"
@@ -2614,22 +2614,22 @@ msgstr "回滚缓存"
 #: /packages/terminal-extension/schema/plugin.json:/properties/showStatusBarItem/description
 msgctxt "settings"
 msgid "Whether to show the running terminals item in the status bar"
-msgstr ""
+msgstr "是否在状态栏中显示运行中的终端项"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/showStatusBarItem/oneOf[0]/title
 msgctxt "settings"
 msgid "Show if one or more"
-msgstr ""
+msgstr "如果有一个或者多个则显示"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/showStatusBarItem/oneOf[1]/title
 msgctxt "settings"
 msgid "Always show"
-msgstr ""
+msgstr "始终显示"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/showStatusBarItem/oneOf[2]/title
 msgctxt "settings"
 msgid "Don't show"
-msgstr ""
+msgstr "不显示"
 
 #: /packages/terminal-extension/schema/plugin.json:/properties/shutdownOnClose/description
 msgctxt "settings"
@@ -2809,12 +2809,12 @@ msgstr "语言"
 #: /packages/workspaces-extension/schema/indicator.json:/description
 msgctxt "schema"
 msgid "Workspace Indicator Settings"
-msgstr ""
+msgstr "工作区指示器设置"
 
 #: /packages/workspaces-extension/schema/indicator.json:/title
 msgctxt "schema"
 msgid "Workspace Indicator"
-msgstr ""
+msgstr "工作区指示器"
 
 #: /packages/workspaces-extension/schema/menu.json:/description /packages/workspaces-extension/schema/menu.json:/title
 msgctxt "schema"
@@ -2881,7 +2881,7 @@ msgstr "侧边栏位置切换"
 
 #: packages/application-extension/src/index.tsx:1535
 msgid "Enable Context Menu"
-msgstr ""
+msgstr "启用上下文菜单"
 
 #: packages/application-extension/src/index.tsx:205 packages/application-extension/src/index.tsx:239 packages/application-extension/src/index.tsx:242 packages/application-extension/src/index.tsx:244
 msgid "Close Tab"
@@ -3030,7 +3030,7 @@ msgstr "设置"
 
 #: packages/application-extension/src/topbar.ts:39
 msgid "Topbar toolbar"
-msgstr ""
+msgstr "顶部工具栏"
 
 #: packages/application/src/connectionlost.ts:19
 msgid "Server Connection Error"
@@ -3666,7 +3666,7 @@ msgstr "重启内核"
 
 #: packages/cell-toolbar/src/celltoolbartracker.ts:204
 msgid "Cell toolbar"
-msgstr ""
+msgstr "单元格工具栏"
 
 #: packages/cells/src/placeholder.ts:85
 msgid "Click to expand"
@@ -3727,11 +3727,11 @@ msgstr "选择下一个出现的位置"
 
 #: packages/codemirror-extension/src/commands.ts:109
 msgid "Toggle Tab Focus Mode"
-msgstr ""
+msgstr "切换 Tab 焦点模式"
 
 #: packages/codemirror-extension/src/commands.ts:110
 msgid "Toggles behavior of Tab key between inserting indentation and moving to next focusable element"
-msgstr ""
+msgstr "切换 Tab 键的行为，在插入缩进和移动到下一个可聚焦元素之间切换"
 
 #: packages/codemirror-extension/src/commands.ts:68 packages/codemirror-extension/src/commands.ts:70
 msgid "Delete the current line"
@@ -3943,7 +3943,7 @@ msgstr "智能缩进"
 
 #: packages/codemirror/src/extension.ts:786
 msgid "Drop Cursor"
-msgstr ""
+msgstr "拖放光标"
 
 #: packages/codemirror/src/extension.ts:790 packages/codemirror/src/extension.ts:791 packages/codemirror/src/extension.ts:797 packages/codemirror/src/extension.ts:908 packages/codemirror/src/extension.ts:932 packages/codemirror/src/extension.ts:954
 msgid "Tab size"
@@ -4583,11 +4583,11 @@ msgstr "是否获取 %1 提供者的补全结果。"
 
 #: packages/completer-extension/src/index.ts:322
 msgid "Fill in middle on typing"
-msgstr ""
+msgstr "在输入时填充中间部分"
 
 #: packages/completer-extension/src/index.ts:323
 msgid "Whether to show completions in the middle of the code line from %1 provider on typing."
-msgstr ""
+msgstr "是否在输入时在代码行中间显示 %1 提供者的补全内容。"
 
 #: packages/completer/src/default/inlinehistoryprovider.ts:32
 msgid "History"
@@ -4635,7 +4635,7 @@ msgstr "选择补全建议。"
 
 #: packages/console-extension/src/index.ts:347
 msgid "Change Console Prompt Position"
-msgstr ""
+msgstr "更改控制台提示的位置"
 
 #: packages/console-extension/src/index.ts:464 packages/console-extension/src/index.ts:473 packages/console-extension/src/index.ts:478 packages/console-extension/src/index.ts:620
 msgid "Auto Close Brackets for Code Console Prompt"
@@ -4887,7 +4887,7 @@ msgstr "断点"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:38
 msgid "Breakpoints panel toolbar"
-msgstr ""
+msgstr "断点面板工具栏"
 
 #: packages/debugger/src/panels/breakpoints/index.ts:38 packages/debugger/src/panels/breakpoints/index.ts:46
 msgid "Pause on exception filter"
@@ -4911,7 +4911,7 @@ msgstr "调用堆栈"
 
 #: packages/debugger/src/panels/callstack/index.ts:32
 msgid "Callstack panel toolbar"
-msgstr ""
+msgstr "调用堆栈面板工具栏"
 
 #: packages/debugger/src/panels/kernelSources/body.tsx:83 packages/debugger/src/panels/kernelSources/body.tsx:87 packages/debugger/src/panels/kernelSources/body.tsx:90
 msgid "Fail to get source"
@@ -4933,7 +4933,7 @@ msgstr "内核源"
 
 #: packages/debugger/src/panels/kernelSources/index.tsx:37
 msgid "Kernel sources panel toolbar"
-msgstr ""
+msgstr "内核源代码面板工具栏"
 
 #: packages/debugger/src/panels/kernelSources/index.tsx:49 packages/debugger/src/panels/kernelSources/index.tsx:52
 msgid "Toggle search filter"
@@ -4959,7 +4959,7 @@ msgstr "源文件"
 
 #: packages/debugger/src/panels/sources/index.tsx:37
 msgid "Sources preview panel toolbar"
-msgstr ""
+msgstr "源代码预览面板工具栏"
 
 #: packages/debugger/src/panels/sources/index.tsx:42 packages/debugger/src/panels/sources/index.tsx:49
 msgid "Open in the Main Area"
@@ -4987,7 +4987,7 @@ msgstr "变量"
 
 #: packages/debugger/src/panels/variables/index.ts:35
 msgid "Variables toolbar"
-msgstr ""
+msgstr "变量工具栏"
 
 #: packages/debugger/src/panels/variables/index.ts:78 packages/debugger/src/panels/variables/index.ts:79
 msgid "Tree View"
@@ -5225,11 +5225,11 @@ msgstr "如果选中此项，之后保存无标题文件时不会被要求重命
 
 #: packages/docmanager-extension/src/index.tsx:916
 msgid "Rename and Save"
-msgstr ""
+msgstr "重命名并保存"
 
 #: packages/docmanager-extension/src/index.tsx:921
 msgid "Do not ask for rename on first save."
-msgstr ""
+msgstr "首次保存时别要求重命名。"
 
 #: packages/docmanager-extension/src/index.tsx:934 packages/docmanager-extension/src/index.tsx:937 packages/docmanager-extension/src/index.tsx:970 packages/docmanager-extension/src/index.tsx:979 packages/docmanager-extension/src/index.tsx:982
 msgid "Save All"
@@ -5723,7 +5723,7 @@ msgstr "刷新扩展列表"
 
 #: packages/extensionmanager/src/widget.tsx:650
 msgid "Extensions panel toolbar"
-msgstr ""
+msgstr "扩展面板工具栏"
 
 #: packages/extensionmanager/src/widget.tsx:81
 msgid "%1 extension home page"
@@ -5912,7 +5912,7 @@ msgstr "上传错误"
 
 #: packages/filebrowser-extension/src/index.ts:931 packages/filebrowser/src/listing.ts:461
 msgid "Move to Trash"
-msgstr ""
+msgstr "移至回收站"
 
 #: packages/filebrowser-extension/src/index.ts:935 packages/filebrowser-extension/src/index.ts:939 packages/filebrowser-extension/src/index.ts:942 packages/filebrowser-extension/src/index.ts:943 packages/filebrowser-extension/src/index.ts:944 packages/filebrowser-extension/src/index.ts:950 packages/fileeditor-extension/src/commands.ts:947 packages/fileeditor-extension/src/commands.ts:952 packages/fileeditor-extension/src/commands.ts:954 packages/fileeditor-extension/src/commands.ts:956 packages/terminal-extension/src/index.ts:463 packages/terminal-extension/src/index.ts:469 packages/terminal-extension/src/index.ts:470 packages/terminal-extension/src/index.ts:472 packages/terminal-extension/src/index.ts:474
 msgid "Copy"
@@ -5932,7 +5932,7 @@ msgstr "更新文件浏览器以显示提供的 `路径`。"
 
 #: packages/filebrowser/src/browser.ts:119
 msgid "File browser toolbar"
-msgstr ""
+msgstr "文件浏览器工具栏"
 
 #: packages/filebrowser/src/browser.ts:372 packages/filebrowser/src/browser.ts:388 packages/filebrowser/src/browser.ts:397 packages/filebrowser/src/browser.ts:403 packages/filebrowser/src/browser.ts:494 packages/filebrowser/src/browser.ts:495 packages/filebrowser/src/browser.ts:499
 msgid "Directory not found"
@@ -6088,12 +6088,12 @@ msgstr[0] "您确实要永久删除 %1 个选定的项目吗？"
 
 #: packages/filebrowser/src/listing.ts:435
 msgid "Are you sure you want to move to trash: %1?"
-msgstr ""
+msgstr "您确定要将以下内容移至回收站：%1 吗？"
 
 #: packages/filebrowser/src/listing.ts:443
 msgid "Are you sure you want to move to trash the %1 selected item?"
 msgid_plural "Are you sure you want to move to trash the %1 selected items?"
-msgstr[0] ""
+msgstr[0] "您确定要将所选的 %1 项移至回收站吗？"
 
 #: packages/filebrowser/src/listing.ts:472 packages/filebrowser/src/listing.ts:476 packages/filebrowser/src/listing.ts:479 packages/filebrowser/src/listing.ts:492 packages/filebrowser/src/listing.ts:493 packages/filebrowser/src/listing.ts:511
 msgctxt "showErrorMessage"
@@ -6360,7 +6360,7 @@ msgstr "内核图标"
 
 #: packages/help-extension/src/index.tsx:82
 msgid "Download All Licenses"
-msgstr ""
+msgstr "下载所有许可证"
 
 #: packages/htmlviewer-extension/src/index.tsx:105
 msgid "HTML File"
@@ -6864,7 +6864,7 @@ msgstr "在控制台中运行所选文本或当前行"
 
 #: packages/notebook-extension/src/index.ts:1403
 msgid "New Subshell Console for Notebook"
-msgstr ""
+msgstr "为笔记本创建新的子shell控制台"
 
 #: packages/notebook-extension/src/index.ts:1517 packages/notebook-extension/src/index.ts:1520 packages/notebook-extension/src/index.ts:1539 packages/notebook-extension/src/index.ts:1550 packages/notebook-extension/src/index.ts:1554 packages/notebook-extension/src/index.ts:1562 packages/notebook-extension/src/index.ts:1564 packages/notebook-extension/src/index.ts:1591
 msgid "Copy Output to Clipboard"
@@ -7837,7 +7837,7 @@ msgstr "全部展开"
 
 #: packages/running/src/index.tsx:671
 msgid "%1 toolbar"
-msgstr ""
+msgstr "%1 工具栏"
 
 #: packages/running/src/index.tsx:885 packages/running/src/index.tsx:928 packages/running/src/index.tsx:947
 msgid "No matches"
@@ -7845,11 +7845,11 @@ msgstr "没有匹配项"
 
 #: packages/settingeditor-extension/src/importSettingsWidget.tsx:53
 msgid "Select settings sections to import"
-msgstr ""
+msgstr "选择要导入的设置部分"
 
 #: packages/settingeditor-extension/src/importSettingsWidget.tsx:63 packages/settingeditor-extension/src/index.ts:179
 msgid "Import"
-msgstr ""
+msgstr "导入"
 
 #: packages/settingeditor-extension/src/index.ts:145 packages/settingeditor-extension/src/index.ts:165 packages/settingeditor-extension/src/index.ts:204
 msgid "JSON Settings Editor"
@@ -7857,15 +7857,15 @@ msgstr "JSON 设置编辑器"
 
 #: packages/settingeditor-extension/src/index.ts:168
 msgid "Export"
-msgstr ""
+msgstr "导出"
 
 #: packages/settingeditor-extension/src/index.ts:169
 msgid "Export settings to a JSON file"
-msgstr ""
+msgstr "将设置导出到 JSON 文件"
 
 #: packages/settingeditor-extension/src/index.ts:180
 msgid "Import settings from a JSON file"
-msgstr ""
+msgstr "从 JSON 文件导入设置"
 
 #: packages/settingeditor-extension/src/index.ts:181 packages/settingeditor-extension/src/index.ts:201 packages/settingeditor-extension/src/index.ts:240
 msgid "Settings Editor"
@@ -7885,15 +7885,15 @@ msgstr "保存用户设置"
 
 #: packages/settingeditor-extension/src/index.ts:405
 msgid "Export Settings"
-msgstr ""
+msgstr "导出设置"
 
 #: packages/settingeditor-extension/src/index.ts:485
 msgid "Settings Imported"
-msgstr ""
+msgstr "设置已导入"
 
 #: packages/settingeditor-extension/src/index.ts:499 packages/settingeditor-extension/src/index.ts:511
 msgid "Import Settings"
-msgstr ""
+msgstr "导入设置"
 
 #: packages/settingeditor/src/InstructionsPlaceholder.tsx:21
 msgid "No Plugin Selected"
@@ -7965,7 +7965,7 @@ msgstr "搜索…"
 
 #: packages/settingeditor/src/raweditor.ts:368
 msgid "Default editor toolbar"
-msgstr ""
+msgstr "默认编辑器工具栏"
 
 #: packages/settingeditor/src/raweditor.ts:368 packages/settingeditor/src/raweditor.ts:369
 msgid "System Defaults"
@@ -8236,7 +8236,7 @@ msgstr "目录"
 
 #: packages/toc-extension/src/index.ts:220
 msgid "Table of contents sidepanel toolbar"
-msgstr ""
+msgstr "目录侧边栏工具栏"
 
 #: packages/toc-extension/src/index.ts:242 packages/toc-extension/src/index.ts:246
 msgid "More actions…"
@@ -8280,7 +8280,7 @@ msgstr "在将界面语言更改为 %1 后，您需要重新加载 JupyterLab �
 
 #: packages/translation-extension/src/index.ts:145
 msgid "Change interface language to %1"
-msgstr ""
+msgstr "将界面语言更改为 %1"
 
 #: packages/translation-extension/src/index.ts:148 packages/translation-extension/src/index.ts:157 packages/translation-extension/src/index.ts:158
 msgid "Change and reload"
@@ -8477,7 +8477,7 @@ msgstr "保存工作区的路径"
 
 #: packages/workspaces-extension/src/index.ts:98
 msgid "Show Workspace Indicator"
-msgstr ""
+msgstr "显示工作区指示器"
 
 #: packages/workspaces-extension/src/sidebar.ts:100 packages/workspaces-extension/src/sidebar.ts:101
 msgid "Delete All"
@@ -8493,9 +8493,9 @@ msgstr "%1 工作区包含 %2 个选项卡，上次修改时间为 %3"
 
 #: packages/workspaces-extension/src/top_indicator.tsx:101
 msgid "Workspace"
-msgstr ""
+msgstr "工作区"
 
 #: packages/workspaces-extension/src/top_indicator.tsx:89
 msgid "Search workspace"
-msgstr ""
+msgstr "搜索工作区"
 
