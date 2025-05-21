@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2025-05-08 15:49\n"
+"PO-Revision-Date: 2025-05-21 02:23\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -28,7 +28,7 @@ msgstr "Podgląd Markdown"
 msgctxt "settings"
 msgid "The font family used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr "Rodzina czcionek używana do renderowania markdown.\n"
+msgstr "Rodzina czcionek używana do renderowania Markdown.\n"
 "Jeśli `null`, używana jest wartość z bieżącego motywu."
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontFamily/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontFamily/title
@@ -40,7 +40,7 @@ msgstr "Czcionka"
 msgctxt "settings"
 msgid "The size in pixel of the font used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr "Rozmiar czcionki używanej do renderowania markdown w pikselach.\n"
+msgstr "Rozmiar czcionki używanej do renderowania Markdown w pikselach.\n"
 "Jeśli `null`, używana jest wartość z bieżącego motywu."
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontSize/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontSize/title
@@ -54,10 +54,10 @@ msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr "Czy ukryć wstęp YAML.\n"
+msgstr "Czy ukryć wstęp YAML?\n"
 "Wstęp YAML musi być umieszczony na górze dokumentu,\n"
 "zapoczątkowany linią trzech myślników (---) i zakończony linią\n"
-"trzech myślników (---) lub trzech kropek (...)."
+"trzech myślników (---) lub trzech kropek [...]"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/hideFrontMatter/title /packages/markdownviewer-extension/schema/plugin.json:/properties/hideFrontMatter/title
 msgctxt "settings"
@@ -105,11 +105,11 @@ msgstr "Podgląd Markdown"
 
 #: /jupyterlab/extensions/manager.py:262
 msgid "The following plugins cannot be disabled as they are locked: "
-msgstr ""
+msgstr "Następujących wtyczek nie można wyłączyć, ponieważ są zablokowane:"
 
 #: /jupyterlab/extensions/manager.py:288
 msgid "The following plugins cannot be enabled as they are locked: "
-msgstr ""
+msgstr "Następujących wtyczek nie można włączyć, ponieważ są zablokowane:"
 
 #: /jupyterlab/extensions/readonly.py:63
 msgid "Extension installation not supported."
@@ -117,7 +117,7 @@ msgstr "Instalacja rozszerzeń jest niewspierana."
 
 #: /jupyterlab/extensions/readonly.py:81
 msgid "Extension removal not supported."
-msgstr ""
+msgstr "Usuwanie wtyczek nie jest obsługiwane."
 
 #: /packages/application-extension/schema/commands.json:/description
 msgctxt "schema"
@@ -251,7 +251,7 @@ msgstr "Menu kontekstowe aplikacji."
 #: /packages/application-extension/schema/context-menu.json:/properties/disabled/description
 msgctxt "settings"
 msgid "Whether the application context (right-click) menu is disabled"
-msgstr ""
+msgstr "Czy menu kontekstowe aplikacji jest wyłączone"
 
 #: /packages/application-extension/schema/context-menu.json:/title
 msgctxt "schema"
@@ -261,17 +261,17 @@ msgstr "Menu kontekstowe aplikacji"
 #: /packages/application-extension/schema/property-inspector.json:/description
 msgctxt "schema"
 msgid "Property Inspector Settings."
-msgstr ""
+msgstr "Ustawienia inspektora własności"
 
 #: /packages/application-extension/schema/property-inspector.json:/title
 msgctxt "schema"
 msgid "Property Inspector"
-msgstr ""
+msgstr "Inspektor własności"
 
 #: /packages/application-extension/schema/shell.json:/description
 msgctxt "schema"
 msgid "JupyterLab Shell layout settings."
-msgstr ""
+msgstr "Ustawienia układu JupyterLab Shell."
 
 #: /packages/application-extension/schema/shell.json:/properties/hiddenMode/description
 msgctxt "settings"
@@ -310,7 +310,7 @@ msgstr ""
 #: /packages/application-extension/schema/shell.json:/title
 msgctxt "schema"
 msgid "JupyterLab Shell"
-msgstr ""
+msgstr "Powłoka JupyterLab"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/caption/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/caption/description /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/caption/description /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/caption/description /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/caption/description /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/caption/description
 msgctxt "settings"
@@ -320,22 +320,22 @@ msgstr ""
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/caption/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/caption/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/caption/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/caption/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/caption/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/caption/title
 msgctxt "settings"
 msgid "Item caption"
-msgstr ""
+msgstr "Podpis elementu"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/disabled/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/disabled/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/disabled/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/disabled/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/disabled/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/disabled/title
 msgctxt "settings"
 msgid "Whether the item is ignored or not"
-msgstr ""
+msgstr "Czy element jest ignorowany, czy nie"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/icon/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/description /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/icon/description /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/icon/description /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/icon/description /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/icon/description /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/description /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/icon/description
 msgctxt "settings"
 msgid "If defined, it will override the command icon"
-msgstr ""
+msgstr "Jeśli zdefiniowane, to nadpisze ikonę polecenia"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/icon/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/title /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/icon/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/icon/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/icon/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/icon/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/icon/title
 msgctxt "settings"
 msgid "Item icon id"
-msgstr ""
+msgstr "Id ikony elementu"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/label/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/description /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/label/description /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/label/description /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/label/description /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/label/description /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/description /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/label/description
 msgctxt "settings"
@@ -345,17 +345,17 @@ msgstr ""
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/label/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/title /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/label/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/label/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/label/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/label/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/label/title
 msgctxt "settings"
 msgid "Item label"
-msgstr ""
+msgstr "Etykieta elementu"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/name/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/name/title /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/name/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/name/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/name/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/name/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/name/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/name/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/name/title
 msgctxt "settings"
 msgid "Unique name"
-msgstr ""
+msgstr "Unikalna nazwa"
 
 #: /packages/application-extension/schema/top-bar.json:/description
 msgctxt "schema"
 msgid "Top Bar settings."
-msgstr ""
+msgstr "Ustawienia górnego paska"
 
 #: /packages/application-extension/schema/top-bar.json:/properties/toolbar/description
 msgctxt "settings"
@@ -431,7 +431,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/kernels-settings.json:/title
 msgctxt "schema"
 msgid "Kernels"
-msgstr ""
+msgstr "Kernele"
 
 #: /packages/apputils-extension/schema/notification.json:/description
 msgctxt "schema"
@@ -456,7 +456,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/title
 msgctxt "settings"
 msgid "Check for JupyterLab updates"
-msgstr ""
+msgstr "Sprawdź dostępność aktualizacji JupyterLab"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/doNotDisturbMode/description
 msgctxt "settings"
@@ -481,22 +481,22 @@ msgstr ""
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/oneOf[0]/title /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[0]/title
 msgctxt "settings"
 msgid "Always"
-msgstr ""
+msgstr "Zawsze"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/oneOf[1]/title /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[2]/title
 msgctxt "settings"
 msgid "Never"
-msgstr ""
+msgstr "Nigdy"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/oneOf[2]/title
 msgctxt "settings"
 msgid "Ask (None)"
-msgstr ""
+msgstr "Zapytaj (brak)"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/title
 msgctxt "settings"
 msgid "Fetch official Jupyter news"
-msgstr ""
+msgstr "Pobierz oficjalne wiadomości o Jupyter"
 
 #: /packages/apputils-extension/schema/notification.json:/title
 msgctxt "schema"
@@ -651,7 +651,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-dark-theme/title
 msgctxt "settings"
 msgid "Preferred Dark Theme"
-msgstr ""
+msgstr "Preferowany ciemny motyw"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-light-theme/description
 msgctxt "settings"
@@ -661,7 +661,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-light-theme/title
 msgctxt "settings"
 msgid "Preferred Light Theme"
-msgstr ""
+msgstr "Preferowany jasny motyw"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme-scrollbars/description
 msgctxt "settings"
