@@ -12,12 +12,12 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2025-05-08 15:49\n"
+"PO-Revision-Date: 2025-05-29 02:23\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Markdown viewer settings."
-msgstr "Ustawienia przeglądarki Markdown."
+msgstr "Ustawienia podglądu Markdown."
 
 #: /examples/federated/md_package/schema/plugin.json:/jupyter.lab.setting-icon-label /packages/markdownviewer-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -28,7 +28,7 @@ msgstr "Podgląd Markdown"
 msgctxt "settings"
 msgid "The font family used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr "Rodzina czcionek używana do renderowania markdown.\n"
+msgstr "Rodzina czcionek używana do renderowania Markdown.\n"
 "Jeśli `null`, używana jest wartość z bieżącego motywu."
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontFamily/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontFamily/title
@@ -40,7 +40,7 @@ msgstr "Czcionka"
 msgctxt "settings"
 msgid "The size in pixel of the font used to render markdown.\n"
 "If `null`, value from current theme is used."
-msgstr "Rozmiar czcionki używanej do renderowania markdown w pikselach.\n"
+msgstr "Rozmiar czcionki używanej do renderowania Markdown w pikselach.\n"
 "Jeśli `null`, używana jest wartość z bieżącego motywu."
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/fontSize/title /packages/markdownviewer-extension/schema/plugin.json:/properties/fontSize/title
@@ -54,10 +54,10 @@ msgid "Whether to hide YAML front matter.\n"
 "The YAML front matter must be placed at the top of the document,\n"
 "started by a line of three dashes (---) and ended by a line of\n"
 "three dashes (---) or three points (...)."
-msgstr "Czy ukryć wstęp YAML.\n"
+msgstr "Czy ukryć wstęp YAML?\n"
 "Wstęp YAML musi być umieszczony na górze dokumentu,\n"
 "zapoczątkowany linią trzech myślników (---) i zakończony linią\n"
-"trzech myślników (---) lub trzech kropek (...)."
+"trzech myślników (---) lub trzech kropek [...]"
 
 #: /examples/federated/md_package/schema/plugin.json:/properties/hideFrontMatter/title /packages/markdownviewer-extension/schema/plugin.json:/properties/hideFrontMatter/title
 msgctxt "settings"
@@ -105,11 +105,11 @@ msgstr "Podgląd Markdown"
 
 #: /jupyterlab/extensions/manager.py:262
 msgid "The following plugins cannot be disabled as they are locked: "
-msgstr ""
+msgstr "Następujących wtyczek nie można wyłączyć, ponieważ są zablokowane:"
 
 #: /jupyterlab/extensions/manager.py:288
 msgid "The following plugins cannot be enabled as they are locked: "
-msgstr ""
+msgstr "Następujących wtyczek nie można włączyć, ponieważ są zablokowane:"
 
 #: /jupyterlab/extensions/readonly.py:63
 msgid "Extension installation not supported."
@@ -117,7 +117,7 @@ msgstr "Instalacja rozszerzeń jest niewspierana."
 
 #: /jupyterlab/extensions/readonly.py:81
 msgid "Extension removal not supported."
-msgstr ""
+msgstr "Usuwanie wtyczek nie jest obsługiwane."
 
 #: /packages/application-extension/schema/commands.json:/description
 msgctxt "schema"
@@ -137,7 +137,7 @@ msgstr "Polecenia aplikacji"
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/disabled/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/disabled/description
 msgctxt "settings"
 msgid "Whether the menu is disabled or not"
-msgstr "Czy menu jest wyłączone czy nie"
+msgstr "Czy menu jest wyłączone czy nie?"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menu/properties/icon/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menu/properties/icon/description
 msgctxt "settings"
@@ -177,12 +177,12 @@ msgstr "Argumenty polecenia"
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/command/description /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/command/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/command/title /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/command/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/command/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/command/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/command/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/command/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/command/title /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/command/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/command/title
 msgctxt "settings"
 msgid "Command id"
-msgstr "ID polecenia"
+msgstr "Identyfikator polecenia"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/disabled/description /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/disabled/description
 msgctxt "settings"
 msgid "Whether the item is disabled or not"
-msgstr "Czy element jest wyłączony czy nie"
+msgstr "Czy element jest dostępny czy nie"
 
 #: /packages/application-extension/schema/context-menu.json:/definitions/menuItem/properties/rank/description /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/rank/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/rank/title /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/rank/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/rank/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/rank/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/rank/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/rank/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/rank/title /packages/mainmenu-extension/schema/plugin.json:/definitions/menuItem/properties/rank/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/rank/title
 msgctxt "settings"
@@ -251,7 +251,7 @@ msgstr "Menu kontekstowe aplikacji."
 #: /packages/application-extension/schema/context-menu.json:/properties/disabled/description
 msgctxt "settings"
 msgid "Whether the application context (right-click) menu is disabled"
-msgstr ""
+msgstr "Czy menu kontekstowe aplikacji jest wyłączone"
 
 #: /packages/application-extension/schema/context-menu.json:/title
 msgctxt "schema"
@@ -261,27 +261,27 @@ msgstr "Menu kontekstowe aplikacji"
 #: /packages/application-extension/schema/property-inspector.json:/description
 msgctxt "schema"
 msgid "Property Inspector Settings."
-msgstr ""
+msgstr "Ustawienia inspektora własności"
 
 #: /packages/application-extension/schema/property-inspector.json:/title
 msgctxt "schema"
 msgid "Property Inspector"
-msgstr ""
+msgstr "Inspektor własności"
 
 #: /packages/application-extension/schema/shell.json:/description
 msgctxt "schema"
 msgid "JupyterLab Shell layout settings."
-msgstr ""
+msgstr "Ustawienia układu JupyterLab Shell."
 
 #: /packages/application-extension/schema/shell.json:/properties/hiddenMode/description
 msgctxt "settings"
 msgid "The method for hiding widgets in the main dock panel. Using `scale` will increase performance on Firefox but don't use it with Chrome, Chromium or Edge. Similar performance gains are seen with `contentVisibility` which is only available in Chromium-based browsers."
-msgstr ""
+msgstr "Metoda ukrywania widżetów w głównym panelu dokowania. Użycie `scale` zwiększy wydajność Firefox, nie używaj go w Chrome, Chromium lub Edge. Podobny wzrost wydajności jest widoczny dla `contentVisibility`, który jest dostępny tylko w przeglądarkach opartych na Chromium."
 
 #: /packages/application-extension/schema/shell.json:/properties/hiddenMode/title
 msgctxt "settings"
 msgid "Hidden mode of main panel widgets"
-msgstr ""
+msgstr "Ukryte widżety panelu głównego"
 
 #: /packages/application-extension/schema/shell.json:/properties/layout/description
 msgctxt "settings"
@@ -290,72 +290,76 @@ msgid "Overrides default widget position in the application layout\n"
 "  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
 "  \"multiple\": { \"Terminal\": { \"area\": \"right\" } }\n"
 "}."
-msgstr ""
+msgstr "Nadpisuje domyślną pozycję widżetu w układzie aplikacji\n"
+"np. aby ustawić terminale w prawym panelu bocznym w trybie wielu dokumentów, a w dolnym obszarze w trybie pojedynczego dokumentu, {\n"
+"  \"single\": { \"Terminal\": { \"area\": \"down\" } },\n"
+"  \"multiple\": { \"Terminal\": { \"area\": \"right\" }\n"
+"}."
 
 #: /packages/application-extension/schema/shell.json:/properties/layout/title
 msgctxt "settings"
 msgid "Customize shell widget positioning"
-msgstr ""
+msgstr "Dostosuj rozmieszczenie widżetu terminala (shell) w notatniku"
 
 #: /packages/application-extension/schema/shell.json:/properties/startMode/description
 msgctxt "settings"
 msgid "The mode under which JupyterLab should start. If empty, the mode will be imposed by the URL"
-msgstr ""
+msgstr "Tryb uruchamiania JupyterLab. Jeśli pozostanie pusty, tryb zostanie narzucony przez adres URL"
 
 #: /packages/application-extension/schema/shell.json:/properties/startMode/title
 msgctxt "settings"
 msgid "Start mode: ``, `single` or `multiple`"
-msgstr ""
+msgstr "Tryb początkowy: ``, `single` lub `multiple`"
 
 #: /packages/application-extension/schema/shell.json:/title
 msgctxt "schema"
 msgid "JupyterLab Shell"
-msgstr ""
+msgstr "Powłoka JupyterLab"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/caption/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/caption/description /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/caption/description /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/caption/description /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/caption/description /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/caption/description
 msgctxt "settings"
 msgid "If defined, it will override the command caption"
-msgstr ""
+msgstr "Jeśli zostanie zdefiniowany, zastąpi domyślny podpis polecenia"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/caption/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/caption/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/caption/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/caption/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/caption/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/caption/title
 msgctxt "settings"
 msgid "Item caption"
-msgstr ""
+msgstr "Podpis elementu"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/disabled/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/disabled/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/disabled/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/disabled/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/disabled/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/disabled/title
 msgctxt "settings"
 msgid "Whether the item is ignored or not"
-msgstr ""
+msgstr "Czy element jest ignorowany, czy nie"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/icon/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/description /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/icon/description /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/icon/description /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/icon/description /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/icon/description /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/description /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/icon/description
 msgctxt "settings"
 msgid "If defined, it will override the command icon"
-msgstr ""
+msgstr "Jeśli zdefiniowane, to nadpisze ikonę polecenia"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/icon/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/title /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/icon/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/icon/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/icon/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/icon/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/icon/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/icon/title
 msgctxt "settings"
 msgid "Item icon id"
-msgstr ""
+msgstr "Id ikony elementu"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/label/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/description /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/label/description /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/label/description /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/label/description /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/label/description /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/description /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/label/description
 msgctxt "settings"
 msgid "If defined, it will override the command label"
-msgstr ""
+msgstr "Jeśli zostanie zdefiniowany, zastąpi domyślną nazwę (etykietę) polecenia."
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/label/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/title /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/label/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/label/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/label/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/label/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/label/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/label/title
 msgctxt "settings"
 msgid "Item label"
-msgstr ""
+msgstr "Etykieta elementu"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/name/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/name/title /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/name/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/name/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/name/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/name/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/name/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/name/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/name/title
 msgctxt "settings"
 msgid "Unique name"
-msgstr ""
+msgstr "Unikalna nazwa"
 
 #: /packages/application-extension/schema/top-bar.json:/description
 msgctxt "schema"
 msgid "Top Bar settings."
-msgstr ""
+msgstr "Ustawienia górnego paska"
 
 #: /packages/application-extension/schema/top-bar.json:/properties/toolbar/description
 msgctxt "settings"
@@ -371,27 +375,39 @@ msgid "Note: To disable a item,\n"
 "  ]\n"
 "}\n\n"
 "Top bar description:"
-msgstr ""
+msgstr "Uwaga: Aby wyłączyć element menu,\n"
+"skopiuj go do Preferencji Użytkownika i dodaj klucz\n"
+"\"disabled\". Poniższy przykład wyłączy element \"Pobierz\" w menu plików:\n"
+"{\n"
+"  \"contextMenu\": [\n"
+"    {\n"
+"      \"command\": \"filebrowser:download\",\n"
+"      \"selector\": \". p-DirListing-item[data-isdir=\\\"false\\\"]\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Opis menu:"
 
 #: /packages/application-extension/schema/top-bar.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "Top bar items"
-msgstr ""
+msgstr "Elementy górnego paska"
 
 #: /packages/application-extension/schema/top-bar.json:/title
 msgctxt "schema"
 msgid "Top Bar"
-msgstr ""
+msgstr "Górny pasek"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/description
 msgctxt "schema"
 msgid "Kernels and kernel sessions settings"
-msgstr ""
+msgstr "Ustawienia rdzenia i sesji obliczeniowych"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Kernel"
-msgstr ""
+msgstr "Rdzeń obliczeniowy"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/description
 msgctxt "settings"
@@ -401,7 +417,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/oneOf[0]/title
 msgctxt "settings"
 msgid "Disabled"
-msgstr ""
+msgstr "Niedostępny"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/oneOf[1]/title
 msgctxt "settings"
@@ -421,27 +437,27 @@ msgstr ""
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/showStatusBarItem/description
 msgctxt "settings"
 msgid "Whether to show the running kernels item in the status bar"
-msgstr ""
+msgstr "Czy pokazać uruchomione rdzenie obliczeniowe na pasku stanu"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/showStatusBarItem/title /packages/terminal-extension/schema/plugin.json:/properties/showStatusBarItem/title
 msgctxt "settings"
 msgid "Show the status bar item"
-msgstr ""
+msgstr "Pokaż element paska stanu"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/title
 msgctxt "schema"
 msgid "Kernels"
-msgstr ""
+msgstr "Kernele"
 
 #: /packages/apputils-extension/schema/notification.json:/description
 msgctxt "schema"
 msgid "Notifications settings."
-msgstr ""
+msgstr "Ustawienia powiadomień."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
 msgctxt "settings"
 msgid "Whether to check for newer version of JupyterLab or not. It requires `fechNews` to be `true` to be active. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "Czy sprawdzić nowszą wersję JupyterLab, czy nie. To wymaga, aby `fechNews` był aktywny. Jeśli `true`, zwróci się do strony internetowej."
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
 msgctxt "settings"
@@ -456,7 +472,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/title
 msgctxt "settings"
 msgid "Check for JupyterLab updates"
-msgstr ""
+msgstr "Sprawdź dostępność aktualizacji JupyterLab"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/doNotDisturbMode/description
 msgctxt "settings"
@@ -481,22 +497,22 @@ msgstr ""
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/oneOf[0]/title /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[0]/title
 msgctxt "settings"
 msgid "Always"
-msgstr ""
+msgstr "Zawsze"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/oneOf[1]/title /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[2]/title
 msgctxt "settings"
 msgid "Never"
-msgstr ""
+msgstr "Nigdy"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/oneOf[2]/title
 msgctxt "settings"
 msgid "Ask (None)"
-msgstr ""
+msgstr "Zapytaj (brak)"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/title
 msgctxt "settings"
 msgid "Fetch official Jupyter news"
-msgstr ""
+msgstr "Pobierz oficjalne wiadomości o Jupyter"
 
 #: /packages/apputils-extension/schema/notification.json:/title
 msgctxt "schema"
@@ -516,7 +532,7 @@ msgstr "Paleta Poleceń"
 #: /packages/apputils-extension/schema/palette.json:/properties/modal/description
 msgctxt "settings"
 msgid "Whether the command palette should be modal or in the left panel."
-msgstr "Czy paleta poleceń powinna być modalna czy w lewym panelu."
+msgstr "Czy paleta poleceń powinna być modalna czy w lewym panelu?"
 
 #: /packages/apputils-extension/schema/palette.json:/properties/modal/title
 msgctxt "settings"
@@ -551,7 +567,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowNamedProperties/title
 msgctxt "settings"
 msgid "Allow named properties"
-msgstr ""
+msgstr "Zezwól na nazwane właściwości"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/description
 msgctxt "settings"
@@ -581,7 +597,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/sessionDialogs.json:/description
 msgctxt "schema"
 msgid "Kernel dialogs settings."
-msgstr ""
+msgstr "Ustawienia okien dialogowych rdzenia obliczeniowego"
 
 #: /packages/apputils-extension/schema/sessionDialogs.json:/properties/skipKernelRestartDialog/description
 msgctxt "settings"
@@ -591,12 +607,12 @@ msgstr ""
 #: /packages/apputils-extension/schema/sessionDialogs.json:/properties/skipKernelRestartDialog/title
 msgctxt "settings"
 msgid "Skip kernel restart Dialog"
-msgstr ""
+msgstr "Pomiń okno ponownego uruchomienia rdzenia obliczeniowego"
 
 #: /packages/apputils-extension/schema/sessionDialogs.json:/title
 msgctxt "schema"
 msgid "Kernel dialogs"
-msgstr ""
+msgstr "Okna dialogowe rdzenia obliczeniowego"
 
 #: /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/code-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/content-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/ui-font-family/description
 msgctxt "settings"
@@ -626,12 +642,12 @@ msgstr "Menedżer motywów"
 #: /packages/apputils-extension/schema/themes.json:/properties/adaptive-theme/description
 msgctxt "settings"
 msgid "Synchronize visual styling theme with system settings"
-msgstr ""
+msgstr "Synchronizuj motyw stylu wizualnego z ustawieniami systemowymi"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/adaptive-theme/title
 msgctxt "settings"
 msgid "Adaptive Theme"
-msgstr ""
+msgstr "Motyw adaptacyjny"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/overrides/description
 msgctxt "settings"
@@ -651,7 +667,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-dark-theme/title
 msgctxt "settings"
 msgid "Preferred Dark Theme"
-msgstr ""
+msgstr "Preferowany ciemny motyw"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-light-theme/description
 msgctxt "settings"
@@ -661,7 +677,7 @@ msgstr ""
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-light-theme/title
 msgctxt "settings"
 msgid "Preferred Light Theme"
-msgstr ""
+msgstr "Preferowany jasny motyw"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme-scrollbars/description
 msgctxt "settings"
@@ -696,12 +712,12 @@ msgstr "Motyw"
 #: /packages/apputils-extension/schema/utilityCommands.json:/description
 msgctxt "schema"
 msgid "Shortcut help settings."
-msgstr ""
+msgstr "Ustawienia pomocy dotyczącej skrótów klawiszowych."
 
 #: /packages/apputils-extension/schema/utilityCommands.json:/title
 msgctxt "schema"
 msgid "Shortcuts Help"
-msgstr ""
+msgstr "Pomoc dotycząca skrótów klawiszowych."
 
 #: /packages/apputils-extension/schema/workspaces.json:/description
 msgctxt "schema"
@@ -716,17 +732,17 @@ msgstr "Obszary robocze"
 #: /packages/cell-toolbar-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Cell Toolbar Settings."
-msgstr ""
+msgstr "Ustawienia paska narzędzi komórki."
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/properties/showToolbar/description
 msgctxt "settings"
 msgid "Show a toolbar inside the active cell, if there is enough room for one"
-msgstr ""
+msgstr "Pokaż pasek narzędzi wewnątrz aktywnej komórki, jeśli jest wystarczająco dużo miejsca"
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/properties/showToolbar/title
 msgctxt "settings"
 msgid "Show cell toolbar"
-msgstr ""
+msgstr "Pokaż pasek narzędzi komórki"
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/properties/toolbar/description
 msgctxt "settings"
@@ -736,22 +752,22 @@ msgstr ""
 #: /packages/cell-toolbar-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "List of toolbar items"
-msgstr ""
+msgstr "Lista elementów paska narzędzi"
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Cell Toolbar"
-msgstr ""
+msgstr "Pasek narzędzi komórki"
 
 #: /packages/celltags-extension/schema/plugin.json:/description /packages/notebook-extension/schema/tools.json:/description
 msgctxt "schema"
 msgid "Setting for the common tools"
-msgstr ""
+msgstr "Ustawienia dla wspólnych narzędzi."
 
 #: /packages/celltags-extension/schema/plugin.json:/title /packages/notebook-extension/schema/tools.json:/title
 msgctxt "schema"
 msgid "Common tools"
-msgstr ""
+msgstr "Popularne narzędzia"
 
 #: /packages/codemirror-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -841,7 +857,7 @@ msgstr ""
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showShortcuts/title
 msgctxt "settings"
 msgid "Show shortcuts in the widget"
-msgstr ""
+msgstr "Pokaż skróty w widżecie"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/description
 msgctxt "settings"
@@ -856,7 +872,7 @@ msgstr ""
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/title
 msgctxt "settings"
 msgid "Show widget"
-msgstr ""
+msgstr "Pokaż widżet"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/description
 msgctxt "settings"
@@ -866,12 +882,12 @@ msgstr ""
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/oneOf[0]/title
 msgctxt "settings"
 msgid "None"
-msgstr ""
+msgstr "Brak"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/oneOf[1]/title
 msgctxt "settings"
 msgid "Uncover"
-msgstr ""
+msgstr "Odkryj"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/title
 msgctxt "settings"
@@ -981,7 +997,7 @@ msgstr ""
 #: /packages/console-extension/schema/foreign.json:/title
 msgctxt "schema"
 msgid "Code Console Foreign plugin"
-msgstr ""
+msgstr "Wtyczka obsługująca zewnętrzny kod w konsoli kodu"
 
 #: /packages/console-extension/schema/tracker.json:/description
 msgctxt "schema"
@@ -1001,32 +1017,32 @@ msgstr "Ustawienia konsoli kodu"
 #: /packages/console-extension/schema/tracker.json:/properties/clearCellsOnExecute/description
 msgctxt "settings"
 msgid "Whether to clear the console when code is executed."
-msgstr ""
+msgstr "Czy wyczyścić konsolę przy wykonywaniu kodu."
 
 #: /packages/console-extension/schema/tracker.json:/properties/clearCellsOnExecute/title
 msgctxt "settings"
 msgid "Clear Cells on Execute"
-msgstr ""
+msgstr "Wyczyść komórki przy wykonaniu"
 
 #: /packages/console-extension/schema/tracker.json:/properties/clearCodeContentOnExecute/description
 msgctxt "settings"
 msgid "Whether to clear the code content of the console when code is executed."
-msgstr ""
+msgstr "Czy wyczyścić zawartość kodu w konsoli podczas wykonywania kodu."
 
 #: /packages/console-extension/schema/tracker.json:/properties/clearCodeContentOnExecute/title
 msgctxt "settings"
 msgid "Clear Code Content on Execute"
-msgstr ""
+msgstr "Wyczyść zawartość kodu przy wykonaniu"
 
 #: /packages/console-extension/schema/tracker.json:/properties/hideCodeInput/description
 msgctxt "settings"
 msgid "Whether to hide the code input after a cell is executed."
-msgstr ""
+msgstr "Czy ukryć kod po jego wykonaniu."
 
 #: /packages/console-extension/schema/tracker.json:/properties/hideCodeInput/title
 msgctxt "settings"
 msgid "Hide Code Input"
-msgstr ""
+msgstr "Ukryj kod wejściowy"
 
 #: /packages/console-extension/schema/tracker.json:/properties/interactionMode/description
 msgctxt "settings"
@@ -1043,42 +1059,42 @@ msgstr "Tryb interakcji"
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all prompt cells; it will override the CodeMirror default configuration."
-msgstr ""
+msgstr "Konfiguracja dla wszystkich komórek z promptem; zastąpi domyślną konfigurację CodeMirror."
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/title
 msgctxt "settings"
 msgid "Prompt Cell Configuration"
-msgstr ""
+msgstr "Konfiguracja komórki z promptem"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/description
 msgctxt "settings"
 msgid "Where to place the prompt cell of the console."
-msgstr ""
+msgstr "Gdzie umieścić komórkę z promptem w konsoli."
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/oneOf[0]/title
 msgctxt "settings"
 msgid "Bottom"
-msgstr ""
+msgstr "Dół"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/oneOf[1]/title
 msgctxt "settings"
 msgid "Top"
-msgstr ""
+msgstr "Góra"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/oneOf[2]/title
 msgctxt "settings"
 msgid "Left"
-msgstr ""
+msgstr "Lewo"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/oneOf[3]/title
 msgctxt "settings"
 msgid "Right"
-msgstr ""
+msgstr "Prawo"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellPosition/title
 msgctxt "settings"
 msgid "Prompt Cell Position"
-msgstr ""
+msgstr "Położenie komórki z promptem"
 
 #: /packages/console-extension/schema/tracker.json:/properties/showAllKernelActivity/description
 msgctxt "settings"
@@ -1100,7 +1116,7 @@ msgstr ""
 #: /packages/console-extension/schema/tracker.json:/properties/showBanner/title
 msgctxt "settings"
 msgid "Show Banner"
-msgstr ""
+msgstr "Pokaż baner"
 
 #: /packages/console-extension/schema/tracker.json:/properties/toolbar/description /packages/notebook-extension/schema/panel.json:/properties/toolbar/description
 msgctxt "settings"
@@ -1423,7 +1439,7 @@ msgstr "Filtruj katalogi"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/filterDirectories/title
 msgctxt "settings"
 msgid "Filter folders"
-msgstr ""
+msgstr "Filtruj foldery"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/description
 msgctxt "settings"
@@ -1433,7 +1449,7 @@ msgstr "Czy automatycznie przejść do bieżącego katalogu dokumentu"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/description
 msgctxt "settings"
 msgid "Whether to automatically navigate to a document's current folder"
-msgstr ""
+msgstr "Czy automatycznie przejść do bieżącego folderu dokumentu"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/title
 msgctxt "settings"
@@ -1443,22 +1459,22 @@ msgstr "Przejdź do bieżącego katalogu"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/title
 msgctxt "settings"
 msgid "Navigate to current folder"
-msgstr ""
+msgstr "Przejdź do bieżącego folderu"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFileCheckboxes/description
 msgctxt "settings"
 msgid "Whether to show checkboxes next to files and folders"
-msgstr ""
+msgstr "Czy pokazywać pola wyboru obok plików i folderów"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFileCheckboxes/title
 msgctxt "settings"
 msgid "Use checkboxes to select items"
-msgstr ""
+msgstr "Używaj checkboxów do zaznaczania pozycji"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFileSizeColumn/description
 msgctxt "settings"
 msgid "Whether to show the file size column"
-msgstr ""
+msgstr "Czy pokazać kolumnę z rozmiarem pliku"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFileSizeColumn/title
 msgctxt "settings"
@@ -1468,17 +1484,17 @@ msgstr "Pokaż kolumnę rozmiaru pliku"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFullPath/description
 msgctxt "settings"
 msgid "Whether to show full path in browser bread crumbs"
-msgstr ""
+msgstr "Czy pokazywać pełną ścieżkę w pasku nawigacyjnym przeglądarki plików"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showFullPath/title
 msgctxt "settings"
 msgid "Show full path in browser bread crumbs"
-msgstr ""
+msgstr "Pokaż pełną ścieżkę w pasku nawigacyjnym przeglądarki plików"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/description
 msgctxt "settings"
 msgid "Whether to show hidden files. The server parameter `ContentsManager.allow_hidden` must be set to `True` to display hidden files."
-msgstr ""
+msgstr "Czy pokazywać ukryte pliki. Parametr `ContentsManager.allow_hidden` serwera musi być ustawiony na `True` aby wyświetlić ukryte pliki."
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/showHiddenFiles/title
 msgctxt "settings"
@@ -1498,22 +1514,22 @@ msgstr "Pokaż kolumnę z datą modyfikacji"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/singleClickNavigation/description
 msgctxt "settings"
 msgid "Whether to allow single click selection on file browser items"
-msgstr ""
+msgstr "Czy zezwolić na wybór elementów w przeglądarce plików za pomocą pojedynczego kliknięcia"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/singleClickNavigation/title
 msgctxt "settings"
 msgid "Navigate files and directories with single click"
-msgstr ""
+msgstr "Przeglądaj pliki i foldery za pomocą pojedynczego kliknięcia."
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/sortNotebooksFirst/description
 msgctxt "settings"
 msgid "Whether to group the notebooks away from files"
-msgstr ""
+msgstr "Czy grupować notatniki oddzielnie od plików"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/sortNotebooksFirst/title
 msgctxt "settings"
 msgid "When sorting by name, group notebooks before other files"
-msgstr ""
+msgstr "Podczas sortowania według nazwy, grupuj notatniki przed innymi plikami."
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/useFuzzyFilter/description
 msgctxt "settings"
@@ -1589,12 +1605,12 @@ msgstr ""
 #: /packages/filebrowser-extension/schema/widget.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "File browser toolbar items"
-msgstr ""
+msgstr "Elementy paska narzędzi przeglądarki plików"
 
 #: /packages/filebrowser-extension/schema/widget.json:/title
 msgctxt "schema"
 msgid "File Browser Widget"
-msgstr ""
+msgstr "Widżet przeglądarki plików"
 
 #: /packages/fileeditor-extension/schema/completer.json:/description
 msgctxt "schema"
@@ -1839,7 +1855,7 @@ msgstr ""
 #: /packages/lsp-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Language integration"
-msgstr ""
+msgstr "Integracja języka"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/activate/description
 msgctxt "settings"
@@ -1849,7 +1865,7 @@ msgstr ""
 #: /packages/lsp-extension/schema/plugin.json:/properties/activate/title
 msgctxt "settings"
 msgid "Activate"
-msgstr ""
+msgstr "Aktywuj"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/languageServers/description
 msgctxt "settings"
@@ -2008,12 +2024,12 @@ msgstr ""
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/id/description
 msgctxt "settings"
 msgid "The section ID"
-msgstr ""
+msgstr "ID sekcji"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/label/description
 msgctxt "settings"
 msgid "The section label"
-msgstr ""
+msgstr "Nazwa sekcji"
 
 #: /packages/metadataform-extension/schema/metadataforms.json:/definitions/metadataForm/properties/rank/description
 msgctxt "settings"
