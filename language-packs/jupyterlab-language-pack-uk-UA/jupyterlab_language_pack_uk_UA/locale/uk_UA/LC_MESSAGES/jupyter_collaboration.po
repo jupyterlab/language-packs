@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 229\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
-"PO-Revision-Date: 2025-06-02 08:24\n"
+"PO-Revision-Date: 2025-07-10 13:56\n"
 
 #: /packages/collaboration-extension/schema/shared-link.json:/description
 msgctxt "schema"
@@ -38,15 +38,15 @@ msgstr "Рядок меню користувача"
 msgid "Collaboration"
 msgstr "Співпраця"
 
-#: packages/collaboration-extension/src/collaboration.ts:153 packages/collaboration-extension/src/collaboration.ts:155
+#: packages/collaboration-extension/src/collaboration.ts:153 packages/collaboration-extension/src/collaboration.ts:155 packages/collaboration-extension/src/collaboration.ts:158
 msgid "User info"
 msgstr "Відомості про користувача"
 
-#: packages/collaboration-extension/src/collaboration.ts:154 packages/collaboration-extension/src/collaboration.ts:156
+#: packages/collaboration-extension/src/collaboration.ts:154 packages/collaboration-extension/src/collaboration.ts:156 packages/collaboration-extension/src/collaboration.ts:159
 msgid "User information"
 msgstr "Відомості про користувача"
 
-#: packages/collaboration-extension/src/collaboration.ts:167 packages/collaboration-extension/src/collaboration.ts:169
+#: packages/collaboration-extension/src/collaboration.ts:167 packages/collaboration-extension/src/collaboration.ts:169 packages/collaboration-extension/src/collaboration.ts:172
 msgid "Online Collaborators"
 msgstr "Співробітники в мережі"
 
@@ -58,63 +58,119 @@ msgstr "Створити Спільне посилання"
 msgid "Server"
 msgstr "Сервер"
 
-#: packages/collaboration/src/sharedlink.ts:118
+#: packages/collaboration/src/sharedlink.ts:118 packages/collaboration/src/sharedlink.ts:654
 msgid "Security warning!"
 msgstr "Попередження системи безпеки!"
 
-#: packages/collaboration/src/sharedlink.ts:121
+#: packages/collaboration/src/sharedlink.ts:121 packages/collaboration/src/sharedlink.ts:657
 msgid "Anyone with this link has full access to your notebook server, including all your files!"
 msgstr "Кожен, хто має це посилання, має повний доступ до вашого сервера блокнотів, включно з усіма вашими файлами!"
 
-#: packages/collaboration/src/sharedlink.ts:128
+#: packages/collaboration/src/sharedlink.ts:128 packages/collaboration/src/sharedlink.ts:664
 msgid "Please be careful who you share it with."
 msgstr "Будьте обережні з ким ви ділитесь цим."
 
-#: packages/collaboration/src/sharedlink.ts:134
+#: packages/collaboration/src/sharedlink.ts:134 packages/collaboration/src/sharedlink.ts:670
 msgid "They will be able to access this server AS YOU."
 msgstr "Вони зможуть отримати доступ до цього сервера від вашого імені."
 
-#: packages/collaboration/src/sharedlink.ts:139
+#: packages/collaboration/src/sharedlink.ts:139 packages/collaboration/src/sharedlink.ts:675
 msgid "To revoke access, go to File -> Hub Control Panel, and restart your server."
 msgstr "Щоб скасувати доступ, перейдіть до розділу \"Файл -> Панель керування\" та перезавантажте ваш сервер."
 
-#: packages/collaboration/src/sharedlink.ts:147
+#: packages/collaboration/src/sharedlink.ts:147 packages/collaboration/src/sharedlink.ts:683
 msgid "Currently, there is no way to revoke access other than shutting down your server."
 msgstr "Наразі немає іншого способу скасувати доступ, окрім завершення роботи вашого сервера."
 
-#: packages/collaboration/src/sharedlink.ts:159
+#: packages/collaboration/src/sharedlink.ts:159 packages/collaboration/src/sharedlink.ts:695
 msgid "Only users with `access:servers` permissions for this server will be able to use this link."
 msgstr "Лише користувачі з дозволами `доступ:сервери` для цього сервера зможуть використовувати це посилання."
 
-#: packages/collaboration/src/sharedlink.ts:166
+#: packages/collaboration/src/sharedlink.ts:166 packages/collaboration/src/sharedlink.ts:702
 msgid "Only authenticated users will be able to use this link."
 msgstr "Лише автентифіковані користувачі зможуть використовувати це посилання."
 
-#: packages/collaboration/src/sharedlink.ts:191
+#: packages/collaboration/src/sharedlink.ts:191 packages/collaboration/src/sharedlink.ts:727
 msgid "Include token in URL"
 msgstr "Внести маркер в URL-адресу"
 
-#: packages/collaboration/src/sharedlink.ts:49
-msgid "Share Jupyter Server Link"
-msgstr "Поділитися посиланням на сервер Jupyter"
+#: packages/collaboration/src/sharedlink.ts:214
+msgid "Share Jupyter Server %1"
+msgstr ""
 
-#: packages/collaboration/src/sharedlink.ts:59
+#: packages/collaboration/src/sharedlink.ts:228
+msgid "Close"
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:229
+msgid "Close the dialog"
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:232 packages/collaboration/src/sharedlink.ts:250 packages/collaboration/src/sharedlink.ts:59
 msgid "Copy Link"
 msgstr "Копіювати посилання"
 
-#: packages/collaboration/src/sharedlink.ts:60
+#: packages/collaboration/src/sharedlink.ts:233 packages/collaboration/src/sharedlink.ts:251 packages/collaboration/src/sharedlink.ts:60
 msgid "Copy the link to the Jupyter Server"
 msgstr "Скопіювати посилання на сервер Jupyter"
 
-#: packages/docprovider-extension/src/filebrowser.ts:268 packages/docprovider-extension/src/filebrowser.ts:285
+#: packages/collaboration/src/sharedlink.ts:240 packages/collaboration/src/sharedlink.ts:49
+msgid "Share Jupyter Server Link"
+msgstr "Поділитися посиланням на сервер Jupyter"
+
+#: packages/collaboration/src/sharedlink.ts:439
+msgid "Type to search for a user or a group to share your server with..."
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:467
+msgid "Warning: Anyone you share this server with will have access to all your files, not just the currently open file."
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:474
+msgid "If your Hub administrator allows it, you can create another server dedicated to sharing a specific project."
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:496 packages/collaboration/src/sharedlink.ts:553
+msgid "Group %1"
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:527
+msgid "Shared with"
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:529
+msgid "Shared since"
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:531
+msgid "Actions"
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:541
+msgid "Your server is not shared to anybody yet. You can search for users and groups above."
+msgstr ""
+
+#: packages/collaboration/src/sharedlink.ts:574
+msgid "Revoke"
+msgstr ""
+
+#: packages/collaboration/src/userinfopanel.tsx:113
+msgid "Failed to update user data"
+msgstr ""
+
+#: packages/collaboration/src/userinfopanel.tsx:93
+msgid "User Details"
+msgstr ""
+
+#: packages/docprovider-extension/src/filebrowser.ts:285
 msgid "File Browser Section"
 msgstr ""
 
-#: packages/docprovider-extension/src/filebrowser.ts:301 packages/docprovider-extension/src/filebrowser.ts:313 packages/docprovider-extension/src/filebrowser.ts:330 packages/docprovider-extension/src/filebrowser.ts:347 packages/docprovider-extension/src/filebrowser.ts:359 packages/docprovider-extension/src/filebrowser.ts:376
+#: packages/docprovider-extension/src/filebrowser.ts:301 packages/docprovider-extension/src/filebrowser.ts:307 packages/docprovider-extension/src/filebrowser.ts:330 packages/docprovider-extension/src/filebrowser.ts:347 packages/docprovider-extension/src/filebrowser.ts:353 packages/docprovider-extension/src/filebrowser.ts:376
 msgid "Warning"
 msgstr "Увага"
 
-#: packages/docprovider-extension/src/filebrowser.ts:349 packages/docprovider-extension/src/filebrowser.ts:361 packages/docprovider-extension/src/filebrowser.ts:378
+#: packages/docprovider-extension/src/filebrowser.ts:349 packages/docprovider-extension/src/filebrowser.ts:355 packages/docprovider-extension/src/filebrowser.ts:378
 msgid "Ok"
 msgstr "Гаразд"
 
