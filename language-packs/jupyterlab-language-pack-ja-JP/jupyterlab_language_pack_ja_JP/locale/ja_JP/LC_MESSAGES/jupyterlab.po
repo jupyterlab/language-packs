@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2025-07-24 14:50\n"
+"PO-Revision-Date: 2025-08-14 02:26\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -105,11 +105,11 @@ msgstr "Markdown ビューア"
 
 #: /jupyterlab/extensions/manager.py:262
 msgid "The following plugins cannot be disabled as they are locked: "
-msgstr ""
+msgstr "以下のプラグインはロックされているため無効にできません:"
 
 #: /jupyterlab/extensions/manager.py:288
 msgid "The following plugins cannot be enabled as they are locked: "
-msgstr ""
+msgstr "以下のプラグインはロックされているため無効にできません:"
 
 #: /jupyterlab/extensions/readonly.py:63
 msgid "Extension installation not supported."
@@ -250,7 +250,7 @@ msgstr "アプリケーションコンテキストメニュー。"
 #: /packages/application-extension/schema/context-menu.json:/properties/disabled/description
 msgctxt "settings"
 msgid "Whether the application context (right-click) menu is disabled"
-msgstr ""
+msgstr "アプリケーションのコンテキストメニュー(右クリック)を無効にするかどうか"
 
 #: /packages/application-extension/schema/context-menu.json:/title
 msgctxt "schema"
@@ -319,12 +319,12 @@ msgstr "JupyterLabシェル"
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/caption/description /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/caption/description /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/caption/description /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/caption/description /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/caption/description /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/description /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/caption/description
 msgctxt "settings"
 msgid "If defined, it will override the command caption"
-msgstr ""
+msgstr "定義されている場合はコマンドのキャプションを上書きします"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/caption/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/caption/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/caption/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/caption/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/caption/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/caption/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/caption/title
 msgctxt "settings"
 msgid "Item caption"
-msgstr ""
+msgstr "アイテムのキャプション"
 
 #: /packages/application-extension/schema/top-bar.json:/definitions/toolbarItem/properties/disabled/title /packages/cell-toolbar-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/console-extension/schema/tracker.json:/definitions/toolbarItem/properties/disabled/title /packages/csvviewer-extension/schema/csv.json:/definitions/toolbarItem/properties/disabled/title /packages/csvviewer-extension/schema/tsv.json:/definitions/toolbarItem/properties/disabled/title /packages/filebrowser-extension/schema/widget.json:/definitions/toolbarItem/properties/disabled/title /packages/fileeditor-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/htmlviewer-extension/schema/plugin.json:/definitions/toolbarItem/properties/disabled/title /packages/notebook-extension/schema/panel.json:/definitions/toolbarItem/properties/disabled/title
 msgctxt "settings"
@@ -400,52 +400,52 @@ msgstr "Top Bar"
 #: /packages/apputils-extension/schema/kernels-settings.json:/description
 msgctxt "schema"
 msgid "Kernels and kernel sessions settings"
-msgstr ""
+msgstr "カーネルとカーネル・セッション設定"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Kernel"
-msgstr ""
+msgstr "カーネル"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/description
 msgctxt "settings"
 msgid "Whether comm messages should be sent to kernel subshells, if the kernel supports it."
-msgstr ""
+msgstr "カーネルがサポートしている場合に通信メッセージをカーネルのサブシェルに送信するかどうか。"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/oneOf[0]/title
 msgctxt "settings"
 msgid "Disabled"
-msgstr ""
+msgstr "無効"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/oneOf[1]/title
 msgctxt "settings"
 msgid "One subshell per comm"
-msgstr ""
+msgstr "通信ごとのサブシェル"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/oneOf[2]/title
 msgctxt "settings"
 msgid "One subshell per comm-target"
-msgstr ""
+msgstr "通信ターゲットごとのサブシェル"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/commsOverSubshells/title
 msgctxt "settings"
 msgid "Kernel Comms over subshells"
-msgstr ""
+msgstr "サブシェルを経由したカーネルの通信"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/showStatusBarItem/description
 msgctxt "settings"
 msgid "Whether to show the running kernels item in the status bar"
-msgstr ""
+msgstr "ステータスバーに実行中のカーネル項目を表示するかどうか"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/properties/showStatusBarItem/title /packages/terminal-extension/schema/plugin.json:/properties/showStatusBarItem/title
 msgctxt "settings"
 msgid "Show the status bar item"
-msgstr ""
+msgstr "ステータスバー項目を表示する"
 
 #: /packages/apputils-extension/schema/kernels-settings.json:/title
 msgctxt "schema"
 msgid "Kernels"
-msgstr ""
+msgstr "カーネル"
 
 #: /packages/apputils-extension/schema/notification.json:/description
 msgctxt "schema"
@@ -455,17 +455,17 @@ msgstr "通知設定"
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
 msgctxt "settings"
 msgid "Whether to check for newer version of JupyterLab or not. It requires `fechNews` to be `true` to be active. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "JupyterLab の新しいバージョンを確認するかどうか。有効にするには、`fechNews` が `true` である必要があります。`true` の場合、ウェブサイトにリクエストを送信します。"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
 msgctxt "settings"
 msgid "Whether to check for newer version of JupyterLab or not. It requires `fetchNews` to be `true` to be active. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "JupyterLab の新しいバージョンを確認するかどうか。有効にするには、`ニュースを取得する` 設定が `true` である必要があります。`true` の場合、ウェブサイトにリクエストを送信します。"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/description
 msgctxt "settings"
 msgid "Whether to check for newer versions of JupyterLab or not. It requires `fetchNews` to be set to Always (`true`) to be active. If `true`, it will make a request to a website."
-msgstr ""
+msgstr "JupyterLab の新しいバージョンを確認するかどうか。有効にするには、`fetchNews` を Always (`true`) に設定する必要があります。`true` の場合、ウェブサイトにリクエストを送信します。"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/checkForUpdates/title
 msgctxt "settings"
@@ -490,22 +490,22 @@ msgstr "Jupyter news feedからニュースを取得するかどうか。`true` 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/description
 msgctxt "settings"
 msgid "Whether to fetch news from the Jupyter news feed. If Always (`true`), it will make a request to a website."
-msgstr ""
+msgstr "Jupyter ニュースフィードからニュースを取得するかどうか。Always (`true`) の場合、ウェブサイトにリクエストを送信します。"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/oneOf[0]/title /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[0]/title
 msgctxt "settings"
 msgid "Always"
-msgstr ""
+msgstr "Always"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/oneOf[1]/title /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[2]/title
 msgctxt "settings"
 msgid "Never"
-msgstr ""
+msgstr "Never"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/oneOf[2]/title
 msgctxt "settings"
 msgid "Ask (None)"
-msgstr ""
+msgstr "Ask (None)"
 
 #: /packages/apputils-extension/schema/notification.json:/properties/fetchNews/title
 msgctxt "settings"
@@ -560,12 +560,12 @@ msgstr "HTMLサニタイザーの設定"
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowNamedProperties/description
 msgctxt "settings"
 msgid "Whether to allow untrusted elements to include `name` and `id` attributes. These attributes are stripped by default to prevent DOM clobbering attacks."
-msgstr ""
+msgstr "信頼できない要素に `name` 属性と `id` 属性を含めることを許可するかどうか。これらの属性は、DOM クローバー攻撃を防ぐため、デフォルトで削除されます。"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowNamedProperties/title
 msgctxt "settings"
 msgid "Allow named properties"
-msgstr ""
+msgstr "名前付きプロパティを許可する"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/allowedSchemes/description
 msgctxt "settings"
@@ -585,7 +585,7 @@ msgstr "URL をリンクに置き換えるかどうかを選択します。"
 #: /packages/apputils-extension/schema/sanitizer.json:/properties/autolink/title
 msgctxt "settings"
 msgid "Autolink URL replacement"
-msgstr ""
+msgstr "URLの置き換え"
 
 #: /packages/apputils-extension/schema/sanitizer.json:/title
 msgctxt "schema"
@@ -595,22 +595,22 @@ msgstr "HTML Sanitizer"
 #: /packages/apputils-extension/schema/sessionDialogs.json:/description
 msgctxt "schema"
 msgid "Kernel dialogs settings."
-msgstr ""
+msgstr "カーネルダイアログの設定。"
 
 #: /packages/apputils-extension/schema/sessionDialogs.json:/properties/skipKernelRestartDialog/description
 msgctxt "settings"
 msgid "Whether the kernel restart confirmation dialog is skipped when restarting the kernel."
-msgstr ""
+msgstr "カーネルを再起動するときにカーネル再起動確認ダイアログをスキップするかどうか。"
 
 #: /packages/apputils-extension/schema/sessionDialogs.json:/properties/skipKernelRestartDialog/title
 msgctxt "settings"
 msgid "Skip kernel restart Dialog"
-msgstr ""
+msgstr "カーネルの再起動ダイアログをスキップ"
 
 #: /packages/apputils-extension/schema/sessionDialogs.json:/title
 msgctxt "schema"
 msgid "Kernel dialogs"
-msgstr ""
+msgstr "カーネルダイアログ"
 
 #: /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/code-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/content-font-family/description /packages/apputils-extension/schema/themes.json:/definitions/cssOverrides/properties/ui-font-family/description
 msgctxt "settings"
@@ -640,12 +640,12 @@ msgstr "テーママネージャ"
 #: /packages/apputils-extension/schema/themes.json:/properties/adaptive-theme/description
 msgctxt "settings"
 msgid "Synchronize visual styling theme with system settings"
-msgstr ""
+msgstr "ビジュアルスタイリングテーマをシステム設定と同期する"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/adaptive-theme/title
 msgctxt "settings"
 msgid "Adaptive Theme"
-msgstr ""
+msgstr "適応テーマ"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/overrides/description
 msgctxt "settings"
@@ -660,22 +660,22 @@ msgstr "テーマ CSS のオーバーライド"
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-dark-theme/description
 msgctxt "settings"
 msgid "Application-level dark visual styling theme. Ignored when Adaptive Theme is disabled."
-msgstr ""
+msgstr "アプリケーションレベルのダークビジュアルスタイリングテーマ。アダプティブテーマが無効の場合は無視されます。"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-dark-theme/title
 msgctxt "settings"
 msgid "Preferred Dark Theme"
-msgstr ""
+msgstr "推奨されるダークテーマ"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-light-theme/description
 msgctxt "settings"
 msgid "Application-level light visual styling theme. Ignored when Adaptive Theme is disabled."
-msgstr ""
+msgstr "アプリケーションレベルのライトビジュアルスタイルテーマ。アダプティブテーマが無効の場合は無視されます。"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/preferred-light-theme/title
 msgctxt "settings"
 msgid "Preferred Light Theme"
-msgstr ""
+msgstr "推奨ライトテーマ"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme-scrollbars/description
 msgctxt "settings"
@@ -685,22 +685,22 @@ msgstr "アプリのスクロールバーのスタイルを有効/無効にす�
 #: /packages/apputils-extension/schema/themes.json:/properties/theme-scrollbars/title
 msgctxt "settings"
 msgid "Scrollbar Theming"
-msgstr ""
+msgstr "スクロールバーのテーマ"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme/description
 msgctxt "settings"
 msgid "Application-level visual styling theme"
-msgstr ""
+msgstr "アプリケーションレベルのビジュアルスタイルテーマ"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme/description
 msgctxt "settings"
 msgid "Application-level visual styling theme. Ignored when Adaptive Theme is enabled."
-msgstr ""
+msgstr "アプリケーションレベルのビジュアルスタイルテーマ。アダプティブデータが無効の場合は無視されます。"
 
 #: /packages/apputils-extension/schema/themes.json:/properties/theme/title
 msgctxt "settings"
 msgid "Selected Theme"
-msgstr ""
+msgstr "選択されたテーマ"
 
 #: /packages/apputils-extension/schema/themes.json:/title
 msgctxt "schema"
@@ -710,12 +710,12 @@ msgstr "テーマ"
 #: /packages/apputils-extension/schema/utilityCommands.json:/description
 msgctxt "schema"
 msgid "Shortcut help settings."
-msgstr ""
+msgstr "ショートカットヘルプの設定"
 
 #: /packages/apputils-extension/schema/utilityCommands.json:/title
 msgctxt "schema"
 msgid "Shortcuts Help"
-msgstr ""
+msgstr "ショートカットヘルプ"
 
 #: /packages/apputils-extension/schema/workspaces.json:/description
 msgctxt "schema"
@@ -730,42 +730,42 @@ msgstr "ワークスペース"
 #: /packages/cell-toolbar-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Cell Toolbar Settings."
-msgstr ""
+msgstr "セルツールバーの設定。"
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/properties/showToolbar/description
 msgctxt "settings"
 msgid "Show a toolbar inside the active cell, if there is enough room for one"
-msgstr ""
+msgstr "十分なスペースがある場合、アクティブセル内にツールバーを表示する"
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/properties/showToolbar/title
 msgctxt "settings"
 msgid "Show cell toolbar"
-msgstr ""
+msgstr "セルツールバーを表示する"
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/properties/toolbar/description
 msgctxt "settings"
 msgid "An item is defined by a 'name', a 'command' name, and an 'icon' name"
-msgstr ""
+msgstr "アイテムは 'name' 、'command' 名、'icon' 名で定義されています"
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "List of toolbar items"
-msgstr ""
+msgstr "ツールバーアイテムの一覧"
 
 #: /packages/cell-toolbar-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "Cell Toolbar"
-msgstr ""
+msgstr "セルツールバー"
 
 #: /packages/celltags-extension/schema/plugin.json:/description /packages/notebook-extension/schema/tools.json:/description
 msgctxt "schema"
 msgid "Setting for the common tools"
-msgstr ""
+msgstr "共通ツールの設定"
 
 #: /packages/celltags-extension/schema/plugin.json:/title /packages/notebook-extension/schema/tools.json:/title
 msgctxt "schema"
 msgid "Common tools"
-msgstr ""
+msgstr "共通ツール"
 
 #: /packages/codemirror-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -775,172 +775,172 @@ msgstr "すべてのCodeMirrorエディタのテキストエディタの設定�
 #: /packages/codemirror-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "CodeMirror"
-msgstr ""
+msgstr "CodeMirror"
 
 #: /packages/codemirror-extension/schema/plugin.json:/properties/defaultConfig/description
 msgctxt "settings"
 msgid "Base configuration used by all CodeMirror editors."
-msgstr ""
+msgstr "すべてのCodeMirrorエディタで使用されるベース設定。"
 
 #: /packages/codemirror-extension/schema/plugin.json:/properties/defaultConfig/title
 msgctxt "settings"
 msgid "Default editor configuration"
-msgstr ""
+msgstr "デフォルトのエディタ設定"
 
 #: /packages/codemirror-extension/schema/plugin.json:/title
 msgctxt "schema"
 msgid "CodeMirror"
-msgstr ""
+msgstr "CodeMirror"
 
 #: /packages/completer-extension/schema/inline-completer.json:/description
 msgctxt "schema"
 msgid "Inline completer settings."
-msgstr ""
+msgstr "インライン補完設定。"
 
 #: /packages/completer-extension/schema/inline-completer.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Inline Completer"
-msgstr ""
+msgstr "インライン補完"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/description
 msgctxt "settings"
 msgid "When an inline completion gets cancelled the editor may change its size rapidly. When typing in the editor, the completions may get dismissed frequently causing a noticeable jitter of the editor height. Adding a delay prevents the jitter on typing. The value should be in milliseconds."
-msgstr ""
+msgstr "インライン補完がキャンセルされると、エディタのサイズが急速に変化する可能性があります。 エディタに入力すると、補完が解除されることが頻繁にあり、エディタの高さが顕著に揺れることがあります。 遅延を追加すると、入力時のジッタが発生しなくなります。値はミリ秒単位で指定してください。"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/editorResizeDelay/title
 msgctxt "settings"
 msgid "Editor resize delay"
-msgstr ""
+msgstr "エディターのリサイズの遅延"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/description
 msgctxt "settings"
 msgid "Number of lines of inline completion to show before collapsing. Setting zero disables the limit."
-msgstr ""
+msgstr "折り畳む前に表示するインライン補完行数。ゼロを指定すると制限を無効にします。"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/maxLines/title
 msgctxt "settings"
 msgid "Limit inline completion lines"
-msgstr ""
+msgstr "インライン補完行の制限"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/description
 msgctxt "settings"
 msgid "Number of lines to reserve for the ghost text with inline completion suggestion."
-msgstr ""
+msgstr "インライン補完候補のゴーストテキストの予約行数。"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/minLines/title
 msgctxt "settings"
 msgid "Reserve lines for inline completion"
-msgstr ""
+msgstr "インライン補完の予約行"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/providers/title
 msgctxt "settings"
 msgid "Inline completion providers"
-msgstr ""
+msgstr "インライン補完プロバイダー"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/reserveSpaceForLongest/description
 msgctxt "settings"
 msgid "When multiple completions are returned, reserve blank space for up to as many lines as in the longest completion candidate to avoid resizing editor when cycling between the suggestions."
-msgstr ""
+msgstr "複数の補完が返された場合 候補の間をカーソルが移動するときにエディタのサイズ変更を避けるために、最長の完了候補と同じ数の行までの空白を予約します。"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/reserveSpaceForLongest/title
 msgctxt "settings"
 msgid "Reserve space for the longest candidate"
-msgstr ""
+msgstr "最長補完候補のための予備スペース"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showShortcuts/description
 msgctxt "settings"
 msgid "Whether to show shortcuts in the inline completer widget."
-msgstr ""
+msgstr "インライン補完ウィジェットにショートカットを表示するかどうか。"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showShortcuts/title
 msgctxt "settings"
 msgid "Show shortcuts in the widget"
-msgstr ""
+msgstr "ウィジェットにショートカットを表示する"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/description
 msgctxt "settings"
 msgid "When to show the inline completer widget."
-msgstr ""
+msgstr "インライン補完ウィジェットを表示するタイミング。"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/oneOf[1]/title
 msgctxt "settings"
 msgid "On hover"
-msgstr ""
+msgstr "ホバー時"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/showWidget/title
 msgctxt "settings"
 msgid "Show widget"
-msgstr ""
+msgstr "ウィジェットを表示する"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/description
 msgctxt "settings"
 msgid "Transition effect used when streaming tokens from model."
-msgstr ""
+msgstr "モデルからトークンをストリーミングするときに使用されるトランジション効果。"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/oneOf[0]/title
 msgctxt "settings"
 msgid "None"
-msgstr ""
+msgstr "None"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/oneOf[1]/title
 msgctxt "settings"
 msgid "Uncover"
-msgstr ""
+msgstr "発見"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/streamingAnimation/title
 msgctxt "settings"
 msgid "Streaming animation"
-msgstr ""
+msgstr "ストリーミングアニメーション"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/suppressIfTabCompleterActive/description
 msgctxt "settings"
 msgid "Whether to suppress the inline completer when the tab completer suggestions are shown."
-msgstr ""
+msgstr "タブ補完の候補が表示されるときにインライン補完を抑制するかどうか。"
 
 #: /packages/completer-extension/schema/inline-completer.json:/properties/suppressIfTabCompleterActive/title
 msgctxt "settings"
 msgid "Suppress when the tab completer is active"
-msgstr ""
+msgstr "タブ補完機能がアクティブなときに抑制する"
 
 #: /packages/completer-extension/schema/inline-completer.json:/title
 msgctxt "schema"
 msgid "Inline Completer"
-msgstr ""
+msgstr "インライン補完"
 
 #: /packages/completer-extension/schema/manager.json:/description
 msgctxt "schema"
 msgid "Code Completion settings."
-msgstr ""
+msgstr "コード補完の設定。"
 
 #: /packages/completer-extension/schema/manager.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Code Completer"
-msgstr ""
+msgstr "コード補完"
 
 #: /packages/completer-extension/schema/manager.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Code Completion settings"
-msgstr ""
+msgstr "コード補完の設定"
 
 #: /packages/completer-extension/schema/manager.json:/properties/autoCompletion/description
 msgctxt "settings"
 msgid "Autocompletion setting."
-msgstr ""
+msgstr "自動補完の設定。"
 
 #: /packages/completer-extension/schema/manager.json:/properties/autoCompletion/title
 msgctxt "settings"
 msgid "Enable autocompletion."
-msgstr ""
+msgstr "自動補完を有効にする"
 
 #: /packages/completer-extension/schema/manager.json:/properties/availableProviders/description
 msgctxt "settings"
 msgid "Providers with higher rank will be shown before the ones with lower rank, providers with negative rank are disabled."
-msgstr ""
+msgstr "より高いランクのプロバイダーは、低いランクのプロバイダーの前に表示され、負のランクのプロバイダーは無効になります。"
 
 #: /packages/completer-extension/schema/manager.json:/properties/availableProviders/title
 msgctxt "settings"
 msgid "Completion providers rank setting."
-msgstr ""
+msgstr "補完プロバイダーランクの設定。"
 
 #: /packages/completer-extension/schema/manager.json:/properties/providerTimeout/description
 msgctxt "settings"
@@ -5674,7 +5674,7 @@ msgid "The JupyterLab development team is excited to have a robust\n"
 "risks or contain malicious code that runs on your machine. Moreover in order\n"
 "to work, this panel needs to fetch data from web services. Do you agree to\n"
 "activate this feature?"
-msgstr ""
+msgstr "JupyterLab開発チームは、活発なサードパーティ拡張機能コミュニティを擁していることを大変嬉しく思っています。しかしながら、サードパーティ拡張機能の審査を行っていないため、一部の拡張機能はセキュリティリスクをもたらしたり、お使いのマシン上で実行される悪意のあるコードを含んでいたりする可能性があります。さらに、このパネルを動作させるには、Webサービスからデータを取得する必要があります。この機能を有効にすることに同意しますか？"
 
 #: packages/extensionmanager/src/widget.tsx:413 packages/extensionmanager/src/widget.tsx:416 packages/extensionmanager/src/widget.tsx:422 packages/extensionmanager/src/widget.tsx:428
 msgid "Please read the privacy policy."
@@ -5898,7 +5898,7 @@ msgstr "URLから開く…"
 
 #: packages/filebrowser-extension/src/index.ts:869 packages/filebrowser-extension/src/index.ts:873 packages/filebrowser-extension/src/index.ts:876 packages/filebrowser-extension/src/index.ts:877 packages/filebrowser-extension/src/index.ts:884
 msgid "Cannot fetch"
-msgstr ""
+msgstr "フェッチできません"
 
 #: packages/filebrowser-extension/src/index.ts:882 packages/filebrowser-extension/src/index.ts:886 packages/filebrowser-extension/src/index.ts:889 packages/filebrowser-extension/src/index.ts:890 packages/filebrowser-extension/src/index.ts:897 packages/filebrowser/src/upload.ts:52
 msgctxt "showErrorMessage"
