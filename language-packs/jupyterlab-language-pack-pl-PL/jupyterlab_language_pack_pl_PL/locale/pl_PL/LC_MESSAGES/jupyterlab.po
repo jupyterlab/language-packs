@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2025-07-24 14:50\n"
+"PO-Revision-Date: 2025-08-06 02:33\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -782,7 +782,7 @@ msgstr "CodeMirror"
 #: /packages/codemirror-extension/schema/plugin.json:/properties/defaultConfig/description
 msgctxt "settings"
 msgid "Base configuration used by all CodeMirror editors."
-msgstr ""
+msgstr "Podstawowa konfiguracja używana przez wszystkie edytory CodeMirror."
 
 #: /packages/codemirror-extension/schema/plugin.json:/properties/defaultConfig/title
 msgctxt "settings"
@@ -1243,7 +1243,7 @@ msgstr "Automatycznie zwiń pasek boczny debugera"
 #: /packages/debugger-extension/schema/main.json:/properties/defaultKernelSourcesFilter/description
 msgctxt "settings"
 msgid "A regular expression filter to apply by default when showing the kernel sources"
-msgstr ""
+msgstr "Domyślny filtr używany przy wyświetlaniu źródeł rdzenia obliczeniowego"
 
 #: /packages/debugger-extension/schema/main.json:/properties/defaultKernelSourcesFilter/title
 msgctxt "settings"
@@ -1621,7 +1621,17 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "Uwaga: Aby wyłączyć element paska narzędzi, skopiuj go do Preferencji użytkownika i dodaj klucz \"disabled\".\n"
+"Poniższy przykład wyłącza przycisk Prześlij plik ('uploader'):\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"delimiter\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"Opis menu:"
 
 #: /packages/filebrowser-extension/schema/widget.json:/properties/toolbar/title
 msgctxt "settings"
@@ -1904,7 +1914,7 @@ msgstr "Aktywuj"
 #: /packages/lsp-extension/schema/plugin.json:/properties/languageServers/description
 msgctxt "settings"
 msgid "Language-server specific configuration, keyed by implementation"
-msgstr ""
+msgstr "Konfiguracja serwera językowego, przypisana do konkretnej implementacji"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/languageServers/title
 msgctxt "settings"
@@ -2174,7 +2184,7 @@ msgstr "Dostęp do historii rdzenia obliczeniowego"
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoRenderMarkdownCells/description
 msgctxt "settings"
 msgid "Whether to render markdown cells when the cursor moves out of them."
-msgstr ""
+msgstr "Czy renderować komórki Markdown po przesunięciu z nich kursora."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoRenderMarkdownCells/title
 msgctxt "settings"
@@ -2279,27 +2289,27 @@ msgstr "Określa maksymalną liczbę widocznych wyników w komórce z wieloma wy
 #: /packages/notebook-extension/schema/tracker.json:/properties/maxNumberOutputs/title
 msgctxt "settings"
 msgid "The maximum number of output cells to be rendered in the output area."
-msgstr ""
+msgstr "Maksymalna liczba wyników wyświetlanych w miejscu obliczenia."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/overscanCount/description
 msgctxt "settings"
 msgid "In 'full' windowing mode, this is the number of cells above and below the viewport."
-msgstr ""
+msgstr "W trybie „pełnego” okna to liczba komórek wyświetlanych nad i pod aktualnym widokiem."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/overscanCount/title
 msgctxt "settings"
 msgid "Number of cells to render outside de the viewport"
-msgstr ""
+msgstr "Liczba komórek do wyświetlenia poza widocznym obszarem"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/overscanCount/title
 msgctxt "settings"
 msgid "Number of cells to render outside the viewport"
-msgstr ""
+msgstr "Liczba komórek do wyświetlenia poza widocznym obszarem"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all raw cells; it will override the CodeMirror default configuration."
-msgstr ""
+msgstr "Konfiguracja dla wszystkich komórek typu 'raw'; zastępuje domyślne ustawienia CodeMirror."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/rawCellConfig/title
 msgctxt "settings"
@@ -2319,12 +2329,12 @@ msgstr "Harmonogram nagrywania"
 #: /packages/notebook-extension/schema/tracker.json:/properties/renderingLayout/description
 msgctxt "settings"
 msgid "Global setting to define the rendering layout in notebooks. 'default' or 'side-by-side' are supported."
-msgstr ""
+msgstr "Ogólne ustawienie wyświetlania wyników w notatnikach. Obsługiwane są tryby: domyślny oraz 'side-by-side'."
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/renderingLayout/title
 msgctxt "settings"
 msgid "Rendering Layout"
-msgstr ""
+msgstr "Układ wyświetlania wyników"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/scrollHeadingToTop/description
 msgctxt "settings"
@@ -2354,12 +2364,12 @@ msgstr "Przewiń poza ostatnią komórkę"
 #: /packages/notebook-extension/schema/tracker.json:/properties/showEditorForReadOnlyMarkdown/description
 msgctxt "settings"
 msgid "Should an editor be shown for read-only markdown"
-msgstr ""
+msgstr "Czy wyświetlać edytor dla komórek Markdown tylko do odczytu"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/showEditorForReadOnlyMarkdown/title
 msgctxt "settings"
 msgid "Show editor for read-only Markdown cells"
-msgstr ""
+msgstr "Pokaż edytor dla komórek Markdown tylko do odczytu"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/showHiddenCellsButton/description
 msgctxt "settings"
@@ -2789,7 +2799,7 @@ msgstr "Wyświetlaj prefiks tłumaczeń tekstowych"
 #: /packages/translation-extension/schema/plugin.json:/properties/locale/description
 msgctxt "settings"
 msgid "Set the interface display language. Examples: 'es_CO', 'fr_FR'. Set 'default' to use the server default locale. Requires corresponding language pack to be installed."
-msgstr ""
+msgstr "Ustaw język interfejsu. Przykłady: 'es_CO', 'fr_FR'. Ustaw 'default', aby użyć domyślnego języka serwera. Wymaga zainstalowanego odpowiedniego pakietu językowego."
 
 #: /packages/translation-extension/schema/plugin.json:/properties/locale/title
 msgctxt "settings"
@@ -2814,27 +2824,27 @@ msgstr "Język"
 #: /packages/workspaces-extension/schema/indicator.json:/description
 msgctxt "schema"
 msgid "Workspace Indicator Settings"
-msgstr ""
+msgstr "Ustawienia wskaźnika przestrzeni roboczej"
 
 #: /packages/workspaces-extension/schema/indicator.json:/title
 msgctxt "schema"
 msgid "Workspace Indicator"
-msgstr ""
+msgstr "Wskaźnik obszaru roboczego"
 
 #: /packages/workspaces-extension/schema/menu.json:/description /packages/workspaces-extension/schema/menu.json:/title
 msgctxt "schema"
 msgid "Workspaces Menu"
-msgstr ""
+msgstr "Menu obszarów roboczych"
 
 #: /packages/workspaces-extension/schema/menu.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
 msgctxt "menu"
 msgid "Workspaces"
-msgstr ""
+msgstr "Obszary robocze"
 
 #: /packages/workspaces-extension/schema/sidebar.json:/description /packages/workspaces-extension/schema/sidebar.json:/title
 msgctxt "schema"
 msgid "Workspaces Sidebar"
-msgstr ""
+msgstr "Pasek boczny obszarów roboczych"
 
 #: packages/application-extension/src/index.tsx:1005 packages/application-extension/src/index.tsx:1037 packages/application-extension/src/index.tsx:1050 packages/application-extension/src/index.tsx:925 packages/application-extension/src/index.tsx:990
 msgid "The path: %1 was not found. JupyterLab redirected to: %2"
@@ -2886,7 +2896,7 @@ msgstr "Zmień stronę paska bocznego"
 
 #: packages/application-extension/src/index.tsx:1535
 msgid "Enable Context Menu"
-msgstr ""
+msgstr "Włącz menu kontekstowe"
 
 #: packages/application-extension/src/index.tsx:205 packages/application-extension/src/index.tsx:239 packages/application-extension/src/index.tsx:242 packages/application-extension/src/index.tsx:244
 msgid "Close Tab"
@@ -2934,11 +2944,11 @@ msgstr "Pokaż prawy pasek boczny"
 
 #: packages/application-extension/src/index.tsx:334 packages/application-extension/src/index.tsx:399 packages/application-extension/src/index.tsx:420 packages/application-extension/src/index.tsx:423 packages/application-extension/src/index.tsx:425
 msgid "Show Right Activity Bar"
-msgstr ""
+msgstr "Pokaż Prawy Pasek aktywności"
 
 #: packages/application-extension/src/index.tsx:335 packages/application-extension/src/index.tsx:400 packages/application-extension/src/index.tsx:421 packages/application-extension/src/index.tsx:424 packages/application-extension/src/index.tsx:426
 msgid "Show Left Activity Bar"
-msgstr ""
+msgstr "Pokaż Lewy Pasek Aktywności"
 
 #: packages/application-extension/src/index.tsx:354 packages/application-extension/src/index.tsx:419 packages/application-extension/src/index.tsx:440 packages/application-extension/src/index.tsx:443 packages/application-extension/src/index.tsx:445
 msgid "Presentation Mode"
@@ -2962,11 +2972,11 @@ msgstr ""
 
 #: packages/application-extension/src/index.tsx:380 packages/application-extension/src/index.tsx:383 packages/application-extension/src/index.tsx:385
 msgid "Toggle Element %1 in Right Sidebar"
-msgstr ""
+msgstr "Przełącz Element %1 na Prawym Pasku Bocznym"
 
 #: packages/application-extension/src/index.tsx:384 packages/application-extension/src/index.tsx:387 packages/application-extension/src/index.tsx:389
 msgid "Toggle Element %1 in Left Sidebar"
-msgstr ""
+msgstr "Przełącz element %1 na Lewym Pasku Bocznym"
 
 #: packages/application-extension/src/index.tsx:397 packages/application-extension/src/index.tsx:462 packages/application-extension/src/index.tsx:483 packages/application-extension/src/index.tsx:505 packages/application-extension/src/index.tsx:507
 msgid "Reset Default Layout"
@@ -3028,7 +3038,7 @@ msgstr "Czy na pewno chcesz opuścić JupyterLab?\n\n"
 
 #: packages/application-extension/src/index.tsx:792 packages/application-extension/src/index.tsx:857 packages/application-extension/src/index.tsx:872 packages/application-extension/src/index.tsx:904 packages/application-extension/src/index.tsx:917
 msgid "User layout customization has changed. You may need to reload JupyterLab to see the changes."
-msgstr ""
+msgstr "Zmieniono układ interfejsu użytkownika. Aby zobaczyć zmiany, może być konieczne ponowne uruchomienie JupyterLab."
 
 #: packages/application-extension/src/index.tsx:804 packages/settingeditor-extension/src/index.ts:152 packages/settingeditor-extension/src/index.ts:172 packages/settingeditor-extension/src/index.ts:187 packages/settingeditor-extension/src/index.ts:207 packages/settingeditor-extension/src/index.ts:211 packages/settingeditor-extension/src/index.ts:246 packages/settingeditor-extension/src/index.ts:319 packages/settingeditor-extension/src/index.ts:339 packages/settingeditor-extension/src/index.ts:378 packages/settingeditor/src/pluginlist.tsx:448 packages/settingeditor/src/pluginlist.tsx:467
 msgid "Settings"
@@ -3036,7 +3046,7 @@ msgstr "Ustawienia"
 
 #: packages/application-extension/src/topbar.ts:39
 msgid "Topbar toolbar"
-msgstr ""
+msgstr "Górny pasek narzędzi"
 
 #: packages/application/src/connectionlost.ts:19
 msgid "Server Connection Error"
@@ -3084,7 +3094,7 @@ msgstr "Górny pasek"
 
 #: packages/application/src/shell.ts:765
 msgid "Bottom Panel"
-msgstr ""
+msgstr "Dolny Panel"
 
 #: packages/application/src/shell.ts:767
 msgid "Main Content"
@@ -3130,7 +3140,7 @@ msgstr "Nigdy nie pokazuj tych powiadomień."
 
 #: packages/apputils-extension/src/announcements.ts:243
 msgid "Do not check for updates"
-msgstr ""
+msgstr "Nie sprawdzaj dostępności aktualizacji"
 
 #: packages/apputils-extension/src/announcements.ts:243 packages/apputils-extension/src/announcements.ts:248
 msgid "Ignore all updates"
@@ -3172,7 +3182,7 @@ msgstr "Pokaż nagłówek powyżej zawartości"
 
 #: packages/apputils-extension/src/index.ts:429 packages/apputils-extension/src/index.ts:438
 msgid "Load state for the current workspace."
-msgstr ""
+msgstr "Załaduj stan dla bieżącego obszaru roboczego."
 
 #: packages/apputils-extension/src/index.ts:493 packages/apputils-extension/src/index.ts:502
 msgid "Reset Application State"
@@ -3180,7 +3190,7 @@ msgstr "Resetuj stan aplikacji"
 
 #: packages/apputils-extension/src/index.ts:504 packages/apputils-extension/src/index.ts:513
 msgid "Reset state when loading for the workspace."
-msgstr ""
+msgstr "Zresetuj stan podczas ładowania obszaru roboczego."
 
 #: packages/apputils-extension/src/index.ts:595 packages/apputils-extension/src/index.ts:604 packages/apputils-extension/src/index.ts:609
 msgid "Run First Enabled Command"
@@ -3196,7 +3206,7 @@ msgstr "Pokaż Skróty Klawiszowe"
 
 #: packages/apputils-extension/src/index.ts:635 packages/apputils-extension/src/index.ts:645 packages/apputils-extension/src/index.ts:654 packages/apputils-extension/src/index.ts:659
 msgid "Show relevant keyboard shortcuts for the current active widget"
-msgstr ""
+msgstr "Pokaż odpowiednie skróty klawiszowe dla bieżącego aktywnego widżetu"
 
 #: packages/apputils-extension/src/index.ts:653 packages/apputils-extension/src/index.ts:658
 msgid "Show Keyboard Shortcuts…"
@@ -3221,10 +3231,10 @@ msgstr "Licencje"
 #: packages/apputils-extension/src/notificationplugin.tsx:166 packages/apputils-extension/src/notificationplugin.tsx:167 packages/apputils-extension/src/notificationplugin.tsx:353 packages/apputils-extension/src/notificationplugin.tsx:354 packages/apputils-extension/src/notificationplugin.tsx:362
 msgid "%1 notification"
 msgid_plural "%1 notifications"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "1 powiadomienie"
+msgstr[1] "powiadomienia"
+msgstr[2] "powiadomień"
+msgstr[3] "powiadomienia"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:167 packages/apputils-extension/src/notificationplugin.tsx:168 packages/apputils-extension/src/notificationplugin.tsx:354 packages/apputils-extension/src/notificationplugin.tsx:355 packages/apputils-extension/src/notificationplugin.tsx:363
 msgid "No notifications"
@@ -3248,15 +3258,15 @@ msgstr "Wyślij powiadomienie"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:402 packages/apputils-extension/src/notificationplugin.tsx:403 packages/apputils-extension/src/notificationplugin.tsx:411
 msgid "Notification is described by {message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
-msgstr ""
+msgstr "Powiadomienie jest opisane przez {message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args? ReadOnlyJSONObject, podpis?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
 
 #: packages/apputils-extension/src/notificationplugin.tsx:439 packages/apputils-extension/src/notificationplugin.tsx:440 packages/apputils-extension/src/notificationplugin.tsx:448
 msgid "Update a notification"
-msgstr ""
+msgstr "Aktualizacja powiadomienia"
 
 #: packages/apputils-extension/src/notificationplugin.tsx:440 packages/apputils-extension/src/notificationplugin.tsx:441 packages/apputils-extension/src/notificationplugin.tsx:449
 msgid "Notification is described by {id: string, message: string, type?: string, options?: {autoClose?: number | false, actions: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
-msgstr ""
+msgstr "Powiadomienie jest opisane przez {id: string, message: string, type?: string, opcje?: {autoClose? liczba | false, akcje: {label: string, commandId: string, args?: ReadOnlyJSONObject, caption?: string, className?: string}[], data?: ReadOnlyJSONValue}}."
 
 #: packages/apputils-extension/src/notificationplugin.tsx:479 packages/apputils-extension/src/notificationplugin.tsx:480 packages/apputils-extension/src/notificationplugin.tsx:488
 msgid "Dismiss a notification"
@@ -3300,7 +3310,7 @@ msgstr "Skróty klawiszowe"
 
 #: packages/apputils-extension/src/themesplugins.ts:112 packages/apputils-extension/src/themesplugins.ts:118 packages/apputils-extension/src/themesplugins.ts:121
 msgid "Switch to the provided `theme`."
-msgstr ""
+msgstr "Przełącz na podany `motyw`."
 
 #: packages/apputils-extension/src/themesplugins.ts:117 packages/apputils-extension/src/themesplugins.ts:123 packages/apputils-extension/src/themesplugins.ts:126
 msgid "Use Theme: %1"
@@ -3316,11 +3326,11 @@ msgstr "oczekiwanie na czcionki"
 
 #: packages/apputils-extension/src/themesplugins.ts:143 packages/apputils-extension/src/themesplugins.ts:146
 msgid "Switch to the provided light `theme`."
-msgstr ""
+msgstr "Przełącz na podany jasny `motyw`."
 
 #: packages/apputils-extension/src/themesplugins.ts:148 packages/apputils-extension/src/themesplugins.ts:151
 msgid "Set Preferred Light Theme: %1"
-msgstr ""
+msgstr "Ustaw preferowany jasny motyw: %1"
 
 #: packages/apputils-extension/src/themesplugins.ts:149 packages/apputils-extension/src/themesplugins.ts:213 packages/apputils-extension/src/themesplugins.ts:216
 msgid "Increase Code Font Size"
@@ -3340,7 +3350,7 @@ msgstr "Zwiększ rozmiar czcionki"
 
 #: packages/apputils-extension/src/themesplugins.ts:164 packages/apputils-extension/src/themesplugins.ts:167
 msgid "Switch to the provided dark `theme`."
-msgstr ""
+msgstr "Przełącz na podany ciemny 'motyw'."
 
 #: packages/apputils-extension/src/themesplugins.ts:165 packages/apputils-extension/src/themesplugins.ts:229 packages/apputils-extension/src/themesplugins.ts:232
 msgid "Decrease Code Font Size"
@@ -3352,7 +3362,7 @@ msgstr "Zmniejsz rozmiar czcionki treści"
 
 #: packages/apputils-extension/src/themesplugins.ts:169 packages/apputils-extension/src/themesplugins.ts:172
 msgid "Set Preferred Dark Theme: %1"
-msgstr ""
+msgstr "Ustaw Preferowany Ciemny Motyw: %1"
 
 #: packages/apputils-extension/src/themesplugins.ts:169 packages/apputils-extension/src/themesplugins.ts:233 packages/apputils-extension/src/themesplugins.ts:236
 msgid "Decrease UI Font Size"
@@ -3364,7 +3374,7 @@ msgstr "Zmniejsz Rozmiar Czcionki"
 
 #: packages/apputils-extension/src/themesplugins.ts:186 packages/apputils-extension/src/themesplugins.ts:189
 msgid "Synchronize Styling Theme with System Settings"
-msgstr ""
+msgstr "Synchronizuj motyw stylu wizualnego z ustawieniami systemowymi"
 
 #: packages/apputils-extension/src/themesplugins.ts:187 packages/apputils-extension/src/themesplugins.ts:190
 msgid "Synchronize with System Settings"
@@ -3588,7 +3598,7 @@ msgstr "Połącz z istniejącym rdzeniem obliczeniowym"
 
 #: packages/apputils/src/sessioncontext.tsx:1647
 msgid "Start %1 Kernel"
-msgstr ""
+msgstr "Uruchom rdzeń obliczeniowy"
 
 #: packages/apputils/src/sessioncontext.tsx:1648 packages/apputils/src/sessioncontext.tsx:1652
 msgid "Start Kernel"
@@ -3596,7 +3606,7 @@ msgstr "Uruchom rdzeń obliczeniowy"
 
 #: packages/apputils/src/sessioncontext.tsx:1649
 msgid "Connect to Existing %1 Kernel"
-msgstr ""
+msgstr "Połącz z istniejącym rdzeniem obliczeniowym"
 
 #: packages/apputils/src/sessioncontext.tsx:1650
 msgid "Connect to Other Kernel"
@@ -3684,7 +3694,7 @@ msgstr "Zresetuj jądro"
 
 #: packages/cell-toolbar/src/celltoolbartracker.ts:200 packages/cell-toolbar/src/celltoolbartracker.ts:204
 msgid "Cell toolbar"
-msgstr ""
+msgstr "Pasek narzędzi komórki"
 
 #: packages/cells/src/placeholder.ts:85
 msgid "Click to expand"
@@ -3692,27 +3702,27 @@ msgstr "Kliknij aby rozwinąć"
 
 #: packages/cells/src/widget.ts:1009 packages/cells/src/widget.ts:1010 packages/cells/src/widget.ts:1012 packages/cells/src/widget.ts:1075 packages/cells/src/widget.ts:1086 packages/cells/src/widget.ts:1091 packages/cells/src/widget.ts:1094 packages/cells/src/widget.ts:1096 packages/cells/src/widget.ts:1099 packages/cells/src/widget.ts:1101 packages/cells/src/widget.ts:1225 packages/cells/src/widget.ts:1236 packages/cells/src/widget.ts:1242 packages/cells/src/widget.ts:1466 packages/cells/src/widget.ts:1468 packages/cells/src/widget.ts:1506 packages/cells/src/widget.ts:1508 packages/cells/src/widget.ts:1509 packages/cells/src/widget.ts:1646 packages/cells/src/widget.ts:1675 packages/cells/src/widget.ts:1682 packages/cells/src/widget.ts:1688
 msgid "Code Cell Content"
-msgstr ""
+msgstr "Zawartość komórki kodu"
 
 #: packages/cells/src/widget.ts:1010 packages/cells/src/widget.ts:1011 packages/cells/src/widget.ts:1013 packages/cells/src/widget.ts:1076 packages/cells/src/widget.ts:1087 packages/cells/src/widget.ts:1092 packages/cells/src/widget.ts:1095 packages/cells/src/widget.ts:1097 packages/cells/src/widget.ts:1100 packages/cells/src/widget.ts:1102 packages/cells/src/widget.ts:1226 packages/cells/src/widget.ts:1237 packages/cells/src/widget.ts:1243 packages/cells/src/widget.ts:1467 packages/cells/src/widget.ts:1469 packages/cells/src/widget.ts:1507 packages/cells/src/widget.ts:1509 packages/cells/src/widget.ts:1510 packages/cells/src/widget.ts:1647 packages/cells/src/widget.ts:1676 packages/cells/src/widget.ts:1683 packages/cells/src/widget.ts:1689
 msgid "Code Cell Content with Output"
-msgstr ""
+msgstr "Zawartość komórki kodu wraz z wynikiem"
 
 #: packages/cells/src/widget.ts:1875 packages/cells/src/widget.ts:1884 packages/cells/src/widget.ts:1886 packages/cells/src/widget.ts:1931 packages/cells/src/widget.ts:1933 packages/cells/src/widget.ts:1935 packages/cells/src/widget.ts:1936 packages/cells/src/widget.ts:2076 packages/cells/src/widget.ts:2114 packages/cells/src/widget.ts:2115 packages/cells/src/widget.ts:2122 packages/cells/src/widget.ts:2124 packages/cells/src/widget.ts:2128
 msgid "Markdown Cell Content"
-msgstr ""
+msgstr "Zawartość komórki Markdown"
 
 #: packages/cells/src/widget.ts:2118 packages/cells/src/widget.ts:2127 packages/cells/src/widget.ts:2129 packages/cells/src/widget.ts:2174 packages/cells/src/widget.ts:2176 packages/cells/src/widget.ts:2178 packages/cells/src/widget.ts:2179 packages/cells/src/widget.ts:2319 packages/cells/src/widget.ts:2357 packages/cells/src/widget.ts:2358 packages/cells/src/widget.ts:2365 packages/cells/src/widget.ts:2367 packages/cells/src/widget.ts:2371
 msgid "%1 cell hidden"
 msgid_plural "%1 cells hidden"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "ukryta komórka"
+msgstr[1] "ukrytych komórek"
+msgstr[2] "ukrytych komórek"
+msgstr[3] "ukryte komórki"
 
 #: packages/cells/src/widget.ts:2338 packages/cells/src/widget.ts:2347 packages/cells/src/widget.ts:2350 packages/cells/src/widget.ts:2352 packages/cells/src/widget.ts:2397 packages/cells/src/widget.ts:2399 packages/cells/src/widget.ts:2401 packages/cells/src/widget.ts:2402 packages/cells/src/widget.ts:2542 packages/cells/src/widget.ts:2580 packages/cells/src/widget.ts:2581 packages/cells/src/widget.ts:2588 packages/cells/src/widget.ts:2590 packages/cells/src/widget.ts:2594
 msgid "Raw Cell Content"
-msgstr ""
+msgstr "Zawartość komórki 'raw'"
 
 #: packages/celltags-extension/src/celltag.tsx:211
 msgid "Add Tag"
@@ -3748,11 +3758,11 @@ msgstr ""
 
 #: packages/codemirror-extension/src/commands.ts:109
 msgid "Toggle Tab Focus Mode"
-msgstr ""
+msgstr "Tryb nawigacji klawiszem Tab"
 
 #: packages/codemirror-extension/src/commands.ts:110
 msgid "Toggles behavior of Tab key between inserting indentation and moving to next focusable element"
-msgstr ""
+msgstr "Określ, czy klawisz Tab ma dodawać wcięcie, czy przeskakiwać do kolejnego pola"
 
 #: packages/codemirror-extension/src/commands.ts:68 packages/codemirror-extension/src/commands.ts:70
 msgid "Delete the current line"
@@ -3784,11 +3794,11 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:1002 packages/codemirror/src/extension.ts:1026 packages/codemirror/src/extension.ts:1048 packages/codemirror/src/extension.ts:871 packages/codemirror/src/extension.ts:885 packages/codemirror/src/extension.ts:891
 msgid "to"
-msgstr ""
+msgstr "do"
 
 #: packages/codemirror/src/extension.ts:1003 packages/codemirror/src/extension.ts:1027 packages/codemirror/src/extension.ts:1049 packages/codemirror/src/extension.ts:872 packages/codemirror/src/extension.ts:886 packages/codemirror/src/extension.ts:892
 msgid "folded code"
-msgstr ""
+msgstr "Zwinięty kod"
 
 #: packages/codemirror/src/extension.ts:1004 packages/codemirror/src/extension.ts:1028 packages/codemirror/src/extension.ts:1050 packages/codemirror/src/extension.ts:873 packages/codemirror/src/extension.ts:887 packages/codemirror/src/extension.ts:893
 msgid "unfold"
@@ -3796,7 +3806,7 @@ msgstr "rozwiń"
 
 #: packages/codemirror/src/extension.ts:1005 packages/codemirror/src/extension.ts:1029 packages/codemirror/src/extension.ts:1051 packages/codemirror/src/extension.ts:874 packages/codemirror/src/extension.ts:888 packages/codemirror/src/extension.ts:894
 msgid "Fold line"
-msgstr ""
+msgstr "Zwiń linię"
 
 #: packages/codemirror/src/extension.ts:1005 packages/codemirror/src/extension.ts:828 packages/codemirror/src/extension.ts:842 packages/codemirror/src/extension.ts:848 packages/codemirror/src/extension.ts:959 packages/codemirror/src/extension.ts:983
 msgid "Font Size"
@@ -3804,7 +3814,7 @@ msgstr "Rozmiar czcionki"
 
 #: packages/codemirror/src/extension.ts:1006 packages/codemirror/src/extension.ts:1030 packages/codemirror/src/extension.ts:1052 packages/codemirror/src/extension.ts:875 packages/codemirror/src/extension.ts:889 packages/codemirror/src/extension.ts:895
 msgid "Unfold line"
-msgstr ""
+msgstr "Rozwiń linię"
 
 #: packages/codemirror/src/extension.ts:1007 packages/codemirror/src/extension.ts:1029 packages/codemirror/src/extension.ts:852 packages/codemirror/src/extension.ts:866 packages/codemirror/src/extension.ts:872 packages/codemirror/src/extension.ts:983
 msgid "CodeMirror theme"
@@ -3812,7 +3822,7 @@ msgstr "Motyw CodeMirror"
 
 #: packages/codemirror/src/extension.ts:1008 packages/codemirror/src/extension.ts:1032 packages/codemirror/src/extension.ts:1054 packages/codemirror/src/extension.ts:877 packages/codemirror/src/extension.ts:891 packages/codemirror/src/extension.ts:897
 msgid "Go to line"
-msgstr ""
+msgstr "Przejdź do linii"
 
 #: packages/codemirror/src/extension.ts:1009 packages/codemirror/src/extension.ts:1033 packages/codemirror/src/extension.ts:1055 packages/codemirror/src/extension.ts:878 packages/codemirror/src/extension.ts:892 packages/codemirror/src/extension.ts:898
 msgid "go"
@@ -3836,11 +3846,11 @@ msgstr "następny"
 
 #: packages/codemirror/src/extension.ts:1013 packages/codemirror/src/extension.ts:1037 packages/codemirror/src/extension.ts:1059 packages/codemirror/src/extension.ts:882 packages/codemirror/src/extension.ts:896 packages/codemirror/src/extension.ts:902
 msgid "previous"
-msgstr ""
+msgstr "poprzedni"
 
 #: packages/codemirror/src/extension.ts:1014 packages/codemirror/src/extension.ts:1038 packages/codemirror/src/extension.ts:1060 packages/codemirror/src/extension.ts:883 packages/codemirror/src/extension.ts:897 packages/codemirror/src/extension.ts:903
 msgid "all"
-msgstr ""
+msgstr "wszystko"
 
 #: packages/codemirror/src/extension.ts:1015 packages/codemirror/src/extension.ts:1039 packages/codemirror/src/extension.ts:1061 packages/codemirror/src/extension.ts:884 packages/codemirror/src/extension.ts:898 packages/codemirror/src/extension.ts:904
 msgid "match case"
@@ -3848,15 +3858,15 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:1016 packages/codemirror/src/extension.ts:1040 packages/codemirror/src/extension.ts:1062 packages/codemirror/src/extension.ts:885 packages/codemirror/src/extension.ts:899 packages/codemirror/src/extension.ts:905
 msgid "replace"
-msgstr ""
+msgstr "zastąp"
 
 #: packages/codemirror/src/extension.ts:1017 packages/codemirror/src/extension.ts:1041 packages/codemirror/src/extension.ts:1063 packages/codemirror/src/extension.ts:886 packages/codemirror/src/extension.ts:900 packages/codemirror/src/extension.ts:906
 msgid "replace all"
-msgstr ""
+msgstr "Zastąp wszystko"
 
 #: packages/codemirror/src/extension.ts:1018 packages/codemirror/src/extension.ts:1042 packages/codemirror/src/extension.ts:1064 packages/codemirror/src/extension.ts:887 packages/codemirror/src/extension.ts:901 packages/codemirror/src/extension.ts:907
 msgid "close"
-msgstr ""
+msgstr "zamknij"
 
 #: packages/codemirror/src/extension.ts:1019 packages/codemirror/src/extension.ts:1043 packages/codemirror/src/extension.ts:1065 packages/codemirror/src/extension.ts:888 packages/codemirror/src/extension.ts:902 packages/codemirror/src/extension.ts:908
 msgid "current match"
@@ -3864,7 +3874,7 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:1020 packages/codemirror/src/extension.ts:1042 packages/codemirror/src/extension.ts:865 packages/codemirror/src/extension.ts:879 packages/codemirror/src/extension.ts:885 packages/codemirror/src/extension.ts:996
 msgid "Control character"
-msgstr ""
+msgstr "Znak kontrolny"
 
 #: packages/codemirror/src/extension.ts:1020 packages/codemirror/src/extension.ts:1044 packages/codemirror/src/extension.ts:1066 packages/codemirror/src/extension.ts:889 packages/codemirror/src/extension.ts:903 packages/codemirror/src/extension.ts:909
 msgid "replaced $ matches"
@@ -3876,63 +3886,63 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:1022 packages/codemirror/src/extension.ts:1044 packages/codemirror/src/extension.ts:867 packages/codemirror/src/extension.ts:881 packages/codemirror/src/extension.ts:887 packages/codemirror/src/extension.ts:998
 msgid "Selection deleted"
-msgstr ""
+msgstr "Zaznaczenie usunięte"
 
 #: packages/codemirror/src/extension.ts:1022 packages/codemirror/src/extension.ts:1046 packages/codemirror/src/extension.ts:1068 packages/codemirror/src/extension.ts:891 packages/codemirror/src/extension.ts:905 packages/codemirror/src/extension.ts:911
 msgid "on line"
-msgstr ""
+msgstr "w linii"
 
 #: packages/codemirror/src/extension.ts:1024 packages/codemirror/src/extension.ts:1048 packages/codemirror/src/extension.ts:1070 packages/codemirror/src/extension.ts:893 packages/codemirror/src/extension.ts:907 packages/codemirror/src/extension.ts:913
 msgid "Completions"
-msgstr ""
+msgstr "\n"
 
 #: packages/codemirror/src/extension.ts:1026 packages/codemirror/src/extension.ts:1050 packages/codemirror/src/extension.ts:1072 packages/codemirror/src/extension.ts:895 packages/codemirror/src/extension.ts:909 packages/codemirror/src/extension.ts:915
 msgid "Diagnostics"
-msgstr ""
+msgstr "Diagnostyka"
 
 #: packages/codemirror/src/extension.ts:1027 packages/codemirror/src/extension.ts:1051 packages/codemirror/src/extension.ts:1073 packages/codemirror/src/extension.ts:896 packages/codemirror/src/extension.ts:910 packages/codemirror/src/extension.ts:916
 msgid "No diagnostics"
-msgstr ""
+msgstr "Brak problemów"
 
 #: packages/codemirror/src/extension.ts:608 packages/codemirror/src/extension.ts:609 packages/codemirror/src/extension.ts:610 packages/codemirror/src/extension.ts:618 packages/codemirror/src/extension.ts:619 packages/codemirror/src/extension.ts:625
 msgid "Auto Closing Brackets"
-msgstr ""
+msgstr "Automatyczne zamykanie nawiasów"
 
 #: packages/codemirror/src/extension.ts:617 packages/codemirror/src/extension.ts:618 packages/codemirror/src/extension.ts:619 packages/codemirror/src/extension.ts:627 packages/codemirror/src/extension.ts:628 packages/codemirror/src/extension.ts:634
 msgid "Code Folding"
-msgstr ""
+msgstr "Zwijanie kodu"
 
 #: packages/codemirror/src/extension.ts:629 packages/codemirror/src/extension.ts:630 packages/codemirror/src/extension.ts:631 packages/codemirror/src/extension.ts:639 packages/codemirror/src/extension.ts:640 packages/codemirror/src/extension.ts:646
 msgid "Cursor blinking rate"
-msgstr ""
+msgstr "Częstotliwość migania kursora"
 
 #: packages/codemirror/src/extension.ts:630 packages/codemirror/src/extension.ts:631 packages/codemirror/src/extension.ts:632 packages/codemirror/src/extension.ts:640 packages/codemirror/src/extension.ts:641 packages/codemirror/src/extension.ts:647
 msgid "Half-period in milliseconds used for cursor blinking. The default blink rate is 1200ms. By setting this to zero, blinking can be disabled."
-msgstr ""
+msgstr "Połowa cyklu migania kursora, wyrażona w milisekundach. Domyślna wartość to 1200ms. Ustawienie wartości 0 wyłącza miganie kursora."
 
 #: packages/codemirror/src/extension.ts:641 packages/codemirror/src/extension.ts:642 packages/codemirror/src/extension.ts:643 packages/codemirror/src/extension.ts:651 packages/codemirror/src/extension.ts:652 packages/codemirror/src/extension.ts:658
 msgid "Highlight the active line"
-msgstr ""
+msgstr "Wyróżnij aktywną linię"
 
 #: packages/codemirror/src/extension.ts:651 packages/codemirror/src/extension.ts:652 packages/codemirror/src/extension.ts:653 packages/codemirror/src/extension.ts:670 packages/codemirror/src/extension.ts:671 packages/codemirror/src/extension.ts:677
 msgid "Highlight trailing white spaces"
-msgstr ""
+msgstr "Podświetl spacje na końcu linii"
 
 #: packages/codemirror/src/extension.ts:660 packages/codemirror/src/extension.ts:661 packages/codemirror/src/extension.ts:662 packages/codemirror/src/extension.ts:679 packages/codemirror/src/extension.ts:680 packages/codemirror/src/extension.ts:686
 msgid "Highlight white spaces"
-msgstr ""
+msgstr "Podświetl wszystkie puste znaki"
 
 #: packages/codemirror/src/extension.ts:660 packages/codemirror/src/extension.ts:661 packages/codemirror/src/extension.ts:667
 msgid "Highlight special characters"
-msgstr ""
+msgstr "Podświetl znaki specjalne"
 
 #: packages/codemirror/src/extension.ts:674 packages/codemirror/src/extension.ts:675 packages/codemirror/src/extension.ts:676 packages/codemirror/src/extension.ts:693 packages/codemirror/src/extension.ts:694 packages/codemirror/src/extension.ts:700
 msgid "Indentation unit"
-msgstr ""
+msgstr "Rozmiar wcięcia"
 
 #: packages/codemirror/src/extension.ts:675 packages/codemirror/src/extension.ts:676 packages/codemirror/src/extension.ts:677 packages/codemirror/src/extension.ts:694 packages/codemirror/src/extension.ts:695 packages/codemirror/src/extension.ts:701
 msgid "The indentation is a `Tab` or the number of spaces. This defaults to 4 spaces."
-msgstr ""
+msgstr "Wcięcie jest 'Tab' lub liczbą spacji. Domyślnie ustawione na 4 spacje."
 
 #: packages/codemirror/src/extension.ts:702 packages/codemirror/src/extension.ts:703 packages/codemirror/src/extension.ts:704 packages/codemirror/src/extension.ts:730 packages/codemirror/src/extension.ts:755 packages/codemirror/src/extension.ts:768
 msgid "Line Numbers"
@@ -3952,15 +3962,15 @@ msgstr "Zaznaczenie prostokątne"
 
 #: packages/codemirror/src/extension.ts:734 packages/codemirror/src/extension.ts:735 packages/codemirror/src/extension.ts:741 packages/codemirror/src/extension.ts:767 packages/codemirror/src/extension.ts:792 packages/codemirror/src/extension.ts:814
 msgid "Rectangular (block) selection can be created by dragging the mouse pointer while holding the left mouse button and the Alt key. When the Alt key is pressed, a crosshair cursor will appear, indicating that the rectangular selection mode is active."
-msgstr ""
+msgstr "Zaznaczenie prostokątne ('block') można utworzyć, przeciągając kursor myszy z wciśniętym lewym przyciskiem myszy oraz klawiszem Alt. Po naciśnięciu klawisza Alt pojawi się kursor w kształcie celownika, sygnalizujący aktywny tryb zaznaczenia blokowego."
 
 #: packages/codemirror/src/extension.ts:759 packages/codemirror/src/extension.ts:760 packages/codemirror/src/extension.ts:766 packages/codemirror/src/extension.ts:792 packages/codemirror/src/extension.ts:817 packages/codemirror/src/extension.ts:839
 msgid "Rulers"
-msgstr ""
+msgstr "Linijki"
 
 #: packages/codemirror/src/extension.ts:778 packages/codemirror/src/extension.ts:779 packages/codemirror/src/extension.ts:785 packages/codemirror/src/extension.ts:860 packages/codemirror/src/extension.ts:884 packages/codemirror/src/extension.ts:906
 msgid "Smart Indentation"
-msgstr ""
+msgstr "Inteligentne wcięcia"
 
 #: packages/codemirror/src/extension.ts:786
 msgid "Drop Cursor"
@@ -3968,7 +3978,7 @@ msgstr ""
 
 #: packages/codemirror/src/extension.ts:790 packages/codemirror/src/extension.ts:791 packages/codemirror/src/extension.ts:797 packages/codemirror/src/extension.ts:908 packages/codemirror/src/extension.ts:932 packages/codemirror/src/extension.ts:954
 msgid "Tab size"
-msgstr ""
+msgstr "Rozmiar tabulacji"
 
 #: packages/codemirror/src/extension.ts:802 packages/codemirror/src/extension.ts:816 packages/codemirror/src/extension.ts:822 packages/codemirror/src/extension.ts:933 packages/codemirror/src/extension.ts:957 packages/codemirror/src/extension.ts:979
 msgid "Multiple selections"
@@ -3984,23 +3994,23 @@ msgstr "Czcionka"
 
 #: packages/codemirror/src/language.ts:1003 packages/codemirror/src/language.ts:996
 msgid "IDL"
-msgstr ""
+msgstr "IDL"
 
 #: packages/codemirror/src/language.ts:1006 packages/codemirror/src/language.ts:1013
 msgid "JSON-LD"
-msgstr ""
+msgstr "JSON-LD"
 
 #: packages/codemirror/src/language.ts:1017 packages/codemirror/src/language.ts:1024
 msgid "Jinja2"
-msgstr ""
+msgstr "Jinja2"
 
 #: packages/codemirror/src/language.ts:1027 packages/codemirror/src/language.ts:1034
 msgid "Julia"
-msgstr ""
+msgstr "Julia"
 
 #: packages/codemirror/src/language.ts:1037 packages/codemirror/src/language.ts:1044
 msgid "Kotlin"
-msgstr ""
+msgstr "Kotlin"
 
 #: packages/codemirror/src/language.ts:1047 packages/codemirror/src/language.ts:1054
 msgid "LESS"
@@ -4008,59 +4018,59 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1057 packages/codemirror/src/language.ts:1064
 msgid "LiveScript"
-msgstr ""
+msgstr "LiveScript"
 
 #: packages/codemirror/src/language.ts:1068 packages/codemirror/src/language.ts:1075
 msgid "Lua"
-msgstr ""
+msgstr "Lua"
 
 #: packages/codemirror/src/language.ts:1078 packages/codemirror/src/language.ts:1085
 msgid "mIRC"
-msgstr ""
+msgstr "mIRC"
 
 #: packages/codemirror/src/language.ts:1087 packages/codemirror/src/language.ts:1094
 msgid "Mathematica"
-msgstr ""
+msgstr "Mathematica"
 
 #: packages/codemirror/src/language.ts:1097 packages/codemirror/src/language.ts:1104
 msgid "Modelica"
-msgstr ""
+msgstr "Modelica"
 
 #: packages/codemirror/src/language.ts:1107 packages/codemirror/src/language.ts:1114
 msgid "MUMPS"
-msgstr ""
+msgstr "MUMPS"
 
 #: packages/codemirror/src/language.ts:1117 packages/codemirror/src/language.ts:1124
 msgid "mbox"
-msgstr ""
+msgstr "mbox"
 
 #: packages/codemirror/src/language.ts:1127 packages/codemirror/src/language.ts:1134
 msgid "Nginx"
-msgstr ""
+msgstr "Nginx"
 
 #: packages/codemirror/src/language.ts:1137 packages/codemirror/src/language.ts:1144
 msgid "NSIS"
-msgstr ""
+msgstr "NSIS"
 
 #: packages/codemirror/src/language.ts:1147 packages/codemirror/src/language.ts:1154
 msgid "NTriples"
-msgstr ""
+msgstr "NTriples"
 
 #: packages/codemirror/src/language.ts:1161 packages/codemirror/src/language.ts:1168
 msgid "Objective-C"
-msgstr ""
+msgstr "Objective-C"
 
 #: packages/codemirror/src/language.ts:1172 packages/codemirror/src/language.ts:1179
 msgid "Objective-C++"
-msgstr ""
+msgstr "Objective-C++"
 
 #: packages/codemirror/src/language.ts:1183 packages/codemirror/src/language.ts:1190
 msgid "OCaml"
-msgstr ""
+msgstr "OCaml"
 
 #: packages/codemirror/src/language.ts:1193 packages/codemirror/src/language.ts:1200
 msgid "Octave"
-msgstr ""
+msgstr "Octave"
 
 #: packages/codemirror/src/language.ts:1203 packages/codemirror/src/language.ts:1210
 msgid "Oz"
@@ -4068,7 +4078,7 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1213 packages/codemirror/src/language.ts:1220
 msgid "Pascal"
-msgstr ""
+msgstr "Pascal"
 
 #: packages/codemirror/src/language.ts:1223 packages/codemirror/src/language.ts:1230
 msgid "Perl"
@@ -4080,19 +4090,19 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1243 packages/codemirror/src/language.ts:1250
 msgid "PowerShell"
-msgstr ""
+msgstr "PowerShell"
 
 #: packages/codemirror/src/language.ts:1253 packages/codemirror/src/language.ts:1260
 msgid "Properties files"
-msgstr ""
+msgstr "Pliki właściwości"
 
 #: packages/codemirror/src/language.ts:1264 packages/codemirror/src/language.ts:1271
 msgid "ProtoBuf"
-msgstr ""
+msgstr "ProtoBuf"
 
 #: packages/codemirror/src/language.ts:1274 packages/codemirror/src/language.ts:1281 packages/codemirror/src/language.ts:1291
 msgid "Puppet"
-msgstr ""
+msgstr "Puppet"
 
 #: packages/codemirror/src/language.ts:1281
 msgid "Pug"
@@ -4100,11 +4110,11 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1284 packages/codemirror/src/language.ts:1291 packages/codemirror/src/language.ts:1301
 msgid "Q"
-msgstr ""
+msgstr "Q"
 
 #: packages/codemirror/src/language.ts:1294 packages/codemirror/src/language.ts:1301 packages/codemirror/src/language.ts:1311
 msgid "R"
-msgstr ""
+msgstr "R"
 
 #: packages/codemirror/src/language.ts:1305 packages/codemirror/src/language.ts:1312 packages/codemirror/src/language.ts:1322
 msgid "RPM Changes"
@@ -4112,19 +4122,19 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1314 packages/codemirror/src/language.ts:1321 packages/codemirror/src/language.ts:1331
 msgid "RPM Spec"
-msgstr ""
+msgstr "RPM Spec"
 
 #: packages/codemirror/src/language.ts:1324 packages/codemirror/src/language.ts:1331 packages/codemirror/src/language.ts:1341
 msgid "Ruby"
-msgstr ""
+msgstr "Ruby"
 
 #: packages/codemirror/src/language.ts:1335 packages/codemirror/src/language.ts:1342 packages/codemirror/src/language.ts:1352
 msgid "SAS"
-msgstr ""
+msgstr "SAS"
 
 #: packages/codemirror/src/language.ts:1345 packages/codemirror/src/language.ts:1352 packages/codemirror/src/language.ts:1362
 msgid "Scala"
-msgstr ""
+msgstr "Scala"
 
 #: packages/codemirror/src/language.ts:1355 packages/codemirror/src/language.ts:1362 packages/codemirror/src/language.ts:1372
 msgid "Scheme"
@@ -4132,7 +4142,7 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1365 packages/codemirror/src/language.ts:1372 packages/codemirror/src/language.ts:1382
 msgid "SCSS"
-msgstr ""
+msgstr "SCSS"
 
 #: packages/codemirror/src/language.ts:1375 packages/codemirror/src/language.ts:1382 packages/codemirror/src/language.ts:1392
 msgid "Shell"
@@ -4144,19 +4154,19 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1397 packages/codemirror/src/language.ts:1404 packages/codemirror/src/language.ts:1414
 msgid "Smalltalk"
-msgstr ""
+msgstr "Smalltalk"
 
 #: packages/codemirror/src/language.ts:1407 packages/codemirror/src/language.ts:1414 packages/codemirror/src/language.ts:1424
 msgid "Solr"
-msgstr ""
+msgstr "Solr"
 
 #: packages/codemirror/src/language.ts:1416 packages/codemirror/src/language.ts:1423 packages/codemirror/src/language.ts:1433
 msgid "SML"
-msgstr ""
+msgstr "SML"
 
 #: packages/codemirror/src/language.ts:1426 packages/codemirror/src/language.ts:1433 packages/codemirror/src/language.ts:1443
 msgid "SPARQL"
-msgstr ""
+msgstr "SPARQL"
 
 #: packages/codemirror/src/language.ts:1437 packages/codemirror/src/language.ts:1444 packages/codemirror/src/language.ts:1454
 msgid "Spreadsheet"
@@ -4164,7 +4174,7 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1447 packages/codemirror/src/language.ts:1454 packages/codemirror/src/language.ts:1464
 msgid "Squirrel"
-msgstr ""
+msgstr "Squirrel"
 
 #: packages/codemirror/src/language.ts:1457 packages/codemirror/src/language.ts:1464 packages/codemirror/src/language.ts:1474
 msgid "Stylus"
@@ -4176,35 +4186,35 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1477 packages/codemirror/src/language.ts:1484 packages/codemirror/src/language.ts:1494
 msgid "sTeX"
-msgstr ""
+msgstr "sTeX"
 
 #: packages/codemirror/src/language.ts:1486 packages/codemirror/src/language.ts:1493 packages/codemirror/src/language.ts:1503 packages/notebook-extension/src/index.ts:3678 packages/notebook-extension/src/index.ts:3684 packages/notebook-extension/src/index.ts:3703 packages/notebook-extension/src/index.ts:3800 packages/notebook-extension/src/index.ts:3807 packages/notebook-extension/src/index.ts:3866 packages/notebook-extension/src/index.ts:3885 packages/notebook-extension/src/index.ts:3886 packages/notebook-extension/src/index.ts:3922 packages/notebook-extension/src/index.ts:3935
 msgid "LaTeX"
-msgstr ""
+msgstr "LaTeX"
 
 #: packages/codemirror/src/language.ts:1497 packages/codemirror/src/language.ts:1504 packages/codemirror/src/language.ts:1514
 msgid "SystemVerilog"
-msgstr ""
+msgstr "SystemVerilog"
 
 #: packages/codemirror/src/language.ts:1507 packages/codemirror/src/language.ts:1514 packages/codemirror/src/language.ts:1524
 msgid "Tcl"
-msgstr ""
+msgstr "Tcl"
 
 #: packages/codemirror/src/language.ts:1517 packages/codemirror/src/language.ts:1524 packages/codemirror/src/language.ts:1534
 msgid "Textile"
-msgstr ""
+msgstr "Textile"
 
 #: packages/codemirror/src/language.ts:1527 packages/codemirror/src/language.ts:1534 packages/codemirror/src/language.ts:1544
 msgid "TiddlyWiki"
-msgstr ""
+msgstr "TiddlyWiki"
 
 #: packages/codemirror/src/language.ts:1536 packages/codemirror/src/language.ts:1543 packages/codemirror/src/language.ts:1553
 msgid "Tiki wiki"
-msgstr ""
+msgstr "Tiki wiki"
 
 #: packages/codemirror/src/language.ts:1545 packages/codemirror/src/language.ts:1552 packages/codemirror/src/language.ts:1562
 msgid "TOML"
-msgstr ""
+msgstr "TOML"
 
 #: packages/codemirror/src/language.ts:1555 packages/codemirror/src/language.ts:1562 packages/codemirror/src/language.ts:1572
 msgid "troff"
@@ -4212,227 +4222,227 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:1565 packages/codemirror/src/language.ts:1572 packages/codemirror/src/language.ts:1582
 msgid "TTCN"
-msgstr ""
+msgstr "TTCN"
 
 #: packages/codemirror/src/language.ts:1575 packages/codemirror/src/language.ts:1582 packages/codemirror/src/language.ts:1592
 msgid "TTCN_CFG"
-msgstr ""
+msgstr "TTCN_CFG"
 
 #: packages/codemirror/src/language.ts:1585 packages/codemirror/src/language.ts:1592 packages/codemirror/src/language.ts:1602
 msgid "Turtle"
-msgstr ""
+msgstr "Turtle"
 
 #: packages/codemirror/src/language.ts:1595 packages/codemirror/src/language.ts:1602 packages/codemirror/src/language.ts:1612
 msgid "Web IDL"
-msgstr ""
+msgstr "Web IDL"
 
 #: packages/codemirror/src/language.ts:1605 packages/codemirror/src/language.ts:1612 packages/codemirror/src/language.ts:1622
 msgid "VB.NET"
-msgstr ""
+msgstr "VB.NET"
 
 #: packages/codemirror/src/language.ts:1615 packages/codemirror/src/language.ts:1622 packages/codemirror/src/language.ts:1632
 msgid "VBScript"
-msgstr ""
+msgstr "VBScript"
 
 #: packages/codemirror/src/language.ts:1625 packages/codemirror/src/language.ts:1632 packages/codemirror/src/language.ts:1642
 msgid "Velocity"
-msgstr ""
+msgstr "Velocity"
 
 #: packages/codemirror/src/language.ts:1635 packages/codemirror/src/language.ts:1642 packages/codemirror/src/language.ts:1652
 msgid "Verilog"
-msgstr ""
+msgstr "Verilog"
 
 #: packages/codemirror/src/language.ts:1645 packages/codemirror/src/language.ts:1652 packages/codemirror/src/language.ts:1662
 msgid "VHDL"
-msgstr ""
+msgstr "VHDL"
 
 #: packages/codemirror/src/language.ts:1655 packages/codemirror/src/language.ts:1662 packages/codemirror/src/language.ts:1672
 msgid "XQuery"
-msgstr ""
+msgstr "XQuery"
 
 #: packages/codemirror/src/language.ts:1665 packages/codemirror/src/language.ts:1672 packages/codemirror/src/language.ts:1682
 msgid "Yacas"
-msgstr ""
+msgstr "Yacas"
 
 #: packages/codemirror/src/language.ts:1675 packages/codemirror/src/language.ts:1682 packages/codemirror/src/language.ts:1692
 msgid "YAML"
-msgstr ""
+msgstr "YAML"
 
 #: packages/codemirror/src/language.ts:1686 packages/codemirror/src/language.ts:1693 packages/codemirror/src/language.ts:1703
 msgid "Z80"
-msgstr ""
+msgstr "Z80"
 
 #: packages/codemirror/src/language.ts:1696 packages/codemirror/src/language.ts:1703 packages/codemirror/src/language.ts:1713
 msgid "mscgen"
-msgstr ""
+msgstr "mscgen"
 
 #: packages/codemirror/src/language.ts:1706 packages/codemirror/src/language.ts:1713 packages/codemirror/src/language.ts:1723
 msgid "xu"
-msgstr ""
+msgstr "xu"
 
 #: packages/codemirror/src/language.ts:1716 packages/codemirror/src/language.ts:1723 packages/codemirror/src/language.ts:1733
 msgid "msgenny"
-msgstr ""
+msgstr "msgenny"
 
 #: packages/codemirror/src/language.ts:307 packages/codemirror/src/language.ts:308
 msgid "C"
-msgstr ""
+msgstr "C"
 
 #: packages/codemirror/src/language.ts:317 packages/codemirror/src/language.ts:318
 msgid "C++"
-msgstr ""
+msgstr "C++"
 
 #: packages/codemirror/src/language.ts:327 packages/codemirror/src/language.ts:328
 msgid "CQL"
-msgstr ""
+msgstr "CQL"
 
 #: packages/codemirror/src/language.ts:336 packages/codemirror/src/language.ts:337
 msgid "CSS"
-msgstr ""
+msgstr "CSS"
 
 #: packages/codemirror/src/language.ts:346 packages/codemirror/src/language.ts:347 packages/notebook-extension/src/index.ts:3677 packages/notebook-extension/src/index.ts:3683 packages/notebook-extension/src/index.ts:3702 packages/notebook-extension/src/index.ts:3799 packages/notebook-extension/src/index.ts:3806 packages/notebook-extension/src/index.ts:3865 packages/notebook-extension/src/index.ts:3884 packages/notebook-extension/src/index.ts:3885 packages/notebook-extension/src/index.ts:3921 packages/notebook-extension/src/index.ts:3934
 msgid "HTML"
-msgstr ""
+msgstr "HTML"
 
 #: packages/codemirror/src/language.ts:357 packages/codemirror/src/language.ts:358
 msgid "Java"
-msgstr ""
+msgstr "Java"
 
 #: packages/codemirror/src/language.ts:367 packages/codemirror/src/language.ts:368
 msgid "Javascript"
-msgstr ""
+msgstr "Javascript"
 
 #: packages/codemirror/src/language.ts:384 packages/codemirror/src/language.ts:385
 msgid "JSON"
-msgstr ""
+msgstr "JSON"
 
 #: packages/codemirror/src/language.ts:395 packages/codemirror/src/language.ts:396
 msgid "JSX"
-msgstr ""
+msgstr "JSX"
 
 #: packages/codemirror/src/language.ts:405 packages/codemirror/src/language.ts:406
 msgid "MariaDB SQL"
-msgstr ""
+msgstr "MariaDB SQL"
 
 #: packages/codemirror/src/language.ts:413 packages/codemirror/src/language.ts:414 packages/notebook-extension/src/index.ts:3679 packages/notebook-extension/src/index.ts:3685 packages/notebook-extension/src/index.ts:3704 packages/notebook-extension/src/index.ts:3801 packages/notebook-extension/src/index.ts:3808 packages/notebook-extension/src/index.ts:3867 packages/notebook-extension/src/index.ts:3886 packages/notebook-extension/src/index.ts:3887 packages/notebook-extension/src/index.ts:3923 packages/notebook-extension/src/index.ts:3936 packages/notebook/src/default-toolbar.tsx:379
 msgid "Markdown"
-msgstr ""
+msgstr "Markdown"
 
 #: packages/codemirror/src/language.ts:423 packages/codemirror/src/language.ts:424
 msgid "MS SQL"
-msgstr ""
+msgstr "MS SQL"
 
 #: packages/codemirror/src/language.ts:431 packages/codemirror/src/language.ts:432
 msgid "MySQL"
-msgstr ""
+msgstr "MySQL"
 
 #: packages/codemirror/src/language.ts:439 packages/codemirror/src/language.ts:440
 msgid "PHP"
-msgstr ""
+msgstr "PHP"
 
 #: packages/codemirror/src/language.ts:453 packages/codemirror/src/language.ts:454
 msgid "PLSQL"
-msgstr ""
+msgstr "PLSQL"
 
 #: packages/codemirror/src/language.ts:462 packages/codemirror/src/language.ts:463
 msgid "PostgreSQL"
-msgstr ""
+msgstr "PostgreSQL"
 
 #: packages/codemirror/src/language.ts:470 packages/codemirror/src/language.ts:471
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: packages/codemirror/src/language.ts:481 packages/codemirror/src/language.ts:485
 msgid "ipython"
-msgstr ""
+msgstr "ipython"
 
 #: packages/codemirror/src/language.ts:493 packages/codemirror/src/language.ts:500
 msgid "Rust"
-msgstr ""
+msgstr "Rust"
 
 #: packages/codemirror/src/language.ts:503 packages/codemirror/src/language.ts:510
 msgid "SQL"
-msgstr ""
+msgstr "SQL"
 
 #: packages/codemirror/src/language.ts:512 packages/codemirror/src/language.ts:519
 msgid "SQLite"
-msgstr ""
+msgstr "SQLite"
 
 #: packages/codemirror/src/language.ts:520 packages/codemirror/src/language.ts:527
 msgid "TSX"
-msgstr ""
+msgstr "TSX"
 
 #: packages/codemirror/src/language.ts:531 packages/codemirror/src/language.ts:538
 msgid "TypeScript"
-msgstr ""
+msgstr "TypeScript"
 
 #: packages/codemirror/src/language.ts:542 packages/codemirror/src/language.ts:549
 msgid "WebAssembly"
-msgstr ""
+msgstr "WebAssembly"
 
 #: packages/codemirror/src/language.ts:552 packages/codemirror/src/language.ts:559
 msgid "XML"
-msgstr ""
+msgstr "XML"
 
 #: packages/codemirror/src/language.ts:564 packages/codemirror/src/language.ts:571
 msgid "APL"
-msgstr ""
+msgstr "APL"
 
 #: packages/codemirror/src/language.ts:574 packages/codemirror/src/language.ts:581
 msgid "PGP"
-msgstr ""
+msgstr "PGP"
 
 #: packages/codemirror/src/language.ts:590 packages/codemirror/src/language.ts:597
 msgid "ASN.1"
-msgstr ""
+msgstr "ASN.1"
 
 #: packages/codemirror/src/language.ts:600 packages/codemirror/src/language.ts:607
 msgid "Asterisk"
-msgstr ""
+msgstr "Asterisk"
 
 #: packages/codemirror/src/language.ts:610 packages/codemirror/src/language.ts:617
 msgid "Brainfuck"
-msgstr ""
+msgstr "Brainfuck"
 
 #: packages/codemirror/src/language.ts:620 packages/codemirror/src/language.ts:627
 msgid "Cobol"
-msgstr ""
+msgstr "Cobol"
 
 #: packages/codemirror/src/language.ts:630 packages/codemirror/src/language.ts:637
 msgid "C#"
-msgstr ""
+msgstr "C#"
 
 #: packages/codemirror/src/language.ts:641 packages/codemirror/src/language.ts:648
 msgid "Clojure"
-msgstr ""
+msgstr "Clojure"
 
 #: packages/codemirror/src/language.ts:651 packages/codemirror/src/language.ts:658
 msgid "ClojureScript"
-msgstr ""
+msgstr "ClojureScript"
 
 #: packages/codemirror/src/language.ts:661 packages/codemirror/src/language.ts:668
 msgid "Closure Stylesheets (GSS)"
-msgstr ""
+msgstr "Closure Stylesheets (GSS)"
 
 #: packages/codemirror/src/language.ts:671 packages/codemirror/src/language.ts:678
 msgid "CMake"
-msgstr ""
+msgstr "CMake"
 
 #: packages/codemirror/src/language.ts:682 packages/codemirror/src/language.ts:689
 msgid "CoffeeScript"
-msgstr ""
+msgstr "CoffeeScript"
 
 #: packages/codemirror/src/language.ts:697 packages/codemirror/src/language.ts:704
 msgid "Common Lisp"
-msgstr ""
+msgstr "Common Lisp"
 
 #: packages/codemirror/src/language.ts:708 packages/codemirror/src/language.ts:715
 msgid "Cypher"
-msgstr ""
+msgstr "Cypher"
 
 #: packages/codemirror/src/language.ts:718 packages/codemirror/src/language.ts:725
 msgid "Cython"
-msgstr ""
+msgstr "Cython"
 
 #: packages/codemirror/src/language.ts:728 packages/codemirror/src/language.ts:735
 msgid "Crystal"
@@ -4440,7 +4450,7 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:738 packages/codemirror/src/language.ts:745
 msgid "D"
-msgstr ""
+msgstr "D"
 
 #: packages/codemirror/src/language.ts:748 packages/codemirror/src/language.ts:755
 msgid "Dart"
@@ -4456,39 +4466,39 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:778 packages/codemirror/src/language.ts:785
 msgid "DTD"
-msgstr ""
+msgstr "DTD"
 
 #: packages/codemirror/src/language.ts:788 packages/codemirror/src/language.ts:795
 msgid "Dylan"
-msgstr ""
+msgstr "Dylan"
 
 #: packages/codemirror/src/language.ts:798 packages/codemirror/src/language.ts:805
 msgid "EBNF"
-msgstr ""
+msgstr "EBNF"
 
 #: packages/codemirror/src/language.ts:807 packages/codemirror/src/language.ts:814
 msgid "ECL"
-msgstr ""
+msgstr "ECL"
 
 #: packages/codemirror/src/language.ts:817 packages/codemirror/src/language.ts:824
 msgid "edn"
-msgstr ""
+msgstr "edn"
 
 #: packages/codemirror/src/language.ts:827 packages/codemirror/src/language.ts:834
 msgid "Eiffel"
-msgstr ""
+msgstr "Eiffel"
 
 #: packages/codemirror/src/language.ts:837 packages/codemirror/src/language.ts:844
 msgid "Elm"
-msgstr ""
+msgstr "Elm"
 
 #: packages/codemirror/src/language.ts:847 packages/codemirror/src/language.ts:854
 msgid "Erlang"
-msgstr ""
+msgstr "Erlang"
 
 #: packages/codemirror/src/language.ts:857 packages/codemirror/src/language.ts:864
 msgid "Esper"
-msgstr ""
+msgstr "Esper"
 
 #: packages/codemirror/src/language.ts:866 packages/codemirror/src/language.ts:873
 msgid "Factor"
@@ -4496,7 +4506,7 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:876 packages/codemirror/src/language.ts:883
 msgid "FCL"
-msgstr ""
+msgstr "FCL"
 
 #: packages/codemirror/src/language.ts:885 packages/codemirror/src/language.ts:892
 msgid "Forth"
@@ -4508,7 +4518,7 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:905 packages/codemirror/src/language.ts:912
 msgid "F#"
-msgstr ""
+msgstr "F#"
 
 #: packages/codemirror/src/language.ts:916 packages/codemirror/src/language.ts:923
 msgid "Gas"
@@ -4524,31 +4534,31 @@ msgstr ""
 
 #: packages/codemirror/src/language.ts:946 packages/codemirror/src/language.ts:953
 msgid "Groovy"
-msgstr ""
+msgstr "Groovy"
 
 #: packages/codemirror/src/language.ts:957 packages/codemirror/src/language.ts:964
 msgid "Haskell"
-msgstr ""
+msgstr "Haskell"
 
 #: packages/codemirror/src/language.ts:967 packages/codemirror/src/language.ts:974
 msgid "Haxe"
-msgstr ""
+msgstr "Haxe"
 
 #: packages/codemirror/src/language.ts:977 packages/codemirror/src/language.ts:984
 msgid "HXML"
-msgstr ""
+msgstr "HXML"
 
 #: packages/codemirror/src/language.ts:987 packages/codemirror/src/language.ts:994
 msgid "HTTP"
-msgstr ""
+msgstr "HTTP"
 
 #: packages/codemirror/src/theme.ts:215 packages/codemirror/src/theme.ts:225 packages/codemirror/src/theme.ts:229 packages/codemirror/src/theme.ts:234 packages/codemirror/src/theme.ts:238 packages/codemirror/src/theme.ts:268
 msgid "codemirror"
-msgstr ""
+msgstr "Codemirror"
 
 #: packages/completer-extension/src/index.ts:138 packages/completer-extension/src/index.ts:145
 msgid "Previous"
-msgstr ""
+msgstr "Poprzedni"
 
 #: packages/completer-extension/src/index.ts:148 packages/completer-extension/src/index.ts:155 packages/debugger-extension/src/index.ts:764 packages/debugger-extension/src/index.ts:765 packages/debugger-extension/src/index.ts:908 packages/debugger-extension/src/index.ts:909 packages/debugger-extension/src/index.ts:919 packages/debugger-extension/src/index.ts:920
 msgid "Next"
@@ -4556,7 +4566,7 @@ msgstr "Następny"
 
 #: packages/completer-extension/src/index.ts:158 packages/completer-extension/src/index.ts:165
 msgid "Accept"
-msgstr ""
+msgstr "Akceptuj"
 
 #: packages/completer-extension/src/index.ts:192 packages/completer-extension/src/index.ts:193 packages/completer-extension/src/index.ts:215
 msgid "Next Inline Completion"
@@ -4580,7 +4590,7 @@ msgstr ""
 
 #: packages/completer-extension/src/index.ts:267 packages/completer-extension/src/index.ts:268 packages/completer-extension/src/index.ts:295 packages/completer-extension/src/index.ts:296
 msgid "Timeout"
-msgstr ""
+msgstr "Limit czasu"
 
 #: packages/completer-extension/src/index.ts:268 packages/completer-extension/src/index.ts:269 packages/completer-extension/src/index.ts:296 packages/completer-extension/src/index.ts:297
 msgid "Timeout for %1 provider (in milliseconds)."
@@ -4588,7 +4598,7 @@ msgstr ""
 
 #: packages/completer-extension/src/index.ts:276 packages/completer-extension/src/index.ts:277 packages/completer-extension/src/index.ts:304 packages/completer-extension/src/index.ts:305
 msgid "Debouncer delay"
-msgstr ""
+msgstr "Opóźnienie wywołania "
 
 #: packages/completer-extension/src/index.ts:278 packages/completer-extension/src/index.ts:279 packages/completer-extension/src/index.ts:306 packages/completer-extension/src/index.ts:307
 msgid "Time since the last key press to wait before requesting completions from %1 provider (in milliseconds)."
@@ -4596,7 +4606,7 @@ msgstr ""
 
 #: packages/completer-extension/src/index.ts:285 packages/completer-extension/src/index.ts:286 packages/completer-extension/src/index.ts:313 packages/completer-extension/src/index.ts:314 packages/pluginmanager/src/widget.tsx:171
 msgid "Enabled"
-msgstr ""
+msgstr "Włączony"
 
 #: packages/completer-extension/src/index.ts:286 packages/completer-extension/src/index.ts:287 packages/completer-extension/src/index.ts:314 packages/completer-extension/src/index.ts:315
 msgid "Whether to fetch completions %1 provider."
@@ -4612,19 +4622,19 @@ msgstr ""
 
 #: packages/completer/src/default/inlinehistoryprovider.ts:32
 msgid "History"
-msgstr ""
+msgstr "Historia"
 
 #: packages/completer/src/default/inlinehistoryprovider.ts:43
 msgid "Maximum number of suggestions"
-msgstr ""
+msgstr "Maksymalna liczba podpowiedzi"
 
 #: packages/completer/src/default/inlinehistoryprovider.ts:44
 msgid "The maximum number of suggestions to retrieve from history."
-msgstr ""
+msgstr "Maksymalna liczba podpowiedzi pobieranych z historii"
 
 #: packages/completer/src/inline.ts:388 packages/completer/src/inline.ts:399 packages/completer/src/inline.ts:415 packages/completer/src/inline.ts:417
 msgid "%1/%2"
-msgstr ""
+msgstr "%1/%2"
 
 #: packages/completer/src/inline.ts:393 packages/completer/src/inline.ts:404 packages/completer/src/inline.ts:420 packages/completer/src/inline.ts:422
 msgid "Provider: %1"
@@ -4648,7 +4658,7 @@ msgstr "Wykonaj używając Enter"
 
 #: packages/console-extension/src/index.ts:1133 packages/console-extension/src/index.ts:844 packages/console-extension/src/index.ts:851 packages/console-extension/src/index.ts:938 packages/console-extension/src/index.ts:952 packages/fileeditor-extension/src/commands.ts:1005 packages/fileeditor-extension/src/commands.ts:1010 packages/fileeditor-extension/src/commands.ts:1012 packages/fileeditor-extension/src/commands.ts:1044 packages/fileeditor-extension/src/commands.ts:1045 packages/notebook-extension/src/index.ts:1974 packages/notebook-extension/src/index.ts:1977 packages/notebook-extension/src/index.ts:1996 packages/notebook-extension/src/index.ts:2027 packages/notebook-extension/src/index.ts:2034 packages/notebook-extension/src/index.ts:2045 packages/notebook-extension/src/index.ts:2047 packages/notebook-extension/src/index.ts:2078 packages/notebook-extension/src/index.ts:2079
 msgid "Display the completion helper."
-msgstr ""
+msgstr "Wyświetlaj asystenta autouzupełniania."
 
 #: packages/console-extension/src/index.ts:1144 packages/console-extension/src/index.ts:855 packages/console-extension/src/index.ts:862 packages/console-extension/src/index.ts:949 packages/console-extension/src/index.ts:963 packages/fileeditor-extension/src/commands.ts:1016 packages/fileeditor-extension/src/commands.ts:1021 packages/fileeditor-extension/src/commands.ts:1023 packages/fileeditor-extension/src/commands.ts:1055 packages/fileeditor-extension/src/commands.ts:1056 packages/notebook-extension/src/index.ts:1984 packages/notebook-extension/src/index.ts:1987 packages/notebook-extension/src/index.ts:2006 packages/notebook-extension/src/index.ts:2037 packages/notebook-extension/src/index.ts:2044 packages/notebook-extension/src/index.ts:2055 packages/notebook-extension/src/index.ts:2057 packages/notebook-extension/src/index.ts:2088 packages/notebook-extension/src/index.ts:2089
 msgid "Select the completion suggestion."
@@ -4724,15 +4734,15 @@ msgstr "Czy na pewno chcesz zamknąć \"%1\"?"
 
 #: packages/console-extension/src/index.ts:668 packages/console-extension/src/index.ts:745 packages/console-extension/src/index.ts:748 packages/console-extension/src/index.ts:929
 msgid "Cancel console Shut Down"
-msgstr ""
+msgstr "Anuluj zamykanie konsoli"
 
 #: packages/console-extension/src/index.ts:671 packages/console-extension/src/index.ts:748 packages/console-extension/src/index.ts:751 packages/console-extension/src/index.ts:932
 msgid "Confirm console Shut Down"
-msgstr ""
+msgstr "Potwierdź zamknięcie konsoli"
 
 #: packages/console-extension/src/index.ts:684 packages/console-extension/src/index.ts:691 packages/console-extension/src/index.ts:768 packages/console-extension/src/index.ts:771 packages/console-extension/src/index.ts:952
 msgid "Inject some code in a console."
-msgstr ""
+msgstr "Dodaj fragment kodu do konsoli"
 
 #: packages/console-extension/src/index.ts:705 packages/console-extension/src/index.ts:712 packages/console-extension/src/index.ts:789 packages/console-extension/src/index.ts:792 packages/console-extension/src/index.ts:973 packages/mainmenu-extension/src/index.ts:518 packages/mainmenu-extension/src/index.ts:519 packages/notebook-extension/src/index.ts:3059 packages/notebook-extension/src/index.ts:3065 packages/notebook-extension/src/index.ts:3084 packages/notebook-extension/src/index.ts:3136 packages/notebook-extension/src/index.ts:3143 packages/notebook-extension/src/index.ts:3166 packages/notebook-extension/src/index.ts:3168 packages/notebook-extension/src/index.ts:3169 packages/notebook-extension/src/index.ts:3201 packages/notebook-extension/src/index.ts:3214
 msgid "Change Kernel…"
@@ -4804,11 +4814,11 @@ msgstr "Sekcja debugera"
 
 #: packages/debugger-extension/src/index.ts:1005 packages/debugger-extension/src/index.ts:1016 packages/debugger-extension/src/index.ts:1017 packages/debugger-extension/src/index.ts:1028 packages/debugger-extension/src/index.ts:861 packages/debugger-extension/src/index.ts:873
 msgid "Debugger"
-msgstr ""
+msgstr "Debugger"
 
 #: packages/debugger-extension/src/index.ts:1010 packages/debugger-extension/src/index.ts:1021 packages/debugger-extension/src/index.ts:866
 msgid "Debugger Panel"
-msgstr ""
+msgstr "Panel Debugera"
 
 #: packages/debugger-extension/src/index.ts:214 packages/debugger-extension/src/index.ts:215 packages/debugger-extension/src/index.ts:217 packages/debugger-extension/src/index.ts:218 packages/debugger-extension/src/index.ts:228 packages/debugger-extension/src/index.ts:229
 msgid "Restart Kernel and Debug…"
@@ -4820,19 +4830,19 @@ msgstr "Zbadaj zmienną"
 
 #: packages/debugger-extension/src/index.ts:440 packages/debugger-extension/src/index.ts:443 packages/debugger-extension/src/index.ts:454
 msgid "Render Variable"
-msgstr ""
+msgstr "Wyświetl zmienną"
 
 #: packages/debugger-extension/src/index.ts:441 packages/debugger-extension/src/index.ts:444 packages/debugger-extension/src/index.ts:455
 msgid "Render variable according to its mime type"
-msgstr ""
+msgstr "Wyświetl zmienną zgodnie z jej typem MIME"
 
 #: packages/debugger-extension/src/index.ts:518 packages/debugger-extension/src/index.ts:521 packages/debugger-extension/src/index.ts:532
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Skopiuj do schowka"
 
 #: packages/debugger-extension/src/index.ts:519 packages/debugger-extension/src/index.ts:522 packages/debugger-extension/src/index.ts:533
 msgid "Copy text representation of the value to clipboard"
-msgstr ""
+msgstr "Skopiuj tekstowy zapis do schowka"
 
 #: packages/debugger-extension/src/index.ts:536 packages/debugger-extension/src/index.ts:539 packages/debugger-extension/src/index.ts:550
 msgid "Copy Variable to Globals"
@@ -4852,7 +4862,7 @@ msgstr "Wykonaj"
 
 #: packages/debugger-extension/src/index.ts:723 packages/debugger-extension/src/index.ts:724 packages/debugger-extension/src/index.ts:734 packages/debugger-extension/src/index.ts:735
 msgid "Open Source"
-msgstr ""
+msgstr "Open Source"
 
 #: packages/debugger-extension/src/index.ts:728 packages/debugger-extension/src/index.ts:733 packages/debugger-extension/src/index.ts:872 packages/debugger-extension/src/index.ts:877 packages/debugger-extension/src/index.ts:883 packages/debugger-extension/src/index.ts:888
 msgid "Continue"
@@ -4864,7 +4874,7 @@ msgstr "Wstrzymaj"
 
 #: packages/debugger-extension/src/index.ts:733 packages/debugger-extension/src/index.ts:744
 msgid "Start debugger?"
-msgstr ""
+msgstr "Uruchomić debuger?"
 
 #: packages/debugger-extension/src/index.ts:734 packages/debugger-extension/src/index.ts:745
 msgid "The debugger service is needed to open the source %1"
@@ -4872,7 +4882,7 @@ msgstr ""
 
 #: packages/debugger-extension/src/index.ts:740 packages/debugger-extension/src/index.ts:751
 msgid "Start debugger"
-msgstr ""
+msgstr "Uruchom debugger"
 
 #: packages/debugger-extension/src/index.ts:753 packages/debugger-extension/src/index.ts:754 packages/debugger-extension/src/index.ts:897 packages/debugger-extension/src/index.ts:898 packages/debugger-extension/src/index.ts:908 packages/debugger-extension/src/index.ts:909
 msgid "Terminate"
@@ -4994,7 +5004,7 @@ msgstr ""
 
 #: packages/debugger/src/panels/variables/gridpanel.ts:218
 msgid "Value"
-msgstr ""
+msgstr "Wartość"
 
 #: packages/debugger/src/panels/variables/gridpanel.ts:221 packages/filebrowser/src/listing.ts:2258 packages/filebrowser/src/listing.ts:2275 packages/filebrowser/src/listing.ts:2277 packages/filebrowser/src/listing.ts:2298 packages/filebrowser/src/listing.ts:2371 packages/filebrowser/src/listing.ts:2898 packages/filebrowser/src/listing.ts:2900 packages/filebrowser/src/listing.ts:2924 packages/filebrowser/src/listing.ts:2930
 msgid "Name"
@@ -5512,7 +5522,7 @@ msgstr "Zakończ wyszukiwanie"
 
 #: packages/documentsearch-extension/src/index.ts:431
 msgid "Search in Selection"
-msgstr ""
+msgstr "Szukaj w zaznaczeniu"
 
 #: packages/documentsearch/src/searchview.tsx:169 packages/documentsearch/src/searchview.tsx:178 packages/documentsearch/src/searchview.tsx:188 packages/documentsearch/src/searchview.tsx:191
 msgid "Match Case"
@@ -5564,7 +5574,7 @@ msgstr ""
 
 #: packages/documentsearch/src/searchview.tsx:753 packages/documentsearch/src/searchview.tsx:761
 msgid "Close Search Box"
-msgstr ""
+msgstr "Zamknij Pole wyszukiwania"
 
 #: packages/extensionmanager-extension/src/index.ts:131 packages/extensionmanager-extension/src/index.ts:153 packages/extensionmanager-extension/src/index.ts:59
 msgid "Extension Manager"
@@ -5638,7 +5648,7 @@ msgstr ""
 
 #: packages/extensionmanager/src/widget.tsx:114
 msgid "This extension is approved by your security team."
-msgstr ""
+msgstr "To rozszerzenie zostało zatwierdzone przez Twój zespół bezpieczeństwa."
 
 #: packages/extensionmanager/src/widget.tsx:133 packages/extensionmanager/src/widget.tsx:137
 msgid "Update \"%1\" to \"%2\""
@@ -5686,15 +5696,15 @@ msgstr ""
 
 #: packages/extensionmanager/src/widget.tsx:363 packages/extensionmanager/src/widget.tsx:375 packages/running/src/index.tsx:363 packages/running/src/index.tsx:366
 msgid "Search"
-msgstr ""
+msgstr "Szukaj"
 
 #: packages/extensionmanager/src/widget.tsx:369
 msgid "Search extensions"
-msgstr ""
+msgstr "Wyszukaj rozszerzenia"
 
 #: packages/extensionmanager/src/widget.tsx:379 packages/extensionmanager/src/widget.tsx:385 packages/extensionmanager/src/widget.tsx:391 packages/pluginmanager/src/widget.tsx:302
 msgid "Error when performing an action."
-msgstr ""
+msgstr "Błąd podczas wykonywania akcji."
 
 #: packages/extensionmanager/src/widget.tsx:380 packages/extensionmanager/src/widget.tsx:386 packages/extensionmanager/src/widget.tsx:392 packages/pluginmanager/src/widget.tsx:303
 msgid "Reason given:"
@@ -5711,11 +5721,11 @@ msgstr ""
 
 #: packages/extensionmanager/src/widget.tsx:413 packages/extensionmanager/src/widget.tsx:416 packages/extensionmanager/src/widget.tsx:422 packages/extensionmanager/src/widget.tsx:428
 msgid "Please read the privacy policy."
-msgstr ""
+msgstr "Proszę zapoznać się z polityką prywatności."
 
 #: packages/extensionmanager/src/widget.tsx:422 packages/extensionmanager/src/widget.tsx:425 packages/extensionmanager/src/widget.tsx:431 packages/extensionmanager/src/widget.tsx:437
 msgid "This will withdraw your consent."
-msgstr ""
+msgstr "Spowoduje to wycofanie Twojej zgody."
 
 #: packages/extensionmanager/src/widget.tsx:441 packages/extensionmanager/src/widget.tsx:444 packages/extensionmanager/src/widget.tsx:450 packages/extensionmanager/src/widget.tsx:456
 msgid "This will disable the extension manager panel; including the listing of installed extension."
@@ -5895,7 +5905,7 @@ msgstr ""
 
 #: packages/filebrowser-extension/src/index.ts:540 packages/filebrowser-extension/src/index.ts:544 packages/filebrowser-extension/src/index.ts:547 packages/filebrowser-extension/src/index.ts:548 packages/filebrowser-extension/src/index.ts:555
 msgid "Hide the file browser."
-msgstr ""
+msgstr "Ukryj przeglądarkę plików."
 
 #: packages/filebrowser-extension/src/index.ts:550 packages/filebrowser-extension/src/index.ts:554 packages/filebrowser-extension/src/index.ts:557 packages/filebrowser-extension/src/index.ts:558 packages/filebrowser-extension/src/index.ts:565
 msgid "Show Active File in File Browser"
@@ -5919,7 +5929,7 @@ msgstr "Otwórz z adresu URL"
 
 #: packages/filebrowser-extension/src/index.ts:846 packages/filebrowser-extension/src/index.ts:850 packages/filebrowser-extension/src/index.ts:853 packages/filebrowser-extension/src/index.ts:854 packages/filebrowser-extension/src/index.ts:861
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: packages/filebrowser-extension/src/index.ts:848 packages/filebrowser-extension/src/index.ts:852 packages/filebrowser-extension/src/index.ts:855 packages/filebrowser-extension/src/index.ts:856 packages/filebrowser-extension/src/index.ts:863
 msgid "Open URL"
@@ -5931,7 +5941,7 @@ msgstr "Nie można otworzyć adresu URL: %1"
 
 #: packages/filebrowser-extension/src/index.ts:869 packages/filebrowser-extension/src/index.ts:873 packages/filebrowser-extension/src/index.ts:876 packages/filebrowser-extension/src/index.ts:877 packages/filebrowser-extension/src/index.ts:884
 msgid "Cannot fetch"
-msgstr ""
+msgstr "Nie można pobrać"
 
 #: packages/filebrowser-extension/src/index.ts:882 packages/filebrowser-extension/src/index.ts:886 packages/filebrowser-extension/src/index.ts:889 packages/filebrowser-extension/src/index.ts:890 packages/filebrowser-extension/src/index.ts:897 packages/filebrowser/src/upload.ts:52
 msgctxt "showErrorMessage"
@@ -5940,7 +5950,7 @@ msgstr "Błąd przesyłania"
 
 #: packages/filebrowser-extension/src/index.ts:931 packages/filebrowser/src/listing.ts:461
 msgid "Move to Trash"
-msgstr ""
+msgstr "Przenieś do kosza"
 
 #: packages/filebrowser-extension/src/index.ts:935 packages/filebrowser-extension/src/index.ts:939 packages/filebrowser-extension/src/index.ts:942 packages/filebrowser-extension/src/index.ts:943 packages/filebrowser-extension/src/index.ts:944 packages/filebrowser-extension/src/index.ts:950 packages/fileeditor-extension/src/commands.ts:947 packages/fileeditor-extension/src/commands.ts:952 packages/fileeditor-extension/src/commands.ts:954 packages/fileeditor-extension/src/commands.ts:956 packages/fileeditor-extension/src/commands.ts:957 packages/terminal-extension/src/index.ts:463 packages/terminal-extension/src/index.ts:469 packages/terminal-extension/src/index.ts:470 packages/terminal-extension/src/index.ts:472 packages/terminal-extension/src/index.ts:474
 msgid "Copy"
@@ -5984,7 +5994,7 @@ msgstr "Błąd podczas przenoszenia"
 
 #: packages/filebrowser/src/listing.ts:1020 packages/filebrowser/src/listing.ts:1021 packages/filebrowser/src/listing.ts:1038 packages/filebrowser/src/listing.ts:899 packages/filebrowser/src/listing.ts:906 packages/filebrowser/src/listing.ts:910 packages/filebrowser/src/listing.ts:931
 msgid "unknown"
-msgstr ""
+msgstr "nieznane"
 
 #: packages/filebrowser/src/listing.ts:1022 packages/filebrowser/src/listing.ts:1023 packages/filebrowser/src/listing.ts:1044 packages/filebrowser/src/listing.ts:901 packages/filebrowser/src/listing.ts:908 packages/filebrowser/src/listing.ts:912 packages/filebrowser/src/listing.ts:933
 msgid "%1\n"
@@ -5994,11 +6004,11 @@ msgstr "%1\n"
 
 #: packages/filebrowser/src/listing.ts:1098 packages/filebrowser/src/listing.ts:1099 packages/filebrowser/src/listing.ts:1122 packages/filebrowser/src/listing.ts:1128 packages/filebrowser/src/listing.ts:852 packages/filebrowser/src/listing.ts:856 packages/filebrowser/src/listing.ts:877 packages/filebrowser/src/listing.ts:974
 msgid "Deselect all files and directories"
-msgstr ""
+msgstr "Odznacz wszystkie pliki i katalogi"
 
 #: packages/filebrowser/src/listing.ts:1099 packages/filebrowser/src/listing.ts:1100 packages/filebrowser/src/listing.ts:1123 packages/filebrowser/src/listing.ts:1129 packages/filebrowser/src/listing.ts:853 packages/filebrowser/src/listing.ts:857 packages/filebrowser/src/listing.ts:878 packages/filebrowser/src/listing.ts:975
 msgid "Select all files and directories"
-msgstr ""
+msgstr "Zaznacz wszystkie pliki i katalogi"
 
 #: packages/filebrowser/src/listing.ts:1120 packages/filebrowser/src/listing.ts:1136 packages/filebrowser/src/listing.ts:1157 packages/filebrowser/src/listing.ts:1209 packages/filebrowser/src/listing.ts:1536 packages/filebrowser/src/listing.ts:1538 packages/filebrowser/src/listing.ts:1561 packages/filebrowser/src/listing.ts:1567
 msgctxt "showErrorMessage"
@@ -6039,11 +6049,11 @@ msgstr "Data ostatniej modyfikacji"
 
 #: packages/filebrowser/src/listing.ts:2261 packages/filebrowser/src/listing.ts:2278 packages/filebrowser/src/listing.ts:2280 packages/filebrowser/src/listing.ts:2301 packages/filebrowser/src/listing.ts:2377 packages/filebrowser/src/listing.ts:2907 packages/filebrowser/src/listing.ts:2909 packages/filebrowser/src/listing.ts:2933 packages/filebrowser/src/listing.ts:2939
 msgid "File Size"
-msgstr ""
+msgstr "Rozmiar pliku"
 
 #: packages/filebrowser/src/listing.ts:2374 packages/filebrowser/src/listing.ts:2901 packages/filebrowser/src/listing.ts:2903 packages/filebrowser/src/listing.ts:2927 packages/filebrowser/src/listing.ts:2933 packages/settingeditor/src/pluginlist.tsx:442 packages/settingeditor/src/pluginlist.tsx:461
 msgid "Modified"
-msgstr ""
+msgstr "Zmodyfikowano"
 
 #: packages/filebrowser/src/listing.ts:2555 packages/filebrowser/src/listing.ts:2572 packages/filebrowser/src/listing.ts:2574 packages/filebrowser/src/listing.ts:2595 packages/filebrowser/src/listing.ts:2702 packages/filebrowser/src/listing.ts:3216 packages/filebrowser/src/listing.ts:3218 packages/filebrowser/src/listing.ts:3263 packages/filebrowser/src/listing.ts:3269
 msgid "\n"
@@ -6101,7 +6111,7 @@ msgstr[3] ""
 
 #: packages/filebrowser/src/listing.ts:2906 packages/filebrowser/src/listing.ts:2908 packages/filebrowser/src/listing.ts:2932 packages/filebrowser/src/listing.ts:2938
 msgid "Size"
-msgstr ""
+msgstr "Rozmiar"
 
 #: packages/filebrowser/src/listing.ts:396 packages/filebrowser/src/listing.ts:400 packages/filebrowser/src/listing.ts:403 packages/filebrowser/src/listing.ts:416 packages/filebrowser/src/listing.ts:417
 msgctxt "showErrorMessage"
@@ -6349,11 +6359,11 @@ msgstr "O PROJEKCIE JUPYTER"
 
 #: packages/help-extension/src/index.tsx:138
 msgid "© 2015-2023 Project Jupyter Contributors"
-msgstr ""
+msgstr "© 2015-2023 Współtwórcy projektu Jupyter"
 
 #: packages/help-extension/src/index.tsx:138 packages/help-extension/src/index.tsx:184
 msgid "© %1-%2 Project Jupyter Contributors"
-msgstr ""
+msgstr "© 1-2 Współtwórcy projektu Jupyter"
 
 #: packages/help-extension/src/index.tsx:139 packages/help-extension/src/index.tsx:93
 msgid "About %1"
@@ -6365,7 +6375,7 @@ msgstr "Wersja %1"
 
 #: packages/help-extension/src/index.tsx:185 packages/help-extension/src/index.tsx:186 packages/help-extension/src/index.tsx:231
 msgid "Jupyter Forum"
-msgstr ""
+msgstr "Jupyter Forum"
 
 #: packages/help-extension/src/index.tsx:223 packages/help-extension/src/index.tsx:300 packages/help-extension/src/index.tsx:346
 msgid "JupyterLab Reference"
@@ -6397,7 +6407,7 @@ msgstr ""
 
 #: packages/help-extension/src/index.tsx:82
 msgid "Download All Licenses"
-msgstr ""
+msgstr "Pobierz wszystkie licencje"
 
 #: packages/htmlviewer-extension/src/index.tsx:105
 msgid "HTML File"
@@ -7934,7 +7944,7 @@ msgstr "Odśwież listę"
 
 #: packages/running/src/index.tsx:614 packages/running/src/index.tsx:626 packages/running/src/index.tsx:649
 msgid "Switch to List View"
-msgstr ""
+msgstr "Przełącz na Widok Listy"
 
 #: packages/running/src/index.tsx:615 packages/running/src/index.tsx:627 packages/running/src/index.tsx:650
 msgid "Switch to Tree View"
@@ -7942,27 +7952,27 @@ msgstr ""
 
 #: packages/running/src/index.tsx:627 packages/running/src/index.tsx:639 packages/running/src/index.tsx:662
 msgid "Collapse All"
-msgstr ""
+msgstr "Zwiń wszystko"
 
 #: packages/running/src/index.tsx:628 packages/running/src/index.tsx:640 packages/running/src/index.tsx:663
 msgid "Expand All"
-msgstr ""
+msgstr "Rozwiń wszystko"
 
 #: packages/running/src/index.tsx:671
 msgid "%1 toolbar"
-msgstr ""
+msgstr "Pasek narzędzi %1"
 
 #: packages/running/src/index.tsx:885 packages/running/src/index.tsx:928 packages/running/src/index.tsx:947
 msgid "No matches"
-msgstr ""
+msgstr "Brak wyników"
 
 #: packages/settingeditor-extension/src/importSettingsWidget.tsx:53
 msgid "Select settings sections to import"
-msgstr ""
+msgstr "Wybierz sekcje ustawień do zaimportowania"
 
 #: packages/settingeditor-extension/src/importSettingsWidget.tsx:63 packages/settingeditor-extension/src/index.ts:179
 msgid "Import"
-msgstr ""
+msgstr "Importuj"
 
 #: packages/settingeditor-extension/src/index.ts:145 packages/settingeditor-extension/src/index.ts:165 packages/settingeditor-extension/src/index.ts:204
 msgid "JSON Settings Editor"
@@ -7970,15 +7980,15 @@ msgstr "Edytor ustawień JSON"
 
 #: packages/settingeditor-extension/src/index.ts:168
 msgid "Export"
-msgstr ""
+msgstr "Eksportuj"
 
 #: packages/settingeditor-extension/src/index.ts:169
 msgid "Export settings to a JSON file"
-msgstr ""
+msgstr "Eksportuj ustawienia do pliku JSON"
 
 #: packages/settingeditor-extension/src/index.ts:180
 msgid "Import settings from a JSON file"
-msgstr ""
+msgstr "Importuj ustawienia z pliku JSON"
 
 #: packages/settingeditor-extension/src/index.ts:181 packages/settingeditor-extension/src/index.ts:201 packages/settingeditor-extension/src/index.ts:240
 msgid "Settings Editor"
@@ -7998,19 +8008,19 @@ msgstr "Zapisz ustawienia użytkownika"
 
 #: packages/settingeditor-extension/src/index.ts:405
 msgid "Export Settings"
-msgstr ""
+msgstr "Eksportuj ustawienia"
 
 #: packages/settingeditor-extension/src/index.ts:485
 msgid "Settings Imported"
-msgstr ""
+msgstr "Ustawienia zostały zaimportowane"
 
 #: packages/settingeditor-extension/src/index.ts:499 packages/settingeditor-extension/src/index.ts:511
 msgid "Import Settings"
-msgstr ""
+msgstr "Importuj ustawienia"
 
 #: packages/settingeditor/src/InstructionsPlaceholder.tsx:21
 msgid "No Plugin Selected"
-msgstr ""
+msgstr "Nie wybrano wtyczki"
 
 #: packages/settingeditor/src/InstructionsPlaceholder.tsx:23
 msgid "Select a plugin from the list to view and edit its preferences."
@@ -8018,7 +8028,7 @@ msgstr "Wybierz wtyczkę z listy, aby wyświetlić i edytować jej ustawienia."
 
 #: packages/settingeditor/src/SettingsFormEditor.tsx:172 packages/settingeditor/src/SettingsFormEditor.tsx:173 packages/settingeditor/src/SettingsFormEditor.tsx:175
 msgid "Error saving settings."
-msgstr ""
+msgstr "Błąd przy zapisywaniu ustawień."
 
 #: packages/settingeditor/src/SettingsFormEditor.tsx:205 packages/settingeditor/src/SettingsFormEditor.tsx:213 packages/settingeditor/src/SettingsFormEditor.tsx:215
 msgid "Restore to Defaults"
@@ -8034,7 +8044,7 @@ msgstr ""
 
 #: packages/settingeditor/src/inspector.ts:120
 msgid "syntax error"
-msgstr ""
+msgstr "błąd składni"
 
 #: packages/settingeditor/src/inspector.ts:122
 msgid "type error"
@@ -8042,7 +8052,7 @@ msgstr ""
 
 #: packages/settingeditor/src/inspector.ts:125
 msgid "error"
-msgstr ""
+msgstr "błąd"
 
 #: packages/settingeditor/src/inspector.ts:34
 msgid "Any errors will be listed here"
@@ -8066,19 +8076,19 @@ msgstr "Zmiany nie zostały zapisane."
 
 #: packages/settingeditor/src/pluginlist.tsx:435 packages/settingeditor/src/pluginlist.tsx:454
 msgid "Search settings…"
-msgstr ""
+msgstr "Ustawienia wyszukiwania..."
 
 #: packages/settingeditor/src/pluginlist.tsx:454 packages/settingeditor/src/pluginlist.tsx:473
 msgid "No items match your search."
-msgstr ""
+msgstr "Żadne elementy nie spełniają kryteriów twojego wyszukiwania."
 
 #: packages/settingeditor/src/pluginlist.tsx:454 packages/shortcuts-extension/src/components/TopNav.tsx:117 packages/shortcuts-extension/src/components/TopNav.tsx:167 packages/shortcuts-extension/src/components/TopNav.tsx:168
 msgid "Search…"
-msgstr ""
+msgstr "Szukaj…"
 
 #: packages/settingeditor/src/raweditor.ts:368
 msgid "Default editor toolbar"
-msgstr ""
+msgstr "Domyślny pasek narzędzi edytora"
 
 #: packages/settingeditor/src/raweditor.ts:368 packages/settingeditor/src/raweditor.ts:369
 msgid "System Defaults"
@@ -8090,11 +8100,11 @@ msgstr "Ustawienia użytkownika"
 
 #: packages/settingeditor/src/settingseditor.tsx:121 packages/settingeditor/src/settingseditor.tsx:123 packages/settingeditor/src/settingseditor.tsx:134
 msgid "Unsaved changes due to validation error. Continue without saving?"
-msgstr ""
+msgstr "Niezapisane zmiany z powodu błędu weryfikacji. Kontynuować bez zapisywania?"
 
 #: packages/settingeditor/src/settingseditor.tsx:133 packages/settingeditor/src/settingseditor.tsx:135 packages/settingeditor/src/settingseditor.tsx:146
 msgid "Some changes have not been saved. Continue without saving?"
-msgstr ""
+msgstr "Niektóre zmiany nie zostały zapisane. Kontynuować bez zapisywania?"
 
 #: packages/shortcuts-extension/src/components/ShortcutInput.tsx:374 packages/shortcuts-extension/src/components/ShortcutInput.tsx:389 packages/shortcuts-extension/src/components/ShortcutInput.tsx:445 packages/shortcuts-extension/src/components/ShortcutInput.tsx:446
 msgid "press keys"
@@ -8110,15 +8120,15 @@ msgstr "Zresetuj"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:147 packages/shortcuts-extension/src/components/ShortcutItem.tsx:153
 msgid "Custom"
-msgstr ""
+msgstr "Własne"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:147 packages/shortcuts-extension/src/components/ShortcutItem.tsx:153
 msgid "Default"
-msgstr ""
+msgstr "Domyślne"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:194 packages/shortcuts-extension/src/components/ShortcutItem.tsx:202 packages/shortcuts-extension/src/components/ShortcutItem.tsx:332
 msgid "or"
-msgstr ""
+msgstr "lub"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:218 packages/shortcuts-extension/src/components/ShortcutItem.tsx:333 packages/shortcuts-extension/src/components/ShortcutItem.tsx:345
 msgid "Shortcut already in use by %1. Overwrite it?"
@@ -8134,7 +8144,7 @@ msgstr ""
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:52 packages/shortcuts-extension/src/components/ShortcutItem.tsx:57 packages/shortcuts-extension/src/components/ShortcutItem.tsx:62
 msgid "Edit existing shortcut"
-msgstr ""
+msgstr "Edytuj istniejący skrót"
 
 #: packages/shortcuts-extension/src/components/ShortcutItem.tsx:56
 msgid "Edit Second"
@@ -8154,7 +8164,7 @@ msgstr "Przywróć domyślny skrót"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:113 packages/shortcuts-extension/src/components/TopNav.tsx:165
 msgid "Search shortcuts"
-msgstr ""
+msgstr "Wyszukiwanie skrótów"
 
 #: packages/shortcuts-extension/src/components/TopNav.tsx:126 packages/shortcuts-extension/src/index.ts:159
 msgid "Toggle Selectors"
@@ -8194,23 +8204,23 @@ msgstr ""
 
 #: packages/shortcuts-extension/src/index.ts:107
 msgid "Edit Keybinding"
-msgstr ""
+msgstr "Edytuj skrót klawiszowy"
 
 #: packages/shortcuts-extension/src/index.ts:108
 msgid "Edit existing keybinding"
-msgstr ""
+msgstr "Edytuj istniejący skrót klawiszowy"
 
 #: packages/shortcuts-extension/src/index.ts:125
 msgid "Delete Keybinding"
-msgstr ""
+msgstr "Usuń skrót klawiszowy"
 
 #: packages/shortcuts-extension/src/index.ts:126
 msgid "Delete chosen keybinding"
-msgstr ""
+msgstr "Usuń wybrany skrót klawiszowy"
 
 #: packages/shortcuts-extension/src/index.ts:143
 msgid "Add Keybinding"
-msgstr ""
+msgstr "Dodaj skrót klawiszowy"
 
 #: packages/shortcuts-extension/src/index.ts:143 packages/shortcuts-extension/src/index.ts:152 packages/shortcuts-extension/src/index.ts:232
 msgid "Note: To disable a system default shortcut,\n"
@@ -8244,7 +8254,7 @@ msgstr "Uwaga: Aby wyłączyć domyślny skrót systemowy,\n"
 
 #: packages/shortcuts-extension/src/index.ts:144
 msgid "Add new keybinding for existing shortcut target"
-msgstr ""
+msgstr "Dodaj nową kombinację do istniejącego skrótu klawiszy"
 
 #: packages/statusbar-extension/src/index.ts:52
 msgid "Show Status Bar"
@@ -8252,7 +8262,7 @@ msgstr "Pokaż pasek statusu"
 
 #: packages/terminal-extension/src/index.ts:103 packages/terminal-extension/src/index.ts:350 packages/terminal-extension/src/index.ts:351 packages/terminal/src/widget.ts:102
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: packages/terminal-extension/src/index.ts:191
 msgctxt "menu"
@@ -8313,7 +8323,7 @@ msgstr "Zmniejsz rozmiar czcionki terminalu"
 
 #: packages/terminal-extension/src/index.ts:542 packages/terminal-extension/src/index.ts:548 packages/terminal-extension/src/index.ts:549 packages/terminal-extension/src/index.ts:551 packages/terminal-extension/src/index.ts:555
 msgid "Set terminal theme to the provided `theme`."
-msgstr ""
+msgstr "Ustaw motyw terminala na podany 'theme'."
 
 #: packages/terminal-extension/src/index.ts:550 packages/terminal-extension/src/index.ts:556 packages/terminal-extension/src/index.ts:557 packages/terminal-extension/src/index.ts:559 packages/terminal-extension/src/index.ts:563
 msgid "Use Terminal Theme: %1"
@@ -8325,7 +8335,7 @@ msgstr "Ustaw motyw terminalu"
 
 #: packages/terminal/src/widget.ts:345
 msgid "Terminal %1"
-msgstr ""
+msgstr "Terminal %1"
 
 #: packages/theme-dark-extension/src/index.ts:31
 msgid "JupyterLab Dark"
@@ -8333,7 +8343,7 @@ msgstr "Ciemny JupyterLab"
 
 #: packages/theme-dark-high-contrast-extension/src/index.ts:31
 msgid "JupyterLab Dark High Contrast"
-msgstr ""
+msgstr "Ciemny kontrast JupyterLab"
 
 #: packages/theme-light-extension/src/index.ts:31
 msgid "JupyterLab Light"
@@ -8353,7 +8363,7 @@ msgstr ""
 
 #: packages/toc-extension/src/index.ts:242 packages/toc-extension/src/index.ts:246
 msgid "More actions…"
-msgstr ""
+msgstr "Więcej działań…"
 
 #: packages/toc-extension/src/index.ts:80
 msgid "Table of Contents section"
@@ -8361,19 +8371,19 @@ msgstr "Sekcja spisu treści"
 
 #: packages/toc-extension/src/index.ts:83
 msgid "Show first-level heading number"
-msgstr ""
+msgstr "Pokaż numer nagłówka pierwszego poziomu"
 
 #: packages/toc-extension/src/index.ts:97
 msgid "Show heading number in the document"
-msgstr ""
+msgstr "Pokaż numer nagłówka w dokumencie"
 
 #: packages/toc/src/panel.ts:32
 msgid "No Headings"
-msgstr ""
+msgstr "Bez nagłówków"
 
 #: packages/toc/src/panel.ts:33
 msgid "The table of contents shows headings in notebooks and supported files."
-msgstr ""
+msgstr "Spis treści pokazuje nagłówki w notatnikach i obsługiwanych plikach."
 
 #: packages/tooltip-extension/src/index.ts:108 packages/tooltip-extension/src/index.ts:150 packages/tooltip-extension/src/index.ts:247
 msgid "Open the tooltip"
@@ -8401,15 +8411,15 @@ msgstr "Zmień i załaduj ponownie"
 
 #: packages/translation-extension/src/index.ts:175 packages/translation-extension/src/index.ts:184 packages/translation-extension/src/index.ts:185
 msgid "Display Languages"
-msgstr ""
+msgstr "Pokaż języki"
 
 #: packages/ui-components/src/components/form.tsx:146
 msgid "Move down"
-msgstr ""
+msgstr "Przesuń w dół"
 
 #: packages/ui-components/src/components/form.tsx:146
 msgid "Move up"
-msgstr ""
+msgstr "Przesuń w górę"
 
 #: packages/ui-components/src/components/form.tsx:183 packages/ui-components/src/components/form.tsx:570
 msgid "Remove"
@@ -8577,7 +8587,7 @@ msgstr "Wybierz istniejący obszar roboczy do wyeksportowania."
 
 #: packages/workspaces-extension/src/commands.ts:417
 msgid "Choose Workspace Export Directory"
-msgstr ""
+msgstr "Wskaż katalog do zapisania przestrzeni roboczej"
 
 #: packages/workspaces-extension/src/commands.ts:420
 msgid "The \"%1\" workspace will be saved in the chosen directory as \"%1%2\"."
