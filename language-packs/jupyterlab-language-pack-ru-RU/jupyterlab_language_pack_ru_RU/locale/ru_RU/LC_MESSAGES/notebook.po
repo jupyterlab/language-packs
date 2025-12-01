@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 231\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2025-10-02 14:36\n"
+"PO-Revision-Date: 2025-11-30 09:37\n"
 
 #: /packages/application-extension/schema/menus.json:/description /packages/application-extension/schema/menus.json:/title /packages/notebook-extension/schema/edit-notebook-metadata.json:/description /packages/notebook-extension/schema/edit-notebook-metadata.json:/title
 msgctxt "schema"
@@ -48,6 +48,21 @@ msgstr "Настройка местоположения виджета обол�
 msgctxt "schema"
 msgid "Notebook Shell"
 msgstr "Оболочка блокнота"
+
+#: /packages/application-extension/schema/shortcuts.json:/description
+msgctxt "schema"
+msgid "Keyboard shortcuts for Jupyter Notebook"
+msgstr ""
+
+#: /packages/application-extension/schema/shortcuts.json:/jupyter.lab.setting-icon-label
+msgctxt "settings"
+msgid "Jupyter Notebook shortcuts"
+msgstr ""
+
+#: /packages/application-extension/schema/shortcuts.json:/title
+msgctxt "schema"
+msgid "Jupyter Notebook Shortcuts"
+msgstr ""
 
 #: /packages/application-extension/schema/title.json:/description /packages/application-extension/schema/title.json:/title
 msgctxt "schema"
@@ -113,6 +128,16 @@ msgstr "Запустить ярлыки"
 msgctxt "schema"
 msgid "Notebook checkpoint indicator"
 msgstr "Индикатор контрольной точки блокнота"
+
+#: /packages/notebook-extension/schema/checkpoints.json:/properties/checkpointPollingInterval/description
+msgctxt "settings"
+msgid "How often to check for checkpoints (in seconds). Set to 0 to disable polling."
+msgstr ""
+
+#: /packages/notebook-extension/schema/checkpoints.json:/properties/checkpointPollingInterval/title
+msgctxt "settings"
+msgid "Checkpoint Polling Interval (seconds)"
+msgstr ""
 
 #: /packages/notebook-extension/schema/full-width-notebook.json:/description
 msgctxt "schema"
@@ -271,33 +296,33 @@ msgctxt "schema"
 msgid "File Browser Widget"
 msgstr "Виджет файлового браузера"
 
-#: packages/application-extension/src/index.ts:1138 packages/application-extension/src/index.ts:1148
+#: packages/application-extension/src/index.ts:1148 packages/application-extension/src/index.ts:1162
 msgid "Toggle Zen Mode"
 msgstr "Переключить режим Zen"
 
-#: packages/application-extension/src/index.ts:151 packages/application-extension/src/index.ts:152
+#: packages/application-extension/src/index.ts:152
 msgid "Are you sure you want to exit Jupyter Notebook?\n\n"
 "Any unsaved changes will be lost."
 msgstr "Вы уверены, что хотите выйти из Jupyter Notebook?\n\n"
 "Все несохранённые изменения будут потеряны."
 
-#: packages/application-extension/src/index.ts:340 packages/application-extension/src/index.ts:341
+#: packages/application-extension/src/index.ts:341
 msgid "Open JupyterLab"
 msgstr "Открыть JupyterLab"
 
-#: packages/application-extension/src/index.ts:348 packages/application-extension/src/index.ts:349
+#: packages/application-extension/src/index.ts:349
 msgid "File Browser"
 msgstr "Файловый менеджер"
 
-#: packages/application-extension/src/index.ts:423 packages/application-extension/src/index.ts:424
+#: packages/application-extension/src/index.ts:424
 msgid "Handle Local Link"
 msgstr "Обработка локальной ссылки"
 
-#: packages/application-extension/src/index.ts:640 packages/application-extension/src/index.ts:641
+#: packages/application-extension/src/index.ts:641
 msgid "Duplicate"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:654 packages/application-extension/src/index.ts:655
+#: packages/application-extension/src/index.ts:655
 msgid "Rename…"
 msgstr "Переименовать…"
 
@@ -309,27 +334,27 @@ msgstr ""
 msgid "An error occurred while renaming the file."
 msgstr ""
 
-#: packages/application-extension/src/index.ts:721 packages/application-extension/src/index.ts:731
+#: packages/application-extension/src/index.ts:731
 msgid "Show Header"
 msgstr "Показать заголовок"
 
-#: packages/application-extension/src/index.ts:812 packages/application-extension/src/index.ts:822
+#: packages/application-extension/src/index.ts:822
 msgid "Show %1 in the left sidebar"
 msgstr "Показать %1 на левой боковой панели"
 
-#: packages/application-extension/src/index.ts:817 packages/application-extension/src/index.ts:827
+#: packages/application-extension/src/index.ts:827
 msgid "Show %1 in the right sidebar"
 msgstr "Показать %1 на правой боковой панели"
 
-#: packages/application-extension/src/index.ts:822 packages/application-extension/src/index.ts:832
+#: packages/application-extension/src/index.ts:832
 msgid "Show %1 in the sidebar"
 msgstr "Показать %1 на боковой панели"
 
-#: packages/application-extension/src/index.ts:937 packages/application-extension/src/index.ts:947
+#: packages/application-extension/src/index.ts:947
 msgid "Left Sidebar"
 msgstr "Левая боковая панель"
 
-#: packages/application-extension/src/index.ts:939 packages/application-extension/src/index.ts:949
+#: packages/application-extension/src/index.ts:949
 msgid "Right Sidebar"
 msgstr "Правая боковая панель"
 
@@ -389,27 +414,27 @@ msgstr "Открыть в..."
 msgid "Launch Jupyter Notebook File Browser"
 msgstr "Запустите файловый браузер Jupyter Notebook"
 
-#: packages/notebook-extension/src/index.ts:131
+#: packages/notebook-extension/src/index.ts:131 packages/notebook-extension/src/index.ts:142
 msgid "Last Checkpoint: %1"
 msgstr "Последняя контрольная точка: %1"
 
-#: packages/notebook-extension/src/index.ts:174
+#: packages/notebook-extension/src/index.ts:174 packages/notebook-extension/src/index.ts:246
 msgid "Close and Shut Down Notebook"
 msgstr "Закрыть и выключить блокнот"
 
-#: packages/notebook-extension/src/index.ts:206
+#: packages/notebook-extension/src/index.ts:206 packages/notebook-extension/src/index.ts:278
 msgid "Open…"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:272
+#: packages/notebook-extension/src/index.ts:272 packages/notebook-extension/src/index.ts:344
 msgid "Enable Full Width Notebook"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:639
+#: packages/notebook-extension/src/index.ts:639 packages/notebook-extension/src/index.ts:711
 msgid "Edit Notebook Metadata"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:656
+#: packages/notebook-extension/src/index.ts:656 packages/notebook-extension/src/index.ts:728
 msgid "Advanced Tools"
 msgstr ""
 
@@ -433,23 +458,23 @@ msgstr "Доверенный"
 msgid "Select items to perform actions on them."
 msgstr "Выберите элементы для выполнения действий над ними."
 
-#: packages/tree-extension/src/index.ts:378
+#: packages/tree-extension/src/index.ts:360 packages/tree-extension/src/index.ts:378
 msgid "Files"
 msgstr "Файлы"
 
-#: packages/tree-extension/src/index.ts:380
+#: packages/tree-extension/src/index.ts:362 packages/tree-extension/src/index.ts:380
 msgid "File Browser Section"
 msgstr "Секция файлового менеджера"
 
-#: packages/tree-extension/src/index.ts:394
+#: packages/tree-extension/src/index.ts:376 packages/tree-extension/src/index.ts:394
 msgid "Upload"
 msgstr "Загрузить"
 
-#: packages/tree-extension/src/index.ts:412
+#: packages/tree-extension/src/index.ts:394 packages/tree-extension/src/index.ts:412
 msgid "Running"
 msgstr "Запущено"
 
-#: packages/tree-extension/src/index.ts:95
+#: packages/tree-extension/src/index.ts:93 packages/tree-extension/src/index.ts:95
 msgid "New"
 msgstr "Новый"
 
