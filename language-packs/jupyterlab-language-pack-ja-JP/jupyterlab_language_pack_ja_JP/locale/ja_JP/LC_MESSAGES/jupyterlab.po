@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2025-11-30 09:37\n"
+"PO-Revision-Date: 2025-12-04 02:25\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -775,7 +775,7 @@ msgstr "すべてのCodeMirrorエディタのテキストエディタの設定�
 #: /packages/codemirror-extension/schema/plugin.json:/jupyter.lab.menus/main[0]/items[0]/submenu/label
 msgctxt "menu"
 msgid "Code Folding"
-msgstr ""
+msgstr "コードの折り畳み"
 
 #: /packages/codemirror-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
@@ -1045,23 +1045,24 @@ msgstr "セルが実行された後、コード入力を非表示にするかど
 #: /packages/console-extension/schema/tracker.json:/properties/hideCodeInput/title
 msgctxt "settings"
 msgid "Hide Code Input"
-msgstr ""
+msgstr "コード入力欄を隠す"
 
 #: /packages/console-extension/schema/tracker.json:/properties/interactionMode/description
 msgctxt "settings"
 msgid "Whether the console interaction mimics the notebook\n"
 "or terminal keyboard shortcuts."
-msgstr ""
+msgstr "コンソール操作がノートブック\n"
+"や端末キーボードショートカットを模倣するかどうか。"
 
 #: /packages/console-extension/schema/tracker.json:/properties/interactionMode/title
 msgctxt "settings"
 msgid "Interaction mode"
-msgstr ""
+msgstr "インタラクションモード"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/description
 msgctxt "settings"
 msgid "The configuration for all prompt cells; it will override the CodeMirror default configuration."
-msgstr ""
+msgstr "すべてのプロンプトセルの設定; CodeMirror のデフォルト設定を上書きします。"
 
 #: /packages/console-extension/schema/tracker.json:/properties/promptCellConfig/title
 msgctxt "settings"
@@ -1102,22 +1103,23 @@ msgstr "プロンプトセルの位置"
 msgctxt "settings"
 msgid "Whether the console defaults to showing all\n"
 "kernel activity or just kernel activity originating from itself."
-msgstr ""
+msgstr "コンソールがデフォルトですべての\n"
+"カーネルアクティビティを表示するか、それ自体から派生するカーネルアクティビティだけを表示するかどうか。"
 
 #: /packages/console-extension/schema/tracker.json:/properties/showAllKernelActivity/title
 msgctxt "settings"
 msgid "Show All Kernel Activity"
-msgstr ""
+msgstr "すべてのカーネルアクティビティを表示"
 
 #: /packages/console-extension/schema/tracker.json:/properties/showBanner/description
 msgctxt "settings"
 msgid "Whether to show the kernel banner."
-msgstr ""
+msgstr "カーネルバナーを表示するかどうか。"
 
 #: /packages/console-extension/schema/tracker.json:/properties/showBanner/title
 msgctxt "settings"
 msgid "Show Banner"
-msgstr ""
+msgstr "バナーを表示"
 
 #: /packages/console-extension/schema/tracker.json:/properties/toolbar/description /packages/notebook-extension/schema/panel.json:/properties/toolbar/description
 msgctxt "settings"
@@ -1133,12 +1135,35 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "注: ツールバー項目を無効にするには、\n"
+"「disabled」キーをユーザー設定にコピーして追加します\n"
+"次の例では、更新項目を無効にします。:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"refresh\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"ツールバー詳細：\n"
+"Note: To disable a toolbar item,\n\n"
+"copy it to User Preferences and add the\n\n"
+"\"disabled\" key. The following example will disable the Interrupt button item:\n\n"
+"{\n\n"
+"  \"toolbar\": [\n\n"
+"    {\n\n"
+"      \"name\": \"interrupt\",\n\n"
+"      \"disabled\": true\n\n"
+"    }\n\n"
+"  ]\n\n"
+"}\n\n\n\n"
+"Toolbar description："
 
 #: /packages/console-extension/schema/tracker.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "Console panel toolbar items"
-msgstr ""
+msgstr "コンソールパネルのツールバーアイテム"
 
 #: /packages/console-extension/schema/tracker.json:/title
 msgctxt "schema"
@@ -1245,12 +1270,12 @@ msgstr "カーネルソース表示の正規表現フィルター"
 #: /packages/debugger-extension/schema/main.json:/properties/showPausedOverlay/description
 msgctxt "settings"
 msgid "Show an overlay on the editor or notebook when execution is paused in the debugger."
-msgstr ""
+msgstr "デバッガで実行が一時停止された場合、エディタまたはノートブックにオーバーレイを表示します。"
 
 #: /packages/debugger-extension/schema/main.json:/properties/showPausedOverlay/title
 msgctxt "settings"
 msgid "Show Paused Overlay"
-msgstr ""
+msgstr "一時停止のオーバーレイを表示"
 
 #: /packages/debugger-extension/schema/main.json:/properties/variableFilters/description
 msgctxt "settings"
@@ -1375,22 +1400,22 @@ msgstr "ドキュメント検索"
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/autoSearchInSelection/description
 msgctxt "settings"
 msgid "When starting search, the 'search in selection' mode will be enabled if `any` text/cell is selected, or when `multiple` lines or cells are selected, or `never`."
-msgstr ""
+msgstr "検索を開始するとき、`any` text/cell が選択されている場合、「selection」モードが有効になります。 または複数の行またはセルが選択されている場合、または決して選択されていない場合。"
 
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/autoSearchInSelection/title
 msgctxt "settings"
 msgid "Search in selection automatically"
-msgstr ""
+msgstr "自動的に選択範囲を検索"
 
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/searchDebounceTime/description
 msgctxt "settings"
 msgid "The debounce time in milliseconds applied to the search input field. The already opened input files will not be updated if you change that value"
-msgstr ""
+msgstr "検索入力フィールドに適用されるミリ秒単位のデバウンス時間。値を変更すると、すでに開かれている入力ファイルは更新されません。"
 
 #: /packages/documentsearch-extension/schema/plugin.json:/properties/searchDebounceTime/title
 msgctxt "settings"
 msgid "Search debounce time (ms)"
-msgstr ""
+msgstr "デバウンス時間を検索（ミリ秒）"
 
 #: /packages/documentsearch-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1447,52 +1472,52 @@ msgstr "ファイルブラウザ"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/allowFileUploads/description
 msgctxt "settings"
 msgid "Whether to allow uploading files"
-msgstr ""
+msgstr "ファイルのアップロードを許可"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/allowFileUploads/title
 msgctxt "settings"
 msgid "Allow file uploads"
-msgstr ""
+msgstr "ファイルのアップロードを許可"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/autoOpenUploads/description
 msgctxt "settings"
 msgid "Automatically open uploaded notebooks and supported files"
-msgstr ""
+msgstr "アップロードされた Notebook またはサポートされているファイルを自動的に開く"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/autoOpenUploads/title
 msgctxt "settings"
 msgid "Auto-open uploads"
-msgstr ""
+msgstr "アップロードファイルを自動的に開く"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/breadcrumbs/description
 msgctxt "settings"
 msgid "Settings related to breadcrumbs display and behavior."
-msgstr ""
+msgstr "パンくずリストの表示と動作に関連する設定。"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/breadcrumbs/properties/minimumLeftItems/description
 msgctxt "settings"
 msgid "Minimum number of directory items to display on the left side of the breadcrumbs ellipsis"
-msgstr ""
+msgstr "パンくずリストの省略記号の左側に表示するディレクトリ項目の最小数"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/breadcrumbs/properties/minimumLeftItems/title
 msgctxt "settings"
 msgid "Minimum breadcrumbs left items"
-msgstr ""
+msgstr "パンくずリスト左側の最小表示数"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/breadcrumbs/properties/minimumRightItems/description
 msgctxt "settings"
 msgid "Minimum number of directory items to display on the right side of the breadcrumbs ellipsis"
-msgstr ""
+msgstr "パンくずリストの省略記号の右側に表示するディレクトリ項目の最小数"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/breadcrumbs/properties/minimumRightItems/title
 msgctxt "settings"
 msgid "Minimum breadcrumbs right items"
-msgstr ""
+msgstr "パンくずリスト右側の最小表示数"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/breadcrumbs/title
 msgctxt "settings"
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "パンくずリスト"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/filterDirectories/description
 msgctxt "settings"
@@ -1517,12 +1542,12 @@ msgstr "フォルダをフィルター"
 #: /packages/filebrowser-extension/schema/browser.json:/properties/maxAutoOpenSizeMB/description
 msgctxt "settings"
 msgid "Maximum file size (MB) to auto-open files on upload"
-msgstr ""
+msgstr "アップロード時に自動で開くファイルの最大サイズ (MB)"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/maxAutoOpenSizeMB/title
 msgctxt "settings"
 msgid "Max auto-open size"
-msgstr ""
+msgstr "自動で開く最大サイズ"
 
 #: /packages/filebrowser-extension/schema/browser.json:/properties/navigateToCurrentDirectory/description
 msgctxt "settings"
@@ -1642,17 +1667,17 @@ msgstr "ファイルブラウザダウンロード"
 #: /packages/filebrowser-extension/schema/open-browser-tab.json:/description
 msgctxt "schema"
 msgid "File Browser Open Browser Tab settings."
-msgstr ""
+msgstr "ファイルブラウザー ブラウザタブの設定を開きます。"
 
 #: /packages/filebrowser-extension/schema/open-browser-tab.json:/title
 msgctxt "schema"
 msgid "File Browser Open Browser Tab"
-msgstr ""
+msgstr "ファイルブラウザー ブラウザのタブを開く"
 
 #: /packages/filebrowser-extension/schema/open-with.json:/description
 msgctxt "schema"
 msgid "File Browser Open With settings."
-msgstr ""
+msgstr "ファイルブラウザー ウィジェットの設定。"
 
 #: /packages/filebrowser-extension/schema/open-with.json:/jupyter.lab.menus/context[0]/submenu/label
 msgctxt "menu"
@@ -1662,7 +1687,7 @@ msgstr "別のエディタで開く"
 #: /packages/filebrowser-extension/schema/open-with.json:/title
 msgctxt "schema"
 msgid "File Browser Open With"
-msgstr ""
+msgstr "ファイルブラウザで開く"
 
 #: /packages/filebrowser-extension/schema/widget.json:/description
 msgctxt "schema"
@@ -1683,17 +1708,39 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "注: ツールバー項目を無効にするには、\n"
+"「disabled」キーをユーザー設定にコピーして追加します\n"
+"次の例では、更新項目を無効にします。:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"refresh\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"ツールバー詳細：\n"
+"Note: To disable a toolbar item,\n\n"
+"copy it to User Preferences and add the\n\n"
+"\"disabled\" key. The following example will disable the uploader button:\n\n"
+"{\n\n"
+"  \"toolbar\": [\n\n"
+"    {\n\n"
+"      \"name\": \"uploader\",\n\n"
+"      \"disabled\": true\n\n"
+"    }\n\n"
+"  ]\n\n"
+"}："
 
 #: /packages/filebrowser-extension/schema/widget.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "File browser toolbar items"
-msgstr ""
+msgstr "ファイルブラウザーのツールバーアイテム"
 
 #: /packages/filebrowser-extension/schema/widget.json:/title
 msgctxt "schema"
 msgid "File Browser Widget"
-msgstr ""
+msgstr "ファイルブラウザのウィジェット"
 
 #: /packages/fileeditor-extension/schema/completer.json:/description
 msgctxt "schema"
@@ -1904,57 +1951,57 @@ msgstr "ログコンソール"
 #: /packages/logconsole-extension/schema/plugin.json:/properties/defaultLogLevel/description
 msgctxt "settings"
 msgid "Default log level for loggers"
-msgstr ""
+msgstr "Logger のデフォルトのログレベル"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/defaultLogLevel/oneOf[0]/title
 msgctxt "settings"
 msgid "Critical"
-msgstr ""
+msgstr "Critical"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/defaultLogLevel/oneOf[1]/title
 msgctxt "settings"
 msgid "Error"
-msgstr ""
+msgstr "Error"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/defaultLogLevel/oneOf[2]/title
 msgctxt "settings"
 msgid "Warning"
-msgstr ""
+msgstr "Warning"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/defaultLogLevel/oneOf[3]/title
 msgctxt "settings"
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/defaultLogLevel/oneOf[4]/title
 msgctxt "settings"
 msgid "Debug"
-msgstr ""
+msgstr "Debug"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/defaultLogLevel/title
 msgctxt "settings"
 msgid "Default Log Level"
-msgstr ""
+msgstr "デフォルトのログレベル"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/flash/description
 msgctxt "settings"
 msgid "Whether to flash on new log message or not"
-msgstr ""
+msgstr "新しいログメッセージをフラッシュするかどうか"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/flash/title
 msgctxt "settings"
 msgid "Status Bar Item flash"
-msgstr ""
+msgstr "ステータスバー アイテムのフラッシュ"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/maxLogEntries/description
 msgctxt "settings"
 msgid "Maximum number of log entries to store in memory"
-msgstr ""
+msgstr "メモリに保存するログエントリの最大数"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/maxLogEntries/title
 msgctxt "settings"
 msgid "Log entry count limit"
-msgstr ""
+msgstr "ログエントリ数の制限"
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/toolbar/description
 msgctxt "settings"
@@ -1970,12 +2017,34 @@ msgid "Note: To disable a toolbar item,\n"
 "  ]\n"
 "}\n\n"
 "Toolbar description:"
-msgstr ""
+msgstr "注: ツールバー項目を無効にするには、\n"
+"「disabled」キーをユーザー設定にコピーして追加します\n"
+"次の例では、更新項目を無効にします。:\n"
+"{\n"
+"  \"toolbar\": [\n"
+"    {\n"
+"      \"name\": \"refresh\",\n"
+"      \"disabled\": true\n"
+"    }\n"
+"  ]\n"
+"}\n\n"
+"ツールバー詳細:\n"
+"Note: To disable a toolbar item,\n\n"
+"copy it to User Preferences and add the\n\n"
+"\"disabled\" key. The following example will disable the clear button:\n\n"
+"{\n\n"
+"  \"toolbar\": [\n\n"
+"    {\n\n"
+"      \"name\": \"clear\",\n\n"
+"      \"disabled\": true\n\n"
+"    }\n\n"
+"  ]\n\n"
+"}："
 
 #: /packages/logconsole-extension/schema/plugin.json:/properties/toolbar/title
 msgctxt "settings"
 msgid "Log console toolbar items"
-msgstr ""
+msgstr "ログコンソールのツールバーアイテム"
 
 #: /packages/logconsole-extension/schema/plugin.json:/title
 msgctxt "schema"
@@ -1985,42 +2054,42 @@ msgstr "ログコンソール"
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/configuration/description
 msgctxt "settings"
 msgid "Configuration to be sent to language server over LSP when initialized: see the specific language server's documentation for more"
-msgstr ""
+msgstr "初期化時にLSP経由で言語サーバに送信する設定: 詳細は特定の言語サーバのドキュメントを参照してください"
 
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/configuration/title
 msgctxt "settings"
 msgid "Language Server Configurations"
-msgstr ""
+msgstr "言語サーバーの設定"
 
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/rank/description
 msgctxt "settings"
 msgid "When multiple servers match specific document/language, the server with the highest rank will be used"
-msgstr ""
+msgstr "複数のサーバーが特定のドキュメント/言語に一致する場合、最高ランクのサーバーが使用されます"
 
 #: /packages/lsp-extension/schema/plugin.json:/definitions/languageServer/properties/rank/title
 msgctxt "settings"
 msgid "Rank of the server"
-msgstr ""
+msgstr "サーバーのランク"
 
 #: /packages/lsp-extension/schema/plugin.json:/description
 msgctxt "schema"
 msgid "Language Server Protocol settings."
-msgstr ""
+msgstr "言語サーバープロトコルの設定"
 
 #: /packages/lsp-extension/schema/plugin.json:/jupyter.lab.setting-icon-label
 msgctxt "settings"
 msgid "Language integration"
-msgstr ""
+msgstr "言語の統合"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/activate/description
 msgctxt "settings"
 msgid "Enable or disable the language server services."
-msgstr ""
+msgstr "言語サーバーサービスの有効化または無効化。"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/activate/title
 msgctxt "settings"
 msgid "Activate"
-msgstr ""
+msgstr "有効にする"
 
 #: /packages/lsp-extension/schema/plugin.json:/properties/languageServers/description
 msgctxt "settings"
@@ -2263,7 +2332,7 @@ msgstr ""
 #: /packages/notebook-extension/schema/tracker.json:/definitions/kernelStatusConfig/properties/showJumpToRecentExecutionButton/title
 msgctxt "settings"
 msgid "Show jump to most recently executed/executing cell button"
-msgstr ""
+msgstr "直近に実行されたセルへのジャンプボタンを表示"
 
 #: /packages/notebook-extension/schema/tracker.json:/definitions/kernelStatusConfig/properties/showOnStatusBar/description
 msgctxt "settings"
@@ -2308,7 +2377,7 @@ msgstr ""
 #: /packages/notebook-extension/schema/tracker.json:/properties/addExtraLineOnCellMerge/title
 msgctxt "settings"
 msgid "Add extra line when merging cells"
-msgstr ""
+msgstr "セルの結合時に行を追加"
 
 #: /packages/notebook-extension/schema/tracker.json:/properties/autoRenderMarkdownCells/description
 msgctxt "settings"
@@ -3616,19 +3685,19 @@ msgstr ""
 
 #: packages/apputils-extension/src/themesplugins.ts:292
 msgid "The font name"
-msgstr ""
+msgstr "フォント名"
 
 #: packages/apputils-extension/src/themesplugins.ts:296
 msgid "The CSS property key to modify"
-msgstr ""
+msgstr "変更する CSS プロパティキー"
 
 #: packages/apputils-extension/src/themesplugins.ts:327
 msgid "The font size key to increase (e.g., \"code-font-size\", \"content-font-size1\", \"ui-font-size1\")"
-msgstr ""
+msgstr "フォントサイズを大きくするキー（例：\"code-font-size\", \"content-font-size1\", \"ui-font-size1\")"
 
 #: packages/apputils-extension/src/themesplugins.ts:357
 msgid "The font size key to decrease (e.g., \"code-font-size\", \"content-font-size1\", \"ui-font-size1\")"
-msgstr ""
+msgstr "フォントサイズを小さくするキー（例：\"code-font-size\", \"content-font-size1\", \"ui-font-size1\")"
 
 #: packages/apputils-extension/src/workspacesplugin.ts:181 packages/apputils-extension/src/workspacesplugin.ts:95
 msgid "Workspace loader"
