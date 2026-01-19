@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 191\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2026-01-06 09:58\n"
+"PO-Revision-Date: 2026-01-14 13:29\n"
 
 #: /examples/federated/md_package/schema/plugin.json:/description /packages/markdownviewer-extension/schema/plugin.json:/description
 msgctxt "schema"
@@ -2629,6 +2629,16 @@ msgctxt "settings"
 msgid "Side-by-side right margin override"
 msgstr ""
 
+#: /packages/notebook-extension/schema/tracker.json:/properties/useSystemClipboardForCells/description
+msgctxt "settings"
+msgid "Whether to use the system clipboard for copy/cut/paste of cells. When enabled, cell contents are copied to the system clipboard, allowing copy/cut/paste between different notebook tabs or browser windows."
+msgstr ""
+
+#: /packages/notebook-extension/schema/tracker.json:/properties/useSystemClipboardForCells/title
+msgctxt "settings"
+msgid "Use system clipboard for copy/cut/paste of cells"
+msgstr ""
+
 #: /packages/notebook-extension/schema/tracker.json:/properties/windowingMode/description
 msgctxt "settings"
 msgid "'defer': Improve loading time - Wait for idle CPU cycles to attach out of viewport cells - 'full': Best performance with side effects - Attach to the DOM only cells in viewport - 'none': Worst performance without side effects - Attach all cells to the viewport"
@@ -4544,7 +4554,7 @@ msgstr "Swift"
 msgid "sTeX"
 msgstr "sTeX"
 
-#: packages/codemirror/src/language.ts:1486 packages/codemirror/src/language.ts:1493 packages/codemirror/src/language.ts:1503 packages/notebook-extension/src/index.ts:3678 packages/notebook-extension/src/index.ts:3684 packages/notebook-extension/src/index.ts:3703 packages/notebook-extension/src/index.ts:3800 packages/notebook-extension/src/index.ts:3807 packages/notebook-extension/src/index.ts:3866 packages/notebook-extension/src/index.ts:3885 packages/notebook-extension/src/index.ts:3886 packages/notebook-extension/src/index.ts:3922 packages/notebook-extension/src/index.ts:3935 packages/notebook-extension/src/index.ts:4884
+#: packages/codemirror/src/language.ts:1486 packages/codemirror/src/language.ts:1493 packages/codemirror/src/language.ts:1503 packages/notebook-extension/src/index.ts:3678 packages/notebook-extension/src/index.ts:3684 packages/notebook-extension/src/index.ts:3703 packages/notebook-extension/src/index.ts:3800 packages/notebook-extension/src/index.ts:3807 packages/notebook-extension/src/index.ts:3866 packages/notebook-extension/src/index.ts:3885 packages/notebook-extension/src/index.ts:3886 packages/notebook-extension/src/index.ts:3922 packages/notebook-extension/src/index.ts:3935 packages/notebook-extension/src/index.ts:4884 packages/notebook-extension/src/index.ts:4899
 msgid "LaTeX"
 msgstr "LaTeX"
 
@@ -4656,7 +4666,7 @@ msgstr "CQL"
 msgid "CSS"
 msgstr "CSS"
 
-#: packages/codemirror/src/language.ts:346 packages/codemirror/src/language.ts:347 packages/notebook-extension/src/index.ts:3677 packages/notebook-extension/src/index.ts:3683 packages/notebook-extension/src/index.ts:3702 packages/notebook-extension/src/index.ts:3799 packages/notebook-extension/src/index.ts:3806 packages/notebook-extension/src/index.ts:3865 packages/notebook-extension/src/index.ts:3884 packages/notebook-extension/src/index.ts:3885 packages/notebook-extension/src/index.ts:3921 packages/notebook-extension/src/index.ts:3934 packages/notebook-extension/src/index.ts:4883
+#: packages/codemirror/src/language.ts:346 packages/codemirror/src/language.ts:347 packages/notebook-extension/src/index.ts:3677 packages/notebook-extension/src/index.ts:3683 packages/notebook-extension/src/index.ts:3702 packages/notebook-extension/src/index.ts:3799 packages/notebook-extension/src/index.ts:3806 packages/notebook-extension/src/index.ts:3865 packages/notebook-extension/src/index.ts:3884 packages/notebook-extension/src/index.ts:3885 packages/notebook-extension/src/index.ts:3921 packages/notebook-extension/src/index.ts:3934 packages/notebook-extension/src/index.ts:4883 packages/notebook-extension/src/index.ts:4898
 msgid "HTML"
 msgstr "HTML"
 
@@ -4680,7 +4690,7 @@ msgstr "JSX"
 msgid "MariaDB SQL"
 msgstr "MariaDB SQL"
 
-#: packages/codemirror/src/language.ts:413 packages/codemirror/src/language.ts:414 packages/notebook-extension/src/index.ts:3679 packages/notebook-extension/src/index.ts:3685 packages/notebook-extension/src/index.ts:3704 packages/notebook-extension/src/index.ts:3801 packages/notebook-extension/src/index.ts:3808 packages/notebook-extension/src/index.ts:3867 packages/notebook-extension/src/index.ts:3886 packages/notebook-extension/src/index.ts:3887 packages/notebook-extension/src/index.ts:3923 packages/notebook-extension/src/index.ts:3936 packages/notebook-extension/src/index.ts:4885 packages/notebook/src/default-toolbar.tsx:379
+#: packages/codemirror/src/language.ts:413 packages/codemirror/src/language.ts:414 packages/notebook-extension/src/index.ts:3679 packages/notebook-extension/src/index.ts:3685 packages/notebook-extension/src/index.ts:3704 packages/notebook-extension/src/index.ts:3801 packages/notebook-extension/src/index.ts:3808 packages/notebook-extension/src/index.ts:3867 packages/notebook-extension/src/index.ts:3886 packages/notebook-extension/src/index.ts:3887 packages/notebook-extension/src/index.ts:3923 packages/notebook-extension/src/index.ts:3936 packages/notebook-extension/src/index.ts:4885 packages/notebook-extension/src/index.ts:4900 packages/notebook/src/default-toolbar.tsx:379 packages/notebook/src/default-toolbar.tsx:396
 msgid "Markdown"
 msgstr "Markdown"
 
@@ -5088,11 +5098,11 @@ msgstr ""
 msgid "The metadata for the code"
 msgstr ""
 
-#: packages/console-extension/src/index.ts:1227 packages/console-extension/src/index.ts:705 packages/console-extension/src/index.ts:712 packages/console-extension/src/index.ts:789 packages/console-extension/src/index.ts:792 packages/console-extension/src/index.ts:973 packages/mainmenu-extension/src/index.ts:518 packages/mainmenu-extension/src/index.ts:519 packages/mainmenu-extension/src/index.ts:672 packages/notebook-extension/src/index.ts:3059 packages/notebook-extension/src/index.ts:3065 packages/notebook-extension/src/index.ts:3084 packages/notebook-extension/src/index.ts:3136 packages/notebook-extension/src/index.ts:3143 packages/notebook-extension/src/index.ts:3166 packages/notebook-extension/src/index.ts:3168 packages/notebook-extension/src/index.ts:3169 packages/notebook-extension/src/index.ts:3201 packages/notebook-extension/src/index.ts:3214 packages/notebook-extension/src/index.ts:3963
+#: packages/console-extension/src/index.ts:1227 packages/console-extension/src/index.ts:705 packages/console-extension/src/index.ts:712 packages/console-extension/src/index.ts:789 packages/console-extension/src/index.ts:792 packages/console-extension/src/index.ts:973 packages/mainmenu-extension/src/index.ts:518 packages/mainmenu-extension/src/index.ts:519 packages/mainmenu-extension/src/index.ts:672 packages/notebook-extension/src/index.ts:3059 packages/notebook-extension/src/index.ts:3065 packages/notebook-extension/src/index.ts:3084 packages/notebook-extension/src/index.ts:3136 packages/notebook-extension/src/index.ts:3143 packages/notebook-extension/src/index.ts:3166 packages/notebook-extension/src/index.ts:3168 packages/notebook-extension/src/index.ts:3169 packages/notebook-extension/src/index.ts:3201 packages/notebook-extension/src/index.ts:3214 packages/notebook-extension/src/index.ts:3963 packages/notebook-extension/src/index.ts:3978
 msgid "Change Kernel…"
 msgstr "カーネルを変更…"
 
-#: packages/console-extension/src/index.ts:1250 packages/console-extension/src/index.ts:717 packages/console-extension/src/index.ts:724 packages/console-extension/src/index.ts:801 packages/console-extension/src/index.ts:804 packages/console-extension/src/index.ts:985 packages/mainmenu-extension/src/index.ts:1013 packages/mainmenu-extension/src/index.ts:752 packages/mainmenu-extension/src/index.ts:754 packages/mainmenu-extension/src/index.ts:756 packages/notebook-extension/src/index.ts:3070 packages/notebook-extension/src/index.ts:3076 packages/notebook-extension/src/index.ts:3095 packages/notebook-extension/src/index.ts:3147 packages/notebook-extension/src/index.ts:3154 packages/notebook-extension/src/index.ts:3177 packages/notebook-extension/src/index.ts:3179 packages/notebook-extension/src/index.ts:3180 packages/notebook-extension/src/index.ts:3212 packages/notebook-extension/src/index.ts:3225 packages/notebook-extension/src/index.ts:3980
+#: packages/console-extension/src/index.ts:1250 packages/console-extension/src/index.ts:717 packages/console-extension/src/index.ts:724 packages/console-extension/src/index.ts:801 packages/console-extension/src/index.ts:804 packages/console-extension/src/index.ts:985 packages/mainmenu-extension/src/index.ts:1013 packages/mainmenu-extension/src/index.ts:752 packages/mainmenu-extension/src/index.ts:754 packages/mainmenu-extension/src/index.ts:756 packages/notebook-extension/src/index.ts:3070 packages/notebook-extension/src/index.ts:3076 packages/notebook-extension/src/index.ts:3095 packages/notebook-extension/src/index.ts:3147 packages/notebook-extension/src/index.ts:3154 packages/notebook-extension/src/index.ts:3177 packages/notebook-extension/src/index.ts:3179 packages/notebook-extension/src/index.ts:3180 packages/notebook-extension/src/index.ts:3212 packages/notebook-extension/src/index.ts:3225 packages/notebook-extension/src/index.ts:3980 packages/notebook-extension/src/index.ts:3995
 msgid "Get Kernel"
 msgstr ""
 
@@ -5128,11 +5138,11 @@ msgstr "セルを実行 (未強制)"
 msgid "Run Cell (forced)"
 msgstr "セルの実行 (強制)"
 
-#: packages/console-extension/src/index.ts:593 packages/console-extension/src/index.ts:596 packages/console-extension/src/index.ts:773 packages/console-extension/src/index.ts:862 packages/fileeditor-extension/src/commands.ts:1088 packages/fileeditor-extension/src/commands.ts:1089 packages/fileeditor-extension/src/commands.ts:847 packages/fileeditor-extension/src/commands.ts:853 packages/fileeditor-extension/src/commands.ts:854 packages/fileeditor-extension/src/commands.ts:857 packages/fileeditor-extension/src/commands.ts:858 packages/fileeditor-extension/src/commands.ts:861 packages/mainmenu-extension/src/index.ts:277 packages/mainmenu-extension/src/index.ts:333 packages/notebook-extension/src/index.ts:3045 packages/notebook-extension/src/index.ts:3051 packages/notebook-extension/src/index.ts:3070 packages/notebook-extension/src/index.ts:3122 packages/notebook-extension/src/index.ts:3129 packages/notebook-extension/src/index.ts:3152 packages/notebook-extension/src/index.ts:3154 packages/notebook-extension/src/index.ts:3155 packages/notebook-extension/src/index.ts:3187 packages/notebook-extension/src/index.ts:3200 packages/notebook-extension/src/index.ts:3943
+#: packages/console-extension/src/index.ts:593 packages/console-extension/src/index.ts:596 packages/console-extension/src/index.ts:773 packages/console-extension/src/index.ts:862 packages/fileeditor-extension/src/commands.ts:1088 packages/fileeditor-extension/src/commands.ts:1089 packages/fileeditor-extension/src/commands.ts:847 packages/fileeditor-extension/src/commands.ts:853 packages/fileeditor-extension/src/commands.ts:854 packages/fileeditor-extension/src/commands.ts:857 packages/fileeditor-extension/src/commands.ts:858 packages/fileeditor-extension/src/commands.ts:861 packages/mainmenu-extension/src/index.ts:277 packages/mainmenu-extension/src/index.ts:333 packages/notebook-extension/src/index.ts:3045 packages/notebook-extension/src/index.ts:3051 packages/notebook-extension/src/index.ts:3070 packages/notebook-extension/src/index.ts:3122 packages/notebook-extension/src/index.ts:3129 packages/notebook-extension/src/index.ts:3152 packages/notebook-extension/src/index.ts:3154 packages/notebook-extension/src/index.ts:3155 packages/notebook-extension/src/index.ts:3187 packages/notebook-extension/src/index.ts:3200 packages/notebook-extension/src/index.ts:3943 packages/notebook-extension/src/index.ts:3958
 msgid "Undo"
 msgstr "元に戻す"
 
-#: packages/console-extension/src/index.ts:627 packages/console-extension/src/index.ts:630 packages/console-extension/src/index.ts:807 packages/console-extension/src/index.ts:907 packages/fileeditor-extension/src/commands.ts:1124 packages/fileeditor-extension/src/commands.ts:1125 packages/fileeditor-extension/src/commands.ts:878 packages/fileeditor-extension/src/commands.ts:883 packages/fileeditor-extension/src/commands.ts:885 packages/fileeditor-extension/src/commands.ts:887 packages/fileeditor-extension/src/commands.ts:888 packages/fileeditor-extension/src/commands.ts:891 packages/mainmenu-extension/src/index.ts:287 packages/mainmenu-extension/src/index.ts:288 packages/mainmenu-extension/src/index.ts:351 packages/notebook-extension/src/index.ts:3031 packages/notebook-extension/src/index.ts:3037 packages/notebook-extension/src/index.ts:3056 packages/notebook-extension/src/index.ts:3108 packages/notebook-extension/src/index.ts:3115 packages/notebook-extension/src/index.ts:3138 packages/notebook-extension/src/index.ts:3140 packages/notebook-extension/src/index.ts:3141 packages/notebook-extension/src/index.ts:3173 packages/notebook-extension/src/index.ts:3186 packages/notebook-extension/src/index.ts:3923
+#: packages/console-extension/src/index.ts:627 packages/console-extension/src/index.ts:630 packages/console-extension/src/index.ts:807 packages/console-extension/src/index.ts:907 packages/fileeditor-extension/src/commands.ts:1124 packages/fileeditor-extension/src/commands.ts:1125 packages/fileeditor-extension/src/commands.ts:878 packages/fileeditor-extension/src/commands.ts:883 packages/fileeditor-extension/src/commands.ts:885 packages/fileeditor-extension/src/commands.ts:887 packages/fileeditor-extension/src/commands.ts:888 packages/fileeditor-extension/src/commands.ts:891 packages/mainmenu-extension/src/index.ts:287 packages/mainmenu-extension/src/index.ts:288 packages/mainmenu-extension/src/index.ts:351 packages/notebook-extension/src/index.ts:3031 packages/notebook-extension/src/index.ts:3037 packages/notebook-extension/src/index.ts:3056 packages/notebook-extension/src/index.ts:3108 packages/notebook-extension/src/index.ts:3115 packages/notebook-extension/src/index.ts:3138 packages/notebook-extension/src/index.ts:3140 packages/notebook-extension/src/index.ts:3141 packages/notebook-extension/src/index.ts:3173 packages/notebook-extension/src/index.ts:3186 packages/notebook-extension/src/index.ts:3923 packages/notebook-extension/src/index.ts:3938
 msgid "Redo"
 msgstr "やり直す"
 
@@ -5538,7 +5548,7 @@ msgstr "新しいパスに保存"
 msgid "Autosave Documents"
 msgstr "ドキュメントの自動保存"
 
-#: packages/docmanager-extension/src/index.tsx:1007 packages/docmanager-extension/src/index.tsx:1010 packages/docmanager-extension/src/index.tsx:1011 packages/docmanager-extension/src/index.tsx:1016 packages/docmanager-extension/src/index.tsx:1019 packages/docmanager-extension/src/index.tsx:1060 packages/docmanager-extension/src/index.tsx:1062 packages/docmanager-extension/src/index.tsx:1075 packages/docmanager-extension/src/index.tsx:1077 packages/docmanager-extension/src/index.tsx:1206 packages/docmanager-extension/src/index.tsx:1208 packages/docmanager-extension/src/index.tsx:843 packages/docmanager-extension/src/index.tsx:846 packages/docmanager-extension/src/index.tsx:854 packages/docmanager-extension/src/index.tsx:857 packages/docmanager-extension/src/index.tsx:871 packages/docmanager-extension/src/index.tsx:877 packages/docmanager-extension/src/index.tsx:883 packages/docmanager-extension/src/index.tsx:889 packages/docmanager-extension/src/index.tsx:892 packages/docmanager-extension/src/index.tsx:898 packages/docmanager-extension/src/index.tsx:901 packages/docmanager-extension/src/index.tsx:967 packages/docmanager-extension/src/index.tsx:970 packages/notebook/src/default-toolbar.tsx:68
+#: packages/docmanager-extension/src/index.tsx:1007 packages/docmanager-extension/src/index.tsx:1010 packages/docmanager-extension/src/index.tsx:1011 packages/docmanager-extension/src/index.tsx:1016 packages/docmanager-extension/src/index.tsx:1019 packages/docmanager-extension/src/index.tsx:1060 packages/docmanager-extension/src/index.tsx:1062 packages/docmanager-extension/src/index.tsx:1075 packages/docmanager-extension/src/index.tsx:1077 packages/docmanager-extension/src/index.tsx:1206 packages/docmanager-extension/src/index.tsx:1208 packages/docmanager-extension/src/index.tsx:843 packages/docmanager-extension/src/index.tsx:846 packages/docmanager-extension/src/index.tsx:854 packages/docmanager-extension/src/index.tsx:857 packages/docmanager-extension/src/index.tsx:871 packages/docmanager-extension/src/index.tsx:877 packages/docmanager-extension/src/index.tsx:883 packages/docmanager-extension/src/index.tsx:889 packages/docmanager-extension/src/index.tsx:892 packages/docmanager-extension/src/index.tsx:898 packages/docmanager-extension/src/index.tsx:901 packages/docmanager-extension/src/index.tsx:967 packages/docmanager-extension/src/index.tsx:970 packages/notebook/src/default-toolbar.tsx:68 packages/notebook/src/default-toolbar.tsx:69
 msgid "Cannot Save"
 msgstr "保存できません"
 
@@ -5562,7 +5572,7 @@ msgstr "%1 を保存"
 msgid "New View for %1"
 msgstr "%1 の新しいビュー"
 
-#: packages/docmanager-extension/src/index.tsx:1076 packages/docmanager-extension/src/index.tsx:1078 packages/docmanager-extension/src/index.tsx:855 packages/docmanager-extension/src/index.tsx:858 packages/docmanager-extension/src/index.tsx:890 packages/docmanager-extension/src/index.tsx:893 packages/docmanager-extension/src/index.tsx:899 packages/docmanager-extension/src/index.tsx:902 packages/notebook/src/default-toolbar.tsx:69
+#: packages/docmanager-extension/src/index.tsx:1076 packages/docmanager-extension/src/index.tsx:1078 packages/docmanager-extension/src/index.tsx:855 packages/docmanager-extension/src/index.tsx:858 packages/docmanager-extension/src/index.tsx:890 packages/docmanager-extension/src/index.tsx:893 packages/docmanager-extension/src/index.tsx:899 packages/docmanager-extension/src/index.tsx:902 packages/notebook/src/default-toolbar.tsx:69 packages/notebook/src/default-toolbar.tsx:70
 msgid "Document is read-only"
 msgstr "ドキュメントは読み取り専用です"
 
@@ -6846,7 +6856,7 @@ msgstr ""
 msgid "Whether the command is called from a menu context"
 msgstr ""
 
-#: packages/fileeditor-extension/src/commands.ts:306 packages/fileeditor-extension/src/commands.ts:307 packages/fileeditor-extension/src/commands.ts:310 packages/fileeditor-extension/src/commands.ts:311 packages/fileeditor-extension/src/commands.ts:312 packages/fileeditor-extension/src/commands.ts:315 packages/fileeditor-extension/src/commands.ts:316 packages/fileeditor-extension/src/commands.ts:320 packages/fileeditor-extension/src/commands.ts:321 packages/fileeditor-extension/src/commands.ts:330 packages/fileeditor-extension/src/commands.ts:331 packages/mainmenu-extension/src/index.ts:573 packages/mainmenu-extension/src/index.ts:576 packages/mainmenu-extension/src/index.ts:577 packages/mainmenu-extension/src/index.ts:753 packages/notebook-extension/src/index.ts:2963 packages/notebook-extension/src/index.ts:2969 packages/notebook-extension/src/index.ts:2988 packages/notebook-extension/src/index.ts:3040 packages/notebook-extension/src/index.ts:3047 packages/notebook-extension/src/index.ts:3070 packages/notebook-extension/src/index.ts:3072 packages/notebook-extension/src/index.ts:3073 packages/notebook-extension/src/index.ts:3105 packages/notebook-extension/src/index.ts:3118 packages/notebook-extension/src/index.ts:3818
+#: packages/fileeditor-extension/src/commands.ts:306 packages/fileeditor-extension/src/commands.ts:307 packages/fileeditor-extension/src/commands.ts:310 packages/fileeditor-extension/src/commands.ts:311 packages/fileeditor-extension/src/commands.ts:312 packages/fileeditor-extension/src/commands.ts:315 packages/fileeditor-extension/src/commands.ts:316 packages/fileeditor-extension/src/commands.ts:320 packages/fileeditor-extension/src/commands.ts:321 packages/fileeditor-extension/src/commands.ts:330 packages/fileeditor-extension/src/commands.ts:331 packages/mainmenu-extension/src/index.ts:573 packages/mainmenu-extension/src/index.ts:576 packages/mainmenu-extension/src/index.ts:577 packages/mainmenu-extension/src/index.ts:753 packages/notebook-extension/src/index.ts:2963 packages/notebook-extension/src/index.ts:2969 packages/notebook-extension/src/index.ts:2988 packages/notebook-extension/src/index.ts:3040 packages/notebook-extension/src/index.ts:3047 packages/notebook-extension/src/index.ts:3070 packages/notebook-extension/src/index.ts:3072 packages/notebook-extension/src/index.ts:3073 packages/notebook-extension/src/index.ts:3105 packages/notebook-extension/src/index.ts:3118 packages/notebook-extension/src/index.ts:3818 packages/notebook-extension/src/index.ts:3833
 msgid "Show Line Numbers"
 msgstr "行番号を表示"
 
@@ -7508,7 +7518,7 @@ msgstr "%1 からログアウト"
 msgid "Log out of JupyterLab"
 msgstr "JupyterLabからログアウト"
 
-#: packages/mainmenu-extension/src/index.ts:480 packages/mainmenu-extension/src/index.ts:482 packages/mainmenu-extension/src/index.ts:610 packages/notebook-extension/src/index.ts:3081 packages/notebook-extension/src/index.ts:3087 packages/notebook-extension/src/index.ts:3106 packages/notebook-extension/src/index.ts:3158 packages/notebook-extension/src/index.ts:3165 packages/notebook-extension/src/index.ts:3188 packages/notebook-extension/src/index.ts:3190 packages/notebook-extension/src/index.ts:3191 packages/notebook-extension/src/index.ts:3223 packages/notebook-extension/src/index.ts:3236 packages/notebook-extension/src/index.ts:4004
+#: packages/mainmenu-extension/src/index.ts:480 packages/mainmenu-extension/src/index.ts:482 packages/mainmenu-extension/src/index.ts:610 packages/notebook-extension/src/index.ts:3081 packages/notebook-extension/src/index.ts:3087 packages/notebook-extension/src/index.ts:3106 packages/notebook-extension/src/index.ts:3158 packages/notebook-extension/src/index.ts:3165 packages/notebook-extension/src/index.ts:3188 packages/notebook-extension/src/index.ts:3190 packages/notebook-extension/src/index.ts:3191 packages/notebook-extension/src/index.ts:3223 packages/notebook-extension/src/index.ts:3236 packages/notebook-extension/src/index.ts:4004 packages/notebook-extension/src/index.ts:4019
 msgid "Reconnect to Kernel"
 msgstr "カーネルに再接続"
 
@@ -7557,7 +7567,7 @@ msgstr "ウィジェットをその `id` で有効化します。"
 msgid "Activate Previously Used Tab"
 msgstr "前に使用したタブをアクティブにする"
 
-#: packages/mainmenu-extension/src/index.ts:772 packages/notebook-extension/src/index.ts:3552 packages/notebook-extension/src/index.ts:3553 packages/notebook-extension/src/index.ts:3585 packages/notebook-extension/src/index.ts:3598 packages/notebook-extension/src/index.ts:4547 packages/notebook-extension/src/index.ts:4548
+#: packages/mainmenu-extension/src/index.ts:772 packages/notebook-extension/src/index.ts:3552 packages/notebook-extension/src/index.ts:3553 packages/notebook-extension/src/index.ts:3585 packages/notebook-extension/src/index.ts:3598 packages/notebook-extension/src/index.ts:4547 packages/notebook-extension/src/index.ts:4548 packages/notebook-extension/src/index.ts:4562 packages/notebook-extension/src/index.ts:4563
 msgid "Show Minimap"
 msgstr "ミニマップを表示"
 
@@ -7835,293 +7845,293 @@ msgid "Cut this cell"
 msgid_plural "Cut these %1 cells"
 msgstr[0] "%1 個のセルを切り取り"
 
-#: packages/notebook-extension/src/index.ts:2532 packages/notebook-extension/src/index.ts:2538 packages/notebook-extension/src/index.ts:2557 packages/notebook-extension/src/index.ts:2609 packages/notebook-extension/src/index.ts:2616 packages/notebook-extension/src/index.ts:2639 packages/notebook-extension/src/index.ts:2641 packages/notebook-extension/src/index.ts:2642 packages/notebook-extension/src/index.ts:2674 packages/notebook-extension/src/index.ts:2687 packages/notebook-extension/src/index.ts:3115
+#: packages/notebook-extension/src/index.ts:2532 packages/notebook-extension/src/index.ts:2538 packages/notebook-extension/src/index.ts:2557 packages/notebook-extension/src/index.ts:2609 packages/notebook-extension/src/index.ts:2616 packages/notebook-extension/src/index.ts:2639 packages/notebook-extension/src/index.ts:2641 packages/notebook-extension/src/index.ts:2642 packages/notebook-extension/src/index.ts:2674 packages/notebook-extension/src/index.ts:2687 packages/notebook-extension/src/index.ts:3115 packages/notebook-extension/src/index.ts:3118
 msgid "Copy Cell"
 msgid_plural "Copy Cells"
 msgstr[0] "セルをコピー"
 
-#: packages/notebook-extension/src/index.ts:2540 packages/notebook-extension/src/index.ts:2546 packages/notebook-extension/src/index.ts:2565 packages/notebook-extension/src/index.ts:2617 packages/notebook-extension/src/index.ts:2624 packages/notebook-extension/src/index.ts:2647 packages/notebook-extension/src/index.ts:2649 packages/notebook-extension/src/index.ts:2650 packages/notebook-extension/src/index.ts:2682 packages/notebook-extension/src/index.ts:2695 packages/notebook-extension/src/index.ts:3123
+#: packages/notebook-extension/src/index.ts:2540 packages/notebook-extension/src/index.ts:2546 packages/notebook-extension/src/index.ts:2565 packages/notebook-extension/src/index.ts:2617 packages/notebook-extension/src/index.ts:2624 packages/notebook-extension/src/index.ts:2647 packages/notebook-extension/src/index.ts:2649 packages/notebook-extension/src/index.ts:2650 packages/notebook-extension/src/index.ts:2682 packages/notebook-extension/src/index.ts:2695 packages/notebook-extension/src/index.ts:3123 packages/notebook-extension/src/index.ts:3126
 msgid "Copy this cell"
 msgid_plural "Copy these %1 cells"
 msgstr[0] "%1 個のセルをコピー"
 
-#: packages/notebook-extension/src/index.ts:2553 packages/notebook-extension/src/index.ts:2591 packages/notebook-extension/src/index.ts:2629 packages/notebook-extension/src/index.ts:2884 packages/notebook-extension/src/index.ts:2929 packages/notebook-extension/src/index.ts:3104 packages/notebook-extension/src/index.ts:3149 packages/notebook-extension/src/index.ts:3197 packages/notebook-extension/src/index.ts:3239 packages/notebook-extension/src/index.ts:3284 packages/notebook-extension/src/index.ts:3318 packages/notebook-extension/src/index.ts:3363 packages/notebook-extension/src/index.ts:3752 packages/notebook-extension/src/index.ts:3809 packages/notebook-extension/src/index.ts:3846 packages/notebook-extension/src/index.ts:3995 packages/notebook-extension/src/index.ts:4315 packages/notebook-extension/src/index.ts:4507
+#: packages/notebook-extension/src/index.ts:2553 packages/notebook-extension/src/index.ts:2591 packages/notebook-extension/src/index.ts:2629 packages/notebook-extension/src/index.ts:2884 packages/notebook-extension/src/index.ts:2929 packages/notebook-extension/src/index.ts:3104 packages/notebook-extension/src/index.ts:3107 packages/notebook-extension/src/index.ts:3149 packages/notebook-extension/src/index.ts:3155 packages/notebook-extension/src/index.ts:3197 packages/notebook-extension/src/index.ts:3206 packages/notebook-extension/src/index.ts:3239 packages/notebook-extension/src/index.ts:3251 packages/notebook-extension/src/index.ts:3284 packages/notebook-extension/src/index.ts:3296 packages/notebook-extension/src/index.ts:3318 packages/notebook-extension/src/index.ts:3333 packages/notebook-extension/src/index.ts:3363 packages/notebook-extension/src/index.ts:3378 packages/notebook-extension/src/index.ts:3752 packages/notebook-extension/src/index.ts:3767 packages/notebook-extension/src/index.ts:3809 packages/notebook-extension/src/index.ts:3824 packages/notebook-extension/src/index.ts:3846 packages/notebook-extension/src/index.ts:3861 packages/notebook-extension/src/index.ts:3995 packages/notebook-extension/src/index.ts:4010 packages/notebook-extension/src/index.ts:4315 packages/notebook-extension/src/index.ts:4330 packages/notebook-extension/src/index.ts:4507 packages/notebook-extension/src/index.ts:4522
 msgid "Whether to activate the notebook after execution"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:2559 packages/notebook-extension/src/index.ts:2565 packages/notebook-extension/src/index.ts:2584 packages/notebook-extension/src/index.ts:2636 packages/notebook-extension/src/index.ts:2643 packages/notebook-extension/src/index.ts:2666 packages/notebook-extension/src/index.ts:2668 packages/notebook-extension/src/index.ts:2669 packages/notebook-extension/src/index.ts:2701 packages/notebook-extension/src/index.ts:2714 packages/notebook-extension/src/index.ts:3160
+#: packages/notebook-extension/src/index.ts:2559 packages/notebook-extension/src/index.ts:2565 packages/notebook-extension/src/index.ts:2584 packages/notebook-extension/src/index.ts:2636 packages/notebook-extension/src/index.ts:2643 packages/notebook-extension/src/index.ts:2666 packages/notebook-extension/src/index.ts:2668 packages/notebook-extension/src/index.ts:2669 packages/notebook-extension/src/index.ts:2701 packages/notebook-extension/src/index.ts:2714 packages/notebook-extension/src/index.ts:3160 packages/notebook-extension/src/index.ts:3166
 msgid "Paste Cell Below"
 msgid_plural "Paste Cells Below"
 msgstr[0] "セルを下にペースト"
 
-#: packages/notebook-extension/src/index.ts:2567 packages/notebook-extension/src/index.ts:2573 packages/notebook-extension/src/index.ts:2592 packages/notebook-extension/src/index.ts:2594 packages/notebook-extension/src/index.ts:2600 packages/notebook-extension/src/index.ts:2619 packages/notebook-extension/src/index.ts:2644 packages/notebook-extension/src/index.ts:2651 packages/notebook-extension/src/index.ts:2671 packages/notebook-extension/src/index.ts:2674 packages/notebook-extension/src/index.ts:2676 packages/notebook-extension/src/index.ts:2677 packages/notebook-extension/src/index.ts:2678 packages/notebook-extension/src/index.ts:2701 packages/notebook-extension/src/index.ts:2703 packages/notebook-extension/src/index.ts:2704 packages/notebook-extension/src/index.ts:2709 packages/notebook-extension/src/index.ts:2722 packages/notebook-extension/src/index.ts:2736 packages/notebook-extension/src/index.ts:2749 packages/notebook-extension/src/index.ts:3168 packages/notebook-extension/src/index.ts:3216
+#: packages/notebook-extension/src/index.ts:2567 packages/notebook-extension/src/index.ts:2573 packages/notebook-extension/src/index.ts:2592 packages/notebook-extension/src/index.ts:2594 packages/notebook-extension/src/index.ts:2600 packages/notebook-extension/src/index.ts:2619 packages/notebook-extension/src/index.ts:2644 packages/notebook-extension/src/index.ts:2651 packages/notebook-extension/src/index.ts:2671 packages/notebook-extension/src/index.ts:2674 packages/notebook-extension/src/index.ts:2676 packages/notebook-extension/src/index.ts:2677 packages/notebook-extension/src/index.ts:2678 packages/notebook-extension/src/index.ts:2701 packages/notebook-extension/src/index.ts:2703 packages/notebook-extension/src/index.ts:2704 packages/notebook-extension/src/index.ts:2709 packages/notebook-extension/src/index.ts:2722 packages/notebook-extension/src/index.ts:2736 packages/notebook-extension/src/index.ts:2749 packages/notebook-extension/src/index.ts:3168 packages/notebook-extension/src/index.ts:3174 packages/notebook-extension/src/index.ts:3216 packages/notebook-extension/src/index.ts:3225
 msgid "Paste this cell from the clipboard"
 msgid_plural "Paste these %1 cells from the clipboard"
 msgstr[0] "%1 個のセルをペースト"
 
-#: packages/notebook-extension/src/index.ts:2586 packages/notebook-extension/src/index.ts:2592 packages/notebook-extension/src/index.ts:2611 packages/notebook-extension/src/index.ts:2663 packages/notebook-extension/src/index.ts:2670 packages/notebook-extension/src/index.ts:2693 packages/notebook-extension/src/index.ts:2695 packages/notebook-extension/src/index.ts:2696 packages/notebook-extension/src/index.ts:2728 packages/notebook-extension/src/index.ts:2741 packages/notebook-extension/src/index.ts:3208
+#: packages/notebook-extension/src/index.ts:2586 packages/notebook-extension/src/index.ts:2592 packages/notebook-extension/src/index.ts:2611 packages/notebook-extension/src/index.ts:2663 packages/notebook-extension/src/index.ts:2670 packages/notebook-extension/src/index.ts:2693 packages/notebook-extension/src/index.ts:2695 packages/notebook-extension/src/index.ts:2696 packages/notebook-extension/src/index.ts:2728 packages/notebook-extension/src/index.ts:2741 packages/notebook-extension/src/index.ts:3208 packages/notebook-extension/src/index.ts:3217
 msgid "Paste Cell Above"
 msgid_plural "Paste Cells Above"
 msgstr[0] "セルを上にペースト"
 
-#: packages/notebook-extension/src/index.ts:2612 packages/notebook-extension/src/index.ts:2618 packages/notebook-extension/src/index.ts:2637 packages/notebook-extension/src/index.ts:2689 packages/notebook-extension/src/index.ts:2696 packages/notebook-extension/src/index.ts:2719 packages/notebook-extension/src/index.ts:2721 packages/notebook-extension/src/index.ts:2722 packages/notebook-extension/src/index.ts:2754 packages/notebook-extension/src/index.ts:2767 packages/notebook-extension/src/index.ts:3250
+#: packages/notebook-extension/src/index.ts:2612 packages/notebook-extension/src/index.ts:2618 packages/notebook-extension/src/index.ts:2637 packages/notebook-extension/src/index.ts:2689 packages/notebook-extension/src/index.ts:2696 packages/notebook-extension/src/index.ts:2719 packages/notebook-extension/src/index.ts:2721 packages/notebook-extension/src/index.ts:2722 packages/notebook-extension/src/index.ts:2754 packages/notebook-extension/src/index.ts:2767 packages/notebook-extension/src/index.ts:3250 packages/notebook-extension/src/index.ts:3262
 msgid "Duplicate Cell Below"
 msgid_plural "Duplicate Cells Below"
 msgstr[0] "セルを下方向に複製"
 
-#: packages/notebook-extension/src/index.ts:2620 packages/notebook-extension/src/index.ts:2626 packages/notebook-extension/src/index.ts:2645 packages/notebook-extension/src/index.ts:2697 packages/notebook-extension/src/index.ts:2704 packages/notebook-extension/src/index.ts:2727 packages/notebook-extension/src/index.ts:2729 packages/notebook-extension/src/index.ts:2730 packages/notebook-extension/src/index.ts:2762 packages/notebook-extension/src/index.ts:2775 packages/notebook-extension/src/index.ts:3258
+#: packages/notebook-extension/src/index.ts:2620 packages/notebook-extension/src/index.ts:2626 packages/notebook-extension/src/index.ts:2645 packages/notebook-extension/src/index.ts:2697 packages/notebook-extension/src/index.ts:2704 packages/notebook-extension/src/index.ts:2727 packages/notebook-extension/src/index.ts:2729 packages/notebook-extension/src/index.ts:2730 packages/notebook-extension/src/index.ts:2762 packages/notebook-extension/src/index.ts:2775 packages/notebook-extension/src/index.ts:3258 packages/notebook-extension/src/index.ts:3270
 msgid "Create a duplicate of this cell below"
 msgid_plural "Create duplicates of %1 cells below"
 msgstr[0] "下部に %1 個のセルのコピーを作成"
 
-#: packages/notebook-extension/src/index.ts:2639 packages/notebook-extension/src/index.ts:2645 packages/notebook-extension/src/index.ts:2664 packages/notebook-extension/src/index.ts:2716 packages/notebook-extension/src/index.ts:2723 packages/notebook-extension/src/index.ts:2746 packages/notebook-extension/src/index.ts:2748 packages/notebook-extension/src/index.ts:2749 packages/notebook-extension/src/index.ts:2781 packages/notebook-extension/src/index.ts:2794 packages/notebook-extension/src/index.ts:3295
+#: packages/notebook-extension/src/index.ts:2639 packages/notebook-extension/src/index.ts:2645 packages/notebook-extension/src/index.ts:2664 packages/notebook-extension/src/index.ts:2716 packages/notebook-extension/src/index.ts:2723 packages/notebook-extension/src/index.ts:2746 packages/notebook-extension/src/index.ts:2748 packages/notebook-extension/src/index.ts:2749 packages/notebook-extension/src/index.ts:2781 packages/notebook-extension/src/index.ts:2794 packages/notebook-extension/src/index.ts:3295 packages/notebook-extension/src/index.ts:3307
 msgid "Paste Cell and Replace"
 msgid_plural "Paste Cells and Replace"
 msgstr[0] "セルをペーストし置き換える"
 
-#: packages/notebook-extension/src/index.ts:2657 packages/notebook-extension/src/index.ts:2663 packages/notebook-extension/src/index.ts:2682 packages/notebook-extension/src/index.ts:2734 packages/notebook-extension/src/index.ts:2741 packages/notebook-extension/src/index.ts:2764 packages/notebook-extension/src/index.ts:2766 packages/notebook-extension/src/index.ts:2767 packages/notebook-extension/src/index.ts:2799 packages/notebook-extension/src/index.ts:2812 packages/notebook-extension/src/index.ts:3329
+#: packages/notebook-extension/src/index.ts:2657 packages/notebook-extension/src/index.ts:2663 packages/notebook-extension/src/index.ts:2682 packages/notebook-extension/src/index.ts:2734 packages/notebook-extension/src/index.ts:2741 packages/notebook-extension/src/index.ts:2764 packages/notebook-extension/src/index.ts:2766 packages/notebook-extension/src/index.ts:2767 packages/notebook-extension/src/index.ts:2799 packages/notebook-extension/src/index.ts:2812 packages/notebook-extension/src/index.ts:3329 packages/notebook-extension/src/index.ts:3344
 msgid "Delete Cell"
 msgid_plural "Delete Cells"
 msgstr[0] "セルを削除"
 
-#: packages/notebook-extension/src/index.ts:2665 packages/notebook-extension/src/index.ts:2671 packages/notebook-extension/src/index.ts:2690 packages/notebook-extension/src/index.ts:2742 packages/notebook-extension/src/index.ts:2749 packages/notebook-extension/src/index.ts:2772 packages/notebook-extension/src/index.ts:2774 packages/notebook-extension/src/index.ts:2775 packages/notebook-extension/src/index.ts:2807 packages/notebook-extension/src/index.ts:2820 packages/notebook-extension/src/index.ts:3337
+#: packages/notebook-extension/src/index.ts:2665 packages/notebook-extension/src/index.ts:2671 packages/notebook-extension/src/index.ts:2690 packages/notebook-extension/src/index.ts:2742 packages/notebook-extension/src/index.ts:2749 packages/notebook-extension/src/index.ts:2772 packages/notebook-extension/src/index.ts:2774 packages/notebook-extension/src/index.ts:2775 packages/notebook-extension/src/index.ts:2807 packages/notebook-extension/src/index.ts:2820 packages/notebook-extension/src/index.ts:3337 packages/notebook-extension/src/index.ts:3352
 msgid "Delete this cell"
 msgid_plural "Delete these %1 cells"
 msgstr[0] "%1 個のセルを削除"
 
-#: packages/notebook-extension/src/index.ts:2682 packages/notebook-extension/src/index.ts:2688 packages/notebook-extension/src/index.ts:2707 packages/notebook-extension/src/index.ts:2759 packages/notebook-extension/src/index.ts:2766 packages/notebook-extension/src/index.ts:2789 packages/notebook-extension/src/index.ts:2791 packages/notebook-extension/src/index.ts:2792 packages/notebook-extension/src/index.ts:2824 packages/notebook-extension/src/index.ts:2837 packages/notebook-extension/src/index.ts:3372
+#: packages/notebook-extension/src/index.ts:2682 packages/notebook-extension/src/index.ts:2688 packages/notebook-extension/src/index.ts:2707 packages/notebook-extension/src/index.ts:2759 packages/notebook-extension/src/index.ts:2766 packages/notebook-extension/src/index.ts:2789 packages/notebook-extension/src/index.ts:2791 packages/notebook-extension/src/index.ts:2792 packages/notebook-extension/src/index.ts:2824 packages/notebook-extension/src/index.ts:2837 packages/notebook-extension/src/index.ts:3372 packages/notebook-extension/src/index.ts:3387
 msgid "Split Cell"
 msgstr "セルの分割"
 
-#: packages/notebook-extension/src/index.ts:2693 packages/notebook-extension/src/index.ts:2699 packages/notebook-extension/src/index.ts:2718 packages/notebook-extension/src/index.ts:2770 packages/notebook-extension/src/index.ts:2777 packages/notebook-extension/src/index.ts:2800 packages/notebook-extension/src/index.ts:2802 packages/notebook-extension/src/index.ts:2803 packages/notebook-extension/src/index.ts:2835 packages/notebook-extension/src/index.ts:2848 packages/notebook-extension/src/index.ts:3389
+#: packages/notebook-extension/src/index.ts:2693 packages/notebook-extension/src/index.ts:2699 packages/notebook-extension/src/index.ts:2718 packages/notebook-extension/src/index.ts:2770 packages/notebook-extension/src/index.ts:2777 packages/notebook-extension/src/index.ts:2800 packages/notebook-extension/src/index.ts:2802 packages/notebook-extension/src/index.ts:2803 packages/notebook-extension/src/index.ts:2835 packages/notebook-extension/src/index.ts:2848 packages/notebook-extension/src/index.ts:3389 packages/notebook-extension/src/index.ts:3404
 msgid "Merge Selected Cells"
 msgstr "選択したセルを結合"
 
-#: packages/notebook-extension/src/index.ts:2704 packages/notebook-extension/src/index.ts:2710 packages/notebook-extension/src/index.ts:2729 packages/notebook-extension/src/index.ts:2781 packages/notebook-extension/src/index.ts:2788 packages/notebook-extension/src/index.ts:2811 packages/notebook-extension/src/index.ts:2813 packages/notebook-extension/src/index.ts:2814 packages/notebook-extension/src/index.ts:2846 packages/notebook-extension/src/index.ts:2859 packages/notebook-extension/src/index.ts:3409
+#: packages/notebook-extension/src/index.ts:2704 packages/notebook-extension/src/index.ts:2710 packages/notebook-extension/src/index.ts:2729 packages/notebook-extension/src/index.ts:2781 packages/notebook-extension/src/index.ts:2788 packages/notebook-extension/src/index.ts:2811 packages/notebook-extension/src/index.ts:2813 packages/notebook-extension/src/index.ts:2814 packages/notebook-extension/src/index.ts:2846 packages/notebook-extension/src/index.ts:2859 packages/notebook-extension/src/index.ts:3409 packages/notebook-extension/src/index.ts:3424
 msgid "Merge Cell Above"
 msgstr "上のセルと結合"
 
-#: packages/notebook-extension/src/index.ts:2715 packages/notebook-extension/src/index.ts:2721 packages/notebook-extension/src/index.ts:2740 packages/notebook-extension/src/index.ts:2792 packages/notebook-extension/src/index.ts:2799 packages/notebook-extension/src/index.ts:2822 packages/notebook-extension/src/index.ts:2824 packages/notebook-extension/src/index.ts:2825 packages/notebook-extension/src/index.ts:2857 packages/notebook-extension/src/index.ts:2870 packages/notebook-extension/src/index.ts:3429
+#: packages/notebook-extension/src/index.ts:2715 packages/notebook-extension/src/index.ts:2721 packages/notebook-extension/src/index.ts:2740 packages/notebook-extension/src/index.ts:2792 packages/notebook-extension/src/index.ts:2799 packages/notebook-extension/src/index.ts:2822 packages/notebook-extension/src/index.ts:2824 packages/notebook-extension/src/index.ts:2825 packages/notebook-extension/src/index.ts:2857 packages/notebook-extension/src/index.ts:2870 packages/notebook-extension/src/index.ts:3429 packages/notebook-extension/src/index.ts:3444
 msgid "Merge Cell Below"
 msgstr "下のセルと結合"
 
-#: packages/notebook-extension/src/index.ts:2726 packages/notebook-extension/src/index.ts:2732 packages/notebook-extension/src/index.ts:2751 packages/notebook-extension/src/index.ts:2803 packages/notebook-extension/src/index.ts:2810 packages/notebook-extension/src/index.ts:2833 packages/notebook-extension/src/index.ts:2835 packages/notebook-extension/src/index.ts:2836 packages/notebook-extension/src/index.ts:2868 packages/notebook-extension/src/index.ts:2881 packages/notebook-extension/src/index.ts:3449
+#: packages/notebook-extension/src/index.ts:2726 packages/notebook-extension/src/index.ts:2732 packages/notebook-extension/src/index.ts:2751 packages/notebook-extension/src/index.ts:2803 packages/notebook-extension/src/index.ts:2810 packages/notebook-extension/src/index.ts:2833 packages/notebook-extension/src/index.ts:2835 packages/notebook-extension/src/index.ts:2836 packages/notebook-extension/src/index.ts:2868 packages/notebook-extension/src/index.ts:2881 packages/notebook-extension/src/index.ts:3449 packages/notebook-extension/src/index.ts:3464
 msgid "Insert Cell Above"
 msgstr "上にセルを挿入"
 
-#: packages/notebook-extension/src/index.ts:2727 packages/notebook-extension/src/index.ts:2733 packages/notebook-extension/src/index.ts:2752 packages/notebook-extension/src/index.ts:2804 packages/notebook-extension/src/index.ts:2811 packages/notebook-extension/src/index.ts:2834 packages/notebook-extension/src/index.ts:2836 packages/notebook-extension/src/index.ts:2837 packages/notebook-extension/src/index.ts:2869 packages/notebook-extension/src/index.ts:2882 packages/notebook-extension/src/index.ts:3450
+#: packages/notebook-extension/src/index.ts:2727 packages/notebook-extension/src/index.ts:2733 packages/notebook-extension/src/index.ts:2752 packages/notebook-extension/src/index.ts:2804 packages/notebook-extension/src/index.ts:2811 packages/notebook-extension/src/index.ts:2834 packages/notebook-extension/src/index.ts:2836 packages/notebook-extension/src/index.ts:2837 packages/notebook-extension/src/index.ts:2869 packages/notebook-extension/src/index.ts:2882 packages/notebook-extension/src/index.ts:3450 packages/notebook-extension/src/index.ts:3465
 msgid "Insert a cell above"
 msgstr "上にセルを挿入"
 
-#: packages/notebook-extension/src/index.ts:2739 packages/notebook-extension/src/index.ts:2745 packages/notebook-extension/src/index.ts:2764 packages/notebook-extension/src/index.ts:2816 packages/notebook-extension/src/index.ts:2823 packages/notebook-extension/src/index.ts:2846 packages/notebook-extension/src/index.ts:2848 packages/notebook-extension/src/index.ts:2849 packages/notebook-extension/src/index.ts:2881 packages/notebook-extension/src/index.ts:2894 packages/notebook-extension/src/index.ts:3474
+#: packages/notebook-extension/src/index.ts:2739 packages/notebook-extension/src/index.ts:2745 packages/notebook-extension/src/index.ts:2764 packages/notebook-extension/src/index.ts:2816 packages/notebook-extension/src/index.ts:2823 packages/notebook-extension/src/index.ts:2846 packages/notebook-extension/src/index.ts:2848 packages/notebook-extension/src/index.ts:2849 packages/notebook-extension/src/index.ts:2881 packages/notebook-extension/src/index.ts:2894 packages/notebook-extension/src/index.ts:3474 packages/notebook-extension/src/index.ts:3489
 msgid "Insert Cell Below"
 msgstr "下にセルを挿入"
 
-#: packages/notebook-extension/src/index.ts:2740 packages/notebook-extension/src/index.ts:2746 packages/notebook-extension/src/index.ts:2765 packages/notebook-extension/src/index.ts:2817 packages/notebook-extension/src/index.ts:2824 packages/notebook-extension/src/index.ts:2847 packages/notebook-extension/src/index.ts:2849 packages/notebook-extension/src/index.ts:2850 packages/notebook-extension/src/index.ts:2882 packages/notebook-extension/src/index.ts:2895 packages/notebook-extension/src/index.ts:3475 packages/notebook/src/default-toolbar.tsx:121
+#: packages/notebook-extension/src/index.ts:2740 packages/notebook-extension/src/index.ts:2746 packages/notebook-extension/src/index.ts:2765 packages/notebook-extension/src/index.ts:2817 packages/notebook-extension/src/index.ts:2824 packages/notebook-extension/src/index.ts:2847 packages/notebook-extension/src/index.ts:2849 packages/notebook-extension/src/index.ts:2850 packages/notebook-extension/src/index.ts:2882 packages/notebook-extension/src/index.ts:2895 packages/notebook-extension/src/index.ts:3475 packages/notebook-extension/src/index.ts:3490 packages/notebook/src/default-toolbar.tsx:121 packages/notebook/src/default-toolbar.tsx:122
 msgid "Insert a cell below"
 msgstr "下にセルを挿入"
 
-#: packages/notebook-extension/src/index.ts:2752 packages/notebook-extension/src/index.ts:2758 packages/notebook-extension/src/index.ts:2777 packages/notebook-extension/src/index.ts:2829 packages/notebook-extension/src/index.ts:2836 packages/notebook-extension/src/index.ts:2859 packages/notebook-extension/src/index.ts:2861 packages/notebook-extension/src/index.ts:2862 packages/notebook-extension/src/index.ts:2894 packages/notebook-extension/src/index.ts:2907 packages/notebook-extension/src/index.ts:3499
+#: packages/notebook-extension/src/index.ts:2752 packages/notebook-extension/src/index.ts:2758 packages/notebook-extension/src/index.ts:2777 packages/notebook-extension/src/index.ts:2829 packages/notebook-extension/src/index.ts:2836 packages/notebook-extension/src/index.ts:2859 packages/notebook-extension/src/index.ts:2861 packages/notebook-extension/src/index.ts:2862 packages/notebook-extension/src/index.ts:2894 packages/notebook-extension/src/index.ts:2907 packages/notebook-extension/src/index.ts:3499 packages/notebook-extension/src/index.ts:3514
 msgid "Select Cell Above"
 msgstr "上のセルを選択"
 
-#: packages/notebook-extension/src/index.ts:2763 packages/notebook-extension/src/index.ts:2769 packages/notebook-extension/src/index.ts:2788 packages/notebook-extension/src/index.ts:2840 packages/notebook-extension/src/index.ts:2847 packages/notebook-extension/src/index.ts:2870 packages/notebook-extension/src/index.ts:2872 packages/notebook-extension/src/index.ts:2873 packages/notebook-extension/src/index.ts:2905 packages/notebook-extension/src/index.ts:2918 packages/notebook-extension/src/index.ts:3516
+#: packages/notebook-extension/src/index.ts:2763 packages/notebook-extension/src/index.ts:2769 packages/notebook-extension/src/index.ts:2788 packages/notebook-extension/src/index.ts:2840 packages/notebook-extension/src/index.ts:2847 packages/notebook-extension/src/index.ts:2870 packages/notebook-extension/src/index.ts:2872 packages/notebook-extension/src/index.ts:2873 packages/notebook-extension/src/index.ts:2905 packages/notebook-extension/src/index.ts:2918 packages/notebook-extension/src/index.ts:3516 packages/notebook-extension/src/index.ts:3531
 msgid "Select Cell Below"
 msgstr "下のセルを選択"
 
-#: packages/notebook-extension/src/index.ts:2773 packages/notebook-extension/src/index.ts:2779 packages/notebook-extension/src/index.ts:2798 packages/notebook-extension/src/index.ts:2850 packages/notebook-extension/src/index.ts:2857 packages/notebook-extension/src/index.ts:2880 packages/notebook-extension/src/index.ts:2882 packages/notebook-extension/src/index.ts:2883 packages/notebook-extension/src/index.ts:2915 packages/notebook-extension/src/index.ts:2928 packages/notebook-extension/src/index.ts:3532
+#: packages/notebook-extension/src/index.ts:2773 packages/notebook-extension/src/index.ts:2779 packages/notebook-extension/src/index.ts:2798 packages/notebook-extension/src/index.ts:2850 packages/notebook-extension/src/index.ts:2857 packages/notebook-extension/src/index.ts:2880 packages/notebook-extension/src/index.ts:2882 packages/notebook-extension/src/index.ts:2883 packages/notebook-extension/src/index.ts:2915 packages/notebook-extension/src/index.ts:2928 packages/notebook-extension/src/index.ts:3532 packages/notebook-extension/src/index.ts:3547
 msgid "Insert Heading Above Current Heading"
 msgstr "現在の見出しの上に見出しを挿入"
 
-#: packages/notebook-extension/src/index.ts:2784 packages/notebook-extension/src/index.ts:2790 packages/notebook-extension/src/index.ts:2809 packages/notebook-extension/src/index.ts:2861 packages/notebook-extension/src/index.ts:2868 packages/notebook-extension/src/index.ts:2891 packages/notebook-extension/src/index.ts:2893 packages/notebook-extension/src/index.ts:2894 packages/notebook-extension/src/index.ts:2926 packages/notebook-extension/src/index.ts:2939 packages/notebook-extension/src/index.ts:3549
+#: packages/notebook-extension/src/index.ts:2784 packages/notebook-extension/src/index.ts:2790 packages/notebook-extension/src/index.ts:2809 packages/notebook-extension/src/index.ts:2861 packages/notebook-extension/src/index.ts:2868 packages/notebook-extension/src/index.ts:2891 packages/notebook-extension/src/index.ts:2893 packages/notebook-extension/src/index.ts:2894 packages/notebook-extension/src/index.ts:2926 packages/notebook-extension/src/index.ts:2939 packages/notebook-extension/src/index.ts:3549 packages/notebook-extension/src/index.ts:3564
 msgid "Insert Heading Below Current Heading"
 msgstr "現在の見出しの下に見出しを挿入"
 
-#: packages/notebook-extension/src/index.ts:2795 packages/notebook-extension/src/index.ts:2801 packages/notebook-extension/src/index.ts:2820 packages/notebook-extension/src/index.ts:2872 packages/notebook-extension/src/index.ts:2879 packages/notebook-extension/src/index.ts:2902 packages/notebook-extension/src/index.ts:2904 packages/notebook-extension/src/index.ts:2905 packages/notebook-extension/src/index.ts:2937 packages/notebook-extension/src/index.ts:2950 packages/notebook-extension/src/index.ts:3566
+#: packages/notebook-extension/src/index.ts:2795 packages/notebook-extension/src/index.ts:2801 packages/notebook-extension/src/index.ts:2820 packages/notebook-extension/src/index.ts:2872 packages/notebook-extension/src/index.ts:2879 packages/notebook-extension/src/index.ts:2902 packages/notebook-extension/src/index.ts:2904 packages/notebook-extension/src/index.ts:2905 packages/notebook-extension/src/index.ts:2937 packages/notebook-extension/src/index.ts:2950 packages/notebook-extension/src/index.ts:3566 packages/notebook-extension/src/index.ts:3581
 msgid "Select Heading Above or Collapse Heading"
 msgstr "上の見出しを選択するか、見出しを畳む"
 
-#: packages/notebook-extension/src/index.ts:2808 packages/notebook-extension/src/index.ts:2814 packages/notebook-extension/src/index.ts:2833 packages/notebook-extension/src/index.ts:2885 packages/notebook-extension/src/index.ts:2892 packages/notebook-extension/src/index.ts:2915 packages/notebook-extension/src/index.ts:2917 packages/notebook-extension/src/index.ts:2918 packages/notebook-extension/src/index.ts:2950 packages/notebook-extension/src/index.ts:2963 packages/notebook-extension/src/index.ts:3585
+#: packages/notebook-extension/src/index.ts:2808 packages/notebook-extension/src/index.ts:2814 packages/notebook-extension/src/index.ts:2833 packages/notebook-extension/src/index.ts:2885 packages/notebook-extension/src/index.ts:2892 packages/notebook-extension/src/index.ts:2915 packages/notebook-extension/src/index.ts:2917 packages/notebook-extension/src/index.ts:2918 packages/notebook-extension/src/index.ts:2950 packages/notebook-extension/src/index.ts:2963 packages/notebook-extension/src/index.ts:3585 packages/notebook-extension/src/index.ts:3600
 msgid "Select Heading Below or Expand Heading"
 msgstr "下の見出しを選択するか、見出しを展開する"
 
-#: packages/notebook-extension/src/index.ts:2821 packages/notebook-extension/src/index.ts:2827 packages/notebook-extension/src/index.ts:2846 packages/notebook-extension/src/index.ts:2898 packages/notebook-extension/src/index.ts:2905 packages/notebook-extension/src/index.ts:2928 packages/notebook-extension/src/index.ts:2930 packages/notebook-extension/src/index.ts:2931 packages/notebook-extension/src/index.ts:2963 packages/notebook-extension/src/index.ts:2976 packages/notebook-extension/src/index.ts:3604
+#: packages/notebook-extension/src/index.ts:2821 packages/notebook-extension/src/index.ts:2827 packages/notebook-extension/src/index.ts:2846 packages/notebook-extension/src/index.ts:2898 packages/notebook-extension/src/index.ts:2905 packages/notebook-extension/src/index.ts:2928 packages/notebook-extension/src/index.ts:2930 packages/notebook-extension/src/index.ts:2931 packages/notebook-extension/src/index.ts:2963 packages/notebook-extension/src/index.ts:2976 packages/notebook-extension/src/index.ts:3604 packages/notebook-extension/src/index.ts:3619
 msgid "Extend Selection Above"
 msgstr "選択範囲を上に拡張"
 
-#: packages/notebook-extension/src/index.ts:2832 packages/notebook-extension/src/index.ts:2838 packages/notebook-extension/src/index.ts:2857 packages/notebook-extension/src/index.ts:2909 packages/notebook-extension/src/index.ts:2916 packages/notebook-extension/src/index.ts:2939 packages/notebook-extension/src/index.ts:2941 packages/notebook-extension/src/index.ts:2942 packages/notebook-extension/src/index.ts:2974 packages/notebook-extension/src/index.ts:2987 packages/notebook-extension/src/index.ts:3621
+#: packages/notebook-extension/src/index.ts:2832 packages/notebook-extension/src/index.ts:2838 packages/notebook-extension/src/index.ts:2857 packages/notebook-extension/src/index.ts:2909 packages/notebook-extension/src/index.ts:2916 packages/notebook-extension/src/index.ts:2939 packages/notebook-extension/src/index.ts:2941 packages/notebook-extension/src/index.ts:2942 packages/notebook-extension/src/index.ts:2974 packages/notebook-extension/src/index.ts:2987 packages/notebook-extension/src/index.ts:3621 packages/notebook-extension/src/index.ts:3636
 msgid "Extend Selection to Top"
 msgstr "選択範囲を最上部まで拡張"
 
-#: packages/notebook-extension/src/index.ts:2843 packages/notebook-extension/src/index.ts:2849 packages/notebook-extension/src/index.ts:2868 packages/notebook-extension/src/index.ts:2920 packages/notebook-extension/src/index.ts:2927 packages/notebook-extension/src/index.ts:2950 packages/notebook-extension/src/index.ts:2952 packages/notebook-extension/src/index.ts:2953 packages/notebook-extension/src/index.ts:2985 packages/notebook-extension/src/index.ts:2998 packages/notebook-extension/src/index.ts:3638
+#: packages/notebook-extension/src/index.ts:2843 packages/notebook-extension/src/index.ts:2849 packages/notebook-extension/src/index.ts:2868 packages/notebook-extension/src/index.ts:2920 packages/notebook-extension/src/index.ts:2927 packages/notebook-extension/src/index.ts:2950 packages/notebook-extension/src/index.ts:2952 packages/notebook-extension/src/index.ts:2953 packages/notebook-extension/src/index.ts:2985 packages/notebook-extension/src/index.ts:2998 packages/notebook-extension/src/index.ts:3638 packages/notebook-extension/src/index.ts:3653
 msgid "Extend Selection Below"
 msgstr "選択範囲を下に拡張"
 
-#: packages/notebook-extension/src/index.ts:2854 packages/notebook-extension/src/index.ts:2860 packages/notebook-extension/src/index.ts:2879 packages/notebook-extension/src/index.ts:2931 packages/notebook-extension/src/index.ts:2938 packages/notebook-extension/src/index.ts:2961 packages/notebook-extension/src/index.ts:2963 packages/notebook-extension/src/index.ts:2964 packages/notebook-extension/src/index.ts:2996 packages/notebook-extension/src/index.ts:3009 packages/notebook-extension/src/index.ts:3655
+#: packages/notebook-extension/src/index.ts:2854 packages/notebook-extension/src/index.ts:2860 packages/notebook-extension/src/index.ts:2879 packages/notebook-extension/src/index.ts:2931 packages/notebook-extension/src/index.ts:2938 packages/notebook-extension/src/index.ts:2961 packages/notebook-extension/src/index.ts:2963 packages/notebook-extension/src/index.ts:2964 packages/notebook-extension/src/index.ts:2996 packages/notebook-extension/src/index.ts:3009 packages/notebook-extension/src/index.ts:3655 packages/notebook-extension/src/index.ts:3670
 msgid "Extend Selection to Bottom"
 msgstr "選択範囲を最下部まで拡張"
 
-#: packages/notebook-extension/src/index.ts:2865 packages/notebook-extension/src/index.ts:2871 packages/notebook-extension/src/index.ts:2890 packages/notebook-extension/src/index.ts:2942 packages/notebook-extension/src/index.ts:2949 packages/notebook-extension/src/index.ts:2972 packages/notebook-extension/src/index.ts:2974 packages/notebook-extension/src/index.ts:2975 packages/notebook-extension/src/index.ts:3007 packages/notebook-extension/src/index.ts:3020 packages/notebook-extension/src/index.ts:3672
+#: packages/notebook-extension/src/index.ts:2865 packages/notebook-extension/src/index.ts:2871 packages/notebook-extension/src/index.ts:2890 packages/notebook-extension/src/index.ts:2942 packages/notebook-extension/src/index.ts:2949 packages/notebook-extension/src/index.ts:2972 packages/notebook-extension/src/index.ts:2974 packages/notebook-extension/src/index.ts:2975 packages/notebook-extension/src/index.ts:3007 packages/notebook-extension/src/index.ts:3020 packages/notebook-extension/src/index.ts:3672 packages/notebook-extension/src/index.ts:3687
 msgid "Select All Cells"
 msgstr "すべてのセルを選択"
 
-#: packages/notebook-extension/src/index.ts:2876 packages/notebook-extension/src/index.ts:2882 packages/notebook-extension/src/index.ts:2901 packages/notebook-extension/src/index.ts:2953 packages/notebook-extension/src/index.ts:2960 packages/notebook-extension/src/index.ts:2983 packages/notebook-extension/src/index.ts:2985 packages/notebook-extension/src/index.ts:2986 packages/notebook-extension/src/index.ts:3018 packages/notebook-extension/src/index.ts:3031 packages/notebook-extension/src/index.ts:3689
+#: packages/notebook-extension/src/index.ts:2876 packages/notebook-extension/src/index.ts:2882 packages/notebook-extension/src/index.ts:2901 packages/notebook-extension/src/index.ts:2953 packages/notebook-extension/src/index.ts:2960 packages/notebook-extension/src/index.ts:2983 packages/notebook-extension/src/index.ts:2985 packages/notebook-extension/src/index.ts:2986 packages/notebook-extension/src/index.ts:3018 packages/notebook-extension/src/index.ts:3031 packages/notebook-extension/src/index.ts:3689 packages/notebook-extension/src/index.ts:3704
 msgid "Deselect All Cells"
 msgstr "すべてのセルの選択を解除"
 
-#: packages/notebook-extension/src/index.ts:2889 packages/notebook-extension/src/index.ts:2895 packages/notebook-extension/src/index.ts:2914 packages/notebook-extension/src/index.ts:2966 packages/notebook-extension/src/index.ts:2973 packages/notebook-extension/src/index.ts:2996 packages/notebook-extension/src/index.ts:2998 packages/notebook-extension/src/index.ts:2999 packages/notebook-extension/src/index.ts:3031 packages/notebook-extension/src/index.ts:3044 packages/notebook-extension/src/index.ts:3708
+#: packages/notebook-extension/src/index.ts:2889 packages/notebook-extension/src/index.ts:2895 packages/notebook-extension/src/index.ts:2914 packages/notebook-extension/src/index.ts:2966 packages/notebook-extension/src/index.ts:2973 packages/notebook-extension/src/index.ts:2996 packages/notebook-extension/src/index.ts:2998 packages/notebook-extension/src/index.ts:2999 packages/notebook-extension/src/index.ts:3031 packages/notebook-extension/src/index.ts:3044 packages/notebook-extension/src/index.ts:3708 packages/notebook-extension/src/index.ts:3723
 msgid "Move Cell Up"
 msgid_plural "Move Cells Up"
 msgstr[0] "セルを上に移動"
 
-#: packages/notebook-extension/src/index.ts:2897 packages/notebook-extension/src/index.ts:2903 packages/notebook-extension/src/index.ts:2922 packages/notebook-extension/src/index.ts:2974 packages/notebook-extension/src/index.ts:2981 packages/notebook-extension/src/index.ts:3004 packages/notebook-extension/src/index.ts:3006 packages/notebook-extension/src/index.ts:3007 packages/notebook-extension/src/index.ts:3039 packages/notebook-extension/src/index.ts:3052 packages/notebook-extension/src/index.ts:3716
+#: packages/notebook-extension/src/index.ts:2897 packages/notebook-extension/src/index.ts:2903 packages/notebook-extension/src/index.ts:2922 packages/notebook-extension/src/index.ts:2974 packages/notebook-extension/src/index.ts:2981 packages/notebook-extension/src/index.ts:3004 packages/notebook-extension/src/index.ts:3006 packages/notebook-extension/src/index.ts:3007 packages/notebook-extension/src/index.ts:3039 packages/notebook-extension/src/index.ts:3052 packages/notebook-extension/src/index.ts:3716 packages/notebook-extension/src/index.ts:3731
 msgid "Move this cell up"
 msgid_plural "Move these %1 cells up"
 msgstr[0] "%1 個のセルを上に移動"
 
-#: packages/notebook-extension/src/index.ts:2909 packages/notebook-extension/src/index.ts:2915 packages/notebook-extension/src/index.ts:2934 packages/notebook-extension/src/index.ts:2986 packages/notebook-extension/src/index.ts:2993 packages/notebook-extension/src/index.ts:3016 packages/notebook-extension/src/index.ts:3018 packages/notebook-extension/src/index.ts:3019 packages/notebook-extension/src/index.ts:3051 packages/notebook-extension/src/index.ts:3064 packages/notebook-extension/src/index.ts:3728
+#: packages/notebook-extension/src/index.ts:2909 packages/notebook-extension/src/index.ts:2915 packages/notebook-extension/src/index.ts:2934 packages/notebook-extension/src/index.ts:2986 packages/notebook-extension/src/index.ts:2993 packages/notebook-extension/src/index.ts:3016 packages/notebook-extension/src/index.ts:3018 packages/notebook-extension/src/index.ts:3019 packages/notebook-extension/src/index.ts:3051 packages/notebook-extension/src/index.ts:3064 packages/notebook-extension/src/index.ts:3728 packages/notebook-extension/src/index.ts:3743
 msgid "Notebook cell shifted up successfully"
 msgstr "ノートブックのセルが正常に上に移動されました"
 
-#: packages/notebook-extension/src/index.ts:2926 packages/notebook-extension/src/index.ts:2932 packages/notebook-extension/src/index.ts:2951 packages/notebook-extension/src/index.ts:3003 packages/notebook-extension/src/index.ts:3010 packages/notebook-extension/src/index.ts:3033 packages/notebook-extension/src/index.ts:3035 packages/notebook-extension/src/index.ts:3036 packages/notebook-extension/src/index.ts:3068 packages/notebook-extension/src/index.ts:3081 packages/notebook-extension/src/index.ts:3763
+#: packages/notebook-extension/src/index.ts:2926 packages/notebook-extension/src/index.ts:2932 packages/notebook-extension/src/index.ts:2951 packages/notebook-extension/src/index.ts:3003 packages/notebook-extension/src/index.ts:3010 packages/notebook-extension/src/index.ts:3033 packages/notebook-extension/src/index.ts:3035 packages/notebook-extension/src/index.ts:3036 packages/notebook-extension/src/index.ts:3068 packages/notebook-extension/src/index.ts:3081 packages/notebook-extension/src/index.ts:3763 packages/notebook-extension/src/index.ts:3778
 msgid "Move Cell Down"
 msgid_plural "Move Cells Down"
 msgstr[0] "セルを下に移動"
 
-#: packages/notebook-extension/src/index.ts:2934 packages/notebook-extension/src/index.ts:2940 packages/notebook-extension/src/index.ts:2959 packages/notebook-extension/src/index.ts:3011 packages/notebook-extension/src/index.ts:3018 packages/notebook-extension/src/index.ts:3041 packages/notebook-extension/src/index.ts:3043 packages/notebook-extension/src/index.ts:3044 packages/notebook-extension/src/index.ts:3076 packages/notebook-extension/src/index.ts:3089 packages/notebook-extension/src/index.ts:3771
+#: packages/notebook-extension/src/index.ts:2934 packages/notebook-extension/src/index.ts:2940 packages/notebook-extension/src/index.ts:2959 packages/notebook-extension/src/index.ts:3011 packages/notebook-extension/src/index.ts:3018 packages/notebook-extension/src/index.ts:3041 packages/notebook-extension/src/index.ts:3043 packages/notebook-extension/src/index.ts:3044 packages/notebook-extension/src/index.ts:3076 packages/notebook-extension/src/index.ts:3089 packages/notebook-extension/src/index.ts:3771 packages/notebook-extension/src/index.ts:3786
 msgid "Move this cell down"
 msgid_plural "Move these %1 cells down"
 msgstr[0] "%1 個のセルを下に移動"
 
-#: packages/notebook-extension/src/index.ts:2946 packages/notebook-extension/src/index.ts:2952 packages/notebook-extension/src/index.ts:2971 packages/notebook-extension/src/index.ts:3023 packages/notebook-extension/src/index.ts:3030 packages/notebook-extension/src/index.ts:3053 packages/notebook-extension/src/index.ts:3055 packages/notebook-extension/src/index.ts:3056 packages/notebook-extension/src/index.ts:3088 packages/notebook-extension/src/index.ts:3101 packages/notebook-extension/src/index.ts:3783
+#: packages/notebook-extension/src/index.ts:2946 packages/notebook-extension/src/index.ts:2952 packages/notebook-extension/src/index.ts:2971 packages/notebook-extension/src/index.ts:3023 packages/notebook-extension/src/index.ts:3030 packages/notebook-extension/src/index.ts:3053 packages/notebook-extension/src/index.ts:3055 packages/notebook-extension/src/index.ts:3056 packages/notebook-extension/src/index.ts:3088 packages/notebook-extension/src/index.ts:3101 packages/notebook-extension/src/index.ts:3783 packages/notebook-extension/src/index.ts:3798
 msgid "Notebook cell shifted down successfully"
 msgstr "ノートブックのセルが正常に下に移動されました"
 
-#: packages/notebook-extension/src/index.ts:2987 packages/notebook-extension/src/index.ts:2993 packages/notebook-extension/src/index.ts:3012 packages/notebook-extension/src/index.ts:3064 packages/notebook-extension/src/index.ts:3071 packages/notebook-extension/src/index.ts:3094 packages/notebook-extension/src/index.ts:3096 packages/notebook-extension/src/index.ts:3097 packages/notebook-extension/src/index.ts:3129 packages/notebook-extension/src/index.ts:3142 packages/notebook-extension/src/index.ts:3855
+#: packages/notebook-extension/src/index.ts:2987 packages/notebook-extension/src/index.ts:2993 packages/notebook-extension/src/index.ts:3012 packages/notebook-extension/src/index.ts:3064 packages/notebook-extension/src/index.ts:3071 packages/notebook-extension/src/index.ts:3094 packages/notebook-extension/src/index.ts:3096 packages/notebook-extension/src/index.ts:3097 packages/notebook-extension/src/index.ts:3129 packages/notebook-extension/src/index.ts:3142 packages/notebook-extension/src/index.ts:3855 packages/notebook-extension/src/index.ts:3870
 msgid "Enter Command Mode"
 msgstr "コマンドモードに入る"
 
-#: packages/notebook-extension/src/index.ts:2998 packages/notebook-extension/src/index.ts:3004 packages/notebook-extension/src/index.ts:3023 packages/notebook-extension/src/index.ts:3075 packages/notebook-extension/src/index.ts:3082 packages/notebook-extension/src/index.ts:3105 packages/notebook-extension/src/index.ts:3107 packages/notebook-extension/src/index.ts:3108 packages/notebook-extension/src/index.ts:3140 packages/notebook-extension/src/index.ts:3153 packages/notebook-extension/src/index.ts:3872
+#: packages/notebook-extension/src/index.ts:2998 packages/notebook-extension/src/index.ts:3004 packages/notebook-extension/src/index.ts:3023 packages/notebook-extension/src/index.ts:3075 packages/notebook-extension/src/index.ts:3082 packages/notebook-extension/src/index.ts:3105 packages/notebook-extension/src/index.ts:3107 packages/notebook-extension/src/index.ts:3108 packages/notebook-extension/src/index.ts:3140 packages/notebook-extension/src/index.ts:3153 packages/notebook-extension/src/index.ts:3872 packages/notebook-extension/src/index.ts:3887
 msgid "Enter Edit Mode"
 msgstr "エディットモードに入る"
 
-#: packages/notebook-extension/src/index.ts:3009 packages/notebook-extension/src/index.ts:3015 packages/notebook-extension/src/index.ts:3034 packages/notebook-extension/src/index.ts:3086 packages/notebook-extension/src/index.ts:3093 packages/notebook-extension/src/index.ts:3116 packages/notebook-extension/src/index.ts:3118 packages/notebook-extension/src/index.ts:3119 packages/notebook-extension/src/index.ts:3151 packages/notebook-extension/src/index.ts:3164 packages/notebook-extension/src/index.ts:3889
+#: packages/notebook-extension/src/index.ts:3009 packages/notebook-extension/src/index.ts:3015 packages/notebook-extension/src/index.ts:3034 packages/notebook-extension/src/index.ts:3086 packages/notebook-extension/src/index.ts:3093 packages/notebook-extension/src/index.ts:3116 packages/notebook-extension/src/index.ts:3118 packages/notebook-extension/src/index.ts:3119 packages/notebook-extension/src/index.ts:3151 packages/notebook-extension/src/index.ts:3164 packages/notebook-extension/src/index.ts:3889 packages/notebook-extension/src/index.ts:3904
 msgid "Undo Cell Operation"
 msgstr "セル操作を元に戻す"
 
-#: packages/notebook-extension/src/index.ts:3020 packages/notebook-extension/src/index.ts:3026 packages/notebook-extension/src/index.ts:3045 packages/notebook-extension/src/index.ts:3097 packages/notebook-extension/src/index.ts:3104 packages/notebook-extension/src/index.ts:3127 packages/notebook-extension/src/index.ts:3129 packages/notebook-extension/src/index.ts:3130 packages/notebook-extension/src/index.ts:3162 packages/notebook-extension/src/index.ts:3175 packages/notebook-extension/src/index.ts:3906
+#: packages/notebook-extension/src/index.ts:3020 packages/notebook-extension/src/index.ts:3026 packages/notebook-extension/src/index.ts:3045 packages/notebook-extension/src/index.ts:3097 packages/notebook-extension/src/index.ts:3104 packages/notebook-extension/src/index.ts:3127 packages/notebook-extension/src/index.ts:3129 packages/notebook-extension/src/index.ts:3130 packages/notebook-extension/src/index.ts:3162 packages/notebook-extension/src/index.ts:3175 packages/notebook-extension/src/index.ts:3906 packages/notebook-extension/src/index.ts:3921
 msgid "Redo Cell Operation"
 msgstr "セル操作をやり直す"
 
-#: packages/notebook-extension/src/index.ts:3098 packages/notebook-extension/src/index.ts:3104 packages/notebook-extension/src/index.ts:3123 packages/notebook-extension/src/index.ts:3175 packages/notebook-extension/src/index.ts:3182 packages/notebook-extension/src/index.ts:3205 packages/notebook-extension/src/index.ts:3207 packages/notebook-extension/src/index.ts:3208 packages/notebook-extension/src/index.ts:3240 packages/notebook-extension/src/index.ts:3253 packages/notebook-extension/src/index.ts:4027
+#: packages/notebook-extension/src/index.ts:3098 packages/notebook-extension/src/index.ts:3104 packages/notebook-extension/src/index.ts:3123 packages/notebook-extension/src/index.ts:3175 packages/notebook-extension/src/index.ts:3182 packages/notebook-extension/src/index.ts:3205 packages/notebook-extension/src/index.ts:3207 packages/notebook-extension/src/index.ts:3208 packages/notebook-extension/src/index.ts:3240 packages/notebook-extension/src/index.ts:3253 packages/notebook-extension/src/index.ts:4027 packages/notebook-extension/src/index.ts:4042
 msgid "Change to Heading 1"
 msgstr "見出し1に変更"
 
-#: packages/notebook-extension/src/index.ts:3109 packages/notebook-extension/src/index.ts:3115 packages/notebook-extension/src/index.ts:3134 packages/notebook-extension/src/index.ts:3186 packages/notebook-extension/src/index.ts:3193 packages/notebook-extension/src/index.ts:3220 packages/notebook-extension/src/index.ts:3222 packages/notebook-extension/src/index.ts:3223 packages/notebook-extension/src/index.ts:3255 packages/notebook-extension/src/index.ts:3268 packages/notebook-extension/src/index.ts:4048
+#: packages/notebook-extension/src/index.ts:3109 packages/notebook-extension/src/index.ts:3115 packages/notebook-extension/src/index.ts:3134 packages/notebook-extension/src/index.ts:3186 packages/notebook-extension/src/index.ts:3193 packages/notebook-extension/src/index.ts:3220 packages/notebook-extension/src/index.ts:3222 packages/notebook-extension/src/index.ts:3223 packages/notebook-extension/src/index.ts:3255 packages/notebook-extension/src/index.ts:3268 packages/notebook-extension/src/index.ts:4048 packages/notebook-extension/src/index.ts:4063
 msgid "Change to Heading 2"
 msgstr "見出し2に変更"
 
-#: packages/notebook-extension/src/index.ts:3120 packages/notebook-extension/src/index.ts:3126 packages/notebook-extension/src/index.ts:3145 packages/notebook-extension/src/index.ts:3197 packages/notebook-extension/src/index.ts:3204 packages/notebook-extension/src/index.ts:3235 packages/notebook-extension/src/index.ts:3237 packages/notebook-extension/src/index.ts:3238 packages/notebook-extension/src/index.ts:3270 packages/notebook-extension/src/index.ts:3283 packages/notebook-extension/src/index.ts:4069
+#: packages/notebook-extension/src/index.ts:3120 packages/notebook-extension/src/index.ts:3126 packages/notebook-extension/src/index.ts:3145 packages/notebook-extension/src/index.ts:3197 packages/notebook-extension/src/index.ts:3204 packages/notebook-extension/src/index.ts:3235 packages/notebook-extension/src/index.ts:3237 packages/notebook-extension/src/index.ts:3238 packages/notebook-extension/src/index.ts:3270 packages/notebook-extension/src/index.ts:3283 packages/notebook-extension/src/index.ts:4069 packages/notebook-extension/src/index.ts:4084
 msgid "Change to Heading 3"
 msgstr "見出し3に変更"
 
-#: packages/notebook-extension/src/index.ts:3131 packages/notebook-extension/src/index.ts:3137 packages/notebook-extension/src/index.ts:3156 packages/notebook-extension/src/index.ts:3208 packages/notebook-extension/src/index.ts:3215 packages/notebook-extension/src/index.ts:3250 packages/notebook-extension/src/index.ts:3252 packages/notebook-extension/src/index.ts:3253 packages/notebook-extension/src/index.ts:3285 packages/notebook-extension/src/index.ts:3298 packages/notebook-extension/src/index.ts:4090
+#: packages/notebook-extension/src/index.ts:3131 packages/notebook-extension/src/index.ts:3137 packages/notebook-extension/src/index.ts:3156 packages/notebook-extension/src/index.ts:3208 packages/notebook-extension/src/index.ts:3215 packages/notebook-extension/src/index.ts:3250 packages/notebook-extension/src/index.ts:3252 packages/notebook-extension/src/index.ts:3253 packages/notebook-extension/src/index.ts:3285 packages/notebook-extension/src/index.ts:3298 packages/notebook-extension/src/index.ts:4090 packages/notebook-extension/src/index.ts:4105
 msgid "Change to Heading 4"
 msgstr "見出し4に変更"
 
-#: packages/notebook-extension/src/index.ts:3142 packages/notebook-extension/src/index.ts:3148 packages/notebook-extension/src/index.ts:3167 packages/notebook-extension/src/index.ts:3219 packages/notebook-extension/src/index.ts:3226 packages/notebook-extension/src/index.ts:3265 packages/notebook-extension/src/index.ts:3267 packages/notebook-extension/src/index.ts:3268 packages/notebook-extension/src/index.ts:3300 packages/notebook-extension/src/index.ts:3313 packages/notebook-extension/src/index.ts:4111
+#: packages/notebook-extension/src/index.ts:3142 packages/notebook-extension/src/index.ts:3148 packages/notebook-extension/src/index.ts:3167 packages/notebook-extension/src/index.ts:3219 packages/notebook-extension/src/index.ts:3226 packages/notebook-extension/src/index.ts:3265 packages/notebook-extension/src/index.ts:3267 packages/notebook-extension/src/index.ts:3268 packages/notebook-extension/src/index.ts:3300 packages/notebook-extension/src/index.ts:3313 packages/notebook-extension/src/index.ts:4111 packages/notebook-extension/src/index.ts:4126
 msgid "Change to Heading 5"
 msgstr "見出し5に変更"
 
-#: packages/notebook-extension/src/index.ts:3153 packages/notebook-extension/src/index.ts:3159 packages/notebook-extension/src/index.ts:3178 packages/notebook-extension/src/index.ts:3230 packages/notebook-extension/src/index.ts:3237 packages/notebook-extension/src/index.ts:3280 packages/notebook-extension/src/index.ts:3282 packages/notebook-extension/src/index.ts:3283 packages/notebook-extension/src/index.ts:3315 packages/notebook-extension/src/index.ts:3328 packages/notebook-extension/src/index.ts:4132
+#: packages/notebook-extension/src/index.ts:3153 packages/notebook-extension/src/index.ts:3159 packages/notebook-extension/src/index.ts:3178 packages/notebook-extension/src/index.ts:3230 packages/notebook-extension/src/index.ts:3237 packages/notebook-extension/src/index.ts:3280 packages/notebook-extension/src/index.ts:3282 packages/notebook-extension/src/index.ts:3283 packages/notebook-extension/src/index.ts:3315 packages/notebook-extension/src/index.ts:3328 packages/notebook-extension/src/index.ts:4132 packages/notebook-extension/src/index.ts:4147
 msgid "Change to Heading 6"
 msgstr "見出し6に変更"
 
-#: packages/notebook-extension/src/index.ts:3164 packages/notebook-extension/src/index.ts:3170 packages/notebook-extension/src/index.ts:3189 packages/notebook-extension/src/index.ts:3241 packages/notebook-extension/src/index.ts:3248 packages/notebook-extension/src/index.ts:3295 packages/notebook-extension/src/index.ts:3297 packages/notebook-extension/src/index.ts:3298 packages/notebook-extension/src/index.ts:3330 packages/notebook-extension/src/index.ts:3343 packages/notebook-extension/src/index.ts:4153
+#: packages/notebook-extension/src/index.ts:3164 packages/notebook-extension/src/index.ts:3170 packages/notebook-extension/src/index.ts:3189 packages/notebook-extension/src/index.ts:3241 packages/notebook-extension/src/index.ts:3248 packages/notebook-extension/src/index.ts:3295 packages/notebook-extension/src/index.ts:3297 packages/notebook-extension/src/index.ts:3298 packages/notebook-extension/src/index.ts:3330 packages/notebook-extension/src/index.ts:3343 packages/notebook-extension/src/index.ts:4153 packages/notebook-extension/src/index.ts:4168
 msgid "Collapse Selected Code"
 msgstr "選択したコードを折りたたむ"
 
-#: packages/notebook-extension/src/index.ts:3175 packages/notebook-extension/src/index.ts:3181 packages/notebook-extension/src/index.ts:3200 packages/notebook-extension/src/index.ts:3252 packages/notebook-extension/src/index.ts:3259 packages/notebook-extension/src/index.ts:3306 packages/notebook-extension/src/index.ts:3308 packages/notebook-extension/src/index.ts:3309 packages/notebook-extension/src/index.ts:3341 packages/notebook-extension/src/index.ts:3354 packages/notebook-extension/src/index.ts:4170
+#: packages/notebook-extension/src/index.ts:3175 packages/notebook-extension/src/index.ts:3181 packages/notebook-extension/src/index.ts:3200 packages/notebook-extension/src/index.ts:3252 packages/notebook-extension/src/index.ts:3259 packages/notebook-extension/src/index.ts:3306 packages/notebook-extension/src/index.ts:3308 packages/notebook-extension/src/index.ts:3309 packages/notebook-extension/src/index.ts:3341 packages/notebook-extension/src/index.ts:3354 packages/notebook-extension/src/index.ts:4170 packages/notebook-extension/src/index.ts:4185
 msgid "Expand Selected Code"
 msgstr "選択したコードを展開"
 
-#: packages/notebook-extension/src/index.ts:3186 packages/notebook-extension/src/index.ts:3192 packages/notebook-extension/src/index.ts:3211 packages/notebook-extension/src/index.ts:3263 packages/notebook-extension/src/index.ts:3270 packages/notebook-extension/src/index.ts:3317 packages/notebook-extension/src/index.ts:3319 packages/notebook-extension/src/index.ts:3320 packages/notebook-extension/src/index.ts:3352 packages/notebook-extension/src/index.ts:3365 packages/notebook-extension/src/index.ts:4187
+#: packages/notebook-extension/src/index.ts:3186 packages/notebook-extension/src/index.ts:3192 packages/notebook-extension/src/index.ts:3211 packages/notebook-extension/src/index.ts:3263 packages/notebook-extension/src/index.ts:3270 packages/notebook-extension/src/index.ts:3317 packages/notebook-extension/src/index.ts:3319 packages/notebook-extension/src/index.ts:3320 packages/notebook-extension/src/index.ts:3352 packages/notebook-extension/src/index.ts:3365 packages/notebook-extension/src/index.ts:4187 packages/notebook-extension/src/index.ts:4202
 msgid "Collapse All Code"
 msgstr "すべてのコードを折りたたむ"
 
-#: packages/notebook-extension/src/index.ts:3197 packages/notebook-extension/src/index.ts:3203 packages/notebook-extension/src/index.ts:3222 packages/notebook-extension/src/index.ts:3274 packages/notebook-extension/src/index.ts:3281 packages/notebook-extension/src/index.ts:3328 packages/notebook-extension/src/index.ts:3330 packages/notebook-extension/src/index.ts:3331 packages/notebook-extension/src/index.ts:3363 packages/notebook-extension/src/index.ts:3376 packages/notebook-extension/src/index.ts:4204
+#: packages/notebook-extension/src/index.ts:3197 packages/notebook-extension/src/index.ts:3203 packages/notebook-extension/src/index.ts:3222 packages/notebook-extension/src/index.ts:3274 packages/notebook-extension/src/index.ts:3281 packages/notebook-extension/src/index.ts:3328 packages/notebook-extension/src/index.ts:3330 packages/notebook-extension/src/index.ts:3331 packages/notebook-extension/src/index.ts:3363 packages/notebook-extension/src/index.ts:3376 packages/notebook-extension/src/index.ts:4204 packages/notebook-extension/src/index.ts:4219
 msgid "Expand All Code"
 msgstr "すべてのコードを展開"
 
-#: packages/notebook-extension/src/index.ts:3208 packages/notebook-extension/src/index.ts:3214 packages/notebook-extension/src/index.ts:3233 packages/notebook-extension/src/index.ts:3285 packages/notebook-extension/src/index.ts:3292 packages/notebook-extension/src/index.ts:3339 packages/notebook-extension/src/index.ts:3341 packages/notebook-extension/src/index.ts:3342 packages/notebook-extension/src/index.ts:3374 packages/notebook-extension/src/index.ts:3387 packages/notebook-extension/src/index.ts:4221
+#: packages/notebook-extension/src/index.ts:3208 packages/notebook-extension/src/index.ts:3214 packages/notebook-extension/src/index.ts:3233 packages/notebook-extension/src/index.ts:3285 packages/notebook-extension/src/index.ts:3292 packages/notebook-extension/src/index.ts:3339 packages/notebook-extension/src/index.ts:3341 packages/notebook-extension/src/index.ts:3342 packages/notebook-extension/src/index.ts:3374 packages/notebook-extension/src/index.ts:3387 packages/notebook-extension/src/index.ts:4221 packages/notebook-extension/src/index.ts:4236
 msgid "Collapse Selected Outputs"
 msgstr "選択した出力を折りたたむ"
 
-#: packages/notebook-extension/src/index.ts:3219 packages/notebook-extension/src/index.ts:3225 packages/notebook-extension/src/index.ts:3244 packages/notebook-extension/src/index.ts:3296 packages/notebook-extension/src/index.ts:3303 packages/notebook-extension/src/index.ts:3350 packages/notebook-extension/src/index.ts:3352 packages/notebook-extension/src/index.ts:3353 packages/notebook-extension/src/index.ts:3385 packages/notebook-extension/src/index.ts:3398 packages/notebook-extension/src/index.ts:4238
+#: packages/notebook-extension/src/index.ts:3219 packages/notebook-extension/src/index.ts:3225 packages/notebook-extension/src/index.ts:3244 packages/notebook-extension/src/index.ts:3296 packages/notebook-extension/src/index.ts:3303 packages/notebook-extension/src/index.ts:3350 packages/notebook-extension/src/index.ts:3352 packages/notebook-extension/src/index.ts:3353 packages/notebook-extension/src/index.ts:3385 packages/notebook-extension/src/index.ts:3398 packages/notebook-extension/src/index.ts:4238 packages/notebook-extension/src/index.ts:4253
 msgid "Expand Selected Outputs"
 msgstr "選択した出力を展開"
 
-#: packages/notebook-extension/src/index.ts:3230 packages/notebook-extension/src/index.ts:3236 packages/notebook-extension/src/index.ts:3255 packages/notebook-extension/src/index.ts:3307 packages/notebook-extension/src/index.ts:3314 packages/notebook-extension/src/index.ts:3361 packages/notebook-extension/src/index.ts:3374 packages/notebook-extension/src/index.ts:3375 packages/notebook-extension/src/index.ts:3407 packages/notebook-extension/src/index.ts:3420 packages/notebook-extension/src/index.ts:4272
+#: packages/notebook-extension/src/index.ts:3230 packages/notebook-extension/src/index.ts:3236 packages/notebook-extension/src/index.ts:3255 packages/notebook-extension/src/index.ts:3307 packages/notebook-extension/src/index.ts:3314 packages/notebook-extension/src/index.ts:3361 packages/notebook-extension/src/index.ts:3374 packages/notebook-extension/src/index.ts:3375 packages/notebook-extension/src/index.ts:3407 packages/notebook-extension/src/index.ts:3420 packages/notebook-extension/src/index.ts:4272 packages/notebook-extension/src/index.ts:4287
 msgid "Collapse All Outputs"
 msgstr "すべての出力を折りたたむ"
 
-#: packages/notebook-extension/src/index.ts:3242 packages/notebook-extension/src/index.ts:3248 packages/notebook-extension/src/index.ts:3267 packages/notebook-extension/src/index.ts:3319 packages/notebook-extension/src/index.ts:3326 packages/notebook-extension/src/index.ts:3373 packages/notebook-extension/src/index.ts:3386 packages/notebook-extension/src/index.ts:3387 packages/notebook-extension/src/index.ts:3419 packages/notebook-extension/src/index.ts:3432 packages/notebook-extension/src/index.ts:4290
+#: packages/notebook-extension/src/index.ts:3242 packages/notebook-extension/src/index.ts:3248 packages/notebook-extension/src/index.ts:3267 packages/notebook-extension/src/index.ts:3319 packages/notebook-extension/src/index.ts:3326 packages/notebook-extension/src/index.ts:3373 packages/notebook-extension/src/index.ts:3386 packages/notebook-extension/src/index.ts:3387 packages/notebook-extension/src/index.ts:3419 packages/notebook-extension/src/index.ts:3432 packages/notebook-extension/src/index.ts:4290 packages/notebook-extension/src/index.ts:4305
 msgid "Render Side-by-Side"
 msgstr "コードと出力を並べて表示"
 
-#: packages/notebook-extension/src/index.ts:3264 packages/notebook-extension/src/index.ts:3270 packages/notebook-extension/src/index.ts:3289 packages/notebook-extension/src/index.ts:3341 packages/notebook-extension/src/index.ts:3348 packages/notebook-extension/src/index.ts:3395 packages/notebook-extension/src/index.ts:3408 packages/notebook-extension/src/index.ts:3409 packages/notebook-extension/src/index.ts:3441 packages/notebook-extension/src/index.ts:3454 packages/notebook-extension/src/index.ts:4325
+#: packages/notebook-extension/src/index.ts:3264 packages/notebook-extension/src/index.ts:3270 packages/notebook-extension/src/index.ts:3289 packages/notebook-extension/src/index.ts:3341 packages/notebook-extension/src/index.ts:3348 packages/notebook-extension/src/index.ts:3395 packages/notebook-extension/src/index.ts:3408 packages/notebook-extension/src/index.ts:3409 packages/notebook-extension/src/index.ts:3441 packages/notebook-extension/src/index.ts:3454 packages/notebook-extension/src/index.ts:4325 packages/notebook-extension/src/index.ts:4340
 msgid "Expand All Outputs"
 msgstr "すべての出力を展開"
 
-#: packages/notebook-extension/src/index.ts:3275 packages/notebook-extension/src/index.ts:3281 packages/notebook-extension/src/index.ts:3300 packages/notebook-extension/src/index.ts:3352 packages/notebook-extension/src/index.ts:3359 packages/notebook-extension/src/index.ts:3406 packages/notebook-extension/src/index.ts:3419 packages/notebook-extension/src/index.ts:3420 packages/notebook-extension/src/index.ts:3452 packages/notebook-extension/src/index.ts:3465 packages/notebook-extension/src/index.ts:4342
+#: packages/notebook-extension/src/index.ts:3275 packages/notebook-extension/src/index.ts:3281 packages/notebook-extension/src/index.ts:3300 packages/notebook-extension/src/index.ts:3352 packages/notebook-extension/src/index.ts:3359 packages/notebook-extension/src/index.ts:3406 packages/notebook-extension/src/index.ts:3419 packages/notebook-extension/src/index.ts:3420 packages/notebook-extension/src/index.ts:3452 packages/notebook-extension/src/index.ts:3465 packages/notebook-extension/src/index.ts:4342 packages/notebook-extension/src/index.ts:4357
 msgid "Enable Scrolling for Outputs"
 msgstr "出力のスクロールを有効にする"
 
-#: packages/notebook-extension/src/index.ts:3286 packages/notebook-extension/src/index.ts:3292 packages/notebook-extension/src/index.ts:3311 packages/notebook-extension/src/index.ts:3363 packages/notebook-extension/src/index.ts:3370 packages/notebook-extension/src/index.ts:3417 packages/notebook-extension/src/index.ts:3430 packages/notebook-extension/src/index.ts:3431 packages/notebook-extension/src/index.ts:3463 packages/notebook-extension/src/index.ts:3476 packages/notebook-extension/src/index.ts:4359
+#: packages/notebook-extension/src/index.ts:3286 packages/notebook-extension/src/index.ts:3292 packages/notebook-extension/src/index.ts:3311 packages/notebook-extension/src/index.ts:3363 packages/notebook-extension/src/index.ts:3370 packages/notebook-extension/src/index.ts:3417 packages/notebook-extension/src/index.ts:3430 packages/notebook-extension/src/index.ts:3431 packages/notebook-extension/src/index.ts:3463 packages/notebook-extension/src/index.ts:3476 packages/notebook-extension/src/index.ts:4359 packages/notebook-extension/src/index.ts:4374
 msgid "Disable Scrolling for Outputs"
 msgstr "出力のスクロールを無効にする"
 
-#: packages/notebook-extension/src/index.ts:3297 packages/notebook-extension/src/index.ts:3303 packages/notebook-extension/src/index.ts:3322 packages/notebook-extension/src/index.ts:3374 packages/notebook-extension/src/index.ts:3381 packages/notebook-extension/src/index.ts:3428 packages/notebook-extension/src/index.ts:3441 packages/notebook-extension/src/index.ts:3442 packages/notebook-extension/src/index.ts:3474 packages/notebook-extension/src/index.ts:3487 packages/notebook-extension/src/index.ts:4376
+#: packages/notebook-extension/src/index.ts:3297 packages/notebook-extension/src/index.ts:3303 packages/notebook-extension/src/index.ts:3322 packages/notebook-extension/src/index.ts:3374 packages/notebook-extension/src/index.ts:3381 packages/notebook-extension/src/index.ts:3428 packages/notebook-extension/src/index.ts:3441 packages/notebook-extension/src/index.ts:3442 packages/notebook-extension/src/index.ts:3474 packages/notebook-extension/src/index.ts:3487 packages/notebook-extension/src/index.ts:4376 packages/notebook-extension/src/index.ts:4391
 msgid "Select current running or last run cell"
 msgstr "現在実行中または最後の実行セルを選択"
 
-#: packages/notebook-extension/src/index.ts:3308 packages/notebook-extension/src/index.ts:3314 packages/notebook-extension/src/index.ts:3333 packages/notebook-extension/src/index.ts:3385 packages/notebook-extension/src/index.ts:3392 packages/notebook-extension/src/index.ts:3439 packages/notebook-extension/src/index.ts:3452 packages/notebook-extension/src/index.ts:3453 packages/notebook-extension/src/index.ts:3485 packages/notebook-extension/src/index.ts:3498 packages/notebook-extension/src/index.ts:4393
+#: packages/notebook-extension/src/index.ts:3308 packages/notebook-extension/src/index.ts:3314 packages/notebook-extension/src/index.ts:3333 packages/notebook-extension/src/index.ts:3385 packages/notebook-extension/src/index.ts:3392 packages/notebook-extension/src/index.ts:3439 packages/notebook-extension/src/index.ts:3452 packages/notebook-extension/src/index.ts:3453 packages/notebook-extension/src/index.ts:3485 packages/notebook-extension/src/index.ts:3498 packages/notebook-extension/src/index.ts:4393 packages/notebook-extension/src/index.ts:4408
 msgid "Replace Selection in Notebook Cell"
 msgstr "ノートブックセルの選択範囲を置換する"
 
-#: packages/notebook-extension/src/index.ts:3320 packages/notebook-extension/src/index.ts:3326 packages/notebook-extension/src/index.ts:3345 packages/notebook-extension/src/index.ts:3397 packages/notebook-extension/src/index.ts:3404 packages/notebook-extension/src/index.ts:3451 packages/notebook-extension/src/index.ts:3464 packages/notebook-extension/src/index.ts:3465 packages/notebook-extension/src/index.ts:3497 packages/notebook-extension/src/index.ts:3510 packages/notebook-extension/src/index.ts:4416
+#: packages/notebook-extension/src/index.ts:3320 packages/notebook-extension/src/index.ts:3326 packages/notebook-extension/src/index.ts:3345 packages/notebook-extension/src/index.ts:3397 packages/notebook-extension/src/index.ts:3404 packages/notebook-extension/src/index.ts:3451 packages/notebook-extension/src/index.ts:3464 packages/notebook-extension/src/index.ts:3465 packages/notebook-extension/src/index.ts:3497 packages/notebook-extension/src/index.ts:3510 packages/notebook-extension/src/index.ts:4416 packages/notebook-extension/src/index.ts:4431
 msgid "Toggle Collapse Notebook Heading"
 msgstr "ノートブックの見出しの折りたたみ・展開を切り替える"
 
-#: packages/notebook-extension/src/index.ts:3330 packages/notebook-extension/src/index.ts:3336 packages/notebook-extension/src/index.ts:3355 packages/notebook-extension/src/index.ts:3407 packages/notebook-extension/src/index.ts:3414 packages/notebook-extension/src/index.ts:3461 packages/notebook-extension/src/index.ts:3474 packages/notebook-extension/src/index.ts:3475 packages/notebook-extension/src/index.ts:3507 packages/notebook-extension/src/index.ts:3520 packages/notebook-extension/src/index.ts:4432 packages/toc-extension/src/index.ts:141 packages/toc-extension/src/index.ts:170
+#: packages/notebook-extension/src/index.ts:3330 packages/notebook-extension/src/index.ts:3336 packages/notebook-extension/src/index.ts:3355 packages/notebook-extension/src/index.ts:3407 packages/notebook-extension/src/index.ts:3414 packages/notebook-extension/src/index.ts:3461 packages/notebook-extension/src/index.ts:3474 packages/notebook-extension/src/index.ts:3475 packages/notebook-extension/src/index.ts:3507 packages/notebook-extension/src/index.ts:3520 packages/notebook-extension/src/index.ts:4432 packages/notebook-extension/src/index.ts:4447 packages/toc-extension/src/index.ts:141 packages/toc-extension/src/index.ts:170
 msgid "Collapse All Headings"
 msgstr "すべての見出しを折りたたむ"
 
-#: packages/notebook-extension/src/index.ts:3339 packages/notebook-extension/src/index.ts:3345 packages/notebook-extension/src/index.ts:3364 packages/notebook-extension/src/index.ts:3416 packages/notebook-extension/src/index.ts:3423 packages/notebook-extension/src/index.ts:3470 packages/notebook-extension/src/index.ts:3483 packages/notebook-extension/src/index.ts:3484 packages/notebook-extension/src/index.ts:3516 packages/notebook-extension/src/index.ts:3529 packages/notebook-extension/src/index.ts:4447 packages/toc-extension/src/index.ts:140 packages/toc-extension/src/index.ts:169
+#: packages/notebook-extension/src/index.ts:3339 packages/notebook-extension/src/index.ts:3345 packages/notebook-extension/src/index.ts:3364 packages/notebook-extension/src/index.ts:3416 packages/notebook-extension/src/index.ts:3423 packages/notebook-extension/src/index.ts:3470 packages/notebook-extension/src/index.ts:3483 packages/notebook-extension/src/index.ts:3484 packages/notebook-extension/src/index.ts:3516 packages/notebook-extension/src/index.ts:3529 packages/notebook-extension/src/index.ts:4447 packages/notebook-extension/src/index.ts:4462 packages/toc-extension/src/index.ts:140 packages/toc-extension/src/index.ts:169
 msgid "Expand All Headings"
 msgstr "すべての見出しを展開"
 
-#: packages/notebook-extension/src/index.ts:3349 packages/notebook-extension/src/index.ts:3355 packages/notebook-extension/src/index.ts:3374 packages/notebook-extension/src/index.ts:3425 packages/notebook-extension/src/index.ts:3432 packages/notebook-extension/src/index.ts:3479 packages/notebook-extension/src/index.ts:3492 packages/notebook-extension/src/index.ts:3493 packages/notebook-extension/src/index.ts:3525 packages/notebook-extension/src/index.ts:3538 packages/notebook-extension/src/index.ts:4462
+#: packages/notebook-extension/src/index.ts:3349 packages/notebook-extension/src/index.ts:3355 packages/notebook-extension/src/index.ts:3374 packages/notebook-extension/src/index.ts:3425 packages/notebook-extension/src/index.ts:3432 packages/notebook-extension/src/index.ts:3479 packages/notebook-extension/src/index.ts:3492 packages/notebook-extension/src/index.ts:3493 packages/notebook-extension/src/index.ts:3525 packages/notebook-extension/src/index.ts:3538 packages/notebook-extension/src/index.ts:4462 packages/notebook-extension/src/index.ts:4477
 msgid "Select and Run Cell(s) for this Heading"
 msgstr "この見出しのセルを選択して実行"
 
-#: packages/notebook-extension/src/index.ts:3363 packages/notebook-extension/src/index.ts:3364 packages/notebook-extension/src/index.ts:3396 packages/notebook-extension/src/index.ts:3409 packages/notebook-extension/src/index.ts:4255
+#: packages/notebook-extension/src/index.ts:3363 packages/notebook-extension/src/index.ts:3364 packages/notebook-extension/src/index.ts:3396 packages/notebook-extension/src/index.ts:3409 packages/notebook-extension/src/index.ts:4255 packages/notebook-extension/src/index.ts:4270
 msgid "Toggle Visibility of Selected Outputs"
 msgstr "選択した出力の表示切り替え"
 
-#: packages/notebook-extension/src/index.ts:3399 packages/notebook-extension/src/index.ts:3405 packages/notebook-extension/src/index.ts:3424 packages/notebook-extension/src/index.ts:3519 packages/notebook-extension/src/index.ts:3526 packages/notebook-extension/src/index.ts:3585 packages/notebook-extension/src/index.ts:3602 packages/notebook-extension/src/index.ts:3603 packages/notebook-extension/src/index.ts:3635 packages/notebook-extension/src/index.ts:3648 packages/notebook-extension/src/index.ts:4592 packages/notebook-extension/src/index.ts:657 packages/notebook-extension/src/index.ts:660 packages/notebook-extension/src/index.ts:670 packages/notebook-extension/src/index.ts:674 packages/notebook-extension/src/index.ts:681 packages/notebook-extension/src/index.ts:683 packages/notebook-extension/src/index.ts:686 packages/notebook-extension/src/index.ts:687 packages/notebook-extension/src/index.ts:713
+#: packages/notebook-extension/src/index.ts:3399 packages/notebook-extension/src/index.ts:3405 packages/notebook-extension/src/index.ts:3424 packages/notebook-extension/src/index.ts:3519 packages/notebook-extension/src/index.ts:3526 packages/notebook-extension/src/index.ts:3585 packages/notebook-extension/src/index.ts:3602 packages/notebook-extension/src/index.ts:3603 packages/notebook-extension/src/index.ts:3635 packages/notebook-extension/src/index.ts:3648 packages/notebook-extension/src/index.ts:4592 packages/notebook-extension/src/index.ts:4607 packages/notebook-extension/src/index.ts:657 packages/notebook-extension/src/index.ts:660 packages/notebook-extension/src/index.ts:670 packages/notebook-extension/src/index.ts:674 packages/notebook-extension/src/index.ts:681 packages/notebook-extension/src/index.ts:683 packages/notebook-extension/src/index.ts:686 packages/notebook-extension/src/index.ts:687 packages/notebook-extension/src/index.ts:713
 msgid "Notebook Operations"
 msgstr "Notebookの操作"
 
-#: packages/notebook-extension/src/index.ts:3435 packages/notebook-extension/src/index.ts:3441 packages/notebook-extension/src/index.ts:3460 packages/notebook-extension/src/index.ts:3557 packages/notebook-extension/src/index.ts:3564 packages/notebook-extension/src/index.ts:3623 packages/notebook-extension/src/index.ts:3641 packages/notebook-extension/src/index.ts:3642 packages/notebook-extension/src/index.ts:3675 packages/notebook-extension/src/index.ts:3688 packages/notebook-extension/src/index.ts:4632
+#: packages/notebook-extension/src/index.ts:3435 packages/notebook-extension/src/index.ts:3441 packages/notebook-extension/src/index.ts:3460 packages/notebook-extension/src/index.ts:3557 packages/notebook-extension/src/index.ts:3564 packages/notebook-extension/src/index.ts:3623 packages/notebook-extension/src/index.ts:3641 packages/notebook-extension/src/index.ts:3642 packages/notebook-extension/src/index.ts:3675 packages/notebook-extension/src/index.ts:3688 packages/notebook-extension/src/index.ts:4632 packages/notebook-extension/src/index.ts:4647
 msgid "Notebook Cell Operations"
 msgstr "Notebookセルの操作"
 
-#: packages/notebook-extension/src/index.ts:3466 packages/notebook-extension/src/index.ts:3473 packages/notebook-extension/src/index.ts:3520 packages/notebook-extension/src/index.ts:3533 packages/notebook-extension/src/index.ts:3534 packages/notebook-extension/src/index.ts:3566 packages/notebook-extension/src/index.ts:3579 packages/notebook-extension/src/index.ts:4516
+#: packages/notebook-extension/src/index.ts:3466 packages/notebook-extension/src/index.ts:3473 packages/notebook-extension/src/index.ts:3520 packages/notebook-extension/src/index.ts:3533 packages/notebook-extension/src/index.ts:3534 packages/notebook-extension/src/index.ts:3566 packages/notebook-extension/src/index.ts:3579 packages/notebook-extension/src/index.ts:4516 packages/notebook-extension/src/index.ts:4531
 msgid "Access Previous Kernel History Entry"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:3475 packages/notebook-extension/src/index.ts:3482 packages/notebook-extension/src/index.ts:3529 packages/notebook-extension/src/index.ts:3542 packages/notebook-extension/src/index.ts:3543 packages/notebook-extension/src/index.ts:3575 packages/notebook-extension/src/index.ts:3588 packages/notebook-extension/src/index.ts:4531
+#: packages/notebook-extension/src/index.ts:3475 packages/notebook-extension/src/index.ts:3482 packages/notebook-extension/src/index.ts:3529 packages/notebook-extension/src/index.ts:3542 packages/notebook-extension/src/index.ts:3543 packages/notebook-extension/src/index.ts:3575 packages/notebook-extension/src/index.ts:3588 packages/notebook-extension/src/index.ts:4531 packages/notebook-extension/src/index.ts:4546
 msgid "Access Next Kernel History Entry"
 msgstr ""
 
@@ -8137,31 +8147,31 @@ msgstr ""
 msgid "Show Minimap (virtual scrollbar, enabled with windowing mode: full)"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:3680 packages/notebook-extension/src/index.ts:3686 packages/notebook-extension/src/index.ts:3705 packages/notebook-extension/src/index.ts:3802 packages/notebook-extension/src/index.ts:3809 packages/notebook-extension/src/index.ts:3868 packages/notebook-extension/src/index.ts:3887 packages/notebook-extension/src/index.ts:3888 packages/notebook-extension/src/index.ts:3924 packages/notebook-extension/src/index.ts:3937 packages/notebook-extension/src/index.ts:4886
+#: packages/notebook-extension/src/index.ts:3680 packages/notebook-extension/src/index.ts:3686 packages/notebook-extension/src/index.ts:3705 packages/notebook-extension/src/index.ts:3802 packages/notebook-extension/src/index.ts:3809 packages/notebook-extension/src/index.ts:3868 packages/notebook-extension/src/index.ts:3887 packages/notebook-extension/src/index.ts:3888 packages/notebook-extension/src/index.ts:3924 packages/notebook-extension/src/index.ts:3937 packages/notebook-extension/src/index.ts:4886 packages/notebook-extension/src/index.ts:4901
 msgid "PDF"
 msgstr "PDF"
 
-#: packages/notebook-extension/src/index.ts:3681 packages/notebook-extension/src/index.ts:3687 packages/notebook-extension/src/index.ts:3706 packages/notebook-extension/src/index.ts:3803 packages/notebook-extension/src/index.ts:3810 packages/notebook-extension/src/index.ts:3869 packages/notebook-extension/src/index.ts:3888 packages/notebook-extension/src/index.ts:3889 packages/notebook-extension/src/index.ts:3925 packages/notebook-extension/src/index.ts:3938 packages/notebook-extension/src/index.ts:4887
+#: packages/notebook-extension/src/index.ts:3681 packages/notebook-extension/src/index.ts:3687 packages/notebook-extension/src/index.ts:3706 packages/notebook-extension/src/index.ts:3803 packages/notebook-extension/src/index.ts:3810 packages/notebook-extension/src/index.ts:3869 packages/notebook-extension/src/index.ts:3888 packages/notebook-extension/src/index.ts:3889 packages/notebook-extension/src/index.ts:3925 packages/notebook-extension/src/index.ts:3938 packages/notebook-extension/src/index.ts:4887 packages/notebook-extension/src/index.ts:4902
 msgid "ReStructured Text"
 msgstr "reStructuredText"
 
-#: packages/notebook-extension/src/index.ts:3682 packages/notebook-extension/src/index.ts:3688 packages/notebook-extension/src/index.ts:3707 packages/notebook-extension/src/index.ts:3804 packages/notebook-extension/src/index.ts:3811 packages/notebook-extension/src/index.ts:3870 packages/notebook-extension/src/index.ts:3889 packages/notebook-extension/src/index.ts:3890 packages/notebook-extension/src/index.ts:3926 packages/notebook-extension/src/index.ts:3939 packages/notebook-extension/src/index.ts:4888
+#: packages/notebook-extension/src/index.ts:3682 packages/notebook-extension/src/index.ts:3688 packages/notebook-extension/src/index.ts:3707 packages/notebook-extension/src/index.ts:3804 packages/notebook-extension/src/index.ts:3811 packages/notebook-extension/src/index.ts:3870 packages/notebook-extension/src/index.ts:3889 packages/notebook-extension/src/index.ts:3890 packages/notebook-extension/src/index.ts:3926 packages/notebook-extension/src/index.ts:3939 packages/notebook-extension/src/index.ts:4888 packages/notebook-extension/src/index.ts:4903
 msgid "Executable Script"
 msgstr "実行可能なスクリプト"
 
-#: packages/notebook-extension/src/index.ts:3683 packages/notebook-extension/src/index.ts:3689 packages/notebook-extension/src/index.ts:3708 packages/notebook-extension/src/index.ts:3805 packages/notebook-extension/src/index.ts:3812 packages/notebook-extension/src/index.ts:3871 packages/notebook-extension/src/index.ts:3890 packages/notebook-extension/src/index.ts:3891 packages/notebook-extension/src/index.ts:3927 packages/notebook-extension/src/index.ts:3940 packages/notebook-extension/src/index.ts:4889
+#: packages/notebook-extension/src/index.ts:3683 packages/notebook-extension/src/index.ts:3689 packages/notebook-extension/src/index.ts:3708 packages/notebook-extension/src/index.ts:3805 packages/notebook-extension/src/index.ts:3812 packages/notebook-extension/src/index.ts:3871 packages/notebook-extension/src/index.ts:3890 packages/notebook-extension/src/index.ts:3891 packages/notebook-extension/src/index.ts:3927 packages/notebook-extension/src/index.ts:3940 packages/notebook-extension/src/index.ts:4889 packages/notebook-extension/src/index.ts:4904
 msgid "Reveal.js Slides"
 msgstr "Reveal.js スライド"
 
-#: packages/notebook-extension/src/index.ts:3737 packages/notebook-extension/src/index.ts:3743 packages/notebook-extension/src/index.ts:3762 packages/notebook-extension/src/index.ts:3859 packages/notebook-extension/src/index.ts:3866 packages/notebook-extension/src/index.ts:3925 packages/notebook-extension/src/index.ts:3944 packages/notebook-extension/src/index.ts:3945 packages/notebook-extension/src/index.ts:3981 packages/notebook-extension/src/index.ts:3994 packages/notebook-extension/src/index.ts:4943
+#: packages/notebook-extension/src/index.ts:3737 packages/notebook-extension/src/index.ts:3743 packages/notebook-extension/src/index.ts:3762 packages/notebook-extension/src/index.ts:3859 packages/notebook-extension/src/index.ts:3866 packages/notebook-extension/src/index.ts:3925 packages/notebook-extension/src/index.ts:3944 packages/notebook-extension/src/index.ts:3945 packages/notebook-extension/src/index.ts:3981 packages/notebook-extension/src/index.ts:3994 packages/notebook-extension/src/index.ts:4943 packages/notebook-extension/src/index.ts:4958
 msgid "For Notebook: %1"
 msgstr "Notebook: %1"
 
-#: packages/notebook-extension/src/index.ts:3738 packages/notebook-extension/src/index.ts:3744 packages/notebook-extension/src/index.ts:3763 packages/notebook-extension/src/index.ts:3860 packages/notebook-extension/src/index.ts:3867 packages/notebook-extension/src/index.ts:3926 packages/notebook-extension/src/index.ts:3945 packages/notebook-extension/src/index.ts:3946 packages/notebook-extension/src/index.ts:3982 packages/notebook-extension/src/index.ts:3995 packages/notebook-extension/src/index.ts:4944
+#: packages/notebook-extension/src/index.ts:3738 packages/notebook-extension/src/index.ts:3744 packages/notebook-extension/src/index.ts:3763 packages/notebook-extension/src/index.ts:3860 packages/notebook-extension/src/index.ts:3867 packages/notebook-extension/src/index.ts:3926 packages/notebook-extension/src/index.ts:3945 packages/notebook-extension/src/index.ts:3946 packages/notebook-extension/src/index.ts:3982 packages/notebook-extension/src/index.ts:3995 packages/notebook-extension/src/index.ts:4944 packages/notebook-extension/src/index.ts:4959
 msgid "For Notebook:"
 msgstr "Notebook:"
 
-#: packages/notebook-extension/src/index.ts:4408
+#: packages/notebook-extension/src/index.ts:4408 packages/notebook-extension/src/index.ts:4423
 msgid "Text to replace the selection with"
 msgstr ""
 
@@ -8185,35 +8195,35 @@ msgstr ""
 msgid "Whether the command is called from the command palette"
 msgstr ""
 
-#: packages/notebook/src/actions.tsx:2032 packages/notebook/src/actions.tsx:2039 packages/notebook/src/actions.tsx:2044 packages/notebook/src/actions.tsx:2094 packages/notebook/src/actions.tsx:2099 packages/notebook/src/actions.tsx:2107 packages/notebook/src/actions.tsx:2133 packages/notebook/src/actions.tsx:2169 packages/notebook/src/actions.tsx:2179 packages/notebook/src/actions.tsx:2260
+#: packages/notebook/src/actions.tsx:2032 packages/notebook/src/actions.tsx:2039 packages/notebook/src/actions.tsx:2044 packages/notebook/src/actions.tsx:2094 packages/notebook/src/actions.tsx:2099 packages/notebook/src/actions.tsx:2107 packages/notebook/src/actions.tsx:2133 packages/notebook/src/actions.tsx:2169 packages/notebook/src/actions.tsx:2179 packages/notebook/src/actions.tsx:2254 packages/notebook/src/actions.tsx:2260
 msgid "A trusted Jupyter notebook may execute hidden malicious code when you open it."
 msgstr "Jupyter Notebookを信頼すると、それを開いた際に悪意のある隠されたコードが実行される可能性があります。"
 
-#: packages/notebook/src/actions.tsx:2036 packages/notebook/src/actions.tsx:2043 packages/notebook/src/actions.tsx:2048 packages/notebook/src/actions.tsx:2098 packages/notebook/src/actions.tsx:2103 packages/notebook/src/actions.tsx:2111 packages/notebook/src/actions.tsx:2137 packages/notebook/src/actions.tsx:2173 packages/notebook/src/actions.tsx:2183 packages/notebook/src/actions.tsx:2264
+#: packages/notebook/src/actions.tsx:2036 packages/notebook/src/actions.tsx:2043 packages/notebook/src/actions.tsx:2048 packages/notebook/src/actions.tsx:2098 packages/notebook/src/actions.tsx:2103 packages/notebook/src/actions.tsx:2111 packages/notebook/src/actions.tsx:2137 packages/notebook/src/actions.tsx:2173 packages/notebook/src/actions.tsx:2183 packages/notebook/src/actions.tsx:2258 packages/notebook/src/actions.tsx:2264
 msgid "Selecting \"Trust\" will re-render this notebook in a trusted state."
 msgstr "「信頼する」を選択すると、このノートブックは信頼された状態で再描画されます。"
 
-#: packages/notebook/src/actions.tsx:2040 packages/notebook/src/actions.tsx:2047 packages/notebook/src/actions.tsx:2052 packages/notebook/src/actions.tsx:2102 packages/notebook/src/actions.tsx:2107 packages/notebook/src/actions.tsx:2115 packages/notebook/src/actions.tsx:2141 packages/notebook/src/actions.tsx:2177 packages/notebook/src/actions.tsx:2187 packages/notebook/src/actions.tsx:2268
+#: packages/notebook/src/actions.tsx:2040 packages/notebook/src/actions.tsx:2047 packages/notebook/src/actions.tsx:2052 packages/notebook/src/actions.tsx:2102 packages/notebook/src/actions.tsx:2107 packages/notebook/src/actions.tsx:2115 packages/notebook/src/actions.tsx:2141 packages/notebook/src/actions.tsx:2177 packages/notebook/src/actions.tsx:2187 packages/notebook/src/actions.tsx:2262 packages/notebook/src/actions.tsx:2268
 msgid "For more information, see"
 msgstr "詳細はこちらをご覧ください："
 
-#: packages/notebook/src/actions.tsx:2046 packages/notebook/src/actions.tsx:2053 packages/notebook/src/actions.tsx:2058 packages/notebook/src/actions.tsx:2108 packages/notebook/src/actions.tsx:2113 packages/notebook/src/actions.tsx:2121 packages/notebook/src/actions.tsx:2147 packages/notebook/src/actions.tsx:2183 packages/notebook/src/actions.tsx:2193 packages/notebook/src/actions.tsx:2274
+#: packages/notebook/src/actions.tsx:2046 packages/notebook/src/actions.tsx:2053 packages/notebook/src/actions.tsx:2058 packages/notebook/src/actions.tsx:2108 packages/notebook/src/actions.tsx:2113 packages/notebook/src/actions.tsx:2121 packages/notebook/src/actions.tsx:2147 packages/notebook/src/actions.tsx:2183 packages/notebook/src/actions.tsx:2193 packages/notebook/src/actions.tsx:2268 packages/notebook/src/actions.tsx:2274
 msgid "the Jupyter security documentation"
 msgstr "Jupyter のセキュリティ文書"
 
-#: packages/notebook/src/actions.tsx:2054 packages/notebook/src/actions.tsx:2061 packages/notebook/src/actions.tsx:2066 packages/notebook/src/actions.tsx:2116 packages/notebook/src/actions.tsx:2121 packages/notebook/src/actions.tsx:2129 packages/notebook/src/actions.tsx:2155 packages/notebook/src/actions.tsx:2191 packages/notebook/src/actions.tsx:2201 packages/notebook/src/actions.tsx:2282
+#: packages/notebook/src/actions.tsx:2054 packages/notebook/src/actions.tsx:2061 packages/notebook/src/actions.tsx:2066 packages/notebook/src/actions.tsx:2116 packages/notebook/src/actions.tsx:2121 packages/notebook/src/actions.tsx:2129 packages/notebook/src/actions.tsx:2155 packages/notebook/src/actions.tsx:2191 packages/notebook/src/actions.tsx:2201 packages/notebook/src/actions.tsx:2276 packages/notebook/src/actions.tsx:2282
 msgid "Notebook is already trusted"
 msgstr "Notebookは既に信頼されています"
 
-#: packages/notebook/src/actions.tsx:2061 packages/notebook/src/actions.tsx:2068 packages/notebook/src/actions.tsx:2073 packages/notebook/src/actions.tsx:2123 packages/notebook/src/actions.tsx:2128 packages/notebook/src/actions.tsx:2136 packages/notebook/src/actions.tsx:2162 packages/notebook/src/actions.tsx:2198 packages/notebook/src/actions.tsx:2208 packages/notebook/src/actions.tsx:2289
+#: packages/notebook/src/actions.tsx:2061 packages/notebook/src/actions.tsx:2068 packages/notebook/src/actions.tsx:2073 packages/notebook/src/actions.tsx:2123 packages/notebook/src/actions.tsx:2128 packages/notebook/src/actions.tsx:2136 packages/notebook/src/actions.tsx:2162 packages/notebook/src/actions.tsx:2198 packages/notebook/src/actions.tsx:2208 packages/notebook/src/actions.tsx:2283 packages/notebook/src/actions.tsx:2289
 msgid "Trust this notebook?"
 msgstr "このnotebookを信頼しますか？"
 
-#: packages/notebook/src/actions.tsx:2064 packages/notebook/src/actions.tsx:2065 packages/notebook/src/actions.tsx:2072 packages/notebook/src/actions.tsx:2077 packages/notebook/src/actions.tsx:2127 packages/notebook/src/actions.tsx:2132 packages/notebook/src/actions.tsx:2140 packages/notebook/src/actions.tsx:2166 packages/notebook/src/actions.tsx:2202 packages/notebook/src/actions.tsx:2212 packages/notebook/src/actions.tsx:2293
+#: packages/notebook/src/actions.tsx:2064 packages/notebook/src/actions.tsx:2065 packages/notebook/src/actions.tsx:2072 packages/notebook/src/actions.tsx:2077 packages/notebook/src/actions.tsx:2127 packages/notebook/src/actions.tsx:2132 packages/notebook/src/actions.tsx:2140 packages/notebook/src/actions.tsx:2166 packages/notebook/src/actions.tsx:2202 packages/notebook/src/actions.tsx:2212 packages/notebook/src/actions.tsx:2287 packages/notebook/src/actions.tsx:2293
 msgid "Trust"
 msgstr "信頼する"
 
-#: packages/notebook/src/actions.tsx:2066 packages/notebook/src/actions.tsx:2073 packages/notebook/src/actions.tsx:2078 packages/notebook/src/actions.tsx:2128 packages/notebook/src/actions.tsx:2133 packages/notebook/src/actions.tsx:2141 packages/notebook/src/actions.tsx:2167 packages/notebook/src/actions.tsx:2203 packages/notebook/src/actions.tsx:2213 packages/notebook/src/actions.tsx:2294
+#: packages/notebook/src/actions.tsx:2066 packages/notebook/src/actions.tsx:2073 packages/notebook/src/actions.tsx:2078 packages/notebook/src/actions.tsx:2128 packages/notebook/src/actions.tsx:2133 packages/notebook/src/actions.tsx:2141 packages/notebook/src/actions.tsx:2167 packages/notebook/src/actions.tsx:2203 packages/notebook/src/actions.tsx:2213 packages/notebook/src/actions.tsx:2288 packages/notebook/src/actions.tsx:2294
 msgid "Confirm Trusting this notebook"
 msgstr "このノートブックの信頼性を確認"
 
@@ -8233,19 +8243,19 @@ msgstr "入力待ちのためセルが実行されていません"
 msgid "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again."
 msgstr "別の保留中の入力がありカーネルのデッドロックを避けるため、セルは実行されていません！保留中の入力を送信して再試行してください。"
 
-#: packages/notebook/src/actions.tsx:2610 packages/notebook/src/actions.tsx:2636 packages/notebook/src/actions.tsx:2672 packages/notebook/src/actions.tsx:2682 packages/notebook/src/actions.tsx:2802
+#: packages/notebook/src/actions.tsx:2610 packages/notebook/src/actions.tsx:2636 packages/notebook/src/actions.tsx:2672 packages/notebook/src/actions.tsx:2682 packages/notebook/src/actions.tsx:2794 packages/notebook/src/actions.tsx:2802
 msgid "Cell type not changed due to pending input"
 msgstr "保留中の入力のため、セルの種類は変更されません"
 
-#: packages/notebook/src/actions.tsx:2611 packages/notebook/src/actions.tsx:2637 packages/notebook/src/actions.tsx:2673 packages/notebook/src/actions.tsx:2683 packages/notebook/src/actions.tsx:2803
+#: packages/notebook/src/actions.tsx:2611 packages/notebook/src/actions.tsx:2637 packages/notebook/src/actions.tsx:2673 packages/notebook/src/actions.tsx:2683 packages/notebook/src/actions.tsx:2795 packages/notebook/src/actions.tsx:2803
 msgid "The cell type has not been changed to avoid kernel deadlock as this cell has pending input! Submit your pending input and try again."
 msgstr "このセルには保留中の入力があり、カーネルのデッドロックを回避するため、セルの種類は変更されません！保留中の入力を送信してから、もう一度お試しください。"
 
-#: packages/notebook/src/actions.tsx:2649 packages/notebook/src/actions.tsx:2685 packages/notebook/src/actions.tsx:2695 packages/notebook/src/actions.tsx:2815
+#: packages/notebook/src/actions.tsx:2649 packages/notebook/src/actions.tsx:2685 packages/notebook/src/actions.tsx:2695 packages/notebook/src/actions.tsx:2807 packages/notebook/src/actions.tsx:2815
 msgid "Cell is read-only"
 msgstr "セルは読み取り専用"
 
-#: packages/notebook/src/actions.tsx:2650 packages/notebook/src/actions.tsx:2686 packages/notebook/src/actions.tsx:2696 packages/notebook/src/actions.tsx:2816
+#: packages/notebook/src/actions.tsx:2650 packages/notebook/src/actions.tsx:2686 packages/notebook/src/actions.tsx:2696 packages/notebook/src/actions.tsx:2808 packages/notebook/src/actions.tsx:2816
 msgid "The cell is read-only, its type cannot be changed!"
 msgstr "セルは読み取り専用です。種類は変更できません！"
 
@@ -8253,43 +8263,43 @@ msgstr "セルは読み取り専用です。種類は変更できません！"
 msgid "The cell has not been executed to avoid kernel deadlock as there is another pending input! Type your input in the input box, press Enter and try again."
 msgstr "別の保留中の入力がありカーネルのデッドロックを避けるため、セルは実行されていません！保留中の入力を行い、Enter を押して再試行してください。"
 
-#: packages/notebook/src/default-toolbar.tsx:141
+#: packages/notebook/src/default-toolbar.tsx:141 packages/notebook/src/default-toolbar.tsx:147
 msgid "Cut the selected cells"
 msgstr "選択したセルを切り取り"
 
-#: packages/notebook/src/default-toolbar.tsx:161
+#: packages/notebook/src/default-toolbar.tsx:161 packages/notebook/src/default-toolbar.tsx:172
 msgid "Copy the selected cells"
 msgstr "選択したセルをコピー"
 
-#: packages/notebook/src/default-toolbar.tsx:181
+#: packages/notebook/src/default-toolbar.tsx:181 packages/notebook/src/default-toolbar.tsx:197
 msgid "Paste cells from the clipboard"
 msgstr "クリップボードからセルを貼り付け"
 
-#: packages/notebook/src/default-toolbar.tsx:207
+#: packages/notebook/src/default-toolbar.tsx:207 packages/notebook/src/default-toolbar.tsx:223
 msgid "Run the selected cells and advance"
 msgstr "選択したセルを実行して次のセルに進めます"
 
-#: packages/notebook/src/default-toolbar.tsx:238
+#: packages/notebook/src/default-toolbar.tsx:238 packages/notebook/src/default-toolbar.tsx:254
 msgid "Restart the kernel, then re-run the whole notebook"
 msgstr "カーネルを再起動し、notebook全体を再実行"
 
-#: packages/notebook/src/default-toolbar.tsx:374
+#: packages/notebook/src/default-toolbar.tsx:374 packages/notebook/src/default-toolbar.tsx:391
 msgid "Cell type"
 msgstr "セルの種類"
 
-#: packages/notebook/src/default-toolbar.tsx:375
+#: packages/notebook/src/default-toolbar.tsx:375 packages/notebook/src/default-toolbar.tsx:392
 msgid "Select the cell type"
 msgstr "セルの種類を選択"
 
-#: packages/notebook/src/default-toolbar.tsx:378
+#: packages/notebook/src/default-toolbar.tsx:378 packages/notebook/src/default-toolbar.tsx:395
 msgid "Code"
 msgstr "コード"
 
-#: packages/notebook/src/default-toolbar.tsx:380
+#: packages/notebook/src/default-toolbar.tsx:380 packages/notebook/src/default-toolbar.tsx:397
 msgid "Raw"
 msgstr "Raw"
 
-#: packages/notebook/src/default-toolbar.tsx:87
+#: packages/notebook/src/default-toolbar.tsx:87 packages/notebook/src/default-toolbar.tsx:88
 msgid "Save the notebook contents and create checkpoint"
 msgstr "Notebookの内容を保存してチェックポイントを作成"
 
@@ -8606,7 +8616,7 @@ msgstr "ローカルリンクの処理"
 msgid "This HTML output contains inline scripts. Are you sure that you want to run arbitrary Javascript within your JupyterLab session?"
 msgstr "このHTML出力にはインラインスクリプトが含まれています。JupyterLabセッション内で任意のJavaScriptを実行してもよろしいですか?"
 
-#: packages/rendermime/src/widgets.ts:428 packages/rendermime/src/widgets.ts:446 packages/rendermime/src/widgets.ts:464 packages/rendermime/src/widgets.ts:492 packages/rendermime/src/widgets.ts:493
+#: packages/rendermime/src/widgets.ts:428 packages/rendermime/src/widgets.ts:446 packages/rendermime/src/widgets.ts:464 packages/rendermime/src/widgets.ts:492 packages/rendermime/src/widgets.ts:493 packages/rendermime/src/widgets.ts:499
 msgid "JavaScript output is disabled in JupyterLab"
 msgstr "JupyterLabではJavaScriptの出力が無効になっています"
 
