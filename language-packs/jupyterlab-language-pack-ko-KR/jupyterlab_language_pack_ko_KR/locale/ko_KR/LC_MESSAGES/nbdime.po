@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 242\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
-"PO-Revision-Date: 2024-10-19 02:12\n"
+"PO-Revision-Date: 2026-01-20 08:40\n"
 
 #: /packages/labextension/schema/plugin.json:/description
 msgctxt "schema"
@@ -39,81 +39,81 @@ msgctxt "schema"
 msgid "Nbdime"
 msgstr "Nbdime"
 
-#: packages/labextension/src/actions.ts:32
-msgid "Diff: %1 ↔ %2"
-msgstr "Diff: %1 ↔ %2"
-
-#: packages/labextension/src/actions.ts:33
-msgid "Local: '%1'\n"
-"Remote: '%2'"
-msgstr "로컬: '%1'\n"
-"리모트: '%2'"
-
-#: packages/labextension/src/actions.ts:54
-msgid "Checkpoint"
-msgstr "체크포인트"
-
-#: packages/labextension/src/actions.ts:58
-msgid "Diff checkpoint: %1"
-msgstr "Diff 체크포인트: %1"
-
-#: packages/labextension/src/actions.ts:59
-msgid "Local: latest checkpoint\n"
-"Remote: '%1'"
-msgstr "로컬: 최근 체크포인트\n"
-"리모트: '%1'"
-
-#: packages/labextension/src/actions.ts:84
+#: packages/labextension/src/actions.ts:103 packages/labextension/src/actions.ts:84
 msgid "Diff git: %1"
 msgstr "Diff git: %1"
 
-#: packages/labextension/src/actions.ts:85
+#: packages/labextension/src/actions.ts:104 packages/labextension/src/actions.ts:85
 msgid "Local: git HEAD\n"
 "Remote: '%1'"
 msgstr "로컬: git HEAD\n"
 "리모트: '%1'"
 
-#: packages/labextension/src/plugin.ts:126
+#: packages/labextension/src/actions.ts:32 packages/labextension/src/actions.ts:33
+msgid "Diff: %1 ↔ %2"
+msgstr "Diff: %1 ↔ %2"
+
+#: packages/labextension/src/actions.ts:33 packages/labextension/src/actions.ts:34
+msgid "Local: '%1'\n"
+"Remote: '%2'"
+msgstr "로컬: '%1'\n"
+"리모트: '%2'"
+
+#: packages/labextension/src/actions.ts:54 packages/labextension/src/actions.ts:63
+msgid "Checkpoint"
+msgstr "체크포인트"
+
+#: packages/labextension/src/actions.ts:58 packages/labextension/src/actions.ts:68
+msgid "Diff checkpoint: %1"
+msgstr "Diff 체크포인트: %1"
+
+#: packages/labextension/src/actions.ts:59 packages/labextension/src/actions.ts:69
+msgid "Local: latest checkpoint\n"
+"Remote: '%1'"
+msgstr "로컬: 최근 체크포인트\n"
+"리모트: '%1'"
+
+#: packages/labextension/src/plugin.ts:126 packages/labextension/src/plugin.ts:129
 msgid "Unable to query nbdime API. Is the server extension enabled?"
 msgstr "nbdime API의 쿼리할 수 없음. 서버 확장 프로그램이 활성화 되어 있나요?"
 
-#: packages/labextension/src/plugin.ts:204
+#: packages/labextension/src/plugin.ts:204 packages/labextension/src/plugin.ts:207
 msgid "Notebook diff"
 msgstr "노트북 diff"
 
-#: packages/labextension/src/plugin.ts:205
+#: packages/labextension/src/plugin.ts:205 packages/labextension/src/plugin.ts:208
 msgid "Display nbdiff between two notebooks"
 msgstr "두 노트북간의 nbdiff를 표시"
 
-#: packages/labextension/src/plugin.ts:230
+#: packages/labextension/src/plugin.ts:230 packages/labextension/src/plugin.ts:234
 msgid "Notebook checkpoint diff"
 msgstr "노트북 체크포인트 diff"
 
-#: packages/labextension/src/plugin.ts:232
+#: packages/labextension/src/plugin.ts:232 packages/labextension/src/plugin.ts:236
 msgid "Display nbdiff from checkpoint to currently saved version"
 msgstr "현재 저장된 버전과 체크포인트 간의 nbdiff 표시"
 
-#: packages/labextension/src/plugin.ts:257
+#: packages/labextension/src/plugin.ts:257 packages/labextension/src/plugin.ts:262
 msgid "Notebook Git diff"
 msgstr "노트북 Git diff"
 
-#: packages/labextension/src/plugin.ts:259
+#: packages/labextension/src/plugin.ts:259 packages/labextension/src/plugin.ts:264
 msgid "Display nbdiff from git HEAD to currently saved version"
 msgstr "현재 저장된 버전과 git HEAD 간의 nbdiff 표시"
 
-#: packages/labextension/src/widget.ts:129 packages/nbdime/src/merge/widget/metadata.ts:55
+#: packages/labextension/src/widget.ts:129 packages/labextension/src/widget.ts:132 packages/nbdime/src/merge/widget/metadata.ts:55
 msgid "Notebook metadata changed"
 msgstr "노트북 메타데이터 변경됨"
 
-#: packages/labextension/src/widget.ts:153
+#: packages/labextension/src/widget.ts:153 packages/labextension/src/widget.ts:156
 msgid "Failed to fetch diff: %1"
 msgstr "diff 가져오기 실패: %1"
 
-#: packages/labextension/src/widget.ts:255
+#: packages/labextension/src/widget.ts:255 packages/labextension/src/widget.ts:264
 msgid "Hide unchanged cells"
 msgstr "변경되지 않은 셀 숨기기"
 
-#: packages/labextension/src/widget.ts:257
+#: packages/labextension/src/widget.ts:257 packages/labextension/src/widget.ts:266
 msgid "Export diff"
 msgstr "diff 내보내기"
 
