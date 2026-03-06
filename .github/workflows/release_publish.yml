@@ -99,7 +99,7 @@ jobs:
         popd
         cp -r ./${{ env.CURRENT_LOCALE_DIR }}/dist/* ./dist
     - name: Upload language pack artifacts
-      uses: actions/upload-artifact@v6
+      uses: actions/upload-artifact@v7
       with:
         name: py-package-${{ matrix.locale }}
         path: dist/*
