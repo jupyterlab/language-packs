@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 197\n"
 "Language-Team: Norwegian\n"
 "Language: no_NO\n"
-"PO-Revision-Date: 2026-01-07 13:04\n"
+"PO-Revision-Date: 2026-03-08 05:51\n"
 
 #: /schema/plugin.json:/description
 msgctxt "schema"
@@ -62,6 +62,16 @@ msgstr ""
 #: /schema/plugin.json:/properties/cancelPullMergeConflict/title
 msgctxt "settings"
 msgid "Cancel pull merge conflict"
+msgstr ""
+
+#: /schema/plugin.json:/properties/clearOutputsBeforeCommit/description
+msgctxt "settings"
+msgid "If true, notebook outputs will be cleared before committing. If false, outputs are kept. If null, ask each time."
+msgstr ""
+
+#: /schema/plugin.json:/properties/clearOutputsBeforeCommit/title
+msgctxt "settings"
+msgid "Clear outputs before commit"
 msgstr ""
 
 #: /schema/plugin.json:/properties/commitAndPush/description
@@ -196,7 +206,7 @@ msgstr ""
 msgid "Clone a repo"
 msgstr ""
 
-#: src/cloneCommand.ts:44 src/cloneCommand.ts:46 src/cloneCommand.tsx:57 src/cloneCommand.tsx:80 src/commandsAndMenu.tsx:1001 src/commandsAndMenu.tsx:1002 src/commandsAndMenu.tsx:1044 src/commandsAndMenu.tsx:1045 src/commandsAndMenu.tsx:1070 src/commandsAndMenu.tsx:1086 src/commandsAndMenu.tsx:1108 src/commandsAndMenu.tsx:1112 src/commandsAndMenu.tsx:1113 src/commandsAndMenu.tsx:1129 src/commandsAndMenu.tsx:1141 src/commandsAndMenu.tsx:1151 src/commandsAndMenu.tsx:1155 src/commandsAndMenu.tsx:1184 src/commandsAndMenu.tsx:1370 src/commandsAndMenu.tsx:1375 src/commandsAndMenu.tsx:1413 src/commandsAndMenu.tsx:1418 src/commandsAndMenu.tsx:1540 src/commandsAndMenu.tsx:1548 src/commandsAndMenu.tsx:1558 src/commandsAndMenu.tsx:1583 src/commandsAndMenu.tsx:1591 src/commandsAndMenu.tsx:1601 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:204 src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:208 src/commandsAndMenu.tsx:210 src/commandsAndMenu.tsx:211 src/commandsAndMenu.tsx:216 src/commandsAndMenu.tsx:225 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:297 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:302 src/commandsAndMenu.tsx:317 src/commandsAndMenu.tsx:323 src/commandsAndMenu.tsx:327 src/commandsAndMenu.tsx:333 src/commandsAndMenu.tsx:334 src/commandsAndMenu.tsx:339 src/commandsAndMenu.tsx:397 src/commandsAndMenu.tsx:398 src/commandsAndMenu.tsx:415 src/commandsAndMenu.tsx:432 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:449 src/commandsAndMenu.tsx:450 src/commandsAndMenu.tsx:467 src/commandsAndMenu.tsx:471 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:481 src/commandsAndMenu.tsx:482 src/commandsAndMenu.tsx:487 src/commandsAndMenu.tsx:606 src/commandsAndMenu.tsx:607 src/commandsAndMenu.tsx:624 src/commandsAndMenu.tsx:743 src/commandsAndMenu.tsx:745 src/commandsAndMenu.tsx:751 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:794 src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:819 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:878 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:942 src/commandsAndMenu.tsx:985 src/components/BranchMenu.tsx:344 src/components/BranchMenu.tsx:367 src/components/BranchMenu.tsx:372 src/components/BranchMenu.tsx:374 src/components/BranchMenu.tsx:375 src/components/BranchMenu.tsx:474 src/components/BranchPicker.tsx:196 src/components/BranchPicker.tsx:198 src/components/FileList.tsx:182 src/components/FileList.tsx:191 src/components/FileList.tsx:193 src/components/FileList.tsx:196 src/components/FileList.tsx:207 src/components/FileList.tsx:216 src/components/FileList.tsx:218 src/components/FileList.tsx:257 src/components/FileList.tsx:267 src/components/FileList.tsx:268 src/components/MergeBranchDialog.tsx:173 src/components/NewBranchDialog.tsx:197 src/components/NewBranchDialog.tsx:202 src/components/NewBranchDialog.tsx:209 src/components/NewTagDialog.tsx:468 src/components/NewTagDialog.tsx:479 src/components/NewTagDialog.tsx:485 src/widgets/discardAllChanges.ts:25
+#: src/cloneCommand.ts:44 src/cloneCommand.ts:46 src/cloneCommand.tsx:57 src/cloneCommand.tsx:80 src/commandsAndMenu.tsx:1001 src/commandsAndMenu.tsx:1002 src/commandsAndMenu.tsx:1044 src/commandsAndMenu.tsx:1045 src/commandsAndMenu.tsx:1070 src/commandsAndMenu.tsx:1086 src/commandsAndMenu.tsx:1108 src/commandsAndMenu.tsx:1112 src/commandsAndMenu.tsx:1113 src/commandsAndMenu.tsx:1129 src/commandsAndMenu.tsx:1141 src/commandsAndMenu.tsx:1151 src/commandsAndMenu.tsx:1155 src/commandsAndMenu.tsx:1184 src/commandsAndMenu.tsx:1370 src/commandsAndMenu.tsx:1375 src/commandsAndMenu.tsx:1413 src/commandsAndMenu.tsx:1418 src/commandsAndMenu.tsx:1540 src/commandsAndMenu.tsx:1548 src/commandsAndMenu.tsx:1558 src/commandsAndMenu.tsx:1583 src/commandsAndMenu.tsx:1591 src/commandsAndMenu.tsx:1601 src/commandsAndMenu.tsx:182 src/commandsAndMenu.tsx:184 src/commandsAndMenu.tsx:185 src/commandsAndMenu.tsx:186 src/commandsAndMenu.tsx:189 src/commandsAndMenu.tsx:191 src/commandsAndMenu.tsx:192 src/commandsAndMenu.tsx:193 src/commandsAndMenu.tsx:194 src/commandsAndMenu.tsx:200 src/commandsAndMenu.tsx:204 src/commandsAndMenu.tsx:207 src/commandsAndMenu.tsx:208 src/commandsAndMenu.tsx:210 src/commandsAndMenu.tsx:211 src/commandsAndMenu.tsx:216 src/commandsAndMenu.tsx:225 src/commandsAndMenu.tsx:295 src/commandsAndMenu.tsx:297 src/commandsAndMenu.tsx:298 src/commandsAndMenu.tsx:299 src/commandsAndMenu.tsx:302 src/commandsAndMenu.tsx:317 src/commandsAndMenu.tsx:323 src/commandsAndMenu.tsx:327 src/commandsAndMenu.tsx:333 src/commandsAndMenu.tsx:334 src/commandsAndMenu.tsx:339 src/commandsAndMenu.tsx:397 src/commandsAndMenu.tsx:398 src/commandsAndMenu.tsx:415 src/commandsAndMenu.tsx:432 src/commandsAndMenu.tsx:433 src/commandsAndMenu.tsx:449 src/commandsAndMenu.tsx:450 src/commandsAndMenu.tsx:467 src/commandsAndMenu.tsx:471 src/commandsAndMenu.tsx:475 src/commandsAndMenu.tsx:481 src/commandsAndMenu.tsx:482 src/commandsAndMenu.tsx:487 src/commandsAndMenu.tsx:606 src/commandsAndMenu.tsx:607 src/commandsAndMenu.tsx:624 src/commandsAndMenu.tsx:743 src/commandsAndMenu.tsx:745 src/commandsAndMenu.tsx:751 src/commandsAndMenu.tsx:756 src/commandsAndMenu.tsx:776 src/commandsAndMenu.tsx:777 src/commandsAndMenu.tsx:786 src/commandsAndMenu.tsx:788 src/commandsAndMenu.tsx:794 src/commandsAndMenu.tsx:799 src/commandsAndMenu.tsx:819 src/commandsAndMenu.tsx:820 src/commandsAndMenu.tsx:878 src/commandsAndMenu.tsx:921 src/commandsAndMenu.tsx:942 src/commandsAndMenu.tsx:985 src/components/BranchMenu.tsx:344 src/components/BranchMenu.tsx:367 src/components/BranchMenu.tsx:372 src/components/BranchMenu.tsx:374 src/components/BranchMenu.tsx:375 src/components/BranchMenu.tsx:474 src/components/BranchPicker.tsx:196 src/components/BranchPicker.tsx:198 src/components/FileList.tsx:182 src/components/FileList.tsx:191 src/components/FileList.tsx:193 src/components/FileList.tsx:196 src/components/FileList.tsx:207 src/components/FileList.tsx:216 src/components/FileList.tsx:218 src/components/FileList.tsx:257 src/components/FileList.tsx:267 src/components/FileList.tsx:268 src/components/GitPanel.tsx:838 src/components/MergeBranchDialog.tsx:173 src/components/NewBranchDialog.tsx:197 src/components/NewBranchDialog.tsx:202 src/components/NewBranchDialog.tsx:209 src/components/NewTagDialog.tsx:468 src/components/NewTagDialog.tsx:479 src/components/NewTagDialog.tsx:485 src/widgets/discardAllChanges.ts:25
 msgid "Cancel"
 msgstr ""
 
@@ -1318,8 +1328,24 @@ msgstr ""
 msgid "Stash latest changes"
 msgstr ""
 
-#: src/components/GitPanel.tsx:1000 src/components/GitPanel.tsx:1018 src/components/GitPanel.tsx:722 src/components/GitPanel.tsx:736 src/components/GitPanel.tsx:744 src/components/GitPanel.tsx:843 src/components/GitPanel.tsx:844 src/components/GitPanel.tsx:954 src/components/GitPanel.tsx:973 src/components/GitPanel.tsx:974 src/components/GitPanel.tsx:995
+#: src/components/GitPanel.tsx:1000 src/components/GitPanel.tsx:1018 src/components/GitPanel.tsx:1076 src/components/GitPanel.tsx:722 src/components/GitPanel.tsx:736 src/components/GitPanel.tsx:744 src/components/GitPanel.tsx:843 src/components/GitPanel.tsx:844 src/components/GitPanel.tsx:954 src/components/GitPanel.tsx:973 src/components/GitPanel.tsx:974 src/components/GitPanel.tsx:995
 msgid "The following open files remain behind:"
+msgstr ""
+
+#: src/components/GitPanel.tsx:1039 src/components/GitPanel.tsx:685 src/components/GitPanel.tsx:699 src/components/GitPanel.tsx:707 src/components/GitPanel.tsx:806 src/components/GitPanel.tsx:807 src/components/GitPanel.tsx:917 src/components/GitPanel.tsx:936 src/components/GitPanel.tsx:937 src/components/GitPanel.tsx:958 src/components/GitPanel.tsx:963 src/components/GitPanel.tsx:981
+msgid "One or more open files are behind %1 head. Do you want to pull the latest remote version?"
+msgstr ""
+
+#: src/components/GitPanel.tsx:1048 src/components/GitPanel.tsx:694 src/components/GitPanel.tsx:708 src/components/GitPanel.tsx:716 src/components/GitPanel.tsx:815 src/components/GitPanel.tsx:816 src/components/GitPanel.tsx:926 src/components/GitPanel.tsx:945 src/components/GitPanel.tsx:946 src/components/GitPanel.tsx:967 src/components/GitPanel.tsx:972 src/components/GitPanel.tsx:990
+msgid "Continue Without Pulling"
+msgstr ""
+
+#: src/components/GitPanel.tsx:1051 src/components/GitPanel.tsx:697 src/components/GitPanel.tsx:711 src/components/GitPanel.tsx:719 src/components/GitPanel.tsx:818 src/components/GitPanel.tsx:819 src/components/GitPanel.tsx:929 src/components/GitPanel.tsx:948 src/components/GitPanel.tsx:949 src/components/GitPanel.tsx:970 src/components/GitPanel.tsx:975 src/components/GitPanel.tsx:993
+msgid "Pull"
+msgstr ""
+
+#: src/components/GitPanel.tsx:1052 src/components/GitPanel.tsx:698 src/components/GitPanel.tsx:712 src/components/GitPanel.tsx:720 src/components/GitPanel.tsx:819 src/components/GitPanel.tsx:820 src/components/GitPanel.tsx:930 src/components/GitPanel.tsx:949 src/components/GitPanel.tsx:950 src/components/GitPanel.tsx:971 src/components/GitPanel.tsx:976 src/components/GitPanel.tsx:994
+msgid "Git Pull from Remote Branch"
 msgstr ""
 
 #: src/components/GitPanel.tsx:216 src/components/GitPanel.tsx:506 src/components/GitPanel.tsx:533 src/components/GitPanel.tsx:547 src/components/GitPanel.tsx:561 src/components/GitPanel.tsx:569 src/components/GitPanel.tsx:668 src/components/GitPanel.tsx:669 src/components/GitPanel.tsx:752 src/components/GitPanel.tsx:766 src/components/GitPanel.tsx:771 src/components/GitPanel.tsx:772 src/components/GitPanel.tsx:784
@@ -1330,11 +1356,11 @@ msgstr ""
 msgid "Failed to commit changes."
 msgstr ""
 
-#: src/components/GitPanel.tsx:250 src/components/GitPanel.tsx:531 src/components/GitPanel.tsx:558 src/components/GitPanel.tsx:572 src/components/GitPanel.tsx:586 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:693 src/components/GitPanel.tsx:694 src/components/GitPanel.tsx:777 src/components/GitPanel.tsx:791 src/components/GitPanel.tsx:796 src/components/GitPanel.tsx:797 src/components/GitPanel.tsx:809
+#: src/components/GitPanel.tsx:250 src/components/GitPanel.tsx:531 src/components/GitPanel.tsx:558 src/components/GitPanel.tsx:572 src/components/GitPanel.tsx:586 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:693 src/components/GitPanel.tsx:694 src/components/GitPanel.tsx:777 src/components/GitPanel.tsx:791 src/components/GitPanel.tsx:796 src/components/GitPanel.tsx:797 src/components/GitPanel.tsx:809 src/components/GitPanel.tsx:867
 msgid "Committing changes..."
 msgstr ""
 
-#: src/components/GitPanel.tsx:257 src/components/GitPanel.tsx:538 src/components/GitPanel.tsx:569 src/components/GitPanel.tsx:583 src/components/GitPanel.tsx:597 src/components/GitPanel.tsx:605 src/components/GitPanel.tsx:704 src/components/GitPanel.tsx:705 src/components/GitPanel.tsx:788 src/components/GitPanel.tsx:807 src/components/GitPanel.tsx:808 src/components/GitPanel.tsx:813 src/components/GitPanel.tsx:831
+#: src/components/GitPanel.tsx:257 src/components/GitPanel.tsx:538 src/components/GitPanel.tsx:569 src/components/GitPanel.tsx:583 src/components/GitPanel.tsx:597 src/components/GitPanel.tsx:605 src/components/GitPanel.tsx:704 src/components/GitPanel.tsx:705 src/components/GitPanel.tsx:788 src/components/GitPanel.tsx:807 src/components/GitPanel.tsx:808 src/components/GitPanel.tsx:813 src/components/GitPanel.tsx:831 src/components/GitPanel.tsx:889
 msgid "Committed changes."
 msgstr ""
 
@@ -1394,7 +1420,7 @@ msgstr ""
 msgid "Apply the latest stash"
 msgstr ""
 
-#: src/components/GitPanel.tsx:513 src/components/GitPanel.tsx:571 src/components/GitPanel.tsx:602 src/components/GitPanel.tsx:616 src/components/GitPanel.tsx:630 src/components/GitPanel.tsx:638 src/components/GitPanel.tsx:737 src/components/GitPanel.tsx:738 src/components/GitPanel.tsx:840 src/components/GitPanel.tsx:859 src/components/GitPanel.tsx:860 src/components/GitPanel.tsx:878 src/components/GitPanel.tsx:883 src/components/GitPanel.tsx:901
+#: src/components/GitPanel.tsx:513 src/components/GitPanel.tsx:571 src/components/GitPanel.tsx:602 src/components/GitPanel.tsx:616 src/components/GitPanel.tsx:630 src/components/GitPanel.tsx:638 src/components/GitPanel.tsx:737 src/components/GitPanel.tsx:738 src/components/GitPanel.tsx:840 src/components/GitPanel.tsx:859 src/components/GitPanel.tsx:860 src/components/GitPanel.tsx:878 src/components/GitPanel.tsx:883 src/components/GitPanel.tsx:901 src/components/GitPanel.tsx:959
 msgid "Who is committing?"
 msgstr ""
 
@@ -1406,28 +1432,32 @@ msgstr ""
 msgid "Compare %1 and %2"
 msgstr ""
 
-#: src/components/GitPanel.tsx:537 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:625 src/components/GitPanel.tsx:639 src/components/GitPanel.tsx:653 src/components/GitPanel.tsx:661 src/components/GitPanel.tsx:760 src/components/GitPanel.tsx:761 src/components/GitPanel.tsx:871 src/components/GitPanel.tsx:890 src/components/GitPanel.tsx:891 src/components/GitPanel.tsx:910 src/components/GitPanel.tsx:915 src/components/GitPanel.tsx:933
+#: src/components/GitPanel.tsx:537 src/components/GitPanel.tsx:594 src/components/GitPanel.tsx:625 src/components/GitPanel.tsx:639 src/components/GitPanel.tsx:653 src/components/GitPanel.tsx:661 src/components/GitPanel.tsx:760 src/components/GitPanel.tsx:761 src/components/GitPanel.tsx:871 src/components/GitPanel.tsx:890 src/components/GitPanel.tsx:891 src/components/GitPanel.tsx:910 src/components/GitPanel.tsx:915 src/components/GitPanel.tsx:933 src/components/GitPanel.tsx:991
 msgid "Failed to set your identity. %1"
 msgstr ""
 
-#: src/components/GitPanel.tsx:577 src/components/GitPanel.tsx:608 src/components/GitPanel.tsx:622 src/components/GitPanel.tsx:636 src/components/GitPanel.tsx:644 src/components/GitPanel.tsx:743 src/components/GitPanel.tsx:744 src/components/GitPanel.tsx:846 src/components/GitPanel.tsx:865 src/components/GitPanel.tsx:866 src/components/GitPanel.tsx:884 src/components/GitPanel.tsx:889 src/components/GitPanel.tsx:907
+#: src/components/GitPanel.tsx:577 src/components/GitPanel.tsx:608 src/components/GitPanel.tsx:622 src/components/GitPanel.tsx:636 src/components/GitPanel.tsx:644 src/components/GitPanel.tsx:743 src/components/GitPanel.tsx:744 src/components/GitPanel.tsx:846 src/components/GitPanel.tsx:865 src/components/GitPanel.tsx:866 src/components/GitPanel.tsx:884 src/components/GitPanel.tsx:889 src/components/GitPanel.tsx:907 src/components/GitPanel.tsx:965
 msgid "User refused to set identity."
 msgstr ""
 
-#: src/components/GitPanel.tsx:685 src/components/GitPanel.tsx:699 src/components/GitPanel.tsx:707 src/components/GitPanel.tsx:806 src/components/GitPanel.tsx:807 src/components/GitPanel.tsx:917 src/components/GitPanel.tsx:936 src/components/GitPanel.tsx:937 src/components/GitPanel.tsx:958 src/components/GitPanel.tsx:963 src/components/GitPanel.tsx:981
-msgid "One or more open files are behind %1 head. Do you want to pull the latest remote version?"
+#: src/components/GitPanel.tsx:820
+msgid "Notebook outputs detected"
 msgstr ""
 
-#: src/components/GitPanel.tsx:694 src/components/GitPanel.tsx:708 src/components/GitPanel.tsx:716 src/components/GitPanel.tsx:815 src/components/GitPanel.tsx:816 src/components/GitPanel.tsx:926 src/components/GitPanel.tsx:945 src/components/GitPanel.tsx:946 src/components/GitPanel.tsx:967 src/components/GitPanel.tsx:972 src/components/GitPanel.tsx:990
-msgid "Continue Without Pulling"
+#: src/components/GitPanel.tsx:822
+msgid "Always clear outputs before committing?"
 msgstr ""
 
-#: src/components/GitPanel.tsx:697 src/components/GitPanel.tsx:711 src/components/GitPanel.tsx:719 src/components/GitPanel.tsx:818 src/components/GitPanel.tsx:819 src/components/GitPanel.tsx:929 src/components/GitPanel.tsx:948 src/components/GitPanel.tsx:949 src/components/GitPanel.tsx:970 src/components/GitPanel.tsx:975 src/components/GitPanel.tsx:993
-msgid "Pull"
+#: src/components/GitPanel.tsx:829
+msgid "Keep Outputs & Commit"
 msgstr ""
 
-#: src/components/GitPanel.tsx:698 src/components/GitPanel.tsx:712 src/components/GitPanel.tsx:720 src/components/GitPanel.tsx:819 src/components/GitPanel.tsx:820 src/components/GitPanel.tsx:930 src/components/GitPanel.tsx:949 src/components/GitPanel.tsx:950 src/components/GitPanel.tsx:971 src/components/GitPanel.tsx:976 src/components/GitPanel.tsx:994
-msgid "Git Pull from Remote Branch"
+#: src/components/GitPanel.tsx:831
+msgid "Clean & Commit"
+msgstr ""
+
+#: src/components/GitPanel.tsx:850 src/components/GitPanel.tsx:860
+msgid "Cleaning notebook outputs…"
 msgstr ""
 
 #: src/components/GitStash.tsx:144 src/components/GitStash.tsx:145
