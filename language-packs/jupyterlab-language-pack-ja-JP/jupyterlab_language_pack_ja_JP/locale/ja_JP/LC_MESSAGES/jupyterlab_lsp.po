@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 199\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
-"PO-Revision-Date: 2026-03-07 02:38\n"
+"PO-Revision-Date: 2026-04-13 08:04\n"
 
 #: /packages/jupyterlab-lsp/schema/completion.json:/description
 msgctxt "schema"
@@ -384,6 +384,16 @@ msgctxt "schema"
 msgid "Language Server Protocol settings."
 msgstr ""
 
+#: /packages/jupyterlab-lsp/schema/plugin.json:/properties/ignoredLanguages/description
+msgctxt "settings"
+msgid "Languages for which missing servers should be ignored in the status indicator."
+msgstr ""
+
+#: /packages/jupyterlab-lsp/schema/plugin.json:/properties/ignoredLanguages/title
+msgctxt "settings"
+msgid "Ignored missing languages"
+msgstr ""
+
 #: /packages/jupyterlab-lsp/schema/plugin.json:/properties/language_servers/description
 msgctxt "settings"
 msgid "Language-server specific configuration, keyed by implementation, e.g: \n\n"
@@ -682,7 +692,7 @@ msgstr ""
 msgid "Default values set programatically for: "
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/serverSettings.tsx:242 packages/jupyterlab-lsp/src/components/serverSettings.tsx:256 packages/jupyterlab-lsp/src/components/statusbar.tsx:334 packages/jupyterlab-lsp/src/components/statusbar.tsx:343 packages/jupyterlab-lsp/src/components/statusbar.tsx:352
+#: packages/jupyterlab-lsp/src/components/serverSettings.tsx:242 packages/jupyterlab-lsp/src/components/serverSettings.tsx:256 packages/jupyterlab-lsp/src/components/statusbar.tsx:334 packages/jupyterlab-lsp/src/components/statusbar.tsx:343 packages/jupyterlab-lsp/src/components/statusbar.tsx:352 packages/jupyterlab-lsp/src/components/statusbar.tsx:381
 msgid "Available"
 msgstr ""
 
@@ -698,68 +708,76 @@ msgstr ""
 msgid "Retaining the last value for each of the settings. Please remove the additional values in JSON Settings Editor."
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:133 packages/jupyterlab-lsp/src/components/statusbar.tsx:141 packages/jupyterlab-lsp/src/components/statusbar.tsx:150
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:133 packages/jupyterlab-lsp/src/components/statusbar.tsx:141 packages/jupyterlab-lsp/src/components/statusbar.tsx:142 packages/jupyterlab-lsp/src/components/statusbar.tsx:150
 msgid "Troubleshooting"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:137 packages/jupyterlab-lsp/src/components/statusbar.tsx:145 packages/jupyterlab-lsp/src/components/statusbar.tsx:154
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:137 packages/jupyterlab-lsp/src/components/statusbar.tsx:145 packages/jupyterlab-lsp/src/components/statusbar.tsx:146 packages/jupyterlab-lsp/src/components/statusbar.tsx:154
 msgid "In case of issues with installation feel welcome to ask a question on GitHub."
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:141 packages/jupyterlab-lsp/src/components/statusbar.tsx:149 packages/jupyterlab-lsp/src/components/statusbar.tsx:158
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:141 packages/jupyterlab-lsp/src/components/statusbar.tsx:149 packages/jupyterlab-lsp/src/components/statusbar.tsx:150 packages/jupyterlab-lsp/src/components/statusbar.tsx:158
 msgid "Installation"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:151 packages/jupyterlab-lsp/src/components/statusbar.tsx:159 packages/jupyterlab-lsp/src/components/statusbar.tsx:168
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:151 packages/jupyterlab-lsp/src/components/statusbar.tsx:159 packages/jupyterlab-lsp/src/components/statusbar.tsx:160 packages/jupyterlab-lsp/src/components/statusbar.tsx:168
 msgid "No installation instructions were provided with this specification."
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:166 packages/jupyterlab-lsp/src/components/statusbar.tsx:174 packages/jupyterlab-lsp/src/components/statusbar.tsx:183
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:166 packages/jupyterlab-lsp/src/components/statusbar.tsx:174 packages/jupyterlab-lsp/src/components/statusbar.tsx:175 packages/jupyterlab-lsp/src/components/statusbar.tsx:183
 msgid "No language server for %1 detected"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:175 packages/jupyterlab-lsp/src/components/statusbar.tsx:183 packages/jupyterlab-lsp/src/components/statusbar.tsx:192
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:175 packages/jupyterlab-lsp/src/components/statusbar.tsx:183 packages/jupyterlab-lsp/src/components/statusbar.tsx:184 packages/jupyterlab-lsp/src/components/statusbar.tsx:192
 msgid "There is %1 language server you can easily install that supports %2."
 msgid_plural "There are %1 language servers you can easily install that supports %2."
 msgstr[0] ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:194 packages/jupyterlab-lsp/src/components/statusbar.tsx:202 packages/jupyterlab-lsp/src/components/statusbar.tsx:211
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:194 packages/jupyterlab-lsp/src/components/statusbar.tsx:202 packages/jupyterlab-lsp/src/components/statusbar.tsx:203 packages/jupyterlab-lsp/src/components/statusbar.tsx:211
 msgid "We do not have an auto-detection ready for a language servers supporting %1 yet."
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:200 packages/jupyterlab-lsp/src/components/statusbar.tsx:208 packages/jupyterlab-lsp/src/components/statusbar.tsx:217
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:200 packages/jupyterlab-lsp/src/components/statusbar.tsx:208 packages/jupyterlab-lsp/src/components/statusbar.tsx:209 packages/jupyterlab-lsp/src/components/statusbar.tsx:217
 msgid "You may contribute a specification for auto-detection as described in our "
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:208 packages/jupyterlab-lsp/src/components/statusbar.tsx:216 packages/jupyterlab-lsp/src/components/statusbar.tsx:225
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:208 packages/jupyterlab-lsp/src/components/statusbar.tsx:216 packages/jupyterlab-lsp/src/components/statusbar.tsx:217 packages/jupyterlab-lsp/src/components/statusbar.tsx:225
 msgid "documentation"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:329 packages/jupyterlab-lsp/src/components/statusbar.tsx:338 packages/jupyterlab-lsp/src/components/statusbar.tsx:347
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:248
+msgid "Ignore missing server for %1"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:253
+msgid "Ignore"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:329 packages/jupyterlab-lsp/src/components/statusbar.tsx:338 packages/jupyterlab-lsp/src/components/statusbar.tsx:347 packages/jupyterlab-lsp/src/components/statusbar.tsx:376
 msgid "LSP servers"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:344 packages/jupyterlab-lsp/src/components/statusbar.tsx:353 packages/jupyterlab-lsp/src/components/statusbar.tsx:362
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:344 packages/jupyterlab-lsp/src/components/statusbar.tsx:353 packages/jupyterlab-lsp/src/components/statusbar.tsx:362 packages/jupyterlab-lsp/src/components/statusbar.tsx:391
 msgid "Running"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:353 packages/jupyterlab-lsp/src/components/statusbar.tsx:362 packages/jupyterlab-lsp/src/components/statusbar.tsx:371
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:353 packages/jupyterlab-lsp/src/components/statusbar.tsx:362 packages/jupyterlab-lsp/src/components/statusbar.tsx:371 packages/jupyterlab-lsp/src/components/statusbar.tsx:400
 msgid "Missing"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:362 packages/jupyterlab-lsp/src/components/statusbar.tsx:371 packages/jupyterlab-lsp/src/components/statusbar.tsx:380
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:362 packages/jupyterlab-lsp/src/components/statusbar.tsx:371 packages/jupyterlab-lsp/src/components/statusbar.tsx:380 packages/jupyterlab-lsp/src/components/statusbar.tsx:409
 msgid "Documentation:"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:370 packages/jupyterlab-lsp/src/components/statusbar.tsx:379 packages/jupyterlab-lsp/src/components/statusbar.tsx:388
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:370 packages/jupyterlab-lsp/src/components/statusbar.tsx:379 packages/jupyterlab-lsp/src/components/statusbar.tsx:388 packages/jupyterlab-lsp/src/components/statusbar.tsx:417
 msgid "Language Servers"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:396 packages/jupyterlab-lsp/src/components/statusbar.tsx:408 packages/jupyterlab-lsp/src/components/statusbar.tsx:417 packages/jupyterlab-lsp/src/components/statusbar.tsx:418 packages/jupyterlab-lsp/src/components/statusbar.tsx:419
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:396 packages/jupyterlab-lsp/src/components/statusbar.tsx:408 packages/jupyterlab-lsp/src/components/statusbar.tsx:417 packages/jupyterlab-lsp/src/components/statusbar.tsx:418 packages/jupyterlab-lsp/src/components/statusbar.tsx:419 packages/jupyterlab-lsp/src/components/statusbar.tsx:443
 msgid "LSP status"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:419 packages/jupyterlab-lsp/src/components/statusbar.tsx:458 packages/jupyterlab-lsp/src/components/statusbar.tsx:467 packages/jupyterlab-lsp/src/components/statusbar.tsx:468 packages/jupyterlab-lsp/src/components/statusbar.tsx:469
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:419 packages/jupyterlab-lsp/src/components/statusbar.tsx:458 packages/jupyterlab-lsp/src/components/statusbar.tsx:466 packages/jupyterlab-lsp/src/components/statusbar.tsx:467 packages/jupyterlab-lsp/src/components/statusbar.tsx:468 packages/jupyterlab-lsp/src/components/statusbar.tsx:469
 msgid "LSP Code Intelligence"
 msgstr ""
 
@@ -767,15 +785,15 @@ msgstr ""
 msgid "LSP server extension not found"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:557 packages/jupyterlab-lsp/src/components/statusbar.tsx:567
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:557 packages/jupyterlab-lsp/src/components/statusbar.tsx:567 packages/jupyterlab-lsp/src/components/statusbar.tsx:635
 msgid "Server extension missing"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:558 packages/jupyterlab-lsp/src/components/statusbar.tsx:568
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:558 packages/jupyterlab-lsp/src/components/statusbar.tsx:568 packages/jupyterlab-lsp/src/components/statusbar.tsx:636
 msgid "Waiting…"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:559 packages/jupyterlab-lsp/src/components/statusbar.tsx:569
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:559 packages/jupyterlab-lsp/src/components/statusbar.tsx:569 packages/jupyterlab-lsp/src/components/statusbar.tsx:637
 msgid "Fully initialized"
 msgstr ""
 
@@ -783,38 +801,42 @@ msgstr ""
 msgid "Initialized (additional servers needed)"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:563 packages/jupyterlab-lsp/src/components/statusbar.tsx:573
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:563 packages/jupyterlab-lsp/src/components/statusbar.tsx:573 packages/jupyterlab-lsp/src/components/statusbar.tsx:639
 msgid "Initializing…"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:564 packages/jupyterlab-lsp/src/components/statusbar.tsx:574
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:564 packages/jupyterlab-lsp/src/components/statusbar.tsx:574 packages/jupyterlab-lsp/src/components/statusbar.tsx:640
 msgid "Connecting…"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:761 packages/jupyterlab-lsp/src/components/statusbar.tsx:771
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:638
+msgid "Initialized*"
+msgstr ""
+
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:761 packages/jupyterlab-lsp/src/components/statusbar.tsx:771 packages/jupyterlab-lsp/src/components/statusbar.tsx:871
 msgid "Not initialized"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:768 packages/jupyterlab-lsp/src/components/statusbar.tsx:778 packages/jupyterlab-lsp/src/components/statusbar.tsx:809 packages/jupyterlab-lsp/src/components/statusbar.tsx:813 packages/jupyterlab-lsp/src/components/statusbar.tsx:815 packages/jupyterlab-lsp/src/components/statusbar.tsx:816 packages/jupyterlab-lsp/src/components/statusbar.tsx:818 packages/jupyterlab-lsp/src/components/statusbar.tsx:820 packages/jupyterlab-lsp/src/components/statusbar.tsx:824 packages/jupyterlab-lsp/src/components/statusbar.tsx:826 packages/jupyterlab-lsp/src/components/statusbar.tsx:827 packages/jupyterlab-lsp/src/components/statusbar.tsx:829
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:768 packages/jupyterlab-lsp/src/components/statusbar.tsx:778 packages/jupyterlab-lsp/src/components/statusbar.tsx:809 packages/jupyterlab-lsp/src/components/statusbar.tsx:813 packages/jupyterlab-lsp/src/components/statusbar.tsx:815 packages/jupyterlab-lsp/src/components/statusbar.tsx:816 packages/jupyterlab-lsp/src/components/statusbar.tsx:818 packages/jupyterlab-lsp/src/components/statusbar.tsx:820 packages/jupyterlab-lsp/src/components/statusbar.tsx:824 packages/jupyterlab-lsp/src/components/statusbar.tsx:826 packages/jupyterlab-lsp/src/components/statusbar.tsx:827 packages/jupyterlab-lsp/src/components/statusbar.tsx:829 packages/jupyterlab-lsp/src/components/statusbar.tsx:878
 msgid "not initialized"
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:773 packages/jupyterlab-lsp/src/components/statusbar.tsx:783 packages/jupyterlab-lsp/src/components/statusbar.tsx:825 packages/jupyterlab-lsp/src/components/statusbar.tsx:829 packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:832 packages/jupyterlab-lsp/src/components/statusbar.tsx:834
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:773 packages/jupyterlab-lsp/src/components/statusbar.tsx:783 packages/jupyterlab-lsp/src/components/statusbar.tsx:825 packages/jupyterlab-lsp/src/components/statusbar.tsx:829 packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:832 packages/jupyterlab-lsp/src/components/statusbar.tsx:834 packages/jupyterlab-lsp/src/components/statusbar.tsx:883
 msgid "Waiting for documents initialization..."
 msgstr ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:775 packages/jupyterlab-lsp/src/components/statusbar.tsx:785 packages/jupyterlab-lsp/src/components/statusbar.tsx:827 packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:833 packages/jupyterlab-lsp/src/components/statusbar.tsx:834 packages/jupyterlab-lsp/src/components/statusbar.tsx:836
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:775 packages/jupyterlab-lsp/src/components/statusbar.tsx:785 packages/jupyterlab-lsp/src/components/statusbar.tsx:827 packages/jupyterlab-lsp/src/components/statusbar.tsx:831 packages/jupyterlab-lsp/src/components/statusbar.tsx:833 packages/jupyterlab-lsp/src/components/statusbar.tsx:834 packages/jupyterlab-lsp/src/components/statusbar.tsx:836 packages/jupyterlab-lsp/src/components/statusbar.tsx:885
 msgid "Fully connected & initialized (%2 virtual document)"
 msgid_plural "Fully connected & initialized (%2 virtual document)"
 msgstr[0] ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:789 packages/jupyterlab-lsp/src/components/statusbar.tsx:799 packages/jupyterlab-lsp/src/components/statusbar.tsx:841 packages/jupyterlab-lsp/src/components/statusbar.tsx:847 packages/jupyterlab-lsp/src/components/statusbar.tsx:850
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:789 packages/jupyterlab-lsp/src/components/statusbar.tsx:799 packages/jupyterlab-lsp/src/components/statusbar.tsx:841 packages/jupyterlab-lsp/src/components/statusbar.tsx:847 packages/jupyterlab-lsp/src/components/statusbar.tsx:850 packages/jupyterlab-lsp/src/components/statusbar.tsx:899
 msgctxt "pluralized"
 msgid "Fully connected, but %2/%3 virtual document stuck uninitialized: %4"
 msgid_plural "Fully connected, but %2/%3 virtual documents stuck uninitialized: %4"
 msgstr[0] ""
 
-#: packages/jupyterlab-lsp/src/components/statusbar.tsx:804 packages/jupyterlab-lsp/src/components/statusbar.tsx:814 packages/jupyterlab-lsp/src/components/statusbar.tsx:856 packages/jupyterlab-lsp/src/components/statusbar.tsx:862 packages/jupyterlab-lsp/src/components/statusbar.tsx:865
+#: packages/jupyterlab-lsp/src/components/statusbar.tsx:804 packages/jupyterlab-lsp/src/components/statusbar.tsx:814 packages/jupyterlab-lsp/src/components/statusbar.tsx:856 packages/jupyterlab-lsp/src/components/statusbar.tsx:862 packages/jupyterlab-lsp/src/components/statusbar.tsx:865 packages/jupyterlab-lsp/src/components/statusbar.tsx:914
 msgctxt "pluralized"
 msgid "%2/%3 virtual document connected (%4 connections; waiting for: %5)"
 msgid_plural "%2/%3 virtual documents connected (%4 connections; waiting for: %5)"
