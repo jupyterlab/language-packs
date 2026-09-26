@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 231\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2026-05-03 07:07\n"
+"PO-Revision-Date: 2026-09-16 10:00\n"
 
 #: /packages/application-extension/schema/menus.json:/description /packages/application-extension/schema/menus.json:/title /packages/notebook-extension/schema/edit-notebook-metadata.json:/description /packages/notebook-extension/schema/edit-notebook-metadata.json:/title
 msgctxt "schema"
@@ -27,6 +27,16 @@ msgstr ""
 #: /packages/application-extension/schema/pages.json:/description /packages/application-extension/schema/pages.json:/title
 msgctxt "schema"
 msgid "Jupyter Notebook Pages"
+msgstr ""
+
+#: /packages/application-extension/schema/shell.json:/definitions/layout/properties/[\w-]+/properties/area/oneOf[0]/title
+msgctxt "settings"
+msgid "Left"
+msgstr ""
+
+#: /packages/application-extension/schema/shell.json:/definitions/layout/properties/[\w-]+/properties/area/oneOf[1]/title
+msgctxt "settings"
+msgid "Right"
 msgstr ""
 
 #: /packages/application-extension/schema/shell.json:/description
@@ -84,6 +94,21 @@ msgctxt "settings"
 msgid "Whether to show the top bar or not, yes for always showing, no for always not showing, automatic for adjusting to screen size"
 msgstr ""
 
+#: /packages/application-extension/schema/top.json:/properties/visible/oneOf[0]/title
+msgctxt "settings"
+msgid "Yes"
+msgstr ""
+
+#: /packages/application-extension/schema/top.json:/properties/visible/oneOf[1]/title
+msgctxt "settings"
+msgid "No"
+msgstr ""
+
+#: /packages/application-extension/schema/top.json:/properties/visible/oneOf[2]/title
+msgctxt "settings"
+msgid "Automatic"
+msgstr ""
+
 #: /packages/application-extension/schema/top.json:/properties/visible/title
 msgctxt "settings"
 msgid "Top Bar Visibility"
@@ -97,6 +122,11 @@ msgstr ""
 #: /packages/application-extension/schema/zen.json:/description /packages/application-extension/schema/zen.json:/title
 msgctxt "schema"
 msgid "Jupyter Notebook Zen Mode"
+msgstr ""
+
+#: /packages/console-extension/schema/scratchpad-console.json:/description /packages/console-extension/schema/scratchpad-console.json:/title
+msgctxt "schema"
+msgid "Jupyter Notebook Scratchpad Console"
 msgstr ""
 
 #: /packages/help-extension/schema/open.json:/description /packages/help-extension/schema/open.json:/title
@@ -139,6 +169,26 @@ msgctxt "settings"
 msgid "Checkpoint Polling Interval (seconds)"
 msgstr ""
 
+#: /packages/notebook-extension/schema/close-tab.json:/description
+msgctxt "schema"
+msgid "Settings for the \"Close and Shut Down Notebook\" command."
+msgstr ""
+
+#: /packages/notebook-extension/schema/close-tab.json:/properties/promptForConfirmation/description
+msgctxt "settings"
+msgid "Whether to prompt the user for confirmation before closing the browser tab and shutting down the kernel."
+msgstr ""
+
+#: /packages/notebook-extension/schema/close-tab.json:/properties/promptForConfirmation/title
+msgctxt "settings"
+msgid "Prompt for confirmation before closing and shutting down"
+msgstr ""
+
+#: /packages/notebook-extension/schema/close-tab.json:/title
+msgctxt "schema"
+msgid "Close and Shut Down Notebook"
+msgstr ""
+
 #: /packages/notebook-extension/schema/full-width-notebook.json:/description
 msgctxt "schema"
 msgid "Jupyter Notebook Notebook With settings"
@@ -167,6 +217,16 @@ msgstr ""
 #: /packages/notebook-extension/schema/kernel-logo.json:/title
 msgctxt "schema"
 msgid "Kernel logo"
+msgstr ""
+
+#: /packages/notebook-extension/schema/menu-override.json:/description
+msgctxt "schema"
+msgid "Override some menu items"
+msgstr ""
+
+#: /packages/notebook-extension/schema/menu-override.json:/title
+msgctxt "schema"
+msgid "Menu override"
 msgstr ""
 
 #: /packages/notebook-extension/schema/scroll-output.json:/description
@@ -249,6 +309,16 @@ msgctxt "settings"
 msgid "Item rank"
 msgstr ""
 
+#: /packages/tree-extension/schema/widget.json:/definitions/toolbarItem/properties/type/oneOf[0]/title
+msgctxt "settings"
+msgid "Command"
+msgstr ""
+
+#: /packages/tree-extension/schema/widget.json:/definitions/toolbarItem/properties/type/oneOf[1]/title
+msgctxt "settings"
+msgid "Spacer"
+msgstr ""
+
 #: /packages/tree-extension/schema/widget.json:/definitions/toolbarItem/properties/type/title
 msgctxt "settings"
 msgid "Item type"
@@ -285,7 +355,15 @@ msgctxt "schema"
 msgid "File Browser Widget"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:1162 packages/application-extension/src/index.ts:1173
+#: packages/application-extension/src/index.ts:1038 packages/application-extension/src/index.ts:958
+msgid "Left Sidebar"
+msgstr "Linke Seitenleiste"
+
+#: packages/application-extension/src/index.ts:1040 packages/application-extension/src/index.ts:960
+msgid "Right Sidebar"
+msgstr "Rechte Seitenleiste"
+
+#: packages/application-extension/src/index.ts:1173 packages/application-extension/src/index.ts:1264
 msgid "Toggle Zen Mode"
 msgstr "Zen-Modus umschalten"
 
@@ -294,89 +372,109 @@ msgid "Are you sure you want to exit Jupyter Notebook?\n\n"
 "Any unsaved changes will be lost."
 msgstr ""
 
-#: packages/application-extension/src/index.ts:341
+#: packages/application-extension/src/index.ts:341 packages/application-extension/src/index.ts:358
 msgid "Open JupyterLab"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:349
+#: packages/application-extension/src/index.ts:349 packages/application-extension/src/index.ts:372
 msgid "File Browser"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:424
+#: packages/application-extension/src/index.ts:424 packages/application-extension/src/index.ts:453
 msgid "Handle Local Link"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:641 packages/application-extension/src/index.ts:652
+#: packages/application-extension/src/index.ts:652 packages/application-extension/src/index.ts:693
 msgid "Duplicate"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:655 packages/application-extension/src/index.ts:666
+#: packages/application-extension/src/index.ts:666 packages/application-extension/src/index.ts:713
 msgid "Rename…"
 msgstr "Umbenennen…"
 
-#: packages/application-extension/src/index.ts:675 packages/application-extension/src/index.ts:686
+#: packages/application-extension/src/index.ts:686 packages/application-extension/src/index.ts:733
 msgid "Rename Error"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:677 packages/application-extension/src/index.ts:688
+#: packages/application-extension/src/index.ts:688 packages/application-extension/src/index.ts:735
 msgid "An error occurred while renaming the file."
 msgstr ""
 
-#: packages/application-extension/src/index.ts:731 packages/application-extension/src/index.ts:742
+#: packages/application-extension/src/index.ts:742 packages/application-extension/src/index.ts:795
 msgid "Show Header"
 msgstr "Kopfzeile anzeigen"
 
-#: packages/application-extension/src/index.ts:822 packages/application-extension/src/index.ts:833
+#: packages/application-extension/src/index.ts:833 packages/application-extension/src/index.ts:892
 msgid "Show %1 in the left sidebar"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:827 packages/application-extension/src/index.ts:838
+#: packages/application-extension/src/index.ts:838 packages/application-extension/src/index.ts:897
 msgid "Show %1 in the right sidebar"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:832 packages/application-extension/src/index.ts:843
+#: packages/application-extension/src/index.ts:843 packages/application-extension/src/index.ts:902
 msgid "Show %1 in the sidebar"
 msgstr ""
 
-#: packages/application-extension/src/index.ts:947 packages/application-extension/src/index.ts:958
-msgid "Left Sidebar"
-msgstr "Linke Seitenleiste"
-
-#: packages/application-extension/src/index.ts:949 packages/application-extension/src/index.ts:960
-msgid "Right Sidebar"
-msgstr "Rechte Seitenleiste"
+#: packages/application/src/panelhandler.ts:95
+msgid "Collapse side panel"
+msgstr ""
 
 #: packages/application/src/shell.ts:274 packages/application/src/shell.ts:278
 msgid "Collapse %1 side panel"
 msgstr ""
 
-#: packages/help-extension/src/index.tsx:100 packages/help-extension/src/index.tsx:115
-msgid "CONTRIBUTOR LIST"
+#: packages/console-extension/src/index.ts:169
+msgid "Open a scratchpad console"
 msgstr ""
 
-#: packages/help-extension/src/index.tsx:102 packages/help-extension/src/index.tsx:87
+#: packages/console-extension/src/index.ts:170
+msgid "Scratchpad console"
+msgstr ""
+
+#: packages/console-extension/src/index.ts:218
+msgid "Console"
+msgstr ""
+
+#: packages/console-extension/src/index.ts:230
+msgid "Whether the command is executed from the palette"
+msgstr ""
+
+#: packages/console-extension/src/index.ts:236
+msgid "Whether the command is executed from the menu"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:102 packages/help-extension/src/index.tsx:118
 msgid "About %1"
 msgstr "Über %1"
 
-#: packages/help-extension/src/index.tsx:114 packages/help-extension/src/index.tsx:99
+#: packages/help-extension/src/index.tsx:114 packages/help-extension/src/index.tsx:130
 msgid "JUPYTER NOTEBOOK ON GITHUB"
 msgstr ""
 
-#: packages/help-extension/src/index.tsx:121 packages/help-extension/src/index.tsx:136
+#: packages/help-extension/src/index.tsx:115 packages/help-extension/src/index.tsx:131
+msgid "CONTRIBUTOR LIST"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:115 packages/help-extension/src/index.tsx:99 packages/lab-extension/src/index.ts:239 packages/lab-extension/src/index.ts:261
+msgid "Help"
+msgstr "Hilfe"
+
+#: packages/help-extension/src/index.tsx:136 packages/help-extension/src/index.tsx:152
 msgid "Version: %1"
 msgstr "Version: %1"
 
-#: packages/help-extension/src/index.tsx:122 packages/help-extension/src/index.tsx:137
+#: packages/help-extension/src/index.tsx:137
 msgid "© 2021-2023 Jupyter Notebook Contributors"
 msgstr ""
 
-#: packages/help-extension/src/index.tsx:138 packages/help-extension/src/index.tsx:153
+#: packages/help-extension/src/index.tsx:153
+msgid "© 2021-2025 Jupyter Notebook Contributors"
+msgstr ""
+
+#: packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:169
 msgid "Dismiss"
 msgstr "Verwerfen"
-
-#: packages/help-extension/src/index.tsx:84 packages/help-extension/src/index.tsx:99 packages/lab-extension/src/index.ts:239
-msgid "Help"
-msgstr "Hilfe"
 
 #: packages/lab-extension/src/index.ts:108
 msgid "Notebook"
@@ -394,36 +492,64 @@ msgstr ""
 msgid "NbClassic"
 msgstr ""
 
-#: packages/lab-extension/src/index.ts:201
+#: packages/lab-extension/src/index.ts:201 packages/lab-extension/src/index.ts:223
 msgid "Open in..."
 msgstr ""
 
-#: packages/lab-extension/src/index.ts:242
+#: packages/lab-extension/src/index.ts:242 packages/lab-extension/src/index.ts:264
 msgid "Launch Jupyter Notebook File Browser"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:142
+#: packages/notebook-extension/src/index.ts:142 packages/notebook-extension/src/index.ts:150
 msgid "Last Checkpoint: %1"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:246
+#: packages/notebook-extension/src/index.ts:246 packages/notebook-extension/src/index.ts:281
 msgid "Close and Shut Down Notebook"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:278
+#: packages/notebook-extension/src/index.ts:278 packages/notebook-extension/src/index.ts:333
 msgid "Open…"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:344
+#: packages/notebook-extension/src/index.ts:280
+msgid "Close and Shut Down Notebook…"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:285
+msgid "the notebook"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:287
+msgid "Shut down the notebook?"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:288
+msgid "Are you sure you want to close \"%1\"?"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:291
+msgid "Shut Down"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:344 packages/notebook-extension/src/index.ts:405
 msgid "Enable Full Width Notebook"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:711
+#: packages/notebook-extension/src/index.ts:711 packages/notebook-extension/src/index.ts:778
 msgid "Edit Notebook Metadata"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:728
+#: packages/notebook-extension/src/index.ts:728 packages/notebook-extension/src/index.ts:795
 msgid "Advanced Tools"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:856
+msgid "Table of Contents"
+msgstr ""
+
+#: packages/notebook-extension/src/index.ts:899
+msgid "Debugger Panel"
 msgstr ""
 
 #: packages/notebook-extension/src/trusted.tsx:78
@@ -446,19 +572,19 @@ msgstr ""
 msgid "Select items to perform actions on them."
 msgstr ""
 
-#: packages/tree-extension/src/index.ts:360
+#: packages/tree-extension/src/index.ts:360 packages/tree-extension/src/index.ts:381
 msgid "Files"
 msgstr ""
 
-#: packages/tree-extension/src/index.ts:362
+#: packages/tree-extension/src/index.ts:362 packages/tree-extension/src/index.ts:383
 msgid "File Browser Section"
 msgstr ""
 
-#: packages/tree-extension/src/index.ts:376
+#: packages/tree-extension/src/index.ts:376 packages/tree-extension/src/index.ts:397
 msgid "Upload"
 msgstr ""
 
-#: packages/tree-extension/src/index.ts:394
+#: packages/tree-extension/src/index.ts:394 packages/tree-extension/src/index.ts:415
 msgid "Running"
 msgstr ""
 
