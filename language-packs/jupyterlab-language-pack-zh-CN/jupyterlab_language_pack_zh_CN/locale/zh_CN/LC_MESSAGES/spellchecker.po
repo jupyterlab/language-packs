@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 213\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2026-05-04 02:41\n"
+"PO-Revision-Date: 2026-09-16 10:00\n"
 
 #: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/aff/title
 msgctxt "settings"
@@ -126,6 +126,14 @@ msgstr "使用下列一种方式修饰拼写错误的单词：\n"
 "  - 'wavy-underline'：使用小波浪下划线（注意：Chrome 使用此选项时，在个别非常短的单词下无法渲然下划线）\n"
 "  - 'dotted-undline'：点状下划线"
 
+#: /schema/plugin.json:/properties/theme/description
+msgctxt "settings"
+msgid "Theme for decorating misspelt words, one of:\n"
+"  - 'background-box': fills the background of the misspelt word;\n"
+"  - 'wavy-underline': underline with wavelets; it can be customized by tweaking underline styles but some browsers do not render the wavelets under very short words\n"
+"  - 'dotted-underline': underline with dotted style"
+msgstr ""
+
 #: /schema/plugin.json:/properties/theme/title
 msgctxt "settings"
 msgid "Theme"
@@ -136,51 +144,51 @@ msgctxt "schema"
 msgid "Spellchecker"
 msgstr "拼写检查器"
 
-#: src/index.ts:242 src/index.ts:251 src/index.ts:253
+#: src/index.ts:242 src/index.ts:251 src/index.ts:253 src/index.ts:265
 msgid "Dictionary not loaded"
 msgstr "字典未加载"
 
-#: src/index.ts:243 src/index.ts:252 src/index.ts:254
+#: src/index.ts:243 src/index.ts:252 src/index.ts:254 src/index.ts:266
 msgid "Adjust spelling to"
 msgstr "调整拼写为"
 
-#: src/index.ts:244 src/index.ts:253 src/index.ts:255
+#: src/index.ts:244 src/index.ts:253 src/index.ts:255 src/index.ts:267
 msgid "No spellcheck suggestions"
 msgstr "没有拼写建议"
 
-#: src/index.ts:245 src/index.ts:254 src/index.ts:256
+#: src/index.ts:245 src/index.ts:254 src/index.ts:256 src/index.ts:268
 msgid "Spell Checker"
 msgstr "拼写检查器"
 
-#: src/index.ts:266 src/index.ts:268
+#: src/index.ts:266 src/index.ts:268 src/index.ts:280
 msgid "Spellcheck off"
 msgstr "拼写检查关闭"
 
-#: src/index.ts:374 src/index.ts:442 src/index.ts:467
+#: src/index.ts:374 src/index.ts:442 src/index.ts:467 src/index.ts:511
 msgid "Toggle spellchecker"
 msgstr "切换拼写检查器"
 
-#: src/index.ts:473 src/index.ts:535 src/index.ts:560
+#: src/index.ts:473 src/index.ts:535 src/index.ts:560 src/index.ts:607
 msgid "Ignore"
 msgstr "忽略"
 
-#: src/index.ts:560 src/index.ts:628 src/index.ts:653
+#: src/index.ts:560 src/index.ts:628 src/index.ts:653 src/index.ts:700
 msgid "Loading dictionary…"
 msgstr "正在载入字典…"
 
-#: src/index.ts:630 src/index.ts:651 src/index.ts:676
+#: src/index.ts:630 src/index.ts:651 src/index.ts:676 src/index.ts:723
 msgid "%1 [%2] (online)"
 msgstr "%1 [%2]（在线）"
 
-#: src/index.ts:631 src/index.ts:652 src/index.ts:677
+#: src/index.ts:631 src/index.ts:652 src/index.ts:677 src/index.ts:724
 msgid "%1 [%2]"
 msgstr "%1 [%2]"
 
-#: src/index.ts:635 src/index.ts:656 src/index.ts:663 src/index.ts:681 src/index.ts:711 src/index.ts:749
+#: src/index.ts:635 src/index.ts:656 src/index.ts:663 src/index.ts:681 src/index.ts:711 src/index.ts:728 src/index.ts:749 src/index.ts:796
 msgid "Choose spellchecker language"
 msgstr "选择拼写检查器语言"
 
-#: src/index.ts:679 src/index.ts:716
+#: src/index.ts:679 src/index.ts:716 src/index.ts:763
 msgid "Enable spellchecking in %1?"
 msgstr "在 %1 种开启拼写检查？"
 
@@ -188,7 +196,7 @@ msgstr "在 %1 种开启拼写检查？"
 msgid "The decision will apply to all editors with this content type."
 msgstr "该决定将适用于所有具有此内容类型的编辑器。"
 
-#: src/index.ts:684 src/index.ts:722
+#: src/index.ts:684 src/index.ts:722 src/index.ts:769
 msgid "Enable"
 msgstr "启用"
 
@@ -196,11 +204,11 @@ msgstr "启用"
 msgid "Remember this decision (updates settings)."
 msgstr "记住此决定（更新设置）。"
 
-#: src/index.ts:717
+#: src/index.ts:717 src/index.ts:764
 msgid "The will apply to all editors with %1 content type."
 msgstr "将 %1 内容类型应用至所有编辑器。"
 
-#: src/index.ts:726
+#: src/index.ts:726 src/index.ts:773
 msgid "Remember this decision."
 msgstr "记住此决定。"
 
