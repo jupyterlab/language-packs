@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 213\n"
 "Language-Team: Acholi\n"
 "Language: ach_UG\n"
-"PO-Revision-Date: 2025-11-30 09:37\n"
+"PO-Revision-Date: 2026-09-16 10:00\n"
 
 #: /schema/plugin.json:/definitions/onlineDictionaries/items/properties/aff/title
 msgctxt "settings"
@@ -115,6 +115,14 @@ msgid "Theme for decorating misspelt words, one of:\n"
 "  - 'dotted-underline': underline with dotted style"
 msgstr "crwdns14475:0crwdne14475:0"
 
+#: /schema/plugin.json:/properties/theme/description
+msgctxt "settings"
+msgid "Theme for decorating misspelt words, one of:\n"
+"  - 'background-box': fills the background of the misspelt word;\n"
+"  - 'wavy-underline': underline with wavelets; it can be customized by tweaking underline styles but some browsers do not render the wavelets under very short words\n"
+"  - 'dotted-underline': underline with dotted style"
+msgstr "crwdns30737:0crwdne30737:0"
+
 #: /schema/plugin.json:/properties/theme/title
 msgctxt "settings"
 msgid "Theme"
@@ -125,51 +133,51 @@ msgctxt "schema"
 msgid "Spellchecker"
 msgstr "crwdns14479:0crwdne14479:0"
 
-#: src/index.ts:242 src/index.ts:251 src/index.ts:253
+#: src/index.ts:242 src/index.ts:251 src/index.ts:253 src/index.ts:265
 msgid "Dictionary not loaded"
 msgstr "crwdns14481:0crwdne14481:0"
 
-#: src/index.ts:243 src/index.ts:252 src/index.ts:254
+#: src/index.ts:243 src/index.ts:252 src/index.ts:254 src/index.ts:266
 msgid "Adjust spelling to"
 msgstr "crwdns14483:0crwdne14483:0"
 
-#: src/index.ts:244 src/index.ts:253 src/index.ts:255
+#: src/index.ts:244 src/index.ts:253 src/index.ts:255 src/index.ts:267
 msgid "No spellcheck suggestions"
 msgstr "crwdns14485:0crwdne14485:0"
 
-#: src/index.ts:245 src/index.ts:254 src/index.ts:256
+#: src/index.ts:245 src/index.ts:254 src/index.ts:256 src/index.ts:268
 msgid "Spell Checker"
 msgstr "crwdns14487:0crwdne14487:0"
 
-#: src/index.ts:266 src/index.ts:268
+#: src/index.ts:266 src/index.ts:268 src/index.ts:280
 msgid "Spellcheck off"
 msgstr "crwdns15995:0crwdne15995:0"
 
-#: src/index.ts:374 src/index.ts:442 src/index.ts:467
+#: src/index.ts:374 src/index.ts:442 src/index.ts:467 src/index.ts:511
 msgid "Toggle spellchecker"
 msgstr "crwdns14489:0crwdne14489:0"
 
-#: src/index.ts:473 src/index.ts:535 src/index.ts:560
+#: src/index.ts:473 src/index.ts:535 src/index.ts:560 src/index.ts:607
 msgid "Ignore"
 msgstr "crwdns14491:0crwdne14491:0"
 
-#: src/index.ts:560 src/index.ts:628 src/index.ts:653
+#: src/index.ts:560 src/index.ts:628 src/index.ts:653 src/index.ts:700
 msgid "Loading dictionary…"
 msgstr "crwdns14493:0crwdne14493:0"
 
-#: src/index.ts:630 src/index.ts:651 src/index.ts:676
+#: src/index.ts:630 src/index.ts:651 src/index.ts:676 src/index.ts:723
 msgid "%1 [%2] (online)"
 msgstr "crwdns14495:0%1crwdnd14495:0%2crwdne14495:0"
 
-#: src/index.ts:631 src/index.ts:652 src/index.ts:677
+#: src/index.ts:631 src/index.ts:652 src/index.ts:677 src/index.ts:724
 msgid "%1 [%2]"
 msgstr "crwdns14497:0%1crwdnd14497:0%2crwdne14497:0"
 
-#: src/index.ts:635 src/index.ts:656 src/index.ts:663 src/index.ts:681 src/index.ts:711 src/index.ts:749
+#: src/index.ts:635 src/index.ts:656 src/index.ts:663 src/index.ts:681 src/index.ts:711 src/index.ts:728 src/index.ts:749 src/index.ts:796
 msgid "Choose spellchecker language"
 msgstr "crwdns14499:0crwdne14499:0"
 
-#: src/index.ts:679 src/index.ts:716
+#: src/index.ts:679 src/index.ts:716 src/index.ts:763
 msgid "Enable spellchecking in %1?"
 msgstr "crwdns15997:0%1crwdne15997:0"
 
@@ -177,7 +185,7 @@ msgstr "crwdns15997:0%1crwdne15997:0"
 msgid "The decision will apply to all editors with this content type."
 msgstr "crwdns15999:0crwdne15999:0"
 
-#: src/index.ts:684 src/index.ts:722
+#: src/index.ts:684 src/index.ts:722 src/index.ts:769
 msgid "Enable"
 msgstr "crwdns16001:0crwdne16001:0"
 
@@ -185,11 +193,11 @@ msgstr "crwdns16001:0crwdne16001:0"
 msgid "Remember this decision (updates settings)."
 msgstr "crwdns16003:0crwdne16003:0"
 
-#: src/index.ts:717
+#: src/index.ts:717 src/index.ts:764
 msgid "The will apply to all editors with %1 content type."
 msgstr "crwdns16005:0%1crwdne16005:0"
 
-#: src/index.ts:726
+#: src/index.ts:726 src/index.ts:773
 msgid "Remember this decision."
 msgstr "crwdns16007:0crwdne16007:0"
 
