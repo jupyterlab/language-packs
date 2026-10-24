@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 205\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
-"PO-Revision-Date: 2026-05-04 02:41\n"
+"PO-Revision-Date: 2026-10-01 12:01\n"
 
 #: /schema/user-tours.json:/description
 msgctxt "schema"
@@ -28,6 +28,11 @@ msgstr "向导"
 msgctxt "settings"
 msgid "An array of a tours. Each requires an `id`, `label` and `steps[]`, and may have `options`, see https://docs.react-joyride.com"
 msgstr "一个向导数组。每个向导都必须包含一个 `id`、`label` 以及 `steps[]`，并且可以含有 `options` 选项，详见 https://docs.react-joyride.com"
+
+#: /schema/user-tours.json:/properties/tours/description
+msgctxt "settings"
+msgid "An array of tours. Each requires an `id`, `label` and `steps[]`, and may have `options`. For `steps` and `options`, see https://github.com/gilbarbara/react-joyride/blob/v2.9.3/docs/SUMMARY.md"
+msgstr ""
 
 #: /schema/user-tours.json:/properties/tours/items/properties/hasHelpEntry/description
 msgctxt "settings"
@@ -79,293 +84,293 @@ msgctxt "schema"
 msgid "Tours"
 msgstr "向导"
 
-#: src/defaults.tsx:103 src/defaults.tsx:620
+#: src/defaults.tsx:103 src/defaults.tsx:104 src/defaults.tsx:620 src/defaults.tsx:621
 msgid "This is the top menu bar where you can access several menus."
 msgstr "这是顶部菜单栏，您可以从这里访问多个菜单。"
 
-#: src/defaults.tsx:107 src/defaults.tsx:624
+#: src/defaults.tsx:107 src/defaults.tsx:108 src/defaults.tsx:624 src/defaults.tsx:625
 msgid "File"
 msgstr "文件"
 
-#: src/defaults.tsx:108 src/defaults.tsx:625
+#: src/defaults.tsx:108 src/defaults.tsx:109 src/defaults.tsx:625 src/defaults.tsx:626
 msgid ": actions related to files and directories"
 msgstr ": 与文件和目录相关的操作"
 
-#: src/defaults.tsx:111
+#: src/defaults.tsx:111 src/defaults.tsx:112
 msgid "Edit"
 msgstr "编辑"
 
-#: src/defaults.tsx:112
+#: src/defaults.tsx:112 src/defaults.tsx:113
 msgid ": actions related to editing documents and other activities"
 msgstr ": 与编辑文档和其他活动相关的操作"
 
-#: src/defaults.tsx:117 src/defaults.tsx:628
+#: src/defaults.tsx:117 src/defaults.tsx:118 src/defaults.tsx:628 src/defaults.tsx:629
 msgid "View"
 msgstr "视图"
 
-#: src/defaults.tsx:118
+#: src/defaults.tsx:118 src/defaults.tsx:119
 msgid ": actions that alter the appearance of JupyterLab"
 msgstr ": 改变 JupyterLab 外观的操作"
 
-#: src/defaults.tsx:121
+#: src/defaults.tsx:121 src/defaults.tsx:122
 msgid "Run"
 msgstr "运行"
 
-#: src/defaults.tsx:122
+#: src/defaults.tsx:122 src/defaults.tsx:123
 msgid ": actions for running code in notebooks and code consoles for example"
 msgstr ": 例如，在笔记本和代码控制台中运行代码的操作"
 
-#: src/defaults.tsx:127
+#: src/defaults.tsx:127 src/defaults.tsx:128
 msgid "Kernel"
 msgstr "内核"
 
-#: src/defaults.tsx:128
+#: src/defaults.tsx:128 src/defaults.tsx:129
 msgid ": actions for managing kernels (i.e. separate processes for running code)"
 msgstr ": 管理内核（即用于运行代码的独立进程）的操作"
 
-#: src/defaults.tsx:133
+#: src/defaults.tsx:133 src/defaults.tsx:134
 msgid "Tabs"
 msgstr "标签页"
 
-#: src/defaults.tsx:134
+#: src/defaults.tsx:134 src/defaults.tsx:135
 msgid ": a list of the open documents and activities"
 msgstr ": 打开文档和活动的列表"
 
-#: src/defaults.tsx:137 src/defaults.tsx:632
+#: src/defaults.tsx:137 src/defaults.tsx:138 src/defaults.tsx:632 src/defaults.tsx:633
 msgid "Settings"
 msgstr "设置"
 
-#: src/defaults.tsx:138
+#: src/defaults.tsx:138 src/defaults.tsx:139
 msgid ": common settings and an advanced settings editor"
 msgstr ": 常见设置和高级设置编辑器"
 
-#: src/defaults.tsx:141 src/defaults.tsx:636 src/plugin.tsx:143 src/plugin.tsx:144
+#: src/defaults.tsx:141 src/defaults.tsx:142 src/defaults.tsx:636 src/defaults.tsx:637 src/plugin.tsx:143 src/plugin.tsx:144
 msgid "Help"
 msgstr "帮助"
 
-#: src/defaults.tsx:142 src/defaults.tsx:637
+#: src/defaults.tsx:142 src/defaults.tsx:143 src/defaults.tsx:637 src/defaults.tsx:638
 msgid ": help links"
 msgstr ": 帮助链接"
 
-#: src/defaults.tsx:149 src/defaults.tsx:644
+#: src/defaults.tsx:149 src/defaults.tsx:150 src/defaults.tsx:644 src/defaults.tsx:645
 msgid "Top Menu Options"
 msgstr "顶部菜单选项"
 
-#: src/defaults.tsx:162
+#: src/defaults.tsx:162 src/defaults.tsx:163
 msgid "The main area enables you to arrange documents and activities into\n"
 "            panels of tabs that can be resized or subdivided."
 msgstr "主区域使您能够将文档和活动排列成可以调整大小或细分的标签面板。"
 
-#: src/defaults.tsx:168
+#: src/defaults.tsx:168 src/defaults.tsx:169
 msgid "Drag a tab to the center of a tab panel to move the tab to the panel."
 msgstr "将标签页拖动到标签面板的中央，从而将标签页移动到该面板。"
 
-#: src/defaults.tsx:172
+#: src/defaults.tsx:172 src/defaults.tsx:173
 msgid "Subdivide a tab panel by dragging a tab to the left, right, top, or bottom of the panel."
 msgstr "通过将标签页拖动到面板的左侧、右侧、顶部或底部来对标签面板进行细分。"
 
-#: src/defaults.tsx:177
+#: src/defaults.tsx:177 src/defaults.tsx:178
 msgid "The tab for the current activity is marked with a colored top border."
 msgstr "当前活动的标签页会用彩色的顶部边框进行标记。"
 
-#: src/defaults.tsx:185
+#: src/defaults.tsx:185 src/defaults.tsx:186
 msgid "Main Work Area"
 msgstr "主工作区域"
 
-#: src/defaults.tsx:191
+#: src/defaults.tsx:191 src/defaults.tsx:192
 msgid "Various information are reported on the status bar."
 msgstr "在状态栏上报告了各种信息。"
 
-#: src/defaults.tsx:194
+#: src/defaults.tsx:194 src/defaults.tsx:195
 msgid "Status Bar"
 msgstr "状态栏​​​​​​​"
 
-#: src/defaults.tsx:201
+#: src/defaults.tsx:201 src/defaults.tsx:202
 msgid "This sidebar contains a number of tabs: a file browser, a list of tabs, running kernels and terminals,..."
 msgstr "侧边栏包含多个标签页：文件浏览器、标签页列表、正在运行的内核和终端等。"
 
-#: src/defaults.tsx:207
+#: src/defaults.tsx:207 src/defaults.tsx:208
 msgid "Tip: The sidebar can be collapsed or expanded by selecting\n"
 "              \"Show Left Sidebar\" in the View menu or by\n"
 "              clicking on the active sidebar tab."
 msgstr "提示：可以通过在“视图”菜单中选择“显示左侧边栏”或单击活动的侧边栏标签页来折叠或展开侧边栏。"
 
-#: src/defaults.tsx:218
+#: src/defaults.tsx:218 src/defaults.tsx:219
 msgid "Left Side Bar"
 msgstr "左侧边栏"
 
-#: src/defaults.tsx:225
+#: src/defaults.tsx:225 src/defaults.tsx:226
 msgid "The file browser enable you to work with files and directories on your\n"
 "            system. This includes opening, creating, deleting, renaming,\n"
 "            downloading, copying, and sharing files and directories."
 msgstr "文件浏览器使您能够在系统中处理文件和目录。这包括打开、创建、删除、重命名、下载、复制和共享文件和目录。"
 
-#: src/defaults.tsx:233 src/defaults.tsx:685
+#: src/defaults.tsx:233 src/defaults.tsx:234 src/defaults.tsx:685 src/defaults.tsx:686
 msgid "Tip: Actions can be triggered through the context menu."
 msgstr "提示：可以通过上下文菜单触发操作。"
 
-#: src/defaults.tsx:240 src/defaults.tsx:692
+#: src/defaults.tsx:240 src/defaults.tsx:241 src/defaults.tsx:692 src/defaults.tsx:693
 msgid "File Browser"
 msgstr "文件浏览器"
 
-#: src/defaults.tsx:247
+#: src/defaults.tsx:247 src/defaults.tsx:248
 msgid "All user actions in JupyterLab are processed through a centralized\n"
 "            command system, called command palette. It provides a keyboard-driven\n"
 "            way to search for and run JupyterLab commands."
 msgstr "在 JupyterLab 中，所有用户操作都通过一个名为“命令面板”的集中式命令系统进行处理。用户因此可以只使用键盘操作来搜索并运行 JupyterLab 命令。"
 
-#: src/defaults.tsx:255 src/defaults.tsx:707
+#: src/defaults.tsx:255 src/defaults.tsx:256 src/defaults.tsx:707 src/defaults.tsx:708
 msgid "Tip: To open it, the default shortcut is \"Ctrl + Shift + C\""
 msgstr "提示：要打开它，默认快捷键是 \"Ctrl + Shift + C\""
 
-#: src/defaults.tsx:264 src/defaults.tsx:716
+#: src/defaults.tsx:264 src/defaults.tsx:265 src/defaults.tsx:716 src/defaults.tsx:717
 msgid "Command Palette"
 msgstr "命令面板"
 
-#: src/defaults.tsx:28 src/defaults.tsx:546
+#: src/defaults.tsx:28 src/defaults.tsx:29 src/defaults.tsx:546 src/defaults.tsx:547
 msgid "Welcome Tour"
 msgstr "欢迎查看导览"
 
-#: src/defaults.tsx:297
+#: src/defaults.tsx:297 src/defaults.tsx:298
 msgid "Notebook Tour"
 msgstr "笔记本导览"
 
-#: src/defaults.tsx:316
+#: src/defaults.tsx:316 src/defaults.tsx:317
 msgid "Notebooks are documents combining live runnable code with narrative text (i.e. text, images,...)."
 msgstr "笔记本是将可实时运行的代码与叙述性文本（即文本、图像等）结合在一起的文档。"
 
-#: src/defaults.tsx:322
+#: src/defaults.tsx:322 src/defaults.tsx:323
 msgid "Working with notebooks!"
 msgstr "使用笔记本进行工作！"
 
-#: src/defaults.tsx:329
+#: src/defaults.tsx:329 src/defaults.tsx:330
 msgid "Notebook consists of one cells list."
 msgstr "笔记本由一个单元格列表组成。"
 
-#: src/defaults.tsx:331
+#: src/defaults.tsx:331 src/defaults.tsx:332
 msgid "This is the first cell."
 msgstr "这是第一个单元格。"
 
-#: src/defaults.tsx:341
+#: src/defaults.tsx:341 src/defaults.tsx:342
 msgid "A cell can have different type"
 msgstr "单元格的类型有多种"
 
-#: src/defaults.tsx:344
+#: src/defaults.tsx:344 src/defaults.tsx:345
 msgid "Code"
 msgstr "代码"
 
-#: src/defaults.tsx:345
+#: src/defaults.tsx:345 src/defaults.tsx:346
 msgid ": Executable code"
 msgstr "：可执行代码"
 
-#: src/defaults.tsx:348
+#: src/defaults.tsx:348 src/defaults.tsx:349
 msgid "Markdown"
 msgstr "Markdown"
 
-#: src/defaults.tsx:349
+#: src/defaults.tsx:349 src/defaults.tsx:350
 msgid ": Markdown formatted text"
 msgstr "：Markdown 格式化文本"
 
-#: src/defaults.tsx:352
+#: src/defaults.tsx:352 src/defaults.tsx:353
 msgid "Raw"
 msgstr "原始"
 
-#: src/defaults.tsx:353
+#: src/defaults.tsx:353 src/defaults.tsx:354
 msgid ": Plain text"
 msgstr "：纯文本"
 
-#: src/defaults.tsx:364
+#: src/defaults.tsx:364 src/defaults.tsx:365
 msgid "A cell has an input and an output area. This is the input area that you can edit with\n"
 "          the proper syntax depending on the type."
 msgstr "一个单元格有一个输入区和一个输出区。在输入区，您可以使用与单元格类型匹配的语法进行编辑。"
 
-#: src/defaults.tsx:377
+#: src/defaults.tsx:377 src/defaults.tsx:378
 msgid "Hitting the Play button (or pressing Shift+Enter) will execute the cell content."
 msgstr "点击播放按钮（或按下 Shift+Enter 键）将执行单元格的内容。"
 
-#: src/defaults.tsx:389
+#: src/defaults.tsx:389 src/defaults.tsx:390
 msgid "Once a cell has been executed. Its result is display in the output cell area."
 msgstr "单元格的执行结果将显示在该单元格的输出区域中。"
 
-#: src/defaults.tsx:401
+#: src/defaults.tsx:401 src/defaults.tsx:402
 msgid "When executing a \"Code\" cell, its code is sent to a execution kernel."
 msgstr "执行“代码”单元格时，它包含的代码会发送到内核来执行。"
 
-#: src/defaults.tsx:405
+#: src/defaults.tsx:405 src/defaults.tsx:406
 msgid "Its name and its status are displayed here."
 msgstr "它的名称和状态显示在这里。"
 
-#: src/defaults.tsx:41
+#: src/defaults.tsx:41 src/defaults.tsx:42
 msgid "The following tour will point out some of the main UI components within JupyterLab."
 msgstr "下面的导览将指出 JupyterLab 中的一些主要用户界面组件。"
 
-#: src/defaults.tsx:416
+#: src/defaults.tsx:416 src/defaults.tsx:417
 msgid "The running kernels are listed on this tab."
 msgstr "正在运行的所有内核列在此标签页上。"
 
-#: src/defaults.tsx:418
+#: src/defaults.tsx:418 src/defaults.tsx:419
 msgid " It can be used to open the associated document or to shut them down."
 msgstr "它可用于打开或关闭关联的文档。"
 
-#: src/defaults.tsx:430
+#: src/defaults.tsx:430 src/defaults.tsx:431
 msgid "Metadata (like tags) can be added to cells through this tab."
 msgstr "可以通过该标签页为单元格添加元数据（如标签）。"
 
-#: src/defaults.tsx:45
+#: src/defaults.tsx:45 src/defaults.tsx:46
 msgid "Welcome to JupyterLab!"
 msgstr "欢迎使用 JupyterLab！"
 
-#: src/defaults.tsx:52 src/defaults.tsx:569
+#: src/defaults.tsx:52 src/defaults.tsx:53 src/defaults.tsx:569 src/defaults.tsx:570
 msgid "Pause the tour by clicking anywhere outside of the tooltip."
 msgstr "通过单击工具提示之外的任何地方来暂停导览。"
 
-#: src/defaults.tsx:54 src/defaults.tsx:571
+#: src/defaults.tsx:54 src/defaults.tsx:55 src/defaults.tsx:571 src/defaults.tsx:572
 msgid "Resume the tour by clicking on the symbol:"
 msgstr "通过点击符号来恢复导览："
 
-#: src/defaults.tsx:558
+#: src/defaults.tsx:558 src/defaults.tsx:559
 msgid "The following tour will point out some of the main UI components within Jupyter Notebook."
 msgstr "下面的导览将指出 Jupyter 笔记本中的一些主要用户界面组件。"
 
-#: src/defaults.tsx:562
+#: src/defaults.tsx:562 src/defaults.tsx:563
 msgid "Welcome to Jupyter Notebook!"
 msgstr "欢迎使用 Jupyter 笔记本！"
 
-#: src/defaults.tsx:606 src/defaults.tsx:89
+#: src/defaults.tsx:606 src/defaults.tsx:607 src/defaults.tsx:89 src/defaults.tsx:90
 msgid "Tip: Tours can be restarted from the Help menu."
 msgstr "提示：可以从“帮助”菜单重新开始导览。"
 
-#: src/defaults.tsx:613 src/defaults.tsx:96
+#: src/defaults.tsx:613 src/defaults.tsx:614 src/defaults.tsx:96 src/defaults.tsx:97
 msgid "Some information on the tour, first."
 msgstr "首先，关于导览的一些信息。"
 
-#: src/defaults.tsx:629
+#: src/defaults.tsx:629 src/defaults.tsx:630
 msgid ": actions that alter the appearance of Jupyter Notebook"
 msgstr ": 改变Jupyter 笔记本外观的操作"
 
-#: src/defaults.tsx:633
+#: src/defaults.tsx:633 src/defaults.tsx:634
 msgid ": common settings and an settings editor"
 msgstr ": 常见设置和设置编辑器"
 
-#: src/defaults.tsx:657
+#: src/defaults.tsx:657 src/defaults.tsx:658
 msgid "The notebook dashboard enables you to arrange documents and monitor running kernels."
 msgstr "笔记本仪表板使您能够管理文档并监视正在运行的内核。"
 
-#: src/defaults.tsx:662
+#: src/defaults.tsx:662 src/defaults.tsx:663
 msgid "This tab panel contains a number of tabs: a file browser, a list of running kernels and terminals,..."
 msgstr "当前标签面板包含多个标签页：文件浏览器，正在运行的内核和终端列表等。"
 
-#: src/defaults.tsx:670
+#: src/defaults.tsx:670 src/defaults.tsx:671
 msgid "Noteboook Dashboard"
 msgstr "笔记本仪表板"
 
-#: src/defaults.tsx:677
+#: src/defaults.tsx:677 src/defaults.tsx:678
 msgid "The file browser enable you to work with files and directories on your\n"
 "                system. This includes opening, creating, deleting, renaming,\n"
 "                downloading, copying, and sharing files and directories."
 msgstr "文件浏览器使您能够在系统中处理文件和目录。这包括打开、创建、删除、重命名、下载、复制和共享文件和目录。"
 
-#: src/defaults.tsx:699
+#: src/defaults.tsx:699 src/defaults.tsx:700
 msgid "All user actions in Jupyter Notebook are processed through a centralized\n"
 "                command system, called command palette. It provides a keyboard-driven\n"
 "                way to search for and run Jupyter Notebook commands."
@@ -431,49 +436,49 @@ msgstr "添加一个导览并返回它。\n"
 msgid "Fail to add tour '%1' (%2)"
 msgstr "添加向导「%1」（%2）失败"
 
-#: src/tourManager.ts:172
+#: src/tourManager.ts:172 src/tourManager.ts:173
 msgid "Error creating new tour. TourHandler id's must be unique.\n"
 "Tutorial with the id: '%1' already exists."
 msgstr "创建新向导时出错。TourHandler 的 id 必须是唯一的。\n"
 "教程的 id：%1 已存在。"
 
-#: src/tourManager.ts:262
+#: src/tourManager.ts:262 src/tourManager.ts:276
 msgid "Try the %1."
 msgstr "试试 %1。"
 
-#: src/tourManager.ts:266
+#: src/tourManager.ts:266 src/tourManager.ts:280
 msgid "Start now"
 msgstr "现在开始"
 
-#: src/tourManager.ts:270
+#: src/tourManager.ts:270 src/tourManager.ts:284
 msgid "Don't show me again"
 msgstr "不再显示"
 
-#: src/tourManager.ts:35
+#: src/tourManager.ts:34 src/tourManager.ts:35
 msgid "Back"
 msgstr "返回"
 
-#: src/tourManager.ts:36
+#: src/tourManager.ts:35 src/tourManager.ts:36
 msgid "Close"
 msgstr "关闭"
 
-#: src/tourManager.ts:37
+#: src/tourManager.ts:36 src/tourManager.ts:37
 msgid "Done"
 msgstr "完成"
 
-#: src/tourManager.ts:38
+#: src/tourManager.ts:37 src/tourManager.ts:38
 msgid "Next"
 msgstr "下一步"
 
-#: src/tourManager.ts:39
+#: src/tourManager.ts:38 src/tourManager.ts:39
 msgid "Open"
 msgstr "打开"
 
-#: src/tourManager.ts:40
+#: src/tourManager.ts:39 src/tourManager.ts:40
 msgid "Skip"
 msgstr "跳过"
 
-#: src/userTourManager.ts:61
+#: src/userTourManager.ts:61 src/userTourManager.ts:62
 msgid "Error encountered adding user tour %1 (%2)"
 msgstr "添加用户向导 %1（%2）时发生出错"
 
