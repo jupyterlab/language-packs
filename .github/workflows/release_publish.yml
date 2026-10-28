@@ -22,7 +22,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
-          python-version: '3.9'
+          python-version: '3.13'
       - name: Check version homogeneity
         run: |
           python -m pip install hatch
@@ -77,7 +77,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v7
       with:
-        python-version: '3.9'
+        python-version: '3.13'
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip build hatch twine "pydantic<2.0.0"
