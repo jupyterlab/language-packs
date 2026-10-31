@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 231\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
-"PO-Revision-Date: 2026-10-01 12:01\n"
+"PO-Revision-Date: 2026-10-30 01:49\n"
 
 #: /packages/application-extension/schema/menus.json:/description /packages/application-extension/schema/menus.json:/title /packages/notebook-extension/schema/edit-notebook-metadata.json:/description /packages/notebook-extension/schema/edit-notebook-metadata.json:/title
 msgctxt "schema"
@@ -366,15 +366,15 @@ msgctxt "schema"
 msgid "File Browser Widget"
 msgstr "Navigateur de fichiers"
 
-#: packages/application-extension/src/index.ts:1038
+#: packages/application-extension/src/index.ts:1038 packages/application-extension/src/index.ts:958
 msgid "Left Sidebar"
 msgstr "Barre latérale gauche"
 
-#: packages/application-extension/src/index.ts:1040
+#: packages/application-extension/src/index.ts:1040 packages/application-extension/src/index.ts:960
 msgid "Right Sidebar"
 msgstr "Barre latérale droite"
 
-#: packages/application-extension/src/index.ts:1264
+#: packages/application-extension/src/index.ts:1173 packages/application-extension/src/index.ts:1264
 msgid "Toggle Zen Mode"
 msgstr "Activer/désactiver le mode Zen"
 
@@ -384,47 +384,47 @@ msgid "Are you sure you want to exit Jupyter Notebook?\n\n"
 msgstr "Êtes-vous sûr de vouloir quitter Jupyter Notebook ?\n\n"
 "Toutes les modifications non enregistrées seront perdues."
 
-#: packages/application-extension/src/index.ts:358
+#: packages/application-extension/src/index.ts:341 packages/application-extension/src/index.ts:358
 msgid "Open JupyterLab"
 msgstr "Ouvrir JupyterLab"
 
-#: packages/application-extension/src/index.ts:372
+#: packages/application-extension/src/index.ts:349 packages/application-extension/src/index.ts:372
 msgid "File Browser"
 msgstr "Navigateur de fichiers"
 
-#: packages/application-extension/src/index.ts:453
+#: packages/application-extension/src/index.ts:424 packages/application-extension/src/index.ts:453
 msgid "Handle Local Link"
 msgstr "Gérer le lien local"
 
-#: packages/application-extension/src/index.ts:693
+#: packages/application-extension/src/index.ts:652 packages/application-extension/src/index.ts:693
 msgid "Duplicate"
 msgstr "Dupliquer"
 
-#: packages/application-extension/src/index.ts:713
+#: packages/application-extension/src/index.ts:666 packages/application-extension/src/index.ts:713
 msgid "Rename…"
 msgstr "Renommer…"
 
-#: packages/application-extension/src/index.ts:733
+#: packages/application-extension/src/index.ts:686 packages/application-extension/src/index.ts:733
 msgid "Rename Error"
 msgstr "Erreur lors du renommage"
 
-#: packages/application-extension/src/index.ts:735
+#: packages/application-extension/src/index.ts:688 packages/application-extension/src/index.ts:735
 msgid "An error occurred while renaming the file."
 msgstr "Une erreur est survenue lors du renommage du fichier."
 
-#: packages/application-extension/src/index.ts:795
+#: packages/application-extension/src/index.ts:742 packages/application-extension/src/index.ts:795
 msgid "Show Header"
 msgstr "Afficher l'en-tête"
 
-#: packages/application-extension/src/index.ts:892
+#: packages/application-extension/src/index.ts:833 packages/application-extension/src/index.ts:892
 msgid "Show %1 in the left sidebar"
 msgstr "Afficher %1 dans la barre latérale de gauche"
 
-#: packages/application-extension/src/index.ts:897
+#: packages/application-extension/src/index.ts:838 packages/application-extension/src/index.ts:897
 msgid "Show %1 in the right sidebar"
 msgstr "Afficher %1 dans la barre latérale de droite"
 
-#: packages/application-extension/src/index.ts:902
+#: packages/application-extension/src/index.ts:843 packages/application-extension/src/index.ts:902
 msgid "Show %1 in the sidebar"
 msgstr "Afficher %1 dans la barre latérale"
 
@@ -456,25 +456,29 @@ msgstr ""
 msgid "Whether the command is executed from the menu"
 msgstr ""
 
-#: packages/help-extension/src/index.tsx:115 packages/lab-extension/src/index.ts:261
-msgid "Help"
-msgstr "Aide"
-
-#: packages/help-extension/src/index.tsx:118
+#: packages/help-extension/src/index.tsx:102 packages/help-extension/src/index.tsx:118
 msgid "About %1"
 msgstr "À propos de %1"
 
-#: packages/help-extension/src/index.tsx:130
+#: packages/help-extension/src/index.tsx:114 packages/help-extension/src/index.tsx:130
 msgid "JUPYTER NOTEBOOK ON GITHUB"
 msgstr "JUPYTER NOTEBOOK SUR GITHUB"
 
-#: packages/help-extension/src/index.tsx:131
+#: packages/help-extension/src/index.tsx:115 packages/help-extension/src/index.tsx:131
 msgid "CONTRIBUTOR LIST"
 msgstr "LISTE DES CONTRIBUTEURS"
 
-#: packages/help-extension/src/index.tsx:152
+#: packages/help-extension/src/index.tsx:115 packages/help-extension/src/index.tsx:99 packages/lab-extension/src/index.ts:239 packages/lab-extension/src/index.ts:261
+msgid "Help"
+msgstr "Aide"
+
+#: packages/help-extension/src/index.tsx:136 packages/help-extension/src/index.tsx:152
 msgid "Version: %1"
 msgstr "Version : %1"
+
+#: packages/help-extension/src/index.tsx:137
+msgid "© 2021-2023 Jupyter Notebook Contributors"
+msgstr ""
 
 #: packages/help-extension/src/index.tsx:153
 msgid "© 2021-2025 Jupyter Notebook Contributors"
@@ -484,7 +488,7 @@ msgstr ""
 msgid "© 2021-2026 Jupyter Notebook Contributors"
 msgstr ""
 
-#: packages/help-extension/src/index.tsx:169
+#: packages/help-extension/src/index.tsx:153 packages/help-extension/src/index.tsx:169
 msgid "Dismiss"
 msgstr "Ignorer"
 
@@ -504,25 +508,29 @@ msgstr "JupyterLab"
 msgid "NbClassic"
 msgstr "NbClassic"
 
-#: packages/lab-extension/src/index.ts:223
+#: packages/lab-extension/src/index.ts:201 packages/lab-extension/src/index.ts:223
 msgid "Open in..."
 msgstr "Ouvrir dans..."
 
-#: packages/lab-extension/src/index.ts:264
+#: packages/lab-extension/src/index.ts:242 packages/lab-extension/src/index.ts:264
 msgid "Launch Jupyter Notebook File Browser"
 msgstr "Ouvrir le navigateur de fichiers Jupyter Notebook"
 
-#: packages/notebook-extension/src/index.ts:150
+#: packages/notebook-extension/src/index.ts:142 packages/notebook-extension/src/index.ts:150
 msgid "Last Checkpoint: %1"
 msgstr "Dernier point de contrôle : %1"
+
+#: packages/notebook-extension/src/index.ts:246 packages/notebook-extension/src/index.ts:281
+msgid "Close and Shut Down Notebook"
+msgstr "Fermer et arrêter le notebook"
+
+#: packages/notebook-extension/src/index.ts:278 packages/notebook-extension/src/index.ts:333
+msgid "Open…"
+msgstr "Ouvrir…"
 
 #: packages/notebook-extension/src/index.ts:280
 msgid "Close and Shut Down Notebook…"
 msgstr ""
-
-#: packages/notebook-extension/src/index.ts:281
-msgid "Close and Shut Down Notebook"
-msgstr "Fermer et arrêter le notebook"
 
 #: packages/notebook-extension/src/index.ts:285
 msgid "the notebook"
@@ -540,19 +548,15 @@ msgstr ""
 msgid "Shut Down"
 msgstr ""
 
-#: packages/notebook-extension/src/index.ts:333
-msgid "Open…"
-msgstr "Ouvrir…"
-
-#: packages/notebook-extension/src/index.ts:405
+#: packages/notebook-extension/src/index.ts:344 packages/notebook-extension/src/index.ts:405
 msgid "Enable Full Width Notebook"
 msgstr "Notebook en pleine largeur"
 
-#: packages/notebook-extension/src/index.ts:778
+#: packages/notebook-extension/src/index.ts:711 packages/notebook-extension/src/index.ts:778
 msgid "Edit Notebook Metadata"
 msgstr "Editer les métadonnées du notebook"
 
-#: packages/notebook-extension/src/index.ts:795
+#: packages/notebook-extension/src/index.ts:728 packages/notebook-extension/src/index.ts:795
 msgid "Advanced Tools"
 msgstr "Outils avancés"
 
@@ -584,19 +588,19 @@ msgstr "Fiable"
 msgid "Select items to perform actions on them."
 msgstr "Sélectionnez les éléments sur lesquels effectuer des actions."
 
-#: packages/tree-extension/src/index.ts:381
+#: packages/tree-extension/src/index.ts:360 packages/tree-extension/src/index.ts:381
 msgid "Files"
 msgstr "Fichiers"
 
-#: packages/tree-extension/src/index.ts:383
+#: packages/tree-extension/src/index.ts:362 packages/tree-extension/src/index.ts:383
 msgid "File Browser Section"
 msgstr "Section du navigateur de fichiers"
 
-#: packages/tree-extension/src/index.ts:397
+#: packages/tree-extension/src/index.ts:376 packages/tree-extension/src/index.ts:397
 msgid "Upload"
 msgstr "Importer"
 
-#: packages/tree-extension/src/index.ts:415
+#: packages/tree-extension/src/index.ts:394 packages/tree-extension/src/index.ts:415
 msgid "Running"
 msgstr "En cours"
 
