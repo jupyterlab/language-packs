@@ -12,7 +12,7 @@ msgstr ""
 "X-Crowdin-File-ID: 377\n"
 "Language-Team: Acholi\n"
 "Language: ach_UG\n"
-"PO-Revision-Date: 2026-10-29 15:31\n"
+"PO-Revision-Date: 2026-11-09 10:11\n"
 
 #: /docs/jupyter-chat-example/schema/plugin.json:/description /packages/jupyterlab-chat-extension/schema/factory.json:/description
 msgctxt "schema"
@@ -109,6 +109,16 @@ msgctxt "settings"
 msgid "Item rank"
 msgstr "crwdns30443:0crwdne30443:0"
 
+#: /packages/jupyterlab-chat-extension/schema/factory.json:/definitions/toolbarItem/properties/type/oneOf[0]/title
+msgctxt "settings"
+msgid "Command"
+msgstr "crwdns30859:0crwdne30859:0"
+
+#: /packages/jupyterlab-chat-extension/schema/factory.json:/definitions/toolbarItem/properties/type/oneOf[1]/title
+msgctxt "settings"
+msgid "Spacer"
+msgstr "crwdns30861:0crwdne30861:0"
+
 #: /packages/jupyterlab-chat-extension/schema/factory.json:/definitions/toolbarItem/properties/type/title
 msgctxt "settings"
 msgid "Item type"
@@ -164,31 +174,31 @@ msgstr "crwdns30459:0crwdne30459:0"
 msgid "Remove attachment"
 msgstr "crwdns30461:0crwdne30461:0"
 
-#: packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:116
+#: packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:116 packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:123
 msgid "Insert above active cell"
 msgstr "crwdns30463:0crwdne30463:0"
 
-#: packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:117
+#: packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:117 packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:124
 msgid "Insert above active cell (no active cell)"
 msgstr "crwdns30465:0crwdne30465:0"
 
-#: packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:135
+#: packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:135 packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:142
 msgid "Insert below active cell"
 msgstr "crwdns30467:0crwdne30467:0"
 
-#: packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:136
+#: packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:136 packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:143
 msgid "Insert below active cell (no active cell)"
 msgstr "crwdns30469:0crwdne30469:0"
 
-#: packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:154
+#: packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:154 packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:161
 msgid "Replace selection (%1 line(s))"
 msgstr "crwdns30471:0%1crwdne30471:0"
 
-#: packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:159
+#: packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:159 packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:166
 msgid "Replace selection (active cell)"
 msgstr "crwdns30473:0crwdne30473:0"
 
-#: packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:160
+#: packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:160 packages/jupyter-chat/src/components/code-blocks/code-toolbar.tsx:167
 msgid "Replace selection (no selection)"
 msgstr "crwdns30475:0crwdne30475:0"
 
@@ -256,7 +266,7 @@ msgstr "crwdns30505:0crwdne30505:0"
 msgid "Stop generating"
 msgstr "crwdns30507:0crwdne30507:0"
 
-#: packages/jupyter-chat/src/components/input/chat-input.tsx:120 packages/jupyter-chat/src/components/input/chat-input.tsx:234
+#: packages/jupyter-chat/src/components/input/chat-input.tsx:120 packages/jupyter-chat/src/components/input/chat-input.tsx:234 packages/jupyter-chat/src/components/input/chat-input.tsx:283
 msgid "Type a chat message, @ to mention..."
 msgstr "crwdns30509:0crwdne30509:0"
 
@@ -284,11 +294,11 @@ msgstr "crwdns30519:0crwdne30519:0"
 msgid "Go to last message"
 msgstr "crwdns30521:0crwdne30521:0"
 
-#: packages/jupyter-chat/src/components/messages/toolbar.tsx:26 packages/jupyter-chat/src/components/messages/toolbar.tsx:28
+#: packages/jupyter-chat/src/components/messages/toolbar.tsx:26 packages/jupyter-chat/src/components/messages/toolbar.tsx:27 packages/jupyter-chat/src/components/messages/toolbar.tsx:28 packages/jupyter-chat/src/components/messages/toolbar.tsx:29
 msgid "Edit"
 msgstr "crwdns30523:0crwdne30523:0"
 
-#: packages/jupyter-chat/src/components/messages/toolbar.tsx:39 packages/jupyter-chat/src/components/messages/toolbar.tsx:41
+#: packages/jupyter-chat/src/components/messages/toolbar.tsx:39 packages/jupyter-chat/src/components/messages/toolbar.tsx:41 packages/jupyter-chat/src/components/messages/toolbar.tsx:43
 msgid "Delete"
 msgstr "crwdns30525:0crwdne30525:0"
 
@@ -348,11 +358,11 @@ msgstr "crwdns30551:0crwdne30551:0"
 msgid "New chat"
 msgstr "crwdns30553:0crwdne30553:0"
 
-#: packages/jupyter-chat/src/widgets/multichat-panel.tsx:106 packages/jupyter-chat/src/widgets/multichat-panel.tsx:110 packages/jupyter-chat/src/widgets/placeholder.tsx:100 packages/jupyterlab-chat-extension/src/index.ts:619 packages/jupyterlab-chat-extension/src/index.ts:631 packages/jupyterlab-chat-extension/src/index.ts:672 packages/jupyterlab-chat-extension/src/index.ts:720 packages/jupyterlab-chat-extension/src/index.ts:732 packages/jupyterlab-chat-extension/src/index.ts:773
+#: packages/jupyter-chat/src/widgets/multichat-panel.tsx:106 packages/jupyter-chat/src/widgets/multichat-panel.tsx:110 packages/jupyter-chat/src/widgets/placeholder.tsx:100 packages/jupyterlab-chat-extension/src/index.ts:619 packages/jupyterlab-chat-extension/src/index.ts:631 packages/jupyterlab-chat-extension/src/index.ts:672 packages/jupyterlab-chat-extension/src/index.ts:673 packages/jupyterlab-chat-extension/src/index.ts:720 packages/jupyterlab-chat-extension/src/index.ts:732 packages/jupyterlab-chat-extension/src/index.ts:773 packages/jupyterlab-chat-extension/src/index.ts:774
 msgid "Create a new chat"
 msgstr "crwdns30555:0crwdne30555:0"
 
-#: packages/jupyter-chat/src/widgets/multichat-panel.tsx:567 packages/jupyter-chat/src/widgets/multichat-panel.tsx:585 packages/jupyterlab-chat-extension/src/index.ts:1059 packages/jupyterlab-chat-extension/src/index.ts:1071 packages/jupyterlab-chat-extension/src/index.ts:1111
+#: packages/jupyter-chat/src/widgets/multichat-panel.tsx:567 packages/jupyter-chat/src/widgets/multichat-panel.tsx:585 packages/jupyterlab-chat-extension/src/index.ts:1059 packages/jupyterlab-chat-extension/src/index.ts:1071 packages/jupyterlab-chat-extension/src/index.ts:1111 packages/jupyterlab-chat-extension/src/index.ts:1115
 msgid "Rename chat"
 msgstr "crwdns30557:0crwdne30557:0"
 
@@ -360,11 +370,11 @@ msgstr "crwdns30557:0crwdne30557:0"
 msgid "Unable to open chat at given path: '%1'."
 msgstr "crwdns30559:0%1crwdne30559:0"
 
-#: packages/jupyter-chat/src/widgets/multichat-panel.tsx:577 packages/jupyter-chat/src/widgets/multichat-panel.tsx:595 packages/jupyterlab-chat-extension/src/index.ts:1095 packages/jupyterlab-chat-extension/src/index.ts:1107 packages/jupyterlab-chat-extension/src/index.ts:1147
+#: packages/jupyter-chat/src/widgets/multichat-panel.tsx:577 packages/jupyter-chat/src/widgets/multichat-panel.tsx:595 packages/jupyterlab-chat-extension/src/index.ts:1095 packages/jupyterlab-chat-extension/src/index.ts:1107 packages/jupyterlab-chat-extension/src/index.ts:1147 packages/jupyterlab-chat-extension/src/index.ts:1151
 msgid "Rename Chat"
 msgstr "crwdns30561:0crwdne30561:0"
 
-#: packages/jupyter-chat/src/widgets/multichat-panel.tsx:579 packages/jupyter-chat/src/widgets/multichat-panel.tsx:597 packages/jupyterlab-chat-extension/src/index.ts:1097 packages/jupyterlab-chat-extension/src/index.ts:1109 packages/jupyterlab-chat-extension/src/index.ts:1149
+#: packages/jupyter-chat/src/widgets/multichat-panel.tsx:579 packages/jupyter-chat/src/widgets/multichat-panel.tsx:597 packages/jupyterlab-chat-extension/src/index.ts:1097 packages/jupyterlab-chat-extension/src/index.ts:1109 packages/jupyterlab-chat-extension/src/index.ts:1149 packages/jupyterlab-chat-extension/src/index.ts:1153
 msgid "new-name"
 msgstr "crwdns30563:0crwdne30563:0"
 
@@ -388,87 +398,87 @@ msgstr "crwdns30571:0crwdne30571:0"
 msgid "Emoji"
 msgstr "crwdns30573:0crwdne30573:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:1009 packages/jupyterlab-chat-extension/src/index.ts:1050 packages/jupyterlab-chat-extension/src/index.ts:997
+#: packages/jupyterlab-chat-extension/src/index.ts:1009 packages/jupyterlab-chat-extension/src/index.ts:1050 packages/jupyterlab-chat-extension/src/index.ts:1051 packages/jupyterlab-chat-extension/src/index.ts:997
 msgid "Error opening chat"
 msgstr "crwdns30575:0crwdne30575:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:1010 packages/jupyterlab-chat-extension/src/index.ts:1051 packages/jupyterlab-chat-extension/src/index.ts:998
+#: packages/jupyterlab-chat-extension/src/index.ts:1010 packages/jupyterlab-chat-extension/src/index.ts:1051 packages/jupyterlab-chat-extension/src/index.ts:1052 packages/jupyterlab-chat-extension/src/index.ts:998
 msgid "'%1' is not a valid path"
 msgstr "crwdns30577:0%1crwdne30577:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:1025 packages/jupyterlab-chat-extension/src/index.ts:972 packages/jupyterlab-chat-extension/src/index.ts:984
+#: packages/jupyterlab-chat-extension/src/index.ts:1025 packages/jupyterlab-chat-extension/src/index.ts:1026 packages/jupyterlab-chat-extension/src/index.ts:972 packages/jupyterlab-chat-extension/src/index.ts:984
 msgid "File path"
 msgstr "crwdns30579:0crwdne30579:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:1026 packages/jupyterlab-chat-extension/src/index.ts:973 packages/jupyterlab-chat-extension/src/index.ts:985
+#: packages/jupyterlab-chat-extension/src/index.ts:1026 packages/jupyterlab-chat-extension/src/index.ts:1027 packages/jupyterlab-chat-extension/src/index.ts:973 packages/jupyterlab-chat-extension/src/index.ts:985
 msgid "/path/to/the/chat/file"
 msgstr "crwdns30581:0crwdne30581:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:1027 packages/jupyterlab-chat-extension/src/index.ts:974 packages/jupyterlab-chat-extension/src/index.ts:986
+#: packages/jupyterlab-chat-extension/src/index.ts:1027 packages/jupyterlab-chat-extension/src/index.ts:1028 packages/jupyterlab-chat-extension/src/index.ts:974 packages/jupyterlab-chat-extension/src/index.ts:986
 msgid "Path of the chat"
 msgstr "crwdns30583:0crwdne30583:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:1048 packages/jupyterlab-chat-extension/src/index.ts:1060 packages/jupyterlab-chat-extension/src/index.ts:1100 packages/jupyterlab-chat-extension/src/index.ts:1154 packages/jupyterlab-chat-extension/src/index.ts:1159 packages/jupyterlab-chat-extension/src/index.ts:1164 packages/jupyterlab-chat-extension/src/index.ts:1169 packages/jupyterlab-chat-extension/src/index.ts:1204 packages/jupyterlab-chat-extension/src/index.ts:1209 packages/jupyterlab-chat-extension/src/index.ts:455 packages/jupyterlab-chat-extension/src/index.ts:467 packages/jupyterlab-chat-extension/src/index.ts:506 packages/jupyterlab-chat-extension/src/index.ts:619 packages/jupyterlab-chat-extension/src/index.ts:631 packages/jupyterlab-chat-extension/src/index.ts:672 packages/jupyterlab-chat-extension/src/index.ts:720 packages/jupyterlab-chat-extension/src/index.ts:732 packages/jupyterlab-chat-extension/src/index.ts:773
+#: packages/jupyterlab-chat-extension/src/index.ts:1048 packages/jupyterlab-chat-extension/src/index.ts:1060 packages/jupyterlab-chat-extension/src/index.ts:1100 packages/jupyterlab-chat-extension/src/index.ts:1104 packages/jupyterlab-chat-extension/src/index.ts:1154 packages/jupyterlab-chat-extension/src/index.ts:1159 packages/jupyterlab-chat-extension/src/index.ts:1164 packages/jupyterlab-chat-extension/src/index.ts:1169 packages/jupyterlab-chat-extension/src/index.ts:1204 packages/jupyterlab-chat-extension/src/index.ts:1208 packages/jupyterlab-chat-extension/src/index.ts:1209 packages/jupyterlab-chat-extension/src/index.ts:1213 packages/jupyterlab-chat-extension/src/index.ts:455 packages/jupyterlab-chat-extension/src/index.ts:467 packages/jupyterlab-chat-extension/src/index.ts:506 packages/jupyterlab-chat-extension/src/index.ts:507 packages/jupyterlab-chat-extension/src/index.ts:619 packages/jupyterlab-chat-extension/src/index.ts:631 packages/jupyterlab-chat-extension/src/index.ts:672 packages/jupyterlab-chat-extension/src/index.ts:673 packages/jupyterlab-chat-extension/src/index.ts:720 packages/jupyterlab-chat-extension/src/index.ts:732 packages/jupyterlab-chat-extension/src/index.ts:773 packages/jupyterlab-chat-extension/src/index.ts:774
 msgid "Chat"
 msgstr "crwdns30585:0crwdne30585:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:1085 packages/jupyterlab-chat-extension/src/index.ts:1097 packages/jupyterlab-chat-extension/src/index.ts:1119 packages/jupyterlab-chat-extension/src/index.ts:1129 packages/jupyterlab-chat-extension/src/index.ts:1137 packages/jupyterlab-chat-extension/src/index.ts:1169
+#: packages/jupyterlab-chat-extension/src/index.ts:1085 packages/jupyterlab-chat-extension/src/index.ts:1097 packages/jupyterlab-chat-extension/src/index.ts:1119 packages/jupyterlab-chat-extension/src/index.ts:1129 packages/jupyterlab-chat-extension/src/index.ts:1137 packages/jupyterlab-chat-extension/src/index.ts:1141 packages/jupyterlab-chat-extension/src/index.ts:1169 packages/jupyterlab-chat-extension/src/index.ts:1173
 msgid "Error renaming chat"
 msgstr "crwdns30587:0crwdne30587:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:1086 packages/jupyterlab-chat-extension/src/index.ts:1098 packages/jupyterlab-chat-extension/src/index.ts:1138
+#: packages/jupyterlab-chat-extension/src/index.ts:1086 packages/jupyterlab-chat-extension/src/index.ts:1098 packages/jupyterlab-chat-extension/src/index.ts:1138 packages/jupyterlab-chat-extension/src/index.ts:1142
 msgid "Missing old path"
 msgstr "crwdns30589:0crwdne30589:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:1127 packages/jupyterlab-chat-extension/src/index.ts:1137 packages/jupyterlab-chat-extension/src/index.ts:1177
+#: packages/jupyterlab-chat-extension/src/index.ts:1127 packages/jupyterlab-chat-extension/src/index.ts:1137 packages/jupyterlab-chat-extension/src/index.ts:1177 packages/jupyterlab-chat-extension/src/index.ts:1181
 msgid "Focus the input of the current chat widget"
 msgstr "crwdns30591:0crwdne30591:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:1168 packages/jupyterlab-chat-extension/src/index.ts:1178 packages/jupyterlab-chat-extension/src/index.ts:1218
+#: packages/jupyterlab-chat-extension/src/index.ts:1168 packages/jupyterlab-chat-extension/src/index.ts:1178 packages/jupyterlab-chat-extension/src/index.ts:1218 packages/jupyterlab-chat-extension/src/index.ts:1222
 msgid "Other"
 msgstr "crwdns30593:0crwdne30593:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:1174 packages/jupyterlab-chat-extension/src/index.ts:1184 packages/jupyterlab-chat-extension/src/index.ts:1224
+#: packages/jupyterlab-chat-extension/src/index.ts:1174 packages/jupyterlab-chat-extension/src/index.ts:1184 packages/jupyterlab-chat-extension/src/index.ts:1224 packages/jupyterlab-chat-extension/src/index.ts:1228
 msgid "Open chat with message"
 msgstr "crwdns30595:0crwdne30595:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:1175 packages/jupyterlab-chat-extension/src/index.ts:1185 packages/jupyterlab-chat-extension/src/index.ts:1225
+#: packages/jupyterlab-chat-extension/src/index.ts:1175 packages/jupyterlab-chat-extension/src/index.ts:1185 packages/jupyterlab-chat-extension/src/index.ts:1225 packages/jupyterlab-chat-extension/src/index.ts:1229
 msgid "Open a chat and send a message"
 msgstr "crwdns30597:0crwdne30597:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:620 packages/jupyterlab-chat-extension/src/index.ts:632 packages/jupyterlab-chat-extension/src/index.ts:673
+#: packages/jupyterlab-chat-extension/src/index.ts:620 packages/jupyterlab-chat-extension/src/index.ts:632 packages/jupyterlab-chat-extension/src/index.ts:673 packages/jupyterlab-chat-extension/src/index.ts:674
 msgid "Create a chat"
 msgstr "crwdns30599:0crwdne30599:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:706 packages/jupyterlab-chat-extension/src/index.ts:718 packages/jupyterlab-chat-extension/src/index.ts:759
+#: packages/jupyterlab-chat-extension/src/index.ts:706 packages/jupyterlab-chat-extension/src/index.ts:718 packages/jupyterlab-chat-extension/src/index.ts:759 packages/jupyterlab-chat-extension/src/index.ts:760
 msgid "Error creating a chat"
 msgstr "crwdns30601:0crwdne30601:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:707 packages/jupyterlab-chat-extension/src/index.ts:719 packages/jupyterlab-chat-extension/src/index.ts:760
+#: packages/jupyterlab-chat-extension/src/index.ts:707 packages/jupyterlab-chat-extension/src/index.ts:719 packages/jupyterlab-chat-extension/src/index.ts:760 packages/jupyterlab-chat-extension/src/index.ts:761
 msgid "An error occurred while creating the chat"
 msgstr "crwdns30603:0crwdne30603:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:721 packages/jupyterlab-chat-extension/src/index.ts:733 packages/jupyterlab-chat-extension/src/index.ts:774
+#: packages/jupyterlab-chat-extension/src/index.ts:721 packages/jupyterlab-chat-extension/src/index.ts:733 packages/jupyterlab-chat-extension/src/index.ts:774 packages/jupyterlab-chat-extension/src/index.ts:775
 msgid "Create a chat and open it"
 msgstr "crwdns30605:0crwdne30605:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:772 packages/jupyterlab-chat-extension/src/index.ts:784 packages/jupyterlab-chat-extension/src/index.ts:825
+#: packages/jupyterlab-chat-extension/src/index.ts:772 packages/jupyterlab-chat-extension/src/index.ts:784 packages/jupyterlab-chat-extension/src/index.ts:825 packages/jupyterlab-chat-extension/src/index.ts:826
 msgid "New Chat"
 msgstr "crwdns30607:0crwdne30607:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:798 packages/jupyterlab-chat-extension/src/index.ts:810 packages/jupyterlab-chat-extension/src/index.ts:851
+#: packages/jupyterlab-chat-extension/src/index.ts:798 packages/jupyterlab-chat-extension/src/index.ts:810 packages/jupyterlab-chat-extension/src/index.ts:851 packages/jupyterlab-chat-extension/src/index.ts:852
 msgid "Move the chat to the main area"
 msgstr "crwdns30609:0crwdne30609:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:799 packages/jupyterlab-chat-extension/src/index.ts:811 packages/jupyterlab-chat-extension/src/index.ts:852
+#: packages/jupyterlab-chat-extension/src/index.ts:799 packages/jupyterlab-chat-extension/src/index.ts:811 packages/jupyterlab-chat-extension/src/index.ts:852 packages/jupyterlab-chat-extension/src/index.ts:853
 msgid "Move the chat to the side panel"
 msgstr "crwdns30611:0crwdne30611:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:870 packages/jupyterlab-chat-extension/src/index.ts:882 packages/jupyterlab-chat-extension/src/index.ts:923
+#: packages/jupyterlab-chat-extension/src/index.ts:870 packages/jupyterlab-chat-extension/src/index.ts:882 packages/jupyterlab-chat-extension/src/index.ts:923 packages/jupyterlab-chat-extension/src/index.ts:924
 msgid "Mark chat as read"
 msgstr "crwdns30613:0crwdne30613:0"
 
-#: packages/jupyterlab-chat-extension/src/index.ts:942 packages/jupyterlab-chat-extension/src/index.ts:954 packages/jupyterlab-chat-extension/src/index.ts:995
+#: packages/jupyterlab-chat-extension/src/index.ts:942 packages/jupyterlab-chat-extension/src/index.ts:954 packages/jupyterlab-chat-extension/src/index.ts:995 packages/jupyterlab-chat-extension/src/index.ts:996
 msgid "Open a chat"
 msgstr "crwdns30615:0crwdne30615:0"
 
